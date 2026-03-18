@@ -1,0 +1,17 @@
+{
+  "name": "lyric-shadows",
+  "version": "1.0.0",
+  "description": "English shadowing app using song lyrics",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "axios": "^1.6.0",
+    "dotenv": "^17.3.1",
+    "express": "^4.18.2",
+    "fs-extra": "^11.2.0"
+  }
+}

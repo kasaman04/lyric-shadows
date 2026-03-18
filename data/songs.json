@@ -1,0 +1,118 @@
+[
+  {
+    "id": "1773838004028",
+    "songName": "Talking to the Moon",
+    "artist": "Bruno Mars",
+    "relationship": "友達",
+    "setting": "Two friends sitting on a park bench at dusk, looking up at the sky.",
+    "speakerA": {
+      "name": "Maya",
+      "type": "女性",
+      "voice": "ecp3DWciuUyW7BYM7II1"
+    },
+    "speakerB": {
+      "name": "Kaito",
+      "type": "男性",
+      "voice": "CfDbY7v8tDkTvB9rNcUw"
+    },
+    "conversation": [
+      {
+        "speaker": "A",
+        "speakerName": "Maya",
+        "speakerType": "女性",
+        "sentences": [
+          {
+            "text": "It's a beautiful night, isn't it?",
+            "audio": "/audio/1773838004028_0_0.mp3"
+          },
+          {
+            "text": "The moon is so bright tonight.",
+            "audio": "/audio/1773838004028_0_1.mp3"
+          }
+        ],
+        "japanese": "きれいな夜だね。今夜は月がとても明るい。"
+      },
+      {
+        "speaker": "B",
+        "speakerName": "Kaito",
+        "speakerType": "男性",
+        "sentences": [
+          {
+            "text": "Yeah, it really is.",
+            "audio": "/audio/1773838004028_1_0.mp3"
+          },
+          {
+            "text": "You've been staring at it for a while now.",
+            "audio": "/audio/1773838004028_1_1.mp3"
+          },
+          {
+            "text": "Everything okay?",
+            "audio": "/audio/1773838004028_1_2.mp3"
+          }
+        ],
+        "japanese": "うん、そうだね。ずっと月を見上げてるけど、どうかしたの？"
+      },
+      {
+        "speaker": "A",
+        "speakerName": "Maya",
+        "speakerType": "女性",
+        "sentences": [
+          {
+            "text": "I don't know.",
+            "audio": "/audio/1773838004028_2_0.mp3"
+          },
+          {
+            "text": "Sometimes I just feel like it's the only one listening.",
+            "audio": "/audio/1773838004028_2_1.mp3"
+          },
+          {
+            "text": "Like I'm talking to the moon.",
+            "audio": "/audio/1773838004028_2_2.mp3"
+          }
+        ],
+        "japanese": "どうかな。時々、月だけが話を聞いてくれてるような気がするんだ。まるで月に話しかけてるみたいに。"
+      },
+      {
+        "speaker": "B",
+        "speakerName": "Kaito",
+        "speakerType": "男性",
+        "sentences": [
+          {
+            "text": "I get that feeling sometimes.",
+            "audio": "/audio/1773838004028_3_0.mp3"
+          },
+          {
+            "text": "When things are tough, it helps to just let it all out, even if it's just to the night sky.",
+            "audio": "/audio/1773838004028_3_1.mp3"
+          },
+          {
+            "text": "But hey, I'm here too, you know.",
+            "audio": "/audio/1773838004028_3_2.mp3"
+          }
+        ],
+        "japanese": "そういう気持ち、わかるよ。辛い時は、ただ全部吐き出すだけでも楽になることあるよね、たとえそれが夜空に向かってでもさ。でも、僕もここにいるからね。"
+      },
+      {
+        "speaker": "A",
+        "speakerName": "Maya",
+        "speakerType": "女性",
+        "sentences": [
+          {
+            "text": "Thanks.",
+            "audio": "/audio/1773838004028_4_0.mp3"
+          },
+          {
+            "text": "That actually means a lot.",
+            "audio": "/audio/1773838004028_4_1.mp3"
+          },
+          {
+            "text": "It's good to know someone's talking back, even if it's just a friend.",
+            "audio": "/audio/1773838004028_4_2.mp3"
+          }
+        ],
+        "japanese": "ありがとう。それ、本当に心強いよ。友達でも、誰かが返事してくれるってわかるのは嬉しいね。"
+      }
+    ],
+    "createdAt": "2026-03-18T12:46:44.028Z"
+  }
+]
