@@ -124,7 +124,6 @@ function renderShadowing() {
       const flatIdx = getFlatIndex(tIdx, sIdx);
       const content = s.displayHtml || esc(s.text);
       return `<div class="sentence-item" id="sent-${flatIdx}" onclick="clickSentence(${flatIdx})">
-        <div class="sentence-play-icon">▶</div>
         <div class="sentence-text">${content}</div></div>`;
     }).join('');
     const jpClass = state.showJapanese ? 'japanese-text visible' : 'japanese-text';
