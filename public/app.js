@@ -66,8 +66,7 @@ function renderHome() {
   const app = document.getElementById('app');
   app.innerHTML = `
     <div class="home-header">
-      <h1><img src="/rogo.png" alt="Lyric Shadows" class="header-logo"> Lyric Shadows</h1>
-      <p>曲の歌詞から生まれた英会話をシャドーイング</p>
+      <h1><img src="/rogo2.png" alt="Lyric Shadows" class="header-logo"> Lyric Shadows</h1>
     </div>
     ${renderSongGrid()}
   `;
