@@ -1,5 +1,6 @@
 const axios = require('axios');
-const GEMINI_API_KEY = 'REDACTED_API_KEY';
+require('dotenv').config();
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 const GEMINI_MODEL = 'gemini-2.5-flash';
 
 async function main() {
@@ -33,7 +34,7 @@ Return ONLY valid JSON:
 {"relationship":"","setting":"","speakerA":{"name":"","type":""},"speakerB":{"name":"","type":""},"conversation":[{"speaker":"A","english":"","japanese":""}]}`;
 
   console.log('Calling Gemini...');
-  const url = `https://generativelanguage.googleapis.com/v1/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`;
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`;
   const { data } = await axios.post(url, {
     contents: [{ parts: [{ text: prompt }] }]
   }, { timeout: 120000 }).catch(err => {

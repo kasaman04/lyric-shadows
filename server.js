@@ -2,9 +2,10 @@ const express = require('express');
 const path = require('path');
 const fs = require('fs-extra');
 const { generateSong } = require('./lib/generate');
+require('dotenv').config();
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 9999;
 const SONGS_DIR = path.join(__dirname, 'songs');
 
 (async () => { await fs.ensureDir(SONGS_DIR); })();
