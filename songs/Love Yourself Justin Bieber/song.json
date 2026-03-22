@@ -4,131 +4,288 @@
   "songName": "Love Yourself",
   "artist": "Justin Bieber",
   "relationship": "友達",
-  "setting": "Two friends catching up over coffee.",
+  "setting": "Two friends, Tom and Sarah, are catching up at a cafe, discussing Tom's recent breakup.",
   "speakerA": {
-    "name": "Mark",
-    "type": "男性",
-    "voice": "CfDbY7v8tDkTvB9rNcUw"
-  },
-  "speakerB": {
     "name": "Sarah",
     "type": "女性",
     "voice": "cNYrMw9glwJZXR8RwbuR"
   },
+  "speakerB": {
+    "name": "Tom",
+    "type": "男性",
+    "voice": "CfDbY7v8tDkTvB9rNcUw"
+  },
   "videoId": "HW1Hz4usjmQ",
   "thumbnailUrl": "https://img.youtube.com/vi/HW1Hz4usjmQ/hqdefault.jpg",
   "lyrics": "For all the times that you rained on my parade\nAnd all the clubs you get in using my name\nYou think you broke my heart, oh girl for goodness sake!\nYou think I'm crying on my own, well I ain't\n\nAnd I didn't wanna write a song\n'Cause I didn't want anyone thinking I still care\nI don't but, you still hit my phone up\nAnd baby I'll be movin' on\nAnd I think it should be somethin'\nThat I don't wanna hold back\nMaybe you should know that\n\nMy mama don't like you and she likes everyone\nAnd I never like to admit that I was wrong\nAnd I've been so caught up in my job,\nDidn't see what's going on\nBut now I know, I'm better sleeping on my own\n\n'Cause if you like the way you look that much\nOh baby you should go and love yourself\nAnd if you think that I'm still holdin' on to somethin'\nYou should go and love yourself\n\nBut when you told me that you hated my friends\nThe only problem was with you and not them\nAnd every time you told me my opinion was wrong\nAnd tried to make me forget where I came from\n\nAnd I didn't wanna write a song\n'Cause I didn't want anyone thinking I still care\nI don't but, you still hit my phone up\nAnd baby I'll be movin' on\nAnd I think it should be somethin'\nThat I don't wanna hold back\nMaybe you should know that\n\nMy mama don't like you and she likes everyone\nAnd I never like to admit that I was wrong\nAnd I've been so caught up in my job\nDidn't see what's going on\nAnd now I know, I'm better sleeping on my own\n\n'Cause if you like the way you look that much\nOh baby you should go and love yourself\nAnd if you think that I'm still holdin' on to somethin'\nYou should go and love yourself\n\nFor all the times that you made me feel small\nI fell in love, now I feel nothin' at all\nI never felt so low when I was vulnerable\nWas I a fool to let you break down my walls?\n\n'Cause if you like the way you look that much\nOh baby you should go and love yourself\nAnd if you think that I'm still holdin' on to somethin'\nYou should go and love yourself\n\n'Cause if you like the way you look that much\nOh baby you should go and love yourself\nAnd if you think that I'm still holdin' on to somethin'\nYou should go and love yourself",
-  "lyricsJa": "僕の晴れ舞台を いつも台無しにして\n僕の名前使い クラブに入り込んだ\n僕の心壊したって？ 馬鹿げてるよ\n一人で泣いてるって？ まさか、そんな\n\n歌なんて書きたくなかったんだ\nだってまだ未練があるなんて 思われたくなかったから\n気にしてないのに 君はまだ電話してくる\nもう僕は先に進むよ\nもう隠したくない 気持ちがあるんだ\n知っておくべきだね\n\nママは君が嫌い みんな好きなのに\n間違ってたなんて 認めたくないけど\n仕事に夢中で 何も見てなかった\nでも今ならわかる 一人で寝る方がずっとマシ\n\nだってそんなに 自分のこと好きなら\nベイビー 自分のこと愛せばいいさ\nもし僕がまだ何か 引きずってると思ってるなら\n自分のこと愛せばいいさ\n\nでも友達を嫌いだって 君が言った時\n問題は君にあって 彼らじゃなかった\n僕の意見はいつも 間違ってるって言ったね\n僕のルーツ忘れさせようとした\n\n歌なんて書きたくなかったんだ\nだってまだ未練があるなんて 思われたくなかったから\n気にしてないのに 君はまだ電話してくる\nもう僕は先に進むよ\nもう隠したくない 気持ちがあるんだ\n知っておくべきだね\n\nママは君が嫌い みんな好きなのに\n間違ってたなんて 認めたくないけど\n仕事に夢中で 何も見てなかった\nでも今ならわかる 一人で寝る方がずっとマシ\n\nだってそんなに 自分のこと好きなら\nベイビー 自分のこと愛せばいいさ\nもし僕がまだ何か 引きずってると思ってるなら\n自分のこと愛せばいいさ\n\nいつも僕をみじめにさせたこと\n恋に落ちたけど もう何も感じない\n弱かった時 こんなに落ち込んだことなかった\n僕の壁を壊させたなんて 馬鹿だったかな\n\nだってそんなに 自分のこと好きなら\nベイビー 自分のこと愛せばいいさ\nもし僕がまだ何か 引きずってると思ってるなら\n自分のこと愛せばいいさ\n\nだってそんなに 自分のこと好きなら",
+  "lyricsJa": [
+    {
+      "en": "For all the times that you rained on my parade\nAnd all the clubs you get in using my name",
+      "ja": "僕の邪魔ばかりしてたね\nそして僕の名を語りどこへでも入ってた"
+    },
+    {
+      "en": "You think you broke my heart, oh girl for goodness sake!\nYou think I'm crying on my own, well I ain't",
+      "ja": "僕の心を壊したとでも思ってる？勘弁してくれよ\n独りで泣いてるなんて、違うさ、もう"
+    },
+    {
+      "en": "And I didn't wanna write a song\n'Cause I didn't want anyone thinking I still care",
+      "ja": "僕は歌を書きたくなかった\n君をまだ気にしてるなんて、誰もに思われたくなかったから"
+    },
+    {
+      "en": "I don't but, you still hit my phone up",
+      "ja": "気にしてないのに、君はまだ僕に連絡してくる"
+    },
+    {
+      "en": "And baby I'll be movin' on\nAnd I think it should be somethin'\nThat I don't wanna hold back\nMaybe you should know that",
+      "ja": "もう僕、前に進むから\n隠すことも、ためらうこともないって\n君に知っておいてほしいだけさ"
+    },
+    {
+      "en": "My mama don't like you and she likes everyone",
+      "ja": "ママは君が嫌いなんだ、誰にでも優しいママなのに"
+    },
+    {
+      "en": "And I never like to admit that I was wrong",
+      "ja": "自分の非は認めたくない性分だけどさ"
+    },
+    {
+      "en": "And I've been so caught up in my job,\nDidn't see what's going on",
+      "ja": "仕事に夢中になりすぎて\n周りが見えてなかったんだ"
+    },
+    {
+      "en": "But now I know, I'm better sleeping on my own",
+      "ja": "でも今ならわかる、一人で眠る方がずっといい"
+    },
+    {
+      "en": "'Cause if you like the way you look that much\nOh baby you should go and love yourself",
+      "ja": "そんなに自分の見た目が好きなら\nベイビー、自分だけを愛せばいいさ"
+    },
+    {
+      "en": "And if you think that I'm still holdin' on to somethin'\nYou should go and love yourself",
+      "ja": "まだ僕が未練たらたらだと思ってるなら\n自分だけを愛せばいいんだ"
+    },
+    {
+      "en": "But when you told me that you hated my friends\nThe only problem was with you and not them",
+      "ja": "僕の友達を嫌いだって君が言ったけど\n問題は彼らじゃなく君にあったんだ"
+    },
+    {
+      "en": "And every time you told me my opinion was wrong\nAnd tried to make me forget where I came from",
+      "ja": "いつも僕の意見を否定してさ\n僕のルーツまで忘れさせようとしたね"
+    },
+    {
+      "en": "And I didn't wanna write a song\n'Cause I didn't want anyone thinking I still care",
+      "ja": "僕は歌を書きたくなかった\n君をまだ気にしてるなんて、誰もに思われたくなかったから"
+    },
+    {
+      "en": "I don't but, you still hit my phone up",
+      "ja": "気にしてないのに、君はまだ僕に連絡してくる"
+    },
+    {
+      "en": "And baby I'll be movin' on\nAnd I think it should be somethin'\nThat I don't wanna hold back\nMaybe you should know that",
+      "ja": "もう僕、前に進むから\n隠すことも、ためらうこともないって\n君に知っておいてほしいだけさ"
+    },
+    {
+      "en": "My mama don't like you and she likes everyone",
+      "ja": "ママは君が嫌いなんだ、誰にでも優しいママなのに"
+    },
+    {
+      "en": "And I never like to admit that I was wrong",
+      "ja": "自分の非は認めたくない性分だけどさ"
+    },
+    {
+      "en": "And I've been so caught up in my job\nDidn't see what's going on",
+      "ja": "仕事に夢中になりすぎて\n周りが見えてなかったんだ"
+    },
+    {
+      "en": "And now I know, I'm better sleeping on my own",
+      "ja": "でも今ならわかる、一人で眠る方がずっといい"
+    },
+    {
+      "en": "'Cause if you like the way you look that much\nOh baby you should go and love yourself",
+      "ja": "そんなに自分の見た目が好きなら\nベイビー、自分だけを愛せばいいさ"
+    },
+    {
+      "en": "And if you think that I'm still holdin' on to somethin'\nYou should go and love yourself",
+      "ja": "まだ僕が未練たらたらだと思ってるなら\n自分だけを愛せばいいんだ"
+    },
+    {
+      "en": "For all the times that you made me feel small",
+      "ja": "君のせいで何度も惨めな気持ちになった"
+    },
+    {
+      "en": "I fell in love, now I feel nothin' at all",
+      "ja": "恋に落ちたのに、今はもう何も感じない"
+    },
+    {
+      "en": "I never felt so low when I was vulnerable\nWas I a fool to let you break down my walls?",
+      "ja": "弱っていた時、こんなに落ち込んだことはなかった\n君に心の壁を壊させたなんて、僕がバカだったのか？"
+    },
+    {
+      "en": "'Cause if you like the way you look that much\nOh baby you should go and love yourself",
+      "ja": "そんなに自分の見た目が好きなら\nベイビー、自分だけを愛せばいいさ"
+    },
+    {
+      "en": "And if you think that I'm still holdin' on to somethin'\nYou should go and love yourself",
+      "ja": "まだ僕が未練たらたらだと思ってるなら\n自分だけを愛せばいいんだ"
+    },
+    {
+      "en": "'Cause if you like the way you look that",
+      "ja": "だってそんなに自分の見た目が好きなら..."
+    }
+  ],
   "conversation": [
     {
       "speaker": "A",
-      "speakerName": "Mark",
-      "speakerType": "男性",
+      "speakerName": "Sarah",
+      "speakerType": "女性",
       "sentences": [
         {
-          "text": "Hey Sarah, how have you been?",
-          "displayHtml": "Hey Sarah, how have you been?",
+          "text": "How are you doing after everything with Emily?",
+          "displayHtml": "How are you doing after everything with Emily?",
           "audio": "/songs/Love%20Yourself%20Justin%20Bieber/0_0.mp3"
         },
         {
-          "text": "I feel like I'm finally movin' on from everything.",
-          "displayHtml": "I feel like I'm finally <span class=\"lyric-phrase\">movin' on</span> from everything.",
+          "text": "I heard she's been trying to reach you.",
+          "displayHtml": "I heard she's been trying to reach you.",
           "audio": "/songs/Love%20Yourself%20Justin%20Bieber/0_1.mp3"
         }
       ],
-      "japanese": "やあ、サラ、元気にしてた？やっと色々なことから前に進んでいる気がするよ。"
+      "japanese": "エミリーとの件、その後どう？彼女、君に連絡しようとしてるって聞いたよ。"
     },
     {
       "speaker": "B",
-      "speakerName": "Sarah",
-      "speakerType": "女性",
+      "speakerName": "Tom",
+      "speakerType": "男性",
       "sentences": [
         {
-          "text": "That's great to hear, Mark!",
-          "displayHtml": "That's great to hear, Mark!",
+          "text": "Yeah, she keeps hitting my phone up.",
+          "displayHtml": "Yeah, she keeps <span class=\"lyric-phrase\">hitting my phone up</span>.",
           "audio": "/songs/Love%20Yourself%20Justin%20Bieber/1_0.mp3"
         },
         {
-          "text": "I was a little worried you were still holding on to things.",
-          "displayHtml": "I was a little worried you were still <span class=\"lyric-word\">holding</span> on to things.",
+          "text": "It's a bit annoying, to be honest.",
+          "displayHtml": "It's a bit annoying, to be honest.",
           "audio": "/songs/Love%20Yourself%20Justin%20Bieber/1_1.mp3"
-        },
-        {
-          "text": "How are you really feeling?",
-          "displayHtml": "How are you really feeling?",
-          "audio": "/songs/Love%20Yourself%20Justin%20Bieber/1_2.mp3"
         }
       ],
-      "japanese": "マーク、それを聞いてよかった！まだ色々なことにしがみついているんじゃないかと思って、少し心配してたの。実際どう感じてる？"
+      "japanese": "うん、彼女まだしつこく電話してくるんだ。正直、ちょっと迷惑だよ。"
     },
     {
       "speaker": "A",
-      "speakerName": "Mark",
-      "speakerType": "男性",
-      "sentences": [
-        {
-          "text": "Honestly, I'm much better.",
-          "displayHtml": "Honestly, I'm much better.",
-          "audio": "/songs/Love%20Yourself%20Justin%20Bieber/2_0.mp3"
-        },
-        {
-          "text": "I realized I was so caught up in the drama, I didn't see what was really going on.",
-          "displayHtml": "I realized I was so <span class=\"lyric-phrase\">caught up in the drama</span>, I didn't see what was really going on.",
-          "audio": "/songs/Love%20Yourself%20Justin%20Bieber/2_1.mp3"
-        },
-        {
-          "text": "Now I know I'm better sleeping on my own.",
-          "displayHtml": "Now I know <span class=\"lyric-phrase\">I'm better sleeping on my own</span>.",
-          "audio": "/songs/Love%20Yourself%20Justin%20Bieber/2_2.mp3"
-        }
-      ],
-      "japanese": "正直、だいぶ良くなったよ。あのドラマに巻き込まれて、何が本当に起こっているか見えてなかったって気づいたんだ。今じゃ一人で寝る方がずっといいって分かるよ。"
-    },
-    {
-      "speaker": "B",
       "speakerName": "Sarah",
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "Good for you!",
-          "displayHtml": "Good for you!",
-          "audio": "/songs/Love%20Yourself%20Justin%20Bieber/3_0.mp3"
+          "text": "I figured.",
+          "displayHtml": "I figured.",
+          "audio": "/songs/Love%20Yourself%20Justin%20Bieber/2_0.mp3"
         },
         {
-          "text": "It's important to love yourself first.",
-          "displayHtml": "It's important to <span class=\"lyric-phrase\">love yourself</span> first.",
-          "audio": "/songs/Love%20Yourself%20Justin%20Bieber/3_1.mp3"
-        },
-        {
-          "text": "Remember when you used to complain about him raining on your parade?",
-          "displayHtml": "Remember when you used to <span class=\"lyric-phrase\">complain about him raining on your parade</span>?",
-          "audio": "/songs/Love%20Yourself%20Justin%20Bieber/3_2.mp3"
+          "text": "She always tries to make it seem like you're still holding on to something.",
+          "displayHtml": "She always tries to make it seem like you're still <span class=\"lyric-word\">holding on</span> to something.",
+          "audio": "/songs/Love%20Yourself%20Justin%20Bieber/2_1.mp3"
         }
       ],
-      "japanese": "よかったわね！まず自分を愛することが大切よ。彼がいつもあなたのお楽しみを台無しにするって愚痴ってたの覚えてる？"
+      "japanese": "やっぱりね。彼女、君がまだ何かを引きずっているように見せようとするから。"
     },
     {
-      "speaker": "A",
-      "speakerName": "Mark",
+      "speaker": "B",
+      "speakerName": "Tom",
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "Haha, yeah.",
-          "displayHtml": "Haha, yeah.",
+          "text": "Well, she can think what she wants.",
+          "displayHtml": "Well, she can think what she wants.",
+          "audio": "/songs/Love%20Yourself%20Justin%20Bieber/3_0.mp3"
+        },
+        {
+          "text": "I'm actually movin' on quite well.",
+          "displayHtml": "I'm actually <span class=\"lyric-phrase\">movin' on</span> quite well.",
+          "audio": "/songs/Love%20Yourself%20Justin%20Bieber/3_1.mp3"
+        },
+        {
+          "text": "I've been so caught up in my job lately.",
+          "displayHtml": "I've been so <span class=\"lyric-phrase\">caught up in my job</span> lately.",
+          "audio": "/songs/Love%20Yourself%20Justin%20Bieber/3_2.mp3"
+        }
+      ],
+      "japanese": "彼女がどう思おうと勝手さ。僕は実はかなり前に進んでるよ。最近は仕事に夢中になってるしね。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Sarah",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "That's good to hear!",
+          "displayHtml": "That's good to hear!",
           "audio": "/songs/Love%20Yourself%20Justin%20Bieber/4_0.mp3"
         },
         {
-          "text": "I guess my opinion was wrong about him back then.",
-          "displayHtml": "I guess <span class=\"lyric-phrase\">my opinion was wrong</span> about him back then.",
+          "text": "You know, sometimes you were so busy you didn't see what was going on around you.",
+          "displayHtml": "You know, sometimes you were so busy you <span class=\"lyric-phrase\">didn't see what was going on</span> around you.",
           "audio": "/songs/Love%20Yourself%20Justin%20Bieber/4_1.mp3"
-        },
-        {
-          "text": "Now I just want to not hold back anymore.",
-          "displayHtml": "Now I just want to <span class=\"lyric-phrase\">not hold back</span> anymore.",
-          "audio": "/songs/Love%20Yourself%20Justin%20Bieber/4_2.mp3"
         }
       ],
-      "japanese": "はは、うん。あの頃の彼に対する僕の考えは間違ってたみたいだね。もうこれ以上遠慮したくないんだ。"
+      "japanese": "それは良かった！ねえ、時々君は忙しすぎて、周りで何が起こっているか見えてなかったよね。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Tom",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "Yeah, I know.",
+          "displayHtml": "Yeah, I know.",
+          "audio": "/songs/Love%20Yourself%20Justin%20Bieber/5_0.mp3"
+        },
+        {
+          "text": "But now I know, I'm actually better sleeping on my own.",
+          "displayHtml": "But now I know, I'm actually <span class=\"lyric-phrase\">better sleeping on my own</span>.",
+          "audio": "/songs/Love%20Yourself%20Justin%20Bieber/5_1.mp3"
+        },
+        {
+          "text": "And my mama, she actually never liked her much, even though she likes everyone.",
+          "displayHtml": "And my mama, she actually never <span class=\"lyric-word\">liked</span> her much, even though she <span class=\"lyric-word\">likes everyone</span>.",
+          "audio": "/songs/Love%20Yourself%20Justin%20Bieber/5_2.mp3"
+        }
+      ],
+      "japanese": "ああ、分かってる。でも今なら分かるよ、僕一人で寝る方がずっといいって。それに、僕のママ、普段は誰でも好きなんだけど、彼女のことは好きじゃなかったんだ。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Sarah",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "Wow, that's saying something!",
+          "displayHtml": "Wow, that's saying something!",
+          "audio": "/songs/Love%20Yourself%20Justin%20Bieber/6_0.mp3"
+        },
+        {
+          "text": "It sounds like you're truly over it and ready to just let her love herself.",
+          "displayHtml": "It sounds like you're truly over it and ready to just let her <span class=\"lyric-phrase\">love herself</span>.",
+          "audio": "/songs/Love%20Yourself%20Justin%20Bieber/6_1.mp3"
+        }
+      ],
+      "japanese": "へえ、それはすごいことだね！本当に吹っ切れて、彼女には自分自身を愛してもらえばいいって感じだね。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Tom",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "Exactly.",
+          "displayHtml": "Exactly.",
+          "audio": "/songs/Love%20Yourself%20Justin%20Bieber/7_0.mp3"
+        },
+        {
+          "text": "And I definitely don't feel like I'm crying on my own anymore.",
+          "displayHtml": "And I definitely don't feel like I'm <span class=\"lyric-phrase\">crying on my own</span> anymore.",
+          "audio": "/songs/Love%20Yourself%20Justin%20Bieber/7_1.mp3"
+        }
+      ],
+      "japanese": "その通り。もう一人で泣いているなんて気持ちは全然ないよ。"
     }
   ],
   "createdAt": "2026-03-22T11:51:40.309Z"

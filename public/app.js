@@ -176,6 +176,17 @@ function renderShadowing() {
 
 function renderLyrics(song) {
   if (!song.lyrics) return '<p class="no-lyrics">歌詞なし</p>';
+
+  // New format: lyricsJa is an array of {en, ja} phrase pairs
+  if (Array.isArray(song.lyricsJa)) {
+    return song.lyricsJa.map(pair => {
+      const enHtml = pair.en.split('\n').map(l => `<div class="lyric-en">${esc(l)}</div>`).join('');
+      const jaHtml = pair.ja ? `<div class="lyric-ja">${esc(pair.ja)}</div>` : '';
+      return `<div class="lyric-pair">${enHtml}${jaHtml}</div>`;
+    }).join('<div class="lyric-spacer"></div>');
+  }
+
+  // Legacy fallback: lyricsJa is a plain string matched line-by-line
   const enLines = song.lyrics.split('\n');
   const jaLines = song.lyricsJa ? song.lyricsJa.split('\n') : [];
   return enLines.map((line, i) => {

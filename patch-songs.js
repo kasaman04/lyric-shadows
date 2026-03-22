@@ -30,12 +30,12 @@ async function main() {
       }
     }
 
-    if (song.lyrics && !song.lyricsJa) {
-      console.log(`[${song.songName}] Translating lyrics...`);
+    if (song.lyrics && (!song.lyricsJa || !Array.isArray(song.lyricsJa))) {
+      console.log(`[${song.songName}] Translating lyrics (phrase-unit)...`);
       const ja = await translateLyrics(song.lyrics, song.songName, song.artist);
       if (ja) {
         song.lyricsJa = ja;
-        console.log(`  → Translation done`);
+        console.log(`  → Translation done (${ja.length} phrases)`);
         changed = true;
       }
     }

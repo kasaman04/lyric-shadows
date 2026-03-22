@@ -4,26 +4,103 @@
   "songName": "less of you",
   "artist": "keshi",
   "relationship": "恋人",
-  "setting": "Late at night, Alex calls his girlfriend, Chloe, feeling anxious and overwhelmed.",
+  "setting": "Late-night phone call between a couple. One person (Maya) is feeling anxious and calls the other (Ken) for comfort.",
   "speakerA": {
-    "name": "Alex",
-    "type": "男性",
-    "voice": "CfDbY7v8tDkTvB9rNcUw"
-  },
-  "speakerB": {
-    "name": "Chloe",
+    "name": "Maya",
     "type": "女性",
     "voice": "cNYrMw9glwJZXR8RwbuR"
+  },
+  "speakerB": {
+    "name": "Ken",
+    "type": "男性",
+    "voice": "CfDbY7v8tDkTvB9rNcUw"
   },
   "videoId": "DV_ulziHFQg",
   "thumbnailUrl": "https://img.youtube.com/vi/DV_ulziHFQg/hqdefault.jpg",
   "lyrics": "Ooh\nOoh, dah-dah-dah-dah-dah\nOoh\n\nHello\nAre you awake right now?\nGod, I just need to hear the sound of you\nPlease calm me down\nAnd I know that it's selfish, but\nYou are the only thing that's\nEver made sense to me, I\nI don't wanna do this\nI don't know how to do this without you\n\nCling to your side, voices at night\nCover my eyes, I'm terrified\n\nNo in between, a face on a screen\nAin't an adequate replacement for your being with me (Yeah-yeah)\n\nToo much time in the limelight\nGimme your all on the landline\nWant it so bad but I won't lie\nAnd it just gets worse in the nighttime\nNever stays for long (Ooh, dah-dah-dah-dah-dah)\nAnd she's gone in the morning (Ooh)\n\nWhen you come home\nI just got over bein' less of you\nWhen you leave me, I'm in pieces\nMaybe it's better if we cut it loose\n\nTell me how your day was\nNo, I'm not okay\n\nI don't know, I don't know, I don't know\nI don't know, I don't know, I don't know\nTime never moved so slow\nBed time, hit your phone up\nTell me where to go, where to go\nTell me where to go, where to go-oh-oh\n\nToo much time in the limelight\nGimme your all on the landline\nWant it so bad but I won't lie\nAnd it just gets worse in the nighttime\nNever stays for long (Ooh, dah-dah-dah-dah-dah)\nAnd she's gone in the morning (Ooh)\n\nWhen you come home\nI just got over bein' less of you\nWhen you leave me, I'm in pieces\nMaybe it's better if we cut it loose\n\nI don't know how to do this without you\nI don't know, I don't know, don't know\nI don't know how to do this without you\nI don't know, I don't know, don't know\nI don't know how to do this without you\n\nOoh\nOoh, dah-dah-dah-dah-dah\nOoh",
-  "lyricsJa": "Ooh\nOoh, ダッダッダッダッダ\nOoh\n\nもしもし\n今起きてるかな？\nねえ、君の声が聞きたいだけなんだ\nどうか落ち着かせて\n分かってる、身勝手なのは\nだけど君だけが\n僕にとって全てだったんだ\nもうこんなこと嫌だ\n君がいないなんてどうすればいい？\n\n君の側にしがみついて\n夜が声を上げる\n目を閉じても怖いんだ\n\n中途半端な関係じゃなく\n画面越しの君の顔じゃ\n僕のそばにいる君の代わりにはなれない (Yeah-yeah)\n\nスポットライト浴びすぎた\n固定電話越しに全部聞かせて\n強く願うけど嘘はつけない\n夜になるともっと辛くなる\n長くは続かない (Ooh, ダッダッダッダッダ)\n朝にはもういない (Ooh)\n\n君が家へ帰ると\n君が足りないのに慣れたばかり\n君が去ると僕はバラバラ\nもう手放した方がいいのかな\n\n今日はどうだった？\nああ、僕は大丈夫じゃない\n\n分からない、分からない、分からない\n分からない、分からない、分からない\n時間がこんなに遅いなんて\nベッドタイム、君に電話する\nどこへ行けばいいか教えて\nどこへ行けばいいか教えて\n\nスポットライト浴びすぎた\n固定電話越しに全部聞かせて\n強く願うけど嘘はつけない\n夜になるともっと辛くなる\n長くは続かない (Ooh, ダッダッダッダッダ)\n朝にはもういない (Ooh)\n\n君が家へ帰ると\n君が足りないのに慣れたばかり\n君が去ると僕はバラバラ\nもう手放した方がいいのかな\n\n君なしじゃどうすればいいか分からない\n分からない、分からない、分からない\n君なしじゃどうすればいいか分からない\n分からない、分からない、分からない\n君なしじゃどうすればいいか分からない\n\nOoh\nOoh, ダッダッダッダッダ\nOoh",
+  "lyricsJa": [
+    {
+      "en": "Ooh\nOoh, dah-dah-dah-dah-dah\nOoh",
+      "ja": "Ooh\nOoh, だだだだだ\nOoh"
+    },
+    {
+      "en": "Hello\nAre you awake right now?\nGod, I just need to hear the sound of you\nPlease calm me down",
+      "ja": "もしもし\n今、起きてるかな？\nねぇ、ただ君の声が聞きたいんだ\n私を落ち着かせてよ"
+    },
+    {
+      "en": "And I know that it's selfish, but\nYou are the only thing that's\nEver made sense to me, I",
+      "ja": "わかってる、わがままだって\nでも君だけが、ずっと\n私にとって意味のある存在だったんだ"
+    },
+    {
+      "en": "I don't wanna do this\nI don't know how to do this without you",
+      "ja": "こんなことはしたくない\n君なしじゃどうしたらいいか、もうわからない"
+    },
+    {
+      "en": "Cling to your side, voices at night\nCover my eyes, I'm terrified",
+      "ja": "夜の声に怯えて\n君の傍にいたい、目を閉じる"
+    },
+    {
+      "en": "No in between, a face on a screen\nAin't an adequate replacement for your being with me (Yeah-yeah)",
+      "ja": "画面越しの顔じゃダメなんだ\n君が傍にいてくれなきゃ、何も満たされない (Yeah-yeah)"
+    },
+    {
+      "en": "Too much time in the limelight\nGimme your all on the landline\nWant it so bad but I won't lie\nAnd it just gets worse in the nighttime",
+      "ja": "光浴びすぎた日々\n電話越しでいい、君の全てをちょうだい\n強く願うけど、嘘はつけない\n夜になるたび、もっと辛くなる"
+    },
+    {
+      "en": "Never stays for long (Ooh, dah-dah-dah-dah-dah)\nAnd she's gone in the morning (Ooh)",
+      "ja": "長くは続かない (Ooh, だだだだだ)\nそして朝には、もう彼女はいない (Ooh)"
+    },
+    {
+      "en": "When you come home\nI just got over bein' less of you",
+      "ja": "君が帰ってくる頃には\nやっと、君が足りないことに慣れたのに"
+    },
+    {
+      "en": "When you leave me, I'm in pieces\nMaybe it's better if we cut it loose",
+      "ja": "君が去れば、私はバラバラになる\nいっそ、もう終わりにすべきかな"
+    },
+    {
+      "en": "Tell me how your day was\nNo, I'm not okay",
+      "ja": "今日どうだった？って聞かれても\nうん、大丈夫じゃないんだ"
+    },
+    {
+      "en": "I don't know, I don't know, I don't know\nI don't know, I don't know, I don't know\nTime never moved so slow",
+      "ja": "わからない、わからない、もう\nわからない、わからないんだ\n時間がこんなにも遅いなんて"
+    },
+    {
+      "en": "Bed time, hit your phone up\nTell me where to go, where to go\nTell me where to go, where to go-oh-oh",
+      "ja": "寝る時間、君に電話する\nどこへ行けばいい？ どこへ行けばいいの？\n教えて、どこへ行けばいい？"
+    },
+    {
+      "en": "Too much time in the limelight\nGimme your all on the landline\nWant it so bad but I won't lie\nAnd it just gets worse in the nighttime",
+      "ja": "光浴びすぎた日々\n電話越しでいい、君の全てをちょうだい\n強く願うけど、嘘はつけない\n夜になるたび、もっと辛くなる"
+    },
+    {
+      "en": "Never stays for long (Ooh, dah-dah-dah-dah-dah)\nAnd she's gone in the morning (Ooh)",
+      "ja": "長くは続かない (Ooh, だだだだだ)\nそして朝には、もう彼女はいない (Ooh)"
+    },
+    {
+      "en": "When you come home\nI just got over bein' less of you",
+      "ja": "君が帰ってくる頃には\nやっと、君が足りないことに慣れたのに"
+    },
+    {
+      "en": "When you leave me, I'm in pieces\nMaybe it's better if we cut it loose",
+      "ja": "君が去れば、私はバラバラになる\nいっそ、もう終わりにすべきかな"
+    },
+    {
+      "en": "I don't know how to do this without you\nI don't know, I don't know, don't know\nI don't know how to do this without you\nI don't know, I don't know, don't know\nI don't know how to do this without you",
+      "ja": "君なしでどうしたらいいか、もうわからない\nわからない、わからない、もう\n君なしでどうしたらいいか、もうわからない\nわからない、わからないんだ\n君なしじゃもう、どうしようもない"
+    },
+    {
+      "en": "Ooh\nOoh, dah-dah-dah-dah-dah\nOoh",
+      "ja": "Ooh\nOoh, だだだだだ\nOoh"
+    }
+  ],
   "conversation": [
     {
       "speaker": "A",
-      "speakerName": "Alex",
-      "speakerType": "男性",
+      "speakerName": "Maya",
+      "speakerType": "女性",
       "sentences": [
         {
           "text": "Hello?",
@@ -31,73 +108,63 @@
           "audio": "/songs/less%20of%20you%20keshi/0_0.mp3"
         },
         {
-          "text": "{{Are you awake right now?",
-          "displayHtml": "{{Are you awake right now?",
+          "text": "Are you awake right now?",
+          "displayHtml": "<span class=\"lyric-phrase\">Are you awake right now</span>?",
           "audio": "/songs/less%20of%20you%20keshi/0_1.mp3"
-        },
-        {
-          "text": "}} I know it's late, but I just needed to hear from you.",
-          "displayHtml": "}} I know it's late, but I just needed to hear from you.",
-          "audio": "/songs/less%20of%20you%20keshi/0_2.mp3"
         }
       ],
-      "japanese": "もしもし？今起きてる？遅いのは分かってるんだけど、君の声が聞きたくて。"
+      "japanese": "もしもし？今、起きてる？"
     },
     {
       "speaker": "B",
-      "speakerName": "Chloe",
-      "speakerType": "女性",
-      "sentences": [
-        {
-          "text": "Hey.",
-          "displayHtml": "Hey.",
-          "audio": "/songs/less%20of%20you%20keshi/1_0.mp3"
-        },
-        {
-          "text": "Yeah, I'm awake.",
-          "displayHtml": "Yeah, I'm awake.",
-          "audio": "/songs/less%20of%20you%20keshi/1_1.mp3"
-        },
-        {
-          "text": "What's wrong?",
-          "displayHtml": "What's wrong?",
-          "audio": "/songs/less%20of%20you%20keshi/1_2.mp3"
-        },
-        {
-          "text": "You sound a little upset, Alex.",
-          "displayHtml": "You sound a little upset, Alex.",
-          "audio": "/songs/less%20of%20you%20keshi/1_3.mp3"
-        }
-      ],
-      "japanese": "もしもし。うん、起きてるよ。どうしたの？アレックス、ちょっと元気がないみたいだけど。"
-    },
-    {
-      "speaker": "A",
-      "speakerName": "Alex",
+      "speakerName": "Ken",
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "I'm just...",
-          "displayHtml": "I'm just...",
+          "text": "Hey, yeah, just barely.",
+          "displayHtml": "Hey, yeah, just barely.",
+          "audio": "/songs/less%20of%20you%20keshi/1_0.mp3"
+        },
+        {
+          "text": "Everything okay?",
+          "displayHtml": "Everything okay?",
+          "audio": "/songs/less%20of%20you%20keshi/1_1.mp3"
+        },
+        {
+          "text": "It's pretty late.",
+          "displayHtml": "It's pretty late.",
+          "audio": "/songs/less%20of%20you%20keshi/1_2.mp3"
+        }
+      ],
+      "japanese": "ああ、うん、かろうじてね。どうかした？もうずいぶん遅いよ。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Maya",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "No, I'm not okay.",
+          "displayHtml": "No, I'm <span class=\"lyric-word\">not okay</span>.",
           "audio": "/songs/less%20of%20you%20keshi/2_0.mp3"
         },
         {
-          "text": "feeling really overwhelmed.",
-          "displayHtml": "feeling really overwhelmed.",
+          "text": "I just...",
+          "displayHtml": "I just...",
           "audio": "/songs/less%20of%20you%20keshi/2_1.mp3"
         },
         {
-          "text": "Things just feel a lot worse in the nighttime, and I'm a little terrified.",
-          "displayHtml": "Things just feel a lot <span class=\"lyric-word\">worse</span> in the <span class=\"lyric-word\">nighttime</span>, and I'm a little <span class=\"lyric-phrase\">terrified</span>.",
+          "text": "I needed to hear your voice.",
+          "displayHtml": "I needed to <span class=\"lyric-phrase\">hear your voice</span>.",
           "audio": "/songs/less%20of%20you%20keshi/2_2.mp3"
         }
       ],
-      "japanese": "ただ…すごく参ってるんだ。夜になると余計にひどくなるし、ちょっと怯えてるんだ。"
+      "japanese": "ううん、大丈夫じゃないの。ただ… あなたの声が聞きたかっただけ。"
     },
     {
       "speaker": "B",
-      "speakerName": "Chloe",
-      "speakerType": "女性",
+      "speakerName": "Ken",
+      "speakerType": "男性",
       "sentences": [
         {
           "text": "Oh, honey.",
@@ -105,109 +172,119 @@
           "audio": "/songs/less%20of%20you%20keshi/3_0.mp3"
         },
         {
-          "text": "I wish I was there.",
-          "displayHtml": "I wish I was there.",
+          "text": "What's wrong?",
+          "displayHtml": "What's wrong?",
           "audio": "/songs/less%20of%20you%20keshi/3_1.mp3"
         },
         {
-          "text": "I know a face on a screen isn't an adequate replacement for me being with you.",
-          "displayHtml": "I know <span class=\"lyric-phrase\">a face on a screen</span> isn't an <span class=\"lyric-word\">adequate</span> replacement for me being with you.",
+          "text": "Are you having trouble sleeping again?",
+          "displayHtml": "Are you having trouble sleeping again?",
           "audio": "/songs/less%20of%20you%20keshi/3_2.mp3"
         }
       ],
-      "japanese": "あら、大丈夫？側にいられたらよかったのに。画面越しの顔じゃ、私が一緒にいることの十分な代わりにはならないって分かってる。"
+      "japanese": "どうしたの、ハニー。何かあった？また眠れないのかい？"
     },
     {
       "speaker": "A",
-      "speakerName": "Alex",
-      "speakerType": "男性",
-      "sentences": [
-        {
-          "text": "No, it's not.",
-          "displayHtml": "No, it's not.",
-          "audio": "/songs/less%20of%20you%20keshi/4_0.mp3"
-        },
-        {
-          "text": "You're the only thing that's ever made sense to me.",
-          "displayHtml": "You're <span class=\"lyric-phrase\">the only thing that's ever made sense to me</span>.",
-          "audio": "/songs/less%20of%20you%20keshi/4_1.mp3"
-        },
-        {
-          "text": "I just...",
-          "displayHtml": "I just...",
-          "audio": "/songs/less%20of%20you%20keshi/4_2.mp3"
-        },
-        {
-          "text": "I don't know how to do this without you.",
-          "displayHtml": "I don't know how to do this without you.",
-          "audio": "/songs/less%20of%20you%20keshi/4_3.mp3"
-        }
-      ],
-      "japanese": "うん、そうなんだ。君は僕にとって唯一意味のある存在なんだ。ただ…君なしでどうすればいいか分からないよ。"
-    },
-    {
-      "speaker": "B",
-      "speakerName": "Chloe",
+      "speakerName": "Maya",
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "It's okay.",
-          "displayHtml": "It's okay.",
-          "audio": "/songs/less%20of%20you%20keshi/5_0.mp3"
+          "text": "Yeah.",
+          "displayHtml": "Yeah.",
+          "audio": "/songs/less%20of%20you%20keshi/4_0.mp3"
         },
         {
-          "text": "Take a deep breath.",
-          "displayHtml": "Take a deep breath.",
-          "audio": "/songs/less%20of%20you%20keshi/5_1.mp3"
+          "text": "My mind is racing.",
+          "displayHtml": "My mind is racing.",
+          "audio": "/songs/less%20of%20you%20keshi/4_1.mp3"
+        },
+        {
+          "text": "It just gets worse at night.",
+          "displayHtml": "It just gets worse at <span class=\"lyric-word\">night</span>.",
+          "audio": "/songs/less%20of%20you%20keshi/4_2.mp3"
+        },
+        {
+          "text": "I feel so lost without you.",
+          "displayHtml": "I feel so <span class=\"lyric-phrase\">lost without you</span>.",
+          "audio": "/songs/less%20of%20you%20keshi/4_3.mp3"
+        }
+      ],
+      "japanese": "うん。頭の中がぐるぐるしてるの。夜になると余計にね。あなたがいないと、とても心細くなるの。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Ken",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "I understand.",
+          "displayHtml": "I understand.",
+          "audio": "/songs/less%20of%20you%20keshi/5_0.mp3"
         },
         {
           "text": "I'm here for you.",
           "displayHtml": "I'm here for you.",
-          "audio": "/songs/less%20of%20you%20keshi/5_2.mp3"
+          "audio": "/songs/less%20of%20you%20keshi/5_1.mp3"
         },
         {
-          "text": "Just tell me everything, and I'll calm you down.",
-          "displayHtml": "Just tell me everything, and I'll <span class=\"lyric-phrase\">calm you down</span>.",
-          "audio": "/songs/less%20of%20you%20keshi/5_3.mp3"
+          "text": "A face on a screen isn't the same, but I wish I could be there with you right now.",
+          "displayHtml": "A <span class=\"lyric-phrase\">face on a screen</span> isn't the same, but I wish I could be there <span class=\"lyric-phrase\">with you</span> right now.",
+          "audio": "/songs/less%20of%20you%20keshi/5_2.mp3"
         }
       ],
-      "japanese": "大丈夫だよ。深呼吸して。私がそばにいるから。全部話してごらん、落ち着かせてあげる。"
+      "japanese": "わかるよ。僕がいるから。画面越しの顔じゃ同じじゃないけど、今すぐ君のそばにいてあげられればいいのに。"
     },
     {
       "speaker": "A",
-      "speakerName": "Alex",
-      "speakerType": "男性",
-      "sentences": [
-        {
-          "text": "Right now, it feels like time never moved so slow.",
-          "displayHtml": "Right now, it feels like <span class=\"lyric-phrase\">time never moved so slow</span>.",
-          "audio": "/songs/less%20of%20you%20keshi/6_0.mp3"
-        },
-        {
-          "text": "I just need you to tell me where to go, what to do.",
-          "displayHtml": "I just need you to <span class=\"lyric-phrase\">tell me where to go</span>, what to do.",
-          "audio": "/songs/less%20of%20you%20keshi/6_1.mp3"
-        }
-      ],
-      "japanese": "今、時間がこんなにもゆっくり進むことなんてなかったって感じるよ。ただ君にどこに行けばいいか、何をすればいいか教えてほしいんだ。"
-    },
-    {
-      "speaker": "B",
-      "speakerName": "Chloe",
+      "speakerName": "Maya",
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "Okay, let's start with this: just talk to me, stay on the phone.",
-          "displayHtml": "Okay, let's start with this: just talk to me, stay on the phone.",
+          "text": "It's really not the same.",
+          "displayHtml": "It's really not the same.",
+          "audio": "/songs/less%20of%20you%20keshi/6_0.mp3"
+        },
+        {
+          "text": "It makes me feel terrified sometimes when you're not around.",
+          "displayHtml": "It makes me feel <span class=\"lyric-phrase\">terrified</span> sometimes when you're not around.",
+          "audio": "/songs/less%20of%20you%20keshi/6_1.mp3"
+        },
+        {
+          "text": "Could you just calm me down?",
+          "displayHtml": "Could you just <span class=\"lyric-phrase\">calm me down</span>?",
+          "audio": "/songs/less%20of%20you%20keshi/6_2.mp3"
+        }
+      ],
+      "japanese": "本当に違うの。あなたがそばにいないと、時々すごく不安になるの。私を落ち着かせてくれない？"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Ken",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "Of course, I can.",
+          "displayHtml": "Of course, I can.",
           "audio": "/songs/less%20of%20you%20keshi/7_0.mp3"
         },
         {
-          "text": "We'll figure it out together.",
-          "displayHtml": "We'll figure it out together.",
+          "text": "Just breathe with me.",
+          "displayHtml": "Just breathe with me.",
           "audio": "/songs/less%20of%20you%20keshi/7_1.mp3"
+        },
+        {
+          "text": "We'll get through this.",
+          "displayHtml": "We'll get through this.",
+          "audio": "/songs/less%20of%20you%20keshi/7_2.mp3"
+        },
+        {
+          "text": "You're not alone.",
+          "displayHtml": "You're not alone.",
+          "audio": "/songs/less%20of%20you%20keshi/7_3.mp3"
         }
       ],
-      "japanese": "分かった。じゃあ、まずはこうしよう：私と話して、電話を切らないで。一緒に解決策を見つけよう。"
+      "japanese": "もちろん、できるよ。僕と一緒に息をして。きっと乗り越えられるから。君は一人じゃないよ。"
     }
   ],
   "createdAt": "2026-03-22T12:00:46.344Z"

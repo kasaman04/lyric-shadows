@@ -1003,3 +1003,45 @@ body::before {
   font-size: 0.9rem;
 }
 
+/* ===== iOS SAFE AREA / MOBILE ===== */
+
+/* Extend background behind home indicator on iPhone */
+body {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* Play controls: stay above home indicator */
+.play-controls {
+  padding-bottom: calc(16px + env(safe-area-inset-bottom));
+}
+
+/* Conversation area: leave room for taller play controls on iPhone */
+.conversation-area {
+  padding-bottom: calc(120px + env(safe-area-inset-bottom));
+}
+
+/* Lyrics display: same */
+.lyrics-display {
+  padding-bottom: calc(120px + env(safe-area-inset-bottom));
+}
+
+/* Home screen bottom padding if no content */
+.song-grid {
+  padding-bottom: calc(60px + env(safe-area-inset-bottom));
+}
+
+/* Larger touch targets on mobile */
+@media (hover: none) and (pointer: coarse) {
+  .sentence-item {
+    padding: 14px 16px;
+    min-height: 48px;
+  }
+  .tab-btn {
+    padding: 14px 12px;
+  }
+  .back-btn,
+  .restart-btn {
+    width: 44px;
+    height: 44px;
+  }
+}
