@@ -687,6 +687,45 @@ body::before {
 
 .restart-btn:active { background: var(--surface); }
 
+.repeat-btn {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--surface2);
+  color: var(--muted);
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+}
+
+.repeat-btn:active { background: var(--surface); }
+
+.repeat-btn.active {
+  background: rgba(139, 92, 246, 0.2);
+  border-color: var(--purple);
+  color: var(--purple);
+  box-shadow: 0 0 16px rgba(139, 92, 246, 0.3);
+}
+
+.repeat-label {
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  font-size: 0.55rem;
+  font-weight: 800;
+  background: var(--purple);
+  color: white;
+  border-radius: 6px;
+  padding: 1px 4px;
+  line-height: 1.2;
+  letter-spacing: 0.3px;
+}
+
 /* ===== ANIMATIONS ===== */
 @keyframes fadeIn {
   from { opacity: 0; }
