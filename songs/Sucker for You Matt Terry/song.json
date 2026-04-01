@@ -1,0 +1,195 @@
+{
+  "id": "Sucker for You Matt Terry",
+  "folderName": "Sucker for You Matt Terry",
+  "songName": "Sucker for You",
+  "artist": "Matt Terry",
+  "relationship": "職場の同僚",
+  "setting": "オフィスでの昼休み、ダメ女に振り回される主人公と同僚の会話",
+  "speakerA": {
+    "name": "Tom",
+    "type": "男性",
+    "voice": "CfDbY7v8tDkTvB9rNcUw"
+  },
+  "speakerB": {
+    "name": "Mike",
+    "type": "男２",
+    "voice": "nzFihrBIvB34imQBuxub"
+  },
+  "videoId": "FYFFap1JjLQ",
+  "thumbnailUrl": "https://img.youtube.com/vi/FYFFap1JjLQ/hqdefault.jpg",
+  "lyrics": "Shut me out, but pull me close\nKinda loving it, give me your heartache\nHold me tight, but let me go\nKinda loving it, look what you started\nTurn me on, then piss me off\nKinda loving it, got me addicted\nOh, you got me addicted\n\nOh, I don't mind\nWhat you do, what you do, what you do with me, baby\nI'm so down\nDo whatever you want me to do\nWhen you ask me\n\nI don't care how many times you're breaking my heart\nI'm just too weak to stay cool\nGuess I'm a sucker for you\nAnd I know it's complicated\nBut I hate being smart\nSo all the things that you do\nMakes me a sucker for you\nGuess I'm a sucker for you\nGuess I'm a sucker for you\n\nMaking plans, don't show up\nBaby, I don't mind, keeping me waiting\nEvery night, you're by my side\nI know it's really worth every second\n\nI don't wanna let go\nI'm not gonna let go\nEven if you hurt me, baby\nSo go ahead and hurt me, baby\n\nTake me high to low, low\nGet me hot and cold, cold\nGo ahead and call me crazy\nNo, I'm not gonna leave you, baby",
+  "lyricsJa": [
+    {
+      "en": "Shut me out, but pull me close\nKinda loving it, give me your heartache\nHold me tight, but let me go\nKinda loving it, look what you started\nTurn me on, then piss me off\nKinda loving it, got me addicted\nOh, you got me addicted",
+      "ja": "僕を拒絶したかと思えば、抱き寄せてくる\nそんなのも悪くないな、君の抱える痛みを僕におくれ\n強く抱きしめたかと思えば、突き放す\nそんなのも嫌いじゃないよ、ほら、君が始めたことだろ\nその気にさせたかと思えば、またカチンと怒らせる\nうん、それも悪くない。すっかり君の依存症だ\nああ、完全に君の中毒になってる"
+    },
+    {
+      "en": "Oh, I don't mind\nWhat you do, what you do, what you do with me, baby\nI'm so down\nDo whatever you want me to do\nWhen you ask me",
+      "ja": "ああ、僕は気にしないよ\n君が僕に何をしようと、僕をどう扱おうとも\n僕は君のなすがままだよ\n君が望むことは何でもするさ\n君が僕に頼むならね"
+    },
+    {
+      "en": "I don't care how many times you're breaking my heart\nI'm just too weak to stay cool\nGuess I'm a sucker for you\nAnd I know it's complicated\nBut I hate being smart\nSo all the things that you do\nMakes me a sucker for you\nGuess I'm a sucker for you\nGuess I'm a sucker for you",
+      "ja": "君が何度僕の心を砕こうと知ったことか\nクールでい続けるには、僕は弱すぎるんだ\nきっと僕は、君にゾッコンなんだ\n複雑な状況なのは分かってる\nでも、賢く立ち回るのなんてクソ食らえだ\n君がするすべてのことが、僕を君の虜にするんだ\n本当に、僕は君にゾッコンらしくてさ"
+    },
+    {
+      "en": "Making plans, don't show up\nBaby, I don't mind, keeping me waiting\nEvery night, you're by my side\nI know it's really worth every second",
+      "ja": "約束をしたのに、君は現れない\nベイビー、気にしないよ。いくら僕を待たせたって\n毎晩、君が僕のすぐそばにいる\nその1秒1秒に、どれだけの価値があるか分かっているから"
+    },
+    {
+      "en": "I don't wanna let go\nI'm not gonna let go\nEven if you hurt me, baby\nSo go ahead and hurt me, baby\n\nTake me high to low, low\nGet me hot and cold, cold\nGo ahead and call me crazy\nNo, I'm not gonna leave you, baby",
+      "ja": "君を手放したくない\n手放すつもりなんてないよ\nたとえ君が僕を傷つけたとしても\nだからいいよ、思う存分僕を傷つけてくれ\n\n天国からどん底まで突き落としてくれ\n熱く燃え上がらせては、冷え切らせてくれ\nいいさ、僕をイカれてるって呼べばいい\nいや、それでも絶対に僕は君から離れないよ"
+    }
+  ],
+  "conversation": [
+    {
+      "speaker": "B",
+      "speakerName": "Mike",
+      "speakerType": "男２",
+      "sentences": [
+        {
+          "text": "You look terrible today.",
+          "displayHtml": "You look terrible today.",
+          "audio": "/songs/Sucker%20for%20You%20Matt%20Terry/0_0.mp3"
+        },
+        {
+          "text": "Let me guess...",
+          "displayHtml": "Let me guess...",
+          "audio": "/songs/Sucker%20for%20You%20Matt%20Terry/0_1.mp3"
+        },
+        {
+          "text": "she kept you waiting again?",
+          "displayHtml": "she kept you waiting again?",
+          "audio": "/songs/Sucker%20for%20You%20Matt%20Terry/0_2.mp3"
+        }
+      ],
+      "japanese": "今日ひどい顔してるな。当てさせて…また彼女に待たされたのか？"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Tom",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "Yeah.",
+          "displayHtml": "Yeah.",
+          "audio": "/songs/Sucker%20for%20You%20Matt%20Terry/1_0.mp3"
+        },
+        {
+          "text": "We were making plans, but she didn't show up.",
+          "displayHtml": "We were <span class=\"lyric-word\">making plans</span>, but she didn't <span class=\"lyric-word\">show up</span>.",
+          "audio": "/songs/Sucker%20for%20You%20Matt%20Terry/1_1.mp3"
+        },
+        {
+          "text": "But honestly, I don't mind.",
+          "displayHtml": "But honestly, <span class=\"lyric-word\">I don't mind</span>.",
+          "audio": "/songs/Sucker%20for%20You%20Matt%20Terry/1_2.mp3"
+        }
+      ],
+      "japanese": "ああ。約束をしてたんだけど、彼女は来なかった。でも、正直気にしてないんだ。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Mike",
+      "speakerType": "男２",
+      "sentences": [
+        {
+          "text": "You're kidding, right?",
+          "displayHtml": "You're kidding, right?",
+          "audio": "/songs/Sucker%20for%20You%20Matt%20Terry/2_0.mp3"
+        },
+        {
+          "text": "I don't care how many times she's breaking your heart, you need to wake up!",
+          "displayHtml": "I don't care how many times she's <span class=\"lyric-phrase\">breaking your heart</span>, you need to wake up!",
+          "audio": "/songs/Sucker%20for%20You%20Matt%20Terry/2_1.mp3"
+        }
+      ],
+      "japanese": "冗談だろ？彼女が何度お前の心を砕こうと俺の知ったことじゃないが、目を覚ませよ！"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Tom",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "I know it's complicated.",
+          "displayHtml": "I know it's complicated.",
+          "audio": "/songs/Sucker%20for%20You%20Matt%20Terry/3_0.mp3"
+        },
+        {
+          "text": "But I hate being smart about these things.",
+          "displayHtml": "But I <span class=\"lyric-word\">hate being smart</span> about these things.",
+          "audio": "/songs/Sucker%20for%20You%20Matt%20Terry/3_1.mp3"
+        }
+      ],
+      "japanese": "ややこしい状況なのはわかってる。でも俺は、こういうことで賢く立ち回るのなんてクソ食らえなんだ。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Mike",
+      "speakerType": "男２",
+      "sentences": [
+        {
+          "text": "She just likes to turn you on, then piss you off.",
+          "displayHtml": "She just likes to <span class=\"lyric-phrase\">turn you on, then piss you off</span>.",
+          "audio": "/songs/Sucker%20for%20You%20Matt%20Terry/4_0.mp3"
+        },
+        {
+          "text": "She's playing with you!",
+          "displayHtml": "She's playing with you!",
+          "audio": "/songs/Sucker%20for%20You%20Matt%20Terry/4_1.mp3"
+        }
+      ],
+      "japanese": "彼女はただ、お前をその気にさせては怒らせるのが好きなだけだ。遊ばれてるんだよ！"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Tom",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "Go ahead and call me crazy, but I'm staying with her.",
+          "displayHtml": "Go ahead and <span class=\"lyric-word\">call me crazy</span>, but I'm staying with her.",
+          "audio": "/songs/Sucker%20for%20You%20Matt%20Terry/5_0.mp3"
+        },
+        {
+          "text": "Guess I'm just a sucker for her.",
+          "displayHtml": "Guess I'm just a <span class=\"lyric-phrase\">sucker for her</span>.",
+          "audio": "/songs/Sucker%20for%20You%20Matt%20Terry/5_1.mp3"
+        }
+      ],
+      "japanese": "いいさ、俺をイカれてるって呼べばいい。でも彼女とは別れない。どうやら完全に彼女にゾッコンみたいなんだよ。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Mike",
+      "speakerType": "男２",
+      "sentences": [
+        {
+          "text": "Unbelievable.",
+          "displayHtml": "Unbelievable.",
+          "audio": "/songs/Sucker%20for%20You%20Matt%20Terry/6_0.mp3"
+        },
+        {
+          "text": "Why do you even put up with it?",
+          "displayHtml": "Why do you even put up with it?",
+          "audio": "/songs/Sucker%20for%20You%20Matt%20Terry/6_1.mp3"
+        }
+      ],
+      "japanese": "信じられないな。なんでそんな扱いに耐えられるんだよ？"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Tom",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "Because when she is by my side, I know it's worth every second.",
+          "displayHtml": "Because when she is by my side, I know it's <span class=\"lyric-word\">worth every second</span>.",
+          "audio": "/songs/Sucker%20for%20You%20Matt%20Terry/7_0.mp3"
+        }
+      ],
+      "japanese": "なぜなら、彼女がそばにいてくれる時は、その一秒一秒に価値があるって分かっているからさ。"
+    }
+  ],
+  "createdAt": "2026-04-01T16:01:19.029Z"
+}

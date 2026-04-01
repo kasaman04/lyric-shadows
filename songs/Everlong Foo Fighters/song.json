@@ -1,0 +1,199 @@
+{
+  "id": "Everlong Foo Fighters",
+  "folderName": "Everlong Foo Fighters",
+  "songName": "Everlong (Acoustic Version)",
+  "artist": "Foo Fighters",
+  "relationship": "恋人",
+  "setting": "深夜、静かな部屋で過ごす最高のひととき",
+  "speakerA": {
+    "name": "Dave",
+    "type": "男性",
+    "voice": "CfDbY7v8tDkTvB9rNcUw"
+  },
+  "speakerB": {
+    "name": "Louise",
+    "type": "女性",
+    "voice": "cNYrMw9glwJZXR8RwbuR"
+  },
+  "videoId": "YLRlOvzs-XU",
+  "thumbnailUrl": "https://img.youtube.com/vi/YLRlOvzs-XU/hqdefault.jpg",
+  "lyrics": "Hello\nI've waited here for you\nEverlong\n\nTonight\nI throw myself into\nAnd out of the red\nOut of her head she sang\n\nCome down\nAnd waste away with me\nDown with me\nSlow how you wanted it to be\nI'm over my head\nOut of her head she sang\n\nAnd I wonder\nWhen I sing along with you\nIf everything could ever feel this real forever\nIf anything could ever be this good again\nThe only thing I'll ever ask of you\nYou've got to promise not to stop when I say when\nShe sang\n\nBreathe out\nSo I can breathe you in\nHold you in\nAnd now\nI know you've always been\nOut of your head\nOut of my head I sang\n\nAnd I wonder\nWhen I sing along with you\nIf everything could ever feel this real forever\nIf anything could ever be this good again\nThe only thing I'll ever ask of you\nYou've got to promise not to stop when I say when\n\nShe sang\nAnd I wonder...",
+  "lyricsJa": [
+    {
+      "en": "Hello\nI've waited here for you\nEverlong",
+      "ja": "ハロー、ここで君を待っていたんだ\n永遠に続くかと思えるほど、ずっと"
+    },
+    {
+      "en": "Tonight\nI throw myself into\nAnd out of the red\nOut of her head she sang",
+      "ja": "今夜、僕は身を投じる\n突如として、理性を失ったかのように彼女は歌った"
+    },
+    {
+      "en": "Come down\nAnd waste away with me\nDown with me\nSlow how you wanted it to be\nI'm over my head\nOut of her head she sang",
+      "ja": "ここへおいで、僕と一緒に堕ちていこう\n僕のところへ\n君が望んだように、ゆっくりと\n僕はもう手に負えない、夢中になったまま彼女は歌った"
+    },
+    {
+      "en": "And I wonder\nWhen I sing along with you\nIf everything could ever feel this real forever\nIf anything could ever be this good again\nThe only thing I'll ever ask of you\nYou've got to promise not to stop when I say when\nShe sang",
+      "ja": "そして僕は思うんだ\n君と一緒に歌う時\nすべてがいつまでも、これほど本物に感じられるだろうか\nこんなに素晴らしい瞬間が、また訪れるだろうか\n君にお願いしたいことはただ一つ\n僕が「ここだ」と言ったとき、止めないと約束してくれ\n彼女はそう歌った"
+    },
+    {
+      "en": "Breathe out\nSo I can breathe you in\nHold you in\nAnd now\nI know you've always been\nOut of your head\nOut of my head I sang",
+      "ja": "息を吐いて　君の息を僕が吸い込めるように\n君を僕の中に留めておくように\nそして今、分かったんだ\n君もずっと同じだったって\n君も夢中だった、僕も理性を失いながら歌った"
+    },
+    {
+      "en": "And I wonder\nWhen I sing along with you\nIf everything could ever feel this real forever\nIf anything could ever be this good again\nThe only thing I'll ever ask of you\nYou've got to promise not to stop when I say when\n\nShe sang\nAnd I wonder...",
+      "ja": "そして僕は思うんだ\n君と一緒に歌う時\nすべてがいつまでも、これほど本物に感じられるだろうか\nこんなに素晴らしい瞬間が、また訪れるだろうか\n君にお願いしたいことはただ一つ\n僕が「ここだ」と言ったとき、止めないと約束してくれ\n\n彼女はそう歌った\nそして僕は思うんだ…"
+    }
+  ],
+  "conversation": [
+    {
+      "speaker": "A",
+      "speakerName": "Dave",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "Hey, I'm glad you came over.",
+          "displayHtml": "Hey, I'm glad you came over.",
+          "audio": "/songs/Everlong%20Foo%20Fighters/0_0.mp3"
+        },
+        {
+          "text": "I've waited here for you all day.",
+          "displayHtml": "<span class=\"lyric-word\">I've waited here for you</span> all day.",
+          "audio": "/songs/Everlong%20Foo%20Fighters/0_1.mp3"
+        }
+      ],
+      "japanese": "ねえ、来てくれて嬉しいよ。今日はずっと君を待ってたんだ。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Louise",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "I'm glad I'm here too.",
+          "displayHtml": "I'm glad I'm here too.",
+          "audio": "/songs/Everlong%20Foo%20Fighters/1_0.mp3"
+        },
+        {
+          "text": "Working all week was exhausting.",
+          "displayHtml": "Working all week was exhausting.",
+          "audio": "/songs/Everlong%20Foo%20Fighters/1_1.mp3"
+        },
+        {
+          "text": "Now I can finally breathe out.",
+          "displayHtml": "Now I can finally <span class=\"lyric-word\">breathe out</span>.",
+          "audio": "/songs/Everlong%20Foo%20Fighters/1_2.mp3"
+        }
+      ],
+      "japanese": "私も来れて嬉しい。今週はずっと働いてクタクタだった。これでやっと一息つけるわ。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Dave",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "Let's just forget everything tonight.",
+          "displayHtml": "Let's just forget everything tonight.",
+          "audio": "/songs/Everlong%20Foo%20Fighters/2_0.mp3"
+        },
+        {
+          "text": "Come sit here and waste away with me.",
+          "displayHtml": "Come sit here and <span class=\"lyric-phrase\">waste away with me</span>.",
+          "audio": "/songs/Everlong%20Foo%20Fighters/2_1.mp3"
+        }
+      ],
+      "japanese": "今夜は全部忘れよう。ここにおいで、一緒に時を溶かそう。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Louise",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "That sounds perfect.",
+          "displayHtml": "That sounds perfect.",
+          "audio": "/songs/Everlong%20Foo%20Fighters/3_0.mp3"
+        },
+        {
+          "text": "It's so peaceful right now.",
+          "displayHtml": "It's so peaceful right now.",
+          "audio": "/songs/Everlong%20Foo%20Fighters/3_1.mp3"
+        },
+        {
+          "text": "Do you think we could ever feel this real forever?",
+          "displayHtml": "Do you think we could ever <span class=\"lyric-phrase\">feel this real forever</span>?",
+          "audio": "/songs/Everlong%20Foo%20Fighters/3_2.mp3"
+        }
+      ],
+      "japanese": "最高ね。今はとても穏やか。この幸せが永遠に続くなんてこと、あると思う？"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Dave",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "I hope so.",
+          "displayHtml": "I hope so.",
+          "audio": "/songs/Everlong%20Foo%20Fighters/4_0.mp3"
+        },
+        {
+          "text": "But honestly, I sometimes wonder if anything could ever be this good again.",
+          "displayHtml": "But honestly, I sometimes wonder if anything could ever <span class=\"lyric-word\">be this good again</span>.",
+          "audio": "/songs/Everlong%20Foo%20Fighters/4_1.mp3"
+        }
+      ],
+      "japanese": "そう願うよ。でも正直、こんなに素晴らしい瞬間がまた訪れるだろうかって思う時があるよ。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Louise",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "Stop overthinking.",
+          "displayHtml": "Stop overthinking.",
+          "audio": "/songs/Everlong%20Foo%20Fighters/5_0.mp3"
+        },
+        {
+          "text": "The only thing I'll ever ask of you is to enjoy this exact moment.",
+          "displayHtml": "The only thing I'll ever ask of you is to enjoy this exact moment.",
+          "audio": "/songs/Everlong%20Foo%20Fighters/5_1.mp3"
+        }
+      ],
+      "japanese": "考えすぎよ。私があなたにお願いしたいのは、ただ今この瞬間を楽しむことだけ。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Dave",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "You're right.",
+          "displayHtml": "You're right.",
+          "audio": "/songs/Everlong%20Foo%20Fighters/6_0.mp3"
+        },
+        {
+          "text": "I promise I won't stop holding you until you say when.",
+          "displayHtml": "I promise I won't stop holding you until you <span class=\"lyric-word\">say when</span>.",
+          "audio": "/songs/Everlong%20Foo%20Fighters/6_1.mp3"
+        }
+      ],
+      "japanese": "君の言う通りだ。君が「もういい」ってストップをかけるまで、抱きしめるのをやめないと約束するよ。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Louise",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "Then hold me, and let's just stay like this.",
+          "displayHtml": "Then hold me, and let's just stay like this.",
+          "audio": "/songs/Everlong%20Foo%20Fighters/7_0.mp3"
+        }
+      ],
+      "japanese": "じゃあ抱きしめて。このままずっと一緒にいましょう。"
+    }
+  ],
+  "createdAt": "2026-04-01T15:42:10.339Z"
+}
