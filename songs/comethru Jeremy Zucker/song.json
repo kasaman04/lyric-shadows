@@ -1,0 +1,217 @@
+{
+  "id": "comethru Jeremy Zucker",
+  "folderName": "comethru Jeremy Zucker",
+  "songName": "comethru",
+  "artist": "Jeremy Zucker",
+  "relationship": "気心の知れた親友",
+  "setting": "深夜、疲れ切って親友にSOSを出すチャット",
+  "speakerA": {
+    "name": "Jeremy",
+    "type": "男性",
+    "voice": "CfDbY7v8tDkTvB9rNcUw"
+  },
+  "speakerB": {
+    "name": "Friend",
+    "type": "女性",
+    "voice": "cNYrMw9glwJZXR8RwbuR"
+  },
+  "videoId": "qhtJtnac5gc",
+  "thumbnailUrl": "https://img.youtube.com/vi/qhtJtnac5gc/hqdefault.jpg",
+  "lyrics": "I might lose my mind\nWaking when the sun's down\nRiding all these highs\nWaiting for the comedown\nWalk these streets with me\nI'm doing decently\nJust glad that I can breathe, yeah\n\nI'm trying to realize\nIt's alright to not be fine on your own\n\nNow I'm shaking, drinking all this coffee\nThese last few weeks have been exhausting\nI'm lost in my imagination\nAnd there's one thing that I need from you\n\nCan you come through, through\nThrough, yeah\nAnd there's one thing that I need from you\nCan you come through?\n\nAin't got much to do\nToo old for my hometown\nWent to bed at noon\nCouldn't put my phone down\nScrolling patiently\nIt's all the same to me\nJust faces on a screen, yeah\n\nI'm trying to realize\nIt's alright to not be fine on your own\n\nNow I'm shaking, drinking all this coffee\nThese last few weeks have been exhausting\nI'm lost in my imagination\nAnd there's one thing that I need from you\n\nCan you come through, through\nThrough, yeah\nAnd there's one thing that I need from you\nCan you come through, through\nThrough, yeah\nAnd there's one thing that I need from you\nCan you come through?",
+  "lyricsJa": [
+    {
+      "en": "I might lose my mind\nWaking when the sun's down\nRiding all these highs\nWaiting for the comedown\nWalk these streets with me\nI'm doing decently\nJust glad that I can breathe, yeah",
+      "ja": "おかしくなっちゃいそうだよ\n日が落ちてから目が覚めるような生活\nハイテンションで突っ走っては\n反動で落ち込むのをビクビク待ってるんだ\nこの街を一緒に歩いてよ\n僕もそれなりに上手くやってるから\nただ普通に息ができているだけで、今は嬉しいんだよ"
+    },
+    {
+      "en": "I'm trying to realize\nIt's alright to not be fine on your own",
+      "ja": "最近、気づこうとしてるんだ\n一人で抱え込まずに、「今は大丈夫じゃない」って言っても良いんだってね"
+    },
+    {
+      "en": "Now I'm shaking, drinking all this coffee\nThese last few weeks have been exhausting\nI'm lost in my imagination\nAnd there's one thing that I need from you",
+      "ja": "コーヒーの飲みすぎで手が震えてるよ\nここ数週間は本当に疲れ切ってた\nずっと頭の中の妄想に迷い込んでいるけど\n君に一つだけ、お願いしたいことがあるんだ"
+    },
+    {
+      "en": "Can you come through, through\nThrough, yeah\nAnd there's one thing that I need from you\nCan you come through?",
+      "ja": "ちょっと、うちに来てくれない？\n顔を出してほしいんだ\n君にお願いしたいのは一つだけ\nちょっと、うちに来てくれない？"
+    },
+    {
+      "en": "Ain't got much to do\nToo old for my hometown\nWent to bed at noon\nCouldn't put my phone down\nScrolling patiently\nIt's all the same to me\nJust faces on a screen, yeah",
+      "ja": "特にやることもないし\n地元でつるむにはもう歳をとりすぎた\nお昼にベッドに入ったのに\nスマホが手放せなかった\nただ延々と画面をスクロールして\nでもどれを見ても同じに思えるよ\n画面の中に並んだ顔たちにすぎないんだ"
+    },
+    {
+      "en": "I'm trying to realize\nIt's alright to not be fine on your own",
+      "ja": "最近、気づこうとしてるんだ\n一人で抱え込まずに、「今は大丈夫じゃない」って言っても良いんだってね"
+    },
+    {
+      "en": "Now I'm shaking, drinking all this coffee\nThese last few weeks have been exhausting\nI'm lost in my imagination\nAnd there's one thing that I need from you",
+      "ja": "コーヒーの飲みすぎで手が震えてるよ\nここ数週間は本当に疲れ切ってた\nずっと頭の中の妄想に迷い込んでいるけど\n君に一つだけ、お願いしたいことがあるんだ"
+    },
+    {
+      "en": "Can you come through, through\nThrough, yeah\nAnd there's one thing that I need from you\nCan you come through, through\nThrough, yeah\nAnd there's one thing that I need from you\nCan you come through?",
+      "ja": "ちょっと、うちに来てくれない？\n顔を出してほしいんだ\n君にお願いしたいのは一つだけ\nちょっと、うちに来てくれない？\nちょっと顔を出してほしいんだ\n君におねがいしたいのは一つだけ\nねえ、ちょっとうちに来てくれない？"
+    }
+  ],
+  "conversation": [
+    {
+      "speaker": "A",
+      "speakerName": "Jeremy",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "Hey, are you awake?",
+          "displayHtml": "Hey, are you awake?",
+          "audio": "/songs/comethru%20Jeremy%20Zucker/0_0.mp3"
+        },
+        {
+          "text": "I feel like I might lose my mind tonight.",
+          "displayHtml": "I feel like I might <span class=\"lyric-word\">lose my mind</span> tonight.",
+          "audio": "/songs/comethru%20Jeremy%20Zucker/0_1.mp3"
+        }
+      ],
+      "japanese": "ねえ、起きてる？今夜はなんだかおかしくなっちゃいそうだよ。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Friend",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "Yeah, I'm awake.",
+          "displayHtml": "Yeah, I'm awake.",
+          "audio": "/songs/comethru%20Jeremy%20Zucker/1_0.mp3"
+        },
+        {
+          "text": "What's wrong?",
+          "displayHtml": "What's wrong?",
+          "audio": "/songs/comethru%20Jeremy%20Zucker/1_1.mp3"
+        },
+        {
+          "text": "You've been working too hard lately.",
+          "displayHtml": "You've been working too hard lately.",
+          "audio": "/songs/comethru%20Jeremy%20Zucker/1_2.mp3"
+        }
+      ],
+      "japanese": "起きてるよ。どうしたの？最近働きすぎなんじゃない？"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Jeremy",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "These last few weeks have been so exhausting.",
+          "displayHtml": "These last few weeks have been so <span class=\"lyric-word\">exhausting</span>.",
+          "audio": "/songs/comethru%20Jeremy%20Zucker/2_0.mp3"
+        },
+        {
+          "text": "And now I'm shaking, drinking all this coffee.",
+          "displayHtml": "And now I'm <span class=\"lyric-phrase\">shaking, drinking all this coffee</span>.",
+          "audio": "/songs/comethru%20Jeremy%20Zucker/2_1.mp3"
+        }
+      ],
+      "japanese": "ここ数週間、本当に疲れきっててさ。コーヒーの飲み過ぎで、今は手が震えてるんだ。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Friend",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "You need to log off.",
+          "displayHtml": "You need to log off.",
+          "audio": "/songs/comethru%20Jeremy%20Zucker/3_0.mp3"
+        },
+        {
+          "text": "Have you been scrolling through social media again?",
+          "displayHtml": "Have you been scrolling through social media again?",
+          "audio": "/songs/comethru%20Jeremy%20Zucker/3_1.mp3"
+        }
+      ],
+      "japanese": "デジタルデトックスしなよ。またSNSばっかり見てたの？"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Jeremy",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "Yeah, I couldn't put my phone down.",
+          "displayHtml": "Yeah, I <span class=\"lyric-phrase\">couldn't put my phone down</span>.",
+          "audio": "/songs/comethru%20Jeremy%20Zucker/4_0.mp3"
+        },
+        {
+          "text": "Everyone just looks like faces on a screen.",
+          "displayHtml": "Everyone just looks like <span class=\"lyric-word\">faces on a screen</span>.",
+          "audio": "/songs/comethru%20Jeremy%20Zucker/4_1.mp3"
+        },
+        {
+          "text": "It's depressing.",
+          "displayHtml": "It's depressing.",
+          "audio": "/songs/comethru%20Jeremy%20Zucker/4_2.mp3"
+        }
+      ],
+      "japanese": "うん、スマホが手放せなかった。みんな、ただの画面の中の顔にしか見えなくて。憂鬱だよ。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Friend",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "I get it.",
+          "displayHtml": "I get it.",
+          "audio": "/songs/comethru%20Jeremy%20Zucker/5_0.mp3"
+        },
+        {
+          "text": "Sometimes you just need real company.",
+          "displayHtml": "Sometimes you just need real company.",
+          "audio": "/songs/comethru%20Jeremy%20Zucker/5_1.mp3"
+        }
+      ],
+      "japanese": "分かるよ。たまには画面越しじゃない、現実の話し相手が必要だよね。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Jeremy",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "I'm trying to realize it's alright to not be fine on your own.",
+          "displayHtml": "I'm trying to realize it's alright to <span class=\"lyric-phrase\">not be fine on your own</span>.",
+          "audio": "/songs/comethru%20Jeremy%20Zucker/6_0.mp3"
+        },
+        {
+          "text": "So...",
+          "displayHtml": "So...",
+          "audio": "/songs/comethru%20Jeremy%20Zucker/6_1.mp3"
+        },
+        {
+          "text": "can you come through?",
+          "displayHtml": "can you <span class=\"lyric-word\">come through</span>?",
+          "audio": "/songs/comethru%20Jeremy%20Zucker/6_2.mp3"
+        }
+      ],
+      "japanese": "一人で抱え込まずに「大丈夫じゃない」って言って良いんだって気づこうとしてる。だから…ちょっとうちに来てくれない？"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Friend",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "Say no more.",
+          "displayHtml": "Say no more.",
+          "audio": "/songs/comethru%20Jeremy%20Zucker/7_0.mp3"
+        },
+        {
+          "text": "I'll bring some decaf tea and be there in ten.",
+          "displayHtml": "I'll bring some decaf tea and be there in ten.",
+          "audio": "/songs/comethru%20Jeremy%20Zucker/7_1.mp3"
+        }
+      ],
+      "japanese": "それ以上言わなくていいよ。カフェインレスのお茶を持って、10分で行くね。"
+    }
+  ],
+  "createdAt": "2026-04-01T17:00:28.717Z"
+}
