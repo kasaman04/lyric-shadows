@@ -1,0 +1,287 @@
+{
+  "id": "Hard To Love ONE OK ROCK",
+  "folderName": "Hard To Love ONE OK ROCK",
+  "songName": "Hard To Love",
+  "artist": "ONE OK ROCK",
+  "relationship": "恩師と元・教え子",
+  "setting": "A former delinquent student visits his old teacher's classroom years after graduation to express his gratitude.",
+  "speakerA": {
+    "name": "Leo",
+    "type": "男性",
+    "voice": "CfDbY7v8tDkTvB9rNcUw"
+  },
+  "speakerB": {
+    "name": "Mr. Henderson",
+    "type": "男２",
+    "voice": "nzFihrBIvB34imQBuxub"
+  },
+  "videoId": "AXhLGGr1YOk",
+  "thumbnailUrl": "https://i.ytimg.com/vi/AXhLGGr1YOk/hqdefault.jpg",
+  "lyrics": "But I couldn’t even tie them up.\nNo matter how big and tall I grow; I was always looking up to you.\n\nYou show me that I was just a ‘diamond in the rough’.\nYou helped me to grow into the man that I’ve become.\nWe’ve been down,\nwe’ve been up.\nI hope I made you proud enough.\nYou make it look easy, even when I’m hard to love.\n\nWhen I dropped out of school, you told me that my time was up.\n\nI was a ‘rebel with a cause’\nJust didn’t know what it was.\nSo I waited but I jumped the barricade.\nYou said you did the same thing at my age.\n\nYou show me that I was just a ‘diamond in the rough’.\nYou helped me to grow into the man that I’ve become.\nWe’ve been down,\nwe’ve been up.\nI hope I made you proud enough.\nYou make it look easy, even when I’m hard to love.\n\nWe’ve been down,\nwe’ve been up.\nI hope I made you proud enough.\n\nYou make it look easy, even when I’m hard to love.",
+  "lyricsJa": [
+    {
+      "en": "But I couldn’t even tie them up.",
+      "ja": "だけど自分じゃ結ぶことさえできなかった"
+    },
+    {
+      "en": "No matter how big and tall I grow; I was always looking up to you.",
+      "ja": "どんなに体が大きく成長しても、僕はいつもあなたを見上げていた"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "You show me that I was just a ‘diamond in the rough’.",
+      "ja": "あなたは僕がただの「磨けば光る原石」だって教えてくれた"
+    },
+    {
+      "en": "You helped me to grow into the man that I’ve become.",
+      "ja": "今の僕という男になれるよう、支えてくれた"
+    },
+    {
+      "en": "We’ve been down,",
+      "ja": "どん底の時もあれば"
+    },
+    {
+      "en": "we’ve been up.",
+      "ja": "絶好調の時もあった"
+    },
+    {
+      "en": "I hope I made you proud enough.",
+      "ja": "少しはあなたの誇りになれたかな"
+    },
+    {
+      "en": "You make it look easy, even when I’m hard to love.",
+      "ja": "愛しにくい僕なのに、あなたは事もなげに愛してくれた"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "When I dropped out of school, you told me that my time was up.",
+      "ja": "学校を中退した時、あなたは「もう時間切れだ」って言ったね"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "I was a ‘rebel with a cause’",
+      "ja": "僕は「理由ある反抗児」だった"
+    },
+    {
+      "en": "Just didn’t know what it was.",
+      "ja": "ただその理由が何なのか、自分でも分からなかった"
+    },
+    {
+      "en": "So I waited but I jumped the barricade.",
+      "ja": "待ってはみたけど、結局バリケードを飛び越えた"
+    },
+    {
+      "en": "You said you did the same thing at my age.",
+      "ja": "僕と同じくらいの頃、あなたも同じことをしたって言ってたね"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "You show me that I was just a ‘diamond in the rough’.",
+      "ja": "あなたは僕がただの「磨けば光る原石」だって教えてくれた"
+    },
+    {
+      "en": "You helped me to grow into the man that I’ve become.",
+      "ja": "今の僕という男になれるよう、支えてくれた"
+    },
+    {
+      "en": "We’ve been down,",
+      "ja": "どん底の時もあれば"
+    },
+    {
+      "en": "we’ve been up.",
+      "ja": "絶好調の時もあった"
+    },
+    {
+      "en": "I hope I made you proud enough.",
+      "ja": "少しはあなたの誇りになれたかな"
+    },
+    {
+      "en": "You make it look easy, even when I’m hard to love.",
+      "ja": "愛しにくい僕なのに、あなたは事もなげに愛してくれた"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "We’ve been down,",
+      "ja": "どん底の時もあれば"
+    },
+    {
+      "en": "we’ve been up.",
+      "ja": "絶好調の時もあった"
+    },
+    {
+      "en": "I hope I made you proud enough.",
+      "ja": "少しはあなたの誇りになれたかな"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "You make it look easy, even when I’m hard to love.",
+      "ja": "愛しにくい僕なのに、あなたは事もなげに愛してくれた"
+    }
+  ],
+  "conversation": [
+    {
+      "speaker": "A",
+      "speakerName": "Leo",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "Mr.",
+          "displayHtml": "Mr.",
+          "audio": "/songs/Hard%20To%20Love%20ONE%20OK%20ROCK/0_0.mp3"
+        },
+        {
+          "text": "Henderson, it’s been a long time.",
+          "displayHtml": "Henderson, it’s been a long time.",
+          "audio": "/songs/Hard%20To%20Love%20ONE%20OK%20ROCK/0_1.mp3"
+        },
+        {
+          "text": "I wanted to stop by and finally thank you for not giving up on me.",
+          "displayHtml": "I wanted to stop by and finally thank you for not giving up on me.",
+          "audio": "/songs/Hard%20To%20Love%20ONE%20OK%20ROCK/0_2.mp3"
+        }
+      ],
+      "japanese": "ヘンダーソン先生、ご無沙汰しています。どうしても一度伺って、先生が見捨てずにいてくれたことにお礼を言いたかったんです。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Mr. Henderson",
+      "speakerType": "男２",
+      "sentences": [
+        {
+          "text": "Leo!",
+          "displayHtml": "Leo!",
+          "audio": "/songs/Hard%20To%20Love%20ONE%20OK%20ROCK/1_0.mp3"
+        },
+        {
+          "text": "Look at you.",
+          "displayHtml": "Look at you.",
+          "audio": "/songs/Hard%20To%20Love%20ONE%20OK%20ROCK/1_1.mp3"
+        },
+        {
+          "text": "No matter how much you’ve grown, I still see that rebel I used to know.",
+          "displayHtml": "No matter <span class=\"lyric-phrase\">how much you’ve grown</span>, I still see that <span class=\"lyric-word\">rebel</span> I used to know.",
+          "audio": "/songs/Hard%20To%20Love%20ONE%20OK%20ROCK/1_2.mp3"
+        }
+      ],
+      "japanese": "レオじゃないか！立派になったな。どんなに成長しても、当時の反抗的だった君の面影があるよ。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Leo",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "Yeah, I was a real rebel with a cause back then, even though I didn’t know what I was fighting for.",
+          "displayHtml": "Yeah, I was a real <span class=\"lyric-phrase\">rebel with a cause</span> back then, even though I <span class=\"lyric-word\">didn’t know</span> what I was fighting for.",
+          "audio": "/songs/Hard%20To%20Love%20ONE%20OK%20ROCK/2_0.mp3"
+        }
+      ],
+      "japanese": "ええ、当時は何に対してかも分からず、ただ理由もなく反抗ばかりしていましたから。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Mr. Henderson",
+      "speakerType": "男２",
+      "sentences": [
+        {
+          "text": "You were just a diamond in the rough.",
+          "displayHtml": "You were just a <span class=\"lyric-phrase\">diamond in the rough</span>.",
+          "audio": "/songs/Hard%20To%20Love%20ONE%20OK%20ROCK/3_0.mp3"
+        },
+        {
+          "text": "I always knew you’d grow into a fine man one day.",
+          "displayHtml": "I always knew you’d <span class=\"lyric-word\">grow</span> into a fine man one day.",
+          "audio": "/songs/Hard%20To%20Love%20ONE%20OK%20ROCK/3_1.mp3"
+        }
+      ],
+      "japanese": "君はただの磨けば光る原石だったんだ。いつか立派な大人になってくれると信じていたよ。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Leo",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "I know I was a handful.",
+          "displayHtml": "I know I was a handful.",
+          "audio": "/songs/Hard%20To%20Love%20ONE%20OK%20ROCK/4_0.mp3"
+        },
+        {
+          "text": "I really appreciate how you stayed by me, even when I was hard to love.",
+          "displayHtml": "I really appreciate how you stayed by me, even when I was <span class=\"lyric-phrase\">hard to love</span>.",
+          "audio": "/songs/Hard%20To%20Love%20ONE%20OK%20ROCK/4_1.mp3"
+        }
+      ],
+      "japanese": "手のかかる生徒でしたよね。あんなに扱いづらかった僕のそばに、ずっといてくれたことに本当に感謝しています。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Mr. Henderson",
+      "speakerType": "男２",
+      "sentences": [
+        {
+          "text": "We definitely had our ups and downs, but seeing you today makes it all worth it.",
+          "displayHtml": "We definitely had our <span class=\"lyric-phrase\">ups and downs</span>, but seeing you today makes it all worth it.",
+          "audio": "/songs/Hard%20To%20Love%20ONE%20OK%20ROCK/5_0.mp3"
+        }
+      ],
+      "japanese": "確かにいろんなことがあったけれど、今の君の姿を見れば、すべて報われた気分だよ。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Leo",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "I hope I finally made you proud.",
+          "displayHtml": "I hope I finally <span class=\"lyric-phrase\">made you proud</span>.",
+          "audio": "/songs/Hard%20To%20Love%20ONE%20OK%20ROCK/6_0.mp3"
+        },
+        {
+          "text": "Your lessons are like the blood in my veins now; they're a part of everything I do.",
+          "displayHtml": "Your lessons are like the <span class=\"lyric-word\">blood</span> in my veins now; they're a part of everything I do.",
+          "audio": "/songs/Hard%20To%20Love%20ONE%20OK%20ROCK/6_1.mp3"
+        }
+      ],
+      "japanese": "少しは先生の誇りになれたでしょうか。先生の教えは今も僕の血肉となって、自分の一部になっています。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Mr. Henderson",
+      "speakerType": "男２",
+      "sentences": [
+        {
+          "text": "You’ve done more than enough, Leo.",
+          "displayHtml": "You’ve done more than enough, Leo.",
+          "audio": "/songs/Hard%20To%20Love%20ONE%20OK%20ROCK/7_0.mp3"
+        },
+        {
+          "text": "I'm just happy to see you’ve found your way.",
+          "displayHtml": "I'm just happy to see you’ve found your way.",
+          "audio": "/songs/Hard%20To%20Love%20ONE%20OK%20ROCK/7_1.mp3"
+        }
+      ],
+      "japanese": "十分すぎるほどだよ、レオ。君が自分の道を見つけられたことが、何より嬉しいんだ。"
+    }
+  ],
+  "createdAt": "2026-04-04T18:24:54.195Z",
+  "hasLocalAudio": true
+}
