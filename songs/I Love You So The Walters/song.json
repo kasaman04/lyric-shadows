@@ -1,0 +1,238 @@
+{
+  "id": "I Love You So The Walters",
+  "folderName": "I Love You So The Walters",
+  "songName": "I Love You So",
+  "artist": "The Walters",
+  "relationship": "友達",
+  "setting": "Two friends are talking about a difficult breakup at a cafe.",
+  "speakerA": {
+    "name": "Ben",
+    "type": "男性",
+    "voice": "CfDbY7v8tDkTvB9rNcUw"
+  },
+  "speakerB": {
+    "name": "Chris",
+    "type": "男性",
+    "voice": "CfDbY7v8tDkTvB9rNcUw"
+  },
+  "videoId": "NwFVSclD_uc",
+  "thumbnailUrl": "https://i.ytimg.com/vi/NwFVSclD_uc/hqdefault.jpg",
+  "lyrics": "I just need someone in my life to give it structure\nTo handle all the selfish ways I'd spend my time without her\nYou're everything I want, but I can't deal with all your lovers\nSaying I'm the one, but it's your actions that speak louder\nGiving me love when you are down and need another\nI've got to get away and let you go, I've got to get over\n\nBut I love you so\nI love you so\nI love you so\nI love you so\n\nI'm gonna pack my things and leave you behind\nThis feeling's old and I know that I've made up my mind\nI hope you feel what I felt when you shattered my soul\n'Cause you were cruel and I'm a fool\nSo please let me go\n\nBut I love you so (please let me go)\nI love you so (please let me go)\nI love you so (please let me go)\nI love you so",
+  "lyricsJa": [
+    {
+      "en": "I just need someone in my life to give it structure",
+      "ja": "僕の人生に秩序を与えてくれる誰かが必要なんだ"
+    },
+    {
+      "en": "To handle all the selfish ways I'd spend my time without her",
+      "ja": "彼女がいなければ身勝手に過ぎてしまう時間を、正してくれるような人が"
+    },
+    {
+      "en": "You're everything I want, but I can't deal with all your lovers",
+      "ja": "君は僕が望むすべてだけど、他に男たちがいるのは耐えられない"
+    },
+    {
+      "en": "Saying I'm the one, but it's your actions that speak louder",
+      "ja": "僕だけだと言いながら、君の行動がすべてを物語っている"
+    },
+    {
+      "en": "Giving me love when you are down and need another",
+      "ja": "落ち込んで誰かを必要としている時だけ、僕に愛をくれるんだね"
+    },
+    {
+      "en": "I've got to get away and let you go, I've got to get over",
+      "ja": "逃げ出して君を離し、この思いを吹っ切らなきゃいけないんだ"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "But I love you so",
+      "ja": "だけど、君をこんなにも愛してる"
+    },
+    {
+      "en": "I love you so",
+      "ja": "君をこんなにも愛してる"
+    },
+    {
+      "en": "I love you so",
+      "ja": "君をこんなにも愛してる"
+    },
+    {
+      "en": "I love you so",
+      "ja": "君をこんなにも愛してる"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "I'm gonna pack my things and leave you behind",
+      "ja": "荷物をまとめて、君を置いていくよ"
+    },
+    {
+      "en": "This feeling's old and I know that I've made up my mind",
+      "ja": "こんな思いはもうたくさんだ、決心はついているんだ"
+    },
+    {
+      "en": "I hope you feel what I felt when you shattered my soul",
+      "ja": "僕の心を粉々に打ち砕いた時の痛みを、君も味わえばいい"
+    },
+    {
+      "en": "'Cause you were cruel and I'm a fool",
+      "ja": "君は残酷で、僕は愚かだったから"
+    },
+    {
+      "en": "So please let me go",
+      "ja": "だからお願いだ、僕を解放してくれ"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "But I love you so (please let me go)",
+      "ja": "だけど君をこんなにも愛してる（お願いだ 行かせてくれ）"
+    },
+    {
+      "en": "I love you so (please let me go)",
+      "ja": "君をこんなにも愛してる（お願いだ 行かせてくれ）"
+    },
+    {
+      "en": "I love you so (please let me go)",
+      "ja": "君をこんなにも愛してる（お願いだ 行かせてくれ）"
+    },
+    {
+      "en": "I love you so",
+      "ja": "君をこんなにも愛してる"
+    }
+  ],
+  "conversation": [
+    {
+      "speaker": "A",
+      "speakerName": "Ben",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "So, are you really going to leave her behind?",
+          "displayHtml": "So, are you really going to <span class=\"lyric-phrase\">leave her behind</span>?",
+          "audio": "/songs/I%20Love%20You%20So%20The%20Walters/0_0.mp3"
+        }
+      ],
+      "japanese": "それで、本当に彼女と別れるつもりなの？"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Chris",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "I have to.",
+          "displayHtml": "I have to.",
+          "audio": "/songs/I%20Love%20You%20So%20The%20Walters/1_0.mp3"
+        },
+        {
+          "text": "This is getting old and I've finally made up my mind.",
+          "displayHtml": "<span class=\"lyric-phrase\">This is getting old</span> and I've finally <span class=\"lyric-phrase\">made up my mind</span>.",
+          "audio": "/songs/I%20Love%20You%20So%20The%20Walters/1_1.mp3"
+        }
+      ],
+      "japanese": "ああ。もうこんな状況にはうんざりだし、ようやく決心がついたよ。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Ben",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "I'm sorry.",
+          "displayHtml": "I'm sorry.",
+          "audio": "/songs/I%20Love%20You%20So%20The%20Walters/2_0.mp3"
+        },
+        {
+          "text": "I know you felt like she was everything you want.",
+          "displayHtml": "I know you felt like she was <span class=\"lyric-phrase\">everything you want</span>.",
+          "audio": "/songs/I%20Love%20You%20So%20The%20Walters/2_1.mp3"
+        }
+      ],
+      "japanese": "残念だね。彼女は君にとって理想の相手だと思ってたのに。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Chris",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "She says I'm the one, but her actions speak louder than words.",
+          "displayHtml": "She says I'm the one, but her <span class=\"lyric-phrase\">actions speak louder</span> than words.",
+          "audio": "/songs/I%20Love%20You%20So%20The%20Walters/3_0.mp3"
+        }
+      ],
+      "japanese": "彼女は僕が運命の人だなんて言うけど、言葉より行動の方が物語ってるからね。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Ben",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "True.",
+          "displayHtml": "True.",
+          "audio": "/songs/I%20Love%20You%20So%20The%20Walters/4_0.mp3"
+        },
+        {
+          "text": "She only seemed to give you love when she was feeling down.",
+          "displayHtml": "She only seemed to give you <span class=\"lyric-word\">love</span> when she was feeling <span class=\"lyric-word\">down</span>.",
+          "audio": "/songs/I%20Love%20You%20So%20The%20Walters/4_1.mp3"
+        }
+      ],
+      "japanese": "確かに。彼女、自分が落ち込んでる時しか愛情をくれなかったし。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Chris",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "Exactly.",
+          "displayHtml": "Exactly.",
+          "audio": "/songs/I%20Love%20You%20So%20The%20Walters/5_0.mp3"
+        },
+        {
+          "text": "I've been such a fool, but I've got to get away and let her go.",
+          "displayHtml": "I've been such a <span class=\"lyric-word\">fool</span>, but I've got to <span class=\"lyric-phrase\">get away</span> and <span class=\"lyric-phrase\">let her go</span>.",
+          "audio": "/songs/I%20Love%20You%20So%20The%20Walters/5_1.mp3"
+        }
+      ],
+      "japanese": "その通りだよ。僕はバカだった。もう離れて、彼女を吹っ切らなきゃ。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Ben",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "It’s going to be tough since you love her so much.",
+          "displayHtml": "It’s going to be tough since <span class=\"lyric-phrase\">you love her so</span> much.",
+          "audio": "/songs/I%20Love%20You%20So%20The%20Walters/6_0.mp3"
+        }
+      ],
+      "japanese": "あんなに彼女を愛してたんだから、辛いとは思うけど。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Chris",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "It is, but I'm going to pack my things and move out tonight.",
+          "displayHtml": "It is, but I'm going to <span class=\"lyric-phrase\">pack my things</span> and move out tonight.",
+          "audio": "/songs/I%20Love%20You%20So%20The%20Walters/7_0.mp3"
+        }
+      ],
+      "japanese": "ああ。でも、今夜荷物をまとめて出て行くよ。"
+    }
+  ],
+  "createdAt": "2026-04-04T07:02:43.157Z"
+}

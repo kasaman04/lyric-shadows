@@ -1,0 +1,267 @@
+{
+  "id": "【空港の手続き】Check-in Counter",
+  "folderName": "【空港の手続き】Check-in Counter",
+  "songName": "【空港の手続き】Check-in Counter",
+  "artist": "【パターンB】日常会話",
+  "pattern": "B",
+  "relationship": "空港の受付 (ギター持ち込み)",
+  "setting": "A passenger checking in an acoustic guitar for a flight to Tokyo.",
+  "speakerA": {
+    "name": "Alex",
+    "type": "男性",
+    "voice": "CfDbY7v8tDkTvB9rNcUw"
+  },
+  "speakerB": {
+    "name": "Sarah",
+    "type": "女性",
+    "voice": "cNYrMw9glwJZXR8RwbuR"
+  },
+  "lyrics": "[Verse 1]\nChecking in my bags for the flight to Tokyo\nGot my ticket ready and a place I need to go\nDid you pack these bags yourself? Yes, I surely did\nTrying to keep it simple, doing as you bid\n\n[Chorus]\nI've got this acoustic guitar by my side\nCan I take it on the plane for the ride?\nIt's a little too big for the overhead cabin space\nWe'll treat it as oversized baggage, keeping it safe in its place\n\n[Verse 2]\nWill it cost me extra to check this item in?\nLet me check your ticket type before we begin\nYour fare includes one oversized, so there is no extra charge\nThat's a relief to hear, even though it's large\n\n[Chorus]\nI've got this acoustic guitar by my side\nCan I take it on the plane for the ride?\nIt's a little too big for the overhead cabin space\nWe'll treat it as oversized baggage, keeping it safe in its place\n\n[Bridge]\nPlease make sure they handle it carefully\nIt means the world, it's my favorite melody\nDon't you worry, sir, we will treat it right\nIt will be waiting for you at the end of the flight\n\n[Outro]\nHave a safe journey to Tokyo today\nAcoustic guitar playing, sending you on your way\n(Fade out)",
+  "lyricsJa": [
+    {
+      "en": "[Verse 1]",
+      "ja": ""
+    },
+    {
+      "en": "Checking in my bags for the flight to Tokyo",
+      "ja": "東京行きのフライトに向けて、荷物を預けるよ"
+    },
+    {
+      "en": "Got my ticket ready and a place I need to go",
+      "ja": "チケットの準備はできた、向かうべき場所があるんだ"
+    },
+    {
+      "en": "Did you pack these bags yourself? Yes, I surely did",
+      "ja": "「ご自身で荷物を詰めましたか？」ええ、間違いなく私がやりました"
+    },
+    {
+      "en": "Trying to keep it simple, doing as you bid",
+      "ja": "シンプルにいこう、言われた通りに手続きを進めるよ"
+    },
+    {
+      "en": "[Chorus]",
+      "ja": ""
+    },
+    {
+      "en": "I've got this acoustic guitar by my side",
+      "ja": "俺のそばには、このアコースティックギターがある"
+    },
+    {
+      "en": "Can I take it on the plane for the ride?",
+      "ja": "こいつも一緒に、機内に持ち込んで飛べるかい？"
+    },
+    {
+      "en": "It's a little too big for the overhead cabin space",
+      "ja": "「上の棚（オーバーヘッドキャビン）に入れるには少し大きすぎますね」"
+    },
+    {
+      "en": "We'll treat it as oversized baggage, keeping it safe in its place",
+      "ja": "「大型手荷物として、安全な場所でお預かりいたします」"
+    },
+    {
+      "en": "[Verse 2]",
+      "ja": ""
+    },
+    {
+      "en": "Will it cost me extra to check this item in?",
+      "ja": "これを預けるのに、追加料金（別料金）はかかるのかな？"
+    },
+    {
+      "en": "Let me check your ticket type before we begin",
+      "ja": "「手続きの前に、チケットの種類を確認いたしますね」"
+    },
+    {
+      "en": "Your fare includes one oversized, so there is no extra charge",
+      "ja": "「お客様の運賃には大型手荷物1つ分が含まれているので、追加料金はかかりません」"
+    },
+    {
+      "en": "That's a relief to hear, even though it's large",
+      "ja": "少し大きいけど、それを聞いて安心したよ"
+    },
+    {
+      "en": "[Chorus]",
+      "ja": ""
+    },
+    {
+      "en": "I've got this acoustic guitar by my side",
+      "ja": "俺のそばには、このアコースティックギターがある"
+    },
+    {
+      "en": "Can I take it on the plane for the ride?",
+      "ja": "こいつも一緒に、機内に持ち込んで飛べるかい？"
+    },
+    {
+      "en": "It's a little too big for the overhead cabin space",
+      "ja": "「上の棚（オーバーヘッドキャビン）に入れるには少し大きすぎますね」"
+    },
+    {
+      "en": "We'll treat it as oversized baggage, keeping it safe in its place",
+      "ja": "「大型手荷物として、安全な場所でお預かりいたします」"
+    },
+    {
+      "en": "[Bridge]",
+      "ja": ""
+    },
+    {
+      "en": "Please make sure they handle it carefully",
+      "ja": "どうか丁寧に取り扱うようにお願いしますね"
+    },
+    {
+      "en": "It means the world, it's my favorite melody",
+      "ja": "俺の全てなんだ、お気に入りのメロディなんだよ"
+    },
+    {
+      "en": "Don't you worry, sir, we will treat it right",
+      "ja": "「心配いりませんよ、きちんとお取り扱いいたします」"
+    },
+    {
+      "en": "It will be waiting for you at the end of the flight",
+      "ja": "フライトの終わりには、このギターがあなたを待っていますから"
+    },
+    {
+      "en": "[Outro]",
+      "ja": ""
+    },
+    {
+      "en": "Have a safe journey to Tokyo today",
+      "ja": "東京までの空の旅、どうかお気をつけて"
+    },
+    {
+      "en": "Acoustic guitar playing, sending you on your way",
+      "ja": "アコースティックギターの音色が、あなたを見送るよ"
+    },
+    {
+      "en": "(Fade out)",
+      "ja": "(フェードアウト)"
+    }
+  ],
+  "conversation": [
+    {
+      "speaker": "A",
+      "speakerName": "Alex",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "Hi, I'm checking in my bags for the flight to Tokyo.",
+          "displayHtml": "Hi, I'm checking in my bags for the flight to Tokyo.",
+          "audio": "/songs/%E3%80%90%E7%A9%BA%E6%B8%AF%E3%81%AE%E6%89%8B%E7%B6%9A%E3%81%8D%E3%80%91Check-in%20Counter/0_0.mp3"
+        }
+      ],
+      "japanese": "こんにちは。東京行きのフライトで、荷物を預けたいんですが。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Sarah",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "Certainly.",
+          "displayHtml": "Certainly.",
+          "audio": "/songs/%E3%80%90%E7%A9%BA%E6%B8%AF%E3%81%AE%E6%89%8B%E7%B6%9A%E3%81%8D%E3%80%91Check-in%20Counter/1_0.mp3"
+        },
+        {
+          "text": "Did you pack these bags yourself?",
+          "displayHtml": "Did you pack these bags yourself?",
+          "audio": "/songs/%E3%80%90%E7%A9%BA%E6%B8%AF%E3%81%AE%E6%89%8B%E7%B6%9A%E3%81%8D%E3%80%91Check-in%20Counter/1_1.mp3"
+        }
+      ],
+      "japanese": "承知いたしました。これらのお荷物はご自身でパッキングされましたか？"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Alex",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "Yes, I did.",
+          "displayHtml": "Yes, I did.",
+          "audio": "/songs/%E3%80%90%E7%A9%BA%E6%B8%AF%E3%81%AE%E6%89%8B%E7%B6%9A%E3%81%8D%E3%80%91Check-in%20Counter/2_0.mp3"
+        },
+        {
+          "text": "I also have this acoustic guitar.",
+          "displayHtml": "I also have this acoustic guitar.",
+          "audio": "/songs/%E3%80%90%E7%A9%BA%E6%B8%AF%E3%81%AE%E6%89%8B%E7%B6%9A%E3%81%8D%E3%80%91Check-in%20Counter/2_1.mp3"
+        },
+        {
+          "text": "Can I take it on the plane with me?",
+          "displayHtml": "Can I take it on the plane with me?",
+          "audio": "/songs/%E3%80%90%E7%A9%BA%E6%B8%AF%E3%81%AE%E6%89%8B%E7%B6%9A%E3%81%8D%E3%80%91Check-in%20Counter/2_2.mp3"
+        }
+      ],
+      "japanese": "はい、自分でやりました。あと、このアコースティックギターもあるんですが、機内に持ち込めますか？"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Sarah",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "I'm afraid it's a bit too large for the overhead cabin.",
+          "displayHtml": "I'm afraid it's a bit too large for the overhead cabin.",
+          "audio": "/songs/%E3%80%90%E7%A9%BA%E6%B8%AF%E3%81%AE%E6%89%8B%E7%B6%9A%E3%81%8D%E3%80%91Check-in%20Counter/3_0.mp3"
+        },
+        {
+          "text": "We'll have to check it as oversized baggage.",
+          "displayHtml": "We'll have to check it as oversized baggage.",
+          "audio": "/songs/%E3%80%90%E7%A9%BA%E6%B8%AF%E3%81%AE%E6%89%8B%E7%B6%9A%E3%81%8D%E3%80%91Check-in%20Counter/3_1.mp3"
+        }
+      ],
+      "japanese": "申し訳ありませんが、機内の上の棚に入れるには少し大きすぎますね。大型手荷物としてお預かりする必要があります。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Alex",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "Oh, I see.",
+          "displayHtml": "Oh, I see.",
+          "audio": "/songs/%E3%80%90%E7%A9%BA%E6%B8%AF%E3%81%AE%E6%89%8B%E7%B6%9A%E3%81%8D%E3%80%91Check-in%20Counter/4_0.mp3"
+        },
+        {
+          "text": "Will it cost extra to check it in?",
+          "displayHtml": "Will it cost extra to check it in?",
+          "audio": "/songs/%E3%80%90%E7%A9%BA%E6%B8%AF%E3%81%AE%E6%89%8B%E7%B6%9A%E3%81%8D%E3%80%91Check-in%20Counter/4_1.mp3"
+        }
+      ],
+      "japanese": "ああ、なるほど。預けるのに別料金がかかりますか？"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Sarah",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "Let me check your ticket type.",
+          "displayHtml": "Let me check your ticket type.",
+          "audio": "/songs/%E3%80%90%E7%A9%BA%E6%B8%AF%E3%81%AE%E6%89%8B%E7%B6%9A%E3%81%8D%E3%80%91Check-in%20Counter/5_0.mp3"
+        },
+        {
+          "text": "Actually, your fare includes one oversized item, so there is no extra charge.",
+          "displayHtml": "Actually, your fare includes one oversized item, so there is no extra charge.",
+          "audio": "/songs/%E3%80%90%E7%A9%BA%E6%B8%AF%E3%81%AE%E6%89%8B%E7%B6%9A%E3%81%8D%E3%80%91Check-in%20Counter/5_1.mp3"
+        }
+      ],
+      "japanese": "チケットの種類を確認しますね。実はお客様の運賃には大型手荷物1つ分が含まれておりますので、追加料金はかかりません。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Alex",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "That’s a relief.",
+          "displayHtml": "That’s a relief.",
+          "audio": "/songs/%E3%80%90%E7%A9%BA%E6%B8%AF%E3%81%AE%E6%89%8B%E7%B6%9A%E3%81%8D%E3%80%91Check-in%20Counter/6_0.mp3"
+        },
+        {
+          "text": "Please make sure they handle it carefully!",
+          "displayHtml": "Please make sure they handle it carefully!",
+          "audio": "/songs/%E3%80%90%E7%A9%BA%E6%B8%AF%E3%81%AE%E6%89%8B%E7%B6%9A%E3%81%8D%E3%80%91Check-in%20Counter/6_1.mp3"
+        }
+      ],
+      "japanese": "それは安心しました。どうか丁寧に取り扱うようにお願いしますね！"
+    }
+  ],
+  "createdAt": "2026-04-04T06:17:14.180Z"
+}

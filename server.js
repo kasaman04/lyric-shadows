@@ -23,7 +23,11 @@ app.get('/api/songs', async (req, res) => {
       if (!entry.isDirectory()) continue;
       const jsonPath = path.join(SONGS_DIR, entry.name, 'song.json');
       if (await fs.pathExists(jsonPath)) {
-        try { songs.push(await fs.readJson(jsonPath)); } catch {}
+        try {
+          const songObj = await fs.readJson(jsonPath);
+          songObj.hasLocalAudio = await fs.pathExists(path.join(SONGS_DIR, entry.name, 'original.mp3'));
+          songs.push(songObj);
+        } catch {}
       }
     }
     songs.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));

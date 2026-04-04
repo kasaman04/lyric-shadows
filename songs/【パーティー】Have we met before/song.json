@@ -1,0 +1,316 @@
+{
+  "id": "【パーティー】Have we met before",
+  "folderName": "【パーティー】Have we met before",
+  "songName": "【パーティー】Have we met before",
+  "artist": "【パターンB】日常会話",
+  "relationship": "初対面",
+  "speakerA": {
+    "name": "Taylor",
+    "type": "女性",
+    "voice": "cNYrMw9glwJZXR8RwbuR"
+  },
+  "speakerB": {
+    "name": "Alex",
+    "type": "男性",
+    "voice": "CfDbY7v8tDkTvB9rNcUw"
+  },
+  "lyrics": "[Verse 1]\nHave we met before? You look really familiar to me.\nI'm searching my mind, looking through my memory.\n\nI don't think so, but I'm notoriously bad with faces.\nMeeting people in all these different places.\n\nNice to meet you anyway.\nHow do you know the host today?\n\n[Chorus]\nOh, we go way back, yeah, we went to college together.\nThrough the good times and the bad weather.\n\nWhat about you? What's your story?\nI just started working at his company.\n\nNo kidding! How are you liking the new gig?\nDreaming small or are you dreaming big?\n\n[Verse 2]\nIt's been great, the team is super supportive.\nA lot to learn, keeping it positive.\n\nWell, let me introduce you to the old crew.\nYeah, it was really nice meeting you.\n\n[Chorus]\nOh, we go way back, yeah, we went to college together.\nThrough the good times and the bad weather.\n\nWhat about you? What's your story?\nI just started working at his company.\n\nNo kidding! How are you liking the new gig?\nDreaming small or are you dreaming big?\n\n[Bridge]\n(Ooh) You look familiar...\n(Yeah) Notoriously bad with faces...\n(Ooh) We go way back...\n(Yeah) How are you liking the new gig?\n\n[Outro]\nWell, let me introduce you.\nYeah, welcome to the crew.\nNice to meet you.\n\n(Acoustic guitar fade out)",
+  "lyricsJa": [
+    {
+      "en": "[Verse 1]",
+      "ja": ""
+    },
+    {
+      "en": "Have we met before? You look really familiar to me.",
+      "ja": "以前どこかでお会いしましたっけ？ すごく見覚えがあるんです。"
+    },
+    {
+      "en": "I'm searching my mind, looking through my memory.",
+      "ja": "記憶をたどって思い出そうとしているんだけど。"
+    },
+    {
+      "en": "I don't think so, but I'm notoriously bad with faces.",
+      "ja": "多分違うと思いますが、私、本当に人の顔を覚えるのが苦手で。"
+    },
+    {
+      "en": "Meeting people in all these different places.",
+      "ja": "いろんな場所でいろんな人に会うものですから。"
+    },
+    {
+      "en": "Nice to meet you anyway.",
+      "ja": "とにかく、初めまして。"
+    },
+    {
+      "en": "How do you know the host today?",
+      "ja": "今日の主催者とはどういうお知り合いなんですか？"
+    },
+    {
+      "en": "[Chorus]",
+      "ja": ""
+    },
+    {
+      "en": "Oh, we go way back, yeah, we went to college together.",
+      "ja": "ああ、もう長いつきあいですよ。実は大学が一緒だったんです。"
+    },
+    {
+      "en": "Through the good times and the bad weather.",
+      "ja": "良い時も悪い時も、一緒にやってきました。"
+    },
+    {
+      "en": "What about you? What's your story?",
+      "ja": "そちらはどんな関わりですか？"
+    },
+    {
+      "en": "I just started working at his company.",
+      "ja": "彼の会社で働き始めたばかりなんです。"
+    },
+    {
+      "en": "No kidding! How are you liking the new gig?",
+      "ja": "マジですか！新しい職場の居心地はどうですか？"
+    },
+    {
+      "en": "Dreaming small or are you dreaming big?",
+      "ja": "地道にやってる？それとも大きく夢見てる？"
+    },
+    {
+      "en": "[Verse 2]",
+      "ja": ""
+    },
+    {
+      "en": "It's been great, the team is super supportive.",
+      "ja": "すごく良いですよ。チームがめちゃくちゃ協力的で。"
+    },
+    {
+      "en": "A lot to learn, keeping it positive.",
+      "ja": "覚えることは山積みですが、前向きに頑張っています。"
+    },
+    {
+      "en": "Well, let me introduce you to the old crew.",
+      "ja": "それじゃあ、昔からの仲間たちに紹介しますよ。"
+    },
+    {
+      "en": "Yeah, it was really nice meeting you.",
+      "ja": "ええ、本当にお会いできてよかったです。"
+    },
+    {
+      "en": "[Chorus]",
+      "ja": ""
+    },
+    {
+      "en": "Oh, we go way back, yeah, we went to college together.",
+      "ja": "ああ、もう長いつきあいですよ。実は大学が一緒だったんです。"
+    },
+    {
+      "en": "Through the good times and the bad weather.",
+      "ja": "良い時も悪い時も、一緒にやってきました。"
+    },
+    {
+      "en": "What about you? What's your story?",
+      "ja": "そちらはどんな関わりですか？"
+    },
+    {
+      "en": "I just started working at his company.",
+      "ja": "彼の会社で働き始めたばかりなんです。"
+    },
+    {
+      "en": "No kidding! How are you liking the new gig?",
+      "ja": "マジですか！新しい職場の居心地はどうですか？"
+    },
+    {
+      "en": "Dreaming small or are you dreaming big?",
+      "ja": "地道にやってる？それとも大きく夢見てる？"
+    },
+    {
+      "en": "[Bridge]",
+      "ja": ""
+    },
+    {
+      "en": "(Ooh) You look familiar...",
+      "ja": "(Ooh) 見覚えがあるんですが..."
+    },
+    {
+      "en": "(Yeah) Notoriously bad with faces...",
+      "ja": "(Yeah) 人の顔を覚えるのが苦手で..."
+    },
+    {
+      "en": "(Ooh) We go way back...",
+      "ja": "(Ooh) もう長いつきあいですよ..."
+    },
+    {
+      "en": "(Yeah) How are you liking the new gig?",
+      "ja": "(Yeah) 新しい職場はどうですか？"
+    },
+    {
+      "en": "[Outro]",
+      "ja": ""
+    },
+    {
+      "en": "Well, let me introduce you.",
+      "ja": "それじゃあ、紹介しますよ。"
+    },
+    {
+      "en": "Yeah, welcome to the crew.",
+      "ja": "ええ、歓迎します。"
+    },
+    {
+      "en": "Nice to meet you.",
+      "ja": "初めまして。"
+    },
+    {
+      "en": "(Acoustic guitar fade out)",
+      "ja": "(アコースティックギター フェードアウト)"
+    }
+  ],
+  "conversation": [
+    {
+      "speaker": "A",
+      "speakerName": "Taylor",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "Have we met before?",
+          "displayHtml": "Have we met before?",
+          "audio": "/songs/%E3%80%90%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%83%BC%E3%80%91Have%20we%20met%20before/0_0.mp3"
+        },
+        {
+          "text": "You look really familiar.",
+          "displayHtml": "You look really familiar.",
+          "audio": "/songs/%E3%80%90%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%83%BC%E3%80%91Have%20we%20met%20before/0_1.mp3"
+        }
+      ],
+      "japanese": "以前どこかでお会いしましたっけ？ すごく見覚えがあるんですが。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Alex",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "I don't think so, but I'm notoriously bad with faces.",
+          "displayHtml": "I don't think so, but I'm notoriously bad with faces.",
+          "audio": "/songs/%E3%80%90%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%83%BC%E3%80%91Have%20we%20met%20before/1_0.mp3"
+        },
+        {
+          "text": "I'm Alex, by the way.",
+          "displayHtml": "I'm Alex, by the way.",
+          "audio": "/songs/%E3%80%90%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%83%BC%E3%80%91Have%20we%20met%20before/1_1.mp3"
+        }
+      ],
+      "japanese": "多分違うと思いますが、私、本当に人の顔を覚えるのが苦手で。ちなみにアレックスと言います。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Taylor",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "Nice to meet you.",
+          "displayHtml": "Nice to meet you.",
+          "audio": "/songs/%E3%80%90%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%83%BC%E3%80%91Have%20we%20met%20before/2_0.mp3"
+        },
+        {
+          "text": "I'm Taylor.",
+          "displayHtml": "I'm Taylor.",
+          "audio": "/songs/%E3%80%90%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%83%BC%E3%80%91Have%20we%20met%20before/2_1.mp3"
+        },
+        {
+          "text": "How do you know the host?",
+          "displayHtml": "How do you know the host?",
+          "audio": "/songs/%E3%80%90%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%83%BC%E3%80%91Have%20we%20met%20before/2_2.mp3"
+        }
+      ],
+      "japanese": "初めまして。テイラーです。主催者（ホスト）とはどういうお知り合いなんですか？"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Alex",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "Oh, we go way back.",
+          "displayHtml": "Oh, we go way back.",
+          "audio": "/songs/%E3%80%90%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%83%BC%E3%80%91Have%20we%20met%20before/3_0.mp3"
+        },
+        {
+          "text": "We actually went to college together.",
+          "displayHtml": "We actually went to college together.",
+          "audio": "/songs/%E3%80%90%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%83%BC%E3%80%91Have%20we%20met%20before/3_1.mp3"
+        },
+        {
+          "text": "What about you?",
+          "displayHtml": "What about you?",
+          "audio": "/songs/%E3%80%90%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%83%BC%E3%80%91Have%20we%20met%20before/3_2.mp3"
+        }
+      ],
+      "japanese": "ああ、もう長いつきあいですよ。実は大学が一緒だったんです。そちらは？"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Taylor",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "I just started working at his company a few months ago.",
+          "displayHtml": "I just started working at his company a few months ago.",
+          "audio": "/songs/%E3%80%90%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%83%BC%E3%80%91Have%20we%20met%20before/4_0.mp3"
+        }
+      ],
+      "japanese": "数ヶ月前に、彼の会社で働き始めたばかりなんです。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Alex",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "No kidding!",
+          "displayHtml": "No kidding!",
+          "audio": "/songs/%E3%80%90%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%83%BC%E3%80%91Have%20we%20met%20before/5_0.mp3"
+        },
+        {
+          "text": "How are you liking the new gig?",
+          "displayHtml": "How are you liking the new gig?",
+          "audio": "/songs/%E3%80%90%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%83%BC%E3%80%91Have%20we%20met%20before/5_1.mp3"
+        }
+      ],
+      "japanese": "マジですか！新しい仕事（職場）はどうですか？"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Taylor",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "It's been great.",
+          "displayHtml": "It's been great.",
+          "audio": "/songs/%E3%80%90%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%83%BC%E3%80%91Have%20we%20met%20before/6_0.mp3"
+        },
+        {
+          "text": "A lot to learn, but the team is super supportive.",
+          "displayHtml": "A lot to learn, but the team is super supportive.",
+          "audio": "/songs/%E3%80%90%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%83%BC%E3%80%91Have%20we%20met%20before/6_1.mp3"
+        }
+      ],
+      "japanese": "すごく良いですよ。覚えることは山積みですが、チームがめちゃくちゃ協力的で。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Alex",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "That's awesome.",
+          "displayHtml": "That's awesome.",
+          "audio": "/songs/%E3%80%90%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%83%BC%E3%80%91Have%20we%20met%20before/7_0.mp3"
+        },
+        {
+          "text": "Well, let me introduce you to some of the old crew.",
+          "displayHtml": "Well, let me introduce you to some of the old crew.",
+          "audio": "/songs/%E3%80%90%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%83%BC%E3%80%91Have%20we%20met%20before/7_1.mp3"
+        }
+      ],
+      "japanese": "それは最高ですね。それじゃあ、昔からのオフレンドたちに紹介しますよ。"
+    }
+  ],
+  "createdAt": "2026-04-04T05:25:49.400Z"
+}

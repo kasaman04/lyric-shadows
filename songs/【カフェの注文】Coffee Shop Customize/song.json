@@ -1,0 +1,315 @@
+{
+  "id": "【カフェの注文】Coffee Shop Customize",
+  "folderName": "【カフェの注文】Coffee Shop Customize",
+  "songName": "【カフェの注文】Coffee Shop Customize",
+  "artist": "【パターンB】日常会話",
+  "pattern": "B",
+  "relationship": "カフェで注文",
+  "setting": "A customer making a customized order at a coffee shop.",
+  "speakerA": {
+    "name": "Alex",
+    "type": "男性",
+    "voice": "CfDbY7v8tDkTvB9rNcUw"
+  },
+  "speakerB": {
+    "name": "Sarah",
+    "type": "女性",
+    "voice": "cNYrMw9glwJZXR8RwbuR"
+  },
+  "lyrics": "[Verse 1]\nWalking into the shop to start my day\nWaiting in line, knowing exactly what to say\nCan I get a medium iced latte, please?\nTrying to catch a little morning breeze\n\n[Chorus]\nCould I get it with oat milk?\nAnd go light on the ice\nJust one pump of vanilla\nYeah, that sounds really nice\nCustomizing my coffee, exactly how I please\nA perfect little moment, putting my mind at ease\n\n[Verse 2]\nWhat kind of milk would you like with that?\nThe barista smiles, a quick little chat\nCan I get a blueberry muffin warmed up too?\nA sweet little treat before the morning is through\n\n[Chorus]\nCould I get it with oat milk?\nAnd go light on the ice\nJust one pump of vanilla\nYeah, that sounds really nice\nCustomizing my coffee, exactly how I please\nA perfect little moment, putting my mind at ease\n\n[Bridge]\nThat'll be seven-fifty, for here or to go?\nTo go, here's my card, ready for the show\nWe'll have it ready down at the end of the line\nTaking a sip, and it tastes so fine\n\n[Outro]\nJust one pump of vanilla.\nGo light on the ice.\nExactly how I please.\n(Fade out)",
+  "lyricsJa": [
+    {
+      "en": "[Verse 1]",
+      "ja": ""
+    },
+    {
+      "en": "Walking into the shop to start my day",
+      "ja": "一日を始めるために、お店へと足を踏み入れる"
+    },
+    {
+      "en": "Waiting in line, knowing exactly what to say",
+      "ja": "列に並びながら、オーダーする言葉は決まっている"
+    },
+    {
+      "en": "Can I get a medium iced latte, please?",
+      "ja": "「アイスラテのMサイズをお願いできますか？」"
+    },
+    {
+      "en": "Trying to catch a little morning breeze",
+      "ja": "朝の爽やかな風を少しだけつかまえたくて"
+    },
+    {
+      "en": "[Chorus]",
+      "ja": ""
+    },
+    {
+      "en": "Could I get it with oat milk?",
+      "ja": "「オーツミルクに変更できますか？」"
+    },
+    {
+      "en": "And go light on the ice",
+      "ja": "「あと、氷は少なめで」"
+    },
+    {
+      "en": "Just one pump of vanilla",
+      "ja": "「バニラシロップを1プッシュだけ」"
+    },
+    {
+      "en": "Yeah, that sounds really nice",
+      "ja": "ああ、それって最高にいい感じだ"
+    },
+    {
+      "en": "Customizing my coffee, exactly how I please",
+      "ja": "自分の思い通りに、コーヒーをカスタマイズする"
+    },
+    {
+      "en": "A perfect little moment, putting my mind at ease",
+      "ja": "心がほっと安らぐ、完璧なささやかな時間"
+    },
+    {
+      "en": "[Verse 2]",
+      "ja": ""
+    },
+    {
+      "en": "What kind of milk would you like with that?",
+      "ja": "「ミルクの種類はどうなさいますか？」"
+    },
+    {
+      "en": "The barista smiles, a quick little chat",
+      "ja": "バリスタは微笑んで、ちょっとした言葉を交わす"
+    },
+    {
+      "en": "Can I get a blueberry muffin warmed up too?",
+      "ja": "「ブルーベリーマフィンも温めてもらえますか？」"
+    },
+    {
+      "en": "A sweet little treat before the morning is through",
+      "ja": "この朝が終わる前に、ささやかな甘いご褒美を"
+    },
+    {
+      "en": "[Chorus]",
+      "ja": ""
+    },
+    {
+      "en": "Could I get it with oat milk?",
+      "ja": "「オーツミルクに変更できますか？」"
+    },
+    {
+      "en": "And go light on the ice",
+      "ja": "「あと、氷は少なめで」"
+    },
+    {
+      "en": "Just one pump of vanilla",
+      "ja": "「バニラシロップを1プッシュだけ」"
+    },
+    {
+      "en": "Yeah, that sounds really nice",
+      "ja": "ああ、それって最高にいい感じだ"
+    },
+    {
+      "en": "Customizing my coffee, exactly how I please",
+      "ja": "自分の思い通りに、コーヒーをカスタマイズする"
+    },
+    {
+      "en": "A perfect little moment, putting my mind at ease",
+      "ja": "心がほっと安らぐ、完璧なささやかな時間"
+    },
+    {
+      "en": "[Bridge]",
+      "ja": ""
+    },
+    {
+      "en": "That'll be seven-fifty, for here or to go?",
+      "ja": "「7ドル50セントになります。店内でお召し上がりですか、お持ち帰りですか？」"
+    },
+    {
+      "en": "To go, here's my card, ready for the show",
+      "ja": "「持ち帰りで。カードで払います」 さあ、自分のステージへ向かう準備をしよう"
+    },
+    {
+      "en": "We'll have it ready down at the end of the line",
+      "ja": "「カウンターの奥でドリンクをお出ししますね」"
+    },
+    {
+      "en": "Taking a sip, and it tastes so fine",
+      "ja": "一口飲めば、素晴らしい味わいが広がるんだ"
+    },
+    {
+      "en": "[Outro]",
+      "ja": ""
+    },
+    {
+      "en": "Just one pump of vanilla.",
+      "ja": "バニラを1プッシュだけ。"
+    },
+    {
+      "en": "Go light on the ice.",
+      "ja": "氷は少なめで。"
+    },
+    {
+      "en": "Exactly how I please.",
+      "ja": "思い描いた通りの味に。"
+    },
+    {
+      "en": "(Fade out)",
+      "ja": "(フェードアウト)"
+    }
+  ],
+  "conversation": [
+    {
+      "speaker": "A",
+      "speakerName": "Alex",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "Hi, can I get a medium iced latte, please?",
+          "displayHtml": "Hi, can I get a medium iced latte, please?",
+          "audio": "/songs/%E3%80%90%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E6%B3%A8%E6%96%87%E3%80%91Coffee%20Shop%20Customize/0_0.mp3"
+        }
+      ],
+      "japanese": "こんにちは。アイスラテのMサイズ（ミディアム）をお願いできますか？"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Sarah",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "Sure thing.",
+          "displayHtml": "Sure thing.",
+          "audio": "/songs/%E3%80%90%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E6%B3%A8%E6%96%87%E3%80%91Coffee%20Shop%20Customize/1_0.mp3"
+        },
+        {
+          "text": "What kind of milk would you like with that?",
+          "displayHtml": "What kind of milk would you like with that?",
+          "audio": "/songs/%E3%80%90%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E6%B3%A8%E6%96%87%E3%80%91Coffee%20Shop%20Customize/1_1.mp3"
+        }
+      ],
+      "japanese": "かしこまりました。ミルクの種類はどうなさいますか？"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Alex",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "Could I get it with oat milk?",
+          "displayHtml": "Could I get it with oat milk?",
+          "audio": "/songs/%E3%80%90%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E6%B3%A8%E6%96%87%E3%80%91Coffee%20Shop%20Customize/2_0.mp3"
+        },
+        {
+          "text": "And also, can you go light on the ice?",
+          "displayHtml": "And also, can you go light on the ice?",
+          "audio": "/songs/%E3%80%90%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E6%B3%A8%E6%96%87%E3%80%91Coffee%20Shop%20Customize/2_1.mp3"
+        }
+      ],
+      "japanese": "オーツミルクに変更できますか？あと、氷は少なめでお願いします。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Sarah",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "Oat milk, light ice.",
+          "displayHtml": "Oat milk, light ice.",
+          "audio": "/songs/%E3%80%90%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E6%B3%A8%E6%96%87%E3%80%91Coffee%20Shop%20Customize/3_0.mp3"
+        },
+        {
+          "text": "Got it.",
+          "displayHtml": "Got it.",
+          "audio": "/songs/%E3%80%90%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E6%B3%A8%E6%96%87%E3%80%91Coffee%20Shop%20Customize/3_1.mp3"
+        },
+        {
+          "text": "Do you want any flavor syrups in there?",
+          "displayHtml": "Do you want any flavor syrups in there?",
+          "audio": "/songs/%E3%80%90%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E6%B3%A8%E6%96%87%E3%80%91Coffee%20Shop%20Customize/3_2.mp3"
+        }
+      ],
+      "japanese": "オーツミルクで氷少なめですね。フレーバーシロップなどは追加しますか？"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Alex",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "Just one pump of vanilla, please.",
+          "displayHtml": "Just one pump of vanilla, please.",
+          "audio": "/songs/%E3%80%90%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E6%B3%A8%E6%96%87%E3%80%91Coffee%20Shop%20Customize/4_0.mp3"
+        },
+        {
+          "text": "Oh, and can I get a blueberry muffin warmed up?",
+          "displayHtml": "Oh, and can I get a blueberry muffin warmed up?",
+          "audio": "/songs/%E3%80%90%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E6%B3%A8%E6%96%87%E3%80%91Coffee%20Shop%20Customize/4_1.mp3"
+        }
+      ],
+      "japanese": "バニラシロップを1プッシュだけお願いします。あ、それとブルーベリーマフィンを温めてもらえますか？"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Sarah",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "Of course.",
+          "displayHtml": "Of course.",
+          "audio": "/songs/%E3%80%90%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E6%B3%A8%E6%96%87%E3%80%91Coffee%20Shop%20Customize/5_0.mp3"
+        },
+        {
+          "text": "That'll be $7.",
+          "displayHtml": "That'll be $7.",
+          "audio": "/songs/%E3%80%90%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E6%B3%A8%E6%96%87%E3%80%91Coffee%20Shop%20Customize/5_1.mp3"
+        },
+        {
+          "text": "50.",
+          "displayHtml": "50.",
+          "audio": "/songs/%E3%80%90%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E6%B3%A8%E6%96%87%E3%80%91Coffee%20Shop%20Customize/5_2.mp3"
+        },
+        {
+          "text": "Is this for here or to go?",
+          "displayHtml": "Is this for here or to go?",
+          "audio": "/songs/%E3%80%90%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E6%B3%A8%E6%96%87%E3%80%91Coffee%20Shop%20Customize/5_3.mp3"
+        }
+      ],
+      "japanese": "もちろんです。お会計は7ドル50セントになります。店内でお召し上がりですか、お持ち帰りですか？"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Alex",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "To go.",
+          "displayHtml": "To go.",
+          "audio": "/songs/%E3%80%90%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E6%B3%A8%E6%96%87%E3%80%91Coffee%20Shop%20Customize/6_0.mp3"
+        },
+        {
+          "text": "Here's my card.",
+          "displayHtml": "Here's my card.",
+          "audio": "/songs/%E3%80%90%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E6%B3%A8%E6%96%87%E3%80%91Coffee%20Shop%20Customize/6_1.mp3"
+        }
+      ],
+      "japanese": "持ち帰りで。カードで払います。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Sarah",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "Great.",
+          "displayHtml": "Great.",
+          "audio": "/songs/%E3%80%90%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E6%B3%A8%E6%96%87%E3%80%91Coffee%20Shop%20Customize/7_0.mp3"
+        },
+        {
+          "text": "We'll have your drink ready at the end of the counter!",
+          "displayHtml": "We'll have your drink ready at the end of the counter!",
+          "audio": "/songs/%E3%80%90%E3%82%AB%E3%83%95%E3%82%A7%E3%81%AE%E6%B3%A8%E6%96%87%E3%80%91Coffee%20Shop%20Customize/7_1.mp3"
+        }
+      ],
+      "japanese": "ありがとうございます。カウンターの奥でドリンクをお出ししますね！"
+    }
+  ],
+  "createdAt": "2026-04-04T06:36:47.486Z"
+}

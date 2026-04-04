@@ -7,6 +7,7 @@ const state = {
   currentSong: null,
   showJapanese: false,
   activeTab: 'conv',   // 'conv' | 'song'
+  homeFilter: 'A',     // 'A' | 'B'
   // Playback
   sentenceList: [],
   audioElements: [],
@@ -70,11 +71,20 @@ function renderHome() {
     <div class="home-header">
       <h1><img src="/rogo2.png" alt="Lyric Shadows" class="header-logo"> Lyric Shadows</h1>
     </div>
+    <div class="home-tabs">
+      <button class="home-tab ${state.homeFilter === 'A' ? 'active' : ''}" onclick="setHomeFilter('A')">🎵 洋楽で学ぶ</button>
+      <button class="home-tab ${state.homeFilter === 'B' ? 'active' : ''}" onclick="setHomeFilter('B')">💬 シチュエーション</button>
+    </div>
     ${renderSongGrid()}
     <div id="modalContainer"></div>
     <div id="progressContainer"></div>
   `;
   checkExistingPreview();
+}
+
+function setHomeFilter(filter) {
+  state.homeFilter = filter;
+  renderHome();
 }
 
 async function checkExistingPreview() {
@@ -86,20 +96,27 @@ async function checkExistingPreview() {
 }
 
 function renderSongGrid() {
-  if (state.songs.length === 0) {
+  const filteredSongs = state.songs.filter(s => {
+    const isPatternB = s.pattern === 'B' || (s.artist && s.artist.includes('パターンB'));
+    const pattern = isPatternB ? 'B' : 'A';
+    return pattern === state.homeFilter;
+  });
+
+  if (filteredSongs.length === 0) {
     return `
       <div class="empty-state">
         <span class="empty-icon">🎧</span>
-        <p>まだ曲がありません。<br>AIに追加してもらいましょう！</p>
+        <p>該当する曲がありません。</p>
       </div>`;
   }
-  const cards = state.songs.map((song, i) => {
+  const cards = filteredSongs.map((song) => {
+    const originalIndex = state.songs.indexOf(song);
     const bgStyle = song.thumbnailUrl
       ? `style="background-image:url('${song.thumbnailUrl}')"` : '';
-    const grad = CARD_GRADS[i % CARD_GRADS.length];
+    const grad = CARD_GRADS[originalIndex % CARD_GRADS.length];
     return `
       <div class="song-card ${song.thumbnailUrl ? 'has-thumb' : grad}" ${bgStyle}
-           onclick="showShadowing(state.songs[${i}])">
+           onclick="showShadowing(state.songs[${originalIndex}])">
         <div class="song-card-overlay">
           <div class="song-card-name">${esc(song.songName)}</div>
           <div class="song-card-artist">${esc(song.artist)}</div>
@@ -151,10 +168,38 @@ function renderShadowing() {
 
   // ---- Song tab HTML: lyrics + video below ----
   const lyricsHtml = renderLyrics(song);
-  const ytHtml = song.videoId
-    ? `<div class="yt-embed-bottom"><iframe id="ytFrame" src="" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>`
-    : '';
-  const songTabHtml = `<div class="lyrics-display">${lyricsHtml}</div>${ytHtml}`;
+  let mediaHtml = '';
+  if (song.hasLocalAudio) {
+    mediaHtml = `
+      <div class="song-audio-player">
+        <audio id="songAudioPlayer" src="/songs/${encodeURIComponent(song.folderName)}/original.mp3" onplay="updateSongPlayBtn(true)" onpause="updateSongPlayBtn(false)" onended="updateSongPlayBtn(false)"></audio>
+        <div class="song-controls">
+          <button class="song-ctrl-btn" onclick="skipSongAudio(-5)" title="5秒戻る">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 17l-5-5 5-5M18 17l-5-5 5-5"/></svg>
+            <span>5s</span>
+          </button>
+          <button class="song-ctrl-btn" onclick="skipSongAudio(-1)" title="1秒戻る">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+            <span>1s</span>
+          </button>
+          <button class="song-ctrl-play" id="songPlayBtn" onclick="toggleSongPlay()">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+          <button class="song-ctrl-btn" onclick="skipSongAudio(1)" title="1秒進む">
+            <span>1s</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+          <button class="song-ctrl-btn" onclick="skipSongAudio(5)" title="5秒進む">
+            <span>5s</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 17l5-5-5-5M6 17l5-5-5-5"/></svg>
+          </button>
+        </div>
+      </div>
+    `;
+  } else if (song.videoId) {
+    mediaHtml = `<div class="yt-embed-bottom"><iframe id="ytFrame" src="" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>`;
+  }
+  const songTabHtml = `<div class="lyrics-display" ${song.hasLocalAudio ? 'style="padding-bottom: 90px;"' : ''}>${lyricsHtml}</div>${mediaHtml}`;
 
   app.innerHTML = `
     <div class="shadowing-view">
@@ -172,7 +217,7 @@ function renderShadowing() {
       </div>
       <div class="tab-bar">
         <button class="tab-btn${state.activeTab === 'conv' ? ' active' : ''}" id="tabConv" onclick="switchTab('conv')">💬 会話</button>
-        ${song.videoId ? `<button class="tab-btn${state.activeTab === 'song' ? ' active' : ''}" id="tabSong" onclick="switchTab('song')">🎵 Song</button>` : ''}
+        ${song.videoId || song.hasLocalAudio ? `<button class="tab-btn${state.activeTab === 'song' ? ' active' : ''}" id="tabSong" onclick="switchTab('song')">🎵 Song</button>` : ''}
       </div>
       <div class="setting-bar" id="settingBar">
         <span class="rel-badge rel-${song.relationship}">${esc(song.relationship)}</span>
@@ -233,7 +278,7 @@ function switchTab(tab) {
   tabSong?.classList.toggle('active', !isConv);
 
   // Load YouTube iframe lazily
-  if (!isConv && state.currentSong.videoId) {
+  if (!isConv && state.currentSong.videoId && !state.currentSong.hasLocalAudio) {
     const frame = document.getElementById('ytFrame');
     if (frame && !frame.src.includes('youtube')) {
       frame.src = `https://www.youtube.com/embed/${state.currentSong.videoId}?autoplay=1`;
@@ -242,8 +287,57 @@ function switchTab(tab) {
     // Pause YouTube when switching back
     const frame = document.getElementById('ytFrame');
     if (frame) frame.src = '';
+    // Pause local audio
+    const audio = document.getElementById('songAudioPlayer');
+    if (audio) { audio.pause(); }
   }
 }
+
+// ============================================================
+// SONG AUDIO CONTROLS
+// ============================================================
+function updateSongPlayBtn(isPlaying) {
+  const btn = document.getElementById('songPlayBtn');
+  if (btn) {
+    btn.innerHTML = isPlaying 
+      ? '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>' // Pause icon
+      : '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>'; // Play icon
+    btn.classList.toggle('playing', isPlaying);
+  }
+}
+
+function toggleSongPlay() {
+  const audio = document.getElementById('songAudioPlayer');
+  if (!audio) return;
+  if (audio.paused) {
+    audio.play();
+  } else {
+    audio.pause();
+  }
+}
+
+function skipSongAudio(seconds) {
+  const audio = document.getElementById('songAudioPlayer');
+  if (!audio) return;
+  audio.currentTime = Math.max(0, audio.currentTime + seconds);
+}
+
+// Global Keyboard Shortcuts
+document.addEventListener('keydown', (e) => {
+  if (state.view !== 'shadowing' || state.activeTab !== 'song' || !state.currentSong?.hasLocalAudio) return;
+  if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+
+  if (e.code === 'Space') {
+    e.preventDefault();
+    toggleSongPlay();
+  } else if (e.code === 'ArrowLeft') {
+    e.preventDefault();
+    skipSongAudio(e.shiftKey ? -5 : -1);
+  } else if (e.code === 'ArrowRight') {
+    e.preventDefault();
+    skipSongAudio(e.shiftKey ? 5 : 1);
+  }
+});
 
 // Build flat index from turn+sentence indices
 function getFlatIndex(turnIndex, sentenceIndex) {
