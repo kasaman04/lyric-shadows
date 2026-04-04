@@ -17,55 +17,46 @@ const SONGS_DIR = path.join(__dirname, 'songs');
 
 // ===== CONFIG =====
 const CONFIG = {
-  songName: 'One Last Time',
-  artist: '赤西仁',
-  videoId: 'J5BmHcpRPRI',
-  lyrics: `I'm packing my bags 'cuz the journey is over
-And we were never good enough for each other
-You put me through hell every time that I tried
-Tonight I'm gonna make you pay one last time
+  songName: 'When She Loved Me',
+  artist: 'Sarah McLachlan',
+  videoId: 'JjwCgwkTEpA',
+  lyrics: `When somebody loved me
+Everything was beautiful
+Every hour we spent together
+Lives within my heart
 
-You ain't gotta be shy I want the neighbors to hear it
-The way we used to do it in the beginning
-So take your time
-I'm waiting at the door
-And imma do it do it do it do it do it 'til you want more
+And when she was sad, I was there to dry her tears
+And when she was happy, so was I
+When she loved me
 
-(Temperature's gettin' hot don't fight it)
-I don't give a damn what you say you gotta do baby
-(Kiss ya lips so soft then bite it)
+Through the summer and the fall
+We had each other, that was all
+Just she and I together
+Like it was meant to be
 
-When I'm through you gon' wish
-that you never would have gave me up
+And when she was lonely
+I was there to comfort her
+And I knew that she loved me
 
-I'm packing my bags 'cuz the journey is over
-And we were never good enough for each other
-You put me through hell every time that I tried
-Tonight I'm gonna make you pay one last time
+So the years went by, I stayed the same
+But she began to drift away
+I was left alone
+Still, I waited for the day
+When she'd say, "I will always love you"
 
-Remember back in the day I said nobody was better
-And I was gonna change your life forever
-You took me for granted
-Thought it was a game
-You 'bout to get it so good
-that your next man will know my name
+Lonely and forgotten
+Never thought she'd look my way
+And she smiled at me and held me
+Just like she used to do
+Like she loved me
+When she loved me
 
-(Let your hair down baby turn the lights off)
-Grab a life vest we're sailing into ecstacy
+When somebody loved me
+Everything was beautiful
+Every hour we spent together
+Lives within my heart
 
-(Don't hold back baby just shout out)
-It's the last time you gonna have a man
-give it to you like me
-
-I'm packing my bags 'cuz the journey is over
-And we were never good enough for each other
-You put me through hell every time that I tried
-Tonight I'm gonna make you pay one last time
-
-I'm packing my bags 'cuz the journey is over
-And we were never good enough for each other
-You put me through hell every time that I tried
-Tonight I'm gonna make you pay one last time`,
+When she loved me`,
 };
 
 async function main() {

@@ -1,0 +1,268 @@
+{
+  "id": "Too Good to Say Goodbye Bruno Mars",
+  "folderName": "Too Good to Say Goodbye Bruno Mars",
+  "songName": "Too Good to Say Goodbye",
+  "artist": "Bruno Mars",
+  "relationship": "恋人（元カップル）",
+  "setting": "A park bench at night. Jake is trying to stop Emma from walking away.",
+  "speakerA": {
+    "name": "Jake",
+    "type": "男性",
+    "voice": "CfDbY7v8tDkTvB9rNcUw"
+  },
+  "speakerB": {
+    "name": "Emma",
+    "type": "女性",
+    "voice": "cNYrMw9glwJZXR8RwbuR"
+  },
+  "videoId": "qCq-1oQuq90",
+  "thumbnailUrl": "https://img.youtube.com/vi/qCq-1oQuq90/hqdefault.jpg",
+  "lyrics": "I've made mistakes\nI could have treated you better\nI let you get away\nThere goes my happily ever after\n\nTell me why, why can't we try and start again?\nThis can't be how our story ends\nYou're more than my girl, you're my best friend\nTell me you remember when\nI was your man and you were my girl\nIt was you and me against the world\n\nBaby, ain't nobody gonna love me like the way you do\nAnd you ain't never gonna find a love like mine\nTell me, what can I do to make it up to you?\n'Cause what we got's too good to say goodbye, goodbye\n\nYeah, I'm still in love with you, darlin'\nI know you feel the same\nOh, what's the point of both of us being broken-hearted?\nI pray it's never too late\n\nSo tell me why, why can't we try and start again?\nThis can't be how our story ends\nYou're more than my girl, you're my best friend\nTell me you remember when\nI was your man and you were my girl\nIt was you and me against the world\n\nBaby, ain't nobody gonna love me like the way you do\nAnd you ain't never gonna find a love like mine\nTell me, what can I do to make it up to you?\n'Cause what we got's too good to say goodbye, goodbye\n\nGirl, won't you listen?\nIt's you that I'm missin'\nTake my hand, I wanna go, I wanna go\nIf we're gonna fight this fight for better days\nI know we're gonna make it\nThis is the chance, let's take it\n\nBaby, ain't nobody gonna love me like the way you do\nAnd you ain't never gonna find a love like mine\nTell me, what can I do to make it up to you?\n'Cause what we got's too good to say goodbye\nGoodbye",
+  "lyricsJa": [
+    {
+      "en": "I've made mistakes\nI could have treated you better",
+      "ja": "僕は間違いを犯してしまった\nもっと君を大切にできたはずなのに"
+    },
+    {
+      "en": "I let you get away\nThere goes my happily ever after",
+      "ja": "君をこの手から離してしまった\n僕の描いていた幸せな未来が消えていく"
+    },
+    {
+      "en": "Tell me why, why can't we try and start again?\nThis can't be how our story ends",
+      "ja": "教えてくれ、どうしてやり直せないんだ？\n僕らの物語が、こんな形で終わるはずなんてない"
+    },
+    {
+      "en": "You're more than my girl, you're my best friend",
+      "ja": "君はただの恋人じゃない、僕の最高に理解し合える親友なんだ"
+    },
+    {
+      "en": "Tell me you remember when\nI was your man and you were my girl\nIt was you and me against the world",
+      "ja": "あの頃を覚えていると言ってほしい\n二人でいれば、世界を敵に回しても平気だったあの頃を"
+    },
+    {
+      "en": "Baby, ain't nobody gonna love me like the way you do\nAnd you ain't never gonna find a love like mine",
+      "ja": "君以上に僕を愛してくれる人はいないし\n君だって、僕ほど君を想う人には二度と出会えないはずだ"
+    },
+    {
+      "en": "Tell me, what can I do to make it up to you?",
+      "ja": "どうすれば、この償いができるか教えてくれないか？"
+    },
+    {
+      "en": "'Cause what we got's too good to say goodbye, goodbye",
+      "ja": "僕らの絆は、さよならを言うにはあまりに美しすぎるから"
+    },
+    {
+      "en": "Yeah, I'm still in love with you, darlin'\nI know you feel the same",
+      "ja": "そうさ、今でも君を愛しているよ\n君だって同じ気持ちなのは分かってる"
+    },
+    {
+      "en": "Oh, what's the point of both of us being broken-hearted?\nI pray it's never too late",
+      "ja": "二人して傷ついたままでいるなんて、何の意味があるんだ？\nまだ手遅れじゃないと信じているよ"
+    },
+    {
+      "en": "Girl, won't you listen?\nIt's you that I'm missin'",
+      "ja": "ねえ、聞いてくれないか？\n僕が恋しくてたまらないのは君なんだ"
+    },
+    {
+      "en": "Take my hand, I wanna go, I wanna go",
+      "ja": "僕の手を取って、また君と歩き出したいんだ"
+    },
+    {
+      "en": "If we're gonna fight this fight for better days\nI know we're gonna make it",
+      "ja": "より良い日々のために戦う覚悟があるなら\n僕らならきっと乗り越えられる"
+    },
+    {
+      "en": "This is the chance, let's take it",
+      "ja": "これが最後のチャンスだ、今掴み取ろう"
+    },
+    {
+      "en": "Goodbye",
+      "ja": "さよならなんて"
+    }
+  ],
+  "conversation": [
+    {
+      "speaker": "A",
+      "speakerName": "Jake",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "Emma, wait.",
+          "displayHtml": "Emma, wait.",
+          "audio": "/songs/Too%20Good%20to%20Say%20Goodbye%20Bruno%20Mars/0_0.mp3"
+        },
+        {
+          "text": "Please don't go yet.",
+          "displayHtml": "Please don't go yet.",
+          "audio": "/songs/Too%20Good%20to%20Say%20Goodbye%20Bruno%20Mars/0_1.mp3"
+        }
+      ],
+      "japanese": "エマ、待って。まだ行かないでくれ。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Emma",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "Jake, I've been thinking, and I think it's better if we just...",
+          "displayHtml": "Jake, I've been thinking, and I think it's better if we just...",
+          "audio": "/songs/Too%20Good%20to%20Say%20Goodbye%20Bruno%20Mars/1_0.mp3"
+        },
+        {
+          "text": "move on.",
+          "displayHtml": "move on.",
+          "audio": "/songs/Too%20Good%20to%20Say%20Goodbye%20Bruno%20Mars/1_1.mp3"
+        }
+      ],
+      "japanese": "ジェイク、ずっと考えてたけど、もう前に進んだほうがいいと思う。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Jake",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "I know I've made mistakes.",
+          "displayHtml": "I know <span class=\"lyric-phrase\">I've made mistakes</span>.",
+          "audio": "/songs/Too%20Good%20to%20Say%20Goodbye%20Bruno%20Mars/2_0.mp3"
+        },
+        {
+          "text": "I could have treated you better.",
+          "displayHtml": "<span class=\"lyric-phrase\">I could have treated you better</span>.",
+          "audio": "/songs/Too%20Good%20to%20Say%20Goodbye%20Bruno%20Mars/2_1.mp3"
+        },
+        {
+          "text": "I see that now.",
+          "displayHtml": "I see that now.",
+          "audio": "/songs/Too%20Good%20to%20Say%20Goodbye%20Bruno%20Mars/2_2.mp3"
+        }
+      ],
+      "japanese": "俺が間違えてたのはわかってる。もっと大切にできたはずだった。今はそれがわかる。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Emma",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "It's not just that.",
+          "displayHtml": "It's not just that.",
+          "audio": "/songs/Too%20Good%20to%20Say%20Goodbye%20Bruno%20Mars/3_0.mp3"
+        },
+        {
+          "text": "I just...",
+          "displayHtml": "I just...",
+          "audio": "/songs/Too%20Good%20to%20Say%20Goodbye%20Bruno%20Mars/3_1.mp3"
+        },
+        {
+          "text": "I don't know if this can work anymore.",
+          "displayHtml": "I don't know if this can work anymore.",
+          "audio": "/songs/Too%20Good%20to%20Say%20Goodbye%20Bruno%20Mars/3_2.mp3"
+        }
+      ],
+      "japanese": "それだけじゃないの。もうこれがうまくいくかどうか、わからなくて。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Jake",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "But this can't be how our story ends.",
+          "displayHtml": "But <span class=\"lyric-phrase\">this can't be how our story ends</span>.",
+          "audio": "/songs/Too%20Good%20to%20Say%20Goodbye%20Bruno%20Mars/4_0.mp3"
+        },
+        {
+          "text": "You're more than my girl, you're my best friend.",
+          "displayHtml": "<span class=\"lyric-phrase\">You're more than my girl, you're my best friend</span>.",
+          "audio": "/songs/Too%20Good%20to%20Say%20Goodbye%20Bruno%20Mars/4_1.mp3"
+        }
+      ],
+      "japanese": "でも、こんな終わり方でいいはずがない。君は彼女っていうより、一番の親友なんだよ。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Emma",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "I know.",
+          "displayHtml": "I know.",
+          "audio": "/songs/Too%20Good%20to%20Say%20Goodbye%20Bruno%20Mars/5_0.mp3"
+        },
+        {
+          "text": "That's what makes this so hard.",
+          "displayHtml": "That's what makes this so hard.",
+          "audio": "/songs/Too%20Good%20to%20Say%20Goodbye%20Bruno%20Mars/5_1.mp3"
+        }
+      ],
+      "japanese": "わかってる。だからこそ、つらいんじゃない。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Jake",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "Emma, ain't nobody gonna love me like the way you do.",
+          "displayHtml": "Emma, <span class=\"lyric-phrase\">ain't nobody gonna love me like the way you do</span>.",
+          "audio": "/songs/Too%20Good%20to%20Say%20Goodbye%20Bruno%20Mars/6_0.mp3"
+        },
+        {
+          "text": "And I know I can't love anyone the way I love you.",
+          "displayHtml": "And I know I can't love anyone the way I love you.",
+          "audio": "/songs/Too%20Good%20to%20Say%20Goodbye%20Bruno%20Mars/6_1.mp3"
+        },
+        {
+          "text": "What we got's too good to say goodbye.",
+          "displayHtml": "<span class=\"lyric-phrase\">What we got's too good to say goodbye</span>.",
+          "audio": "/songs/Too%20Good%20to%20Say%20Goodbye%20Bruno%20Mars/6_2.mp3"
+        }
+      ],
+      "japanese": "エマ、君みたいに俺を愛してくれる人、他に誰もいない。俺だって君以上に好きになれる人はいない。こんなに大切なものを、さよならの一言で終わらせたくない。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Emma",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "Jake...",
+          "displayHtml": "Jake...",
+          "audio": "/songs/Too%20Good%20to%20Say%20Goodbye%20Bruno%20Mars/7_0.mp3"
+        }
+      ],
+      "japanese": "ジェイク…"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Jake",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "It's you that I'm missin'.",
+          "displayHtml": "<span class=\"lyric-phrase\">It's you that I'm missin'</span>.",
+          "audio": "/songs/Too%20Good%20to%20Say%20Goodbye%20Bruno%20Mars/8_0.mp3"
+        },
+        {
+          "text": "Every single day.",
+          "displayHtml": "Every single day.",
+          "audio": "/songs/Too%20Good%20to%20Say%20Goodbye%20Bruno%20Mars/8_1.mp3"
+        },
+        {
+          "text": "Take my hand.",
+          "displayHtml": "<span class=\"lyric-phrase\">Take my hand</span>.",
+          "audio": "/songs/Too%20Good%20to%20Say%20Goodbye%20Bruno%20Mars/8_2.mp3"
+        },
+        {
+          "text": "Let's figure this out together.",
+          "displayHtml": "Let's figure this out together.",
+          "audio": "/songs/Too%20Good%20to%20Say%20Goodbye%20Bruno%20Mars/8_3.mp3"
+        }
+      ],
+      "japanese": "恋しいのは君だけなんだ。毎日ずっと。手をつないでくれ。一緒に乗り越えよう。"
+    }
+  ],
+  "createdAt": "2026-04-04T02:40:51.949Z"
+}
