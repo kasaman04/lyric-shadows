@@ -20,52 +20,92 @@
   "lyrics": "Da Da Da Da Da- Da Da- Da Da Da Da Da da Da Da\nDa Da Da Da Da- Da Da- Da Da Da Da Da da Da Da\n\nNo matter what you do,\nyou know that I will always be there\nAnd you will never leave a voicemail\nI'll answer every call you make to me\nAnd if you're ever feeling cold I'll chop your firewood\nAnd when you're feeling bad you know\nI'll hold you 'til you're feeling good\n'Cuz you got the thing\nthat makes my heart sing when I'm next to you\n\nAnd I don't care\nHow long it takes\nCuz I just care\nAbout the joy you make\nIn my life, be my wife\nI just want you to know\n\nI hope this love lasts forever, ever, ever\nI hope this love lasts forever, ever, ever\n\nWhenever I get lonely I make myself remember your smile\nAnd when the rain drops outside,\nI picture myself cuddling next you\nAnd if we're running a race you know I'll let you win\nI'm carving our names on a tree like back when we were ten\nMy mouth can't translate the things my heart says\nWhen we're together and you're taking my breath away\n\nAnd I don't care how long it takes\nI swear I swear\nFor you I'd wait\nAnywhere, just say you'll be there\nWe'll walk hand in hand\n\nAnd make this love last forever, ever, ever\nWe'll make this love last forever, ever, ever\n\nSo close your eyes and count to ten\nI'm not ready you should do it again\nJust give me one second 'cuz I\nI- I\nI got a special message but I\nI-I-I\nI gotta breathe\nCuz now I can't breathe\nI'm takin' a knee...\nThis ring is a sign, I want you as mine, forever and ever\n\nDa Da Da Da Da- Da Da- Da Da Da Da Da da Da Da\nDa Da Da Da Da- Da Da- Da Da Da Da Da da Da Da\nDa Da Da Da Da- Da Da- Da Da Da Da Da da Da Da\nDa Da Da Da Da- Da Da- Da Da Da Da Da da Da Da",
   "lyricsJa": [
     {
-      "en": "Da Da Da Da Da- Da Da- Da Da Da Da Da da Da Da\nDa Da Da Da Da- Da Da- Da Da Da Da Da da Da Da",
-      "ja": "Da Da Da Da Da- Da Da- Da Da Da Da Da da Da Da\nDa Da Da Da Da- Da Da- Da Da Da Da Da da Da Da"
+      "en": "Da Da Da Da Da- Da Da- Da Da Da Da Da da Da Da",
+      "ja": "Da Da Da Da Da- Da Da- Da Da Da Da Da da Da Da"
     },
     {
-      "en": "No matter what you do,\nyou know that I will always be there",
-      "ja": "君が何をしても\n僕がそばにいるのは分かっているよね"
+      "en": "Da Da Da Da Da- Da Da- Da Da Da Da Da da Da Da",
+      "ja": "Da Da Da Da Da- Da Da- Da Da Da Da Da da Da Da"
     },
     {
-      "en": "And you will never leave a voicemail\nI'll answer every call you make to me",
-      "ja": "留守電なんて残させない\n君からの電話にはいつだって僕が出るから"
+      "en": "No matter what you do,",
+      "ja": "君が何をしても"
+    },
+    {
+      "en": "you know that I will always be there",
+      "ja": "僕がそばにいるのは分かっているよね"
+    },
+    {
+      "en": "And you will never leave a voicemail",
+      "ja": "留守電なんて残させない"
+    },
+    {
+      "en": "I'll answer every call you make to me",
+      "ja": "君からの電話にはいつだって僕が出るから"
     },
     {
       "en": "And if you're ever feeling cold I'll chop your firewood",
       "ja": "もし君が寒がっていたら、薪を割って温めてあげるよ"
     },
     {
-      "en": "And when you're feeling bad you know\nI'll hold you 'til you're feeling good",
-      "ja": "元気がない時は分かってるよね\n気分が晴れるまで抱きしめてあげる"
+      "en": "And when you're feeling bad you know",
+      "ja": "元気がない時は分かってるよね"
     },
     {
-      "en": "'Cuz you got the thing\nthat makes my heart sing when I'm next to you",
-      "ja": "君のそばにいると心が歌い出すんだ\n君にはそんな特別な魅力があるから"
+      "en": "I'll hold you 'til you're feeling good",
+      "ja": "気分が晴れるまで抱きしめてあげる"
     },
     {
-      "en": "And I don't care\nHow long it takes",
+      "en": "'Cuz you got the thing",
+      "ja": "君のそばにいると心が歌い出すんだ"
+    },
+    {
+      "en": "that makes my heart sing when I'm next to you",
+      "ja": "君にはそんな特別な魅力があるから"
+    },
+    {
+      "en": "And I don't care",
       "ja": "どれだけ時間がかかったって構わない"
     },
     {
-      "en": "Cuz I just care\nAbout the joy you make",
-      "ja": "僕にとって大切なのは\n君がくれる喜びだけなんだ"
+      "en": "How long it takes",
+      "ja": ""
     },
     {
-      "en": "In my life, be my wife\nI just want you to know",
-      "ja": "僕の人生において、妻になってほしい\nただそれを知ってほしくて"
+      "en": "Cuz I just care",
+      "ja": "僕にとって大切なのは"
     },
     {
-      "en": "I hope this love lasts forever, ever, ever\nI hope this love lasts forever, ever, ever",
-      "ja": "この愛が永遠に、ずっとずっと続いてほしい\nこの愛が永遠に、いつまでも続いてほしい"
+      "en": "About the joy you make",
+      "ja": "君がくれる喜びだけなんだ"
+    },
+    {
+      "en": "In my life, be my wife",
+      "ja": "僕の人生において、妻になってほしい"
+    },
+    {
+      "en": "I just want you to know",
+      "ja": "ただそれを知ってほしくて"
+    },
+    {
+      "en": "I hope this love lasts forever, ever, ever",
+      "ja": "この愛が永遠に、ずっとずっと続いてほしい"
+    },
+    {
+      "en": "I hope this love lasts forever, ever, ever",
+      "ja": "この愛が永遠に、いつまでも続いてほしい"
     },
     {
       "en": "Whenever I get lonely I make myself remember your smile",
       "ja": "寂しくなった時はいつも\n君の笑顔を思い出すようにしているんだ"
     },
     {
-      "en": "And when the rain drops outside,\nI picture myself cuddling next you",
-      "ja": "外で雨が降り出したら\n君に寄り添う自分を思い浮かべるよ"
+      "en": "And when the rain drops outside,",
+      "ja": "外で雨が降り出したら"
+    },
+    {
+      "en": "I picture myself cuddling next you",
+      "ja": "君に寄り添う自分を思い浮かべるよ"
     },
     {
       "en": "And if we're running a race you know I'll let you win",
@@ -84,44 +124,88 @@
       "ja": "一緒にいると、君に夢中で息が止まりそうになるから"
     },
     {
-      "en": "And I don't care how long it takes\nI swear I swear",
-      "ja": "どんなに長くかかっても構わない\n誓うよ、本当に"
+      "en": "And I don't care how long it takes",
+      "ja": "どんなに長くかかっても構わない"
     },
     {
-      "en": "For you I'd wait\nAnywhere, just say you'll be there",
-      "ja": "君のためならどこだって待つよ\nそこにいてくれると言ってくれるなら"
+      "en": "I swear I swear",
+      "ja": "誓うよ、本当に"
+    },
+    {
+      "en": "For you I'd wait",
+      "ja": "君のためならどこだって待つよ"
+    },
+    {
+      "en": "Anywhere, just say you'll be there",
+      "ja": "そこにいてくれると言ってくれるなら"
     },
     {
       "en": "We'll walk hand in hand",
       "ja": "僕ら、手をつないで歩いていこう"
     },
     {
-      "en": "And make this love last forever, ever, ever\nWe'll make this love last forever, ever, ever",
-      "ja": "そして、この愛を永遠にするんだ\nずっと、いつまでも続いていくように"
+      "en": "And make this love last forever, ever, ever",
+      "ja": "そして、この愛を永遠にするんだ"
     },
     {
-      "en": "So close your eyes and count to ten\nI'm not ready you should do it again",
-      "ja": "だから目を閉じて、10まで数えて\nまだ準備ができてないから、もう一度最初から"
+      "en": "We'll make this love last forever, ever, ever",
+      "ja": "ずっと、いつまでも続いていくように"
     },
     {
-      "en": "Just give me one second 'cuz I\nI- I",
+      "en": "So close your eyes and count to ten",
+      "ja": "だから目を閉じて、10まで数えて"
+    },
+    {
+      "en": "I'm not ready you should do it again",
+      "ja": "まだ準備ができてないから、もう一度最初から"
+    },
+    {
+      "en": "Just give me one second 'cuz I",
       "ja": "ちょっとだけ待って、だって僕は..."
     },
     {
-      "en": "I got a special message but I\nI-I-I",
+      "en": "I- I",
+      "ja": ""
+    },
+    {
+      "en": "I got a special message but I",
       "ja": "伝えたい特別なメッセージがあるんだけど..."
     },
     {
-      "en": "I gotta breathe\nCuz now I can't breathe",
-      "ja": "深呼吸しなきゃ\nだって今は息もうまくできないから"
+      "en": "I-I-I",
+      "ja": ""
     },
     {
-      "en": "I'm takin' a knee...\nThis ring is a sign, I want you as mine, forever and ever",
-      "ja": "膝をついて...\nこの指輪は誓いの証。君を僕のものにしたいんだ、永遠に"
+      "en": "I gotta breathe",
+      "ja": "深呼吸しなきゃ"
     },
     {
-      "en": "Da Da Da Da Da- Da Da- Da Da Da Da Da da Da Da\nDa Da Da Da Da- Da Da- Da Da Da Da Da da Da Da\nDa Da Da Da Da- Da Da- Da Da Da Da Da da Da Da\nDa Da Da Da Da- Da Da- Da Da Da Da Da da Da Da",
-      "ja": "Da Da Da Da Da- Da Da- Da Da Da Da Da da Da Da\nDa Da Da Da Da- Da Da- Da Da Da Da Da da Da Da\nDa Da Da Da Da- Da Da- Da Da Da Da Da da Da Da\nDa Da Da Da Da- Da Da- Da Da Da Da Da da Da Da"
+      "en": "Cuz now I can't breathe",
+      "ja": "だって今は息もうまくできないから"
+    },
+    {
+      "en": "I'm takin' a knee...",
+      "ja": "膝をついて..."
+    },
+    {
+      "en": "This ring is a sign, I want you as mine, forever and ever",
+      "ja": "この指輪は誓いの証。君を僕のものにしたいんだ、永遠に"
+    },
+    {
+      "en": "Da Da Da Da Da- Da Da- Da Da Da Da Da da Da Da",
+      "ja": "Da Da Da Da Da- Da Da- Da Da Da Da Da da Da Da"
+    },
+    {
+      "en": "Da Da Da Da Da- Da Da- Da Da Da Da Da da Da Da",
+      "ja": "Da Da Da Da Da- Da Da- Da Da Da Da Da da Da Da"
+    },
+    {
+      "en": "Da Da Da Da Da- Da Da- Da Da Da Da Da da Da Da",
+      "ja": "Da Da Da Da Da- Da Da- Da Da Da Da Da da Da Da"
+    },
+    {
+      "en": "Da Da Da Da Da- Da Da- Da Da Da Da Da da Da Da",
+      "ja": "Da Da Da Da Da- Da Da- Da Da Da Da Da da Da Da"
     }
   ],
   "conversation": [

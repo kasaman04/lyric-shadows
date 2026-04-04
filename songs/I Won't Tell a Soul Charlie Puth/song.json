@@ -20,40 +20,68 @@
   "lyrics": "Oh darling\nKnow you’re taken\nSomething ‘bout this\nJust don’t feel right\nEvery time\nOne of us, tries to leave here\nOh the other one\nHolds on tight\n\nOh oh\n\nBaby tonight\nThere’s so much love in between us\nBut you say you gotta get home\nStay here with me\nI won’t tell a soul\n\nYou tell me someone\nWaiting for you\nThat you can’t do this anymore\nBut you kiss me again\nSo go ahead and\nDraw the blinds and\nLock all the doors\n\nBaby tonight\nThere’s so much love in between us\nBut you say you gotta get home\nStay here with me\nI won’t tell a soul\n\nOh if you want me\nLike I want you\nI won’t judge you\n\nThis could be our little secret\nOur secret\nSo tell me if you’re ready\n‘Cause if no one knows then\nIt ain’t really cheating\nOh darling\nI know you’re taken\nBut something ‘bout this\nJust feels so right\nOh baby\n‘cause every time\nOne of us, tries to leave here\nOh the other one\nHolds on tight\n\nOh oh\n\nBaby tonight\n\nThere’s so much love in between us\nBut you say you gotta get home\nStay here with me\nI won’t tell a soul",
   "lyricsJa": [
     {
-      "en": "Oh darling\nKnow you’re taken",
-      "ja": "ねえ、ダーリン\n君に相手がいるのはわかってる"
+      "en": "Oh darling",
+      "ja": "ねえ、ダーリン"
     },
     {
-      "en": "Something ‘bout this\nJust don’t feel right",
-      "ja": "でも何かが\n正しくない気がするんだ"
+      "en": "Know you’re taken",
+      "ja": "君に相手がいるのはわかってる"
     },
     {
-      "en": "Every time\nOne of us, tries to leave here",
+      "en": "Something ‘bout this",
+      "ja": "でも何かが"
+    },
+    {
+      "en": "Just don’t feel right",
+      "ja": "正しくない気がするんだ"
+    },
+    {
+      "en": "Every time",
       "ja": "どちらかがここを去ろうとするたびに"
     },
     {
-      "en": "Oh the other one\nHolds on tight",
+      "en": "One of us, tries to leave here",
+      "ja": ""
+    },
+    {
+      "en": "Oh the other one",
       "ja": "もう一人が強く引き止めてしまう"
+    },
+    {
+      "en": "Holds on tight",
+      "ja": ""
     },
     {
       "en": "Oh oh",
       "ja": "Oh oh"
     },
     {
-      "en": "Baby tonight\nThere’s so much love in between us",
-      "ja": "ベイビー、今夜の僕らの間には\nこんなにも愛が溢れているのに"
+      "en": "Baby tonight",
+      "ja": "ベイビー、今夜の僕らの間には"
+    },
+    {
+      "en": "There’s so much love in between us",
+      "ja": "こんなにも愛が溢れているのに"
     },
     {
       "en": "But you say you gotta get home",
       "ja": "君は「帰らなくちゃ」と言う"
     },
     {
-      "en": "Stay here with me\nI won’t tell a soul",
-      "ja": "僕のそばにいて\n誰にも言わないから"
+      "en": "Stay here with me",
+      "ja": "僕のそばにいて"
     },
     {
-      "en": "You tell me someone\nWaiting for you",
-      "ja": "誰かが君を待っているんだと\n君は言う"
+      "en": "I won’t tell a soul",
+      "ja": "誰にも言わないから"
+    },
+    {
+      "en": "You tell me someone",
+      "ja": "誰かが君を待っているんだと"
+    },
+    {
+      "en": "Waiting for you",
+      "ja": "君は言う"
     },
     {
       "en": "That you can’t do this anymore",
@@ -64,56 +92,104 @@
       "ja": "なのに君はまた僕にキスをする"
     },
     {
-      "en": "So go ahead and\nDraw the blinds and\nLock all the doors",
-      "ja": "だからもう\nブラインドを閉めて\n扉に鍵をかけてよ"
+      "en": "So go ahead and",
+      "ja": "だからもう"
     },
     {
-      "en": "Baby tonight\nThere’s so much love in between us",
-      "ja": "ベイビー、今夜の僕らの間には\nこんなにも愛が溢れているのに"
+      "en": "Draw the blinds and",
+      "ja": "ブラインドを閉めて"
+    },
+    {
+      "en": "Lock all the doors",
+      "ja": "扉に鍵をかけてよ"
+    },
+    {
+      "en": "Baby tonight",
+      "ja": "ベイビー、今夜の僕らの間には"
+    },
+    {
+      "en": "There’s so much love in between us",
+      "ja": "こんなにも愛が溢れているのに"
     },
     {
       "en": "But you say you gotta get home",
       "ja": "君は「帰らなくちゃ」と言う"
     },
     {
-      "en": "Stay here with me\nI won’t tell a soul",
-      "ja": "僕のそばにいて\n誰にも言わないから"
+      "en": "Stay here with me",
+      "ja": "僕のそばにいて"
     },
     {
-      "en": "Oh if you want me\nLike I want you",
-      "ja": "僕が君を想うように\n君も僕を求めてくれるなら"
+      "en": "I won’t tell a soul",
+      "ja": "誰にも言わないから"
+    },
+    {
+      "en": "Oh if you want me",
+      "ja": "僕が君を想うように"
+    },
+    {
+      "en": "Like I want you",
+      "ja": "君も僕を求めてくれるなら"
     },
     {
       "en": "I won’t judge you",
       "ja": "君を責めたりはしない"
     },
     {
-      "en": "This could be our little secret\nOur secret",
-      "ja": "これは僕たちだけの秘密\n二人だけの秘密にしよう"
+      "en": "This could be our little secret",
+      "ja": "これは僕たちだけの秘密"
+    },
+    {
+      "en": "Our secret",
+      "ja": "二人だけの秘密にしよう"
     },
     {
       "en": "So tell me if you’re ready",
       "ja": "覚悟ができたら教えて"
     },
     {
-      "en": "‘Cause if no one knows then\nIt ain’t really cheating",
-      "ja": "誰にも知られなければ\n浮気じゃないも同然だから"
+      "en": "‘Cause if no one knows then",
+      "ja": "誰にも知られなければ"
     },
     {
-      "en": "Oh darling\nI know you’re taken",
-      "ja": "ねえ、ダーリン\n君に相手がいるのはわかってる"
+      "en": "It ain’t really cheating",
+      "ja": "浮気じゃないも同然だから"
     },
     {
-      "en": "But something ‘bout this\nJust feels so right",
-      "ja": "でもこれが\nどうしようもなく正解に感じるんだ"
+      "en": "Oh darling",
+      "ja": "ねえ、ダーリン"
     },
     {
-      "en": "Oh baby\n‘cause every time",
-      "ja": "ねえ、ベイビー\nだっていつだって"
+      "en": "I know you’re taken",
+      "ja": "君に相手がいるのはわかってる"
     },
     {
-      "en": "One of us, tries to leave here\nOh the other one\nHolds on tight",
-      "ja": "どちらかがここを去ろうとすると\nもう一人が強く引き止めてしまうんだ"
+      "en": "But something ‘bout this",
+      "ja": "でもこれが"
+    },
+    {
+      "en": "Just feels so right",
+      "ja": "どうしようもなく正解に感じるんだ"
+    },
+    {
+      "en": "Oh baby",
+      "ja": "ねえ、ベイビー"
+    },
+    {
+      "en": "‘cause every time",
+      "ja": "だっていつだって"
+    },
+    {
+      "en": "One of us, tries to leave here",
+      "ja": "どちらかがここを去ろうとすると"
+    },
+    {
+      "en": "Oh the other one",
+      "ja": "もう一人が強く引き止めてしまうんだ"
+    },
+    {
+      "en": "Holds on tight",
+      "ja": ""
     },
     {
       "en": "Oh oh",
@@ -132,8 +208,12 @@
       "ja": "それなのに君は帰らなきゃと言う"
     },
     {
-      "en": "Stay here with me\nI won’t tell a soul",
-      "ja": "僕のそばにいて\n誰にも言わないから"
+      "en": "Stay here with me",
+      "ja": "僕のそばにいて"
+    },
+    {
+      "en": "I won’t tell a soul",
+      "ja": "誰にも言わないから"
     }
   ],
   "conversation": [

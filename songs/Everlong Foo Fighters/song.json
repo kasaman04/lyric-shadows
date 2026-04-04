@@ -20,28 +20,148 @@
   "lyrics": "Hello\nI've waited here for you\nEverlong\n\nTonight\nI throw myself into\nAnd out of the red\nOut of her head she sang\n\nCome down\nAnd waste away with me\nDown with me\nSlow how you wanted it to be\nI'm over my head\nOut of her head she sang\n\nAnd I wonder\nWhen I sing along with you\nIf everything could ever feel this real forever\nIf anything could ever be this good again\nThe only thing I'll ever ask of you\nYou've got to promise not to stop when I say when\nShe sang\n\nBreathe out\nSo I can breathe you in\nHold you in\nAnd now\nI know you've always been\nOut of your head\nOut of my head I sang\n\nAnd I wonder\nWhen I sing along with you\nIf everything could ever feel this real forever\nIf anything could ever be this good again\nThe only thing I'll ever ask of you\nYou've got to promise not to stop when I say when\n\nShe sang\nAnd I wonder...",
   "lyricsJa": [
     {
-      "en": "Hello\nI've waited here for you\nEverlong",
-      "ja": "ハロー、ここで君を待っていたんだ\n永遠に続くかと思えるほど、ずっと"
+      "en": "Hello",
+      "ja": "ハロー、ここで君を待っていたんだ"
     },
     {
-      "en": "Tonight\nI throw myself into\nAnd out of the red\nOut of her head she sang",
-      "ja": "今夜、僕は身を投じる\n突如として、理性を失ったかのように彼女は歌った"
+      "en": "I've waited here for you",
+      "ja": "永遠に続くかと思えるほど、ずっと"
     },
     {
-      "en": "Come down\nAnd waste away with me\nDown with me\nSlow how you wanted it to be\nI'm over my head\nOut of her head she sang",
-      "ja": "ここへおいで、僕と一緒に堕ちていこう\n僕のところへ\n君が望んだように、ゆっくりと\n僕はもう手に負えない、夢中になったまま彼女は歌った"
+      "en": "Everlong",
+      "ja": ""
     },
     {
-      "en": "And I wonder\nWhen I sing along with you\nIf everything could ever feel this real forever\nIf anything could ever be this good again\nThe only thing I'll ever ask of you\nYou've got to promise not to stop when I say when\nShe sang",
-      "ja": "そして僕は思うんだ\n君と一緒に歌う時\nすべてがいつまでも、これほど本物に感じられるだろうか\nこんなに素晴らしい瞬間が、また訪れるだろうか\n君にお願いしたいことはただ一つ\n僕が「ここだ」と言ったとき、止めないと約束してくれ\n彼女はそう歌った"
+      "en": "Tonight",
+      "ja": "今夜、僕は身を投じる"
     },
     {
-      "en": "Breathe out\nSo I can breathe you in\nHold you in\nAnd now\nI know you've always been\nOut of your head\nOut of my head I sang",
-      "ja": "息を吐いて　君の息を僕が吸い込めるように\n君を僕の中に留めておくように\nそして今、分かったんだ\n君もずっと同じだったって\n君も夢中だった、僕も理性を失いながら歌った"
+      "en": "I throw myself into",
+      "ja": "突如として、理性を失ったかのように彼女は歌った"
     },
     {
-      "en": "And I wonder\nWhen I sing along with you\nIf everything could ever feel this real forever\nIf anything could ever be this good again\nThe only thing I'll ever ask of you\nYou've got to promise not to stop when I say when\n\nShe sang\nAnd I wonder...",
-      "ja": "そして僕は思うんだ\n君と一緒に歌う時\nすべてがいつまでも、これほど本物に感じられるだろうか\nこんなに素晴らしい瞬間が、また訪れるだろうか\n君にお願いしたいことはただ一つ\n僕が「ここだ」と言ったとき、止めないと約束してくれ\n\n彼女はそう歌った\nそして僕は思うんだ…"
+      "en": "And out of the red",
+      "ja": ""
+    },
+    {
+      "en": "Out of her head she sang",
+      "ja": ""
+    },
+    {
+      "en": "Come down",
+      "ja": "ここへおいで、僕と一緒に堕ちていこう"
+    },
+    {
+      "en": "And waste away with me",
+      "ja": "僕のところへ"
+    },
+    {
+      "en": "Down with me",
+      "ja": "君が望んだように、ゆっくりと"
+    },
+    {
+      "en": "Slow how you wanted it to be",
+      "ja": "僕はもう手に負えない、夢中になったまま彼女は歌った"
+    },
+    {
+      "en": "I'm over my head",
+      "ja": ""
+    },
+    {
+      "en": "Out of her head she sang",
+      "ja": ""
+    },
+    {
+      "en": "And I wonder",
+      "ja": "そして僕は思うんだ"
+    },
+    {
+      "en": "When I sing along with you",
+      "ja": "君と一緒に歌う時"
+    },
+    {
+      "en": "If everything could ever feel this real forever",
+      "ja": "すべてがいつまでも、これほど本物に感じられるだろうか"
+    },
+    {
+      "en": "If anything could ever be this good again",
+      "ja": "こんなに素晴らしい瞬間が、また訪れるだろうか"
+    },
+    {
+      "en": "The only thing I'll ever ask of you",
+      "ja": "君にお願いしたいことはただ一つ"
+    },
+    {
+      "en": "You've got to promise not to stop when I say when",
+      "ja": "僕が「ここだ」と言ったとき、止めないと約束してくれ"
+    },
+    {
+      "en": "She sang",
+      "ja": "彼女はそう歌った"
+    },
+    {
+      "en": "Breathe out",
+      "ja": "息を吐いて　君の息を僕が吸い込めるように"
+    },
+    {
+      "en": "So I can breathe you in",
+      "ja": "君を僕の中に留めておくように"
+    },
+    {
+      "en": "Hold you in",
+      "ja": "そして今、分かったんだ"
+    },
+    {
+      "en": "And now",
+      "ja": "君もずっと同じだったって"
+    },
+    {
+      "en": "I know you've always been",
+      "ja": "君も夢中だった、僕も理性を失いながら歌った"
+    },
+    {
+      "en": "Out of your head",
+      "ja": ""
+    },
+    {
+      "en": "Out of my head I sang",
+      "ja": ""
+    },
+    {
+      "en": "And I wonder",
+      "ja": "そして僕は思うんだ"
+    },
+    {
+      "en": "When I sing along with you",
+      "ja": "君と一緒に歌う時"
+    },
+    {
+      "en": "If everything could ever feel this real forever",
+      "ja": "すべてがいつまでも、これほど本物に感じられるだろうか"
+    },
+    {
+      "en": "If anything could ever be this good again",
+      "ja": "こんなに素晴らしい瞬間が、また訪れるだろうか"
+    },
+    {
+      "en": "The only thing I'll ever ask of you",
+      "ja": "君にお願いしたいことはただ一つ"
+    },
+    {
+      "en": "You've got to promise not to stop when I say when",
+      "ja": "僕が「ここだ」と言ったとき、止めないと約束してくれ"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "She sang",
+      "ja": "彼女はそう歌った"
+    },
+    {
+      "en": "And I wonder...",
+      "ja": "そして僕は思うんだ…"
     }
   ],
   "conversation": [

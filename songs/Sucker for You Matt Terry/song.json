@@ -20,24 +20,140 @@
   "lyrics": "Shut me out, but pull me close\nKinda loving it, give me your heartache\nHold me tight, but let me go\nKinda loving it, look what you started\nTurn me on, then piss me off\nKinda loving it, got me addicted\nOh, you got me addicted\n\nOh, I don't mind\nWhat you do, what you do, what you do with me, baby\nI'm so down\nDo whatever you want me to do\nWhen you ask me\n\nI don't care how many times you're breaking my heart\nI'm just too weak to stay cool\nGuess I'm a sucker for you\nAnd I know it's complicated\nBut I hate being smart\nSo all the things that you do\nMakes me a sucker for you\nGuess I'm a sucker for you\nGuess I'm a sucker for you\n\nMaking plans, don't show up\nBaby, I don't mind, keeping me waiting\nEvery night, you're by my side\nI know it's really worth every second\n\nI don't wanna let go\nI'm not gonna let go\nEven if you hurt me, baby\nSo go ahead and hurt me, baby\n\nTake me high to low, low\nGet me hot and cold, cold\nGo ahead and call me crazy\nNo, I'm not gonna leave you, baby",
   "lyricsJa": [
     {
-      "en": "Shut me out, but pull me close\nKinda loving it, give me your heartache\nHold me tight, but let me go\nKinda loving it, look what you started\nTurn me on, then piss me off\nKinda loving it, got me addicted\nOh, you got me addicted",
-      "ja": "僕を拒絶したかと思えば、抱き寄せてくる\nそんなのも悪くないな、君の抱える痛みを僕におくれ\n強く抱きしめたかと思えば、突き放す\nそんなのも嫌いじゃないよ、ほら、君が始めたことだろ\nその気にさせたかと思えば、またカチンと怒らせる\nうん、それも悪くない。すっかり君の依存症だ\nああ、完全に君の中毒になってる"
+      "en": "Shut me out, but pull me close",
+      "ja": "僕を拒絶したかと思えば、抱き寄せてくる"
     },
     {
-      "en": "Oh, I don't mind\nWhat you do, what you do, what you do with me, baby\nI'm so down\nDo whatever you want me to do\nWhen you ask me",
-      "ja": "ああ、僕は気にしないよ\n君が僕に何をしようと、僕をどう扱おうとも\n僕は君のなすがままだよ\n君が望むことは何でもするさ\n君が僕に頼むならね"
+      "en": "Kinda loving it, give me your heartache",
+      "ja": "そんなのも悪くないな、君の抱える痛みを僕におくれ"
     },
     {
-      "en": "I don't care how many times you're breaking my heart\nI'm just too weak to stay cool\nGuess I'm a sucker for you\nAnd I know it's complicated\nBut I hate being smart\nSo all the things that you do\nMakes me a sucker for you\nGuess I'm a sucker for you\nGuess I'm a sucker for you",
-      "ja": "君が何度僕の心を砕こうと知ったことか\nクールでい続けるには、僕は弱すぎるんだ\nきっと僕は、君にゾッコンなんだ\n複雑な状況なのは分かってる\nでも、賢く立ち回るのなんてクソ食らえだ\n君がするすべてのことが、僕を君の虜にするんだ\n本当に、僕は君にゾッコンらしくてさ"
+      "en": "Hold me tight, but let me go",
+      "ja": "強く抱きしめたかと思えば、突き放す"
     },
     {
-      "en": "Making plans, don't show up\nBaby, I don't mind, keeping me waiting\nEvery night, you're by my side\nI know it's really worth every second",
-      "ja": "約束をしたのに、君は現れない\nベイビー、気にしないよ。いくら僕を待たせたって\n毎晩、君が僕のすぐそばにいる\nその1秒1秒に、どれだけの価値があるか分かっているから"
+      "en": "Kinda loving it, look what you started",
+      "ja": "そんなのも嫌いじゃないよ、ほら、君が始めたことだろ"
     },
     {
-      "en": "I don't wanna let go\nI'm not gonna let go\nEven if you hurt me, baby\nSo go ahead and hurt me, baby\n\nTake me high to low, low\nGet me hot and cold, cold\nGo ahead and call me crazy\nNo, I'm not gonna leave you, baby",
-      "ja": "君を手放したくない\n手放すつもりなんてないよ\nたとえ君が僕を傷つけたとしても\nだからいいよ、思う存分僕を傷つけてくれ\n\n天国からどん底まで突き落としてくれ\n熱く燃え上がらせては、冷え切らせてくれ\nいいさ、僕をイカれてるって呼べばいい\nいや、それでも絶対に僕は君から離れないよ"
+      "en": "Turn me on, then piss me off",
+      "ja": "その気にさせたかと思えば、またカチンと怒らせる"
+    },
+    {
+      "en": "Kinda loving it, got me addicted",
+      "ja": "うん、それも悪くない。すっかり君の依存症だ"
+    },
+    {
+      "en": "Oh, you got me addicted",
+      "ja": "ああ、完全に君の中毒になってる"
+    },
+    {
+      "en": "Oh, I don't mind",
+      "ja": "ああ、僕は気にしないよ"
+    },
+    {
+      "en": "What you do, what you do, what you do with me, baby",
+      "ja": "君が僕に何をしようと、僕をどう扱おうとも"
+    },
+    {
+      "en": "I'm so down",
+      "ja": "僕は君のなすがままだよ"
+    },
+    {
+      "en": "Do whatever you want me to do",
+      "ja": "君が望むことは何でもするさ"
+    },
+    {
+      "en": "When you ask me",
+      "ja": "君が僕に頼むならね"
+    },
+    {
+      "en": "I don't care how many times you're breaking my heart",
+      "ja": "君が何度僕の心を砕こうと知ったことか"
+    },
+    {
+      "en": "I'm just too weak to stay cool",
+      "ja": "クールでい続けるには、僕は弱すぎるんだ"
+    },
+    {
+      "en": "Guess I'm a sucker for you",
+      "ja": "きっと僕は、君にゾッコンなんだ"
+    },
+    {
+      "en": "And I know it's complicated",
+      "ja": "複雑な状況なのは分かってる"
+    },
+    {
+      "en": "But I hate being smart",
+      "ja": "でも、賢く立ち回るのなんてクソ食らえだ"
+    },
+    {
+      "en": "So all the things that you do",
+      "ja": "君がするすべてのことが、僕を君の虜にするんだ"
+    },
+    {
+      "en": "Makes me a sucker for you",
+      "ja": "本当に、僕は君にゾッコンらしくてさ"
+    },
+    {
+      "en": "Guess I'm a sucker for you",
+      "ja": ""
+    },
+    {
+      "en": "Guess I'm a sucker for you",
+      "ja": ""
+    },
+    {
+      "en": "Making plans, don't show up",
+      "ja": "約束をしたのに、君は現れない"
+    },
+    {
+      "en": "Baby, I don't mind, keeping me waiting",
+      "ja": "ベイビー、気にしないよ。いくら僕を待たせたって"
+    },
+    {
+      "en": "Every night, you're by my side",
+      "ja": "毎晩、君が僕のすぐそばにいる"
+    },
+    {
+      "en": "I know it's really worth every second",
+      "ja": "その1秒1秒に、どれだけの価値があるか分かっているから"
+    },
+    {
+      "en": "I don't wanna let go",
+      "ja": "君を手放したくない"
+    },
+    {
+      "en": "I'm not gonna let go",
+      "ja": "手放すつもりなんてないよ"
+    },
+    {
+      "en": "Even if you hurt me, baby",
+      "ja": "たとえ君が僕を傷つけたとしても"
+    },
+    {
+      "en": "So go ahead and hurt me, baby",
+      "ja": "だからいいよ、思う存分僕を傷つけてくれ"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "Take me high to low, low",
+      "ja": "天国からどん底まで突き落としてくれ"
+    },
+    {
+      "en": "Get me hot and cold, cold",
+      "ja": "熱く燃え上がらせては、冷え切らせてくれ"
+    },
+    {
+      "en": "Go ahead and call me crazy",
+      "ja": "いいさ、僕をイカれてるって呼べばいい"
+    },
+    {
+      "en": "No, I'm not gonna leave you, baby",
+      "ja": "いや、それでも絶対に僕は君から離れないよ"
     }
   ],
   "conversation": [

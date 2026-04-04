@@ -20,16 +20,24 @@
   "lyrics": "One touch and you got me stoned\nHigher than I've ever known\nYou call the shots and I follow\nSun rise but the night still young\nNo words, but we speak in tongues\nIf you let me, I might say too much\n\nYour touch blurred my vision\nIt's your world, and I'm just in it\nEven sober I'm not thinkin' straight\n\n'Cause I'm off my face, in love with you\nI'm out my head, so into you\nAnd I don't know how you do it\nBut I'm forever ruined by you, ooh, ooh, ooh\n\nCan't sleep 'cause I'm way too buzzed\nToo late, now you're in my blood\nI don't hate the way you keep me up\n\nYour touch blurred my vision\nIt's your world, and I'm just in it\nEven sober I'm not thinkin' straight\n\n'Cause I'm off my face, in love with you\nI'm out my head, so into you\nAnd I don't know how you do it\nBut I'm forever ruin by you, ooh, ooh, ooh\n\nOoh-ooh-ooh, ooh, ooh, ooh, ooh\nOoh-ooh-ooh, ooh, ooh\nOoh-ooh-ooh, ooh, ooh, ooh, ooh\nOoh-ooh-ooh, ooh, ooh\n\n'Cause I'm off my face, in love with you\nI'm out my head, so into you\nAnd I don't know how you do it\nBut I'm forever ruined by you, ooh, ooh, ooh\n\nBy you, ooh, ooh, ooh",
   "lyricsJa": [
     {
-      "en": "One touch and you got me stoned\nHigher than I've ever known",
-      "ja": "君に触れただけで 僕は酔いしれて\nこんなにも高く舞い上がってく"
+      "en": "One touch and you got me stoned",
+      "ja": "君に触れただけで 僕は酔いしれて"
+    },
+    {
+      "en": "Higher than I've ever known",
+      "ja": "こんなにも高く舞い上がってく"
     },
     {
       "en": "You call the shots and I follow",
       "ja": "君の言うままに 僕はただついていくだけ"
     },
     {
-      "en": "Sun rise but the night still young\nNo words, but we speak in tongues",
-      "ja": "夜はまだ明けない 太陽が昇っても\n言葉はいらない 心で通じ合える"
+      "en": "Sun rise but the night still young",
+      "ja": "夜はまだ明けない 太陽が昇っても"
+    },
+    {
+      "en": "No words, but we speak in tongues",
+      "ja": "言葉はいらない 心で通じ合える"
     },
     {
       "en": "If you let me, I might say too much",
@@ -48,12 +56,20 @@
       "ja": "シラフだって まっすぐ考えられない"
     },
     {
-      "en": "'Cause I'm off my face, in love with you\nI'm out my head, so into you",
-      "ja": "君に夢中で 理性を失う\n君で頭がいっぱいさ"
+      "en": "'Cause I'm off my face, in love with you",
+      "ja": "君に夢中で 理性を失う"
     },
     {
-      "en": "And I don't know how you do it\nBut I'm forever ruined by you, ooh, ooh, ooh",
-      "ja": "どうしてそんな風にさせるの\n僕はもう君の虜だよ、Ooh, ooh, ooh"
+      "en": "I'm out my head, so into you",
+      "ja": "君で頭がいっぱいさ"
+    },
+    {
+      "en": "And I don't know how you do it",
+      "ja": "どうしてそんな風にさせるの"
+    },
+    {
+      "en": "But I'm forever ruined by you, ooh, ooh, ooh",
+      "ja": "僕はもう君の虜だよ、Ooh, ooh, ooh"
     },
     {
       "en": "Can't sleep 'cause I'm way too buzzed",
@@ -80,24 +96,52 @@
       "ja": "シラフだって まっすぐ考えられない"
     },
     {
-      "en": "'Cause I'm off my face, in love with you\nI'm out my head, so into you",
-      "ja": "君に夢中で 理性を失う\n君で頭がいっぱいさ"
+      "en": "'Cause I'm off my face, in love with you",
+      "ja": "君に夢中で 理性を失う"
     },
     {
-      "en": "And I don't know how you do it\nBut I'm forever ruin by you, ooh, ooh, ooh",
-      "ja": "どうしてそんな風にさせるの\n僕はもう君の虜だよ、Ooh, ooh, ooh"
+      "en": "I'm out my head, so into you",
+      "ja": "君で頭がいっぱいさ"
     },
     {
-      "en": "Ooh-ooh-ooh, ooh, ooh, ooh, ooh\nOoh-ooh-ooh, ooh, ooh\nOoh-ooh-ooh, ooh, ooh, ooh, ooh\nOoh-ooh-ooh, ooh, ooh",
-      "ja": "Ooh-ooh-ooh, ooh, ooh, ooh, ooh\nOoh-ooh-ooh, ooh, ooh\nOoh-ooh-ooh, ooh, ooh, ooh, ooh\nOoh-ooh-ooh, ooh, ooh"
+      "en": "And I don't know how you do it",
+      "ja": "どうしてそんな風にさせるの"
     },
     {
-      "en": "'Cause I'm off my face, in love with you\nI'm out my head, so into you",
-      "ja": "君に夢中で 理性を失う\n君で頭がいっぱいさ"
+      "en": "But I'm forever ruin by you, ooh, ooh, ooh",
+      "ja": "僕はもう君の虜だよ、Ooh, ooh, ooh"
     },
     {
-      "en": "And I don't know how you do it\nBut I'm forever ruined by you, ooh, ooh, ooh",
-      "ja": "どうしてそんな風にさせるの\n僕はもう君の虜だよ、Ooh, ooh, ooh"
+      "en": "Ooh-ooh-ooh, ooh, ooh, ooh, ooh",
+      "ja": "Ooh-ooh-ooh, ooh, ooh, ooh, ooh"
+    },
+    {
+      "en": "Ooh-ooh-ooh, ooh, ooh",
+      "ja": "Ooh-ooh-ooh, ooh, ooh"
+    },
+    {
+      "en": "Ooh-ooh-ooh, ooh, ooh, ooh, ooh",
+      "ja": "Ooh-ooh-ooh, ooh, ooh, ooh, ooh"
+    },
+    {
+      "en": "Ooh-ooh-ooh, ooh, ooh",
+      "ja": "Ooh-ooh-ooh, ooh, ooh"
+    },
+    {
+      "en": "'Cause I'm off my face, in love with you",
+      "ja": "君に夢中で 理性を失う"
+    },
+    {
+      "en": "I'm out my head, so into you",
+      "ja": "君で頭がいっぱいさ"
+    },
+    {
+      "en": "And I don't know how you do it",
+      "ja": "どうしてそんな風にさせるの"
+    },
+    {
+      "en": "But I'm forever ruined by you, ooh, ooh, ooh",
+      "ja": "僕はもう君の虜だよ、Ooh, ooh, ooh"
     },
     {
       "en": "By you, ooh, ooh, ooh",

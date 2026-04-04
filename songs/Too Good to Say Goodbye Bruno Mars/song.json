@@ -20,28 +20,52 @@
   "lyrics": "I've made mistakes\nI could have treated you better\nI let you get away\nThere goes my happily ever after\n\nTell me why, why can't we try and start again?\nThis can't be how our story ends\nYou're more than my girl, you're my best friend\nTell me you remember when\nI was your man and you were my girl\nIt was you and me against the world\n\nBaby, ain't nobody gonna love me like the way you do\nAnd you ain't never gonna find a love like mine\nTell me, what can I do to make it up to you?\n'Cause what we got's too good to say goodbye, goodbye\n\nYeah, I'm still in love with you, darlin'\nI know you feel the same\nOh, what's the point of both of us being broken-hearted?\nI pray it's never too late\n\nSo tell me why, why can't we try and start again?\nThis can't be how our story ends\nYou're more than my girl, you're my best friend\nTell me you remember when\nI was your man and you were my girl\nIt was you and me against the world\n\nBaby, ain't nobody gonna love me like the way you do\nAnd you ain't never gonna find a love like mine\nTell me, what can I do to make it up to you?\n'Cause what we got's too good to say goodbye, goodbye\n\nGirl, won't you listen?\nIt's you that I'm missin'\nTake my hand, I wanna go, I wanna go\nIf we're gonna fight this fight for better days\nI know we're gonna make it\nThis is the chance, let's take it\n\nBaby, ain't nobody gonna love me like the way you do\nAnd you ain't never gonna find a love like mine\nTell me, what can I do to make it up to you?\n'Cause what we got's too good to say goodbye\nGoodbye",
   "lyricsJa": [
     {
-      "en": "I've made mistakes\nI could have treated you better",
-      "ja": "僕は間違いを犯してしまった\nもっと君を大切にできたはずなのに"
+      "en": "I've made mistakes",
+      "ja": "僕は間違いを犯してしまった"
     },
     {
-      "en": "I let you get away\nThere goes my happily ever after",
-      "ja": "君をこの手から離してしまった\n僕の描いていた幸せな未来が消えていく"
+      "en": "I could have treated you better",
+      "ja": "もっと君を大切にできたはずなのに"
     },
     {
-      "en": "Tell me why, why can't we try and start again?\nThis can't be how our story ends",
-      "ja": "教えてくれ、どうしてやり直せないんだ？\n僕らの物語が、こんな形で終わるはずなんてない"
+      "en": "I let you get away",
+      "ja": "君をこの手から離してしまった"
+    },
+    {
+      "en": "There goes my happily ever after",
+      "ja": "僕の描いていた幸せな未来が消えていく"
+    },
+    {
+      "en": "Tell me why, why can't we try and start again?",
+      "ja": "教えてくれ、どうしてやり直せないんだ？"
+    },
+    {
+      "en": "This can't be how our story ends",
+      "ja": "僕らの物語が、こんな形で終わるはずなんてない"
     },
     {
       "en": "You're more than my girl, you're my best friend",
       "ja": "君はただの恋人じゃない、僕の最高に理解し合える親友なんだ"
     },
     {
-      "en": "Tell me you remember when\nI was your man and you were my girl\nIt was you and me against the world",
-      "ja": "あの頃を覚えていると言ってほしい\n二人でいれば、世界を敵に回しても平気だったあの頃を"
+      "en": "Tell me you remember when",
+      "ja": "あの頃を覚えていると言ってほしい"
     },
     {
-      "en": "Baby, ain't nobody gonna love me like the way you do\nAnd you ain't never gonna find a love like mine",
-      "ja": "君以上に僕を愛してくれる人はいないし\n君だって、僕ほど君を想う人には二度と出会えないはずだ"
+      "en": "I was your man and you were my girl",
+      "ja": "二人でいれば、世界を敵に回しても平気だったあの頃を"
+    },
+    {
+      "en": "It was you and me against the world",
+      "ja": ""
+    },
+    {
+      "en": "Baby, ain't nobody gonna love me like the way you do",
+      "ja": "君以上に僕を愛してくれる人はいないし"
+    },
+    {
+      "en": "And you ain't never gonna find a love like mine",
+      "ja": "君だって、僕ほど君を想う人には二度と出会えないはずだ"
     },
     {
       "en": "Tell me, what can I do to make it up to you?",
@@ -52,24 +76,40 @@
       "ja": "僕らの絆は、さよならを言うにはあまりに美しすぎるから"
     },
     {
-      "en": "Yeah, I'm still in love with you, darlin'\nI know you feel the same",
-      "ja": "そうさ、今でも君を愛しているよ\n君だって同じ気持ちなのは分かってる"
+      "en": "Yeah, I'm still in love with you, darlin'",
+      "ja": "そうさ、今でも君を愛しているよ"
     },
     {
-      "en": "Oh, what's the point of both of us being broken-hearted?\nI pray it's never too late",
-      "ja": "二人して傷ついたままでいるなんて、何の意味があるんだ？\nまだ手遅れじゃないと信じているよ"
+      "en": "I know you feel the same",
+      "ja": "君だって同じ気持ちなのは分かってる"
     },
     {
-      "en": "Girl, won't you listen?\nIt's you that I'm missin'",
-      "ja": "ねえ、聞いてくれないか？\n僕が恋しくてたまらないのは君なんだ"
+      "en": "Oh, what's the point of both of us being broken-hearted?",
+      "ja": "二人して傷ついたままでいるなんて、何の意味があるんだ？"
+    },
+    {
+      "en": "I pray it's never too late",
+      "ja": "まだ手遅れじゃないと信じているよ"
+    },
+    {
+      "en": "Girl, won't you listen?",
+      "ja": "ねえ、聞いてくれないか？"
+    },
+    {
+      "en": "It's you that I'm missin'",
+      "ja": "僕が恋しくてたまらないのは君なんだ"
     },
     {
       "en": "Take my hand, I wanna go, I wanna go",
       "ja": "僕の手を取って、また君と歩き出したいんだ"
     },
     {
-      "en": "If we're gonna fight this fight for better days\nI know we're gonna make it",
-      "ja": "より良い日々のために戦う覚悟があるなら\n僕らならきっと乗り越えられる"
+      "en": "If we're gonna fight this fight for better days",
+      "ja": "より良い日々のために戦う覚悟があるなら"
+    },
+    {
+      "en": "I know we're gonna make it",
+      "ja": "僕らならきっと乗り越えられる"
     },
     {
       "en": "This is the chance, let's take it",

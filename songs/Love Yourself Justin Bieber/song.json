@@ -20,24 +20,48 @@
   "lyrics": "For all the times that you rained on my parade\nAnd all the clubs you get in using my name\nYou think you broke my heart, oh girl for goodness sake!\nYou think I'm crying on my own, well I ain't\n\nAnd I didn't wanna write a song\n'Cause I didn't want anyone thinking I still care\nI don't but, you still hit my phone up\nAnd baby I'll be movin' on\nAnd I think it should be somethin'\nThat I don't wanna hold back\nMaybe you should know that\n\nMy mama don't like you and she likes everyone\nAnd I never like to admit that I was wrong\nAnd I've been so caught up in my job,\nDidn't see what's going on\nBut now I know, I'm better sleeping on my own\n\n'Cause if you like the way you look that much\nOh baby you should go and love yourself\nAnd if you think that I'm still holdin' on to somethin'\nYou should go and love yourself\n\nBut when you told me that you hated my friends\nThe only problem was with you and not them\nAnd every time you told me my opinion was wrong\nAnd tried to make me forget where I came from\n\nAnd I didn't wanna write a song\n'Cause I didn't want anyone thinking I still care\nI don't but, you still hit my phone up\nAnd baby I'll be movin' on\nAnd I think it should be somethin'\nThat I don't wanna hold back\nMaybe you should know that\n\nMy mama don't like you and she likes everyone\nAnd I never like to admit that I was wrong\nAnd I've been so caught up in my job\nDidn't see what's going on\nAnd now I know, I'm better sleeping on my own\n\n'Cause if you like the way you look that much\nOh baby you should go and love yourself\nAnd if you think that I'm still holdin' on to somethin'\nYou should go and love yourself\n\nFor all the times that you made me feel small\nI fell in love, now I feel nothin' at all\nI never felt so low when I was vulnerable\nWas I a fool to let you break down my walls?\n\n'Cause if you like the way you look that much\nOh baby you should go and love yourself\nAnd if you think that I'm still holdin' on to somethin'\nYou should go and love yourself\n\n'Cause if you like the way you look that much\nOh baby you should go and love yourself\nAnd if you think that I'm still holdin' on to somethin'\nYou should go and love yourself",
   "lyricsJa": [
     {
-      "en": "For all the times that you rained on my parade\nAnd all the clubs you get in using my name",
-      "ja": "僕の邪魔ばかりしてたね\nそして僕の名を語りどこへでも入ってた"
+      "en": "For all the times that you rained on my parade",
+      "ja": "僕の邪魔ばかりしてたね"
     },
     {
-      "en": "You think you broke my heart, oh girl for goodness sake!\nYou think I'm crying on my own, well I ain't",
-      "ja": "僕の心を壊したとでも思ってる？勘弁してくれよ\n独りで泣いてるなんて、違うさ、もう"
+      "en": "And all the clubs you get in using my name",
+      "ja": "そして僕の名を語りどこへでも入ってた"
     },
     {
-      "en": "And I didn't wanna write a song\n'Cause I didn't want anyone thinking I still care",
-      "ja": "僕は歌を書きたくなかった\n君をまだ気にしてるなんて、誰もに思われたくなかったから"
+      "en": "You think you broke my heart, oh girl for goodness sake!",
+      "ja": "僕の心を壊したとでも思ってる？勘弁してくれよ"
+    },
+    {
+      "en": "You think I'm crying on my own, well I ain't",
+      "ja": "独りで泣いてるなんて、違うさ、もう"
+    },
+    {
+      "en": "And I didn't wanna write a song",
+      "ja": "僕は歌を書きたくなかった"
+    },
+    {
+      "en": "'Cause I didn't want anyone thinking I still care",
+      "ja": "君をまだ気にしてるなんて、誰もに思われたくなかったから"
     },
     {
       "en": "I don't but, you still hit my phone up",
       "ja": "気にしてないのに、君はまだ僕に連絡してくる"
     },
     {
-      "en": "And baby I'll be movin' on\nAnd I think it should be somethin'\nThat I don't wanna hold back\nMaybe you should know that",
-      "ja": "もう僕、前に進むから\n隠すことも、ためらうこともないって\n君に知っておいてほしいだけさ"
+      "en": "And baby I'll be movin' on",
+      "ja": "もう僕、前に進むから"
+    },
+    {
+      "en": "And I think it should be somethin'",
+      "ja": "隠すことも、ためらうこともないって"
+    },
+    {
+      "en": "That I don't wanna hold back",
+      "ja": "君に知っておいてほしいだけさ"
+    },
+    {
+      "en": "Maybe you should know that",
+      "ja": ""
     },
     {
       "en": "My mama don't like you and she likes everyone",
@@ -48,40 +72,76 @@
       "ja": "自分の非は認めたくない性分だけどさ"
     },
     {
-      "en": "And I've been so caught up in my job,\nDidn't see what's going on",
-      "ja": "仕事に夢中になりすぎて\n周りが見えてなかったんだ"
+      "en": "And I've been so caught up in my job,",
+      "ja": "仕事に夢中になりすぎて"
+    },
+    {
+      "en": "Didn't see what's going on",
+      "ja": "周りが見えてなかったんだ"
     },
     {
       "en": "But now I know, I'm better sleeping on my own",
       "ja": "でも今ならわかる、一人で眠る方がずっといい"
     },
     {
-      "en": "'Cause if you like the way you look that much\nOh baby you should go and love yourself",
-      "ja": "そんなに自分の見た目が好きなら\nベイビー、自分だけを愛せばいいさ"
+      "en": "'Cause if you like the way you look that much",
+      "ja": "そんなに自分の見た目が好きなら"
     },
     {
-      "en": "And if you think that I'm still holdin' on to somethin'\nYou should go and love yourself",
-      "ja": "まだ僕が未練たらたらだと思ってるなら\n自分だけを愛せばいいんだ"
+      "en": "Oh baby you should go and love yourself",
+      "ja": "ベイビー、自分だけを愛せばいいさ"
     },
     {
-      "en": "But when you told me that you hated my friends\nThe only problem was with you and not them",
-      "ja": "僕の友達を嫌いだって君が言ったけど\n問題は彼らじゃなく君にあったんだ"
+      "en": "And if you think that I'm still holdin' on to somethin'",
+      "ja": "まだ僕が未練たらたらだと思ってるなら"
     },
     {
-      "en": "And every time you told me my opinion was wrong\nAnd tried to make me forget where I came from",
-      "ja": "いつも僕の意見を否定してさ\n僕のルーツまで忘れさせようとしたね"
+      "en": "You should go and love yourself",
+      "ja": "自分だけを愛せばいいんだ"
     },
     {
-      "en": "And I didn't wanna write a song\n'Cause I didn't want anyone thinking I still care",
-      "ja": "僕は歌を書きたくなかった\n君をまだ気にしてるなんて、誰もに思われたくなかったから"
+      "en": "But when you told me that you hated my friends",
+      "ja": "僕の友達を嫌いだって君が言ったけど"
+    },
+    {
+      "en": "The only problem was with you and not them",
+      "ja": "問題は彼らじゃなく君にあったんだ"
+    },
+    {
+      "en": "And every time you told me my opinion was wrong",
+      "ja": "いつも僕の意見を否定してさ"
+    },
+    {
+      "en": "And tried to make me forget where I came from",
+      "ja": "僕のルーツまで忘れさせようとしたね"
+    },
+    {
+      "en": "And I didn't wanna write a song",
+      "ja": "僕は歌を書きたくなかった"
+    },
+    {
+      "en": "'Cause I didn't want anyone thinking I still care",
+      "ja": "君をまだ気にしてるなんて、誰もに思われたくなかったから"
     },
     {
       "en": "I don't but, you still hit my phone up",
       "ja": "気にしてないのに、君はまだ僕に連絡してくる"
     },
     {
-      "en": "And baby I'll be movin' on\nAnd I think it should be somethin'\nThat I don't wanna hold back\nMaybe you should know that",
-      "ja": "もう僕、前に進むから\n隠すことも、ためらうこともないって\n君に知っておいてほしいだけさ"
+      "en": "And baby I'll be movin' on",
+      "ja": "もう僕、前に進むから"
+    },
+    {
+      "en": "And I think it should be somethin'",
+      "ja": "隠すことも、ためらうこともないって"
+    },
+    {
+      "en": "That I don't wanna hold back",
+      "ja": "君に知っておいてほしいだけさ"
+    },
+    {
+      "en": "Maybe you should know that",
+      "ja": ""
     },
     {
       "en": "My mama don't like you and she likes everyone",
@@ -92,20 +152,32 @@
       "ja": "自分の非は認めたくない性分だけどさ"
     },
     {
-      "en": "And I've been so caught up in my job\nDidn't see what's going on",
-      "ja": "仕事に夢中になりすぎて\n周りが見えてなかったんだ"
+      "en": "And I've been so caught up in my job",
+      "ja": "仕事に夢中になりすぎて"
+    },
+    {
+      "en": "Didn't see what's going on",
+      "ja": "周りが見えてなかったんだ"
     },
     {
       "en": "And now I know, I'm better sleeping on my own",
       "ja": "でも今ならわかる、一人で眠る方がずっといい"
     },
     {
-      "en": "'Cause if you like the way you look that much\nOh baby you should go and love yourself",
-      "ja": "そんなに自分の見た目が好きなら\nベイビー、自分だけを愛せばいいさ"
+      "en": "'Cause if you like the way you look that much",
+      "ja": "そんなに自分の見た目が好きなら"
     },
     {
-      "en": "And if you think that I'm still holdin' on to somethin'\nYou should go and love yourself",
-      "ja": "まだ僕が未練たらたらだと思ってるなら\n自分だけを愛せばいいんだ"
+      "en": "Oh baby you should go and love yourself",
+      "ja": "ベイビー、自分だけを愛せばいいさ"
+    },
+    {
+      "en": "And if you think that I'm still holdin' on to somethin'",
+      "ja": "まだ僕が未練たらたらだと思ってるなら"
+    },
+    {
+      "en": "You should go and love yourself",
+      "ja": "自分だけを愛せばいいんだ"
     },
     {
       "en": "For all the times that you made me feel small",
@@ -116,16 +188,28 @@
       "ja": "恋に落ちたのに、今はもう何も感じない"
     },
     {
-      "en": "I never felt so low when I was vulnerable\nWas I a fool to let you break down my walls?",
-      "ja": "弱っていた時、こんなに落ち込んだことはなかった\n君に心の壁を壊させたなんて、僕がバカだったのか？"
+      "en": "I never felt so low when I was vulnerable",
+      "ja": "弱っていた時、こんなに落ち込んだことはなかった"
     },
     {
-      "en": "'Cause if you like the way you look that much\nOh baby you should go and love yourself",
-      "ja": "そんなに自分の見た目が好きなら\nベイビー、自分だけを愛せばいいさ"
+      "en": "Was I a fool to let you break down my walls?",
+      "ja": "君に心の壁を壊させたなんて、僕がバカだったのか？"
     },
     {
-      "en": "And if you think that I'm still holdin' on to somethin'\nYou should go and love yourself",
-      "ja": "まだ僕が未練たらたらだと思ってるなら\n自分だけを愛せばいいんだ"
+      "en": "'Cause if you like the way you look that much",
+      "ja": "そんなに自分の見た目が好きなら"
+    },
+    {
+      "en": "Oh baby you should go and love yourself",
+      "ja": "ベイビー、自分だけを愛せばいいさ"
+    },
+    {
+      "en": "And if you think that I'm still holdin' on to somethin'",
+      "ja": "まだ僕が未練たらたらだと思ってるなら"
+    },
+    {
+      "en": "You should go and love yourself",
+      "ja": "自分だけを愛せばいいんだ"
     },
     {
       "en": "'Cause if you like the way you look that",
