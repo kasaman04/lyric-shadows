@@ -1,0 +1,268 @@
+{
+  "id": "Dont Look Back in Anger Oasis",
+  "folderName": "Dont Look Back in Anger Oasis",
+  "songName": "Don't Look Back in Anger",
+  "artist": "Oasis",
+  "relationship": "友達",
+  "setting": "過去の言い争いを引きずって怒っている友人Aに対し、Bが「もう忘れなよ、前を向こう」と励ますシーン。",
+  "speakerA": {
+    "name": "Tom",
+    "type": "男性",
+    "voice": "CfDbY7v8tDkTvB9rNcUw"
+  },
+  "speakerB": {
+    "name": "Mike",
+    "type": "男２",
+    "voice": "nzFihrBIvB34imQBuxub"
+  },
+  "videoId": null,
+  "thumbnailUrl": null,
+  "lyrics": null,
+  "lyricsJa": [
+    {
+      "en": "Slip inside the eye of your mind",
+      "ja": "心の目の中へ滑り込んでごらん"
+    },
+    {
+      "en": "Don't you know you might find",
+      "ja": "見つかるかもしれないって気づいてる？"
+    },
+    {
+      "en": "A better place to play?",
+      "ja": "もっと楽しく過ごせる場所が"
+    },
+    {
+      "en": "You said that you'd never been",
+      "ja": "君は「今までそんな場所行ったことない」って言ってたね"
+    },
+    {
+      "en": "But all the things that you've seen",
+      "ja": "でも、君が見てきたすべてのものは"
+    },
+    {
+      "en": "Slowly fade away",
+      "ja": "ゆっくりと色褪せて消えていくんだ"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "So I start a revolution from my bed",
+      "ja": "だから僕はベッドの中から革命を起こすことにした"
+    },
+    {
+      "en": "'Cause you said the brains I had went to my head",
+      "ja": "君が「君のその頭の良さ、全部うぬぼれに変わっちゃったね」なんて言うからさ"
+    },
+    {
+      "en": "Step outside, summertime's in bloom",
+      "ja": "外へ出てみなよ、夏が真っ盛りだ"
+    },
+    {
+      "en": "Stand up beside the fireplace, take that look from off your face",
+      "ja": "暖炉のそばに立ち上がって、その暗い顔をやめなよ"
+    },
+    {
+      "en": "You ain't ever gonna burn my heart out",
+      "ja": "君は絶対に僕の心を燃やし尽くしたりできないから"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "And so, Sally can wait",
+      "ja": "だから、サリーなら待ってくれる"
+    },
+    {
+      "en": "She knows it's too late as we're walkin' on by",
+      "ja": "僕たちが通り過ぎていく頃には、もう遅すぎるって彼女はわかってるから"
+    },
+    {
+      "en": "Her soul slides away",
+      "ja": "彼女の魂はすり抜けていく"
+    },
+    {
+      "en": "But \"Don't look back in anger,\" I heard you say",
+      "ja": "でも「怒りにまかせて過去を振り返らないで」って、君がそう言うのが聞こえたんだ"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "Take me to the place where you go",
+      "ja": "君が行く場所へ連れて行ってよ"
+    },
+    {
+      "en": "Where nobody knows if it's night or day",
+      "ja": "そこが夜なのか昼なのか、誰も知らないような場所へ"
+    },
+    {
+      "en": "Please don't put your life in the hands",
+      "ja": "お願いだから、自分の人生を預けないでくれ"
+    },
+    {
+      "en": "Of a rock 'n' roll band",
+      "ja": "彼らの手なんかに、ロックンロールバンドなんかにさ"
+    },
+    {
+      "en": "Who'll throw it all away",
+      "ja": "すべてを投げ捨ててしまうような奴らに"
+    }
+  ],
+  "conversation": [
+    {
+      "speaker": "A",
+      "speakerName": "Tom",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "I can't believe he said those things to me.",
+          "displayHtml": "I can't believe he said those things to me.",
+          "audio": "/songs/Dont%20Look%20Back%20in%20Anger%20Oasis/0_0.mp3"
+        },
+        {
+          "text": "It's been two weeks, and I'm still so mad.",
+          "displayHtml": "It's been two weeks, and I'm still so mad.",
+          "audio": "/songs/Dont%20Look%20Back%20in%20Anger%20Oasis/0_1.mp3"
+        }
+      ],
+      "japanese": "彼があんなこと言ったなんて信じられないよ。もう2週間も経つのに、まだすごく頭にきてるんだ。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Mike",
+      "speakerType": "男２",
+      "sentences": [
+        {
+          "text": "I know you're hurt, but you need to take that look from off your face.",
+          "displayHtml": "I know you're hurt, but you need to <span class=\"lyric-phrase\">take that look from off your face</span>.",
+          "audio": "/songs/Dont%20Look%20Back%20in%20Anger%20Oasis/1_0.mp3"
+        },
+        {
+          "text": "It's not worth it.",
+          "displayHtml": "It's not worth it.",
+          "audio": "/songs/Dont%20Look%20Back%20in%20Anger%20Oasis/1_1.mp3"
+        }
+      ],
+      "japanese": "傷ついてるのはわかるけど、その暗い顔はやめなよ。気にするだけ無駄だよ。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Tom",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "But how can I just forget it?",
+          "displayHtml": "But how can I just forget it?",
+          "audio": "/songs/Dont%20Look%20Back%20in%20Anger%20Oasis/2_0.mp3"
+        },
+        {
+          "text": "Every time I think about it, my blood boils.",
+          "displayHtml": "Every time I think about it, my blood boils.",
+          "audio": "/songs/Dont%20Look%20Back%20in%20Anger%20Oasis/2_1.mp3"
+        }
+      ],
+      "japanese": "でも、どうやってただ忘れろっていうの？思い出すたびに血が煮えくり返りそうだよ。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Mike",
+      "speakerType": "男２",
+      "sentences": [
+        {
+          "text": "Eventually, all those bitter feelings will slowly fade away.",
+          "displayHtml": "Eventually, all those bitter feelings will <span class=\"lyric-phrase\">slowly fade away</span>.",
+          "audio": "/songs/Dont%20Look%20Back%20in%20Anger%20Oasis/3_0.mp3"
+        },
+        {
+          "text": "You have to give it time.",
+          "displayHtml": "You have to give it time.",
+          "audio": "/songs/Dont%20Look%20Back%20in%20Anger%20Oasis/3_1.mp3"
+        }
+      ],
+      "japanese": "最終的には、そんな苦々しい感情もゆっくりと色褪せて消えていくものさ。時間が必要なんだよ。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Tom",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "Maybe you're right.",
+          "displayHtml": "Maybe you're right.",
+          "audio": "/songs/Dont%20Look%20Back%20in%20Anger%20Oasis/4_0.mp3"
+        },
+        {
+          "text": "I just feel like I need some closure before I can move on.",
+          "displayHtml": "I just feel like I need some closure before I can move on.",
+          "audio": "/songs/Dont%20Look%20Back%20in%20Anger%20Oasis/4_1.mp3"
+        }
+      ],
+      "japanese": "君の言う通りかもしれない。ただ、次に進む前にふんぎりが必要な気がして。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Mike",
+      "speakerType": "男２",
+      "sentences": [
+        {
+          "text": "Closure comes from within.",
+          "displayHtml": "Closure comes from within.",
+          "audio": "/songs/Dont%20Look%20Back%20in%20Anger%20Oasis/5_0.mp3"
+        },
+        {
+          "text": "Please, just don't look back in anger.",
+          "displayHtml": "Please, just <span class=\"lyric-phrase\">don't look back in anger</span>.",
+          "audio": "/songs/Dont%20Look%20Back%20in%20Anger%20Oasis/5_1.mp3"
+        },
+        {
+          "text": "Forgive and forget.",
+          "displayHtml": "Forgive and forget.",
+          "audio": "/songs/Dont%20Look%20Back%20in%20Anger%20Oasis/5_2.mp3"
+        }
+      ],
+      "japanese": "ふんぎりは自分自身の心の中でつけるものさ。お願いだから、怒りにまかせて過去を振り返らないで。許して、忘れなよ。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Tom",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "Yeah, I shouldn't let this ruin my weekend.",
+          "displayHtml": "Yeah, I shouldn't let this ruin my weekend.",
+          "audio": "/songs/Dont%20Look%20Back%20in%20Anger%20Oasis/6_0.mp3"
+        },
+        {
+          "text": "I need to find a better place to play and just enjoy myself.",
+          "displayHtml": "I need to find a <span class=\"lyric-phrase\">better place to play</span> and just enjoy myself.",
+          "audio": "/songs/Dont%20Look%20Back%20in%20Anger%20Oasis/6_1.mp3"
+        }
+      ],
+      "japanese": "うん、こんなことで週末を台無しにするべきじゃないね。もっと楽しく過ごせる場所を見つけて、ただ楽しむことにするよ。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Mike",
+      "speakerType": "男２",
+      "sentences": [
+        {
+          "text": "That's the spirit!",
+          "displayHtml": "That's the spirit!",
+          "audio": "/songs/Dont%20Look%20Back%20in%20Anger%20Oasis/7_0.mp3"
+        },
+        {
+          "text": "Let's step outside; it's a beautiful day.",
+          "displayHtml": "Let's <span class=\"lyric-phrase\">step outside</span>; it's a beautiful day.",
+          "audio": "/songs/Dont%20Look%20Back%20in%20Anger%20Oasis/7_1.mp3"
+        }
+      ],
+      "japanese": "その意気だよ！さあ外に出よう、今日はすごくいい天気だからね。"
+    }
+  ],
+  "createdAt": "2026-04-12T05:38:25.651Z",
+  "hasLocalAudio": true
+}

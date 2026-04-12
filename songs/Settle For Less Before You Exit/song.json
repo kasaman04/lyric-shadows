@@ -1,0 +1,329 @@
+{
+  "id": "Settle For Less Before You Exit",
+  "folderName": "Settle For Less Before You Exit",
+  "songName": "Settle For Less",
+  "artist": "Before You Exit",
+  "relationship": "友達",
+  "setting": "デートをドタキャンされた友人Aに対し、ずっと見守ってきた幼馴染・男友達Bが「彼ではなく僕を選んで」と熱く語りかけるシーン。",
+  "speakerA": {
+    "name": "Sarah",
+    "type": "女性",
+    "voice": "cNYrMw9glwJZXR8RwbuR"
+  },
+  "speakerB": {
+    "name": "Tom",
+    "type": "男性",
+    "voice": "CfDbY7v8tDkTvB9rNcUw"
+  },
+  "videoId": null,
+  "thumbnailUrl": null,
+  "lyrics": null,
+  "lyricsJa": [
+    {
+      "en": "Everybody deserves somebody",
+      "ja": "誰だって誰かに愛される権利がある"
+    },
+    {
+      "en": "But girl nobody can love like I do",
+      "ja": "でもね、僕ほど君を愛せる人はいないんだ"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "You could be a super model",
+      "ja": "君はスーパーモデルにだって"
+    },
+    {
+      "en": "President or write a novel",
+      "ja": "大統領にだってなれるし、小説を書くことだできる"
+    },
+    {
+      "en": "But he's holding your back",
+      "ja": "でも、彼が君の邪魔をしてるんだ"
+    },
+    {
+      "en": "And you're better than that",
+      "ja": "君はそんな扱いを受けるような人じゃないよ"
+    },
+    {
+      "en": "He won't even buy you flowers",
+      "ja": "彼は君に花さえ買ってくれないし"
+    },
+    {
+      "en": "Stay up late and talk for hours",
+      "ja": "夜更かしして、何時間も君の話を聞いてくれたりもしない"
+    },
+    {
+      "en": "I think I can do that",
+      "ja": "僕ならそれができると思うし"
+    },
+    {
+      "en": "I can be better than that",
+      "ja": "彼よりも君を幸せにできるよ"
+    },
+    {
+      "en": "You should know...",
+      "ja": "わかってほしいんだ"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "Everybody deserves somebody",
+      "ja": "誰だって誰かに愛されるべきなんだ"
+    },
+    {
+      "en": "But girl nobody can love you like I do",
+      "ja": "でもね、僕ほど君を愛せる人はいないよ"
+    },
+    {
+      "en": "And I'm not perfect but you're so worth it",
+      "ja": "僕は完璧じゃないってわかってる、でも君はそれだけ尽くす価値がある人なんだ"
+    },
+    {
+      "en": "I wanna change the world for you",
+      "ja": "君のために世界だって変えたい"
+    },
+    {
+      "en": "So baby don't settle for less",
+      "ja": "だから、今の状態で妥協なんてしないでほしい"
+    },
+    {
+      "en": "You deserve the best",
+      "ja": "君は最高の愛情を受け取る資格がある"
+    },
+    {
+      "en": "You're better than the rest",
+      "ja": "君は他の誰よりも素晴らしいんだ"
+    },
+    {
+      "en": "And I can be the best",
+      "ja": "そして僕は、君にとっての最高の人になれる"
+    },
+    {
+      "en": "So baby don't settle for less",
+      "ja": "だからね、妥協なんてしないで"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "I've been watching in front the sidelines",
+      "ja": "ずっとサイドラインから君を見守ってきたんだ"
+    },
+    {
+      "en": "His mistakes become my guidelines",
+      "ja": "彼の失敗が、僕にとっての道標になってるよ"
+    },
+    {
+      "en": "Cause he's holding your back, And you're better than that",
+      "ja": "だって彼が君の邪魔をしてるから。君はそんな扱いを受けるような人じゃない"
+    },
+    {
+      "en": "I will love to buy you flowers",
+      "ja": "僕なら喜んで君に花を買うし"
+    },
+    {
+      "en": "Take the time to talk for hours",
+      "ja": "時間をかけて何時間でも話を聞くよ"
+    },
+    {
+      "en": "Yeah I can do that. I can be better than that",
+      "ja": "そう、僕にならできる。彼よりも君を幸せにできるよ"
+    },
+    {
+      "en": "You should know...",
+      "ja": "わかってほしいんだ"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "He takes you for granted",
+      "ja": "彼は君がいることを「当たり前」だと思ってる"
+    },
+    {
+      "en": "Girl I can't stand it",
+      "ja": "ああ、僕はそれが我慢できないんだ"
+    },
+    {
+      "en": "Watching you panic over him",
+      "ja": "彼のために君が動揺しているのを見るのがね"
+    },
+    {
+      "en": "See he's just a nobody",
+      "ja": "いいかい、彼はただの取るに足らない奴さ"
+    },
+    {
+      "en": "I can be somebody",
+      "ja": "僕は君にとっての「特別な誰か」になれるよ"
+    },
+    {
+      "en": "Someone to love til' the end",
+      "ja": "最後まで君を愛し抜く誰かにさ"
+    }
+  ],
+  "conversation": [
+    {
+      "speaker": "A",
+      "speakerName": "Sarah",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "He cancelled our date again.",
+          "displayHtml": "He cancelled our date again.",
+          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/0_0.mp3"
+        },
+        {
+          "text": "I'm so tired of this.",
+          "displayHtml": "I'm so tired of this.",
+          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/0_1.mp3"
+        }
+      ],
+      "japanese": "彼、またデートをキャンセルしたの。もう本当にうんざり。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Tom",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "Honestly, he takes you for granted.",
+          "displayHtml": "Honestly, he <span class=\"lyric-phrase\">takes you for granted</span>.",
+          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/1_0.mp3"
+        },
+        {
+          "text": "You're always the one making an effort.",
+          "displayHtml": "You're always the one making an effort.",
+          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/1_1.mp3"
+        }
+      ],
+      "japanese": "正直言って、彼は君がいることを当たり前だと思ってるよ。いつも君ばかりが努力してるじゃないか。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Sarah",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "I just don't know what to do.",
+          "displayHtml": "I just don't know what to do.",
+          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/2_0.mp3"
+        },
+        {
+          "text": "Maybe I'm expecting too much?",
+          "displayHtml": "Maybe I'm expecting too much?",
+          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/2_1.mp3"
+        }
+      ],
+      "japanese": "どうしたらいいのかわからないわ。私、期待しすぎなのかな？"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Tom",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "No, everyone deserves to be treated well.",
+          "displayHtml": "No, everyone <span class=\"lyric-phrase\">deserves</span> to be treated well.",
+          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/3_0.mp3"
+        },
+        {
+          "text": "Watching you panic over him all the time just hurts.",
+          "displayHtml": "<span class=\"lyric-phrase\">Watching you panic over</span> him all the time just hurts.",
+          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/3_1.mp3"
+        }
+      ],
+      "japanese": "いや、誰だって大切にされる権利はあるんだ。彼のために君が動揺しているのを見るのは、ただ辛いんだよ。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Sarah",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "It's just...",
+          "displayHtml": "It's just...",
+          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/4_0.mp3"
+        },
+        {
+          "text": "I love him, but I feel stuck.",
+          "displayHtml": "I love him, but I feel stuck.",
+          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/4_1.mp3"
+        }
+      ],
+      "japanese": "ただ…彼のことは愛してるけど、行き詰まっている気がするの。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Tom",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "That's because he's holding your back.",
+          "displayHtml": "That's because <span class=\"lyric-phrase\">he's holding your back</span>.",
+          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/5_0.mp3"
+        },
+        {
+          "text": "He won't even try to understand how you feel.",
+          "displayHtml": "<span class=\"lyric-phrase\">He won't even</span> try to understand how you feel.",
+          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/5_1.mp3"
+        }
+      ],
+      "japanese": "それは彼が君の足を引っ張っているからさ。彼は君がどう感じているか、理解しようとさえしないだろ。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Sarah",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "You're right.",
+          "displayHtml": "You're right.",
+          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/6_0.mp3"
+        },
+        {
+          "text": "I deserve someone better, don't I?",
+          "displayHtml": "I deserve someone better, don't I?",
+          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/6_1.mp3"
+        }
+      ],
+      "japanese": "その通りね。私にはもっといい人がふさわしいわよね？"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Tom",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "Yes.",
+          "displayHtml": "Yes.",
+          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/7_0.mp3"
+        },
+        {
+          "text": "{{You should know...",
+          "displayHtml": "{{You should know...",
+          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/7_1.mp3"
+        },
+        {
+          "text": "}} nobody can make you as happy as you deserve, except maybe someone right in front of you.",
+          "displayHtml": "}} <span class=\"lyric-phrase\">nobody can</span> make you as happy as you deserve, except maybe someone right in front of you.",
+          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/7_2.mp3"
+        },
+        {
+          "text": "You're so worth it, so please don't settle for less.",
+          "displayHtml": "<span class=\"lyric-phrase\">You're so worth it</span>, so please <span class=\"lyric-phrase\">don't settle for less</span>.",
+          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/7_3.mp3"
+        }
+      ],
+      "japanese": "ああ。わかってほしいんだけど…君にふさわしい幸せをあげられる奴はいないよ、たぶん目の前にいる誰か以外はね。君はそれだけ価値がある人なんだ、だからお願いだ、これで妥協なんてしないで。"
+    }
+  ],
+  "createdAt": "2026-04-12T08:25:31.662Z",
+  "hasLocalAudio": true
+}

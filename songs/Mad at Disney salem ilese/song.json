@@ -1,0 +1,281 @@
+{
+  "id": "Mad at Disney salem ilese",
+  "folderName": "Mad at Disney salem ilese",
+  "songName": "Mad at Disney",
+  "artist": "salem ilese",
+  "relationship": "友達",
+  "setting": "散々なデートから帰ってきたばかりの友人Aが、映画のような恋愛なんて存在しないと愚痴をこぼし、友人Bが慰めるシーン。",
+  "speakerA": {
+    "name": "Sarah",
+    "type": "女性",
+    "voice": "cNYrMw9glwJZXR8RwbuR"
+  },
+  "speakerB": {
+    "name": "Alex",
+    "type": "男性",
+    "voice": "CfDbY7v8tDkTvB9rNcUw"
+  },
+  "videoId": null,
+  "thumbnailUrl": null,
+  "lyrics": null,
+  "lyricsJa": [
+    {
+      "en": "I'm mad at Disney, Disney",
+      "ja": "ディズニーには怒ってるの"
+    },
+    {
+      "en": "They tricked me, tricked me",
+      "ja": "すっかり騙された気分よ"
+    },
+    {
+      "en": "Had me wishing on a shooting star",
+      "ja": "流れ星に願い事をさせられたりしたけど"
+    },
+    {
+      "en": "But now I'm twenty something",
+      "ja": "でも今、私は20代になって"
+    },
+    {
+      "en": "I still know nothing",
+      "ja": "まだ何もわかってないの"
+    },
+    {
+      "en": "About who I am or what I'm not",
+      "ja": "自分が何者で、何者じゃないのかさえも"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "So call me a pessimist",
+      "ja": "だから私のこと、悲観主義者って呼んでくれていいわ"
+    },
+    {
+      "en": "But I don't believe in it",
+      "ja": "でも私は信じない"
+    },
+    {
+      "en": "Finding a true love's kiss is bullshit",
+      "ja": "真実の愛のキスを見つけるなんて、くだらないデタラメよ"
+    },
+    {
+      "en": "'Cause I've felt sad love",
+      "ja": "だって悲しい恋も経験したし"
+    },
+    {
+      "en": "I've felt bad love",
+      "ja": "最悪な恋もしてきたから"
+    },
+    {
+      "en": "Sometimes happy love (Happy love)",
+      "ja": "時には幸せな恋も"
+    },
+    {
+      "en": "Turns into giving up (Giving up)",
+      "ja": "最後は「諦め」に変わっちゃうんだもの"
+    },
+    {
+      "en": "I've felt hurt love",
+      "ja": "恋で傷ついたこともある"
+    },
+    {
+      "en": "By the word love",
+      "ja": "「愛」なんて言葉のせいで"
+    },
+    {
+      "en": "What the hell is love",
+      "ja": "一体、「愛」って"
+    },
+    {
+      "en": "Supposed to feel like?",
+      "ja": "どんな感じがするものなの？"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "My fairy grandma warned me",
+      "ja": "フェアリーゴッドマザーは私に警告してくれた"
+    },
+    {
+      "en": "Cinderella's story",
+      "ja": "「シンデレラの物語だって"
+    },
+    {
+      "en": "Only ended in a bad divorce",
+      "ja": "結局は最悪な離婚で終わったのよ」って"
+    },
+    {
+      "en": "The prince ain't sleeping when he",
+      "ja": "王子様は眠ってなんかいないわ"
+    },
+    {
+      "en": "Takes his sleeping beauty",
+      "ja": "眠れる森の美女を連れ出して"
+    },
+    {
+      "en": "To the motel on his snow-white horse",
+      "ja": "真っ白な馬に乗って安宿に行くだけよ"
+    }
+  ],
+  "conversation": [
+    {
+      "speaker": "A",
+      "speakerName": "Sarah",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "Another terrible date.",
+          "displayHtml": "Another terrible date.",
+          "audio": "/songs/Mad%20at%20Disney%20salem%20ilese/0_0.mp3"
+        },
+        {
+          "text": "Honestly, I'm mad at all those romantic movies.",
+          "displayHtml": "Honestly, <span class=\"lyric-phrase\">I'm mad at</span> all those romantic movies.",
+          "audio": "/songs/Mad%20at%20Disney%20salem%20ilese/0_1.mp3"
+        },
+        {
+          "text": "They completely tricked me.",
+          "displayHtml": "They completely <span class=\"lyric-phrase\">tricked me</span>.",
+          "audio": "/songs/Mad%20at%20Disney%20salem%20ilese/0_2.mp3"
+        }
+      ],
+      "japanese": "また最悪なデートだったよ。正直、あのロマンチックな映画ぜんぶに腹が立ってるんだ。完全に騙されたよ。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Alex",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "Hey, it was just one bad date.",
+          "displayHtml": "Hey, it was just one bad date.",
+          "audio": "/songs/Mad%20at%20Disney%20salem%20ilese/1_0.mp3"
+        },
+        {
+          "text": "Don't let it get you down too much.",
+          "displayHtml": "Don't let it get you down too much.",
+          "audio": "/songs/Mad%20at%20Disney%20salem%20ilese/1_1.mp3"
+        }
+      ],
+      "japanese": "ねえ、たった一回最悪なデートだっただけじゃないか。あまり落ち込みすぎないで。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Sarah",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "It's not just one!",
+          "displayHtml": "It's not just one!",
+          "audio": "/songs/Mad%20at%20Disney%20salem%20ilese/2_0.mp3"
+        },
+        {
+          "text": "They had me wishing on some perfect romance, but it's nothing like that in reality.",
+          "displayHtml": "They <span class=\"lyric-phrase\">had me wishing on</span> some perfect romance, but it's nothing like that in reality.",
+          "audio": "/songs/Mad%20at%20Disney%20salem%20ilese/2_1.mp3"
+        }
+      ],
+      "japanese": "一回だけじゃないよ！完璧なロマンスがあるって願わされちゃった（期待させられた）けど、現実は全然違うじゃないか。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Alex",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "You're just being a pessimist right now because you're tired.",
+          "displayHtml": "You're just being a <span class=\"lyric-phrase\">pessimist</span> right now because you're tired.",
+          "audio": "/songs/Mad%20at%20Disney%20salem%20ilese/3_0.mp3"
+        }
+      ],
+      "japanese": "ただ疲れてるから、ネガティブ（悲観主義者）になってるだけだよ。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Sarah",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "Maybe.",
+          "displayHtml": "Maybe.",
+          "audio": "/songs/Mad%20at%20Disney%20salem%20ilese/4_0.mp3"
+        },
+        {
+          "text": "But I've felt nothing but stress from dating recently.",
+          "displayHtml": "But <span class=\"lyric-phrase\">I've felt</span> nothing but stress from dating recently.",
+          "audio": "/songs/Mad%20at%20Disney%20salem%20ilese/4_1.mp3"
+        },
+        {
+          "text": "It's exhausting.",
+          "displayHtml": "It's exhausting.",
+          "audio": "/songs/Mad%20at%20Disney%20salem%20ilese/4_2.mp3"
+        }
+      ],
+      "japanese": "そうかもしれない。でも、最近のデートからはストレスしか感じてないんだ。すごく疲れるよ。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Alex",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "I get it.",
+          "displayHtml": "I get it.",
+          "audio": "/songs/Mad%20at%20Disney%20salem%20ilese/5_0.mp3"
+        },
+        {
+          "text": "But finding the right person takes time.",
+          "displayHtml": "But finding the right person takes time.",
+          "audio": "/songs/Mad%20at%20Disney%20salem%20ilese/5_1.mp3"
+        },
+        {
+          "text": "You shouldn't give up yet.",
+          "displayHtml": "You shouldn't give up yet.",
+          "audio": "/songs/Mad%20at%20Disney%20salem%20ilese/5_2.mp3"
+        }
+      ],
+      "japanese": "気持ちはわかるよ。でも、ふさわしい人を見つけるには時間がかかるんだ。まだ諦めるべきじゃないよ。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Sarah",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "I don't know anymore.",
+          "displayHtml": "I don't know anymore.",
+          "audio": "/songs/Mad%20at%20Disney%20salem%20ilese/6_0.mp3"
+        },
+        {
+          "text": "Seriously, what the hell is a real relationship supposed to feel like?",
+          "displayHtml": "Seriously, <span class=\"lyric-phrase\">what the hell is</span> a real relationship <span class=\"lyric-phrase\">supposed to feel like</span>?",
+          "audio": "/songs/Mad%20at%20Disney%20salem%20ilese/6_1.mp3"
+        }
+      ],
+      "japanese": "もうわからないよ。真面目な話、本当の恋愛って一体どんな感じがするものなの？"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Alex",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "It's supposed to feel easy and natural.",
+          "displayHtml": "It's supposed to feel easy and natural.",
+          "audio": "/songs/Mad%20at%20Disney%20salem%20ilese/7_0.mp3"
+        },
+        {
+          "text": "You'll figure it out when it happens, I promise.",
+          "displayHtml": "You'll figure it out when it happens, I promise.",
+          "audio": "/songs/Mad%20at%20Disney%20salem%20ilese/7_1.mp3"
+        }
+      ],
+      "japanese": "心安らいで、自然にいられる感じがするものさ。その時が来ればきっとわかるよ、約束する。"
+    }
+  ],
+  "createdAt": "2026-04-12T07:33:28.621Z",
+  "hasLocalAudio": true
+}

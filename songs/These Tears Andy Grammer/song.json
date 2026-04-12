@@ -1,0 +1,275 @@
+{
+  "id": "These Tears Andy Grammer",
+  "folderName": "These Tears Andy Grammer",
+  "songName": "These Tears",
+  "artist": "Andy Grammer",
+  "relationship": "友達",
+  "setting": "同棲していた彼女と別れたばかりの友人Aが、思い出の品を片付けながら前を向こうとするのを、友人Bが励ますシーン。",
+  "speakerA": {
+    "name": "Tom",
+    "type": "男性",
+    "voice": "CfDbY7v8tDkTvB9rNcUw"
+  },
+  "speakerB": {
+    "name": "Mike",
+    "type": "男２",
+    "voice": "nzFihrBIvB34imQBuxub"
+  },
+  "videoId": null,
+  "thumbnailUrl": null,
+  "lyrics": null,
+  "lyricsJa": [
+    {
+      "en": "These tears mean I'm lettin' you go",
+      "ja": "この涙は、僕が君を手放せている証拠なんだ"
+    },
+    {
+      "en": "I'm learnin' how to be alone",
+      "ja": "一人で生きていく方法を、今学んでいるところだよ"
+    },
+    {
+      "en": "I'm broken, but give it time",
+      "ja": "心は壊れてしまっているけど、少し時間をかければ"
+    },
+    {
+      "en": "I'm gon' be alright",
+      "ja": "僕はきっと大丈夫になる"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "These tears mean it's settlin' in",
+      "ja": "この涙は、現実を受け入れつつある証拠なんだ"
+    },
+    {
+      "en": "That I'm not gon' see you again",
+      "ja": "君にはもう二度と会えないという現実を"
+    },
+    {
+      "en": "'Til one day in another life",
+      "ja": "いつか、別の人生で再会するその日までは"
+    },
+    {
+      "en": "But I'm gon' be al—, I'm gon' be alright",
+      "ja": "でも僕は、僕はきっと大丈夫になるから"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "I been missin' you tonight",
+      "ja": "今夜は君に会いたくてたまらない"
+    },
+    {
+      "en": "I'll be missin' you tomorrow",
+      "ja": "明日もきっと君に会いたくなるだろう"
+    },
+    {
+      "en": "It's the hardest pill to swallow",
+      "ja": "それを受け入れるのは、本当に辛いことだ"
+    },
+    {
+      "en": "But I'm startin' to get it down",
+      "ja": "それでも、少しずつ飲み込めるようになってきたよ"
+    },
+    {
+      "en": "I try to think of all the times",
+      "ja": "あの時の数々を思い出してみるんだ"
+    },
+    {
+      "en": "I thought I wouldn't make it through",
+      "ja": "「もう乗り越えられない」と思ったこと"
+    },
+    {
+      "en": "But somehow I always do",
+      "ja": "でもなぜか、僕はいつも乗り越えてこられた"
+    },
+    {
+      "en": "And I do the same for you",
+      "ja": "だから今回も、君のために同じように前へ進むよ"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "It don't mean I'm good with goodbye-bye-bye",
+      "ja": "「さよなら」が得意になったってわけじゃないんだ"
+    },
+    {
+      "en": "But it ain't all that bad when I cry, cry, cry",
+      "ja": "でも、こうして泣くのもそんなに悪いことじゃないって思えるんだ"
+    }
+  ],
+  "conversation": [
+    {
+      "speaker": "A",
+      "speakerName": "Tom",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "Honestly, I been missin' her so much lately.",
+          "displayHtml": "Honestly, <span class=\"lyric-phrase\">I been missin'</span> her so much lately.",
+          "audio": "/songs/These%20Tears%20Andy%20Grammer/0_0.mp3"
+        },
+        {
+          "text": "This empty apartment is driving me insane.",
+          "displayHtml": "This empty apartment is driving me <span class=\"lyric-phrase\">insane</span>.",
+          "audio": "/songs/These%20Tears%20Andy%20Grammer/0_1.mp3"
+        }
+      ],
+      "japanese": "正直、最近すごく彼女に会いたくてたまらないんだ。この空っぽの部屋にいると、頭がおかしくなりそうだよ。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Mike",
+      "speakerType": "男２",
+      "sentences": [
+        {
+          "text": "It's completely normal.",
+          "displayHtml": "It's completely normal.",
+          "audio": "/songs/These%20Tears%20Andy%20Grammer/1_0.mp3"
+        },
+        {
+          "text": "Breaking up is rough, but you just have to give it time.",
+          "displayHtml": "Breaking up is rough, but you just have to <span class=\"lyric-phrase\">give it time</span>.",
+          "audio": "/songs/These%20Tears%20Andy%20Grammer/1_1.mp3"
+        }
+      ],
+      "japanese": "完全に普通のことだよ。別れは辛いけど、ここはただ時間をかけるしかないんだ。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Tom",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "I know, but it's the hardest pill to swallow.",
+          "displayHtml": "I know, but <span class=\"lyric-phrase\">it's the hardest pill to swallow</span>.",
+          "audio": "/songs/These%20Tears%20Andy%20Grammer/2_0.mp3"
+        },
+        {
+          "text": "I really thought we had a future together.",
+          "displayHtml": "I really thought we had a future together.",
+          "audio": "/songs/These%20Tears%20Andy%20Grammer/2_1.mp3"
+        }
+      ],
+      "japanese": "わかってる、でもそれを受け入れるのが本当に辛いんだ。一緒に未来を描けるって本気で思ってたから。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Mike",
+      "speakerType": "男２",
+      "sentences": [
+        {
+          "text": "When I went through my divorce, there were days I thought I wouldn't make it through.",
+          "displayHtml": "When I went through my divorce, there were days I thought <span class=\"lyric-phrase\">I wouldn't make it through</span>.",
+          "audio": "/songs/These%20Tears%20Andy%20Grammer/3_0.mp3"
+        },
+        {
+          "text": "But you will.",
+          "displayHtml": "But you will.",
+          "audio": "/songs/These%20Tears%20Andy%20Grammer/3_1.mp3"
+        }
+      ],
+      "japanese": "僕が離婚を経験した時、「もう自分は乗り越えられない」と思った日もあったさ。でも、君も絶対に乗り越えられる。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Tom",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "Thanks.",
+          "displayHtml": "Thanks.",
+          "audio": "/songs/These%20Tears%20Andy%20Grammer/4_0.mp3"
+        },
+        {
+          "text": "I packed up her remaining stuff today.",
+          "displayHtml": "I packed up her remaining stuff today.",
+          "audio": "/songs/These%20Tears%20Andy%20Grammer/4_1.mp3"
+        },
+        {
+          "text": "It felt like I was finally saying, \"I'm lettin' you go.",
+          "displayHtml": "It felt like I was finally saying, \"<span class=\"lyric-phrase\">I'm lettin' you go</span>.",
+          "audio": "/songs/These%20Tears%20Andy%20Grammer/4_2.mp3"
+        },
+        {
+          "text": "\"",
+          "displayHtml": "\"",
+          "audio": "/songs/These%20Tears%20Andy%20Grammer/4_3.mp3"
+        }
+      ],
+      "japanese": "ありがとう。今日、彼女の残りの荷物をまとめたんだ。ようやく「君を手放すよ」と伝えられたような気がしたよ。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Mike",
+      "speakerType": "男２",
+      "sentences": [
+        {
+          "text": "That's a huge step forward!",
+          "displayHtml": "That's a huge step forward!",
+          "audio": "/songs/These%20Tears%20Andy%20Grammer/5_0.mp3"
+        },
+        {
+          "text": "It shows that you're healing.",
+          "displayHtml": "It shows that you're healing.",
+          "audio": "/songs/These%20Tears%20Andy%20Grammer/5_1.mp3"
+        }
+      ],
+      "japanese": "それは大きな前進だよ！心が少しずつ癒えてきている証拠だ。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Tom",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "Yeah.",
+          "displayHtml": "Yeah.",
+          "audio": "/songs/These%20Tears%20Andy%20Grammer/6_0.mp3"
+        },
+        {
+          "text": "I'm learnin' how to be on my own again.",
+          "displayHtml": "<span class=\"lyric-phrase\">I'm learnin' how to</span> be on my own again.",
+          "audio": "/songs/These%20Tears%20Andy%20Grammer/6_1.mp3"
+        },
+        {
+          "text": "It hurts right now, but I'm gon' be alright.",
+          "displayHtml": "It hurts right now, but <span class=\"lyric-phrase\">I'm gon' be alright</span>.",
+          "audio": "/songs/These%20Tears%20Andy%20Grammer/6_2.mp3"
+        }
+      ],
+      "japanese": "うん。もう一度一人で生きていく方法を、今学んでいるところさ。今はまだ胸が痛むけど、僕はきっと大丈夫になる。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Mike",
+      "speakerType": "男２",
+      "sentences": [
+        {
+          "text": "Exactly.",
+          "displayHtml": "Exactly.",
+          "audio": "/songs/These%20Tears%20Andy%20Grammer/7_0.mp3"
+        },
+        {
+          "text": "Take it one day at a time.",
+          "displayHtml": "Take it one day at a time.",
+          "audio": "/songs/These%20Tears%20Andy%20Grammer/7_1.mp3"
+        },
+        {
+          "text": "I'm always here for you.",
+          "displayHtml": "I'm always here for you.",
+          "audio": "/songs/These%20Tears%20Andy%20Grammer/7_2.mp3"
+        }
+      ],
+      "japanese": "その通り。一日一日を大切に進もう。僕はいつでも味方だからね。"
+    }
+  ],
+  "createdAt": "2026-04-12T07:47:31.235Z",
+  "hasLocalAudio": true
+}
