@@ -242,13 +242,36 @@ function renderLyrics(song) {
   const enLines = song.lyrics.split('\n');
 
   if (Array.isArray(song.lyricsJa)) {
-    const normalize = (str) => str.toLowerCase().replace(/[^a-z0-9]/g, '');
+    let availableJa = [...song.lyricsJa].filter(p => p.en && p.en.trim() && p.ja);
+    const getWords = s => s.toLowerCase().replace(/[^a-z0-9\s]/g, '').split(/\s+/).filter(Boolean);
+
     return enLines.map(line => {
       if (!line.trim()) return '<div class="lyric-spacer"></div>';
       
-      const normLine = normalize(line);
-      const match = song.lyricsJa.find(pair => pair.en && normalize(pair.en) === normLine);
-      const jaHtml = (match && match.ja) ? `<div class="lyric-ja">${esc(match.ja)}</div>` : '';
+      const lineWords = getWords(line);
+      if (lineWords.length === 0) return `<div class="lyric-pair"><div class="lyric-en">${esc(line)}</div></div>`;
+      
+      let bestMatchIdx = -1;
+      let highestScore = 0;
+      
+      for (let i = 0; i < availableJa.length; i++) {
+        const pairWords = getWords(availableJa[i].en);
+        let overlap = 0;
+        for (const lw of lineWords) {
+          if (pairWords.includes(lw)) overlap++;
+        }
+        const score = overlap / Math.max(lineWords.length, 1);
+        if (score > highestScore && score >= 0.5) {
+          highestScore = score;
+          bestMatchIdx = i;
+        }
+      }
+      
+      let jaHtml = '';
+      if (bestMatchIdx !== -1) {
+        jaHtml = `<div class="lyric-ja">${esc(availableJa[bestMatchIdx].ja)}</div>`;
+        availableJa.splice(bestMatchIdx, 1);
+      }
       
       return `<div class="lyric-pair"><div class="lyric-en">${esc(line)}</div>${jaHtml}</div>`;
     }).join('');
