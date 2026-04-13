@@ -21,71 +21,75 @@
   "lyricsJa": [
     {
       "en": "Slip inside the eye of your mind",
-      "ja": "心の目の中へ滑り込んでごらん"
+      "ja": "心の目の中に入り込んでごらん"
     },
     {
       "en": "Don't you know you might find",
-      "ja": "見つかるかもしれないって気づいてる？"
+      "ja": "見つかるかもしれないって知ってるかい？"
     },
     {
       "en": "A better place to play?",
-      "ja": "もっと楽しく過ごせる場所が"
+      "ja": "もっと素敵な遊び場が"
     },
     {
       "en": "You said that you'd never been",
-      "ja": "君は「今までそんな場所行ったことない」って言ってたね"
+      "ja": "行ったことがないって言ってたね"
     },
     {
       "en": "But all the things that you've seen",
-      "ja": "でも、君が見てきたすべてのものは"
+      "ja": "でも君が見てきたすべてのものは"
     },
     {
-      "en": "Slowly fade away",
-      "ja": "ゆっくりと色褪せて消えていくんだ"
+      "en": "Will slowly fade away",
+      "ja": "ゆっくりと消えていくだろう"
     },
     {
       "en": "",
       "ja": ""
     },
     {
-      "en": "So I start a revolution from my bed",
-      "ja": "だから僕はベッドの中から革命を起こすことにした"
+      "en": "So I'll start a revolution from my bed",
+      "ja": "だからベッドの上から革命を起こすんだ"
     },
     {
-      "en": "'Cause you said the brains I had went to my head",
-      "ja": "君が「君のその頭の良さ、全部うぬぼれに変わっちゃったね」なんて言うからさ"
+      "en": "'Cos you said the brains I had went to my head",
+      "ja": "君が「うぬぼれてる」なんて言うからさ"
     },
     {
-      "en": "Step outside, summertime's in bloom",
-      "ja": "外へ出てみなよ、夏が真っ盛りだ"
+      "en": "Step outside, the summertime's in bloom",
+      "ja": "外に出よう、夏が真っ盛りだよ"
     },
     {
-      "en": "Stand up beside the fireplace, take that look from off your face",
-      "ja": "暖炉のそばに立ち上がって、その暗い顔をやめなよ"
+      "en": "Stand up beside the fireplace",
+      "ja": "暖炉のそばに立って"
+    },
+    {
+      "en": "Take that look from off your face",
+      "ja": "そんな顔をするのはやめてくれ"
     },
     {
       "en": "You ain't ever gonna burn my heart out",
-      "ja": "君は絶対に僕の心を燃やし尽くしたりできないから"
+      "ja": "君に僕の心までは焼き尽くせやしない"
     },
     {
       "en": "",
       "ja": ""
     },
     {
-      "en": "And so, Sally can wait",
-      "ja": "だから、サリーなら待ってくれる"
+      "en": "And so Sally can wait",
+      "ja": "そう、サリーは待つことができる"
     },
     {
-      "en": "She knows it's too late as we're walkin' on by",
-      "ja": "僕たちが通り過ぎていく頃には、もう遅すぎるって彼女はわかってるから"
+      "en": "She knows it's too late as we're walking on by",
+      "ja": "僕らが通り過ぎる頃にはもう遅いと分かっているんだ"
     },
     {
       "en": "Her soul slides away",
       "ja": "彼女の魂はすり抜けていく"
     },
     {
-      "en": "But \"Don't look back in anger,\" I heard you say",
-      "ja": "でも「怒りにまかせて過去を振り返らないで」って、君がそう言うのが聞こえたんだ"
+      "en": "\"But don't look back in anger,\" I heard you say",
+      "ja": "「でも怒りにまかせて振り返らないで」って君が言うのが聞こえたんだ"
     },
     {
       "en": "",
@@ -93,23 +97,115 @@
     },
     {
       "en": "Take me to the place where you go",
-      "ja": "君が行く場所へ連れて行ってよ"
+      "ja": "君が行く場所へ連れて行ってくれ"
     },
     {
       "en": "Where nobody knows if it's night or day",
-      "ja": "そこが夜なのか昼なのか、誰も知らないような場所へ"
+      "ja": "昼か夜かも誰も知らないような場所へ"
     },
     {
       "en": "Please don't put your life in the hands",
-      "ja": "お願いだから、自分の人生を預けないでくれ"
+      "ja": "自分の人生を預けたりしないでくれ"
     },
     {
-      "en": "Of a rock 'n' roll band",
-      "ja": "彼らの手なんかに、ロックンロールバンドなんかにさ"
+      "en": "Of a Rock 'n' Roll band",
+      "ja": "ロックンロール・バンドなんかに"
     },
     {
       "en": "Who'll throw it all away",
-      "ja": "すべてを投げ捨ててしまうような奴らに"
+      "ja": "すべてを投げ出してしまうような連中に"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "I'm gonna start a revolution from my bed",
+      "ja": "ベッドの上から革命を起こすつもりさ"
+    },
+    {
+      "en": "'Cos you said the brains I had went to my head",
+      "ja": "君が「うぬぼれてる」なんて言うからさ"
+    },
+    {
+      "en": "Step outside 'cause summertime's in bloom",
+      "ja": "外に出よう、夏が真っ盛りだから"
+    },
+    {
+      "en": "Stand up beside the fireplace",
+      "ja": "暖炉のそばに立って"
+    },
+    {
+      "en": "Take that look from off your face",
+      "ja": "そんな顔をするのはやめてくれ"
+    },
+    {
+      "en": "'Cos you ain't ever gonna burn my heart out",
+      "ja": "君に僕の心までは焼き尽くせやしないから"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "And so Sally can wait",
+      "ja": "そう、サリーは待つことができる"
+    },
+    {
+      "en": "She knows it's too late as she's walking on by",
+      "ja": "彼女が通り過ぎる頃にはもう遅いと分かっているんだ"
+    },
+    {
+      "en": "My soul slides away",
+      "ja": "僕の魂はすり抜けていく"
+    },
+    {
+      "en": "\"But don't look back in anger,\" I heard you say",
+      "ja": "「でも怒りにまかせて振り返らないで」って君が言うのが聞こえたんだ"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "So Sally can wait",
+      "ja": "だからサリーは待つことができる"
+    },
+    {
+      "en": "She knows it's too late as we're walking on by",
+      "ja": "僕らが通り過ぎる頃にはもう遅いと分かっているんだ"
+    },
+    {
+      "en": "Her soul slides away",
+      "ja": "彼女の魂はすり抜けていく"
+    },
+    {
+      "en": "\"But don't look back in anger,\" I heard you say",
+      "ja": "「でも怒りにまかせて振り返らないで」って君が言うのが聞こえたんだ"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "So Sally can wait",
+      "ja": "だからサリーは待つことができる"
+    },
+    {
+      "en": "She knows it's too late as she's walking on by",
+      "ja": "彼女が通り過ぎる頃にはもう遅いと分かっているんだ"
+    },
+    {
+      "en": "My soul slides away",
+      "ja": "僕の魂はすり抜けていく"
+    },
+    {
+      "en": "\"But don't look back in anger, don't look back in anger\"",
+      "ja": "「でも怒りにまかせて振り返らないで、怒りにまかせて振り返らないで」"
+    },
+    {
+      "en": "I heard you say, \"at least not today\"",
+      "ja": "「せめて今日だけは」と君が言うのが聞こえた"
     }
   ],
   "conversation": [

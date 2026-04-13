@@ -29,26 +29,30 @@
     },
     {
       "en": "Something ‘bout this",
-      "ja": "でも何かが"
+      "ja": "何かこの感じが"
     },
     {
       "en": "Just don’t feel right",
-      "ja": "正しくない気がするんだ"
+      "ja": "どこか間違っている気がするんだ"
     },
     {
       "en": "Every time",
-      "ja": "どちらかがここを去ろうとするたびに"
+      "ja": "いつだって"
     },
     {
       "en": "One of us, tries to leave here",
-      "ja": ""
+      "ja": "僕らのどちらかがここを去ろうとすると"
     },
     {
       "en": "Oh the other one",
-      "ja": "もう一人が強く引き止めてしまう"
+      "ja": "もう一人が"
     },
     {
       "en": "Holds on tight",
+      "ja": "強く引き止める"
+    },
+    {
+      "en": "",
       "ja": ""
     },
     {
@@ -56,36 +60,44 @@
       "ja": "Oh oh"
     },
     {
+      "en": "",
+      "ja": ""
+    },
+    {
       "en": "Baby tonight",
-      "ja": "ベイビー、今夜の僕らの間には"
+      "ja": "ベイビー、今夜は"
     },
     {
       "en": "There’s so much love in between us",
-      "ja": "こんなにも愛が溢れているのに"
+      "ja": "僕らの間には愛が溢れているのに"
     },
     {
       "en": "But you say you gotta get home",
-      "ja": "君は「帰らなくちゃ」と言う"
+      "ja": "君はもう家に帰らなきゃって言うんだね"
     },
     {
       "en": "Stay here with me",
-      "ja": "僕のそばにいて"
+      "ja": "僕と一緒にここにいて"
     },
     {
       "en": "I won’t tell a soul",
       "ja": "誰にも言わないから"
     },
     {
+      "en": "",
+      "ja": ""
+    },
+    {
       "en": "You tell me someone",
-      "ja": "誰かが君を待っているんだと"
+      "ja": "君は「誰かが"
     },
     {
       "en": "Waiting for you",
-      "ja": "君は言う"
+      "ja": "待っている」と言う"
     },
     {
       "en": "That you can’t do this anymore",
-      "ja": "「もうこんなことできない」って"
+      "ja": "「これ以上はもう無理だ」と"
     },
     {
       "en": "But you kiss me again",
@@ -93,59 +105,71 @@
     },
     {
       "en": "So go ahead and",
-      "ja": "だからもう"
+      "ja": "だからさあ"
     },
     {
       "en": "Draw the blinds and",
-      "ja": "ブラインドを閉めて"
+      "ja": "ブラインドを下ろして"
     },
     {
       "en": "Lock all the doors",
-      "ja": "扉に鍵をかけてよ"
+      "ja": "すべてのドアに鍵をかけて"
+    },
+    {
+      "en": "",
+      "ja": ""
     },
     {
       "en": "Baby tonight",
-      "ja": "ベイビー、今夜の僕らの間には"
+      "ja": "ベイビー、今夜は"
     },
     {
       "en": "There’s so much love in between us",
-      "ja": "こんなにも愛が溢れているのに"
+      "ja": "僕らの間には愛が溢れているのに"
     },
     {
       "en": "But you say you gotta get home",
-      "ja": "君は「帰らなくちゃ」と言う"
+      "ja": "君はもう家に帰らなきゃって言うんだね"
     },
     {
       "en": "Stay here with me",
-      "ja": "僕のそばにいて"
+      "ja": "僕と一緒にここにいて"
     },
     {
       "en": "I won’t tell a soul",
       "ja": "誰にも言わないから"
     },
     {
+      "en": "",
+      "ja": ""
+    },
+    {
       "en": "Oh if you want me",
-      "ja": "僕が君を想うように"
+      "ja": "もし君も僕を求めているなら"
     },
     {
       "en": "Like I want you",
-      "ja": "君も僕を求めてくれるなら"
+      "ja": "僕が君を求めているように"
     },
     {
       "en": "I won’t judge you",
-      "ja": "君を責めたりはしない"
+      "ja": "君を責めたりはしないよ"
+    },
+    {
+      "en": "",
+      "ja": ""
     },
     {
       "en": "This could be our little secret",
-      "ja": "これは僕たちだけの秘密"
+      "ja": "これは僕らだけの秘密にできる"
     },
     {
       "en": "Our secret",
-      "ja": "二人だけの秘密にしよう"
+      "ja": "僕たちの秘密に"
     },
     {
       "en": "So tell me if you’re ready",
-      "ja": "覚悟ができたら教えて"
+      "ja": "準備ができたら教えて"
     },
     {
       "en": "‘Cause if no one knows then",
@@ -153,7 +177,7 @@
     },
     {
       "en": "It ain’t really cheating",
-      "ja": "浮気じゃないも同然だから"
+      "ja": "浮気じゃないも同然さ"
     },
     {
       "en": "Oh darling",
@@ -165,15 +189,15 @@
     },
     {
       "en": "But something ‘bout this",
-      "ja": "でもこれが"
+      "ja": "でも何かこの感じが"
     },
     {
       "en": "Just feels so right",
-      "ja": "どうしようもなく正解に感じるんだ"
+      "ja": "すごくしっくりくるんだ"
     },
     {
       "en": "Oh baby",
-      "ja": "ねえ、ベイビー"
+      "ja": "Oh baby"
     },
     {
       "en": "‘cause every time",
@@ -181,14 +205,18 @@
     },
     {
       "en": "One of us, tries to leave here",
-      "ja": "どちらかがここを去ろうとすると"
+      "ja": "僕らのどちらかがここを去ろうとすると"
     },
     {
       "en": "Oh the other one",
-      "ja": "もう一人が強く引き止めてしまうんだ"
+      "ja": "もう一人が"
     },
     {
       "en": "Holds on tight",
+      "ja": "強く引き止める"
+    },
+    {
+      "en": "",
       "ja": ""
     },
     {
@@ -196,20 +224,28 @@
       "ja": "Oh oh"
     },
     {
+      "en": "",
+      "ja": ""
+    },
+    {
       "en": "Baby tonight",
       "ja": "ベイビー、今夜は"
     },
     {
+      "en": "",
+      "ja": ""
+    },
+    {
       "en": "There’s so much love in between us",
-      "ja": "僕らの間にはこんなに愛が溢れている"
+      "ja": "僕らの間には愛が溢れているのに"
     },
     {
       "en": "But you say you gotta get home",
-      "ja": "それなのに君は帰らなきゃと言う"
+      "ja": "君はもう家に帰らなきゃって言うんだね"
     },
     {
       "en": "Stay here with me",
-      "ja": "僕のそばにいて"
+      "ja": "僕と一緒にここにいて"
     },
     {
       "en": "I won’t tell a soul",

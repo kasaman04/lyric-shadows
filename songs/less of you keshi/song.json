@@ -25,11 +25,15 @@
     },
     {
       "en": "Ooh, dah-dah-dah-dah-dah",
-      "ja": "Ooh, だだだだだ"
+      "ja": "Ooh, dah-dah-dah-dah-dah"
     },
     {
       "en": "Ooh",
       "ja": "Ooh"
+    },
+    {
+      "en": "",
+      "ja": ""
     },
     {
       "en": "Hello",
@@ -37,75 +41,91 @@
     },
     {
       "en": "Are you awake right now?",
-      "ja": "今、起きてるかな？"
+      "ja": "今、起きてる？"
     },
     {
       "en": "God, I just need to hear the sound of you",
-      "ja": "ねぇ、ただ君の声が聞きたいんだ"
+      "ja": "ああ、ただ君の声が聴きたいんだ"
     },
     {
       "en": "Please calm me down",
-      "ja": "私を落ち着かせてよ"
+      "ja": "僕を落ち着かせて"
     },
     {
       "en": "And I know that it's selfish, but",
-      "ja": "わかってる、わがままだって"
+      "ja": "わがままだって分かってる、けど"
     },
     {
       "en": "You are the only thing that's",
-      "ja": "でも君だけが、ずっと"
+      "ja": "僕にとって唯一意味があるのは"
     },
     {
       "en": "Ever made sense to me, I",
-      "ja": "私にとって意味のある存在だったんだ"
+      "ja": "君だけなんだ"
     },
     {
       "en": "I don't wanna do this",
-      "ja": "こんなことはしたくない"
+      "ja": "こんなの嫌だよ"
     },
     {
       "en": "I don't know how to do this without you",
-      "ja": "君なしじゃどうしたらいいか、もうわからない"
+      "ja": "君なしでどうすればいいか分からないんだ"
+    },
+    {
+      "en": "",
+      "ja": ""
     },
     {
       "en": "Cling to your side, voices at night",
-      "ja": "夜の声に怯えて"
+      "ja": "君の側にしがみつく、夜に響く声"
     },
     {
       "en": "Cover my eyes, I'm terrified",
-      "ja": "君の傍にいたい、目を閉じる"
+      "ja": "目を覆う、怖くてたまらないんだ"
+    },
+    {
+      "en": "",
+      "ja": ""
     },
     {
       "en": "No in between, a face on a screen",
-      "ja": "画面越しの顔じゃダメなんだ"
+      "ja": "中途半端はなし、画面の中の顔"
     },
     {
       "en": "Ain't an adequate replacement for your being with me (Yeah-yeah)",
-      "ja": "君が傍にいてくれなきゃ、何も満たされない (Yeah-yeah)"
+      "ja": "君が隣にいてくれる代わりにはならないよ"
+    },
+    {
+      "en": "",
+      "ja": ""
     },
     {
       "en": "Too much time in the limelight",
-      "ja": "光浴びすぎた日々"
+      "ja": "脚光を浴びる時間が長すぎた"
     },
     {
       "en": "Gimme your all on the landline",
-      "ja": "電話越しでいい、君の全てをちょうだい"
+      "ja": "電話越しに君のすべてを聴かせて"
     },
     {
       "en": "Want it so bad but I won't lie",
-      "ja": "強く願うけど、嘘はつけない"
+      "ja": "たまらなく欲しい、嘘じゃない"
     },
     {
       "en": "And it just gets worse in the nighttime",
-      "ja": "夜になるたび、もっと辛くなる"
+      "ja": "夜になるともっとひどくなるんだ"
     },
     {
       "en": "Never stays for long (Ooh, dah-dah-dah-dah-dah)",
-      "ja": "長くは続かない (Ooh, だだだだだ)"
+      "ja": "長くは続かない（Ooh, dah-dah-dah-dah-dah）"
     },
     {
       "en": "And she's gone in the morning (Ooh)",
-      "ja": "そして朝には、もう彼女はいない (Ooh)"
+      "ja": "朝には彼女はいなくなってしまう"
+    },
+    {
+      "en": "",
+      "ja": ""
     },
     {
       "en": "When you come home",
@@ -113,71 +133,87 @@
     },
     {
       "en": "I just got over bein' less of you",
-      "ja": "やっと、君が足りないことに慣れたのに"
+      "ja": "君がいない寂しさをやっと乗り越えたところなんだ"
     },
     {
       "en": "When you leave me, I'm in pieces",
-      "ja": "君が去れば、私はバラバラになる"
+      "ja": "君が行ってしまうと、僕はバラバラになる"
     },
     {
       "en": "Maybe it's better if we cut it loose",
-      "ja": "いっそ、もう終わりにすべきかな"
+      "ja": "いっそ終わりにしちゃった方がいいのかな"
+    },
+    {
+      "en": "",
+      "ja": ""
     },
     {
       "en": "Tell me how your day was",
-      "ja": "今日どうだった？って聞かれても"
+      "ja": "今日がどんな日だったか教えて"
     },
     {
       "en": "No, I'm not okay",
-      "ja": "うん、大丈夫じゃないんだ"
+      "ja": "いや、僕は全然大丈夫じゃない"
+    },
+    {
+      "en": "",
+      "ja": ""
     },
     {
       "en": "I don't know, I don't know, I don't know",
-      "ja": "わからない、わからない、もう"
+      "ja": "分からない、分からない、分からないんだ"
     },
     {
       "en": "I don't know, I don't know, I don't know",
-      "ja": "わからない、わからないんだ"
+      "ja": "分からない、分からない、分からないんだ"
     },
     {
       "en": "Time never moved so slow",
-      "ja": "時間がこんなにも遅いなんて"
+      "ja": "時間が経つのがこんなに遅いなんて"
     },
     {
       "en": "Bed time, hit your phone up",
-      "ja": "寝る時間、君に電話する"
+      "ja": "寝る時間、君に電話をかける"
     },
     {
       "en": "Tell me where to go, where to go",
-      "ja": "どこへ行けばいい？ どこへ行けばいいの？"
+      "ja": "どこへ行けばいいか、どこへ行けばいいか教えて"
     },
     {
       "en": "Tell me where to go, where to go-oh-oh",
-      "ja": "教えて、どこへ行けばいい？"
+      "ja": "どこへ行けばいいか教えて"
+    },
+    {
+      "en": "",
+      "ja": ""
     },
     {
       "en": "Too much time in the limelight",
-      "ja": "光浴びすぎた日々"
+      "ja": "脚光を浴びる時間が長すぎた"
     },
     {
       "en": "Gimme your all on the landline",
-      "ja": "電話越しでいい、君の全てをちょうだい"
+      "ja": "電話越しに君のすべてを聴かせて"
     },
     {
       "en": "Want it so bad but I won't lie",
-      "ja": "強く願うけど、嘘はつけない"
+      "ja": "たまらなく欲しい、嘘じゃない"
     },
     {
       "en": "And it just gets worse in the nighttime",
-      "ja": "夜になるたび、もっと辛くなる"
+      "ja": "夜になるともっとひどくなるんだ"
     },
     {
       "en": "Never stays for long (Ooh, dah-dah-dah-dah-dah)",
-      "ja": "長くは続かない (Ooh, だだだだだ)"
+      "ja": "長くは続かない（Ooh, dah-dah-dah-dah-dah）"
     },
     {
       "en": "And she's gone in the morning (Ooh)",
-      "ja": "そして朝には、もう彼女はいない (Ooh)"
+      "ja": "朝には彼女はいなくなってしまう"
+    },
+    {
+      "en": "",
+      "ja": ""
     },
     {
       "en": "When you come home",
@@ -185,35 +221,43 @@
     },
     {
       "en": "I just got over bein' less of you",
-      "ja": "やっと、君が足りないことに慣れたのに"
+      "ja": "君がいない寂しさをやっと乗り越えたところなんだ"
     },
     {
       "en": "When you leave me, I'm in pieces",
-      "ja": "君が去れば、私はバラバラになる"
+      "ja": "君が行ってしまうと、僕はバラバラになる"
     },
     {
       "en": "Maybe it's better if we cut it loose",
-      "ja": "いっそ、もう終わりにすべきかな"
+      "ja": "いっそ終わりにしちゃった方がいいのかな"
+    },
+    {
+      "en": "",
+      "ja": ""
     },
     {
       "en": "I don't know how to do this without you",
-      "ja": "君なしでどうしたらいいか、もうわからない"
+      "ja": "君なしでどうすればいいか分からない"
     },
     {
       "en": "I don't know, I don't know, don't know",
-      "ja": "わからない、わからない、もう"
+      "ja": "分からない、分からない、分からないんだ"
     },
     {
       "en": "I don't know how to do this without you",
-      "ja": "君なしでどうしたらいいか、もうわからない"
+      "ja": "君なしでどうすればいいか分からないんだ"
     },
     {
       "en": "I don't know, I don't know, don't know",
-      "ja": "わからない、わからないんだ"
+      "ja": "わからない、わからない、わからないんだ"
     },
     {
       "en": "I don't know how to do this without you",
-      "ja": "君なしじゃもう、どうしようもない"
+      "ja": "君なしでどうすればいいのかわからない"
+    },
+    {
+      "en": "",
+      "ja": ""
     },
     {
       "en": "Ooh",
@@ -221,7 +265,7 @@
     },
     {
       "en": "Ooh, dah-dah-dah-dah-dah",
-      "ja": "Ooh, だだだだだ"
+      "ja": "Ooh, dah-dah-dah-dah-dah"
     },
     {
       "en": "Ooh",

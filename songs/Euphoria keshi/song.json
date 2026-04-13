@@ -21,27 +21,27 @@
   "lyricsJa": [
     {
       "en": "She's toxic for the thrill of it",
-      "ja": "彼女はスリルを楽しむために、毒のような振る舞いをする"
+      "ja": "彼女はただスリルを求めて毒をまく"
     },
     {
-      "en": "Bad news, but I'm into it, she's all mine",
-      "ja": "厄介な事ばかりだけど夢中なんだ、彼女は僕だけのもの"
+      "en": "Bad news but I'm into it, she's all mine",
+      "ja": "厄介な存在だけど僕は夢中だ、彼女は僕だけのもの"
     },
     {
       "en": "I chase that dragon all the time",
-      "ja": "僕はいつも、その幻（快楽）を追いかけてるんだ"
+      "ja": "僕は四六時中その幻を追いかけている"
     },
     {
       "en": "She knows how to reel me in",
-      "ja": "彼女はどうやって僕を引き寄せるかを知ってる"
+      "ja": "彼女は僕を誘い込む術を知っているんだ"
     },
     {
-      "en": "Use me up and she's gone again, oh my",
-      "ja": "僕を使い果たして、またいなくなる。なんてことだ"
+      "en": "Use me up and she's gone again, oh, my",
+      "ja": "僕を使い果たしてはまた消えてしまう、なんてことだ"
     },
     {
       "en": "I stick around just for the high",
-      "ja": "その高揚感のためだけに、僕は離れられずにいるんだ"
+      "ja": "その快楽のためだけに、僕は離れられずにいる"
     },
     {
       "en": "",
@@ -49,11 +49,15 @@
     },
     {
       "en": "Your touch is my favorite drug",
-      "ja": "柔らかな君の感触が、僕にとって最高のドラッグだ"
+      "ja": "君の感触は僕の一番お気に入りのドラッグだ"
     },
     {
-      "en": "Fiending for a faded love, I'm gone all for you",
-      "ja": "薄れていく愛を切望して、僕は君のすべてに溺れてる"
+      "en": "Fiending for a faded love",
+      "ja": "色あせた愛を激しく求めている"
+    },
+    {
+      "en": "I'm gone, all for you",
+      "ja": "僕はもう正気じゃない、すべて君のせいだ"
     },
     {
       "en": "",
@@ -61,23 +65,23 @@
     },
     {
       "en": "Take me to euphoria, euphoria",
-      "ja": "僕をユーフォリア（圧倒的な幸福感）へ連れて行ってくれ"
+      "ja": "ユーフォリア（幸福感）へ連れて行って"
     },
     {
       "en": "I need you in my veins",
-      "ja": "僕の身体の奥深くに君が必要なんだ"
+      "ja": "血管の中に君が必要なんだ"
     },
     {
       "en": "I crave the sweet escape of euphoria, euphoria",
-      "ja": "この甘い逃避行（ユーフォリア）に飢えてるんだよ"
+      "ja": "ユーフォリアという甘い逃避を渇望している"
     },
     {
       "en": "I try to walk away",
-      "ja": "立ち去ろうとしてみるけど"
+      "ja": "立ち去ろうとはしてみるけれど"
     },
     {
       "en": "'Cause if I stay you'll be the death of me",
-      "ja": "ここに居続けたら、君が僕を破滅させる（死なせる）ことになるから"
+      "ja": "ここにいれば、君に破滅させられてしまうから"
     },
     {
       "en": "",
@@ -85,23 +89,91 @@
     },
     {
       "en": "I know there's no such thing as a free ride",
-      "ja": "タダ乗り（代償のない快楽）なんて存在しないってわかってる"
+      "ja": "タダで手に入るものなんてないと分かっている"
+    },
+    {
+      "en": "(I do, I do, I do)",
+      "ja": "（分かってる、分かってるんだ）"
     },
     {
       "en": "But when it comes to you I'm down to pay the price",
-      "ja": "でも君のことなら、どんな代償だって払う覚悟はあるよ"
+      "ja": "でも君のこととなれば、代償を払う覚悟はある"
     },
     {
       "en": "Got me cut wide open, girl, I'm bleeding",
-      "ja": "君のせいで僕は深く傷ついて、血を流しているのに"
+      "ja": "切り裂かれて、僕は血を流しているんだ"
     },
     {
-      "en": "I don't know why I still need it",
-      "ja": "どうしてまだそれが僕に必要なのか、自分でもわからないんだ"
+      "en": "(I do, I do, I do)",
+      "ja": "（そうなんだ、分かってる）"
     },
     {
-      "en": "So kiss me and pull me to sleep tonight",
-      "ja": "だから今夜はキスをして、僕を眠りに誘ってくれ"
+      "en": "Just want you to kiss me and put me to sleep",
+      "ja": "ただ君にキスされて、眠らせてほしいだけ"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "Your touch is my favorite drug",
+      "ja": "君の感触は僕の一番お気に入りのドラッグだ"
+    },
+    {
+      "en": "Fiending for a faded love",
+      "ja": "色あせた愛を激しく求めている"
+    },
+    {
+      "en": "I'm gone, all for you",
+      "ja": "僕はもう正気じゃない、すべて君のせいだ"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "Take me to euphoria, euphoria",
+      "ja": "ユーフォリアへ連れて行って"
+    },
+    {
+      "en": "I need you in my veins",
+      "ja": "血管の中に君が必要なんだ"
+    },
+    {
+      "en": "I crave the sweet escape of euphoria, euphoria",
+      "ja": "ユーフォリアという甘い逃避を渇望している"
+    },
+    {
+      "en": "I try to walk away",
+      "ja": "立ち去ろうとはしてみるけれど"
+    },
+    {
+      "en": "'Cause if I stay you'll be the death of me",
+      "ja": "ここにいれば、君に破滅させられてしまうから"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "Yeah, yeah, yeah",
+      "ja": "Yeah, yeah, yeah"
+    },
+    {
+      "en": "Euphoria, euphoria",
+      "ja": "ユーフォリア、至福の場所"
+    },
+    {
+      "en": "I try to walk away",
+      "ja": "立ち去ろうとはしてみるけれど"
+    },
+    {
+      "en": "'Cause if I stay you'll be the death of me",
+      "ja": "ここにいれば、君に破滅させられてしまうから"
+    },
+    {
+      "en": "Yeah, yeah, yeah, yeah, yeah, yeah",
+      "ja": "Yeah, yeah, yeah, yeah, yeah, yeah"
     }
   ],
   "conversation": [

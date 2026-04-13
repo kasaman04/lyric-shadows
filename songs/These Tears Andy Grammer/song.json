@@ -21,19 +21,19 @@
   "lyricsJa": [
     {
       "en": "These tears mean I'm lettin' you go",
-      "ja": "この涙は、僕が君を手放せている証拠なんだ"
+      "ja": "この涙は、君を手放すということ"
     },
     {
       "en": "I'm learnin' how to be alone",
-      "ja": "一人で生きていく方法を、今学んでいるところだよ"
+      "ja": "一人でいる方法を学んでいるんだ"
     },
     {
       "en": "I'm broken, but give it time",
-      "ja": "心は壊れてしまっているけど、少し時間をかければ"
+      "ja": "心はボロボロだけど、時間をかければ"
     },
     {
       "en": "I'm gon' be alright",
-      "ja": "僕はきっと大丈夫になる"
+      "ja": "きっと大丈夫になる"
     },
     {
       "en": "",
@@ -41,19 +41,19 @@
     },
     {
       "en": "These tears mean it's settlin' in",
-      "ja": "この涙は、現実を受け入れつつある証拠なんだ"
+      "ja": "この涙は、現実を受け入れ始めている証拠"
     },
     {
       "en": "That I'm not gon' see you again",
-      "ja": "君にはもう二度と会えないという現実を"
+      "ja": "もう君には会えないということを"
     },
     {
       "en": "'Til one day in another life",
-      "ja": "いつか、別の人生で再会するその日までは"
+      "ja": "いつか別の人生で会える日まで"
     },
     {
       "en": "But I'm gon' be al—, I'm gon' be alright",
-      "ja": "でも僕は、僕はきっと大丈夫になるから"
+      "ja": "でも僕は大丈... 大丈夫になるよ"
     },
     {
       "en": "",
@@ -61,35 +61,35 @@
     },
     {
       "en": "I been missin' you tonight",
-      "ja": "今夜は君に会いたくてたまらない"
+      "ja": "今夜、君が恋しくてたまらない"
     },
     {
       "en": "I'll be missin' you tomorrow",
-      "ja": "明日もきっと君に会いたくなるだろう"
+      "ja": "明日もきっと、君を想うだろう"
     },
     {
       "en": "It's the hardest pill to swallow",
-      "ja": "それを受け入れるのは、本当に辛いことだ"
+      "ja": "受け入れるのは、何よりも辛いけれど"
     },
     {
       "en": "But I'm startin' to get it down",
-      "ja": "それでも、少しずつ飲み込めるようになってきたよ"
+      "ja": "それでも少しずつ、飲み込み始めているんだ"
     },
     {
       "en": "I try to think of all the times",
-      "ja": "あの時の数々を思い出してみるんだ"
+      "ja": "乗り越えられないと思った"
     },
     {
       "en": "I thought I wouldn't make it through",
-      "ja": "「もう乗り越えられない」と思ったこと"
+      "ja": "これまでの全ての時のことを思い出してみる"
     },
     {
       "en": "But somehow I always do",
-      "ja": "でもなぜか、僕はいつも乗り越えてこられた"
+      "ja": "でも、どうにかいつも乗り越えてきた"
     },
     {
       "en": "And I do the same for you",
-      "ja": "だから今回も、君のために同じように前へ進むよ"
+      "ja": "だから、君に対しても同じようにするよ"
     },
     {
       "en": "",
@@ -97,11 +97,143 @@
     },
     {
       "en": "It don't mean I'm good with goodbye-bye-bye",
-      "ja": "「さよなら」が得意になったってわけじゃないんだ"
+      "ja": "サヨナラが得意になったわけじゃないけれど"
     },
     {
       "en": "But it ain't all that bad when I cry, cry, cry",
-      "ja": "でも、こうして泣くのもそんなに悪いことじゃないって思えるんだ"
+      "ja": "こうして泣いている時は、そんなに悪い気分じゃないんだ"
+    },
+    {
+      "en": "'Cause these tears mean I'm lettin' you go",
+      "ja": "だって、この涙は君を手放すということだから"
+    },
+    {
+      "en": "I'm learnin' how to be alone",
+      "ja": "一人でいる方法を学んでいるんだ"
+    },
+    {
+      "en": "I'm broken, but give it time",
+      "ja": "心はボロボロだけど、時間をかければ"
+    },
+    {
+      "en": "I'm gon' be alright",
+      "ja": "きっと大丈夫になる"
+    },
+    {
+      "en": "These tears mean it's settlin' in",
+      "ja": "この涙は、現実を受け入れ始めている証拠"
+    },
+    {
+      "en": "That I'm not gon' see you again",
+      "ja": "もう君には会えないということを"
+    },
+    {
+      "en": "'Til one day in another life",
+      "ja": "いつか別の人生で会える日まで"
+    },
+    {
+      "en": "But I'm gon' be al—, I'm gon' be alright",
+      "ja": "でも僕は大丈... 大丈夫になるよ"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "I see you everywhere",
+      "ja": "どこにいても君が見える"
+    },
+    {
+      "en": "On the sidewalks of my dreams",
+      "ja": "夢の中の歩道の上でも"
+    },
+    {
+      "en": "Like a distant melody",
+      "ja": "遠くで流れるメロディのように"
+    },
+    {
+      "en": "I hear you callin' and callin' to me",
+      "ja": "君が僕を呼ぶ声が何度も聞こえるんだ"
+    },
+    {
+      "en": "And I love you, but I leave you in the past, baby",
+      "ja": "愛しているけれど、君を過去に置いていくよ"
+    },
+    {
+      "en": "Because I need to, to not go insane",
+      "ja": "自分を失わないために、そうする必要があるから"
+    },
+    {
+      "en": "And I know I love you the same",
+      "ja": "そして、今でも変わらず君を愛していると分かっている"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "It don't mean I'm good with goodbye-bye-bye",
+      "ja": "サヨナラが得意になったわけじゃないけれど"
+    },
+    {
+      "en": "But it ain't all that bad when I cry, cry, cry",
+      "ja": "こうして泣いている時は、そんなに悪い気分じゃないんだ"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "These tears mean I'm lettin' you go",
+      "ja": "この涙は、君を手放すということ"
+    },
+    {
+      "en": "I'm learnin' how to be alone",
+      "ja": "一人でいる方法を学んでいるんだ"
+    },
+    {
+      "en": "I'm broken, but give it time",
+      "ja": "心はボロボロだけど、時間をかければ"
+    },
+    {
+      "en": "I'm gon' be alright",
+      "ja": "きっと大丈夫になる"
+    },
+    {
+      "en": "These tears mean it's settlin' in",
+      "ja": "この涙は、現実を受け入れ始めている証拠"
+    },
+    {
+      "en": "That I'm not gon' see you again",
+      "ja": "もう君には会えないということを"
+    },
+    {
+      "en": "'Til one day in another life",
+      "ja": "いつか別の人生で会える日まで"
+    },
+    {
+      "en": "But I'm gon' be al—, I'm gon' be alright",
+      "ja": "でも僕は大丈... 大丈夫になるよ"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "Woah-oh, woah-oh",
+      "ja": "Woah-oh, woah-oh"
+    },
+    {
+      "en": "Woah-oh, I'm gon' be al—, I'm gon' be alright",
+      "ja": "Woah-oh, 僕は大丈... 大丈夫になる"
+    },
+    {
+      "en": "Woah-oh, woah-oh",
+      "ja": "Woah-oh, woah-oh"
+    },
+    {
+      "en": "Woah-oh, I'm gon' be al—, I'm gon' be alright",
+      "ja": "Woah-oh、僕は大丈... きっと大丈夫になるから"
     }
   ],
   "conversation": [

@@ -22,27 +22,39 @@
     },
     {
       "en": "Have we met before? You look really familiar to me.",
-      "ja": "以前どこかでお会いしましたっけ？ すごく見覚えがあるんです。"
+      "ja": "以前どこかでお会いしましたか？すごく見覚えがあるのですが。"
     },
     {
       "en": "I'm searching my mind, looking through my memory.",
-      "ja": "記憶をたどって思い出そうとしているんだけど。"
+      "ja": "記憶を辿って、思い出そうとしているところです。"
+    },
+    {
+      "en": "",
+      "ja": ""
     },
     {
       "en": "I don't think so, but I'm notoriously bad with faces.",
-      "ja": "多分違うと思いますが、私、本当に人の顔を覚えるのが苦手で。"
+      "ja": "そうは思いませんが、私はとにかく人の顔を覚えるのが苦手なんです。"
     },
     {
       "en": "Meeting people in all these different places.",
-      "ja": "いろんな場所でいろんな人に会うものですから。"
+      "ja": "あちこちでいろんな人に会いますから。"
+    },
+    {
+      "en": "",
+      "ja": ""
     },
     {
       "en": "Nice to meet you anyway.",
-      "ja": "とにかく、初めまして。"
+      "ja": "とにかく、はじめまして。"
     },
     {
       "en": "How do you know the host today?",
-      "ja": "今日の主催者とはどういうお知り合いなんですか？"
+      "ja": "今日のホストとはどういうお知り合いですか？"
+    },
+    {
+      "en": "",
+      "ja": ""
     },
     {
       "en": "[Chorus]",
@@ -50,27 +62,39 @@
     },
     {
       "en": "Oh, we go way back, yeah, we went to college together.",
-      "ja": "ああ、もう長いつきあいですよ。実は大学が一緒だったんです。"
+      "ja": "ああ、長い付き合いですよ。大学が一緒だったんです。"
     },
     {
       "en": "Through the good times and the bad weather.",
-      "ja": "良い時も悪い時も、一緒にやってきました。"
+      "ja": "良い時も悪い時も共に過ごしてきました。"
+    },
+    {
+      "en": "",
+      "ja": ""
     },
     {
       "en": "What about you? What's your story?",
-      "ja": "そちらはどんな関わりですか？"
+      "ja": "あなたはどうですか？どんなつながりですか？"
     },
     {
       "en": "I just started working at his company.",
       "ja": "彼の会社で働き始めたばかりなんです。"
     },
     {
+      "en": "",
+      "ja": ""
+    },
+    {
       "en": "No kidding! How are you liking the new gig?",
-      "ja": "マジですか！新しい職場の居心地はどうですか？"
+      "ja": "本当ですか！新しい仕事はどうですか？"
     },
     {
       "en": "Dreaming small or are you dreaming big?",
-      "ja": "地道にやってる？それとも大きく夢見てる？"
+      "ja": "堅実にやってますか、それとも大きな夢を持って？"
+    },
+    {
+      "en": "",
+      "ja": ""
     },
     {
       "en": "[Verse 2]",
@@ -78,19 +102,27 @@
     },
     {
       "en": "It's been great, the team is super supportive.",
-      "ja": "すごく良いですよ。チームがめちゃくちゃ協力的で。"
+      "ja": "とても順調です。チームのみんなもすごく助けてくれますし。"
     },
     {
       "en": "A lot to learn, keeping it positive.",
-      "ja": "覚えることは山積みですが、前向きに頑張っています。"
+      "ja": "学ぶことは多いですが、前向きに頑張っています。"
+    },
+    {
+      "en": "",
+      "ja": ""
     },
     {
       "en": "Well, let me introduce you to the old crew.",
-      "ja": "それじゃあ、昔からの仲間たちに紹介しますよ。"
+      "ja": "それじゃあ、昔からの仲間に紹介させてください。"
     },
     {
       "en": "Yeah, it was really nice meeting you.",
-      "ja": "ええ、本当にお会いできてよかったです。"
+      "ja": "ええ、お会いできてよかったです。"
+    },
+    {
+      "en": "",
+      "ja": ""
     },
     {
       "en": "[Chorus]",
@@ -98,27 +130,39 @@
     },
     {
       "en": "Oh, we go way back, yeah, we went to college together.",
-      "ja": "ああ、もう長いつきあいですよ。実は大学が一緒だったんです。"
+      "ja": "ああ、長い付き合いですよ。大学が一緒だったんです。"
     },
     {
       "en": "Through the good times and the bad weather.",
-      "ja": "良い時も悪い時も、一緒にやってきました。"
+      "ja": "良い時も悪い時も共に過ごしてきました。"
+    },
+    {
+      "en": "",
+      "ja": ""
     },
     {
       "en": "What about you? What's your story?",
-      "ja": "そちらはどんな関わりですか？"
+      "ja": "あなたはどうですか？どんなつながりですか？"
     },
     {
       "en": "I just started working at his company.",
       "ja": "彼の会社で働き始めたばかりなんです。"
     },
     {
+      "en": "",
+      "ja": ""
+    },
+    {
       "en": "No kidding! How are you liking the new gig?",
-      "ja": "マジですか！新しい職場の居心地はどうですか？"
+      "ja": "本当ですか！新しい仕事はどうですか？"
     },
     {
       "en": "Dreaming small or are you dreaming big?",
-      "ja": "地道にやってる？それとも大きく夢見てる？"
+      "ja": "堅実にやってますか、それとも大きな夢を持って？"
+    },
+    {
+      "en": "",
+      "ja": ""
     },
     {
       "en": "[Bridge]",
@@ -126,7 +170,7 @@
     },
     {
       "en": "(Ooh) You look familiar...",
-      "ja": "(Ooh) 見覚えがあるんですが..."
+      "ja": "(Ooh) 見覚えがあるんだよなあ..."
     },
     {
       "en": "(Yeah) Notoriously bad with faces...",
@@ -134,11 +178,15 @@
     },
     {
       "en": "(Ooh) We go way back...",
-      "ja": "(Ooh) もう長いつきあいですよ..."
+      "ja": "(Ooh) 長い付き合いなんだ..."
     },
     {
       "en": "(Yeah) How are you liking the new gig?",
-      "ja": "(Yeah) 新しい職場はどうですか？"
+      "ja": "(Yeah) 新しい仕事はどうだい？"
+    },
+    {
+      "en": "",
+      "ja": ""
     },
     {
       "en": "[Outro]",
@@ -146,19 +194,23 @@
     },
     {
       "en": "Well, let me introduce you.",
-      "ja": "それじゃあ、紹介しますよ。"
+      "ja": "それじゃあ、紹介させて。"
     },
     {
       "en": "Yeah, welcome to the crew.",
-      "ja": "ええ、歓迎します。"
+      "ja": "そう、仲間に加わって。"
     },
     {
       "en": "Nice to meet you.",
-      "ja": "初めまして。"
+      "ja": "はじめまして。"
+    },
+    {
+      "en": "",
+      "ja": ""
     },
     {
       "en": "(Acoustic guitar fade out)",
-      "ja": "(アコースティックギター フェードアウト)"
+      "ja": ""
     }
   ],
   "conversation": [
