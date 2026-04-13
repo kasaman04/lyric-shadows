@@ -239,17 +239,22 @@ function renderShadowing() {
 function renderLyrics(song) {
   if (!song.lyrics) return '<p class="no-lyrics">歌詞なし</p>';
 
-  // New format: lyricsJa is an array of {en, ja} phrase pairs
+  const enLines = song.lyrics.split('\n');
+
   if (Array.isArray(song.lyricsJa)) {
-    return song.lyricsJa.map(pair => {
-      const enHtml = pair.en.split('\n').map(l => `<div class="lyric-en">${esc(l)}</div>`).join('');
-      const jaHtml = pair.ja ? `<div class="lyric-ja">${esc(pair.ja)}</div>` : '';
-      return `<div class="lyric-pair">${enHtml}${jaHtml}</div>`;
-    }).join('<div class="lyric-spacer"></div>');
+    const normalize = (str) => str.toLowerCase().replace(/[^a-z0-9]/g, '');
+    return enLines.map(line => {
+      if (!line.trim()) return '<div class="lyric-spacer"></div>';
+      
+      const normLine = normalize(line);
+      const match = song.lyricsJa.find(pair => pair.en && normalize(pair.en) === normLine);
+      const jaHtml = (match && match.ja) ? `<div class="lyric-ja">${esc(match.ja)}</div>` : '';
+      
+      return `<div class="lyric-pair"><div class="lyric-en">${esc(line)}</div>${jaHtml}</div>`;
+    }).join('');
   }
 
   // Legacy fallback: lyricsJa is a plain string matched line-by-line
-  const enLines = song.lyrics.split('\n');
   const jaLines = song.lyricsJa ? song.lyricsJa.split('\n') : [];
   return enLines.map((line, i) => {
     if (!line.trim()) return '<div class="lyric-spacer"></div>';
