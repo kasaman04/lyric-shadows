@@ -1,3 +1,26 @@
-node_modules/
+# Environment & secrets
 .env
+.env.*
+
+# Dependencies
+node_modules/
+
+# OS files
 .DS_Store
+Thumbs.db
+
+# MP3 source files (Suno originals - not needed for deployment)
+mp3_sources/
+mp3_sources_pattern_b/
+
+# Temporary / one-off scripts
+check_chunks_tmp.js
+error.log
+output.txt
+output-utf8.txt
+hard-to-love-preview.json
+hard_to_love.json
+tmp-preview.json
+
+# Render local config (if any)
+.render/

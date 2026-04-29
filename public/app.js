@@ -4,10 +4,22 @@
 const state = {
   view: 'home',
   songs: [],
+  phrases: [],
   currentSong: null,
+  currentPhrase: null,
   showJapanese: false,
   activeTab: 'conv',   // 'conv' | 'song'
-  homeFilter: 'A',     // 'A' | 'B'
+  homeFilter: 'A',     // 'A' | 'B' | 'C'
+  phrasePack: '基本',
+  phraseCategory: 'すべて',
+  hiddenPhraseIds: new Set(),
+  savedPhraseIds: new Set(),
+  practiceSet: [],
+  practiceIndex: 0,
+  practiceTitle: '',
+  practiceCount: '10',
+  phrasePracticeAudio: null,
+  shouldAutoplayPractice: false,
   // Playback
   sentenceList: [],
   audioElements: [],
@@ -26,11 +38,17 @@ const SPEAKER_ICONS = {
   '男性': '👨', '女性': '👩', '男２': '👴', '少年': '👦', '少女': '👧'
 };
 
+const PHRASE_AUTO_ADVANCE_DELAY_MS = 1200;
+
 // ============================================================
 // INIT
 // ============================================================
 async function init() {
   await loadSongs();
+  state.phrases = Array.isArray(window.CONVERSATION_PHRASES) ? window.CONVERSATION_PHRASES : [];
+  applyGeneratedPhraseAudio();
+  loadHiddenPhrases();
+  loadSavedPhrases();
   renderHome();
 }
 
@@ -43,23 +61,42 @@ async function loadSongs() {
   }
 }
 
+function applyGeneratedPhraseAudio() {
+  const generatedAudio = window.GENERATED_PHRASE_AUDIO || {};
+  state.phrases.forEach(phrase => {
+    if (generatedAudio[phrase.id]) phrase.audio = generatedAudio[phrase.id];
+  });
+}
+
 // ============================================================
 // ROUTING
 // ============================================================
 function showHome() {
   stopAudio();
+  stopPhrasePracticeAudio();
   state.currentSong = null;
+  state.currentPhrase = null;
   state.view = 'home';
   renderHome();
 }
 
 function showShadowing(song) {
+  stopPhrasePracticeAudio();
   state.currentSong = song;
   state.view = 'shadowing';
   state.showJapanese = false;
   state.activeTab = 'conv';
   initAudio(song);
   renderShadowing();
+}
+
+function showPhrase(phrase) {
+  stopAudio();
+  stopPhrasePracticeAudio();
+  state.currentPhrase = phrase;
+  state.currentSong = null;
+  state.view = 'phrase';
+  renderPhraseDetail();
 }
 
 // ============================================================
@@ -72,13 +109,20 @@ function renderHome() {
       <h1><img src="/rogo2.png" alt="Lyric Shadows" class="header-logo"> Lyric Shadows</h1>
     </div>
     <div class="home-tabs">
-      <button class="home-tab ${state.homeFilter === 'A' ? 'active' : ''}" onclick="setHomeFilter('A')">🎵 洋楽で学ぶ</button>
-      <button class="home-tab ${state.homeFilter === 'B' ? 'active' : ''}" onclick="setHomeFilter('B')">💬 シチュエーション</button>
+      <button class="home-tab ${state.homeFilter === 'A' ? 'active' : ''}" onclick="setHomeFilter('A')">洋楽で学ぶ</button>
+      <button class="home-tab ${state.homeFilter === 'B' ? 'active' : ''}" onclick="setHomeFilter('B')">シチュエーション</button>
+      <button class="home-tab ${state.homeFilter === 'C' ? 'active' : ''}" onclick="setHomeFilter('C')">会話フレーズ</button>
     </div>
     ${renderSongGrid()}
     <div id="modalContainer"></div>
     <div id="progressContainer"></div>
   `;
+  if (state.homeFilter === 'C') {
+    setTimeout(() => {
+      scrollActivePhrasePack();
+      scrollActivePhraseChip();
+    }, 0);
+  }
   checkExistingPreview();
 }
 
@@ -96,6 +140,8 @@ async function checkExistingPreview() {
 }
 
 function renderSongGrid() {
+  if (state.homeFilter === 'C') return renderPhraseGrid();
+
   const filteredSongs = state.songs.filter(s => {
     const isPatternB = s.pattern === 'B' || (s.artist && s.artist.includes('パターンB'));
     const pattern = isPatternB ? 'B' : 'A';
@@ -124,6 +170,390 @@ function renderSongGrid() {
       </div>`;
   }).join('');
   return `<div class="song-grid">${cards}</div>`;
+}
+
+function renderPhraseGrid() {
+  const packPhrases = getPhrasesForCurrentPack();
+  const categories = ['すべて', ...Array.from(new Set(packPhrases.map(p => p.category)))];
+  if (!categories.includes(state.phraseCategory)) state.phraseCategory = 'すべて';
+  const categoryPhrases = state.phraseCategory === 'すべて'
+    ? packPhrases
+    : packPhrases.filter(p => p.category === state.phraseCategory);
+  const filtered = categoryPhrases;
+  const visiblePlayableCount = categoryPhrases.filter(p => p.audio && !isPhraseHidden(p.id)).length;
+
+  const chips = categories.map(category => `
+    <button class="phrase-filter-chip ${state.phraseCategory === category ? 'active' : ''}"
+            onclick="setPhraseCategory('${esc(category)}')">${esc(category)}</button>
+  `).join('');
+
+  const packTabs = ['基本', 'リアル会話', '初対面', '相手を知る質問', '会話を止めない', '感情を出す', '人間関係', 'リアル口語', 'すべて', '保存'].map(pack => `
+    <button class="phrase-pack-tab ${state.phrasePack === pack ? 'active' : ''}" onclick="setPhrasePack('${pack}')">${pack}</button>
+  `).join('');
+
+  const cards = filtered.map((phrase, index) => `
+    <div class="phrase-card phrase-card-${index % 12} ${isPhraseHidden(phrase.id) ? 'is-hidden-phrase' : ''}" onclick="showPhrase(state.phrases.find(p => p.id === '${phrase.id}'))">
+      <div class="phrase-card-category">${esc(phrase.category)}</div>
+      <div class="phrase-card-title">${esc(phrase.phrase)}</div>
+      <div class="phrase-card-note">${esc(phrase.usageNote)}</div>
+      <div class="phrase-card-count">${isPhraseHidden(phrase.id) ? '非表示' : phrase.lines.length + 'ラリー'}</div>
+    </div>
+  `).join('');
+
+  return `
+    <div class="phrase-tools">
+      <div class="phrase-pack-tabs" id="phrasePackTabs">${packTabs}</div>
+      <div class="phrase-count">${filtered.length} / ${packPhrases.length} フレーズ・再生対象 ${visiblePlayableCount}</div>
+      <div class="phrase-filter-wrap">
+        <div class="phrase-filter-row" id="phraseFilterRow">${chips}</div>
+      </div>
+      <div class="phrase-random-panel">
+        <span>ランダム練習</span>
+        <button onclick="startPhrasePractice(10)">10</button>
+        <button onclick="startPhrasePractice(30)">30</button>
+        <button onclick="startPhrasePractice('all')">すべて</button>
+      </div>
+    </div>
+    <div class="phrase-grid">${cards}</div>
+  `;
+}
+
+function getPhrasePack(phrase) {
+  return phrase.pack || '基本';
+}
+
+function getPhrasesForCurrentPack() {
+  if (state.phrasePack === '保存') {
+    return state.phrases.filter(p => state.savedPhraseIds.has(p.id));
+  }
+  if (state.phrasePack === 'すべて') return state.phrases;
+  return state.phrases.filter(p => getPhrasePack(p) === state.phrasePack);
+}
+
+function setPhrasePack(pack) {
+  state.phrasePack = pack;
+  state.phraseCategory = 'すべて';
+  stopPhrasePracticeAudio();
+  renderHome();
+}
+
+function setPhraseCategory(category) {
+  state.phraseCategory = category;
+  stopPhrasePracticeAudio();
+  renderHome();
+}
+
+function scrollActivePhraseChip() {
+  const row = document.getElementById('phraseFilterRow');
+  const active = row?.querySelector('.phrase-filter-chip.active');
+  if (!row || !active) return;
+  const rowRect = row.getBoundingClientRect();
+  const activeRect = active.getBoundingClientRect();
+  const offset = activeRect.left - rowRect.left - (rowRect.width / 2) + (activeRect.width / 2);
+  row.scrollBy({ left: offset, behavior: 'smooth' });
+}
+
+function scrollActivePhrasePack() {
+  const row = document.getElementById('phrasePackTabs');
+  const active = row?.querySelector('.phrase-pack-tab.active');
+  if (!row || !active) return;
+  const rowRect = row.getBoundingClientRect();
+  const activeRect = active.getBoundingClientRect();
+  const offset = activeRect.left - rowRect.left - (rowRect.width / 2) + (activeRect.width / 2);
+  row.scrollBy({ left: offset, behavior: 'smooth' });
+}
+
+function renderPhraseDetail() {
+  const phrase = state.currentPhrase;
+  if (!phrase) return showHome();
+  const app = document.getElementById('app');
+
+  const turnsHtml = phrase.lines.map(([speaker, english, japanese], index) => `
+    <div class="phrase-line ${speaker === 'A' ? 'speaker-a' : 'speaker-b'}">
+      <div class="phrase-line-meta">
+        <span class="phrase-speaker">${esc(speaker)}</span>
+        <span class="phrase-line-number">${index + 1}</span>
+      </div>
+      <div class="phrase-english">${esc(english)}</div>
+      <div class="phrase-japanese">${esc(japanese)}</div>
+    </div>
+  `).join('');
+
+  app.innerHTML = `
+    <div class="shadowing-view phrase-detail-view">
+      <div class="shadowing-header">
+        <button class="back-btn" onclick="showHome()">←</button>
+        <div class="title-jp-group">
+          <div class="shadowing-song-info">
+            <div class="shadowing-song-name">${esc(phrase.phrase)}</div>
+            <div class="shadowing-song-artist">${esc(phrase.category)}</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="phrase-hero phrase-card-${state.phrases.indexOf(phrase) % 12}">
+        <div class="phrase-hero-label">${esc(phrase.category)}</div>
+        <h2>${esc(phrase.phrase)}</h2>
+        <p>${esc(phrase.usageNote)}</p>
+      </div>
+
+      <div class="phrase-conversation">
+        ${phrase.audio ? `<button class="phrase-play-all-btn" onclick="playPhraseAudio('${esc(phrase.audio)}')">▶ まとめて再生</button>` : ''}
+        <div class="phrase-action-row">
+          <button class="phrase-hide-btn ${isPhraseHidden(phrase.id) ? 'is-restore' : ''}" onclick="togglePhraseHidden('${phrase.id}')">
+            ${isPhraseHidden(phrase.id) ? '表示に戻す' : '非表示'}
+          </button>
+          <button class="phrase-save-btn ${isPhraseSaved(phrase.id) ? 'is-saved' : ''}" onclick="togglePhraseSaved('${phrase.id}')">
+            ${isPhraseSaved(phrase.id) ? '保存済み' : '保存'}
+          </button>
+        </div>
+        ${turnsHtml}
+        <div class="phrase-usage-note">
+          <span>使う場面</span>
+          <p>${esc(phrase.usageNote)}</p>
+        </div>
+        <div class="phrase-audio-note">${phrase.audio ? '3ラリーを1本にまとめた試作音声です。' : '音声は次の工程で生成予定です。'}</div>
+      </div>
+    </div>
+  `;
+}
+
+function playPhraseAudio(src) {
+  stopAudio();
+  stopPhrasePracticeAudio();
+  const audio = new Audio(src);
+  audio.play().catch(() => showToast('音声を再生できませんでした'));
+}
+
+function loadHiddenPhrases() {
+  try {
+    const ids = JSON.parse(localStorage.getItem('hiddenPhraseIds') || '[]');
+    state.hiddenPhraseIds = new Set(Array.isArray(ids) ? ids : []);
+  } catch {
+    state.hiddenPhraseIds = new Set();
+  }
+}
+
+function loadSavedPhrases() {
+  try {
+    const ids = JSON.parse(localStorage.getItem('savedPhraseIds') || '[]');
+    state.savedPhraseIds = new Set(Array.isArray(ids) ? ids : []);
+  } catch {
+    state.savedPhraseIds = new Set();
+  }
+}
+
+function saveHiddenPhrases() {
+  localStorage.setItem('hiddenPhraseIds', JSON.stringify(Array.from(state.hiddenPhraseIds)));
+}
+
+function saveSavedPhrases() {
+  localStorage.setItem('savedPhraseIds', JSON.stringify(Array.from(state.savedPhraseIds)));
+}
+
+function isPhraseHidden(id) {
+  return state.hiddenPhraseIds.has(id);
+}
+
+function isPhraseSaved(id) {
+  return state.savedPhraseIds.has(id);
+}
+
+function togglePhraseHidden(id) {
+  if (state.hiddenPhraseIds.has(id)) {
+    state.hiddenPhraseIds.delete(id);
+    showToast('表示に戻しました');
+  } else {
+    state.hiddenPhraseIds.add(id);
+    showToast('非表示にしました。ランダム再生には出ません');
+  }
+  saveHiddenPhrases();
+  if (state.view === 'phrase') renderPhraseDetail();
+  else renderHome();
+}
+
+function togglePhraseSaved(id) {
+  if (state.savedPhraseIds.has(id)) {
+    state.savedPhraseIds.delete(id);
+    showToast('保存を解除しました');
+  } else {
+    state.savedPhraseIds.add(id);
+    showToast('保存しました');
+  }
+  saveSavedPhrases();
+  if (state.view === 'phrase') renderPhraseDetail();
+  else if (state.view === 'phrasePractice') renderPhrasePractice();
+  else renderHome();
+}
+
+function getPhrasePool() {
+  const packPhrases = getPhrasesForCurrentPack();
+  const byCategory = state.phraseCategory === 'すべて'
+    ? packPhrases
+    : packPhrases.filter(p => p.category === state.phraseCategory);
+  return byCategory.filter(p => p.audio && !isPhraseHidden(p.id));
+}
+
+function shuffleArray(items) {
+  const copy = [...items];
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy;
+}
+
+function startPhrasePractice(count) {
+  stopAudio();
+  stopPhrasePracticeAudio();
+
+  const pool = getPhrasePool();
+  if (pool.length === 0) {
+    showToast('このカテゴリに再生できる音声がありません');
+    return;
+  }
+
+  const limit = count === 'all' ? pool.length : Math.min(Number(count), pool.length);
+  state.practiceSet = shuffleArray(pool).slice(0, limit);
+  state.practiceIndex = 0;
+  state.practiceCount = count === 'all' ? 'すべて' : String(limit);
+  state.practiceTitle = state.phraseCategory;
+  state.shouldAutoplayPractice = true;
+  state.view = 'phrasePractice';
+  renderPhrasePractice();
+}
+
+function renderPhrasePractice() {
+  const app = document.getElementById('app');
+  const total = state.practiceSet.length;
+  const phrase = state.practiceSet[state.practiceIndex];
+
+  if (!phrase) {
+    app.innerHTML = `
+      <div class="shadowing-view phrase-practice-view">
+        <div class="shadowing-header">
+          <button class="back-btn" onclick="showHome()">←</button>
+          <div class="shadowing-song-info">
+            <div class="shadowing-song-name">ランダム練習</div>
+            <div class="shadowing-song-artist">完了</div>
+          </div>
+        </div>
+        <div class="practice-complete">
+          <h2>今回のセットは完了しました</h2>
+          <p>非表示にしたフレーズは次回のランダム練習には出ません。</p>
+          <button onclick="showHome()">会話フレーズに戻る</button>
+        </div>
+      </div>
+    `;
+    return;
+  }
+
+  const turnsHtml = phrase.lines.map(([speaker, english, japanese], index) => `
+    <div class="phrase-line ${speaker === 'A' ? 'speaker-a' : 'speaker-b'}">
+      <div class="phrase-line-meta">
+        <span class="phrase-speaker">${esc(speaker)}</span>
+        <span class="phrase-line-number">${index + 1}</span>
+      </div>
+      <div class="phrase-english">${esc(english)}</div>
+      <div class="phrase-japanese">${esc(japanese)}</div>
+    </div>
+  `).join('');
+
+  app.innerHTML = `
+    <div class="shadowing-view phrase-practice-view">
+      <div class="shadowing-header">
+        <button class="back-btn" onclick="showHome()">←</button>
+        <div class="title-jp-group">
+          <div class="shadowing-song-info">
+            <div class="shadowing-song-name">${esc(state.practiceTitle)} ランダム${esc(state.practiceCount)}</div>
+            <div class="shadowing-song-artist">${state.practiceIndex + 1} / ${total}</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="practice-progress">
+        <div style="width:${((state.practiceIndex + 1) / total) * 100}%"></div>
+      </div>
+
+      <div class="phrase-hero phrase-card-${state.phrases.indexOf(phrase) % 12}">
+        <div class="phrase-hero-label">${esc(phrase.category)} ・ ${state.practiceIndex + 1} / ${total}</div>
+        <h2>${esc(phrase.phrase)}</h2>
+        <p>${esc(phrase.usageNote)}</p>
+      </div>
+
+      <div class="phrase-conversation">
+        ${phrase.audio ? `<button class="phrase-play-all-btn" onclick="playPhrasePracticeAudio('${esc(phrase.audio)}')">▶ まとめて再生</button>` : ''}
+        <div class="phrase-action-row">
+          <button class="phrase-hide-btn ${isPhraseHidden(phrase.id) ? 'is-restore' : ''}" onclick="hideCurrentPracticePhrase()">
+            非表示にして次へ
+          </button>
+          <button class="phrase-save-btn ${isPhraseSaved(phrase.id) ? 'is-saved' : ''}" onclick="togglePhraseSaved('${phrase.id}')">
+            ${isPhraseSaved(phrase.id) ? '保存済み' : '保存'}
+          </button>
+        </div>
+        ${turnsHtml}
+        <div class="phrase-usage-note">
+          <span>使う場面</span>
+          <p>${esc(phrase.usageNote)}</p>
+        </div>
+        <div class="practice-nav">
+          <button onclick="movePractice(-1)" ${state.practiceIndex === 0 ? 'disabled' : ''}>前へ</button>
+          <button onclick="movePractice(1)">${state.practiceIndex + 1 >= total ? '完了' : '次へ'}</button>
+        </div>
+      </div>
+    </div>
+  `;
+
+  if (state.shouldAutoplayPractice && phrase.audio) {
+    state.shouldAutoplayPractice = false;
+    setTimeout(() => playPhrasePracticeAudio(phrase.audio), 0);
+  }
+}
+
+function movePractice(delta) {
+  stopPhrasePracticeAudio();
+  state.practiceIndex += delta;
+  if (state.practiceIndex < 0) state.practiceIndex = 0;
+  if (state.practiceIndex >= state.practiceSet.length) {
+    state.practiceIndex = state.practiceSet.length;
+  }
+  state.shouldAutoplayPractice = delta > 0 && state.practiceIndex < state.practiceSet.length;
+  renderPhrasePractice();
+}
+
+function hideCurrentPracticePhrase() {
+  const phrase = state.practiceSet[state.practiceIndex];
+  if (!phrase) return;
+  state.hiddenPhraseIds.add(phrase.id);
+  saveHiddenPhrases();
+  state.practiceSet = state.practiceSet.filter(p => p.id !== phrase.id);
+  if (state.practiceIndex >= state.practiceSet.length) state.practiceIndex = state.practiceSet.length;
+  showToast('非表示にしました');
+  stopPhrasePracticeAudio();
+  state.shouldAutoplayPractice = state.practiceIndex < state.practiceSet.length;
+  renderPhrasePractice();
+}
+
+function playPhrasePracticeAudio(src) {
+  stopAudio();
+  stopPhrasePracticeAudio();
+  state.phrasePracticeAudio = new Audio(src);
+  state.phrasePracticeAudio.onended = () => {
+    if (state.view === 'phrasePractice') {
+      setTimeout(() => {
+        if (state.view === 'phrasePractice') movePractice(1);
+      }, PHRASE_AUTO_ADVANCE_DELAY_MS);
+    }
+  };
+  state.phrasePracticeAudio.play().catch(() => showToast('音声を再生できませんでした'));
+}
+
+function stopPhrasePracticeAudio() {
+  if (state.phrasePracticeAudio) {
+    state.phrasePracticeAudio.pause();
+    state.phrasePracticeAudio.currentTime = 0;
+  }
+  state.phrasePracticeAudio = null;
 }
 
 // ============================================================
@@ -216,8 +646,8 @@ function renderShadowing() {
         </div>
       </div>
       <div class="tab-bar">
-        <button class="tab-btn${state.activeTab === 'conv' ? ' active' : ''}" id="tabConv" onclick="switchTab('conv')">💬 会話</button>
-        ${song.videoId || song.hasLocalAudio ? `<button class="tab-btn${state.activeTab === 'song' ? ' active' : ''}" id="tabSong" onclick="switchTab('song')">🎵 Song</button>` : ''}
+        <button class="tab-btn${state.activeTab === 'conv' ? ' active' : ''}" id="tabConv" onclick="switchTab('conv')">会話</button>
+        ${song.videoId || song.hasLocalAudio ? `<button class="tab-btn${state.activeTab === 'song' ? ' active' : ''}" id="tabSong" onclick="switchTab('song')">Song</button>` : ''}
       </div>
       <div class="setting-bar" id="settingBar">
         <span class="rel-badge rel-${song.relationship}">${esc(song.relationship)}</span>
@@ -582,7 +1012,7 @@ function showAddModal() {
           <textarea id="addSetting" class="form-input" rows="2" placeholder="例: 激しい口論をしている、カフェで偶然再会した 等"></textarea>
         </div>
 
-        <button class="generate-btn" onclick="startPreview()">プレビューを生成する ✨</button>
+        <button class="generate-btn" onclick="startPreview()">プレビューを生成する</button>
       </div>
     </div>
   `;
@@ -757,10 +1187,10 @@ function showPreviewView(preview) {
       </div>
 
       <div class="play-controls" style="flex-direction:column; gap:10px; background:rgba(6,6,26,0.9); padding:20px;">
-        <button class="generate-btn" style="margin:0; width:100%; border-radius:30px;" onclick="finalizePreview()">👉 この内容で音声生成＆確定する</button>
+        <button class="generate-btn" style="margin:0; width:100%; border-radius:30px;" onclick="finalizePreview()">この内容で音声生成＆確定する</button>
         <div style="display:flex; gap:10px; width:100%;">
           <button class="restart-btn" style="flex:1; border-radius:30px; border-color:var(--dim); color:var(--text); width:auto;" onclick="startRegen()">🔄 会話を再生成</button>
-          <button class="restart-btn" style="flex:1; border-radius:30px; border-color:#e11d48; color:#f43f5e; width:auto;" onclick="cancelPreview()">❌ キャンセル</button>
+          <button class="restart-btn" style="flex:1; border-radius:30px; border-color:#e11d48; color:#f43f5e; width:auto;" onclick="cancelPreview()">キャンセル</button>
         </div>
       </div>
       <div id="progressContainer"></div>
