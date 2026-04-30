@@ -506,7 +506,7 @@ function renderPhrasePractice() {
 
   if (state.shouldAutoplayPractice && phrase.audio) {
     state.shouldAutoplayPractice = false;
-    setTimeout(() => playPhrasePracticeAudio(phrase.audio), 0);
+    playPhrasePracticeAudio(phrase.audio);
   }
 }
 
@@ -536,8 +536,19 @@ function hideCurrentPracticePhrase() {
 
 function playPhrasePracticeAudio(src) {
   stopAudio();
-  stopPhrasePracticeAudio();
-  state.phrasePracticeAudio = new Audio(src);
+  if (!state.phrasePracticeAudio) {
+    state.phrasePracticeAudio = new Audio();
+    state.phrasePracticeAudio.preload = 'auto';
+  } else {
+    state.phrasePracticeAudio.pause();
+    try { state.phrasePracticeAudio.currentTime = 0; } catch {}
+  }
+
+  const absoluteSrc = new URL(src, window.location.href).href;
+  if (state.phrasePracticeAudio.src !== absoluteSrc) {
+    state.phrasePracticeAudio.src = src;
+  }
+
   state.phrasePracticeAudio.onended = () => {
     if (state.view === 'phrasePractice') {
       setTimeout(() => {
@@ -545,15 +556,14 @@ function playPhrasePracticeAudio(src) {
       }, PHRASE_AUTO_ADVANCE_DELAY_MS);
     }
   };
-  state.phrasePracticeAudio.play().catch(() => showToast('音声を再生できませんでした'));
+  state.phrasePracticeAudio.play().catch(() => showToast('音声を再生できませんでした。再生ボタンを押してください'));
 }
 
 function stopPhrasePracticeAudio() {
   if (state.phrasePracticeAudio) {
     state.phrasePracticeAudio.pause();
-    state.phrasePracticeAudio.currentTime = 0;
+    try { state.phrasePracticeAudio.currentTime = 0; } catch {}
   }
-  state.phrasePracticeAudio = null;
 }
 
 // ============================================================
