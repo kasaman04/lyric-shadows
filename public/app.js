@@ -39,6 +39,7 @@ const SPEAKER_ICONS = {
 };
 
 const PHRASE_AUTO_ADVANCE_DELAY_MS = 1200;
+const STORAGE_COOKIE_MAX_AGE = 60 * 60 * 24 * 365;
 
 // ============================================================
 // INIT
@@ -325,30 +326,49 @@ function playPhraseAudio(src) {
   audio.play().catch(() => showToast('音声を再生できませんでした'));
 }
 
-function loadHiddenPhrases() {
+function readStoredIds(key) {
   try {
-    const ids = JSON.parse(localStorage.getItem('hiddenPhraseIds') || '[]');
-    state.hiddenPhraseIds = new Set(Array.isArray(ids) ? ids : []);
+    const ids = JSON.parse(localStorage.getItem(key) || '[]');
+    if (Array.isArray(ids)) return ids;
+  } catch {}
+
+  try {
+    const match = document.cookie
+      .split('; ')
+      .find(part => part.startsWith(`${key}=`));
+    if (!match) return [];
+    const ids = JSON.parse(decodeURIComponent(match.slice(key.length + 1)));
+    return Array.isArray(ids) ? ids : [];
   } catch {
-    state.hiddenPhraseIds = new Set();
+    return [];
   }
+}
+
+function writeStoredIds(key, ids) {
+  const value = JSON.stringify(ids);
+  try {
+    localStorage.setItem(key, value);
+  } catch {}
+
+  try {
+    document.cookie = `${key}=${encodeURIComponent(value)}; max-age=${STORAGE_COOKIE_MAX_AGE}; path=/; samesite=lax`;
+  } catch {}
+}
+
+function loadHiddenPhrases() {
+  state.hiddenPhraseIds = new Set(readStoredIds('hiddenPhraseIds'));
 }
 
 function loadSavedPhrases() {
-  try {
-    const ids = JSON.parse(localStorage.getItem('savedPhraseIds') || '[]');
-    state.savedPhraseIds = new Set(Array.isArray(ids) ? ids : []);
-  } catch {
-    state.savedPhraseIds = new Set();
-  }
+  state.savedPhraseIds = new Set(readStoredIds('savedPhraseIds'));
 }
 
 function saveHiddenPhrases() {
-  localStorage.setItem('hiddenPhraseIds', JSON.stringify(Array.from(state.hiddenPhraseIds)));
+  writeStoredIds('hiddenPhraseIds', Array.from(state.hiddenPhraseIds));
 }
 
 function saveSavedPhrases() {
-  localStorage.setItem('savedPhraseIds', JSON.stringify(Array.from(state.savedPhraseIds)));
+  writeStoredIds('savedPhraseIds', Array.from(state.savedPhraseIds));
 }
 
 function isPhraseHidden(id) {
