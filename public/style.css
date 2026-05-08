@@ -1928,18 +1928,64 @@ body::before {
   line-height: 1.58;
 }
 
+.phrase-image-shell {
+  width: min(820px, calc(100% - 32px));
+  margin: 18px auto 14px;
+}
+
+.phrase-image-card {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: clamp(150px, calc((100vw - 32px) * 0.5625), 460px);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #111722;
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 16px 38px rgba(0,0,0,0.26);
+}
+
+.phrase-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+.phrase-image-meta {
+  padding: 10px 2px 0;
+}
+
+.phrase-image-label {
+  color: rgba(255,255,255,0.58);
+  font-size: 0.72rem;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.phrase-image-meta p {
+  color: rgba(255,255,255,0.82);
+  font-size: 0.9rem;
+  line-height: 1.58;
+}
+
 .phrase-conversation {
   width: min(820px, 100%);
   margin: 0 auto;
   padding: 0 16px 70px;
 }
 
-.phrase-play-all-btn {
-  width: 100%;
+.phrase-audio-controls {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.phrase-play-all-btn,
+.phrase-repeat-btn {
   border: 1px solid rgba(255,255,255,0.12);
   border-radius: 999px;
-  background: linear-gradient(135deg, #6ea8ff, #59d7c6);
-  color: #fff;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -1948,11 +1994,29 @@ body::before {
   font-size: 0.92rem;
   font-weight: 800;
   padding: 14px 18px;
-  margin-bottom: 14px;
+  min-height: 48px;
+}
+
+.phrase-play-all-btn {
+  background: linear-gradient(135deg, #6ea8ff, #59d7c6);
+  color: #fff;
   box-shadow: 0 12px 28px rgba(89,215,198,0.18);
 }
 
-.phrase-play-all-btn:active {
+.phrase-repeat-btn {
+  background: rgba(255,255,255,0.06);
+  color: #d8deea;
+}
+
+.phrase-repeat-btn.active {
+  border-color: rgba(251,191,36,0.42);
+  background: rgba(251,191,36,0.13);
+  color: #ffe2a3;
+  box-shadow: 0 12px 28px rgba(251,191,36,0.12);
+}
+
+.phrase-play-all-btn:active,
+.phrase-repeat-btn:active {
   transform: scale(0.98);
 }
 

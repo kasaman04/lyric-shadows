@@ -1,18 +1,52 @@
 const express = require('express');
 const path = require('path');
 const fs = require('fs-extra');
+const axios = require('axios');
 const { prepareConversation, generateConversation, finalizeSong, VOICE_MAP } = require('./lib/generate');
 require('dotenv').config();
 
 const app = express();
 const PORT = process.env.PORT || 9999;
 const SONGS_DIR = path.join(__dirname, 'songs');
+const PHRASE_IMAGES_DIR = path.join(__dirname, 'public', 'phrase-images', 'phrases');
+const SUPABASE_URL = process.env.SUPABASE_URL;
+const SUPABASE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.SUPABASE_SECRET_KEY || process.env.SUPABASE_ANON_KEY;
+const SUPABASE_PREFS_TABLE = 'user_phrase_preferences';
 
 (async () => { await fs.ensureDir(SONGS_DIR); })();
 
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/songs', express.static(SONGS_DIR));
+
+function isSupabaseConfigured() {
+  return Boolean(SUPABASE_URL && SUPABASE_KEY);
+}
+
+function supabaseHeaders(extra = {}) {
+  return {
+    apikey: SUPABASE_KEY,
+    Authorization: `Bearer ${SUPABASE_KEY}`,
+    'Content-Type': 'application/json',
+    ...extra
+  };
+}
+
+function cleanIdList(value) {
+  if (!Array.isArray(value)) return [];
+  return Array.from(new Set(
+    value
+      .filter(id => typeof id === 'string')
+      .map(id => id.trim())
+      .filter(id => /^[a-z0-9-]+$/i.test(id))
+  )).slice(0, 2000);
+}
+
+function cleanDeviceId(value) {
+  if (typeof value !== 'string') return '';
+  const id = value.trim();
+  return /^[a-z0-9-]{12,80}$/i.test(id) ? id : '';
+}
 
 // GET all songs: scan songs/ directory
 app.get('/api/songs', async (req, res) => {
@@ -33,6 +67,90 @@ app.get('/api/songs', async (req, res) => {
     songs.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
     res.json(songs);
   } catch { res.json([]); }
+});
+
+app.get('/api/phrase-images', async (req, res) => {
+  try {
+    const files = await fs.pathExists(PHRASE_IMAGES_DIR)
+      ? await fs.readdir(PHRASE_IMAGES_DIR)
+      : [];
+    const images = {};
+    const allowed = new Set(['.webp', '.png', '.jpg', '.jpeg']);
+
+    files.forEach(file => {
+      const ext = path.extname(file).toLowerCase();
+      if (!allowed.has(ext)) return;
+      const id = path.basename(file, ext);
+      if (!/^[a-z0-9-]+$/i.test(id)) return;
+      if (!images[id] || ext === '.webp') {
+        images[id] = `/phrase-images/phrases/${file}`;
+      }
+    });
+
+    res.json(images);
+  } catch {
+    res.json({});
+  }
+});
+
+app.get('/api/phrase-preferences/:deviceId', async (req, res) => {
+  if (!isSupabaseConfigured()) {
+    return res.json({ enabled: false, found: false, savedPhraseIds: [], hiddenPhraseIds: [] });
+  }
+
+  const deviceId = cleanDeviceId(req.params.deviceId);
+  if (!deviceId) return res.status(400).json({ error: 'Invalid device id' });
+
+  try {
+    const url = `${SUPABASE_URL}/rest/v1/${SUPABASE_PREFS_TABLE}`;
+    const response = await axios.get(url, {
+      headers: supabaseHeaders(),
+      params: {
+        device_id: `eq.${deviceId}`,
+        select: 'saved_phrase_ids,hidden_phrase_ids'
+      },
+      timeout: 10000
+    });
+    const row = Array.isArray(response.data) ? response.data[0] : null;
+    res.json({
+      enabled: true,
+      found: Boolean(row),
+      savedPhraseIds: cleanIdList(row?.saved_phrase_ids),
+      hiddenPhraseIds: cleanIdList(row?.hidden_phrase_ids)
+    });
+  } catch (error) {
+    res.status(500).json({ error: error.response?.data?.message || error.message });
+  }
+});
+
+app.put('/api/phrase-preferences/:deviceId', async (req, res) => {
+  if (!isSupabaseConfigured()) {
+    return res.json({ enabled: false, saved: false });
+  }
+
+  const deviceId = cleanDeviceId(req.params.deviceId);
+  if (!deviceId) return res.status(400).json({ error: 'Invalid device id' });
+
+  try {
+    const url = `${SUPABASE_URL}/rest/v1/${SUPABASE_PREFS_TABLE}`;
+    await axios.post(
+      url,
+      {
+        device_id: deviceId,
+        saved_phrase_ids: cleanIdList(req.body.savedPhraseIds),
+        hidden_phrase_ids: cleanIdList(req.body.hiddenPhraseIds),
+        updated_at: new Date().toISOString()
+      },
+      {
+        headers: supabaseHeaders({ Prefer: 'resolution=merge-duplicates,return=minimal' }),
+        params: { on_conflict: 'device_id' },
+        timeout: 10000
+      }
+    );
+    res.json({ enabled: true, saved: true });
+  } catch (error) {
+    res.status(500).json({ error: error.response?.data?.message || error.message });
+  }
 });
 
 const PREVIEW_PATH = path.join(__dirname, 'tmp-preview.json');
