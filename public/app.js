@@ -118,6 +118,32 @@ function showPhrase(phrase) {
   renderPhraseDetail();
 }
 
+function getPhraseDetailSequence() {
+  const packPhrases = getPhrasesForCurrentPack();
+  const filtered = state.phraseCategory === 'すべて'
+    ? packPhrases
+    : packPhrases.filter(p => p.category === state.phraseCategory);
+  return filtered.length ? filtered : state.phrases;
+}
+
+function movePhraseDetail(delta) {
+  const sequence = getPhraseDetailSequence();
+  if (!state.currentPhrase || sequence.length === 0) return;
+  const currentIndex = sequence.findIndex(p => p.id === state.currentPhrase.id);
+  const baseIndex = currentIndex >= 0 ? currentIndex : 0;
+  const nextIndex = (baseIndex + delta + sequence.length) % sequence.length;
+  showPhrase(sequence[nextIndex]);
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function showNextPhrase() {
+  movePhraseDetail(1);
+}
+
+function showPreviousPhrase() {
+  movePhraseDetail(-1);
+}
+
 // ============================================================
 // HOME VIEW
 // ============================================================
@@ -322,6 +348,10 @@ function renderPhraseDetail() {
           <p>${esc(phrase.usageNote)}</p>
         </div>
         <div class="phrase-audio-note">${phrase.audio ? '3ラリーを1本にまとめた試作音声です。' : '音声は次の工程で生成予定です。'}</div>
+        <div class="phrase-detail-nav">
+          <button class="phrase-prev-btn" onclick="showPreviousPhrase()">prev</button>
+          <button class="phrase-next-btn" onclick="showNextPhrase()">next</button>
+        </div>
       </div>
     </div>
   `;

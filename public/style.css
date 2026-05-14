@@ -2161,6 +2161,44 @@ body::before {
   padding: 18px 0 0;
 }
 
+.phrase-detail-nav {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.phrase-prev-btn,
+.phrase-next-btn {
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 999px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 850;
+  min-height: 50px;
+  padding: 14px 20px;
+}
+
+.phrase-prev-btn {
+  background: rgba(255,255,255,0.06);
+  color: #d8deea;
+}
+
+.phrase-next-btn {
+  background: linear-gradient(135deg, #6ea8ff, #59d7c6);
+  color: #fff;
+  box-shadow: 0 12px 28px rgba(89,215,198,0.18);
+}
+
+.phrase-prev-btn:active,
+.phrase-next-btn:active {
+  transform: scale(0.98);
+}
+
 .phrase-practice-view .phrase-hero {
   margin-top: 14px;
 }
