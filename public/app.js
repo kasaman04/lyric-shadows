@@ -10,7 +10,7 @@ const state = {
   currentPhrase: null,
   showJapanese: false,
   activeTab: 'conv',   // 'conv' | 'song'
-  homeFilter: 'A',     // 'A' | 'B' | 'C'
+  homeFilter: 'A',     // 'A' | 'C'
   phrasePack: '基本',
   phraseCategory: 'すべて',
   hiddenPhraseIds: new Set(),
@@ -129,7 +129,6 @@ function renderHome() {
     </div>
     <div class="home-tabs">
       <button class="home-tab ${state.homeFilter === 'A' ? 'active' : ''}" onclick="setHomeFilter('A')">洋楽で学ぶ</button>
-      <button class="home-tab ${state.homeFilter === 'B' ? 'active' : ''}" onclick="setHomeFilter('B')">シチュエーション</button>
       <button class="home-tab ${state.homeFilter === 'C' ? 'active' : ''}" onclick="setHomeFilter('C')">会話フレーズ</button>
     </div>
     ${renderSongGrid()}
@@ -146,6 +145,7 @@ function renderHome() {
 }
 
 function setHomeFilter(filter) {
+  if (!['A', 'C'].includes(filter)) filter = 'A';
   state.homeFilter = filter;
   renderHome();
 }
