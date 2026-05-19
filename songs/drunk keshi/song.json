@@ -4,7 +4,7 @@
   "songName": "drunk",
   "artist": "keshi",
   "relationship": "元恋人同士",
-  "setting": "夜の帰り道、久しぶりに元恋人から電話が来る",
+  "setting": "夜の帰り道、久しぶりに元カノへ電話する",
   "speakerA": {
     "name": "Ren",
     "type": "男性",
@@ -276,12 +276,12 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "I keep saying I need nobody else, but nights like this make that sound fake.",
-          "displayHtml": "I keep saying I need <span class=\"lyric-phrase\">nobody else</span>, but nights like this make that sound fake.",
+          "text": "I keep saying I need nobody else, but on nights like this, it feels like a lie.",
+          "displayHtml": "I keep saying I need <span class=\"lyric-phrase\">nobody else</span>, but on nights like this, it feels like a lie.",
           "audio": "/songs/drunk%20keshi/4_0.mp3"
         }
       ],
-      "japanese": "誰もいらないって言い続けてるけど、こういう夜はそれが嘘みたいに聞こえる。"
+      "japanese": "誰もいらないって言い続けてるけど、こういう夜はそれが嘘みたいに感じる。"
     },
     {
       "speaker": "B",
@@ -289,17 +289,17 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "I know the feeling.",
-          "displayHtml": "I know the feeling.",
+          "text": "Ren, I know.",
+          "displayHtml": "Ren, I know.",
           "audio": "/songs/drunk%20keshi/5_0.mp3"
         },
         {
-          "text": "Careless love, I've had a few, and none of it really stays.",
-          "displayHtml": "<span class=\"lyric-phrase\">Careless love, I've had a few</span>, and none of it really stays.",
+          "text": "We both tried to act like moving on was easy.",
+          "displayHtml": "We both tried to act like moving on was easy.",
           "audio": "/songs/drunk%20keshi/5_1.mp3"
         }
       ],
-      "japanese": "その気持ちはわかるよ。軽はずみな恋もいくつかしたけど、結局どれも残らなかった。"
+      "japanese": "Ren……わかるよ。私たち、お互い前に進むのは簡単だってふりしてたよね。"
     },
     {
       "speaker": "A",
@@ -307,17 +307,17 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "I never have thought I'd find it this hard to carry on.",
-          "displayHtml": "I <span class=\"lyric-phrase\">never have thought</span> I'd find it this hard to carry on.",
+          "text": "I never thought it would be this hard to carry on.",
+          "displayHtml": "I never thought it would be this hard to carry on.",
           "audio": "/songs/drunk%20keshi/6_0.mp3"
         },
         {
-          "text": "I guess part of me is still stuck way back then.",
-          "displayHtml": "I guess part of me is still stuck <span class=\"lyric-phrase\">way back then</span>.",
+          "text": "Maybe part of me is still stuck way back then.",
+          "displayHtml": "Maybe part of me is still stuck <span class=\"lyric-phrase\">way back then</span>.",
           "audio": "/songs/drunk%20keshi/6_1.mp3"
         }
       ],
-      "japanese": "こんなに前に進むのが難しいなんて思ってもみなかった。たぶん、僕の一部はまだあの頃に取り残されてる。"
+      "japanese": "こんなに前に進むのが難しいなんて思わなかった。たぶん僕の一部は、まだあの頃に取り残されてる。"
     },
     {
       "speaker": "B",
@@ -325,17 +325,53 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "Maybe you don't have to solve it tonight.",
-          "displayHtml": "Maybe you don't have to solve it tonight.",
+          "text": "I think part of me is too.",
+          "displayHtml": "I think part of me is too.",
           "audio": "/songs/drunk%20keshi/7_0.mp3"
         },
         {
-          "text": "Just get home safely, and don't pretend I got nobody else when you need someone.",
-          "displayHtml": "Just get home safely, and don't pretend <span class=\"lyric-phrase\">I got nobody else</span> when you need someone.",
+          "text": "But don't say you have nobody else just because tonight hurts.",
+          "displayHtml": "But don't say you have <span class=\"lyric-phrase\">nobody else</span> just because tonight hurts.",
           "audio": "/songs/drunk%20keshi/7_1.mp3"
         }
       ],
-      "japanese": "今夜すぐ答えを出さなくてもいいよ。無事に帰って。誰かが必要なときに、僕には誰もいないなんて強がらなくていい。"
+      "japanese": "私の一部もそうかもしれない。でも、今夜つらいからって「誰もいない」なんて言わないで。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Ren",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "I don't know what I expected when I called you.",
+          "displayHtml": "I don't know what I expected when I called you.",
+          "audio": "/songs/drunk%20keshi/8_0.mp3"
+        },
+        {
+          "text": "Maybe I just wanted to hear your voice.",
+          "displayHtml": "Maybe I just wanted to hear your voice.",
+          "audio": "/songs/drunk%20keshi/8_1.mp3"
+        }
+      ],
+      "japanese": "君に電話して、何を期待してたのかわからない。ただ声が聞きたかっただけかも。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Mia",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "Then stay on the phone until you get home.",
+          "displayHtml": "Then stay on the phone until you get home.",
+          "audio": "/songs/drunk%20keshi/9_0.mp3"
+        },
+        {
+          "text": "We don't have to fix us tonight.",
+          "displayHtml": "We don't have to fix us tonight.",
+          "audio": "/songs/drunk%20keshi/9_1.mp3"
+        }
+      ],
+      "japanese": "じゃあ、家に着くまで電話をつないでて。今夜、私たちのことを無理に答えにしなくていい。"
     }
   ],
   "createdAt": "2026-05-18T05:20:26.415Z",
