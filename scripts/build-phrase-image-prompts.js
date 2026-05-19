@@ -44,8 +44,22 @@ const fallbackCamera = [
   'medium side profile composition',
   'close conversational two-shot',
   'wide environmental two-shot',
-  'diagonal composition with one person in the foreground'
+  'diagonal composition with one person in the foreground',
+  'overhead tabletop composition focused on hands and props',
+  'one person partly outside the frame while the other reacts',
+  'window or mirror reflection composition',
+  'walking side view with the environment carrying the mood',
+  'object-led memory cue composition with people secondary',
+  'distant environmental shot with small figures and clear body language'
 ];
+
+const compositionRules = [
+  'Do not let the cards drift into the same two-people-talking composition.',
+  'Two-panel layouts are allowed only when they clearly help the phrase; do not use them as the default.',
+  'Across each 10-card batch, mix composition types: overhead/tabletop, hands-only, over-the-shoulder, one person in foreground, window/mirror/reflection view, walking scene, doorway/entryway, distant environmental shot, object-led memory cue, and close reaction shot.',
+  'Avoid repeating seated face-to-face conversations, cafe-table scenes, or side-by-side listening shots.',
+  'Vary subject placement, body distance, camera height, foreground objects, negative space, and whether one or two people are visible.'
+].join(' ');
 
 const characterVariations = [
   'two coworkers in their 30s, one with short curly hair and a casual blazer, the other with tied-back hair and a simple shirt',
@@ -121,7 +135,7 @@ function buildPanelDirection(phrase, index, memoryHook) {
 Character variation: Use ${characterVariation}. Do not reuse the same young man / young woman pair, hairstyle, clothing, or body language across cards.`;
   }
 
-  return `Panel/story structure: Create a clean two-panel scene card in one strict 16:9 wide landscape image. Left panel: the situation just before the phrase or the reason the phrase is needed. Right panel: the moment when the phrase is used, or the listener's immediate reaction. Use a thin subtle divider between panels. Do not use speech bubbles or panel captions.
+  return `Panel/story structure: Prefer a single varied cinematic scene unless a two-panel structure clearly makes the phrase easier to understand. If using two panels, make the left and right panels compositionally different rather than two similar conversational shots. Do not use speech bubbles or panel captions.
 Character variation: Use ${characterVariation}. Do not reuse the same young man / young woman pair, hairstyle, clothing, or body language across cards.`;
 }
 
@@ -139,12 +153,12 @@ Subject: Two adults in a realistic daily setting. One person is using or about t
 Visual memory hook: Make this card visually memorable and distinct from other phrase cards by using ${memoryHook}.
 ${panelDirection}
 Style/medium: clean modern educational illustration, similar to a mature English learning app. Semi-flat digital illustration with gentle depth, simple shapes, clear facial expressions, and restrained natural colors. Not childish, not anime, not photorealistic.
-Composition/framing: strict 16:9 wide landscape smartphone-card composition, not 3:2, not 4:3, not square, not portrait. Do not default to two people sitting at a cafe table unless the dialogue clearly needs that. Vary the setting, props, camera angle, body distance, age, hairstyle, clothing, and posture so the scene is easy to remember. Put the exact text "${phrase.phrase}" as a small readable overlay in the upper-left inside a dark translucent rounded label. Keep the lower area visually calm because the app will place the usage note below the image.
+Composition/framing: strict 16:9 wide landscape smartphone-card composition, not 3:2, not 4:3, not square, not portrait. ${compositionRules} Do not default to two people sitting at a cafe table unless the dialogue clearly needs that. Put the exact text "${phrase.phrase}" as a small readable overlay in the upper-left inside a dark translucent rounded label. Keep the lower area visually calm because the app will place the usage note below the image.
 Lighting/mood: calm, warm, conversational, thoughtful, friendly.
 Color palette: clean natural tones with soft contrast; avoid overly purple, dark, beige-only, or noisy palettes.
 Text (verbatim): "${phrase.phrase}"
 Context for the image only, do not render this Japanese text: ${phrase.usageNote}
-Constraints: output must be a wide 16:9 landscape image; no 3:2, no 4:3, no square, no portrait. No speech bubbles, no logos, no watermarks, no extra captions, no Japanese text, no UI chrome, no duplicate text, no generic repeated cafe-table composition, no same-looking characters across cards. The overlay text must be spelled exactly as "${phrase.phrase}".`;
+Constraints: output must be a wide 16:9 landscape image; no 3:2, no 4:3, no square, no portrait. No speech bubbles, no logos, no watermarks, no extra captions, no Japanese text, no UI chrome, no duplicate text, no generic repeated cafe-table composition, no repeated face-to-face conversation composition, no same-looking characters across cards. The overlay text must be spelled exactly as "${phrase.phrase}".`;
 }
 
 const records = phrases.map(phrase => ({
@@ -172,8 +186,11 @@ Recommended output:
 - Use a strict 16:9 wide landscape card image.
 - Keep only the English phrase as small overlay text in the image.
 - Do not put Japanese text, speech bubbles, logos, or watermarks in the image.
-- Most prompts use a two-panel card. Short reaction phrases may use a single strong moment.
-- Keep the art style consistent, but vary characters, age, hair, clothing, setting, props, and camera angle.
+- Do not let the cards drift into the same two-people-talking composition.
+- Two-panel layouts are allowed only when they clearly help the phrase; do not use them as the default.
+- Across every 10-card batch, mix camera angles and scene types: overhead/tabletop, hands-only, over-the-shoulder, one person in foreground, window/mirror/reflection view, walking scene, doorway/entryway, distant environmental shot, object-led memory cue, and close reaction shot.
+- Avoid repeating seated face-to-face conversations, cafe-table scenes, or side-by-side listening shots.
+- Keep the art style consistent, but vary characters, age, hair, clothing, setting, props, body distance, camera angle, subject placement, and negative space.
 
 Style direction:
 - Clean modern educational illustration.
@@ -239,8 +256,11 @@ Recommended image style:
 - Clean modern educational illustration
 - Small English phrase overlay in the upper-left
 - No Japanese text, speech bubbles, logos, or watermarks
-- Most prompts use a two-panel story card
-- Vary people, age, hair, clothing, setting, props, and camera angle
+- Do not let the cards drift into the same two-people-talking composition
+- Two-panel layouts are allowed only when they clearly help the phrase; do not use them as the default
+- Across every 10-card batch, mix camera angles and scene types: overhead/tabletop, hands-only, over-the-shoulder, one person in foreground, window/mirror/reflection view, walking scene, doorway/entryway, distant environmental shot, object-led memory cue, and close reaction shot
+- Avoid repeating seated face-to-face conversations, cafe-table scenes, or side-by-side listening shots
+- Vary people, age, hair, clothing, setting, props, body distance, camera angle, subject placement, and negative space
 `, 'utf8');
 
   console.log(`Generated ${records.length} phrase image prompts.`);
