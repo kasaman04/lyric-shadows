@@ -895,6 +895,15 @@ function renderLyrics(song) {
   const enLines = song.lyrics.split('\n');
 
   if (Array.isArray(song.lyricsJa)) {
+    if (song.lyricsJa.length === enLines.length) {
+      return enLines.map((line, i) => {
+        if (!line.trim()) return '<div class="lyric-spacer"></div>';
+        const pair = song.lyricsJa[i] || {};
+        const ja = pair.ja && pair.ja.trim() ? `<div class="lyric-ja">${esc(pair.ja)}</div>` : '';
+        return `<div class="lyric-pair"><div class="lyric-en">${esc(line)}</div>${ja}</div>`;
+      }).join('');
+    }
+
     let availableJa = [...song.lyricsJa].filter(p => p.en && p.en.trim() && p.ja);
     const getWords = s => s.toLowerCase().replace(/[^a-z0-9\s]/g, '').split(/\s+/).filter(Boolean);
 

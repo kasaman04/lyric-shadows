@@ -17,26 +17,30 @@
   },
   "videoId": "lfiMRv3p4mg",
   "thumbnailUrl": "/songs/Never%20Tell%20Luke%20Chiang/thumbnail.jpg",
-  "lyrics": "[Intro]\nPatience, all of this will make sense\nOh, I gotta say less\nI know full well, I'll never tell\nHow I've been feeling alone\n\n[Chorus]\nOh, I need you like water my love\nSome things never change\nMaybe I'm thinking out loud?\nNeed a reason or sign from above\nMy love, my love\n\n[Verse 1]\nDistance\nNothing learned is painless\nMissing all of my friends\nThey'll never know\nI'm losing control now\n\n[Chorus]\nI'm really feeling it now\nOh I need you like water my love\nSome things never change\nI'm barely breathing right now\nNeed a reason or a sign from above\nMy love, my love",
+  "lyrics": "Patience\nAll of this will make sense\nOh, I gotta say less\nI know full well\nI’ll never tell\nHow I been feeling alone\n\nOh, I need you like water my love\nSome things never change\nMaybe I'm thinking out loud\nNeed a reason or sign from above\nMy love, my love\nDistance\nNothing learned is painless\nMissing all of my friends\nThey’ll never know\nI'm losing control now\nI'm really feeling it now\n\nOh, I need you like water my love\nSome things never change\nI'm barely breathing right now\nNeed a reason or a sign from above\nMy love, my love\nSee me\nSave me now\nI'm bleeding out\nHeal me\nHold me now\nSee me\nSave me now\nI'm bleeding out\nHeal me\nHold me now\nI'm really feeling it now\n\nOh, I need you like water my love\nSome things never change\nI'm barely breathing right now\nNeed a reason or sign from above\nMy love, my love",
   "lyricsJa": [
     {
-      "en": "[Intro]",
-      "ja": ""
+      "en": "Patience",
+      "ja": "辛抱して"
     },
     {
-      "en": "Patience, all of this will make sense",
-      "ja": "辛抱していれば、いつか全部わかるはず"
+      "en": "All of this will make sense",
+      "ja": "これも全部、いつか意味がわかる"
     },
     {
       "en": "Oh, I gotta say less",
-      "ja": "ああ、あまり言わないでおかないと"
+      "ja": "ああ、あまり多くは言わないでおかないと"
     },
     {
-      "en": "I know full well, I'll never tell",
-      "ja": "よくわかってる、僕はきっと打ち明けない"
+      "en": "I know full well",
+      "ja": "よくわかってる"
     },
     {
-      "en": "How I've been feeling alone",
+      "en": "I’ll never tell",
+      "ja": "僕はきっと打ち明けない"
+    },
+    {
+      "en": "How I been feeling alone",
       "ja": "どれだけ孤独を感じてきたかなんて"
     },
     {
@@ -44,20 +48,16 @@
       "ja": ""
     },
     {
-      "en": "[Chorus]",
-      "ja": ""
-    },
-    {
       "en": "Oh, I need you like water my love",
-      "ja": "ああ、君が必要なんだ、水みたいに、愛しい人"
+      "ja": "ああ、愛しい人、君が水みたいに必要なんだ"
     },
     {
       "en": "Some things never change",
       "ja": "変わらないものもある"
     },
     {
-      "en": "Maybe I'm thinking out loud?",
-      "ja": "もしかして、声に出して考えてるだけかな？"
+      "en": "Maybe I'm thinking out loud",
+      "ja": "もしかしたら、考えていることを声に出しているだけなのかも"
     },
     {
       "en": "Need a reason or sign from above",
@@ -68,16 +68,8 @@
       "ja": "愛しい人、愛しい人"
     },
     {
-      "en": "",
-      "ja": ""
-    },
-    {
-      "en": "[Verse 1]",
-      "ja": ""
-    },
-    {
       "en": "Distance",
-      "ja": "距離"
+      "ja": "距離がある"
     },
     {
       "en": "Nothing learned is painless",
@@ -88,28 +80,24 @@
       "ja": "友達みんなが恋しい"
     },
     {
-      "en": "They'll never know",
-      "ja": "彼らはきっと知らない"
+      "en": "They’ll never know",
+      "ja": "彼らにはきっとわからない"
     },
     {
       "en": "I'm losing control now",
-      "ja": "今、僕が自分を保てなくなってることなんて"
-    },
-    {
-      "en": "",
-      "ja": ""
-    },
-    {
-      "en": "[Chorus]",
-      "ja": ""
+      "ja": "今、自分を保てなくなってる"
     },
     {
       "en": "I'm really feeling it now",
       "ja": "今、本当にそれを感じてる"
     },
     {
-      "en": "Oh I need you like water my love",
-      "ja": "ああ、君が必要なんだ、水みたいに、愛しい人"
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "Oh, I need you like water my love",
+      "ja": "ああ、愛しい人、君が水みたいに必要なんだ"
     },
     {
       "en": "Some things never change",
@@ -121,6 +109,74 @@
     },
     {
       "en": "Need a reason or a sign from above",
+      "ja": "理由か、天からのしるしが欲しい"
+    },
+    {
+      "en": "My love, my love",
+      "ja": "愛しい人、愛しい人"
+    },
+    {
+      "en": "See me",
+      "ja": "僕を見て"
+    },
+    {
+      "en": "Save me now",
+      "ja": "今、僕を救って"
+    },
+    {
+      "en": "I'm bleeding out",
+      "ja": "傷ついて、もう限界なんだ"
+    },
+    {
+      "en": "Heal me",
+      "ja": "癒して"
+    },
+    {
+      "en": "Hold me now",
+      "ja": "今、抱きしめて"
+    },
+    {
+      "en": "See me",
+      "ja": "僕を見て"
+    },
+    {
+      "en": "Save me now",
+      "ja": "今、僕を救って"
+    },
+    {
+      "en": "I'm bleeding out",
+      "ja": "傷ついて、もう限界なんだ"
+    },
+    {
+      "en": "Heal me",
+      "ja": "癒して"
+    },
+    {
+      "en": "Hold me now",
+      "ja": "今、抱きしめて"
+    },
+    {
+      "en": "I'm really feeling it now",
+      "ja": "今、本当にそれを感じてる"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "Oh, I need you like water my love",
+      "ja": "ああ、愛しい人、君が水みたいに必要なんだ"
+    },
+    {
+      "en": "Some things never change",
+      "ja": "変わらないものもある"
+    },
+    {
+      "en": "I'm barely breathing right now",
+      "ja": "今は息をするのもやっとだ"
+    },
+    {
+      "en": "Need a reason or sign from above",
       "ja": "理由か、天からのしるしが欲しい"
     },
     {
