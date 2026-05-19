@@ -3,8 +3,8 @@
   "folderName": "Never Tell Luke Chiang",
   "songName": "Never Tell",
   "artist": "Luke Chiang",
-  "relationship": "ずっと無理していた友達同士",
-  "setting": "夜、ずっと無理していた友達が初めて本音を話す",
+  "relationship": "親友",
+  "setting": "進路のことで親に言えず、親友に夜電話する",
   "speakerA": {
     "name": "Noah",
     "type": "男性",
@@ -191,17 +191,12 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "I keep telling myself, Patience.",
-          "displayHtml": "I keep telling myself, <span class=\"lyric-phrase\">Patience</span>.",
+          "text": "I keep telling myself, Patience, but I don't know how much longer I can act normal.",
+          "displayHtml": "I keep telling myself, <span class=\"lyric-phrase\">Patience</span>, but I don't know how much longer I can act normal.",
           "audio": "/songs/Never%20Tell%20Luke%20Chiang/0_0.mp3"
-        },
-        {
-          "text": "Just wait a little longer, and everything will settle down.",
-          "displayHtml": "Just wait a little longer, and everything will settle down.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/0_1.mp3"
         }
       ],
-      "japanese": "ずっと自分に「辛抱しろ」って言い聞かせてる。もう少し待てば全部落ち着くって。"
+      "japanese": "ずっと「我慢しろ」って自分に言い聞かせてるけど、あとどれくらい普通のふりができるかわからない。"
     },
     {
       "speaker": "B",
@@ -209,12 +204,17 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "Do you really believe all of this is going to make sense someday?",
-          "displayHtml": "Do you really believe <span class=\"lyric-phrase\">all of this</span> is going to make sense someday?",
+          "text": "Is this about school again?",
+          "displayHtml": "Is this about school again?",
           "audio": "/songs/Never%20Tell%20Luke%20Chiang/1_0.mp3"
+        },
+        {
+          "text": "Or is it more than that?",
+          "displayHtml": "Or is it more than that?",
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/1_1.mp3"
         }
       ],
-      "japanese": "本当に、これ全部いつか意味がわかるようになるって思ってるの？"
+      "japanese": "また学校のこと？それとも、もっと大きい話？"
     },
     {
       "speaker": "A",
@@ -222,17 +222,22 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "I want to.",
-          "displayHtml": "I want to.",
+          "text": "It's all of this.",
+          "displayHtml": "It's <span class=\"lyric-phrase\">all of this</span>.",
           "audio": "/songs/Never%20Tell%20Luke%20Chiang/2_0.mp3"
         },
         {
-          "text": "But honestly, I gotta say less, because if I start talking, I might fall apart.",
-          "displayHtml": "But honestly, <span class=\"lyric-phrase\">I gotta say less</span>, because if I start talking, I might fall apart.",
+          "text": "School, my parents, the future.",
+          "displayHtml": "School, my parents, the future.",
           "audio": "/songs/Never%20Tell%20Luke%20Chiang/2_1.mp3"
+        },
+        {
+          "text": "I feel trapped.",
+          "displayHtml": "I feel trapped.",
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/2_2.mp3"
         }
       ],
-      "japanese": "そう思いたい。でも正直、あまり話さないようにしてる。話し始めたら崩れそうだから。"
+      "japanese": "全部だよ。学校も、親のことも、将来のことも。閉じ込められてる感じがする。"
     },
     {
       "speaker": "B",
@@ -240,17 +245,17 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "Noah, I know full well you're not okay.",
-          "displayHtml": "Noah, <span class=\"lyric-phrase\">I know full well</span> you're not okay.",
+          "text": "Then stop trying to sound fine.",
+          "displayHtml": "Then stop trying to sound fine.",
           "audio": "/songs/Never%20Tell%20Luke%20Chiang/3_0.mp3"
         },
         {
-          "text": "You don't have to hide it from me.",
-          "displayHtml": "You don't have to hide it from me.",
+          "text": "Tell me how you've been feeling for real.",
+          "displayHtml": "Tell me <span class=\"lyric-phrase\">how you've been feeling</span> for real.",
           "audio": "/songs/Never%20Tell%20Luke%20Chiang/3_1.mp3"
         }
       ],
-      "japanese": "Noah、君が大丈夫じゃないことくらい、私はちゃんとわかってるよ。私には隠さなくていい。"
+      "japanese": "じゃあ、平気そうに話そうとしなくていいよ。本当はどう感じてるのか話して。"
     },
     {
       "speaker": "A",
@@ -258,17 +263,17 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "I don't even know how I've been feeling lately.",
-          "displayHtml": "I don't even know <span class=\"lyric-phrase\">how I've been feeling</span> lately.",
+          "text": "I don't know.",
+          "displayHtml": "I don't know.",
           "audio": "/songs/Never%20Tell%20Luke%20Chiang/4_0.mp3"
         },
         {
-          "text": "It's like I'm watching myself from far away.",
-          "displayHtml": "It's like I'm watching myself from far away.",
+          "text": "Maybe I'm thinking out loud, but I don't think this path is mine.",
+          "displayHtml": "Maybe <span class=\"lyric-phrase\">I'm thinking out loud</span>, but I don't think this path is mine.",
           "audio": "/songs/Never%20Tell%20Luke%20Chiang/4_1.mp3"
         }
       ],
-      "japanese": "最近、自分がどう感じているのかもわからないんだ。遠くから自分を見てるみたいで。"
+      "japanese": "わからない。ただ声に出して考えてるだけかもしれないけど、この道は自分のものじゃない気がする。"
     },
     {
       "speaker": "B",
@@ -276,17 +281,17 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "Maybe this is just you thinking out loud right now, and that's okay.",
-          "displayHtml": "Maybe this is just you <span class=\"lyric-phrase\">thinking out loud</span> right now, and that's okay.",
+          "text": "I think you already know that.",
+          "displayHtml": "I think you already know that.",
           "audio": "/songs/Never%20Tell%20Luke%20Chiang/5_0.mp3"
         },
         {
-          "text": "You don't need perfect words.",
-          "displayHtml": "You don't need perfect words.",
+          "text": "And I know full well you've been scared to say it.",
+          "displayHtml": "And I <span class=\"lyric-phrase\">know full well</span> you've been scared to say it.",
           "audio": "/songs/Never%20Tell%20Luke%20Chiang/5_1.mp3"
         }
       ],
-      "japanese": "今はただ、君が考えていることをそのまま口に出してるだけなのかも。それでいいよ。完璧な言葉なんていらない。"
+      "japanese": "たぶん君はもうわかってるんだと思う。それを言うのが怖かったことも、私はちゃんとわかってる。"
     },
     {
       "speaker": "A",
@@ -294,12 +299,17 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "I kept waiting for some sign from above, like something would tell me what to do.",
-          "displayHtml": "I kept waiting for some <span class=\"lyric-phrase\">sign from above</span>, like something would tell me what to do.",
+          "text": "Yeah.",
+          "displayHtml": "Yeah.",
           "audio": "/songs/Never%20Tell%20Luke%20Chiang/6_0.mp3"
+        },
+        {
+          "text": "Every time I try to explain it, I think, I gotta say less, or they'll get disappointed.",
+          "displayHtml": "Every time I try to explain it, I think, <span class=\"lyric-phrase\">I gotta say less</span>, or they'll get disappointed.",
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/6_1.mp3"
         }
       ],
-      "japanese": "ずっと天からのしるしみたいなものを待ってた。何かがどうすればいいか教えてくれる気がして。"
+      "japanese": "うん。説明しようとするたびに、余計なことは言わない方がいいって思うんだ。がっかりされそうで。"
     },
     {
       "speaker": "B",
@@ -307,17 +317,12 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "I wish it worked that way, but Nothing learned is painless.",
-          "displayHtml": "I wish it worked that way, but <span class=\"lyric-phrase\">Nothing learned is painless</span>.",
+          "text": "Maybe you're waiting for a sign from above, but you might not get one.",
+          "displayHtml": "Maybe you're waiting for a <span class=\"lyric-phrase\">sign from above</span>, but you might not get one.",
           "audio": "/songs/Never%20Tell%20Luke%20Chiang/7_0.mp3"
-        },
-        {
-          "text": "Sometimes the lesson hurts first.",
-          "displayHtml": "Sometimes the lesson hurts first.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/7_1.mp3"
         }
       ],
-      "japanese": "そうだったらいいけど、痛みなしに学べることなんてないんだよ。学びって、先に傷つくこともある。"
+      "japanese": "天からのサインみたいなものを待ってるのかもしれないけど、そんなものは来ないかもしれない。"
     },
     {
       "speaker": "A",
@@ -325,17 +330,63 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "I'm scared because I'm losing control.",
-          "displayHtml": "I'm scared because <span class=\"lyric-phrase\">I'm losing control</span>.",
+          "text": "That's what scares me.",
+          "displayHtml": "That's what scares me.",
           "audio": "/songs/Never%20Tell%20Luke%20Chiang/8_0.mp3"
+        },
+        {
+          "text": "If I choose wrong, it's on me.",
+          "displayHtml": "If I choose wrong, it's on me.",
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/8_1.mp3"
+        },
+        {
+          "text": "I feel like I'm losing control.",
+          "displayHtml": "I feel like <span class=\"lyric-phrase\">I'm losing control</span>.",
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/8_2.mp3"
+        }
+      ],
+      "japanese": "それが怖いんだ。間違えたら、自分の責任になる。自分を保てなくなりそう。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Lily",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "I get it.",
+          "displayHtml": "I get it.",
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/9_0.mp3"
+        },
+        {
+          "text": "But Nothing learned is painless.",
+          "displayHtml": "But <span class=\"lyric-phrase\">Nothing learned is painless</span>.",
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/9_1.mp3"
+        },
+        {
+          "text": "If this hurts, maybe it means you're finally being honest.",
+          "displayHtml": "If this hurts, maybe it means you're finally being honest.",
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/9_2.mp3"
+        }
+      ],
+      "japanese": "わかるよ。でも、痛みなしに学べることなんてないのかも。苦しいなら、それはやっと本音に向き合ってるってことかもしれない。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Noah",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "I'm so tired, Lily.",
+          "displayHtml": "I'm so tired, Lily.",
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/10_0.mp3"
         },
         {
           "text": "I feel like I'm barely breathing.",
           "displayHtml": "I feel like <span class=\"lyric-phrase\">I'm barely breathing</span>.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/8_1.mp3"
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/10_1.mp3"
         }
       ],
-      "japanese": "怖いんだ。自分を保てなくなってるし、息をするのもやっとな気がする。"
+      "japanese": "もう疲れたよ、Lily。息をするのもやっとな気がする。"
     },
     {
       "speaker": "B",
@@ -343,17 +394,17 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "Then lean on me for a minute.",
-          "displayHtml": "Then lean on me for a minute.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/9_0.mp3"
+          "text": "Then don't decide everything tonight.",
+          "displayHtml": "Then don't decide everything tonight.",
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/11_0.mp3"
         },
         {
-          "text": "We'll start with one breath.",
-          "displayHtml": "We'll start with one breath.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/9_1.mp3"
+          "text": "Just breathe, and tomorrow we'll figure out the first sentence together.",
+          "displayHtml": "Just breathe, and tomorrow we'll figure out the first sentence together.",
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/11_1.mp3"
         }
       ],
-      "japanese": "じゃあ少し私に頼って。まず一回の呼吸から始めよう。"
+      "japanese": "じゃあ今夜、全部決めなくていい。まず息をして。明日、最初に何を言うか一緒に考えよう。"
     }
   ],
   "createdAt": "2026-05-18T06:12:24.579Z",
