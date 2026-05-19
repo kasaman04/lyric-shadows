@@ -3,8 +3,8 @@
   "folderName": "Whatever Oasis",
   "songName": "Whatever",
   "artist": "Oasis",
-  "relationship": "進路に迷っている友達同士",
-  "setting": "放課後の帰り道、将来の選択に迷っている友達を励ます",
+  "relationship": "親に進路を反対された友達同士",
+  "setting": "親に進路を反対されたあと、友達に相談する",
   "speakerA": {
     "name": "Leo",
     "type": "男性",
@@ -219,12 +219,17 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "I keep thinking I should choose something practical, but I don't even know what I want anymore.",
-          "displayHtml": "I keep thinking I should choose something practical, but I don't even know what I want anymore.",
+          "text": "My dad thinks I'm being unrealistic.",
+          "displayHtml": "My dad thinks I'm being unrealistic.",
           "audio": "/songs/Whatever%20Oasis/0_0.mp3"
+        },
+        {
+          "text": "He wants me to choose something safer.",
+          "displayHtml": "He wants me to choose something safer.",
+          "audio": "/songs/Whatever%20Oasis/0_1.mp3"
         }
       ],
-      "japanese": "現実的なものを選ぶべきだってずっと考えてるけど、もう自分が何を望んでるのかもわからない。"
+      "japanese": "父さんは僕が現実を見てないって思ってる。もっと安全な道を選べって。"
     },
     {
       "speaker": "B",
@@ -232,17 +237,22 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "Then start with whatever I choose.",
-          "displayHtml": "Then start with <span class=\"lyric-phrase\">whatever I choose</span>.",
+          "text": "What do you want, though?",
+          "displayHtml": "What do you want, though?",
           "audio": "/songs/Whatever%20Oasis/1_0.mp3"
         },
         {
-          "text": "It doesn't have to impress everyone.",
-          "displayHtml": "It doesn't have to impress everyone.",
+          "text": "Not what they want.",
+          "displayHtml": "Not what they want.",
           "audio": "/songs/Whatever%20Oasis/1_1.mp3"
+        },
+        {
+          "text": "You.",
+          "displayHtml": "You.",
+          "audio": "/songs/Whatever%20Oasis/1_2.mp3"
         }
       ],
-      "japanese": "それなら、「自分が選ぶもの」から始めなよ。みんなを感心させる必要はないんだから。"
+      "japanese": "でも君はどうしたいの？周りが望むことじゃなくて、君自身は。"
     },
     {
       "speaker": "A",
@@ -250,12 +260,17 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "It just seems to me that everyone already has their life figured out.",
-          "displayHtml": "It just <span class=\"lyric-phrase\">seems to me</span> that everyone already has their life figured out.",
+          "text": "That's the problem.",
+          "displayHtml": "That's the problem.",
           "audio": "/songs/Whatever%20Oasis/2_0.mp3"
+        },
+        {
+          "text": "I keep hearing everyone else until I can't hear myself.",
+          "displayHtml": "I keep hearing everyone else until I can't hear myself.",
+          "audio": "/songs/Whatever%20Oasis/2_1.mp3"
         }
       ],
-      "japanese": "僕には、みんなもう人生の答えを見つけてるように見えるんだ。"
+      "japanese": "そこなんだ。周りの声ばかり聞いてるうちに、自分の声が聞こえなくなってる。"
     },
     {
       "speaker": "B",
@@ -263,17 +278,12 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "Maybe you're only seeing what people want you to see.",
-          "displayHtml": "Maybe you're only seeing what <span class=\"lyric-phrase\">people want you to see</span>.",
+          "text": "Maybe you're seeing what people want you to see, not what's actually possible.",
+          "displayHtml": "Maybe you're seeing what <span class=\"lyric-phrase\">people want you to see</span>, not what's actually possible.",
           "audio": "/songs/Whatever%20Oasis/3_0.mp3"
-        },
-        {
-          "text": "Nobody posts the messy part.",
-          "displayHtml": "Nobody posts the messy part.",
-          "audio": "/songs/Whatever%20Oasis/3_1.mp3"
         }
       ],
-      "japanese": "たぶん君は、人が見せたいものだけを見てるんだよ。誰もぐちゃぐちゃな部分は見せないから。"
+      "japanese": "たぶん君は、人が見せたいものだけを見てるんだよ。本当に可能なことじゃなくて。"
     },
     {
       "speaker": "A",
@@ -281,12 +291,12 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "I wish I could just say whatever I like without worrying about sounding stupid.",
-          "displayHtml": "I wish I could just say <span class=\"lyric-phrase\">whatever I like</span> without worrying about sounding stupid.",
+          "text": "It seems to me like choosing what I love means disappointing everyone.",
+          "displayHtml": "It <span class=\"lyric-phrase\">seems to me</span> like choosing what I love means disappointing everyone.",
           "audio": "/songs/Whatever%20Oasis/4_0.mp3"
         }
       ],
-      "japanese": "バカに聞こえるかなんて気にせず、好きなことを言えたらいいのに。"
+      "japanese": "好きなものを選ぶって、みんなをがっかりさせることみたいに思える。"
     },
     {
       "speaker": "B",
@@ -294,17 +304,17 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "You can.",
-          "displayHtml": "You can.",
+          "text": "It doesn't have to.",
+          "displayHtml": "It doesn't have to.",
           "audio": "/songs/Whatever%20Oasis/5_0.mp3"
         },
         {
-          "text": "And honestly, It don't cost much to be honest with yourself.",
-          "displayHtml": "And honestly, <span class=\"lyric-phrase\">It don't cost much</span> to be honest with yourself.",
+          "text": "You can care about them and still choose your own life.",
+          "displayHtml": "You can care about them and still choose your own life.",
           "audio": "/songs/Whatever%20Oasis/5_1.mp3"
         }
       ],
-      "japanese": "言えるよ。それに正直、自分に素直になるのに大した代償はいらない。"
+      "japanese": "そうとは限らないよ。周りを大事にしながら、自分の人生を選んでもいい。"
     },
     {
       "speaker": "A",
@@ -312,17 +322,146 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "Maybe you're right.",
-          "displayHtml": "Maybe you're right.",
+          "text": "I wish I could say whatever I like without feeling guilty.",
+          "displayHtml": "I wish I could say <span class=\"lyric-phrase\">whatever I like</span> without feeling guilty.",
           "audio": "/songs/Whatever%20Oasis/6_0.mp3"
-        },
-        {
-          "text": "I need to get a grip on yourself before I let fear decide for me.",
-          "displayHtml": "I need to <span class=\"lyric-phrase\">get a grip on yourself</span> before I let fear decide for me.",
-          "audio": "/songs/Whatever%20Oasis/6_1.mp3"
         }
       ],
-      "japanese": "たぶん君の言う通りだ。怖さに決めさせる前に、しっかりしないと。"
+      "japanese": "罪悪感を持たずに、好きなことを言えたらいいのに。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Emma",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "Then start small.",
+          "displayHtml": "Then start small.",
+          "audio": "/songs/Whatever%20Oasis/7_0.mp3"
+        },
+        {
+          "text": "Say one honest thing tonight.",
+          "displayHtml": "Say one honest thing tonight.",
+          "audio": "/songs/Whatever%20Oasis/7_1.mp3"
+        },
+        {
+          "text": "It don't cost much to tell the truth gently.",
+          "displayHtml": "<span class=\"lyric-phrase\">It don't cost much</span> to tell the truth gently.",
+          "audio": "/songs/Whatever%20Oasis/7_2.mp3"
+        }
+      ],
+      "japanese": "じゃあ小さく始めよう。今夜、正直なことをひとつ言ってみて。やさしく本音を伝えるのに、大きな代償はいらないよ。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Leo",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "Like what?",
+          "displayHtml": "Like what?",
+          "audio": "/songs/Whatever%20Oasis/8_0.mp3"
+        }
+      ],
+      "japanese": "たとえば？"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Emma",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "For example, say this: I don't know everything yet, but I want to try.",
+          "displayHtml": "For example, say this: I don't know everything yet, but I want to try.",
+          "audio": "/songs/Whatever%20Oasis/9_0.mp3"
+        },
+        {
+          "text": "That's enough.",
+          "displayHtml": "That's enough.",
+          "audio": "/songs/Whatever%20Oasis/9_1.mp3"
+        }
+      ],
+      "japanese": "「まだ全部はわからないけど、やってみたい」って。それで十分だよ。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Leo",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "I guess I've been waiting for permission.",
+          "displayHtml": "I guess I've been waiting for permission.",
+          "audio": "/songs/Whatever%20Oasis/10_0.mp3"
+        }
+      ],
+      "japanese": "たぶん、誰かに「選んでいい」って言ってもらうのを待ってたんだと思う。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Emma",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "Your family might not say that for you.",
+          "displayHtml": "Your family might not say that for you.",
+          "audio": "/songs/Whatever%20Oasis/11_0.mp3"
+        },
+        {
+          "text": "So maybe this is where you get a grip on yourself and choose carefully anyway.",
+          "displayHtml": "So maybe this is where you <span class=\"lyric-phrase\">get a grip on yourself</span> and choose carefully anyway.",
+          "audio": "/songs/Whatever%20Oasis/11_1.mp3"
+        }
+      ],
+      "japanese": "家族は「選んでいいよ」とは言ってくれないかもしれない。だからこそ、ここで自分をしっかり持って、慎重に選ぶしかないのかも。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Leo",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "Here in my mind, I already know what I want.",
+          "displayHtml": "<span class=\"lyric-phrase\">Here in my mind</span>, I already know what I want.",
+          "audio": "/songs/Whatever%20Oasis/12_0.mp3"
+        },
+        {
+          "text": "I'm just scared to say it out loud.",
+          "displayHtml": "I'm just scared to say it out loud.",
+          "audio": "/songs/Whatever%20Oasis/12_1.mp3"
+        }
+      ],
+      "japanese": "心の中では、もう自分が何を望んでるかはわかってる。ただ、それを声に出すのが怖いんだ。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Emma",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "That's okay.",
+          "displayHtml": "That's okay.",
+          "audio": "/songs/Whatever%20Oasis/13_0.mp3"
+        },
+        {
+          "text": "If you say it once, you might hear yourself more clearly.",
+          "displayHtml": "If you say it once, you might hear yourself more clearly.",
+          "audio": "/songs/Whatever%20Oasis/13_1.mp3"
+        }
+      ],
+      "japanese": "それでいいよ。一度口に出せば、自分の気持ちがもっとはっきり聞こえるかもしれない。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Leo",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "Maybe you might find the courage you once knew when you stop trying to please everyone.",
+          "displayHtml": "Maybe <span class=\"lyric-phrase\">you might find</span> the courage <span class=\"lyric-phrase\">you once knew</span> when you stop trying to please everyone.",
+          "audio": "/songs/Whatever%20Oasis/14_0.mp3"
+        }
+      ],
+      "japanese": "みんなを喜ばせようとするのをやめたら、昔持っていた勇気を見つけられるのかもしれない。"
     },
     {
       "speaker": "B",
@@ -332,15 +471,15 @@
         {
           "text": "Exactly.",
           "displayHtml": "Exactly.",
-          "audio": "/songs/Whatever%20Oasis/7_0.mp3"
+          "audio": "/songs/Whatever%20Oasis/15_0.mp3"
         },
         {
-          "text": "Whatever you say tomorrow, make sure it sounds like you.",
-          "displayHtml": "<span class=\"lyric-phrase\">Whatever you say</span> tomorrow, make sure it sounds like you.",
-          "audio": "/songs/Whatever%20Oasis/7_1.mp3"
+          "text": "And there's no fun in living a life that looks right to everyone else but feels wrong to you.",
+          "displayHtml": "And there's <span class=\"lyric-phrase\">no fun</span> in living a life that looks right to everyone else but feels wrong to you.",
+          "audio": "/songs/Whatever%20Oasis/15_1.mp3"
         }
       ],
-      "japanese": "その通り。明日何を言うにしても、それが君らしい言葉になるようにね。"
+      "japanese": "その通り。周りから正しく見えても、自分には違うと感じる人生を生きるのは楽しくないよ。"
     },
     {
       "speaker": "A",
@@ -348,12 +487,12 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "Here in my mind, I keep hearing my old teacher saying I had more options than I thought.",
-          "displayHtml": "<span class=\"lyric-phrase\">Here in my mind</span>, I keep hearing my old teacher saying I had more options than I thought.",
-          "audio": "/songs/Whatever%20Oasis/8_0.mp3"
+          "text": "Then whatever I choose, I want it to be mine.",
+          "displayHtml": "Then whatever I choose, I want it to be mine.",
+          "audio": "/songs/Whatever%20Oasis/16_0.mp3"
         }
       ],
-      "japanese": "心の中で、昔の先生が「思ってるより選択肢は多い」って言ってるのが聞こえるんだ。"
+      "japanese": "じゃあ、何を選ぶにしても、自分で選んだものにしたい。"
     },
     {
       "speaker": "B",
@@ -361,48 +500,17 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "Then listen to that.",
-          "displayHtml": "Then listen to that.",
-          "audio": "/songs/Whatever%20Oasis/9_0.mp3"
+          "text": "Good.",
+          "displayHtml": "Good.",
+          "audio": "/songs/Whatever%20Oasis/17_0.mp3"
         },
         {
-          "text": "If you slow down, you might find the confidence you once knew.",
-          "displayHtml": "If you slow down, <span class=\"lyric-phrase\">you might find</span> the confidence <span class=\"lyric-phrase\">you once knew</span>.",
-          "audio": "/songs/Whatever%20Oasis/9_1.mp3"
+          "text": "Whatever you say to them, make sure it sounds like you.",
+          "displayHtml": "<span class=\"lyric-phrase\">Whatever you say</span> to them, make sure it sounds like you.",
+          "audio": "/songs/Whatever%20Oasis/17_1.mp3"
         }
       ],
-      "japanese": "じゃあ、それを聞いて。少し落ち着けば、昔持っていた自信を見つけられるかもしれない。"
-    },
-    {
-      "speaker": "A",
-      "speakerName": "Leo",
-      "speakerType": "男性",
-      "sentences": [
-        {
-          "text": "I hope so, because pretending I'm fine is no fun anymore.",
-          "displayHtml": "I hope so, because pretending I'm fine is <span class=\"lyric-phrase\">no fun</span> anymore.",
-          "audio": "/songs/Whatever%20Oasis/10_0.mp3"
-        }
-      ],
-      "japanese": "そうだといいな。平気なふりをするのは、もう楽しくないから。"
-    },
-    {
-      "speaker": "B",
-      "speakerName": "Emma",
-      "speakerType": "女性",
-      "sentences": [
-        {
-          "text": "Then stop pretending.",
-          "displayHtml": "Then stop pretending.",
-          "audio": "/songs/Whatever%20Oasis/11_0.mp3"
-        },
-        {
-          "text": "Pick one honest step, and we'll take it from there.",
-          "displayHtml": "Pick one honest step, and we'll take it from there.",
-          "audio": "/songs/Whatever%20Oasis/11_1.mp3"
-        }
-      ],
-      "japanese": "じゃあ、ふりをするのはやめよう。正直な一歩をひとつ選んで、そこから進めばいい。"
+      "japanese": "いいね。家族に伝えるときは、ちゃんと君らしい言葉でね。"
     }
   ],
   "createdAt": "2026-05-18T05:39:41.999Z",
