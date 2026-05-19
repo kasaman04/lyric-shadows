@@ -1,0 +1,316 @@
+{
+  "id": "Just the Two of Us Grover Washington Jr",
+  "folderName": "Just the Two of Us Grover Washington Jr",
+  "songName": "Just the Two of Us",
+  "artist": "Grover Washington Jr.",
+  "relationship": "付き合う前の二人",
+  "setting": "雨上がりの帰り道で、二人が少しだけ本音を話す",
+  "speakerA": {
+    "name": "Kai",
+    "type": "男性",
+    "voice": "CfDbY7v8tDkTvB9rNcUw"
+  },
+  "speakerB": {
+    "name": "Maya",
+    "type": "女性",
+    "voice": "cNYrMw9glwJZXR8RwbuR"
+  },
+  "videoId": "v8oqbWrP1QY",
+  "thumbnailUrl": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/thumbnail.jpg",
+  "lyrics": "I see the crystal raindrops fall\nAnd the beauty of it all\nIs when the sun comes shining through\nTo make those rainbows in my mind\nWhen I think of you sometime\nAnd I wanna spend some time with you\n\nJust the two of us\nWe can make it if we try\nJust the two of us\n(Just the two of us)\nJust the two of us\nBuilding castles in the sky\nJust the two of us\nYou and I\n\nWe look for love, no time for tears\nWasted water's all that is\nAnd it don't make no flowers grow\nGood things might come to those who wait\nNot for those who wait too late\nWe gotta go for all we know\n\nJust the two of us\nWe can make it if we try\nJust the two of us\n(Just the two of us)\nJust the two of us\nBuilding them castles in the sky\nJust the two of us\nYou and I",
+  "lyricsJa": [
+    {
+      "en": "I see the crystal raindrops fall",
+      "ja": "透き通った雨粒が落ちていくのが見える"
+    },
+    {
+      "en": "And the beauty of it all",
+      "ja": "そのすべての美しさは"
+    },
+    {
+      "en": "Is when the sun comes shining through",
+      "ja": "太陽の光が差し込んでくる瞬間にある"
+    },
+    {
+      "en": "To make those rainbows in my mind",
+      "ja": "僕の心の中に、あの虹を描いてくれる"
+    },
+    {
+      "en": "When I think of you sometime",
+      "ja": "ふと君のことを思うとき"
+    },
+    {
+      "en": "And I wanna spend some time with you",
+      "ja": "君と少し時間を過ごしたくなる"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "Just the two of us",
+      "ja": "ただ二人だけで"
+    },
+    {
+      "en": "We can make it if we try",
+      "ja": "やってみれば、きっとうまくいく"
+    },
+    {
+      "en": "Just the two of us",
+      "ja": "ただ二人だけで"
+    },
+    {
+      "en": "(Just the two of us)",
+      "ja": "ただ二人だけで"
+    },
+    {
+      "en": "Just the two of us",
+      "ja": "ただ二人だけで"
+    },
+    {
+      "en": "Building castles in the sky",
+      "ja": "空に城を築くように、夢を描きながら"
+    },
+    {
+      "en": "Just the two of us",
+      "ja": "ただ二人だけで"
+    },
+    {
+      "en": "You and I",
+      "ja": "君と僕で"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "We look for love, no time for tears",
+      "ja": "僕たちは愛を探している、涙に使う時間なんてない"
+    },
+    {
+      "en": "Wasted water's all that is",
+      "ja": "それはただ無駄に流れた水みたいなもの"
+    },
+    {
+      "en": "And it don't make no flowers grow",
+      "ja": "それじゃ花は咲かない"
+    },
+    {
+      "en": "Good things might come to those who wait",
+      "ja": "待つ人にはいいことが来るかもしれない"
+    },
+    {
+      "en": "Not for those who wait too late",
+      "ja": "でも、遅すぎるまで待つ人には来ない"
+    },
+    {
+      "en": "We gotta go for all we know",
+      "ja": "わかっている限り、僕たちは進むしかない"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "Just the two of us",
+      "ja": "ただ二人だけで"
+    },
+    {
+      "en": "We can make it if we try",
+      "ja": "やってみれば、きっとうまくいく"
+    },
+    {
+      "en": "Just the two of us",
+      "ja": "ただ二人だけで"
+    },
+    {
+      "en": "(Just the two of us)",
+      "ja": "ただ二人だけで"
+    },
+    {
+      "en": "Just the two of us",
+      "ja": "ただ二人だけで"
+    },
+    {
+      "en": "Building them castles in the sky",
+      "ja": "空に城を築くように、夢を描きながら"
+    },
+    {
+      "en": "Just the two of us",
+      "ja": "ただ二人だけで"
+    },
+    {
+      "en": "You and I",
+      "ja": "君と僕で"
+    }
+  ],
+  "conversation": [
+    {
+      "speaker": "A",
+      "speakerName": "Kai",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "The rain finally stopped.",
+          "displayHtml": "The rain finally stopped.",
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/0_0.mp3"
+        },
+        {
+          "text": "It feels kind of peaceful now.",
+          "displayHtml": "It feels kind of peaceful now.",
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/0_1.mp3"
+        }
+      ],
+      "japanese": "やっと雨が止んだね。なんだか少し落ち着く。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Maya",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "Yeah.",
+          "displayHtml": "Yeah.",
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/1_0.mp3"
+        },
+        {
+          "text": "Moments like this make me slow down and think.",
+          "displayHtml": "Moments like this make me slow down and think.",
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/1_1.mp3"
+        }
+      ],
+      "japanese": "うん。こういう瞬間って、立ち止まって考えたくなる。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Kai",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "Honestly, when I think of you sometimes, I wonder what we could be if we stopped pretending this is nothing.",
+          "displayHtml": "Honestly, <span class=\"lyric-phrase\">when I think of you sometimes</span>, I wonder what we could be if we stopped pretending this is nothing.",
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/2_0.mp3"
+        }
+      ],
+      "japanese": "正直、ときどき君のことを考えると、これを何でもないふりしなければ、僕たちはどうなれるんだろうって思う。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Maya",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "I think about that too.",
+          "displayHtml": "I think about that too.",
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/3_0.mp3"
+        },
+        {
+          "text": "Maybe there's something here, but we keep waiting for the perfect time.",
+          "displayHtml": "Maybe there's something here, but we keep waiting for the perfect time.",
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/3_1.mp3"
+        }
+      ],
+      "japanese": "私も考えるよ。たぶん何かあるのに、私たちは完璧なタイミングを待ち続けてる。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Kai",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "Waiting can be good, but waiting too long can make you lose what was right in front of you.",
+          "displayHtml": "Waiting can be good, but waiting too long can make you lose what was right in front of you.",
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/4_0.mp3"
+        }
+      ],
+      "japanese": "待つことがいい時もあるけど、待ちすぎると目の前にあったものを失うこともある。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Maya",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "Then maybe there's no time for pretending we don't feel this.",
+          "displayHtml": "Then maybe there's <span class=\"lyric-phrase\">no time for</span> pretending we don't feel this.",
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/5_0.mp3"
+        }
+      ],
+      "japanese": "じゃあ、もうこの気持ちから目をそらしてる場合じゃないのかも。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Kai",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "So what do we do?",
+          "displayHtml": "So what do we do?",
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/6_0.mp3"
+        }
+      ],
+      "japanese": "じゃあ、どうする？"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Maya",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "We start simple.",
+          "displayHtml": "We start simple.",
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/7_0.mp3"
+        },
+        {
+          "text": "Just the two of us, dinner this weekend.",
+          "displayHtml": "<span class=\"lyric-phrase\">Just the two of us</span>, dinner this weekend.",
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/7_1.mp3"
+        },
+        {
+          "text": "No pressure.",
+          "displayHtml": "No pressure.",
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/7_2.mp3"
+        }
+      ],
+      "japanese": "シンプルに始めよう。今週末、二人だけでご飯。重く考えずに。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Kai",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "I like that.",
+          "displayHtml": "I like that.",
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/8_0.mp3"
+        },
+        {
+          "text": "I guess I was trying to look for a sign, but maybe this is enough.",
+          "displayHtml": "I guess I was trying to <span class=\"lyric-phrase\">look for</span> a sign, but maybe this is enough.",
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/8_1.mp3"
+        }
+      ],
+      "japanese": "いいね。何かのサインを探そうとしてたけど、たぶんこれで十分なのかも。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Maya",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "Then let's not overthink it.",
+          "displayHtml": "Then let's not overthink it.",
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/9_0.mp3"
+        },
+        {
+          "text": "Let's go for what we actually want.",
+          "displayHtml": "Let's go for what we actually want.",
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/9_1.mp3"
+        }
+      ],
+      "japanese": "じゃあ考えすぎるのはやめよう。本当に望んでるものに向かってみよう。"
+    }
+  ],
+  "createdAt": "2026-05-18T06:39:22.525Z",
+  "thumbnailSource": "Grover Washington Jr. - Just the Two of Us Official Lyric Video / RHINO"
+}
