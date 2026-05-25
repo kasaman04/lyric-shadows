@@ -46,6 +46,8 @@ const SPEAKER_ICONS = {
 const PHRASE_AUTO_ADVANCE_DELAY_MS = 1200;
 const STORAGE_COOKIE_MAX_AGE = 60 * 60 * 24 * 365;
 const DEVICE_ID_KEY = 'phraseDeviceId';
+const TODAY_PHRASE_SET_KEY = 'todayPhraseSetV1';
+const TODAY_PHRASE_LIMIT = 10;
 
 // ============================================================
 // INIT
@@ -254,6 +256,7 @@ function renderPhraseGrid() {
       </div>
       <div class="phrase-random-panel">
         <span>ランダム練習</span>
+        <button class="phrase-today-btn" onclick="startTodayPhrasePractice()">Today</button>
         <button onclick="startPhrasePractice(10)">10</button>
         <button onclick="startPhrasePractice(30)">30</button>
         <button onclick="startPhrasePractice('all')">すべて</button>
@@ -583,6 +586,87 @@ function shuffleArray(items) {
   return copy;
 }
 
+function getLocalDateKey(date = new Date()) {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, '0');
+  return `${year}-${month}-${day}`;
+}
+
+function getTodayPhraseScopeKey() {
+  return `${state.phrasePack}::${state.phraseCategory}`;
+}
+
+function hashStringToSeed(value) {
+  let hash = 2166136261;
+  for (let i = 0; i < value.length; i++) {
+    hash ^= value.charCodeAt(i);
+    hash = Math.imul(hash, 16777619);
+  }
+  return hash >>> 0;
+}
+
+function seededRandom(seedText) {
+  let seed = hashStringToSeed(seedText);
+  return () => {
+    seed += 0x6D2B79F5;
+    let value = seed;
+    value = Math.imul(value ^ (value >>> 15), value | 1);
+    value ^= value + Math.imul(value ^ (value >>> 7), value | 61);
+    return ((value ^ (value >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+function seededShuffleArray(items, seedText) {
+  const copy = [...items];
+  const random = seededRandom(seedText);
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy;
+}
+
+function readTodayPhraseStore() {
+  try {
+    const store = JSON.parse(readStoredValue(TODAY_PHRASE_SET_KEY) || '{}');
+    return store && typeof store === 'object' && !Array.isArray(store) ? store : {};
+  } catch {
+    return {};
+  }
+}
+
+function writeTodayPhraseStore(store) {
+  writeStoredValue(TODAY_PHRASE_SET_KEY, JSON.stringify(store));
+}
+
+function getTodayPhraseSet(pool) {
+  const dateKey = getLocalDateKey();
+  const scopeKey = getTodayPhraseScopeKey();
+  const limit = Math.min(TODAY_PHRASE_LIMIT, pool.length);
+  const phraseById = new Map(pool.map(phrase => [phrase.id, phrase]));
+  const store = readTodayPhraseStore();
+  const stored = store[scopeKey];
+
+  let phrases = [];
+  if (stored?.date === dateKey && Array.isArray(stored.ids)) {
+    phrases = stored.ids.map(id => phraseById.get(id)).filter(Boolean).slice(0, limit);
+  }
+
+  if (phrases.length < limit) {
+    const selectedIds = new Set(phrases.map(phrase => phrase.id));
+    const candidates = seededShuffleArray(
+      pool.filter(phrase => !selectedIds.has(phrase.id)),
+      `${dateKey}::${scopeKey}`
+    );
+    phrases = phrases.concat(candidates.slice(0, limit - phrases.length));
+  }
+
+  store[scopeKey] = { date: dateKey, ids: phrases.map(phrase => phrase.id) };
+  writeTodayPhraseStore(store);
+  return { dateKey, phrases };
+}
+
 function startPhrasePractice(count) {
   stopAudio();
   stopPhrasePracticeAudio();
@@ -598,6 +682,26 @@ function startPhrasePractice(count) {
   state.practiceIndex = 0;
   state.practiceCount = count === 'all' ? 'すべて' : String(limit);
   state.practiceTitle = state.phraseCategory;
+  state.shouldAutoplayPractice = true;
+  state.view = 'phrasePractice';
+  renderPhrasePractice();
+}
+
+function startTodayPhrasePractice() {
+  stopAudio();
+  stopPhrasePracticeAudio();
+
+  const pool = getPhrasePool();
+  if (pool.length === 0) {
+    showToast('縺薙・繧ｫ繝・ざ繝ｪ縺ｫ蜀咲函縺ｧ縺阪ｋ髻ｳ螢ｰ縺後≠繧翫∪縺帙ｓ');
+    return;
+  }
+
+  const todaySet = getTodayPhraseSet(pool);
+  state.practiceSet = todaySet.phrases;
+  state.practiceIndex = 0;
+  state.practiceCount = String(todaySet.phrases.length);
+  state.practiceTitle = `Today ${todaySet.dateKey}`;
   state.shouldAutoplayPractice = true;
   state.view = 'phrasePractice';
   renderPhrasePractice();

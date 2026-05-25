@@ -1771,6 +1771,12 @@ body::before {
   padding: 8px 12px;
 }
 
+.phrase-random-panel .phrase-today-btn {
+  border-color: rgba(89,215,198,0.36);
+  background: rgba(89,215,198,0.14);
+  color: #c8fff7;
+}
+
 .phrase-random-panel button:active {
   transform: scale(0.96);
 }
