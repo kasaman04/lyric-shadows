@@ -48,7 +48,7 @@ const PHRASE_AUTO_ADVANCE_DELAY_MS = 1200;
 const STORAGE_COOKIE_MAX_AGE = 60 * 60 * 24 * 365;
 const DEVICE_ID_KEY = 'phraseDeviceId';
 const TODAY_PHRASE_SET_KEY = 'todayPhraseSetV1';
-const TODAY_PHRASE_LIMIT = 10;
+const TODAY_PHRASE_LIMIT = 15;
 
 // ============================================================
 // INIT
