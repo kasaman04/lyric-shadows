@@ -700,7 +700,7 @@ function startTodayPhrasePractice() {
   }
 
   const todaySet = getTodayPhraseSet(pool);
-  state.practiceSet = todaySet.phrases;
+  state.practiceSet = shuffleArray(todaySet.phrases);
   state.practiceIndex = 0;
   state.practiceCount = String(todaySet.phrases.length);
   state.practiceTitle = `Today ${todaySet.dateKey}`;
@@ -713,6 +713,7 @@ function startTodayPhrasePractice() {
 function restartTodayPractice() {
   if (state.practiceMode !== 'today' || state.practiceSet.length === 0) return;
   stopPhrasePracticeAudio();
+  state.practiceSet = shuffleArray(state.practiceSet);
   state.practiceIndex = 0;
   state.shouldAutoplayPractice = true;
   state.view = 'phrasePractice';
