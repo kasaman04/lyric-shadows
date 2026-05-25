@@ -19,6 +19,7 @@ const state = {
   practiceIndex: 0,
   practiceTitle: '',
   practiceCount: '10',
+  practiceMode: 'random',
   phrasePracticeAudio: null,
   phraseAudioRepeat: false,
   phraseAudioSrc: '',
@@ -682,6 +683,7 @@ function startPhrasePractice(count) {
   state.practiceIndex = 0;
   state.practiceCount = count === 'all' ? 'すべて' : String(limit);
   state.practiceTitle = state.phraseCategory;
+  state.practiceMode = 'random';
   state.shouldAutoplayPractice = true;
   state.view = 'phrasePractice';
   renderPhrasePractice();
@@ -693,7 +695,7 @@ function startTodayPhrasePractice() {
 
   const pool = getPhrasePool();
   if (pool.length === 0) {
-    showToast('縺薙・繧ｫ繝・ざ繝ｪ縺ｫ蜀咲函縺ｧ縺阪ｋ髻ｳ螢ｰ縺後≠繧翫∪縺帙ｓ');
+    showToast('このカテゴリに再生できる音声がありません');
     return;
   }
 
@@ -702,6 +704,16 @@ function startTodayPhrasePractice() {
   state.practiceIndex = 0;
   state.practiceCount = String(todaySet.phrases.length);
   state.practiceTitle = `Today ${todaySet.dateKey}`;
+  state.practiceMode = 'today';
+  state.shouldAutoplayPractice = true;
+  state.view = 'phrasePractice';
+  renderPhrasePractice();
+}
+
+function restartTodayPractice() {
+  if (state.practiceMode !== 'today' || state.practiceSet.length === 0) return;
+  stopPhrasePracticeAudio();
+  state.practiceIndex = 0;
   state.shouldAutoplayPractice = true;
   state.view = 'phrasePractice';
   renderPhrasePractice();
@@ -711,6 +723,13 @@ function renderPhrasePractice() {
   const app = document.getElementById('app');
   const total = state.practiceSet.length;
   const phrase = state.practiceSet[state.practiceIndex];
+  const isTodayPracticeComplete = state.practiceMode === 'today' && state.practiceSet.length > 0;
+  const againButtonHtml = isTodayPracticeComplete
+    ? '<button class="practice-again-btn" onclick="restartTodayPractice()">Again</button>'
+    : '';
+  const completeMessage = isTodayPracticeComplete
+    ? 'Againで今日の同じセットを最初から練習できます。'
+    : 'おつかれさまでした。もう一度やる場合は会話フレーズから始められます。';
 
   if (!phrase) {
     app.innerHTML = `
@@ -718,14 +737,17 @@ function renderPhrasePractice() {
         <div class="shadowing-header">
           <button class="back-btn" onclick="showHome()">←</button>
           <div class="shadowing-song-info">
-            <div class="shadowing-song-name">ランダム練習</div>
+            <div class="shadowing-song-name">${esc(state.practiceTitle || 'ランダム練習')}</div>
             <div class="shadowing-song-artist">完了</div>
           </div>
         </div>
         <div class="practice-complete">
           <h2>今回のセットは完了しました</h2>
-          <p>おつかれさまでした。もう一度やる場合は会話フレーズから始められます。</p>
-          <button onclick="showHome()">会話フレーズに戻る</button>
+          <p>${completeMessage}</p>
+          <div class="practice-complete-actions">
+            ${againButtonHtml}
+            <button class="practice-back-btn" onclick="showHome()">会話フレーズに戻る</button>
+          </div>
         </div>
       </div>
     `;

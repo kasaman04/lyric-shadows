@@ -2280,6 +2280,19 @@ body::before {
   margin-bottom: 20px;
 }
 
+.practice-complete-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.practice-complete .practice-back-btn {
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.12);
+  color: var(--text);
+}
+
 @media (min-width: 620px) {
   .home-tabs {
     width: min(620px, calc(100% - 32px));
