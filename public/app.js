@@ -48,6 +48,7 @@ const PHRASE_AUTO_ADVANCE_DELAY_MS = 1200;
 const STORAGE_COOKIE_MAX_AGE = 60 * 60 * 24 * 365;
 const DEVICE_ID_KEY = 'phraseDeviceId';
 const TODAY_PHRASE_SET_KEY = 'todayPhraseSetV1';
+const TODAY_PHRASE_SCOPE_KEY = 'all-conversations';
 const TODAY_PHRASE_LIMIT = 15;
 
 // ============================================================
@@ -578,6 +579,10 @@ function getPhrasePool() {
   return byCategory.filter(p => p.audio);
 }
 
+function getAllPhrasePool() {
+  return state.phrases.filter(p => p.audio);
+}
+
 function shuffleArray(items) {
   const copy = [...items];
   for (let i = copy.length - 1; i > 0; i--) {
@@ -595,7 +600,7 @@ function getLocalDateKey(date = new Date()) {
 }
 
 function getTodayPhraseScopeKey() {
-  return `${state.phrasePack}::${state.phraseCategory}`;
+  return TODAY_PHRASE_SCOPE_KEY;
 }
 
 function hashStringToSeed(value) {
@@ -693,9 +698,9 @@ function startTodayPhrasePractice() {
   stopAudio();
   stopPhrasePracticeAudio();
 
-  const pool = getPhrasePool();
+  const pool = getAllPhrasePool();
   if (pool.length === 0) {
-    showToast('このカテゴリに再生できる音声がありません');
+    showToast('再生できる会話音声がありません');
     return;
   }
 
@@ -710,8 +715,8 @@ function startTodayPhrasePractice() {
   renderPhrasePractice();
 }
 
-function restartTodayPractice() {
-  if (state.practiceMode !== 'today' || state.practiceSet.length === 0) return;
+function restartPractice() {
+  if (state.practiceSet.length === 0) return;
   stopPhrasePracticeAudio();
   state.practiceSet = shuffleArray(state.practiceSet);
   state.practiceIndex = 0;
@@ -720,16 +725,74 @@ function restartTodayPractice() {
   renderPhrasePractice();
 }
 
+function getPracticeLineText(line) {
+  const speaker = Array.isArray(line) ? line[0] : line.speaker;
+  const english = Array.isArray(line) ? line[1] : line.english;
+  return `${speaker}: ${english}`;
+}
+
+function getTodayPracticeCopyText() {
+  const dateKey = state.practiceTitle.replace(/^Today\s+/, '') || getLocalDateKey();
+  const entries = state.practiceSet.map((phrase, index) => {
+    const lines = phrase.lines.map(getPracticeLineText).join('\n');
+    return `${index + 1}. [${phrase.category}] ${phrase.phrase}\nID: ${phrase.id}\n${lines}`;
+  }).join('\n\n');
+
+  return [
+    `今日のランダム15個 (${dateKey})`,
+    'この15個だけを使って、AI音声で英会話練習してください。',
+    'AIスタート、自分スタート、シャドーイングの練習に対応してください。',
+    '',
+    entries
+  ].join('\n');
+}
+
+async function writeClipboardText(text) {
+  if (navigator.clipboard?.writeText) {
+    await navigator.clipboard.writeText(text);
+    return;
+  }
+
+  const textarea = document.createElement('textarea');
+  textarea.value = text;
+  textarea.setAttribute('readonly', '');
+  textarea.style.position = 'fixed';
+  textarea.style.left = '-9999px';
+  document.body.appendChild(textarea);
+  textarea.select();
+  const copied = document.execCommand('copy');
+  textarea.remove();
+  if (!copied) throw new Error('copy failed');
+}
+
+async function copyTodayPracticeSet() {
+  if (state.practiceMode !== 'today' || state.practiceSet.length === 0) {
+    showToast('今日の15個がありません');
+    return;
+  }
+
+  try {
+    await writeClipboardText(getTodayPracticeCopyText());
+    showToast('今日の15個をコピーしました');
+  } catch {
+    showToast('コピーできませんでした');
+  }
+}
+
 function renderPhrasePractice() {
   const app = document.getElementById('app');
   const total = state.practiceSet.length;
   const phrase = state.practiceSet[state.practiceIndex];
-  const isTodayPracticeComplete = state.practiceMode === 'today' && state.practiceSet.length > 0;
-  const againButtonHtml = isTodayPracticeComplete
-    ? '<button class="practice-again-btn" onclick="restartTodayPractice()">Again</button>'
+  const isPracticeComplete = state.practiceSet.length > 0;
+  const isTodayPracticeComplete = state.practiceMode === 'today' && isPracticeComplete;
+  const againButtonHtml = isPracticeComplete
+    ? '<button class="practice-again-btn" onclick="restartPractice()">Again</button>'
     : '';
-  const completeMessage = isTodayPracticeComplete
-    ? 'Againで今日の同じセットを最初から練習できます。'
+  const copyButtonHtml = isTodayPracticeComplete
+    ? '<button class="practice-copy-btn" onclick="copyTodayPracticeSet()">今日の15個をコピー</button>'
+    : '';
+  const completeMessage = isPracticeComplete
+    ? 'Againで同じセットを最初から練習できます。'
     : 'おつかれさまでした。もう一度やる場合は会話フレーズから始められます。';
 
   if (!phrase) {
@@ -747,6 +810,7 @@ function renderPhrasePractice() {
           <p>${completeMessage}</p>
           <div class="practice-complete-actions">
             ${againButtonHtml}
+            ${copyButtonHtml}
             <button class="practice-back-btn" onclick="showHome()">会話フレーズに戻る</button>
           </div>
         </div>
@@ -766,6 +830,9 @@ function renderPhrasePractice() {
     </div>
   `).join('');
   const audioControls = renderPhraseAudioControls(phrase, true);
+  const headerCopyButtonHtml = state.practiceMode === 'today'
+    ? '<button class="practice-copy-btn practice-header-copy-btn" onclick="copyTodayPracticeSet()">15をコピー</button>'
+    : '';
   const phraseVisual = renderPhraseVisual(phrase, {
     label: `${phrase.category} ・ ${state.practiceIndex + 1} / ${total}`,
     cardIndex: state.phrases.indexOf(phrase)
@@ -781,6 +848,7 @@ function renderPhrasePractice() {
             <div class="shadowing-song-artist">${state.practiceIndex + 1} / ${total}</div>
           </div>
         </div>
+        ${headerCopyButtonHtml}
       </div>
 
       <div class="practice-progress">

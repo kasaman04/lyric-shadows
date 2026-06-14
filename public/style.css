@@ -2257,6 +2257,27 @@ body::before {
   opacity: 0.38;
 }
 
+.practice-copy-btn {
+  border: 1px solid rgba(89,215,198,0.34);
+  border-radius: 999px;
+  background: rgba(89,215,198,0.13);
+  color: #c8fff7;
+  cursor: pointer;
+  font-family: 'Inter', 'Noto Sans JP', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 850;
+  padding: 10px 14px;
+  white-space: nowrap;
+}
+
+.practice-header-copy-btn {
+  flex-shrink: 0;
+}
+
+.practice-copy-btn:active {
+  transform: scale(0.97);
+}
+
 .practice-complete {
   width: min(620px, calc(100% - 32px));
   margin: 80px auto 0;
