@@ -3,7 +3,7 @@
 Use this compact index to find matching template IDs by Theme, Pack, Category, phrase, or source file.
 After selecting an ID from this index, use conversation-practice-templates.md for the exact 3-line Conversation.
 
-Generated at: 2026-06-14T09:24:52.848Z
+Generated at: 2026-06-15T12:57:57.052Z
 Total conversations: 570
 Total themes: 75
 
