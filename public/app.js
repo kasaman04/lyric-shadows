@@ -51,6 +51,15 @@ const SPEAKER_ICONS = {
   '男性': '👨', '女性': '👩', '中性': '🎙️', '男２': '👴', '少年': '👦', '少女': '👧'
 };
 
+const PLAYER_PLAY_ICON = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 10 7-10 7V5Z" fill="currentColor"/></svg>';
+const PLAYER_PAUSE_ICON = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3v14H7zm7 0h3v14h-3z" fill="currentColor"/></svg>';
+const PLAYER_REPEAT_ICON = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 3l3 3-3 3M4 10V8a2 2 0 0 1 2-2h14M7 21l-3-3 3-3m13-1v2a2 2 0 0 1-2 2H4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+
+function repeatControlContent() {
+  const mode = state.repeatMode === 'one' ? '1行' : state.repeatMode === 'all' ? '全体' : 'オフ';
+  return `${PLAYER_REPEAT_ICON}<span class="control-label">リピート</span><span class="control-state">${mode}</span>`;
+}
+
 function speakerAvatar(song, side, avatarClass) {
   const speaker = side === 'A' ? song.speakerA : song.speakerB;
   const image = window.SONG_CHARACTER_AVATARS?.[song.id || song.folderName]?.[side];
@@ -1239,13 +1248,15 @@ function renderShadowing() {
       ${renderLyricConnections(song.lyricConnections)}
       <div class="conversation-area" id="convArea">${hasAudio ? '' : '<p class="text-only-notice">会話文を新しい方針で作成しました。対応する会話音声はまだありません。</p>'}${turnsHtml}</div>
       <div class="song-area hidden" id="songArea">${songTabHtml}</div>
-      <div class="play-controls ${hasAudio ? '' : 'hidden'}" id="playControls">
-        <button class="restart-btn" onclick="restartAll()" title="最初から">↺</button>
-        <button class="play-btn" id="playBtn" onclick="togglePlay()">▶</button>
-        <button class="repeat-btn ${state.repeatMode !== 'off' ? 'active' : ''}" id="repeatBtn" onclick="cycleRepeat()" title="リピート">
-          ${state.repeatMode === 'one' ? '🔂' : '🔁'}
-          ${state.repeatMode !== 'off' ? '<span class="repeat-label">' + (state.repeatMode === 'one' ? '1' : 'All') + '</span>' : ''}
-        </button>
+      <div class="play-controls conversation-player ${hasAudio ? '' : 'hidden'}" id="playControls">
+        <div class="player-dock">
+          <button class="restart-btn" onclick="restartAll()" aria-label="最初からやり直す" title="最初からやり直す">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11a8 8 0 1 1 2.1 6.4M4 4v7h7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span class="control-label">最初から</span>
+          </button>
+          <button class="play-btn" id="playBtn" onclick="togglePlay()" aria-label="再生">${PLAYER_PLAY_ICON}<span class="control-label">再生</span></button>
+          <button class="repeat-btn ${state.repeatMode !== 'off' ? 'active' : ''}" id="repeatBtn" onclick="cycleRepeat()" aria-label="リピート: ${state.repeatMode === 'one' ? '1行' : state.repeatMode === 'all' ? '全体' : 'オフ'}" title="リピートを切り替える">${repeatControlContent()}</button>
+        </div>
       </div>
     </div>`;
 
@@ -1594,9 +1605,8 @@ function updateRepeatBtn() {
   if (!btn) return;
   const isActive = state.repeatMode !== 'off';
   btn.classList.toggle('active', isActive);
-  const icon = state.repeatMode === 'one' ? '🔂' : '🔁';
-  const label = state.repeatMode === 'one' ? '1' : state.repeatMode === 'all' ? 'All' : '';
-  btn.innerHTML = icon + (label ? `<span class="repeat-label">${label}</span>` : '');
+  btn.innerHTML = repeatControlContent();
+  btn.setAttribute('aria-label', `リピート: ${state.repeatMode === 'one' ? '1行' : state.repeatMode === 'all' ? '全体' : 'オフ'}`);
 }
 
 function stopAudio() {
@@ -1629,7 +1639,8 @@ function updateHighlights() {
 function updatePlayBtn() {
   const btn = document.getElementById('playBtn');
   if (!btn) return;
-  btn.textContent = state.isPlaying ? '⏸' : '▶';
+  btn.innerHTML = `${state.isPlaying ? PLAYER_PAUSE_ICON : PLAYER_PLAY_ICON}<span class="control-label">${state.isPlaying ? '一時停止' : '再生'}</span>`;
+  btn.setAttribute('aria-label', state.isPlaying ? '一時停止' : '再生');
   btn.classList.toggle('playing', state.isPlaying);
 }
 

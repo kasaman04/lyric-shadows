@@ -544,6 +544,61 @@ button:focus-visible { outline: 3px solid var(--coral); outline-offset: 3px; }
 .page-shadowing .play-controls { border-color: var(--line); background: rgba(247, 244, 238, .96); }
 .page-shadowing .play-btn,
 .page-shadowing .song-ctrl-play { background: var(--coral); box-shadow: 0 10px 25px rgba(217, 101, 84, .18); }
+.page-shadowing .play-controls.conversation-player {
+  inset: auto 0 0;
+  padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+  border: 0;
+  background: linear-gradient(to bottom, rgba(247,244,238,0), var(--paper) 32%);
+  box-shadow: none;
+}
+.page-shadowing .player-dock {
+  width: min(100%, 380px);
+  min-height: 76px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 84px minmax(0, 1fr);
+  align-items: center;
+  gap: 4px;
+  padding: 7px 10px;
+  border: 1px solid #e4dbcf;
+  border-radius: 20px;
+  background: #fffdfa;
+  box-shadow: 0 10px 32px rgba(54, 45, 34, .11);
+}
+.page-shadowing .player-dock button {
+  min-width: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  padding: 5px 2px;
+  border: 0;
+  border-radius: 13px;
+  background: transparent;
+  color: var(--ink-soft);
+  box-shadow: none;
+  font: 600 11px var(--sans);
+  line-height: 1.2;
+}
+.page-shadowing .player-dock button:hover { background: #f6f1ea; color: var(--ink); }
+.page-shadowing .player-dock button:focus-visible { outline: 2px solid var(--coral); outline-offset: 2px; }
+.page-shadowing .player-dock svg { width: 21px; height: 21px; flex: none; }
+.page-shadowing .player-dock .control-state { font-size: 10px; font-weight: 500; opacity: .7; }
+.page-shadowing .player-dock .play-btn {
+  background: var(--coral);
+  color: white;
+  box-shadow: 0 5px 12px rgba(217,101,84,.19);
+  font-size: 11px;
+}
+.page-shadowing .player-dock .play-btn:hover,
+.page-shadowing .player-dock .play-btn.playing { background: var(--coral-dark); color: white; box-shadow: 0 5px 12px rgba(217,101,84,.19); }
+.page-shadowing .player-dock .repeat-btn.active { background: #fae7e0; color: var(--coral-dark); }
+@media (max-width: 360px) {
+  .page-shadowing .play-controls.conversation-player { padding-inline: 10px; }
+  .page-shadowing .player-dock { grid-template-columns: minmax(0, 1fr) 76px minmax(0, 1fr); }
+}
 .page-shadowing .song-area { color: var(--ink); }
 .page-shadowing .lyric-en { color: var(--ink); }
 .page-shadowing .lyric-ja { color: var(--ink-soft); }
