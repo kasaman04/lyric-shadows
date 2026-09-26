@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Maya portrait">
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#d7d0df"/><stop offset="1" stop-color="#fff" stop-opacity=".48"/></linearGradient><clipPath id="clip"><rect width="64" height="64" rx="13"/></clipPath></defs>
+<g clip-path="url(#clip)"><rect width="64" height="64" fill="url(#bg)"/><circle cx="32" cy="30" r="28" fill="#fff" opacity=".10"/><circle cx="50" cy="11" r="3" fill="#fff2d7" opacity=".8"/>
+<path d="M8 66Q11 49 25 47h14q14 2 17 19" fill="#836b92"/><path d="M25 49q7 9 14 0" fill="none" stroke="#fff" stroke-width="2" opacity=".55"/>
+<path d="M18 25 Q18 10 31 10 Q45 10 44 26 L47 56 Q39 61 36 52 L24 52 Q17 60 15 55 Z" fill="#8a5d43"/><ellipse cx="19" cy="32" rx="2.4" ry="4" fill="#dda783"/><ellipse cx="43" cy="32" rx="2.4" ry="4" fill="#dda783"/>
+<path d="M27 43v7q4 5 8 0v-7" fill="#dda783"/><ellipse cx="31" cy="31" rx="11.8" ry="15" fill="#dda783"/>
+<path d="M19 27 Q21 11 32 12 Q45 12 43 26 Q33 22 28 18 Q26 25 19 27Z" fill="#8a5d43"/><path d="M23 28q3-1 5 0m6 0q3-1 5 0" stroke="#8a5d43" stroke-width="1.25" stroke-linecap="round" fill="none"/>
+<circle cx="26" cy="32" r="1.15" fill="#38343b"/><circle cx="36" cy="32" r="1.15" fill="#38343b"/>
+<path d="M31 34.5l-1 2h2" stroke="#b78472" stroke-width=".8" fill="none"/><path d="M21 32h4m12 0h4" stroke="#3e4852" stroke-width="1.4"/><circle cx="26" cy="33" r="4" fill="none" stroke="#3e4852" stroke-width="1.4"/><circle cx="36" cy="33" r="4" fill="none" stroke="#3e4852" stroke-width="1.4"/>
+<path d="M28.8 39 Q32 42.5 35.2 39" stroke="#965e5c" stroke-width="1.25" stroke-linecap="round" fill="none"/>
+
+</g></svg>

@@ -46,6 +46,15 @@ const SPEAKER_ICONS = {
   '男性': '👨', '女性': '👩', '男２': '👴', '少年': '👦', '少女': '👧'
 };
 
+function speakerAvatar(song, side, avatarClass) {
+  const speaker = side === 'A' ? song.speakerA : song.speakerB;
+  const image = window.SONG_CHARACTER_AVATARS?.[song.id || song.folderName]?.[side];
+  if (image) {
+    return `<div class="speaker-avatar ${avatarClass}"><img src="${esc(image)}" alt="" width="40" height="40" loading="lazy"></div>`;
+  }
+  return `<div class="speaker-avatar ${avatarClass}">${SPEAKER_ICONS[speaker?.type] || '🎤'}</div>`;
+}
+
 const PHRASE_AUTO_ADVANCE_DELAY_MS = 1200;
 const STORAGE_COOKIE_MAX_AGE = 60 * 60 * 24 * 365;
 const DEVICE_ID_KEY = 'phraseDeviceId';
@@ -219,15 +228,28 @@ function showPreviousPhrase() {
 // ============================================================
 function renderHome() {
   const app = document.getElementById('app');
+  app.className = 'page-home';
   app.innerHTML = `
-    <div class="home-header">
-      <h1><img src="/rogo2.png" alt="Lyric Shadows" class="header-logo"> Lyric Shadows</h1>
-    </div>
-    <div class="home-tabs">
-      <button class="home-tab ${state.homeFilter === 'A' ? 'active' : ''}" onclick="setHomeFilter('A')">洋楽で学ぶ</button>
-      <button class="home-tab ${state.homeFilter === 'C' ? 'active' : ''}" onclick="setHomeFilter('C')">会話フレーズ</button>
-    </div>
+    <main class="home-shell">
+      <header class="home-header">
+        <div class="brand-mark" aria-hidden="true">♫</div>
+        <div class="brand-copy"><span class="brand-name">Lyric Shadows</span><span class="brand-caption">ENGLISH THROUGH SOUND</span></div>
+      </header>
+      <section class="home-hero" aria-labelledby="home-title">
+        <div class="hero-vinyl" aria-hidden="true"><div></div></div>
+        <div class="hero-copy">
+          <p class="section-eyebrow">TODAY'S PRACTICE</p>
+          <h1 id="home-title">英語を、<br>耳から好きになる。</h1>
+          <p class="hero-description">好きな曲と会話で、毎日少しずつ。</p>
+          <button class="hero-cta" onclick="startTodayPhrasePractice()">今日の練習を始める <span aria-hidden="true">→</span></button>
+        </div>
+      </section>
+      <nav class="home-tabs" aria-label="学習方法">
+        <button class="home-tab ${state.homeFilter === 'A' ? 'active' : ''}" onclick="setHomeFilter('A')" aria-current="${state.homeFilter === 'A' ? 'page' : 'false'}">♫ <span>洋楽で学ぶ</span></button>
+        <button class="home-tab ${state.homeFilter === 'C' ? 'active' : ''}" onclick="setHomeFilter('C')" aria-current="${state.homeFilter === 'C' ? 'page' : 'false'}">☏ <span>会話フレーズ</span></button>
+      </nav>
     ${renderSongGrid()}
+    </main>
     <div id="modalContainer"></div>
     <div id="progressContainer"></div>
   `;
@@ -276,15 +298,17 @@ function renderSongGrid() {
       ? `style="background-image:url('${song.thumbnailUrl}')"` : '';
     const grad = CARD_GRADS[originalIndex % CARD_GRADS.length];
     return `
-      <div class="song-card ${song.thumbnailUrl ? 'has-thumb' : grad}" ${bgStyle}
-           onclick="showShadowing(state.songs[${originalIndex}])">
+      <button class="song-card" onclick="showShadowing(state.songs[${originalIndex}])">
+        <div class="song-art ${song.thumbnailUrl ? 'has-thumb' : grad}" ${bgStyle}>
+          <span class="song-play-icon" aria-hidden="true">▶</span>
+        </div>
         <div class="song-card-overlay">
           <div class="song-card-name">${esc(song.songName)}</div>
           <div class="song-card-artist">${esc(song.artist)}</div>
         </div>
-      </div>`;
+      </button>`;
   }).join('');
-  return `<div class="song-grid">${cards}</div>`;
+  return `<section class="home-library"><div class="section-heading"><div><p class="section-eyebrow">LEARN WITH MUSIC</p><h2>洋楽から学ぶ</h2></div><span>${filteredSongs.length}曲</span></div><div class="song-grid">${cards}</div></section>`;
 }
 
 function renderPhraseGrid() {
@@ -315,10 +339,16 @@ function renderPhraseGrid() {
     </div>
   `).join('');
 
+  const featured = filtered.find(phrase => phrase.audio) || filtered[0];
+  const featuredTranslation = featured?.lines.find(([, english]) => english === featured.phrase)?.[2] || featured?.lines[0]?.[2] || '';
   return `
+    <section class="home-library phrase-library">
+      <div class="section-heading"><div><p class="section-eyebrow">SPEAK NATURALLY</p><h2>今日使えるひと言</h2></div></div>
+      ${featured ? `<button class="featured-phrase" onclick="showPhrase(state.phrases.find(p => p.id === '${featured.id}'))"><span class="featured-kicker">まずは、このフレーズから</span><strong>${esc(featured.phrase)}</strong><span class="featured-translation">${esc(featuredTranslation)}</span><span class="featured-action">会話を見る <span aria-hidden="true">→</span></span></button>` : ''}
+      <div class="section-heading phrase-explore-heading"><div><p class="section-eyebrow">EXPLORE</p><h2>シーンから探す</h2></div></div>
     <div class="phrase-tools">
       <div class="phrase-pack-tabs" id="phrasePackTabs">${packTabs}</div>
-      <div class="phrase-count">${filtered.length} / ${packPhrases.length} フレーズ・再生対象 ${visiblePlayableCount}</div>
+      <div class="phrase-count">${filtered.length} フレーズ <span>・音声あり ${visiblePlayableCount}</span></div>
       <div class="phrase-filter-wrap">
         <div class="phrase-filter-row" id="phraseFilterRow">${chips}</div>
       </div>
@@ -331,6 +361,7 @@ function renderPhraseGrid() {
       </div>
     </div>
     <div class="phrase-grid">${cards}</div>
+    </section>
   `;
 }
 
@@ -392,27 +423,34 @@ function renderPhraseDetail() {
     </div>
   `).join('');
   const audioControls = renderPhraseAudioControls(phrase, false);
-  const phraseVisual = renderPhraseVisual(phrase, {
-    label: phrase.category,
-    cardIndex: state.phrases.indexOf(phrase)
-  });
+  const imageSrc = getPhraseImageSrc(phrase);
+  const translation = phrase.lines.find(([, english]) => english === phrase.phrase)?.[2] || phrase.lines[0]?.[2] || '';
+  app.className = 'page-phrase-detail';
 
   app.innerHTML = `
     <div class="shadowing-view phrase-detail-view">
       <div class="shadowing-header">
-        <button class="back-btn" onclick="showHome()">←</button>
+        <button class="back-btn" onclick="showHome()" aria-label="ホームに戻る">←</button>
         <div class="title-jp-group">
           <div class="shadowing-song-info">
-            <div class="shadowing-song-name">${esc(phrase.phrase)}</div>
+            <div class="shadowing-song-name">会話フレーズ</div>
             <div class="shadowing-song-artist">${esc(phrase.category)}</div>
           </div>
         </div>
       </div>
 
-      ${phraseVisual}
-
+      <div class="phrase-detail-heading"><p class="section-eyebrow">SPEAK NATURALLY</p><h1>今日使えるひと言</h1></div>
+      <section class="phrase-feature-detail">
+        ${imageSrc ? `<div class="phrase-feature-image"><img src="${esc(imageSrc)}" alt="${esc(phrase.phrase)}"></div>` : `<div class="phrase-feature-art" aria-hidden="true"><span>“</span></div>`}
+        <div class="phrase-feature-body">
+          <span class="phrase-feature-category">${esc(phrase.category)}</span>
+          <h2>${esc(phrase.phrase)}</h2>
+          <p>${esc(translation)}</p>
+          ${audioControls}
+        </div>
+      </section>
       <div class="phrase-conversation">
-        ${audioControls}
+        <div class="section-heading conversation-heading"><div><p class="section-eyebrow">IN CONVERSATION</p><h2>会話で使ってみる</h2></div></div>
         ${turnsHtml}
         <div class="phrase-usage-note">
           <span>使う場面</span>
@@ -848,6 +886,7 @@ async function copyTodayPracticeSet() {
 }
 
 function renderPhrasePractice() {
+  document.getElementById('app').className = 'page-phrase-practice';
   const app = document.getElementById('app');
   const total = state.practiceSet.length;
   const phrase = state.practiceSet[state.practiceIndex];
@@ -1069,13 +1108,13 @@ async function deleteSong(id) {
 function renderShadowing() {
   const song = state.currentSong;
   const app = document.getElementById('app');
+  app.className = 'page-shadowing';
 
   // ---- Conversation HTML ----
   const turnsHtml = song.conversation.map((turn, tIdx) => {
     const isA = turn.speaker === 'A';
     const cardClass = isA ? 'speaker-a' : 'speaker-b';
     const avatarClass = isA ? 'speaker-a-avatar' : 'speaker-b-avatar';
-    const icon = SPEAKER_ICONS[isA ? song.speakerA.type : song.speakerB.type] || '🎤';
     const sentHtml = turn.sentences.map((s, sIdx) => {
       const flatIdx = getFlatIndex(tIdx, sIdx);
       const content = s.displayHtml || esc(s.text);
@@ -1085,7 +1124,7 @@ function renderShadowing() {
     const jpClass = state.showJapanese ? 'japanese-text visible' : 'japanese-text';
     return `<div class="turn-card ${cardClass}">
       <div class="turn-header">
-        <div class="speaker-avatar ${avatarClass}">${icon}</div>
+        ${speakerAvatar(song, turn.speaker, avatarClass)}
         <span class="speaker-name">${esc(turn.speakerName)}</span>
       </div>
       <div class="sentences-list">${sentHtml}</div>
