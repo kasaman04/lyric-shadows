@@ -63,6 +63,10 @@ function setMediaPlaybackState(playing) {
 
 function setMediaSession(type, title, artist) {
   activeMediaType = type;
+  // Keep the browser's audio session in the playback category on iOS.
+  if (navigator.audioSession) {
+    try { navigator.audioSession.type = 'playback'; } catch {}
+  }
   if (!('mediaSession' in navigator)) return;
   if ('MediaMetadata' in window) {
     navigator.mediaSession.metadata = new MediaMetadata({ title, artist });
