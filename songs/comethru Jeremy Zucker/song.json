@@ -8,12 +8,24 @@
   "speakerA": {
     "name": "Jeremy",
     "type": "男性",
-    "voice": "CfDbY7v8tDkTvB9rNcUw"
+    "voice": "TX3LPaxmHKxFdv7VOQHJ",
+    "voiceProfile": "liam",
+    "gender": "male",
+    "age": "young",
+    "accent": "american",
+    "tone": "energetic",
+    "voiceName": "Liam"
   },
   "speakerB": {
     "name": "Friend",
     "type": "女性",
-    "voice": "cNYrMw9glwJZXR8RwbuR"
+    "voice": "cgSgspJ2msm6clMCkdW9",
+    "voiceProfile": "jessica",
+    "gender": "female",
+    "age": "young",
+    "accent": "american",
+    "tone": "energetic",
+    "voiceName": "Jessica"
   },
   "videoId": "qhtJtnac5gc",
   "thumbnailUrl": "https://img.youtube.com/vi/qhtJtnac5gc/hqdefault.jpg",
@@ -205,12 +217,12 @@
         {
           "text": "Hey, are you awake?",
           "displayHtml": "Hey, are you awake?",
-          "audio": "/songs/comethru%20Jeremy%20Zucker/0_0.mp3"
+          "audio": "/songs/comethru%20Jeremy%20Zucker/conversation-audio/5608d84d8e9850d8/0-0.mp3"
         },
         {
           "text": "I feel like I might lose my mind tonight.",
           "displayHtml": "I feel like I might <span class=\"lyric-word\">lose my mind</span> tonight.",
-          "audio": "/songs/comethru%20Jeremy%20Zucker/0_1.mp3"
+          "audio": "/songs/comethru%20Jeremy%20Zucker/conversation-audio/5608d84d8e9850d8/0-1.mp3"
         }
       ],
       "japanese": "ねえ、起きてる？今夜はなんだかおかしくなっちゃいそうだよ。"
@@ -223,17 +235,17 @@
         {
           "text": "Yeah, I'm awake.",
           "displayHtml": "Yeah, I'm awake.",
-          "audio": "/songs/comethru%20Jeremy%20Zucker/1_0.mp3"
+          "audio": "/songs/comethru%20Jeremy%20Zucker/conversation-audio/5608d84d8e9850d8/1-0.mp3"
         },
         {
           "text": "What's wrong?",
           "displayHtml": "What's wrong?",
-          "audio": "/songs/comethru%20Jeremy%20Zucker/1_1.mp3"
+          "audio": "/songs/comethru%20Jeremy%20Zucker/conversation-audio/5608d84d8e9850d8/1-1.mp3"
         },
         {
           "text": "You've been working too hard lately.",
           "displayHtml": "You've been working too hard lately.",
-          "audio": "/songs/comethru%20Jeremy%20Zucker/1_2.mp3"
+          "audio": "/songs/comethru%20Jeremy%20Zucker/conversation-audio/5608d84d8e9850d8/1-2.mp3"
         }
       ],
       "japanese": "起きてるよ。どうしたの？最近働きすぎなんじゃない？"
@@ -246,12 +258,12 @@
         {
           "text": "These last few weeks have been so exhausting.",
           "displayHtml": "These last few weeks have been so <span class=\"lyric-word\">exhausting</span>.",
-          "audio": "/songs/comethru%20Jeremy%20Zucker/2_0.mp3"
+          "audio": "/songs/comethru%20Jeremy%20Zucker/conversation-audio/5608d84d8e9850d8/2-0.mp3"
         },
         {
           "text": "And now I'm shaking, drinking all this coffee.",
           "displayHtml": "And now I'm <span class=\"lyric-phrase\">shaking, drinking all this coffee</span>.",
-          "audio": "/songs/comethru%20Jeremy%20Zucker/2_1.mp3"
+          "audio": "/songs/comethru%20Jeremy%20Zucker/conversation-audio/5608d84d8e9850d8/2-1.mp3"
         }
       ],
       "japanese": "ここ数週間、本当に疲れきっててさ。コーヒーの飲み過ぎで、今は手が震えてるんだ。"
@@ -264,12 +276,12 @@
         {
           "text": "You need to log off.",
           "displayHtml": "You need to log off.",
-          "audio": "/songs/comethru%20Jeremy%20Zucker/3_0.mp3"
+          "audio": "/songs/comethru%20Jeremy%20Zucker/conversation-audio/5608d84d8e9850d8/3-0.mp3"
         },
         {
           "text": "Have you been scrolling through social media again?",
           "displayHtml": "Have you been scrolling through social media again?",
-          "audio": "/songs/comethru%20Jeremy%20Zucker/3_1.mp3"
+          "audio": "/songs/comethru%20Jeremy%20Zucker/conversation-audio/5608d84d8e9850d8/3-1.mp3"
         }
       ],
       "japanese": "デジタルデトックスしなよ。またSNSばっかり見てたの？"
@@ -282,17 +294,17 @@
         {
           "text": "Yeah, I couldn't put my phone down.",
           "displayHtml": "Yeah, I <span class=\"lyric-phrase\">couldn't put my phone down</span>.",
-          "audio": "/songs/comethru%20Jeremy%20Zucker/4_0.mp3"
+          "audio": "/songs/comethru%20Jeremy%20Zucker/conversation-audio/5608d84d8e9850d8/4-0.mp3"
         },
         {
           "text": "Everyone just looks like faces on a screen.",
           "displayHtml": "Everyone just looks like <span class=\"lyric-word\">faces on a screen</span>.",
-          "audio": "/songs/comethru%20Jeremy%20Zucker/4_1.mp3"
+          "audio": "/songs/comethru%20Jeremy%20Zucker/conversation-audio/5608d84d8e9850d8/4-1.mp3"
         },
         {
           "text": "It's depressing.",
           "displayHtml": "It's depressing.",
-          "audio": "/songs/comethru%20Jeremy%20Zucker/4_2.mp3"
+          "audio": "/songs/comethru%20Jeremy%20Zucker/conversation-audio/5608d84d8e9850d8/4-2.mp3"
         }
       ],
       "japanese": "うん、スマホが手放せなかった。みんな、ただの画面の中の顔にしか見えなくて。憂鬱だよ。"
@@ -305,12 +317,12 @@
         {
           "text": "I get it.",
           "displayHtml": "I get it.",
-          "audio": "/songs/comethru%20Jeremy%20Zucker/5_0.mp3"
+          "audio": "/songs/comethru%20Jeremy%20Zucker/conversation-audio/5608d84d8e9850d8/5-0.mp3"
         },
         {
           "text": "Sometimes you just need real company.",
           "displayHtml": "Sometimes you just need real company.",
-          "audio": "/songs/comethru%20Jeremy%20Zucker/5_1.mp3"
+          "audio": "/songs/comethru%20Jeremy%20Zucker/conversation-audio/5608d84d8e9850d8/5-1.mp3"
         }
       ],
       "japanese": "分かるよ。たまには画面越しじゃない、現実の話し相手が必要だよね。"
@@ -323,17 +335,17 @@
         {
           "text": "I'm trying to realize it's alright to not be fine on your own.",
           "displayHtml": "I'm trying to realize it's alright to <span class=\"lyric-phrase\">not be fine on your own</span>.",
-          "audio": "/songs/comethru%20Jeremy%20Zucker/6_0.mp3"
+          "audio": "/songs/comethru%20Jeremy%20Zucker/conversation-audio/5608d84d8e9850d8/6-0.mp3"
         },
         {
           "text": "So...",
           "displayHtml": "So...",
-          "audio": "/songs/comethru%20Jeremy%20Zucker/6_1.mp3"
+          "audio": "/songs/comethru%20Jeremy%20Zucker/conversation-audio/5608d84d8e9850d8/6-1.mp3"
         },
         {
           "text": "can you come through?",
           "displayHtml": "can you <span class=\"lyric-word\">come through</span>?",
-          "audio": "/songs/comethru%20Jeremy%20Zucker/6_2.mp3"
+          "audio": "/songs/comethru%20Jeremy%20Zucker/conversation-audio/5608d84d8e9850d8/6-2.mp3"
         }
       ],
       "japanese": "一人で抱え込まずに「大丈夫じゃない」って言って良いんだって気づこうとしてる。だから…ちょっとうちに来てくれない？"
@@ -346,16 +358,17 @@
         {
           "text": "Say no more.",
           "displayHtml": "Say no more.",
-          "audio": "/songs/comethru%20Jeremy%20Zucker/7_0.mp3"
+          "audio": "/songs/comethru%20Jeremy%20Zucker/conversation-audio/5608d84d8e9850d8/7-0.mp3"
         },
         {
           "text": "I'll bring some decaf tea and be there in ten.",
           "displayHtml": "I'll bring some decaf tea and be there in ten.",
-          "audio": "/songs/comethru%20Jeremy%20Zucker/7_1.mp3"
+          "audio": "/songs/comethru%20Jeremy%20Zucker/conversation-audio/5608d84d8e9850d8/7-1.mp3"
         }
       ],
       "japanese": "それ以上言わなくていいよ。カフェインレスのお茶を持って、10分で行くね。"
     }
   ],
-  "createdAt": "2026-04-01T17:00:28.717Z"
+  "createdAt": "2026-04-01T17:00:28.717Z",
+  "conversationAudioStatus": "ready"
 }

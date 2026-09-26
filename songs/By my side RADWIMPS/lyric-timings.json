@@ -1,0 +1,576 @@
+{
+  "status": "estimated",
+  "source": {
+    "name": "LRCLIB",
+    "id": 35489292,
+    "duration": 283,
+    "url": "https://lrclib.net/api/get/35489292",
+    "review": "English word timestamps compared with local audio; Japanese bridge remains approximate",
+    "model": "faster-whisper-small.en"
+  },
+  "display": {
+    "lyrics": "Now, just now I know that I'm happy\nBecause you're here with me\nYou, just you is what I really need\nAnd all the other thought means nothing to me\n'Love' is the word I really need\nBecause all the other word\nMeans nothing to me\n'Love' is the word I really need\nBecause all the other words\nJust makes me tell lies\nBy my side, by my side, by my side\nStay by my side, by my side\nStay by my side, by my side, by my side\nStay by my side, by my side\nNow, just now I know that I'm lonely\nBecause you're away from me\nYou, about you, about me is about you\nAnd I'll repeat the same verses over\nAnd over and over again\nUntill you're back to me\n'Love' is the word I really need\nSo all of these affections need\nA place where to go\nLove' is the word I really need\nSo please will you come back\nAnd kiss on my cheek\nBy my side, by my side, by my side\nStay by my side, by my side\nStay by my side, by my side, by my side\nStay by my side, by my side (ouh-u)\n流るる意思を以て\n動かぬ意味を越え\n僕には二つ心臓がある\n君を思うと動き出すのが\nBy my side, by my side, by my side\nStay by my side, by my side\nBy my side, by my side, by my side\nStay by my side, by my side\nBy my side, by my side, by my side\nStay by my side, by my side\nBy my side, by my side, by my side\nYou told me that you're mine and\nYou always kissed me instead of 'Hi'\nBut this doesn't mean that I'm head\nOver toes in with you whatever\nYou used to beg me hug and\nYou used to play me tricks\nAnd all those hugs and tricks we\nShared is now what we call a broken dreams\nBy my side, by my side, by my side\nI hate myself when my brain\nTells me that I'm lying\nThat everything we went\nThrough was just a waste of a time\nSo I'm writing this for you\nAnd I'm writing this for me\nWith in full of thanks and tears\nAnd a pair of ring full of, I love you\nThis song will almost end\nBut that doesn't mean us too\nWell, just in case someday\nYou come to me and says Hi",
+    "lyricsJa": [
+      {
+        "en": "Now, just now I know that I'm happy",
+        "ja": "今、まさに今、僕は幸せなんだってわかったんだ"
+      },
+      {
+        "en": "Because you're here with me",
+        "ja": "君がここに、僕と一緒にいてくれるから"
+      },
+      {
+        "en": "You, just you is what I really need",
+        "ja": "君、ただ君だけが本当に必要なんだ"
+      },
+      {
+        "en": "And all the other thought means nothing to me",
+        "ja": "他のどんな考えも、僕には何の意味もない"
+      },
+      {
+        "en": "'Love' is the word I really need",
+        "ja": "「愛」こそが僕に本当に必要な言葉"
+      },
+      {
+        "en": "Because all the other word",
+        "ja": "他の言葉はどれも、僕には何の意味もないから"
+      },
+      {
+        "en": "Means nothing to me",
+        "ja": "僕には何の意味もない"
+      },
+      {
+        "en": "'Love' is the word I really need",
+        "ja": "「愛」こそが僕に本当に必要な言葉"
+      },
+      {
+        "en": "Because all the other words",
+        "ja": "だってほかのどんな言葉も"
+      },
+      {
+        "en": "Just makes me tell lies",
+        "ja": "僕に嘘をつかせるだけ"
+      },
+      {
+        "en": "By my side, by my side, by my side",
+        "ja": "そばにいて、僕のそばに"
+      },
+      {
+        "en": "Stay by my side, by my side",
+        "ja": "そばにいて、僕のそばに"
+      },
+      {
+        "en": "Stay by my side, by my side, by my side",
+        "ja": "そばにいて、僕のそばに"
+      },
+      {
+        "en": "Stay by my side, by my side",
+        "ja": "そばにいて、僕のそばに"
+      },
+      {
+        "en": "Now, just now I know that I'm lonely",
+        "ja": "今、まさに今、僕は寂しいんだって気づいたんだ"
+      },
+      {
+        "en": "Because you're away from me",
+        "ja": "君が僕から離れてしまったから"
+      },
+      {
+        "en": "You, about you, about me is about you",
+        "ja": "君のこと、君のこと、僕のことも君のことなんだ"
+      },
+      {
+        "en": "And I'll repeat the same verses over",
+        "ja": "だから同じフレーズを繰り返すよ"
+      },
+      {
+        "en": "And over and over again",
+        "ja": "何度も何度も"
+      },
+      {
+        "en": "Untill you're back to me",
+        "ja": "君が僕のもとに戻るまで"
+      },
+      {
+        "en": "'Love' is the word I really need",
+        "ja": "「愛」こそが僕に本当に必要な言葉"
+      },
+      {
+        "en": "So all of these affections need",
+        "ja": "だから、このすべての想いには行き場が必要なんだ"
+      },
+      {
+        "en": "A place where to go",
+        "ja": "行くべき場所"
+      },
+      {
+        "en": "Love' is the word I really need",
+        "ja": "「愛」こそが僕に本当に必要な言葉"
+      },
+      {
+        "en": "So please will you come back",
+        "ja": "だからお願いだ、戻ってきて僕の頬にキスをして"
+      },
+      {
+        "en": "And kiss on my cheek",
+        "ja": "そして僕の頬にキスをして"
+      },
+      {
+        "en": "By my side, by my side, by my side",
+        "ja": "そばにいて、僕のそばに"
+      },
+      {
+        "en": "Stay by my side, by my side",
+        "ja": "そばにいて、僕のそばに"
+      },
+      {
+        "en": "Stay by my side, by my side, by my side",
+        "ja": "そばにいて、僕のそばに"
+      },
+      {
+        "en": "Stay by my side, by my side (ouh-u)",
+        "ja": "そばにいて、僕のそばに"
+      },
+      {
+        "en": "流るる意思を以て",
+        "ja": "流れる意志を持って"
+      },
+      {
+        "en": "動かぬ意味を越え",
+        "ja": "流れる意志を持って 動かない意味を越えて"
+      },
+      {
+        "en": "僕には二つ心臓がある",
+        "ja": "僕には二つの心臓がある 君を想うと動き出すのが…"
+      },
+      {
+        "en": "君を思うと動き出すのが",
+        "ja": "僕には二つの心臓がある 君を想うと動き出すのが…"
+      },
+      {
+        "en": "By my side, by my side, by my side",
+        "ja": "そばにいて、僕のそばに"
+      },
+      {
+        "en": "Stay by my side, by my side",
+        "ja": "そばにいて、僕のそばに"
+      },
+      {
+        "en": "By my side, by my side, by my side",
+        "ja": "そばにいて、僕のそばに"
+      },
+      {
+        "en": "Stay by my side, by my side",
+        "ja": "そばにいて、僕のそばに"
+      },
+      {
+        "en": "By my side, by my side, by my side",
+        "ja": "そばにいて、僕のそばに"
+      },
+      {
+        "en": "Stay by my side, by my side",
+        "ja": "そばにいて、僕のそばに"
+      },
+      {
+        "en": "By my side, by my side, by my side",
+        "ja": "そばにいて、僕のそばに"
+      },
+      {
+        "en": "You told me that you're mine and",
+        "ja": "君は僕のものだと言って、いつもキスをくれたね"
+      },
+      {
+        "en": "You always kissed me instead of 'Hi'",
+        "ja": "君はいつも挨拶の代わりにキスしてくれた"
+      },
+      {
+        "en": "But this doesn't mean that I'm head",
+        "ja": "でも、だからといって僕が夢中だという意味じゃない"
+      },
+      {
+        "en": "Over toes in with you whatever",
+        "ja": "僕が君にすっかり首ったけだってわけじゃ…"
+      },
+      {
+        "en": "You used to beg me hug and",
+        "ja": "まあいいさ。君はよく「抱きしめて」ってせがんだり"
+      },
+      {
+        "en": "You used to play me tricks",
+        "ja": "僕にいたずらを仕掛けたりしたよね"
+      },
+      {
+        "en": "And all those hugs and tricks we",
+        "ja": "二人で交わした抱擁もいたずらも、今となっては"
+      },
+      {
+        "en": "Shared is now what we call a broken dreams",
+        "ja": "「壊れた夢」と呼ばれるものになった。自分が嫌になるよ"
+      },
+      {
+        "en": "By my side, by my side, by my side",
+        "ja": "そばにいて、僕のそばに"
+      },
+      {
+        "en": "I hate myself when my brain",
+        "ja": "頭の中で考えるたび、自分が嫌になる"
+      },
+      {
+        "en": "Tells me that I'm lying",
+        "ja": "頭の中で「すべては嘘だ」なんて声がするとき"
+      },
+      {
+        "en": "That everything we went",
+        "ja": "僕らが一緒に経験したすべてが"
+      },
+      {
+        "en": "Through was just a waste of a time",
+        "ja": "僕たちが過ごした時間はただの無駄だったなんて"
+      },
+      {
+        "en": "So I'm writing this for you",
+        "ja": "だから君のために、そして僕自身のためにこれを書いているんだ"
+      },
+      {
+        "en": "And I'm writing this for me",
+        "ja": "だから君のために、そして僕自身のためにこれを書いているんだ"
+      },
+      {
+        "en": "With in full of thanks and tears",
+        "ja": "感謝と涙でいっぱいの中で"
+      },
+      {
+        "en": "And a pair of ring full of, I love you",
+        "ja": "溢れる感謝と涙、それから一対の指輪を添えて"
+      },
+      {
+        "en": "This song will almost end",
+        "ja": "この歌はもうすぐ終わる"
+      },
+      {
+        "en": "But that doesn't mean us too",
+        "ja": "僕たちまで終わりだってことじゃない。まあ、もしもいつか"
+      },
+      {
+        "en": "Well, just in case someday",
+        "ja": "でも、いつかもし"
+      },
+      {
+        "en": "You come to me and says Hi",
+        "ja": "君が僕のところへ来て「やあ」って言うときのために"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "index": 0,
+      "start": 9.78,
+      "end": 14.86
+    },
+    {
+      "index": 1,
+      "start": 14.86,
+      "end": 20
+    },
+    {
+      "index": 2,
+      "start": 20,
+      "end": 25.02
+    },
+    {
+      "index": 3,
+      "start": 25.02,
+      "end": 30.22
+    },
+    {
+      "index": 4,
+      "start": 30.22,
+      "end": 35
+    },
+    {
+      "index": 5,
+      "start": 35,
+      "end": 37.8
+    },
+    {
+      "index": 6,
+      "start": 37.8,
+      "end": 40.88
+    },
+    {
+      "index": 7,
+      "start": 40.88,
+      "end": 45.2
+    },
+    {
+      "index": 8,
+      "start": 45.2,
+      "end": 47.92
+    },
+    {
+      "index": 9,
+      "start": 47.92,
+      "end": 52.6
+    },
+    {
+      "index": 10,
+      "start": 52.6,
+      "end": 57.6
+    },
+    {
+      "index": 11,
+      "start": 57.6,
+      "end": 63.22
+    },
+    {
+      "index": 12,
+      "start": 63.22,
+      "end": 67.62
+    },
+    {
+      "index": 13,
+      "start": 67.62,
+      "end": 80
+    },
+    {
+      "index": 14,
+      "start": 80,
+      "end": 87.28
+    },
+    {
+      "index": 15,
+      "start": 87.28,
+      "end": 91.54
+    },
+    {
+      "index": 16,
+      "start": 91.54,
+      "end": 97.18
+    },
+    {
+      "index": 17,
+      "start": 97.18,
+      "end": 100.54
+    },
+    {
+      "index": 18,
+      "start": 100.54,
+      "end": 102.86
+    },
+    {
+      "index": 19,
+      "start": 102.86,
+      "end": 108.38
+    },
+    {
+      "index": 20,
+      "start": 108.38,
+      "end": 112.84
+    },
+    {
+      "index": 21,
+      "start": 112.84,
+      "end": 115.44
+    },
+    {
+      "index": 22,
+      "start": 115.44,
+      "end": 117.36
+    },
+    {
+      "index": 23,
+      "start": 117.36,
+      "end": 122.54
+    },
+    {
+      "index": 24,
+      "start": 122.54,
+      "end": 125.12
+    },
+    {
+      "index": 25,
+      "start": 125.12,
+      "end": 129.82
+    },
+    {
+      "index": 26,
+      "start": 129.82,
+      "end": 134.9
+    },
+    {
+      "index": 27,
+      "start": 134.9,
+      "end": 140.39
+    },
+    {
+      "index": 28,
+      "start": 140.39,
+      "end": 145
+    },
+    {
+      "index": 29,
+      "start": 145,
+      "end": 148.37
+    },
+    {
+      "index": 30,
+      "start": 148.37,
+      "end": 157.91
+    },
+    {
+      "index": 31,
+      "start": 157.91,
+      "end": 166.67
+    },
+    {
+      "index": 32,
+      "start": 166.67,
+      "end": 176.13
+    },
+    {
+      "index": 33,
+      "start": 176.13,
+      "end": 194.62
+    },
+    {
+      "index": 34,
+      "start": 194.62,
+      "end": 199.56
+    },
+    {
+      "index": 35,
+      "start": 199.56,
+      "end": 204.78
+    },
+    {
+      "index": 36,
+      "start": 204.78,
+      "end": 209.3
+    },
+    {
+      "index": 37,
+      "start": 209.3,
+      "end": 214.84
+    },
+    {
+      "index": 38,
+      "start": 214.84,
+      "end": 219.78
+    },
+    {
+      "index": 39,
+      "start": 219.78,
+      "end": 222.7
+    },
+    {
+      "index": 40,
+      "start": 234.78,
+      "end": 240.66
+    },
+    {
+      "index": 41,
+      "start": 244.6,
+      "end": 247.24
+    },
+    {
+      "index": 42,
+      "start": 247.24,
+      "end": 249.48
+    },
+    {
+      "index": 43,
+      "start": 249.48,
+      "end": 252.28
+    },
+    {
+      "index": 44,
+      "start": 252.28,
+      "end": 254.74
+    },
+    {
+      "index": 45,
+      "start": 254.74,
+      "end": 257.48
+    },
+    {
+      "index": 46,
+      "start": 257.48,
+      "end": 259.24
+    },
+    {
+      "index": 47,
+      "start": 259.24,
+      "end": 261.4
+    },
+    {
+      "index": 48,
+      "start": 261.4,
+      "end": 264.38
+    },
+    {
+      "index": 49,
+      "start": 264.38,
+      "end": 266.78
+    },
+    {
+      "index": 50,
+      "start": 266.78,
+      "end": 267.46
+    },
+    {
+      "index": 51,
+      "start": 267.46,
+      "end": 269.12
+    },
+    {
+      "index": 52,
+      "start": 269.12,
+      "end": 271.54
+    },
+    {
+      "index": 53,
+      "start": 271.54,
+      "end": 273.86
+    },
+    {
+      "index": 54,
+      "start": 273.86,
+      "end": 276.56
+    },
+    {
+      "index": 55,
+      "start": 276.56,
+      "end": 279.92
+    },
+    {
+      "index": 56,
+      "start": 279.92,
+      "end": 281.74
+    },
+    {
+      "index": 57,
+      "start": 281.74,
+      "end": 284.24
+    },
+    {
+      "index": 58,
+      "start": 284.24,
+      "end": 286.48
+    },
+    {
+      "index": 59,
+      "start": 286.48,
+      "end": 288.98
+    },
+    {
+      "index": 60,
+      "start": 288.98,
+      "end": 291.24
+    },
+    {
+      "index": 61,
+      "start": 291.24,
+      "end": 293.78
+    }
+  ]
+}

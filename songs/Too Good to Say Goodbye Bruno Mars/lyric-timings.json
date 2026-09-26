@@ -1,0 +1,467 @@
+{
+  "status": "estimated",
+  "source": {
+    "name": "LRCLIB",
+    "id": 35328253,
+    "duration": 299,
+    "url": "https://lrclib.net/api/get/35328253",
+    "review": "Local small.en word timestamps checked for line starts; uncertain scat and adlibs remain approximate"
+  },
+  "display": {
+    "lyrics": "I've made mistakes\nI could have treated you better\nI let you get away\nThere goes my happily ever after\nTell me why, why can't we try and start again?\nThis can't be how our story ends\nYou're more than my girl, you're my best friend\nTell me you remember when\nOooh, I was your man and you were my girl\nIt was you and me against the world\nBaby, ain't nobody gonna love me like the way you do\nAnd you ain't never gonna find a love like mine\nTell me what can I do to make it up to you?\n'Cause what we got's too good to say goodbye, goodbye\nYeah, I'm still in love with you darlin'\nI know you feel the same\nOh, what's the point of both of us being broken hearted?\nI pray it's never too late\nSo tell me, why, why can't we try and start again?\nThis can't be how our story ends\nYou're more than my girl, you're my best friend\nTell me you remember when\nI was your man and you were my girl\nIt was you and me against the world\nBaby, ain't nobody gonna love me like the way you do\nAnd you ain't never gonna find a love like mine\nTell me what can I do to make it up to you?\n'Cause what we got's too good to say goodbye, goodbye\n(Oh, don't you give up)\nGirl won't you listen?\n(Oh, don't you give up)\nIt's you that I'm missin'\n(Oh, don't you give up)\nTake my hand, I wanna go, I wanna go\n(All the way)\nIf we're gonna fight this fight for better days\nI know we're gonna make it\nThis is the chance, let's take it\nBaby, ain't nobody gonna love me like the way you do\n(No, no, no, no)\nAnd you ain't never gonna find a love like mine\n(Oh, tell me)\nTell me what can I do to make it up to you?\n'Cause what we got's too good to say goodbye\n(Come on, come on) goodbye (Oh baby, baby)\nBaby, ain't nobody gonna love me like the way you do\nAnd you ain't never gonna find a love like mine\n(Oh, tell me)\nTell me what can I do to make it up to you?\n'Cause what we got's too good to say goodbye, goodbye",
+    "lyricsJa": [
+      {
+        "en": "I've made mistakes",
+        "ja": "僕は間違いを犯してしまった"
+      },
+      {
+        "en": "I could have treated you better",
+        "ja": "もっと君を大切にできたはずなのに"
+      },
+      {
+        "en": "I let you get away",
+        "ja": "君を逃がしてしまった"
+      },
+      {
+        "en": "There goes my happily ever after",
+        "ja": "僕の幸せな結末が消えていく"
+      },
+      {
+        "en": "Tell me why, why can't we try and start again?",
+        "ja": "なぜだか教えて、どうしてやり直すことができないの？"
+      },
+      {
+        "en": "This can't be how our story ends",
+        "ja": "僕たちの物語がこんな風に終わるはずがない"
+      },
+      {
+        "en": "You're more than my girl, you're my best friend",
+        "ja": "君はただの恋人じゃない、最高の親友なんだ"
+      },
+      {
+        "en": "Tell me you remember when",
+        "ja": "あの頃のことを覚えていると言って"
+      },
+      {
+        "en": "Oooh, I was your man and you were my girl",
+        "ja": "僕が君の恋人で、君が僕の恋人だった時を"
+      },
+      {
+        "en": "It was you and me against the world",
+        "ja": "二人で世界を相手にしていたあの頃を"
+      },
+      {
+        "en": "Baby, ain't nobody gonna love me like the way you do",
+        "ja": "ベイビー、君のように僕を愛してくれる人は他にいない"
+      },
+      {
+        "en": "And you ain't never gonna find a love like mine",
+        "ja": "そして君も、僕のような愛を他で見つけることはないよ"
+      },
+      {
+        "en": "Tell me what can I do to make it up to you?",
+        "ja": "教えて、どうすれば君に償える？"
+      },
+      {
+        "en": "'Cause what we got's too good to say goodbye, goodbye",
+        "ja": "だって、二人の関係はサヨナラするにはあまりに惜しいから"
+      },
+      {
+        "en": "Yeah, I'm still in love with you darlin'",
+        "ja": "ああ、まだ君を愛しているんだ、ダーリン"
+      },
+      {
+        "en": "I know you feel the same",
+        "ja": "君も同じ気持ちだって分かってる"
+      },
+      {
+        "en": "Oh, what's the point of both of us being broken hearted?",
+        "ja": "二人とも傷ついたままでいることに、何の意味があるの？"
+      },
+      {
+        "en": "I pray it's never too late",
+        "ja": "まだ遅すぎないことを祈っているよ"
+      },
+      {
+        "en": "So tell me, why, why can't we try and start again?",
+        "ja": "だから教えて、どうしてやり直すことができないの？"
+      },
+      {
+        "en": "This can't be how our story ends",
+        "ja": "僕たちの物語がこんな風に終わるはずがない"
+      },
+      {
+        "en": "You're more than my girl, you're my best friend",
+        "ja": "君はただの恋人じゃない、最高の親友なんだ"
+      },
+      {
+        "en": "Tell me you remember when",
+        "ja": "あの頃のことを覚えていると言って"
+      },
+      {
+        "en": "I was your man and you were my girl",
+        "ja": "僕が君の恋人で、君が僕の恋人だった時を"
+      },
+      {
+        "en": "It was you and me against the world",
+        "ja": "二人で世界を相手にしていたあの頃を"
+      },
+      {
+        "en": "Baby, ain't nobody gonna love me like the way you do",
+        "ja": "ベイビー、君のように僕を愛してくれる人は他にいない"
+      },
+      {
+        "en": "And you ain't never gonna find a love like mine",
+        "ja": "そして君も、僕のような愛を他で見つけることはないよ"
+      },
+      {
+        "en": "Tell me what can I do to make it up to you?",
+        "ja": "教えて、どうすれば君に償える？"
+      },
+      {
+        "en": "'Cause what we got's too good to say goodbye, goodbye",
+        "ja": "だって、二人の関係はサヨナラするにはあまりに惜しいから"
+      },
+      {
+        "en": "(Oh, don't you give up)",
+        "ja": "あきらめないで"
+      },
+      {
+        "en": "Girl won't you listen?",
+        "ja": "ねえ、聞いてくれるかい？"
+      },
+      {
+        "en": "(Oh, don't you give up)",
+        "ja": "あきらめないで"
+      },
+      {
+        "en": "It's you that I'm missin'",
+        "ja": "僕が恋しくてたまらないのは君なんだ"
+      },
+      {
+        "en": "(Oh, don't you give up)",
+        "ja": "あきらめないで"
+      },
+      {
+        "en": "Take my hand, I wanna go, I wanna go",
+        "ja": "僕の手を取って、一緒に行きたいんだ"
+      },
+      {
+        "en": "(All the way)",
+        "ja": "最後まで"
+      },
+      {
+        "en": "If we're gonna fight this fight for better days",
+        "ja": "より良い日々のために闘うのなら"
+      },
+      {
+        "en": "I know we're gonna make it",
+        "ja": "僕たちならきっとうまくいく"
+      },
+      {
+        "en": "This is the chance, let's take it",
+        "ja": "これがチャンスだ、掴み取ろう"
+      },
+      {
+        "en": "Baby, ain't nobody gonna love me like the way you do",
+        "ja": "ベイビー、君のように僕を愛してくれる人は他にいない"
+      },
+      {
+        "en": "(No, no, no, no)",
+        "ja": "いや、いや"
+      },
+      {
+        "en": "And you ain't never gonna find a love like mine",
+        "ja": "そして君も、僕のような愛を他で見つけることはないよ"
+      },
+      {
+        "en": "(Oh, tell me)",
+        "ja": "ああ、教えて"
+      },
+      {
+        "en": "Tell me what can I do to make it up to you?",
+        "ja": "教えて、どうすれば君に償える？"
+      },
+      {
+        "en": "'Cause what we got's too good to say goodbye",
+        "ja": "だって、二人の関係はサヨナラするにはあまりに惜しいから"
+      },
+      {
+        "en": "(Come on, come on) goodbye (Oh baby, baby)",
+        "ja": "さあ、さよならと言おう、愛しい人"
+      },
+      {
+        "en": "Baby, ain't nobody gonna love me like the way you do",
+        "ja": "ベイビー、君のように僕を愛してくれる人は他にいない"
+      },
+      {
+        "en": "And you ain't never gonna find a love like mine",
+        "ja": "そして君も、僕のような愛を他で見つけることはないよ"
+      },
+      {
+        "en": "(Oh, tell me)",
+        "ja": "ああ、教えて"
+      },
+      {
+        "en": "Tell me what can I do to make it up to you?",
+        "ja": "教えて、どうすれば君に償える？"
+      },
+      {
+        "en": "'Cause what we got's too good to say goodbye, goodbye",
+        "ja": "だって、二人の関係はサヨナラするにはあまりに惜しいから"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "index": 0,
+      "start": 12.12,
+      "end": 16.34
+    },
+    {
+      "index": 1,
+      "start": 16.34,
+      "end": 25.1
+    },
+    {
+      "index": 2,
+      "start": 25.1,
+      "end": 30.78
+    },
+    {
+      "index": 3,
+      "start": 30.78,
+      "end": 35.96
+    },
+    {
+      "index": 4,
+      "start": 35.96,
+      "end": 45
+    },
+    {
+      "index": 5,
+      "start": 45,
+      "end": 50.94
+    },
+    {
+      "index": 6,
+      "start": 50.94,
+      "end": 57.2
+    },
+    {
+      "index": 7,
+      "start": 57.2,
+      "end": 62.24
+    },
+    {
+      "index": 8,
+      "start": 62.24,
+      "end": 65.06
+    },
+    {
+      "index": 9,
+      "start": 65.06,
+      "end": 67.7
+    },
+    {
+      "index": 10,
+      "start": 67.7,
+      "end": 74.48
+    },
+    {
+      "index": 11,
+      "start": 74.48,
+      "end": 79.02
+    },
+    {
+      "index": 12,
+      "start": 79.02,
+      "end": 86.8
+    },
+    {
+      "index": 13,
+      "start": 86.8,
+      "end": 97.48
+    },
+    {
+      "index": 14,
+      "start": 97.48,
+      "end": 103.18
+    },
+    {
+      "index": 15,
+      "start": 103.18,
+      "end": 107
+    },
+    {
+      "index": 16,
+      "start": 107,
+      "end": 115.18
+    },
+    {
+      "index": 17,
+      "start": 115.18,
+      "end": 119.46
+    },
+    {
+      "index": 18,
+      "start": 119.46,
+      "end": 129.1
+    },
+    {
+      "index": 19,
+      "start": 129.1,
+      "end": 135.1
+    },
+    {
+      "index": 20,
+      "start": 135.1,
+      "end": 141.38
+    },
+    {
+      "index": 21,
+      "start": 141.38,
+      "end": 147.02
+    },
+    {
+      "index": 22,
+      "start": 147.02,
+      "end": 149.24
+    },
+    {
+      "index": 23,
+      "start": 149.24,
+      "end": 151.84
+    },
+    {
+      "index": 24,
+      "start": 151.84,
+      "end": 158.74
+    },
+    {
+      "index": 25,
+      "start": 158.74,
+      "end": 163.14
+    },
+    {
+      "index": 26,
+      "start": 163.14,
+      "end": 170.94
+    },
+    {
+      "index": 27,
+      "start": 170.94,
+      "end": 179.58
+    },
+    {
+      "index": 28,
+      "start": 179.58,
+      "end": 182.66
+    },
+    {
+      "index": 29,
+      "start": 182.66,
+      "end": 183.96
+    },
+    {
+      "index": 30,
+      "start": 183.96,
+      "end": 185.28
+    },
+    {
+      "index": 31,
+      "start": 185.28,
+      "end": 187.1
+    },
+    {
+      "index": 32,
+      "start": 187.1,
+      "end": 188.12
+    },
+    {
+      "index": 33,
+      "start": 188.12,
+      "end": 191.91
+    },
+    {
+      "index": 34,
+      "start": 191.91,
+      "end": 193.68
+    },
+    {
+      "index": 35,
+      "start": 193.68,
+      "end": 199.18
+    },
+    {
+      "index": 36,
+      "start": 199.18,
+      "end": 201.82
+    },
+    {
+      "index": 37,
+      "start": 201.82,
+      "end": 205.48
+    },
+    {
+      "index": 38,
+      "start": 205.48,
+      "end": 210.63
+    },
+    {
+      "index": 39,
+      "start": 210.63,
+      "end": 211.12
+    },
+    {
+      "index": 40,
+      "start": 211.12,
+      "end": 213.61
+    },
+    {
+      "index": 41,
+      "start": 213.61,
+      "end": 216.1
+    },
+    {
+      "index": 42,
+      "start": 216.1,
+      "end": 223.86
+    },
+    {
+      "index": 43,
+      "start": 223.86,
+      "end": 228.83
+    },
+    {
+      "index": 44,
+      "start": 228.83,
+      "end": 233.62
+    },
+    {
+      "index": 45,
+      "start": 233.62,
+      "end": 239.02
+    },
+    {
+      "index": 46,
+      "start": 239.02,
+      "end": 241.72
+    },
+    {
+      "index": 47,
+      "start": 241.72,
+      "end": 244.42
+    },
+    {
+      "index": 48,
+      "start": 244.42,
+      "end": 252.08
+    },
+    {
+      "index": 49,
+      "start": 252.08,
+      "end": 260.41
+    }
+  ]
+}

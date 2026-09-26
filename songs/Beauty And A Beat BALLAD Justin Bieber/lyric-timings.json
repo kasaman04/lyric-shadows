@@ -1,0 +1,236 @@
+{
+  "status": "sourced",
+  "source": {
+    "name": "Local audio alignment",
+    "method": "faster-whisper base.en word timestamps aligned to supplied lyrics; first and last repetitions cross-checked in separate recognition passes",
+    "duration": 175.8,
+    "notes": "Opening spoken 'Justin' (0.00–0.80 s) is excluded from displayed lyrics and timing."
+  },
+  "rows": [
+    {
+      "index": 0,
+      "start": 0.8,
+      "end": 2.34
+    },
+    {
+      "index": 1,
+      "start": 3.46,
+      "end": 6.16
+    },
+    {
+      "index": 2,
+      "start": 8.4,
+      "end": 9.82
+    },
+    {
+      "index": 3,
+      "start": 9.82,
+      "end": 14.36
+    },
+    {
+      "index": 4,
+      "start": 16.14,
+      "end": 20.26
+    },
+    {
+      "index": 5,
+      "start": 20.26,
+      "end": 23.98
+    },
+    {
+      "index": 6,
+      "start": 23.98,
+      "end": 26.1
+    },
+    {
+      "index": 7,
+      "start": 26.1,
+      "end": 27.4
+    },
+    {
+      "index": 8,
+      "start": 27.4,
+      "end": 30.5
+    },
+    {
+      "index": 9,
+      "start": 30.5,
+      "end": 35.28
+    },
+    {
+      "index": 10,
+      "start": 35.28,
+      "end": 39.14
+    },
+    {
+      "index": 11,
+      "start": 39.14,
+      "end": 42.54
+    },
+    {
+      "index": 12,
+      "start": 45.42,
+      "end": 50.18
+    },
+    {
+      "index": 13,
+      "start": 51.4,
+      "end": 54.38
+    },
+    {
+      "index": 14,
+      "start": 54.38,
+      "end": 57.88
+    },
+    {
+      "index": 16,
+      "start": 58.7,
+      "end": 60.18
+    },
+    {
+      "index": 17,
+      "start": 61.28,
+      "end": 63.98
+    },
+    {
+      "index": 18,
+      "start": 66.22,
+      "end": 67.66
+    },
+    {
+      "index": 19,
+      "start": 68.76,
+      "end": 72.18
+    },
+    {
+      "index": 20,
+      "start": 73.98,
+      "end": 78.08
+    },
+    {
+      "index": 21,
+      "start": 78.08,
+      "end": 81.8
+    },
+    {
+      "index": 22,
+      "start": 81.8,
+      "end": 84
+    },
+    {
+      "index": 23,
+      "start": 84,
+      "end": 85.24
+    },
+    {
+      "index": 24,
+      "start": 85.8,
+      "end": 88.34
+    },
+    {
+      "index": 25,
+      "start": 88.34,
+      "end": 93.06
+    },
+    {
+      "index": 26,
+      "start": 93.8,
+      "end": 96.96
+    },
+    {
+      "index": 27,
+      "start": 97.8,
+      "end": 100.42
+    },
+    {
+      "index": 28,
+      "start": 103.42,
+      "end": 108.02
+    },
+    {
+      "index": 29,
+      "start": 108.02,
+      "end": 111.88
+    },
+    {
+      "index": 30,
+      "start": 111.88,
+      "end": 115.74
+    },
+    {
+      "index": 32,
+      "start": 115.74,
+      "end": 117.62
+    },
+    {
+      "index": 33,
+      "start": 118.62,
+      "end": 121.46
+    },
+    {
+      "index": 34,
+      "start": 123.56,
+      "end": 125.1
+    },
+    {
+      "index": 35,
+      "start": 126.1,
+      "end": 129.54
+    },
+    {
+      "index": 36,
+      "start": 131.3,
+      "end": 135.5
+    },
+    {
+      "index": 37,
+      "start": 135.5,
+      "end": 139.24
+    },
+    {
+      "index": 38,
+      "start": 139.24,
+      "end": 141.4
+    },
+    {
+      "index": 39,
+      "start": 141.4,
+      "end": 142.68
+    },
+    {
+      "index": 40,
+      "start": 142.68,
+      "end": 145.76
+    },
+    {
+      "index": 41,
+      "start": 145.76,
+      "end": 150.5
+    },
+    {
+      "index": 42,
+      "start": 151.5,
+      "end": 154.36
+    },
+    {
+      "index": 43,
+      "start": 155.5,
+      "end": 157.86
+    },
+    {
+      "index": 44,
+      "start": 160.86,
+      "end": 165.54
+    },
+    {
+      "index": 45,
+      "start": 166.54,
+      "end": 169.7
+    },
+    {
+      "index": 46,
+      "start": 170.54,
+      "end": 173.28
+    }
+  ]
+}

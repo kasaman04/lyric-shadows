@@ -1,0 +1,691 @@
+{
+  "status": "sourced",
+  "source": {
+    "name": "LRCLIB",
+    "id": 11041206,
+    "duration": 197,
+    "url": "https://lrclib.net/api/get/11041206"
+  },
+  "display": {
+    "lyrics": "Oh yeah\nIf I could go back\nJust for a night\nI would see the future\nAnd I'd make it alright\nOh darling if life was a movie\nI'd hit rewind\nImagine if I knew how to turn back time\nImagine if I never messed up\nImagine if we never even broke up\nImagine if I had the power to control the voices in my head\nAnd I could tell them all to shut the fuck up\nImagine if I never told a lie\nImagine if I knew how to always get it right\nImagine if I wasn't such a coward\nAnd I had the courage hidden somewhere in my heart\nTo look you in the eye, yeah, yeah\nIf I could go back (go back)\nJust for a night (yeah)\nI would see the future\nAnd I'd make it alright\nOh darling if life was a movie\nI'd hit rewind (yeah)\nImagine if I knew how to turn back time\nI was thinkin' like\nAye-oh aye-oh aye okay\nLost our love in the mess we made\nAye-oh aye-oh aye okay\nIf tomorrow was yesterday\nI wonder if I saw your face again\nWould you be a stranger or would we be more than friends?\nWould this be the beginning\nOr the long and winding road that takes us all\nThe way around until the very bitter end?\nImagine if we never felt fear\nImagine we were brave enough to never hide the tears\nImagine if I didn't have to worry about everything around me\nAnd my sanity was actually here (yeah)\nI just got so caught up in the moment\nDidn't even realize we were broken\nIf I could go back\nJust for a night\nI would see the future\nAnd I'd make it alright\nOh darling if life was a movie\nI'd hit rewind, yeah\nImagine if I knew how to turn back time\nI was thinkin' like\nAye-oh aye-oh aye okay\nLost our love in the mess we made\nAye-oh aye-oh aye okay\nIf tomorrow was yesterday\nI was thinkin' like\nAye-oh aye-oh aye okay\nLost our love in the mess we made\nAye-oh aye-oh aye okay\nImagine what the world be like\nIf everybody stayed in love\nIf everybody stayed offline\nImagine what the world be like\nImagine what the world be like\nYeah\nImagine what the world be like\nIf everybody stayed in love\nIf everybody stayed offline\nImagine what the world be like\nImagine what the world be like\nBut until then\nIf I could go back\nJust for a night\nI would see the future\nAnd I'd make it alright\nOh darling if life was a movie\nI'd hit rewind\nImagine if I knew how to turn back time",
+    "lyricsJa": [
+      {
+        "en": "Oh yeah",
+        "ja": "Oh, yeah"
+      },
+      {
+        "en": "If I could go back",
+        "ja": "もし過去に戻れるなら"
+      },
+      {
+        "en": "Just for a night",
+        "ja": "たった一晩だけでも"
+      },
+      {
+        "en": "I would see the future",
+        "ja": "未来をのぞいて"
+      },
+      {
+        "en": "And I'd make it alright",
+        "ja": "全てをうまくやり直すのに"
+      },
+      {
+        "en": "Oh darling if life was a movie",
+        "ja": "ねえ、もし人生が映画だったら"
+      },
+      {
+        "en": "I'd hit rewind",
+        "ja": "巻き戻しボタンを押すよ"
+      },
+      {
+        "en": "Imagine if I knew how to turn back time",
+        "ja": "時間を戻す方法を知っていたらと想像してみて"
+      },
+      {
+        "en": "Imagine if I never messed up",
+        "ja": "もし僕が一度も失敗しなかったら"
+      },
+      {
+        "en": "Imagine if we never even broke up",
+        "ja": "もし僕たちが別れさえしなかったら"
+      },
+      {
+        "en": "Imagine if I had the power to control the voices in my head",
+        "ja": "もし頭の中の声をコントロールする力があったなら"
+      },
+      {
+        "en": "And I could tell them all to shut the fuck up",
+        "ja": "そいつら全員に、黙れって言えたのに"
+      },
+      {
+        "en": "Imagine if I never told a lie",
+        "ja": "もし僕が一度も嘘をつかなかったら"
+      },
+      {
+        "en": "Imagine if I knew how to always get it right",
+        "ja": "いつも正解を選ぶ方法を知っていたら"
+      },
+      {
+        "en": "Imagine if I wasn't such a coward",
+        "ja": "僕がこんな臆病じゃなかったら"
+      },
+      {
+        "en": "And I had the courage hidden somewhere in my heart",
+        "ja": "君の目を見つめる勇気が心のどこかに隠されていたなら、yeah, yeah"
+      },
+      {
+        "en": "To look you in the eye, yeah, yeah",
+        "ja": "君の目を見つめるために、そう"
+      },
+      {
+        "en": "If I could go back (go back)",
+        "ja": "もし過去に戻れるなら"
+      },
+      {
+        "en": "Just for a night (yeah)",
+        "ja": "たった一晩だけでも（yeah）"
+      },
+      {
+        "en": "I would see the future",
+        "ja": "未来をのぞいて"
+      },
+      {
+        "en": "And I'd make it alright",
+        "ja": "全てをうまくやり直すのに"
+      },
+      {
+        "en": "Oh darling if life was a movie",
+        "ja": "ねえ、もし人生が映画だったら"
+      },
+      {
+        "en": "I'd hit rewind (yeah)",
+        "ja": "巻き戻しボタンを押すよ（yeah）"
+      },
+      {
+        "en": "Imagine if I knew how to turn back time",
+        "ja": "時間を戻す方法を知っていたらと想像してみて"
+      },
+      {
+        "en": "I was thinkin' like",
+        "ja": "こんな風に考えていたんだ"
+      },
+      {
+        "en": "Aye-oh aye-oh aye okay",
+        "ja": "Aye-oh, aye-oh, aye, okay"
+      },
+      {
+        "en": "Lost our love in the mess we made",
+        "ja": "自分たちが招いた混乱の中で愛を見失ってしまった"
+      },
+      {
+        "en": "Aye-oh aye-oh aye okay",
+        "ja": "Aye-oh, aye-oh, aye, okay"
+      },
+      {
+        "en": "If tomorrow was yesterday",
+        "ja": "もし明日が昨日だったら"
+      },
+      {
+        "en": "I wonder if I saw your face again",
+        "ja": "もしまた君の顔を見たらどうなるかな"
+      },
+      {
+        "en": "Would you be a stranger or would we be more than friends?",
+        "ja": "君は他人のまま？それとも友達以上の関係に戻れる？"
+      },
+      {
+        "en": "Would this be the beginning",
+        "ja": "これが始まりになるのかな"
+      },
+      {
+        "en": "Or the long and winding road that takes us all",
+        "ja": "それとも最悪な結末まで遠回りし続ける、長く険しい道になるのかな"
+      },
+      {
+        "en": "The way around until the very bitter end?",
+        "ja": "苦い結末になるまでの別の道はあったかな？"
+      },
+      {
+        "en": "Imagine if we never felt fear",
+        "ja": "もし僕たちが恐怖を感じなかったら"
+      },
+      {
+        "en": "Imagine we were brave enough to never hide the tears",
+        "ja": "涙を隠さないくらいの勇気があったなら"
+      },
+      {
+        "en": "Imagine if I didn't have to worry about everything around me",
+        "ja": "周りのことなんて何も気にしなくてよかったら"
+      },
+      {
+        "en": "And my sanity was actually here (yeah)",
+        "ja": "ちゃんと正気でいられたなら (yeah)"
+      },
+      {
+        "en": "I just got so caught up in the moment",
+        "ja": "ただ、その場の感情に流されてしまったんだ"
+      },
+      {
+        "en": "Didn't even realize we were broken",
+        "ja": "僕たちが壊れてしまったことに気づきもしなかった"
+      },
+      {
+        "en": "If I could go back",
+        "ja": "もし過去に戻れるなら"
+      },
+      {
+        "en": "Just for a night",
+        "ja": "たった一晩だけでも"
+      },
+      {
+        "en": "I would see the future",
+        "ja": "未来をのぞいて"
+      },
+      {
+        "en": "And I'd make it alright",
+        "ja": "全てをうまくやり直すのに"
+      },
+      {
+        "en": "Oh darling if life was a movie",
+        "ja": "ねえ、もし人生が映画だったら"
+      },
+      {
+        "en": "I'd hit rewind, yeah",
+        "ja": "巻き戻しボタンを押すよ（yeah）"
+      },
+      {
+        "en": "Imagine if I knew how to turn back time",
+        "ja": "時間を戻す方法を知っていたらと想像してみて"
+      },
+      {
+        "en": "I was thinkin' like",
+        "ja": "こんな風に考えていたんだ"
+      },
+      {
+        "en": "Aye-oh aye-oh aye okay",
+        "ja": "Aye-oh, aye-oh, aye, okay"
+      },
+      {
+        "en": "Lost our love in the mess we made",
+        "ja": "自分たちが招いた混乱の中で愛を見失ってしまった"
+      },
+      {
+        "en": "Aye-oh aye-oh aye okay",
+        "ja": "Aye-oh, aye-oh, aye, okay"
+      },
+      {
+        "en": "If tomorrow was yesterday",
+        "ja": "もし明日が昨日だったら"
+      },
+      {
+        "en": "I was thinkin' like",
+        "ja": "こんな風に考えていたんだ"
+      },
+      {
+        "en": "Aye-oh aye-oh aye okay",
+        "ja": "Aye-oh, aye-oh, aye, okay"
+      },
+      {
+        "en": "Lost our love in the mess we made",
+        "ja": "自分たちが招いた混乱の中で愛を見失ってしまった"
+      },
+      {
+        "en": "Aye-oh aye-oh aye okay",
+        "ja": "Aye-oh, aye-oh, aye, okay"
+      },
+      {
+        "en": "Imagine what the world be like",
+        "ja": "世界がどんな風になるか想像してみて"
+      },
+      {
+        "en": "If everybody stayed in love",
+        "ja": "もしも誰もが愛し合い続けていたら"
+      },
+      {
+        "en": "If everybody stayed offline",
+        "ja": "もしもみんながオフラインのままだったら"
+      },
+      {
+        "en": "Imagine what the world be like",
+        "ja": "世界がどんな風になるか想像してみて"
+      },
+      {
+        "en": "Imagine what the world be like",
+        "ja": "世界がどんな風になるか想像してみて"
+      },
+      {
+        "en": "Yeah",
+        "ja": "Oh, yeah"
+      },
+      {
+        "en": "Imagine what the world be like",
+        "ja": "世界がどんな風になるか想像してみて"
+      },
+      {
+        "en": "If everybody stayed in love",
+        "ja": "もしも誰もが愛し合い続けていたら"
+      },
+      {
+        "en": "If everybody stayed offline",
+        "ja": "もしもみんながオフラインのままだったら"
+      },
+      {
+        "en": "Imagine what the world be like",
+        "ja": "世界がどんな風になるか想像してみて"
+      },
+      {
+        "en": "Imagine what the world be like",
+        "ja": "世界がどんな風になるか想像してみて"
+      },
+      {
+        "en": "But until then",
+        "ja": "でも、その時までは"
+      },
+      {
+        "en": "If I could go back",
+        "ja": "もし過去に戻れるなら"
+      },
+      {
+        "en": "Just for a night",
+        "ja": "たった一晩だけでも"
+      },
+      {
+        "en": "I would see the future",
+        "ja": "未来をのぞいて"
+      },
+      {
+        "en": "And I'd make it alright",
+        "ja": "全てをうまくやり直すのに"
+      },
+      {
+        "en": "Oh darling if life was a movie",
+        "ja": "ねえ、もし人生が映画だったら"
+      },
+      {
+        "en": "I'd hit rewind",
+        "ja": "巻き戻しボタンを押すよ"
+      },
+      {
+        "en": "Imagine if I knew how to turn back time",
+        "ja": "時間を戻す方法を知っていたらと想像してみて"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "index": 0,
+      "start": 1.04,
+      "end": 8.23
+    },
+    {
+      "index": 1,
+      "start": 8.23,
+      "end": 11.81
+    },
+    {
+      "index": 2,
+      "start": 11.81,
+      "end": 14.52
+    },
+    {
+      "index": 3,
+      "start": 14.52,
+      "end": 17.26
+    },
+    {
+      "index": 4,
+      "start": 17.26,
+      "end": 19.64
+    },
+    {
+      "index": 5,
+      "start": 19.64,
+      "end": 22.32
+    },
+    {
+      "index": 6,
+      "start": 22.32,
+      "end": 24.83
+    },
+    {
+      "index": 7,
+      "start": 24.83,
+      "end": 30.19
+    },
+    {
+      "index": 8,
+      "start": 30.19,
+      "end": 32.88
+    },
+    {
+      "index": 9,
+      "start": 32.88,
+      "end": 34.96
+    },
+    {
+      "index": 10,
+      "start": 34.96,
+      "end": 38.15
+    },
+    {
+      "index": 11,
+      "start": 38.15,
+      "end": 40.13
+    },
+    {
+      "index": 12,
+      "start": 40.13,
+      "end": 43.37
+    },
+    {
+      "index": 13,
+      "start": 43.37,
+      "end": 45.49
+    },
+    {
+      "index": 14,
+      "start": 45.49,
+      "end": 47.75
+    },
+    {
+      "index": 15,
+      "start": 47.75,
+      "end": 50.05
+    },
+    {
+      "index": 16,
+      "start": 50.05,
+      "end": 51.64
+    },
+    {
+      "index": 17,
+      "start": 51.64,
+      "end": 53.88
+    },
+    {
+      "index": 18,
+      "start": 53.88,
+      "end": 56.15
+    },
+    {
+      "index": 19,
+      "start": 56.15,
+      "end": 58.76
+    },
+    {
+      "index": 20,
+      "start": 58.76,
+      "end": 61.46
+    },
+    {
+      "index": 21,
+      "start": 61.46,
+      "end": 64.3
+    },
+    {
+      "index": 22,
+      "start": 64.3,
+      "end": 66.8
+    },
+    {
+      "index": 23,
+      "start": 66.8,
+      "end": 71.74
+    },
+    {
+      "index": 24,
+      "start": 71.74,
+      "end": 72.76
+    },
+    {
+      "index": 25,
+      "start": 72.76,
+      "end": 75.1
+    },
+    {
+      "index": 26,
+      "start": 75.1,
+      "end": 77.57
+    },
+    {
+      "index": 27,
+      "start": 77.57,
+      "end": 80.04
+    },
+    {
+      "index": 28,
+      "start": 80.04,
+      "end": 82.82
+    },
+    {
+      "index": 29,
+      "start": 82.82,
+      "end": 84.9
+    },
+    {
+      "index": 30,
+      "start": 84.9,
+      "end": 87.5
+    },
+    {
+      "index": 31,
+      "start": 87.5,
+      "end": 88.76
+    },
+    {
+      "index": 32,
+      "start": 88.76,
+      "end": 90.54
+    },
+    {
+      "index": 33,
+      "start": 90.54,
+      "end": 92.71
+    },
+    {
+      "index": 34,
+      "start": 92.71,
+      "end": 95.12
+    },
+    {
+      "index": 35,
+      "start": 95.12,
+      "end": 97.84
+    },
+    {
+      "index": 36,
+      "start": 97.84,
+      "end": 101.05
+    },
+    {
+      "index": 37,
+      "start": 101.05,
+      "end": 103.65
+    },
+    {
+      "index": 38,
+      "start": 103.65,
+      "end": 109.15
+    },
+    {
+      "index": 39,
+      "start": 109.15,
+      "end": 113.99
+    },
+    {
+      "index": 40,
+      "start": 113.99,
+      "end": 116.12
+    },
+    {
+      "index": 41,
+      "start": 116.12,
+      "end": 118.79
+    },
+    {
+      "index": 42,
+      "start": 118.79,
+      "end": 121.3
+    },
+    {
+      "index": 43,
+      "start": 121.3,
+      "end": 124.08
+    },
+    {
+      "index": 44,
+      "start": 124.08,
+      "end": 126.81
+    },
+    {
+      "index": 45,
+      "start": 126.81,
+      "end": 129.65
+    },
+    {
+      "index": 46,
+      "start": 129.65,
+      "end": 134.25
+    },
+    {
+      "index": 47,
+      "start": 134.25,
+      "end": 135.31
+    },
+    {
+      "index": 48,
+      "start": 135.31,
+      "end": 137.57
+    },
+    {
+      "index": 49,
+      "start": 137.57,
+      "end": 140.14
+    },
+    {
+      "index": 50,
+      "start": 140.14,
+      "end": 142.72
+    },
+    {
+      "index": 51,
+      "start": 142.72,
+      "end": 145.05
+    },
+    {
+      "index": 52,
+      "start": 145.05,
+      "end": 145.82
+    },
+    {
+      "index": 53,
+      "start": 145.82,
+      "end": 147.81
+    },
+    {
+      "index": 54,
+      "start": 147.81,
+      "end": 150.5
+    },
+    {
+      "index": 55,
+      "start": 150.5,
+      "end": 155.26
+    },
+    {
+      "index": 56,
+      "start": 155.26,
+      "end": 158.03
+    },
+    {
+      "index": 57,
+      "start": 158.03,
+      "end": 159.93
+    },
+    {
+      "index": 58,
+      "start": 159.93,
+      "end": 162.03
+    },
+    {
+      "index": 59,
+      "start": 162.03,
+      "end": 163.67
+    },
+    {
+      "index": 60,
+      "start": 163.67,
+      "end": 165.98
+    },
+    {
+      "index": 61,
+      "start": 165.98,
+      "end": 166.54
+    },
+    {
+      "index": 62,
+      "start": 166.54,
+      "end": 168.27
+    },
+    {
+      "index": 63,
+      "start": 168.27,
+      "end": 170.18
+    },
+    {
+      "index": 64,
+      "start": 170.18,
+      "end": 172.13
+    },
+    {
+      "index": 65,
+      "start": 172.13,
+      "end": 174
+    },
+    {
+      "index": 66,
+      "start": 174,
+      "end": 176.16
+    },
+    {
+      "index": 67,
+      "start": 176.16,
+      "end": 176.84
+    },
+    {
+      "index": 68,
+      "start": 176.84,
+      "end": 178.68
+    },
+    {
+      "index": 69,
+      "start": 178.68,
+      "end": 181.47
+    },
+    {
+      "index": 70,
+      "start": 181.47,
+      "end": 183.82
+    },
+    {
+      "index": 71,
+      "start": 183.82,
+      "end": 186.65
+    },
+    {
+      "index": 72,
+      "start": 186.65,
+      "end": 189.35
+    },
+    {
+      "index": 73,
+      "start": 189.35,
+      "end": 191.92
+    },
+    {
+      "index": 74,
+      "start": 191.92,
+      "end": 197.74
+    }
+  ]
+}

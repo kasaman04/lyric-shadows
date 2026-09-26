@@ -1,0 +1,502 @@
+{
+  "status": "estimated",
+  "source": {
+    "name": "Local audio alignment",
+    "model": "faster-whisper-base.en + small.en",
+    "audioUploaded": false,
+    "review": "Line starts checked against local word timestamps; uncertain words remain approximate"
+  },
+  "display": {
+    "lyrics": "When somebody loved me\nEverything was beautiful\nEvery hour spent together\nLives within my heart\nAnd when she was sad\nI was there to dry her tears\nAnd when she was happy so was I\nWhen she loved me\nThrough the summer and the fall\nWe had each other that was all\nJust she and I together\nLike it was meant to be\nAnd when she was lonely\nI was there to comfort her\nAnd I knew that she loved me\nWhen somebody loved me\nEverything was beautiful\nEvery hour spent together\nLives within my heart\nAnd when she was sad\nI was there to dry her tears\nAnd when she was happy so was I\nWhen she loved me\nThrough the summer and the fall\nWe had each other that was all\nJust she and I together\nLike it was meant to be\nAnd when she was lonely\nI was there to comfort her\nAnd I knew that she loved me\nSo the years went by\nI stayed the same\nBut she began to drift away\nI was left alone\nStill I waited for the day\nWhen she'd say\nI will always love you\nThrough the summer and the fall\nWe had each other that was all\nJust she and I together\nLike it was meant to be\nAnd when she was lonely\nI was there to comfort her\nAnd I knew that she loved me\nLonely and forgotten\nNever thought she'd look my way\nAnd she smiled at me\nAnd held me\nJust like she used to do\nWhen somebody loved me\nEverything was beautiful\nEvery hour spent together\nLives within my heart\nWhen she loved me...",
+    "lyricsJa": [
+      {
+        "en": "When somebody loved me",
+        "ja": "誰かが私を愛してくれた頃"
+      },
+      {
+        "en": "Everything was beautiful",
+        "ja": "すべてが美しかった"
+      },
+      {
+        "en": "Every hour spent together",
+        "ja": "共に過ごしたすべての時間が"
+      },
+      {
+        "en": "Lives within my heart",
+        "ja": "私の心の中に生きている"
+      },
+      {
+        "en": "And when she was sad",
+        "ja": "彼女が悲しんでいるときは"
+      },
+      {
+        "en": "I was there to dry her tears",
+        "ja": "私がそばで涙を拭いてあげた"
+      },
+      {
+        "en": "And when she was happy so was I",
+        "ja": "彼女が幸せなら 私も幸せだった"
+      },
+      {
+        "en": "When she loved me",
+        "ja": "彼女が私を愛してくれた頃"
+      },
+      {
+        "en": "Through the summer and the fall",
+        "ja": "夏の日も 秋の日も"
+      },
+      {
+        "en": "We had each other that was all",
+        "ja": "お互いがいれば それだけで十分だった"
+      },
+      {
+        "en": "Just she and I together",
+        "ja": "彼女と私 二人きりで"
+      },
+      {
+        "en": "Like it was meant to be",
+        "ja": "まるでそうなる運命だったかのように"
+      },
+      {
+        "en": "And when she was lonely",
+        "ja": "彼女が寂しい思いをしているときは"
+      },
+      {
+        "en": "I was there to comfort her",
+        "ja": "私がそばで慰めてあげた"
+      },
+      {
+        "en": "And I knew that she loved me",
+        "ja": "彼女が私を愛していると分かっていた"
+      },
+      {
+        "en": "When somebody loved me",
+        "ja": "誰かが私を愛してくれた頃"
+      },
+      {
+        "en": "Everything was beautiful",
+        "ja": "すべてが美しかった"
+      },
+      {
+        "en": "Every hour spent together",
+        "ja": "共に過ごしたすべての時間が"
+      },
+      {
+        "en": "Lives within my heart",
+        "ja": "私の心の中に生きている"
+      },
+      {
+        "en": "And when she was sad",
+        "ja": "彼女が悲しんでいるときは"
+      },
+      {
+        "en": "I was there to dry her tears",
+        "ja": "私がそばで涙を拭いてあげた"
+      },
+      {
+        "en": "And when she was happy so was I",
+        "ja": "彼女が幸せなら 私も幸せだった"
+      },
+      {
+        "en": "When she loved me",
+        "ja": "彼女が私を愛してくれた頃"
+      },
+      {
+        "en": "Through the summer and the fall",
+        "ja": "夏の日も 秋の日も"
+      },
+      {
+        "en": "We had each other that was all",
+        "ja": "お互いがいれば それだけで十分だった"
+      },
+      {
+        "en": "Just she and I together",
+        "ja": "彼女と私 二人きりで"
+      },
+      {
+        "en": "Like it was meant to be",
+        "ja": "まるでそうなる運命だったかのように"
+      },
+      {
+        "en": "And when she was lonely",
+        "ja": "彼女が寂しい思いをしているときは"
+      },
+      {
+        "en": "I was there to comfort her",
+        "ja": "私がそばで慰めてあげた"
+      },
+      {
+        "en": "And I knew that she loved me",
+        "ja": "彼女が私を愛していると分かっていた"
+      },
+      {
+        "en": "So the years went by",
+        "ja": "そうして年月が過ぎ"
+      },
+      {
+        "en": "I stayed the same",
+        "ja": "私は変わらないままだったけれど"
+      },
+      {
+        "en": "But she began to drift away",
+        "ja": "彼女の心は離れ始めてしまった"
+      },
+      {
+        "en": "I was left alone",
+        "ja": "私は一人取り残された"
+      },
+      {
+        "en": "Still I waited for the day",
+        "ja": "それでも あの日を待ち続けた"
+      },
+      {
+        "en": "When she'd say",
+        "ja": "彼女がこう言ってくれる日を"
+      },
+      {
+        "en": "I will always love you",
+        "ja": "「いつまでもあなたを愛している」と"
+      },
+      {
+        "en": "Through the summer and the fall",
+        "ja": "夏の日も 秋の日も"
+      },
+      {
+        "en": "We had each other that was all",
+        "ja": "お互いがいれば それだけで十分だった"
+      },
+      {
+        "en": "Just she and I together",
+        "ja": "彼女と私 二人きりで"
+      },
+      {
+        "en": "Like it was meant to be",
+        "ja": "まるでそうなる運命だったかのように"
+      },
+      {
+        "en": "And when she was lonely",
+        "ja": "彼女が寂しい思いをしているときは"
+      },
+      {
+        "en": "I was there to comfort her",
+        "ja": "私がそばで慰めてあげた"
+      },
+      {
+        "en": "And I knew that she loved me",
+        "ja": "彼女が私を愛していると分かっていた"
+      },
+      {
+        "en": "Lonely and forgotten",
+        "ja": "孤独で 忘れ去られて"
+      },
+      {
+        "en": "Never thought she'd look my way",
+        "ja": "彼女がまた私を見てくれるなんて思いもしなかった"
+      },
+      {
+        "en": "And she smiled at me",
+        "ja": "それでも 彼女は私に微笑みかけ"
+      },
+      {
+        "en": "And held me",
+        "ja": "私を抱きしめてくれた"
+      },
+      {
+        "en": "Just like she used to do",
+        "ja": "昔と同じように"
+      },
+      {
+        "en": "When somebody loved me",
+        "ja": "誰かが私を愛してくれた頃"
+      },
+      {
+        "en": "Everything was beautiful",
+        "ja": "すべてが美しかった"
+      },
+      {
+        "en": "Every hour spent together",
+        "ja": "共に過ごしたすべての時間が"
+      },
+      {
+        "en": "Lives within my heart",
+        "ja": "私の心の中に生きている"
+      },
+      {
+        "en": "When she loved me...",
+        "ja": "彼女が私を愛してくれた頃"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "index": 0,
+      "start": 19.34,
+      "end": 22.92
+    },
+    {
+      "index": 1,
+      "start": 22.92,
+      "end": 24.88
+    },
+    {
+      "index": 2,
+      "start": 24.88,
+      "end": 29.02
+    },
+    {
+      "index": 3,
+      "start": 29.02,
+      "end": 30.3
+    },
+    {
+      "index": 4,
+      "start": 30.3,
+      "end": 33.12
+    },
+    {
+      "index": 5,
+      "start": 33.12,
+      "end": 35.32
+    },
+    {
+      "index": 6,
+      "start": 35.32,
+      "end": 38.4
+    },
+    {
+      "index": 7,
+      "start": 38.4,
+      "end": 40.82
+    },
+    {
+      "index": 8,
+      "start": 40.82,
+      "end": 44.98
+    },
+    {
+      "index": 9,
+      "start": 44.98,
+      "end": 49.92
+    },
+    {
+      "index": 10,
+      "start": 49.92,
+      "end": 52.72
+    },
+    {
+      "index": 11,
+      "start": 52.72,
+      "end": 58.8
+    },
+    {
+      "index": 12,
+      "start": 58.8,
+      "end": 63.54
+    },
+    {
+      "index": 13,
+      "start": 63.54,
+      "end": 66.02
+    },
+    {
+      "index": 14,
+      "start": 66.02,
+      "end": 71.46
+    },
+    {
+      "index": 15,
+      "start": 71.46,
+      "end": 74.36
+    },
+    {
+      "index": 16,
+      "start": 74.36,
+      "end": 77.76
+    },
+    {
+      "index": 17,
+      "start": 77.76,
+      "end": 80.36
+    },
+    {
+      "index": 18,
+      "start": 80.36,
+      "end": 81.44
+    },
+    {
+      "index": 19,
+      "start": 81.44,
+      "end": 84.66
+    },
+    {
+      "index": 20,
+      "start": 84.66,
+      "end": 86.68
+    },
+    {
+      "index": 21,
+      "start": 86.68,
+      "end": 89.7
+    },
+    {
+      "index": 22,
+      "start": 89.7,
+      "end": 91.94
+    },
+    {
+      "index": 23,
+      "start": 91.94,
+      "end": 97.4
+    },
+    {
+      "index": 24,
+      "start": 97.4,
+      "end": 100.9
+    },
+    {
+      "index": 25,
+      "start": 100.9,
+      "end": 103.84
+    },
+    {
+      "index": 26,
+      "start": 103.84,
+      "end": 110.6
+    },
+    {
+      "index": 27,
+      "start": 110.6,
+      "end": 114.94
+    },
+    {
+      "index": 28,
+      "start": 114.94,
+      "end": 117.08
+    },
+    {
+      "index": 29,
+      "start": 117.08,
+      "end": 125.22
+    },
+    {
+      "index": 30,
+      "start": 125.22,
+      "end": 127.58
+    },
+    {
+      "index": 31,
+      "start": 127.58,
+      "end": 130.22
+    },
+    {
+      "index": 32,
+      "start": 130.22,
+      "end": 132.42
+    },
+    {
+      "index": 33,
+      "start": 132.42,
+      "end": 135.32
+    },
+    {
+      "index": 34,
+      "start": 135.32,
+      "end": 137.78
+    },
+    {
+      "index": 35,
+      "start": 137.78,
+      "end": 140.34
+    },
+    {
+      "index": 36,
+      "start": 140.34,
+      "end": 145.14
+    },
+    {
+      "index": 37,
+      "start": 145.14,
+      "end": 149.48
+    },
+    {
+      "index": 38,
+      "start": 149.48,
+      "end": 154.94
+    },
+    {
+      "index": 39,
+      "start": 154.94,
+      "end": 157.52
+    },
+    {
+      "index": 40,
+      "start": 157.52,
+      "end": 164.86
+    },
+    {
+      "index": 41,
+      "start": 164.86,
+      "end": 167.96
+    },
+    {
+      "index": 42,
+      "start": 167.96,
+      "end": 170.68
+    },
+    {
+      "index": 43,
+      "start": 170.68,
+      "end": 176.82
+    },
+    {
+      "index": 44,
+      "start": 176.82,
+      "end": 178.66
+    },
+    {
+      "index": 45,
+      "start": 178.66,
+      "end": 181.6
+    },
+    {
+      "index": 46,
+      "start": 181.6,
+      "end": 183.48
+    },
+    {
+      "index": 47,
+      "start": 183.48,
+      "end": 183.98
+    },
+    {
+      "index": 48,
+      "start": 183.98,
+      "end": 185.98
+    },
+    {
+      "index": 49,
+      "start": 185.98,
+      "end": 188.92
+    },
+    {
+      "index": 50,
+      "start": 188.92,
+      "end": 190.96
+    },
+    {
+      "index": 51,
+      "start": 190.96,
+      "end": 195.1
+    },
+    {
+      "index": 52,
+      "start": 195.1,
+      "end": 198.42
+    },
+    {
+      "index": 53,
+      "start": 198.42,
+      "end": 202.84
+    }
+  ]
+}

@@ -1,0 +1,502 @@
+{
+  "status": "sourced",
+  "source": {
+    "name": "LRCLIB",
+    "id": 34861233,
+    "duration": 303,
+    "url": "https://lrclib.net/api/get/34861233"
+  },
+  "display": {
+    "lyrics": "I'm so glad you made time to see me\nHow's life, tell me how's your family\nI haven't seen them in a while\nYou've been good, busier then ever\nWe small talk, work and the weather\nYour guard is up and I know why\n'Cause the last time you saw me\nIs still burned in the back of your mind\nYou gave me roses and I left them there to die\nSo this is me swallowing my pride\nStanding in front of you saying I'm sorry for that night\nAnd I'd go back to December all the time\nIt turns out freedom ain't nothing but missing you\nWishing I'd realized what I had when you were mine\nI'd go back to December\nTurn around and make it all right\nI'd go back to December all the time\nThese days I haven't been sleeping\nStaying up playing back myself leaving\nWhen your birthday passed and I didn't call\nAnd I think about summer, all the beautiful times\nI watched you laughing from the passenger side and\nRealized I loved you in the fall\nAnd then the cold came, the dark days\nWhen fear crept into my mind\nYou gave me all your love and all I gave you was goodbye\nSo this is me swallowing my pride standing in front of\nYou saying I'm sorry for that night\nAnd I'd go back to December all the time\nIt turns out freedom ain't nothing but missing yoU\nWishing I'd realized what I had when you were mine\nI'd go back to December\nTurn around and change my own mind\nI'd go back to December all the time\nI miss your tan skin, your sweet smile\nSo good to me, so right\nAnd how you held me in your arms that September night\nThe first time you ever saw me cry\nMaybe this is wishful thinking\nProbably mindless dreaming\nIf we loved again I swear I'd love you right\nI'd go back in time and change it but I can't\nSo if the chain is on your door, I understand\nBut this is me swallowing my pride standing in front of\nYou saying I'm sorry for that night\nAnd I'd go back to December\nIt turns out freedom ain't nothing but missing you\nWishing I'd realized what I had when you were mine\nI'd go back to December\nTurn around and make it alright\nI'd go back to December\nTurn around and change my own mind\nI'd go back to December all the time\nAll the time",
+    "lyricsJa": [
+      {
+        "en": "I'm so glad you made time to see me",
+        "ja": "会う時間を作ってくれて、本当にうれしい"
+      },
+      {
+        "en": "How's life, tell me how's your family",
+        "ja": "最近どう？家族は元気？"
+      },
+      {
+        "en": "I haven't seen them in a while",
+        "ja": "しばらく会っていないよね"
+      },
+      {
+        "en": "You've been good, busier then ever",
+        "ja": "あなたは元気そうで、前よりずっと忙しそう"
+      },
+      {
+        "en": "We small talk, work and the weather",
+        "ja": "仕事や天気のことを、当たり障りなく話す"
+      },
+      {
+        "en": "Your guard is up and I know why",
+        "ja": "あなたが警戒しているのも、理由はわかってる"
+      },
+      {
+        "en": "'Cause the last time you saw me",
+        "ja": "だって、最後に私に会ったときのことが"
+      },
+      {
+        "en": "Is still burned in the back of your mind",
+        "ja": "まだ心の奥に焼きついているから"
+      },
+      {
+        "en": "You gave me roses and I left them there to die",
+        "ja": "あなたがくれたバラを、私はそのまま枯らしてしまった"
+      },
+      {
+        "en": "So this is me swallowing my pride",
+        "ja": "だからこれは、私がプライドを飲み込んでいるということ"
+      },
+      {
+        "en": "Standing in front of you saying I'm sorry for that night",
+        "ja": "あなたの前に立って、「あの夜はごめん」と言っている"
+      },
+      {
+        "en": "And I'd go back to December all the time",
+        "ja": "私はいつも、あの12月に戻ってしまう"
+      },
+      {
+        "en": "It turns out freedom ain't nothing but missing you",
+        "ja": "自由なんて、結局あなたを恋しく思うだけだった"
+      },
+      {
+        "en": "Wishing I'd realized what I had when you were mine",
+        "ja": "あなたが私のものだったとき、その大切さに気づけていたらと願ってる"
+      },
+      {
+        "en": "I'd go back to December",
+        "ja": "私は12月に戻ってしまう"
+      },
+      {
+        "en": "Turn around and make it all right",
+        "ja": "振り向いて、すべてを元どおりにしたい"
+      },
+      {
+        "en": "I'd go back to December all the time",
+        "ja": "私はいつも、あの12月に戻ってしまう"
+      },
+      {
+        "en": "These days I haven't been sleeping",
+        "ja": "最近、眠れていない"
+      },
+      {
+        "en": "Staying up playing back myself leaving",
+        "ja": "夜更かしして、自分が去っていった場面を何度も思い返している"
+      },
+      {
+        "en": "When your birthday passed and I didn't call",
+        "ja": "あなたの誕生日が過ぎても、電話しなかったことも"
+      },
+      {
+        "en": "And I think about summer, all the beautiful times",
+        "ja": "それから夏のことを思い出す、あの美しかった時間のすべてを"
+      },
+      {
+        "en": "I watched you laughing from the passenger side and",
+        "ja": "助手席から、笑っているあなたを見ていた"
+      },
+      {
+        "en": "Realized I loved you in the fall",
+        "ja": "そして秋になって、あなたを愛していたんだと気づいた"
+      },
+      {
+        "en": "And then the cold came, the dark days",
+        "ja": "それから寒さが来て、暗い日々が訪れた"
+      },
+      {
+        "en": "When fear crept into my mind",
+        "ja": "不安が私の心に忍び込んできた"
+      },
+      {
+        "en": "You gave me all your love and all I gave you was goodbye",
+        "ja": "あなたは愛を全部くれたのに、私が返したのは別れだけだった"
+      },
+      {
+        "en": "So this is me swallowing my pride standing in front of",
+        "ja": "だからこれは、私がプライドを飲み込んでいるということ"
+      },
+      {
+        "en": "You saying I'm sorry for that night",
+        "ja": "あなたの前に立って、「あの夜はごめん」と言っている"
+      },
+      {
+        "en": "And I'd go back to December all the time",
+        "ja": "私はいつも、あの12月に戻ってしまう"
+      },
+      {
+        "en": "It turns out freedom ain't nothing but missing yoU",
+        "ja": "自由なんて、結局あなたを恋しく思うだけだった"
+      },
+      {
+        "en": "Wishing I'd realized what I had when you were mine",
+        "ja": "あなたが私のものだったとき、その大切さに気づけていたらと願ってる"
+      },
+      {
+        "en": "I'd go back to December",
+        "ja": "私は12月に戻ってしまう"
+      },
+      {
+        "en": "Turn around and change my own mind",
+        "ja": "12月に戻って、引き返して、自分の気持ちを変えたい"
+      },
+      {
+        "en": "I'd go back to December all the time",
+        "ja": "私はいつも、あの12月に戻ってしまう"
+      },
+      {
+        "en": "I miss your tan skin, your sweet smile",
+        "ja": "日焼けした肌も、優しい笑顔も恋しい"
+      },
+      {
+        "en": "So good to me, so right",
+        "ja": "私にとても優しくて、あまりにもぴったりだった"
+      },
+      {
+        "en": "And how you held me in your arms that September night",
+        "ja": "あの9月の夜、あなたが私を腕に抱きしめてくれたことも"
+      },
+      {
+        "en": "The first time you ever saw me cry",
+        "ja": "あなたが初めて私の涙を見たあの夜"
+      },
+      {
+        "en": "Maybe this is wishful thinking",
+        "ja": "たぶんこれは、都合のいい願いかもしれない"
+      },
+      {
+        "en": "Probably mindless dreaming",
+        "ja": "きっと何も考えていない夢物語なのかもしれない"
+      },
+      {
+        "en": "If we loved again I swear I'd love you right",
+        "ja": "でももしまた愛し合えたなら、今度はちゃんと愛すると誓う"
+      },
+      {
+        "en": "I'd go back in time and change it but I can't",
+        "ja": "時間を戻して変えたいけど、それはできない"
+      },
+      {
+        "en": "So if the chain is on your door, I understand",
+        "ja": "だから、もしあなたが扉にチェーンをかけていても、私はわかる"
+      },
+      {
+        "en": "But this is me swallowing my pride standing in front of",
+        "ja": "それでもこれは、私がプライドを飲み込んでいるということ"
+      },
+      {
+        "en": "You saying I'm sorry for that night",
+        "ja": "あなたの前に立って、「あの夜はごめん」と言っている"
+      },
+      {
+        "en": "And I'd go back to December",
+        "ja": "私は12月に戻ってしまう"
+      },
+      {
+        "en": "It turns out freedom ain't nothing but missing you",
+        "ja": "自由なんて、結局あなたを恋しく思うだけだった"
+      },
+      {
+        "en": "Wishing I'd realized what I had when you were mine",
+        "ja": "あなたが私のものだったとき、その大切さに気づけていたらと願ってる"
+      },
+      {
+        "en": "I'd go back to December",
+        "ja": "私は12月に戻ってしまう"
+      },
+      {
+        "en": "Turn around and make it alright",
+        "ja": "12月に戻って、引き返して、ちゃんとやり直したい"
+      },
+      {
+        "en": "I'd go back to December",
+        "ja": "私は12月に戻ってしまう"
+      },
+      {
+        "en": "Turn around and change my own mind",
+        "ja": "12月に戻って、引き返して、自分の気持ちを変えたい"
+      },
+      {
+        "en": "I'd go back to December all the time",
+        "ja": "私はいつも、あの12月に戻ってしまう"
+      },
+      {
+        "en": "All the time",
+        "ja": "いつも"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "index": 0,
+      "start": 13.99,
+      "end": 17.69
+    },
+    {
+      "index": 1,
+      "start": 17.69,
+      "end": 21.03
+    },
+    {
+      "index": 2,
+      "start": 21.03,
+      "end": 27.3
+    },
+    {
+      "index": 3,
+      "start": 27.3,
+      "end": 30.86
+    },
+    {
+      "index": 4,
+      "start": 30.86,
+      "end": 34.4
+    },
+    {
+      "index": 5,
+      "start": 34.4,
+      "end": 40.97
+    },
+    {
+      "index": 6,
+      "start": 40.97,
+      "end": 43.79
+    },
+    {
+      "index": 7,
+      "start": 43.79,
+      "end": 46.84
+    },
+    {
+      "index": 8,
+      "start": 46.84,
+      "end": 54.11
+    },
+    {
+      "index": 9,
+      "start": 54.11,
+      "end": 56.92
+    },
+    {
+      "index": 10,
+      "start": 56.92,
+      "end": 63.4
+    },
+    {
+      "index": 11,
+      "start": 63.4,
+      "end": 67.51
+    },
+    {
+      "index": 12,
+      "start": 67.51,
+      "end": 71.22
+    },
+    {
+      "index": 13,
+      "start": 71.22,
+      "end": 76.41
+    },
+    {
+      "index": 14,
+      "start": 76.41,
+      "end": 79.33
+    },
+    {
+      "index": 15,
+      "start": 79.33,
+      "end": 84.45
+    },
+    {
+      "index": 16,
+      "start": 84.45,
+      "end": 89.75
+    },
+    {
+      "index": 17,
+      "start": 101.7,
+      "end": 105.12
+    },
+    {
+      "index": 18,
+      "start": 105.12,
+      "end": 108.62
+    },
+    {
+      "index": 19,
+      "start": 108.62,
+      "end": 114.65
+    },
+    {
+      "index": 20,
+      "start": 114.65,
+      "end": 118.12
+    },
+    {
+      "index": 21,
+      "start": 118.12,
+      "end": 122.16
+    },
+    {
+      "index": 22,
+      "start": 122.16,
+      "end": 128.7
+    },
+    {
+      "index": 23,
+      "start": 128.7,
+      "end": 131.69
+    },
+    {
+      "index": 24,
+      "start": 131.69,
+      "end": 134.86
+    },
+    {
+      "index": 25,
+      "start": 134.86,
+      "end": 141.58
+    },
+    {
+      "index": 26,
+      "start": 141.58,
+      "end": 145.99
+    },
+    {
+      "index": 27,
+      "start": 145.99,
+      "end": 151.16
+    },
+    {
+      "index": 28,
+      "start": 151.16,
+      "end": 155.54
+    },
+    {
+      "index": 29,
+      "start": 155.54,
+      "end": 159.25
+    },
+    {
+      "index": 30,
+      "start": 159.25,
+      "end": 164.74
+    },
+    {
+      "index": 31,
+      "start": 164.74,
+      "end": 167.55
+    },
+    {
+      "index": 32,
+      "start": 167.55,
+      "end": 172.49
+    },
+    {
+      "index": 33,
+      "start": 172.49,
+      "end": 177.61
+    },
+    {
+      "index": 34,
+      "start": 188.24,
+      "end": 192.02
+    },
+    {
+      "index": 35,
+      "start": 192.02,
+      "end": 195.87
+    },
+    {
+      "index": 36,
+      "start": 195.87,
+      "end": 199.92
+    },
+    {
+      "index": 37,
+      "start": 199.92,
+      "end": 203.82
+    },
+    {
+      "index": 38,
+      "start": 203.82,
+      "end": 206.94
+    },
+    {
+      "index": 39,
+      "start": 206.94,
+      "end": 210.06
+    },
+    {
+      "index": 40,
+      "start": 210.06,
+      "end": 215.87
+    },
+    {
+      "index": 41,
+      "start": 215.87,
+      "end": 222.69
+    },
+    {
+      "index": 42,
+      "start": 222.69,
+      "end": 229.88
+    },
+    {
+      "index": 43,
+      "start": 229.88,
+      "end": 234.93
+    },
+    {
+      "index": 44,
+      "start": 234.93,
+      "end": 239.42
+    },
+    {
+      "index": 45,
+      "start": 239.42,
+      "end": 243.38
+    },
+    {
+      "index": 46,
+      "start": 243.38,
+      "end": 245.79
+    },
+    {
+      "index": 47,
+      "start": 245.79,
+      "end": 253.2
+    },
+    {
+      "index": 48,
+      "start": 253.2,
+      "end": 255.11
+    },
+    {
+      "index": 49,
+      "start": 255.11,
+      "end": 259.96
+    },
+    {
+      "index": 50,
+      "start": 259.96,
+      "end": 262.94
+    },
+    {
+      "index": 51,
+      "start": 262.94,
+      "end": 266.27
+    },
+    {
+      "index": 52,
+      "start": 266.27,
+      "end": 271.86
+    },
+    {
+      "index": 53,
+      "start": 275.93,
+      "end": 281.19
+    }
+  ]
+}

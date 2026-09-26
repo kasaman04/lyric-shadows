@@ -8,12 +8,24 @@
   "speakerA": {
     "name": "Sarah",
     "type": "女性",
-    "voice": "cNYrMw9glwJZXR8RwbuR"
+    "voice": "Xb7hH8MSUJpSbSDYk0k2",
+    "voiceProfile": "alice",
+    "gender": "female",
+    "age": "middle_aged",
+    "accent": "british",
+    "tone": "professional",
+    "voiceName": "Alice"
   },
   "speakerB": {
     "name": "David",
     "type": "男性",
-    "voice": "CfDbY7v8tDkTvB9rNcUw"
+    "voice": "JBFqnCBsd6RMkjVDRZzb",
+    "voiceProfile": "george",
+    "gender": "male",
+    "age": "middle_aged",
+    "accent": "british",
+    "tone": "warm",
+    "voiceName": "George"
   },
   "videoId": "3-_RLSFePJI",
   "thumbnailUrl": "https://img.youtube.com/vi/3-_RLSFePJI/hqdefault.jpg",
@@ -205,12 +217,12 @@
         {
           "text": "David, I can't do this anymore.",
           "displayHtml": "David, I can't do this anymore.",
-          "audio": "/songs/I'm%20Not%20The%20Only%20One%20Sam%20Smith/0_0.mp3"
+          "audio": "/songs/I'm%20Not%20The%20Only%20One%20Sam%20Smith/conversation-audio/bf23b29a78fb5931/0-0.mp3"
         },
         {
           "text": "For months on end, I've had my doubts about where you've been.",
           "displayHtml": "<span class=\"lyric-phrase\">For months on end</span>, I've had my <span class=\"lyric-word\">doubts</span> about where you've been.",
-          "audio": "/songs/I'm%20Not%20The%20Only%20One%20Sam%20Smith/0_1.mp3"
+          "audio": "/songs/I'm%20Not%20The%20Only%20One%20Sam%20Smith/conversation-audio/bf23b29a78fb5931/0-1.mp3"
         }
       ],
       "japanese": "デイビッド、もう無理よ。ここ何ヶ月も、あなたがどこで何をしていたのかずっと疑ってたの。"
@@ -223,12 +235,12 @@
         {
           "text": "What are you talking about?",
           "displayHtml": "What are you talking about?",
-          "audio": "/songs/I'm%20Not%20The%20Only%20One%20Sam%20Smith/1_0.mp3"
+          "audio": "/songs/I'm%20Not%20The%20Only%20One%20Sam%20Smith/conversation-audio/bf23b29a78fb5931/1-0.mp3"
         },
         {
           "text": "Honestly, you're acting crazy right now.",
           "displayHtml": "Honestly, you're <span class=\"lyric-phrase\">acting crazy</span> right now.",
-          "audio": "/songs/I'm%20Not%20The%20Only%20One%20Sam%20Smith/1_1.mp3"
+          "audio": "/songs/I'm%20Not%20The%20Only%20One%20Sam%20Smith/conversation-audio/bf23b29a78fb5931/1-1.mp3"
         }
       ],
       "japanese": "何を言ってるんだ？正直言って、今の君はちょっとどうかしてるよ。"
@@ -241,12 +253,12 @@
         {
           "text": "Don't say I'm crazy just because you think I don't know what you've done.",
           "displayHtml": "Don't <span class=\"lyric-phrase\">say I'm crazy</span> just because you think <span class=\"lyric-word\">I don't know</span> what you've done.",
-          "audio": "/songs/I'm%20Not%20The%20Only%20One%20Sam%20Smith/2_0.mp3"
+          "audio": "/songs/I'm%20Not%20The%20Only%20One%20Sam%20Smith/conversation-audio/bf23b29a78fb5931/2-0.mp3"
         },
         {
           "text": "You've been so emotionally unavailable lately.",
           "displayHtml": "You've been so emotionally <span class=\"lyric-word\">unavailable</span> lately.",
-          "audio": "/songs/I'm%20Not%20The%20Only%20One%20Sam%20Smith/2_1.mp3"
+          "audio": "/songs/I'm%20Not%20The%20Only%20One%20Sam%20Smith/conversation-audio/bf23b29a78fb5931/2-1.mp3"
         }
       ],
       "japanese": "私が何も知らないと思ってるからって、おかしい扱いしないで。最近のあなたは明らかに心がここにあらずだったわ。"
@@ -259,12 +271,12 @@
         {
           "text": "I've just been stressed with work.",
           "displayHtml": "I've just been stressed with work.",
-          "audio": "/songs/I'm%20Not%20The%20Only%20One%20Sam%20Smith/3_0.mp3"
+          "audio": "/songs/I'm%20Not%20The%20Only%20One%20Sam%20Smith/conversation-audio/bf23b29a78fb5931/3-0.mp3"
         },
         {
           "text": "Look, baby, let’s just calm down and talk.",
           "displayHtml": "Look, <span class=\"lyric-word\">baby</span>, let’s just calm down and talk.",
-          "audio": "/songs/I'm%20Not%20The%20Only%20One%20Sam%20Smith/3_1.mp3"
+          "audio": "/songs/I'm%20Not%20The%20Only%20One%20Sam%20Smith/conversation-audio/bf23b29a78fb5931/3-1.mp3"
         }
       ],
       "japanese": "仕事でストレスが溜まってただけだよ。なあベイビー、落ち着いて話そう。"
@@ -277,12 +289,12 @@
         {
           "text": "Don't call me baby!",
           "displayHtml": "Don't <span class=\"lyric-phrase\">call me baby</span>!",
-          "audio": "/songs/I'm%20Not%20The%20Only%20One%20Sam%20Smith/4_0.mp3"
+          "audio": "/songs/I'm%20Not%20The%20Only%20One%20Sam%20Smith/conversation-audio/bf23b29a78fb5931/4-0.mp3"
         },
         {
           "text": "It hurts because I know I'm not the only one you're saying that to anymore.",
           "displayHtml": "It hurts because I know <span class=\"lyric-word\">I'm not the only one</span> you're saying that to anymore.",
-          "audio": "/songs/I'm%20Not%20The%20Only%20One%20Sam%20Smith/4_1.mp3"
+          "audio": "/songs/I'm%20Not%20The%20Only%20One%20Sam%20Smith/conversation-audio/bf23b29a78fb5931/4-1.mp3"
         }
       ],
       "japanese": "ベイビーなんて呼ばないで！他の誰かにもそう言ってるんでしょう。私だけじゃないって分かってるんだから。"
@@ -295,12 +307,12 @@
         {
           "text": "That's not true!",
           "displayHtml": "That's not true!",
-          "audio": "/songs/I'm%20Not%20The%20Only%20One%20Sam%20Smith/5_0.mp3"
+          "audio": "/songs/I'm%20Not%20The%20Only%20One%20Sam%20Smith/conversation-audio/bf23b29a78fb5931/5-0.mp3"
         },
         {
           "text": "You know I've loved you for years.",
           "displayHtml": "You know I've <span class=\"lyric-phrase\">loved you for years</span>.",
-          "audio": "/songs/I'm%20Not%20The%20Only%20One%20Sam%20Smith/5_1.mp3"
+          "audio": "/songs/I'm%20Not%20The%20Only%20One%20Sam%20Smith/conversation-audio/bf23b29a78fb5931/5-1.mp3"
         }
       ],
       "japanese": "そんなの嘘だ！俺が何年も君を愛してきたことは分かってるだろ。"
@@ -313,12 +325,12 @@
         {
           "text": "Then why are you tearing us apart with all the lying?",
           "displayHtml": "Then why are you <span class=\"lyric-phrase\">tearing us apart</span> with all the <span class=\"lyric-word\">lying</span>?",
-          "audio": "/songs/I'm%20Not%20The%20Only%20One%20Sam%20Smith/6_0.mp3"
+          "audio": "/songs/I'm%20Not%20The%20Only%20One%20Sam%20Smith/conversation-audio/bf23b29a78fb5931/6-0.mp3"
         },
         {
           "text": "I guess I was just not enough for you.",
           "displayHtml": "I guess I was just <span class=\"lyric-word\">not enough</span> for you.",
-          "audio": "/songs/I'm%20Not%20The%20Only%20One%20Sam%20Smith/6_1.mp3"
+          "audio": "/songs/I'm%20Not%20The%20Only%20One%20Sam%20Smith/conversation-audio/bf23b29a78fb5931/6-1.mp3"
         }
       ],
       "japanese": "じゃあどうして嘘を重ねて私たちをバラバラにするの？結局、私じゃ足りなかったのね。"
@@ -331,11 +343,12 @@
         {
           "text": "I never wanted to let you down, but if you don't trust me anymore, we're over.",
           "displayHtml": "I never wanted to <span class=\"lyric-phrase\">let you down</span>, but if you don't trust me anymore, we're over.",
-          "audio": "/songs/I'm%20Not%20The%20Only%20One%20Sam%20Smith/7_0.mp3"
+          "audio": "/songs/I'm%20Not%20The%20Only%20One%20Sam%20Smith/conversation-audio/bf23b29a78fb5931/7-0.mp3"
         }
       ],
       "japanese": "君を裏切るつもりはなかった。でも、もう俺を信じられないなら、終わりにしよう。"
     }
   ],
-  "createdAt": "2026-03-30T16:49:31.013Z"
+  "createdAt": "2026-03-30T16:49:31.013Z",
+  "conversationAudioStatus": "ready"
 }

@@ -8,12 +8,24 @@
   "speakerA": {
     "name": "Ren",
     "type": "男性",
-    "voice": "CfDbY7v8tDkTvB9rNcUw"
+    "voice": "UgBBYS2sOqTuMpoF3BR0",
+    "voiceProfile": "mark",
+    "gender": "male",
+    "age": "young",
+    "accent": "american",
+    "tone": "casual",
+    "voiceName": "Mark"
   },
   "speakerB": {
     "name": "Mia",
     "type": "女性",
-    "voice": "cNYrMw9glwJZXR8RwbuR"
+    "voice": "FGY2WhTYpPnrIDTdsKH5",
+    "voiceProfile": "laura",
+    "gender": "female",
+    "age": "young",
+    "accent": "american",
+    "tone": "casual",
+    "voiceName": "Laura"
   },
   "videoId": "4HLumkaPcCI",
   "thumbnailUrl": "/songs/drunk%20keshi/thumbnail.jpg",
@@ -201,12 +213,12 @@
         {
           "text": "Hey, Mia...",
           "displayHtml": "Hey, Mia...",
-          "audio": "/songs/drunk%20keshi/0_0.mp3"
+          "audio": "/songs/drunk%20keshi/conversation-audio/181561c823b2a7e1/0-0.mp3"
         },
         {
           "text": "It's been a while since we last spoke.",
           "displayHtml": "<span class=\"lyric-phrase\">It's been a while since we last spoke</span>.",
-          "audio": "/songs/drunk%20keshi/0_1.mp3"
+          "audio": "/songs/drunk%20keshi/conversation-audio/181561c823b2a7e1/0-1.mp3"
         }
       ],
       "japanese": "ねえ、Mia……最後に話してから、ずいぶん経ったね。"
@@ -219,17 +231,17 @@
         {
           "text": "Yeah.",
           "displayHtml": "Yeah.",
-          "audio": "/songs/drunk%20keshi/1_0.mp3"
+          "audio": "/songs/drunk%20keshi/conversation-audio/181561c823b2a7e1/1-0.mp3"
         },
         {
           "text": "I didn't expect your call this late, but I'm glad you did.",
           "displayHtml": "I didn't expect your call this late, but I'm glad you did.",
-          "audio": "/songs/drunk%20keshi/1_1.mp3"
+          "audio": "/songs/drunk%20keshi/conversation-audio/181561c823b2a7e1/1-1.mp3"
         },
         {
           "text": "So, how's it go?",
           "displayHtml": "So, <span class=\"lyric-phrase\">how's it go</span>?",
-          "audio": "/songs/drunk%20keshi/1_2.mp3"
+          "audio": "/songs/drunk%20keshi/conversation-audio/181561c823b2a7e1/1-2.mp3"
         }
       ],
       "japanese": "うん。こんな遅くに電話が来るとは思わなかったけど、話せてうれしいよ。それで、最近どう？"
@@ -242,12 +254,12 @@
         {
           "text": "Honestly, nothin' new.",
           "displayHtml": "Honestly, <span class=\"lyric-phrase\">nothin' new</span>.",
-          "audio": "/songs/drunk%20keshi/2_0.mp3"
+          "audio": "/songs/drunk%20keshi/conversation-audio/181561c823b2a7e1/2-0.mp3"
         },
         {
           "text": "I left the bar early, and now I'm stumblin' back to bed.",
           "displayHtml": "I left the bar early, and now <span class=\"lyric-phrase\">I'm stumblin' back to bed</span>.",
-          "audio": "/songs/drunk%20keshi/2_1.mp3"
+          "audio": "/songs/drunk%20keshi/conversation-audio/181561c823b2a7e1/2-1.mp3"
         }
       ],
       "japanese": "正直、何も変わってないよ。バーを早めに出て、今はふらつきながらベッドに戻ってるところ。"
@@ -260,12 +272,12 @@
         {
           "text": "all by myself again?",
           "displayHtml": "<span class=\"lyric-phrase\">all by myself</span> again?",
-          "audio": "/songs/drunk%20keshi/3_0.mp3"
+          "audio": "/songs/drunk%20keshi/conversation-audio/181561c823b2a7e1/3-0.mp3"
         },
         {
           "text": "Ren, you always say you're fine, but you sound lonely.",
           "displayHtml": "Ren, you always say you're fine, but you sound lonely.",
-          "audio": "/songs/drunk%20keshi/3_1.mp3"
+          "audio": "/songs/drunk%20keshi/conversation-audio/181561c823b2a7e1/3-1.mp3"
         }
       ],
       "japanese": "またひとりで？Ren、いつも平気だって言うけど、声が寂しそう。"
@@ -278,7 +290,7 @@
         {
           "text": "I keep saying I need nobody else, but on nights like this, it feels like a lie.",
           "displayHtml": "I keep saying I need <span class=\"lyric-phrase\">nobody else</span>, but on nights like this, it feels like a lie.",
-          "audio": "/songs/drunk%20keshi/4_0.mp3"
+          "audio": "/songs/drunk%20keshi/conversation-audio/181561c823b2a7e1/4-0.mp3"
         }
       ],
       "japanese": "誰もいらないって言い続けてるけど、こういう夜はそれが嘘みたいに感じる。"
@@ -291,12 +303,12 @@
         {
           "text": "Ren, I know.",
           "displayHtml": "Ren, I know.",
-          "audio": "/songs/drunk%20keshi/5_0.mp3"
+          "audio": "/songs/drunk%20keshi/conversation-audio/181561c823b2a7e1/5-0.mp3"
         },
         {
           "text": "We both tried to act like moving on was easy.",
           "displayHtml": "We both tried to act like moving on was easy.",
-          "audio": "/songs/drunk%20keshi/5_1.mp3"
+          "audio": "/songs/drunk%20keshi/conversation-audio/181561c823b2a7e1/5-1.mp3"
         }
       ],
       "japanese": "Ren……わかるよ。私たち、お互い前に進むのは簡単だってふりしてたよね。"
@@ -309,12 +321,12 @@
         {
           "text": "I never thought it would be this hard to carry on.",
           "displayHtml": "I never thought it would be this hard to carry on.",
-          "audio": "/songs/drunk%20keshi/6_0.mp3"
+          "audio": "/songs/drunk%20keshi/conversation-audio/181561c823b2a7e1/6-0.mp3"
         },
         {
           "text": "Maybe part of me is still stuck way back then.",
           "displayHtml": "Maybe part of me is still stuck <span class=\"lyric-phrase\">way back then</span>.",
-          "audio": "/songs/drunk%20keshi/6_1.mp3"
+          "audio": "/songs/drunk%20keshi/conversation-audio/181561c823b2a7e1/6-1.mp3"
         }
       ],
       "japanese": "こんなに前に進むのが難しいなんて思わなかった。たぶん僕の一部は、まだあの頃に取り残されてる。"
@@ -327,12 +339,12 @@
         {
           "text": "I think part of me is too.",
           "displayHtml": "I think part of me is too.",
-          "audio": "/songs/drunk%20keshi/7_0.mp3"
+          "audio": "/songs/drunk%20keshi/conversation-audio/181561c823b2a7e1/7-0.mp3"
         },
         {
           "text": "But don't say you have nobody else just because tonight hurts.",
           "displayHtml": "But don't say you have <span class=\"lyric-phrase\">nobody else</span> just because tonight hurts.",
-          "audio": "/songs/drunk%20keshi/7_1.mp3"
+          "audio": "/songs/drunk%20keshi/conversation-audio/181561c823b2a7e1/7-1.mp3"
         }
       ],
       "japanese": "私の一部もそうかもしれない。でも、今夜つらいからって「誰もいない」なんて言わないで。"
@@ -345,12 +357,12 @@
         {
           "text": "I don't know what I expected when I called you.",
           "displayHtml": "I don't know what I expected when I called you.",
-          "audio": "/songs/drunk%20keshi/8_0.mp3"
+          "audio": "/songs/drunk%20keshi/conversation-audio/181561c823b2a7e1/8-0.mp3"
         },
         {
           "text": "Maybe I just wanted to hear your voice.",
           "displayHtml": "Maybe I just wanted to hear your voice.",
-          "audio": "/songs/drunk%20keshi/8_1.mp3"
+          "audio": "/songs/drunk%20keshi/conversation-audio/181561c823b2a7e1/8-1.mp3"
         }
       ],
       "japanese": "君に電話して、何を期待してたのかわからない。ただ声が聞きたかっただけかも。"
@@ -363,17 +375,18 @@
         {
           "text": "Then stay on the phone until you get home.",
           "displayHtml": "Then stay on the phone until you get home.",
-          "audio": "/songs/drunk%20keshi/9_0.mp3"
+          "audio": "/songs/drunk%20keshi/conversation-audio/181561c823b2a7e1/9-0.mp3"
         },
         {
           "text": "We don't have to fix us tonight.",
           "displayHtml": "We don't have to fix us tonight.",
-          "audio": "/songs/drunk%20keshi/9_1.mp3"
+          "audio": "/songs/drunk%20keshi/conversation-audio/181561c823b2a7e1/9-1.mp3"
         }
       ],
       "japanese": "じゃあ、家に着くまで電話をつないでて。今夜、私たちのことを無理に答えにしなくていい。"
     }
   ],
   "createdAt": "2026-05-18T05:20:26.415Z",
-  "thumbnailSource": "keshi - drunk Audio / KeshiVEVO"
+  "thumbnailSource": "keshi - drunk Audio / KeshiVEVO",
+  "conversationAudioStatus": "ready"
 }

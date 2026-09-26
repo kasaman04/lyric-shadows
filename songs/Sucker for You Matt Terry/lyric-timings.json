@@ -1,0 +1,493 @@
+{
+  "status": "sourced",
+  "source": {
+    "name": "LRCLIB",
+    "id": 35277243,
+    "duration": 206,
+    "url": "https://lrclib.net/api/get/35277243"
+  },
+  "display": {
+    "lyrics": "Shut me out, but pull me close\nKinda loving it, give me your heartache\nHold me tight, but let me go\nKinda loving it, look what you started\nTurn me on, then piss me off\nKinda loving it, got me addicted\nOh, you got me addicted\nOh, I don't mind\nWhat you do, what you do, what you do with me, baby\nI'm so down\nDo whatever you want me to do\nWhen you ask me\nI don't care how many times you're breaking my heart\nI'm just too weak to stay cool\nGuess I'm a sucker for you\nAnd I know it's complicated\nBut I hate being smart\nSo all the things that you do\nMakes me a sucker for you\nGuess I'm a sucker for you\nGuess I'm a sucker for you\nMaking plans, don't show up\nBaby, I don't mind, keeping me waiting\nEvery night, you're by my side\nI know it's really worth every second\nI don't mind\nWhat you do, what you do, what you do with me, baby\nI'm so down\nDo whatever you want to me to do, when you ask me\nI don't care how many times you're breaking my heart\nI'm just too weak to stay cool\nGuess I'm a sucker for you\nAnd I know it's complicated\nBut I hate being smart\nSo all the things that you do\nMakes me a sucker for you\nGuess I'm a sucker for you\nGuess I'm a sucker for you\nI don't wanna let go\nI'm not gonna let go\nEven if you hurt me, baby\nSo go ahead and hurt me, baby\nTake me high to low, low\nGet me hot and cold, cold\nGo ahead and call me crazy\nNo, I'm not gonna leave you, baby\nGuess I'm a sucker for you\nGuess I'm a sucker for you\nGuess I'm a, guess I'm a\nGuess I'm a sucker for you\nGuess I'm a, guess I'm a\nGuess I'm a, guess I'm a, guess I'm a\nGuess I'm a, guess I'm a sucker for you",
+    "lyricsJa": [
+      {
+        "en": "Shut me out, but pull me close",
+        "ja": "僕を拒絶したかと思えば、抱き寄せてくる"
+      },
+      {
+        "en": "Kinda loving it, give me your heartache",
+        "ja": "そんなのも悪くないな、君の抱える痛みを僕におくれ"
+      },
+      {
+        "en": "Hold me tight, but let me go",
+        "ja": "強く抱きしめたかと思えば、突き放す"
+      },
+      {
+        "en": "Kinda loving it, look what you started",
+        "ja": "そんなのも嫌いじゃないよ、ほら、君が始めたことだろ"
+      },
+      {
+        "en": "Turn me on, then piss me off",
+        "ja": "その気にさせたかと思えば、またカチンと怒らせる"
+      },
+      {
+        "en": "Kinda loving it, got me addicted",
+        "ja": "うん、それも悪くない。すっかり君の依存症だ"
+      },
+      {
+        "en": "Oh, you got me addicted",
+        "ja": "ああ、完全に君の中毒になってる"
+      },
+      {
+        "en": "Oh, I don't mind",
+        "ja": "ああ、僕は気にしないよ"
+      },
+      {
+        "en": "What you do, what you do, what you do with me, baby",
+        "ja": "君が僕に何をしようと、僕をどう扱おうとも"
+      },
+      {
+        "en": "I'm so down",
+        "ja": "僕は君のなすがままだよ"
+      },
+      {
+        "en": "Do whatever you want me to do",
+        "ja": "君が望むことは何でもするさ"
+      },
+      {
+        "en": "When you ask me",
+        "ja": "君が僕に頼むならね"
+      },
+      {
+        "en": "I don't care how many times you're breaking my heart",
+        "ja": "君が何度僕の心を砕こうと知ったことか"
+      },
+      {
+        "en": "I'm just too weak to stay cool",
+        "ja": "クールでい続けるには、僕は弱すぎるんだ"
+      },
+      {
+        "en": "Guess I'm a sucker for you",
+        "ja": "きっと僕は、君にゾッコンなんだ"
+      },
+      {
+        "en": "And I know it's complicated",
+        "ja": "複雑な状況なのは分かってる"
+      },
+      {
+        "en": "But I hate being smart",
+        "ja": "でも、賢く立ち回るのなんてクソ食らえだ"
+      },
+      {
+        "en": "So all the things that you do",
+        "ja": "君がするすべてのことが、僕を君の虜にするんだ"
+      },
+      {
+        "en": "Makes me a sucker for you",
+        "ja": "本当に、僕は君にゾッコンらしくてさ"
+      },
+      {
+        "en": "Guess I'm a sucker for you",
+        "ja": "きっと僕は、君にゾッコンなんだ"
+      },
+      {
+        "en": "Guess I'm a sucker for you",
+        "ja": "きっと僕は、君にゾッコンなんだ"
+      },
+      {
+        "en": "Making plans, don't show up",
+        "ja": "約束をしたのに、君は現れない"
+      },
+      {
+        "en": "Baby, I don't mind, keeping me waiting",
+        "ja": "ベイビー、気にしないよ。いくら僕を待たせたって"
+      },
+      {
+        "en": "Every night, you're by my side",
+        "ja": "毎晩、君が僕のすぐそばにいる"
+      },
+      {
+        "en": "I know it's really worth every second",
+        "ja": "その1秒1秒に、どれだけの価値があるか分かっているから"
+      },
+      {
+        "en": "I don't mind",
+        "ja": "ああ、僕は気にしないよ"
+      },
+      {
+        "en": "What you do, what you do, what you do with me, baby",
+        "ja": "君が僕に何をしようと、僕をどう扱おうとも"
+      },
+      {
+        "en": "I'm so down",
+        "ja": "僕は君のなすがままだよ"
+      },
+      {
+        "en": "Do whatever you want to me to do, when you ask me",
+        "ja": "君が望むことは何でもするさ"
+      },
+      {
+        "en": "I don't care how many times you're breaking my heart",
+        "ja": "君が何度僕の心を砕こうと知ったことか"
+      },
+      {
+        "en": "I'm just too weak to stay cool",
+        "ja": "クールでい続けるには、僕は弱すぎるんだ"
+      },
+      {
+        "en": "Guess I'm a sucker for you",
+        "ja": "きっと僕は、君にゾッコンなんだ"
+      },
+      {
+        "en": "And I know it's complicated",
+        "ja": "複雑な状況なのは分かってる"
+      },
+      {
+        "en": "But I hate being smart",
+        "ja": "でも、賢く立ち回るのなんてクソ食らえだ"
+      },
+      {
+        "en": "So all the things that you do",
+        "ja": "君がするすべてのことが、僕を君の虜にするんだ"
+      },
+      {
+        "en": "Makes me a sucker for you",
+        "ja": "本当に、僕は君にゾッコンらしくてさ"
+      },
+      {
+        "en": "Guess I'm a sucker for you",
+        "ja": "きっと僕は、君にゾッコンなんだ"
+      },
+      {
+        "en": "Guess I'm a sucker for you",
+        "ja": "きっと僕は、君にゾッコンなんだ"
+      },
+      {
+        "en": "I don't wanna let go",
+        "ja": "君を手放したくない"
+      },
+      {
+        "en": "I'm not gonna let go",
+        "ja": "手放すつもりなんてないよ"
+      },
+      {
+        "en": "Even if you hurt me, baby",
+        "ja": "たとえ君が僕を傷つけたとしても"
+      },
+      {
+        "en": "So go ahead and hurt me, baby",
+        "ja": "だからいいよ、思う存分僕を傷つけてくれ"
+      },
+      {
+        "en": "Take me high to low, low",
+        "ja": "天国からどん底まで突き落としてくれ"
+      },
+      {
+        "en": "Get me hot and cold, cold",
+        "ja": "熱く燃え上がらせては、冷え切らせてくれ"
+      },
+      {
+        "en": "Go ahead and call me crazy",
+        "ja": "いいさ、僕をイカれてるって呼べばいい"
+      },
+      {
+        "en": "No, I'm not gonna leave you, baby",
+        "ja": "いや、それでも絶対に僕は君から離れないよ"
+      },
+      {
+        "en": "Guess I'm a sucker for you",
+        "ja": "きっと僕は、君にゾッコンなんだ"
+      },
+      {
+        "en": "Guess I'm a sucker for you",
+        "ja": "きっと僕は、君にゾッコンなんだ"
+      },
+      {
+        "en": "Guess I'm a, guess I'm a",
+        "ja": "きっと僕は、君にゾッコンなんだ"
+      },
+      {
+        "en": "Guess I'm a sucker for you",
+        "ja": "きっと僕は、君にゾッコンなんだ"
+      },
+      {
+        "en": "Guess I'm a, guess I'm a",
+        "ja": "きっと僕は、君にゾッコンなんだ"
+      },
+      {
+        "en": "Guess I'm a, guess I'm a, guess I'm a",
+        "ja": "きっと僕は、君にゾッコンなんだ"
+      },
+      {
+        "en": "Guess I'm a, guess I'm a sucker for you",
+        "ja": "きっと僕は、君にゾッコンなんだ"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "index": 0,
+      "start": 10.37,
+      "end": 12.85
+    },
+    {
+      "index": 1,
+      "start": 12.85,
+      "end": 15.56
+    },
+    {
+      "index": 2,
+      "start": 15.56,
+      "end": 17.96
+    },
+    {
+      "index": 3,
+      "start": 17.96,
+      "end": 20.36
+    },
+    {
+      "index": 4,
+      "start": 20.36,
+      "end": 22.96
+    },
+    {
+      "index": 5,
+      "start": 22.96,
+      "end": 26.22
+    },
+    {
+      "index": 6,
+      "start": 26.22,
+      "end": 28.79
+    },
+    {
+      "index": 7,
+      "start": 28.79,
+      "end": 32.44
+    },
+    {
+      "index": 8,
+      "start": 32.44,
+      "end": 35.45
+    },
+    {
+      "index": 9,
+      "start": 35.45,
+      "end": 37.54
+    },
+    {
+      "index": 10,
+      "start": 37.54,
+      "end": 39.68
+    },
+    {
+      "index": 11,
+      "start": 39.68,
+      "end": 40.53
+    },
+    {
+      "index": 12,
+      "start": 40.53,
+      "end": 44.52
+    },
+    {
+      "index": 13,
+      "start": 44.52,
+      "end": 46.94
+    },
+    {
+      "index": 14,
+      "start": 46.94,
+      "end": 50.3
+    },
+    {
+      "index": 15,
+      "start": 50.3,
+      "end": 52.68
+    },
+    {
+      "index": 16,
+      "start": 52.68,
+      "end": 54.67
+    },
+    {
+      "index": 17,
+      "start": 54.67,
+      "end": 57.12
+    },
+    {
+      "index": 18,
+      "start": 57.12,
+      "end": 60.33
+    },
+    {
+      "index": 19,
+      "start": 67.24,
+      "end": 70.22
+    },
+    {
+      "index": 20,
+      "start": 77.22,
+      "end": 81.26
+    },
+    {
+      "index": 21,
+      "start": 83.61,
+      "end": 86.39
+    },
+    {
+      "index": 22,
+      "start": 86.39,
+      "end": 88.61
+    },
+    {
+      "index": 23,
+      "start": 88.61,
+      "end": 91.03
+    },
+    {
+      "index": 24,
+      "start": 91.03,
+      "end": 93.77
+    },
+    {
+      "index": 25,
+      "start": 93.77,
+      "end": 95.65
+    },
+    {
+      "index": 26,
+      "start": 95.65,
+      "end": 98.62
+    },
+    {
+      "index": 27,
+      "start": 98.62,
+      "end": 100.72
+    },
+    {
+      "index": 28,
+      "start": 100.72,
+      "end": 103.88
+    },
+    {
+      "index": 29,
+      "start": 103.88,
+      "end": 107.89
+    },
+    {
+      "index": 30,
+      "start": 107.89,
+      "end": 110.2
+    },
+    {
+      "index": 31,
+      "start": 110.2,
+      "end": 113.43
+    },
+    {
+      "index": 32,
+      "start": 113.43,
+      "end": 115.86
+    },
+    {
+      "index": 33,
+      "start": 115.86,
+      "end": 117.76
+    },
+    {
+      "index": 34,
+      "start": 117.76,
+      "end": 120.49
+    },
+    {
+      "index": 35,
+      "start": 120.49,
+      "end": 124.42
+    },
+    {
+      "index": 36,
+      "start": 130.42,
+      "end": 133.68
+    },
+    {
+      "index": 37,
+      "start": 140.58,
+      "end": 144.08
+    },
+    {
+      "index": 38,
+      "start": 144.08,
+      "end": 145.96
+    },
+    {
+      "index": 39,
+      "start": 145.96,
+      "end": 147.83
+    },
+    {
+      "index": 40,
+      "start": 147.83,
+      "end": 150.03
+    },
+    {
+      "index": 41,
+      "start": 150.03,
+      "end": 154.15
+    },
+    {
+      "index": 42,
+      "start": 154.15,
+      "end": 155.98
+    },
+    {
+      "index": 43,
+      "start": 155.98,
+      "end": 158.05
+    },
+    {
+      "index": 44,
+      "start": 158.05,
+      "end": 160.39
+    },
+    {
+      "index": 45,
+      "start": 160.39,
+      "end": 164.2
+    },
+    {
+      "index": 46,
+      "start": 170.88,
+      "end": 173.89
+    },
+    {
+      "index": 47,
+      "start": 181.03,
+      "end": 186.06
+    },
+    {
+      "index": 48,
+      "start": 186.06,
+      "end": 190.9
+    },
+    {
+      "index": 49,
+      "start": 190.9,
+      "end": 193.67
+    },
+    {
+      "index": 50,
+      "start": 193.67,
+      "end": 196.09
+    },
+    {
+      "index": 51,
+      "start": 196.09,
+      "end": 199.81
+    },
+    {
+      "index": 52,
+      "start": 199.81,
+      "end": 202.61
+    }
+  ]
+}

@@ -1,0 +1,336 @@
+{
+  "id": "Baby Girl Jin Akanishi",
+  "folderName": "Baby Girl Jin Akanishi",
+  "songName": "Baby Girl",
+  "artist": "Jin Akanishi",
+  "relationship": "友達",
+  "setting": "Two friends step outside a party after spending the evening together.",
+  "speakerA": {
+    "name": "Leo",
+    "gender": "male",
+    "age": "young",
+    "accent": "american",
+    "tone": "casual",
+    "type": "男性",
+    "voice": "UgBBYS2sOqTuMpoF3BR0",
+    "voiceProfile": "mark",
+    "voiceName": "Mark"
+  },
+  "speakerB": {
+    "name": "Maya",
+    "gender": "female",
+    "age": "young",
+    "accent": "american",
+    "tone": "warm",
+    "type": "女性",
+    "voice": "cNYrMw9glwJZXR8RwbuR",
+    "voiceProfile": "belle",
+    "voiceName": "Belle"
+  },
+  "videoId": "BedciKR5KvQ",
+  "thumbnailUrl": "https://img.youtube.com/vi/BedciKR5KvQ/hqdefault.jpg",
+  "lyrics": "Baby girl, come next to me\nOoh, baby girl, you got me totally\nInfatuated and I cannot describe it in words\nFeelin' better next to you\n\nBaby girl, just take your time\nNo need to rush, cuz we got all night\nCall you pretty, maybe later we can dance the night away\nGot me fien'in' for your love\n\nGot me fien'in' for your love\n(I just can't find the words)\nBut every time the music dies the lights come on\nSomething deep inside is screaming out\n\nSo why don't we talk, talk, talk about us baby\nSo why don't we talk, talk, talk it up sometime\nSo why don't we talk, talk, talk about us baby\nAbout me and you\nAbout you and me\n\nBaby girl, it's plain to see\nOoh, in my arms is where you gotta be\nCan't duplicate the feeling with another guy like me\nIs it real or just a dream\nBaby girl, this could be the final dance\n\nOoh baby girl, can we take a chance\nI can feel the tension every time your eyes, they look at me\nLike the feelin' from the sun\nGot me fien'in' for your love\n\n(I just can't find the words)\nBut every time the music dies the lights come on\nSomething deep inside is screaming out\nSo why don't we talk, talk, talk about us baby\n\nSo why don't we talk, talk, talk it up sometime\nSo why don't we talk, talk, talk about us baby\nAbout me and you\nAbout you and me\nWe could be everything\n\nAnd when I think about it I wanna sing it out like\nBut every time the music dies the lights come on\n\nSomething deep inside is screaming out\nSo why don't we talk, talk, talk about us baby\n\nSo why don't we talk, talk, talk it up sometime\nSo why don't we talk, talk, talk about us baby\nAbout me and you\nAbout you and me",
+  "lyricsJa": [
+    {
+      "en": "Baby girl, come next to me",
+      "ja": "ねえ、僕の隣に来て"
+    },
+    {
+      "en": "Ooh, baby girl, you got me totally",
+      "ja": "君に僕はすっかり"
+    },
+    {
+      "en": "Infatuated and I cannot describe it in words",
+      "ja": "夢中で、その気持ちを言葉にできない"
+    },
+    {
+      "en": "Feelin' better next to you",
+      "ja": "君の隣にいると気分がよくなる"
+    },
+    {
+      "en": "Baby girl, just take your time",
+      "ja": "焦らず、ゆっくりでいいよ"
+    },
+    {
+      "en": "No need to rush, cuz we got all night",
+      "ja": "急ぐ必要はない、夜はまだ長いから"
+    },
+    {
+      "en": "Call you pretty, maybe later we can dance the night away",
+      "ja": "君をきれいだと言って、あとで一晩中踊れるかも"
+    },
+    {
+      "en": "Got me fien'in' for your love",
+      "ja": "君の愛が欲しくてたまらない"
+    },
+    {
+      "en": "Got me fien'in' for your love",
+      "ja": "君の愛が欲しくてたまらない"
+    },
+    {
+      "en": "(I just can't find the words)",
+      "ja": "（うまく言葉が見つからない）"
+    },
+    {
+      "en": "But every time the music dies the lights come on",
+      "ja": "でも音楽が止まり、明かりがつくたびに"
+    },
+    {
+      "en": "Something deep inside is screaming out",
+      "ja": "心の奥で何かが叫んでいる"
+    },
+    {
+      "en": "So why don't we talk, talk, talk about us baby",
+      "ja": "だから僕たちのことを話そうよ"
+    },
+    {
+      "en": "So why don't we talk, talk, talk it up sometime",
+      "ja": "いつか、じっくり話してみない？"
+    },
+    {
+      "en": "So why don't we talk, talk, talk about us baby",
+      "ja": "だから僕たちのことを話そうよ"
+    },
+    {
+      "en": "About me and you",
+      "ja": "僕と君のことを"
+    },
+    {
+      "en": "About you and me",
+      "ja": "君と僕のことを"
+    },
+    {
+      "en": "Baby girl, it's plain to see",
+      "ja": "ねえ、見れば分かるよ"
+    },
+    {
+      "en": "Ooh, in my arms is where you gotta be",
+      "ja": "君がいるべき場所は僕の腕の中"
+    },
+    {
+      "en": "Can't duplicate the feeling with another guy like me",
+      "ja": "僕のような男とのこの気持ちは、ほかでは味わえない"
+    },
+    {
+      "en": "Is it real or just a dream",
+      "ja": "これは現実？ それともただの夢？"
+    },
+    {
+      "en": "Baby girl, this could be the final dance",
+      "ja": "これが最後のダンスになるかもしれない"
+    },
+    {
+      "en": "Ooh baby girl, can we take a chance",
+      "ja": "ねえ、思い切ってみない？"
+    },
+    {
+      "en": "I can feel the tension every time your eyes, they look at me",
+      "ja": "君と目が合うたび、胸の高鳴りを感じる"
+    },
+    {
+      "en": "Like the feelin' from the sun",
+      "ja": "太陽の温かさみたいに"
+    },
+    {
+      "en": "Got me fien'in' for your love",
+      "ja": "君の愛が欲しくてたまらない"
+    },
+    {
+      "en": "(I just can't find the words)",
+      "ja": "（うまく言葉が見つからない）"
+    },
+    {
+      "en": "But every time the music dies the lights come on",
+      "ja": "でも音楽が止まり、明かりがつくたびに"
+    },
+    {
+      "en": "Something deep inside is screaming out",
+      "ja": "心の奥で何かが叫んでいる"
+    },
+    {
+      "en": "So why don't we talk, talk, talk about us baby",
+      "ja": "だから僕たちのことを話そうよ"
+    },
+    {
+      "en": "So why don't we talk, talk, talk it up sometime",
+      "ja": "いつか、じっくり話してみない？"
+    },
+    {
+      "en": "So why don't we talk, talk, talk about us baby",
+      "ja": "だから僕たちのことを話そうよ"
+    },
+    {
+      "en": "About me and you",
+      "ja": "僕と君のことを"
+    },
+    {
+      "en": "About you and me",
+      "ja": "君と僕のことを"
+    },
+    {
+      "en": "We could be everything",
+      "ja": "僕たちなら、何にだってなれる"
+    },
+    {
+      "en": "And when I think about it I wanna sing it out like",
+      "ja": "そう考えると、思いきり歌いたくなる"
+    },
+    {
+      "en": "But every time the music dies the lights come on",
+      "ja": "でも音楽が止まり、明かりがつくたびに"
+    },
+    {
+      "en": "Something deep inside is screaming out",
+      "ja": "心の奥で何かが叫んでいる"
+    },
+    {
+      "en": "So why don't we talk, talk, talk about us baby",
+      "ja": "だから僕たちのことを話そうよ"
+    },
+    {
+      "en": "So why don't we talk, talk, talk it up sometime",
+      "ja": "いつか、じっくり話してみない？"
+    },
+    {
+      "en": "So why don't we talk, talk, talk about us baby",
+      "ja": "だから僕たちのことを話そうよ"
+    },
+    {
+      "en": "About me and you",
+      "ja": "僕と君のことを"
+    },
+    {
+      "en": "About you and me",
+      "ja": "君と僕のことを"
+    }
+  ],
+  "lyricConnections": [
+    {
+      "lyricExpression": "No need to rush",
+      "conversationExpression": "No need to rush",
+      "explanationJa": "「急ぐ必要はない」。相手を安心させるときにも使える。"
+    },
+    {
+      "lyricExpression": "take a chance",
+      "conversationExpression": "take a chance",
+      "explanationJa": "「思い切ってやってみる」。結果が分からなくても一歩踏み出す表現。"
+    },
+    {
+      "lyricExpression": "take your time",
+      "conversationExpression": "take our time",
+      "explanationJa": "「時間をかけてゆっくりする」。相手に合わせて your を our に替えられる。"
+    }
+  ],
+  "conversation": [
+    {
+      "speaker": "A",
+      "speakerName": "Leo",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "I had a really good time with you tonight.",
+          "displayHtml": "I had a really good time with you tonight.",
+          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/4f51c19bd310d83f/0-0.mp3"
+        },
+        {
+          "text": "No need to rush back inside.",
+          "displayHtml": "<span class=\"lyric-phrase\">No need to rush</span> back inside.",
+          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/4f51c19bd310d83f/0-1.mp3"
+        }
+      ],
+      "japanese": "今夜は君といてすごく楽しかった。急いで中に戻らなくていいよ。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Maya",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "Thanks.",
+          "displayHtml": "Thanks.",
+          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/4f51c19bd310d83f/1-0.mp3"
+        },
+        {
+          "text": "I was actually hoping we could stay out here for a minute.",
+          "displayHtml": "I was actually hoping we could stay out here for a minute.",
+          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/4f51c19bd310d83f/1-1.mp3"
+        }
+      ],
+      "japanese": "ありがとう。実は、もう少しここにいたいと思ってたの。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Leo",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "Good, because I wanted to ask you something.",
+          "displayHtml": "Good, because I wanted to ask you something.",
+          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/4f51c19bd310d83f/2-0.mp3"
+        },
+        {
+          "text": "Could we take a chance and go out together this weekend?",
+          "displayHtml": "Could we <span class=\"lyric-phrase\">take a chance</span> and go out together this weekend?",
+          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/4f51c19bd310d83f/2-1.mp3"
+        }
+      ],
+      "japanese": "よかった、聞きたいことがあったんだ。思い切って、今週末に二人で出かけてみない？"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Maya",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "I was wondering if you would ask.",
+          "displayHtml": "I was wondering if you would ask.",
+          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/4f51c19bd310d83f/3-0.mp3"
+        },
+        {
+          "text": "Yes, I would like that.",
+          "displayHtml": "Yes, I would like that.",
+          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/4f51c19bd310d83f/3-1.mp3"
+        }
+      ],
+      "japanese": "聞いてくれないかなって思ってた。うん、ぜひ。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Leo",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "Great.",
+          "displayHtml": "Great.",
+          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/4f51c19bd310d83f/4-0.mp3"
+        },
+        {
+          "text": "We can take our time choosing a place tomorrow.",
+          "displayHtml": "We can <span class=\"lyric-phrase\">take our time</span> choosing a place tomorrow.",
+          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/4f51c19bd310d83f/4-1.mp3"
+        }
+      ],
+      "japanese": "よかった。行く場所は明日ゆっくり決めよう。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Maya",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "Sounds good.",
+          "displayHtml": "Sounds good.",
+          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/4f51c19bd310d83f/5-0.mp3"
+        },
+        {
+          "text": "For now, let us just enjoy the quiet.",
+          "displayHtml": "For now, let us just enjoy the quiet.",
+          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/4f51c19bd310d83f/5-1.mp3"
+        }
+      ],
+      "japanese": "いいね。今はこの静かな時間を楽しもう。"
+    }
+  ],
+  "createdAt": "2026-09-26T02:47:12.459Z",
+  "conversationAudioStatus": "ready"
+}

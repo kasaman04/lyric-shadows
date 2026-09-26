@@ -8,12 +8,24 @@
   "speakerA": {
     "name": "Ben",
     "type": "男性",
-    "voice": "CfDbY7v8tDkTvB9rNcUw"
+    "voice": "iP95p4xoKVk53GoZ742B",
+    "voiceProfile": "chris",
+    "gender": "male",
+    "age": "middle_aged",
+    "accent": "american",
+    "tone": "casual",
+    "voiceName": "Chris"
   },
   "speakerB": {
     "name": "Chris",
     "type": "男性",
-    "voice": "CfDbY7v8tDkTvB9rNcUw"
+    "voice": "CwhRBWXzGAHq8TQ4Fs17",
+    "voiceProfile": "roger",
+    "gender": "male",
+    "age": "middle_aged",
+    "accent": "american",
+    "tone": "calm",
+    "voiceName": "Roger"
   },
   "videoId": "NwFVSclD_uc",
   "thumbnailUrl": "https://i.ytimg.com/vi/NwFVSclD_uc/hqdefault.jpg",
@@ -117,7 +129,7 @@
         {
           "text": "So, are you really going to leave her behind?",
           "displayHtml": "So, are you really going to <span class=\"lyric-phrase\">leave her behind</span>?",
-          "audio": "/songs/I%20Love%20You%20So%20The%20Walters/0_0.mp3"
+          "audio": "/songs/I%20Love%20You%20So%20The%20Walters/conversation-audio/ba3003d129b4b3d9/0-0.mp3"
         }
       ],
       "japanese": "それで、本当に彼女と別れるつもりなの？"
@@ -130,12 +142,12 @@
         {
           "text": "I have to.",
           "displayHtml": "I have to.",
-          "audio": "/songs/I%20Love%20You%20So%20The%20Walters/1_0.mp3"
+          "audio": "/songs/I%20Love%20You%20So%20The%20Walters/conversation-audio/ba3003d129b4b3d9/1-0.mp3"
         },
         {
           "text": "This is getting old and I've finally made up my mind.",
           "displayHtml": "<span class=\"lyric-phrase\">This is getting old</span> and I've finally <span class=\"lyric-phrase\">made up my mind</span>.",
-          "audio": "/songs/I%20Love%20You%20So%20The%20Walters/1_1.mp3"
+          "audio": "/songs/I%20Love%20You%20So%20The%20Walters/conversation-audio/ba3003d129b4b3d9/1-1.mp3"
         }
       ],
       "japanese": "ああ。もうこんな状況にはうんざりだし、ようやく決心がついたよ。"
@@ -148,12 +160,12 @@
         {
           "text": "I'm sorry.",
           "displayHtml": "I'm sorry.",
-          "audio": "/songs/I%20Love%20You%20So%20The%20Walters/2_0.mp3"
+          "audio": "/songs/I%20Love%20You%20So%20The%20Walters/conversation-audio/ba3003d129b4b3d9/2-0.mp3"
         },
         {
           "text": "I know you felt like she was everything you want.",
           "displayHtml": "I know you felt like she was <span class=\"lyric-phrase\">everything you want</span>.",
-          "audio": "/songs/I%20Love%20You%20So%20The%20Walters/2_1.mp3"
+          "audio": "/songs/I%20Love%20You%20So%20The%20Walters/conversation-audio/ba3003d129b4b3d9/2-1.mp3"
         }
       ],
       "japanese": "残念だね。彼女は君にとって理想の相手だと思ってたのに。"
@@ -166,7 +178,7 @@
         {
           "text": "She says I'm the one, but her actions speak louder than words.",
           "displayHtml": "She says I'm the one, but her <span class=\"lyric-phrase\">actions speak louder</span> than words.",
-          "audio": "/songs/I%20Love%20You%20So%20The%20Walters/3_0.mp3"
+          "audio": "/songs/I%20Love%20You%20So%20The%20Walters/conversation-audio/ba3003d129b4b3d9/3-0.mp3"
         }
       ],
       "japanese": "彼女は僕が運命の人だなんて言うけど、言葉より行動の方が物語ってるからね。"
@@ -179,12 +191,12 @@
         {
           "text": "True.",
           "displayHtml": "True.",
-          "audio": "/songs/I%20Love%20You%20So%20The%20Walters/4_0.mp3"
+          "audio": "/songs/I%20Love%20You%20So%20The%20Walters/conversation-audio/ba3003d129b4b3d9/4-0.mp3"
         },
         {
           "text": "She only seemed to give you love when she was feeling down.",
           "displayHtml": "She only seemed to give you <span class=\"lyric-word\">love</span> when she was feeling <span class=\"lyric-word\">down</span>.",
-          "audio": "/songs/I%20Love%20You%20So%20The%20Walters/4_1.mp3"
+          "audio": "/songs/I%20Love%20You%20So%20The%20Walters/conversation-audio/ba3003d129b4b3d9/4-1.mp3"
         }
       ],
       "japanese": "確かに。彼女、自分が落ち込んでる時しか愛情をくれなかったし。"
@@ -197,12 +209,12 @@
         {
           "text": "Exactly.",
           "displayHtml": "Exactly.",
-          "audio": "/songs/I%20Love%20You%20So%20The%20Walters/5_0.mp3"
+          "audio": "/songs/I%20Love%20You%20So%20The%20Walters/conversation-audio/ba3003d129b4b3d9/5-0.mp3"
         },
         {
           "text": "I've been such a fool, but I've got to get away and let her go.",
           "displayHtml": "I've been such a <span class=\"lyric-word\">fool</span>, but I've got to <span class=\"lyric-phrase\">get away</span> and <span class=\"lyric-phrase\">let her go</span>.",
-          "audio": "/songs/I%20Love%20You%20So%20The%20Walters/5_1.mp3"
+          "audio": "/songs/I%20Love%20You%20So%20The%20Walters/conversation-audio/ba3003d129b4b3d9/5-1.mp3"
         }
       ],
       "japanese": "その通りだよ。僕はバカだった。もう離れて、彼女を吹っ切らなきゃ。"
@@ -215,7 +227,7 @@
         {
           "text": "It’s going to be tough since you love her so much.",
           "displayHtml": "It’s going to be tough since <span class=\"lyric-phrase\">you love her so</span> much.",
-          "audio": "/songs/I%20Love%20You%20So%20The%20Walters/6_0.mp3"
+          "audio": "/songs/I%20Love%20You%20So%20The%20Walters/conversation-audio/ba3003d129b4b3d9/6-0.mp3"
         }
       ],
       "japanese": "あんなに彼女を愛してたんだから、辛いとは思うけど。"
@@ -228,11 +240,12 @@
         {
           "text": "It is, but I'm going to pack my things and move out tonight.",
           "displayHtml": "It is, but I'm going to <span class=\"lyric-phrase\">pack my things</span> and move out tonight.",
-          "audio": "/songs/I%20Love%20You%20So%20The%20Walters/7_0.mp3"
+          "audio": "/songs/I%20Love%20You%20So%20The%20Walters/conversation-audio/ba3003d129b4b3d9/7-0.mp3"
         }
       ],
       "japanese": "ああ。でも、今夜荷物をまとめて出て行くよ。"
     }
   ],
-  "createdAt": "2026-04-04T07:02:43.157Z"
+  "createdAt": "2026-04-04T07:02:43.157Z",
+  "conversationAudioStatus": "ready"
 }

@@ -1,0 +1,448 @@
+{
+  "status": "sourced",
+  "source": {
+    "name": "LRCLIB",
+    "id": 2705216,
+    "duration": 188,
+    "url": "https://lrclib.net/api/get/2705216"
+  },
+  "display": {
+    "lyrics": "Oh darling I\nKnow you're taken\nSomething 'bout this\nJust don't feel right\nEvery time\nOne of us, tries to leave here\nOh the other one\nHolds on tight\nOh\nBaby tonight\nThere's so much love in between us\nBut you say you gotta get home\nStay here with me\nI won't tell a soul\nYou tell me someones\nWaiting for ya\nThat you can't do this anymore\nBut you kiss me again\nSo go ahead and\nDraw the blinds and\nLock all the doors\nBaby tonight\nThere's so much love in between us\nYou say you gotta get home\nStay here with me\nI won't tell a soul\nOh if you want me\nLike I want you\nI won't judge you\nThis could be our little secret\nOur secret\nSo tell me if you're ready\n'Cause if no one knows then\nIt ain't really cheating\nOh darling I\nKnow you're taken\nBut something 'bout this\nJust feels so right\nOh baby\n'Cause every time\nOne of us, tries to justify the situation\nWe just hold on tighter\nOh oh\nBaby tonight\nThere's so much love in between us\nYou say you gotta get home\nStay here with me\nI won't tell a soul",
+    "lyricsJa": [
+      {
+        "en": "Oh darling I",
+        "ja": "ねえ、ダーリン"
+      },
+      {
+        "en": "Know you're taken",
+        "ja": "君に相手がいるのはわかってる"
+      },
+      {
+        "en": "Something 'bout this",
+        "ja": "何かこの感じが"
+      },
+      {
+        "en": "Just don't feel right",
+        "ja": "どこか間違っている気がするんだ"
+      },
+      {
+        "en": "Every time",
+        "ja": "いつだって"
+      },
+      {
+        "en": "One of us, tries to leave here",
+        "ja": "僕らのどちらかがここを去ろうとすると"
+      },
+      {
+        "en": "Oh the other one",
+        "ja": "もう一人が"
+      },
+      {
+        "en": "Holds on tight",
+        "ja": "強く引き止める"
+      },
+      {
+        "en": "Oh",
+        "ja": "ねえ、ダーリン"
+      },
+      {
+        "en": "Baby tonight",
+        "ja": "ベイビー、今夜は"
+      },
+      {
+        "en": "There's so much love in between us",
+        "ja": "僕らの間には愛が溢れているのに"
+      },
+      {
+        "en": "But you say you gotta get home",
+        "ja": "君はもう家に帰らなきゃって言うんだね"
+      },
+      {
+        "en": "Stay here with me",
+        "ja": "僕と一緒にここにいて"
+      },
+      {
+        "en": "I won't tell a soul",
+        "ja": "誰にも言わないから"
+      },
+      {
+        "en": "You tell me someones",
+        "ja": "君は「誰かが"
+      },
+      {
+        "en": "Waiting for ya",
+        "ja": "待っている」と言う"
+      },
+      {
+        "en": "That you can't do this anymore",
+        "ja": "「これ以上はもう無理だ」と"
+      },
+      {
+        "en": "But you kiss me again",
+        "ja": "なのに君はまた僕にキスをする"
+      },
+      {
+        "en": "So go ahead and",
+        "ja": "だからさあ"
+      },
+      {
+        "en": "Draw the blinds and",
+        "ja": "ブラインドを下ろして"
+      },
+      {
+        "en": "Lock all the doors",
+        "ja": "すべてのドアに鍵をかけて"
+      },
+      {
+        "en": "Baby tonight",
+        "ja": "ベイビー、今夜は"
+      },
+      {
+        "en": "There's so much love in between us",
+        "ja": "僕らの間には愛が溢れているのに"
+      },
+      {
+        "en": "You say you gotta get home",
+        "ja": "君はもう家に帰らなきゃって言うんだね"
+      },
+      {
+        "en": "Stay here with me",
+        "ja": "僕と一緒にここにいて"
+      },
+      {
+        "en": "I won't tell a soul",
+        "ja": "誰にも言わないから"
+      },
+      {
+        "en": "Oh if you want me",
+        "ja": "もし君も僕を求めているなら"
+      },
+      {
+        "en": "Like I want you",
+        "ja": "僕が君を求めているように"
+      },
+      {
+        "en": "I won't judge you",
+        "ja": "君を責めたりはしないよ"
+      },
+      {
+        "en": "This could be our little secret",
+        "ja": "これは僕らだけの秘密にできる"
+      },
+      {
+        "en": "Our secret",
+        "ja": "僕たちの秘密に"
+      },
+      {
+        "en": "So tell me if you're ready",
+        "ja": "準備ができたら教えて"
+      },
+      {
+        "en": "'Cause if no one knows then",
+        "ja": "誰にも知られなければ"
+      },
+      {
+        "en": "It ain't really cheating",
+        "ja": "浮気じゃないも同然さ"
+      },
+      {
+        "en": "Oh darling I",
+        "ja": "ねえ、ダーリン"
+      },
+      {
+        "en": "Know you're taken",
+        "ja": "君に相手がいるのはわかってる"
+      },
+      {
+        "en": "But something 'bout this",
+        "ja": "でも何かこの感じが"
+      },
+      {
+        "en": "Just feels so right",
+        "ja": "すごくしっくりくるんだ"
+      },
+      {
+        "en": "Oh baby",
+        "ja": "Oh baby"
+      },
+      {
+        "en": "'Cause every time",
+        "ja": "だっていつだって"
+      },
+      {
+        "en": "One of us, tries to justify the situation",
+        "ja": "僕らのどちらかがここを去ろうとすると"
+      },
+      {
+        "en": "We just hold on tighter",
+        "ja": "僕らはもっと強く抱きしめ合うだけ"
+      },
+      {
+        "en": "Oh oh",
+        "ja": "ねえ、ダーリン"
+      },
+      {
+        "en": "Baby tonight",
+        "ja": "ベイビー、今夜は"
+      },
+      {
+        "en": "There's so much love in between us",
+        "ja": "僕らの間には愛が溢れているのに"
+      },
+      {
+        "en": "You say you gotta get home",
+        "ja": "君はもう家に帰らなきゃって言うんだね"
+      },
+      {
+        "en": "Stay here with me",
+        "ja": "僕と一緒にここにいて"
+      },
+      {
+        "en": "I won't tell a soul",
+        "ja": "誰にも言わないから"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "index": 0,
+      "start": 0.21,
+      "end": 3.88
+    },
+    {
+      "index": 1,
+      "start": 3.88,
+      "end": 6.65
+    },
+    {
+      "index": 2,
+      "start": 6.65,
+      "end": 8.11
+    },
+    {
+      "index": 3,
+      "start": 8.11,
+      "end": 14.47
+    },
+    {
+      "index": 4,
+      "start": 14.47,
+      "end": 16.39
+    },
+    {
+      "index": 5,
+      "start": 16.39,
+      "end": 19.71
+    },
+    {
+      "index": 6,
+      "start": 19.71,
+      "end": 21.44
+    },
+    {
+      "index": 7,
+      "start": 21.44,
+      "end": 24.31
+    },
+    {
+      "index": 8,
+      "start": 24.31,
+      "end": 26.82
+    },
+    {
+      "index": 9,
+      "start": 26.82,
+      "end": 29.09
+    },
+    {
+      "index": 10,
+      "start": 29.09,
+      "end": 33.72
+    },
+    {
+      "index": 11,
+      "start": 33.72,
+      "end": 38.53
+    },
+    {
+      "index": 12,
+      "start": 38.53,
+      "end": 44.25
+    },
+    {
+      "index": 13,
+      "start": 44.25,
+      "end": 50.74
+    },
+    {
+      "index": 14,
+      "start": 50.74,
+      "end": 53.64
+    },
+    {
+      "index": 15,
+      "start": 53.64,
+      "end": 56.99
+    },
+    {
+      "index": 16,
+      "start": 56.99,
+      "end": 64.76
+    },
+    {
+      "index": 17,
+      "start": 64.76,
+      "end": 67.81
+    },
+    {
+      "index": 18,
+      "start": 67.81,
+      "end": 69.47
+    },
+    {
+      "index": 19,
+      "start": 69.47,
+      "end": 71.17
+    },
+    {
+      "index": 20,
+      "start": 71.17,
+      "end": 77.03
+    },
+    {
+      "index": 21,
+      "start": 77.03,
+      "end": 78.72
+    },
+    {
+      "index": 22,
+      "start": 78.72,
+      "end": 83.86
+    },
+    {
+      "index": 23,
+      "start": 83.86,
+      "end": 88.38
+    },
+    {
+      "index": 24,
+      "start": 88.38,
+      "end": 94.67
+    },
+    {
+      "index": 25,
+      "start": 94.67,
+      "end": 101.31
+    },
+    {
+      "index": 26,
+      "start": 101.31,
+      "end": 103.91
+    },
+    {
+      "index": 27,
+      "start": 103.91,
+      "end": 105.14
+    },
+    {
+      "index": 28,
+      "start": 105.14,
+      "end": 106.53
+    },
+    {
+      "index": 29,
+      "start": 106.53,
+      "end": 111.57
+    },
+    {
+      "index": 30,
+      "start": 111.57,
+      "end": 114.63
+    },
+    {
+      "index": 31,
+      "start": 114.63,
+      "end": 117.44
+    },
+    {
+      "index": 32,
+      "start": 117.44,
+      "end": 119.39
+    },
+    {
+      "index": 33,
+      "start": 119.39,
+      "end": 126.1
+    },
+    {
+      "index": 34,
+      "start": 126.1,
+      "end": 128.77
+    },
+    {
+      "index": 35,
+      "start": 128.77,
+      "end": 131.34
+    },
+    {
+      "index": 36,
+      "start": 131.34,
+      "end": 133.3
+    },
+    {
+      "index": 37,
+      "start": 133.3,
+      "end": 136.69
+    },
+    {
+      "index": 38,
+      "start": 136.69,
+      "end": 138.57
+    },
+    {
+      "index": 39,
+      "start": 138.57,
+      "end": 140.76
+    },
+    {
+      "index": 40,
+      "start": 140.76,
+      "end": 145.09
+    },
+    {
+      "index": 41,
+      "start": 145.09,
+      "end": 149.78
+    },
+    {
+      "index": 42,
+      "start": 149.78,
+      "end": 151.26
+    },
+    {
+      "index": 43,
+      "start": 151.26,
+      "end": 153.34
+    },
+    {
+      "index": 44,
+      "start": 153.34,
+      "end": 158.07
+    },
+    {
+      "index": 45,
+      "start": 158.07,
+      "end": 164.53
+    },
+    {
+      "index": 46,
+      "start": 164.53,
+      "end": 173.62
+    },
+    {
+      "index": 47,
+      "start": 173.62,
+      "end": 187.88
+    }
+  ]
+}

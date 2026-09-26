@@ -1,0 +1,250 @@
+{
+  "status": "estimated",
+  "source": {
+    "name": "Local audio alignment",
+    "model": "faster-whisper-base.en + small.en",
+    "audioUploaded": false,
+    "review": "Line starts checked against local word timestamps; uncertain words remain approximate"
+  },
+  "display": {
+    "lyrics": "Walking down the hall, trying to find some peace\nBut the heat in this room just won't decrease\nI pick up the phone, dial down to the desk\nHoping they can help me get a little rest\nThe AC in my room doesn't seem to be working\nJust blowing warm air, while the heat is lurking\nCould we get some extra towels while you're on the way?\nHoping we can finally cool down today\nSend maintenance up, yeah, send them right away\nI apologize for the inconvenience, sir\nWe'll get it sorted out, it's all a blur\nIs it not turning on, or just blowing warm?\nWe'll fix it up before it does any harm\nThe AC in my room doesn't seem to be working\nJust blowing warm air, while the heat is lurking\nCould we get some extra towels while you're on the way?\nHoping we can finally cool down today\nSend maintenance up, yeah, send them right away\nHow long do you think it will take to repair?\nTen minutes max, we'll have somebody there\nHousekeeping is bringing fresh towels to your door\nYou won't have to worry or complain anymore\nJust blowing warm air.\nWe'll be right there.\nExtra towels on the way.\nHave a comfortable stay.",
+    "lyricsJa": [
+      {
+        "en": "Walking down the hall, trying to find some peace",
+        "ja": "廊下を歩いて、少しでも休まる場所を探している"
+      },
+      {
+        "en": "But the heat in this room just won't decrease",
+        "ja": "だけど、この部屋の暑さはちっとも和らがない"
+      },
+      {
+        "en": "I pick up the phone, dial down to the desk",
+        "ja": "受話器を取って、フロントへダイヤルする"
+      },
+      {
+        "en": "Hoping they can help me get a little rest",
+        "ja": "少しでも休めるように、助けてもらえることを願って"
+      },
+      {
+        "en": "The AC in my room doesn't seem to be working",
+        "ja": "「部屋のエアコンが動いていないようなんです」"
+      },
+      {
+        "en": "Just blowing warm air, while the heat is lurking",
+        "ja": "熱気がまとわりつく中で、生ぬるい風が吹くばかり"
+      },
+      {
+        "en": "Could we get some extra towels while you're on the way?",
+        "ja": "「そちらに向かうついでに、追加のタオルももらえますか？」"
+      },
+      {
+        "en": "Hoping we can finally cool down today",
+        "ja": "今日こそ、ようやく涼むことができるように"
+      },
+      {
+        "en": "Send maintenance up, yeah, send them right away",
+        "ja": "「すぐにメンテナンス担当者を向かわせます」"
+      },
+      {
+        "en": "I apologize for the inconvenience, sir",
+        "ja": "「ご不便をおかけして申し訳ありません」"
+      },
+      {
+        "en": "We'll get it sorted out, it's all a blur",
+        "ja": "混乱はすぐに解決いたしますから"
+      },
+      {
+        "en": "Is it not turning on, or just blowing warm?",
+        "ja": "「全く電源が入らないのでしょうか？それとも生ぬるい風ですか？」"
+      },
+      {
+        "en": "We'll fix it up before it does any harm",
+        "ja": "被害が出る前に、しっかりと修理いたします"
+      },
+      {
+        "en": "The AC in my room doesn't seem to be working",
+        "ja": "「部屋のエアコンが動いていないようなんです」"
+      },
+      {
+        "en": "Just blowing warm air, while the heat is lurking",
+        "ja": "熱気がまとわりつく中で、生ぬるい風が吹くばかり"
+      },
+      {
+        "en": "Could we get some extra towels while you're on the way?",
+        "ja": "「そちらに向かうついでに、追加のタオルももらえますか？」"
+      },
+      {
+        "en": "Hoping we can finally cool down today",
+        "ja": "今日こそ、ようやく涼むことができるように"
+      },
+      {
+        "en": "Send maintenance up, yeah, send them right away",
+        "ja": "「すぐにメンテナンス担当者を向かわせます」"
+      },
+      {
+        "en": "How long do you think it will take to repair?",
+        "ja": "「修理にはどのくらいかかりそうですか？」"
+      },
+      {
+        "en": "Ten minutes max, we'll have somebody there",
+        "ja": "「最大でも10分、すぐにスタッフを向かわせます」"
+      },
+      {
+        "en": "Housekeeping is bringing fresh towels to your door",
+        "ja": "「清掃係が、ドアまで新しいタオルをお持ちしますよ」"
+      },
+      {
+        "en": "You won't have to worry or complain anymore",
+        "ja": "もう心配したり、不満を言ったりする必要はありません"
+      },
+      {
+        "en": "Just blowing warm air.",
+        "ja": "生ぬるい風しか出ない。"
+      },
+      {
+        "en": "We'll be right there.",
+        "ja": "すぐにうかがいます。"
+      },
+      {
+        "en": "Extra towels on the way.",
+        "ja": "追加のタオルもお持ちします。"
+      },
+      {
+        "en": "Have a comfortable stay.",
+        "ja": "快適なご滞在を。"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "index": 0,
+      "start": 17.33,
+      "end": 23.28
+    },
+    {
+      "index": 1,
+      "start": 23.28,
+      "end": 30
+    },
+    {
+      "index": 2,
+      "start": 30,
+      "end": 37.76
+    },
+    {
+      "index": 3,
+      "start": 37.76,
+      "end": 44.76
+    },
+    {
+      "index": 4,
+      "start": 44.76,
+      "end": 51.74
+    },
+    {
+      "index": 5,
+      "start": 51.74,
+      "end": 58.78
+    },
+    {
+      "index": 6,
+      "start": 58.78,
+      "end": 62.54
+    },
+    {
+      "index": 7,
+      "start": 62.54,
+      "end": 71.72
+    },
+    {
+      "index": 8,
+      "start": 71.72,
+      "end": 78.66
+    },
+    {
+      "index": 9,
+      "start": 78.66,
+      "end": 82.86
+    },
+    {
+      "index": 10,
+      "start": 82.86,
+      "end": 90.68
+    },
+    {
+      "index": 11,
+      "start": 90.68,
+      "end": 97.86
+    },
+    {
+      "index": 12,
+      "start": 97.86,
+      "end": 104.76
+    },
+    {
+      "index": 13,
+      "start": 104.76,
+      "end": 111.9
+    },
+    {
+      "index": 14,
+      "start": 111.9,
+      "end": 119.18
+    },
+    {
+      "index": 15,
+      "start": 119.18,
+      "end": 122.92
+    },
+    {
+      "index": 16,
+      "start": 122.92,
+      "end": 132.02
+    },
+    {
+      "index": 17,
+      "start": 132.02,
+      "end": 135.18
+    },
+    {
+      "index": 18,
+      "start": 135.18,
+      "end": 141.72
+    },
+    {
+      "index": 19,
+      "start": 141.72,
+      "end": 148.64
+    },
+    {
+      "index": 20,
+      "start": 148.64,
+      "end": 154.54
+    },
+    {
+      "index": 21,
+      "start": 154.54,
+      "end": 161.1
+    },
+    {
+      "index": 22,
+      "start": 161.1,
+      "end": 167.84
+    },
+    {
+      "index": 23,
+      "start": 167.84,
+      "end": 175.28
+    },
+    {
+      "index": 24,
+      "start": 175.28,
+      "end": 181.8
+    },
+    {
+      "index": 25,
+      "start": 181.8,
+      "end": 185.28
+    }
+  ]
+}

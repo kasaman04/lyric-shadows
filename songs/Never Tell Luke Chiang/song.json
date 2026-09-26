@@ -8,12 +8,24 @@
   "speakerA": {
     "name": "Noah",
     "type": "男性",
-    "voice": "CfDbY7v8tDkTvB9rNcUw"
+    "voice": "bIHbv24MWmeRgasZH58o",
+    "voiceProfile": "will",
+    "gender": "male",
+    "age": "young",
+    "accent": "american",
+    "tone": "calm",
+    "voiceName": "Will"
   },
   "speakerB": {
     "name": "Lily",
     "type": "女性",
-    "voice": "cNYrMw9glwJZXR8RwbuR"
+    "voice": "cNYrMw9glwJZXR8RwbuR",
+    "voiceProfile": "belle",
+    "gender": "female",
+    "age": "young",
+    "accent": "american",
+    "tone": "warm",
+    "voiceName": "Belle"
   },
   "videoId": "lfiMRv3p4mg",
   "thumbnailUrl": "/songs/Never%20Tell%20Luke%20Chiang/thumbnail.jpg",
@@ -193,7 +205,7 @@
         {
           "text": "I keep telling myself, Patience, but I don't know how much longer I can act normal.",
           "displayHtml": "I keep telling myself, <span class=\"lyric-phrase\">Patience</span>, but I don't know how much longer I can act normal.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/0_0.mp3"
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/bd522d4cc535c3e0/0-0.mp3"
         }
       ],
       "japanese": "ずっと「我慢しろ」って自分に言い聞かせてるけど、あとどれくらい普通のふりができるかわからない。"
@@ -206,12 +218,12 @@
         {
           "text": "Is this about school again?",
           "displayHtml": "Is this about school again?",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/1_0.mp3"
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/bd522d4cc535c3e0/1-0.mp3"
         },
         {
           "text": "Or is it more than that?",
           "displayHtml": "Or is it more than that?",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/1_1.mp3"
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/bd522d4cc535c3e0/1-1.mp3"
         }
       ],
       "japanese": "また学校のこと？それとも、もっと大きい話？"
@@ -224,17 +236,17 @@
         {
           "text": "It's all of this.",
           "displayHtml": "It's <span class=\"lyric-phrase\">all of this</span>.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/2_0.mp3"
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/bd522d4cc535c3e0/2-0.mp3"
         },
         {
           "text": "School, my parents, the future.",
           "displayHtml": "School, my parents, the future.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/2_1.mp3"
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/bd522d4cc535c3e0/2-1.mp3"
         },
         {
           "text": "I feel trapped.",
           "displayHtml": "I feel trapped.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/2_2.mp3"
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/bd522d4cc535c3e0/2-2.mp3"
         }
       ],
       "japanese": "全部だよ。学校も、親のことも、将来のことも。閉じ込められてる感じがする。"
@@ -247,12 +259,12 @@
         {
           "text": "Then stop trying to sound fine.",
           "displayHtml": "Then stop trying to sound fine.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/3_0.mp3"
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/bd522d4cc535c3e0/3-0.mp3"
         },
         {
           "text": "Tell me how you've been feeling for real.",
           "displayHtml": "Tell me <span class=\"lyric-phrase\">how you've been feeling</span> for real.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/3_1.mp3"
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/bd522d4cc535c3e0/3-1.mp3"
         }
       ],
       "japanese": "じゃあ、平気そうに話そうとしなくていいよ。本当はどう感じてるのか話して。"
@@ -265,12 +277,12 @@
         {
           "text": "I don't know.",
           "displayHtml": "I don't know.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/4_0.mp3"
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/bd522d4cc535c3e0/4-0.mp3"
         },
         {
           "text": "Maybe I'm thinking out loud, but I don't think this path is mine.",
           "displayHtml": "Maybe <span class=\"lyric-phrase\">I'm thinking out loud</span>, but I don't think this path is mine.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/4_1.mp3"
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/bd522d4cc535c3e0/4-1.mp3"
         }
       ],
       "japanese": "わからない。ただ声に出して考えてるだけかもしれないけど、この道は自分のものじゃない気がする。"
@@ -283,12 +295,12 @@
         {
           "text": "I think you already know that.",
           "displayHtml": "I think you already know that.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/5_0.mp3"
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/bd522d4cc535c3e0/5-0.mp3"
         },
         {
           "text": "And I know full well you've been scared to say it.",
           "displayHtml": "And I <span class=\"lyric-phrase\">know full well</span> you've been scared to say it.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/5_1.mp3"
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/bd522d4cc535c3e0/5-1.mp3"
         }
       ],
       "japanese": "たぶん君はもうわかってるんだと思う。それを言うのが怖かったことも、私はちゃんとわかってる。"
@@ -301,12 +313,12 @@
         {
           "text": "Yeah.",
           "displayHtml": "Yeah.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/6_0.mp3"
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/bd522d4cc535c3e0/6-0.mp3"
         },
         {
           "text": "Every time I try to explain it, I think, I gotta say less, or they'll get disappointed.",
           "displayHtml": "Every time I try to explain it, I think, <span class=\"lyric-phrase\">I gotta say less</span>, or they'll get disappointed.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/6_1.mp3"
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/bd522d4cc535c3e0/6-1.mp3"
         }
       ],
       "japanese": "うん。説明しようとするたびに、余計なことは言わない方がいいって思うんだ。がっかりされそうで。"
@@ -319,7 +331,7 @@
         {
           "text": "Maybe you're waiting for a sign from above, but you might not get one.",
           "displayHtml": "Maybe you're waiting for a <span class=\"lyric-phrase\">sign from above</span>, but you might not get one.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/7_0.mp3"
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/bd522d4cc535c3e0/7-0.mp3"
         }
       ],
       "japanese": "天からのサインみたいなものを待ってるのかもしれないけど、そんなものは来ないかもしれない。"
@@ -332,17 +344,17 @@
         {
           "text": "That's what scares me.",
           "displayHtml": "That's what scares me.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/8_0.mp3"
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/bd522d4cc535c3e0/8-0.mp3"
         },
         {
           "text": "If I choose wrong, it's on me.",
           "displayHtml": "If I choose wrong, it's on me.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/8_1.mp3"
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/bd522d4cc535c3e0/8-1.mp3"
         },
         {
           "text": "I feel like I'm losing control.",
           "displayHtml": "I feel like <span class=\"lyric-phrase\">I'm losing control</span>.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/8_2.mp3"
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/bd522d4cc535c3e0/8-2.mp3"
         }
       ],
       "japanese": "それが怖いんだ。間違えたら、自分の責任になる。自分を保てなくなりそう。"
@@ -355,17 +367,17 @@
         {
           "text": "I get it.",
           "displayHtml": "I get it.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/9_0.mp3"
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/bd522d4cc535c3e0/9-0.mp3"
         },
         {
           "text": "But Nothing learned is painless.",
           "displayHtml": "But <span class=\"lyric-phrase\">Nothing learned is painless</span>.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/9_1.mp3"
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/bd522d4cc535c3e0/9-1.mp3"
         },
         {
           "text": "If this hurts, maybe it means you're finally being honest.",
           "displayHtml": "If this hurts, maybe it means you're finally being honest.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/9_2.mp3"
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/bd522d4cc535c3e0/9-2.mp3"
         }
       ],
       "japanese": "わかるよ。でも、痛みなしに学べることなんてないのかも。苦しいなら、それはやっと本音に向き合ってるってことかもしれない。"
@@ -378,12 +390,12 @@
         {
           "text": "I'm so tired, Lily.",
           "displayHtml": "I'm so tired, Lily.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/10_0.mp3"
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/bd522d4cc535c3e0/10-0.mp3"
         },
         {
           "text": "I feel like I'm barely breathing.",
           "displayHtml": "I feel like <span class=\"lyric-phrase\">I'm barely breathing</span>.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/10_1.mp3"
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/bd522d4cc535c3e0/10-1.mp3"
         }
       ],
       "japanese": "もう疲れたよ、Lily。息をするのもやっとな気がする。"
@@ -396,17 +408,18 @@
         {
           "text": "Then don't decide everything tonight.",
           "displayHtml": "Then don't decide everything tonight.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/11_0.mp3"
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/bd522d4cc535c3e0/11-0.mp3"
         },
         {
           "text": "Just breathe, and tomorrow we'll figure out the first sentence together.",
           "displayHtml": "Just breathe, and tomorrow we'll figure out the first sentence together.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/11_1.mp3"
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/bd522d4cc535c3e0/11-1.mp3"
         }
       ],
       "japanese": "じゃあ今夜、全部決めなくていい。まず息をして。明日、最初に何を言うか一緒に考えよう。"
     }
   ],
   "createdAt": "2026-05-18T06:12:24.579Z",
-  "thumbnailSource": "Luke Chiang - Never Tell Official Music Video"
+  "thumbnailSource": "Luke Chiang - Never Tell Official Music Video",
+  "conversationAudioStatus": "ready"
 }

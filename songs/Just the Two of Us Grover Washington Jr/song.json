@@ -8,12 +8,24 @@
   "speakerA": {
     "name": "Kai",
     "type": "男性",
-    "voice": "CfDbY7v8tDkTvB9rNcUw"
+    "voice": "bIHbv24MWmeRgasZH58o",
+    "voiceProfile": "will",
+    "gender": "male",
+    "age": "young",
+    "accent": "american",
+    "tone": "calm",
+    "voiceName": "Will"
   },
   "speakerB": {
     "name": "Maya",
     "type": "女性",
-    "voice": "cNYrMw9glwJZXR8RwbuR"
+    "voice": "FGY2WhTYpPnrIDTdsKH5",
+    "voiceProfile": "laura",
+    "gender": "female",
+    "age": "young",
+    "accent": "american",
+    "tone": "casual",
+    "voiceName": "Laura"
   },
   "videoId": "v8oqbWrP1QY",
   "thumbnailUrl": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/thumbnail.jpg",
@@ -153,12 +165,12 @@
         {
           "text": "The rain finally stopped.",
           "displayHtml": "The rain finally stopped.",
-          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/0_0.mp3"
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/6202a8eb5f6c54df/0-0.mp3"
         },
         {
           "text": "The street looks kind of beautiful now.",
           "displayHtml": "The street looks kind of beautiful now.",
-          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/0_1.mp3"
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/6202a8eb5f6c54df/0-1.mp3"
         }
       ],
       "japanese": "やっと雨が止んだね。道がなんだかきれいに見える。"
@@ -171,12 +183,12 @@
         {
           "text": "Yeah.",
           "displayHtml": "Yeah.",
-          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/1_0.mp3"
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/6202a8eb5f6c54df/1-0.mp3"
         },
         {
           "text": "The lights on the puddles look like little rainbows.",
           "displayHtml": "The lights on the puddles look like little rainbows.",
-          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/1_1.mp3"
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/6202a8eb5f6c54df/1-1.mp3"
         }
       ],
       "japanese": "うん。水たまりに映る光が、小さな虹みたい。"
@@ -189,7 +201,7 @@
         {
           "text": "Honestly, when I think of you sometimes, I catch myself smiling for no reason.",
           "displayHtml": "Honestly, <span class=\"lyric-phrase\">when I think of you sometimes</span>, I catch myself smiling for no reason.",
-          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/2_0.mp3"
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/6202a8eb5f6c54df/2-0.mp3"
         }
       ],
       "japanese": "正直、ときどき君のことを考えると、理由もなく笑ってる自分に気づくんだ。"
@@ -202,12 +214,12 @@
         {
           "text": "I do that too.",
           "displayHtml": "I do that too.",
-          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/3_0.mp3"
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/6202a8eb5f6c54df/3-0.mp3"
         },
         {
           "text": "I just didn't know if I should say it.",
           "displayHtml": "I just didn't know if I should say it.",
-          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/3_1.mp3"
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/6202a8eb5f6c54df/3-1.mp3"
         }
       ],
       "japanese": "私もそうだよ。ただ、言っていいのかわからなかった。"
@@ -220,7 +232,7 @@
         {
           "text": "I kept trying to look for the perfect moment, but maybe I was just nervous.",
           "displayHtml": "I kept trying to <span class=\"lyric-phrase\">look for</span> the perfect moment, but maybe I was just nervous.",
-          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/4_0.mp3"
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/6202a8eb5f6c54df/4-0.mp3"
         }
       ],
       "japanese": "完璧なタイミングを探そうとしてたけど、たぶんただ緊張してただけなんだ。"
@@ -233,7 +245,7 @@
         {
           "text": "Maybe there's no time for pretending we don't know what this is.",
           "displayHtml": "Maybe there's <span class=\"lyric-phrase\">no time for</span> pretending we don't know what this is.",
-          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/5_0.mp3"
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/6202a8eb5f6c54df/5-0.mp3"
         }
       ],
       "japanese": "もしかしたら、もうこの気持ちに気づかないふりをしてる場合じゃないのかも。"
@@ -246,7 +258,7 @@
         {
           "text": "So, what are we calling this?",
           "displayHtml": "So, what are we calling this?",
-          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/6_0.mp3"
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/6202a8eb5f6c54df/6-0.mp3"
         }
       ],
       "japanese": "じゃあ、これって何て呼べばいいんだろう？"
@@ -259,12 +271,12 @@
         {
           "text": "Maybe we don't have to name it tonight.",
           "displayHtml": "Maybe we don't have to name it tonight.",
-          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/7_0.mp3"
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/6202a8eb5f6c54df/7-0.mp3"
         },
         {
           "text": "Let's just start with dinner, just the two of us.",
           "displayHtml": "Let's just start with dinner, <span class=\"lyric-phrase\">just the two of us</span>.",
-          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/7_1.mp3"
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/6202a8eb5f6c54df/7-1.mp3"
         }
       ],
       "japanese": "今夜すぐ名前をつけなくてもいいんじゃない？まずは二人だけで、ご飯から始めよう。"
@@ -277,12 +289,12 @@
         {
           "text": "I like that.",
           "displayHtml": "I like that.",
-          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/8_0.mp3"
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/6202a8eb5f6c54df/8-0.mp3"
         },
         {
           "text": "No pressure, no big speech.",
           "displayHtml": "No pressure, no big speech.",
-          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/8_1.mp3"
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/6202a8eb5f6c54df/8-1.mp3"
         }
       ],
       "japanese": "それいいね。重く考えずに、大げさな言葉もなしで。"
@@ -295,12 +307,12 @@
         {
           "text": "Exactly.",
           "displayHtml": "Exactly.",
-          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/9_0.mp3"
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/6202a8eb5f6c54df/9-0.mp3"
         },
         {
           "text": "Just dinner, and we can be ourselves for once.",
           "displayHtml": "Just dinner, and we can be ourselves for once.",
-          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/9_1.mp3"
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/6202a8eb5f6c54df/9-1.mp3"
         }
       ],
       "japanese": "そう。ご飯だけでいいし、今度こそ自然体でいよう。"
@@ -313,12 +325,12 @@
         {
           "text": "I'd like that.",
           "displayHtml": "I'd like that.",
-          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/10_0.mp3"
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/6202a8eb5f6c54df/10-0.mp3"
         },
         {
           "text": "I've wanted to spend time with you without overthinking everything.",
           "displayHtml": "I've wanted to spend time with you without overthinking everything.",
-          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/10_1.mp3"
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/6202a8eb5f6c54df/10-1.mp3"
         }
       ],
       "japanese": "それがいい。考えすぎずに、君と一緒に過ごしたいって思ってたんだ。"
@@ -331,12 +343,12 @@
         {
           "text": "Me too.",
           "displayHtml": "Me too.",
-          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/11_0.mp3"
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/6202a8eb5f6c54df/11-0.mp3"
         },
         {
           "text": "Then this weekend, just the two of us.",
           "displayHtml": "Then this weekend, <span class=\"lyric-phrase\">just the two of us</span>.",
-          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/11_1.mp3"
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/6202a8eb5f6c54df/11-1.mp3"
         }
       ],
       "japanese": "私も。じゃあ今週末、二人だけで。"
@@ -349,17 +361,18 @@
         {
           "text": "You and I.",
           "displayHtml": "You and I.",
-          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/12_0.mp3"
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/6202a8eb5f6c54df/12-0.mp3"
         },
         {
           "text": "I like the sound of that.",
           "displayHtml": "I like the sound of that.",
-          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/12_1.mp3"
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/6202a8eb5f6c54df/12-1.mp3"
         }
       ],
       "japanese": "君と僕で。なんかいい響きだね。"
     }
   ],
   "createdAt": "2026-05-18T06:39:22.525Z",
-  "thumbnailSource": "Grover Washington Jr. - Just the Two of Us Official Lyric Video / RHINO"
+  "thumbnailSource": "Grover Washington Jr. - Just the Two of Us Official Lyric Video / RHINO",
+  "conversationAudioStatus": "ready"
 }

@@ -1,0 +1,277 @@
+{
+  "status": "estimated",
+  "source": {
+    "name": "Local audio alignment",
+    "model": "faster-whisper-base.en + small.en",
+    "audioUploaded": false,
+    "review": "Line starts checked against local word timestamps; uncertain words remain approximate"
+  },
+  "display": {
+    "lyrics": "Have we met before? You look really familiar to me.\nI'm searching my mind, looking through my memory.\nI don't think so, but I'm notoriously bad with faces.\nMeeting people in all these different places.\nNice to meet you anyway.\nHow do you know the host today?\nOh, we go way back, yeah, we went to college together.\nThrough the good times and the bad weather.\nWhat about you? What's your story?\nI just started working at his company.\nNo kidding! How are you liking the new gig?\nDreaming small or are you dreaming big?\nIt's been great, the team is super supportive.\nA lot to learn, keeping it positive.\nWell, let me introduce you to the old crew.\nYeah, it was really nice meeting you.\nOh, we go way back, yeah, we went to college together.\nThrough the good times and the bad weather.\nWhat about you? What's your story?\nI just started working at his company.\nNo kidding! How are you liking the new gig?\nDreaming small or are you dreaming big?\n(Ooh) You look familiar...\n(Yeah) Notoriously bad with faces...\n(Ooh) We go way back...\n(Yeah) How are you liking the new gig?\nWell, let me introduce you.\nYeah, welcome to the crew.\nNice to meet you.",
+    "lyricsJa": [
+      {
+        "en": "Have we met before? You look really familiar to me.",
+        "ja": "以前どこかでお会いしましたか？すごく見覚えがあるのですが。"
+      },
+      {
+        "en": "I'm searching my mind, looking through my memory.",
+        "ja": "記憶を辿って、思い出そうとしているところです。"
+      },
+      {
+        "en": "I don't think so, but I'm notoriously bad with faces.",
+        "ja": "そうは思いませんが、私はとにかく人の顔を覚えるのが苦手なんです。"
+      },
+      {
+        "en": "Meeting people in all these different places.",
+        "ja": "あちこちでいろんな人に会いますから。"
+      },
+      {
+        "en": "Nice to meet you anyway.",
+        "ja": "とにかく、はじめまして。"
+      },
+      {
+        "en": "How do you know the host today?",
+        "ja": "今日のホストとはどういうお知り合いですか？"
+      },
+      {
+        "en": "Oh, we go way back, yeah, we went to college together.",
+        "ja": "ああ、長い付き合いですよ。大学が一緒だったんです。"
+      },
+      {
+        "en": "Through the good times and the bad weather.",
+        "ja": "良い時も悪い時も共に過ごしてきました。"
+      },
+      {
+        "en": "What about you? What's your story?",
+        "ja": "あなたはどうですか？どんなつながりですか？"
+      },
+      {
+        "en": "I just started working at his company.",
+        "ja": "彼の会社で働き始めたばかりなんです。"
+      },
+      {
+        "en": "No kidding! How are you liking the new gig?",
+        "ja": "本当ですか！新しい仕事はどうですか？"
+      },
+      {
+        "en": "Dreaming small or are you dreaming big?",
+        "ja": "堅実にやってますか、それとも大きな夢を持って？"
+      },
+      {
+        "en": "It's been great, the team is super supportive.",
+        "ja": "とても順調です。チームのみんなもすごく助けてくれますし。"
+      },
+      {
+        "en": "A lot to learn, keeping it positive.",
+        "ja": "学ぶことは多いですが、前向きに頑張っています。"
+      },
+      {
+        "en": "Well, let me introduce you to the old crew.",
+        "ja": "それじゃあ、昔からの仲間に紹介させてください。"
+      },
+      {
+        "en": "Yeah, it was really nice meeting you.",
+        "ja": "ええ、お会いできてよかったです。"
+      },
+      {
+        "en": "Oh, we go way back, yeah, we went to college together.",
+        "ja": "ああ、長い付き合いですよ。大学が一緒だったんです。"
+      },
+      {
+        "en": "Through the good times and the bad weather.",
+        "ja": "良い時も悪い時も共に過ごしてきました。"
+      },
+      {
+        "en": "What about you? What's your story?",
+        "ja": "あなたはどうですか？どんなつながりですか？"
+      },
+      {
+        "en": "I just started working at his company.",
+        "ja": "彼の会社で働き始めたばかりなんです。"
+      },
+      {
+        "en": "No kidding! How are you liking the new gig?",
+        "ja": "本当ですか！新しい仕事はどうですか？"
+      },
+      {
+        "en": "Dreaming small or are you dreaming big?",
+        "ja": "堅実にやってますか、それとも大きな夢を持って？"
+      },
+      {
+        "en": "(Ooh) You look familiar...",
+        "ja": "(Ooh) 見覚えがあるんだよなあ..."
+      },
+      {
+        "en": "(Yeah) Notoriously bad with faces...",
+        "ja": "(Yeah) 人の顔を覚えるのが苦手で..."
+      },
+      {
+        "en": "(Ooh) We go way back...",
+        "ja": "(Ooh) 長い付き合いなんだ..."
+      },
+      {
+        "en": "(Yeah) How are you liking the new gig?",
+        "ja": "(Yeah) 新しい仕事はどうだい？"
+      },
+      {
+        "en": "Well, let me introduce you.",
+        "ja": "それじゃあ、紹介させて。"
+      },
+      {
+        "en": "Yeah, welcome to the crew.",
+        "ja": "そう、仲間に加わって。"
+      },
+      {
+        "en": "Nice to meet you.",
+        "ja": "はじめまして。"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "index": 0,
+      "start": 1.04,
+      "end": 8.78
+    },
+    {
+      "index": 1,
+      "start": 8.78,
+      "end": 12.94
+    },
+    {
+      "index": 2,
+      "start": 12.94,
+      "end": 18.84
+    },
+    {
+      "index": 3,
+      "start": 18.84,
+      "end": 23.7
+    },
+    {
+      "index": 4,
+      "start": 23.7,
+      "end": 25.92
+    },
+    {
+      "index": 5,
+      "start": 25.92,
+      "end": 28.68
+    },
+    {
+      "index": 6,
+      "start": 28.68,
+      "end": 33.08
+    },
+    {
+      "index": 7,
+      "start": 33.08,
+      "end": 35.6
+    },
+    {
+      "index": 8,
+      "start": 35.6,
+      "end": 39.16
+    },
+    {
+      "index": 9,
+      "start": 39.16,
+      "end": 43.48
+    },
+    {
+      "index": 10,
+      "start": 43.48,
+      "end": 49
+    },
+    {
+      "index": 11,
+      "start": 49,
+      "end": 53.86
+    },
+    {
+      "index": 12,
+      "start": 53.86,
+      "end": 57.66
+    },
+    {
+      "index": 13,
+      "start": 57.66,
+      "end": 62.66
+    },
+    {
+      "index": 14,
+      "start": 62.66,
+      "end": 67.65
+    },
+    {
+      "index": 15,
+      "start": 67.65,
+      "end": 72
+    },
+    {
+      "index": 16,
+      "start": 72,
+      "end": 75.94
+    },
+    {
+      "index": 17,
+      "start": 75.94,
+      "end": 78.46
+    },
+    {
+      "index": 18,
+      "start": 78.46,
+      "end": 82.1
+    },
+    {
+      "index": 19,
+      "start": 82.1,
+      "end": 86.16
+    },
+    {
+      "index": 20,
+      "start": 86.16,
+      "end": 91.64
+    },
+    {
+      "index": 21,
+      "start": 91.64,
+      "end": 98
+    },
+    {
+      "index": 22,
+      "start": 98,
+      "end": 99.32
+    },
+    {
+      "index": 23,
+      "start": 99.32,
+      "end": 102.46
+    },
+    {
+      "index": 24,
+      "start": 102.46,
+      "end": 104.62
+    },
+    {
+      "index": 25,
+      "start": 104.62,
+      "end": 109.14
+    },
+    {
+      "index": 26,
+      "start": 109.14,
+      "end": 111.78
+    },
+    {
+      "index": 27,
+      "start": 111.78,
+      "end": 118.07
+    },
+    {
+      "index": 28,
+      "start": 118.07,
+      "end": 120.38
+    }
+  ]
+}

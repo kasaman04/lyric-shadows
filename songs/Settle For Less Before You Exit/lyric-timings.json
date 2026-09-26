@@ -1,0 +1,557 @@
+{
+  "status": "estimated",
+  "source": {
+    "name": "LRCLIB",
+    "id": 26687191,
+    "duration": 189.518367,
+    "url": "https://lrclib.net/api/get/26687191",
+    "review": "Local small.en word timestamps checked for line starts; uncertain scat and adlibs remain approximate"
+  },
+  "display": {
+    "lyrics": "Everybody deserves somebody\nBut girl, nobody can love you like I do\nYou could be a super model\nPresident or write a novel\nBut he's holding your back\nAnd you're better than that\nHe won't even buy you flowers\nStay up late and talk for hours\nI think I can do that\nI can be better than that\nYou should know\nEverybody deserves somebody\nBut girl, nobody can love you like I do\nAnd I'm not perfect but you're so worth it\nI wanna change the world for you\nSo baby, don't settle for less\nYou deserve the best\nYou're better than the rest\nAnd I can be the best\nSo baby, don't settle for less\nI've been watching in front the sidelines\nHis mistakes become my guidelines\n'Cause he's holding your back\nAnd you're better than that\nI will love to buy you flowers\nTake the time to talk for hours\nYeah, I can do that\nI can be better than that\nYou should know\nEverybody deserves somebody\nBut girl, nobody can love you like I do\nAnd I'm not perfect but you're so worth it\nI wanna change the world for you\nSo baby, don't settle for less\nYou deserve the best\nYou're better than the rest\nAnd I can be the best\nSo baby, don't settle for less\nYou deserve the best\nYou're better than the rest\nAnd I can be the best\nSo baby, don't settle for less\nHe takes you for granted\nGirl, I can't stand it\nWatching you panic over him\nSee he's just a nobody, I can be somebody\nSomeone to love til' the end\n'Cause everybody deserves somebody\nBut girl, nobody can love you like I do\nAnd I'm not perfect, yeah, you're so worth it\nI wanna change the world for you\nSo baby, don't settle for less\nYou deserve the best\nYou're better than the rest\nAnd I can be the best\nSo baby, don't settle for less\nYou deserve the best\nYou're better than the rest\nAnd I can be the best\nSo baby, don't settle for less",
+    "lyricsJa": [
+      {
+        "en": "Everybody deserves somebody",
+        "ja": "誰にだってふさわしい相手がいるけれど"
+      },
+      {
+        "en": "But girl, nobody can love you like I do",
+        "ja": "でも、僕以上に君を愛せる人なんていない"
+      },
+      {
+        "en": "You could be a super model",
+        "ja": "君ならスーパーモデルや大統領になれるし、小説だって書けるのに"
+      },
+      {
+        "en": "President or write a novel",
+        "ja": "大統領になるか、小説を書くか"
+      },
+      {
+        "en": "But he's holding your back",
+        "ja": "なのに彼は君の足を引っ張っている"
+      },
+      {
+        "en": "And you're better than that",
+        "ja": "君はそんなところで止まるような人じゃない"
+      },
+      {
+        "en": "He won't even buy you flowers",
+        "ja": "彼は花さえ買ってくれないし"
+      },
+      {
+        "en": "Stay up late and talk for hours",
+        "ja": "夜更かしして何時間も話すことさえない"
+      },
+      {
+        "en": "I think I can do that",
+        "ja": "僕ならそれができると思うんだ"
+      },
+      {
+        "en": "I can be better than that",
+        "ja": "僕は彼よりもいい男になれるよ"
+      },
+      {
+        "en": "You should know",
+        "ja": "知っておいてほしいんだ"
+      },
+      {
+        "en": "Everybody deserves somebody",
+        "ja": "誰にだってふさわしい相手がいるけれど"
+      },
+      {
+        "en": "But girl, nobody can love you like I do",
+        "ja": "でも、僕以上に君を愛せる人なんていない"
+      },
+      {
+        "en": "And I'm not perfect but you're so worth it",
+        "ja": "僕は完璧じゃないけれど、君にはそれだけの価値がある"
+      },
+      {
+        "en": "I wanna change the world for you",
+        "ja": "君のために世界を変えたいんだ"
+      },
+      {
+        "en": "So baby, don't settle for less",
+        "ja": "だから、妥協なんてしないで"
+      },
+      {
+        "en": "You deserve the best",
+        "ja": "君には最高の人がふさわしい"
+      },
+      {
+        "en": "You're better than the rest",
+        "ja": "君は他の誰よりも素敵なんだから"
+      },
+      {
+        "en": "And I can be the best",
+        "ja": "そして僕が君にとっての最高になれる"
+      },
+      {
+        "en": "So baby, don't settle for less",
+        "ja": "だから、妥協なんてしないで"
+      },
+      {
+        "en": "I've been watching in front the sidelines",
+        "ja": "ずっと端から君を見ていたんだ"
+      },
+      {
+        "en": "His mistakes become my guidelines",
+        "ja": "彼の失敗を僕の教訓にしている"
+      },
+      {
+        "en": "'Cause he's holding your back",
+        "ja": "だって彼は君の邪魔をしているだけだから"
+      },
+      {
+        "en": "And you're better than that",
+        "ja": "君はそんなところで止まるような人じゃない"
+      },
+      {
+        "en": "I will love to buy you flowers",
+        "ja": "僕なら喜んで君に花を贈るよ"
+      },
+      {
+        "en": "Take the time to talk for hours",
+        "ja": "何時間だって君と語り合いたいんだ"
+      },
+      {
+        "en": "Yeah, I can do that",
+        "ja": "ああ、僕ならそれができる"
+      },
+      {
+        "en": "I can be better than that",
+        "ja": "僕は彼よりもいい男になれるよ"
+      },
+      {
+        "en": "You should know",
+        "ja": "知っておいてほしいんだ"
+      },
+      {
+        "en": "Everybody deserves somebody",
+        "ja": "誰にだってふさわしい相手がいるけれど"
+      },
+      {
+        "en": "But girl, nobody can love you like I do",
+        "ja": "でも、僕以上に君を愛せる人なんていない"
+      },
+      {
+        "en": "And I'm not perfect but you're so worth it",
+        "ja": "僕は完璧じゃないけれど、君にはそれだけの価値がある"
+      },
+      {
+        "en": "I wanna change the world for you",
+        "ja": "君のために世界を変えたいんだ"
+      },
+      {
+        "en": "So baby, don't settle for less",
+        "ja": "だから、妥協なんてしないで"
+      },
+      {
+        "en": "You deserve the best",
+        "ja": "君には最高の人がふさわしい"
+      },
+      {
+        "en": "You're better than the rest",
+        "ja": "君は他の誰よりも素敵なんだから"
+      },
+      {
+        "en": "And I can be the best",
+        "ja": "そして僕が君にとっての最高になれる"
+      },
+      {
+        "en": "So baby, don't settle for less",
+        "ja": "だから、妥協なんてしないで"
+      },
+      {
+        "en": "You deserve the best",
+        "ja": "君には最高の人がふさわしい"
+      },
+      {
+        "en": "You're better than the rest",
+        "ja": "君は他の誰よりも素敵なんだから"
+      },
+      {
+        "en": "And I can be the best",
+        "ja": "そして僕が君にとっての最高になれる"
+      },
+      {
+        "en": "So baby, don't settle for less",
+        "ja": "だから、妥協なんてしないで"
+      },
+      {
+        "en": "He takes you for granted",
+        "ja": "彼は君のことを当たり前だと思っている"
+      },
+      {
+        "en": "Girl, I can't stand it",
+        "ja": "そんなの僕には耐えられないんだ"
+      },
+      {
+        "en": "Watching you panic over him",
+        "ja": "君が彼のために取り乱すのを見ているなんて"
+      },
+      {
+        "en": "See he's just a nobody, I can be somebody",
+        "ja": "ほら、彼はただのつまらない男だよ"
+      },
+      {
+        "en": "Someone to love til' the end",
+        "ja": "最後まで君を愛し続ける誰かに"
+      },
+      {
+        "en": "'Cause everybody deserves somebody",
+        "ja": "誰にだって大切にされる権利があるから"
+      },
+      {
+        "en": "But girl, nobody can love you like I do",
+        "ja": "でも、僕以上に君を愛せる人なんていない"
+      },
+      {
+        "en": "And I'm not perfect, yeah, you're so worth it",
+        "ja": "僕は完璧じゃないけれど、君にはそれだけの価値がある"
+      },
+      {
+        "en": "I wanna change the world for you",
+        "ja": "君のために世界を変えたいんだ"
+      },
+      {
+        "en": "So baby, don't settle for less",
+        "ja": "だから、妥協なんてしないで"
+      },
+      {
+        "en": "You deserve the best",
+        "ja": "君には最高の人がふさわしい"
+      },
+      {
+        "en": "You're better than the rest",
+        "ja": "君は他の誰よりも素敵なんだから"
+      },
+      {
+        "en": "And I can be the best",
+        "ja": "そして僕が君にとっての最高になれる"
+      },
+      {
+        "en": "So baby, don't settle for less",
+        "ja": "だから、妥協なんてしないで"
+      },
+      {
+        "en": "You deserve the best",
+        "ja": "君には最高の人がふさわしい"
+      },
+      {
+        "en": "You're better than the rest",
+        "ja": "君は他の誰よりも素敵なんだから"
+      },
+      {
+        "en": "And I can be the best",
+        "ja": "そして僕が君にとっての最高になれる"
+      },
+      {
+        "en": "So baby, don't settle for less",
+        "ja": "だから、妥協なんてしないで"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "index": 0,
+      "start": 0,
+      "end": 4.42
+    },
+    {
+      "index": 1,
+      "start": 4.42,
+      "end": 9.48
+    },
+    {
+      "index": 2,
+      "start": 9.48,
+      "end": 13.07
+    },
+    {
+      "index": 3,
+      "start": 13.07,
+      "end": 15.38
+    },
+    {
+      "index": 4,
+      "start": 15.38,
+      "end": 17.18
+    },
+    {
+      "index": 5,
+      "start": 17.18,
+      "end": 19.4
+    },
+    {
+      "index": 6,
+      "start": 19.4,
+      "end": 22.8
+    },
+    {
+      "index": 7,
+      "start": 22.8,
+      "end": 24.6
+    },
+    {
+      "index": 8,
+      "start": 24.6,
+      "end": 26.72
+    },
+    {
+      "index": 9,
+      "start": 26.72,
+      "end": 29.02
+    },
+    {
+      "index": 10,
+      "start": 29.02,
+      "end": 31.24
+    },
+    {
+      "index": 11,
+      "start": 31.24,
+      "end": 35.56
+    },
+    {
+      "index": 12,
+      "start": 35.56,
+      "end": 40.68
+    },
+    {
+      "index": 13,
+      "start": 40.68,
+      "end": 45.68
+    },
+    {
+      "index": 14,
+      "start": 45.68,
+      "end": 48.88
+    },
+    {
+      "index": 15,
+      "start": 48.88,
+      "end": 51.46
+    },
+    {
+      "index": 16,
+      "start": 51.46,
+      "end": 53.94
+    },
+    {
+      "index": 17,
+      "start": 53.94,
+      "end": 56.18
+    },
+    {
+      "index": 18,
+      "start": 56.18,
+      "end": 58.62
+    },
+    {
+      "index": 19,
+      "start": 58.62,
+      "end": 62.36
+    },
+    {
+      "index": 20,
+      "start": 62.36,
+      "end": 65.04
+    },
+    {
+      "index": 21,
+      "start": 65.04,
+      "end": 67.68
+    },
+    {
+      "index": 22,
+      "start": 67.68,
+      "end": 69.98
+    },
+    {
+      "index": 23,
+      "start": 69.98,
+      "end": 72.2
+    },
+    {
+      "index": 24,
+      "start": 72.2,
+      "end": 74.62
+    },
+    {
+      "index": 25,
+      "start": 74.62,
+      "end": 77.32
+    },
+    {
+      "index": 26,
+      "start": 77.32,
+      "end": 79.54
+    },
+    {
+      "index": 27,
+      "start": 79.54,
+      "end": 81.82
+    },
+    {
+      "index": 28,
+      "start": 81.82,
+      "end": 84.2
+    },
+    {
+      "index": 29,
+      "start": 84.2,
+      "end": 88.34
+    },
+    {
+      "index": 30,
+      "start": 88.34,
+      "end": 93.46
+    },
+    {
+      "index": 31,
+      "start": 93.46,
+      "end": 98.38
+    },
+    {
+      "index": 32,
+      "start": 98.38,
+      "end": 101.66
+    },
+    {
+      "index": 33,
+      "start": 101.66,
+      "end": 104.3
+    },
+    {
+      "index": 34,
+      "start": 104.3,
+      "end": 106.72
+    },
+    {
+      "index": 35,
+      "start": 106.72,
+      "end": 108.98
+    },
+    {
+      "index": 36,
+      "start": 108.98,
+      "end": 111.46
+    },
+    {
+      "index": 37,
+      "start": 111.46,
+      "end": 113.86
+    },
+    {
+      "index": 38,
+      "start": 113.86,
+      "end": 116.34
+    },
+    {
+      "index": 39,
+      "start": 116.34,
+      "end": 118.56
+    },
+    {
+      "index": 40,
+      "start": 118.56,
+      "end": 121.1
+    },
+    {
+      "index": 41,
+      "start": 121.1,
+      "end": 122.86
+    },
+    {
+      "index": 42,
+      "start": 122.86,
+      "end": 124.5
+    },
+    {
+      "index": 43,
+      "start": 124.5,
+      "end": 127.28
+    },
+    {
+      "index": 44,
+      "start": 127.28,
+      "end": 132.1
+    },
+    {
+      "index": 45,
+      "start": 132.1,
+      "end": 136.68
+    },
+    {
+      "index": 46,
+      "start": 136.68,
+      "end": 140.98
+    },
+    {
+      "index": 47,
+      "start": 140.98,
+      "end": 145.94
+    },
+    {
+      "index": 48,
+      "start": 145.94,
+      "end": 151.14
+    },
+    {
+      "index": 49,
+      "start": 151.14,
+      "end": 156.02
+    },
+    {
+      "index": 50,
+      "start": 156.02,
+      "end": 159.22
+    },
+    {
+      "index": 51,
+      "start": 159.22,
+      "end": 161.88
+    },
+    {
+      "index": 52,
+      "start": 161.88,
+      "end": 164.28
+    },
+    {
+      "index": 53,
+      "start": 164.28,
+      "end": 166.58
+    },
+    {
+      "index": 54,
+      "start": 166.58,
+      "end": 169.06
+    },
+    {
+      "index": 55,
+      "start": 169.06,
+      "end": 171.48
+    },
+    {
+      "index": 56,
+      "start": 171.48,
+      "end": 173.94
+    },
+    {
+      "index": 57,
+      "start": 173.94,
+      "end": 176.16
+    },
+    {
+      "index": 58,
+      "start": 176.16,
+      "end": 178.68
+    },
+    {
+      "index": 59,
+      "start": 178.68,
+      "end": 181.06
+    }
+  ]
+}

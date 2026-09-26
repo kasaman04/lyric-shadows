@@ -8,12 +8,24 @@
   "speakerA": {
     "name": "Sarah",
     "type": "女性",
-    "voice": "cNYrMw9glwJZXR8RwbuR"
+    "voice": "cNYrMw9glwJZXR8RwbuR",
+    "voiceProfile": "belle",
+    "gender": "female",
+    "age": "young",
+    "accent": "american",
+    "tone": "warm",
+    "voiceName": "Belle"
   },
   "speakerB": {
     "name": "Tom",
     "type": "男性",
-    "voice": "CfDbY7v8tDkTvB9rNcUw"
+    "voice": "CwhRBWXzGAHq8TQ4Fs17",
+    "voiceProfile": "roger",
+    "gender": "male",
+    "age": "middle_aged",
+    "accent": "american",
+    "tone": "calm",
+    "voiceName": "Roger"
   },
   "videoId": "LFX8Ld4Fk3M",
   "thumbnailUrl": "https://i.ytimg.com/vi/LFX8Ld4Fk3M/hqdefault.jpg",
@@ -265,7 +277,7 @@
         {
           "text": "He forgot our plans again. I feel stupid for still waiting.",
           "displayHtml": "He forgot our plans again. I feel stupid for still waiting.",
-          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/0_0.mp3"
+          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/conversation-audio/6efacac268472088/0-0.mp3"
         }
       ],
       "japanese": "また約束を忘れられたの。まだ待ってる自分がバカみたい。"
@@ -278,7 +290,7 @@
         {
           "text": "Sarah, he takes you for granted. You keep giving, and he barely tries.",
           "displayHtml": "Sarah, he <span class=\"lyric-phrase\">takes you for granted</span>. You keep giving, and he barely tries.",
-          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/1_0.mp3"
+          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/conversation-audio/6efacac268472088/1-0.mp3"
         }
       ],
       "japanese": "サラ、彼は君を当たり前に思ってるよ。君ばかり頑張って、彼はほとんど努力してない。"
@@ -291,7 +303,7 @@
         {
           "text": "Maybe I'm asking for too much. I just wanted him to care a little more.",
           "displayHtml": "Maybe I'm asking for too much. I just wanted him to care a little more.",
-          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/2_0.mp3"
+          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/conversation-audio/6efacac268472088/2-0.mp3"
         }
       ],
       "japanese": "私が求めすぎなのかな。もう少し大事にしてほしかっただけなんだけど。"
@@ -304,7 +316,7 @@
         {
           "text": "That's not too much. Everybody deserves somebody who shows up, listens, and makes time.",
           "displayHtml": "That's not too much. <span class=\"lyric-phrase\">Everybody deserves somebody</span> who shows up, listens, and makes time.",
-          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/3_0.mp3"
+          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/conversation-audio/6efacac268472088/3-0.mp3"
         }
       ],
       "japanese": "それは求めすぎじゃないよ。誰にだって、ちゃんと向き合ってくれる人がふさわしいんだ。"
@@ -317,7 +329,7 @@
         {
           "text": "I guess I know that. It's just hard to walk away.",
           "displayHtml": "I guess I know that. It's just hard to walk away.",
-          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/4_0.mp3"
+          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/conversation-audio/6efacac268472088/4-0.mp3"
         }
       ],
       "japanese": "たぶん分かってる。でも離れるのって難しいの。"
@@ -330,7 +342,7 @@
         {
           "text": "I've been watching from the sidelines, and I can see he's holding you back.",
           "displayHtml": "I've been <span class=\"lyric-phrase\">watching from the sidelines</span>, and I can see <span class=\"lyric-phrase\">he's holding you back</span>.",
-          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/5_0.mp3"
+          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/conversation-audio/6efacac268472088/5-0.mp3"
         }
       ],
       "japanese": "僕はずっとそばで見てきた。それに、彼が君の足を引っ張ってるのが分かる。"
@@ -343,7 +355,7 @@
         {
           "text": "You really think I deserve better?",
           "displayHtml": "You really think <span class=\"lyric-phrase\">I deserve better</span>?",
-          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/6_0.mp3"
+          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/conversation-audio/6efacac268472088/6-0.mp3"
         }
       ],
       "japanese": "私にはもっといい人がふさわしいって本当に思う？"
@@ -356,7 +368,7 @@
         {
           "text": "I do. And I'm not perfect, but I'd never make you feel like you had to beg for love.",
           "displayHtml": "I do. And <span class=\"lyric-phrase\">I'm not perfect</span>, but I'd never make you feel like you had to beg for love.",
-          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/7_0.mp3"
+          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/conversation-audio/6efacac268472088/7-0.mp3"
         }
       ],
       "japanese": "思うよ。僕は完璧じゃないけど、愛されるためにお願いしなきゃいけないなんて思わせない。"
@@ -369,7 +381,7 @@
         {
           "text": "Why are you saying all this now?",
           "displayHtml": "Why are you saying all this now?",
-          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/8_0.mp3"
+          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/conversation-audio/6efacac268472088/8-0.mp3"
         }
       ],
       "japanese": "どうして今そんなこと言うの？"
@@ -382,7 +394,7 @@
         {
           "text": "Because nobody can love you like I do, and you're so worth it. Don't settle for less.",
           "displayHtml": "Because <span class=\"lyric-phrase\">nobody can love you like I do</span>, and <span class=\"lyric-phrase\">you're so worth it</span>. <span class=\"lyric-phrase\">Don't settle for less</span>.",
-          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/9_0.mp3"
+          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/conversation-audio/6efacac268472088/9-0.mp3"
         }
       ],
       "japanese": "だって、僕ほど君を愛せる人はいないし、君にはそれだけの価値があるから。妥協しないで。"
@@ -395,7 +407,7 @@
         {
           "text": "Tom... are you saying you want to be that person for me?",
           "displayHtml": "Tom... are you saying you want to be that person for me?",
-          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/10_0.mp3"
+          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/conversation-audio/6efacac268472088/10-0.mp3"
         }
       ],
       "japanese": "トム……あなたがその人になりたいって言ってるの？"
@@ -408,12 +420,13 @@
         {
           "text": "Yes. I can be somebody, someone who loves you til' the end.",
           "displayHtml": "Yes. I can <span class=\"lyric-phrase\">be somebody</span>, someone who loves you <span class=\"lyric-phrase\">til' the end</span>.",
-          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/11_0.mp3"
+          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/conversation-audio/6efacac268472088/11-0.mp3"
         }
       ],
       "japanese": "うん。僕は君にとって特別な人になれる。最後まで君を愛する人に。"
     }
   ],
   "createdAt": "2026-04-12T08:25:31.662Z",
-  "hasLocalAudio": true
+  "hasLocalAudio": true,
+  "conversationAudioStatus": "ready"
 }

@@ -1,0 +1,404 @@
+{
+  "status": "estimated",
+  "source": {
+    "name": "Vagalume lyrics and local faster-whisper base.en alignment",
+    "lyricsUrl": "https://www.vagalume.com.br/jin-akanishi/baby-girl.html",
+    "audioUploaded": false,
+    "duration": 258.11,
+    "review": "Revised after in-app report of drift near the first Got me line. Local recognition anchors sung phrases; repeated audio waveforms match at 55.13, 71.97, and 218.05 seconds. Unrecognized spans remain estimated."
+  },
+  "display": {
+    "lyrics": "Baby girl, come next to me\nOoh, baby girl, you got me totally\nInfatuated and I cannot describe it in words\nFeelin' better next to you\nBaby girl, just take your time\nNo need to rush, cuz we got all night\nCall you pretty, maybe later we can dance the night away\nGot me fien'in' for your love\nGot me fien'in' for your love\n(I just can't find the words)\nBut every time the music dies the lights come on\nSomething deep inside is screaming out\nSo why don't we talk, talk, talk about us baby\nSo why don't we talk, talk, talk it up sometime\nSo why don't we talk, talk, talk about us baby\nAbout me and you\nAbout you and me\nBaby girl, it's plain to see\nOoh, in my arms is where you gotta be\nCan't duplicate the feeling with another guy like me\nIs it real or just a dream\nBaby girl, this could be the final dance\nOoh baby girl, can we take a chance\nI can feel the tension every time your eyes, they look at me\nLike the feelin' from the sun\nGot me fien'in' for your love\n(I just can't find the words)\nBut every time the music dies the lights come on\nSomething deep inside is screaming out\nSo why don't we talk, talk, talk about us baby\nSo why don't we talk, talk, talk it up sometime\nSo why don't we talk, talk, talk about us baby\nAbout me and you\nAbout you and me\nWe could be everything\nAnd when I think about it I wanna sing it out like\nBut every time the music dies the lights come on\nSomething deep inside is screaming out\nSo why don't we talk, talk, talk about us baby\nSo why don't we talk, talk, talk it up sometime\nSo why don't we talk, talk, talk about us baby\nAbout me and you\nAbout you and me",
+    "lyricsJa": [
+      {
+        "en": "Baby girl, come next to me",
+        "ja": "ねえ、僕の隣に来て"
+      },
+      {
+        "en": "Ooh, baby girl, you got me totally",
+        "ja": "君に僕はすっかり"
+      },
+      {
+        "en": "Infatuated and I cannot describe it in words",
+        "ja": "夢中で、その気持ちを言葉にできない"
+      },
+      {
+        "en": "Feelin' better next to you",
+        "ja": "君の隣にいると気分がよくなる"
+      },
+      {
+        "en": "Baby girl, just take your time",
+        "ja": "焦らず、ゆっくりでいいよ"
+      },
+      {
+        "en": "No need to rush, cuz we got all night",
+        "ja": "急ぐ必要はない、夜はまだ長いから"
+      },
+      {
+        "en": "Call you pretty, maybe later we can dance the night away",
+        "ja": "君をきれいだと言って、あとで一晩中踊れるかも"
+      },
+      {
+        "en": "Got me fien'in' for your love",
+        "ja": "君の愛が欲しくてたまらない"
+      },
+      {
+        "en": "Got me fien'in' for your love",
+        "ja": "君の愛が欲しくてたまらない"
+      },
+      {
+        "en": "(I just can't find the words)",
+        "ja": "（うまく言葉が見つからない）"
+      },
+      {
+        "en": "But every time the music dies the lights come on",
+        "ja": "でも音楽が止まり、明かりがつくたびに"
+      },
+      {
+        "en": "Something deep inside is screaming out",
+        "ja": "心の奥で何かが叫んでいる"
+      },
+      {
+        "en": "So why don't we talk, talk, talk about us baby",
+        "ja": "だから僕たちのことを話そうよ"
+      },
+      {
+        "en": "So why don't we talk, talk, talk it up sometime",
+        "ja": "いつか、じっくり話してみない？"
+      },
+      {
+        "en": "So why don't we talk, talk, talk about us baby",
+        "ja": "だから僕たちのことを話そうよ"
+      },
+      {
+        "en": "About me and you",
+        "ja": "僕と君のことを"
+      },
+      {
+        "en": "About you and me",
+        "ja": "君と僕のことを"
+      },
+      {
+        "en": "Baby girl, it's plain to see",
+        "ja": "ねえ、見れば分かるよ"
+      },
+      {
+        "en": "Ooh, in my arms is where you gotta be",
+        "ja": "君がいるべき場所は僕の腕の中"
+      },
+      {
+        "en": "Can't duplicate the feeling with another guy like me",
+        "ja": "僕のような男とのこの気持ちは、ほかでは味わえない"
+      },
+      {
+        "en": "Is it real or just a dream",
+        "ja": "これは現実？ それともただの夢？"
+      },
+      {
+        "en": "Baby girl, this could be the final dance",
+        "ja": "これが最後のダンスになるかもしれない"
+      },
+      {
+        "en": "Ooh baby girl, can we take a chance",
+        "ja": "ねえ、思い切ってみない？"
+      },
+      {
+        "en": "I can feel the tension every time your eyes, they look at me",
+        "ja": "君と目が合うたび、胸の高鳴りを感じる"
+      },
+      {
+        "en": "Like the feelin' from the sun",
+        "ja": "太陽の温かさみたいに"
+      },
+      {
+        "en": "Got me fien'in' for your love",
+        "ja": "君の愛が欲しくてたまらない"
+      },
+      {
+        "en": "(I just can't find the words)",
+        "ja": "（うまく言葉が見つからない）"
+      },
+      {
+        "en": "But every time the music dies the lights come on",
+        "ja": "でも音楽が止まり、明かりがつくたびに"
+      },
+      {
+        "en": "Something deep inside is screaming out",
+        "ja": "心の奥で何かが叫んでいる"
+      },
+      {
+        "en": "So why don't we talk, talk, talk about us baby",
+        "ja": "だから僕たちのことを話そうよ"
+      },
+      {
+        "en": "So why don't we talk, talk, talk it up sometime",
+        "ja": "いつか、じっくり話してみない？"
+      },
+      {
+        "en": "So why don't we talk, talk, talk about us baby",
+        "ja": "だから僕たちのことを話そうよ"
+      },
+      {
+        "en": "About me and you",
+        "ja": "僕と君のことを"
+      },
+      {
+        "en": "About you and me",
+        "ja": "君と僕のことを"
+      },
+      {
+        "en": "We could be everything",
+        "ja": "僕たちなら、何にだってなれる"
+      },
+      {
+        "en": "And when I think about it I wanna sing it out like",
+        "ja": "そう考えると、思いきり歌いたくなる"
+      },
+      {
+        "en": "But every time the music dies the lights come on",
+        "ja": "でも音楽が止まり、明かりがつくたびに"
+      },
+      {
+        "en": "Something deep inside is screaming out",
+        "ja": "心の奥で何かが叫んでいる"
+      },
+      {
+        "en": "So why don't we talk, talk, talk about us baby",
+        "ja": "だから僕たちのことを話そうよ"
+      },
+      {
+        "en": "So why don't we talk, talk, talk it up sometime",
+        "ja": "いつか、じっくり話してみない？"
+      },
+      {
+        "en": "So why don't we talk, talk, talk about us baby",
+        "ja": "だから僕たちのことを話そうよ"
+      },
+      {
+        "en": "About me and you",
+        "ja": "僕と君のことを"
+      },
+      {
+        "en": "About you and me",
+        "ja": "君と僕のことを"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "index": 0,
+      "start": 10.84,
+      "end": 15.06
+    },
+    {
+      "index": 1,
+      "start": 15.06,
+      "end": 18.4
+    },
+    {
+      "index": 2,
+      "start": 18.4,
+      "end": 25.08
+    },
+    {
+      "index": 3,
+      "start": 25.08,
+      "end": 27.72
+    },
+    {
+      "index": 4,
+      "start": 31.24,
+      "end": 34.98
+    },
+    {
+      "index": 5,
+      "start": 34.98,
+      "end": 40.96
+    },
+    {
+      "index": 6,
+      "start": 40.96,
+      "end": 46.08
+    },
+    {
+      "index": 7,
+      "start": 46.08,
+      "end": 48.44
+    },
+    {
+      "index": 8,
+      "start": 55.13,
+      "end": 58.07
+    },
+    {
+      "index": 9,
+      "start": 58.07,
+      "end": 61.97
+    },
+    {
+      "index": 10,
+      "start": 61.97,
+      "end": 66.13
+    },
+    {
+      "index": 11,
+      "start": 66.13,
+      "end": 71.97
+    },
+    {
+      "index": 12,
+      "start": 71.97,
+      "end": 77.59
+    },
+    {
+      "index": 13,
+      "start": 77.59,
+      "end": 82.83
+    },
+    {
+      "index": 14,
+      "start": 82.83,
+      "end": 88.23
+    },
+    {
+      "index": 15,
+      "start": 88.23,
+      "end": 89.69
+    },
+    {
+      "index": 16,
+      "start": 89.69,
+      "end": 92.32
+    },
+    {
+      "index": 17,
+      "start": 104.82,
+      "end": 108.02
+    },
+    {
+      "index": 18,
+      "start": 108.02,
+      "end": 113.18
+    },
+    {
+      "index": 19,
+      "start": 113.18,
+      "end": 119.28
+    },
+    {
+      "index": 20,
+      "start": 119.28,
+      "end": 121.94
+    },
+    {
+      "index": 21,
+      "start": 125.56,
+      "end": 128.96
+    },
+    {
+      "index": 22,
+      "start": 128.96,
+      "end": 134.92
+    },
+    {
+      "index": 23,
+      "start": 134.92,
+      "end": 139.88
+    },
+    {
+      "index": 24,
+      "start": 139.88,
+      "end": 142.72
+    },
+    {
+      "index": 25,
+      "start": 149.04,
+      "end": 151.46
+    },
+    {
+      "index": 26,
+      "start": 151.98,
+      "end": 154.62
+    },
+    {
+      "index": 27,
+      "start": 155.88,
+      "end": 160.04
+    },
+    {
+      "index": 28,
+      "start": 160.04,
+      "end": 165.1
+    },
+    {
+      "index": 29,
+      "start": 165.88,
+      "end": 171.5
+    },
+    {
+      "index": 30,
+      "start": 171.5,
+      "end": 176.74
+    },
+    {
+      "index": 31,
+      "start": 176.74,
+      "end": 182.14
+    },
+    {
+      "index": 32,
+      "start": 182.14,
+      "end": 183.6
+    },
+    {
+      "index": 33,
+      "start": 183.6,
+      "end": 186.22
+    },
+    {
+      "index": 34,
+      "start": 188.84,
+      "end": 192.44
+    },
+    {
+      "index": 35,
+      "start": 194.46,
+      "end": 198.58
+    },
+    {
+      "index": 36,
+      "start": 200,
+      "end": 207.6
+    },
+    {
+      "index": 37,
+      "start": 207.6,
+      "end": 218.05
+    },
+    {
+      "index": 38,
+      "start": 218.05,
+      "end": 223.67
+    },
+    {
+      "index": 39,
+      "start": 223.67,
+      "end": 228.91
+    },
+    {
+      "index": 40,
+      "start": 228.91,
+      "end": 234.31
+    },
+    {
+      "index": 41,
+      "start": 234.31,
+      "end": 235.77
+    },
+    {
+      "index": 42,
+      "start": 235.77,
+      "end": 238.38
+    }
+  ]
+}

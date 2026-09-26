@@ -1,0 +1,286 @@
+{
+  "status": "estimated",
+  "source": {
+    "name": "Local audio alignment",
+    "model": "faster-whisper-base.en + small.en",
+    "audioUploaded": false,
+    "review": "Line starts checked against local word timestamps; uncertain words remain approximate"
+  },
+  "display": {
+    "lyrics": "Walking into the shop to start my day\nWaiting in line, knowing exactly what to say\nCan I get a medium iced latte, please?\nTrying to catch a little morning breeze\nCould I get it with oat milk?\nAnd go light on the ice\nJust one pump of vanilla\nYeah, that sounds really nice\nCustomizing my coffee, exactly how I please\nA perfect little moment, putting my mind at ease\nWhat kind of milk would you like with that?\nThe barista smiles, a quick little chat\nCan I get a blueberry muffin warmed up too?\nA sweet little treat before the morning is through\nCould I get it with oat milk?\nAnd go light on the ice\nJust one pump of vanilla\nYeah, that sounds really nice\nCustomizing my coffee, exactly how I please\nA perfect little moment, putting my mind at ease\nThat'll be seven-fifty, for here or to go?\nTo go, here's my card, ready for the show\nWe'll have it ready down at the end of the line\nTaking a sip, and it tastes so fine\nJust one pump of vanilla.\nGo light on the ice.\nExactly how I please.\nJust one pump of vanilla\nGo light on the ice\nExactly how I please",
+    "lyricsJa": [
+      {
+        "en": "Walking into the shop to start my day",
+        "ja": "一日を始めるために、お店へと足を踏み入れる"
+      },
+      {
+        "en": "Waiting in line, knowing exactly what to say",
+        "ja": "列に並びながら、オーダーする言葉は決まっている"
+      },
+      {
+        "en": "Can I get a medium iced latte, please?",
+        "ja": "「アイスラテのMサイズをお願いできますか？」"
+      },
+      {
+        "en": "Trying to catch a little morning breeze",
+        "ja": "朝の爽やかな風を少しだけつかまえたくて"
+      },
+      {
+        "en": "Could I get it with oat milk?",
+        "ja": "「オーツミルクに変更できますか？」"
+      },
+      {
+        "en": "And go light on the ice",
+        "ja": "「あと、氷は少なめで」"
+      },
+      {
+        "en": "Just one pump of vanilla",
+        "ja": "「バニラシロップを1プッシュだけ」"
+      },
+      {
+        "en": "Yeah, that sounds really nice",
+        "ja": "ああ、それって最高にいい感じだ"
+      },
+      {
+        "en": "Customizing my coffee, exactly how I please",
+        "ja": "自分の思い通りに、コーヒーをカスタマイズする"
+      },
+      {
+        "en": "A perfect little moment, putting my mind at ease",
+        "ja": "心がほっと安らぐ、完璧なささやかな時間"
+      },
+      {
+        "en": "What kind of milk would you like with that?",
+        "ja": "「ミルクの種類はどうなさいますか？」"
+      },
+      {
+        "en": "The barista smiles, a quick little chat",
+        "ja": "バリスタは微笑んで、ちょっとした言葉を交わす"
+      },
+      {
+        "en": "Can I get a blueberry muffin warmed up too?",
+        "ja": "「ブルーベリーマフィンも温めてもらえますか？」"
+      },
+      {
+        "en": "A sweet little treat before the morning is through",
+        "ja": "この朝が終わる前に、ささやかな甘いご褒美を"
+      },
+      {
+        "en": "Could I get it with oat milk?",
+        "ja": "「オーツミルクに変更できますか？」"
+      },
+      {
+        "en": "And go light on the ice",
+        "ja": "「あと、氷は少なめで」"
+      },
+      {
+        "en": "Just one pump of vanilla",
+        "ja": "「バニラシロップを1プッシュだけ」"
+      },
+      {
+        "en": "Yeah, that sounds really nice",
+        "ja": "ああ、それって最高にいい感じだ"
+      },
+      {
+        "en": "Customizing my coffee, exactly how I please",
+        "ja": "自分の思い通りに、コーヒーをカスタマイズする"
+      },
+      {
+        "en": "A perfect little moment, putting my mind at ease",
+        "ja": "心がほっと安らぐ、完璧なささやかな時間"
+      },
+      {
+        "en": "That'll be seven-fifty, for here or to go?",
+        "ja": "「7ドル50セントになります。店内でお召し上がりですか、お持ち帰りですか？」"
+      },
+      {
+        "en": "To go, here's my card, ready for the show",
+        "ja": "「持ち帰りで。カードで払います」 さあ、自分のステージへ向かう準備をしよう"
+      },
+      {
+        "en": "We'll have it ready down at the end of the line",
+        "ja": "「カウンターの奥でドリンクをお出ししますね」"
+      },
+      {
+        "en": "Taking a sip, and it tastes so fine",
+        "ja": "一口飲めば、素晴らしい味わいが広がるんだ"
+      },
+      {
+        "en": "Just one pump of vanilla.",
+        "ja": "「バニラシロップを1プッシュだけ」"
+      },
+      {
+        "en": "Go light on the ice.",
+        "ja": "氷は少なめで。"
+      },
+      {
+        "en": "Exactly how I please.",
+        "ja": "思い描いた通りの味に。"
+      },
+      {
+        "en": "Just one pump of vanilla",
+        "ja": "「バニラシロップを1プッシュだけ」"
+      },
+      {
+        "en": "Go light on the ice",
+        "ja": "氷は少なめで。"
+      },
+      {
+        "en": "Exactly how I please",
+        "ja": "思い描いた通りの味に。"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "index": 0,
+      "start": 7.94,
+      "end": 12.66
+    },
+    {
+      "index": 1,
+      "start": 12.66,
+      "end": 20.42
+    },
+    {
+      "index": 2,
+      "start": 20.42,
+      "end": 27.66
+    },
+    {
+      "index": 3,
+      "start": 27.66,
+      "end": 32.48
+    },
+    {
+      "index": 4,
+      "start": 32.48,
+      "end": 36.16
+    },
+    {
+      "index": 5,
+      "start": 36.16,
+      "end": 39.6
+    },
+    {
+      "index": 6,
+      "start": 39.6,
+      "end": 42.46
+    },
+    {
+      "index": 7,
+      "start": 42.46,
+      "end": 47.1
+    },
+    {
+      "index": 8,
+      "start": 47.1,
+      "end": 53.8
+    },
+    {
+      "index": 9,
+      "start": 53.8,
+      "end": 60.82
+    },
+    {
+      "index": 10,
+      "start": 60.82,
+      "end": 66.56
+    },
+    {
+      "index": 11,
+      "start": 66.56,
+      "end": 73.3
+    },
+    {
+      "index": 12,
+      "start": 73.3,
+      "end": 78.9
+    },
+    {
+      "index": 13,
+      "start": 78.9,
+      "end": 87.46
+    },
+    {
+      "index": 14,
+      "start": 87.46,
+      "end": 89.6
+    },
+    {
+      "index": 15,
+      "start": 89.6,
+      "end": 92.64
+    },
+    {
+      "index": 16,
+      "start": 92.64,
+      "end": 96.08
+    },
+    {
+      "index": 17,
+      "start": 96.08,
+      "end": 100.8
+    },
+    {
+      "index": 18,
+      "start": 100.8,
+      "end": 107.49
+    },
+    {
+      "index": 19,
+      "start": 107.49,
+      "end": 113.64
+    },
+    {
+      "index": 20,
+      "start": 113.64,
+      "end": 117.68
+    },
+    {
+      "index": 21,
+      "start": 117.68,
+      "end": 121.12
+    },
+    {
+      "index": 22,
+      "start": 121.12,
+      "end": 124.66
+    },
+    {
+      "index": 23,
+      "start": 124.66,
+      "end": 130.44
+    },
+    {
+      "index": 24,
+      "start": 130.44,
+      "end": 133.38
+    },
+    {
+      "index": 25,
+      "start": 133.38,
+      "end": 137.64
+    },
+    {
+      "index": 26,
+      "start": 137.64,
+      "end": 151.14
+    },
+    {
+      "index": 27,
+      "start": 151.14,
+      "end": 154.72
+    },
+    {
+      "index": 28,
+      "start": 154.72,
+      "end": 158.4
+    },
+    {
+      "index": 29,
+      "start": 158.4,
+      "end": 160.76
+    }
+  ]
+}

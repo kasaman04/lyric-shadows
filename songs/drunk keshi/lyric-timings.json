@@ -1,0 +1,295 @@
+{
+  "status": "sourced",
+  "source": {
+    "name": "LRCLIB",
+    "id": 3984926,
+    "duration": 228,
+    "url": "https://lrclib.net/api/get/3984926"
+  },
+  "display": {
+    "lyrics": "All my friends are drunk again\nAnd I'm stumblin' back to bed all by myself\nDon't need nobody else\nAll my friends are drunk again\nAnd I'm stumblin' back to bed all by myself\nDon't need nobody else\nSmell like smoke, nuit de l'homme\nIt's been a while since we last spoke\nSo tell me, how's it go?\nStill love blues, nothin' new\nCareless love, I've had a few\nHow about you?\nAll my friends are drunk again\nAnd I'm stumblin' back to bed all by myself\nDon't need nobody else\nAll my friends are drunk again\nAnd I'm stumblin' back to bed all by myself\nDon't need nobody else\nI never have thought\nWhen you're gone\nI'd find it hard to carry on\nAnd it's probably 'cause\nI fell in love way back then\nAnd I think about us when\nI think about us when\nAll my friends are drunk again\nAnd I'm stumblin' back to bed all by myself\nI got nobody else\nAll my friends are drunk again\nAnd I'm stumblin' back to bed all by myself\nI got, I got nobody else",
+    "lyricsJa": [
+      {
+        "en": "All my friends are drunk again",
+        "ja": "友達はみんな、また酔っ払ってる"
+      },
+      {
+        "en": "And I'm stumblin' back to bed all by myself",
+        "ja": "僕はひとりで、ふらつきながらベッドへ戻る"
+      },
+      {
+        "en": "Don't need nobody else",
+        "ja": "誰もいらない"
+      },
+      {
+        "en": "All my friends are drunk again",
+        "ja": "友達はみんな、また酔っ払ってる"
+      },
+      {
+        "en": "And I'm stumblin' back to bed all by myself",
+        "ja": "僕はひとりで、ふらつきながらベッドへ戻る"
+      },
+      {
+        "en": "Don't need nobody else",
+        "ja": "誰もいらない"
+      },
+      {
+        "en": "Smell like smoke, nuit de l'homme",
+        "ja": "煙とニュイ・ドゥ・ロムの香りがする"
+      },
+      {
+        "en": "It's been a while since we last spoke",
+        "ja": "最後に話してから、もうずいぶん経ったね"
+      },
+      {
+        "en": "So tell me, how's it go?",
+        "ja": "だから教えて、最近どう？"
+      },
+      {
+        "en": "Still love blues, nothin' new",
+        "ja": "まだブルースが好きなんだ、何も変わってない"
+      },
+      {
+        "en": "Careless love, I've had a few",
+        "ja": "軽はずみな恋も、いくつかしてきた"
+      },
+      {
+        "en": "How about you?",
+        "ja": "君はどう？"
+      },
+      {
+        "en": "All my friends are drunk again",
+        "ja": "友達はみんな、また酔っ払ってる"
+      },
+      {
+        "en": "And I'm stumblin' back to bed all by myself",
+        "ja": "僕はひとりで、ふらつきながらベッドへ戻る"
+      },
+      {
+        "en": "Don't need nobody else",
+        "ja": "誰もいらない"
+      },
+      {
+        "en": "All my friends are drunk again",
+        "ja": "友達はみんな、また酔っ払ってる"
+      },
+      {
+        "en": "And I'm stumblin' back to bed all by myself",
+        "ja": "僕はひとりで、ふらつきながらベッドへ戻る"
+      },
+      {
+        "en": "Don't need nobody else",
+        "ja": "誰もいらない"
+      },
+      {
+        "en": "I never have thought",
+        "ja": "思ってもみなかった"
+      },
+      {
+        "en": "When you're gone",
+        "ja": "君がいなくなったら"
+      },
+      {
+        "en": "I'd find it hard to carry on",
+        "ja": "こんなに生きていくのが難しくなるなんて"
+      },
+      {
+        "en": "And it's probably 'cause",
+        "ja": "それはたぶん"
+      },
+      {
+        "en": "I fell in love way back then",
+        "ja": "あの頃、恋に落ちてしまったから"
+      },
+      {
+        "en": "And I think about us when",
+        "ja": "ふと僕たちのことを思い出す"
+      },
+      {
+        "en": "I think about us when",
+        "ja": "僕たちのことを思い出すんだ"
+      },
+      {
+        "en": "All my friends are drunk again",
+        "ja": "友達はみんな、また酔っ払ってる"
+      },
+      {
+        "en": "And I'm stumblin' back to bed all by myself",
+        "ja": "僕はひとりで、ふらつきながらベッドへ戻る"
+      },
+      {
+        "en": "I got nobody else",
+        "ja": "僕には誰もいない"
+      },
+      {
+        "en": "All my friends are drunk again",
+        "ja": "友達はみんな、また酔っ払ってる"
+      },
+      {
+        "en": "And I'm stumblin' back to bed all by myself",
+        "ja": "僕はひとりで、ふらつきながらベッドへ戻る"
+      },
+      {
+        "en": "I got, I got nobody else",
+        "ja": "僕には誰もいない"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "index": 0,
+      "start": 17.98,
+      "end": 23.65
+    },
+    {
+      "index": 1,
+      "start": 23.65,
+      "end": 30.86
+    },
+    {
+      "index": 2,
+      "start": 30.86,
+      "end": 36.06
+    },
+    {
+      "index": 3,
+      "start": 36.06,
+      "end": 41.95
+    },
+    {
+      "index": 4,
+      "start": 41.95,
+      "end": 49.06
+    },
+    {
+      "index": 5,
+      "start": 49.06,
+      "end": 55.03
+    },
+    {
+      "index": 6,
+      "start": 55.03,
+      "end": 60.99
+    },
+    {
+      "index": 7,
+      "start": 60.99,
+      "end": 67.33
+    },
+    {
+      "index": 8,
+      "start": 67.33,
+      "end": 73.36
+    },
+    {
+      "index": 9,
+      "start": 73.36,
+      "end": 78.05
+    },
+    {
+      "index": 10,
+      "start": 78.05,
+      "end": 87.89
+    },
+    {
+      "index": 11,
+      "start": 87.89,
+      "end": 91.14
+    },
+    {
+      "index": 12,
+      "start": 91.14,
+      "end": 97.13
+    },
+    {
+      "index": 13,
+      "start": 97.13,
+      "end": 103.64
+    },
+    {
+      "index": 14,
+      "start": 103.64,
+      "end": 109.31
+    },
+    {
+      "index": 15,
+      "start": 109.31,
+      "end": 115.29
+    },
+    {
+      "index": 16,
+      "start": 115.29,
+      "end": 122.08
+    },
+    {
+      "index": 17,
+      "start": 122.08,
+      "end": 128.32
+    },
+    {
+      "index": 18,
+      "start": 128.32,
+      "end": 130.84
+    },
+    {
+      "index": 19,
+      "start": 130.84,
+      "end": 133.12
+    },
+    {
+      "index": 20,
+      "start": 133.12,
+      "end": 140.32
+    },
+    {
+      "index": 21,
+      "start": 140.32,
+      "end": 146.7
+    },
+    {
+      "index": 22,
+      "start": 146.7,
+      "end": 151.21
+    },
+    {
+      "index": 23,
+      "start": 151.21,
+      "end": 159.34
+    },
+    {
+      "index": 24,
+      "start": 159.34,
+      "end": 164.27
+    },
+    {
+      "index": 25,
+      "start": 164.27,
+      "end": 169.95
+    },
+    {
+      "index": 26,
+      "start": 169.95,
+      "end": 176.82
+    },
+    {
+      "index": 27,
+      "start": 176.82,
+      "end": 182.23
+    },
+    {
+      "index": 28,
+      "start": 182.23,
+      "end": 188.08
+    },
+    {
+      "index": 29,
+      "start": 188.08,
+      "end": 196.09
+    },
+    {
+      "index": 30,
+      "start": 196.09,
+      "end": 203.41
+    }
+  ]
+}

@@ -9,12 +9,24 @@
   "speakerA": {
     "name": "Mark",
     "type": "男性",
-    "voice": "CfDbY7v8tDkTvB9rNcUw"
+    "voice": "UgBBYS2sOqTuMpoF3BR0",
+    "voiceProfile": "mark",
+    "gender": "male",
+    "age": "young",
+    "accent": "american",
+    "tone": "casual",
+    "voiceName": "Mark"
   },
   "speakerB": {
     "name": "Sarah",
     "type": "女性",
-    "voice": "cNYrMw9glwJZXR8RwbuR"
+    "voice": "FGY2WhTYpPnrIDTdsKH5",
+    "voiceProfile": "laura",
+    "gender": "female",
+    "age": "young",
+    "accent": "american",
+    "tone": "casual",
+    "voiceName": "Laura"
   },
   "lyrics": "[Verse 1]\nNothing's on my back because I wanted it with you\nAnd I want you too... I want you\nI'm still at my prime because no one will let it through\nI want you to... I want you to\n\n[Verse 2]\nYou're caught up in the morning rain\nAs always, you have called me again\nI'll be there by seven, but I should've said eleven\nWell just to make you teased again\n\n[Verse 3]\nI hop out from the quiet bed\nI hop on to the private train\nTakes forty minutes ride from here to apartment\nwhere I aim to appear\n\n[Pre-Chorus]\nI'll be you're umbrella and I'll save you from Cruella everyday\nSo don't you shut me out of there as soon as all the sky is clear\nBecause\n\n[Chorus]\nNothing's on my back because I wanted it with you\nAnd I want you too... I want you\nYou're still at our flat where we kissed in every nook\nThat makes me so... that makes me so\n\n[Verse 4]\nGood old station welcomes me\nI used to use it every week\nAttendant still remembers me\nAnd gently he says,'Where've you been?\n\n[Verse 5]\nI've been round in circles like an overturning turtle\nI guess so\nI'm trying to overturn again but water in this pools me in\n\n[Chorus]\nNothing's on my map because I wanted it with you\nAnd I want you too... I want you\nLasting dream won't last, I guess this saying's coming true\nI bet you so... I bet you so\n\n[Verse 6]\nI finally arrive at Hilton suite\nIt's 6:08 but I rang the bell\nI gave her name and suddenly,\nThe rain has stopped to fall, ahd breezed\n\n[Interlude]\n(Way to go way to go way to go\nWhere to go where to go where to go\nWhere do you go where do you go)\n\n[Verse 7]\nShe answers me on entry phone\nMy duty has been canceled off\nShe said she's going out with friends\nNow, there's nothing that I can say\nBecause I'm in charge of rainy days\n\n[Outro Chorus]\nNothing's on my back because I wanted it with you\nAnd I want you too... I want you\nI'm still at my prime because no one will let it through\nI want you to... I want you to\nI miss you so... I miss you so...\nI kissed you though... I kissed you though...",
   "lyricsJa": [
@@ -312,12 +324,12 @@
         {
           "text": "Can you believe it?",
           "displayHtml": "Can you believe it?",
-          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/0_0.mp3"
+          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/9ea3c1eb319782bf/0-0.mp3"
         },
         {
           "text": "I hop on to the private train, ride for forty minutes, and she cancels on me!",
           "displayHtml": "I hop on to the private train, ride for forty minutes, and she cancels on me!",
-          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/0_1.mp3"
+          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/9ea3c1eb319782bf/0-1.mp3"
         }
       ],
       "japanese": "信じられる？わざわざ私鉄に乗って40分もかけて行ったのに、ドタキャンされたんだよ！"
@@ -330,12 +342,12 @@
         {
           "text": "Seriously?",
           "displayHtml": "Seriously?",
-          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/1_0.mp3"
+          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/9ea3c1eb319782bf/1-0.mp3"
         },
         {
           "text": "What exactly happened when you got to her place?",
           "displayHtml": "What exactly happened when you got to her place?",
-          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/1_1.mp3"
+          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/9ea3c1eb319782bf/1-1.mp3"
         }
       ],
       "japanese": "本当に？彼女の家に着いて、一体何があったの？"
@@ -348,7 +360,7 @@
         {
           "text": "I got there, and as soon as I rang the bell, the rain suddenly stopped!",
           "displayHtml": "I got there, and as soon as I rang the bell, the rain suddenly stopped!",
-          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/2_0.mp3"
+          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/9ea3c1eb319782bf/2-0.mp3"
         }
       ],
       "japanese": "着いてインターホンを鳴らした途端に、突然雨がピタッと止んでね。"
@@ -361,7 +373,7 @@
         {
           "text": "Did she even let you inside?",
           "displayHtml": "Did she even let you inside?",
-          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/3_0.mp3"
+          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/9ea3c1eb319782bf/3-0.mp3"
         }
       ],
       "japanese": "で、部屋には入れてくれたわけ？"
@@ -374,7 +386,7 @@
         {
           "text": "No, she answers me on entry phone and says she's going out with friends instead.",
           "displayHtml": "No, she answers me on entry phone and says she's going out with friends instead.",
-          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/4_0.mp3"
+          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/9ea3c1eb319782bf/4-0.mp3"
         }
       ],
       "japanese": "いや、オートロック越しにインターホンに出て、「友達と出かけるから」って。"
@@ -387,12 +399,12 @@
         {
           "text": "That's awful.",
           "displayHtml": "That's awful.",
-          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/5_0.mp3"
+          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/9ea3c1eb319782bf/5-0.mp3"
         },
         {
           "text": "She only calls you when it's raining and she's bored.",
           "displayHtml": "She only calls you when it's raining and she's bored.",
-          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/5_1.mp3"
+          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/9ea3c1eb319782bf/5-1.mp3"
         }
       ],
       "japanese": "ひどすぎる。彼女、雨が降ってて退屈な時しか君のこと呼ばないじゃない。"
@@ -405,17 +417,17 @@
         {
           "text": "Yep.",
           "displayHtml": "Yep.",
-          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/6_0.mp3"
+          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/9ea3c1eb319782bf/6-0.mp3"
         },
         {
           "text": "My duty has been canceled off, just like that.",
           "displayHtml": "My duty has been canceled off, just like that.",
-          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/6_1.mp3"
+          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/9ea3c1eb319782bf/6-1.mp3"
         },
         {
           "text": "I guess I'm in charge of rainy days.",
           "displayHtml": "I guess I'm in charge of rainy days.",
-          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/6_2.mp3"
+          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/9ea3c1eb319782bf/6-2.mp3"
         }
       ],
       "japanese": "ああ。僕の任務はお払い箱ってわけさ。どうやら、僕は雨の日の担当でしかないみたいだよ。"
@@ -428,12 +440,12 @@
         {
           "text": "You deserve so much better.",
           "displayHtml": "You deserve so much better.",
-          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/7_0.mp3"
+          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/9ea3c1eb319782bf/7-0.mp3"
         },
         {
           "text": "You have to stop letting her use you.",
           "displayHtml": "You have to stop letting her use you.",
-          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/7_1.mp3"
+          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/9ea3c1eb319782bf/7-1.mp3"
         }
       ],
       "japanese": "もっといい人がいるよ。もう彼女に都合よく使われるのはやめなよ。"
@@ -446,17 +458,17 @@
         {
           "text": "I know.",
           "displayHtml": "I know.",
-          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/8_0.mp3"
+          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/9ea3c1eb319782bf/8-0.mp3"
         },
         {
           "text": "I've been round in circles with her for too long.",
           "displayHtml": "I've been round in circles with her for too long.",
-          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/8_1.mp3"
+          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/9ea3c1eb319782bf/8-1.mp3"
         },
         {
           "text": "I'm done.",
           "displayHtml": "I'm done.",
-          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/8_2.mp3"
+          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/9ea3c1eb319782bf/8-2.mp3"
         }
       ],
       "japanese": "分かってる。もう彼女とは堂々巡りだ。これきりにするよ。"
@@ -464,5 +476,6 @@
   ],
   "youtubeId": "lHMExxQwmAs",
   "thumbnailUrl": "https://img.youtube.com/vi/lHMExxQwmAs/maxresdefault.jpg",
-  "createdAt": "2026-04-04T07:24:56.869Z"
+  "createdAt": "2026-04-04T07:24:56.869Z",
+  "conversationAudioStatus": "ready"
 }

@@ -1,0 +1,547 @@
+{
+  "status": "sourced",
+  "source": {
+    "name": "LRCLIB",
+    "id": 15380215,
+    "duration": 203,
+    "url": "https://lrclib.net/api/get/15380215"
+  },
+  "display": {
+    "lyrics": "I keep trying to impress you\nI don't know what I got myself into with you\nYou said you like window shopping, try before you buy\nYou got me losing sleep, I've got no appetite\nWe keep trying to talk it out, but all the words don't count\nWhen you look at me there's nervous energy\nWhy did I buy this dress?\nI've got my hair done up\nYou said you liked me in red so I wore just a touch\nNow you've got something that seems to mess me up\nI think I care too much\nWhy do I care so much now?\nI keep trying to impress you\nI don't know why that is, but I have to\nYou'd never know that I keep trying to impress you\nI don't know what I got myself into with you\nYou keep coming back around\nI'm nervous just to let you down\nI don't know who I am when I'm with you\n'Cause I keep trying to impress you\nI don't know what I got myself into\nEvery time I grab my phone I hope your name is shown\nYou give me butterflies, I got no appetite\nI keep trying to play it cool, but there is just no use\nWhen you look at me, there's nervous energy, yeah\nBabe, you got me running out of my breath\nEvery time you're wearing that dress\nYeah, I love it when you wear red, darlin'\nI can't help but feel in over my head\nWhat we got I don't want to end\nMaybe I care too much so\nI keep trying to impress you\nI don't know why that is, but I have to\nYou'd never know that I keep trying to impress you\nI don't know what I got myself into with you\nYou keep coming back around\nI'm nervous just to let you down\nI don't know who I am when I'm with you\n'Cause I keep trying to impress you\nI don't know what I got myself into with you\n(Na na na na na na)\n(Na na na na na na)\nI don't know, don't know, don't know, don't know\nDon't know who I am when I'm with you\n(Na na na na na na)\n(Na na na na na na)\nI don't know, don't know, don't know, don't know\nDon't know who I am when I'm with you\nI keep trying to impress you\nI don't know why that is, but I have to\nYou'd never know that I keep trying to impress you\nI don't know what I got myself into with you\nYou keep coming back around\nI'm nervous just to let you down\nI don't know who I am when I'm with you (I don't know who I am)\n'Cause I keep trying to impress you\nI don't know what I got myself into with you\nI keep trying to impress you\nI don't know what I got myself into",
+    "lyricsJa": [
+      {
+        "en": "I keep trying to impress you",
+        "ja": "君にいいところを見せようとしてばかりいる"
+      },
+      {
+        "en": "I don't know what I got myself into with you",
+        "ja": "あなたと関わって、自分が何に踏み込んだのかわからない"
+      },
+      {
+        "en": "You said you like window shopping, try before you buy",
+        "ja": "買う前に試すみたいに、見てから決めるのが好きだって言った"
+      },
+      {
+        "en": "You got me losing sleep, I've got no appetite",
+        "ja": "あなたのせいで眠れなくて、食欲もない"
+      },
+      {
+        "en": "We keep trying to talk it out, but all the words don't count",
+        "ja": "話し合おうとしてるのに、どんな言葉も意味を持たなくなる"
+      },
+      {
+        "en": "When you look at me there's nervous energy",
+        "ja": "見つめられると、そわそわした緊張感が走る"
+      },
+      {
+        "en": "Why did I buy this dress?",
+        "ja": "なんでこのドレスを買ったんだろう？"
+      },
+      {
+        "en": "I've got my hair done up",
+        "ja": "髪もちゃんとセットした"
+      },
+      {
+        "en": "You said you liked me in red so I wore just a touch",
+        "ja": "赤が似合うって言ってくれたから、ほんの少しだけ赤を身につけた"
+      },
+      {
+        "en": "Now you've got something that seems to mess me up",
+        "ja": "今のあなたには、私を乱す何かがある"
+      },
+      {
+        "en": "I think I care too much",
+        "ja": "たぶん気にしすぎてる"
+      },
+      {
+        "en": "Why do I care so much now?",
+        "ja": "どうして今、こんなに気にしてるんだろう？"
+      },
+      {
+        "en": "I keep trying to impress you",
+        "ja": "君にいいところを見せようとしてばかりいる"
+      },
+      {
+        "en": "I don't know why that is, but I have to",
+        "ja": "理由はわからないけど、そうせずにはいられない"
+      },
+      {
+        "en": "You'd never know that I keep trying to impress you",
+        "ja": "私がずっとよく見られようとしてるなんて、あなたはきっと知らない"
+      },
+      {
+        "en": "I don't know what I got myself into with you",
+        "ja": "あなたと関わって、自分が何に踏み込んだのかわからない"
+      },
+      {
+        "en": "You keep coming back around",
+        "ja": "あなたは何度も戻ってくる"
+      },
+      {
+        "en": "I'm nervous just to let you down",
+        "ja": "がっかりさせるんじゃないかって、それだけで緊張する"
+      },
+      {
+        "en": "I don't know who I am when I'm with you",
+        "ja": "あなたといると、自分が誰なのかわからなくなる"
+      },
+      {
+        "en": "'Cause I keep trying to impress you",
+        "ja": "だって、あなたにいいところを見せようとしてばかりいるから"
+      },
+      {
+        "en": "I don't know what I got myself into",
+        "ja": "自分が何に踏み込んだのかわからない"
+      },
+      {
+        "en": "Every time I grab my phone I hope your name is shown",
+        "ja": "携帯を見るたび、君の名前が表示されていることを願う"
+      },
+      {
+        "en": "You give me butterflies, I got no appetite",
+        "ja": "あなたのせいで眠れなくて、食欲もない"
+      },
+      {
+        "en": "I keep trying to play it cool, but there is just no use",
+        "ja": "平気なふりをしようとしても、どうにもならない"
+      },
+      {
+        "en": "When you look at me, there's nervous energy, yeah",
+        "ja": "見つめられると、そわそわした緊張感が走る"
+      },
+      {
+        "en": "Babe, you got me running out of my breath",
+        "ja": "ねえ、君のせいで息が切れそうだ"
+      },
+      {
+        "en": "Every time you're wearing that dress",
+        "ja": "君があの服を着るたびに"
+      },
+      {
+        "en": "Yeah, I love it when you wear red, darlin'",
+        "ja": "君が赤を着ているときが好きなんだ"
+      },
+      {
+        "en": "I can't help but feel in over my head",
+        "ja": "夢中になりすぎていると感じる"
+      },
+      {
+        "en": "What we got I don't want to end",
+        "ja": "僕たちの関係が終わってほしくない"
+      },
+      {
+        "en": "Maybe I care too much so",
+        "ja": "たぶん気にしすぎてる"
+      },
+      {
+        "en": "I keep trying to impress you",
+        "ja": "君にいいところを見せようとしてばかりいる"
+      },
+      {
+        "en": "I don't know why that is, but I have to",
+        "ja": "理由はわからないけど、そうせずにはいられない"
+      },
+      {
+        "en": "You'd never know that I keep trying to impress you",
+        "ja": "私がずっとよく見られようとしてるなんて、あなたはきっと知らない"
+      },
+      {
+        "en": "I don't know what I got myself into with you",
+        "ja": "あなたと関わって、自分が何に踏み込んだのかわからない"
+      },
+      {
+        "en": "You keep coming back around",
+        "ja": "あなたは何度も戻ってくる"
+      },
+      {
+        "en": "I'm nervous just to let you down",
+        "ja": "がっかりさせるんじゃないかって、それだけで緊張する"
+      },
+      {
+        "en": "I don't know who I am when I'm with you",
+        "ja": "あなたといると、自分が誰なのかわからなくなる"
+      },
+      {
+        "en": "'Cause I keep trying to impress you",
+        "ja": "だって、あなたにいいところを見せようとしてばかりいるから"
+      },
+      {
+        "en": "I don't know what I got myself into with you",
+        "ja": "あなたと関わって、自分が何に踏み込んだのかわからない"
+      },
+      {
+        "en": "(Na na na na na na)",
+        "ja": "ナナナナナナ"
+      },
+      {
+        "en": "(Na na na na na na)",
+        "ja": "ナナナナナナ"
+      },
+      {
+        "en": "I don't know, don't know, don't know, don't know",
+        "ja": "自分が何に踏み込んだのかわからない"
+      },
+      {
+        "en": "Don't know who I am when I'm with you",
+        "ja": "あなたといると、自分が誰なのかわからなくなる"
+      },
+      {
+        "en": "(Na na na na na na)",
+        "ja": "ナナナナナナ"
+      },
+      {
+        "en": "(Na na na na na na)",
+        "ja": "ナナナナナナ"
+      },
+      {
+        "en": "I don't know, don't know, don't know, don't know",
+        "ja": "自分が何に踏み込んだのかわからない"
+      },
+      {
+        "en": "Don't know who I am when I'm with you",
+        "ja": "あなたといると、自分が誰なのかわからなくなる"
+      },
+      {
+        "en": "I keep trying to impress you",
+        "ja": "君にいいところを見せようとしてばかりいる"
+      },
+      {
+        "en": "I don't know why that is, but I have to",
+        "ja": "理由はわからないけど、そうせずにはいられない"
+      },
+      {
+        "en": "You'd never know that I keep trying to impress you",
+        "ja": "私がずっとよく見られようとしてるなんて、あなたはきっと知らない"
+      },
+      {
+        "en": "I don't know what I got myself into with you",
+        "ja": "あなたと関わって、自分が何に踏み込んだのかわからない"
+      },
+      {
+        "en": "You keep coming back around",
+        "ja": "あなたは何度も戻ってくる"
+      },
+      {
+        "en": "I'm nervous just to let you down",
+        "ja": "がっかりさせるんじゃないかって、それだけで緊張する"
+      },
+      {
+        "en": "I don't know who I am when I'm with you (I don't know who I am)",
+        "ja": "あなたといると、自分が誰なのかわからなくなる"
+      },
+      {
+        "en": "'Cause I keep trying to impress you",
+        "ja": "だって、あなたにいいところを見せようとしてばかりいるから"
+      },
+      {
+        "en": "I don't know what I got myself into with you",
+        "ja": "あなたと関わって、自分が何に踏み込んだのかわからない"
+      },
+      {
+        "en": "I keep trying to impress you",
+        "ja": "君にいいところを見せようとしてばかりいる"
+      },
+      {
+        "en": "I don't know what I got myself into",
+        "ja": "自分が何に踏み込んだのかわからない"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "index": 0,
+      "start": 0.44,
+      "end": 3.46
+    },
+    {
+      "index": 1,
+      "start": 3.46,
+      "end": 16.21
+    },
+    {
+      "index": 2,
+      "start": 16.21,
+      "end": 19.86
+    },
+    {
+      "index": 3,
+      "start": 19.86,
+      "end": 23.58
+    },
+    {
+      "index": 4,
+      "start": 23.58,
+      "end": 28.26
+    },
+    {
+      "index": 5,
+      "start": 28.26,
+      "end": 31.95
+    },
+    {
+      "index": 6,
+      "start": 31.95,
+      "end": 34.24
+    },
+    {
+      "index": 7,
+      "start": 34.24,
+      "end": 36.14
+    },
+    {
+      "index": 8,
+      "start": 36.14,
+      "end": 39.8
+    },
+    {
+      "index": 9,
+      "start": 39.8,
+      "end": 43.88
+    },
+    {
+      "index": 10,
+      "start": 43.88,
+      "end": 45.94
+    },
+    {
+      "index": 11,
+      "start": 45.94,
+      "end": 48.99
+    },
+    {
+      "index": 12,
+      "start": 48.99,
+      "end": 51.63
+    },
+    {
+      "index": 13,
+      "start": 51.63,
+      "end": 55.68
+    },
+    {
+      "index": 14,
+      "start": 55.68,
+      "end": 59.11
+    },
+    {
+      "index": 15,
+      "start": 59.11,
+      "end": 64.56
+    },
+    {
+      "index": 16,
+      "start": 64.56,
+      "end": 66.55
+    },
+    {
+      "index": 17,
+      "start": 66.55,
+      "end": 68.66
+    },
+    {
+      "index": 18,
+      "start": 68.66,
+      "end": 71.93
+    },
+    {
+      "index": 19,
+      "start": 71.93,
+      "end": 75.26
+    },
+    {
+      "index": 20,
+      "start": 75.26,
+      "end": 79.73
+    },
+    {
+      "index": 21,
+      "start": 79.73,
+      "end": 84.02
+    },
+    {
+      "index": 22,
+      "start": 84.02,
+      "end": 87.54
+    },
+    {
+      "index": 23,
+      "start": 87.54,
+      "end": 91.8
+    },
+    {
+      "index": 24,
+      "start": 91.8,
+      "end": 97.3
+    },
+    {
+      "index": 25,
+      "start": 97.3,
+      "end": 100.31
+    },
+    {
+      "index": 26,
+      "start": 100.31,
+      "end": 102.02
+    },
+    {
+      "index": 27,
+      "start": 102.02,
+      "end": 104.93
+    },
+    {
+      "index": 28,
+      "start": 104.93,
+      "end": 108.09
+    },
+    {
+      "index": 29,
+      "start": 108.09,
+      "end": 109.98
+    },
+    {
+      "index": 30,
+      "start": 109.98,
+      "end": 112.57
+    },
+    {
+      "index": 31,
+      "start": 112.57,
+      "end": 115.35
+    },
+    {
+      "index": 32,
+      "start": 115.35,
+      "end": 119.5
+    },
+    {
+      "index": 33,
+      "start": 119.5,
+      "end": 123.23
+    },
+    {
+      "index": 34,
+      "start": 123.23,
+      "end": 128.54
+    },
+    {
+      "index": 35,
+      "start": 128.54,
+      "end": 130.36
+    },
+    {
+      "index": 36,
+      "start": 130.36,
+      "end": 132.59
+    },
+    {
+      "index": 37,
+      "start": 132.59,
+      "end": 135.38
+    },
+    {
+      "index": 38,
+      "start": 135.38,
+      "end": 139.4
+    },
+    {
+      "index": 39,
+      "start": 139.4,
+      "end": 144.69
+    },
+    {
+      "index": 40,
+      "start": 144.69,
+      "end": 146.56
+    },
+    {
+      "index": 41,
+      "start": 146.56,
+      "end": 148.44
+    },
+    {
+      "index": 42,
+      "start": 148.44,
+      "end": 150.7
+    },
+    {
+      "index": 43,
+      "start": 150.7,
+      "end": 152.5
+    },
+    {
+      "index": 44,
+      "start": 152.5,
+      "end": 154.63
+    },
+    {
+      "index": 45,
+      "start": 154.63,
+      "end": 156.6
+    },
+    {
+      "index": 46,
+      "start": 156.6,
+      "end": 158.97
+    },
+    {
+      "index": 47,
+      "start": 158.97,
+      "end": 160.69
+    },
+    {
+      "index": 48,
+      "start": 160.69,
+      "end": 163.17
+    },
+    {
+      "index": 49,
+      "start": 163.17,
+      "end": 167.69
+    },
+    {
+      "index": 50,
+      "start": 167.69,
+      "end": 171.34
+    },
+    {
+      "index": 51,
+      "start": 171.34,
+      "end": 176.5
+    },
+    {
+      "index": 52,
+      "start": 176.5,
+      "end": 178.31
+    },
+    {
+      "index": 53,
+      "start": 178.31,
+      "end": 180.39
+    },
+    {
+      "index": 54,
+      "start": 180.39,
+      "end": 184.71
+    },
+    {
+      "index": 55,
+      "start": 184.71,
+      "end": 187.42
+    },
+    {
+      "index": 56,
+      "start": 187.42,
+      "end": 193
+    },
+    {
+      "index": 57,
+      "start": 193,
+      "end": 195.53
+    },
+    {
+      "index": 58,
+      "start": 195.53,
+      "end": 200.35
+    }
+  ]
+}

@@ -2,7 +2,8 @@ const express = require('express');
 const path = require('path');
 const fs = require('fs-extra');
 const axios = require('axios');
-const { prepareConversation, generateConversation, finalizeSong, VOICE_MAP } = require('./lib/generate');
+const { prepareConversation, generateConversation, finalizeSong, castConversation } = require('./lib/generate');
+const { VOICE_PROFILES, VOICE_BY_ID } = require('./lib/voice-catalog');
 require('dotenv').config();
 
 const app = express();
@@ -18,6 +19,10 @@ const SUPABASE_PREFS_TABLE = 'user_phrase_preferences';
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/songs', express.static(SONGS_DIR));
+
+app.get('/api/voices', (req, res) => {
+  res.json(VOICE_PROFILES.map(({ key, name, id, gender, age, accent, tone }) => ({ key, name, id, gender, age, accent, tone })));
+});
 
 function isSupabaseConfigured() {
   return Boolean(SUPABASE_URL && SUPABASE_KEY);
@@ -60,6 +65,13 @@ app.get('/api/songs', async (req, res) => {
         try {
           const songObj = await fs.readJson(jsonPath);
           songObj.hasLocalAudio = await fs.pathExists(path.join(SONGS_DIR, entry.name, 'original.mp3'));
+          const timingPath = path.join(SONGS_DIR, entry.name, 'lyric-timings.json');
+          if (songObj.hasLocalAudio && await fs.pathExists(timingPath)) {
+            const timingData = await fs.readJson(timingPath);
+            songObj.lyricTimings = Array.isArray(timingData) ? timingData : timingData.rows;
+            songObj.lyricTimingStatus = timingData.status || 'timed';
+            if (timingData.display) songObj.lyricDisplay = timingData.display;
+          }
           songs.push(songObj);
         } catch {}
       }
@@ -170,6 +182,25 @@ app.delete('/api/preview', async (req, res) => {
   } catch (error) { res.status(500).json({ error: error.message }); }
 });
 
+app.patch('/api/preview/voices', async (req, res) => {
+  try {
+    const { speaker, voiceId } = req.body || {};
+    if (!['A', 'B'].includes(speaker) || !VOICE_BY_ID.has(voiceId)) {
+      return res.status(400).json({ error: 'Invalid speaker or voice' });
+    }
+    if (!await fs.pathExists(PREVIEW_PATH)) return res.status(404).json({ error: 'No preview found' });
+    const preview = await fs.readJson(PREVIEW_PATH);
+    const target = speaker === 'A' ? preview.speakerA : preview.speakerB;
+    const other = speaker === 'A' ? preview.speakerB : preview.speakerA;
+    if (other.voice === voiceId) return res.status(400).json({ error: 'AとBには別の声を選んでください' });
+    const profile = VOICE_BY_ID.get(voiceId);
+    Object.assign(target, { voice: profile.id, voiceProfile: profile.key, voiceName: profile.name, gender: profile.gender, age: profile.age, accent: profile.accent, tone: profile.tone,
+      type: { male: '男性', female: '女性', neutral: '中性' }[profile.gender] });
+    await fs.writeJson(PREVIEW_PATH, preview, { spaces: 2 });
+    res.json(preview);
+  } catch (error) { res.status(500).json({ error: error.message }); }
+});
+
 app.get('/api/preview/stream', async (req, res) => {
   const { songName, artist, videoId, contextHint, relationship, setting } = req.query;
   if (!songName || !artist) return res.status(400).json({ error: 'songName and artist required' });
@@ -197,6 +228,7 @@ app.get('/api/preview/stream', async (req, res) => {
       isNew: true, songName: prepared.songName, artist: prepared.artist, folderName: prepared.folderName,
       lyrics: prepared.lyrics, lyricsJa: prepared.lyricsJa, ytData: prepared.ytData,
       relationship: prepared.convData.relationship, setting: prepared.convData.setting,
+      lyricConnections: prepared.convData.lyricConnections || [],
       speakerA: prepared.speakerA, speakerB: prepared.speakerB, conversation: prepared.convData.conversation,
     }, { spaces: 2 });
 
@@ -227,11 +259,12 @@ app.get('/api/preview/regen-stream', async (req, res) => {
       contextHint: hint || undefined
     });
 
-    const getVoice = (type) => VOICE_MAP[type] || VOICE_MAP['男性'];
+    const cast = castConversation(convData, `${preview.songName}:${preview.artist}`);
     preview.relationship = convData.relationship;
     preview.setting = convData.setting;
-    preview.speakerA = { name: convData.speakerA.name, type: convData.speakerA.type, voice: getVoice(convData.speakerA.type) };
-    preview.speakerB = { name: convData.speakerB.name, type: convData.speakerB.type, voice: getVoice(convData.speakerB.type) };
+    preview.lyricConnections = convData.lyricConnections || [];
+    preview.speakerA = cast.speakerA;
+    preview.speakerB = cast.speakerB;
     preview.conversation = convData.conversation;
 
     await fs.writeJson(PREVIEW_PATH, preview, { spaces: 2 });
@@ -272,7 +305,7 @@ app.get('/api/preview/finalize-stream', async (req, res) => {
 
     const prepared = {
       songName: preview.songName, artist: preview.artist, folderName, lyrics, lyricsJa, ytData,
-      convData: { relationship: preview.relationship, setting: preview.setting, speakerA: preview.speakerA, speakerB: preview.speakerB, conversation: preview.conversation },
+      convData: { relationship: preview.relationship, setting: preview.setting, speakerA: preview.speakerA, speakerB: preview.speakerB, conversation: preview.conversation, lyricConnections: preview.lyricConnections || [] },
       speakerA: preview.speakerA, speakerB: preview.speakerB,
     };
 

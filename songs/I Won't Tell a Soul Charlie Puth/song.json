@@ -8,12 +8,24 @@
   "speakerA": {
     "name": "Chloe",
     "type": "女性",
-    "voice": "cNYrMw9glwJZXR8RwbuR"
+    "voice": "cNYrMw9glwJZXR8RwbuR",
+    "voiceProfile": "belle",
+    "gender": "female",
+    "age": "young",
+    "accent": "american",
+    "tone": "warm",
+    "voiceName": "Belle"
   },
   "speakerB": {
     "name": "Sam",
     "type": "男性",
-    "voice": "CfDbY7v8tDkTvB9rNcUw"
+    "voice": "bIHbv24MWmeRgasZH58o",
+    "voiceProfile": "will",
+    "gender": "male",
+    "age": "young",
+    "accent": "american",
+    "tone": "calm",
+    "voiceName": "Will"
   },
   "videoId": "uf0W1HNos3U",
   "thumbnailUrl": "https://img.youtube.com/vi/uf0W1HNos3U/hqdefault.jpg",
@@ -261,12 +273,12 @@
         {
           "text": "I really should get going.",
           "displayHtml": "I really should get going.",
-          "audio": "/songs/I%20Won't%20Tell%20a%20Soul%20Charlie%20Puth/0_0.mp3"
+          "audio": "/songs/I%20Won't%20Tell%20a%20Soul%20Charlie%20Puth/conversation-audio/e8c72daad66631e9/0-0.mp3"
         },
         {
           "text": "I have someone waiting for me at home.",
           "displayHtml": "I have <span class=\"lyric-phrase\">someone waiting</span> for me at home.",
-          "audio": "/songs/I%20Won't%20Tell%20a%20Soul%20Charlie%20Puth/0_1.mp3"
+          "audio": "/songs/I%20Won't%20Tell%20a%20Soul%20Charlie%20Puth/conversation-audio/e8c72daad66631e9/0-1.mp3"
         }
       ],
       "japanese": "そろそろ行かなくちゃ。家で誰かが待ってるから。"
@@ -279,12 +291,12 @@
         {
           "text": "I know.",
           "displayHtml": "I know.",
-          "audio": "/songs/I%20Won't%20Tell%20a%20Soul%20Charlie%20Puth/1_0.mp3"
+          "audio": "/songs/I%20Won't%20Tell%20a%20Soul%20Charlie%20Puth/conversation-audio/e8c72daad66631e9/1-0.mp3"
         },
         {
           "text": "But every time you try to leave, I just want to hold on tight.",
           "displayHtml": "But <span class=\"lyric-phrase\">every time</span> you try to leave, I just want to <span class=\"lyric-phrase\">hold on tight</span>.",
-          "audio": "/songs/I%20Won't%20Tell%20a%20Soul%20Charlie%20Puth/1_1.mp3"
+          "audio": "/songs/I%20Won't%20Tell%20a%20Soul%20Charlie%20Puth/conversation-audio/e8c72daad66631e9/1-1.mp3"
         }
       ],
       "japanese": "分かってるよ。でも君が帰ろうとするたびに、強く引き止めたくなっちゃうんだ。"
@@ -297,12 +309,12 @@
         {
           "text": "I feel the same way.",
           "displayHtml": "I feel the same way.",
-          "audio": "/songs/I%20Won't%20Tell%20a%20Soul%20Charlie%20Puth/2_0.mp3"
+          "audio": "/songs/I%20Won't%20Tell%20a%20Soul%20Charlie%20Puth/conversation-audio/e8c72daad66631e9/2-0.mp3"
         },
         {
           "text": "Honestly, something about this just feels so right, even though I know I'm taken.",
           "displayHtml": "Honestly, <span class=\"lyric-phrase\">something about this</span> just <span class=\"lyric-word\">feels</span> so right, even though I know I'm <span class=\"lyric-word\">taken</span>.",
-          "audio": "/songs/I%20Won't%20Tell%20a%20Soul%20Charlie%20Puth/2_1.mp3"
+          "audio": "/songs/I%20Won't%20Tell%20a%20Soul%20Charlie%20Puth/conversation-audio/e8c72daad66631e9/2-1.mp3"
         }
       ],
       "japanese": "私も同じ。正直言って、こうしているのがすごくしっくりくるの。自分の立場は分かっているんだけど。"
@@ -315,12 +327,12 @@
         {
           "text": "Just stay here with me for a little longer.",
           "displayHtml": "Just <span class=\"lyric-phrase\">stay here</span> with me for a little longer.",
-          "audio": "/songs/I%20Won't%20Tell%20a%20Soul%20Charlie%20Puth/3_0.mp3"
+          "audio": "/songs/I%20Won't%20Tell%20a%20Soul%20Charlie%20Puth/conversation-audio/e8c72daad66631e9/3-0.mp3"
         },
         {
           "text": "It can be our little secret.",
           "displayHtml": "It can be <span class=\"lyric-phrase\">our little secret</span>.",
-          "audio": "/songs/I%20Won't%20Tell%20a%20Soul%20Charlie%20Puth/3_1.mp3"
+          "audio": "/songs/I%20Won't%20Tell%20a%20Soul%20Charlie%20Puth/conversation-audio/e8c72daad66631e9/3-1.mp3"
         }
       ],
       "japanese": "もう少しだけ一緒にここにいようよ。二人の秘密にすればいい。"
@@ -333,12 +345,12 @@
         {
           "text": "I keep telling myself I can’t do this anymore.",
           "displayHtml": "I keep telling myself I <span class=\"lyric-phrase\">can’t do this anymore</span>.",
-          "audio": "/songs/I%20Won't%20Tell%20a%20Soul%20Charlie%20Puth/4_0.mp3"
+          "audio": "/songs/I%20Won't%20Tell%20a%20Soul%20Charlie%20Puth/conversation-audio/e8c72daad66631e9/4-0.mp3"
         },
         {
           "text": "But then you kiss me and I change my mind.",
           "displayHtml": "But then you kiss me and I change my mind.",
-          "audio": "/songs/I%20Won't%20Tell%20a%20Soul%20Charlie%20Puth/4_1.mp3"
+          "audio": "/songs/I%20Won't%20Tell%20a%20Soul%20Charlie%20Puth/conversation-audio/e8c72daad66631e9/4-1.mp3"
         }
       ],
       "japanese": "もうこんなことやめなきゃって自分に言い聞かせてるんだけど。でも、あなたにキスされると気持ちが変わっちゃう。"
@@ -351,12 +363,12 @@
         {
           "text": "You don't have to explain.",
           "displayHtml": "You don't have to explain.",
-          "audio": "/songs/I%20Won't%20Tell%20a%20Soul%20Charlie%20Puth/5_0.mp3"
+          "audio": "/songs/I%20Won't%20Tell%20a%20Soul%20Charlie%20Puth/conversation-audio/e8c72daad66631e9/5-0.mp3"
         },
         {
           "text": "I won't tell a soul about us.",
           "displayHtml": "<span class=\"lyric-phrase\">I won't tell a soul</span> about us.",
-          "audio": "/songs/I%20Won't%20Tell%20a%20Soul%20Charlie%20Puth/5_1.mp3"
+          "audio": "/songs/I%20Won't%20Tell%20a%20Soul%20Charlie%20Puth/conversation-audio/e8c72daad66631e9/5-1.mp3"
         }
       ],
       "japanese": "何も言わなくていいよ。僕たちのことは誰にも言わないから。"
@@ -369,12 +381,12 @@
         {
           "text": "Okay.",
           "displayHtml": "Okay.",
-          "audio": "/songs/I%20Won't%20Tell%20a%20Soul%20Charlie%20Puth/6_0.mp3"
+          "audio": "/songs/I%20Won't%20Tell%20a%20Soul%20Charlie%20Puth/conversation-audio/e8c72daad66631e9/6-0.mp3"
         },
         {
           "text": "Just lock the door so we can finally be alone.",
           "displayHtml": "Just <span class=\"lyric-word\">lock</span> the door so we can finally be alone.",
-          "audio": "/songs/I%20Won't%20Tell%20a%20Soul%20Charlie%20Puth/6_1.mp3"
+          "audio": "/songs/I%20Won't%20Tell%20a%20Soul%20Charlie%20Puth/conversation-audio/e8c72daad66631e9/6-1.mp3"
         }
       ],
       "japanese": "分かったわ。やっと二人きりになれるように、ドアに鍵をかけて。"
@@ -387,16 +399,17 @@
         {
           "text": "Good idea.",
           "displayHtml": "Good idea.",
-          "audio": "/songs/I%20Won't%20Tell%20a%20Soul%20Charlie%20Puth/7_0.mp3"
+          "audio": "/songs/I%20Won't%20Tell%20a%20Soul%20Charlie%20Puth/conversation-audio/e8c72daad66631e9/7-0.mp3"
         },
         {
           "text": "If no one knows what we're doing, then it's fine.",
           "displayHtml": "<span class=\"lyric-phrase\">If no one knows</span> what we're doing, then it's fine.",
-          "audio": "/songs/I%20Won't%20Tell%20a%20Soul%20Charlie%20Puth/7_1.mp3"
+          "audio": "/songs/I%20Won't%20Tell%20a%20Soul%20Charlie%20Puth/conversation-audio/e8c72daad66631e9/7-1.mp3"
         }
       ],
       "japanese": "そうだね。誰にも知られなければ、何も問題ないよ。"
     }
   ],
-  "createdAt": "2026-03-30T17:22:39.870Z"
+  "createdAt": "2026-03-30T17:22:39.870Z",
+  "conversationAudioStatus": "ready"
 }

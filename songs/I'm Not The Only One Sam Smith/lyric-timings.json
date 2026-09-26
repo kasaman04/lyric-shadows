@@ -1,0 +1,350 @@
+{
+  "status": "estimated",
+  "source": {
+    "name": "LRCLIB",
+    "id": 35141287,
+    "duration": 243,
+    "url": "https://lrclib.net/api/get/35141287",
+    "review": "Local small.en word timestamps checked for line starts; uncertain scat and adlibs remain approximate"
+  },
+  "display": {
+    "lyrics": "You and me, we made a vow\nFor better or for worse\nI can't believe you let me down\nBut the proof's in the way it hurts\nFor months on end, I've had my doubts\nDenying every tear\nI wish this would be over now\nBut I know that I still need you here\nYou say I'm crazy\n'Cause you don't think I know what you've done\nBut when you call me baby\nI know I'm not the only one\nYou've been so unavailable\nNow sadly I know why\nYour heart is unobtainable\nEven though Lord knows you kept mine\nYou say I'm crazy\n'Cause you don't think I know what you've done\nBut when you call me baby\nI know I'm not the only one\nI have loved you for many years\nMaybe I am just not enough\nYou've made me realise my deepest fear\nBy lying and tearing us up\nYou say I'm crazy\n'Cause you don't think I know what you've done\nBut when you call me baby\nI know I'm not the only one\nYou say I'm crazy\n'Cause you don't think I know what you've done\nBut when you call me baby\nI know I'm not the only one\nI know I'm not the only one\nI know I'm not the only one\nAnd I know, and I know, and I know\nAnd I know, and I know, and I know, know\nI know I'm not the only one",
+    "lyricsJa": [
+      {
+        "en": "You and me, we made a vow",
+        "ja": "あなたと私、誓いを立てた"
+      },
+      {
+        "en": "For better or for worse",
+        "ja": "健やかなる時も、病める時も"
+      },
+      {
+        "en": "I can't believe you let me down",
+        "ja": "あなたが私を裏切るなんて信じられない"
+      },
+      {
+        "en": "But the proof's in the way it hurts",
+        "ja": "でも、この心の痛みが何よりの証拠"
+      },
+      {
+        "en": "For months on end, I've had my doubts",
+        "ja": "何ヶ月もの間、ずっと疑いを抱いてきた"
+      },
+      {
+        "en": "Denying every tear",
+        "ja": "涙がこぼれるたび、それを否定しながら"
+      },
+      {
+        "en": "I wish this would be over now",
+        "ja": "もうこれですべて終わればいいのに"
+      },
+      {
+        "en": "But I know that I still need you here",
+        "ja": "それでもまだ、あなたにここにいてほしいと思ってしまう"
+      },
+      {
+        "en": "You say I'm crazy",
+        "ja": "あなたは私をおかしいと言う"
+      },
+      {
+        "en": "'Cause you don't think I know what you've done",
+        "ja": "自分がしたことを、私が知らないと思っているから"
+      },
+      {
+        "en": "But when you call me baby",
+        "ja": "でも、あなたが私を「ベイビー」と呼ぶたび"
+      },
+      {
+        "en": "I know I'm not the only one",
+        "ja": "私だけじゃないんだって分かってしまう"
+      },
+      {
+        "en": "You've been so unavailable",
+        "ja": "あなたはずっと、心がここにあらずで"
+      },
+      {
+        "en": "Now sadly I know why",
+        "ja": "今、悲しいことにその理由がわかった"
+      },
+      {
+        "en": "Your heart is unobtainable",
+        "ja": "あなたの心はもう手に入らない"
+      },
+      {
+        "en": "Even though Lord knows you kept mine",
+        "ja": "あなたは私の心を掴んだままなのに、神様は知っている"
+      },
+      {
+        "en": "You say I'm crazy",
+        "ja": "あなたは私をおかしいと言う"
+      },
+      {
+        "en": "'Cause you don't think I know what you've done",
+        "ja": "自分がしたことを、私が知らないと思っているから"
+      },
+      {
+        "en": "But when you call me baby",
+        "ja": "でも、あなたが私を「ベイビー」と呼ぶたび"
+      },
+      {
+        "en": "I know I'm not the only one",
+        "ja": "私だけじゃないんだって分かってしまう"
+      },
+      {
+        "en": "I have loved you for many years",
+        "ja": "何年もあなたを愛してきた"
+      },
+      {
+        "en": "Maybe I am just not enough",
+        "ja": "たぶん、私じゃ物足りなかったのね"
+      },
+      {
+        "en": "You've made me realise my deepest fear",
+        "ja": "あなたは私に、一番恐れていたことを悟らせた"
+      },
+      {
+        "en": "By lying and tearing us up",
+        "ja": "嘘をついて、私たちをバラバラにすることで"
+      },
+      {
+        "en": "You say I'm crazy",
+        "ja": "あなたは私をおかしいと言う"
+      },
+      {
+        "en": "'Cause you don't think I know what you've done",
+        "ja": "自分がしたことを、私が知らないと思っているから"
+      },
+      {
+        "en": "But when you call me baby",
+        "ja": "でも、あなたが私を「ベイビー」と呼ぶたび"
+      },
+      {
+        "en": "I know I'm not the only one",
+        "ja": "私だけじゃないんだって分かってしまう"
+      },
+      {
+        "en": "You say I'm crazy",
+        "ja": "あなたは私をおかしいと言う"
+      },
+      {
+        "en": "'Cause you don't think I know what you've done",
+        "ja": "自分がしたことを、私が知らないと思っているから"
+      },
+      {
+        "en": "But when you call me baby",
+        "ja": "でも、あなたが私を「ベイビー」と呼ぶたび"
+      },
+      {
+        "en": "I know I'm not the only one",
+        "ja": "私だけじゃないんだって分かってしまう"
+      },
+      {
+        "en": "I know I'm not the only one",
+        "ja": "私だけじゃないんだって分かってしまう"
+      },
+      {
+        "en": "I know I'm not the only one",
+        "ja": "私だけじゃないんだって分かってしまう"
+      },
+      {
+        "en": "And I know, and I know, and I know",
+        "ja": "今、悲しいことにその理由がわかった"
+      },
+      {
+        "en": "And I know, and I know, and I know, know",
+        "ja": "今、悲しいことにその理由がわかった"
+      },
+      {
+        "en": "I know I'm not the only one",
+        "ja": "私だけじゃないんだって分かってしまう"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "index": 0,
+      "start": 24.7,
+      "end": 29.84
+    },
+    {
+      "index": 1,
+      "start": 29.84,
+      "end": 35.66
+    },
+    {
+      "index": 2,
+      "start": 35.66,
+      "end": 40.74
+    },
+    {
+      "index": 3,
+      "start": 40.74,
+      "end": 47.4
+    },
+    {
+      "index": 4,
+      "start": 47.4,
+      "end": 53.92
+    },
+    {
+      "index": 5,
+      "start": 53.92,
+      "end": 59.22
+    },
+    {
+      "index": 6,
+      "start": 59.22,
+      "end": 63.06
+    },
+    {
+      "index": 7,
+      "start": 63.06,
+      "end": 69.2
+    },
+    {
+      "index": 8,
+      "start": 69.2,
+      "end": 75.34
+    },
+    {
+      "index": 9,
+      "start": 75.34,
+      "end": 80.76
+    },
+    {
+      "index": 10,
+      "start": 80.76,
+      "end": 87.22
+    },
+    {
+      "index": 11,
+      "start": 87.22,
+      "end": 94.76
+    },
+    {
+      "index": 12,
+      "start": 94.76,
+      "end": 99.72
+    },
+    {
+      "index": 13,
+      "start": 99.72,
+      "end": 105.64
+    },
+    {
+      "index": 14,
+      "start": 105.64,
+      "end": 109.92
+    },
+    {
+      "index": 15,
+      "start": 109.92,
+      "end": 114.96
+    },
+    {
+      "index": 16,
+      "start": 114.96,
+      "end": 121.02
+    },
+    {
+      "index": 17,
+      "start": 121.02,
+      "end": 126.62
+    },
+    {
+      "index": 18,
+      "start": 126.62,
+      "end": 133.82
+    },
+    {
+      "index": 19,
+      "start": 133.82,
+      "end": 140.72
+    },
+    {
+      "index": 20,
+      "start": 140.72,
+      "end": 145.36
+    },
+    {
+      "index": 21,
+      "start": 145.36,
+      "end": 151.96
+    },
+    {
+      "index": 22,
+      "start": 151.96,
+      "end": 156.44
+    },
+    {
+      "index": 23,
+      "start": 156.44,
+      "end": 162.52
+    },
+    {
+      "index": 24,
+      "start": 162.52,
+      "end": 167.76
+    },
+    {
+      "index": 25,
+      "start": 167.76,
+      "end": 173.42
+    },
+    {
+      "index": 26,
+      "start": 173.42,
+      "end": 180.7
+    },
+    {
+      "index": 27,
+      "start": 180.7,
+      "end": 186.08
+    },
+    {
+      "index": 28,
+      "start": 186.08,
+      "end": 191.22
+    },
+    {
+      "index": 29,
+      "start": 191.22,
+      "end": 196.96
+    },
+    {
+      "index": 30,
+      "start": 196.96,
+      "end": 204.28
+    },
+    {
+      "index": 31,
+      "start": 204.28,
+      "end": 210.18
+    },
+    {
+      "index": 32,
+      "start": 210.18,
+      "end": 216.02
+    },
+    {
+      "index": 33,
+      "start": 216.02,
+      "end": 221.9
+    },
+    {
+      "index": 34,
+      "start": 221.9,
+      "end": 225.32
+    },
+    {
+      "index": 35,
+      "start": 225.32,
+      "end": 227.9
+    },
+    {
+      "index": 36,
+      "start": 227.9,
+      "end": 232.17
+    }
+  ]
+}

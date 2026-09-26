@@ -1,0 +1,251 @@
+{
+  "status": "estimated",
+  "source": {
+    "name": "LRCLIB",
+    "id": 10323824,
+    "duration": 196,
+    "url": "https://lrclib.net/api/get/10323824",
+    "review": "Local small.en word timestamps checked for line starts; uncertain scat and adlibs remain approximate"
+  },
+  "display": {
+    "lyrics": "When I was just a kid\nI couldn't wait til I grew up\nTried walking in your shoes\nBut couldn't even tie them up\nNo matter how big and tall I grew\nI was always looking up to you\nYou showed me that I was just a diamond in the rough\nYou helped me to grow into the man that I've become\nWe've been down, we've been up\nI hope I've made you proud enough\nYou make it look easy even when I'm hard to love\nWhen I dropped out of school\nYou told me that my time was up\nI was a rebel with a cause\nJust didn't quite know what it was\nSo I got a job that barely paid\nYou said you did the same thing at my age\nYou showed me that I was just a diamond in the rough\nYou helped me to grow into the man that I've become\nWe've been down, we've been up\nI hope I've made you proud enough\nYou make it look easy even when I'm hard to love\nWe've been down, we've been up\nI hope I've made you proud enough\nYou make it look easy even when I'm hard to love\nEven when I'm hard to love",
+    "lyricsJa": [
+      {
+        "en": "When I was just a kid",
+        "ja": "僕がまだほんの子供だった頃"
+      },
+      {
+        "en": "I couldn't wait til I grew up",
+        "ja": "早く大人になりたくて仕方なかった"
+      },
+      {
+        "en": "Tried walking in your shoes",
+        "ja": "あなたの靴を履いて歩こうとしたけど"
+      },
+      {
+        "en": "But couldn't even tie them up",
+        "ja": "靴紐を結ぶことすらできなかったね"
+      },
+      {
+        "en": "No matter how big and tall I grew",
+        "ja": "どれだけ僕が大きく背が伸びたとしても"
+      },
+      {
+        "en": "I was always looking up to you",
+        "ja": "いつだってあなたを見上げてばかりいた"
+      },
+      {
+        "en": "You showed me that I was just a diamond in the rough",
+        "ja": "あなたは僕が「ただのダイヤの原石」なんだって教えてくれた"
+      },
+      {
+        "en": "You helped me to grow into the man that I've become",
+        "ja": "今の僕という大人になれるように育ててくれた"
+      },
+      {
+        "en": "We've been down, we've been up",
+        "ja": "落ち込んだ時期もあれば、上手くいった時期もあったけど"
+      },
+      {
+        "en": "I hope I've made you proud enough",
+        "ja": "あなたが少しでも僕を誇りに思ってくれていたらいいな"
+      },
+      {
+        "en": "You make it look easy even when I'm hard to love",
+        "ja": "愛するのが難しいような（手のかかる）僕でさえ、あなたは事もなげに愛してくれた"
+      },
+      {
+        "en": "When I dropped out of school",
+        "ja": "僕が学校を辞めた時"
+      },
+      {
+        "en": "You told me that my time was up",
+        "ja": "あなたは「もう時間切れだ」って言ったね"
+      },
+      {
+        "en": "I was a rebel with a cause",
+        "ja": "信念を持って反抗していたつもりだった"
+      },
+      {
+        "en": "Just didn't quite know what it was",
+        "ja": "ただそれが何なのか分からなかっただけなんだ"
+      },
+      {
+        "en": "So I got a job that barely paid",
+        "ja": "それで、給料がほとんど出ない仕事に就いた"
+      },
+      {
+        "en": "You said you did the same thing at my age",
+        "ja": "あなたも「お前と同じ歳の頃に同じことをしたよ」って言ってくれたね"
+      },
+      {
+        "en": "You showed me that I was just a diamond in the rough",
+        "ja": "あなたは僕が「ただのダイヤの原石」なんだって教えてくれた"
+      },
+      {
+        "en": "You helped me to grow into the man that I've become",
+        "ja": "今の僕という大人になれるように育ててくれた"
+      },
+      {
+        "en": "We've been down, we've been up",
+        "ja": "落ち込んだ時期もあれば、上手くいった時期もあったけど"
+      },
+      {
+        "en": "I hope I've made you proud enough",
+        "ja": "あなたが少しでも僕を誇りに思ってくれていたらいいな"
+      },
+      {
+        "en": "You make it look easy even when I'm hard to love",
+        "ja": "愛するのが難しいような（手のかかる）僕でさえ、あなたは事もなげに愛してくれた"
+      },
+      {
+        "en": "We've been down, we've been up",
+        "ja": "落ち込んだ時期もあれば、上手くいった時期もあったけど"
+      },
+      {
+        "en": "I hope I've made you proud enough",
+        "ja": "あなたが少しでも僕を誇りに思ってくれていたらいいな"
+      },
+      {
+        "en": "You make it look easy even when I'm hard to love",
+        "ja": "愛するのが難しいような（手のかかる）僕でさえ、あなたは事もなげに愛してくれた"
+      },
+      {
+        "en": "Even when I'm hard to love",
+        "ja": "愛するのが難しいような（手のかかる）僕でさえ、あなたは事もなげに愛してくれた"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "index": 0,
+      "start": 7.78,
+      "end": 10.88
+    },
+    {
+      "index": 1,
+      "start": 10.88,
+      "end": 16.96
+    },
+    {
+      "index": 2,
+      "start": 16.96,
+      "end": 19.62
+    },
+    {
+      "index": 3,
+      "start": 19.62,
+      "end": 24.04
+    },
+    {
+      "index": 4,
+      "start": 24.04,
+      "end": 31.62
+    },
+    {
+      "index": 5,
+      "start": 31.62,
+      "end": 37.86
+    },
+    {
+      "index": 6,
+      "start": 37.86,
+      "end": 45.76
+    },
+    {
+      "index": 7,
+      "start": 45.76,
+      "end": 55.04
+    },
+    {
+      "index": 8,
+      "start": 55.04,
+      "end": 59.72
+    },
+    {
+      "index": 9,
+      "start": 59.72,
+      "end": 64.44
+    },
+    {
+      "index": 10,
+      "start": 64.44,
+      "end": 86.58
+    },
+    {
+      "index": 11,
+      "start": 86.58,
+      "end": 89.14
+    },
+    {
+      "index": 12,
+      "start": 89.14,
+      "end": 94.82
+    },
+    {
+      "index": 13,
+      "start": 94.82,
+      "end": 98.34
+    },
+    {
+      "index": 14,
+      "start": 98.34,
+      "end": 103.38
+    },
+    {
+      "index": 15,
+      "start": 103.38,
+      "end": 111.76
+    },
+    {
+      "index": 16,
+      "start": 111.76,
+      "end": 116
+    },
+    {
+      "index": 17,
+      "start": 116,
+      "end": 124.72
+    },
+    {
+      "index": 18,
+      "start": 124.72,
+      "end": 133.82
+    },
+    {
+      "index": 19,
+      "start": 133.82,
+      "end": 138.24
+    },
+    {
+      "index": 20,
+      "start": 138.24,
+      "end": 142.94
+    },
+    {
+      "index": 21,
+      "start": 142.94,
+      "end": 151.12
+    },
+    {
+      "index": 22,
+      "start": 151.12,
+      "end": 155.78
+    },
+    {
+      "index": 23,
+      "start": 155.78,
+      "end": 160.46
+    },
+    {
+      "index": 24,
+      "start": 160.46,
+      "end": 180.74
+    },
+    {
+      "index": 25,
+      "start": 180.74,
+      "end": 186
+    }
+  ]
+}

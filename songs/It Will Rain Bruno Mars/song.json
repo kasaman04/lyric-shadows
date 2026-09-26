@@ -8,12 +8,24 @@
   "speakerA": {
     "name": "Leo",
     "type": "男性",
-    "voice": "CfDbY7v8tDkTvB9rNcUw"
+    "voice": "iP95p4xoKVk53GoZ742B",
+    "voiceProfile": "chris",
+    "gender": "male",
+    "age": "middle_aged",
+    "accent": "american",
+    "tone": "casual",
+    "voiceName": "Chris"
   },
   "speakerB": {
     "name": "Maya",
     "type": "女性",
-    "voice": "cNYrMw9glwJZXR8RwbuR"
+    "voice": "w2CTE3MYza6FgBnETYNT",
+    "voiceProfile": "kimberly",
+    "gender": "female",
+    "age": "middle_aged",
+    "accent": "american",
+    "tone": "calm",
+    "voiceName": "Kimberly"
   },
   "videoId": "FRtXs73iICo",
   "thumbnailUrl": "https://img.youtube.com/vi/FRtXs73iICo/hqdefault.jpg",
@@ -249,7 +261,7 @@
         {
           "text": "I know I'm probably not your mother's favorite person right now.",
           "displayHtml": "I know I'm probably not your <span class=\"lyric-phrase\">mother's favorite</span> person right now.",
-          "audio": "/songs/It%20Will%20Rain%20Bruno%20Mars/0_0.mp3"
+          "audio": "/songs/It%20Will%20Rain%20Bruno%20Mars/conversation-audio/c8b2742bf3b0e9b5/0-0.mp3"
         }
       ],
       "japanese": "今、僕がお母さんに気に入られてないのは分かってるよ。"
@@ -262,7 +274,7 @@
         {
           "text": "It's true, and my dad can't even look you in the eye lately.",
           "displayHtml": "It's true, and my dad <span class=\"lyric-phrase\">can't even look you in the eye</span> lately.",
-          "audio": "/songs/It%20Will%20Rain%20Bruno%20Mars/1_0.mp3"
+          "audio": "/songs/It%20Will%20Rain%20Bruno%20Mars/conversation-audio/c8b2742bf3b0e9b5/1-0.mp3"
         }
       ],
       "japanese": "本当ね、お父さんなんて最近、あなたの目を見ることさえできないんだから。"
@@ -275,7 +287,7 @@
         {
           "text": "Honestly, if I was in their shoes, I'd probably feel the same way about a troublesome guy like me.",
           "displayHtml": "Honestly, <span class=\"lyric-phrase\">if I was in their shoes</span>, I'd probably feel the same way about a <span class=\"lyric-word\">troublesome</span> guy like me.",
-          "audio": "/songs/It%20Will%20Rain%20Bruno%20Mars/2_0.mp3"
+          "audio": "/songs/It%20Will%20Rain%20Bruno%20Mars/conversation-audio/c8b2742bf3b0e9b5/2-0.mp3"
         }
       ],
       "japanese": "正直、もし僕が彼らの立場だったら、自分みたいな厄介な男に対して同じように思うだろうな。"
@@ -288,12 +300,12 @@
         {
           "text": "Don't say that.",
           "displayHtml": "Don't say that.",
-          "audio": "/songs/It%20Will%20Rain%20Bruno%20Mars/3_0.mp3"
+          "audio": "/songs/It%20Will%20Rain%20Bruno%20Mars/conversation-audio/c8b2742bf3b0e9b5/3-0.mp3"
         },
         {
           "text": "I think they're just afraid of something they can't understand.",
           "displayHtml": "I think they're just <span class=\"lyric-phrase\">afraid of something they can't understand</span>.",
-          "audio": "/songs/It%20Will%20Rain%20Bruno%20Mars/3_1.mp3"
+          "audio": "/songs/It%20Will%20Rain%20Bruno%20Mars/conversation-audio/c8b2742bf3b0e9b5/3-1.mp3"
         }
       ],
       "japanese": "そんなこと言わないで。二人はただ、自分たちが理解できないものを恐れているだけだと思うわ。"
@@ -306,7 +318,7 @@
         {
           "text": "I'm willing to make any sacrifices necessary to keep you by my side.",
           "displayHtml": "I'm willing to make any <span class=\"lyric-word\">sacrifices</span> necessary to <span class=\"lyric-phrase\">keep you by my side</span>.",
-          "audio": "/songs/It%20Will%20Rain%20Bruno%20Mars/4_0.mp3"
+          "audio": "/songs/It%20Will%20Rain%20Bruno%20Mars/conversation-audio/c8b2742bf3b0e9b5/4-0.mp3"
         }
       ],
       "japanese": "君を僕のそばに留めておくためなら、どんな犠牲だって払うつもりだよ。"
@@ -319,7 +331,7 @@
         {
           "text": "Just keep in mind that I'm with you, no matter what they think.",
           "displayHtml": "Just <span class=\"lyric-phrase\">keep in mind</span> that I'm with you, no matter what they think.",
-          "audio": "/songs/It%20Will%20Rain%20Bruno%20Mars/5_0.mp3"
+          "audio": "/songs/It%20Will%20Rain%20Bruno%20Mars/conversation-audio/c8b2742bf3b0e9b5/5-0.mp3"
         }
       ],
       "japanese": "二人がどう思おうと、私はあなたの味方だってことだけは覚えておいて。"
@@ -332,12 +344,12 @@
         {
           "text": "I will.",
           "displayHtml": "I will.",
-          "audio": "/songs/It%20Will%20Rain%20Bruno%20Mars/6_0.mp3"
+          "audio": "/songs/It%20Will%20Rain%20Bruno%20Mars/conversation-audio/c8b2742bf3b0e9b5/6-0.mp3"
         },
         {
           "text": "Just watch me change their minds and prove I'm right for you.",
           "displayHtml": "Just <span class=\"lyric-phrase\">watch me change their minds</span> and prove I'm right for you.",
-          "audio": "/songs/It%20Will%20Rain%20Bruno%20Mars/6_1.mp3"
+          "audio": "/songs/It%20Will%20Rain%20Bruno%20Mars/conversation-audio/c8b2742bf3b0e9b5/6-1.mp3"
         }
       ],
       "japanese": "分かった。僕が彼らの考えを変えて、君にふさわしい男だって証明してみせるよ。"
@@ -350,11 +362,12 @@
         {
           "text": "I hope so, because I really don't want to lose you.",
           "displayHtml": "I hope so, because I really don't want to <span class=\"lyric-phrase\">lose you</span>.",
-          "audio": "/songs/It%20Will%20Rain%20Bruno%20Mars/7_0.mp3"
+          "audio": "/songs/It%20Will%20Rain%20Bruno%20Mars/conversation-audio/c8b2742bf3b0e9b5/7-0.mp3"
         }
       ],
       "japanese": "期待してるわ。だって、本当にあなたを失いたくないもの。"
     }
   ],
-  "createdAt": "2026-03-30T16:54:58.344Z"
+  "createdAt": "2026-03-30T16:54:58.344Z",
+  "conversationAudioStatus": "ready"
 }

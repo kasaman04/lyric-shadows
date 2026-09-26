@@ -1,0 +1,277 @@
+{
+  "status": "estimated",
+  "source": {
+    "name": "Local audio alignment",
+    "model": "faster-whisper-base.en",
+    "audioUploaded": false,
+    "review": "Word timestamps cross-checked with base.en and small.en; instrumental outro starts after 92s"
+  },
+  "display": {
+    "lyrics": "I see the crystal raindrops fall\nAnd the beauty of it all\nIs when the sun comes shining through\nTo make those rainbows in my mind\nWhen I think of you sometime\nAnd I wanna spend some time with you\nJust the two of us\nWe can make it if we try\nJust the two of us\n(Just the two of us)\nJust the two of us\nBuilding castles in the sky\nJust the two of us\nYou and I\nWe look for love, no time for tears\nWasted water's all that is\nAnd it don't make no flowers grow\nGood things might come to those who wait\nNot for those who wait too late\nWe gotta go for all we know\nJust the two of us\nWe can make it if we try\nJust the two of us\n(Just the two of us)\nJust the two of us\nBuilding them castles in the sky\nJust the two of us\nYou and I\nLet's get together, baby",
+    "lyricsJa": [
+      {
+        "en": "I see the crystal raindrops fall",
+        "ja": "透き通った雨粒が落ちていくのが見える"
+      },
+      {
+        "en": "And the beauty of it all",
+        "ja": "そのすべての美しさは"
+      },
+      {
+        "en": "Is when the sun comes shining through",
+        "ja": "太陽の光が差し込んでくる瞬間にある"
+      },
+      {
+        "en": "To make those rainbows in my mind",
+        "ja": "僕の心の中に、あの虹を描いてくれる"
+      },
+      {
+        "en": "When I think of you sometime",
+        "ja": "ふと君のことを思うとき"
+      },
+      {
+        "en": "And I wanna spend some time with you",
+        "ja": "君と少し時間を過ごしたくなる"
+      },
+      {
+        "en": "Just the two of us",
+        "ja": "ただ二人だけで"
+      },
+      {
+        "en": "We can make it if we try",
+        "ja": "やってみれば、きっとうまくいく"
+      },
+      {
+        "en": "Just the two of us",
+        "ja": "ただ二人だけで"
+      },
+      {
+        "en": "(Just the two of us)",
+        "ja": "ただ二人だけで"
+      },
+      {
+        "en": "Just the two of us",
+        "ja": "ただ二人だけで"
+      },
+      {
+        "en": "Building castles in the sky",
+        "ja": "空に城を築くように、夢を描きながら"
+      },
+      {
+        "en": "Just the two of us",
+        "ja": "ただ二人だけで"
+      },
+      {
+        "en": "You and I",
+        "ja": "君と僕で"
+      },
+      {
+        "en": "We look for love, no time for tears",
+        "ja": "僕たちは愛を探している、涙に使う時間なんてない"
+      },
+      {
+        "en": "Wasted water's all that is",
+        "ja": "それはただ無駄に流れた水みたいなもの"
+      },
+      {
+        "en": "And it don't make no flowers grow",
+        "ja": "それじゃ花は咲かない"
+      },
+      {
+        "en": "Good things might come to those who wait",
+        "ja": "待つ人にはいいことが来るかもしれない"
+      },
+      {
+        "en": "Not for those who wait too late",
+        "ja": "でも、遅すぎるまで待つ人には来ない"
+      },
+      {
+        "en": "We gotta go for all we know",
+        "ja": "わかっている限り、僕たちは進むしかない"
+      },
+      {
+        "en": "Just the two of us",
+        "ja": "ただ二人だけで"
+      },
+      {
+        "en": "We can make it if we try",
+        "ja": "やってみれば、きっとうまくいく"
+      },
+      {
+        "en": "Just the two of us",
+        "ja": "ただ二人だけで"
+      },
+      {
+        "en": "(Just the two of us)",
+        "ja": "ただ二人だけで"
+      },
+      {
+        "en": "Just the two of us",
+        "ja": "ただ二人だけで"
+      },
+      {
+        "en": "Building them castles in the sky",
+        "ja": "空に城を築くように、夢を描きながら"
+      },
+      {
+        "en": "Just the two of us",
+        "ja": "ただ二人だけで"
+      },
+      {
+        "en": "You and I",
+        "ja": "君と僕で"
+      },
+      {
+        "en": "Let's get together, baby",
+        "ja": "さあ、一緒になろうよ"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "index": 0,
+      "start": 0,
+      "end": 3.34
+    },
+    {
+      "index": 1,
+      "start": 3.34,
+      "end": 6.26
+    },
+    {
+      "index": 2,
+      "start": 6.26,
+      "end": 12
+    },
+    {
+      "index": 3,
+      "start": 12,
+      "end": 15.06
+    },
+    {
+      "index": 4,
+      "start": 15.06,
+      "end": 17.66
+    },
+    {
+      "index": 5,
+      "start": 17.66,
+      "end": 22
+    },
+    {
+      "index": 6,
+      "start": 22,
+      "end": 24.78
+    },
+    {
+      "index": 7,
+      "start": 24.78,
+      "end": 28.16
+    },
+    {
+      "index": 8,
+      "start": 28.16,
+      "end": 31.08
+    },
+    {
+      "index": 9,
+      "start": 31.08,
+      "end": 33.72
+    },
+    {
+      "index": 10,
+      "start": 33.72,
+      "end": 36.54
+    },
+    {
+      "index": 11,
+      "start": 36.54,
+      "end": 39.74
+    },
+    {
+      "index": 12,
+      "start": 39.74,
+      "end": 42.4
+    },
+    {
+      "index": 13,
+      "start": 42.4,
+      "end": 46.46
+    },
+    {
+      "index": 14,
+      "start": 46.46,
+      "end": 50.16
+    },
+    {
+      "index": 15,
+      "start": 50.16,
+      "end": 53.14
+    },
+    {
+      "index": 16,
+      "start": 53.14,
+      "end": 58.32
+    },
+    {
+      "index": 17,
+      "start": 58.32,
+      "end": 61.74
+    },
+    {
+      "index": 18,
+      "start": 61.74,
+      "end": 64.84
+    },
+    {
+      "index": 19,
+      "start": 64.84,
+      "end": 68.96
+    },
+    {
+      "index": 20,
+      "start": 68.96,
+      "end": 71.74
+    },
+    {
+      "index": 21,
+      "start": 71.74,
+      "end": 75
+    },
+    {
+      "index": 22,
+      "start": 75,
+      "end": 77.82
+    },
+    {
+      "index": 23,
+      "start": 77.82,
+      "end": 80.47
+    },
+    {
+      "index": 24,
+      "start": 80.47,
+      "end": 83.12
+    },
+    {
+      "index": 25,
+      "start": 83.12,
+      "end": 86.74
+    },
+    {
+      "index": 26,
+      "start": 86.74,
+      "end": 90.02
+    },
+    {
+      "index": 27,
+      "start": 90.02,
+      "end": 92.2
+    },
+    {
+      "index": 28,
+      "start": 111.94,
+      "end": 114.5
+    }
+  ]
+}

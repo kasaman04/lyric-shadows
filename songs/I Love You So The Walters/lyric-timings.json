@@ -1,0 +1,206 @@
+{
+  "status": "sourced",
+  "source": {
+    "name": "LRCLIB",
+    "id": 37468984,
+    "duration": 160,
+    "url": "https://lrclib.net/api/get/37468984",
+    "review": "Late repeated vocals checked against local audio transcription"
+  },
+  "display": {
+    "lyrics": "I just need someone in my life to give it structure\nTo handle all the selfish ways I'd spend my time without her\nYou're everything I want, but I can't deal with all your lovers\nYou're saying I'm the one, but it's your actions that speak louder\nGiving me love when you are down and need another\nI've gotta get away and let you go, I've gotta get over\nBut I love you so (ooh-ooh)\nI love you so (ooh-ooh)\nI love you so (ooh-ooh)\nI love you so (ooh-ooh)\nI'm gonna pack my things and leave you behind\nThis feeling's old and I know that I've made up my mind\nI hope you feel what I felt when you shattered my soul\n'Cause you were cruel and I'm a fool\nSo, please let me go\nBut I love you so (please let me go)\nI love you so (please let me go)\nI love you so (please let me go)\nI love you so\nPlease let me go\nI love you so",
+    "lyricsJa": [
+      {
+        "en": "I just need someone in my life to give it structure",
+        "ja": "僕の人生に秩序を与えてくれる誰かが必要なんだ"
+      },
+      {
+        "en": "To handle all the selfish ways I'd spend my time without her",
+        "ja": "彼女がいなければ身勝手に過ぎてしまう時間を、正してくれるような人が"
+      },
+      {
+        "en": "You're everything I want, but I can't deal with all your lovers",
+        "ja": "君は僕が望むすべてだけど、他に男たちがいるのは耐えられない"
+      },
+      {
+        "en": "You're saying I'm the one, but it's your actions that speak louder",
+        "ja": "僕だけだと言いながら、君の行動がすべてを物語っている"
+      },
+      {
+        "en": "Giving me love when you are down and need another",
+        "ja": "落ち込んで誰かを必要としている時だけ、僕に愛をくれるんだね"
+      },
+      {
+        "en": "I've gotta get away and let you go, I've gotta get over",
+        "ja": "逃げ出して君を離し、この思いを吹っ切らなきゃいけないんだ"
+      },
+      {
+        "en": "But I love you so (ooh-ooh)",
+        "ja": "だけど、君をこんなにも愛してる"
+      },
+      {
+        "en": "I love you so (ooh-ooh)",
+        "ja": "君をこんなにも愛してる"
+      },
+      {
+        "en": "I love you so (ooh-ooh)",
+        "ja": "君をこんなにも愛してる"
+      },
+      {
+        "en": "I love you so (ooh-ooh)",
+        "ja": "君をこんなにも愛してる"
+      },
+      {
+        "en": "I'm gonna pack my things and leave you behind",
+        "ja": "荷物をまとめて、君を置いていくよ"
+      },
+      {
+        "en": "This feeling's old and I know that I've made up my mind",
+        "ja": "こんな思いはもうたくさんだ、決心はついているんだ"
+      },
+      {
+        "en": "I hope you feel what I felt when you shattered my soul",
+        "ja": "僕の心を粉々に打ち砕いた時の痛みを、君も味わえばいい"
+      },
+      {
+        "en": "'Cause you were cruel and I'm a fool",
+        "ja": "君は残酷で、僕は愚かだったから"
+      },
+      {
+        "en": "So, please let me go",
+        "ja": "だからお願いだ、僕を解放してくれ"
+      },
+      {
+        "en": "But I love you so (please let me go)",
+        "ja": "だけど君をこんなにも愛してる（お願いだ 行かせてくれ）"
+      },
+      {
+        "en": "I love you so (please let me go)",
+        "ja": "君をこんなにも愛してる（お願いだ 行かせてくれ）"
+      },
+      {
+        "en": "I love you so (please let me go)",
+        "ja": "君をこんなにも愛してる（お願いだ 行かせてくれ）"
+      },
+      {
+        "en": "I love you so",
+        "ja": "君をこんなにも愛してる"
+      },
+      {
+        "en": "Please let me go",
+        "ja": "どうか僕を行かせて"
+      },
+      {
+        "en": "I love you so",
+        "ja": "君をとても愛している"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "index": 0,
+      "start": 13.2,
+      "end": 19.57
+    },
+    {
+      "index": 1,
+      "start": 19.57,
+      "end": 25.86
+    },
+    {
+      "index": 2,
+      "start": 25.86,
+      "end": 32.07
+    },
+    {
+      "index": 3,
+      "start": 32.07,
+      "end": 38.57
+    },
+    {
+      "index": 4,
+      "start": 38.57,
+      "end": 44.63
+    },
+    {
+      "index": 5,
+      "start": 44.63,
+      "end": 51.1
+    },
+    {
+      "index": 6,
+      "start": 51.1,
+      "end": 57.63
+    },
+    {
+      "index": 7,
+      "start": 57.63,
+      "end": 63.7
+    },
+    {
+      "index": 8,
+      "start": 63.7,
+      "end": 70.12
+    },
+    {
+      "index": 9,
+      "start": 70.12,
+      "end": 74.44
+    },
+    {
+      "index": 10,
+      "start": 74.44,
+      "end": 80.84
+    },
+    {
+      "index": 11,
+      "start": 80.84,
+      "end": 87.14
+    },
+    {
+      "index": 12,
+      "start": 87.14,
+      "end": 93.31
+    },
+    {
+      "index": 13,
+      "start": 93.31,
+      "end": 96.96
+    },
+    {
+      "index": 14,
+      "start": 96.96,
+      "end": 101.48
+    },
+    {
+      "index": 15,
+      "start": 101.48,
+      "end": 108.06
+    },
+    {
+      "index": 16,
+      "start": 108.06,
+      "end": 114.49
+    },
+    {
+      "index": 17,
+      "start": 114.49,
+      "end": 120.67
+    },
+    {
+      "index": 18,
+      "start": 120.67,
+      "end": 123.29
+    },
+    {
+      "index": 19,
+      "start": 130,
+      "end": 132.5
+    },
+    {
+      "index": 20,
+      "start": 132.5,
+      "end": 135
+    }
+  ]
+}

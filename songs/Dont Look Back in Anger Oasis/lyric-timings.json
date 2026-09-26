@@ -1,0 +1,376 @@
+{
+  "status": "sourced",
+  "source": {
+    "name": "LRCLIB",
+    "id": 37166090,
+    "duration": 288,
+    "url": "https://lrclib.net/api/get/37166090"
+  },
+  "display": {
+    "lyrics": "Slip inside the eye of your mind\nDon't you know you might find\nA better place to play?\nYou said that you'd never been\nBut all the things that you've seen\nWill slowly fade away\nSo I start a revolution from my bed\n'Cause you said the brains I had went to my head\nStep outside, summertime's in bloom\nStand up beside the fireplace\nTake that look from off your face\nYou ain't ever gonna burn my heart out\nAnd so Sally can wait\nShe knows it's too late as we're walking on by\nHer soul slides away\n\"But don't look back in anger\", I heard you say\nTake me to the place where you go\nWhere nobody knows if it's night or day\nPlease don't put your life in the hands\nOf a rock n' roll band who'll throw it all away\nGonna start a revolution from my bed\n'Cause you said the brains I had went to my head\nStep outside 'cause summertime's in bloom\nStand up beside the fireplace\nTake that look from off your face\n'Cause you ain't ever gonna burn my heart out\nAnd so Sally can wait\nShe knows it's too late as she's walking on by\nMy soul slides away\n\"But don't look back in anger\", I heard you say\nSo Sally can wait\nShe knows it's too late as we're walking on by\nHer soul slides away\n\"But don't look back in anger\", I heard you say\nSo Sally can wait\nShe knows it's too late as she's walking on by\nMy soul slides away\n\"But don't look back in anger, don't look back in anger\"\nI heard you say\nAt least not today",
+    "lyricsJa": [
+      {
+        "en": "Slip inside the eye of your mind",
+        "ja": "心の目の中に入り込んでごらん"
+      },
+      {
+        "en": "Don't you know you might find",
+        "ja": "見つかるかもしれないって知ってるかい？"
+      },
+      {
+        "en": "A better place to play?",
+        "ja": "もっと素敵な遊び場が"
+      },
+      {
+        "en": "You said that you'd never been",
+        "ja": "行ったことがないって言ってたね"
+      },
+      {
+        "en": "But all the things that you've seen",
+        "ja": "でも君が見てきたすべてのものは"
+      },
+      {
+        "en": "Will slowly fade away",
+        "ja": "ゆっくりと消えていくだろう"
+      },
+      {
+        "en": "So I start a revolution from my bed",
+        "ja": "だからベッドの上から革命を起こすんだ"
+      },
+      {
+        "en": "'Cause you said the brains I had went to my head",
+        "ja": "君が「うぬぼれてる」なんて言うからさ"
+      },
+      {
+        "en": "Step outside, summertime's in bloom",
+        "ja": "外に出よう、夏が真っ盛りだよ"
+      },
+      {
+        "en": "Stand up beside the fireplace",
+        "ja": "暖炉のそばに立って"
+      },
+      {
+        "en": "Take that look from off your face",
+        "ja": "そんな顔をするのはやめてくれ"
+      },
+      {
+        "en": "You ain't ever gonna burn my heart out",
+        "ja": "君に僕の心までは焼き尽くせやしない"
+      },
+      {
+        "en": "And so Sally can wait",
+        "ja": "そう、サリーは待つことができる"
+      },
+      {
+        "en": "She knows it's too late as we're walking on by",
+        "ja": "僕らが通り過ぎる頃にはもう遅いと分かっているんだ"
+      },
+      {
+        "en": "Her soul slides away",
+        "ja": "彼女の魂はすり抜けていく"
+      },
+      {
+        "en": "\"But don't look back in anger\", I heard you say",
+        "ja": "「でも怒りにまかせて振り返らないで」って君が言うのが聞こえたんだ"
+      },
+      {
+        "en": "Take me to the place where you go",
+        "ja": "君が行く場所へ連れて行ってくれ"
+      },
+      {
+        "en": "Where nobody knows if it's night or day",
+        "ja": "昼か夜かも誰も知らないような場所へ"
+      },
+      {
+        "en": "Please don't put your life in the hands",
+        "ja": "自分の人生を預けたりしないでくれ"
+      },
+      {
+        "en": "Of a rock n' roll band who'll throw it all away",
+        "ja": "ロックンロール・バンドなんかに"
+      },
+      {
+        "en": "Gonna start a revolution from my bed",
+        "ja": "ベッドの上から革命を起こすつもりさ"
+      },
+      {
+        "en": "'Cause you said the brains I had went to my head",
+        "ja": "君が「うぬぼれてる」なんて言うからさ"
+      },
+      {
+        "en": "Step outside 'cause summertime's in bloom",
+        "ja": "外に出よう、夏が真っ盛りだから"
+      },
+      {
+        "en": "Stand up beside the fireplace",
+        "ja": "暖炉のそばに立って"
+      },
+      {
+        "en": "Take that look from off your face",
+        "ja": "そんな顔をするのはやめてくれ"
+      },
+      {
+        "en": "'Cause you ain't ever gonna burn my heart out",
+        "ja": "君に僕の心までは焼き尽くせやしない"
+      },
+      {
+        "en": "And so Sally can wait",
+        "ja": "そう、サリーは待つことができる"
+      },
+      {
+        "en": "She knows it's too late as she's walking on by",
+        "ja": "僕らが通り過ぎる頃にはもう遅いと分かっているんだ"
+      },
+      {
+        "en": "My soul slides away",
+        "ja": "僕の魂はすり抜けていく"
+      },
+      {
+        "en": "\"But don't look back in anger\", I heard you say",
+        "ja": "「でも怒りにまかせて振り返らないで」って君が言うのが聞こえたんだ"
+      },
+      {
+        "en": "So Sally can wait",
+        "ja": "だからサリーは待つことができる"
+      },
+      {
+        "en": "She knows it's too late as we're walking on by",
+        "ja": "僕らが通り過ぎる頃にはもう遅いと分かっているんだ"
+      },
+      {
+        "en": "Her soul slides away",
+        "ja": "彼女の魂はすり抜けていく"
+      },
+      {
+        "en": "\"But don't look back in anger\", I heard you say",
+        "ja": "「でも怒りにまかせて振り返らないで」って君が言うのが聞こえたんだ"
+      },
+      {
+        "en": "So Sally can wait",
+        "ja": "だからサリーは待つことができる"
+      },
+      {
+        "en": "She knows it's too late as she's walking on by",
+        "ja": "僕らが通り過ぎる頃にはもう遅いと分かっているんだ"
+      },
+      {
+        "en": "My soul slides away",
+        "ja": "僕の魂はすり抜けていく"
+      },
+      {
+        "en": "\"But don't look back in anger, don't look back in anger\"",
+        "ja": "「でも怒りにまかせて振り返らないで」って君が言うのが聞こえたんだ"
+      },
+      {
+        "en": "I heard you say",
+        "ja": "「せめて今日だけは」と君が言うのが聞こえた"
+      },
+      {
+        "en": "At least not today",
+        "ja": "「せめて今日だけは」と君が言うのが聞こえた"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "index": 0,
+      "start": 12.27,
+      "end": 16.26
+    },
+    {
+      "index": 1,
+      "start": 16.26,
+      "end": 19.87
+    },
+    {
+      "index": 2,
+      "start": 19.87,
+      "end": 23.77
+    },
+    {
+      "index": 3,
+      "start": 23.77,
+      "end": 28.13
+    },
+    {
+      "index": 4,
+      "start": 28.13,
+      "end": 31.6
+    },
+    {
+      "index": 5,
+      "start": 31.6,
+      "end": 36.13
+    },
+    {
+      "index": 6,
+      "start": 36.13,
+      "end": 41.6
+    },
+    {
+      "index": 7,
+      "start": 41.6,
+      "end": 47.52
+    },
+    {
+      "index": 8,
+      "start": 47.52,
+      "end": 53.43
+    },
+    {
+      "index": 9,
+      "start": 53.43,
+      "end": 56.34
+    },
+    {
+      "index": 10,
+      "start": 56.34,
+      "end": 59.64
+    },
+    {
+      "index": 11,
+      "start": 59.64,
+      "end": 67.97
+    },
+    {
+      "index": 12,
+      "start": 71.21,
+      "end": 75.26
+    },
+    {
+      "index": 13,
+      "start": 75.26,
+      "end": 82.88
+    },
+    {
+      "index": 14,
+      "start": 82.88,
+      "end": 87.96
+    },
+    {
+      "index": 15,
+      "start": 87.96,
+      "end": 94.99
+    },
+    {
+      "index": 16,
+      "start": 104.29,
+      "end": 108.07
+    },
+    {
+      "index": 17,
+      "start": 108.07,
+      "end": 115.65
+    },
+    {
+      "index": 18,
+      "start": 115.65,
+      "end": 119.88
+    },
+    {
+      "index": 19,
+      "start": 119.88,
+      "end": 127.84
+    },
+    {
+      "index": 20,
+      "start": 127.84,
+      "end": 133.22
+    },
+    {
+      "index": 21,
+      "start": 133.22,
+      "end": 139.02
+    },
+    {
+      "index": 22,
+      "start": 139.02,
+      "end": 145.28
+    },
+    {
+      "index": 23,
+      "start": 145.28,
+      "end": 147.18
+    },
+    {
+      "index": 24,
+      "start": 147.18,
+      "end": 150.04
+    },
+    {
+      "index": 25,
+      "start": 150.04,
+      "end": 158.02
+    },
+    {
+      "index": 26,
+      "start": 161.56,
+      "end": 165.65
+    },
+    {
+      "index": 27,
+      "start": 165.65,
+      "end": 173.34
+    },
+    {
+      "index": 28,
+      "start": 173.34,
+      "end": 178.5
+    },
+    {
+      "index": 29,
+      "start": 178.5,
+      "end": 185.36
+    },
+    {
+      "index": 30,
+      "start": 185.36,
+      "end": 224.31
+    },
+    {
+      "index": 31,
+      "start": 224.31,
+      "end": 231.97
+    },
+    {
+      "index": 32,
+      "start": 231.97,
+      "end": 236.93
+    },
+    {
+      "index": 33,
+      "start": 236.93,
+      "end": 244.08
+    },
+    {
+      "index": 34,
+      "start": 244.08,
+      "end": 248.41
+    },
+    {
+      "index": 35,
+      "start": 248.41,
+      "end": 256.44
+    },
+    {
+      "index": 36,
+      "start": 256.44,
+      "end": 261.82
+    },
+    {
+      "index": 37,
+      "start": 261.82,
+      "end": 268.51
+    },
+    {
+      "index": 38,
+      "start": 268.51,
+      "end": 273.95
+    },
+    {
+      "index": 39,
+      "start": 280.46,
+      "end": 281.01
+    }
+  ]
+}

@@ -1,0 +1,439 @@
+{
+  "status": "estimated",
+  "source": {
+    "name": "Local audio alignment",
+    "model": "faster-whisper-base.en + small.en",
+    "audioUploaded": false,
+    "review": "Line starts checked against local word timestamps; uncertain words remain approximate"
+  },
+  "display": {
+    "lyrics": "Da Da Da Da Da- Da Da- Da Da Da Da Da da Da Da\nDa Da Da Da Da- Da Da- Da Da Da Da Da da Da Da\nNo matter what you do,\nyou know that I will always be there\nAnd you will never leave a voicemail\nI'll answer every call you make to me\nAnd if you're ever feeling cold I'll chop your firewood\nAnd when you're feeling bad you know\nI'll hold you 'til you're feeling good\n'Cuz you got the thing\nthat makes my heart sing when I'm next to you\nAnd I don't care\nHow long it takes\nCuz I just care\nAbout the joy you make\nIn my life, be my wife\nI just want you to know\nI hope this love lasts forever, ever, ever\nI hope this love lasts forever, ever, ever\nWhenever I get lonely I make myself remember your smile\nAnd when the rain drops outside,\nI picture myself cuddling next you\nAnd if we're running a race you know I'll let you win\nI'm carving our names on a tree like back when we were ten\nMy mouth can't translate the things my heart says\nWhen we're together and you're taking my breath away\nAnd I don't care how long it takes\nI swear I swear\nFor you I'd wait\nAnywhere, just say you'll be there\nWe'll walk hand in hand\nAnd make this love last forever, ever, ever\nWe'll make this love last forever, ever, ever\nSo close your eyes and count to ten\nI'm not ready you should do it again\nJust give me one second 'cuz I\nI- I\nI got a special message but I\nI-I-I\nI gotta breathe\nCuz now I can't breathe\nI'm takin' a knee...\nThis ring is a sign, I want you as mine, forever and ever\nDa Da Da Da Da- Da Da- Da Da Da Da Da da Da Da\nDa Da Da Da Da- Da Da- Da Da Da Da Da da Da Da\nDa Da Da Da Da- Da Da- Da Da Da Da Da da Da Da\nDa Da Da Da Da- Da Da- Da Da Da Da Da da Da Da",
+    "lyricsJa": [
+      {
+        "en": "Da Da Da Da Da- Da Da- Da Da Da Da Da da Da Da",
+        "ja": "ダ ダ ダ ダ ダ- ダ ダ- ダ ダ ダ ダ ダ ダ ダ ダ"
+      },
+      {
+        "en": "Da Da Da Da Da- Da Da- Da Da Da Da Da da Da Da",
+        "ja": "ダ ダ ダ ダ ダ- ダ ダ- ダ ダ ダ ダ ダ ダ ダ ダ"
+      },
+      {
+        "en": "No matter what you do,",
+        "ja": "君が何をしても"
+      },
+      {
+        "en": "you know that I will always be there",
+        "ja": "僕はいつもそばにいるって分かっているよね"
+      },
+      {
+        "en": "And you will never leave a voicemail",
+        "ja": "君に留守電なんて残させないよ"
+      },
+      {
+        "en": "I'll answer every call you make to me",
+        "ja": "君からの電話にはすべて出るから"
+      },
+      {
+        "en": "And if you're ever feeling cold I'll chop your firewood",
+        "ja": "もし君が寒ければ、僕が薪を割ってあげる"
+      },
+      {
+        "en": "And when you're feeling bad you know",
+        "ja": "君の気分がすぐれない時は"
+      },
+      {
+        "en": "I'll hold you 'til you're feeling good",
+        "ja": "元気になるまで抱きしめてあげるよ"
+      },
+      {
+        "en": "'Cuz you got the thing",
+        "ja": "だって君は持っているから"
+      },
+      {
+        "en": "that makes my heart sing when I'm next to you",
+        "ja": "隣にいるだけで僕の心を躍らせる何かを"
+      },
+      {
+        "en": "And I don't care",
+        "ja": "僕は気にしないよ"
+      },
+      {
+        "en": "How long it takes",
+        "ja": "どれだけ時間がかかっても"
+      },
+      {
+        "en": "Cuz I just care",
+        "ja": "僕が大切に思っているのは"
+      },
+      {
+        "en": "About the joy you make",
+        "ja": "君がくれる喜びだけなんだ"
+      },
+      {
+        "en": "In my life, be my wife",
+        "ja": "僕の人生において、僕の妻になってほしい"
+      },
+      {
+        "en": "I just want you to know",
+        "ja": "ただ君に知ってほしいんだ"
+      },
+      {
+        "en": "I hope this love lasts forever, ever, ever",
+        "ja": "この愛がずっと、ずっと、永遠に続きますように"
+      },
+      {
+        "en": "I hope this love lasts forever, ever, ever",
+        "ja": "この愛がずっと、ずっと、永遠に続きますように"
+      },
+      {
+        "en": "Whenever I get lonely I make myself remember your smile",
+        "ja": "寂しくなった時はいつも、君の笑顔を思い出すようにしているんだ"
+      },
+      {
+        "en": "And when the rain drops outside,",
+        "ja": "外で雨が降っているときは"
+      },
+      {
+        "en": "I picture myself cuddling next you",
+        "ja": "君の隣で寄り添っている自分を想像する"
+      },
+      {
+        "en": "And if we're running a race you know I'll let you win",
+        "ja": "かけっこをしたら、わざと君に勝たせてあげるよ"
+      },
+      {
+        "en": "I'm carving our names on a tree like back when we were ten",
+        "ja": "10歳の頃みたいに、木に二人の名前を刻んでいるんだ"
+      },
+      {
+        "en": "My mouth can't translate the things my heart says",
+        "ja": "心が言っていることを、言葉ではうまく伝えられない"
+      },
+      {
+        "en": "When we're together and you're taking my breath away",
+        "ja": "一緒にいると、君に夢中になって息ができなくなる"
+      },
+      {
+        "en": "And I don't care how long it takes",
+        "ja": "どれだけ時間がかかっても構わない"
+      },
+      {
+        "en": "I swear I swear",
+        "ja": "誓うよ、誓う"
+      },
+      {
+        "en": "For you I'd wait",
+        "ja": "君のためならいつまでも待てる"
+      },
+      {
+        "en": "Anywhere, just say you'll be there",
+        "ja": "どこへでも、君がそこにいると言ってくれるなら"
+      },
+      {
+        "en": "We'll walk hand in hand",
+        "ja": "手を取り合って歩いていこう"
+      },
+      {
+        "en": "And make this love last forever, ever, ever",
+        "ja": "そしてこの愛を永遠に、ずっと、ずっと続けよう"
+      },
+      {
+        "en": "We'll make this love last forever, ever, ever",
+        "ja": "僕らでこの愛を永遠に、ずっと、ずっと続けよう"
+      },
+      {
+        "en": "So close your eyes and count to ten",
+        "ja": "だから目を閉じて10まで数えて"
+      },
+      {
+        "en": "I'm not ready you should do it again",
+        "ja": "まだ心の準備ができていないから、もう一度やって"
+      },
+      {
+        "en": "Just give me one second 'cuz I",
+        "ja": "ちょっとだけ待って、だって僕は"
+      },
+      {
+        "en": "I- I",
+        "ja": "僕は… 僕は…"
+      },
+      {
+        "en": "I got a special message but I",
+        "ja": "特別なメッセージがあるんだけど"
+      },
+      {
+        "en": "I-I-I",
+        "ja": "僕は… 僕は…"
+      },
+      {
+        "en": "I gotta breathe",
+        "ja": "息を整えなきゃ"
+      },
+      {
+        "en": "Cuz now I can't breathe",
+        "ja": "今は息ができないくらいなんだ"
+      },
+      {
+        "en": "I'm takin' a knee...",
+        "ja": "片膝をついて…"
+      },
+      {
+        "en": "This ring is a sign, I want you as mine, forever and ever",
+        "ja": "この指輪は誓いの印、僕のものになってほしい、永遠に、いつまでも"
+      },
+      {
+        "en": "Da Da Da Da Da- Da Da- Da Da Da Da Da da Da Da",
+        "ja": "ダ ダ ダ ダ ダ- ダ ダ- ダ ダ ダ ダ ダ ダ ダ ダ"
+      },
+      {
+        "en": "Da Da Da Da Da- Da Da- Da Da Da Da Da da Da Da",
+        "ja": "ダ ダ ダ ダ ダ- ダ ダ- ダ ダ ダ ダ ダ ダ ダ ダ"
+      },
+      {
+        "en": "Da Da Da Da Da- Da Da- Da Da Da Da Da da Da Da",
+        "ja": "ダ ダ ダ ダ ダ- ダ ダ- ダ ダ ダ ダ ダ ダ ダ ダ"
+      },
+      {
+        "en": "Da Da Da Da Da- Da Da- Da Da Da Da Da da Da Da",
+        "ja": "ダ ダ ダ ダ ダ- ダ ダ- ダ ダ ダ ダ ダ ダ ダ ダ"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "index": 0,
+      "start": 0,
+      "end": 11
+    },
+    {
+      "index": 1,
+      "start": 11,
+      "end": 22.58
+    },
+    {
+      "index": 2,
+      "start": 22.58,
+      "end": 24.54
+    },
+    {
+      "index": 3,
+      "start": 24.54,
+      "end": 28.1
+    },
+    {
+      "index": 4,
+      "start": 28.1,
+      "end": 30.32
+    },
+    {
+      "index": 5,
+      "start": 30.32,
+      "end": 33.68
+    },
+    {
+      "index": 6,
+      "start": 33.68,
+      "end": 36.48
+    },
+    {
+      "index": 7,
+      "start": 36.48,
+      "end": 37.88
+    },
+    {
+      "index": 8,
+      "start": 37.88,
+      "end": 39.44
+    },
+    {
+      "index": 9,
+      "start": 39.44,
+      "end": 40.9
+    },
+    {
+      "index": 10,
+      "start": 40.9,
+      "end": 45.24
+    },
+    {
+      "index": 11,
+      "start": 45.24,
+      "end": 47.7
+    },
+    {
+      "index": 12,
+      "start": 47.7,
+      "end": 51.4
+    },
+    {
+      "index": 13,
+      "start": 51.4,
+      "end": 53.22
+    },
+    {
+      "index": 14,
+      "start": 53.22,
+      "end": 55.98
+    },
+    {
+      "index": 15,
+      "start": 55.98,
+      "end": 59.1
+    },
+    {
+      "index": 16,
+      "start": 59.1,
+      "end": 61.12
+    },
+    {
+      "index": 17,
+      "start": 61.12,
+      "end": 66.26
+    },
+    {
+      "index": 18,
+      "start": 66.26,
+      "end": 73.1
+    },
+    {
+      "index": 19,
+      "start": 73.1,
+      "end": 76.66
+    },
+    {
+      "index": 20,
+      "start": 76.66,
+      "end": 81.04
+    },
+    {
+      "index": 21,
+      "start": 81.04,
+      "end": 84.12
+    },
+    {
+      "index": 22,
+      "start": 84.12,
+      "end": 87.26
+    },
+    {
+      "index": 23,
+      "start": 87.26,
+      "end": 90.36
+    },
+    {
+      "index": 24,
+      "start": 90.36,
+      "end": 93.06
+    },
+    {
+      "index": 25,
+      "start": 93.06,
+      "end": 96
+    },
+    {
+      "index": 26,
+      "start": 96,
+      "end": 101.46
+    },
+    {
+      "index": 27,
+      "start": 101.46,
+      "end": 104.42
+    },
+    {
+      "index": 28,
+      "start": 104.42,
+      "end": 108.52
+    },
+    {
+      "index": 29,
+      "start": 108.52,
+      "end": 110.38
+    },
+    {
+      "index": 30,
+      "start": 110.38,
+      "end": 111.92
+    },
+    {
+      "index": 31,
+      "start": 111.92,
+      "end": 117.68
+    },
+    {
+      "index": 32,
+      "start": 117.68,
+      "end": 122.66
+    },
+    {
+      "index": 33,
+      "start": 122.66,
+      "end": 126.52
+    },
+    {
+      "index": 34,
+      "start": 126.52,
+      "end": 129.34
+    },
+    {
+      "index": 35,
+      "start": 129.34,
+      "end": 130.77
+    },
+    {
+      "index": 36,
+      "start": 130.77,
+      "end": 131.16
+    },
+    {
+      "index": 37,
+      "start": 131.16,
+      "end": 133.12
+    },
+    {
+      "index": 38,
+      "start": 133.12,
+      "end": 133.94
+    },
+    {
+      "index": 39,
+      "start": 133.94,
+      "end": 138.2
+    },
+    {
+      "index": 40,
+      "start": 138.2,
+      "end": 141.06
+    },
+    {
+      "index": 41,
+      "start": 141.06,
+      "end": 145.18
+    },
+    {
+      "index": 42,
+      "start": 145.18,
+      "end": 149.01
+    },
+    {
+      "index": 43,
+      "start": 149.01,
+      "end": 151.9
+    },
+    {
+      "index": 44,
+      "start": 151.9,
+      "end": 154.4
+    },
+    {
+      "index": 45,
+      "start": 154.4,
+      "end": 156.9
+    },
+    {
+      "index": 46,
+      "start": 156.9,
+      "end": 169.18
+    }
+  ]
+}

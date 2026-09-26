@@ -1,0 +1,493 @@
+{
+  "status": "sourced",
+  "source": {
+    "name": "LRCLIB",
+    "id": 6606612,
+    "duration": 170,
+    "url": "https://lrclib.net/api/get/6606612"
+  },
+  "display": {
+    "lyrics": "These tears mean I'm lettin' you go\nI'm learnin' how to be alone\nI'm broken, but give it time\nI'm gon' be alright\nThese tears mean it's settlin' in\nThat I'm not gon' see you again\n'Til one day in another life\nBut I'm gon' be al-, I'm gon' be alright\nI been missing you tonight\nI'll be missing you tomorrow\nIt's the hardest pill to swallow\nBut I'm starting to get it down\nI try to think of all the times\nI thought I wouldn't make it through\nBut somehow I always do\nAnd I'll do the same for you\n(Ah-ooh) it don't mean I'm good with goodbye-bye-bye\n(Ah-ooh) but it ain't all that bad when I cry, cry, cry\nThese tears mean I'm lettin' you go\nI'm learnin' how to be alone\nI'm broken, but give it time\nI'm gon' be alright\nThese tears mean it's settlin' in\nThat I'm not gon' see you again\n'Til one day in another life\nBut I'm gon' be al-, I'm gon' be alright\nI see you everywhere\nOn the sidewalks of my dreams\nLike a distant melody\nI hear you callin' and callin' to me\nAnd I love you, but I leave you\nIn the past, baby, because I need to\nTo not go insane\nI know I love you the same\n(Ah-ooh) it don't mean I'm good with goodbye-bye-bye\n(It don't mean I'm good with goodbye)\n(Ah-ooh) but it ain't all that bad when I cry, cry, cry\nThese tears mean I'm lettin' you go (I'm lettin' you go)\nI'm learnin' how to be alone\nI'm broken, but give it time\nI'm gon' be alright\nThese tears mean it's settlin' in\nThat I'm not gon' see you again\n'Til one day in another life\nBut I'm gon' be al-, I'm gon' be alright\nWhoa-oh-oh-oh\nWhoa-oh-oh-oh-oh-oh\nWhoa-oh-oh-oh\nI'm gon' be al-, I'm gon' be alright\nWhoa-oh-oh-oh\nWhoa-oh-oh-oh-oh-oh\nWhoa-oh-oh-oh\nI'm gon' be al-, I'm gon' be alright",
+    "lyricsJa": [
+      {
+        "en": "These tears mean I'm lettin' you go",
+        "ja": "この涙は、君を手放すということ"
+      },
+      {
+        "en": "I'm learnin' how to be alone",
+        "ja": "一人でいる方法を学んでいるんだ"
+      },
+      {
+        "en": "I'm broken, but give it time",
+        "ja": "心はボロボロだけど、時間をかければ"
+      },
+      {
+        "en": "I'm gon' be alright",
+        "ja": "きっと大丈夫になる"
+      },
+      {
+        "en": "These tears mean it's settlin' in",
+        "ja": "この涙は、現実を受け入れ始めている証拠"
+      },
+      {
+        "en": "That I'm not gon' see you again",
+        "ja": "もう君には会えないということを"
+      },
+      {
+        "en": "'Til one day in another life",
+        "ja": "いつか別の人生で会える日まで"
+      },
+      {
+        "en": "But I'm gon' be al-, I'm gon' be alright",
+        "ja": "きっと大丈夫になる"
+      },
+      {
+        "en": "I been missing you tonight",
+        "ja": "今夜、君が恋しくてたまらない"
+      },
+      {
+        "en": "I'll be missing you tomorrow",
+        "ja": "明日もきっと、君を想うだろう"
+      },
+      {
+        "en": "It's the hardest pill to swallow",
+        "ja": "受け入れるのは、何よりも辛いけれど"
+      },
+      {
+        "en": "But I'm starting to get it down",
+        "ja": "それでも少しずつ、飲み込み始めているんだ"
+      },
+      {
+        "en": "I try to think of all the times",
+        "ja": "乗り越えられないと思った"
+      },
+      {
+        "en": "I thought I wouldn't make it through",
+        "ja": "これまでの全ての時のことを思い出してみる"
+      },
+      {
+        "en": "But somehow I always do",
+        "ja": "でも、どうにかいつも乗り越えてきた"
+      },
+      {
+        "en": "And I'll do the same for you",
+        "ja": "だから、君に対しても同じようにするよ"
+      },
+      {
+        "en": "(Ah-ooh) it don't mean I'm good with goodbye-bye-bye",
+        "ja": "サヨナラが得意になったわけじゃないけれど"
+      },
+      {
+        "en": "(Ah-ooh) but it ain't all that bad when I cry, cry, cry",
+        "ja": "こうして泣いている時は、そんなに悪い気分じゃないんだ"
+      },
+      {
+        "en": "These tears mean I'm lettin' you go",
+        "ja": "この涙は、君を手放すということ"
+      },
+      {
+        "en": "I'm learnin' how to be alone",
+        "ja": "一人でいる方法を学んでいるんだ"
+      },
+      {
+        "en": "I'm broken, but give it time",
+        "ja": "心はボロボロだけど、時間をかければ"
+      },
+      {
+        "en": "I'm gon' be alright",
+        "ja": "きっと大丈夫になる"
+      },
+      {
+        "en": "These tears mean it's settlin' in",
+        "ja": "この涙は、現実を受け入れ始めている証拠"
+      },
+      {
+        "en": "That I'm not gon' see you again",
+        "ja": "もう君には会えないということを"
+      },
+      {
+        "en": "'Til one day in another life",
+        "ja": "いつか別の人生で会える日まで"
+      },
+      {
+        "en": "But I'm gon' be al-, I'm gon' be alright",
+        "ja": "きっと大丈夫になる"
+      },
+      {
+        "en": "I see you everywhere",
+        "ja": "どこにいても君が見える"
+      },
+      {
+        "en": "On the sidewalks of my dreams",
+        "ja": "夢の中の歩道の上でも"
+      },
+      {
+        "en": "Like a distant melody",
+        "ja": "遠くで流れるメロディのように"
+      },
+      {
+        "en": "I hear you callin' and callin' to me",
+        "ja": "君が僕を呼ぶ声が何度も聞こえるんだ"
+      },
+      {
+        "en": "And I love you, but I leave you",
+        "ja": "愛しているけれど、君を過去に置いていくよ"
+      },
+      {
+        "en": "In the past, baby, because I need to",
+        "ja": "過去に置いていくよ、だって僕にはそうする必要があるから"
+      },
+      {
+        "en": "To not go insane",
+        "ja": "自分を失わないために、そうする必要があるから"
+      },
+      {
+        "en": "I know I love you the same",
+        "ja": "そして、今でも変わらず君を愛していると分かっている"
+      },
+      {
+        "en": "(Ah-ooh) it don't mean I'm good with goodbye-bye-bye",
+        "ja": "サヨナラが得意になったわけじゃないけれど"
+      },
+      {
+        "en": "(It don't mean I'm good with goodbye)",
+        "ja": "サヨナラが得意になったわけじゃないけれど"
+      },
+      {
+        "en": "(Ah-ooh) but it ain't all that bad when I cry, cry, cry",
+        "ja": "こうして泣いている時は、そんなに悪い気分じゃないんだ"
+      },
+      {
+        "en": "These tears mean I'm lettin' you go (I'm lettin' you go)",
+        "ja": "この涙は、君を手放すということ"
+      },
+      {
+        "en": "I'm learnin' how to be alone",
+        "ja": "一人でいる方法を学んでいるんだ"
+      },
+      {
+        "en": "I'm broken, but give it time",
+        "ja": "心はボロボロだけど、時間をかければ"
+      },
+      {
+        "en": "I'm gon' be alright",
+        "ja": "きっと大丈夫になる"
+      },
+      {
+        "en": "These tears mean it's settlin' in",
+        "ja": "この涙は、現実を受け入れ始めている証拠"
+      },
+      {
+        "en": "That I'm not gon' see you again",
+        "ja": "もう君には会えないということを"
+      },
+      {
+        "en": "'Til one day in another life",
+        "ja": "いつか別の人生で会える日まで"
+      },
+      {
+        "en": "But I'm gon' be al-, I'm gon' be alright",
+        "ja": "きっと大丈夫になる"
+      },
+      {
+        "en": "Whoa-oh-oh-oh",
+        "ja": "Woah-oh, woah-oh"
+      },
+      {
+        "en": "Whoa-oh-oh-oh-oh-oh",
+        "ja": "Woah-oh, woah-oh"
+      },
+      {
+        "en": "Whoa-oh-oh-oh",
+        "ja": "Woah-oh, woah-oh"
+      },
+      {
+        "en": "I'm gon' be al-, I'm gon' be alright",
+        "ja": "きっと大丈夫になる"
+      },
+      {
+        "en": "Whoa-oh-oh-oh",
+        "ja": "Woah-oh, woah-oh"
+      },
+      {
+        "en": "Whoa-oh-oh-oh-oh-oh",
+        "ja": "Woah-oh, woah-oh"
+      },
+      {
+        "en": "Whoa-oh-oh-oh",
+        "ja": "Woah-oh, woah-oh"
+      },
+      {
+        "en": "I'm gon' be al-, I'm gon' be alright",
+        "ja": "きっと大丈夫になる"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "index": 0,
+      "start": 10.38,
+      "end": 13.15
+    },
+    {
+      "index": 1,
+      "start": 13.15,
+      "end": 15.82
+    },
+    {
+      "index": 2,
+      "start": 15.82,
+      "end": 18.31
+    },
+    {
+      "index": 3,
+      "start": 18.31,
+      "end": 21.02
+    },
+    {
+      "index": 4,
+      "start": 21.02,
+      "end": 24.09
+    },
+    {
+      "index": 5,
+      "start": 24.09,
+      "end": 26.37
+    },
+    {
+      "index": 6,
+      "start": 26.37,
+      "end": 29.15
+    },
+    {
+      "index": 7,
+      "start": 29.15,
+      "end": 34.24
+    },
+    {
+      "index": 8,
+      "start": 34.24,
+      "end": 36.71
+    },
+    {
+      "index": 9,
+      "start": 36.71,
+      "end": 39.85
+    },
+    {
+      "index": 10,
+      "start": 39.85,
+      "end": 42.5
+    },
+    {
+      "index": 11,
+      "start": 42.5,
+      "end": 44.58
+    },
+    {
+      "index": 12,
+      "start": 44.58,
+      "end": 47.76
+    },
+    {
+      "index": 13,
+      "start": 47.76,
+      "end": 50.18
+    },
+    {
+      "index": 14,
+      "start": 50.18,
+      "end": 53.14
+    },
+    {
+      "index": 15,
+      "start": 53.14,
+      "end": 55.38
+    },
+    {
+      "index": 16,
+      "start": 55.38,
+      "end": 60.82
+    },
+    {
+      "index": 17,
+      "start": 60.82,
+      "end": 66.65
+    },
+    {
+      "index": 18,
+      "start": 66.65,
+      "end": 69.46
+    },
+    {
+      "index": 19,
+      "start": 69.46,
+      "end": 71.81
+    },
+    {
+      "index": 20,
+      "start": 71.81,
+      "end": 74.96
+    },
+    {
+      "index": 21,
+      "start": 74.96,
+      "end": 77.35
+    },
+    {
+      "index": 22,
+      "start": 77.35,
+      "end": 79.83
+    },
+    {
+      "index": 23,
+      "start": 79.83,
+      "end": 82.68
+    },
+    {
+      "index": 24,
+      "start": 82.68,
+      "end": 85.04
+    },
+    {
+      "index": 25,
+      "start": 85.04,
+      "end": 90.39
+    },
+    {
+      "index": 26,
+      "start": 90.39,
+      "end": 93.32
+    },
+    {
+      "index": 27,
+      "start": 93.32,
+      "end": 95.74
+    },
+    {
+      "index": 28,
+      "start": 95.74,
+      "end": 98.28
+    },
+    {
+      "index": 29,
+      "start": 98.28,
+      "end": 100.95
+    },
+    {
+      "index": 30,
+      "start": 100.95,
+      "end": 103.73
+    },
+    {
+      "index": 31,
+      "start": 103.73,
+      "end": 106.53
+    },
+    {
+      "index": 32,
+      "start": 106.53,
+      "end": 108.98
+    },
+    {
+      "index": 33,
+      "start": 108.98,
+      "end": 111.75
+    },
+    {
+      "index": 34,
+      "start": 111.75,
+      "end": 116.05
+    },
+    {
+      "index": 35,
+      "start": 116.05,
+      "end": 117.27
+    },
+    {
+      "index": 36,
+      "start": 117.27,
+      "end": 120.49
+    },
+    {
+      "index": 37,
+      "start": 122.72,
+      "end": 125.11
+    },
+    {
+      "index": 38,
+      "start": 125.11,
+      "end": 128.12
+    },
+    {
+      "index": 39,
+      "start": 128.12,
+      "end": 130.64
+    },
+    {
+      "index": 40,
+      "start": 130.64,
+      "end": 132.96
+    },
+    {
+      "index": 41,
+      "start": 132.96,
+      "end": 135.63
+    },
+    {
+      "index": 42,
+      "start": 135.63,
+      "end": 138.62
+    },
+    {
+      "index": 43,
+      "start": 138.62,
+      "end": 141.03
+    },
+    {
+      "index": 44,
+      "start": 141.03,
+      "end": 144.91
+    },
+    {
+      "index": 45,
+      "start": 144.91,
+      "end": 146.77
+    },
+    {
+      "index": 46,
+      "start": 146.77,
+      "end": 150.12
+    },
+    {
+      "index": 47,
+      "start": 150.12,
+      "end": 151.93
+    },
+    {
+      "index": 48,
+      "start": 151.93,
+      "end": 155.93
+    },
+    {
+      "index": 49,
+      "start": 155.93,
+      "end": 157.48
+    },
+    {
+      "index": 50,
+      "start": 157.48,
+      "end": 160.96
+    },
+    {
+      "index": 51,
+      "start": 160.96,
+      "end": 162.89
+    },
+    {
+      "index": 52,
+      "start": 162.89,
+      "end": 165.04
+    }
+  ]
+}

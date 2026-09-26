@@ -4,9 +4,11 @@
 const state = {
   view: 'home',
   songs: [],
+  voices: [],
   phrases: [],
   phraseImages: {},
   currentSong: null,
+  activeLyricIndex: -1,
   currentPhrase: null,
   showJapanese: false,
   activeTab: 'conv',   // 'conv' | 'song'
@@ -28,6 +30,7 @@ const state = {
   phrasePrefsSyncTimer: null,
   // Playback
   sentenceList: [],
+  sentenceSpeakers: [],
   audioSources: [],
   conversationAudio: null,
   conversationPlayRequest: 0,
@@ -35,6 +38,8 @@ const state = {
   isPlaying: false,
   repeatMode: 'off',   // 'off' | 'one' | 'all'
   repeatTimer: null,
+  advanceTimer: null,
+  pendingNextIndex: -1,
 };
 
 const CARD_GRADS = [
@@ -43,7 +48,7 @@ const CARD_GRADS = [
 ];
 
 const SPEAKER_ICONS = {
-  '男性': '👨', '女性': '👩', '男２': '👴', '少年': '👦', '少女': '👧'
+  '男性': '👨', '女性': '👩', '中性': '🎙️', '男２': '👴', '少年': '👦', '少女': '👧'
 };
 
 function speakerAvatar(song, side, avatarClass) {
@@ -56,6 +61,7 @@ function speakerAvatar(song, side, avatarClass) {
 }
 
 const PHRASE_AUTO_ADVANCE_DELAY_MS = 1200;
+const CONVERSATION_SPEAKER_PAUSE_MS = 1100;
 const STORAGE_COOKIE_MAX_AGE = 60 * 60 * 24 * 365;
 const DEVICE_ID_KEY = 'phraseDeviceId';
 const TODAY_PHRASE_SET_KEY = 'todayPhraseSetV1';
@@ -107,8 +113,14 @@ function setMediaSession(type, title, artist) {
   for (const [action, handler] of Object.entries(actions)) {
     try { navigator.mediaSession.setActionHandler(action, handler); } catch {}
   }
-  for (const [action, seconds] of [['seekbackward', -10], ['seekforward', 10]]) {
-    try { navigator.mediaSession.setActionHandler(action, type === 'song' ? () => skipSongAudio(seconds) : null); } catch {}
+  if (type === 'song') {
+    for (const [action, seconds] of [['seekbackward', -10], ['seekforward', 10]]) {
+      try { navigator.mediaSession.setActionHandler(action, () => skipSongAudio(seconds)); } catch {}
+    }
+  } else {
+    for (const action of ['seekbackward', 'seekforward']) {
+      try { navigator.mediaSession.setActionHandler(action, null); } catch {}
+    }
   }
 }
 
@@ -128,6 +140,7 @@ function stopSongAudio() {
 // ============================================================
 async function init() {
   await loadSongs();
+  await loadVoices();
   await loadPhraseImages();
   state.phrases = Array.isArray(window.CONVERSATION_PHRASES) ? window.CONVERSATION_PHRASES : [];
   applyGeneratedPhraseAudio();
@@ -136,6 +149,15 @@ async function init() {
   state.deviceId = loadDeviceId();
   renderHome();
   syncPhrasePreferencesFromServer();
+}
+
+async function loadVoices() {
+  try {
+    const res = await fetch('/api/voices');
+    state.voices = res.ok ? await res.json() : [];
+  } catch {
+    state.voices = [];
+  }
 }
 
 async function loadSongs() {
@@ -158,8 +180,13 @@ async function loadPhraseImages() {
 
 function applyGeneratedPhraseAudio() {
   const generatedAudio = window.GENERATED_PHRASE_AUDIO || {};
+  const dialogueAudio = window.GENERATED_PHRASE_DIALOGUE || {};
   state.phrases.forEach(phrase => {
     if (generatedAudio[phrase.id]) phrase.audio = generatedAudio[phrase.id];
+    if (dialogueAudio[phrase.id]?.audio) {
+      phrase.audio = dialogueAudio[phrase.id].audio;
+      phrase.voiceCast = dialogueAudio[phrase.id];
+    }
   });
 }
 
@@ -180,6 +207,7 @@ function showShadowing(song) {
   stopSongAudio();
   stopPhrasePracticeAudio();
   state.currentSong = song;
+  state.activeLyricIndex = -1;
   state.view = 'shadowing';
   state.showJapanese = false;
   state.activeTab = 'conv';
@@ -326,7 +354,7 @@ function renderPhraseGrid() {
             onclick="setPhraseCategory('${esc(category)}')">${esc(category)}</button>
   `).join('');
 
-  const packTabs = ['基本', 'リアル会話', '初対面', '相手を知る質問', '会話を止めない', '感情を出す', '人間関係', 'リアル口語', 'すべて'].map(pack => `
+  const packTabs = ['基本', 'リアル会話', '初対面', '相手を知る質問', '会話を止めない', '感情を出す', '人間関係', 'リアル口語', '使い回せる型', 'すべて'].map(pack => `
     <button class="phrase-pack-tab ${state.phrasePack === pack ? 'active' : ''}" onclick="setPhrasePack('${pack}')">${pack}</button>
   `).join('');
 
@@ -438,7 +466,6 @@ function renderPhraseDetail() {
           </div>
         </div>
       </div>
-
       <div class="phrase-detail-heading"><p class="section-eyebrow">SPEAK NATURALLY</p><h1>今日使えるひと言</h1></div>
       <section class="phrase-feature-detail">
         ${imageSrc ? `<div class="phrase-feature-image"><img src="${esc(imageSrc)}" alt="${esc(phrase.phrase)}"></div>` : `<div class="phrase-feature-art" aria-hidden="true"><span>“</span></div>`}
@@ -446,6 +473,7 @@ function renderPhraseDetail() {
           <span class="phrase-feature-category">${esc(phrase.category)}</span>
           <h2>${esc(phrase.phrase)}</h2>
           <p>${esc(translation)}</p>
+          ${phrase.voiceCast ? `<div class="phrase-voice-cast"><span>A · ${esc(phrase.voiceCast.A.name)}</span><span>B · ${esc(phrase.voiceCast.B.name)}</span></div>` : ''}
           ${audioControls}
         </div>
       </section>
@@ -456,7 +484,7 @@ function renderPhraseDetail() {
           <span>使う場面</span>
           <p>${esc(phrase.usageNote)}</p>
         </div>
-        <div class="phrase-audio-note">${phrase.audio ? '3ラリーを1本にまとめた試作音声です。' : '音声は次の工程で生成予定です。'}</div>
+        <div class="phrase-audio-note">${phrase.voiceCast ? 'A・Bを別の声で収録した会話音声です。' : phrase.audio ? '3ラリーを1本にまとめた音声です。' : '音声は次の工程で生成予定です。'}</div>
         <div class="phrase-detail-nav">
           <button class="phrase-prev-btn" onclick="showPreviousPhrase()">prev</button>
           <button class="phrase-next-btn" onclick="showNextPhrase()">next</button>
@@ -886,8 +914,8 @@ async function copyTodayPracticeSet() {
 }
 
 function renderPhrasePractice() {
-  document.getElementById('app').className = 'page-phrase-practice';
   const app = document.getElementById('app');
+  app.className = 'page-phrase-practice';
   const total = state.practiceSet.length;
   const phrase = state.practiceSet[state.practiceIndex];
   const isPracticeComplete = state.practiceSet.length > 0;
@@ -1105,8 +1133,26 @@ async function deleteSong(id) {
 // ============================================================
 // SHADOWING VIEW
 // ============================================================
+function renderLyricConnections(links, open = false) {
+  if (!Array.isArray(links) || !links.length) return '';
+  return `<details class="lyric-connections" ${open ? 'open' : ''}>
+    <summary>歌詞と会話のつながり <span>${links.length}表現</span></summary>
+    <div class="lyric-connection-list">${links.map(link => `
+      <div class="lyric-connection">
+        <div><small>歌詞</small><strong>${esc(link.lyricExpression || '')}</strong></div>
+        <div><small>会話では</small><strong>${esc(link.conversationExpression || '')}</strong></div>
+        <p>${esc(link.explanationJa || '')}</p>
+      </div>`).join('')}</div>
+  </details>`;
+}
+
+function hasConversationAudio(song) {
+  return song.conversationAudioStatus !== 'text_only' && song.conversation?.some(turn => turn.sentences?.some(sentence => sentence.audio));
+}
+
 function renderShadowing() {
   const song = state.currentSong;
+  const hasAudio = hasConversationAudio(song);
   const app = document.getElementById('app');
   app.className = 'page-shadowing';
 
@@ -1118,7 +1164,7 @@ function renderShadowing() {
     const sentHtml = turn.sentences.map((s, sIdx) => {
       const flatIdx = getFlatIndex(tIdx, sIdx);
       const content = s.displayHtml || esc(s.text);
-      return `<div class="sentence-item" id="sent-${flatIdx}" onclick="clickSentence(${flatIdx})">
+      return `<div class="sentence-item" id="sent-${flatIdx}" ${hasAudio ? `onclick="clickSentence(${flatIdx})"` : ''}>
         <div class="sentence-text">${content}</div></div>`;
     }).join('');
     const jpClass = state.showJapanese ? 'japanese-text visible' : 'japanese-text';
@@ -1133,12 +1179,12 @@ function renderShadowing() {
   }).join('');
 
   // ---- Song tab HTML: lyrics + video below ----
-  const lyricsHtml = renderLyrics(song);
+  const lyricsHtml = renderLyrics(song.lyricDisplay ? { ...song, ...song.lyricDisplay } : song);
   let mediaHtml = '';
   if (song.hasLocalAudio) {
     mediaHtml = `
       <div class="song-audio-player">
-        <audio id="songAudioPlayer" src="/songs/${encodeURIComponent(song.folderName)}/original.mp3" onplay="onSongAudioPlay()" onpause="onSongAudioPause()" onended="updateSongPlayBtn(false); setMediaPlaybackState(false)"></audio>
+        <audio id="songAudioPlayer" src="/songs/${encodeURIComponent(song.folderName)}/original.mp3" onplay="onSongAudioPlay()" onpause="onSongAudioPause()" onended="updateSongPlayBtn(false); setMediaPlaybackState(false); updateLyricSync()" ontimeupdate="updateLyricSync()" onseeked="updateLyricSync()"></audio>
         <div class="song-controls">
           <button class="song-ctrl-btn" onclick="skipSongAudio(-5)" title="5秒戻る">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 17l-5-5 5-5M18 17l-5-5 5-5"/></svg>
@@ -1165,7 +1211,8 @@ function renderShadowing() {
   } else if (song.videoId) {
     mediaHtml = `<div class="yt-embed-bottom"><iframe id="ytFrame" src="" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>`;
   }
-  const songTabHtml = `<div class="lyrics-display" ${song.hasLocalAudio ? 'style="padding-bottom: 90px;"' : ''}>${lyricsHtml}</div>${mediaHtml}`;
+  const timingNote = song.lyricTimingStatus === 'estimated' ? '<p class="lyric-sync-note">仮同期：歌詞の時刻は概算です</p>' : '';
+  const songTabHtml = `${timingNote}<div class="lyrics-display" ${song.hasLocalAudio ? 'style="padding-bottom: 90px;"' : ''}>${lyricsHtml}</div>${mediaHtml}`;
 
   app.innerHTML = `
     <div class="shadowing-view">
@@ -1189,9 +1236,10 @@ function renderShadowing() {
         <span class="rel-badge rel-${song.relationship}">${esc(song.relationship)}</span>
         <span class="setting-text">${esc(song.setting)}</span>
       </div>
-      <div class="conversation-area" id="convArea">${turnsHtml}</div>
+      ${renderLyricConnections(song.lyricConnections)}
+      <div class="conversation-area" id="convArea">${hasAudio ? '' : '<p class="text-only-notice">会話文を新しい方針で作成しました。対応する会話音声はまだありません。</p>'}${turnsHtml}</div>
       <div class="song-area hidden" id="songArea">${songTabHtml}</div>
-      <div class="play-controls" id="playControls">
+      <div class="play-controls ${hasAudio ? '' : 'hidden'}" id="playControls">
         <button class="restart-btn" onclick="restartAll()" title="最初から">↺</button>
         <button class="play-btn" id="playBtn" onclick="togglePlay()">▶</button>
         <button class="repeat-btn ${state.repeatMode !== 'off' ? 'active' : ''}" id="repeatBtn" onclick="cycleRepeat()" title="リピート">
@@ -1200,6 +1248,25 @@ function renderShadowing() {
         </button>
       </div>
     </div>`;
+
+  if (song.hasLocalAudio && Array.isArray(song.lyricTimings)) {
+    const lyricsDisplay = app.querySelector('.lyrics-display');
+    const seekFromRow = event => {
+      const row = event.target.closest('.lyric-seek');
+      if (row && lyricsDisplay.contains(row)) seekToLyric(Number(row.dataset.lyricIndex));
+    };
+    lyricsDisplay.addEventListener('click', seekFromRow);
+    lyricsDisplay.addEventListener('keydown', event => {
+      if (event.key !== 'Enter' && event.key !== ' ') return;
+      event.preventDefault();
+      seekFromRow(event);
+    });
+  }
+}
+
+function lyricPairOpenTag(song, index, line) {
+  const seekable = song.hasLocalAudio && song.lyricTimings?.some(row => row.index === index);
+  return `<div class="lyric-pair${seekable ? ' lyric-seek' : ''}" data-lyric-index="${index}"${seekable ? ` role="button" tabindex="0" aria-label="${esc(line)}から再生"` : ''}>`;
 }
 
 function renderLyrics(song) {
@@ -1213,18 +1280,18 @@ function renderLyrics(song) {
         if (!line.trim()) return '<div class="lyric-spacer"></div>';
         const pair = song.lyricsJa[i] || {};
         const ja = pair.ja && pair.ja.trim() ? `<div class="lyric-ja">${esc(pair.ja)}</div>` : '';
-        return `<div class="lyric-pair"><div class="lyric-en">${esc(line)}</div>${ja}</div>`;
+        return `${lyricPairOpenTag(song, i, line)}<div class="lyric-en">${esc(line)}</div>${ja}</div>`;
       }).join('');
     }
 
     let availableJa = [...song.lyricsJa].filter(p => p.en && p.en.trim() && p.ja);
     const getWords = s => s.toLowerCase().replace(/[^a-z0-9\s]/g, '').split(/\s+/).filter(Boolean);
 
-    return enLines.map(line => {
+    return enLines.map((line, index) => {
       if (!line.trim()) return '<div class="lyric-spacer"></div>';
       
       const lineWords = getWords(line);
-      if (lineWords.length === 0) return `<div class="lyric-pair"><div class="lyric-en">${esc(line)}</div></div>`;
+      if (lineWords.length === 0) return `${lyricPairOpenTag(song, index, line)}<div class="lyric-en">${esc(line)}</div></div>`;
       
       let bestMatchIdx = -1;
       let highestScore = 0;
@@ -1248,7 +1315,7 @@ function renderLyrics(song) {
         availableJa.splice(bestMatchIdx, 1);
       }
       
-      return `<div class="lyric-pair"><div class="lyric-en">${esc(line)}</div>${jaHtml}</div>`;
+      return `${lyricPairOpenTag(song, index, line)}<div class="lyric-en">${esc(line)}</div>${jaHtml}</div>`;
     }).join('');
   }
 
@@ -1257,8 +1324,41 @@ function renderLyrics(song) {
   return enLines.map((line, i) => {
     if (!line.trim()) return '<div class="lyric-spacer"></div>';
     const ja = jaLines[i] && jaLines[i].trim() ? `<div class="lyric-ja">${esc(jaLines[i])}</div>` : '';
-    return `<div class="lyric-pair"><div class="lyric-en">${esc(line)}</div>${ja}</div>`;
+    return `${lyricPairOpenTag(song, i, line)}<div class="lyric-en">${esc(line)}</div>${ja}</div>`;
   }).join('');
+}
+
+function seekToLyric(index) {
+  const timing = state.currentSong?.lyricTimings?.find(row => row.index === index);
+  const audio = document.getElementById('songAudioPlayer');
+  if (!timing || !audio) return;
+  audio.currentTime = timing.start;
+  updateLyricSync();
+  if (audio.paused) audio.play().catch(() => {});
+}
+
+function updateLyricSync() {
+  const audio = document.getElementById('songAudioPlayer');
+  const timings = state.currentSong?.lyricTimings;
+  if (!audio || !Array.isArray(timings) || !timings.length) return;
+
+  const time = audio.currentTime;
+  const current = timings.find(row => time >= row.start && time < row.end);
+  const index = current ? current.index : -1;
+  if (index !== state.activeLyricIndex) {
+    document.querySelector('.lyric-pair.is-current')?.classList.remove('is-current');
+    state.activeLyricIndex = index;
+    if (index >= 0) {
+      const row = document.querySelector(`.lyric-pair[data-lyric-index="${index}"]`);
+      row?.classList.add('is-current');
+      if (state.activeTab === 'song') row?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }
+  if (current) {
+    const row = document.querySelector(`.lyric-pair[data-lyric-index="${index}"]`);
+    const progress = Math.max(0, Math.min(100, (time - current.start) / (current.end - current.start) * 100));
+    row?.style.setProperty('--lyric-progress', `${progress}%`);
+  }
 }
 
 function switchTab(tab) {
@@ -1276,10 +1376,11 @@ function switchTab(tab) {
   convArea?.classList.toggle('hidden', !isConv);
   songArea?.classList.toggle('hidden', isConv);
   settingBar?.classList.toggle('hidden', !isConv);
-  playControls?.classList.toggle('hidden', !isConv);
+  playControls?.classList.toggle('hidden', !isConv || !hasConversationAudio(state.currentSong));
   if (jpBtn) jpBtn.style.display = isConv ? '' : 'none';
   tabConv?.classList.toggle('active', isConv);
   tabSong?.classList.toggle('active', !isConv);
+  if (!isConv) updateLyricSync();
 
   // Load YouTube iframe lazily
   if (!isConv && state.currentSong.videoId && !state.currentSong.hasLocalAudio) {
@@ -1346,6 +1447,7 @@ document.addEventListener('keydown', (e) => {
   if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
 
   if (e.code === 'Space') {
+    if (e.target.closest?.('.lyric-seek')) return;
     e.preventDefault();
     toggleSongPlay();
   } else if (e.code === 'ArrowLeft') {
@@ -1373,9 +1475,12 @@ function getFlatIndex(turnIndex, sentenceIndex) {
 function initAudio(song) {
   stopAudio();
   state.sentenceList = [];
+  state.sentenceSpeakers = [];
   state.audioSources = [];
   state.currentIndex = -1;
   state.isPlaying = false;
+
+  if (!hasConversationAudio(song)) return;
 
   if (!state.conversationAudio) {
     state.conversationAudio = new Audio();
@@ -1385,6 +1490,7 @@ function initAudio(song) {
   song.conversation.forEach((turn) => {
     turn.sentences.forEach((s) => {
       state.sentenceList.push(s);
+      state.sentenceSpeakers.push(turn.speaker);
       state.audioSources.push(s.audio);
     });
   });
@@ -1399,6 +1505,8 @@ function initAudio(song) {
       delay = 1000;
     } else if (i + 1 < state.audioSources.length) {
       next = i + 1;
+      delay = state.sentenceSpeakers[i] !== state.sentenceSpeakers[next]
+        ? CONVERSATION_SPEAKER_PAUSE_MS : 0;
     } else if (state.repeatMode === 'all') {
       next = 0;
       delay = 1000;
@@ -1407,11 +1515,14 @@ function initAudio(song) {
       state.isPlaying = false;
       setMediaPlaybackState(false);
       updatePlayBtn();
-    } else if (document.hidden || delay === 0) {
+      return;
+    }
+    if (document.hidden || delay === 0) {
       playSentence(next);
     } else {
-      clearTimeout(state.repeatTimer);
-      state.repeatTimer = setTimeout(() => {
+      state.pendingNextIndex = next;
+      state.advanceTimer = setTimeout(() => {
+        state.advanceTimer = null;
         if (state.isPlaying) playSentence(next);
       }, delay);
     }
@@ -1420,7 +1531,10 @@ function initAudio(song) {
 
 function playSentence(idx) {
   if (idx < 0 || idx >= state.audioSources.length) return;
+  clearTimeout(state.advanceTimer);
   clearTimeout(state.repeatTimer);
+  state.advanceTimer = null;
+  state.pendingNextIndex = -1;
 
   const audio = state.conversationAudio;
   audio.pause();
@@ -1448,13 +1562,14 @@ function playSentence(idx) {
 function togglePlay() {
   if (state.isPlaying) {
     state.conversationPlayRequest++;
-    clearTimeout(state.repeatTimer);
+    clearTimeout(state.advanceTimer);
+    state.advanceTimer = null;
     state.conversationAudio?.pause();
     state.isPlaying = false;
     setMediaPlaybackState(false);
     updatePlayBtn();
   } else {
-    const idx = state.currentIndex < 0 ? 0 : state.currentIndex;
+    const idx = state.pendingNextIndex >= 0 ? state.pendingNextIndex : state.currentIndex < 0 ? 0 : state.currentIndex;
     playSentence(idx);
   }
 }
@@ -1487,6 +1602,9 @@ function updateRepeatBtn() {
 function stopAudio() {
   state.conversationPlayRequest++;
   clearTimeout(state.repeatTimer);
+  clearTimeout(state.advanceTimer);
+  state.advanceTimer = null;
+  state.pendingNextIndex = -1;
   if (state.conversationAudio) {
     state.conversationAudio.pause();
     state.conversationAudio.removeAttribute('src');
@@ -1559,39 +1677,7 @@ function showAddModal() {
       <div class="modal-sheet" onclick="event.stopPropagation()">
         <div class="modal-handle"></div>
         <h2 class="modal-title">新しい曲を追加</h2>
-        
-        <div class="form-group">
-          <label class="form-label">曲名 (Song Name)</label>
-          <input type="text" id="addSongName" class="form-input" placeholder="例: It Will Rain">
-        </div>
-        <div class="form-group">
-          <label class="form-label">アーティスト (Artist)</label>
-          <input type="text" id="addArtist" class="form-input" placeholder="例: Bruno Mars">
-        </div>
-        <div class="form-group">
-          <label class="form-label">YouTube ID (オプション)</label>
-          <input type="text" id="addVideoId" class="form-input" placeholder="例: FRtXs73iICo">
-        </div>
-        
-        <h3 class="modal-title" style="margin-top:24px; font-size:1rem;">会話のコンテキスト指定</h3>
-        <div class="form-group">
-          <label class="form-label">関係性 (Relationship)</label>
-          <select id="addRel" class="form-input">
-            <option value="">おまかせ</option>
-            <option value="恋人">恋人</option>
-            <option value="友達">友達</option>
-            <option value="夫婦">夫婦</option>
-            <option value="上司と部下">上司と部下</option>
-            <option value="同僚">職場の同僚</option>
-            <option value="家族">家族・兄弟</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label class="form-label">具体的なシーン・設定 (Setting)</label>
-          <textarea id="addSetting" class="form-input" rows="2" placeholder="例: 激しい口論をしている、カフェで偶然再会した 等"></textarea>
-        </div>
-
-        <button class="generate-btn" onclick="startPreview()">プレビューを生成する</button>
+        <p>曲名、アーティスト名、歌詞を Codex に渡して、曲の追加と会話・歌詞の編集を依頼してください。</p>
       </div>
     </div>
   `;
@@ -1712,19 +1798,35 @@ async function cancelPreview() {
   renderHome();
 }
 
+async function updatePreviewVoice(speaker, voiceId) {
+  try {
+    const res = await fetch('/api/preview/voices', {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ speaker, voiceId })
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || '声を変更できませんでした');
+    showPreviewView(data);
+  } catch (error) {
+    showToast(error.message);
+    showPreviewView(state.currentSong);
+  }
+}
+
 function showPreviewView(preview) {
   state.currentSong = preview; // Use the preview object
   state.view = 'preview';
   state.showJapanese = true; // Default to showing Japanese for review
   
   const app = document.getElementById('app');
+  app.className = 'page-shadowing';
   
   // Reuse render function portions
   const turnsHtml = preview.conversation.map((turn, tIdx) => {
     const isA = turn.speaker === 'A';
     const cardClass = isA ? 'speaker-a' : 'speaker-b';
     const avatarClass = isA ? 'speaker-a-avatar' : 'speaker-b-avatar';
-    const icon = SPEAKER_ICONS[isA ? preview.speakerA.type : preview.speakerB.type] || '🎤';
     
     // Preview doesn't have split sentences with markup typically, wait! It might just have text, wait, 
     // actually prepareConversation output HAS .english and .japanese, but finalize returns .sentences.
@@ -1732,8 +1834,8 @@ function showPreviewView(preview) {
     
     return `<div class="turn-card ${cardClass}">
       <div class="turn-header">
-        <div class="speaker-avatar ${avatarClass}">${icon}</div>
-        <span class="speaker-name">${esc(isA ? preview.speakerA.name : preview.speakerB.name)} - ${esc(isA ? preview.speakerA.voice : preview.speakerB.voice)}</span>
+        ${speakerAvatar(preview, turn.speaker, avatarClass)}
+        <span class="speaker-name">${esc(isA ? preview.speakerA.name : preview.speakerB.name)} · ${esc((isA ? preview.speakerA : preview.speakerB).voiceName || '選択した声')}</span>
       </div>
       <div class="sentences-list">
         <div class="sentence-item"><div class="sentence-text">${esc(turn.english)}</div></div>
@@ -1741,6 +1843,12 @@ function showPreviewView(preview) {
       <div class="japanese-text visible">${esc(turn.japanese)}</div>
     </div>`;
   }).join('');
+
+  const voiceOptions = (selectedId) => `${state.voices.some(voice => voice.id === selectedId) ? '' : `<option value="" selected disabled>現在の声（既存）</option>`}${state.voices.map(voice => {
+    const age = { young: '若い', middle_aged: '中年', senior: '年配' }[voice.age] || voice.age;
+    const gender = { male: '男性', female: '女性', neutral: '中性' }[voice.gender] || voice.gender;
+    return `<option value="${voice.id}" ${voice.id === selectedId ? 'selected' : ''}>${esc(voice.name)} · ${age}${gender} · ${esc(voice.tone)}</option>`;
+  }).join('')}`;
 
   app.innerHTML = `
     <div class="shadowing-view">
@@ -1757,6 +1865,12 @@ function showPreviewView(preview) {
         <span class="rel-badge rel-${preview.relationship}">${esc(preview.relationship)}</span>
         <span class="setting-text">${esc(preview.setting)}</span>
       </div>
+      ${renderLyricConnections(preview.lyricConnections, true)}
+      ${state.voices.length ? `<div class="voice-preview-picker">
+        <p>会話に合う声を選ぶ <span>確定前に変更できます</span></p>
+        <label>A · ${esc(preview.speakerA.name)}<select onchange="updatePreviewVoice('A', this.value)">${voiceOptions(preview.speakerA.voice)}</select></label>
+        <label>B · ${esc(preview.speakerB.name)}<select onchange="updatePreviewVoice('B', this.value)">${voiceOptions(preview.speakerB.voice)}</select></label>
+      </div>` : ''}
       
       <div class="conversation-area" style="padding-bottom:180px;">
         <p style="color:var(--amber); font-size:0.8rem; text-align:center; padding-top:10px;">
@@ -1768,7 +1882,6 @@ function showPreviewView(preview) {
       <div class="play-controls" style="flex-direction:column; gap:10px; background:rgba(6,6,26,0.9); padding:20px;">
         <button class="generate-btn" style="margin:0; width:100%; border-radius:30px;" onclick="finalizePreview()">この内容で音声生成＆確定する</button>
         <div style="display:flex; gap:10px; width:100%;">
-          <button class="restart-btn" style="flex:1; border-radius:30px; border-color:var(--dim); color:var(--text); width:auto;" onclick="startRegen()">🔄 会話を再生成</button>
           <button class="restart-btn" style="flex:1; border-radius:30px; border-color:#e11d48; color:#f43f5e; width:auto;" onclick="cancelPreview()">キャンセル</button>
         </div>
       </div>

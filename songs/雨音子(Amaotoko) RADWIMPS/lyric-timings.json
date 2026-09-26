@@ -1,0 +1,377 @@
+{
+  "status": "estimated",
+  "source": {
+    "name": "LRCLIB",
+    "id": 36589914,
+    "duration": 229,
+    "url": "https://lrclib.net/api/get/36589914",
+    "review": "Local small.en word timestamps checked for line starts"
+  },
+  "display": {
+    "lyrics": "Nothing's on my back because I wanted it with you\nAnd I want you too, I want you\nI'm still at my prime because no one will let it through\nI want you to, I want you to\nYou're caught up in the moming rain\nAs always, you have called me again\nI'll be there by seven, but I should've said eleven\nWell, just to make you teased again\nI hop out from the quiet bed\nI hop on to the private train\nTakes forty minutes ride from here to apartment where I aim to appear\nI'll be you're umbrella and I'll save you from Cruella everyday\nSo don't you shut me out of there as soon as all the sky is clear because\nNothing's on my back because I wanted it with you\nAnd I want you too, I want you\nYou're still at our flat where we kissed in every nook\nThat makes me so, that makes me so\nGood old station welcomes me\nI used to use it every week\nAttendant still remembers me\nAnd gently he says, \"Where've you been?\"\nI've been round in circles like an overturning turtle, I guess so, so\nI'm trying to overturn again but water in this pools me in because\nNothing's on my map because I wanted it with you\nAnd I want you too, I want you\nLasting dream won't last, I guess this saying's coming true\nI bet you so, I bet you so\nI finally arrive at Hilton suite\nIt's 6:08 but I rang the bell\nI gave her name and suddenly\nThe rain has stopped to fall, and breezed\nShe answers me on entry phone (Way to go, way to go, way to go)\nMy duty has been canceled off (Where to go, where to go, where to go)\nShe said she's going out with friends (where do you go, where do you go, where do you go)\nNow, there's nothing that I can say because I'm in charge of rainy days\nNothing's on my back because I wanted it with you\nAnd I want you too, I want you\nI'm still at my prime because no one will let it through\nI want you to, I want you to, I miss you so, I miss you so\nI kissed you though, I kissed you though",
+    "lyricsJa": [
+      {
+        "en": "Nothing's on my back because I wanted it with you",
+        "ja": "君と一緒に欲しかったから、僕の背中には何もない"
+      },
+      {
+        "en": "And I want you too, I want you",
+        "ja": "そして君も欲しいんだ…君が欲しい"
+      },
+      {
+        "en": "I'm still at my prime because no one will let it through",
+        "ja": "誰にも邪魔させないから、僕はまだ全盛期のままだ"
+      },
+      {
+        "en": "I want you to, I want you to",
+        "ja": "君にもそうあってほしい…君にそうしてほしい"
+      },
+      {
+        "en": "You're caught up in the moming rain",
+        "ja": "君は朝の雨に降られている"
+      },
+      {
+        "en": "As always, you have called me again",
+        "ja": "いつものように、また僕を呼んだね"
+      },
+      {
+        "en": "I'll be there by seven, but I should've said eleven",
+        "ja": "7時までに行くよ、本当は11時って言うべきだったけど"
+      },
+      {
+        "en": "Well, just to make you teased again",
+        "ja": "まあ、また君をからかうためにね"
+      },
+      {
+        "en": "I hop out from the quiet bed",
+        "ja": "静かなベッドから飛び出して"
+      },
+      {
+        "en": "I hop on to the private train",
+        "ja": "私鉄に飛び乗る"
+      },
+      {
+        "en": "Takes forty minutes ride from here to apartment where I aim to appear",
+        "ja": "ここからアパートまで電車で40分"
+      },
+      {
+        "en": "I'll be you're umbrella and I'll save you from Cruella everyday",
+        "ja": "僕が君の傘になって、毎日クルエラから守ってあげる"
+      },
+      {
+        "en": "So don't you shut me out of there as soon as all the sky is clear because",
+        "ja": "だから空が晴れた途端に、僕を締め出したりしないで"
+      },
+      {
+        "en": "Nothing's on my back because I wanted it with you",
+        "ja": "君と一緒に欲しかったから、僕の背中には何もない"
+      },
+      {
+        "en": "And I want you too, I want you",
+        "ja": "そして君も欲しいんだ…君が欲しい"
+      },
+      {
+        "en": "You're still at our flat where we kissed in every nook",
+        "ja": "隅々までキスしたあの部屋に、君はまだいる"
+      },
+      {
+        "en": "That makes me so, that makes me so",
+        "ja": "それが僕をこんなにも…僕をこんなにも"
+      },
+      {
+        "en": "Good old station welcomes me",
+        "ja": "懐かしい駅が僕を迎える"
+      },
+      {
+        "en": "I used to use it every week",
+        "ja": "毎週使っていたあの駅"
+      },
+      {
+        "en": "Attendant still remembers me",
+        "ja": "駅員さんはまだ僕を覚えていて"
+      },
+      {
+        "en": "And gently he says, \"Where've you been?\"",
+        "ja": "優しく言うんだ、「どこに行ってたんだい？」"
+      },
+      {
+        "en": "I've been round in circles like an overturning turtle, I guess so, so",
+        "ja": "ひっくり返ったカメみたいに、ずっと同じ場所を回っていたんだ"
+      },
+      {
+        "en": "I'm trying to overturn again but water in this pools me in because",
+        "ja": "また起き上がろうとしてるけど、ここの水が僕を引き止めるんだ"
+      },
+      {
+        "en": "Nothing's on my map because I wanted it with you",
+        "ja": "君と一緒に欲しかったから、僕の地図には何もない"
+      },
+      {
+        "en": "And I want you too, I want you",
+        "ja": "そして君も欲しいんだ…君が欲しい"
+      },
+      {
+        "en": "Lasting dream won't last, I guess this saying's coming true",
+        "ja": "正夢は続かない、そんな言葉が現実になりそうだ"
+      },
+      {
+        "en": "I bet you so, I bet you so",
+        "ja": "きっとそうさ…きっとそうなんだ"
+      },
+      {
+        "en": "I finally arrive at Hilton suite",
+        "ja": "ついにヒルトンのスイートに着いた"
+      },
+      {
+        "en": "It's 6:08 but I rang the bell",
+        "ja": "まだ6時8分だけど、ベルを鳴らした"
+      },
+      {
+        "en": "I gave her name and suddenly",
+        "ja": "彼女の名前を告げると、突然"
+      },
+      {
+        "en": "The rain has stopped to fall, and breezed",
+        "ja": "雨が降り止んで、風が吹いた"
+      },
+      {
+        "en": "She answers me on entry phone (Way to go, way to go, way to go)",
+        "ja": "（いいぞ、その調子だ、その調子だ）"
+      },
+      {
+        "en": "My duty has been canceled off (Where to go, where to go, where to go)",
+        "ja": "どこへ行けばいい、どこへ行けばいい、どこへ行けばいい"
+      },
+      {
+        "en": "She said she's going out with friends (where do you go, where do you go, where do you go)",
+        "ja": "どこへ行くの、どこへ行くの）"
+      },
+      {
+        "en": "Now, there's nothing that I can say because I'm in charge of rainy days",
+        "ja": "今の僕には、言えることなんて何もない"
+      },
+      {
+        "en": "Nothing's on my back because I wanted it with you",
+        "ja": "君と一緒に欲しかったから、僕の背中には何もない"
+      },
+      {
+        "en": "And I want you too, I want you",
+        "ja": "そして君も欲しいんだ…君が欲しい"
+      },
+      {
+        "en": "I'm still at my prime because no one will let it through",
+        "ja": "誰にも邪魔させないから、僕はまだ全盛期のままだ"
+      },
+      {
+        "en": "I want you to, I want you to, I miss you so, I miss you so",
+        "ja": "君にもそうあってほしい…君にそうしてほしい"
+      },
+      {
+        "en": "I kissed you though, I kissed you though",
+        "ja": "キスしたけれど…キスしたけれど…"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "index": 0,
+      "start": 1.24,
+      "end": 5.24
+    },
+    {
+      "index": 1,
+      "start": 5.24,
+      "end": 8.68
+    },
+    {
+      "index": 2,
+      "start": 8.68,
+      "end": 12.98
+    },
+    {
+      "index": 3,
+      "start": 12.98,
+      "end": 31.64
+    },
+    {
+      "index": 4,
+      "start": 31.64,
+      "end": 34.66
+    },
+    {
+      "index": 5,
+      "start": 34.66,
+      "end": 38.82
+    },
+    {
+      "index": 6,
+      "start": 38.82,
+      "end": 43.84
+    },
+    {
+      "index": 7,
+      "start": 43.84,
+      "end": 46.54
+    },
+    {
+      "index": 8,
+      "start": 46.54,
+      "end": 50.76
+    },
+    {
+      "index": 9,
+      "start": 50.76,
+      "end": 54.68
+    },
+    {
+      "index": 10,
+      "start": 54.68,
+      "end": 63.04
+    },
+    {
+      "index": 11,
+      "start": 63.04,
+      "end": 70.48
+    },
+    {
+      "index": 12,
+      "start": 70.48,
+      "end": 75.08
+    },
+    {
+      "index": 13,
+      "start": 75.08,
+      "end": 79.36
+    },
+    {
+      "index": 14,
+      "start": 79.36,
+      "end": 82.82
+    },
+    {
+      "index": 15,
+      "start": 82.82,
+      "end": 87.12
+    },
+    {
+      "index": 16,
+      "start": 87.12,
+      "end": 97.82
+    },
+    {
+      "index": 17,
+      "start": 97.82,
+      "end": 101.06
+    },
+    {
+      "index": 18,
+      "start": 101.06,
+      "end": 106.86
+    },
+    {
+      "index": 19,
+      "start": 106.86,
+      "end": 109.34
+    },
+    {
+      "index": 20,
+      "start": 109.34,
+      "end": 114.02
+    },
+    {
+      "index": 21,
+      "start": 114.02,
+      "end": 121.12
+    },
+    {
+      "index": 22,
+      "start": 121.12,
+      "end": 125.8
+    },
+    {
+      "index": 23,
+      "start": 125.8,
+      "end": 130.1
+    },
+    {
+      "index": 24,
+      "start": 130.1,
+      "end": 133.56
+    },
+    {
+      "index": 25,
+      "start": 133.56,
+      "end": 137.88
+    },
+    {
+      "index": 26,
+      "start": 137.88,
+      "end": 156.4
+    },
+    {
+      "index": 27,
+      "start": 156.4,
+      "end": 159.52
+    },
+    {
+      "index": 28,
+      "start": 159.52,
+      "end": 163.7
+    },
+    {
+      "index": 29,
+      "start": 163.7,
+      "end": 168.04
+    },
+    {
+      "index": 30,
+      "start": 168.04,
+      "end": 173.02
+    },
+    {
+      "index": 31,
+      "start": 173.02,
+      "end": 176.02
+    },
+    {
+      "index": 32,
+      "start": 176.02,
+      "end": 180.62
+    },
+    {
+      "index": 33,
+      "start": 180.62,
+      "end": 185.42
+    },
+    {
+      "index": 34,
+      "start": 185.42,
+      "end": 189.38
+    },
+    {
+      "index": 35,
+      "start": 189.38,
+      "end": 194.02
+    },
+    {
+      "index": 36,
+      "start": 194.02,
+      "end": 197.92
+    },
+    {
+      "index": 37,
+      "start": 197.92,
+      "end": 201.78
+    },
+    {
+      "index": 38,
+      "start": 201.78,
+      "end": 209.64
+    },
+    {
+      "index": 39,
+      "start": 209.64,
+      "end": 224.21
+    }
+  ]
+}

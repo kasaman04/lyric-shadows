@@ -1,0 +1,358 @@
+{
+  "status": "sourced",
+  "source": {
+    "name": "LRCLIB",
+    "id": 34507005,
+    "duration": 382,
+    "url": "https://lrclib.net/api/get/34507005"
+  },
+  "display": {
+    "lyrics": "I'm free to be whatever I\nWhatever I choose and I'll sing the blues if I want\nI'm free to say whatever I\nWhatever I like if it's wrong or right it's alright\nAlways seems to me\nYou only see what people want you to see\nHow long's it gonna be\nBefore we get on the bus and cause no fuss\nGet a grip on yourself, it don't cost much\nFree to be whatever you\nWhatever you say if it comes my way it's alright\nYou're free to be wherever you\nWherever you please, you can shoot the breeze if you want\nIt always seems to me\nYou only see what people want you to see\nHow long's it gonna be\nBefore we get on the bus and cause no fuss\nGet a grip on yourself, it don't cost much\nI'm free to be whatever I\nWhatever I choose and I'll sing the blues if I want\nHere in my mind\nYou know you might find\nSomething that you\nYou thought you once knew\nBut now it's all gone\nAnd you know it's no fun\nYeah I know it's no fun\nOh, I know it's no fun\nI'm free to be whatever I\nWhatever I choose and I'll sing the blues if I want\nI'm free to be whatever I\nWhatever I choose and I'll sing the blues if I want\nWhatever you do\nWhatever you say\nYeah, I know it's alright\nWhatever you do\nWhatever you say\nYeah, I know it's alright",
+    "lyricsJa": [
+      {
+        "en": "I'm free to be whatever I",
+        "ja": "僕は何にだってなれる"
+      },
+      {
+        "en": "Whatever I choose and I'll sing the blues if I want",
+        "ja": "自分で選べるし、歌いたければブルースだって歌う"
+      },
+      {
+        "en": "I'm free to say whatever I",
+        "ja": "僕は何だって言える"
+      },
+      {
+        "en": "Whatever I like if it's wrong or right it's alright",
+        "ja": "好きなことを言える、間違っていようが正しかろうが大丈夫"
+      },
+      {
+        "en": "Always seems to me",
+        "ja": "いつも僕にはそう見える"
+      },
+      {
+        "en": "You only see what people want you to see",
+        "ja": "君は人が見せたいものだけを見ている"
+      },
+      {
+        "en": "How long's it gonna be",
+        "ja": "あとどれくらいかかるんだろう"
+      },
+      {
+        "en": "Before we get on the bus and cause no fuss",
+        "ja": "騒ぎ立てずにバスに乗れるようになるまで"
+      },
+      {
+        "en": "Get a grip on yourself, it don't cost much",
+        "ja": "しっかりしろよ"
+      },
+      {
+        "en": "Free to be whatever you",
+        "ja": "君だって何にでもなれる"
+      },
+      {
+        "en": "Whatever you say if it comes my way it's alright",
+        "ja": "君が何を言っても、それが僕のほうへ来るなら大丈夫"
+      },
+      {
+        "en": "You're free to be wherever you",
+        "ja": "君はどこにいたって自由だ"
+      },
+      {
+        "en": "Wherever you please, you can shoot the breeze if you want",
+        "ja": "好きな場所で、望むなら気楽におしゃべりすればいい"
+      },
+      {
+        "en": "It always seems to me",
+        "ja": "いつも僕にはそう見える"
+      },
+      {
+        "en": "You only see what people want you to see",
+        "ja": "君は人が見せたいものだけを見ている"
+      },
+      {
+        "en": "How long's it gonna be",
+        "ja": "あとどれくらいかかるんだろう"
+      },
+      {
+        "en": "Before we get on the bus and cause no fuss",
+        "ja": "騒ぎ立てずにバスに乗れるようになるまで"
+      },
+      {
+        "en": "Get a grip on yourself, it don't cost much",
+        "ja": "しっかりしろよ"
+      },
+      {
+        "en": "I'm free to be whatever I",
+        "ja": "僕は何にだってなれる"
+      },
+      {
+        "en": "Whatever I choose and I'll sing the blues if I want",
+        "ja": "自分で選べるし、歌いたければブルースだって歌う"
+      },
+      {
+        "en": "Here in my mind",
+        "ja": "僕の心の中では"
+      },
+      {
+        "en": "You know you might find",
+        "ja": "君は見つけるかもしれない"
+      },
+      {
+        "en": "Something that you",
+        "ja": "君がかつて"
+      },
+      {
+        "en": "You thought you once knew",
+        "ja": "知っていると思っていた何かを"
+      },
+      {
+        "en": "But now it's all gone",
+        "ja": "でも今はもう全部消えてしまった"
+      },
+      {
+        "en": "And you know it's no fun",
+        "ja": "それが楽しくないことは君にもわかるだろう"
+      },
+      {
+        "en": "Yeah I know it's no fun",
+        "ja": "そう、僕にも楽しくないってわかる"
+      },
+      {
+        "en": "Oh, I know it's no fun",
+        "ja": "ああ、楽しくなんかない"
+      },
+      {
+        "en": "I'm free to be whatever I",
+        "ja": "僕は何にだってなれる"
+      },
+      {
+        "en": "Whatever I choose and I'll sing the blues if I want",
+        "ja": "自分で選べるし、歌いたければブルースだって歌う"
+      },
+      {
+        "en": "I'm free to be whatever I",
+        "ja": "僕は何にだってなれる"
+      },
+      {
+        "en": "Whatever I choose and I'll sing the blues if I want",
+        "ja": "自分で選べるし、歌いたければブルースだって歌う"
+      },
+      {
+        "en": "Whatever you do",
+        "ja": "君が何をしても"
+      },
+      {
+        "en": "Whatever you say",
+        "ja": "君が何を言っても"
+      },
+      {
+        "en": "Yeah, I know it's alright",
+        "ja": "ああ、大丈夫だって僕にはわかってる"
+      },
+      {
+        "en": "Whatever you do",
+        "ja": "君が何をしても"
+      },
+      {
+        "en": "Whatever you say",
+        "ja": "君が何を言っても"
+      },
+      {
+        "en": "Yeah, I know it's alright",
+        "ja": "ああ、大丈夫だって僕にはわかってる"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "index": 0,
+      "start": 21.28,
+      "end": 26.98
+    },
+    {
+      "index": 1,
+      "start": 26.98,
+      "end": 32.6
+    },
+    {
+      "index": 2,
+      "start": 32.6,
+      "end": 37.53
+    },
+    {
+      "index": 3,
+      "start": 37.53,
+      "end": 44.58
+    },
+    {
+      "index": 4,
+      "start": 44.58,
+      "end": 48.17
+    },
+    {
+      "index": 5,
+      "start": 48.17,
+      "end": 54.56
+    },
+    {
+      "index": 6,
+      "start": 54.56,
+      "end": 58.82
+    },
+    {
+      "index": 7,
+      "start": 58.82,
+      "end": 61.54
+    },
+    {
+      "index": 8,
+      "start": 61.54,
+      "end": 64.13
+    },
+    {
+      "index": 9,
+      "start": 64.13,
+      "end": 69.48
+    },
+    {
+      "index": 10,
+      "start": 69.48,
+      "end": 75.02
+    },
+    {
+      "index": 11,
+      "start": 75.02,
+      "end": 80.16
+    },
+    {
+      "index": 12,
+      "start": 80.16,
+      "end": 86.59
+    },
+    {
+      "index": 13,
+      "start": 86.59,
+      "end": 90.54
+    },
+    {
+      "index": 14,
+      "start": 90.54,
+      "end": 94.91
+    },
+    {
+      "index": 15,
+      "start": 97.09,
+      "end": 101.16
+    },
+    {
+      "index": 16,
+      "start": 101.16,
+      "end": 103.77
+    },
+    {
+      "index": 17,
+      "start": 103.77,
+      "end": 106.32
+    },
+    {
+      "index": 18,
+      "start": 106.32,
+      "end": 111.59
+    },
+    {
+      "index": 19,
+      "start": 111.59,
+      "end": 116.03
+    },
+    {
+      "index": 20,
+      "start": 128.47,
+      "end": 131.72
+    },
+    {
+      "index": 21,
+      "start": 133.79,
+      "end": 139.22
+    },
+    {
+      "index": 22,
+      "start": 139.22,
+      "end": 144.1
+    },
+    {
+      "index": 23,
+      "start": 144.1,
+      "end": 147.03
+    },
+    {
+      "index": 24,
+      "start": 147.03,
+      "end": 149.9
+    },
+    {
+      "index": 25,
+      "start": 149.9,
+      "end": 152.16
+    },
+    {
+      "index": 26,
+      "start": 152.16,
+      "end": 154.42
+    },
+    {
+      "index": 27,
+      "start": 154.42,
+      "end": 159.61
+    },
+    {
+      "index": 28,
+      "start": 171.44,
+      "end": 177.25
+    },
+    {
+      "index": 29,
+      "start": 177.25,
+      "end": 182.2
+    },
+    {
+      "index": 30,
+      "start": 182.2,
+      "end": 187.21
+    },
+    {
+      "index": 31,
+      "start": 187.21,
+      "end": 191.79
+    },
+    {
+      "index": 32,
+      "start": 193.94,
+      "end": 196.4
+    },
+    {
+      "index": 33,
+      "start": 196.4,
+      "end": 198.45
+    },
+    {
+      "index": 34,
+      "start": 198.45,
+      "end": 202.08
+    },
+    {
+      "index": 35,
+      "start": 204.13,
+      "end": 206.78
+    },
+    {
+      "index": 36,
+      "start": 206.78,
+      "end": 209.11
+    },
+    {
+      "index": 37,
+      "start": 209.11,
+      "end": 211.21
+    }
+  ]
+}

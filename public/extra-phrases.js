@@ -165,3 +165,16 @@ window.CONVERSATION_PHRASES = window.CONVERSATION_PHRASES || [];
     });
   });
 })();
+
+window.CONVERSATION_PHRASES.push({
+  id: "confirm-001",
+  pack: "使い回せる型",
+  category: "記憶・予定を確認する",
+  phrase: "Didn't you say you were free tonight?",
+  usageNote: "前に聞いた予定と違うとき、「今夜は空いてるって言ってなかったっけ？」と記憶を確かめる。責める感じにならないよう、やわらかく聞く。",
+  lines: [
+    ["A", "I can't make dinner tonight.", "今夜の夕食、行けなくなった。"],
+    ["B", "Didn't you say you were free tonight?", "今夜は空いてるって言ってなかったっけ？"],
+    ["A", "I was, but something came up at work.", "そうだったんだけど、仕事で急用ができて。"]
+  ]
+});

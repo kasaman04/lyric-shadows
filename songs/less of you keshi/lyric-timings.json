@@ -1,0 +1,484 @@
+{
+  "status": "sourced",
+  "source": {
+    "name": "LRCLIB",
+    "id": 960803,
+    "duration": 207,
+    "url": "https://lrclib.net/api/get/960803"
+  },
+  "display": {
+    "lyrics": "Hello\nAre you awake right now?\nGod, I just need to hear the sound of you\nPlease, calm me down\nAnd I know that it's selfish, but\nYou are the only thing that's\nEver made sense to me, I\nI don't wanna do this\nI don't know how to do this without you\nCling to your side\nVoices at night\nCover my eyes\nI'm terrified\nNo in between\nA face on a screen\nAin't an adequate replacement for your being with me\nYeah, yeah\nToo much time in the limelight\nGimme your all on the land line\nWant it so bad but I won't lie\nAnd it just gets worse in the night time\nNever stays for long\nAnd she's gone in the morning\nWhen you come home\nI just got over being less of you\nWhen you leave me\nI'm in pieces\nMaybe it's better if we cut it loose\nTell me how your day was\nNo, I'm not okay\nI don't know, I don't know, I don't know\nI don't know, I don't know, I don't know\nTime never moved so slow\nBed time, hit your phone up\nTell me where to go, where to go\nTell me where to go, where to go\nToo much time in the limelight\nGimme your all on the land line\nWant it so bad but I won't lie\nAnd it just gets worse in the night time\nNever stays for long\nAnd she's gone in the morning\nWhen you come home\nI just got over being less of you\nWhen you leave me\nI'm in pieces\nMaybe it's better if we cut it loose\nI don't know how to do this without you\nI don't know, I don't know, I don't know\nI don't know how to do this without you\nI don't know, I don't know, I don't know\nI don't know how to do this without you",
+    "lyricsJa": [
+      {
+        "en": "Hello",
+        "ja": "もしもし"
+      },
+      {
+        "en": "Are you awake right now?",
+        "ja": "今、起きてる？"
+      },
+      {
+        "en": "God, I just need to hear the sound of you",
+        "ja": "ああ、ただ君の声が聴きたいんだ"
+      },
+      {
+        "en": "Please, calm me down",
+        "ja": "僕を落ち着かせて"
+      },
+      {
+        "en": "And I know that it's selfish, but",
+        "ja": "わがままだって分かってる、けど"
+      },
+      {
+        "en": "You are the only thing that's",
+        "ja": "僕にとって唯一意味があるのは"
+      },
+      {
+        "en": "Ever made sense to me, I",
+        "ja": "君だけなんだ"
+      },
+      {
+        "en": "I don't wanna do this",
+        "ja": "こんなの嫌だよ"
+      },
+      {
+        "en": "I don't know how to do this without you",
+        "ja": "君なしでどうすればいいか分からないんだ"
+      },
+      {
+        "en": "Cling to your side",
+        "ja": "君の側にしがみつく、夜に響く声"
+      },
+      {
+        "en": "Voices at night",
+        "ja": "夜に聞こえる声"
+      },
+      {
+        "en": "Cover my eyes",
+        "ja": "目を覆う、怖くてたまらないんだ"
+      },
+      {
+        "en": "I'm terrified",
+        "ja": "目を覆う、怖くてたまらないんだ"
+      },
+      {
+        "en": "No in between",
+        "ja": "その中間はない"
+      },
+      {
+        "en": "A face on a screen",
+        "ja": "中途半端はなし、画面の中の顔"
+      },
+      {
+        "en": "Ain't an adequate replacement for your being with me",
+        "ja": "君が隣にいてくれる代わりにはならないよ"
+      },
+      {
+        "en": "Yeah, yeah",
+        "ja": "そう、そう"
+      },
+      {
+        "en": "Too much time in the limelight",
+        "ja": "脚光を浴びる時間が長すぎた"
+      },
+      {
+        "en": "Gimme your all on the land line",
+        "ja": "電話越しに君のすべてを聴かせて"
+      },
+      {
+        "en": "Want it so bad but I won't lie",
+        "ja": "たまらなく欲しい、嘘じゃない"
+      },
+      {
+        "en": "And it just gets worse in the night time",
+        "ja": "夜になるともっとひどくなるんだ"
+      },
+      {
+        "en": "Never stays for long",
+        "ja": "長くは続かない"
+      },
+      {
+        "en": "And she's gone in the morning",
+        "ja": "朝には彼女はいなくなってしまう"
+      },
+      {
+        "en": "When you come home",
+        "ja": "君が帰ってくる頃には"
+      },
+      {
+        "en": "I just got over being less of you",
+        "ja": "君がいない寂しさをやっと乗り越えたところなんだ"
+      },
+      {
+        "en": "When you leave me",
+        "ja": "君が行ってしまうと、僕はバラバラになる"
+      },
+      {
+        "en": "I'm in pieces",
+        "ja": "君が行ってしまうと、僕はバラバラになる"
+      },
+      {
+        "en": "Maybe it's better if we cut it loose",
+        "ja": "いっそ終わりにしちゃった方がいいのかな"
+      },
+      {
+        "en": "Tell me how your day was",
+        "ja": "今日がどんな日だったか教えて"
+      },
+      {
+        "en": "No, I'm not okay",
+        "ja": "いや、僕は全然大丈夫じゃない"
+      },
+      {
+        "en": "I don't know, I don't know, I don't know",
+        "ja": "君なしでどうすればいいか分からないんだ"
+      },
+      {
+        "en": "I don't know, I don't know, I don't know",
+        "ja": "君なしでどうすればいいか分からないんだ"
+      },
+      {
+        "en": "Time never moved so slow",
+        "ja": "時間が経つのがこんなに遅いなんて"
+      },
+      {
+        "en": "Bed time, hit your phone up",
+        "ja": "寝る時間、君に電話をかける"
+      },
+      {
+        "en": "Tell me where to go, where to go",
+        "ja": "どこへ行けばいいか、どこへ行けばいいか教えて"
+      },
+      {
+        "en": "Tell me where to go, where to go",
+        "ja": "どこへ行けばいいか、どこへ行けばいいか教えて"
+      },
+      {
+        "en": "Too much time in the limelight",
+        "ja": "脚光を浴びる時間が長すぎた"
+      },
+      {
+        "en": "Gimme your all on the land line",
+        "ja": "電話越しに君のすべてを聴かせて"
+      },
+      {
+        "en": "Want it so bad but I won't lie",
+        "ja": "たまらなく欲しい、嘘じゃない"
+      },
+      {
+        "en": "And it just gets worse in the night time",
+        "ja": "夜になるともっとひどくなるんだ"
+      },
+      {
+        "en": "Never stays for long",
+        "ja": "長くは続かない"
+      },
+      {
+        "en": "And she's gone in the morning",
+        "ja": "朝には彼女はいなくなってしまう"
+      },
+      {
+        "en": "When you come home",
+        "ja": "君が帰ってくる頃には"
+      },
+      {
+        "en": "I just got over being less of you",
+        "ja": "君がいない寂しさをやっと乗り越えたところなんだ"
+      },
+      {
+        "en": "When you leave me",
+        "ja": "君が行ってしまうと、僕はバラバラになる"
+      },
+      {
+        "en": "I'm in pieces",
+        "ja": "君が行ってしまうと、僕はバラバラになる"
+      },
+      {
+        "en": "Maybe it's better if we cut it loose",
+        "ja": "いっそ終わりにしちゃった方がいいのかな"
+      },
+      {
+        "en": "I don't know how to do this without you",
+        "ja": "君なしでどうすればいいか分からないんだ"
+      },
+      {
+        "en": "I don't know, I don't know, I don't know",
+        "ja": "君なしでどうすればいいか分からないんだ"
+      },
+      {
+        "en": "I don't know how to do this without you",
+        "ja": "君なしでどうすればいいか分からないんだ"
+      },
+      {
+        "en": "I don't know, I don't know, I don't know",
+        "ja": "君なしでどうすればいいか分からないんだ"
+      },
+      {
+        "en": "I don't know how to do this without you",
+        "ja": "君なしでどうすればいいか分からないんだ"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "index": 0,
+      "start": 22.42,
+      "end": 23.96
+    },
+    {
+      "index": 1,
+      "start": 23.96,
+      "end": 25.9
+    },
+    {
+      "index": 2,
+      "start": 25.9,
+      "end": 29.39
+    },
+    {
+      "index": 3,
+      "start": 29.39,
+      "end": 31.55
+    },
+    {
+      "index": 4,
+      "start": 31.55,
+      "end": 34.78
+    },
+    {
+      "index": 5,
+      "start": 34.78,
+      "end": 37.59
+    },
+    {
+      "index": 6,
+      "start": 37.59,
+      "end": 40.55
+    },
+    {
+      "index": 7,
+      "start": 40.55,
+      "end": 42.94
+    },
+    {
+      "index": 8,
+      "start": 42.94,
+      "end": 45.34
+    },
+    {
+      "index": 9,
+      "start": 45.34,
+      "end": 48.34
+    },
+    {
+      "index": 10,
+      "start": 48.34,
+      "end": 50.94
+    },
+    {
+      "index": 11,
+      "start": 50.94,
+      "end": 53.58
+    },
+    {
+      "index": 12,
+      "start": 53.58,
+      "end": 56.84
+    },
+    {
+      "index": 13,
+      "start": 56.84,
+      "end": 59.21
+    },
+    {
+      "index": 14,
+      "start": 59.21,
+      "end": 61.47
+    },
+    {
+      "index": 15,
+      "start": 61.47,
+      "end": 66.13
+    },
+    {
+      "index": 16,
+      "start": 66.13,
+      "end": 68.53
+    },
+    {
+      "index": 17,
+      "start": 68.53,
+      "end": 71.44
+    },
+    {
+      "index": 18,
+      "start": 71.44,
+      "end": 74.37
+    },
+    {
+      "index": 19,
+      "start": 74.37,
+      "end": 76.87
+    },
+    {
+      "index": 20,
+      "start": 76.87,
+      "end": 79.89
+    },
+    {
+      "index": 21,
+      "start": 79.89,
+      "end": 85.68
+    },
+    {
+      "index": 22,
+      "start": 85.68,
+      "end": 89.42
+    },
+    {
+      "index": 23,
+      "start": 89.42,
+      "end": 95.22
+    },
+    {
+      "index": 24,
+      "start": 95.22,
+      "end": 100.68
+    },
+    {
+      "index": 25,
+      "start": 100.68,
+      "end": 103.68
+    },
+    {
+      "index": 26,
+      "start": 103.68,
+      "end": 106.4
+    },
+    {
+      "index": 27,
+      "start": 106.4,
+      "end": 111.58
+    },
+    {
+      "index": 28,
+      "start": 114.4,
+      "end": 117.36
+    },
+    {
+      "index": 29,
+      "start": 117.36,
+      "end": 118.53
+    },
+    {
+      "index": 30,
+      "start": 118.53,
+      "end": 121.26
+    },
+    {
+      "index": 31,
+      "start": 121.26,
+      "end": 124.22
+    },
+    {
+      "index": 32,
+      "start": 124.22,
+      "end": 127.25
+    },
+    {
+      "index": 33,
+      "start": 127.25,
+      "end": 129.95
+    },
+    {
+      "index": 34,
+      "start": 129.95,
+      "end": 132.89
+    },
+    {
+      "index": 35,
+      "start": 132.89,
+      "end": 136.37
+    },
+    {
+      "index": 36,
+      "start": 136.37,
+      "end": 139.36
+    },
+    {
+      "index": 37,
+      "start": 139.36,
+      "end": 142.07
+    },
+    {
+      "index": 38,
+      "start": 142.07,
+      "end": 144.56
+    },
+    {
+      "index": 39,
+      "start": 144.56,
+      "end": 147.72
+    },
+    {
+      "index": 40,
+      "start": 147.72,
+      "end": 153.51
+    },
+    {
+      "index": 41,
+      "start": 153.51,
+      "end": 157.16
+    },
+    {
+      "index": 42,
+      "start": 157.16,
+      "end": 162.94
+    },
+    {
+      "index": 43,
+      "start": 162.94,
+      "end": 168.58
+    },
+    {
+      "index": 44,
+      "start": 168.58,
+      "end": 171.65
+    },
+    {
+      "index": 45,
+      "start": 171.65,
+      "end": 174.29
+    },
+    {
+      "index": 46,
+      "start": 174.29,
+      "end": 178.52
+    },
+    {
+      "index": 47,
+      "start": 178.52,
+      "end": 181.38
+    },
+    {
+      "index": 48,
+      "start": 181.38,
+      "end": 184.03
+    },
+    {
+      "index": 49,
+      "start": 184.03,
+      "end": 186.88
+    },
+    {
+      "index": 50,
+      "start": 186.88,
+      "end": 189.65
+    },
+    {
+      "index": 51,
+      "start": 189.65,
+      "end": 191.77
+    }
+  ]
+}

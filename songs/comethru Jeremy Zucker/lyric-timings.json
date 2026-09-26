@@ -1,0 +1,358 @@
+{
+  "status": "sourced",
+  "source": {
+    "name": "LRCLIB",
+    "id": 21100282,
+    "duration": 181,
+    "url": "https://lrclib.net/api/get/21100282"
+  },
+  "display": {
+    "lyrics": "I might lose my mind\nWaking when the sun's down\nRiding all these highs\nWaiting for the comedown\nWalk these streets with me\nI'm doing decently\nJust glad that I can breathe, yeah\nI'm trying to realize\nIt's alright to not be fine on your own\nNow I'm shaking, drinking all this coffee\nThese last few weeks have been exhausting\nI'm lost in my imagination\nAnd there's one thing that I need from you\nCan you come through, through?\nThrough, yeah\nAnd there's one thing that I need from you\nCan you come through?\nAin't got much to do\nToo old for my hometown\nWent to bed at noon\nCouldn't put my phone down\nScrolling patiently\nIt's all the same to me\nJust faces on a screen, yeah\nI'm trying to realize\nIt's alright to not be fine on your own\nNow I'm shaking, drinking all this coffee\nThese last few weeks have been exhausting\nI'm lost in my imagination\nAnd there's one thing that I need from you\nCan you come through, through?\nThrough, yeah\nAnd there's one thing that I need from you\nCan you come\nThrough, through\nThrough, yeah\nAnd there's one thing that I need from you\nCan you come through?",
+    "lyricsJa": [
+      {
+        "en": "I might lose my mind",
+        "ja": "おかしくなってしまいそうだ"
+      },
+      {
+        "en": "Waking when the sun's down",
+        "ja": "日が暮れてから目を覚まし"
+      },
+      {
+        "en": "Riding all these highs",
+        "ja": "この気分の高まりに身を任せ"
+      },
+      {
+        "en": "Waiting for the comedown",
+        "ja": "それが落ち着くのを待っている"
+      },
+      {
+        "en": "Walk these streets with me",
+        "ja": "僕と一緒にこの道を歩いてくれ"
+      },
+      {
+        "en": "I'm doing decently",
+        "ja": "まあ、それなりにやってるよ"
+      },
+      {
+        "en": "Just glad that I can breathe, yeah",
+        "ja": "ただ、息ができるだけで嬉しいんだ"
+      },
+      {
+        "en": "I'm trying to realize",
+        "ja": "気づこうとしているんだ"
+      },
+      {
+        "en": "It's alright to not be fine on your own",
+        "ja": "一人で大丈夫じゃなくてもいいんだって"
+      },
+      {
+        "en": "Now I'm shaking, drinking all this coffee",
+        "ja": "コーヒーを飲みすぎて、体が震えている"
+      },
+      {
+        "en": "These last few weeks have been exhausting",
+        "ja": "ここ数週間は本当に疲れ果てたよ"
+      },
+      {
+        "en": "I'm lost in my imagination",
+        "ja": "自分の空想の中に迷い込んで"
+      },
+      {
+        "en": "And there's one thing that I need from you",
+        "ja": "君にひとつだけお願いしたいことがあるんだ"
+      },
+      {
+        "en": "Can you come through, through?",
+        "ja": "会いに来てくれるかな？"
+      },
+      {
+        "en": "Through, yeah",
+        "ja": "会いに、そう"
+      },
+      {
+        "en": "And there's one thing that I need from you",
+        "ja": "君にひとつだけお願いしたいことがあるんだ"
+      },
+      {
+        "en": "Can you come through?",
+        "ja": "会いに来てくれるかな？"
+      },
+      {
+        "en": "Ain't got much to do",
+        "ja": "やることは特にないんだ"
+      },
+      {
+        "en": "Too old for my hometown",
+        "ja": "地元にいるには、もう大人になりすぎた"
+      },
+      {
+        "en": "Went to bed at noon",
+        "ja": "正午にベッドに入って"
+      },
+      {
+        "en": "Couldn't put my phone down",
+        "ja": "スマホを手放せなかった"
+      },
+      {
+        "en": "Scrolling patiently",
+        "ja": "ただひたすらスクロールして"
+      },
+      {
+        "en": "It's all the same to me",
+        "ja": "僕にはどれも同じに見える"
+      },
+      {
+        "en": "Just faces on a screen, yeah",
+        "ja": "画面の中のただの顔ぶれさ"
+      },
+      {
+        "en": "I'm trying to realize",
+        "ja": "気づこうとしているんだ"
+      },
+      {
+        "en": "It's alright to not be fine on your own",
+        "ja": "一人で大丈夫じゃなくてもいいんだって"
+      },
+      {
+        "en": "Now I'm shaking, drinking all this coffee",
+        "ja": "コーヒーを飲みすぎて、体が震えている"
+      },
+      {
+        "en": "These last few weeks have been exhausting",
+        "ja": "ここ数週間は本当に疲れ果てたよ"
+      },
+      {
+        "en": "I'm lost in my imagination",
+        "ja": "自分の空想の中に迷い込んで"
+      },
+      {
+        "en": "And there's one thing that I need from you",
+        "ja": "君にひとつだけお願いしたいことがあるんだ"
+      },
+      {
+        "en": "Can you come through, through?",
+        "ja": "会いに来てくれるかな？"
+      },
+      {
+        "en": "Through, yeah",
+        "ja": "会いに、そう"
+      },
+      {
+        "en": "And there's one thing that I need from you",
+        "ja": "君にひとつだけお願いしたいことがあるんだ"
+      },
+      {
+        "en": "Can you come",
+        "ja": "会いに来てくれるかな？"
+      },
+      {
+        "en": "Through, through",
+        "ja": "会いに、そう"
+      },
+      {
+        "en": "Through, yeah",
+        "ja": "会いに、そう"
+      },
+      {
+        "en": "And there's one thing that I need from you",
+        "ja": "君にひとつだけお願いしたいことがあるんだ"
+      },
+      {
+        "en": "Can you come through?",
+        "ja": "会いに来てくれるかな？"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "index": 0,
+      "start": 1.54,
+      "end": 4.07
+    },
+    {
+      "index": 1,
+      "start": 4.07,
+      "end": 6.55
+    },
+    {
+      "index": 2,
+      "start": 6.55,
+      "end": 9.04
+    },
+    {
+      "index": 3,
+      "start": 9.04,
+      "end": 11.6
+    },
+    {
+      "index": 4,
+      "start": 11.6,
+      "end": 14.16
+    },
+    {
+      "index": 5,
+      "start": 14.16,
+      "end": 16.51
+    },
+    {
+      "index": 6,
+      "start": 16.51,
+      "end": 20.47
+    },
+    {
+      "index": 7,
+      "start": 20.47,
+      "end": 25.43
+    },
+    {
+      "index": 8,
+      "start": 25.43,
+      "end": 35.48
+    },
+    {
+      "index": 9,
+      "start": 35.48,
+      "end": 40.91
+    },
+    {
+      "index": 10,
+      "start": 40.91,
+      "end": 45.94
+    },
+    {
+      "index": 11,
+      "start": 45.94,
+      "end": 50.62
+    },
+    {
+      "index": 12,
+      "start": 50.62,
+      "end": 55.11
+    },
+    {
+      "index": 13,
+      "start": 55.11,
+      "end": 66.46
+    },
+    {
+      "index": 14,
+      "start": 66.46,
+      "end": 71.26
+    },
+    {
+      "index": 15,
+      "start": 71.26,
+      "end": 75.55
+    },
+    {
+      "index": 16,
+      "start": 75.55,
+      "end": 78.02
+    },
+    {
+      "index": 17,
+      "start": 78.02,
+      "end": 80.57
+    },
+    {
+      "index": 18,
+      "start": 80.57,
+      "end": 83.22
+    },
+    {
+      "index": 19,
+      "start": 83.22,
+      "end": 85.69
+    },
+    {
+      "index": 20,
+      "start": 85.69,
+      "end": 88.23
+    },
+    {
+      "index": 21,
+      "start": 88.23,
+      "end": 90.62
+    },
+    {
+      "index": 22,
+      "start": 90.62,
+      "end": 93.27
+    },
+    {
+      "index": 23,
+      "start": 93.27,
+      "end": 97.09
+    },
+    {
+      "index": 24,
+      "start": 97.09,
+      "end": 102.2
+    },
+    {
+      "index": 25,
+      "start": 102.2,
+      "end": 111.91
+    },
+    {
+      "index": 26,
+      "start": 111.91,
+      "end": 117.22
+    },
+    {
+      "index": 27,
+      "start": 117.22,
+      "end": 122.42
+    },
+    {
+      "index": 28,
+      "start": 122.42,
+      "end": 127.1
+    },
+    {
+      "index": 29,
+      "start": 127.1,
+      "end": 131.69
+    },
+    {
+      "index": 30,
+      "start": 131.69,
+      "end": 143.06
+    },
+    {
+      "index": 31,
+      "start": 143.06,
+      "end": 147.56
+    },
+    {
+      "index": 32,
+      "start": 147.56,
+      "end": 152.15
+    },
+    {
+      "index": 33,
+      "start": 152.15,
+      "end": 153.61
+    },
+    {
+      "index": 34,
+      "start": 153.61,
+      "end": 163.67
+    },
+    {
+      "index": 35,
+      "start": 163.67,
+      "end": 168.21
+    },
+    {
+      "index": 36,
+      "start": 168.21,
+      "end": 172.92
+    },
+    {
+      "index": 37,
+      "start": 172.92,
+      "end": 174.81
+    }
+  ]
+}

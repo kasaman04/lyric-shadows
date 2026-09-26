@@ -8,12 +8,24 @@
   "speakerA": {
     "name": "Alex",
     "type": "男性",
-    "voice": "CfDbY7v8tDkTvB9rNcUw"
+    "voice": "IKne3meq5aSn9XLyUdCD",
+    "voiceProfile": "charlie",
+    "gender": "male",
+    "age": "young",
+    "accent": "australian",
+    "tone": "energetic",
+    "voiceName": "Charlie"
   },
   "speakerB": {
     "name": "Sarah",
     "type": "女性",
-    "voice": "cNYrMw9glwJZXR8RwbuR"
+    "voice": "XrExE9yKIg1WjnnlVkGX",
+    "voiceProfile": "matilda",
+    "gender": "female",
+    "age": "middle_aged",
+    "accent": "american",
+    "tone": "energetic",
+    "voiceName": "Matilda"
   },
   "videoId": "w5qOYi41WiA",
   "thumbnailUrl": "https://i.ytimg.com/vi/w5qOYi41WiA/hqdefault.jpg",
@@ -229,12 +241,12 @@
         {
           "text": "Okay, if we leave now, we can hit the museum by 1 PM, grab coffee at 2:15, and...",
           "displayHtml": "Okay, if we leave now, we can hit the museum by 1 PM, grab coffee at 2:15, and...",
-          "audio": "/songs/Im%20Yours%20Jason%20Mraz/0_0.mp3"
+          "audio": "/songs/Im%20Yours%20Jason%20Mraz/conversation-audio/04aa62005cc22391/0-0.mp3"
         },
         {
           "text": "wait, we're already ten minutes behind schedule!",
           "displayHtml": "wait, we're already ten minutes behind schedule!",
-          "audio": "/songs/Im%20Yours%20Jason%20Mraz/0_1.mp3"
+          "audio": "/songs/Im%20Yours%20Jason%20Mraz/conversation-audio/04aa62005cc22391/0-1.mp3"
         }
       ],
       "japanese": "よし、今出れば1時に美術館に着いて、2時15分にコーヒーを飲んで…待って、もう予定より10分も遅れてる！"
@@ -247,17 +259,17 @@
         {
           "text": "Hey, take a deep breath.",
           "displayHtml": "Hey, take a deep breath.",
-          "audio": "/songs/Im%20Yours%20Jason%20Mraz/1_0.mp3"
+          "audio": "/songs/Im%20Yours%20Jason%20Mraz/conversation-audio/04aa62005cc22391/1-0.mp3"
         },
         {
           "text": "There's really no need to complicate our whole weekend.",
           "displayHtml": "There's really <span class=\"lyric-phrase\">no need to complicate</span> our whole weekend.",
-          "audio": "/songs/Im%20Yours%20Jason%20Mraz/1_1.mp3"
+          "audio": "/songs/Im%20Yours%20Jason%20Mraz/conversation-audio/04aa62005cc22391/1-1.mp3"
         },
         {
           "text": "Let's just relax.",
           "displayHtml": "Let's just relax.",
-          "audio": "/songs/Im%20Yours%20Jason%20Mraz/1_2.mp3"
+          "audio": "/songs/Im%20Yours%20Jason%20Mraz/conversation-audio/04aa62005cc22391/1-2.mp3"
         }
       ],
       "japanese": "ねえ、深呼吸して。週末の予定を難しく考える必要なんてないよ。ただリラックスしよう。"
@@ -270,12 +282,12 @@
         {
           "text": "But I spent so much time planning this!",
           "displayHtml": "But I spent so much time planning this!",
-          "audio": "/songs/Im%20Yours%20Jason%20Mraz/2_0.mp3"
+          "audio": "/songs/Im%20Yours%20Jason%20Mraz/conversation-audio/04aa62005cc22391/2-0.mp3"
         },
         {
           "text": "I want everything to be perfect.",
           "displayHtml": "I want everything to be perfect.",
-          "audio": "/songs/Im%20Yours%20Jason%20Mraz/2_1.mp3"
+          "audio": "/songs/Im%20Yours%20Jason%20Mraz/conversation-audio/04aa62005cc22391/2-1.mp3"
         }
       ],
       "japanese": "でも、計画するのにすごく時間をかけたんだ！全部完璧にこなしたいんだよ。"
@@ -288,12 +300,12 @@
         {
           "text": "I know, but our time is short, and stressing out is just going to ruin it.",
           "displayHtml": "I know, but <span class=\"lyric-phrase\">our time is short</span>, and stressing out is just going to ruin it.",
-          "audio": "/songs/Im%20Yours%20Jason%20Mraz/3_0.mp3"
+          "audio": "/songs/Im%20Yours%20Jason%20Mraz/conversation-audio/04aa62005cc22391/3-0.mp3"
         },
         {
           "text": "Open up your plans and be a little flexible.",
           "displayHtml": "<span class=\"lyric-word\">Open up your plans</span> and be a little flexible.",
-          "audio": "/songs/Im%20Yours%20Jason%20Mraz/3_1.mp3"
+          "audio": "/songs/Im%20Yours%20Jason%20Mraz/conversation-audio/04aa62005cc22391/3-1.mp3"
         }
       ],
       "japanese": "わかるけど、僕たちの時間は短いんだから、ピリピリしてたら台無しになっちゃうよ。予定を開け放って、もう少し柔軟になろう。"
@@ -306,17 +318,17 @@
         {
           "text": "You're right...",
           "displayHtml": "You're right...",
-          "audio": "/songs/Im%20Yours%20Jason%20Mraz/4_0.mp3"
+          "audio": "/songs/Im%20Yours%20Jason%20Mraz/conversation-audio/04aa62005cc22391/4-0.mp3"
         },
         {
           "text": "I guess I've been overthinking it.",
           "displayHtml": "I guess I've been overthinking it.",
-          "audio": "/songs/Im%20Yours%20Jason%20Mraz/4_1.mp3"
+          "audio": "/songs/Im%20Yours%20Jason%20Mraz/conversation-audio/04aa62005cc22391/4-1.mp3"
         },
         {
           "text": "I always try to control every single detail.",
           "displayHtml": "I always try to control every single detail.",
-          "audio": "/songs/Im%20Yours%20Jason%20Mraz/4_2.mp3"
+          "audio": "/songs/Im%20Yours%20Jason%20Mraz/conversation-audio/04aa62005cc22391/4-2.mp3"
         }
       ],
       "japanese": "確かに…考えすぎてたかも。いつも細かいところまで全部コントロールしようとしちゃうんだ。"
@@ -329,17 +341,17 @@
         {
           "text": "Exactly.",
           "displayHtml": "Exactly.",
-          "audio": "/songs/Im%20Yours%20Jason%20Mraz/5_0.mp3"
+          "audio": "/songs/Im%20Yours%20Jason%20Mraz/conversation-audio/04aa62005cc22391/5-0.mp3"
         },
         {
           "text": "Just rid yourself of those vanities and go with the seasons.",
           "displayHtml": "Just rid yourself of those <span class=\"lyric-word\">vanities</span> and <span class=\"lyric-phrase\">go with the seasons</span>.",
-          "audio": "/songs/Im%20Yours%20Jason%20Mraz/5_1.mp3"
+          "audio": "/songs/Im%20Yours%20Jason%20Mraz/conversation-audio/04aa62005cc22391/5-1.mp3"
         },
         {
           "text": "Let's see where the day takes us.",
           "displayHtml": "Let's see where the day takes us.",
-          "audio": "/songs/Im%20Yours%20Jason%20Mraz/5_2.mp3"
+          "audio": "/songs/Im%20Yours%20Jason%20Mraz/conversation-audio/04aa62005cc22391/5-2.mp3"
         }
       ],
       "japanese": "その通り。完璧に見せたい見栄なんか捨てて、流れに身を任せてみようよ。今日が僕たちをどこへ連れて行くか見てみよう。"
@@ -352,17 +364,17 @@
         {
           "text": "Okay, I'll put my schedule away.",
           "displayHtml": "Okay, I'll put my schedule away.",
-          "audio": "/songs/Im%20Yours%20Jason%20Mraz/6_0.mp3"
+          "audio": "/songs/Im%20Yours%20Jason%20Mraz/conversation-audio/04aa62005cc22391/6-0.mp3"
         },
         {
           "text": "Let's just walk around and see what we find.",
           "displayHtml": "Let's just walk around and see what we find.",
-          "audio": "/songs/Im%20Yours%20Jason%20Mraz/6_1.mp3"
+          "audio": "/songs/Im%20Yours%20Jason%20Mraz/conversation-audio/04aa62005cc22391/6-1.mp3"
         },
         {
           "text": "I won't hesitate no more.",
           "displayHtml": "I won't <span class=\"lyric-phrase\">hesitate no more</span>.",
-          "audio": "/songs/Im%20Yours%20Jason%20Mraz/6_2.mp3"
+          "audio": "/songs/Im%20Yours%20Jason%20Mraz/conversation-audio/04aa62005cc22391/6-2.mp3"
         }
       ],
       "japanese": "わかった、スケジュール帳はしまうね。ただ歩き回って、何が見つかるか見てみよう。もう心配してためらったりしないよ。"
@@ -375,17 +387,18 @@
         {
           "text": "Now you're talking!",
           "displayHtml": "Now you're talking!",
-          "audio": "/songs/Im%20Yours%20Jason%20Mraz/7_0.mp3"
+          "audio": "/songs/Im%20Yours%20Jason%20Mraz/conversation-audio/04aa62005cc22391/7-0.mp3"
         },
         {
           "text": "Just listen to the music of the moment, and we'll have a great time.",
           "displayHtml": "Just listen to the <span class=\"lyric-phrase\">music of the moment</span>, and we'll have a great time.",
-          "audio": "/songs/Im%20Yours%20Jason%20Mraz/7_1.mp3"
+          "audio": "/songs/Im%20Yours%20Jason%20Mraz/conversation-audio/04aa62005cc22391/7-1.mp3"
         }
       ],
       "japanese": "その意気だよ！今この瞬間の雰囲気（音楽）を感じれば、きっと楽しい時間が過ごせるさ。"
     }
   ],
   "createdAt": "2026-04-12T05:30:12.034Z",
-  "hasLocalAudio": true
+  "hasLocalAudio": true,
+  "conversationAudioStatus": "ready"
 }
