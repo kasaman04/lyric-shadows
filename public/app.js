@@ -6,6 +6,14 @@ const state = {
   songs: [],
   voices: [],
   phrases: [],
+  dramas: [],
+  currentDramaId: null,
+  currentEpisodeId: null,
+  dramaPlaylistActive: false,
+  dramaPlaylistIndex: 0,
+  dramaPlaylistExpectedAudio: null,
+  dramaRepeat: false,
+  dramaSingleRepeatIndex: -1,
   phraseImages: {},
   currentSong: null,
   activeLyricIndex: -1,
@@ -152,6 +160,7 @@ async function init() {
   await loadVoices();
   await loadPhraseImages();
   state.phrases = Array.isArray(window.CONVERSATION_PHRASES) ? window.CONVERSATION_PHRASES : [];
+  state.dramas = Array.isArray(window.DRAMAS) ? window.DRAMAS : [];
   applyGeneratedPhraseAudio();
   loadHiddenPhrases();
   loadSavedPhrases();
@@ -206,8 +215,11 @@ function showHome() {
   stopAudio();
   stopPhrasePracticeAudio();
   stopSongAudio();
+  stopDramaAudio();
   state.currentSong = null;
   state.currentPhrase = null;
+  state.currentDramaId = null;
+  state.currentEpisodeId = null;
   state.view = 'home';
   renderHome();
 }
@@ -284,6 +296,7 @@ function renderHome() {
       <nav class="home-tabs" aria-label="学習方法">
         <button class="home-tab ${state.homeFilter === 'A' ? 'active' : ''}" onclick="setHomeFilter('A')" aria-current="${state.homeFilter === 'A' ? 'page' : 'false'}">♫ <span>洋楽で学ぶ</span></button>
         <button class="home-tab ${state.homeFilter === 'C' ? 'active' : ''}" onclick="setHomeFilter('C')" aria-current="${state.homeFilter === 'C' ? 'page' : 'false'}">☏ <span>会話フレーズ</span></button>
+        <button class="home-tab ${state.homeFilter === 'D' ? 'active' : ''}" onclick="setHomeFilter('D')" aria-current="${state.homeFilter === 'D' ? 'page' : 'false'}">🎬 <span>ドラマ</span></button>
       </nav>
     ${renderSongGrid()}
     </main>
@@ -300,9 +313,182 @@ function renderHome() {
 }
 
 function setHomeFilter(filter) {
-  if (!['A', 'C'].includes(filter)) filter = 'A';
+  if (!['A', 'C', 'D'].includes(filter)) filter = 'A';
+  stopDramaAudio();
   state.homeFilter = filter;
+  state.currentDramaId = null;
+  state.currentEpisodeId = null;
   renderHome();
+}
+
+function stopDramaAudio() {
+  document.querySelectorAll('.drama-audio').forEach(audio => {
+    audio.loop = false;
+    audio.pause();
+  });
+  state.dramaPlaylistActive = false;
+  state.dramaPlaylistIndex = 0;
+  state.dramaPlaylistExpectedAudio = null;
+  state.dramaSingleRepeatIndex = -1;
+}
+
+function showDrama(dramaId) {
+  stopDramaAudio();
+  state.currentDramaId = dramaId;
+  state.currentEpisodeId = null;
+  renderHome();
+}
+
+function showDramaEpisode(episodeId) {
+  stopDramaAudio();
+  state.currentEpisodeId = episodeId;
+  renderHome();
+}
+
+function onDramaAudioPlay(activeAudio) {
+  const audios = [...document.querySelectorAll('.drama-audio')];
+  if (state.dramaSingleRepeatIndex >= 0 && audios[state.dramaSingleRepeatIndex] !== activeAudio) {
+    clearDramaSingleRepeat();
+  }
+  audios.forEach(audio => {
+    if (audio !== activeAudio) audio.pause();
+    audio.closest('.drama-clip')?.classList.toggle('is-playing', audio === activeAudio);
+  });
+  const activeText = activeAudio.closest('.drama-clip')?.querySelector('.drama-clip-english');
+  activeText?.scrollIntoView({
+    behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
+    block: 'center'
+  });
+  if (activeAudio === state.dramaPlaylistExpectedAudio) {
+    state.dramaPlaylistExpectedAudio = null;
+  } else {
+    state.dramaPlaylistActive = false;
+    state.dramaPlaylistIndex = 0;
+    updateDramaPlaybackButtons();
+  }
+}
+
+function onDramaAudioPause(audio) {
+  audio.closest('.drama-clip')?.classList.remove('is-playing');
+  const audios = [...document.querySelectorAll('.drama-audio')];
+  if (state.dramaPlaylistActive && audios[state.dramaPlaylistIndex] === audio && !audio.ended) {
+    state.dramaPlaylistActive = false;
+    state.dramaPlaylistExpectedAudio = null;
+    updateDramaPlaybackButtons();
+  }
+}
+
+function onDramaAudioEnded(audio) {
+  audio.closest('.drama-clip')?.classList.remove('is-playing');
+  if (!state.dramaPlaylistActive) return;
+  const audios = [...document.querySelectorAll('.drama-audio')];
+  if (audios[state.dramaPlaylistIndex] !== audio) return;
+  const nextIndex = state.dramaPlaylistIndex + 1;
+  if (nextIndex < audios.length) {
+    playDramaAudioAt(nextIndex);
+  } else if (state.dramaRepeat) {
+    playDramaAudioAt(0, true);
+  } else {
+    state.dramaPlaylistActive = false;
+    state.dramaPlaylistIndex = 0;
+    updateDramaPlaybackButtons();
+  }
+}
+
+function playDramaAudioAt(index, restart = false) {
+  const audios = [...document.querySelectorAll('.drama-audio')];
+  const audio = audios[index];
+  if (!audio) return;
+  state.dramaPlaylistIndex = index;
+  state.dramaPlaylistActive = true;
+  state.dramaPlaylistExpectedAudio = audio;
+  if (restart) audio.currentTime = 0;
+  audio.play().catch(() => {
+    state.dramaPlaylistActive = false;
+    state.dramaPlaylistExpectedAudio = null;
+    updateDramaPlaybackButtons();
+  });
+  updateDramaPlaybackButtons();
+}
+
+function toggleDramaPlayAll() {
+  const audios = [...document.querySelectorAll('.drama-audio')];
+  if (!audios.length) return;
+  if (state.dramaPlaylistActive) {
+    state.dramaPlaylistActive = false;
+    state.dramaPlaylistExpectedAudio = null;
+    audios[state.dramaPlaylistIndex]?.pause();
+    updateDramaPlaybackButtons();
+    return;
+  }
+  clearDramaSingleRepeat();
+  playDramaAudioAt(state.dramaPlaylistIndex);
+}
+
+function toggleDramaRepeat() {
+  state.dramaRepeat = !state.dramaRepeat;
+  if (state.dramaRepeat) clearDramaSingleRepeat();
+  updateDramaPlaybackButtons();
+}
+
+function clearDramaSingleRepeat() {
+  document.querySelectorAll('.drama-audio').forEach(audio => { audio.loop = false; });
+  state.dramaSingleRepeatIndex = -1;
+  updateDramaSingleRepeatButtons();
+}
+
+function toggleDramaSingleRepeat(index) {
+  const audios = [...document.querySelectorAll('.drama-audio')];
+  const audio = audios[index];
+  if (!audio) return;
+  if (state.dramaSingleRepeatIndex === index) {
+    clearDramaSingleRepeat();
+    return;
+  }
+  clearDramaSingleRepeat();
+  state.dramaPlaylistActive = false;
+  state.dramaPlaylistIndex = 0;
+  state.dramaPlaylistExpectedAudio = null;
+  state.dramaRepeat = false;
+  updateDramaPlaybackButtons();
+  state.dramaSingleRepeatIndex = index;
+  audio.loop = true;
+  audio.currentTime = 0;
+  updateDramaSingleRepeatButtons();
+  audio.play().catch(() => {});
+}
+
+function updateDramaSingleRepeatButtons() {
+  document.querySelectorAll('.drama-single-repeat').forEach((button, index) => {
+    const active = state.dramaSingleRepeatIndex === index;
+    button.classList.toggle('active', active);
+    button.setAttribute('aria-pressed', String(active));
+    button.setAttribute('aria-label', `この音声をリピート ${active ? 'オン' : 'オフ'}`);
+    button.textContent = active ? '↻ リピート中' : '↻ この音声をリピート';
+  });
+}
+
+function updateDramaPlaybackButtons() {
+  const playButton = document.getElementById('dramaPlayAll');
+  const repeatButton = document.getElementById('dramaRepeat');
+  if (playButton) {
+    playButton.innerHTML = state.dramaPlaylistActive ? '❚❚ <span>一時停止</span>' : '▶ <span>まとめて再生</span>';
+    playButton.setAttribute('aria-label', state.dramaPlaylistActive ? 'まとめて再生を一時停止' : 'まとめて再生');
+  }
+  if (repeatButton) {
+    repeatButton.classList.toggle('active', state.dramaRepeat);
+    repeatButton.setAttribute('aria-pressed', String(state.dramaRepeat));
+    repeatButton.setAttribute('aria-label', `リピート ${state.dramaRepeat ? 'オン' : 'オフ'}`);
+  }
+}
+
+function toggleDramaExamples(index) {
+  const panel = document.getElementById(`dramaExamples-${index}`);
+  const button = document.getElementById(`dramaMore-${index}`);
+  if (!panel || !button) return;
+  panel.hidden = !panel.hidden;
+  button.setAttribute('aria-expanded', String(!panel.hidden));
+  button.textContent = panel.hidden ? 'その他 ▾' : 'その他 ▴';
 }
 
 async function checkExistingPreview() {
@@ -315,6 +501,7 @@ async function checkExistingPreview() {
 
 function renderSongGrid() {
   if (state.homeFilter === 'C') return renderPhraseGrid();
+  if (state.homeFilter === 'D') return renderDramaGrid();
 
   const filteredSongs = state.songs.filter(s => {
     const isPatternB = s.pattern === 'B' || (s.artist && s.artist.includes('パターンB'));
@@ -346,6 +533,78 @@ function renderSongGrid() {
       </button>`;
   }).join('');
   return `<section class="home-library"><div class="section-heading"><div><p class="section-eyebrow">LEARN WITH MUSIC</p><h2>洋楽から学ぶ</h2></div><span>${filteredSongs.length}曲</span></div><div class="song-grid">${cards}</div></section>`;
+}
+
+function renderDramaGrid() {
+  const drama = state.dramas.find(item => item.id === state.currentDramaId);
+  const episode = drama?.episodes.find(item => item.id === state.currentEpisodeId);
+
+  if (episode) {
+    const clips = episode.clips.map((clip, index) => {
+      const examples = Array.isArray(clip.otherExamples) ? clip.otherExamples : [];
+      const examplesHtml = examples.map(example => `
+        <li class="drama-example">
+          <p lang="en">${esc(example.english)}</p>
+          <p>${esc(example.japanese)}</p>
+        </li>`).join('');
+      return `
+      <article class="drama-clip">
+        <div class="drama-clip-heading"><span>${String(index + 1).padStart(2, '0')}</span><span>音声</span></div>
+        <p class="drama-clip-english" lang="en">${esc(clip.english)}</p>
+        <p class="drama-clip-japanese">${esc(clip.japanese)}</p>
+        <audio class="drama-audio" controls preload="none" src="${esc(clip.audio)}" onplay="onDramaAudioPlay(this)" onpause="onDramaAudioPause(this)" onended="onDramaAudioEnded(this)" aria-label="${esc(clip.english)}"></audio>
+        <div class="drama-clip-actions">
+          <button class="drama-single-repeat" onclick="toggleDramaSingleRepeat(${index})" aria-pressed="false" aria-label="この音声をリピート オフ">↻ この音声をリピート</button>
+          ${examples.length ? `<button id="dramaMore-${index}" class="drama-more" onclick="toggleDramaExamples(${index})" aria-expanded="false" aria-controls="dramaExamples-${index}">その他 ▾</button>` : ''}
+        </div>
+        ${examples.length ? `<div id="dramaExamples-${index}" class="drama-examples" hidden>
+          <h4>この構文を使った短い言い方</h4>
+          <ul>${examplesHtml}</ul>
+        </div>` : ''}
+      </article>`;
+    }).join('');
+    return `<section class="home-library drama-library">
+      <button class="drama-back" onclick="showDrama('${drama.id}')">← 話数一覧へ</button>
+      <p class="section-eyebrow">DRAMA PHRASES</p>
+      <h2 class="drama-page-title">${esc(drama.title)}</h2>
+      <p class="drama-page-subtitle">第${episode.number}話 ${esc(episode.title)}</p>
+      <div class="section-heading drama-section-heading"><h3>この回の音声</h3><span>${episode.clips.length}件</span></div>
+      <div class="drama-playback-controls">
+        <button id="dramaPlayAll" class="drama-play-all" onclick="toggleDramaPlayAll()" aria-label="まとめて再生">▶ <span>まとめて再生</span></button>
+        <button id="dramaRepeat" class="drama-repeat ${state.dramaRepeat ? 'active' : ''}" onclick="toggleDramaRepeat()" aria-pressed="${state.dramaRepeat}" aria-label="リピート ${state.dramaRepeat ? 'オン' : 'オフ'}">↻ <span>リピート</span></button>
+      </div>
+      <div class="drama-clip-list">${clips}</div>
+    </section>`;
+  }
+
+  if (drama) {
+    const episodes = drama.episodes.map(item => `
+      <button class="drama-episode" onclick="showDramaEpisode('${item.id}')">
+        <span class="drama-episode-number">第${item.number}話</span>
+        <span class="drama-episode-title">${esc(item.title)}</span>
+        <span class="drama-episode-count">音声${item.clips.length}件</span>
+        <span class="drama-episode-arrow" aria-hidden="true">›</span>
+      </button>`).join('');
+    return `<section class="home-library drama-library">
+      <button class="drama-back" onclick="showDrama(null)">← ドラマ一覧へ</button>
+      <p class="section-eyebrow">DRAMA LIBRARY</p>
+      <h2 class="drama-page-title">${esc(drama.title)}</h2>
+      <div class="drama-episode-list">${episodes}</div>
+    </section>`;
+  }
+
+  const cards = state.dramas.map(item => `
+    <div class="drama-title-tile">
+      <button class="drama-title-card" onclick="showDrama('${item.id}')">
+        <span class="drama-title-image" style="background-image:linear-gradient(0deg,rgba(22,41,43,.1),rgba(22,41,43,.1)),url('${esc(item.image)}')"></span>
+        <span class="drama-title-info"><strong>${esc(item.title)}</strong><small>${item.episodes.length}話 · 音声${item.episodes.reduce((sum, entry) => sum + entry.clips.length, 0)}件</small></span>
+      </button>
+      <a class="drama-image-credit" href="${esc(item.imageSource)}" target="_blank" rel="noopener noreferrer">画像出典</a>
+    </div>`).join('');
+  return `<section class="home-library drama-library">
+    <div class="section-heading"><div><p class="section-eyebrow">DRAMA LIBRARY</p><h2>ドラマから学ぶ</h2></div><span>${state.dramas.length}作品</span></div>
+    ${cards ? `<div class="drama-title-grid">${cards}</div>` : '<p class="drama-empty">ドラマのデータはまだありません。</p>'}
+  </section>`;
 }
 
 function renderPhraseGrid() {
