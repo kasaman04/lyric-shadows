@@ -702,6 +702,740 @@ window.DRAMAS = [
             ]
           }
         ]
+      },
+      {
+        "id": "episode-2",
+        "number": 2,
+        "title": "きみの声",
+        "clips": [
+          {
+            "english": "Anyway, was there anything in lost and found like a blue hair tie?",
+            "japanese": "それよりさ 落とし物 届いてなかった？ なんか青い髪留めらしいんだけど",
+            "audio": "/drama-audio/first-love-2022/episode-2/01.mp3",
+            "otherExamples": [
+              {
+                "english": "Anyway, did you find my keys?",
+                "japanese": "それより、私の鍵は見つかった？"
+              },
+              {
+                "english": "Was there anything in the box?",
+                "japanese": "箱に何か入ってた？"
+              }
+            ]
+          },
+          {
+            "english": "-Can it be done or not?! -I mean, it's not, not doable.",
+            "japanese": "できんの？ できないの？ （大越）できなくはないっすけど",
+            "audio": "/drama-audio/first-love-2022/episode-2/02.mp3",
+            "otherExamples": [
+              {
+                "english": "Can it be done today or not?",
+                "japanese": "今日できるの、できないの？"
+              },
+              {
+                "english": "It's not, not possible.",
+                "japanese": "できなくはないよ。"
+              }
+            ]
+          },
+          {
+            "english": "You can't abuse this, okay?",
+            "japanese": "絶対に悪用しちゃダメっすからね！",
+            "audio": "/drama-audio/first-love-2022/episode-2/03.mp3",
+            "otherExamples": [
+              {
+                "english": "You can't share this, okay?",
+                "japanese": "これは共有しちゃダメだよ。"
+              },
+              {
+                "english": "You can't tell anyone, okay?",
+                "japanese": "誰にも言っちゃダメだよ。"
+              }
+            ]
+          },
+          {
+            "english": "miracles are crazy, right?!",
+            "japanese": "奇跡ってすごいよね？",
+            "audio": "/drama-audio/first-love-2022/episode-2/04.mp3",
+            "otherExamples": [
+              {
+                "english": "Miracles are strange, right?",
+                "japanese": "奇跡って不思議だよね。"
+              },
+              {
+                "english": "Miracles are rare, right?",
+                "japanese": "奇跡って珍しいよね。"
+              }
+            ]
+          },
+          {
+            "english": "I'm sorry to ruin your day off.",
+            "japanese": "なんか すいませんね せっかくのお休みの日に",
+            "audio": "/drama-audio/first-love-2022/episode-2/05.mp3",
+            "otherExamples": [
+              {
+                "english": "I'm sorry to interrupt your lunch.",
+                "japanese": "昼食中に邪魔してごめん。"
+              },
+              {
+                "english": "I'm sorry to ruin your plans.",
+                "japanese": "予定を台無しにしてごめん。"
+              }
+            ]
+          },
+          {
+            "english": "I'd say, let me treat you to lunch,",
+            "japanese": "なんか お詫びに ごはん ごちそうしますよ",
+            "audio": "/drama-audio/first-love-2022/episode-2/06.mp3",
+            "otherExamples": [
+              {
+                "english": "Let me treat you to coffee.",
+                "japanese": "コーヒーをごちそうさせて。"
+              },
+              {
+                "english": "Let me treat you to dinner.",
+                "japanese": "夕食をごちそうさせて。"
+              }
+            ]
+          },
+          {
+            "english": "I'm still very happy it's helping some bastard out there!",
+            "japanese": "それでも、どこかの誰かの役に立ってるならうれしいよ！",
+            "audio": "/drama-audio/first-love-2022/episode-2/07.mp3",
+            "otherExamples": [
+              {
+                "english": "I'm happy it's helping someone.",
+                "japanese": "誰かの役に立ってうれしい。"
+              },
+              {
+                "english": "I'm happy it's helping you.",
+                "japanese": "あなたの役に立ってうれしい。"
+              }
+            ]
+          },
+          {
+            "english": "I came to ask about a female driver that works here.",
+            "japanese": "ここで働いている女性ドライバーについて聞きに来ました。",
+            "audio": "/drama-audio/first-love-2022/episode-2/08.mp3",
+            "otherExamples": [
+              {
+                "english": "I came to ask about the job.",
+                "japanese": "仕事について聞きに来ました。"
+              },
+              {
+                "english": "I came to ask about your friend.",
+                "japanese": "あなたの友達について聞きに来ました。"
+              }
+            ]
+          },
+          {
+            "english": "I was wondering about…",
+            "japanese": "ちょっと伺いたいことがあって…",
+            "audio": "/drama-audio/first-love-2022/episode-2/09.mp3",
+            "otherExamples": [
+              {
+                "english": "I was wondering about the schedule.",
+                "japanese": "予定について伺いたくて。"
+              },
+              {
+                "english": "I was wondering about your idea.",
+                "japanese": "あなたの考えを聞きたくて。"
+              }
+            ]
+          },
+          {
+            "english": "Excuse me, sir. What business did you have with her, please?",
+            "japanese": "失礼ですが どのようなご用件で",
+            "audio": "/drama-audio/first-love-2022/episode-2/10.mp3",
+            "otherExamples": [
+              {
+                "english": "What business do you have here?",
+                "japanese": "ここにはどんなご用件で？"
+              },
+              {
+                "english": "What business did you have with him?",
+                "japanese": "彼にはどんなご用件でしたか？"
+              }
+            ]
+          },
+          {
+            "english": "So, I may hate shrimp, but I bet they hate me back.",
+            "japanese": "僕も嫌いだけど エビも僕のこと嫌いだろうなって",
+            "audio": "/drama-audio/first-love-2022/episode-2/11.mp3",
+            "otherExamples": [
+              {
+                "english": "I may hate Mondays, but they hate me back.",
+                "japanese": "月曜が嫌いだけど、向こうも僕が嫌いだろうね。"
+              },
+              {
+                "english": "I may hate rain, but it hates me back.",
+                "japanese": "雨が嫌いだけど、向こうも僕が嫌いみたい。"
+              }
+            ]
+          },
+          {
+            "english": "So how did you end up in Keisei?",
+            "japanese": "旺太郎さんは なんで うちの会社に？",
+            "audio": "/drama-audio/first-love-2022/episode-2/12.mp3",
+            "otherExamples": [
+              {
+                "english": "How did you end up here?",
+                "japanese": "どうしてここに来たの？"
+              },
+              {
+                "english": "How did you end up in Tokyo?",
+                "japanese": "どうして東京に来たの？"
+              }
+            ]
+          },
+          {
+            "english": "How can you cry when you know it's gonna sink from the start?",
+            "japanese": "最初から沈むの分かってて泣くか？",
+            "audio": "/drama-audio/first-love-2022/episode-2/13.mp3",
+            "otherExamples": [
+              {
+                "english": "How can you worry when you know the result?",
+                "japanese": "結果が分かってるのに、どうして心配するの？"
+              },
+              {
+                "english": "How can you laugh when you know it's sad?",
+                "japanese": "悲しいと分かってるのに、どうして笑えるの？"
+              }
+            ]
+          },
+          {
+            "english": "People are staring! Oh, no!",
+            "japanese": "（也英）ヤバい 見られてる 見られてる",
+            "audio": "/drama-audio/first-love-2022/episode-2/14.mp3",
+            "otherExamples": [
+              {
+                "english": "People are watching!",
+                "japanese": "みんな見てるよ！"
+              },
+              {
+                "english": "People are waiting!",
+                "japanese": "みんな待ってるよ！"
+              }
+            ]
+          },
+          {
+            "english": "Tastes like cigarettes.",
+            "japanese": "タバコの味がする。",
+            "audio": "/drama-audio/first-love-2022/episode-2/15.mp3",
+            "otherExamples": [
+              {
+                "english": "Tastes like coffee.",
+                "japanese": "コーヒーの味がする。"
+              },
+              {
+                "english": "Tastes like mint.",
+                "japanese": "ミントの味がする。"
+              }
+            ]
+          },
+          {
+            "english": "Call it \"flavor.\"",
+            "japanese": "フレーバーと言いなさい",
+            "audio": "/drama-audio/first-love-2022/episode-2/16.mp3",
+            "otherExamples": [
+              {
+                "english": "Call it a surprise.",
+                "japanese": "サプライズと呼ぼう。"
+              },
+              {
+                "english": "Call it practice.",
+                "japanese": "練習だと思って。"
+              }
+            ]
+          },
+          {
+            "english": "It was obvious.",
+            "japanese": "明らかだった。",
+            "audio": "/drama-audio/first-love-2022/episode-2/17.mp3",
+            "otherExamples": [
+              {
+                "english": "It was obvious to me.",
+                "japanese": "私には明らかだった。"
+              },
+              {
+                "english": "It was obvious from the start.",
+                "japanese": "最初から明らかだった。"
+              }
+            ]
+          },
+          {
+            "english": "So, how was it actually meeting her?",
+            "japanese": "で どうだった？ 実際 会ってみて",
+            "audio": "/drama-audio/first-love-2022/episode-2/18.mp3",
+            "otherExamples": [
+              {
+                "english": "How was it meeting him?",
+                "japanese": "彼に会ってどうだった？"
+              },
+              {
+                "english": "How was it seeing her again?",
+                "japanese": "彼女にまた会ってどうだった？"
+              }
+            ]
+          },
+          {
+            "english": "If there was a like button, I'd tap it 1,000 times.",
+            "japanese": "“いいね”ってボタンあったら 1000回 押したい感じ",
+            "audio": "/drama-audio/first-love-2022/episode-2/19.mp3",
+            "otherExamples": [
+              {
+                "english": "If there was a replay button, I'd tap it.",
+                "japanese": "再生ボタンがあれば押すのに。"
+              },
+              {
+                "english": "If there was a like button, I'd tap it.",
+                "japanese": "いいねボタンがあれば押すのに。"
+              }
+            ]
+          },
+          {
+            "english": "It's the first time I felt happy hearing someone call me by my name.",
+            "japanese": "名前を呼ばれてうれしかったのは初めてだ。",
+            "audio": "/drama-audio/first-love-2022/episode-2/20.mp3",
+            "otherExamples": [
+              {
+                "english": "It's the first time I felt proud of myself.",
+                "japanese": "自分を誇らしく思えたのは初めてだ。"
+              },
+              {
+                "english": "It's the first time I felt at home here.",
+                "japanese": "ここで居心地よく感じたのは初めてだ。"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "episode-3",
+        "number": 3,
+        "title": "ナポリタン",
+        "clips": [
+          {
+            "english": "So, my place has really bad reception.",
+            "japanese": "うちのアパート 電波悪くって",
+            "audio": "/drama-audio/first-love-2022/episode-3/01.mp3",
+            "otherExamples": [
+              {
+                "english": "My place has bad Wi-Fi.",
+                "japanese": "うちはWi-Fiが弱い。"
+              },
+              {
+                "english": "My place has a small kitchen.",
+                "japanese": "うちはキッチンが小さい。"
+              }
+            ]
+          },
+          {
+            "english": "My room here is super tiny.",
+            "japanese": "こっちは部屋 狭くって",
+            "audio": "/drama-audio/first-love-2022/episode-3/02.mp3",
+            "otherExamples": [
+              {
+                "english": "My room is super quiet.",
+                "japanese": "私の部屋はすごく静か。"
+              },
+              {
+                "english": "My room is super cold.",
+                "japanese": "私の部屋はすごく寒い。"
+              }
+            ]
+          },
+          {
+            "english": "That guy's hopeless. Unbelievable.",
+            "japanese": "（四元）あいつ ホントしょうがない奴だな",
+            "audio": "/drama-audio/first-love-2022/episode-3/03.mp3",
+            "otherExamples": [
+              {
+                "english": "That plan's hopeless.",
+                "japanese": "その計画は無理だよ。"
+              },
+              {
+                "english": "That guy's unbelievable.",
+                "japanese": "あいつは信じられない。"
+              }
+            ]
+          },
+          {
+            "english": "This is the closest place and the nicest, you know?",
+            "japanese": "ここが一番近くて、一番いい場所なんだよね。",
+            "audio": "/drama-audio/first-love-2022/episode-3/04.mp3",
+            "otherExamples": [
+              {
+                "english": "This is the closest shop.",
+                "japanese": "ここが一番近い店だよ。"
+              },
+              {
+                "english": "This is the nicest room.",
+                "japanese": "ここが一番いい部屋だよ。"
+              }
+            ]
+          },
+          {
+            "english": "Hmm! You pervert.",
+            "japanese": "この変態が！",
+            "audio": "/drama-audio/first-love-2022/episode-3/05.mp3",
+            "otherExamples": [
+              {
+                "english": "You liar!",
+                "japanese": "この嘘つき！"
+              },
+              {
+                "english": "You pervert!",
+                "japanese": "この変態！"
+              }
+            ]
+          },
+          {
+            "english": "Ah, what do you think I should do?",
+            "japanese": "ああ… 僕はどうすればいいんだ",
+            "audio": "/drama-audio/first-love-2022/episode-3/06.mp3",
+            "otherExamples": [
+              {
+                "english": "What do you think I should say?",
+                "japanese": "何と言えばいいと思う？"
+              },
+              {
+                "english": "What do you think I should buy?",
+                "japanese": "何を買えばいいと思う？"
+              }
+            ]
+          },
+          {
+            "english": "These are all the signs of first love.",
+            "japanese": "残念ながらそれはサインだ 初恋の",
+            "audio": "/drama-audio/first-love-2022/episode-3/07.mp3",
+            "otherExamples": [
+              {
+                "english": "These are all signs of spring.",
+                "japanese": "これらは全部、春の兆しだ。"
+              },
+              {
+                "english": "These are all signs of progress.",
+                "japanese": "これらは全部、進歩の証だ。"
+              }
+            ]
+          },
+          {
+            "english": "Though if you were older, you'd just be sick.",
+            "japanese": "年取ると それが 普通に病気って場合もあるけど",
+            "audio": "/drama-audio/first-love-2022/episode-3/08.mp3",
+            "otherExamples": [
+              {
+                "english": "If you were younger, you'd enjoy it.",
+                "japanese": "もっと若ければ楽しめるのに。"
+              },
+              {
+                "english": "If you were older, you'd understand.",
+                "japanese": "もっと年上なら分かるのに。"
+              }
+            ]
+          },
+          {
+            "english": "I should take off.",
+            "japanese": "じゃ そろそろ行くわ",
+            "audio": "/drama-audio/first-love-2022/episode-3/09.mp3",
+            "otherExamples": [
+              {
+                "english": "I should head home.",
+                "japanese": "そろそろ帰るね。"
+              },
+              {
+                "english": "I should get going.",
+                "japanese": "そろそろ行くね。"
+              }
+            ]
+          },
+          {
+            "english": "Yeah. I was about to just take it easy and rest a little.",
+            "japanese": "ん？ あっ ちょっとサボって 昼寝しようと思ってただけですから",
+            "audio": "/drama-audio/first-love-2022/episode-3/10.mp3",
+            "otherExamples": [
+              {
+                "english": "I was about to take a break.",
+                "japanese": "ちょうど休憩するところだった。"
+              },
+              {
+                "english": "I was about to rest a little.",
+                "japanese": "少し休むところだった。"
+              }
+            ]
+          },
+          {
+            "english": "You're approved. Congrats, miss.",
+            "japanese": "おめでとう 採用です",
+            "audio": "/drama-audio/first-love-2022/episode-3/11.mp3",
+            "otherExamples": [
+              {
+                "english": "You're approved. Welcome aboard.",
+                "japanese": "採用です。ようこそ。"
+              },
+              {
+                "english": "You're approved. Good luck!",
+                "japanese": "合格です。頑張って！"
+              }
+            ]
+          },
+          {
+            "english": "Please have your documents in by the due date.",
+            "japanese": "指定の日時までに 書類 出してくださいね",
+            "audio": "/drama-audio/first-love-2022/episode-3/12.mp3",
+            "otherExamples": [
+              {
+                "english": "Please have your form in by Friday.",
+                "japanese": "金曜までに用紙を出してください。"
+              },
+              {
+                "english": "Please have your report in by noon.",
+                "japanese": "正午までに報告書を出してください。"
+              }
+            ]
+          },
+          {
+            "english": "My life might change now, all because of you.",
+            "japanese": "也英さんのおかげで 人生 変わるかも",
+            "audio": "/drama-audio/first-love-2022/episode-3/13.mp3",
+            "otherExamples": [
+              {
+                "english": "My day changed because of you.",
+                "japanese": "あなたのおかげで一日が変わった。"
+              },
+              {
+                "english": "My life changed because of her.",
+                "japanese": "彼女のおかげで人生が変わった。"
+              }
+            ]
+          },
+          {
+            "english": "To find out if it's really fate, you just have to jump in.",
+            "japanese": "それが運命か知りたかったら 飛び込んでみるしかないよ",
+            "audio": "/drama-audio/first-love-2022/episode-3/14.mp3",
+            "otherExamples": [
+              {
+                "english": "To find out, you have to ask.",
+                "japanese": "知りたければ聞くしかない。"
+              },
+              {
+                "english": "To find out, you have to try.",
+                "japanese": "知りたければ試すしかない。"
+              }
+            ]
+          },
+          {
+            "english": "didn't recognize you.",
+            "japanese": "誰かと思って",
+            "audio": "/drama-audio/first-love-2022/episode-3/15.mp3",
+            "otherExamples": [
+              {
+                "english": "I didn't recognize him.",
+                "japanese": "彼だと分からなかった。"
+              },
+              {
+                "english": "I didn't recognize your voice.",
+                "japanese": "あなたの声だと分からなかった。"
+              }
+            ]
+          },
+          {
+            "english": "Do you mind if we join you?",
+            "japanese": "じゃあ ご一緒しちゃって いいすかね？",
+            "audio": "/drama-audio/first-love-2022/episode-3/16.mp3",
+            "otherExamples": [
+              {
+                "english": "Do you mind if I sit here?",
+                "japanese": "ここに座ってもいい？"
+              },
+              {
+                "english": "Do you mind if we come in?",
+                "japanese": "中に入ってもいい？"
+              }
+            ]
+          },
+          {
+            "english": "Yeah, she's so damn cute.",
+            "japanese": "也英っち 可愛いからな",
+            "audio": "/drama-audio/first-love-2022/episode-3/17.mp3",
+            "otherExamples": [
+              {
+                "english": "She's so damn funny.",
+                "japanese": "彼女、すごく面白いね。"
+              },
+              {
+                "english": "He's so damn kind.",
+                "japanese": "彼、すごく優しいね。"
+              }
+            ]
+          },
+          {
+            "english": "Uh, she's in some exchange program.",
+            "japanese": "えっ なんか留学 決まったって",
+            "audio": "/drama-audio/first-love-2022/episode-3/18.mp3",
+            "otherExamples": [
+              {
+                "english": "He's in some training program.",
+                "japanese": "彼は何かの研修に参加してる。"
+              },
+              {
+                "english": "She's in some art program.",
+                "japanese": "彼女は何かの美術プログラムに参加してる。"
+              }
+            ]
+          },
+          {
+            "english": "I wouldn't be able to handle that.",
+            "japanese": "俺なら ほっとけないな",
+            "audio": "/drama-audio/first-love-2022/episode-3/19.mp3",
+            "otherExamples": [
+              {
+                "english": "I wouldn't be able to say no.",
+                "japanese": "私なら断れない。"
+              },
+              {
+                "english": "I wouldn't be able to sleep.",
+                "japanese": "私なら眠れない。"
+              }
+            ]
+          },
+          {
+            "english": "All hung up over a stupid poser from Tokyo.",
+            "japanese": "東京の気取ったやつに夢中になって。",
+            "audio": "/drama-audio/first-love-2022/episode-3/20.mp3",
+            "otherExamples": [
+              {
+                "english": "All hung up over a stranger.",
+                "japanese": "見知らぬ人に夢中になって。"
+              },
+              {
+                "english": "All hung up over one mistake.",
+                "japanese": "たった一つのミスを引きずって。"
+              }
+            ]
+          },
+          {
+            "english": "What's this about studying abroad?",
+            "japanese": "つうか 何？ 留学って",
+            "audio": "/drama-audio/first-love-2022/episode-3/21.mp3",
+            "otherExamples": [
+              {
+                "english": "What's this about moving away?",
+                "japanese": "引っ越すってどういうこと？"
+              },
+              {
+                "english": "What's this about quitting?",
+                "japanese": "辞めるってどういうこと？"
+              }
+            ]
+          },
+          {
+            "english": "It's sentimental. I bought this with my first paycheck.",
+            "japanese": "初めてのお給料で 買ったやつなんです こいつ",
+            "audio": "/drama-audio/first-love-2022/episode-3/22.mp3",
+            "otherExamples": [
+              {
+                "english": "It's sentimental. My dad gave it to me.",
+                "japanese": "思い出の品なの。父がくれた。"
+              },
+              {
+                "english": "It's sentimental. I kept it for years.",
+                "japanese": "思い出の品なの。何年も持ってる。"
+              }
+            ]
+          },
+          {
+            "english": "I'm so impressed that you can fix a washing machine.",
+            "japanese": "でも びっくりしました 洗濯機 直しちゃうなんて",
+            "audio": "/drama-audio/first-love-2022/episode-3/23.mp3",
+            "otherExamples": [
+              {
+                "english": "I'm impressed you can cook.",
+                "japanese": "料理できるなんてすごいね。"
+              },
+              {
+                "english": "I'm impressed you fixed it.",
+                "japanese": "直せたなんてすごいね。"
+              }
+            ]
+          },
+          {
+            "english": "Maybe. Naporitan's beyond me, though.",
+            "japanese": "でもナポリタン作れないんで",
+            "audio": "/drama-audio/first-love-2022/episode-3/24.mp3",
+            "otherExamples": [
+              {
+                "english": "Cooking's beyond me, though.",
+                "japanese": "料理は私には無理だけど。"
+              },
+              {
+                "english": "Math's beyond me, though.",
+                "japanese": "数学は私には無理だけど。"
+              }
+            ]
+          },
+          {
+            "english": "Must sound pretty shocking.",
+            "japanese": "あっ ちょっ… びっくりしましたよね？",
+            "audio": "/drama-audio/first-love-2022/episode-3/25.mp3",
+            "otherExamples": [
+              {
+                "english": "Must sound pretty strange.",
+                "japanese": "かなり変に聞こえるよね。"
+              },
+              {
+                "english": "Must sound pretty scary.",
+                "japanese": "かなり怖く聞こえるよね。"
+              }
+            ]
+          },
+          {
+            "english": "The sound has always calmed me.",
+            "japanese": "この音 聞くと妙に落ち着くんです",
+            "audio": "/drama-audio/first-love-2022/episode-3/26.mp3",
+            "otherExamples": [
+              {
+                "english": "That song has always calmed me.",
+                "japanese": "あの歌はいつも私を落ち着かせてくれる。"
+              },
+              {
+                "english": "Her voice has always calmed me.",
+                "japanese": "彼女の声はいつも私を落ち着かせてくれる。"
+              }
+            ]
+          },
+          {
+            "english": "I guess that the place was also dirt cheap.",
+            "japanese": "あっ 安いっていうのが １番の決め手ですけど",
+            "audio": "/drama-audio/first-love-2022/episode-3/27.mp3",
+            "otherExamples": [
+              {
+                "english": "I guess the food was dirt cheap.",
+                "japanese": "食事もすごく安かったんだろうね。"
+              },
+              {
+                "english": "I guess the room was dirt cheap.",
+                "japanese": "部屋もすごく安かったんだろうね。"
+              }
+            ]
+          },
+          {
+            "english": "I just lost my temper and said those awful--",
+            "japanese": "カッとなって、ひどいことを言ってしまった…",
+            "audio": "/drama-audio/first-love-2022/episode-3/28.mp3",
+            "otherExamples": [
+              {
+                "english": "I lost my temper and said too much.",
+                "japanese": "カッとなって、言い過ぎた。"
+              },
+              {
+                "english": "I lost my temper and walked out.",
+                "japanese": "カッとなって、出て行った。"
+              }
+            ]
+          }
+        ]
       }
     ]
   }
