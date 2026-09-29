@@ -48,6 +48,10 @@ const state = {
   repeatTimer: null,
   advanceTimer: null,
   pendingNextIndex: -1,
+  conversationCycleNext: 0,
+  conversationFinished: false,
+  songTicketSessionActive: false,
+  songTicketStartPending: false,
 };
 
 const CARD_GRADS = [
@@ -84,6 +88,7 @@ const DEVICE_ID_KEY = 'phraseDeviceId';
 const TODAY_PHRASE_SET_KEY = 'todayPhraseSetV1';
 const TODAY_PHRASE_SCOPE_KEY = 'all-conversations';
 const TODAY_PHRASE_LIMIT = 15;
+const SONG_LISTENS_PER_PLAY = 5;
 
 let activeMediaType = '';
 
@@ -106,7 +111,7 @@ function setMediaSession(type, title, artist) {
   const actions = {
     play: () => {
       if (type !== activeMediaType) return;
-      if (type === 'song') document.getElementById('songAudioPlayer')?.play().catch(() => {});
+      if (type === 'song') toggleSongPlay();
       else if (type === 'conversation' && !state.isPlaying) togglePlay();
       else if (type === 'phrase') state.phrasePracticeAudio?.play().catch(() => {});
     },
@@ -149,6 +154,7 @@ function clearMediaSession(type) {
 
 function stopSongAudio() {
   document.getElementById('songAudioPlayer')?.pause();
+  state.songTicketSessionActive = false;
   clearMediaSession('song');
 }
 
@@ -232,6 +238,7 @@ function showShadowing(song) {
   state.view = 'shadowing';
   state.showJapanese = false;
   state.activeTab = 'conv';
+  state.songTicketSessionActive = false;
   initAudio(song);
   renderShadowing();
 }
@@ -1418,6 +1425,57 @@ function hasConversationAudio(song) {
   return song.conversationAudioStatus !== 'text_only' && song.conversation?.some(turn => turn.sentences?.some(sentence => sentence.audio));
 }
 
+function songTicketKey(song = state.currentSong) {
+  const day = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Tokyo', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
+  return `songTicketsV1:${song?.folderName || song?.id}:${day}`;
+}
+
+function getSongTickets() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(songTicketKey()) || '{}');
+    return { listens: Math.max(0, Number(saved.listens) || 0), used: Math.max(0, Number(saved.used) || 0) };
+  } catch {
+    return { listens: 0, used: 0 };
+  }
+}
+
+function saveSongTickets(tickets) {
+  try { localStorage.setItem(songTicketKey(), JSON.stringify(tickets)); } catch {}
+  updateSongTicketDisplay();
+}
+
+function availableSongTickets(tickets = getSongTickets()) {
+  return Math.max(0, Math.floor(tickets.listens / SONG_LISTENS_PER_PLAY) - tickets.used);
+}
+
+function updateSongTicketDisplay() {
+  const tickets = getSongTickets();
+  const available = availableSongTickets(tickets);
+  const progress = tickets.listens % SONG_LISTENS_PER_PLAY;
+  document.querySelectorAll('.song-ticket-count').forEach(el => { el.textContent = `${available}回`; });
+  document.querySelectorAll('.song-ticket-progress').forEach(el => { el.textContent = `${progress} / ${SONG_LISTENS_PER_PLAY}回`; });
+  document.querySelectorAll('.song-ticket-bar-fill').forEach(el => { el.style.width = `${progress / SONG_LISTENS_PER_PLAY * 100}%`; });
+  document.querySelectorAll('.song-ticket-listens').forEach(el => { el.textContent = `今日の会話：${tickets.listens}回完了`; });
+  const start = document.getElementById('songTicketStart');
+  if (start) {
+    start.disabled = available === 0 && !state.songTicketSessionActive;
+    start.textContent = state.songTicketSessionActive ? 'Songを再開' : available > 0 ? `Songを聞く（残り${available}回）` : 'あと会話を聞いて解放';
+  }
+  const play = document.getElementById('songPlayBtn');
+  if (play) play.disabled = available === 0 && !state.songTicketSessionActive;
+}
+
+function renderSongTicketCard(withButton = false) {
+  return `<section class="song-ticket-card" aria-label="今日のSong再生券">
+    <div class="song-ticket-heading"><span>♫ 今日のSong再生券</span><strong class="song-ticket-count">0回</strong></div>
+    <p class="song-ticket-rule">会話を最後まで5回聞くと、Songを1回再生できます。</p>
+    <div class="song-ticket-progress-row"><span>次の1回まで</span><strong class="song-ticket-progress">0 / 5回</strong></div>
+    <div class="song-ticket-bar"><div class="song-ticket-bar-fill"></div></div>
+    <p class="song-ticket-listens">今日の会話：0回完了</p>
+    ${withButton ? '<button class="song-ticket-start" id="songTicketStart" onclick="startSongFromTicket()" disabled>あと会話を聞いて解放</button>' : ''}
+  </section>`;
+}
+
 function renderShadowing() {
   const song = state.currentSong;
   const hasAudio = hasConversationAudio(song);
@@ -1452,7 +1510,7 @@ function renderShadowing() {
   if (song.hasLocalAudio) {
     mediaHtml = `
       <div class="song-audio-player">
-        <audio id="songAudioPlayer" src="/songs/${encodeURIComponent(song.folderName)}/original.mp3" onplay="onSongAudioPlay()" onpause="onSongAudioPause()" onended="updateSongPlayBtn(false); setMediaPlaybackState(false); updateLyricSync()" ontimeupdate="updateLyricSync()" onseeked="updateLyricSync()"></audio>
+        <audio id="songAudioPlayer" src="/songs/${encodeURIComponent(song.folderName)}/original.mp3" onplay="onSongAudioPlay()" onpause="onSongAudioPause()" onended="onSongAudioEnded()" ontimeupdate="updateLyricSync()" onseeked="updateLyricSync()"></audio>
         <div class="song-controls">
           <button class="song-ctrl-btn" onclick="skipSongAudio(-5)" title="5秒戻る">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 17l-5-5 5-5M18 17l-5-5 5-5"/></svg>
@@ -1462,7 +1520,7 @@ function renderShadowing() {
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
             <span>1s</span>
           </button>
-          <button class="song-ctrl-play" id="songPlayBtn" onclick="toggleSongPlay()">
+          <button class="song-ctrl-play" id="songPlayBtn" onclick="toggleSongPlay()" aria-label="Songを再生">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
           </button>
           <button class="song-ctrl-btn" onclick="skipSongAudio(1)" title="1秒進む">
@@ -1480,7 +1538,7 @@ function renderShadowing() {
     mediaHtml = `<div class="yt-embed-bottom"><iframe id="ytFrame" src="" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>`;
   }
   const timingNote = song.lyricTimingStatus === 'estimated' ? '<p class="lyric-sync-note">仮同期：歌詞の時刻は概算です</p>' : '';
-  const songTabHtml = `${timingNote}<div class="lyrics-display" ${song.hasLocalAudio ? 'style="padding-bottom: 90px;"' : ''}>${lyricsHtml}</div>${mediaHtml}`;
+  const songTabHtml = `${renderSongTicketCard(true)}${timingNote}<div class="lyrics-display" ${song.hasLocalAudio ? 'style="padding-bottom: 90px;"' : ''}>${lyricsHtml}</div>${mediaHtml}`;
 
   app.innerHTML = `
     <div class="shadowing-view">
@@ -1505,7 +1563,7 @@ function renderShadowing() {
         <span class="setting-text">${esc(song.setting)}</span>
       </div>
       ${renderLyricConnections(song.lyricConnections)}
-      <div class="conversation-area" id="convArea">${hasAudio ? '' : '<p class="text-only-notice">会話文を新しい方針で作成しました。対応する会話音声はまだありません。</p>'}${turnsHtml}</div>
+      <div class="conversation-area" id="convArea">${hasAudio ? renderSongTicketCard() : '<p class="text-only-notice">会話文を新しい方針で作成しました。対応する会話音声はまだありません。</p>'}${turnsHtml}</div>
       <div class="song-area hidden" id="songArea">${songTabHtml}</div>
       <div class="play-controls conversation-player ${hasAudio ? '' : 'hidden'}" id="playControls">
         <div class="player-dock">
@@ -1532,6 +1590,7 @@ function renderShadowing() {
       seekFromRow(event);
     });
   }
+  updateSongTicketDisplay();
 }
 
 function lyricPairOpenTag(song, index, line) {
@@ -1602,9 +1661,13 @@ function seekToLyric(index) {
   const timing = state.currentSong?.lyricTimings?.find(row => row.index === index);
   const audio = document.getElementById('songAudioPlayer');
   if (!timing || !audio) return;
+  if (!state.songTicketSessionActive && availableSongTickets() === 0) {
+    showToast('会話を5回聞くとSongを再生できます');
+    return;
+  }
   audio.currentTime = timing.start;
   updateLyricSync();
-  if (audio.paused) audio.play().catch(() => {});
+  if (audio.paused) startSongPlayback();
 }
 
 function updateLyricSync() {
@@ -1652,13 +1715,7 @@ function switchTab(tab) {
   tabSong?.classList.toggle('active', !isConv);
   if (!isConv) updateLyricSync();
 
-  // Load YouTube iframe lazily
-  if (!isConv && state.currentSong.videoId && !state.currentSong.hasLocalAudio) {
-    const frame = document.getElementById('ytFrame');
-    if (frame && !frame.src.includes('youtube')) {
-      frame.src = `https://www.youtube.com/embed/${state.currentSong.videoId}?autoplay=1`;
-    }
-  } else if (isConv) {
+  if (isConv) {
     // Pause YouTube when switching back
     const frame = document.getElementById('ytFrame');
     if (frame) frame.src = '';
@@ -1679,10 +1736,15 @@ function updateSongPlayBtn(isPlaying) {
       ? '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>' // Pause icon
       : '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>'; // Play icon
     btn.classList.toggle('playing', isPlaying);
+    btn.setAttribute('aria-label', isPlaying ? 'Songを一時停止' : 'Songを再生');
   }
 }
 
 function onSongAudioPlay() {
+  if (!state.songTicketSessionActive) {
+    document.getElementById('songAudioPlayer')?.pause();
+    return;
+  }
   stopAudio();
   stopPhrasePracticeAudio();
   setMediaSession('song', state.currentSong?.songName || 'Song', state.currentSong?.artist || 'Lyric Shadows');
@@ -1695,11 +1757,57 @@ function onSongAudioPause() {
   updateSongPlayBtn(false);
 }
 
+function onSongAudioEnded() {
+  state.songTicketSessionActive = false;
+  updateSongPlayBtn(false);
+  setMediaPlaybackState(false);
+  updateLyricSync();
+  updateSongTicketDisplay();
+}
+
+async function startSongPlayback() {
+  const audio = document.getElementById('songAudioPlayer');
+  if (!audio || state.songTicketStartPending) return;
+  const newSession = !state.songTicketSessionActive;
+  if (newSession && availableSongTickets() === 0) {
+    showToast('会話を5回聞くとSongを再生できます');
+    return;
+  }
+  state.songTicketStartPending = true;
+  state.songTicketSessionActive = true;
+  if (newSession && audio.ended) audio.currentTime = 0;
+  try {
+    await audio.play();
+    if (newSession) {
+      const tickets = getSongTickets();
+      tickets.used += 1;
+      saveSongTickets(tickets);
+    }
+  } catch {
+    if (newSession) state.songTicketSessionActive = false;
+    updateSongTicketDisplay();
+  } finally {
+    state.songTicketStartPending = false;
+  }
+}
+
+function startSongFromTicket() {
+  if (state.currentSong?.hasLocalAudio) {
+    startSongPlayback();
+  } else if (state.currentSong?.videoId && availableSongTickets() > 0) {
+    const tickets = getSongTickets();
+    tickets.used += 1;
+    saveSongTickets(tickets);
+    const frame = document.getElementById('ytFrame');
+    if (frame) frame.src = `https://www.youtube.com/embed/${encodeURIComponent(state.currentSong.videoId)}?autoplay=1`;
+  }
+}
+
 function toggleSongPlay() {
   const audio = document.getElementById('songAudioPlayer');
   if (!audio) return;
   if (audio.paused) {
-    audio.play();
+    startSongPlayback();
   } else {
     audio.pause();
   }
@@ -1749,6 +1857,8 @@ function initAudio(song) {
   state.audioSources = [];
   state.currentIndex = -1;
   state.isPlaying = false;
+  state.conversationCycleNext = 0;
+  state.conversationFinished = false;
 
   if (!hasConversationAudio(song)) return;
 
@@ -1768,6 +1878,16 @@ function initAudio(song) {
   state.conversationAudio.onended = () => {
     if (!state.isPlaying) return;
     const i = state.currentIndex;
+    if (i === state.conversationCycleNext) {
+      state.conversationCycleNext += 1;
+      if (state.conversationCycleNext === state.audioSources.length) {
+        const tickets = getSongTickets();
+        tickets.listens += 1;
+        saveSongTickets(tickets);
+        state.conversationCycleNext = 0;
+        showToast('会話を1回聞き終えました');
+      }
+    }
     let next = -1;
     let delay = 0;
     if (state.repeatMode === 'one') {
@@ -1783,24 +1903,27 @@ function initAudio(song) {
     }
     if (next < 0) {
       state.isPlaying = false;
+      state.conversationFinished = true;
       setMediaPlaybackState(false);
       updatePlayBtn();
       return;
     }
     if (document.hidden || delay === 0) {
-      playSentence(next);
+      playSentence(next, 'automatic');
     } else {
       state.pendingNextIndex = next;
       state.advanceTimer = setTimeout(() => {
         state.advanceTimer = null;
-        if (state.isPlaying) playSentence(next);
+        if (state.isPlaying) playSentence(next, 'automatic');
       }, delay);
     }
   };
 }
 
-function playSentence(idx) {
+function playSentence(idx, mode = 'manual') {
   if (idx < 0 || idx >= state.audioSources.length) return;
+  if (mode === 'manual') state.conversationCycleNext = idx === 0 ? 0 : -1;
+  state.conversationFinished = false;
   clearTimeout(state.advanceTimer);
   clearTimeout(state.repeatTimer);
   state.advanceTimer = null;
@@ -1818,6 +1941,7 @@ function playSentence(idx) {
   }).catch(() => {
     if (request !== state.conversationPlayRequest) return;
     state.isPlaying = false;
+    state.conversationCycleNext = -1;
     setMediaPlaybackState(false);
     updatePlayBtn();
   });
@@ -1839,8 +1963,9 @@ function togglePlay() {
     setMediaPlaybackState(false);
     updatePlayBtn();
   } else {
-    const idx = state.pendingNextIndex >= 0 ? state.pendingNextIndex : state.currentIndex < 0 ? 0 : state.currentIndex;
-    playSentence(idx);
+    const pending = state.pendingNextIndex >= 0;
+    const idx = pending ? state.pendingNextIndex : state.conversationFinished || state.currentIndex < 0 ? 0 : state.currentIndex;
+    playSentence(idx, pending ? 'automatic' : state.conversationFinished || state.currentIndex < 0 ? 'manual' : 'resume');
   }
 }
 
@@ -1874,6 +1999,8 @@ function stopAudio() {
   clearTimeout(state.advanceTimer);
   state.advanceTimer = null;
   state.pendingNextIndex = -1;
+  state.conversationCycleNext = 0;
+  state.conversationFinished = false;
   if (state.conversationAudio) {
     state.conversationAudio.pause();
     state.conversationAudio.removeAttribute('src');

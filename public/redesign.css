@@ -727,6 +727,46 @@ button:focus-visible { outline: 3px solid var(--coral); outline-offset: 3px; }
   .page-shadowing .player-dock { grid-template-columns: minmax(0, 1fr) 76px minmax(0, 1fr); }
 }
 .page-shadowing .song-area { color: var(--ink); }
+.page-shadowing .song-ticket-card {
+  width: min(820px, calc(100% - 32px));
+  margin: 16px auto 20px;
+  padding: 18px 20px;
+  border: 1px solid #eadccf;
+  border-radius: 18px;
+  background: #fffdfa;
+  color: var(--ink);
+  box-shadow: 0 6px 18px rgba(48, 44, 37, .04);
+}
+.page-shadowing .song-ticket-heading,
+.page-shadowing .song-ticket-progress-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.page-shadowing .song-ticket-heading { font-weight: 800; font-size: 1rem; }
+.page-shadowing .song-ticket-heading strong { color: var(--coral-dark); font-size: 1.4rem; white-space: nowrap; }
+.page-shadowing .song-ticket-rule,
+.page-shadowing .song-ticket-listens { color: var(--ink-soft); font-size: .8rem; line-height: 1.5; }
+.page-shadowing .song-ticket-rule { margin: 6px 0 16px; }
+.page-shadowing .song-ticket-listens { margin: 8px 0 0; }
+.page-shadowing .song-ticket-progress-row { font-size: .78rem; }
+.page-shadowing .song-ticket-progress-row strong { color: var(--coral-dark); }
+.page-shadowing .song-ticket-bar { height: 8px; margin-top: 8px; overflow: hidden; border-radius: 999px; background: #eee7de; }
+.page-shadowing .song-ticket-bar-fill { height: 100%; border-radius: inherit; background: var(--coral); transition: width .25s; }
+.page-shadowing .song-ticket-start {
+  width: 100%;
+  min-height: 44px;
+  margin-top: 16px;
+  border: 0;
+  border-radius: 12px;
+  background: var(--coral);
+  color: white;
+  font: 700 .9rem var(--sans);
+  cursor: pointer;
+}
+.page-shadowing .song-ticket-start:disabled { background: #e6ded5; color: #827d78; cursor: default; }
+.page-shadowing .song-ctrl-play:disabled { opacity: .45; cursor: default; }
 .page-shadowing .lyric-en { color: var(--ink); }
 .page-shadowing .lyric-ja { color: var(--ink-soft); }
 .page-shadowing .lyric-pair.lyric-seek {
