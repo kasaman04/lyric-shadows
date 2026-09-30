@@ -95,7 +95,7 @@ const TODAY_PHRASE_SET_KEY = 'todayPhraseSetV1';
 const TODAY_PHRASE_SCOPE_KEY = 'all-conversations';
 const TODAY_PHRASE_LIMIT = 15;
 const SONG_LISTENS_PER_PLAY = 5;
-const DRAMA_ROUNDS_PER_CARD = 5;
+const DRAMA_ROUNDS_PER_CARD = 3;
 const DRAMA_ROUNDS_KEY = 'dramaEpisodeRoundsV1';
 const LAST_QUOTE_CARD_KEY = 'lastDramaQuoteCardV1';
 
@@ -691,7 +691,7 @@ function renderDramaReward() {
     : `<div class="quote-reward-art quote-reward-art-${esc(card.category)}" role="img" aria-label="${esc(card.title)}をイメージしたカード背景"><span class="quote-reward-art-title">${esc(card.title)}</span></div>`;
   app.innerHTML = `<main class="quote-reward-shell">
     <p class="quote-reward-eyebrow">DRAMA</p>
-    <h1>5周達成！</h1>
+    <h1>3周達成！</h1>
     <p class="quote-reward-intro">ランダム名言カードを獲得</p>
     <article class="quote-reward-card">
       ${art}
