@@ -7,6 +7,12 @@ const state = {
   voices: [],
   phrases: [],
   dramas: [],
+  quoteCards: [],
+  dramaRounds: {},
+  dramaReward: null,
+  quoteAudio: null,
+  quoteAudioRequest: 0,
+  quoteAudioStatus: '',
   currentDramaId: null,
   currentEpisodeId: null,
   dramaPlaylistActive: false,
@@ -20,7 +26,7 @@ const state = {
   currentPhrase: null,
   showJapanese: false,
   activeTab: 'conv',   // 'conv' | 'song'
-  homeFilter: 'A',     // 'A' | 'C'
+  homeFilter: 'A',     // 'A' | 'C' | 'D'
   phrasePack: '基本',
   phraseCategory: 'すべて',
   hiddenPhraseIds: new Set(),
@@ -89,6 +95,9 @@ const TODAY_PHRASE_SET_KEY = 'todayPhraseSetV1';
 const TODAY_PHRASE_SCOPE_KEY = 'all-conversations';
 const TODAY_PHRASE_LIMIT = 15;
 const SONG_LISTENS_PER_PLAY = 5;
+const DRAMA_ROUNDS_PER_CARD = 5;
+const DRAMA_ROUNDS_KEY = 'dramaEpisodeRoundsV1';
+const LAST_QUOTE_CARD_KEY = 'lastDramaQuoteCardV1';
 
 let activeMediaType = '';
 
@@ -114,12 +123,14 @@ function setMediaSession(type, title, artist) {
       if (type === 'song') toggleSongPlay();
       else if (type === 'conversation' && !state.isPlaying) togglePlay();
       else if (type === 'phrase') state.phrasePracticeAudio?.play().catch(() => {});
+      else if (type === 'quote') playQuoteCardAudio();
     },
     pause: () => {
       if (type !== activeMediaType) return;
       if (type === 'song') document.getElementById('songAudioPlayer')?.pause();
       else if (type === 'conversation' && state.isPlaying) togglePlay();
       else if (type === 'phrase') state.phrasePracticeAudio?.pause();
+      else if (type === 'quote') state.quoteAudio?.pause();
     },
     previoustrack: type === 'song' ? null : () => {
       if (type !== activeMediaType) return;
@@ -167,6 +178,8 @@ async function init() {
   await loadPhraseImages();
   state.phrases = Array.isArray(window.CONVERSATION_PHRASES) ? window.CONVERSATION_PHRASES : [];
   state.dramas = Array.isArray(window.DRAMAS) ? window.DRAMAS : [];
+  await loadQuoteCards();
+  loadDramaRounds();
   applyGeneratedPhraseAudio();
   loadHiddenPhrases();
   loadSavedPhrases();
@@ -202,6 +215,24 @@ async function loadPhraseImages() {
   }
 }
 
+async function loadQuoteCards() {
+  try {
+    const res = await fetch('/manga-quote-cards.json');
+    state.quoteCards = res.ok ? await res.json() : [];
+  } catch {
+    state.quoteCards = [];
+  }
+}
+
+function loadDramaRounds() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(DRAMA_ROUNDS_KEY) || '{}');
+    state.dramaRounds = saved && typeof saved === 'object' && !Array.isArray(saved) ? saved : {};
+  } catch {
+    state.dramaRounds = {};
+  }
+}
+
 function applyGeneratedPhraseAudio() {
   const generatedAudio = window.GENERATED_PHRASE_AUDIO || {};
   const dialogueAudio = window.GENERATED_PHRASE_DIALOGUE || {};
@@ -222,6 +253,8 @@ function showHome() {
   stopPhrasePracticeAudio();
   stopSongAudio();
   stopDramaAudio();
+  stopQuoteCardAudio();
+  state.dramaReward = null;
   state.currentSong = null;
   state.currentPhrase = null;
   state.currentDramaId = null;
@@ -302,7 +335,7 @@ function renderHome() {
       </section>
       <nav class="home-tabs" aria-label="学習方法">
         <button class="home-tab ${state.homeFilter === 'A' ? 'active' : ''}" onclick="setHomeFilter('A')" aria-current="${state.homeFilter === 'A' ? 'page' : 'false'}">♫ <span>洋楽で学ぶ</span></button>
-        <button class="home-tab ${state.homeFilter === 'C' ? 'active' : ''}" onclick="setHomeFilter('C')" aria-current="${state.homeFilter === 'C' ? 'page' : 'false'}">☏ <span>会話フレーズ</span></button>
+        <button class="home-tab ${state.homeFilter === 'C' ? 'active' : ''}" onclick="setHomeFilter('C')" aria-current="${state.homeFilter === 'C' ? 'page' : 'false'}">💬 <span>会話フレーズ</span></button>
         <button class="home-tab ${state.homeFilter === 'D' ? 'active' : ''}" onclick="setHomeFilter('D')" aria-current="${state.homeFilter === 'D' ? 'page' : 'false'}">🎬 <span>ドラマ</span></button>
       </nav>
     ${renderSongGrid()}
@@ -322,6 +355,8 @@ function renderHome() {
 function setHomeFilter(filter) {
   if (!['A', 'C', 'D'].includes(filter)) filter = 'A';
   stopDramaAudio();
+  stopQuoteCardAudio();
+  state.dramaReward = null;
   state.homeFilter = filter;
   state.currentDramaId = null;
   state.currentEpisodeId = null;
@@ -341,6 +376,8 @@ function stopDramaAudio() {
 
 function showDrama(dramaId) {
   stopDramaAudio();
+  stopQuoteCardAudio();
+  state.dramaReward = null;
   state.currentDramaId = dramaId;
   state.currentEpisodeId = null;
   renderHome();
@@ -348,8 +385,107 @@ function showDrama(dramaId) {
 
 function showDramaEpisode(episodeId) {
   stopDramaAudio();
+  stopQuoteCardAudio();
+  state.dramaReward = null;
   state.currentEpisodeId = episodeId;
   renderHome();
+}
+
+function dramaRoundKey() {
+  return `${state.currentDramaId}:${state.currentEpisodeId}`;
+}
+
+function dramaRoundCount(dramaId, episodeId) {
+  const count = Number(state.dramaRounds[`${dramaId}:${episodeId}`]);
+  return Number.isSafeInteger(count) && count > 0 ? count : 0;
+}
+
+function completeDramaRound() {
+  const key = dramaRoundKey();
+  const count = dramaRoundCount(state.currentDramaId, state.currentEpisodeId) + 1;
+  state.dramaRounds[key] = count;
+  try { localStorage.setItem(DRAMA_ROUNDS_KEY, JSON.stringify(state.dramaRounds)); } catch {}
+  if (count % DRAMA_ROUNDS_PER_CARD === 0 && state.quoteCards.length) {
+    showRandomQuoteCard();
+    return true;
+  }
+  const progress = document.getElementById('dramaRoundProgress');
+  if (progress) progress.textContent = `次のカードまで ${count % DRAMA_ROUNDS_PER_CARD}/${DRAMA_ROUNDS_PER_CARD}周`;
+  return false;
+}
+
+function showRandomQuoteCard() {
+  stopDramaAudio();
+  let lastId = '';
+  try { lastId = localStorage.getItem(LAST_QUOTE_CARD_KEY) || ''; } catch {}
+  const choices = state.quoteCards.filter(card => card.id !== lastId);
+  const pool = choices.length ? choices : state.quoteCards;
+  const card = pool[Math.floor(Math.random() * pool.length)];
+  if (!card) return;
+  try { localStorage.setItem(LAST_QUOTE_CARD_KEY, card.id); } catch {}
+  state.dramaReward = card;
+  state.view = 'dramaReward';
+  state.quoteAudioStatus = '音声を準備中…';
+  renderDramaReward();
+  window.scrollTo(0, 0);
+  playQuoteCardAudio();
+}
+
+function stopQuoteCardAudio() {
+  state.quoteAudioRequest += 1;
+  if (state.quoteAudio) {
+    state.quoteAudio.onplaying = null;
+    state.quoteAudio.onended = null;
+    state.quoteAudio.onerror = null;
+    state.quoteAudio.pause();
+    state.quoteAudio = null;
+  }
+  clearMediaSession('quote');
+}
+
+function updateQuoteAudioStatus(text) {
+  state.quoteAudioStatus = text;
+  const label = document.getElementById('quoteAudioStatus');
+  if (label) label.textContent = text;
+}
+
+function playQuoteCardAudio() {
+  const card = state.dramaReward;
+  if (!card) return;
+  stopQuoteCardAudio();
+  const request = state.quoteAudioRequest;
+  const audio = new Audio(card.audio || `/api/quote-cards/${encodeURIComponent(card.id)}/audio`);
+  state.quoteAudio = audio;
+  updateQuoteAudioStatus('音声を準備中…');
+  audio.onplaying = () => {
+    if (request !== state.quoteAudioRequest) return;
+    setMediaSession('quote', card.english, card.title);
+    setMediaPlaybackState(true);
+    updateQuoteAudioStatus('音声を再生中');
+  };
+  audio.onended = () => {
+    if (request !== state.quoteAudioRequest) return;
+    setMediaPlaybackState(false);
+    updateQuoteAudioStatus('再生が終わりました');
+  };
+  audio.onerror = () => {
+    if (request !== state.quoteAudioRequest) return;
+    setMediaPlaybackState(false);
+    updateQuoteAudioStatus('音声を再生できませんでした');
+  };
+  audio.play().catch(() => {
+    if (request !== state.quoteAudioRequest) return;
+    updateQuoteAudioStatus('もう一度再生を押してください');
+  });
+}
+
+function returnToDramaPhrases() {
+  stopQuoteCardAudio();
+  state.dramaReward = null;
+  state.view = 'home';
+  state.homeFilter = 'D';
+  renderHome();
+  document.querySelector('.drama-library')?.scrollIntoView({ block: 'start' });
 }
 
 function onDramaAudioPlay(activeAudio) {
@@ -393,9 +529,12 @@ function onDramaAudioEnded(audio) {
   const nextIndex = state.dramaPlaylistIndex + 1;
   if (nextIndex < audios.length) {
     playDramaAudioAt(nextIndex);
-  } else if (state.dramaRepeat) {
-    playDramaAudioAt(0, true);
   } else {
+    if (completeDramaRound()) return;
+    if (state.dramaRepeat) {
+      playDramaAudioAt(0, true);
+      return;
+    }
     state.dramaPlaylistActive = false;
     state.dramaPlaylistIndex = 0;
     updateDramaPlaybackButtons();
@@ -542,6 +681,38 @@ function renderSongGrid() {
   return `<section class="home-library"><div class="section-heading"><div><p class="section-eyebrow">LEARN WITH MUSIC</p><h2>洋楽から学ぶ</h2></div><span>${filteredSongs.length}曲</span></div><div class="song-grid">${cards}</div></section>`;
 }
 
+function renderDramaReward() {
+  const card = state.dramaReward;
+  if (!card) return;
+  const app = document.getElementById('app');
+  app.className = 'page-drama-reward';
+  const art = card.art
+    ? `<div class="quote-reward-art has-art" role="img" aria-label="${esc(card.title)}の名言カード画像" style="background-image:url('${esc(card.art)}')"></div>`
+    : `<div class="quote-reward-art quote-reward-art-${esc(card.category)}" role="img" aria-label="${esc(card.title)}をイメージしたカード背景"><span class="quote-reward-art-title">${esc(card.title)}</span></div>`;
+  app.innerHTML = `<main class="quote-reward-shell">
+    <p class="quote-reward-eyebrow">DRAMA</p>
+    <h1>5周達成！</h1>
+    <p class="quote-reward-intro">ランダム名言カードを獲得</p>
+    <article class="quote-reward-card">
+      ${art}
+      <div class="quote-reward-copy">
+        <p class="quote-reward-english" lang="en">${esc(card.english)}</p>
+        <p class="quote-reward-japanese" lang="ja">${esc(card.japanese)}</p>
+        <p class="quote-reward-source">${esc(card.title)}</p>
+      </div>
+    </article>
+    <div class="quote-reward-audio" aria-live="polite">
+      <span class="quote-reward-speaker" aria-hidden="true">🔊</span>
+      <span class="quote-reward-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+      <span id="quoteAudioStatus">${esc(state.quoteAudioStatus)}</span>
+    </div>
+    <div class="quote-reward-actions">
+      <button class="quote-reward-replay" type="button" onclick="playQuoteCardAudio()">↻ <span>もう一度再生</span></button>
+      <button class="quote-reward-back" type="button" onclick="returnToDramaPhrases()">← <span>セリフに戻る</span></button>
+    </div>
+  </main>`;
+}
+
 function renderDramaGrid() {
   const drama = state.dramas.find(item => item.id === state.currentDramaId);
   const episode = drama?.episodes.find(item => item.id === state.currentEpisodeId);
@@ -575,6 +746,7 @@ function renderDramaGrid() {
       <p class="section-eyebrow">DRAMA PHRASES</p>
       <h2 class="drama-page-title">${esc(drama.title)}</h2>
       <p class="drama-page-subtitle">第${episode.number}話 ${esc(episode.title)}</p>
+      <p id="dramaRoundProgress" class="drama-round-progress">次のカードまで ${dramaRoundCount(drama.id, episode.id) % DRAMA_ROUNDS_PER_CARD}/${DRAMA_ROUNDS_PER_CARD}周</p>
       <div class="section-heading drama-section-heading"><h3>この回の音声</h3><span>${episode.clips.length}件</span></div>
       <div class="drama-playback-controls">
         <button id="dramaPlayAll" class="drama-play-all" onclick="toggleDramaPlayAll()" aria-label="まとめて再生">▶ <span>まとめて再生</span></button>
@@ -589,7 +761,7 @@ function renderDramaGrid() {
       <button class="drama-episode" onclick="showDramaEpisode('${item.id}')">
         <span class="drama-episode-number">第${item.number}話</span>
         <span class="drama-episode-title">${esc(item.title)}</span>
-        <span class="drama-episode-count">音声${item.clips.length}件</span>
+        <span class="drama-episode-count">音声${item.clips.length}件 · ${dramaRoundCount(drama.id, item.id) % DRAMA_ROUNDS_PER_CARD}/${DRAMA_ROUNDS_PER_CARD}周</span>
         <span class="drama-episode-arrow" aria-hidden="true">›</span>
       </button>`).join('');
     return `<section class="home-library drama-library">

@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>漫画の名言カード・制作プレビュー</title>
+  <style>
+    :root { font-family: system-ui, -apple-system, "Noto Sans JP", sans-serif; color: #f2f4f2; background: #111a25; }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    main { width: min(1320px, 100%); margin: auto; padding: 38px 22px 76px; }
+    .eyebrow { color: #99b6a7; font-size: 12px; font-weight: 800; letter-spacing: .22em; }
+    h1 { margin: 10px 0 8px; font-size: clamp(28px, 4vw, 44px); line-height: 1.2; }
+    .intro { color: #b8c2c7; font-size: 14px; line-height: 1.7; }
+    .toolbar { display: flex; align-items: center; gap: 14px; margin: 26px 0 16px; }
+    input { width: min(440px, 100%); padding: 12px 15px; border: 1px solid #48586a; border-radius: 11px; background: #1e2a38; color: white; font: inherit; }
+    input::placeholder { color: #91a0aa; }
+    .count { color: #aebdc2; font-size: 13px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); gap: 26px; }
+    .card { margin: 0; overflow: hidden; border: 1px solid #344454; border-radius: 17px; background: #1b2937; box-shadow: 0 16px 36px #0004; }
+    .card a { display: block; line-height: 0; }
+    .card img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: contain; background: #101a27; }
+    figcaption { display: flex; justify-content: space-between; gap: 10px; padding: 13px 15px 10px; font-size: 13px; }
+    figcaption strong { font-weight: 700; }
+    figcaption span { color: #a9b9c2; text-align: right; }
+    .play { display: block; width: calc(100% - 30px); margin: 0 15px 15px; padding: 9px 12px; border: 1px solid #5b788a; border-radius: 9px; background: #284457; color: white; font: inherit; font-size: 13px; cursor: pointer; }
+    .play:hover { background: #365a70; }
+    .play:disabled { opacity: .55; cursor: default; }
+    .empty { color: #b8c2c7; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="eyebrow">MANGA QUOTE CARDS</div>
+    <h1>漫画の名言カード</h1>
+    <p class="intro">英語をメイン、日本語をサブにした全100枚。画像を押すと原寸で確認できます。各カードの音声も再生できます。</p>
+    <div class="toolbar">
+      <input id="search" type="search" placeholder="作品名・キャラクター・セリフで検索" aria-label="カードを検索">
+      <span class="count" id="count">読み込み中…</span>
+    </div>
+    <div class="grid" id="grid"></div>
+  </main>
+  <script>
+    const grid = document.getElementById('grid');
+    const count = document.getElementById('count');
+    const search = document.getElementById('search');
+    let cards = [];
+    let playingAudio = null;
+    let playingButton = null;
+    function stopAudio() {
+      if (playingAudio) { playingAudio.pause(); playingAudio = null; }
+      if (playingButton) { playingButton.textContent = '▶ 音声を再生'; playingButton = null; }
+    }
+    function render() {
+      stopAudio();
+      const term = search.value.trim().toLocaleLowerCase();
+      const visible = cards.filter(card => [card.title, card.character, card.english, card.japanese]
+        .some(value => value.toLocaleLowerCase().includes(term)));
+      count.textContent = `${visible.length} / ${cards.length}枚`;
+      grid.replaceChildren();
+      if (!visible.length) {
+        const empty = document.createElement('p');
+        empty.className = 'empty';
+        empty.textContent = '一致するカードがありません';
+        grid.append(empty);
+        return;
+      }
+      const fragment = document.createDocumentFragment();
+      visible.forEach((card, index) => {
+        const figure = document.createElement('figure');
+        figure.className = 'card';
+        const link = document.createElement('a');
+        link.href = card.art;
+        link.target = '_blank';
+        link.rel = 'noopener';
+        link.setAttribute('aria-label', `${card.title}、${card.character}のカードを原寸で開く`);
+        const img = document.createElement('img');
+        img.src = card.art;
+        img.alt = `${card.title} ${card.character}：${card.english} ${card.japanese}`;
+        img.loading = index < 4 ? 'eager' : 'lazy';
+        link.append(img);
+        const caption = document.createElement('figcaption');
+        const title = document.createElement('strong');
+        title.textContent = card.title;
+        const character = document.createElement('span');
+        character.textContent = card.character;
+        caption.append(title, character);
+        const play = document.createElement('button');
+        play.className = 'play';
+        play.type = 'button';
+        play.textContent = card.audio ? '▶ 音声を再生' : '音声を準備中';
+        play.disabled = !card.audio;
+        play.setAttribute('aria-label', `${card.title} ${card.character}の英語音声を再生`);
+        play.addEventListener('click', () => {
+          if (playingButton === play) { stopAudio(); return; }
+          stopAudio();
+          const audio = new Audio(card.audio);
+          playingAudio = audio;
+          playingButton = play;
+          play.textContent = '■ 停止';
+          audio.onended = stopAudio;
+          audio.onerror = () => { stopAudio(); play.textContent = '再生できません'; };
+          audio.play().catch(() => { stopAudio(); play.textContent = '再生できません'; });
+        });
+        figure.append(link, caption, play);
+        fragment.append(figure);
+      });
+      grid.append(fragment);
+    }
+    search.addEventListener('input', render);
+    fetch('/manga-quote-cards.json', { cache: 'no-store' })
+      .then(response => { if (!response.ok) throw new Error('読み込み失敗'); return response.json(); })
+      .then(data => { cards = data; render(); })
+      .catch(() => { count.textContent = 'カードを読み込めませんでした'; });
+  </script>
+</body>
+</html>
