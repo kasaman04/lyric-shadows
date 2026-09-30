@@ -99,6 +99,10 @@ window.SONG_CHARACTER_AVATARS = {
     "A": "/character-avatars/536574746c6520466f72204c65737320-b90d64ae-a.svg",
     "B": "/character-avatars/536574746c6520466f72204c65737320-b90d64ae-b.svg"
   },
+  "Slow Jam 赤西仁": {
+    "A": "/character-avatars/536c6f77204a616d20e8b5a4e8a5bfe4-9e32ea40-a.svg",
+    "B": "/character-avatars/536c6f77204a616d20e8b5a4e8a5bfe4-9e32ea40-b.svg"
+  },
   "Sucker for You Matt Terry": {
     "A": "/character-avatars/5375636b657220666f7220596f75204d-298ae43c-a.svg",
     "B": "/character-avatars/5375636b657220666f7220596f75204d-298ae43c-b.svg"
