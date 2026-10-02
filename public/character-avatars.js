@@ -146,5 +146,9 @@ window.SONG_CHARACTER_AVATARS = {
   "雨音子(Amaotoko) RADWIMPS": {
     "A": "/character-avatars/e99ba8e99fb3e5ad9028416d616f746f-31e8fc77-a.svg",
     "B": "/character-avatars/e99ba8e99fb3e5ad9028416d616f746f-31e8fc77-b.svg"
+  },
+  "Body Talk 赤西仁": {
+    "A": "/character-avatars/426f64792054616c6b20e8b5a4e8a5bf-d98356c9-a.svg",
+    "B": "/character-avatars/426f64792054616c6b20e8b5a4e8a5bf-d98356c9-b.svg"
   }
 };

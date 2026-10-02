@@ -228,11 +228,11 @@
       "sentences": [
         {
           "text": "We finally have a night alone after working all week.",
-          "audio": "/songs/Slow%20Jam%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/8395478858983767/0-0.mp3"
+          "audio": "/songs/Slow%20Jam%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/c18b531a8d1be432/0-0.mp3"
         },
         {
           "text": "Want to go out?",
-          "audio": "/songs/Slow%20Jam%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/8395478858983767/0-1.mp3"
+          "audio": "/songs/Slow%20Jam%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/c18b531a8d1be432/0-1.mp3"
         }
       ],
       "japanese": "一週間ずっと働いて、やっと二人きりの夜だね。出かける？"
@@ -244,11 +244,11 @@
       "sentences": [
         {
           "text": "Honestly, I'd rather stay in.",
-          "audio": "/songs/Slow%20Jam%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/8395478858983767/1-0.mp3"
+          "audio": "/songs/Slow%20Jam%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/c18b531a8d1be432/1-0.mp3"
         },
         {
           "text": "I've been looking forward to a quiet evening with you.",
-          "audio": "/songs/Slow%20Jam%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/8395478858983767/1-1.mp3"
+          "audio": "/songs/Slow%20Jam%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/c18b531a8d1be432/1-1.mp3"
         }
       ],
       "japanese": "正直、家で過ごしたいな。あなたと静かな夜を過ごすのを楽しみにしてたの。"
@@ -260,11 +260,11 @@
       "sentences": [
         {
           "text": "That sounds good.",
-          "audio": "/songs/Slow%20Jam%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/8395478858983767/2-0.mp3"
+          "audio": "/songs/Slow%20Jam%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/c18b531a8d1be432/2-0.mp3"
         },
         {
           "text": "We can take our time and cook dinner together.",
-          "audio": "/songs/Slow%20Jam%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/8395478858983767/2-1.mp3"
+          "audio": "/songs/Slow%20Jam%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/c18b531a8d1be432/2-1.mp3"
         }
       ],
       "japanese": "いいね。ゆっくり一緒に夕食を作ろう。"
@@ -276,11 +276,11 @@
       "sentences": [
         {
           "text": "Perfect.",
-          "audio": "/songs/Slow%20Jam%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/8395478858983767/3-0.mp3"
+          "audio": "/songs/Slow%20Jam%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/c18b531a8d1be432/3-0.mp3"
         },
         {
           "text": "Put on our favorite song while I get things ready.",
-          "audio": "/songs/Slow%20Jam%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/8395478858983767/3-1.mp3"
+          "audio": "/songs/Slow%20Jam%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/c18b531a8d1be432/3-1.mp3"
         }
       ],
       "japanese": "いいね。準備する間、私たちのお気に入りの曲をかけて。"
@@ -292,11 +292,11 @@
       "sentences": [
         {
           "text": "I'll dim the lights.",
-          "audio": "/songs/Slow%20Jam%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/8395478858983767/4-0.mp3"
+          "audio": "/songs/Slow%20Jam%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/c18b531a8d1be432/4-0.mp3"
         },
         {
           "text": "No need to hurry; we have all night.",
-          "audio": "/songs/Slow%20Jam%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/8395478858983767/4-1.mp3"
+          "audio": "/songs/Slow%20Jam%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/c18b531a8d1be432/4-1.mp3"
         }
       ],
       "japanese": "明かりを少し落とすよ。急がなくていい、夜はまだ長いから。"
@@ -308,12 +308,13 @@
       "sentences": [
         {
           "text": "Then come sit next to me for a minute.",
-          "audio": "/songs/Slow%20Jam%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/8395478858983767/5-0.mp3"
+          "audio": "/songs/Slow%20Jam%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/c18b531a8d1be432/5-0.mp3"
         }
       ],
       "japanese": "じゃあ、少し私の隣に座って。"
     }
   ],
   "createdAt": "2026-09-29T15:05:56.056Z",
-  "conversationAudioStatus": "ready"
+  "conversationAudioStatus": "ready",
+  "conversationAudioModel": "eleven_v4"
 }

@@ -230,12 +230,12 @@
         {
           "text": "I had a really good time with you tonight.",
           "displayHtml": "I had a really good time with you tonight.",
-          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/4f51c19bd310d83f/0-0.mp3"
+          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/d5c29704656c282e/0-0.mp3"
         },
         {
           "text": "No need to rush back inside.",
           "displayHtml": "<span class=\"lyric-phrase\">No need to rush</span> back inside.",
-          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/4f51c19bd310d83f/0-1.mp3"
+          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/d5c29704656c282e/0-1.mp3"
         }
       ],
       "japanese": "今夜は君といてすごく楽しかった。急いで中に戻らなくていいよ。"
@@ -248,12 +248,12 @@
         {
           "text": "Thanks.",
           "displayHtml": "Thanks.",
-          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/4f51c19bd310d83f/1-0.mp3"
+          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/d5c29704656c282e/1-0.mp3"
         },
         {
           "text": "I was actually hoping we could stay out here for a minute.",
           "displayHtml": "I was actually hoping we could stay out here for a minute.",
-          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/4f51c19bd310d83f/1-1.mp3"
+          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/d5c29704656c282e/1-1.mp3"
         }
       ],
       "japanese": "ありがとう。実は、もう少しここにいたいと思ってたの。"
@@ -266,12 +266,12 @@
         {
           "text": "Good, because I wanted to ask you something.",
           "displayHtml": "Good, because I wanted to ask you something.",
-          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/4f51c19bd310d83f/2-0.mp3"
+          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/d5c29704656c282e/2-0.mp3"
         },
         {
           "text": "Could we take a chance and go out together this weekend?",
           "displayHtml": "Could we <span class=\"lyric-phrase\">take a chance</span> and go out together this weekend?",
-          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/4f51c19bd310d83f/2-1.mp3"
+          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/d5c29704656c282e/2-1.mp3"
         }
       ],
       "japanese": "よかった、聞きたいことがあったんだ。思い切って、今週末に二人で出かけてみない？"
@@ -284,12 +284,12 @@
         {
           "text": "I was wondering if you would ask.",
           "displayHtml": "I was wondering if you would ask.",
-          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/4f51c19bd310d83f/3-0.mp3"
+          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/d5c29704656c282e/3-0.mp3"
         },
         {
           "text": "Yes, I would like that.",
           "displayHtml": "Yes, I would like that.",
-          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/4f51c19bd310d83f/3-1.mp3"
+          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/d5c29704656c282e/3-1.mp3"
         }
       ],
       "japanese": "聞いてくれないかなって思ってた。うん、ぜひ。"
@@ -302,12 +302,12 @@
         {
           "text": "Great.",
           "displayHtml": "Great.",
-          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/4f51c19bd310d83f/4-0.mp3"
+          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/d5c29704656c282e/4-0.mp3"
         },
         {
           "text": "We can take our time choosing a place tomorrow.",
           "displayHtml": "We can <span class=\"lyric-phrase\">take our time</span> choosing a place tomorrow.",
-          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/4f51c19bd310d83f/4-1.mp3"
+          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/d5c29704656c282e/4-1.mp3"
         }
       ],
       "japanese": "よかった。行く場所は明日ゆっくり決めよう。"
@@ -320,17 +320,18 @@
         {
           "text": "Sounds good.",
           "displayHtml": "Sounds good.",
-          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/4f51c19bd310d83f/5-0.mp3"
+          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/d5c29704656c282e/5-0.mp3"
         },
         {
           "text": "For now, let us just enjoy the quiet.",
           "displayHtml": "For now, let us just enjoy the quiet.",
-          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/4f51c19bd310d83f/5-1.mp3"
+          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/d5c29704656c282e/5-1.mp3"
         }
       ],
       "japanese": "いいね。今はこの静かな時間を楽しもう。"
     }
   ],
   "createdAt": "2026-09-26T02:47:12.459Z",
-  "conversationAudioStatus": "ready"
+  "conversationAudioStatus": "ready",
+  "conversationAudioModel": "eleven_v4"
 }

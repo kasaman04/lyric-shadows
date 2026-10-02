@@ -241,12 +241,12 @@
         {
           "text": "You look amazing tonight.",
           "displayHtml": "You look amazing tonight.",
-          "audio": "/songs/Beauty%20And%20A%20Beat%20BALLAD%20Justin%20Bieber/conversation-audio/0-0.mp3"
+          "audio": "/songs/Beauty%20And%20A%20Beat%20BALLAD%20Justin%20Bieber/conversation-audio/5edbee86ddb2e01b/0-0.mp3"
         },
         {
           "text": "Come meet my friends. I want to show you off.",
           "displayHtml": "Come meet my friends. I want to <span class=\"lyric-phrase\">show you off</span>.",
-          "audio": "/songs/Beauty%20And%20A%20Beat%20BALLAD%20Justin%20Bieber/conversation-audio/0-1.mp3"
+          "audio": "/songs/Beauty%20And%20A%20Beat%20BALLAD%20Justin%20Bieber/conversation-audio/5edbee86ddb2e01b/0-1.mp3"
         }
       ],
       "japanese": "今夜の君、すごく素敵だよ。友達に会ってよ。みんなに君を紹介したいんだ。"
@@ -259,12 +259,12 @@
         {
           "text": "That’s sweet, but I’m nervous about dancing.",
           "displayHtml": "That’s sweet, but I’m nervous about dancing.",
-          "audio": "/songs/Beauty%20And%20A%20Beat%20BALLAD%20Justin%20Bieber/conversation-audio/1-0.mp3"
+          "audio": "/songs/Beauty%20And%20A%20Beat%20BALLAD%20Justin%20Bieber/conversation-audio/5edbee86ddb2e01b/1-0.mp3"
         },
         {
           "text": "What if I look silly?",
           "displayHtml": "What if I look silly?",
-          "audio": "/songs/Beauty%20And%20A%20Beat%20BALLAD%20Justin%20Bieber/conversation-audio/1-1.mp3"
+          "audio": "/songs/Beauty%20And%20A%20Beat%20BALLAD%20Justin%20Bieber/conversation-audio/5edbee86ddb2e01b/1-1.mp3"
         }
       ],
       "japanese": "うれしいけど、踊るのは緊張するな。変に見えたらどうしよう？"
@@ -277,12 +277,12 @@
         {
           "text": "Let’s forget about the world for a minute.",
           "displayHtml": "Let’s <span class=\"lyric-phrase\">forget about the world</span> for a minute.",
-          "audio": "/songs/Beauty%20And%20A%20Beat%20BALLAD%20Justin%20Bieber/conversation-audio/2-0.mp3"
+          "audio": "/songs/Beauty%20And%20A%20Beat%20BALLAD%20Justin%20Bieber/conversation-audio/5edbee86ddb2e01b/2-0.mp3"
         },
         {
           "text": "Just listen to the music and dance with me.",
           "displayHtml": "Just listen to the music and dance with me.",
-          "audio": "/songs/Beauty%20And%20A%20Beat%20BALLAD%20Justin%20Bieber/conversation-audio/2-1.mp3"
+          "audio": "/songs/Beauty%20And%20A%20Beat%20BALLAD%20Justin%20Bieber/conversation-audio/5edbee86ddb2e01b/2-1.mp3"
         }
       ],
       "japanese": "少しの間、周りのことは忘れようよ。音楽を聴いて、一緒に踊ろう。"
@@ -295,12 +295,12 @@
         {
           "text": "Okay, but you have to lead.",
           "displayHtml": "Okay, but you have to lead.",
-          "audio": "/songs/Beauty%20And%20A%20Beat%20BALLAD%20Justin%20Bieber/conversation-audio/3-0.mp3"
+          "audio": "/songs/Beauty%20And%20A%20Beat%20BALLAD%20Justin%20Bieber/conversation-audio/5edbee86ddb2e01b/3-0.mp3"
         },
         {
           "text": "I don’t know the first thing about dancing.",
           "displayHtml": "I don’t know the first thing about dancing.",
-          "audio": "/songs/Beauty%20And%20A%20Beat%20BALLAD%20Justin%20Bieber/conversation-audio/3-1.mp3"
+          "audio": "/songs/Beauty%20And%20A%20Beat%20BALLAD%20Justin%20Bieber/conversation-audio/5edbee86ddb2e01b/3-1.mp3"
         }
       ],
       "japanese": "わかった。でもリードしてね。ダンスのことは本当に何も分からないから。"
@@ -313,12 +313,12 @@
         {
           "text": "Deal. There’s no right way to do it.",
           "displayHtml": "Deal. There’s no right way to do it.",
-          "audio": "/songs/Beauty%20And%20A%20Beat%20BALLAD%20Justin%20Bieber/conversation-audio/4-0.mp3"
+          "audio": "/songs/Beauty%20And%20A%20Beat%20BALLAD%20Justin%20Bieber/conversation-audio/5edbee86ddb2e01b/4-0.mp3"
         },
         {
           "text": "Just move however you feel comfortable.",
           "displayHtml": "Just move however you feel comfortable.",
-          "audio": "/songs/Beauty%20And%20A%20Beat%20BALLAD%20Justin%20Bieber/conversation-audio/4-1.mp3"
+          "audio": "/songs/Beauty%20And%20A%20Beat%20BALLAD%20Justin%20Bieber/conversation-audio/5edbee86ddb2e01b/4-1.mp3"
         }
       ],
       "japanese": "もちろん。決まった踊り方なんてないよ。気楽に、好きなように動けばいい。"
@@ -331,17 +331,18 @@
         {
           "text": "All right, I’m in.",
           "displayHtml": "All right, I’m in.",
-          "audio": "/songs/Beauty%20And%20A%20Beat%20BALLAD%20Justin%20Bieber/conversation-audio/5-0.mp3"
+          "audio": "/songs/Beauty%20And%20A%20Beat%20BALLAD%20Justin%20Bieber/conversation-audio/5edbee86ddb2e01b/5-0.mp3"
         },
         {
           "text": "Let’s enjoy tonight together.",
           "displayHtml": "Let’s enjoy tonight together.",
-          "audio": "/songs/Beauty%20And%20A%20Beat%20BALLAD%20Justin%20Bieber/conversation-audio/5-1.mp3"
+          "audio": "/songs/Beauty%20And%20A%20Beat%20BALLAD%20Justin%20Bieber/conversation-audio/5edbee86ddb2e01b/5-1.mp3"
         }
       ],
       "japanese": "よし、踊るよ。今夜を一緒に楽しもう。"
     }
   ],
   "createdAt": "2026-09-26T02:29:22.637Z",
-  "conversationAudioStatus": "ready"
+  "conversationAudioStatus": "ready",
+  "conversationAudioModel": "eleven_v4"
 }

@@ -1,6 +1,7 @@
 const fs = require('fs-extra');
 const path = require('path');
 const axios = require('axios');
+const { TTS_MODEL_ID } = require('../lib/elevenlabs-model');
 require('dotenv').config();
 
 global.window = {};
@@ -42,7 +43,7 @@ async function generatePhrase(phrase) {
     `https://api.elevenlabs.io/v1/text-to-speech/${VOICE_ID}`,
     {
       text,
-      model_id: 'eleven_v3',
+      model_id: TTS_MODEL_ID,
       voice_settings: { stability: 0.5, similarity_boost: 0.75 }
     },
     {
