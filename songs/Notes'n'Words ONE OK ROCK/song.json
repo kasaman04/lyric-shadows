@@ -1,0 +1,277 @@
+{
+  "id": "Notes'n'Words ONE OK ROCK",
+  "folderName": "Notes'n'Words ONE OK ROCK",
+  "songName": "Notes'n'Words",
+  "artist": "ONE OK ROCK",
+  "relationship": "恋人",
+  "setting": "At home, Ethan has written a song for Lena and nervously plays it for her.",
+  "speakerA": {
+    "name": "Ethan",
+    "gender": "male",
+    "age": "young",
+    "accent": "american",
+    "tone": "calm",
+    "type": "男性",
+    "voice": "bIHbv24MWmeRgasZH58o",
+    "voiceProfile": "will",
+    "voiceName": "Will"
+  },
+  "speakerB": {
+    "name": "Lena",
+    "gender": "female",
+    "age": "young",
+    "accent": "american",
+    "tone": "warm",
+    "type": "女性",
+    "voice": "cNYrMw9glwJZXR8RwbuR",
+    "voiceProfile": "belle",
+    "voiceName": "Belle"
+  },
+  "thumbnailUrl": "/songs/Notes%27n%27Words%20ONE%20OK%20ROCK/thumbnail.png",
+  "timingReviewMode": true,
+  "lyrics": "I wanna dance like no one's watching me\nI wanna love like it's the only thing I know\nI wanna laugh from the bottom of my heart\nI wanna sing like every single note and word it's all for you\n\nIs this enough?\n\nI wanna tell you and this is the only way I know\nand hope one day you'll learn the words and say\nThat you finally see, what I see\n\nAnother song for you about your love\n‘cause you love the me that's full of faults\nI wish you could see it from this view\n‘cause everything around you is a little bit brighter from your love\n\nI wanna dance the night away with you\nI wanna love because you taught me to\nI wanna laugh all your tears away\nI wanna sing ‘cause every single note and word it's just for you\n\nHope it's enough?\n\nI wanna tell you and this is the only way I know\nand hope one day you'll learn the words and say\nThat you finally see, how I feel\n\nAnother song for you about your love\n‘cause you love the me that's full of faults\nI wish you could see it from this view\n‘cause everything around you is a little bit brighter from your love\n\nNot a day goes by that I don't think\nabout you and the love you've given me\nI wish you could see it from this view\n‘cause everything around you is a little bit brighter from your love\nLife is just so much better from your love",
+  "lyricsJa": [
+    {
+      "en": "I wanna dance like no one's watching me",
+      "ja": "誰にも見られていないみたいに踊りたい"
+    },
+    {
+      "en": "I wanna love like it's the only thing I know",
+      "ja": "愛することしか知らないみたいに愛したい"
+    },
+    {
+      "en": "I wanna laugh from the bottom of my heart",
+      "ja": "心の底から笑いたい"
+    },
+    {
+      "en": "I wanna sing like every single note and word it's all for you",
+      "ja": "一つひとつの音も言葉も、全部君のためだと思って歌いたい"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "Is this enough?",
+      "ja": "これで足りるかな？"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "I wanna tell you and this is the only way I know",
+      "ja": "君に伝えたい。僕にはこの方法しかわからない"
+    },
+    {
+      "en": "and hope one day you'll learn the words and say",
+      "ja": "いつか君がこの言葉を覚えて、言ってくれたらいいな"
+    },
+    {
+      "en": "That you finally see, what I see",
+      "ja": "ようやく僕と同じ景色が見えたって"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "Another song for you about your love",
+      "ja": "君の愛について、君にもう一曲"
+    },
+    {
+      "en": "‘cause you love the me that's full of faults",
+      "ja": "欠点だらけの僕を君は愛してくれるから"
+    },
+    {
+      "en": "I wish you could see it from this view",
+      "ja": "この景色を君にも見せられたらいいのに"
+    },
+    {
+      "en": "‘cause everything around you is a little bit brighter from your love",
+      "ja": "君の愛のおかげで、君の周りのすべてが少し明るく見えるから"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "I wanna dance the night away with you",
+      "ja": "君と夜通し踊りたい"
+    },
+    {
+      "en": "I wanna love because you taught me to",
+      "ja": "君が教えてくれたから、僕も愛したい"
+    },
+    {
+      "en": "I wanna laugh all your tears away",
+      "ja": "君の涙を全部笑い飛ばしたい"
+    },
+    {
+      "en": "I wanna sing ‘cause every single note and word it's just for you",
+      "ja": "一つひとつの音も言葉も、君だけのために歌いたい"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "Hope it's enough?",
+      "ja": "これで足りるといいな"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "I wanna tell you and this is the only way I know",
+      "ja": "君に伝えたい。僕にはこの方法しかわからない"
+    },
+    {
+      "en": "and hope one day you'll learn the words and say",
+      "ja": "いつか君がこの言葉を覚えて、言ってくれたらいいな"
+    },
+    {
+      "en": "That you finally see, how I feel",
+      "ja": "ようやく僕の気持ちがわかったって"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "Another song for you about your love",
+      "ja": "君の愛について、君にもう一曲"
+    },
+    {
+      "en": "‘cause you love the me that's full of faults",
+      "ja": "欠点だらけの僕を君は愛してくれるから"
+    },
+    {
+      "en": "I wish you could see it from this view",
+      "ja": "この景色を君にも見せられたらいいのに"
+    },
+    {
+      "en": "‘cause everything around you is a little bit brighter from your love",
+      "ja": "君の愛のおかげで、君の周りのすべてが少し明るく見えるから"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "Not a day goes by that I don't think",
+      "ja": "考えない日は一日もない"
+    },
+    {
+      "en": "about you and the love you've given me",
+      "ja": "君と、君がくれた愛のことを"
+    },
+    {
+      "en": "I wish you could see it from this view",
+      "ja": "この景色を君にも見せられたらいいのに"
+    },
+    {
+      "en": "‘cause everything around you is a little bit brighter from your love",
+      "ja": "君の愛のおかげで、君の周りのすべてが少し明るく見えるから"
+    },
+    {
+      "en": "Life is just so much better from your love",
+      "ja": "君の愛があるだけで、人生はずっと素晴らしくなる"
+    }
+  ],
+  "lyricConnections": [
+    {
+      "lyricExpression": "no one's watching",
+      "conversationExpression": "no one's watching",
+      "explanationJa": "「誰も見ていない」。人目を気にせず行動していいと励ますときに使える。"
+    },
+    {
+      "lyricExpression": "from the bottom of my heart",
+      "conversationExpression": "from the bottom of my heart",
+      "explanationJa": "「心の底から」。感謝や謝罪などの気持ちを強調できる。"
+    },
+    {
+      "lyricExpression": "you taught me to",
+      "conversationExpression": "You taught me to",
+      "explanationJa": "「あなたが私に～を教えてくれた」。行動や考え方の変化を伝える表現。"
+    }
+  ],
+  "conversation": [
+    {
+      "speaker": "A",
+      "speakerName": "Ethan",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "I wrote a song for you, but I am nervous to play it.",
+          "audio": "/songs/Notes'n'Words%20ONE%20OK%20ROCK/conversation-audio/bf45664008495b9c/0-0.mp3"
+        }
+      ],
+      "japanese": "君のために曲を書いたんだけど、聴かせるのは緊張するよ。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Lena",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "Pretend no one's watching. It's just me.",
+          "audio": "/songs/Notes'n'Words%20ONE%20OK%20ROCK/conversation-audio/bf45664008495b9c/1-0.mp3"
+        }
+      ],
+      "japanese": "誰も見ていないと思って。ここには私しかいないよ。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Ethan",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "I want to thank you from the bottom of my heart. You taught me to be brave enough to try.",
+          "audio": "/songs/Notes'n'Words%20ONE%20OK%20ROCK/conversation-audio/bf45664008495b9c/2-0.mp3"
+        }
+      ],
+      "japanese": "心の底から感謝を伝えたい。挑戦してみる勇気を君が教えてくれたんだ。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Lena",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "I didn't know I had that effect on you. You make my days brighter, too.",
+          "audio": "/songs/Notes'n'Words%20ONE%20OK%20ROCK/conversation-audio/bf45664008495b9c/3-0.mp3"
+        }
+      ],
+      "japanese": "そんなふうに思ってくれていたなんて。あなたも私の毎日を明るくしてくれるよ。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Ethan",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "I kept wondering if one song would be enough to say all that.",
+          "audio": "/songs/Notes'n'Words%20ONE%20OK%20ROCK/conversation-audio/bf45664008495b9c/4-0.mp3"
+        }
+      ],
+      "japanese": "その気持ちを一曲で伝えきれるかなって、ずっと考えていた。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Lena",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "It is enough. I can hear what you mean in every word.",
+          "audio": "/songs/Notes'n'Words%20ONE%20OK%20ROCK/conversation-audio/bf45664008495b9c/5-0.mp3"
+        }
+      ],
+      "japanese": "十分だよ。一つひとつの言葉から気持ちが伝わる。"
+    }
+  ],
+  "createdAt": "2026-10-02T15:30:52.827Z",
+  "conversationAudioStatus": "ready",
+  "conversationAudioModel": "eleven_v4"
+}

@@ -665,7 +665,7 @@ function renderSongGrid() {
   const cards = filteredSongs.map((song) => {
     const originalIndex = state.songs.indexOf(song);
     const bgStyle = song.thumbnailUrl
-      ? `style="background-image:url('${song.thumbnailUrl}')"` : '';
+      ? `style="background-image:url('${song.thumbnailUrl.replace(/'/g, '%27')}')"` : '';
     const grad = CARD_GRADS[originalIndex % CARD_GRADS.length];
     return `
       <button class="song-card" onclick="showShadowing(state.songs[${originalIndex}])">
@@ -1597,6 +1597,10 @@ function hasConversationAudio(song) {
   return song.conversationAudioStatus !== 'text_only' && song.conversation?.some(turn => turn.sentences?.some(sentence => sentence.audio));
 }
 
+function requiresSongTicket(song) {
+  return !song?.timingReviewMode;
+}
+
 function songTicketKey(song = state.currentSong) {
   const day = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Tokyo', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
   return `songTicketsV1:${song?.folderName || song?.id}:${day}`;
@@ -1634,7 +1638,7 @@ function updateSongTicketDisplay() {
     start.textContent = state.songTicketSessionActive ? 'Songを再開' : available > 0 ? `Songを聞く（残り${available}回）` : 'あと会話を聞いて解放';
   }
   const play = document.getElementById('songPlayBtn');
-  if (play) play.disabled = available === 0 && !state.songTicketSessionActive;
+  if (play) play.disabled = requiresSongTicket(state.currentSong) && available === 0 && !state.songTicketSessionActive;
 }
 
 function renderSongTicketCard(withButton = false) {
@@ -1710,7 +1714,7 @@ function renderShadowing() {
     mediaHtml = `<div class="yt-embed-bottom"><iframe id="ytFrame" src="" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>`;
   }
   const timingNote = song.lyricTimingStatus === 'estimated' ? '<p class="lyric-sync-note">仮同期：歌詞の時刻は概算です</p>' : '';
-  const songTabHtml = `${renderSongTicketCard(true)}${timingNote}<div class="lyrics-display" ${song.hasLocalAudio ? 'style="padding-bottom: 90px;"' : ''}>${lyricsHtml}</div>${mediaHtml}`;
+  const songTabHtml = `${requiresSongTicket(song) ? renderSongTicketCard(true) : ''}${timingNote}<div class="lyrics-display" ${song.hasLocalAudio ? 'style="padding-bottom: 90px;"' : ''}>${lyricsHtml}</div>${mediaHtml}`;
 
   app.innerHTML = `
     <div class="shadowing-view">
@@ -1735,7 +1739,7 @@ function renderShadowing() {
         <span class="setting-text">${esc(song.setting)}</span>
       </div>
       ${renderLyricConnections(song.lyricConnections)}
-      <div class="conversation-area" id="convArea">${hasAudio ? renderSongTicketCard() : '<p class="text-only-notice">会話文を新しい方針で作成しました。対応する会話音声はまだありません。</p>'}${turnsHtml}</div>
+      <div class="conversation-area" id="convArea">${hasAudio && requiresSongTicket(song) ? renderSongTicketCard() : !hasAudio ? '<p class="text-only-notice">会話文を新しい方針で作成しました。対応する会話音声はまだありません。</p>' : ''}${turnsHtml}</div>
       <div class="song-area hidden" id="songArea">${songTabHtml}</div>
       <div class="play-controls conversation-player ${hasAudio ? '' : 'hidden'}" id="playControls">
         <div class="player-dock">
@@ -1833,7 +1837,7 @@ function seekToLyric(index) {
   const timing = state.currentSong?.lyricTimings?.find(row => row.index === index);
   const audio = document.getElementById('songAudioPlayer');
   if (!timing || !audio) return;
-  if (!state.songTicketSessionActive && availableSongTickets() === 0) {
+  if (requiresSongTicket(state.currentSong) && !state.songTicketSessionActive && availableSongTickets() === 0) {
     showToast('会話を5回聞くとSongを再生できます');
     return;
   }
@@ -1913,7 +1917,7 @@ function updateSongPlayBtn(isPlaying) {
 }
 
 function onSongAudioPlay() {
-  if (!state.songTicketSessionActive) {
+  if (requiresSongTicket(state.currentSong) && !state.songTicketSessionActive) {
     document.getElementById('songAudioPlayer')?.pause();
     return;
   }
@@ -1941,7 +1945,7 @@ async function startSongPlayback() {
   const audio = document.getElementById('songAudioPlayer');
   if (!audio || state.songTicketStartPending) return;
   const newSession = !state.songTicketSessionActive;
-  if (newSession && availableSongTickets() === 0) {
+  if (requiresSongTicket(state.currentSong) && newSession && availableSongTickets() === 0) {
     showToast('会話を5回聞くとSongを再生できます');
     return;
   }
@@ -1950,7 +1954,7 @@ async function startSongPlayback() {
   if (newSession && audio.ended) audio.currentTime = 0;
   try {
     await audio.play();
-    if (newSession) {
+    if (requiresSongTicket(state.currentSong) && newSession) {
       const tickets = getSongTickets();
       tickets.used += 1;
       saveSongTickets(tickets);
