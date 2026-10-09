@@ -23,6 +23,8 @@ test('a completed drama playlist awards a random quote on its third round', () =
   }
   const context = vm.createContext({
     console,
+    clearTimeout,
+    setTimeout,
     Audio: QuoteAudio,
     document: {
       addEventListener() {},

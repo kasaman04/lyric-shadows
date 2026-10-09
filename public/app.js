@@ -18,6 +18,10 @@ const state = {
   dramaPlaylistActive: false,
   dramaPlaylistIndex: 0,
   dramaPlaylistExpectedAudio: null,
+  dramaPlayRequest: 0,
+  dramaRetryTimer: null,
+  dramaRetryCount: 0,
+  dramaPlaybackStatus: '',
   dramaRepeat: false,
   dramaSingleRepeatIndex: -1,
   phraseImages: {},
@@ -364,6 +368,9 @@ function setHomeFilter(filter) {
 }
 
 function stopDramaAudio() {
+  cancelDramaPlayRequest();
+  state.dramaPlaylistActive = false;
+  updateDramaPlaybackStatus('');
   document.querySelectorAll('.drama-audio').forEach(audio => {
     audio.loop = false;
     audio.pause();
@@ -505,6 +512,7 @@ function onDramaAudioPlay(activeAudio) {
   if (activeAudio === state.dramaPlaylistExpectedAudio) {
     state.dramaPlaylistExpectedAudio = null;
   } else {
+    cancelDramaPlayRequest();
     state.dramaPlaylistActive = false;
     state.dramaPlaylistIndex = 0;
     updateDramaPlaybackButtons();
@@ -513,8 +521,11 @@ function onDramaAudioPlay(activeAudio) {
 
 function onDramaAudioPause(audio) {
   audio.closest('.drama-clip')?.classList.remove('is-playing');
+  // load() and a quick pause/resume can leave an older pause event queued.
+  if (!audio.paused || audio.error || audio === state.dramaPlaylistExpectedAudio) return;
   const audios = [...document.querySelectorAll('.drama-audio')];
   if (state.dramaPlaylistActive && audios[state.dramaPlaylistIndex] === audio && !audio.ended) {
+    cancelDramaPlayRequest();
     state.dramaPlaylistActive = false;
     state.dramaPlaylistExpectedAudio = null;
     updateDramaPlaybackButtons();
@@ -541,18 +552,58 @@ function onDramaAudioEnded(audio) {
   }
 }
 
-function playDramaAudioAt(index, restart = false) {
+function cancelDramaPlayRequest() {
+  state.dramaPlayRequest += 1;
+  clearTimeout(state.dramaRetryTimer);
+  state.dramaRetryTimer = null;
+}
+
+function updateDramaPlaybackStatus(text) {
+  state.dramaPlaybackStatus = text;
+  const label = document.getElementById('dramaPlaybackStatus');
+  if (label) label.textContent = text;
+}
+
+function onDramaAudioError(audio, error, request = audio.dramaPlayRequest) {
+  const audios = [...document.querySelectorAll('.drama-audio')];
+  if (!state.dramaPlaylistActive || audios[state.dramaPlaylistIndex] !== audio || request !== state.dramaPlayRequest) return;
+  const index = state.dramaPlaylistIndex;
+  cancelDramaPlayRequest();
+  audio.closest('.drama-clip')?.classList.remove('is-playing');
+  if (error?.name !== 'NotAllowedError' && state.dramaRetryCount < 1) {
+    state.dramaPlaylistExpectedAudio = audio;
+    updateDramaPlaybackStatus('音声を再読み込み中…');
+    state.dramaRetryTimer = setTimeout(() => {
+      state.dramaRetryTimer = null;
+      audio.load();
+      playDramaAudioAt(index, true, 1);
+    }, 800);
+  } else {
+    state.dramaPlaylistActive = false;
+    state.dramaPlaylistExpectedAudio = null;
+    updateDramaPlaybackStatus(`音声${index + 1}で再生が止まりました。「まとめて再生」を押すと、この音声から再開します。`);
+  }
+  updateDramaPlaybackButtons();
+}
+
+function playDramaAudioAt(index, restart = false, retryCount = 0) {
   const audios = [...document.querySelectorAll('.drama-audio')];
   const audio = audios[index];
   if (!audio) return;
+  cancelDramaPlayRequest();
+  const request = state.dramaPlayRequest;
+  audio.dramaPlayRequest = request;
+  state.dramaRetryCount = retryCount;
   state.dramaPlaylistIndex = index;
   state.dramaPlaylistActive = true;
   state.dramaPlaylistExpectedAudio = audio;
-  if (restart) audio.currentTime = 0;
-  audio.play().catch(() => {
-    state.dramaPlaylistActive = false;
-    state.dramaPlaylistExpectedAudio = null;
-    updateDramaPlaybackButtons();
+  if (audio.error) audio.load();
+  if (restart || audio.ended) audio.currentTime = 0;
+  if (!retryCount) updateDramaPlaybackStatus('');
+  audio.play().then(() => {
+    if (request === state.dramaPlayRequest) updateDramaPlaybackStatus('');
+  }).catch(error => {
+    onDramaAudioError(audio, error, request);
   });
   updateDramaPlaybackButtons();
 }
@@ -561,6 +612,7 @@ function toggleDramaPlayAll() {
   const audios = [...document.querySelectorAll('.drama-audio')];
   if (!audios.length) return;
   if (state.dramaPlaylistActive) {
+    cancelDramaPlayRequest();
     state.dramaPlaylistActive = false;
     state.dramaPlaylistExpectedAudio = null;
     audios[state.dramaPlaylistIndex]?.pause();
@@ -591,6 +643,7 @@ function toggleDramaSingleRepeat(index) {
     clearDramaSingleRepeat();
     return;
   }
+  cancelDramaPlayRequest();
   clearDramaSingleRepeat();
   state.dramaPlaylistActive = false;
   state.dramaPlaylistIndex = 0;
@@ -730,7 +783,7 @@ function renderDramaGrid() {
         <div class="drama-clip-heading"><span>${String(index + 1).padStart(2, '0')}</span><span>音声</span></div>
         <p class="drama-clip-english" lang="en">${esc(clip.english)}</p>
         <p class="drama-clip-japanese">${esc(clip.japanese)}</p>
-        <audio class="drama-audio" controls preload="none" src="${esc(clip.audio)}" onplay="onDramaAudioPlay(this)" onpause="onDramaAudioPause(this)" onended="onDramaAudioEnded(this)" aria-label="${esc(clip.english)}"></audio>
+        <audio class="drama-audio" controls preload="none" src="${esc(clip.audio)}" onplay="onDramaAudioPlay(this)" onpause="onDramaAudioPause(this)" onended="onDramaAudioEnded(this)" onerror="onDramaAudioError(this)" aria-label="${esc(clip.english)}"></audio>
         <div class="drama-clip-actions">
           <button class="drama-single-repeat" onclick="toggleDramaSingleRepeat(${index})" aria-pressed="false" aria-label="この音声をリピート オフ">↻ この音声をリピート</button>
           ${examples.length ? `<button id="dramaMore-${index}" class="drama-more" onclick="toggleDramaExamples(${index})" aria-expanded="false" aria-controls="dramaExamples-${index}">その他 ▾</button>` : ''}
@@ -752,6 +805,7 @@ function renderDramaGrid() {
         <button id="dramaPlayAll" class="drama-play-all" onclick="toggleDramaPlayAll()" aria-label="まとめて再生">▶ <span>まとめて再生</span></button>
         <button id="dramaRepeat" class="drama-repeat ${state.dramaRepeat ? 'active' : ''}" onclick="toggleDramaRepeat()" aria-pressed="${state.dramaRepeat}" aria-label="リピート ${state.dramaRepeat ? 'オン' : 'オフ'}">↻ <span>リピート</span></button>
       </div>
+      <p id="dramaPlaybackStatus" role="status" aria-live="polite">${esc(state.dramaPlaybackStatus)}</p>
       <div class="drama-clip-list">${clips}</div>
     </section>`;
   }
