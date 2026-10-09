@@ -11,6 +11,7 @@ test('a completed drama playlist awards a random quote on its third round', () =
   const status = { textContent: '' };
   const lastClip = {
     paused: false,
+    ended: true,
     pause() { this.paused = true; },
     closest() { return { classList: { remove() {} } }; },
   };
@@ -28,7 +29,7 @@ test('a completed drama playlist awards a random quote on its third round', () =
     Audio: QuoteAudio,
     document: {
       addEventListener() {},
-      getElementById(id) { return { app, dramaRoundProgress: progress, quoteAudioStatus: status }[id] || null; },
+      getElementById(id) { return { app, dramaRoundProgress: progress, quoteAudioStatus: status, dramaEpisodeAudio: lastClip }[id] || null; },
       querySelectorAll(selector) { return selector === '.drama-audio' ? audioElements : []; },
       querySelector() { return { scrollIntoView() {} }; },
     },
@@ -40,6 +41,7 @@ test('a completed drama playlist awards a random quote on its third round', () =
     window: { scrollTo() {} },
   });
   const source = fs.readFileSync(path.join(__dirname, '..', 'public', 'app.js'), 'utf8').replace(/\binit\(\);\s*$/, '');
+  vm.runInContext(fs.readFileSync(path.join(__dirname, '..', 'public', 'drama-player.js'), 'utf8'), context);
   vm.runInContext(source, context);
   vm.runInContext("renderHome = () => { window.returnedToDrama = true; }", context);
   const cards = require('../public/manga-quote-cards.json');
@@ -47,13 +49,13 @@ test('a completed drama playlist awards a random quote on its third round', () =
   vm.runInContext("state.quoteCards = cards; state.currentDramaId = 'first-love'; state.currentEpisodeId = 'episode-1';", context);
 
   for (let round = 1; round <= 2; round += 1) {
-    vm.runInContext('state.dramaPlaylistActive = true; state.dramaPlaylistIndex = 0; onDramaAudioEnded(document.querySelectorAll(\'.drama-audio\')[0]);', context);
+    vm.runInContext('state.dramaPlaylistActive = true; state.dramaPlaylistIndex = 0; onDramaPlaylistEnded(document.getElementById(\'dramaEpisodeAudio\'));', context);
     assert.equal(vm.runInContext("dramaRoundCount('first-love', 'episode-1')", context), round);
     assert.equal(vm.runInContext('state.view', context), 'home');
     assert.equal(progress.textContent, `次のカードまで ${round}/3周`);
   }
 
-  vm.runInContext('state.dramaPlaylistActive = true; state.dramaPlaylistIndex = 0; onDramaAudioEnded(document.querySelectorAll(\'.drama-audio\')[0]);', context);
+  vm.runInContext('state.dramaPlaylistActive = true; state.dramaPlaylistIndex = 0; onDramaPlaylistEnded(document.getElementById(\'dramaEpisodeAudio\'));', context);
   assert.equal(vm.runInContext('state.view', context), 'dramaReward');
   assert.equal(vm.runInContext('state.dramaReward.id', context), 'thors');
   assert.match(app.innerHTML, /3周達成！/);

@@ -1,0 +1,21 @@
+.drama-continuous-player {
+  position: sticky;
+  top: 8px;
+  z-index: 5;
+  max-width: 760px;
+  margin-bottom: 20px;
+  padding: 14px 18px;
+  border: 1px solid #e4d7ce;
+  border-radius: 18px;
+  background: #fffdf9;
+  box-shadow: 0 4px 18px #35282112;
+}
+.drama-continuous-player .drama-playback-controls { margin: 0 0 10px; }
+.drama-continuous-player audio { display: block; width: 100%; height: 42px; }
+.drama-current-clip { margin: 0 0 10px; color: #b44f41; font-size: 14px; font-weight: 700; }
+#dramaPlaybackStatus { margin: 8px 0 0; font-size: 14px; }
+#dramaPlaybackStatus:empty { display: none; }
+@media (max-width: 600px) {
+  .drama-continuous-player { top: 4px; padding: 12px; border-radius: 14px; }
+  .drama-continuous-player .drama-playback-controls { gap: 8px; }
+}

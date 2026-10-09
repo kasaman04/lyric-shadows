@@ -17,8 +17,8 @@ const state = {
   currentEpisodeId: null,
   dramaPlaylistActive: false,
   dramaPlaylistIndex: 0,
-  dramaPlaylistExpectedAudio: null,
-  dramaPlaylistAudio: null,
+  dramaResumeTime: 0,
+  dramaReloading: false,
   dramaPlayRequest: 0,
   dramaWatchTimer: null,
   dramaRetryTimer: null,
@@ -373,15 +373,18 @@ function stopDramaAudio() {
   cancelDramaPlayRequest();
   state.dramaPlaylistActive = false;
   updateDramaPlaybackStatus('');
+  state.dramaReloading = false;
+  document.getElementById('dramaEpisodeAudio')?.pause();
   document.querySelectorAll('.drama-audio').forEach(audio => {
     audio.loop = false;
     audio.pause();
   });
   state.dramaPlaylistActive = false;
   state.dramaPlaylistIndex = 0;
-  state.dramaPlaylistExpectedAudio = null;
+  state.dramaResumeTime = 0;
   state.dramaSingleRepeatIndex = -1;
-  state.dramaPlaylistAudio = null;
+  highlightDramaClip(0);
+  updateDramaPlaybackButtons();
 }
 
 function showDrama(dramaId) {
@@ -498,232 +501,6 @@ function returnToDramaPhrases() {
   document.querySelector('.drama-library')?.scrollIntoView({ block: 'start' });
 }
 
-function onDramaAudioPlay(activeAudio) {
-  const audios = [...document.querySelectorAll('.drama-audio')];
-  if (state.dramaSingleRepeatIndex >= 0 && audios[state.dramaSingleRepeatIndex] !== activeAudio) {
-    clearDramaSingleRepeat();
-  }
-  audios.forEach(audio => {
-    if (audio !== activeAudio) audio.pause();
-    audio.closest('.drama-clip')?.classList.toggle('is-playing', audio === activeAudio);
-  });
-  const activeText = activeAudio.closest('.drama-clip')?.querySelector('.drama-clip-english');
-  activeText?.scrollIntoView({
-    behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
-    block: 'center'
-  });
-  if (activeAudio === state.dramaPlaylistExpectedAudio) {
-    state.dramaPlaylistExpectedAudio = null;
-  } else {
-    cancelDramaPlayRequest();
-    state.dramaPlaylistActive = false;
-    state.dramaPlaylistIndex = 0;
-    updateDramaPlaybackButtons();
-  }
-}
-
-function onDramaAudioPause(audio) {
-  // load() and a quick pause/resume can leave an older pause event queued.
-  if (!audio.paused || audio.error || audio === state.dramaPlaylistExpectedAudio) return;
-  audio.closest('.drama-clip')?.classList.remove('is-playing');
-  const audios = [...document.querySelectorAll('.drama-audio')];
-  if (state.dramaPlaylistActive && audios[state.dramaPlaylistIndex] === audio && !audio.ended) {
-    cancelDramaPlayRequest();
-    state.dramaPlaylistActive = false;
-    state.dramaPlaylistExpectedAudio = null;
-    updateDramaPlaybackButtons();
-  }
-}
-
-function onDramaAudioEnded(audio) {
-  audio.closest('.drama-clip')?.classList.remove('is-playing');
-  if (!state.dramaPlaylistActive) return;
-  const audios = [...document.querySelectorAll('.drama-audio')];
-  if (audios[state.dramaPlaylistIndex] !== audio) return;
-  const nextIndex = state.dramaPlaylistIndex + 1;
-  if (nextIndex < audios.length) {
-    playDramaAudioAt(nextIndex);
-  } else {
-    if (completeDramaRound()) return;
-    if (state.dramaRepeat) {
-      playDramaAudioAt(0, true);
-      return;
-    }
-    state.dramaPlaylistActive = false;
-    state.dramaPlaylistIndex = 0;
-    updateDramaPlaybackButtons();
-  }
-}
-
-function cancelDramaPlayRequest() {
-  state.dramaPlayRequest += 1;
-  clearTimeout(state.dramaRetryTimer);
-  clearTimeout(state.dramaWatchTimer);
-  state.dramaRetryTimer = null;
-  state.dramaWatchTimer = null;
-}
-
-function selectDramaPlaylistAudio(index) {
-  const audios = [...document.querySelectorAll('.drama-audio')];
-  const target = audios[index];
-  if (!target) return null;
-  const shared = state.dramaPlaylistAudio;
-  if (!shared || !audios.includes(shared)) {
-    state.dramaPlaylistAudio = target;
-    return target;
-  }
-  if (shared === target) return shared;
-  // Keep the user-started media element for Safari's per-element playback permission.
-  // Move its native controls into the next card; keep the other card's source intact.
-  const previousSlot = shared.closest('.drama-audio-slot');
-  const nextSlot = target.closest('.drama-audio-slot');
-  target.pause();
-  previousSlot.replaceChild(target, shared);
-  nextSlot.appendChild(shared);
-  target.src = previousSlot.dataset.audioSrc;
-  target.setAttribute('aria-label', previousSlot.dataset.audioLabel);
-  shared.src = nextSlot.dataset.audioSrc;
-  shared.setAttribute('aria-label', nextSlot.dataset.audioLabel);
-  return shared;
-}
-
-function watchDramaAudioProgress(audio, request, position = audio.currentTime) {
-  state.dramaWatchTimer = setTimeout(() => {
-    state.dramaWatchTimer = null;
-    if (request !== state.dramaPlayRequest || !state.dramaPlaylistActive || audio.ended) return;
-    if (audio.currentTime > position + 0.01) {
-      watchDramaAudioProgress(audio, request);
-    } else {
-      onDramaAudioError(audio, { name: 'PlaybackTimeoutError' }, request);
-    }
-  }, 12000);
-}
-
-function updateDramaPlaybackStatus(text) {
-  state.dramaPlaybackStatus = text;
-  const label = document.getElementById('dramaPlaybackStatus');
-  if (label) label.textContent = text;
-}
-
-function onDramaAudioError(audio, error, request = audio.dramaPlayRequest) {
-  if (!error && !audio.error) return;
-  const audios = [...document.querySelectorAll('.drama-audio')];
-  if (!state.dramaPlaylistActive || audios[state.dramaPlaylistIndex] !== audio || request !== state.dramaPlayRequest) return;
-  const index = state.dramaPlaylistIndex;
-  cancelDramaPlayRequest();
-  audio.closest('.drama-clip')?.classList.remove('is-playing');
-  if (error?.name !== 'NotAllowedError' && state.dramaRetryCount < 1) {
-    state.dramaPlaylistExpectedAudio = audio;
-    updateDramaPlaybackStatus('音声を再読み込み中…');
-    state.dramaRetryTimer = setTimeout(() => {
-      state.dramaRetryTimer = null;
-      audio.load();
-      playDramaAudioAt(index, true, 1);
-    }, 800);
-  } else {
-    state.dramaPlaylistActive = false;
-    state.dramaPlaylistExpectedAudio = null;
-    updateDramaPlaybackStatus(`音声${index + 1}で再生が止まりました。「まとめて再生」を押すと、この音声から再開します。`);
-  }
-  audio.pause();
-  updateDramaPlaybackButtons();
-}
-
-function playDramaAudioAt(index, restart = false, retryCount = 0) {
-  const audio = selectDramaPlaylistAudio(index);
-  if (!audio) return;
-  cancelDramaPlayRequest();
-  const request = state.dramaPlayRequest;
-  audio.dramaPlayRequest = request;
-  state.dramaRetryCount = retryCount;
-  state.dramaPlaylistIndex = index;
-  state.dramaPlaylistActive = true;
-  state.dramaPlaylistExpectedAudio = audio;
-  if (audio.error) audio.load();
-  if (restart || audio.ended) audio.currentTime = 0;
-  if (!retryCount) updateDramaPlaybackStatus('');
-  watchDramaAudioProgress(audio, request);
-  audio.play().then(() => {
-    if (request === state.dramaPlayRequest) updateDramaPlaybackStatus('');
-  }).catch(error => {
-    onDramaAudioError(audio, error, request);
-  });
-  updateDramaPlaybackButtons();
-}
-
-function toggleDramaPlayAll() {
-  const audios = [...document.querySelectorAll('.drama-audio')];
-  if (!audios.length) return;
-  if (state.dramaPlaylistActive) {
-    cancelDramaPlayRequest();
-    state.dramaPlaylistActive = false;
-    state.dramaPlaylistExpectedAudio = null;
-    audios[state.dramaPlaylistIndex]?.pause();
-    updateDramaPlaybackButtons();
-    return;
-  }
-  clearDramaSingleRepeat();
-  playDramaAudioAt(state.dramaPlaylistIndex);
-}
-
-function toggleDramaRepeat() {
-  state.dramaRepeat = !state.dramaRepeat;
-  if (state.dramaRepeat) clearDramaSingleRepeat();
-  updateDramaPlaybackButtons();
-}
-
-function clearDramaSingleRepeat() {
-  document.querySelectorAll('.drama-audio').forEach(audio => { audio.loop = false; });
-  state.dramaSingleRepeatIndex = -1;
-  updateDramaSingleRepeatButtons();
-}
-
-function toggleDramaSingleRepeat(index) {
-  const audios = [...document.querySelectorAll('.drama-audio')];
-  const audio = audios[index];
-  if (!audio) return;
-  if (state.dramaSingleRepeatIndex === index) {
-    clearDramaSingleRepeat();
-    return;
-  }
-  cancelDramaPlayRequest();
-  clearDramaSingleRepeat();
-  state.dramaPlaylistActive = false;
-  state.dramaPlaylistIndex = 0;
-  state.dramaPlaylistExpectedAudio = null;
-  state.dramaRepeat = false;
-  updateDramaPlaybackButtons();
-  state.dramaSingleRepeatIndex = index;
-  audio.loop = true;
-  audio.currentTime = 0;
-  updateDramaSingleRepeatButtons();
-  audio.play().catch(() => {});
-}
-
-function updateDramaSingleRepeatButtons() {
-  document.querySelectorAll('.drama-single-repeat').forEach((button, index) => {
-    const active = state.dramaSingleRepeatIndex === index;
-    button.classList.toggle('active', active);
-    button.setAttribute('aria-pressed', String(active));
-    button.setAttribute('aria-label', `この音声をリピート ${active ? 'オン' : 'オフ'}`);
-    button.textContent = active ? '↻ リピート中' : '↻ この音声をリピート';
-  });
-}
-
-function updateDramaPlaybackButtons() {
-  const playButton = document.getElementById('dramaPlayAll');
-  const repeatButton = document.getElementById('dramaRepeat');
-  if (playButton) {
-    playButton.innerHTML = state.dramaPlaylistActive ? '❚❚ <span>一時停止</span>' : '▶ <span>まとめて再生</span>';
-    playButton.setAttribute('aria-label', state.dramaPlaylistActive ? 'まとめて再生を一時停止' : 'まとめて再生');
-  }
-  if (repeatButton) {
-    repeatButton.classList.toggle('active', state.dramaRepeat);
-    repeatButton.setAttribute('aria-pressed', String(state.dramaRepeat));
-    repeatButton.setAttribute('aria-label', `リピート ${state.dramaRepeat ? 'オン' : 'オフ'}`);
-  }
-}
-
 function toggleDramaExamples(index) {
   const panel = document.getElementById(`dramaExamples-${index}`);
   const button = document.getElementById(`dramaMore-${index}`);
@@ -826,7 +603,7 @@ function renderDramaGrid() {
         <div class="drama-clip-heading"><span>${String(index + 1).padStart(2, '0')}</span><span>音声</span></div>
         <p class="drama-clip-english" lang="en">${esc(clip.english)}</p>
         <p class="drama-clip-japanese">${esc(clip.japanese)}</p>
-        <div class="drama-audio-slot" data-audio-src="${esc(clip.audio)}" data-audio-label="${esc(clip.english)}"><audio class="drama-audio" controls preload="none" src="${esc(clip.audio)}" onplay="onDramaAudioPlay(this)" onpause="onDramaAudioPause(this)" onended="onDramaAudioEnded(this)" onerror="onDramaAudioError(this)" aria-label="${esc(clip.english)}"></audio></div>
+        <div class="drama-audio-slot" data-audio-src="${esc(clip.audio)}" data-audio-label="${esc(clip.english)}"><audio class="drama-audio" controls preload="none" src="${esc(clip.audio)}" onplay="onDramaAudioPlay(this)" onpause="onDramaAudioPause(this)" onended="onDramaAudioPause(this)" aria-label="${esc(clip.english)}"></audio></div>
         <div class="drama-clip-actions">
           <button class="drama-single-repeat" onclick="toggleDramaSingleRepeat(${index})" aria-pressed="false" aria-label="この音声をリピート オフ">↻ この音声をリピート</button>
           ${examples.length ? `<button id="dramaMore-${index}" class="drama-more" onclick="toggleDramaExamples(${index})" aria-expanded="false" aria-controls="dramaExamples-${index}">その他 ▾</button>` : ''}
@@ -844,11 +621,18 @@ function renderDramaGrid() {
       <p class="drama-page-subtitle">第${episode.number}話 ${esc(episode.title)}</p>
       <p id="dramaRoundProgress" class="drama-round-progress">次のカードまで ${dramaRoundCount(drama.id, episode.id) % DRAMA_ROUNDS_PER_CARD}/${DRAMA_ROUNDS_PER_CARD}周</p>
       <div class="section-heading drama-section-heading"><h3>この回の音声</h3><span>${episode.clips.length}件</span></div>
+      <div class="drama-continuous-player">
+      <p id="dramaCurrentClip" class="drama-current-clip">音声 01 / ${episode.clips.length}</p>
       <div class="drama-playback-controls">
         <button id="dramaPlayAll" class="drama-play-all" onclick="toggleDramaPlayAll()" aria-label="まとめて再生">▶ <span>まとめて再生</span></button>
         <button id="dramaRepeat" class="drama-repeat ${state.dramaRepeat ? 'active' : ''}" onclick="toggleDramaRepeat()" aria-pressed="${state.dramaRepeat}" aria-label="リピート ${state.dramaRepeat ? 'オン' : 'オフ'}">↻ <span>リピート</span></button>
       </div>
+      <audio id="dramaEpisodeAudio" controls preload="metadata" src="${esc(currentDramaTrack()?.audio || '')}" aria-label="この回の連続再生"
+        onplay="onDramaPlaylistPlay(this)" onplaying="onDramaPlaylistPlaying(this)" onpause="onDramaPlaylistPause(this)"
+        ontimeupdate="onDramaPlaylistTime(this)" onloadedmetadata="onDramaPlaylistLoaded(this)"
+        onended="onDramaPlaylistEnded(this)" onerror="onDramaAudioError(this)" onwaiting="onDramaPlaylistWaiting(this)"></audio>
       <p id="dramaPlaybackStatus" role="status" aria-live="polite">${esc(state.dramaPlaybackStatus)}</p>
+      </div>
       <div class="drama-clip-list">${clips}</div>
     </section>`;
   }
