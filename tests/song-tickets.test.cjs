@@ -39,22 +39,26 @@ const context = vm.createContext({
   clearTimeout() {},
   console,
 });
+context.notesSong = JSON.parse(fs.readFileSync("songs/Notes'n'Words ONE OK ROCK/song.json", 'utf8'));
 vm.runInContext(source, context);
 const run = code => vm.runInContext(code, context);
-run(`state.currentSong = {
-  folderName: 'test-song', songName: 'Test Song', hasLocalAudio: true,
-  conversation: [{speaker:'A',sentences:[{text:'One',audio:'one.mp3'},{text:'Two',audio:'two.mp3'}]}]
-}; initAudio(state.currentSong);`);
+run('state.currentSong = { ...notesSong, hasLocalAudio: true }; initAudio(state.currentSong);');
 
 async function main() {
   await run('startSongPlayback()');
   assert.equal(songPlayCalls, 0, 'Song must be locked before five listens');
 
-  run('clickSentence(1); state.conversationAudio.onended()');
+  run('clickSentence(state.audioSources.length - 1); state.conversationAudio.onended()');
   assert.equal(run('getSongTickets().listens'), 0, 'jumping to the end is not a full listen');
 
   for (let i = 0; i < 10; i++) {
-    run('restartAll(); togglePlay(); state.conversationAudio.onended(); state.conversationAudio.onended()');
+    run('restartAll(); togglePlay(); for (let sentence = 0; sentence < state.audioSources.length; sentence++) state.conversationAudio.onended();');
+    if (i === 3) {
+      assert.equal(run('availableSongTickets()'), 0, 'four full listens must not unlock Song');
+      await run('startSongPlayback()');
+      assert.equal(songPlayCalls, 0, 'Notes\'n\'Words must stay locked after four listens');
+    }
+    if (i === 4) assert.equal(run('availableSongTickets()'), 1, 'the fifth full listen unlocks one Song play');
   }
   assert.equal(run('getSongTickets().listens'), 10);
   assert.equal(run('availableSongTickets()'), 2);
