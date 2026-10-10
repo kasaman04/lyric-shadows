@@ -203,12 +203,17 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "I keep telling myself, Patience, but I don't know how much longer I can act normal.",
-          "displayHtml": "I keep telling myself, <span class=\"lyric-phrase\">Patience</span>, but I don't know how much longer I can act normal.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/44d7674810081cb8/0-0.mp3"
+          "text": "I don't think this degree is right for me.",
+          "displayHtml": "I don't think this degree is right for me.",
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/fef562a05f0d0de4/0-0.mp3"
+        },
+        {
+          "text": "I'm scared to tell my parents.",
+          "displayHtml": "I'm scared to tell my parents.",
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/fef562a05f0d0de4/0-1.mp3"
         }
       ],
-      "japanese": "ずっと「我慢しろ」って自分に言い聞かせてるけど、あとどれくらい普通のふりができるかわからない。"
+      "japanese": "この学部、自分には合ってないと思う。親に言うのが怖いんだ。"
     },
     {
       "speaker": "B",
@@ -216,17 +221,17 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "Is this about school again?",
-          "displayHtml": "Is this about school again?",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/44d7674810081cb8/1-0.mp3"
+          "text": "I know full well how hard you've been trying.",
+          "displayHtml": "<span class=\"lyric-phrase\">I know full well</span> how hard you've been trying.",
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/fef562a05f0d0de4/1-0.mp3"
         },
         {
-          "text": "Or is it more than that?",
-          "displayHtml": "Or is it more than that?",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/44d7674810081cb8/1-1.mp3"
+          "text": "What would you rather do?",
+          "displayHtml": "What would you rather do?",
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/fef562a05f0d0de4/1-1.mp3"
         }
       ],
-      "japanese": "また学校のこと？それとも、もっと大きい話？"
+      "japanese": "ずっと頑張ってるのはよくわかってるよ。本当は何をしたい？"
     },
     {
       "speaker": "A",
@@ -234,22 +239,12 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "It's all of this.",
-          "displayHtml": "It's <span class=\"lyric-phrase\">all of this</span>.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/44d7674810081cb8/2-0.mp3"
-        },
-        {
-          "text": "School, my parents, the future.",
-          "displayHtml": "School, my parents, the future.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/44d7674810081cb8/2-1.mp3"
-        },
-        {
-          "text": "I feel trapped.",
-          "displayHtml": "I feel trapped.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/44d7674810081cb8/2-2.mp3"
+          "text": "Maybe I'm thinking out loud, but I'd like to study design instead.",
+          "displayHtml": "Maybe <span class=\"lyric-phrase\">I'm thinking out loud</span>, but I'd like to study design instead.",
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/fef562a05f0d0de4/2-0.mp3"
         }
       ],
-      "japanese": "全部だよ。学校も、親のことも、将来のことも。閉じ込められてる感じがする。"
+      "japanese": "まだ考えながら話してるんだけど、代わりにデザインを学びたい。"
     },
     {
       "speaker": "B",
@@ -257,17 +252,17 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "Then stop trying to sound fine.",
-          "displayHtml": "Then stop trying to sound fine.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/44d7674810081cb8/3-0.mp3"
+          "text": "That sounds worth exploring.",
+          "displayHtml": "That sounds worth exploring.",
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/fef562a05f0d0de4/3-0.mp3"
         },
         {
-          "text": "Tell me how you've been feeling for real.",
-          "displayHtml": "Tell me <span class=\"lyric-phrase\">how you've been feeling</span> for real.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/44d7674810081cb8/3-1.mp3"
+          "text": "You don't have to decide everything tonight.",
+          "displayHtml": "You don't have to decide everything tonight.",
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/fef562a05f0d0de4/3-1.mp3"
         }
       ],
-      "japanese": "じゃあ、平気そうに話そうとしなくていいよ。本当はどう感じてるのか話して。"
+      "japanese": "調べてみる価値はありそうだね。今夜、全部決めなくていいよ。"
     },
     {
       "speaker": "A",
@@ -275,17 +270,17 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "I don't know.",
-          "displayHtml": "I don't know.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/44d7674810081cb8/4-0.mp3"
+          "text": "Could you help me work out how to explain it?",
+          "displayHtml": "Could you help me work out how to explain it?",
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/fef562a05f0d0de4/4-0.mp3"
         },
         {
-          "text": "Maybe I'm thinking out loud, but I don't think this path is mine.",
-          "displayHtml": "Maybe <span class=\"lyric-phrase\">I'm thinking out loud</span>, but I don't think this path is mine.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/44d7674810081cb8/4-1.mp3"
+          "text": "I don't want to sound ungrateful.",
+          "displayHtml": "I don't want to sound ungrateful.",
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/fef562a05f0d0de4/4-1.mp3"
         }
       ],
-      "japanese": "わからない。ただ声に出して考えてるだけかもしれないけど、この道は自分のものじゃない気がする。"
+      "japanese": "どう説明するか一緒に考えてくれる？ 感謝してないみたいには聞こえたくなくて。"
     },
     {
       "speaker": "B",
@@ -293,134 +288,34 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "I think you already know that.",
-          "displayHtml": "I think you already know that.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/44d7674810081cb8/5-0.mp3"
+          "text": "Of course.",
+          "displayHtml": "Of course.",
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/fef562a05f0d0de4/5-0.mp3"
         },
         {
-          "text": "And I know full well you've been scared to say it.",
-          "displayHtml": "And I <span class=\"lyric-phrase\">know full well</span> you've been scared to say it.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/44d7674810081cb8/5-1.mp3"
+          "text": "Let's start with why it matters to you and make a plan.",
+          "displayHtml": "Let's start with why it matters to you and make a plan.",
+          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/fef562a05f0d0de4/5-1.mp3"
         }
       ],
-      "japanese": "たぶん君はもうわかってるんだと思う。それを言うのが怖かったことも、私はちゃんとわかってる。"
-    },
-    {
-      "speaker": "A",
-      "speakerName": "Noah",
-      "speakerType": "男性",
-      "sentences": [
-        {
-          "text": "Yeah.",
-          "displayHtml": "Yeah.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/44d7674810081cb8/6-0.mp3"
-        },
-        {
-          "text": "Every time I try to explain it, I think, I gotta say less, or they'll get disappointed.",
-          "displayHtml": "Every time I try to explain it, I think, <span class=\"lyric-phrase\">I gotta say less</span>, or they'll get disappointed.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/44d7674810081cb8/6-1.mp3"
-        }
-      ],
-      "japanese": "うん。説明しようとするたびに、余計なことは言わない方がいいって思うんだ。がっかりされそうで。"
-    },
-    {
-      "speaker": "B",
-      "speakerName": "Lily",
-      "speakerType": "女性",
-      "sentences": [
-        {
-          "text": "Maybe you're waiting for a sign from above, but you might not get one.",
-          "displayHtml": "Maybe you're waiting for a <span class=\"lyric-phrase\">sign from above</span>, but you might not get one.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/44d7674810081cb8/7-0.mp3"
-        }
-      ],
-      "japanese": "天からのサインみたいなものを待ってるのかもしれないけど、そんなものは来ないかもしれない。"
-    },
-    {
-      "speaker": "A",
-      "speakerName": "Noah",
-      "speakerType": "男性",
-      "sentences": [
-        {
-          "text": "That's what scares me.",
-          "displayHtml": "That's what scares me.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/44d7674810081cb8/8-0.mp3"
-        },
-        {
-          "text": "If I choose wrong, it's on me.",
-          "displayHtml": "If I choose wrong, it's on me.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/44d7674810081cb8/8-1.mp3"
-        },
-        {
-          "text": "I feel like I'm losing control.",
-          "displayHtml": "I feel like <span class=\"lyric-phrase\">I'm losing control</span>.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/44d7674810081cb8/8-2.mp3"
-        }
-      ],
-      "japanese": "それが怖いんだ。間違えたら、自分の責任になる。自分を保てなくなりそう。"
-    },
-    {
-      "speaker": "B",
-      "speakerName": "Lily",
-      "speakerType": "女性",
-      "sentences": [
-        {
-          "text": "I get it.",
-          "displayHtml": "I get it.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/44d7674810081cb8/9-0.mp3"
-        },
-        {
-          "text": "But Nothing learned is painless.",
-          "displayHtml": "But <span class=\"lyric-phrase\">Nothing learned is painless</span>.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/44d7674810081cb8/9-1.mp3"
-        },
-        {
-          "text": "If this hurts, maybe it means you're finally being honest.",
-          "displayHtml": "If this hurts, maybe it means you're finally being honest.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/44d7674810081cb8/9-2.mp3"
-        }
-      ],
-      "japanese": "わかるよ。でも、痛みなしに学べることなんてないのかも。苦しいなら、それはやっと本音に向き合ってるってことかもしれない。"
-    },
-    {
-      "speaker": "A",
-      "speakerName": "Noah",
-      "speakerType": "男性",
-      "sentences": [
-        {
-          "text": "I'm so tired, Lily.",
-          "displayHtml": "I'm so tired, Lily.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/44d7674810081cb8/10-0.mp3"
-        },
-        {
-          "text": "I feel like I'm barely breathing.",
-          "displayHtml": "I feel like <span class=\"lyric-phrase\">I'm barely breathing</span>.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/44d7674810081cb8/10-1.mp3"
-        }
-      ],
-      "japanese": "もう疲れたよ、Lily。息をするのもやっとな気がする。"
-    },
-    {
-      "speaker": "B",
-      "speakerName": "Lily",
-      "speakerType": "女性",
-      "sentences": [
-        {
-          "text": "Then don't decide everything tonight.",
-          "displayHtml": "Then don't decide everything tonight.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/44d7674810081cb8/11-0.mp3"
-        },
-        {
-          "text": "Just breathe, and tomorrow we'll figure out the first sentence together.",
-          "displayHtml": "Just breathe, and tomorrow we'll figure out the first sentence together.",
-          "audio": "/songs/Never%20Tell%20Luke%20Chiang/conversation-audio/44d7674810081cb8/11-1.mp3"
-        }
-      ],
-      "japanese": "じゃあ今夜、全部決めなくていい。まず息をして。明日、最初に何を言うか一緒に考えよう。"
+      "japanese": "もちろん。なぜ大事なのかから整理して、計画を立てよう。"
     }
   ],
   "createdAt": "2026-05-18T06:12:24.579Z",
   "thumbnailSource": "Luke Chiang - Never Tell Official Music Video",
   "conversationAudioStatus": "ready",
-  "conversationAudioModel": "eleven_v4"
+  "conversationAudioModel": "eleven_v4",
+  "lyricConnections": [
+    {
+      "lyricExpression": "I know full well",
+      "conversationExpression": "I know full well",
+      "explanationJa": "know full well は、十分にわかっていると強調する表現。"
+    },
+    {
+      "lyricExpression": "I'm thinking out loud",
+      "conversationExpression": "I'm thinking out loud",
+      "explanationJa": "think out loud は、考えをまだ整理しながら口に出すこと。"
+    }
+  ],
+  "dialogueUpdatedAt": "2026-10-10T23:25:30.766Z"
 }

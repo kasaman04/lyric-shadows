@@ -211,58 +211,53 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "Hey, Mia...",
-          "displayHtml": "Hey, Mia...",
-          "audio": "/songs/drunk%20keshi/conversation-audio/d0a6e547940ce7cb/0-0.mp3"
+          "text": "Hey, Mia, it's been a while since we last spoke.",
+          "displayHtml": "Hey, Mia, it's been a while since we last spoke.",
+          "audio": "/songs/drunk%20keshi/conversation-audio/e20dd042b7193b56/0-0.mp3"
         },
         {
-          "text": "It's been a while since we last spoke.",
-          "displayHtml": "<span class=\"lyric-phrase\">It's been a while since we last spoke</span>.",
-          "audio": "/songs/drunk%20keshi/conversation-audio/d0a6e547940ce7cb/0-1.mp3"
+          "text": "Is this a bad time?",
+          "displayHtml": "Is this a bad time?",
+          "audio": "/songs/drunk%20keshi/conversation-audio/e20dd042b7193b56/0-1.mp3"
         }
       ],
-      "japanese": "ねえ、Mia……最後に話してから、ずいぶん経ったね。"
+      "japanese": "ねえ、ミア。久しぶりだね。今、話しても大丈夫？"
     },
     {
       "speaker": "B",
       "speakerName": "Mia",
       "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "I'm still awake, but you sound tired.",
+          "displayHtml": "I'm still awake, but you sound tired.",
+          "audio": "/songs/drunk%20keshi/conversation-audio/e20dd042b7193b56/1-0.mp3"
+        },
+        {
+          "text": "Are you on your way home?",
+          "displayHtml": "Are you on your way home?",
+          "audio": "/songs/drunk%20keshi/conversation-audio/e20dd042b7193b56/1-1.mp3"
+        }
+      ],
+      "japanese": "私はまだ起きてるけど、あなたは疲れてるみたいだね。帰るところ？"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Ren",
+      "speakerType": "男性",
       "sentences": [
         {
           "text": "Yeah.",
           "displayHtml": "Yeah.",
-          "audio": "/songs/drunk%20keshi/conversation-audio/d0a6e547940ce7cb/1-0.mp3"
+          "audio": "/songs/drunk%20keshi/conversation-audio/e20dd042b7193b56/2-0.mp3"
         },
         {
-          "text": "I didn't expect your call this late, but I'm glad you did.",
-          "displayHtml": "I didn't expect your call this late, but I'm glad you did.",
-          "audio": "/songs/drunk%20keshi/conversation-audio/d0a6e547940ce7cb/1-1.mp3"
-        },
-        {
-          "text": "So, how's it go?",
-          "displayHtml": "So, <span class=\"lyric-phrase\">how's it go</span>?",
-          "audio": "/songs/drunk%20keshi/conversation-audio/d0a6e547940ce7cb/1-2.mp3"
+          "text": "I thought moving on would be easier, but it's been hard to carry on.",
+          "displayHtml": "I thought moving on would be easier, but it's been <span class=\"lyric-phrase\">hard to carry on</span>.",
+          "audio": "/songs/drunk%20keshi/conversation-audio/e20dd042b7193b56/2-1.mp3"
         }
       ],
-      "japanese": "うん。こんな遅くに電話が来るとは思わなかったけど、話せてうれしいよ。それで、最近どう？"
-    },
-    {
-      "speaker": "A",
-      "speakerName": "Ren",
-      "speakerType": "男性",
-      "sentences": [
-        {
-          "text": "Honestly, nothin' new.",
-          "displayHtml": "Honestly, <span class=\"lyric-phrase\">nothin' new</span>.",
-          "audio": "/songs/drunk%20keshi/conversation-audio/d0a6e547940ce7cb/2-0.mp3"
-        },
-        {
-          "text": "I left the bar early, and now I'm stumblin' back to bed.",
-          "displayHtml": "I left the bar early, and now <span class=\"lyric-phrase\">I'm stumblin' back to bed</span>.",
-          "audio": "/songs/drunk%20keshi/conversation-audio/d0a6e547940ce7cb/2-1.mp3"
-        }
-      ],
-      "japanese": "正直、何も変わってないよ。バーを早めに出て、今はふらつきながらベッドに戻ってるところ。"
+      "japanese": "うん。もっと簡単に前に進めると思ってたけど、なかなかつらくて。"
     },
     {
       "speaker": "B",
@@ -270,17 +265,17 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "all by myself again?",
-          "displayHtml": "<span class=\"lyric-phrase\">all by myself</span> again?",
-          "audio": "/songs/drunk%20keshi/conversation-audio/d0a6e547940ce7cb/3-0.mp3"
+          "text": "I know.",
+          "displayHtml": "I know.",
+          "audio": "/songs/drunk%20keshi/conversation-audio/e20dd042b7193b56/3-0.mp3"
         },
         {
-          "text": "Ren, you always say you're fine, but you sound lonely.",
-          "displayHtml": "Ren, you always say you're fine, but you sound lonely.",
-          "audio": "/songs/drunk%20keshi/conversation-audio/d0a6e547940ce7cb/3-1.mp3"
+          "text": "But we don't have to figure out everything about us tonight.",
+          "displayHtml": "But we don't have to figure out everything about us tonight.",
+          "audio": "/songs/drunk%20keshi/conversation-audio/e20dd042b7193b56/3-1.mp3"
         }
       ],
-      "japanese": "またひとりで？Ren、いつも平気だって言うけど、声が寂しそう。"
+      "japanese": "わかるよ。でも、今夜、私たちのことを全部決めなくていい。"
     },
     {
       "speaker": "A",
@@ -288,84 +283,17 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "I keep saying I need nobody else, but on nights like this, it feels like a lie.",
-          "displayHtml": "I keep saying I need <span class=\"lyric-phrase\">nobody else</span>, but on nights like this, it feels like a lie.",
-          "audio": "/songs/drunk%20keshi/conversation-audio/d0a6e547940ce7cb/4-0.mp3"
-        }
-      ],
-      "japanese": "誰もいらないって言い続けてるけど、こういう夜はそれが嘘みたいに感じる。"
-    },
-    {
-      "speaker": "B",
-      "speakerName": "Mia",
-      "speakerType": "女性",
-      "sentences": [
-        {
-          "text": "Ren, I know.",
-          "displayHtml": "Ren, I know.",
-          "audio": "/songs/drunk%20keshi/conversation-audio/d0a6e547940ce7cb/5-0.mp3"
+          "text": "You're right.",
+          "displayHtml": "You're right.",
+          "audio": "/songs/drunk%20keshi/conversation-audio/e20dd042b7193b56/4-0.mp3"
         },
         {
-          "text": "We both tried to act like moving on was easy.",
-          "displayHtml": "We both tried to act like moving on was easy.",
-          "audio": "/songs/drunk%20keshi/conversation-audio/d0a6e547940ce7cb/5-1.mp3"
+          "text": "I think I just wanted to hear your voice.",
+          "displayHtml": "I think I just wanted to hear your voice.",
+          "audio": "/songs/drunk%20keshi/conversation-audio/e20dd042b7193b56/4-1.mp3"
         }
       ],
-      "japanese": "Ren……わかるよ。私たち、お互い前に進むのは簡単だってふりしてたよね。"
-    },
-    {
-      "speaker": "A",
-      "speakerName": "Ren",
-      "speakerType": "男性",
-      "sentences": [
-        {
-          "text": "I never thought it would be this hard to carry on.",
-          "displayHtml": "I never thought it would be this hard to carry on.",
-          "audio": "/songs/drunk%20keshi/conversation-audio/d0a6e547940ce7cb/6-0.mp3"
-        },
-        {
-          "text": "Maybe part of me is still stuck way back then.",
-          "displayHtml": "Maybe part of me is still stuck <span class=\"lyric-phrase\">way back then</span>.",
-          "audio": "/songs/drunk%20keshi/conversation-audio/d0a6e547940ce7cb/6-1.mp3"
-        }
-      ],
-      "japanese": "こんなに前に進むのが難しいなんて思わなかった。たぶん僕の一部は、まだあの頃に取り残されてる。"
-    },
-    {
-      "speaker": "B",
-      "speakerName": "Mia",
-      "speakerType": "女性",
-      "sentences": [
-        {
-          "text": "I think part of me is too.",
-          "displayHtml": "I think part of me is too.",
-          "audio": "/songs/drunk%20keshi/conversation-audio/d0a6e547940ce7cb/7-0.mp3"
-        },
-        {
-          "text": "But don't say you have nobody else just because tonight hurts.",
-          "displayHtml": "But don't say you have <span class=\"lyric-phrase\">nobody else</span> just because tonight hurts.",
-          "audio": "/songs/drunk%20keshi/conversation-audio/d0a6e547940ce7cb/7-1.mp3"
-        }
-      ],
-      "japanese": "私の一部もそうかもしれない。でも、今夜つらいからって「誰もいない」なんて言わないで。"
-    },
-    {
-      "speaker": "A",
-      "speakerName": "Ren",
-      "speakerType": "男性",
-      "sentences": [
-        {
-          "text": "I don't know what I expected when I called you.",
-          "displayHtml": "I don't know what I expected when I called you.",
-          "audio": "/songs/drunk%20keshi/conversation-audio/d0a6e547940ce7cb/8-0.mp3"
-        },
-        {
-          "text": "Maybe I just wanted to hear your voice.",
-          "displayHtml": "Maybe I just wanted to hear your voice.",
-          "audio": "/songs/drunk%20keshi/conversation-audio/d0a6e547940ce7cb/8-1.mp3"
-        }
-      ],
-      "japanese": "君に電話して、何を期待してたのかわからない。ただ声が聞きたかっただけかも。"
+      "japanese": "そうだね。ただ君の声が聞きたかったんだと思う。"
     },
     {
       "speaker": "B",
@@ -375,19 +303,32 @@
         {
           "text": "Then stay on the phone until you get home.",
           "displayHtml": "Then stay on the phone until you get home.",
-          "audio": "/songs/drunk%20keshi/conversation-audio/d0a6e547940ce7cb/9-0.mp3"
+          "audio": "/songs/drunk%20keshi/conversation-audio/e20dd042b7193b56/5-0.mp3"
         },
         {
-          "text": "We don't have to fix us tonight.",
-          "displayHtml": "We don't have to fix us tonight.",
-          "audio": "/songs/drunk%20keshi/conversation-audio/d0a6e547940ce7cb/9-1.mp3"
+          "text": "We can just talk.",
+          "displayHtml": "We can just talk.",
+          "audio": "/songs/drunk%20keshi/conversation-audio/e20dd042b7193b56/5-1.mp3"
         }
       ],
-      "japanese": "じゃあ、家に着くまで電話をつないでて。今夜、私たちのことを無理に答えにしなくていい。"
+      "japanese": "じゃあ、家に着くまで電話してよう。普通に話せばいいよ。"
     }
   ],
   "createdAt": "2026-05-18T05:20:26.415Z",
   "thumbnailSource": "keshi - drunk Audio / KeshiVEVO",
   "conversationAudioStatus": "ready",
-  "conversationAudioModel": "eleven_v4"
+  "conversationAudioModel": "eleven_v4",
+  "lyricConnections": [
+    {
+      "lyricExpression": "It's been a while since we last spoke",
+      "conversationExpression": "It's been a while since we last spoke",
+      "explanationJa": "It's been a while since ... は、最後に何かをしてから時間がたったことを表す。"
+    },
+    {
+      "lyricExpression": "hard to carry on",
+      "conversationExpression": "hard to carry on",
+      "explanationJa": "carry on は、つらい状況でも生活や行動を続けること。"
+    }
+  ],
+  "dialogueUpdatedAt": "2026-10-10T23:25:30.786Z"
 }

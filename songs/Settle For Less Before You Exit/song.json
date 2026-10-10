@@ -275,12 +275,17 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "He forgot our plans again. I feel stupid for still waiting.",
-          "displayHtml": "He forgot our plans again. I feel stupid for still waiting.",
-          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/conversation-audio/f81293b179e5fc27/0-0.mp3"
+          "text": "He canceled again.",
+          "displayHtml": "He canceled again.",
+          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/conversation-audio/070e975f28249888/0-0.mp3"
+        },
+        {
+          "text": "Maybe I'm asking for too much by wanting him to show up.",
+          "displayHtml": "Maybe I'm asking for too much by wanting him to show up.",
+          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/conversation-audio/070e975f28249888/0-1.mp3"
         }
       ],
-      "japanese": "また約束を忘れられたの。まだ待ってる自分がバカみたい。"
+      "japanese": "またキャンセルされた。ちゃんと来てほしいって、求めすぎなのかな。"
     },
     {
       "speaker": "B",
@@ -288,12 +293,17 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "Sarah, he takes you for granted. You keep giving, and he barely tries.",
-          "displayHtml": "Sarah, he <span class=\"lyric-phrase\">takes you for granted</span>. You keep giving, and he barely tries.",
-          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/conversation-audio/f81293b179e5fc27/1-0.mp3"
+          "text": "You're not.",
+          "displayHtml": "You're not.",
+          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/conversation-audio/070e975f28249888/1-0.mp3"
+        },
+        {
+          "text": "He takes you for granted, and you deserve someone who makes time for you.",
+          "displayHtml": "He <span class=\"lyric-phrase\">takes you for granted</span>, and you deserve someone who makes time for you.",
+          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/conversation-audio/070e975f28249888/1-1.mp3"
         }
       ],
-      "japanese": "サラ、彼は君を当たり前に思ってるよ。君ばかり頑張って、彼はほとんど努力してない。"
+      "japanese": "そんなことないよ。彼は君の好意を当然だと思ってる。時間を作ってくれる人がいいよ。"
     },
     {
       "speaker": "A",
@@ -301,12 +311,17 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "Maybe I'm asking for too much. I just wanted him to care a little more.",
-          "displayHtml": "Maybe I'm asking for too much. I just wanted him to care a little more.",
-          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/conversation-audio/f81293b179e5fc27/2-0.mp3"
+          "text": "I know, but walking away is hard.",
+          "displayHtml": "I know, but walking away is hard.",
+          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/conversation-audio/070e975f28249888/2-0.mp3"
+        },
+        {
+          "text": "Why do you care so much?",
+          "displayHtml": "Why do you care so much?",
+          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/conversation-audio/070e975f28249888/2-1.mp3"
         }
       ],
-      "japanese": "私が求めすぎなのかな。もう少し大事にしてほしかっただけなんだけど。"
+      "japanese": "わかってるけど、別れるのは難しい。どうしてそんなに気にかけてくれるの？"
     },
     {
       "speaker": "B",
@@ -314,12 +329,17 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "That's not too much. Everybody deserves somebody who shows up, listens, and makes time.",
-          "displayHtml": "That's not too much. <span class=\"lyric-phrase\">Everybody deserves somebody</span> who shows up, listens, and makes time.",
-          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/conversation-audio/f81293b179e5fc27/3-0.mp3"
+          "text": "Because I have feelings for you.",
+          "displayHtml": "Because I have feelings for you.",
+          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/conversation-audio/070e975f28249888/3-0.mp3"
+        },
+        {
+          "text": "But you don't have to decide anything about us now.",
+          "displayHtml": "But you don't have to decide anything about us now.",
+          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/conversation-audio/070e975f28249888/3-1.mp3"
         }
       ],
-      "japanese": "それは求めすぎじゃないよ。誰にだって、ちゃんと向き合ってくれる人がふさわしいんだ。"
+      "japanese": "君が好きだから。でも、僕たちのことを今決めなくていい。"
     },
     {
       "speaker": "A",
@@ -327,12 +347,17 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "I guess I know that. It's just hard to walk away.",
-          "displayHtml": "I guess I know that. It's just hard to walk away.",
-          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/conversation-audio/f81293b179e5fc27/4-0.mp3"
+          "text": "I didn't realize.",
+          "displayHtml": "I didn't realize.",
+          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/conversation-audio/070e975f28249888/4-0.mp3"
+        },
+        {
+          "text": "I need some time to figure out what I want.",
+          "displayHtml": "I need some time to figure out what I want.",
+          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/conversation-audio/070e975f28249888/4-1.mp3"
         }
       ],
-      "japanese": "たぶん分かってる。でも離れるのって難しいの。"
+      "japanese": "気づかなかった。自分がどうしたいか考える時間がほしい。"
     },
     {
       "speaker": "B",
@@ -340,94 +365,34 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "I've been watching from the sidelines, and I can see he's holding you back.",
-          "displayHtml": "I've been <span class=\"lyric-phrase\">watching from the sidelines</span>, and I can see <span class=\"lyric-phrase\">he's holding you back</span>.",
-          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/conversation-audio/f81293b179e5fc27/5-0.mp3"
-        }
-      ],
-      "japanese": "僕はずっとそばで見てきた。それに、彼が君の足を引っ張ってるのが分かる。"
-    },
-    {
-      "speaker": "A",
-      "speakerName": "Sarah",
-      "speakerType": "女性",
-      "sentences": [
+          "text": "Take it.",
+          "displayHtml": "Take it.",
+          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/conversation-audio/070e975f28249888/5-0.mp3"
+        },
         {
-          "text": "You really think I deserve better?",
-          "displayHtml": "You really think <span class=\"lyric-phrase\">I deserve better</span>?",
-          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/conversation-audio/f81293b179e5fc27/6-0.mp3"
+          "text": "Whatever you choose, don't settle for less than being treated well.",
+          "displayHtml": "Whatever you choose, <span class=\"lyric-phrase\">don't settle for less</span> than being treated well.",
+          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/conversation-audio/070e975f28249888/5-1.mp3"
         }
       ],
-      "japanese": "私にはもっといい人がふさわしいって本当に思う？"
-    },
-    {
-      "speaker": "B",
-      "speakerName": "Tom",
-      "speakerType": "男性",
-      "sentences": [
-        {
-          "text": "I do. And I'm not perfect, but I'd never make you feel like you had to beg for love.",
-          "displayHtml": "I do. And <span class=\"lyric-phrase\">I'm not perfect</span>, but I'd never make you feel like you had to beg for love.",
-          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/conversation-audio/f81293b179e5fc27/7-0.mp3"
-        }
-      ],
-      "japanese": "思うよ。僕は完璧じゃないけど、愛されるためにお願いしなきゃいけないなんて思わせない。"
-    },
-    {
-      "speaker": "A",
-      "speakerName": "Sarah",
-      "speakerType": "女性",
-      "sentences": [
-        {
-          "text": "Why are you saying all this now?",
-          "displayHtml": "Why are you saying all this now?",
-          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/conversation-audio/f81293b179e5fc27/8-0.mp3"
-        }
-      ],
-      "japanese": "どうして今そんなこと言うの？"
-    },
-    {
-      "speaker": "B",
-      "speakerName": "Tom",
-      "speakerType": "男性",
-      "sentences": [
-        {
-          "text": "Because nobody can love you like I do, and you're so worth it. Don't settle for less.",
-          "displayHtml": "Because <span class=\"lyric-phrase\">nobody can love you like I do</span>, and <span class=\"lyric-phrase\">you're so worth it</span>. <span class=\"lyric-phrase\">Don't settle for less</span>.",
-          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/conversation-audio/f81293b179e5fc27/9-0.mp3"
-        }
-      ],
-      "japanese": "だって、僕ほど君を愛せる人はいないし、君にはそれだけの価値があるから。妥協しないで。"
-    },
-    {
-      "speaker": "A",
-      "speakerName": "Sarah",
-      "speakerType": "女性",
-      "sentences": [
-        {
-          "text": "Tom... are you saying you want to be that person for me?",
-          "displayHtml": "Tom... are you saying you want to be that person for me?",
-          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/conversation-audio/f81293b179e5fc27/10-0.mp3"
-        }
-      ],
-      "japanese": "トム……あなたがその人になりたいって言ってるの？"
-    },
-    {
-      "speaker": "B",
-      "speakerName": "Tom",
-      "speakerType": "男性",
-      "sentences": [
-        {
-          "text": "Yes. I can be somebody, someone who loves you til' the end.",
-          "displayHtml": "Yes. I can <span class=\"lyric-phrase\">be somebody</span>, someone who loves you <span class=\"lyric-phrase\">til' the end</span>.",
-          "audio": "/songs/Settle%20For%20Less%20Before%20You%20Exit/conversation-audio/f81293b179e5fc27/11-0.mp3"
-        }
-      ],
-      "japanese": "うん。僕は君にとって特別な人になれる。最後まで君を愛する人に。"
+      "japanese": "ゆっくり考えて。どんな選択でも、大切にされることは妥協しないで。"
     }
   ],
   "createdAt": "2026-04-12T08:25:31.662Z",
   "hasLocalAudio": true,
   "conversationAudioStatus": "ready",
-  "conversationAudioModel": "eleven_v4"
+  "conversationAudioModel": "eleven_v4",
+  "lyricConnections": [
+    {
+      "lyricExpression": "takes you for granted",
+      "conversationExpression": "takes you for granted",
+      "explanationJa": "take someone for granted は、その人の好意や存在を当然のものとして扱うこと。"
+    },
+    {
+      "lyricExpression": "don't settle for less",
+      "conversationExpression": "don't settle for less",
+      "explanationJa": "settle for less は、本来望むものより低い条件で妥協すること。"
+    }
+  ],
+  "dialogueUpdatedAt": "2026-10-10T23:25:30.772Z"
 }

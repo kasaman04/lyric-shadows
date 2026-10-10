@@ -322,17 +322,12 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "Can you believe it?",
-          "displayHtml": "Can you believe it?",
-          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/4220f423ede7cacb/0-0.mp3"
-        },
-        {
-          "text": "I hop on to the private train, ride for forty minutes, and she cancels on me!",
-          "displayHtml": "I hop on to the private train, ride for forty minutes, and she cancels on me!",
-          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/4220f423ede7cacb/0-1.mp3"
+          "text": "She asked me to come over, then canceled after I'd traveled forty minutes.",
+          "displayHtml": "She asked me to come over, then canceled after I'd traveled forty minutes.",
+          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/efb9ee28c7704494/0-0.mp3"
         }
       ],
-      "japanese": "信じられる？わざわざ私鉄に乗って40分もかけて行ったのに、ドタキャンされたんだよ！"
+      "japanese": "来てって言われて40分かけて行ったのに、着いたら断られたんだ。"
     },
     {
       "speaker": "B",
@@ -340,17 +335,17 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "Seriously?",
-          "displayHtml": "Seriously?",
-          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/4220f423ede7cacb/1-0.mp3"
+          "text": "After you got there?",
+          "displayHtml": "After you got there?",
+          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/efb9ee28c7704494/1-0.mp3"
         },
         {
-          "text": "What exactly happened when you got to her place?",
-          "displayHtml": "What exactly happened when you got to her place?",
-          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/4220f423ede7cacb/1-1.mp3"
+          "text": "What did she say?",
+          "displayHtml": "What did she say?",
+          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/efb9ee28c7704494/1-1.mp3"
         }
       ],
-      "japanese": "本当に？彼女の家に着いて、一体何があったの？"
+      "japanese": "着いてから？ 何て言われたの？"
     },
     {
       "speaker": "A",
@@ -358,12 +353,17 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "I got there, and as soon as I rang the bell, the rain suddenly stopped!",
-          "displayHtml": "I got there, and as soon as I rang the bell, the rain suddenly stopped!",
-          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/4220f423ede7cacb/2-0.mp3"
+          "text": "She was going out with friends.",
+          "displayHtml": "She was going out with friends.",
+          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/efb9ee28c7704494/2-0.mp3"
+        },
+        {
+          "text": "I feel like I've been going round in circles with her.",
+          "displayHtml": "I feel like <span class=\"lyric-phrase\">I've been going round in circles</span> with her.",
+          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/efb9ee28c7704494/2-1.mp3"
         }
       ],
-      "japanese": "着いてインターホンを鳴らした途端に、突然雨がピタッと止んでね。"
+      "japanese": "友達と出かけるって。彼女との関係、ずっと同じことの繰り返しな気がする。"
     },
     {
       "speaker": "B",
@@ -371,12 +371,17 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "Did she even let you inside?",
-          "displayHtml": "Did she even let you inside?",
-          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/4220f423ede7cacb/3-0.mp3"
+          "text": "That sounds exhausting.",
+          "displayHtml": "That sounds exhausting.",
+          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/efb9ee28c7704494/3-0.mp3"
+        },
+        {
+          "text": "Have you told her how much it bothers you?",
+          "displayHtml": "Have you told her how much it bothers you?",
+          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/efb9ee28c7704494/3-1.mp3"
         }
       ],
-      "japanese": "で、部屋には入れてくれたわけ？"
+      "japanese": "それは疲れるね。どれだけ嫌なのか、伝えたことはある？"
     },
     {
       "speaker": "A",
@@ -384,12 +389,17 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "No, she answers me on entry phone and says she's going out with friends instead.",
-          "displayHtml": "No, she answers me on entry phone and says she's going out with friends instead.",
-          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/4220f423ede7cacb/4-0.mp3"
+          "text": "Not clearly.",
+          "displayHtml": "Not clearly.",
+          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/efb9ee28c7704494/4-0.mp3"
+        },
+        {
+          "text": "I don't want her to shut me out, but I can't keep doing this.",
+          "displayHtml": "I don't want her to <span class=\"lyric-phrase\">shut me out</span>, but I can't keep doing this.",
+          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/efb9ee28c7704494/4-1.mp3"
         }
       ],
-      "japanese": "いや、オートロック越しにインターホンに出て、「友達と出かけるから」って。"
+      "japanese": "はっきりはない。拒絶されたくないけど、このままは続けられない。"
     },
     {
       "speaker": "B",
@@ -397,86 +407,35 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "That's awful.",
-          "displayHtml": "That's awful.",
-          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/4220f423ede7cacb/5-0.mp3"
+          "text": "Then tell her you need plans you can count on.",
+          "displayHtml": "Then tell her you need plans you can count on.",
+          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/efb9ee28c7704494/5-0.mp3"
         },
         {
-          "text": "She only calls you when it's raining and she's bored.",
-          "displayHtml": "She only calls you when it's raining and she's bored.",
-          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/4220f423ede7cacb/5-1.mp3"
+          "text": "Your time matters too.",
+          "displayHtml": "Your time matters too.",
+          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/efb9ee28c7704494/5-1.mp3"
         }
       ],
-      "japanese": "ひどすぎる。彼女、雨が降ってて退屈な時しか君のこと呼ばないじゃない。"
-    },
-    {
-      "speaker": "A",
-      "speakerName": "Mark",
-      "speakerType": "男性",
-      "sentences": [
-        {
-          "text": "Yep.",
-          "displayHtml": "Yep.",
-          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/4220f423ede7cacb/6-0.mp3"
-        },
-        {
-          "text": "My duty has been canceled off, just like that.",
-          "displayHtml": "My duty has been canceled off, just like that.",
-          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/4220f423ede7cacb/6-1.mp3"
-        },
-        {
-          "text": "I guess I'm in charge of rainy days.",
-          "displayHtml": "I guess I'm in charge of rainy days.",
-          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/4220f423ede7cacb/6-2.mp3"
-        }
-      ],
-      "japanese": "ああ。僕の任務はお払い箱ってわけさ。どうやら、僕は雨の日の担当でしかないみたいだよ。"
-    },
-    {
-      "speaker": "B",
-      "speakerName": "Sarah",
-      "speakerType": "女性",
-      "sentences": [
-        {
-          "text": "You deserve so much better.",
-          "displayHtml": "You deserve so much better.",
-          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/4220f423ede7cacb/7-0.mp3"
-        },
-        {
-          "text": "You have to stop letting her use you.",
-          "displayHtml": "You have to stop letting her use you.",
-          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/4220f423ede7cacb/7-1.mp3"
-        }
-      ],
-      "japanese": "もっといい人がいるよ。もう彼女に都合よく使われるのはやめなよ。"
-    },
-    {
-      "speaker": "A",
-      "speakerName": "Mark",
-      "speakerType": "男性",
-      "sentences": [
-        {
-          "text": "I know.",
-          "displayHtml": "I know.",
-          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/4220f423ede7cacb/8-0.mp3"
-        },
-        {
-          "text": "I've been round in circles with her for too long.",
-          "displayHtml": "I've been round in circles with her for too long.",
-          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/4220f423ede7cacb/8-1.mp3"
-        },
-        {
-          "text": "I'm done.",
-          "displayHtml": "I'm done.",
-          "audio": "/songs/%E9%9B%A8%E9%9F%B3%E5%AD%90(Amaotoko)%20RADWIMPS/conversation-audio/4220f423ede7cacb/8-2.mp3"
-        }
-      ],
-      "japanese": "分かってる。もう彼女とは堂々巡りだ。これきりにするよ。"
+      "japanese": "じゃあ、ちゃんと守れる予定にしてほしいって伝えよう。あなたの時間も大事だよ。"
     }
   ],
   "youtubeId": "lHMExxQwmAs",
   "thumbnailUrl": "https://img.youtube.com/vi/lHMExxQwmAs/maxresdefault.jpg",
   "createdAt": "2026-04-04T07:24:56.869Z",
   "conversationAudioStatus": "ready",
-  "conversationAudioModel": "eleven_v4"
+  "conversationAudioModel": "eleven_v4",
+  "lyricConnections": [
+    {
+      "lyricExpression": "I've been round in circles",
+      "conversationExpression": "I've been going round in circles",
+      "explanationJa": "go round in circles は、同じことを繰り返して前に進めないこと。"
+    },
+    {
+      "lyricExpression": "shut me out",
+      "conversationExpression": "shut me out",
+      "explanationJa": "shut someone out は、その人を遠ざけて受け入れないこと。"
+    }
+  ],
+  "dialogueUpdatedAt": "2026-10-10T23:25:30.793Z"
 }

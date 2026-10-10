@@ -343,12 +343,17 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "I keep trying to act normal, but I'm kinda terrible at it tonight.",
-          "displayHtml": "I <span class=\"lyric-phrase\">keep trying to</span> act normal, but I'm <span class=\"lyric-phrase\">kinda</span> terrible at it tonight.",
-          "audio": "/songs/Window%20Shopping%20Yorke%20%26%20joan/conversation-audio/d1c90a4ee47df6eb/0-0.mp3"
+          "text": "I changed outfits three times before coming here.",
+          "displayHtml": "I changed outfits three times before coming here.",
+          "audio": "/songs/Window%20Shopping%20Yorke%20%26%20joan/conversation-audio/2c84a36e56393010/0-0.mp3"
+        },
+        {
+          "text": "I think I care too much.",
+          "displayHtml": "I think I care too much.",
+          "audio": "/songs/Window%20Shopping%20Yorke%20%26%20joan/conversation-audio/2c84a36e56393010/0-1.mp3"
         }
       ],
-      "japanese": "普通にしてようとしてるんだけど、今日はちょっとうまくできてない。"
+      "japanese": "ここに来る前に、服を三回も着替えたの。気にしすぎだよね。"
     },
     {
       "speaker": "B",
@@ -356,22 +361,12 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "Terrible?",
-          "displayHtml": "Terrible?",
-          "audio": "/songs/Window%20Shopping%20Yorke%20%26%20joan/conversation-audio/d1c90a4ee47df6eb/1-0.mp3"
-        },
-        {
-          "text": "You'd never know that.",
-          "displayHtml": "<span class=\"lyric-phrase\">You'd never know that</span>.",
-          "audio": "/songs/Window%20Shopping%20Yorke%20%26%20joan/conversation-audio/d1c90a4ee47df6eb/1-1.mp3"
-        },
-        {
-          "text": "You looked calm when I walked in.",
-          "displayHtml": "You looked calm when I walked in.",
-          "audio": "/songs/Window%20Shopping%20Yorke%20%26%20joan/conversation-audio/d1c90a4ee47df6eb/1-2.mp3"
+          "text": "You look great, but you don't have to work so hard for this date.",
+          "displayHtml": "You look great, but you don't have to work so hard for this date.",
+          "audio": "/songs/Window%20Shopping%20Yorke%20%26%20joan/conversation-audio/2c84a36e56393010/1-0.mp3"
         }
       ],
-      "japanese": "うまくできてないって？全然そう見えなかったよ。入ってきたとき、落ち着いて見えた。"
+      "japanese": "すごく似合ってるよ。でも、このデートのためにそんなに頑張らなくていい。"
     },
     {
       "speaker": "A",
@@ -379,17 +374,17 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "I wasn't calm.",
-          "displayHtml": "I wasn't calm.",
-          "audio": "/songs/Window%20Shopping%20Yorke%20%26%20joan/conversation-audio/d1c90a4ee47df6eb/2-0.mp3"
+          "text": "I keep trying to impress you.",
+          "displayHtml": "<span class=\"lyric-phrase\">I keep trying to impress you</span>.",
+          "audio": "/songs/Window%20Shopping%20Yorke%20%26%20joan/conversation-audio/2c84a36e56393010/2-0.mp3"
         },
         {
-          "text": "I saw you pull up at the restaurant, and I almost checked my hair again.",
-          "displayHtml": "I saw you <span class=\"lyric-phrase\">pull up at</span> the restaurant, and I almost checked my hair again.",
-          "audio": "/songs/Window%20Shopping%20Yorke%20%26%20joan/conversation-audio/d1c90a4ee47df6eb/2-1.mp3"
+          "text": "I was nervous we'd run out of things to say.",
+          "displayHtml": "I was nervous we'd run out of things to say.",
+          "audio": "/songs/Window%20Shopping%20Yorke%20%26%20joan/conversation-audio/2c84a36e56393010/2-1.mp3"
         }
       ],
-      "japanese": "落ち着いてなかったよ。Leoが店に着いたのを見て、また髪を確認しそうになった。"
+      "japanese": "つい、よく思われようとしちゃう。話題がなくなったらって緊張してた。"
     },
     {
       "speaker": "B",
@@ -397,115 +392,17 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "That's actually kind of cute.",
-          "displayHtml": "That's actually kind of cute.",
-          "audio": "/songs/Window%20Shopping%20Yorke%20%26%20joan/conversation-audio/d1c90a4ee47df6eb/3-0.mp3"
-        }
-      ],
-      "japanese": "それ、ちょっとかわいいけど。"
-    },
-    {
-      "speaker": "A",
-      "speakerName": "Mia",
-      "speakerType": "女性",
-      "sentences": [
-        {
-          "text": "I don't know what it is, but you got me caring about tiny things that usually don't count.",
-          "displayHtml": "<span class=\"lyric-phrase\">I don't know what</span> it is, but <span class=\"lyric-phrase\">you got me</span> caring about tiny things that usually don't <span class=\"lyric-phrase\">count</span>.",
-          "audio": "/songs/Window%20Shopping%20Yorke%20%26%20joan/conversation-audio/d1c90a4ee47df6eb/4-0.mp3"
-        }
-      ],
-      "japanese": "何なのかわからないけど、Leoといると、普段なら気にしない小さなことまで大事に思えちゃう。"
-    },
-    {
-      "speaker": "B",
-      "speakerName": "Leo",
-      "speakerType": "男性",
-      "sentences": [
-        {
-          "text": "There's no test here, Mia.",
-          "displayHtml": "<span class=\"lyric-phrase\">There's</span> no test here, Mia.",
-          "audio": "/songs/Window%20Shopping%20Yorke%20%26%20joan/conversation-audio/d1c90a4ee47df6eb/5-0.mp3"
+          "text": "I'd love it if you just told me about your day.",
+          "displayHtml": "<span class=\"lyric-phrase\">I'd love it if you</span> just told me about your day.",
+          "audio": "/songs/Window%20Shopping%20Yorke%20%26%20joan/conversation-audio/2c84a36e56393010/3-0.mp3"
         },
         {
-          "text": "I'm not judging every little thing you do.",
-          "displayHtml": "I'm not judging every little thing you do.",
-          "audio": "/songs/Window%20Shopping%20Yorke%20%26%20joan/conversation-audio/d1c90a4ee47df6eb/5-1.mp3"
+          "text": "There's no test to pass.",
+          "displayHtml": "There's no test to pass.",
+          "audio": "/songs/Window%20Shopping%20Yorke%20%26%20joan/conversation-audio/2c84a36e56393010/3-1.mp3"
         }
       ],
-      "japanese": "試験じゃないよ、Mia。ひとつひとつ採点してるわけじゃない。"
-    },
-    {
-      "speaker": "A",
-      "speakerName": "Mia",
-      "speakerType": "女性",
-      "sentences": [
-        {
-          "text": "I know.",
-          "displayHtml": "I know.",
-          "audio": "/songs/Window%20Shopping%20Yorke%20%26%20joan/conversation-audio/d1c90a4ee47df6eb/6-0.mp3"
-        },
-        {
-          "text": "I just had no appetite all day because I kept thinking about tonight.",
-          "displayHtml": "I just had <span class=\"lyric-phrase\">no appetite</span> all day because I kept thinking about tonight.",
-          "audio": "/songs/Window%20Shopping%20Yorke%20%26%20joan/conversation-audio/d1c90a4ee47df6eb/6-1.mp3"
-        }
-      ],
-      "japanese": "わかってる。今日のことを考えすぎて、一日中食欲がなかった。"
-    },
-    {
-      "speaker": "B",
-      "speakerName": "Leo",
-      "speakerType": "男性",
-      "sentences": [
-        {
-          "text": "Then let's make it simple.",
-          "displayHtml": "Then let's make it simple.",
-          "audio": "/songs/Window%20Shopping%20Yorke%20%26%20joan/conversation-audio/d1c90a4ee47df6eb/7-0.mp3"
-        },
-        {
-          "text": "Can we at least try before you decide the night is going badly?",
-          "displayHtml": "Can we at least <span class=\"lyric-phrase\">try before you</span> decide the night is going badly?",
-          "audio": "/songs/Window%20Shopping%20Yorke%20%26%20joan/conversation-audio/d1c90a4ee47df6eb/7-1.mp3"
-        }
-      ],
-      "japanese": "じゃあ、もっと気楽にしよう。今夜はダメだって決めつける前に、まず普通に過ごしてみない？"
-    },
-    {
-      "speaker": "A",
-      "speakerName": "Mia",
-      "speakerType": "女性",
-      "sentences": [
-        {
-          "text": "I can try.",
-          "displayHtml": "I can try.",
-          "audio": "/songs/Window%20Shopping%20Yorke%20%26%20joan/conversation-audio/d1c90a4ee47df6eb/8-0.mp3"
-        },
-        {
-          "text": "I'm nervous just to say this, but I really wanted tonight to go well.",
-          "displayHtml": "I'm <span class=\"lyric-phrase\">nervous just to</span> say this, but I really wanted tonight to go well.",
-          "audio": "/songs/Window%20Shopping%20Yorke%20%26%20joan/conversation-audio/d1c90a4ee47df6eb/8-1.mp3"
-        }
-      ],
-      "japanese": "やってみる。これを言うだけでも緊張するけど、今日は本当にうまくいってほしかった。"
-    },
-    {
-      "speaker": "B",
-      "speakerName": "Leo",
-      "speakerType": "男性",
-      "sentences": [
-        {
-          "text": "I'm glad you said it.",
-          "displayHtml": "I'm glad you said it.",
-          "audio": "/songs/Window%20Shopping%20Yorke%20%26%20joan/conversation-audio/d1c90a4ee47df6eb/9-0.mp3"
-        },
-        {
-          "text": "Honestly, I'd love it if you stopped trying to impress me and just talked to me.",
-          "displayHtml": "Honestly, <span class=\"lyric-phrase\">I'd love it if you</span> stopped trying to impress me and just talked to me.",
-          "audio": "/songs/Window%20Shopping%20Yorke%20%26%20joan/conversation-audio/d1c90a4ee47df6eb/9-1.mp3"
-        }
-      ],
-      "japanese": "言ってくれてうれしいよ。正直、よく見せようとしなくていいから、ただ普通に話してくれたらうれしい。"
+      "japanese": "普通に今日のことを聞かせてくれたらうれしい。試験じゃないんだから。"
     },
     {
       "speaker": "A",
@@ -515,15 +412,15 @@
         {
           "text": "Okay.",
           "displayHtml": "Okay.",
-          "audio": "/songs/Window%20Shopping%20Yorke%20%26%20joan/conversation-audio/d1c90a4ee47df6eb/10-0.mp3"
+          "audio": "/songs/Window%20Shopping%20Yorke%20%26%20joan/conversation-audio/2c84a36e56393010/4-0.mp3"
         },
         {
-          "text": "Then I'll start by actually looking at the menu.",
-          "displayHtml": "Then I'll start by actually looking at the menu.",
-          "audio": "/songs/Window%20Shopping%20Yorke%20%26%20joan/conversation-audio/d1c90a4ee47df6eb/10-1.mp3"
+          "text": "Then let me tell you about the disaster I had at work today.",
+          "displayHtml": "Then let me tell you about the disaster I had at work today.",
+          "audio": "/songs/Window%20Shopping%20Yorke%20%26%20joan/conversation-audio/2c84a36e56393010/4-1.mp3"
         }
       ],
-      "japanese": "わかった。じゃあまず、ちゃんとメニューを見るところから始める。"
+      "japanese": "わかった。じゃあ、今日仕事で大失敗した話を聞いて。"
     },
     {
       "speaker": "B",
@@ -531,26 +428,34 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "Good.",
-          "displayHtml": "Good.",
-          "audio": "/songs/Window%20Shopping%20Yorke%20%26%20joan/conversation-audio/d1c90a4ee47df6eb/11-0.mp3"
+          "text": "Now I'm curious.",
+          "displayHtml": "Now I'm curious.",
+          "audio": "/songs/Window%20Shopping%20Yorke%20%26%20joan/conversation-audio/2c84a36e56393010/5-0.mp3"
         },
         {
-          "text": "I'll do the same.",
-          "displayHtml": "I'll do the same.",
-          "audio": "/songs/Window%20Shopping%20Yorke%20%26%20joan/conversation-audio/d1c90a4ee47df6eb/11-1.mp3"
-        },
-        {
-          "text": "No pressure.",
-          "displayHtml": "No pressure.",
-          "audio": "/songs/Window%20Shopping%20Yorke%20%26%20joan/conversation-audio/d1c90a4ee47df6eb/11-2.mp3"
+          "text": "Let's order some food, and you can tell me everything.",
+          "displayHtml": "Let's order some food, and you can tell me everything.",
+          "audio": "/songs/Window%20Shopping%20Yorke%20%26%20joan/conversation-audio/2c84a36e56393010/5-1.mp3"
         }
       ],
-      "japanese": "うん。僕もそうする。焦らなくていい。"
+      "japanese": "気になるな。料理を頼んで、全部聞かせて。"
     }
   ],
   "createdAt": "2026-05-20T10:04:17.700Z",
   "thumbnailSource": "Apple Music artwork",
   "conversationAudioStatus": "ready",
-  "conversationAudioModel": "eleven_v4"
+  "conversationAudioModel": "eleven_v4",
+  "lyricConnections": [
+    {
+      "lyricExpression": "I keep trying to impress you",
+      "conversationExpression": "I keep trying to impress you",
+      "explanationJa": "keep trying to ... は、繰り返しそうしようとすること。impress は好印象を与えること。"
+    },
+    {
+      "lyricExpression": "I'd love it if you",
+      "conversationExpression": "I'd love it if you",
+      "explanationJa": "I'd love it if you ... は、そうしてもらえたらうれしいという柔らかい希望。"
+    }
+  ],
+  "dialogueUpdatedAt": "2026-10-10T23:25:30.784Z"
 }

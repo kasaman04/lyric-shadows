@@ -163,17 +163,17 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "The rain finally stopped.",
-          "displayHtml": "The rain finally stopped.",
-          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/4f8ca935819b3f26/0-0.mp3"
+          "text": "I'm glad the rain stopped.",
+          "displayHtml": "I'm glad the rain stopped.",
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/2c6389a86715a26b/0-0.mp3"
         },
         {
-          "text": "The street looks kind of beautiful now.",
-          "displayHtml": "The street looks kind of beautiful now.",
-          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/4f8ca935819b3f26/0-1.mp3"
+          "text": "Want to walk a little farther?",
+          "displayHtml": "Want to walk a little farther?",
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/2c6389a86715a26b/0-1.mp3"
         }
       ],
-      "japanese": "やっと雨が止んだね。道がなんだかきれいに見える。"
+      "japanese": "雨がやんでよかった。もう少し歩かない？"
     },
     {
       "speaker": "B",
@@ -181,177 +181,53 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "Yeah.",
-          "displayHtml": "Yeah.",
-          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/4f8ca935819b3f26/1-0.mp3"
+          "text": "Sure.",
+          "displayHtml": "Sure.",
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/2c6389a86715a26b/1-0.mp3"
         },
         {
-          "text": "The lights on the puddles look like little rainbows.",
-          "displayHtml": "The lights on the puddles look like little rainbows.",
-          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/4f8ca935819b3f26/1-1.mp3"
+          "text": "I've really enjoyed spending time with you lately.",
+          "displayHtml": "I've really enjoyed spending time with you lately.",
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/2c6389a86715a26b/1-1.mp3"
         }
       ],
-      "japanese": "うん。水たまりに映る光が、小さな虹みたい。"
+      "japanese": "うん。最近、あなたと過ごすのがすごく楽しい。"
     },
     {
       "speaker": "A",
       "speakerName": "Kai",
       "speakerType": "男性",
-      "sentences": [
-        {
-          "text": "Honestly, when I think of you sometimes, I catch myself smiling for no reason.",
-          "displayHtml": "Honestly, <span class=\"lyric-phrase\">when I think of you sometimes</span>, I catch myself smiling for no reason.",
-          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/4f8ca935819b3f26/2-0.mp3"
-        }
-      ],
-      "japanese": "正直、ときどき君のことを考えると、理由もなく笑ってる自分に気づくんだ。"
-    },
-    {
-      "speaker": "B",
-      "speakerName": "Maya",
-      "speakerType": "女性",
-      "sentences": [
-        {
-          "text": "I do that too.",
-          "displayHtml": "I do that too.",
-          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/4f8ca935819b3f26/3-0.mp3"
-        },
-        {
-          "text": "I just didn't know if I should say it.",
-          "displayHtml": "I just didn't know if I should say it.",
-          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/4f8ca935819b3f26/3-1.mp3"
-        }
-      ],
-      "japanese": "私もそうだよ。ただ、言っていいのかわからなかった。"
-    },
-    {
-      "speaker": "A",
-      "speakerName": "Kai",
-      "speakerType": "男性",
-      "sentences": [
-        {
-          "text": "I kept trying to look for the perfect moment, but maybe I was just nervous.",
-          "displayHtml": "I kept trying to <span class=\"lyric-phrase\">look for</span> the perfect moment, but maybe I was just nervous.",
-          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/4f8ca935819b3f26/4-0.mp3"
-        }
-      ],
-      "japanese": "完璧なタイミングを探そうとしてたけど、たぶんただ緊張してただけなんだ。"
-    },
-    {
-      "speaker": "B",
-      "speakerName": "Maya",
-      "speakerType": "女性",
-      "sentences": [
-        {
-          "text": "Maybe there's no time for pretending we don't know what this is.",
-          "displayHtml": "Maybe there's <span class=\"lyric-phrase\">no time for</span> pretending we don't know what this is.",
-          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/4f8ca935819b3f26/5-0.mp3"
-        }
-      ],
-      "japanese": "もしかしたら、もうこの気持ちに気づかないふりをしてる場合じゃないのかも。"
-    },
-    {
-      "speaker": "A",
-      "speakerName": "Kai",
-      "speakerType": "男性",
-      "sentences": [
-        {
-          "text": "So, what are we calling this?",
-          "displayHtml": "So, what are we calling this?",
-          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/4f8ca935819b3f26/6-0.mp3"
-        }
-      ],
-      "japanese": "じゃあ、これって何て呼べばいいんだろう？"
-    },
-    {
-      "speaker": "B",
-      "speakerName": "Maya",
-      "speakerType": "女性",
-      "sentences": [
-        {
-          "text": "Maybe we don't have to name it tonight.",
-          "displayHtml": "Maybe we don't have to name it tonight.",
-          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/4f8ca935819b3f26/7-0.mp3"
-        },
-        {
-          "text": "Let's just start with dinner, just the two of us.",
-          "displayHtml": "Let's just start with dinner, <span class=\"lyric-phrase\">just the two of us</span>.",
-          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/4f8ca935819b3f26/7-1.mp3"
-        }
-      ],
-      "japanese": "今夜すぐ名前をつけなくてもいいんじゃない？まずは二人だけで、ご飯から始めよう。"
-    },
-    {
-      "speaker": "A",
-      "speakerName": "Kai",
-      "speakerType": "男性",
-      "sentences": [
-        {
-          "text": "I like that.",
-          "displayHtml": "I like that.",
-          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/4f8ca935819b3f26/8-0.mp3"
-        },
-        {
-          "text": "No pressure, no big speech.",
-          "displayHtml": "No pressure, no big speech.",
-          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/4f8ca935819b3f26/8-1.mp3"
-        }
-      ],
-      "japanese": "それいいね。重く考えずに、大げさな言葉もなしで。"
-    },
-    {
-      "speaker": "B",
-      "speakerName": "Maya",
-      "speakerType": "女性",
-      "sentences": [
-        {
-          "text": "Exactly.",
-          "displayHtml": "Exactly.",
-          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/4f8ca935819b3f26/9-0.mp3"
-        },
-        {
-          "text": "Just dinner, and we can be ourselves for once.",
-          "displayHtml": "Just dinner, and we can be ourselves for once.",
-          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/4f8ca935819b3f26/9-1.mp3"
-        }
-      ],
-      "japanese": "そう。ご飯だけでいいし、今度こそ自然体でいよう。"
-    },
-    {
-      "speaker": "A",
-      "speakerName": "Kai",
-      "speakerType": "男性",
-      "sentences": [
-        {
-          "text": "I'd like that.",
-          "displayHtml": "I'd like that.",
-          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/4f8ca935819b3f26/10-0.mp3"
-        },
-        {
-          "text": "I've wanted to spend time with you without overthinking everything.",
-          "displayHtml": "I've wanted to spend time with you without overthinking everything.",
-          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/4f8ca935819b3f26/10-1.mp3"
-        }
-      ],
-      "japanese": "それがいい。考えすぎずに、君と一緒に過ごしたいって思ってたんだ。"
-    },
-    {
-      "speaker": "B",
-      "speakerName": "Maya",
-      "speakerType": "女性",
       "sentences": [
         {
           "text": "Me too.",
           "displayHtml": "Me too.",
-          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/4f8ca935819b3f26/11-0.mp3"
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/2c6389a86715a26b/2-0.mp3"
         },
         {
-          "text": "Then this weekend, just the two of us.",
-          "displayHtml": "Then this weekend, <span class=\"lyric-phrase\">just the two of us</span>.",
-          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/4f8ca935819b3f26/11-1.mp3"
+          "text": "When I think of you, I catch myself smiling.",
+          "displayHtml": "<span class=\"lyric-phrase\">When I think of you</span>, I catch myself smiling.",
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/2c6389a86715a26b/2-1.mp3"
         }
       ],
-      "japanese": "私も。じゃあ今週末、二人だけで。"
+      "japanese": "僕も。君のことを考えると、つい笑顔になってる。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Maya",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "That's sweet.",
+          "displayHtml": "That's sweet.",
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/2c6389a86715a26b/3-0.mp3"
+        },
+        {
+          "text": "I was wondering if you'd want to have dinner this weekend.",
+          "displayHtml": "I was wondering if you'd want to have dinner this weekend.",
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/2c6389a86715a26b/3-1.mp3"
+        }
+      ],
+      "japanese": "うれしいな。今週末、一緒に夕食を食べたいと思ってたの。"
     },
     {
       "speaker": "A",
@@ -359,21 +235,52 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "You and I.",
-          "displayHtml": "You and I.",
-          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/4f8ca935819b3f26/12-0.mp3"
+          "text": "I'd love to.",
+          "displayHtml": "I'd love to.",
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/2c6389a86715a26b/4-0.mp3"
         },
         {
-          "text": "I like the sound of that.",
-          "displayHtml": "I like the sound of that.",
-          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/4f8ca935819b3f26/12-1.mp3"
+          "text": "Just the two of us?",
+          "displayHtml": "<span class=\"lyric-phrase\">Just the two of us</span>?",
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/2c6389a86715a26b/4-1.mp3"
         }
       ],
-      "japanese": "君と僕で。なんかいい響きだね。"
+      "japanese": "ぜひ。二人だけで？"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Maya",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "Just us, no big plan.",
+          "displayHtml": "Just us, no big plan.",
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/2c6389a86715a26b/5-0.mp3"
+        },
+        {
+          "text": "Let's see where this goes.",
+          "displayHtml": "Let's see where this goes.",
+          "audio": "/songs/Just%20the%20Two%20of%20Us%20Grover%20Washington%20Jr/conversation-audio/2c6389a86715a26b/5-1.mp3"
+        }
+      ],
+      "japanese": "二人だけで、大げさな計画はなし。自然に進めてみよう。"
     }
   ],
   "createdAt": "2026-05-18T06:39:22.525Z",
   "thumbnailSource": "Grover Washington Jr. - Just the Two of Us Official Lyric Video / RHINO",
   "conversationAudioStatus": "ready",
-  "conversationAudioModel": "eleven_v4"
+  "conversationAudioModel": "eleven_v4",
+  "lyricConnections": [
+    {
+      "lyricExpression": "When I think of you",
+      "conversationExpression": "When I think of you",
+      "explanationJa": "think of someone は、その人を思い浮かべること。"
+    },
+    {
+      "lyricExpression": "Just the two of us",
+      "conversationExpression": "Just the two of us",
+      "explanationJa": "just the two of us は、ほかの人を交えず二人だけという意味。"
+    }
+  ],
+  "dialogueUpdatedAt": "2026-10-10T23:25:30.762Z"
 }

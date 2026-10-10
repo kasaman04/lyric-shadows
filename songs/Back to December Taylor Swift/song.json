@@ -272,16 +272,16 @@
       "sentences": [
         {
           "text": "Thanks for making time to see me.",
-          "displayHtml": "Thanks for <span class=\"lyric-phrase\">making time to see me</span>.",
-          "audio": "/songs/Back%20to%20December%20Taylor%20Swift/conversation-audio/d26151694ab80869/0-0.mp3"
+          "displayHtml": "Thanks for making time to see me.",
+          "audio": "/songs/Back%20to%20December%20Taylor%20Swift/conversation-audio/a29517d4ca9b8d9b/0-0.mp3"
         },
         {
-          "text": "I know this probably wasn't easy.",
-          "displayHtml": "I know this probably wasn't easy.",
-          "audio": "/songs/Back%20to%20December%20Taylor%20Swift/conversation-audio/d26151694ab80869/0-1.mp3"
+          "text": "I wanted to apologize for how I left.",
+          "displayHtml": "I wanted to apologize for how I left.",
+          "audio": "/songs/Back%20to%20December%20Taylor%20Swift/conversation-audio/a29517d4ca9b8d9b/0-1.mp3"
         }
       ],
-      "japanese": "会う時間を作ってくれてありがとう。簡単なことじゃなかったと思う。"
+      "japanese": "会う時間を作ってくれてありがとう。あの別れ方を謝りたかったの。"
     },
     {
       "speaker": "B",
@@ -289,12 +289,17 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "I wasn't sure I should come, but I wanted to hear what you had to say.",
-          "displayHtml": "I wasn't sure I should come, but I wanted to hear what you had to say.",
-          "audio": "/songs/Back%20to%20December%20Taylor%20Swift/conversation-audio/d26151694ab80869/1-0.mp3"
+          "text": "I'm listening, but I'm still hurt.",
+          "displayHtml": "I'm listening, but I'm still hurt.",
+          "audio": "/songs/Back%20to%20December%20Taylor%20Swift/conversation-audio/a29517d4ca9b8d9b/1-0.mp3"
+        },
+        {
+          "text": "I can't just pick up where we left off.",
+          "displayHtml": "I can't just pick up where we left off.",
+          "audio": "/songs/Back%20to%20December%20Taylor%20Swift/conversation-audio/a29517d4ca9b8d9b/1-1.mp3"
         }
       ],
-      "japanese": "来るべきか迷ったけど、何を言うつもりなのか聞きたかった。"
+      "japanese": "話は聞くよ。でも、まだ傷ついてる。すぐ元通りにはなれない。"
     },
     {
       "speaker": "A",
@@ -302,17 +307,17 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "How's life?",
-          "displayHtml": "<span class=\"lyric-phrase\">How's life</span>?",
-          "audio": "/songs/Back%20to%20December%20Taylor%20Swift/conversation-audio/d26151694ab80869/2-0.mp3"
+          "text": "I know your guard is up.",
+          "displayHtml": "I know <span class=\"lyric-phrase\">your guard is up</span>.",
+          "audio": "/songs/Back%20to%20December%20Taylor%20Swift/conversation-audio/a29517d4ca9b8d9b/2-0.mp3"
         },
         {
-          "text": "How's your family doing?",
-          "displayHtml": "How's your family doing?",
-          "audio": "/songs/Back%20to%20December%20Taylor%20Swift/conversation-audio/d26151694ab80869/2-1.mp3"
+          "text": "I kept wishing I could go back and handle things differently.",
+          "displayHtml": "I kept wishing I could go back and handle things differently.",
+          "audio": "/songs/Back%20to%20December%20Taylor%20Swift/conversation-audio/a29517d4ca9b8d9b/2-1.mp3"
         }
       ],
-      "japanese": "最近どう？家族も元気？"
+      "japanese": "警戒しているのはわかる。戻って、違う向き合い方ができたらって何度も思った。"
     },
     {
       "speaker": "B",
@@ -320,17 +325,12 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "They're fine.",
-          "displayHtml": "They're fine.",
-          "audio": "/songs/Back%20to%20December%20Taylor%20Swift/conversation-audio/d26151694ab80869/3-0.mp3"
-        },
-        {
-          "text": "We don't have to pretend this is just normal catch-up.",
-          "displayHtml": "We don't have to pretend this is just normal catch-up.",
-          "audio": "/songs/Back%20to%20December%20Taylor%20Swift/conversation-audio/d26151694ab80869/3-1.mp3"
+          "text": "So what are you hoping for now?",
+          "displayHtml": "So what are you hoping for now?",
+          "audio": "/songs/Back%20to%20December%20Taylor%20Swift/conversation-audio/a29517d4ca9b8d9b/3-0.mp3"
         }
       ],
-      "japanese": "元気だよ。ただの近況報告みたいに話さなくていい。"
+      "japanese": "それで、今はどうしたいの？"
     },
     {
       "speaker": "A",
@@ -338,17 +338,17 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "I know.",
-          "displayHtml": "I know.",
-          "audio": "/songs/Back%20to%20December%20Taylor%20Swift/conversation-audio/d26151694ab80869/4-0.mp3"
+          "text": "I'm swallowing my pride and saying I'm sorry.",
+          "displayHtml": "I'm <span class=\"lyric-phrase\">swallowing my pride</span> and saying I'm sorry.",
+          "audio": "/songs/Back%20to%20December%20Taylor%20Swift/conversation-audio/a29517d4ca9b8d9b/4-0.mp3"
         },
         {
-          "text": "Your guard is up, and I understand why.",
-          "displayHtml": "<span class=\"lyric-phrase\">Your guard is up</span>, and I understand why.",
-          "audio": "/songs/Back%20to%20December%20Taylor%20Swift/conversation-audio/d26151694ab80869/4-1.mp3"
+          "text": "You don't owe me another chance.",
+          "displayHtml": "You don't owe me another chance.",
+          "audio": "/songs/Back%20to%20December%20Taylor%20Swift/conversation-audio/a29517d4ca9b8d9b/4-1.mp3"
         }
       ],
-      "japanese": "わかってる。警戒してるのも、理由はわかる。"
+      "japanese": "意地を捨てて、ごめんって伝えたい。もう一度チャンスをくれなくてもいい。"
     },
     {
       "speaker": "B",
@@ -356,222 +356,34 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "The last time we talked, you walked away like it didn't matter.",
-          "displayHtml": "<span class=\"lyric-phrase\">The last time</span> we talked, you walked away like it didn't matter.",
-          "audio": "/songs/Back%20to%20December%20Taylor%20Swift/conversation-audio/d26151694ab80869/5-0.mp3"
-        }
-      ],
-      "japanese": "最後に話したとき、君は何でもないみたいに去っていった。"
-    },
-    {
-      "speaker": "A",
-      "speakerName": "Emma",
-      "speakerType": "女性",
-      "sentences": [
-        {
-          "text": "It mattered.",
-          "displayHtml": "It mattered.",
-          "audio": "/songs/Back%20to%20December%20Taylor%20Swift/conversation-audio/d26151694ab80869/6-0.mp3"
+          "text": "Thank you for saying that.",
+          "displayHtml": "Thank you for saying that.",
+          "audio": "/songs/Back%20to%20December%20Taylor%20Swift/conversation-audio/a29517d4ca9b8d9b/5-0.mp3"
         },
         {
-          "text": "I just acted like freedom would feel better than missing you.",
-          "displayHtml": "I just acted like <span class=\"lyric-phrase\">freedom</span> would feel better than <span class=\"lyric-phrase\">missing you</span>.",
-          "audio": "/songs/Back%20to%20December%20Taylor%20Swift/conversation-audio/d26151694ab80869/6-1.mp3"
+          "text": "I need time, but I'm glad we talked.",
+          "displayHtml": "I need time, but I'm glad we talked.",
+          "audio": "/songs/Back%20to%20December%20Taylor%20Swift/conversation-audio/a29517d4ca9b8d9b/5-1.mp3"
         }
       ],
-      "japanese": "大事だったよ。ただ、あなたを恋しく思うより自由の方が楽だと思い込んでた。"
-    },
-    {
-      "speaker": "B",
-      "speakerName": "Ryan",
-      "speakerType": "男性",
-      "sentences": [
-        {
-          "text": "And was it?",
-          "displayHtml": "And was it?",
-          "audio": "/songs/Back%20to%20December%20Taylor%20Swift/conversation-audio/d26151694ab80869/7-0.mp3"
-        }
-      ],
-      "japanese": "それで、楽だった？"
-    },
-    {
-      "speaker": "A",
-      "speakerName": "Emma",
-      "speakerType": "女性",
-      "sentences": [
-        {
-          "text": "No.",
-          "displayHtml": "No.",
-          "audio": "/songs/Back%20to%20December%20Taylor%20Swift/conversation-audio/d26151694ab80869/8-0.mp3"
-        },
-        {
-          "text": "I kept replaying that night and wishing I had understood what I had.",
-          "displayHtml": "I kept replaying <span class=\"lyric-phrase\">that night</span> and wishing I had understood <span class=\"lyric-phrase\">what I had</span>.",
-          "audio": "/songs/Back%20to%20December%20Taylor%20Swift/conversation-audio/d26151694ab80869/8-1.mp3"
-        }
-      ],
-      "japanese": "違う。あの夜のことを何度も思い返して、失ってから大切さに気づいた。"
-    },
-    {
-      "speaker": "B",
-      "speakerName": "Ryan",
-      "speakerType": "男性",
-      "sentences": [
-        {
-          "text": "I gave you everything I could back then.",
-          "displayHtml": "I gave you everything I could back then.",
-          "audio": "/songs/Back%20to%20December%20Taylor%20Swift/conversation-audio/d26151694ab80869/9-0.mp3"
-        }
-      ],
-      "japanese": "あの頃、僕はできるだけのものを渡したつもりだった。"
-    },
-    {
-      "speaker": "A",
-      "speakerName": "Emma",
-      "speakerType": "女性",
-      "sentences": [
-        {
-          "text": "I know.",
-          "displayHtml": "I know.",
-          "audio": "/songs/Back%20to%20December%20Taylor%20Swift/conversation-audio/d26151694ab80869/10-0.mp3"
-        },
-        {
-          "text": "And all I gave you was goodbye when you deserved more than that.",
-          "displayHtml": "And <span class=\"lyric-phrase\">all I gave you was goodbye</span> when you deserved more than that.",
-          "audio": "/songs/Back%20to%20December%20Taylor%20Swift/conversation-audio/d26151694ab80869/10-1.mp3"
-        }
-      ],
-      "japanese": "わかってる。それなのに私は、もっとちゃんと向き合うべきだったのに別れを選んだ。"
-    },
-    {
-      "speaker": "B",
-      "speakerName": "Ryan",
-      "speakerType": "男性",
-      "sentences": [
-        {
-          "text": "So why are you saying this now?",
-          "displayHtml": "So why are you saying this now?",
-          "audio": "/songs/Back%20to%20December%20Taylor%20Swift/conversation-audio/d26151694ab80869/11-0.mp3"
-        }
-      ],
-      "japanese": "それを今さらどうして言うの？"
-    },
-    {
-      "speaker": "A",
-      "speakerName": "Emma",
-      "speakerType": "女性",
-      "sentences": [
-        {
-          "text": "Because this is me swallowing my pride.",
-          "displayHtml": "Because <span class=\"lyric-phrase\">this is me swallowing my pride</span>.",
-          "audio": "/songs/Back%20to%20December%20Taylor%20Swift/conversation-audio/d26151694ab80869/12-0.mp3"
-        },
-        {
-          "text": "I'm sorry for how I left, and for the silence after.",
-          "displayHtml": "I'm sorry for how I left, and for the silence after.",
-          "audio": "/songs/Back%20to%20December%20Taylor%20Swift/conversation-audio/d26151694ab80869/12-1.mp3"
-        }
-      ],
-      "japanese": "プライドを飲み込んで、ちゃんと伝えたいから。あんなふうに去ったことも、その後ずっと黙っていたことも、ごめん。"
-    },
-    {
-      "speaker": "B",
-      "speakerName": "Ryan",
-      "speakerType": "男性",
-      "sentences": [
-        {
-          "text": "Part of me wanted to hear that.",
-          "displayHtml": "Part of me wanted to hear that.",
-          "audio": "/songs/Back%20to%20December%20Taylor%20Swift/conversation-audio/d26151694ab80869/13-0.mp3"
-        },
-        {
-          "text": "Part of me is still hurt.",
-          "displayHtml": "Part of me is still hurt.",
-          "audio": "/songs/Back%20to%20December%20Taylor%20Swift/conversation-audio/d26151694ab80869/13-1.mp3"
-        }
-      ],
-      "japanese": "そう言ってほしかった自分もいる。でも、まだ傷ついてる自分もいる。"
-    },
-    {
-      "speaker": "A",
-      "speakerName": "Emma",
-      "speakerType": "女性",
-      "sentences": [
-        {
-          "text": "I don't expect you to open the door right away.",
-          "displayHtml": "I don't expect you to open the door right away.",
-          "audio": "/songs/Back%20to%20December%20Taylor%20Swift/conversation-audio/d26151694ab80869/14-0.mp3"
-        },
-        {
-          "text": "If it stays closed, I'll understand.",
-          "displayHtml": "If it stays closed, I'll understand.",
-          "audio": "/songs/Back%20to%20December%20Taylor%20Swift/conversation-audio/d26151694ab80869/14-1.mp3"
-        }
-      ],
-      "japanese": "すぐに心を開いてほしいなんて思ってない。閉じたままでも、私は受け止める。"
-    },
-    {
-      "speaker": "B",
-      "speakerName": "Ryan",
-      "speakerType": "男性",
-      "sentences": [
-        {
-          "text": "I need time.",
-          "displayHtml": "I need time.",
-          "audio": "/songs/Back%20to%20December%20Taylor%20Swift/conversation-audio/d26151694ab80869/15-0.mp3"
-        },
-        {
-          "text": "I can't just go back because you regret it now.",
-          "displayHtml": "I can't just <span class=\"lyric-phrase\">go back</span> because you regret it now.",
-          "audio": "/songs/Back%20to%20December%20Taylor%20Swift/conversation-audio/d26151694ab80869/15-1.mp3"
-        }
-      ],
-      "japanese": "時間が必要だよ。君が後悔してるからって、すぐ戻れるわけじゃない。"
-    },
-    {
-      "speaker": "A",
-      "speakerName": "Emma",
-      "speakerType": "女性",
-      "sentences": [
-        {
-          "text": "I know.",
-          "displayHtml": "I know.",
-          "audio": "/songs/Back%20to%20December%20Taylor%20Swift/conversation-audio/d26151694ab80869/16-0.mp3"
-        },
-        {
-          "text": "I can't change it, but I wanted to finally say it right.",
-          "displayHtml": "I can't <span class=\"lyric-phrase\">change it</span>, but I wanted to finally say it right.",
-          "audio": "/songs/Back%20to%20December%20Taylor%20Swift/conversation-audio/d26151694ab80869/16-1.mp3"
-        }
-      ],
-      "japanese": "わかってる。起きたことは変えられない。ただ、今度こそちゃんと言いたかった。"
-    },
-    {
-      "speaker": "B",
-      "speakerName": "Ryan",
-      "speakerType": "男性",
-      "sentences": [
-        {
-          "text": "Then maybe we start there.",
-          "displayHtml": "Then maybe we start there.",
-          "audio": "/songs/Back%20to%20December%20Taylor%20Swift/conversation-audio/d26151694ab80869/17-0.mp3"
-        },
-        {
-          "text": "Not back together.",
-          "displayHtml": "Not back together.",
-          "audio": "/songs/Back%20to%20December%20Taylor%20Swift/conversation-audio/d26151694ab80869/17-1.mp3"
-        },
-        {
-          "text": "Just honest.",
-          "displayHtml": "Just honest.",
-          "audio": "/songs/Back%20to%20December%20Taylor%20Swift/conversation-audio/d26151694ab80869/17-2.mp3"
-        }
-      ],
-      "japanese": "じゃあ、そこから始めよう。よりを戻すんじゃなくて、まず正直に。"
+      "japanese": "そう言ってくれてありがとう。時間は必要だけど、話せてよかった。"
     }
   ],
   "createdAt": "2026-05-20T10:56:15.434Z",
   "thumbnailSource": "Apple Music artwork",
   "conversationAudioStatus": "ready",
-  "conversationAudioModel": "eleven_v4"
+  "conversationAudioModel": "eleven_v4",
+  "lyricConnections": [
+    {
+      "lyricExpression": "Your guard is up",
+      "conversationExpression": "your guard is up",
+      "explanationJa": "guard is up は、傷つかないように相手を警戒している状態。"
+    },
+    {
+      "lyricExpression": "swallowing my pride",
+      "conversationExpression": "swallowing my pride",
+      "explanationJa": "swallow one's pride は、意地やプライドを捨てて謝るときに使う。"
+    }
+  ],
+  "dialogueUpdatedAt": "2026-10-10T23:25:30.742Z"
 }

@@ -231,17 +231,17 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "My dad thinks I'm being unrealistic.",
-          "displayHtml": "My dad thinks I'm being unrealistic.",
-          "audio": "/songs/Whatever%20Oasis/conversation-audio/09141da6ee47e203/0-0.mp3"
+          "text": "My dad wants me to choose a safer career.",
+          "displayHtml": "My dad wants me to choose a safer career.",
+          "audio": "/songs/Whatever%20Oasis/conversation-audio/c9270d3c16bdf31a/0-0.mp3"
         },
         {
-          "text": "He wants me to choose something safer.",
-          "displayHtml": "He wants me to choose something safer.",
-          "audio": "/songs/Whatever%20Oasis/conversation-audio/09141da6ee47e203/0-1.mp3"
+          "text": "I don't know how to tell him what I want.",
+          "displayHtml": "I don't know how to tell him what I want.",
+          "audio": "/songs/Whatever%20Oasis/conversation-audio/c9270d3c16bdf31a/0-1.mp3"
         }
       ],
-      "japanese": "父さんは僕が現実を見てないって思ってる。もっと安全な道を選べって。"
+      "japanese": "父はもっと安定した仕事を選んでほしいんだ。自分の希望をどう伝えたらいいかわからない。"
     },
     {
       "speaker": "B",
@@ -249,22 +249,17 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "What do you want, though?",
-          "displayHtml": "What do you want, though?",
-          "audio": "/songs/Whatever%20Oasis/conversation-audio/09141da6ee47e203/1-0.mp3"
+          "text": "What do you want?",
+          "displayHtml": "What do you want?",
+          "audio": "/songs/Whatever%20Oasis/conversation-audio/c9270d3c16bdf31a/1-0.mp3"
         },
         {
-          "text": "Not what they want.",
-          "displayHtml": "Not what they want.",
-          "audio": "/songs/Whatever%20Oasis/conversation-audio/09141da6ee47e203/1-1.mp3"
-        },
-        {
-          "text": "You.",
-          "displayHtml": "You.",
-          "audio": "/songs/Whatever%20Oasis/conversation-audio/09141da6ee47e203/1-2.mp3"
+          "text": "Forget everyone else's opinion for a minute.",
+          "displayHtml": "Forget everyone else's opinion for a minute.",
+          "audio": "/songs/Whatever%20Oasis/conversation-audio/c9270d3c16bdf31a/1-1.mp3"
         }
       ],
-      "japanese": "でも君はどうしたいの？周りが望むことじゃなくて、君自身は。"
+      "japanese": "君は何をしたいの？ 少しだけ、ほかの人の意見は置いておこう。"
     },
     {
       "speaker": "A",
@@ -272,17 +267,17 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "That's the problem.",
-          "displayHtml": "That's the problem.",
-          "audio": "/songs/Whatever%20Oasis/conversation-audio/09141da6ee47e203/2-0.mp3"
+          "text": "I'd like to study music.",
+          "displayHtml": "I'd like to study music.",
+          "audio": "/songs/Whatever%20Oasis/conversation-audio/c9270d3c16bdf31a/2-0.mp3"
         },
         {
-          "text": "I keep hearing everyone else until I can't hear myself.",
-          "displayHtml": "I keep hearing everyone else until I can't hear myself.",
-          "audio": "/songs/Whatever%20Oasis/conversation-audio/09141da6ee47e203/2-1.mp3"
+          "text": "It seems to me that I'm always waiting for permission.",
+          "displayHtml": "It <span class=\"lyric-phrase\">seems to me</span> that I'm always waiting for permission.",
+          "audio": "/songs/Whatever%20Oasis/conversation-audio/c9270d3c16bdf31a/2-1.mp3"
         }
       ],
-      "japanese": "そこなんだ。周りの声ばかり聞いてるうちに、自分の声が聞こえなくなってる。"
+      "japanese": "音楽を学びたい。いつも誰かの許可を待ってる気がする。"
     },
     {
       "speaker": "B",
@@ -290,12 +285,17 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "Maybe you're seeing what people want you to see, not what's actually possible.",
-          "displayHtml": "Maybe you're seeing what <span class=\"lyric-phrase\">people want you to see</span>, not what's actually possible.",
-          "audio": "/songs/Whatever%20Oasis/conversation-audio/09141da6ee47e203/3-0.mp3"
+          "text": "You're free to choose your path.",
+          "displayHtml": "<span class=\"lyric-phrase\">You're free to choose</span> your path.",
+          "audio": "/songs/Whatever%20Oasis/conversation-audio/c9270d3c16bdf31a/3-0.mp3"
+        },
+        {
+          "text": "You can still listen to his concerns.",
+          "displayHtml": "You can still listen to his concerns.",
+          "audio": "/songs/Whatever%20Oasis/conversation-audio/c9270d3c16bdf31a/3-1.mp3"
         }
       ],
-      "japanese": "たぶん君は、人が見せたいものだけを見てるんだよ。本当に可能なことじゃなくて。"
+      "japanese": "自分の道を選んでいいんだよ。お父さんの心配にも耳を傾けられるし。"
     },
     {
       "speaker": "A",
@@ -303,12 +303,12 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "It seems to me like choosing what I love means disappointing everyone.",
-          "displayHtml": "It <span class=\"lyric-phrase\">seems to me</span> like choosing what I love means disappointing everyone.",
-          "audio": "/songs/Whatever%20Oasis/conversation-audio/09141da6ee47e203/4-0.mp3"
+          "text": "Then I'll explain why it matters and show him a realistic plan.",
+          "displayHtml": "Then I'll explain why it matters and show him a realistic plan.",
+          "audio": "/songs/Whatever%20Oasis/conversation-audio/c9270d3c16bdf31a/4-0.mp3"
         }
       ],
-      "japanese": "好きなものを選ぶって、みんなをがっかりさせることみたいに思える。"
+      "japanese": "じゃあ、なぜ大切なのか説明して、現実的な計画を見せるよ。"
     },
     {
       "speaker": "B",
@@ -316,217 +316,34 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "It doesn't have to.",
-          "displayHtml": "It doesn't have to.",
-          "audio": "/songs/Whatever%20Oasis/conversation-audio/09141da6ee47e203/5-0.mp3"
+          "text": "You don't need every answer tonight.",
+          "displayHtml": "You don't need every answer tonight.",
+          "audio": "/songs/Whatever%20Oasis/conversation-audio/c9270d3c16bdf31a/5-0.mp3"
         },
         {
-          "text": "You can care about them and still choose your own life.",
-          "displayHtml": "You can care about them and still choose your own life.",
-          "audio": "/songs/Whatever%20Oasis/conversation-audio/09141da6ee47e203/5-1.mp3"
+          "text": "Just start with an honest conversation.",
+          "displayHtml": "Just start with an honest conversation.",
+          "audio": "/songs/Whatever%20Oasis/conversation-audio/c9270d3c16bdf31a/5-1.mp3"
         }
       ],
-      "japanese": "そうとは限らないよ。周りを大事にしながら、自分の人生を選んでもいい。"
-    },
-    {
-      "speaker": "A",
-      "speakerName": "Leo",
-      "speakerType": "男性",
-      "sentences": [
-        {
-          "text": "I wish I could say whatever I like without feeling guilty.",
-          "displayHtml": "I wish I could say <span class=\"lyric-phrase\">whatever I like</span> without feeling guilty.",
-          "audio": "/songs/Whatever%20Oasis/conversation-audio/09141da6ee47e203/6-0.mp3"
-        }
-      ],
-      "japanese": "罪悪感を持たずに、好きなことを言えたらいいのに。"
-    },
-    {
-      "speaker": "B",
-      "speakerName": "Emma",
-      "speakerType": "女性",
-      "sentences": [
-        {
-          "text": "Then start small.",
-          "displayHtml": "Then start small.",
-          "audio": "/songs/Whatever%20Oasis/conversation-audio/09141da6ee47e203/7-0.mp3"
-        },
-        {
-          "text": "Say one honest thing tonight.",
-          "displayHtml": "Say one honest thing tonight.",
-          "audio": "/songs/Whatever%20Oasis/conversation-audio/09141da6ee47e203/7-1.mp3"
-        },
-        {
-          "text": "It don't cost much to tell the truth gently.",
-          "displayHtml": "<span class=\"lyric-phrase\">It don't cost much</span> to tell the truth gently.",
-          "audio": "/songs/Whatever%20Oasis/conversation-audio/09141da6ee47e203/7-2.mp3"
-        }
-      ],
-      "japanese": "じゃあ小さく始めよう。今夜、正直なことをひとつ言ってみて。やさしく本音を伝えるのに、大きな代償はいらないよ。"
-    },
-    {
-      "speaker": "A",
-      "speakerName": "Leo",
-      "speakerType": "男性",
-      "sentences": [
-        {
-          "text": "Like what?",
-          "displayHtml": "Like what?",
-          "audio": "/songs/Whatever%20Oasis/conversation-audio/09141da6ee47e203/8-0.mp3"
-        }
-      ],
-      "japanese": "たとえば？"
-    },
-    {
-      "speaker": "B",
-      "speakerName": "Emma",
-      "speakerType": "女性",
-      "sentences": [
-        {
-          "text": "For example, say this: I don't know everything yet, but I want to try.",
-          "displayHtml": "For example, say this: I don't know everything yet, but I want to try.",
-          "audio": "/songs/Whatever%20Oasis/conversation-audio/09141da6ee47e203/9-0.mp3"
-        },
-        {
-          "text": "That's enough.",
-          "displayHtml": "That's enough.",
-          "audio": "/songs/Whatever%20Oasis/conversation-audio/09141da6ee47e203/9-1.mp3"
-        }
-      ],
-      "japanese": "「まだ全部はわからないけど、やってみたい」って。それで十分だよ。"
-    },
-    {
-      "speaker": "A",
-      "speakerName": "Leo",
-      "speakerType": "男性",
-      "sentences": [
-        {
-          "text": "I guess I've been waiting for permission.",
-          "displayHtml": "I guess I've been waiting for permission.",
-          "audio": "/songs/Whatever%20Oasis/conversation-audio/09141da6ee47e203/10-0.mp3"
-        }
-      ],
-      "japanese": "たぶん、誰かに「選んでいい」って言ってもらうのを待ってたんだと思う。"
-    },
-    {
-      "speaker": "B",
-      "speakerName": "Emma",
-      "speakerType": "女性",
-      "sentences": [
-        {
-          "text": "Your family might not say that for you.",
-          "displayHtml": "Your family might not say that for you.",
-          "audio": "/songs/Whatever%20Oasis/conversation-audio/09141da6ee47e203/11-0.mp3"
-        },
-        {
-          "text": "So maybe this is where you get a grip on yourself and choose carefully anyway.",
-          "displayHtml": "So maybe this is where you <span class=\"lyric-phrase\">get a grip on yourself</span> and choose carefully anyway.",
-          "audio": "/songs/Whatever%20Oasis/conversation-audio/09141da6ee47e203/11-1.mp3"
-        }
-      ],
-      "japanese": "家族は「選んでいいよ」とは言ってくれないかもしれない。だからこそ、ここで自分をしっかり持って、慎重に選ぶしかないのかも。"
-    },
-    {
-      "speaker": "A",
-      "speakerName": "Leo",
-      "speakerType": "男性",
-      "sentences": [
-        {
-          "text": "Here in my mind, I already know what I want.",
-          "displayHtml": "<span class=\"lyric-phrase\">Here in my mind</span>, I already know what I want.",
-          "audio": "/songs/Whatever%20Oasis/conversation-audio/09141da6ee47e203/12-0.mp3"
-        },
-        {
-          "text": "I'm just scared to say it out loud.",
-          "displayHtml": "I'm just scared to say it out loud.",
-          "audio": "/songs/Whatever%20Oasis/conversation-audio/09141da6ee47e203/12-1.mp3"
-        }
-      ],
-      "japanese": "心の中では、もう自分が何を望んでるかはわかってる。ただ、それを声に出すのが怖いんだ。"
-    },
-    {
-      "speaker": "B",
-      "speakerName": "Emma",
-      "speakerType": "女性",
-      "sentences": [
-        {
-          "text": "That's okay.",
-          "displayHtml": "That's okay.",
-          "audio": "/songs/Whatever%20Oasis/conversation-audio/09141da6ee47e203/13-0.mp3"
-        },
-        {
-          "text": "If you say it once, you might hear yourself more clearly.",
-          "displayHtml": "If you say it once, you might hear yourself more clearly.",
-          "audio": "/songs/Whatever%20Oasis/conversation-audio/09141da6ee47e203/13-1.mp3"
-        }
-      ],
-      "japanese": "それでいいよ。一度口に出せば、自分の気持ちがもっとはっきり聞こえるかもしれない。"
-    },
-    {
-      "speaker": "A",
-      "speakerName": "Leo",
-      "speakerType": "男性",
-      "sentences": [
-        {
-          "text": "Maybe you might find the courage you once knew when you stop trying to please everyone.",
-          "displayHtml": "Maybe <span class=\"lyric-phrase\">you might find</span> the courage <span class=\"lyric-phrase\">you once knew</span> when you stop trying to please everyone.",
-          "audio": "/songs/Whatever%20Oasis/conversation-audio/09141da6ee47e203/14-0.mp3"
-        }
-      ],
-      "japanese": "みんなを喜ばせようとするのをやめたら、昔持っていた勇気を見つけられるのかもしれない。"
-    },
-    {
-      "speaker": "B",
-      "speakerName": "Emma",
-      "speakerType": "女性",
-      "sentences": [
-        {
-          "text": "Exactly.",
-          "displayHtml": "Exactly.",
-          "audio": "/songs/Whatever%20Oasis/conversation-audio/09141da6ee47e203/15-0.mp3"
-        },
-        {
-          "text": "And there's no fun in living a life that looks right to everyone else but feels wrong to you.",
-          "displayHtml": "And there's <span class=\"lyric-phrase\">no fun</span> in living a life that looks right to everyone else but feels wrong to you.",
-          "audio": "/songs/Whatever%20Oasis/conversation-audio/09141da6ee47e203/15-1.mp3"
-        }
-      ],
-      "japanese": "その通り。周りから正しく見えても、自分には違うと感じる人生を生きるのは楽しくないよ。"
-    },
-    {
-      "speaker": "A",
-      "speakerName": "Leo",
-      "speakerType": "男性",
-      "sentences": [
-        {
-          "text": "Then whatever I choose, I want it to be mine.",
-          "displayHtml": "Then whatever I choose, I want it to be mine.",
-          "audio": "/songs/Whatever%20Oasis/conversation-audio/09141da6ee47e203/16-0.mp3"
-        }
-      ],
-      "japanese": "じゃあ、何を選ぶにしても、自分で選んだものにしたい。"
-    },
-    {
-      "speaker": "B",
-      "speakerName": "Emma",
-      "speakerType": "女性",
-      "sentences": [
-        {
-          "text": "Good.",
-          "displayHtml": "Good.",
-          "audio": "/songs/Whatever%20Oasis/conversation-audio/09141da6ee47e203/17-0.mp3"
-        },
-        {
-          "text": "Whatever you say to them, make sure it sounds like you.",
-          "displayHtml": "<span class=\"lyric-phrase\">Whatever you say</span> to them, make sure it sounds like you.",
-          "audio": "/songs/Whatever%20Oasis/conversation-audio/09141da6ee47e203/17-1.mp3"
-        }
-      ],
-      "japanese": "いいね。家族に伝えるときは、ちゃんと君らしい言葉でね。"
+      "japanese": "今夜、全部の答えはいらないよ。まず正直に話すところから始めよう。"
     }
   ],
   "createdAt": "2026-05-18T05:39:41.999Z",
   "thumbnailSource": "Whatever Remastered / Oasis - Topic",
   "conversationAudioStatus": "ready",
-  "conversationAudioModel": "eleven_v4"
+  "conversationAudioModel": "eleven_v4",
+  "lyricConnections": [
+    {
+      "lyricExpression": "seems to me",
+      "conversationExpression": "seems to me",
+      "explanationJa": "It seems to me that ... は、自分にはそう思えると見方を伝える表現。"
+    },
+    {
+      "lyricExpression": "You're free to be",
+      "conversationExpression": "You're free to choose",
+      "explanationJa": "be free to + 動詞は、その行動を自由に選んでよいことを表す。"
+    }
+  ],
+  "dialogueUpdatedAt": "2026-10-10T23:25:30.779Z"
 }
