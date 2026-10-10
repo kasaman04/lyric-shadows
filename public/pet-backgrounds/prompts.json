@@ -1,0 +1,51 @@
+{
+  "tool": "built-in image_gen",
+  "transparent_background": false,
+  "stages": [
+    {
+      "file": "room-stage-1-v1.png",
+      "levels": [
+        1,
+        20
+      ],
+      "reference": null,
+      "prompt": "Use case: stylized-concept. Asset type: full-bleed background illustration for a mobile virtual-pet habitat. Draw ONE empty cozy simple room, straight-on view, nearly square portrait canvas (about 400:430 aspect ratio). Flat hand-drawn Japanese casual monster-game aesthetic, organic medium dark olive-brown outlines, restrained pastel cream, sage mint and warm beige, faint paper color texture, no 3D or photorealism. One pale warm cream back wall, a modest four-pane wooden sage-green window in upper right showing pale blue-green daylight, a low small wooden cabinet with one potted green sprout at lower left. Floor is a broad simple warm beige surface beginning at 73% of image height and continuing to the bottom, horizontal wall-floor line. Keep the entire central 55% mostly empty and calm, especially central lower area for placing a pet sprite. Low visual contrast and only a few broad shapes so a thick-black outlined mint creature will remain the focus. This is the initial clean and cared-for version of this room, no damage. No characters, creature, animal, people, food bowl, dishes, furniture in center, rugs, text, letters, UI, frame, labels, icons, watermarks or decorative clutter. Opaque background, edge-to-edge illustration."
+    },
+    {
+      "file": "room-stage-2-v1.png",
+      "levels": [
+        21,
+        40
+      ],
+      "reference": "room-stage-1-v1.png",
+      "prompt": "Edit target: the supplied clean room background. Keep EXACTLY the same camera, framing, cream room wall, window position/size at upper right, cabinet/plant position at lower left, horizontal floor line, empty central space and hand-drawn pastel paper-texture illustration style. Output ONE full-bleed opaque background, same aspect ratio. No characters, creatures, people, text, UI, icons, frame, bowl or food. Keep the central lower floor clear to place a large pet sprite. Damage belongs mostly on edges, wall, window and side furniture; maintain soft low contrast and simple broad shapes. Version for levels 21-40: subtly aged and beginning to deteriorate. Two small fine wall cracks near edges, slightly worn window frame and cabinet, one plant leaf droops. Warm daylight remains, cream and sage colors only slightly dulled. Still mostly cozy and clean, no rubble or holes."
+    },
+    {
+      "file": "room-stage-3-v1.png",
+      "levels": [
+        41,
+        60
+      ],
+      "reference": "room-stage-1-v1.png",
+      "prompt": "Edit target: the supplied clean room background. Keep EXACTLY the same camera, framing, cream room wall, window position/size at upper right, cabinet/plant position at lower left, horizontal floor line, empty central space and hand-drawn pastel paper-texture illustration style. Output ONE full-bleed opaque background, same aspect ratio. No characters, creatures, people, text, UI, icons, frame, bowl or food. Keep the central lower floor clear to place a large pet sprite. Damage belongs mostly on edges, wall, window and side furniture; maintain soft low contrast and simple broad shapes. Version for levels 41-60: moderately neglected and damaged. Noticeable branching cracks and a few patches of peeling plaster near wall edges, one cracked window pane and weathered window frame, chipped cabinet wood and a drooping dry potted plant. A few small plaster pieces close to side walls. Muted cream, dusty sage and beige, soft daylight. Central wall and floor stay mostly empty and readable."
+    },
+    {
+      "file": "room-stage-4-v1.png",
+      "levels": [
+        61,
+        80
+      ],
+      "reference": "room-stage-1-v1.png",
+      "prompt": "Edit target: the supplied clean room background. Keep EXACTLY the same camera, framing, cream room wall, window position/size at upper right, cabinet/plant position at lower left, horizontal floor line, empty central space and hand-drawn pastel paper-texture illustration style. Output ONE full-bleed opaque background, same aspect ratio. No characters, creatures, people, text, UI, icons, frame, bowl or food. Keep the central lower floor clear to place a large pet sprite. Damage belongs mostly on edges, wall, window and side furniture; maintain soft low contrast and simple broad shapes. Version for levels 61-80: severely deteriorated but gentle, playful rather than frightening. Large missing plaster patches and deep branching cracks around edges, revealing muted old brick. Two window panes broken with irregular missing glass, weathered frame. The little cabinet leans with a sagging door; the potted sprout is dry. Sparse weeds appear at bottom side edges with a small amount of rubble beside the cabinet and below the window. Dusty sage-gray and warm cream palette, daylight still visible. Do NOT collapse the whole room yet or fill the center with debris."
+    },
+    {
+      "file": "room-stage-5-v1.png",
+      "levels": [
+        81,
+        100
+      ],
+      "reference": "room-stage-1-v1.png",
+      "prompt": "Edit target: the supplied clean room background. Keep EXACTLY the same camera, framing, cream room wall, window position/size at upper right, cabinet/plant position at lower left, horizontal floor line, empty central space and hand-drawn pastel paper-texture illustration style. Output ONE full-bleed opaque background, same aspect ratio. No characters, creatures, people, text, UI, icons, frame, bowl or food. Keep the central lower floor clear to place a large pet sprite. Damage belongs mostly on edges, wall, window and side furniture; maintain soft low contrast and simple broad shapes. Version for levels 81-100: final abandoned ruin of THIS SAME room. Large broken wall edges at upper corners with patches of pale hazy daylight and distant muted sage-green nature visible through them, exposed weathered brick, destroyed window glass but the same recognizable wooden frame remains in its original upper-right location. The cabinet at lower left is partly collapsed; the pot sits cracked beside it and a tiny wild green sprout grows nearby. Sparse moss, vines and rubble around the OUTSIDE edges. Wooden floor worn and cracked, but central lower floor remains broad, empty and flat for the monster. Quiet wistful hand-drawn cream/sage/beige colors, softly illuminated, cozy strange post-apocalyptic game atmosphere. No sky filling the whole central wall, no dark horror, flames or additional furniture."
+    }
+  ]
+}

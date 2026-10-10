@@ -107,6 +107,11 @@ const LAST_QUOTE_CARD_KEY = 'lastDramaQuoteCardV1';
 
 let activeMediaType = '';
 
+function createLearningAudio(src) {
+  const audio = src ? new Audio(src) : new Audio();
+  return window.PetPlayback?.watch(audio) || audio;
+}
+
 function setMediaPlaybackState(playing) {
   if ('mediaSession' in navigator) {
     navigator.mediaSession.playbackState = playing ? 'playing' : 'paused';
@@ -190,6 +195,7 @@ async function init() {
   loadHiddenPhrases();
   loadSavedPhrases();
   state.deviceId = loadDeviceId();
+  window.PetGame?.initialize(state.deviceId);
   renderHome();
   syncPhrasePreferencesFromServer();
 }
@@ -329,6 +335,7 @@ function renderHome() {
       <header class="home-header">
         <div class="brand-mark" aria-hidden="true">♫</div>
         <div class="brand-copy"><span class="brand-name">Lyric Shadows</span><span class="brand-caption">ENGLISH THROUGH SOUND</span></div>
+        <button class="pet-home-entry" onclick="PetGame.open()" aria-label="相棒の育成画面を開く">🌱 <span>育成</span></button>
       </header>
       <section class="home-hero" aria-labelledby="home-title">
         <div class="hero-vinyl" aria-hidden="true"><div></div></div>
@@ -467,7 +474,7 @@ function playQuoteCardAudio() {
   if (!card) return;
   stopQuoteCardAudio();
   const request = state.quoteAudioRequest;
-  const audio = new Audio(card.audio || `/api/quote-cards/${encodeURIComponent(card.id)}/audio`);
+  const audio = createLearningAudio(card.audio || `/api/quote-cards/${encodeURIComponent(card.id)}/audio`);
   state.quoteAudio = audio;
   updateQuoteAudioStatus('音声を準備中…');
   audio.onplaying = () => {
@@ -1380,7 +1387,7 @@ function normalizePhraseAudioSrc(src) {
 function playPhraseSharedAudio(src, { repeat = false, autoAdvance = false } = {}) {
   stopAudio();
   if (!state.phrasePracticeAudio) {
-    state.phrasePracticeAudio = new Audio();
+    state.phrasePracticeAudio = createLearningAudio();
     state.phrasePracticeAudio.preload = 'auto';
   } else {
     state.phrasePracticeAudio.pause();
@@ -1920,7 +1927,7 @@ function initAudio(song) {
   if (!hasConversationAudio(song)) return;
 
   if (!state.conversationAudio) {
-    state.conversationAudio = new Audio();
+    state.conversationAudio = createLearningAudio();
     state.conversationAudio.preload = 'auto';
   }
 

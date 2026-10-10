@@ -7,10 +7,13 @@ const { VOICE_PROFILES, VOICE_BY_ID } = require('./lib/voice-catalog');
 require('dotenv').config();
 
 const app = express();
+// Render terminates HTTPS at its reverse proxy.
+if (process.env.NODE_ENV === 'production') app.set('trust proxy', 1);
 const PORT = process.env.PORT || 9999;
 const SONGS_DIR = path.join(__dirname, 'songs');
 const PHRASE_IMAGES_DIR = path.join(__dirname, 'public', 'phrase-images', 'phrases');
-const SUPABASE_URL = process.env.SUPABASE_URL;
+const {supabaseBase,headersFor}=require('./lib/pet-cloud');
+const SUPABASE_URL = supabaseBase(process.env.SUPABASE_URL);
 const SUPABASE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.SUPABASE_SECRET_KEY || process.env.SUPABASE_ANON_KEY;
 const SUPABASE_PREFS_TABLE = 'user_phrase_preferences';
 
@@ -19,6 +22,8 @@ const SUPABASE_PREFS_TABLE = 'user_phrase_preferences';
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/songs', express.static(SONGS_DIR));
+require('./lib/pet-api').mountPetApi(app);
+require('./lib/pet-worker-launcher').startLocalWorker();
 
 app.get('/api/voices', (req, res) => {
   res.json(VOICE_PROFILES.map(({ key, name, id, gender, age, accent, tone }) => ({ key, name, id, gender, age, accent, tone })));
@@ -30,8 +35,7 @@ function isSupabaseConfigured() {
 
 function supabaseHeaders(extra = {}) {
   return {
-    apikey: SUPABASE_KEY,
-    Authorization: `Bearer ${SUPABASE_KEY}`,
+    ...headersFor(SUPABASE_KEY),
     'Content-Type': 'application/json',
     ...extra
   };

@@ -24,3 +24,7 @@ tmp-preview.json
 
 # Render local config (if any)
 .render/
+
+# Pet saves and generated design workspace
+data/pets/
+tmp/

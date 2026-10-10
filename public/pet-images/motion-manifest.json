@@ -1,0 +1,102 @@
+{
+  "fire": {
+    "url": "/pet-images/frames-fire-v1.png",
+    "columns": 4,
+    "rows": 7,
+    "frameCount": 28,
+    "fps": 6,
+    "width": 948,
+    "height": 1659,
+    "source": "imagegen"
+  },
+  "water": {
+    "url": "/pet-images/frames-water-v1.png",
+    "columns": 4,
+    "rows": 7,
+    "frameCount": 28,
+    "fps": 6,
+    "width": 948,
+    "height": 1659,
+    "source": "imagegen"
+  },
+  "grass": {
+    "url": "/pet-images/frames-grass-v1.png",
+    "columns": 4,
+    "rows": 7,
+    "frameCount": 28,
+    "fps": 6,
+    "width": 948,
+    "height": 1659,
+    "source": "imagegen"
+  },
+  "thunder": {
+    "url": "/pet-images/frames-thunder-v1.png",
+    "columns": 4,
+    "rows": 7,
+    "frameCount": 28,
+    "fps": 6,
+    "width": 948,
+    "height": 1659,
+    "source": "imagegen"
+  },
+  "ice": {
+    "url": "/pet-images/frames-ice-v1.png",
+    "columns": 4,
+    "rows": 7,
+    "frameCount": 28,
+    "fps": 6,
+    "width": 948,
+    "height": 1659,
+    "source": "imagegen"
+  },
+  "wind": {
+    "url": "/pet-images/frames-wind-v1.png",
+    "columns": 4,
+    "rows": 7,
+    "frameCount": 28,
+    "fps": 6,
+    "width": 948,
+    "height": 1659,
+    "source": "imagegen"
+  },
+  "earth": {
+    "url": "/pet-images/frames-earth-v1.png",
+    "columns": 4,
+    "rows": 7,
+    "frameCount": 28,
+    "fps": 6,
+    "width": 948,
+    "height": 1659,
+    "source": "imagegen"
+  },
+  "poison": {
+    "url": "/pet-images/frames-poison-v1.png",
+    "columns": 4,
+    "rows": 7,
+    "frameCount": 28,
+    "fps": 6,
+    "width": 948,
+    "height": 1659,
+    "source": "imagegen"
+  },
+  "light": {
+    "url": "/pet-images/frames-light-v1.png",
+    "columns": 4,
+    "rows": 7,
+    "frameCount": 28,
+    "fps": 6,
+    "width": 948,
+    "height": 1659,
+    "source": "imagegen"
+  },
+  "dark": {
+    "url": "/pet-images/frames-dark-v1.png",
+    "columns": 4,
+    "rows": 7,
+    "frameCount": 28,
+    "fps": 6,
+    "width": 948,
+    "height": 1659,
+    "source": "imagegen"
+  }
+}
