@@ -311,6 +311,7 @@ function showHome() {
 }
 
 async function showShadowing(song) {
+  stopAudio();
   stopSongAudio();
   stopPhrasePracticeAudio();
   state.currentSong = song;

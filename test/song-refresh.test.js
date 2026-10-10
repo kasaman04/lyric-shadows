@@ -17,6 +17,7 @@ function harness(fetch) {
   const source = fs.readFileSync(path.join(__dirname, '../public/app.js'), 'utf8').replace(/\binit\(\);\s*$/, '');
   vm.runInContext(source, context);
   vm.runInContext(`
+    stopAudio = () => { state.isPlaying = false; };
     stopSongAudio = () => {};
     stopPhrasePracticeAudio = () => {};
     initAudio = song => { calls.audio++; calls.song = song; state.isPlaying = false; };
