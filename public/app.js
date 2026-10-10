@@ -990,7 +990,7 @@ function saveSavedPhrases() {
 function renderCurrentPhraseView() {
   if (state.view === 'phrase') renderPhraseDetail();
   else if (state.view === 'phrasePractice') renderPhrasePractice();
-  else renderHome();
+  else if (state.view === 'home') renderHome();
 }
 
 function mergePhrasePreferenceIds(remoteIds, localSet) {

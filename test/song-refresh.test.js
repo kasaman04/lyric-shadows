@@ -88,3 +88,10 @@ test('simultaneous refreshes share one request', async () => {
   await Promise.all([first, second]);
   assert.equal(requests, 1);
 });
+
+test('a late phrase preference sync does not replace the open song screen', () => {
+  const h = harness(async () => ({ok: true, json: async () => [freshSong]}));
+  seed(h);
+  h.run('renderCurrentPhraseView()');
+  assert.equal(h.context.calls.home, 0);
+});
