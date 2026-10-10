@@ -198,6 +198,9 @@ async function init() {
   window.PetGame?.initialize(state.deviceId);
   renderHome();
   syncPhrasePreferencesFromServer();
+  const requestedSong = new URLSearchParams(window.location.search).get('song');
+  const song = state.songs.find(item => item.id === requestedSong);
+  if (song) await showShadowing(song);
 }
 
 async function loadVoices() {
@@ -209,14 +212,46 @@ async function loadVoices() {
   }
 }
 
+let songLoadPromise = null;
 async function loadSongs() {
-  try {
-    const res = await fetch('/api/songs');
-    state.songs = await res.json();
-  } catch {
-    state.songs = [];
+  if (songLoadPromise) return songLoadPromise;
+  songLoadPromise = (async () => {
+    try {
+      const res = await fetch('/api/songs', { cache: 'no-store' });
+      if (!res.ok) return false;
+      const songs = await res.json();
+      if (!Array.isArray(songs)) return false;
+      state.songs = songs;
+      return true;
+    } catch {
+      return false;
+    }
+  })();
+  try { return await songLoadPromise; }
+  finally { songLoadPromise = null; }
+}
+
+async function refreshVisibleSongs() {
+  if (document.hidden || !await loadSongs()) return;
+  if (state.view === 'home') {
+    renderHome();
+  } else if (state.view === 'shadowing' && state.currentSong) {
+    const latest = state.songs.find(song => song.id === state.currentSong.id);
+    if (latest && JSON.stringify(latest) !== JSON.stringify(state.currentSong)) {
+      stopSongAudio();
+      state.currentSong = latest;
+      initAudio(latest);
+      renderShadowing();
+    }
   }
 }
+
+document.addEventListener('visibilitychange', () => {
+  if (!document.hidden) refreshVisibleSongs();
+});
+window.addEventListener('pageshow', event => {
+  if (event.persisted) refreshVisibleSongs();
+});
 
 async function loadPhraseImages() {
   try {
@@ -275,7 +310,7 @@ function showHome() {
   renderHome();
 }
 
-function showShadowing(song) {
+async function showShadowing(song) {
   stopSongAudio();
   stopPhrasePracticeAudio();
   state.currentSong = song;
@@ -284,7 +319,10 @@ function showShadowing(song) {
   state.showJapanese = false;
   state.activeTab = 'conv';
   state.songTicketSessionActive = false;
-  initAudio(song);
+  await loadSongs();
+  if (state.view !== 'shadowing' || state.currentSong?.id !== song.id) return;
+  state.currentSong = state.songs.find(latest => latest.id === song.id) || song;
+  initAudio(state.currentSong);
   renderShadowing();
 }
 

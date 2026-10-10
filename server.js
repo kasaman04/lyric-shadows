@@ -20,7 +20,11 @@ const SUPABASE_PREFS_TABLE = 'user_phrase_preferences';
 (async () => { await fs.ensureDir(SONGS_DIR); })();
 
 app.use(express.json());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public'), {
+  setHeaders(res, file) {
+    if (file.endsWith('.html') || path.basename(file) === 'app.js') res.set('Cache-Control', 'no-store');
+  }
+}));
 app.use('/songs', express.static(SONGS_DIR));
 require('./lib/pet-api').mountPetApi(app);
 require('./lib/pet-worker-launcher').startLocalWorker();
@@ -59,6 +63,7 @@ function cleanDeviceId(value) {
 
 // GET all songs: scan songs/ directory
 app.get('/api/songs', async (req, res) => {
+  res.set('Cache-Control', 'no-store');
   try {
     const entries = await fs.readdir(SONGS_DIR, { withFileTypes: true });
     const songs = [];
