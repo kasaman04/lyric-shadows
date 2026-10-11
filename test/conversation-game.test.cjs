@@ -44,15 +44,14 @@ test('ten correct replies buy exactly one real pet care, without consuming saved
   assert.equal(s.conversationGame.coins, 0); assert.equal(s.conversationGame.earned, 100);
 });
 test('wrong replies debit three, never below zero; repeated choices and responses are idempotent', () => {
-  const s = setup(), wrongAtZero = body(s, false);
-  assert.equal(game.answer(s, wrongAtZero).delta, 0); assert.equal(s.conversationGame.coins, 0);
+  const s = setup();
   const correct = body(s); game.answer(s, correct); game.answer(s, correct);
   assert.equal(s.conversationGame.coins, 10); assert.equal(s.conversationGame.round.index, 1);
   const wrong = body(s, false); assert.equal(game.answer(s, wrong).delta, -3);
   game.answer(s, wrong); game.answer(s, { ...wrong, requestId: id() });
   assert.equal(s.conversationGame.coins, 7); assert.equal(s.conversationGame.lost, 3);
   assert.throws(() => game.answer(s, { ...wrong, choice: body(s).choice }), /操作ID/);
-  const untried = [0, 1, 2].find(i => i !== correct.choice && i !== wrongAtZero.choice);
+  const untried = [0, 1, 2].find(i => i !== correct.choice);
   assert.throws(() => game.answer(s, { ...correct, choice: untried, requestId: id() }), /解答済み/);
   const changed = { ...body(s), roundId: id() }; assert.throws(() => game.answer(s, changed), /変わりました/);
   assert.throws(() => game.answer(s, { ...body(s), choice: '0' }), /選んで/);
@@ -61,6 +60,34 @@ test('wrong replies debit three, never below zero; repeated choices and response
   const remainingWrong = [0, 1, 2].find(i => i !== wrong.choice && i !== body(s).choice);
   assert.equal(game.answer(s, { ...wrong, requestId: id(), choice: remainingWrong }).delta, -1);
   assert.equal(s.conversationGame.coins, 0); assert.equal(item.attempts.length, 2);
+});
+test('a wrong answer forfeits this question reward, including zero balance, reloads and resubmissions', async () => temporary(async dir => {
+  const device = 'first-try-reward-device';
+  let store = new PetStore({ dir, clock: () => now });
+  let s = await store.transact(device, (s, time) => game.start(s, { requestId: id() }, time));
+  const wrong = body(s, false);
+  s = await store.transact(device, s => game.answer(s, wrong));
+  assert.equal(s.conversationGame.coins, 0);
+  store = new PetStore({ dir, clock: () => now });
+  s = await store.transact(device); const correct = body(s); let result;
+  s = await store.transact(device, s => { result = game.answer(s, correct); });
+  assert.equal(result.correct, true); assert.equal(result.delta, 0);
+  assert.equal(s.conversationGame.round.index, 1); assert.equal(s.conversationGame.earned, 0);
+  assert.ok(result.conversation.audio.length === 2);
+  for (const requestId of [correct.requestId, id()]) {
+    s = await store.transact(device, s => { result = game.answer(s, { ...correct, requestId }); });
+    assert.equal(result.delta, 0); assert.equal(s.conversationGame.coins, 0);
+  }
+  s = await store.transact(device, s => game.answer(s, body(s)));
+  assert.equal(s.conversationGame.coins, 10); assert.equal(s.conversationGame.round.earned, 10);
+}));
+test('one missed question in a ten-question round earns ninety minus the three-coin penalty', () => {
+  const s = setup(); game.answer(s, body(s)); game.answer(s, body(s, false));
+  const retry = game.answer(s, body(s)); assert.equal(retry.delta, 0);
+  for (let n = 2; n < 10; n++) game.answer(s, body(s));
+  const round = game.view(s).round;
+  assert.equal(round.finished, true); assert.equal(round.earned, 90); assert.equal(round.lost, 3);
+  assert.equal(s.conversationGame.coins, 87);
 });
 test('unfinished rounds resume, shuffled choices remain valid, and the server decides rewards', () => {
   const s = setup(), round = s.conversationGame.round.id;
@@ -116,6 +143,14 @@ test('challenge HTTP API persists rounds, rejects foreign origins and accepts re
     let petState = await (await post('/care', { type: 'select', element: 'fire', requestId: id() })).json();
     petState = await (await post('/care', { type: 'brain', payment: 'coins', petId: petState.pets[0].id, requestId: id() })).json();
     assert.equal(petState.conversationGame.coins, 0); assert.equal(petState.pets[0].stats.brain, 1);
+    packet = await (await post('/challenge/start', { requestId: id() })).json();
+    packet = await (await post('/challenge/answer', body(packet.state))).json();
+    packet = await (await post('/challenge/answer', body(packet.state, false))).json();
+    assert.equal(packet.challenge.coins, 7);
+    packet = await (await fetch(base + '/challenge')).json();
+    packet = await (await post('/challenge/answer', body(packet.state))).json();
+    assert.equal(packet.result.correct, true); assert.equal(packet.result.delta, 0);
+    assert.equal(packet.challenge.coins, 7); assert.equal(packet.challenge.round.index, 2);
   } finally { await api.idle(); server.closeAllConnections(); await new Promise(resolve => server.close(resolve)); }
 }));
 test('all ten scenes use existing images and all thirty speech clips are present', async () => {
