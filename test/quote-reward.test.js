@@ -38,7 +38,7 @@ test('a completed drama playlist awards a random quote on its third round', () =
       setItem(key, value) { storage.set(key, value); },
     },
     navigator: {},
-    window: { scrollTo() {} },
+    window: { scrollTo() {}, addEventListener() {} },
   });
   const source = fs.readFileSync(path.join(__dirname, '..', 'public', 'app.js'), 'utf8').replace(/\binit\(\);\s*$/, '');
   vm.runInContext(fs.readFileSync(path.join(__dirname, '..', 'public', 'drama-player.js'), 'utf8'), context);

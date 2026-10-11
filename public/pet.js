@@ -5,7 +5,7 @@
   let flushTask = null, loadTask = null, queued = 0, networkError = '', designStatus = '', designKey = '', previousFocus;
   let designTimer = null;
   let careReaction = null;
-  let careSeconds = 300, chosenElement = 'fire', framePlayer = null, farewellTimer = null;
+  let careSeconds = 300, careSource = 'coins', chosenElement = 'fire', framePlayer = null, farewellTimer = null;
   let store, cacheKey, offset = 0, collector = null, writing = Promise.resolve();
   const uid = () => crypto.randomUUID();
   const esc = text => String(text ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -94,6 +94,7 @@
   function accept(value) {
     if (save && value.revision < save.revision) return;
     save = value; offset = value.serverNow - Date.now(); local(cacheKey, save);
+    window.dispatchEvent(new CustomEvent('pet-state-change', { detail: save }));
     updateBadge(); if (overlay) render();
   }
   async function load() {
@@ -178,6 +179,10 @@
     else if (mode === 'choose' || !current() || current().needsStarter) content = selection();
     else content = room();
     overlay.innerHTML = `<div class="pet-shell">${header()}${content}${networkError && save ? `<p class="pet-sync" role="status">${esc(networkError)} <button data-action="retry">再接続</button></p>` : ''}${sheet ? sheetContent() : ''}<div id="petToast" class="pet-toast" role="status"></div></div>`;
+    if (mode === 'room' && save) {
+      const coins = save.conversationGame?.coins || 0;
+      overlay.querySelector('.pet-bank-row')?.insertAdjacentHTML('beforebegin', `<div class="pet-coin-bank"><div><span>会話で貯めたコイン</span><strong>🪙 ${coins}</strong></div><p>${coins >= 100 ? `お世話 ${Math.floor(coins / 100)} 回ぶん` : `あと${100 - coins}コインで、お世話1回`}</p><button data-action="challenge" class="pet-text-button">会話チャレンジで貯める →</button></div>`);
+    }
     if (active) overlay.querySelector(`[data-action="${active}"]`)?.focus({ preventScroll: true });
     const pet = current();
     if (mode === 'room' && pet && !pet.needsStarter && !rules.ended(pet)) framePlayer = window.PetFrames?.create(overlay.querySelector('.pet-character-visual'), pet.forms.at(-1).motion, rules.hunger(pet,now()) < 34 ? 'weak' : rules.hunger(pet,now()) < 67 ? 'hungry' : 'idle');
@@ -205,11 +210,14 @@
   function sheetContent() {
     const pet = current(); let content = '';
     if (sheet === 'care') {
-      const gain = careSeconds / 300, before = rules.progress(rules.growth(pet)), after = rules.progress(rules.growth(pet) + careSeconds);
-      const preview = save.bankSeconds < careSeconds ? `あと ${remaining(careSeconds - save.bankSeconds)}聴くと、お世話できます` : before.level === 10 ? '最終レベル · お世話で数値を育てよう' : `成長 +${minutes(careSeconds)}${after.level > before.level ? ` · Lv.${before.level} → ${after.level}` : ` · 次のレベルまで ${remaining(after.required - after.earned)}`}`;
-      content = `<p class="pet-eyebrow">TIME TO CARE</p><h2 id="petSheetTitle">何をしてあげる？</h2><p class="pet-sheet-sub">使える時間 <b>${minutes(save.bankSeconds)}</b></p><div class="pet-care-amounts" role="group" aria-label="お世話に使う時間">${rules.careAmounts.map(seconds => `<button data-action="care-amount" data-seconds="${seconds}" aria-pressed="${seconds === careSeconds}" ${busy || save.bankSeconds < seconds ? 'disabled' : ''}>${minutes(seconds)}</button>`).join('')}</div><p class="pet-care-preview">${preview}</p><div class="pet-care-list">${[['food','◒','ごはん',`おなか全回復・体格 +${gain}`],['power','✦','パワー',`大きな手や腕に育つ · +${gain}`],['brain','✿','かしこさ',`芽や不思議な形に育つ · +${gain}`]].map(([type,icon,title,desc]) => `<button class="pet-care-row" data-action="spend" data-type="${type}" ${busy || rules.ended(pet) || save.bankSeconds < careSeconds ? 'disabled' : ''}><span class="pet-care-icon ${type}">${icon}</span><span><b>${title}</b><small>${desc}</small></span><strong>${busy ? '…' : minutes(careSeconds) + '使う'}</strong></button>`).join('')}</div><p class="pet-sheet-note">お世話に使った時間でレベルが上がる。<br>残った時間は、明日にも持ち越せる。</p>`;
+      const coins = save.conversationGame?.coins || 0, useCoins = careSource === 'coins';
+      const seconds = useCoins ? 300 : careSeconds, gain = seconds / 300;
+      const enough = useCoins ? coins >= 100 : save.bankSeconds >= seconds;
+      const before = rules.progress(rules.growth(pet)), after = rules.progress(rules.growth(pet) + seconds);
+      const preview = !enough ? (useCoins ? `あと${100 - coins}コインで、お世話1回。正解${Math.ceil((100 - coins) / 10)}問ぶん！` : `あと ${remaining(seconds - save.bankSeconds)}聴くと、お世話できます`) : before.level === 10 ? '最終レベル · お世話で数値を育てよう' : `お世話で成長${after.level > before.level ? ` · Lv.${before.level} → ${after.level}` : ''}`;
+      content = `<p class="pet-eyebrow">TIME TO CARE</p><h2 id="petSheetTitle">何をしてあげる？</h2><div class="pet-care-amounts" role="group" aria-label="お世話の支払い方法"><button data-action="care-source" data-source="coins" aria-pressed="${useCoins}" ${busy ? 'disabled' : ''}>コインでお世話</button><button data-action="care-source" data-source="time" aria-pressed="${!useCoins}" ${busy ? 'disabled' : ''}>聴いた時間でお世話</button></div><p class="pet-sheet-sub">${useCoins ? `所持 <b>🪙 ${coins} コイン</b> · 1回100コイン` : `使える時間 <b>${minutes(save.bankSeconds)}</b>`}</p>${useCoins ? '' : `<div class="pet-care-amounts" role="group" aria-label="お世話に使う時間">${rules.careAmounts.map(amount => `<button data-action="care-amount" data-seconds="${amount}" aria-pressed="${amount === careSeconds}" ${busy || save.bankSeconds < amount ? 'disabled' : ''}>${minutes(amount)}</button>`).join('')}</div>`}<p class="pet-care-preview">${preview}</p><div class="pet-care-list">${[['food','◒','ごはん',`おなか全回復・体格 +${gain}`],['power','✦','パワー',`大きな手や腕に育つ · +${gain}`],['brain','✿','かしこさ',`芽や不思議な形に育つ · +${gain}`]].map(([type,icon,title,desc]) => `<button class="pet-care-row" data-action="spend" data-type="${type}" ${busy || rules.ended(pet) || !enough ? 'disabled' : ''}><span class="pet-care-icon ${type}">${icon}</span><span><b>${title}</b><small>${desc}</small></span><strong>${busy ? '…' : useCoins ? '100コイン' : minutes(seconds) + '使う'}</strong></button>`).join('')}</div><p class="pet-sheet-note">${useCoins ? '会話チャレンジの正解10問で、お世話1回ぶん。<br>不正解は−3コイン。残高は0未満になりません。' : 'お世話に使った時間でレベルが上がる。<br>残った時間は、明日にも持ち越せる。'}</p>`;
     }
-    if (sheet === 'rules') content = `<h2 id="petSheetTitle">この子との暮らし</h2><p>英語を聴くと、使える時間が貯まります。その時間をお世話に使うと成長します。5分・30分・1時間から選べて、5分ごとに選んだ数値が1増えます。例えば30分を貯めて5分のお世話を6回すると、Lv.1からLv.2になります。ごはんをあげるとおなかが100%になり、期限が72時間に戻ります。24時間でお腹が空き、48時間で弱り、72時間ごはんがないと育成が終わります。アプリを閉じている間も時間は進みます。</p><p>レベルが上がるほどお部屋は荒廃します。体格・パワー・かしこさの育て方で進化が分岐。1レベルごとに姿が進化し、10段階すべてを図鑑に残します。Lv.10で旅立ちを見送ったら、次の相棒を10属性から選べます。使える時間と学習記録は引き継ぎます。</p><table class="pet-rules-table"><caption>次の1レベルに必要なお世話の時間</caption>${rules.bands.map((min, i) => `<tr><th>Lv.${i + 1} → ${i + 2}</th><td>${minutes(min * 60)}</td></tr>`).join('')}</table><p class="pet-sheet-note">端末ごとに保存。ブラウザのデータを消すと、この端末の図鑑に戻れなくなります。外部YouTubeの埋め込み再生は集計に含みません。</p>`;
+    if (sheet === 'rules') content = `<h2 id="petSheetTitle">この子との暮らし</h2><p>会話チャレンジは正解＋10・不正解−3コイン。100コインでお世話1回、選んだ数値＋1になります。ごはんはおなか全回復・期限72時間へ戻します。</p><p>英語を聴くと、使える時間が貯まります。その時間をお世話に使うと成長します。5分・30分・1時間から選べて、5分ごとに選んだ数値が1増えます。例えば30分を貯めて5分のお世話を6回すると、Lv.1からLv.2になります。ごはんをあげるとおなかが100%になり、期限が72時間に戻ります。24時間でお腹が空き、48時間で弱り、72時間ごはんがないと育成が終わります。アプリを閉じている間も時間は進みます。</p><p>レベルが上がるほどお部屋は荒廃します。体格・パワー・かしこさの育て方で進化が分岐。1レベルごとに姿が進化し、10段階すべてを図鑑に残します。Lv.10で旅立ちを見送ったら、次の相棒を10属性から選べます。コイン・使える時間・学習記録は引き継ぎます。</p><table class="pet-rules-table"><caption>次の1レベルに必要なお世話の時間</caption>${rules.bands.map((min, i) => `<tr><th>Lv.${i + 1} → ${i + 2}</th><td>${minutes(min * 60)}</td></tr>`).join('')}</table><p class="pet-sheet-note">端末ごとに保存。ブラウザのデータを消すと、この端末の図鑑に戻れなくなります。外部YouTubeの埋め込み再生は集計に含みません。</p>`;
     if (sheet === 'records') {
       const days = Array.from({ length: 7 }, (_, i) => rules.dayKey(now() - (6 - i) * 86400000));
       const max = Math.max(600, ...days.map(day => save.daily[day] || 0));
@@ -224,22 +232,23 @@
     if(sheet === 'departure') content='<h2 id="petSheetTitle">そろそろ、旅に出よう。</h2><div class="pet-departure-portrait">'+portrait(pet,pet.forms.at(-1),{still:true})+'</div><p class="pet-sheet-sub">Lv.10まで育ててくれて、ありがとう。<br>この子と過ごした時間と、進化した姿は図鑑に残ります。</p><button data-action="depart" class="pet-primary" '+(busy?'disabled':'')+'>いってらっしゃい</button><p class="pet-sheet-note">使える時間 '+minutes(save.bankSeconds)+' は次の相棒へ。</p>';
     return `<div class="pet-sheet-backdrop" data-action="dismiss"><section class="pet-sheet" role="dialog" aria-modal="true" aria-labelledby="petSheetTitle"><div class="pet-sheet-handle"></div><button class="pet-sheet-close" data-action="dismiss" aria-label="閉じる">×</button>${content}</section></div>`;
   }
-  function showSheet(type) { if (type === 'care') careSeconds = 300; sheet = type; render(); overlay.querySelector('.pet-sheet button:not(:disabled)')?.focus(); }
+  function showSheet(type) { if (type === 'care') { careSeconds = 300; careSource = 'coins'; } sheet = type; render(); overlay.querySelector('.pet-sheet button:not(:disabled)')?.focus(); }
   function toast(text) { const el = document.getElementById('petToast'); if (!el) return; el.textContent = text; el.classList.add('visible'); setTimeout(() => el.classList.remove('visible'), 3000); }
   async function care(type) {
     if (busy) return;
     busy = true; render();
     const petId = current().id;
-    const key = 'petAction:' + device + ':' + petId + ':' + type;
+    const key = 'petAction:' + device + ':' + petId + ':' + type + ':' + careSource;
     const pending = local(key), requestId = (typeof pending === 'string' ? pending : pending?.requestId) || uid();
-    const seconds = typeof pending === 'string' ? 300 : pending?.seconds || careSeconds;
-    local(key, { requestId, seconds });
+    const payment = pending?.payment || careSource;
+    const seconds = payment === 'coins' ? 300 : typeof pending === 'string' ? 300 : pending?.seconds || careSeconds;
+    local(key, { requestId, seconds, payment });
     const beforeHunger = rules.hunger(current(), now());
     const beforeLevel = rules.progress(rules.growth(current())).level;
     let notice = '', reward = '', succeeded = false;
     try {
       await flush();
-      const value = await request('/care', { type, petId, requestId, seconds });
+      const value = await request('/care', { type, petId, requestId, seconds, payment });
       local(key, null); accept(value); sheet = ''; render();
       succeeded = true;
       reward = `${{ food: 'おなか 100% · 体格', power: 'パワー', brain: 'かしこさ' }[type]} +${seconds / 300}`;
@@ -298,6 +307,8 @@
     else if (['care','rules','records','species'].includes(action)) showSheet(action);
     else if (action === 'dismiss') { sheet = ''; render(); overlay.querySelector('.pet-character-button')?.focus(); }
     else if (action === 'spend') care(button.dataset.type);
+    else if (action === 'care-source' && !busy) { careSource = button.dataset.source; render(); }
+    else if (action === 'challenge') { close(); window.startConversationGame?.(); }
     else if (action === 'care-amount' && !busy) { careSeconds = Number(button.dataset.seconds); render(); overlay.querySelector(`[data-action="care-amount"][data-seconds="${careSeconds}"]`)?.focus({ preventScroll: true }); }
     else if (action === 'restart') { mode='choose';sheet='';render(); }
     else if (action === 'choose-element' && !busy) { chosenElement=button.dataset.element;render(); }
@@ -348,5 +359,6 @@
     document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') flush().then(load); else { window.PetPlayback.flush(); collector = null; } });
     if (location.hash === '#pet') open();
   }
-  window.PetGame = { initialize, open, close };
+  function openCare() { open(); if (save && current() && !rules.ended(current()) && !current().needsStarter) showSheet('care'); }
+  window.PetGame = { initialize, open, close, openCare, getState: () => save, acceptState: accept, refresh: load };
 })();

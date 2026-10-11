@@ -1,0 +1,352 @@
+[
+  {
+    "id": "ask-001",
+    "category": "話しかける",
+    "place": "オフィス",
+    "title": "同僚が、何か相談したそう。",
+    "alt": "オフィスで同僚に相談を切り出す場面",
+    "question": "Can I ask you something?",
+    "questionJa": "ちょっと聞いてもいい？",
+    "options": [
+      {
+        "en": "I left it on the table.",
+        "ja": "テーブルに置いてきたよ。",
+        "feedback": "置き場所を聞かれたときの返答だね。"
+      },
+      {
+        "en": "Yeah, of course. What is it?",
+        "ja": "もちろん。どうしたの？"
+      },
+      {
+        "en": "It takes about ten minutes.",
+        "ja": "10分くらいかかるよ。",
+        "feedback": "かかる時間を聞かれたときの返答だね。"
+      }
+    ],
+    "correct": 1,
+    "continuation": "Do you think I should text her back?",
+    "continuationJa": "彼女に返信したほうがいいと思う？",
+    "note": "「もちろん。どうしたの？」と、相談を聞く流れに。",
+    "image": "/phrase-images/phrases/ask-001.webp",
+    "clips": [
+      "/conversation-game-audio/ask-001/prompt.mp3",
+      "/conversation-game-audio/ask-001/reply.mp3",
+      "/conversation-game-audio/ask-001/response.mp3"
+    ]
+  },
+  {
+    "id": "clarify-001",
+    "category": "聞き返す",
+    "place": "ふたりの話し合い",
+    "title": "相手のひと言が、ちょっと気になる。",
+    "alt": "少し距離を置こうという相手の話を聞く場面",
+    "question": "I think we need some space.",
+    "questionJa": "少し距離を置いたほうがいいと思う。",
+    "options": [
+      {
+        "en": "What do you mean?",
+        "ja": "どういう意味？"
+      },
+      {
+        "en": "It opens at nine.",
+        "ja": "9時に開くよ。",
+        "feedback": "営業時間を聞かれたときの返答だね。"
+      },
+      {
+        "en": "I ordered it online.",
+        "ja": "ネットで注文したよ。",
+        "feedback": "何かをどこで買ったか聞かれたときの返答だね。"
+      }
+    ],
+    "correct": 0,
+    "continuation": "I mean we should slow things down a little.",
+    "continuationJa": "少しペースを落としたほうがいいってこと。",
+    "note": "「どういう意味？」で、相手の意図を確かめられた。",
+    "image": "/phrase-images/phrases/clarify-001.webp",
+    "clips": [
+      "/conversation-game-audio/clarify-001/prompt.mp3",
+      "/conversation-game-audio/clarify-001/reply.mp3",
+      "/conversation-game-audio/clarify-001/response.mp3"
+    ]
+  },
+  {
+    "id": "start-001",
+    "category": "会話を始める",
+    "place": "友達との近況報告",
+    "title": "友達が、結果を聞いてきた。",
+    "alt": "友達に出来事の結果を聞く場面",
+    "question": "So... how did it go?",
+    "questionJa": "で、どうだった？",
+    "options": [
+      {
+        "en": "The one next to the station.",
+        "ja": "駅の隣のやつだよ。",
+        "feedback": "どれか・どこの場所かを聞かれたときの返答だね。"
+      },
+      {
+        "en": "Could you pass me the salt?",
+        "ja": "塩を取ってくれる？",
+        "feedback": "お願いはできるけど、結果の話にはまだ答えていないね。"
+      },
+      {
+        "en": "Better than I expected, actually.",
+        "ja": "実は思ったより良かったよ。"
+      }
+    ],
+    "correct": 2,
+    "continuation": "That's a relief. I was kind of worried.",
+    "continuationJa": "よかった。ちょっと心配してたんだ。",
+    "note": "結果を伝えたら、友達もひと安心。",
+    "image": "/phrase-images/phrases/start-001.webp",
+    "clips": [
+      "/conversation-game-audio/start-001/prompt.mp3",
+      "/conversation-game-audio/start-001/reply.mp3",
+      "/conversation-game-audio/start-001/response.mp3"
+    ]
+  },
+  {
+    "id": "ask-002",
+    "category": "話しかける",
+    "place": "休憩時間",
+    "title": "友達が、少しだけ時間をほしそう。",
+    "alt": "友達が、少しだけ時間をほしそう。",
+    "question": "Do you have a second?",
+    "questionJa": "ちょっと時間ある？",
+    "options": [
+      {
+        "en": "Sure, what's up?",
+        "ja": "いいよ、どうしたの？"
+      },
+      {
+        "en": "It costs thirty dollars.",
+        "ja": "30ドルだよ。",
+        "feedback": "値段を聞かれたときの返答だね。"
+      },
+      {
+        "en": "The red one is mine.",
+        "ja": "赤いほうは僕のだよ。",
+        "feedback": "どれが自分の物か聞かれたときの返答だね。"
+      }
+    ],
+    "correct": 0,
+    "continuation": "I need your honest opinion on something.",
+    "continuationJa": "ちょっと正直な意見がほしいんだ。",
+    "note": "「いいよ、どうしたの？」と返して、会話がつながった。",
+    "image": "/phrase-images/phrases/ask-002.webp",
+    "clips": [
+      "/conversation-game-audio/ask-002/prompt.mp3",
+      "/conversation-game-audio/ask-002/reply.mp3",
+      "/conversation-game-audio/ask-002/response.mp3"
+    ]
+  },
+  {
+    "id": "react-002",
+    "category": "驚き・反応",
+    "place": "メッセージの失敗",
+    "title": "送る相手を、間違えたらしい。",
+    "alt": "送る相手を、間違えたらしい。",
+    "question": "I accidentally sent it to the group chat.",
+    "questionJa": "間違えてグループチャットに送っちゃった。",
+    "options": [
+      {
+        "en": "Turn left at the next street.",
+        "ja": "次の通りで左に曲がって。",
+        "feedback": "道順を聞かれたときの返答だね。"
+      },
+      {
+        "en": "It closes at six.",
+        "ja": "6時に閉まるよ。",
+        "feedback": "営業時間を聞かれたときの返答だね。"
+      },
+      {
+        "en": "Are you serious?",
+        "ja": "本気で言ってる？"
+      }
+    ],
+    "correct": 2,
+    "continuation": "I wish I wasn't.",
+    "continuationJa": "冗談だったらよかったんだけど。",
+    "note": "「本気で言ってる？」と返して、会話がつながった。",
+    "image": "/phrase-images/phrases/react-002.webp",
+    "clips": [
+      "/conversation-game-audio/react-002/prompt.mp3",
+      "/conversation-game-audio/react-002/reply.mp3",
+      "/conversation-game-audio/react-002/response.mp3"
+    ]
+  },
+  {
+    "id": "start-002",
+    "category": "会話を始める",
+    "place": "近況報告",
+    "title": "さっきの話の続きを聞かれた。",
+    "alt": "さっきの話の続きを聞かれた。",
+    "question": "Anyway, what were you saying earlier?",
+    "questionJa": "それで、さっき何て言ってた？",
+    "options": [
+      {
+        "en": "It is in the top drawer.",
+        "ja": "一番上の引き出しにあるよ。",
+        "feedback": "置き場所を聞かれたときの返答だね。"
+      },
+      {
+        "en": "Oh, right. I got the apartment.",
+        "ja": "あ、そうそう。部屋が決まったんだ。"
+      },
+      {
+        "en": "No, I do not need a bag.",
+        "ja": "いいえ、袋は要りません。",
+        "feedback": "お店で袋が必要か聞かれたときの返答だね。"
+      }
+    ],
+    "correct": 1,
+    "continuation": "No way, that's huge.",
+    "continuationJa": "まじで、それは大きいね。",
+    "note": "「あ、そうそう。部屋が決まったんだ。」と返して、会話がつながった。",
+    "image": "/phrase-images/phrases/start-002.webp",
+    "clips": [
+      "/conversation-game-audio/start-002/prompt.mp3",
+      "/conversation-game-audio/start-002/reply.mp3",
+      "/conversation-game-audio/start-002/response.mp3"
+    ]
+  },
+  {
+    "id": "soft-002",
+    "category": "やわらかく言う",
+    "place": "恋愛の話",
+    "title": "ふたりの関係を聞かれた。",
+    "alt": "ふたりの関係を聞かれた。",
+    "question": "Are you two dating?",
+    "questionJa": "2人付き合ってるの？",
+    "options": [
+      {
+        "en": "Sort of. It's complicated.",
+        "ja": "そんな感じ。ちょっと複雑なんだ。"
+      },
+      {
+        "en": "I will have the chicken.",
+        "ja": "チキンをお願いします。",
+        "feedback": "食事を注文するときの返答だね。"
+      },
+      {
+        "en": "It should arrive on Friday.",
+        "ja": "金曜日に届くはずだよ。",
+        "feedback": "配達日を聞かれたときの返答だね。"
+      }
+    ],
+    "correct": 0,
+    "continuation": "Okay, I won't ask too much.",
+    "continuationJa": "そっか、あまり聞かないでおくね。",
+    "note": "「そんな感じ。ちょっと複雑なんだ。」と返して、会話がつながった。",
+    "image": "/phrase-images/phrases/soft-002.webp",
+    "clips": [
+      "/conversation-game-audio/soft-002/prompt.mp3",
+      "/conversation-game-audio/soft-002/reply.mp3",
+      "/conversation-game-audio/soft-002/response.mp3"
+    ]
+  },
+  {
+    "id": "reply-001",
+    "category": "相槌",
+    "place": "大切な相談",
+    "title": "相手は、考える時間がほしい。",
+    "alt": "相手は、考える時間がほしい。",
+    "question": "I just need some time to think.",
+    "questionJa": "ちょっと考える時間が必要なんだ。",
+    "options": [
+      {
+        "en": "It is on sale this week.",
+        "ja": "今週セール中だよ。",
+        "feedback": "商品の値段の話をするときの返答だね。"
+      },
+      {
+        "en": "The bus leaves at ten.",
+        "ja": "バスは10時に出るよ。",
+        "feedback": "出発時刻を聞かれたときの返答だね。"
+      },
+      {
+        "en": "That makes sense.",
+        "ja": "それは分かるよ。"
+      }
+    ],
+    "correct": 2,
+    "continuation": "Thanks for not pushing me.",
+    "continuationJa": "急かさないでくれてありがとう。",
+    "note": "「それは分かるよ。」と返して、会話がつながった。",
+    "image": "/phrase-images/phrases/reply-001.webp",
+    "clips": [
+      "/conversation-game-audio/reply-001/prompt.mp3",
+      "/conversation-game-audio/reply-001/reply.mp3",
+      "/conversation-game-audio/reply-001/response.mp3"
+    ]
+  },
+  {
+    "id": "ask-003",
+    "category": "話しかける",
+    "place": "待ち合わせの前",
+    "title": "手短に聞きたいことがあるみたい。",
+    "alt": "手短に聞きたいことがあるみたい。",
+    "question": "Quick question.",
+    "questionJa": "ちょっと質問。",
+    "options": [
+      {
+        "en": "I prefer the window seat.",
+        "ja": "窓側の席がいいです。",
+        "feedback": "席の希望を聞かれたときの返答だね。"
+      },
+      {
+        "en": "Go for it.",
+        "ja": "どうぞ。"
+      },
+      {
+        "en": "It is made of cotton.",
+        "ja": "綿でできているよ。",
+        "feedback": "素材を聞かれたときの返答だね。"
+      }
+    ],
+    "correct": 1,
+    "continuation": "Are we still meeting at seven?",
+    "continuationJa": "まだ7時に会う予定で合ってる？",
+    "note": "「どうぞ。」と返して、会話がつながった。",
+    "image": "/phrase-images/phrases/ask-003.webp",
+    "clips": [
+      "/conversation-game-audio/ask-003/prompt.mp3",
+      "/conversation-game-audio/ask-003/reply.mp3",
+      "/conversation-game-audio/ask-003/response.mp3"
+    ]
+  },
+  {
+    "id": "reply-002",
+    "category": "相槌",
+    "place": "ふたりの話し合い",
+    "title": "そろそろ本音で話すとき。",
+    "alt": "そろそろ本音で話すとき。",
+    "question": "We can't keep pretending this is fine.",
+    "questionJa": "これで大丈夫なふりは続けられない。",
+    "options": [
+      {
+        "en": "Right.",
+        "ja": "そうだね。"
+      },
+      {
+        "en": "Medium, please.",
+        "ja": "Mサイズをお願いします。",
+        "feedback": "サイズを聞かれたときの返答だね。"
+      },
+      {
+        "en": "I bought it yesterday.",
+        "ja": "昨日買ったよ。",
+        "feedback": "いつ買ったか聞かれたときの返答だね。"
+      }
+    ],
+    "correct": 0,
+    "continuation": "So we need to talk about it tonight.",
+    "continuationJa": "だから今夜ちゃんと話そう。",
+    "note": "「そうだね。」と返して、会話がつながった。",
+    "image": "/phrase-images/phrases/reply-002.webp",
+    "clips": [
+      "/conversation-game-audio/reply-002/prompt.mp3",
+      "/conversation-game-audio/reply-002/reply.mp3",
+      "/conversation-game-audio/reply-002/response.mp3"
+    ]
+  }
+]

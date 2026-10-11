@@ -2,6 +2,12 @@
 最初の相棒は火・水・草・雷・氷・風・土・毒・光・闇の10体から選ぶ。ホームの育成ボタンまたは #pet から開く。
 
 ## 成長とお世話
+会話フレーズの「10問チャレンジ」では、既存の場面画像を上に表示し、相手の音声を聞いて返答を3択から選ぶ。正解は10コイン、不正解は3コイン減額（残高0が下限）。間違えた選択肢は再選択できず、正解するまで続ける。正解後は自分の返答と相手の反応を音声で確認し、次へ進む。問題・選択肢の順序は開始時に入れ替わる。
+
+100コインで、ごはん・パワー・かしこさのいずれかのお世話を1回できる。間違えずに10問正解すると1回分になる。お世話1回は選んだ数値＋1、成長300秒分。ごはんは既存と同じくおなか全回復・期限72時間へ戻す。お世話画面で「コイン」「聴いた時間」を選べる。コイン払いでは聴いた時間を消費しない。残高と途中の問題は端末ごとの育成データ内に保存し、次のチャレンジ・次の相棒へ引き継ぐ。
+
+問題は `data/conversation-game-questions.json`、場面画像は既存の `public/phrase-images/phrases/`、音声は既存の生成会話から分割した `public/conversation-game-audio/<id>/{prompt,reply,response}.mp3` を使う。ブラウザはサーバーへ選択肢を送信し、サーバーで正誤・残高を確定する。同じ解答の再送と同じお世話の再送は重複加算・消費しない。解答とお世話は共通の保存トランザクションを使い、同時操作でも残高を保つ。
+
 実際に英語を聴いた秒数を残高と日本時間の日別記録へ加算する。再生だけではレベルは上がらない。貯めた時間を、ごはん・パワー・かしこさに使った時だけ成長する。5分・30分・1時間を選べ、5分ごとに選んだ数値が1増える。例えば30分を貯めて5分のお世話を6回するとLv.2になる。ごはんは体格を増やし、おなか100%、期限72時間へ戻す。
 
 | 成長 | 必要なお世話の時間 |
@@ -58,6 +64,6 @@ RenderでHTTPSのお世話リクエストを扱うためproductionでは1段の�
 再生は実時間を集計し、停止・バッファ待ち・ミュート・シークで飛ばした部分は加算しない。倍速も実時間。重複した区間は1回だけ数える。外部YouTube埋め込みは対象外。未送信区間はIndexedDBへ保存し7日以内を再送する。操作IDでお世話・選択・旅立ちの二重実行を防ぐ。
 
 ## 確認
-node --test test/pet-api.test.cjs test/pet.test.cjs test/pet-frames.test.cjs test/pet-cloud.test.cjs test/pet-production.test.cjs test/conversation-count.test.js test/drama-continuous.test.cjs test/quote-reward.test.js
+node --test test/conversation-game.test.cjs test/pet-api.test.cjs test/pet.test.cjs test/pet-frames.test.cjs test/pet-cloud.test.cjs test/pet-production.test.cjs test/conversation-count.test.js test/drama-continuous.test.cjs test/quote-reward.test.js
 
 初期選択、正確な成長境界、旅立ち、引き継ぎ、死亡、旧データ移行、実時間と日跨ぎ、同時消費、PNG検証、画像生成順序、独立した動きの失敗と再試行、古い動きだけの削除、既存音声を検証する。ユーザーの育成データをテストのために書き換えない。

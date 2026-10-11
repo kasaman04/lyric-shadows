@@ -201,6 +201,7 @@ async function init() {
   const requestedSong = new URLSearchParams(window.location.search).get('song');
   const song = state.songs.find(item => item.id === requestedSong);
   if (song) await showShadowing(song);
+  else if (window.location.hash === '#challenge') await startConversationGame();
 }
 
 async function loadVoices() {
@@ -296,6 +297,7 @@ function applyGeneratedPhraseAudio() {
 // ROUTING
 // ============================================================
 function showHome() {
+  window.ConversationGame?.close();
   stopAudio();
   stopPhrasePracticeAudio();
   stopSongAudio();
@@ -308,6 +310,12 @@ function showHome() {
   state.currentEpisodeId = null;
   state.view = 'home';
   renderHome();
+}
+
+async function startConversationGame() {
+  stopAudio(); stopPhrasePracticeAudio(); stopSongAudio(); stopDramaAudio(); stopQuoteCardAudio();
+  state.homeFilter = 'C'; state.view = 'challenge';
+  await window.ConversationGame.open({ deviceId: state.deviceId, home: showHome, audio: createLearningAudio });
 }
 
 async function showShadowing(song) {
@@ -746,6 +754,7 @@ function renderPhraseGrid() {
   return `
     <section class="home-library phrase-library">
       <div class="section-heading"><div><p class="section-eyebrow">SPEAK NATURALLY</p><h2>今日使えるひと言</h2></div></div>
+      <button class="conversation-challenge-entry" onclick="startConversationGame()"><span class="conversation-challenge-icon">🎮</span><span><strong>音声を聞いて、返答を選ぼう</strong><small>10問チャレンジ · 正解＋10 / 不正解−3コイン<br>100コインで、相棒のお世話1回</small></span><span aria-hidden="true">→</span></button>
       ${featured ? `<button class="featured-phrase" onclick="showPhrase(state.phrases.find(p => p.id === '${featured.id}'))"><span class="featured-kicker">まずは、このフレーズから</span><strong>${esc(featured.phrase)}</strong><span class="featured-translation">${esc(featuredTranslation)}</span><span class="featured-action">会話を見る <span aria-hidden="true">→</span></span></button>` : ''}
       <div class="section-heading phrase-explore-heading"><div><p class="section-eyebrow">EXPLORE</p><h2>シーンから探す</h2></div></div>
     <div class="phrase-tools">

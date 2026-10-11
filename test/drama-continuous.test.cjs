@@ -23,7 +23,7 @@ function fixture(starts = [0, 3, 6]) {
   };
   const context = vm.createContext({
     console, navigator: {}, audio, clips,
-    window: { DRAMA_PLAYBACK: { 'first-love:episode-1': { audio: '/episode.mp3', starts, duration: starts.at(-1) + 3 } } },
+    window: { addEventListener() {}, DRAMA_PLAYBACK: { 'first-love:episode-1': { audio: '/episode.mp3', starts, duration: starts.at(-1) + 3 } } },
     setTimeout(fn) { timers.set(++timerId, fn); return timerId; }, clearTimeout(id) { timers.delete(id); },
     document: {
       addEventListener() {},
