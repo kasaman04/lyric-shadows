@@ -754,7 +754,7 @@ function renderPhraseGrid() {
   return `
     <section class="home-library phrase-library">
       <div class="section-heading"><div><p class="section-eyebrow">SPEAK NATURALLY</p><h2>今日使えるひと言</h2></div></div>
-      <button class="conversation-challenge-entry" onclick="startConversationGame()"><span class="conversation-challenge-icon">🎮</span><span><strong>音声を聞いて、返答を選ぼう</strong><small>10問チャレンジ · 初回正解＋10 / 不正解−3コイン<br>100コインで、相棒のお世話1回</small></span><span aria-hidden="true">→</span></button>
+      <button class="conversation-challenge-entry" onclick="startConversationGame()"><span class="conversation-challenge-icon">🎮</span><span><strong>音声を聞いて、返答を選ぼう</strong><small>全639フレーズ · 10問ずつチャレンジ<br>初回正解＋10 / 不正解−3コイン<br>100コインで、相棒のお世話1回</small></span><span aria-hidden="true">→</span></button>
       ${featured ? `<button class="featured-phrase" onclick="showPhrase(state.phrases.find(p => p.id === '${featured.id}'))"><span class="featured-kicker">まずは、このフレーズから</span><strong>${esc(featured.phrase)}</strong><span class="featured-translation">${esc(featuredTranslation)}</span><span class="featured-action">会話を見る <span aria-hidden="true">→</span></span></button>` : ''}
       <div class="section-heading phrase-explore-heading"><div><p class="section-eyebrow">EXPLORE</p><h2>シーンから探す</h2></div></div>
     <div class="phrase-tools">

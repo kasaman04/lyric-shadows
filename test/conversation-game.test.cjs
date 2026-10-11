@@ -3,6 +3,7 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs/promises');
 const path = require('node:path');
 const crypto = require('node:crypto');
+const vm = require('node:vm');
 const express = require('express');
 const game = require('../lib/conversation-game');
 const catalog = require('../data/conversation-game-questions.json');
@@ -153,10 +154,52 @@ test('challenge HTTP API persists rounds, rejects foreign origins and accepts re
     assert.equal(packet.challenge.coins, 7); assert.equal(packet.challenge.round.index, 2);
   } finally { await api.idle(); server.closeAllConnections(); await new Promise(resolve => server.close(resolve)); }
 }));
-test('all ten scenes use existing images and all thirty speech clips are present', async () => {
-  assert.equal(catalog.length, 10);
+test('every deployed phrase is playable with its own scene, reply and three speech clips', async () => {
+  const context = { window: {} }; vm.createContext(context);
+  for (const file of ['phrases','real-phrases','extra-phrases','more-phrases','first-meeting-phrases','get-to-know-phrases','everyday-pattern-phrases']) {
+    vm.runInContext(await fs.readFile(path.join(__dirname, '../public', file+'.js'), 'utf8'), context);
+  }
+  const phrases = context.window.CONVERSATION_PHRASES;
+  assert.equal(phrases.length, 639); assert.equal(catalog.length, phrases.length);
+  assert.equal(new Set(catalog.map(q => q.id)).size, phrases.length);
+  for (const phrase of phrases) {
+    const q = catalog.find(q => q.id === phrase.id);
+    assert.ok(q, phrase.id); assert.equal(q.question, phrase.lines[0][1]);
+    assert.equal(q.options[q.correct].en, phrase.lines[1][1]);
+    assert.equal(q.continuation, phrase.lines[2][1]);
+    assert.equal(new Set(q.options.map(o => o.en.toLowerCase())).size, 3, phrase.id);
+  }
   for (const q of catalog) {
     assert.equal(q.clips.length, 3); assert.ok(q.options[q.correct].en);
     for (const asset of [q.image, ...q.clips]) assert.ok((await fs.stat(path.join(__dirname, '../public', asset))).size > 1000, asset);
   }
+});
+test('all 639 phrases appear before any repeat; the final nine-question round and next cycle retain coins', () => {
+  const s = setup(), played = new Set(); let rounds = 0, lastCount;
+  while (played.size < catalog.length) {
+    const round = s.conversationGame.round;
+    lastCount = round.questions.length; rounds++;
+    for (const q of round.questions) {
+      assert.ok(!played.has(q.id), 'Repeated before full coverage: '+q.id); played.add(q.id);
+      game.answer(s, body(s));
+    }
+    assert.equal(game.view(s).progress.completed, played.size);
+    if (played.size < catalog.length) game.start(s, { requestId: id() }, now);
+  }
+  assert.equal(rounds, 64); assert.equal(lastCount, 9);
+  assert.equal(game.view(s).round.count, 9); assert.equal(game.view(s).round.finished, true);
+  assert.equal(s.conversationGame.coins, 6390);
+  game.start(s, { requestId: id() }, now);
+  assert.equal(game.view(s).progress.cycle, 2); assert.equal(game.view(s).progress.completed, 0);
+  assert.equal(game.view(s).round.count, 10); assert.equal(s.conversationGame.coins, 6390);
+});
+test('legacy in-progress questions preserve their choice order, attempts and missed-question reward rule', () => {
+  const s = setup(); game.answer(s, body(s)); game.answer(s, body(s, false));
+  const previous = JSON.parse(JSON.stringify(s.conversationGame.round));
+  delete s.conversationGame.completed; delete s.conversationGame.cycle;
+  game.start(s, { requestId: id() }, now);
+  assert.deepEqual(s.conversationGame.round, previous);
+  assert.equal(game.view(s).progress.completed, 1);
+  assert.equal(game.answer(s, body(s)).delta, 0);
+  assert.equal(game.view(s).progress.completed, 2); assert.equal(s.conversationGame.coins, 7);
 });

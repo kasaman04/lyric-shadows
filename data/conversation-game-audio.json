@@ -1,0 +1,6272 @@
+{
+  "ask-001": {
+    "mode": "existing",
+    "source": "/phrase-audio/ask-001/conversation.mp3"
+  },
+  "ask-002": {
+    "mode": "existing",
+    "source": "/phrase-audio/ask-002/conversation.mp3"
+  },
+  "ask-003": {
+    "mode": "existing",
+    "source": "/phrase-audio/ask-003/conversation.mp3"
+  },
+  "ask-004": {
+    "mode": "split",
+    "source": "/phrase-audio/ask-004/conversation.mp3",
+    "duration": 5.12,
+    "boundaries": [
+      1.2247055,
+      2.964229
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "ask-005": {
+    "mode": "split",
+    "source": "/phrase-audio/ask-005/conversation.mp3",
+    "duration": 4.88,
+    "boundaries": [
+      1.45729,
+      2.6053285
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "ask-006": {
+    "mode": "split",
+    "source": "/phrase-audio/ask-006/conversation.mp3",
+    "duration": 5.36,
+    "boundaries": [
+      1.8754765,
+      3.3752945
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "ask-007": {
+    "mode": "split",
+    "source": "/phrase-audio/ask-007/conversation.mp3",
+    "duration": 7.04,
+    "boundaries": [
+      2.2686735000000002,
+      4.5176415
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "ask-008": {
+    "mode": "split",
+    "source": "/phrase-audio/ask-008/conversation.mp3",
+    "duration": 6.64,
+    "boundaries": [
+      1.683186,
+      4.213764
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "ask-009": {
+    "mode": "split",
+    "source": "/phrase-audio/ask-009/conversation.mp3",
+    "duration": 6.16,
+    "boundaries": [
+      2.200295,
+      4.209048
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "ask-010": {
+    "mode": "split",
+    "source": "/phrase-audio/ask-010/conversation.mp3",
+    "duration": 5.92,
+    "boundaries": [
+      1.735567,
+      3.507347
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "start-001": {
+    "mode": "existing",
+    "source": "/phrase-audio/start-001/conversation.mp3"
+  },
+  "start-002": {
+    "mode": "existing",
+    "source": "/phrase-audio/start-002/conversation.mp3"
+  },
+  "start-003": {
+    "mode": "split",
+    "source": "/phrase-audio/start-003/conversation.mp3",
+    "duration": 6.24,
+    "boundaries": [
+      2.2974379999999996,
+      4.095873
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "start-004": {
+    "mode": "split",
+    "source": "/phrase-audio/start-004/conversation.mp3",
+    "duration": 6.08,
+    "boundaries": [
+      2.21737,
+      3.9674375
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "start-005": {
+    "mode": "split",
+    "source": "/phrase-audio/start-005/conversation.mp3",
+    "duration": 7.04,
+    "boundaries": [
+      2.3289005,
+      4.1094100000000005
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "start-006": {
+    "mode": "split",
+    "source": "/phrase-audio/start-006/conversation.mp3",
+    "duration": 5.2,
+    "boundaries": [
+      2.022891,
+      3.3385485
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "start-007": {
+    "mode": "split",
+    "source": "/phrase-audio/start-007/conversation.mp3",
+    "duration": 4.16,
+    "boundaries": [
+      1.17746,
+      1.960669
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "start-008": {
+    "mode": "split",
+    "source": "/phrase-audio/start-008/conversation.mp3",
+    "duration": 6.88,
+    "boundaries": [
+      2.4735715000000003,
+      4.4517685
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "start-009": {
+    "mode": "split",
+    "source": "/phrase-audio/start-009/conversation.mp3",
+    "duration": 5.92,
+    "boundaries": [
+      2.4133329999999997,
+      4.1782765
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "start-010": {
+    "mode": "split",
+    "source": "/phrase-audio/start-010/conversation.mp3",
+    "duration": 4.8,
+    "boundaries": [
+      1.1788889999999999,
+      2.12407
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "clarify-001": {
+    "mode": "existing",
+    "source": "/phrase-audio/clarify-001/conversation.mp3"
+  },
+  "clarify-002": {
+    "mode": "split",
+    "source": "/phrase-audio/clarify-002/conversation.mp3",
+    "duration": 6.16,
+    "boundaries": [
+      1.5880044999999998,
+      4.3443765
+    ],
+    "review": "Speaker turn pauses checked against the three conversation lines."
+  },
+  "clarify-003": {
+    "mode": "split",
+    "source": "/phrase-audio/clarify-003/conversation.mp3",
+    "duration": 7.04,
+    "boundaries": [
+      1.483254,
+      4.7516095
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "clarify-004": {
+    "mode": "split",
+    "source": "/phrase-audio/clarify-004/conversation.mp3",
+    "duration": 5.76,
+    "boundaries": [
+      1.7299775,
+      3.627789
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "clarify-005": {
+    "mode": "split",
+    "source": "/phrase-audio/clarify-005/conversation.mp3",
+    "duration": 5.04,
+    "boundaries": [
+      1.4127775,
+      2.5178345
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "clarify-006": {
+    "mode": "split",
+    "source": "/phrase-audio/clarify-006/conversation.mp3",
+    "duration": 7.04,
+    "boundaries": [
+      2.3726075,
+      4.225805
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "clarify-007": {
+    "mode": "split",
+    "source": "/phrase-audio/clarify-007/conversation.mp3",
+    "duration": 5.2,
+    "boundaries": [
+      1.631769,
+      3.1546145
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "clarify-008": {
+    "mode": "split",
+    "source": "/phrase-audio/clarify-008/conversation.mp3",
+    "duration": 6.16,
+    "boundaries": [
+      1.5944105,
+      4.010612
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "clarify-009": {
+    "mode": "split",
+    "source": "/phrase-audio/clarify-009/conversation.mp3",
+    "duration": 4.96,
+    "boundaries": [
+      1.3195805,
+      3.214093
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "clarify-010": {
+    "mode": "split",
+    "source": "/phrase-audio/clarify-010/conversation.mp3",
+    "duration": 5.44,
+    "boundaries": [
+      1.5099205,
+      3.224501
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "reply-001": {
+    "mode": "existing",
+    "source": "/phrase-audio/reply-001/conversation.mp3"
+  },
+  "reply-002": {
+    "mode": "existing",
+    "source": "/phrase-audio/reply-002/conversation.mp3"
+  },
+  "reply-003": {
+    "mode": "split",
+    "source": "/phrase-audio/reply-003/conversation.mp3",
+    "duration": 5.76,
+    "boundaries": [
+      2.8625055,
+      4.2461115
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "reply-004": {
+    "mode": "split",
+    "source": "/phrase-audio/reply-004/conversation.mp3",
+    "duration": 7.28,
+    "boundaries": [
+      2.6400905,
+      4.772823499999999
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "reply-005": {
+    "mode": "split",
+    "source": "/phrase-audio/reply-005/conversation.mp3",
+    "duration": 5.44,
+    "boundaries": [
+      2.307449,
+      3.6828005
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "reply-006": {
+    "mode": "split",
+    "source": "/phrase-audio/reply-006/conversation.mp3",
+    "duration": 5.84,
+    "boundaries": [
+      2.3536055,
+      3.5393540000000003
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "reply-007": {
+    "mode": "split",
+    "source": "/phrase-audio/reply-007/conversation.mp3",
+    "duration": 5.92,
+    "boundaries": [
+      1.8981065,
+      3.185408
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "reply-008": {
+    "mode": "split",
+    "source": "/phrase-audio/reply-008/conversation.mp3",
+    "duration": 5.04,
+    "boundaries": [
+      1.814263,
+      2.928152
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "reply-009": {
+    "mode": "split",
+    "source": "/phrase-audio/reply-009/conversation.mp3",
+    "duration": 5.68,
+    "boundaries": [
+      2.7679704999999997,
+      3.8159295
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "reply-010": {
+    "mode": "split",
+    "source": "/phrase-audio/reply-010/conversation.mp3",
+    "duration": 5.44,
+    "boundaries": [
+      1.9181745000000001,
+      3.32017
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "react-001": {
+    "mode": "isolated",
+    "source": "/phrase-audio/react-001/conversation.mp3",
+    "voice": "Microsoft Zira Desktop",
+    "reason": "No two clear speaker pauses in the existing recording."
+  },
+  "react-002": {
+    "mode": "existing",
+    "source": "/phrase-audio/react-002/conversation.mp3"
+  },
+  "react-003": {
+    "mode": "split",
+    "source": "/phrase-audio/react-003/conversation.mp3",
+    "duration": 6.4,
+    "boundaries": [
+      2.0141495,
+      3.7468935
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "react-004": {
+    "mode": "split",
+    "source": "/phrase-audio/react-004/conversation.mp3",
+    "duration": 6.72,
+    "boundaries": [
+      2.315975,
+      4.265578
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "react-005": {
+    "mode": "split",
+    "source": "/phrase-audio/react-005/conversation.mp3",
+    "duration": 5.84,
+    "boundaries": [
+      2.30483,
+      3.7894895
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "react-006": {
+    "mode": "split",
+    "source": "/phrase-audio/react-006/conversation.mp3",
+    "duration": 6.24,
+    "boundaries": [
+      1.864592,
+      3.8212585
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "react-007": {
+    "mode": "split",
+    "source": "/phrase-audio/react-007/conversation.mp3",
+    "duration": 5.68,
+    "boundaries": [
+      2.1837869999999997,
+      3.680499
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "react-008": {
+    "mode": "split",
+    "source": "/phrase-audio/react-008/conversation.mp3",
+    "duration": 5.52,
+    "boundaries": [
+      1.9543424999999999,
+      3.607086
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "react-009": {
+    "mode": "isolated",
+    "source": "/phrase-audio/react-009/conversation.mp3",
+    "voice": "Microsoft Zira Desktop",
+    "reason": "No two clear speaker pauses in the existing recording."
+  },
+  "react-010": {
+    "mode": "split",
+    "source": "/phrase-audio/react-010/conversation.mp3",
+    "duration": 6.88,
+    "boundaries": [
+      2.5654195,
+      4.383889
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "think-001": {
+    "mode": "split",
+    "source": "/phrase-audio/think-001/conversation.mp3",
+    "duration": 4.96,
+    "boundaries": [
+      1.6995805,
+      2.867018
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "think-002": {
+    "mode": "split",
+    "source": "/phrase-audio/think-002/conversation.mp3",
+    "duration": 6.4,
+    "boundaries": [
+      2.1104195,
+      4.1995575
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "think-003": {
+    "mode": "split",
+    "source": "/phrase-audio/think-003/conversation.mp3",
+    "duration": 5.92,
+    "boundaries": [
+      1.7579704999999999,
+      3.3110545
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "think-004": {
+    "mode": "split",
+    "source": "/phrase-audio/think-004/conversation.mp3",
+    "duration": 5.68,
+    "boundaries": [
+      2.262778,
+      4.204422
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "think-005": {
+    "mode": "split",
+    "source": "/phrase-audio/think-005/conversation.mp3",
+    "duration": 7.28,
+    "boundaries": [
+      2.7680725,
+      5.1059975
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "think-006": {
+    "mode": "split",
+    "source": "/phrase-audio/think-006/conversation.mp3",
+    "duration": 6,
+    "boundaries": [
+      1.9450115000000001,
+      3.024807
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "think-007": {
+    "mode": "split",
+    "source": "/phrase-audio/think-007/conversation.mp3",
+    "duration": 5.92,
+    "boundaries": [
+      2.3785825000000003,
+      3.5910545000000003
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "think-008": {
+    "mode": "isolated",
+    "source": "/phrase-audio/think-008/conversation.mp3",
+    "voice": "Microsoft Zira Desktop",
+    "reason": "The first detected pause is within the opening utterance, and its turn boundary is unclear."
+  },
+  "think-009": {
+    "mode": "split",
+    "source": "/phrase-audio/think-009/conversation.mp3",
+    "duration": 6.24,
+    "boundaries": [
+      2.1949775000000002,
+      3.9670065
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "think-010": {
+    "mode": "split",
+    "source": "/phrase-audio/think-010/conversation.mp3",
+    "duration": 5.36,
+    "boundaries": [
+      1.8977434999999998,
+      3.2431514999999997
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "soft-001": {
+    "mode": "split",
+    "source": "/phrase-audio/soft-001/conversation.mp3",
+    "duration": 5.12,
+    "boundaries": [
+      1.519762,
+      2.6360205
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "soft-002": {
+    "mode": "existing",
+    "source": "/phrase-audio/soft-002/conversation.mp3"
+  },
+  "soft-003": {
+    "mode": "split",
+    "source": "/phrase-audio/soft-003/conversation.mp3",
+    "duration": 4.72,
+    "boundaries": [
+      1.6517915,
+      3.1738665
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "soft-004": {
+    "mode": "split",
+    "source": "/phrase-audio/soft-004/conversation.mp3",
+    "duration": 6.64,
+    "boundaries": [
+      2.1543419999999998,
+      4.0863945
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "soft-005": {
+    "mode": "split",
+    "source": "/phrase-audio/soft-005/conversation.mp3",
+    "duration": 5.36,
+    "boundaries": [
+      1.95,
+      3.868152
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "soft-006": {
+    "mode": "split",
+    "source": "/phrase-audio/soft-006/conversation.mp3",
+    "duration": 6,
+    "boundaries": [
+      1.628685,
+      3.7791385
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "soft-007": {
+    "mode": "split",
+    "source": "/phrase-audio/soft-007/conversation.mp3",
+    "duration": 6.4,
+    "boundaries": [
+      1.5119955,
+      3.7154309999999997
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "soft-008": {
+    "mode": "split",
+    "source": "/phrase-audio/soft-008/conversation.mp3",
+    "duration": 6.08,
+    "boundaries": [
+      2.3437525,
+      4.1603855
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "soft-009": {
+    "mode": "split",
+    "source": "/phrase-audio/soft-009/conversation.mp3",
+    "duration": 6,
+    "boundaries": [
+      2.6631745000000002,
+      4.4035145
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "soft-010": {
+    "mode": "split",
+    "source": "/phrase-audio/soft-010/conversation.mp3",
+    "duration": 7.36,
+    "boundaries": [
+      2.254331,
+      4.2029705
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "suggest-001": {
+    "mode": "split",
+    "source": "/phrase-audio/suggest-001/conversation.mp3",
+    "duration": 5.84,
+    "boundaries": [
+      1.9248525,
+      3.6855445
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "suggest-002": {
+    "mode": "split",
+    "source": "/phrase-audio/suggest-002/conversation.mp3",
+    "duration": 5.52,
+    "boundaries": [
+      1.7143085,
+      3.2525515
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "suggest-003": {
+    "mode": "split",
+    "source": "/phrase-audio/suggest-003/conversation.mp3",
+    "duration": 5.44,
+    "boundaries": [
+      1.689127,
+      2.997982
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "suggest-004": {
+    "mode": "split",
+    "source": "/phrase-audio/suggest-004/conversation.mp3",
+    "duration": 5.28,
+    "boundaries": [
+      1.685907,
+      3.1828345000000002
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "suggest-005": {
+    "mode": "split",
+    "source": "/phrase-audio/suggest-005/conversation.mp3",
+    "duration": 5.68,
+    "boundaries": [
+      1.617018,
+      3.3323015
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "suggest-006": {
+    "mode": "split",
+    "source": "/phrase-audio/suggest-006/conversation.mp3",
+    "duration": 6.48,
+    "boundaries": [
+      2.076406,
+      4.469195
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "suggest-007": {
+    "mode": "split",
+    "source": "/phrase-audio/suggest-007/conversation.mp3",
+    "duration": 7.04,
+    "boundaries": [
+      2.1585375,
+      3.9941835
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "suggest-008": {
+    "mode": "split",
+    "source": "/phrase-audio/suggest-008/conversation.mp3",
+    "duration": 5.04,
+    "boundaries": [
+      0.9836735000000001,
+      2.914354
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "suggest-009": {
+    "mode": "split",
+    "source": "/phrase-audio/suggest-009/conversation.mp3",
+    "duration": 5.52,
+    "boundaries": [
+      1.6772565,
+      3.398481
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "suggest-010": {
+    "mode": "split",
+    "source": "/phrase-audio/suggest-010/conversation.mp3",
+    "duration": 5.92,
+    "boundaries": [
+      1.438231,
+      3.5014624999999997
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "favor-001": {
+    "mode": "split",
+    "source": "/phrase-audio/favor-001/conversation.mp3",
+    "duration": 5.2,
+    "boundaries": [
+      1.367891,
+      2.937256
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "favor-002": {
+    "mode": "split",
+    "source": "/phrase-audio/favor-002/conversation.mp3",
+    "duration": 6.24,
+    "boundaries": [
+      2.245737,
+      4.2112245
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "favor-003": {
+    "mode": "split",
+    "source": "/phrase-audio/favor-003/conversation.mp3",
+    "duration": 5.28,
+    "boundaries": [
+      1.4338775,
+      3.1014515
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "favor-004": {
+    "mode": "split",
+    "source": "/phrase-audio/favor-004/conversation.mp3",
+    "duration": 6.96,
+    "boundaries": [
+      2.293968,
+      4.352687
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "favor-005": {
+    "mode": "split",
+    "source": "/phrase-audio/favor-005/conversation.mp3",
+    "duration": 6.8,
+    "boundaries": [
+      2.1596145,
+      4.3102605
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "favor-006": {
+    "mode": "split",
+    "source": "/phrase-audio/favor-006/conversation.mp3",
+    "duration": 5.44,
+    "boundaries": [
+      1.9896825000000002,
+      3.738492
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "favor-007": {
+    "mode": "split",
+    "source": "/phrase-audio/favor-007/conversation.mp3",
+    "duration": 7.28,
+    "boundaries": [
+      2.3650789999999997,
+      4.687574
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "favor-008": {
+    "mode": "split",
+    "source": "/phrase-audio/favor-008/conversation.mp3",
+    "duration": 6.24,
+    "boundaries": [
+      1.735057,
+      3.7522335
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "favor-009": {
+    "mode": "split",
+    "source": "/phrase-audio/favor-009/conversation.mp3",
+    "duration": 5.36,
+    "boundaries": [
+      2.305748,
+      4.2557255000000005
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "favor-010": {
+    "mode": "split",
+    "source": "/phrase-audio/favor-010/conversation.mp3",
+    "duration": 6.88,
+    "boundaries": [
+      2.9928005,
+      4.915839
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "decline-001": {
+    "mode": "split",
+    "source": "/phrase-audio/decline-001/conversation.mp3",
+    "duration": 5.92,
+    "boundaries": [
+      1.909376,
+      3.7920749999999996
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "decline-002": {
+    "mode": "split",
+    "source": "/phrase-audio/decline-002/conversation.mp3",
+    "duration": 5.36,
+    "boundaries": [
+      1.7625965,
+      3.5771765
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "decline-003": {
+    "mode": "split",
+    "source": "/phrase-audio/decline-003/conversation.mp3",
+    "duration": 5.28,
+    "boundaries": [
+      1.4354084999999999,
+      2.9662815
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "decline-004": {
+    "mode": "split",
+    "source": "/phrase-audio/decline-004/conversation.mp3",
+    "duration": 6.64,
+    "boundaries": [
+      1.5506575,
+      4.549354
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "decline-005": {
+    "mode": "split",
+    "source": "/phrase-audio/decline-005/conversation.mp3",
+    "duration": 7.68,
+    "boundaries": [
+      1.4540929999999999,
+      3.0566095
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "decline-006": {
+    "mode": "split",
+    "source": "/phrase-audio/decline-006/conversation.mp3",
+    "duration": 6.32,
+    "boundaries": [
+      1.8383335,
+      3.666939
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "decline-007": {
+    "mode": "split",
+    "source": "/phrase-audio/decline-007/conversation.mp3",
+    "duration": 5.76,
+    "boundaries": [
+      1.8214285000000001,
+      3.5178570000000002
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "decline-008": {
+    "mode": "split",
+    "source": "/phrase-audio/decline-008/conversation.mp3",
+    "duration": 6.64,
+    "boundaries": [
+      1.962551,
+      4.15695
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "decline-009": {
+    "mode": "split",
+    "source": "/phrase-audio/decline-009/conversation.mp3",
+    "duration": 5.04,
+    "boundaries": [
+      1.5651925,
+      3.338265
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "decline-010": {
+    "mode": "split",
+    "source": "/phrase-audio/decline-010/conversation.mp3",
+    "duration": 5.52,
+    "boundaries": [
+      1.332404,
+      3.137551
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "imagine-001": {
+    "mode": "split",
+    "source": "/phrase-audio/imagine-001/conversation.mp3",
+    "duration": 6.24,
+    "boundaries": [
+      2.467018,
+      4.4543195
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "imagine-002": {
+    "mode": "split",
+    "source": "/phrase-audio/imagine-002/conversation.mp3",
+    "duration": 5.12,
+    "boundaries": [
+      1.8224150000000001,
+      3.747585
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "imagine-003": {
+    "mode": "split",
+    "source": "/phrase-audio/imagine-003/conversation.mp3",
+    "duration": 6.08,
+    "boundaries": [
+      1.4795349999999998,
+      3.594297
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "imagine-004": {
+    "mode": "split",
+    "source": "/phrase-audio/imagine-004/conversation.mp3",
+    "duration": 5.84,
+    "boundaries": [
+      1.829195,
+      3.815034
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "imagine-005": {
+    "mode": "split",
+    "source": "/phrase-audio/imagine-005/conversation.mp3",
+    "duration": 6.32,
+    "boundaries": [
+      2.1211905,
+      4.024297000000001
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "imagine-006": {
+    "mode": "split",
+    "source": "/phrase-audio/imagine-006/conversation.mp3",
+    "duration": 7.28,
+    "boundaries": [
+      2.8315985,
+      5.136621
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "imagine-007": {
+    "mode": "split",
+    "source": "/phrase-audio/imagine-007/conversation.mp3",
+    "duration": 5.28,
+    "boundaries": [
+      1.7504309999999998,
+      3.0338205
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "imagine-008": {
+    "mode": "split",
+    "source": "/phrase-audio/imagine-008/conversation.mp3",
+    "duration": 8.32,
+    "boundaries": [
+      2.7464399999999998,
+      5.404795999999999
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "imagine-009": {
+    "mode": "split",
+    "source": "/phrase-audio/imagine-009/conversation.mp3",
+    "duration": 7.2,
+    "boundaries": [
+      2.6166215,
+      4.1240475
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "imagine-010": {
+    "mode": "split",
+    "source": "/phrase-audio/imagine-010/conversation.mp3",
+    "duration": 8,
+    "boundaries": [
+      3.161576,
+      5.641405499999999
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "close-001": {
+    "mode": "split",
+    "source": "/phrase-audio/close-001/conversation.mp3",
+    "duration": 5.2,
+    "boundaries": [
+      1.981338,
+      3.488719
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "close-002": {
+    "mode": "split",
+    "source": "/phrase-audio/close-002/conversation.mp3",
+    "duration": 6,
+    "boundaries": [
+      2.3499775,
+      4.1382200000000005
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "close-003": {
+    "mode": "split",
+    "source": "/phrase-audio/close-003/conversation.mp3",
+    "duration": 5.04,
+    "boundaries": [
+      1.1027665,
+      3.2633785
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "close-004": {
+    "mode": "split",
+    "source": "/phrase-audio/close-004/conversation.mp3",
+    "duration": 4.24,
+    "boundaries": [
+      1.305964,
+      2.5779475
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "close-005": {
+    "mode": "split",
+    "source": "/phrase-audio/close-005/conversation.mp3",
+    "duration": 5.12,
+    "boundaries": [
+      1.737653,
+      3.731678
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "close-006": {
+    "mode": "split",
+    "source": "/phrase-audio/close-006/conversation.mp3",
+    "duration": 6,
+    "boundaries": [
+      1.266519,
+      3.223753
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "close-007": {
+    "mode": "split",
+    "source": "/phrase-audio/close-007/conversation.mp3",
+    "duration": 4.48,
+    "boundaries": [
+      1.636871,
+      2.990907
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "close-008": {
+    "mode": "split",
+    "source": "/phrase-audio/close-008/conversation.mp3",
+    "duration": 6.24,
+    "boundaries": [
+      1.5112925000000001,
+      3.7261904999999995
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "close-009": {
+    "mode": "split",
+    "source": "/phrase-audio/close-009/conversation.mp3",
+    "duration": 5.52,
+    "boundaries": [
+      2.076644,
+      3.4916555000000002
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "close-010": {
+    "mode": "split",
+    "source": "/phrase-audio/close-010/conversation.mp3",
+    "duration": 5.52,
+    "boundaries": [
+      1.34856,
+      2.7247055
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-awkward-001": {
+    "mode": "split",
+    "source": "/phrase-audio/real-awkward-001/conversation.mp3",
+    "duration": 5.92,
+    "boundaries": [
+      1.5737299999999999,
+      3.665465
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-awkward-002": {
+    "mode": "split",
+    "source": "/phrase-audio/real-awkward-002/conversation.mp3",
+    "duration": 6.08,
+    "boundaries": [
+      1.786621,
+      4.145091
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-awkward-003": {
+    "mode": "split",
+    "source": "/phrase-audio/real-awkward-003/conversation.mp3",
+    "duration": 5.92,
+    "boundaries": [
+      1.15517,
+      3.0389455
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-awkward-004": {
+    "mode": "split",
+    "source": "/phrase-audio/real-awkward-004/conversation.mp3",
+    "duration": 6.32,
+    "boundaries": [
+      1.6279249999999998,
+      3.583129
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-awkward-005": {
+    "mode": "split",
+    "source": "/phrase-audio/real-awkward-005/conversation.mp3",
+    "duration": 6.8,
+    "boundaries": [
+      2.00695,
+      4.819183499999999
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-awkward-006": {
+    "mode": "split",
+    "source": "/phrase-audio/real-awkward-006/conversation.mp3",
+    "duration": 6.48,
+    "boundaries": [
+      2.36178,
+      4.332959
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-awkward-007": {
+    "mode": "split",
+    "source": "/phrase-audio/real-awkward-007/conversation.mp3",
+    "duration": 7.28,
+    "boundaries": [
+      1.5964285,
+      4.6828455
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-awkward-008": {
+    "mode": "split",
+    "source": "/phrase-audio/real-awkward-008/conversation.mp3",
+    "duration": 4.16,
+    "boundaries": [
+      1.3866215,
+      2.5044560000000002
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-awkward-009": {
+    "mode": "split",
+    "source": "/phrase-audio/real-awkward-009/conversation.mp3",
+    "duration": 6.08,
+    "boundaries": [
+      1.6451244999999999,
+      3.9051135
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-awkward-010": {
+    "mode": "split",
+    "source": "/phrase-audio/real-awkward-010/conversation.mp3",
+    "duration": 5.28,
+    "boundaries": [
+      1.611236,
+      3.2225395
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-close-001": {
+    "mode": "split",
+    "source": "/phrase-audio/real-close-001/conversation.mp3",
+    "duration": 4.64,
+    "boundaries": [
+      1.3172675,
+      2.6676415
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-close-002": {
+    "mode": "split",
+    "source": "/phrase-audio/real-close-002/conversation.mp3",
+    "duration": 5.68,
+    "boundaries": [
+      1.9246145,
+      3.704909
+    ],
+    "review": "Speaker turn pauses checked against the three conversation lines."
+  },
+  "real-close-003": {
+    "mode": "split",
+    "source": "/phrase-audio/real-close-003/conversation.mp3",
+    "duration": 6.48,
+    "boundaries": [
+      1.6484125,
+      3.731973
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-close-004": {
+    "mode": "split",
+    "source": "/phrase-audio/real-close-004/conversation.mp3",
+    "duration": 5.76,
+    "boundaries": [
+      1.547891,
+      3.6669275
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-close-005": {
+    "mode": "split",
+    "source": "/phrase-audio/real-close-005/conversation.mp3",
+    "duration": 6,
+    "boundaries": [
+      1.5231295,
+      3.3428575
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-close-006": {
+    "mode": "split",
+    "source": "/phrase-audio/real-close-006/conversation.mp3",
+    "duration": 6.48,
+    "boundaries": [
+      2.354501,
+      5.0959525
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-close-007": {
+    "mode": "split",
+    "source": "/phrase-audio/real-close-007/conversation.mp3",
+    "duration": 6.32,
+    "boundaries": [
+      1.559694,
+      4.1334015
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-close-008": {
+    "mode": "split",
+    "source": "/phrase-audio/real-close-008/conversation.mp3",
+    "duration": 5.12,
+    "boundaries": [
+      1.3399205,
+      2.674728
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-close-009": {
+    "mode": "split",
+    "source": "/phrase-audio/real-close-009/conversation.mp3",
+    "duration": 4.88,
+    "boundaries": [
+      1.2995580000000002,
+      3.0968935
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-close-010": {
+    "mode": "split",
+    "source": "/phrase-audio/real-close-010/conversation.mp3",
+    "duration": 6,
+    "boundaries": [
+      1.5140135,
+      3.3908955
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-honest-001": {
+    "mode": "split",
+    "source": "/phrase-audio/real-honest-001/conversation.mp3",
+    "duration": 5.76,
+    "boundaries": [
+      1.6318934999999999,
+      3.457812
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-honest-002": {
+    "mode": "split",
+    "source": "/phrase-audio/real-honest-002/conversation.mp3",
+    "duration": 5.04,
+    "boundaries": [
+      1.963855,
+      3.396542
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-honest-003": {
+    "mode": "split",
+    "source": "/phrase-audio/real-honest-003/conversation.mp3",
+    "duration": 5.28,
+    "boundaries": [
+      1.6131975,
+      3.303379
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-honest-004": {
+    "mode": "split",
+    "source": "/phrase-audio/real-honest-004/conversation.mp3",
+    "duration": 4.96,
+    "boundaries": [
+      1.7737189999999998,
+      3.0458845
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-honest-005": {
+    "mode": "split",
+    "source": "/phrase-audio/real-honest-005/conversation.mp3",
+    "duration": 4.88,
+    "boundaries": [
+      1.7440815,
+      3.1042175
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-honest-006": {
+    "mode": "split",
+    "source": "/phrase-audio/real-honest-006/conversation.mp3",
+    "duration": 6,
+    "boundaries": [
+      1.949626,
+      3.3815535
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-honest-007": {
+    "mode": "split",
+    "source": "/phrase-audio/real-honest-007/conversation.mp3",
+    "duration": 6.08,
+    "boundaries": [
+      1.97288,
+      3.8916554999999997
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-honest-008": {
+    "mode": "split",
+    "source": "/phrase-audio/real-honest-008/conversation.mp3",
+    "duration": 5.44,
+    "boundaries": [
+      1.8088889999999997,
+      3.0253855
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-honest-009": {
+    "mode": "split",
+    "source": "/phrase-audio/real-honest-009/conversation.mp3",
+    "duration": 6.08,
+    "boundaries": [
+      2.0797280000000002,
+      3.7715875000000003
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-honest-010": {
+    "mode": "split",
+    "source": "/phrase-audio/real-honest-010/conversation.mp3",
+    "duration": 6.4,
+    "boundaries": [
+      2.1095805,
+      3.9442065
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-schedule-001": {
+    "mode": "split",
+    "source": "/phrase-audio/real-schedule-001/conversation.mp3",
+    "duration": 5.68,
+    "boundaries": [
+      1.589127,
+      3.7680160000000003
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-schedule-002": {
+    "mode": "split",
+    "source": "/phrase-audio/real-schedule-002/conversation.mp3",
+    "duration": 5.04,
+    "boundaries": [
+      1.6245919999999998,
+      3.4729475
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-schedule-003": {
+    "mode": "split",
+    "source": "/phrase-audio/real-schedule-003/conversation.mp3",
+    "duration": 5.2,
+    "boundaries": [
+      1.274705,
+      3.7070975
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-schedule-004": {
+    "mode": "split",
+    "source": "/phrase-audio/real-schedule-004/conversation.mp3",
+    "duration": 5.36,
+    "boundaries": [
+      1.390612,
+      3.3651929999999997
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-schedule-005": {
+    "mode": "split",
+    "source": "/phrase-audio/real-schedule-005/conversation.mp3",
+    "duration": 6.56,
+    "boundaries": [
+      1.8585485,
+      4.0524605000000005
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-schedule-006": {
+    "mode": "split",
+    "source": "/phrase-audio/real-schedule-006/conversation.mp3",
+    "duration": 5.6,
+    "boundaries": [
+      1.6003060000000002,
+      3.6856005
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-schedule-007": {
+    "mode": "split",
+    "source": "/phrase-audio/real-schedule-007/conversation.mp3",
+    "duration": 4,
+    "boundaries": [
+      1.0393765,
+      2.7274374999999997
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-schedule-008": {
+    "mode": "split",
+    "source": "/phrase-audio/real-schedule-008/conversation.mp3",
+    "duration": 4.96,
+    "boundaries": [
+      1.1252155,
+      2.72932
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-schedule-009": {
+    "mode": "split",
+    "source": "/phrase-audio/real-schedule-009/conversation.mp3",
+    "duration": 6.32,
+    "boundaries": [
+      1.3381975000000002,
+      4.082109
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-schedule-010": {
+    "mode": "split",
+    "source": "/phrase-audio/real-schedule-010/conversation.mp3",
+    "duration": 5.28,
+    "boundaries": [
+      1.3377664999999999,
+      3.1178685
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-care-001": {
+    "mode": "split",
+    "source": "/phrase-audio/real-care-001/conversation.mp3",
+    "duration": 5.28,
+    "boundaries": [
+      1.5136395,
+      3.5370865
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-care-002": {
+    "mode": "isolated",
+    "source": "/phrase-audio/real-care-002/conversation.mp3",
+    "voice": "Microsoft Zira Desktop",
+    "reason": "No two clear speaker pauses in the existing recording."
+  },
+  "real-care-003": {
+    "mode": "split",
+    "source": "/phrase-audio/real-care-003/conversation.mp3",
+    "duration": 5.2,
+    "boundaries": [
+      1.0457595,
+      2.968027
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-care-004": {
+    "mode": "split",
+    "source": "/phrase-audio/real-care-004/conversation.mp3",
+    "duration": 5.12,
+    "boundaries": [
+      1.6412810000000002,
+      3.0905215
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-care-005": {
+    "mode": "split",
+    "source": "/phrase-audio/real-care-005/conversation.mp3",
+    "duration": 7.76,
+    "boundaries": [
+      1.705374,
+      4.2384805
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-care-006": {
+    "mode": "split",
+    "source": "/phrase-audio/real-care-006/conversation.mp3",
+    "duration": 6.8,
+    "boundaries": [
+      1.8533445,
+      4.4187645
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-care-007": {
+    "mode": "split",
+    "source": "/phrase-audio/real-care-007/conversation.mp3",
+    "duration": 5.6,
+    "boundaries": [
+      1.8784239999999999,
+      3.623231
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-care-008": {
+    "mode": "split",
+    "source": "/phrase-audio/real-care-008/conversation.mp3",
+    "duration": 5.76,
+    "boundaries": [
+      1.495624,
+      3.7444445
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-care-009": {
+    "mode": "split",
+    "source": "/phrase-audio/real-care-009/conversation.mp3",
+    "duration": 4.32,
+    "boundaries": [
+      1.3538325,
+      2.623231
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-care-010": {
+    "mode": "split",
+    "source": "/phrase-audio/real-care-010/conversation.mp3",
+    "duration": 4.48,
+    "boundaries": [
+      1.310068,
+      3.0531295
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-tease-001": {
+    "mode": "split",
+    "source": "/phrase-audio/real-tease-001/conversation.mp3",
+    "duration": 5.68,
+    "boundaries": [
+      1.7416555,
+      3.79805
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-tease-002": {
+    "mode": "split",
+    "source": "/phrase-audio/real-tease-002/conversation.mp3",
+    "duration": 6,
+    "boundaries": [
+      1.726882,
+      3.5230385
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-tease-003": {
+    "mode": "split",
+    "source": "/phrase-audio/real-tease-003/conversation.mp3",
+    "duration": 6.08,
+    "boundaries": [
+      2.062551,
+      4.608162999999999
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-tease-004": {
+    "mode": "split",
+    "source": "/phrase-audio/real-tease-004/conversation.mp3",
+    "duration": 5.52,
+    "boundaries": [
+      1.5429135,
+      3.7908615
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-tease-005": {
+    "mode": "split",
+    "source": "/phrase-audio/real-tease-005/conversation.mp3",
+    "duration": 8.64,
+    "boundaries": [
+      2.7171315,
+      6.113719
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-tease-006": {
+    "mode": "split",
+    "source": "/phrase-audio/real-tease-006/conversation.mp3",
+    "duration": 5.12,
+    "boundaries": [
+      1.7777665,
+      3.4369500000000004
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-tease-007": {
+    "mode": "split",
+    "source": "/phrase-audio/real-tease-007/conversation.mp3",
+    "duration": 4.64,
+    "boundaries": [
+      1.7290930000000002,
+      3.0884015
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-tease-008": {
+    "mode": "split",
+    "source": "/phrase-audio/real-tease-008/conversation.mp3",
+    "duration": 3.76,
+    "boundaries": [
+      1.7053284999999998,
+      2.7493425
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-tease-009": {
+    "mode": "split",
+    "source": "/phrase-audio/real-tease-009/conversation.mp3",
+    "duration": 6.08,
+    "boundaries": [
+      2.3628685000000003,
+      4.025646
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-tease-010": {
+    "mode": "split",
+    "source": "/phrase-audio/real-tease-010/conversation.mp3",
+    "duration": 5.28,
+    "boundaries": [
+      1.8601475,
+      3.4025735
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-back-001": {
+    "mode": "split",
+    "source": "/phrase-audio/real-back-001/conversation.mp3",
+    "duration": 6.64,
+    "boundaries": [
+      1.0962925000000001,
+      3.201633
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-back-002": {
+    "mode": "split",
+    "source": "/phrase-audio/real-back-002/conversation.mp3",
+    "duration": 7.84,
+    "boundaries": [
+      2.0442970000000003,
+      4.566202
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-back-003": {
+    "mode": "split",
+    "source": "/phrase-audio/real-back-003/conversation.mp3",
+    "duration": 7.36,
+    "boundaries": [
+      2.4426985,
+      4.792244999999999
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-back-004": {
+    "mode": "split",
+    "source": "/phrase-audio/real-back-004/conversation.mp3",
+    "duration": 5.44,
+    "boundaries": [
+      1.714671,
+      3.7390815
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-back-005": {
+    "mode": "split",
+    "source": "/phrase-audio/real-back-005/conversation.mp3",
+    "duration": 6,
+    "boundaries": [
+      2.570227,
+      3.6705664999999996
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-back-006": {
+    "mode": "split",
+    "source": "/phrase-audio/real-back-006/conversation.mp3",
+    "duration": 6.4,
+    "boundaries": [
+      1.7006805000000003,
+      3.8274714999999997
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-back-007": {
+    "mode": "split",
+    "source": "/phrase-audio/real-back-007/conversation.mp3",
+    "duration": 5.2,
+    "boundaries": [
+      1.843651,
+      3.1496255
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-back-008": {
+    "mode": "split",
+    "source": "/phrase-audio/real-back-008/conversation.mp3",
+    "duration": 5.68,
+    "boundaries": [
+      1.3212585,
+      3.2819955
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-back-009": {
+    "mode": "split",
+    "source": "/phrase-audio/real-back-009/conversation.mp3",
+    "duration": 5.12,
+    "boundaries": [
+      1.80966,
+      3.073254
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-back-010": {
+    "mode": "split",
+    "source": "/phrase-audio/real-back-010/conversation.mp3",
+    "duration": 5.44,
+    "boundaries": [
+      1.5780835,
+      3.291803
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-relationship-001": {
+    "mode": "split",
+    "source": "/phrase-audio/real-relationship-001/conversation.mp3",
+    "duration": 5.84,
+    "boundaries": [
+      1.8952719999999998,
+      3.907528
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-relationship-002": {
+    "mode": "split",
+    "source": "/phrase-audio/real-relationship-002/conversation.mp3",
+    "duration": 5.28,
+    "boundaries": [
+      1.9150795,
+      3.2799885
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-relationship-003": {
+    "mode": "split",
+    "source": "/phrase-audio/real-relationship-003/conversation.mp3",
+    "duration": 6.24,
+    "boundaries": [
+      2.2723015,
+      4.6268705
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-relationship-004": {
+    "mode": "split",
+    "source": "/phrase-audio/real-relationship-004/conversation.mp3",
+    "duration": 6.64,
+    "boundaries": [
+      1.728855,
+      3.651712
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-relationship-005": {
+    "mode": "isolated",
+    "source": "/phrase-audio/real-relationship-005/conversation.mp3",
+    "voice": "Microsoft Zira Desktop",
+    "reason": "No two clear speaker pauses in the existing recording."
+  },
+  "real-relationship-006": {
+    "mode": "split",
+    "source": "/phrase-audio/real-relationship-006/conversation.mp3",
+    "duration": 6.16,
+    "boundaries": [
+      1.5397729999999998,
+      4.221655
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-relationship-007": {
+    "mode": "split",
+    "source": "/phrase-audio/real-relationship-007/conversation.mp3",
+    "duration": 6.24,
+    "boundaries": [
+      1.6958275,
+      3.6539115
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-relationship-008": {
+    "mode": "split",
+    "source": "/phrase-audio/real-relationship-008/conversation.mp3",
+    "duration": 6.16,
+    "boundaries": [
+      1.6206235,
+      3.5888204999999997
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-relationship-009": {
+    "mode": "split",
+    "source": "/phrase-audio/real-relationship-009/conversation.mp3",
+    "duration": 4.8,
+    "boundaries": [
+      1.9394445,
+      3.585567
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-relationship-010": {
+    "mode": "split",
+    "source": "/phrase-audio/real-relationship-010/conversation.mp3",
+    "duration": 6.8,
+    "boundaries": [
+      2.1788435,
+      4.6965415
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-work-001": {
+    "mode": "split",
+    "source": "/phrase-audio/real-work-001/conversation.mp3",
+    "duration": 5.84,
+    "boundaries": [
+      1.6440704999999998,
+      3.7103289999999998
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-work-002": {
+    "mode": "split",
+    "source": "/phrase-audio/real-work-002/conversation.mp3",
+    "duration": 7.44,
+    "boundaries": [
+      2.0441495,
+      4.7292629999999996
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-work-003": {
+    "mode": "split",
+    "source": "/phrase-audio/real-work-003/conversation.mp3",
+    "duration": 7.68,
+    "boundaries": [
+      1.8573925,
+      4.444421500000001
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-work-004": {
+    "mode": "split",
+    "source": "/phrase-audio/real-work-004/conversation.mp3",
+    "duration": 5.6,
+    "boundaries": [
+      1.2215535,
+      3.522313
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-work-005": {
+    "mode": "split",
+    "source": "/phrase-audio/real-work-005/conversation.mp3",
+    "duration": 7.12,
+    "boundaries": [
+      1.849796,
+      4.729989
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-work-006": {
+    "mode": "split",
+    "source": "/phrase-audio/real-work-006/conversation.mp3",
+    "duration": 6.64,
+    "boundaries": [
+      1.8260204999999998,
+      4.452948
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-work-007": {
+    "mode": "split",
+    "source": "/phrase-audio/real-work-007/conversation.mp3",
+    "duration": 6.56,
+    "boundaries": [
+      1.547698,
+      4.323458
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-work-008": {
+    "mode": "split",
+    "source": "/phrase-audio/real-work-008/conversation.mp3",
+    "duration": 6.08,
+    "boundaries": [
+      1.3764509999999999,
+      3.8781065
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-work-009": {
+    "mode": "split",
+    "source": "/phrase-audio/real-work-009/conversation.mp3",
+    "duration": 5.04,
+    "boundaries": [
+      1.6502154999999998,
+      3.0398415
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-work-010": {
+    "mode": "split",
+    "source": "/phrase-audio/real-work-010/conversation.mp3",
+    "duration": 4.96,
+    "boundaries": [
+      1.1541835,
+      2.839138
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-emotion-001": {
+    "mode": "split",
+    "source": "/phrase-audio/real-emotion-001/conversation.mp3",
+    "duration": 5.12,
+    "boundaries": [
+      1.1576075,
+      3.017041
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-emotion-002": {
+    "mode": "split",
+    "source": "/phrase-audio/real-emotion-002/conversation.mp3",
+    "duration": 6.64,
+    "boundaries": [
+      1.9565190000000001,
+      4.3801925
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-emotion-003": {
+    "mode": "split",
+    "source": "/phrase-audio/real-emotion-003/conversation.mp3",
+    "duration": 6.56,
+    "boundaries": [
+      2.5148185,
+      4.1220859999999995
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-emotion-004": {
+    "mode": "split",
+    "source": "/phrase-audio/real-emotion-004/conversation.mp3",
+    "duration": 5.76,
+    "boundaries": [
+      1.747789,
+      3.5098754999999997
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-emotion-005": {
+    "mode": "split",
+    "source": "/phrase-audio/real-emotion-005/conversation.mp3",
+    "duration": 5.76,
+    "boundaries": [
+      2.1701815,
+      4.0341155
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-emotion-006": {
+    "mode": "split",
+    "source": "/phrase-audio/real-emotion-006/conversation.mp3",
+    "duration": 5.52,
+    "boundaries": [
+      1.3710995,
+      3.890975
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-emotion-007": {
+    "mode": "split",
+    "source": "/phrase-audio/real-emotion-007/conversation.mp3",
+    "duration": 4.64,
+    "boundaries": [
+      2.0403745,
+      3.4619955
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-emotion-008": {
+    "mode": "split",
+    "source": "/phrase-audio/real-emotion-008/conversation.mp3",
+    "duration": 5.28,
+    "boundaries": [
+      1.7550114999999997,
+      3.8126645
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-emotion-009": {
+    "mode": "split",
+    "source": "/phrase-audio/real-emotion-009/conversation.mp3",
+    "duration": 6.16,
+    "boundaries": [
+      1.359059,
+      3.3336959999999998
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "real-emotion-010": {
+    "mode": "split",
+    "source": "/phrase-audio/real-emotion-010/conversation.mp3",
+    "duration": 5.76,
+    "boundaries": [
+      1.7166215,
+      3.4429480000000003
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "keep-001": {
+    "mode": "split",
+    "source": "/phrase-audio/keep-001/conversation.mp3",
+    "duration": 6.4,
+    "boundaries": [
+      2.547914,
+      4.408571500000001
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "keep-002": {
+    "mode": "split",
+    "source": "/phrase-audio/keep-002/conversation.mp3",
+    "duration": 6.8,
+    "boundaries": [
+      1.7007485,
+      4.0586850000000005
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "keep-003": {
+    "mode": "split",
+    "source": "/phrase-audio/keep-003/conversation.mp3",
+    "duration": 6.88,
+    "boundaries": [
+      3.377585,
+      5.121678
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "keep-004": {
+    "mode": "split",
+    "source": "/phrase-audio/keep-004/conversation.mp3",
+    "duration": 6,
+    "boundaries": [
+      2.056474,
+      4.2110205
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "keep-005": {
+    "mode": "split",
+    "source": "/phrase-audio/keep-005/conversation.mp3",
+    "duration": 6.56,
+    "boundaries": [
+      2.6949769999999997,
+      4.2519615
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "keep-006": {
+    "mode": "split",
+    "source": "/phrase-audio/keep-006/conversation.mp3",
+    "duration": 7.28,
+    "boundaries": [
+      2.170442,
+      4.237347
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "keep-007": {
+    "mode": "isolated",
+    "source": "/phrase-audio/keep-007/conversation.mp3",
+    "voice": "Microsoft Zira Desktop",
+    "reason": "No two clear speaker pauses in the existing recording."
+  },
+  "keep-008": {
+    "mode": "split",
+    "source": "/phrase-audio/keep-008/conversation.mp3",
+    "duration": 4.96,
+    "boundaries": [
+      1.415238,
+      3.048356
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "keep-009": {
+    "mode": "split",
+    "source": "/phrase-audio/keep-009/conversation.mp3",
+    "duration": 6.16,
+    "boundaries": [
+      1.3155100000000002,
+      3.2964855
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "keep-010": {
+    "mode": "split",
+    "source": "/phrase-audio/keep-010/conversation.mp3",
+    "duration": 5.28,
+    "boundaries": [
+      1.3896035,
+      3.058515
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "keep-011": {
+    "mode": "split",
+    "source": "/phrase-audio/keep-011/conversation.mp3",
+    "duration": 6,
+    "boundaries": [
+      1.9749659999999998,
+      3.4608049999999997
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "keep-012": {
+    "mode": "split",
+    "source": "/phrase-audio/keep-012/conversation.mp3",
+    "duration": 6.16,
+    "boundaries": [
+      1.9624489999999999,
+      4.0176870000000005
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "keep-013": {
+    "mode": "split",
+    "source": "/phrase-audio/keep-013/conversation.mp3",
+    "duration": 6.08,
+    "boundaries": [
+      2.8269954999999998,
+      4.1355105000000005
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "keep-014": {
+    "mode": "split",
+    "source": "/phrase-audio/keep-014/conversation.mp3",
+    "duration": 6.88,
+    "boundaries": [
+      2.3063149999999997,
+      4.4595695
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "keep-015": {
+    "mode": "split",
+    "source": "/phrase-audio/keep-015/conversation.mp3",
+    "duration": 6.72,
+    "boundaries": [
+      2.426247,
+      4.425442
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "keep-016": {
+    "mode": "split",
+    "source": "/phrase-audio/keep-016/conversation.mp3",
+    "duration": 5.76,
+    "boundaries": [
+      2.333254,
+      3.8799205
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "keep-017": {
+    "mode": "split",
+    "source": "/phrase-audio/keep-017/conversation.mp3",
+    "duration": 6.72,
+    "boundaries": [
+      2.995828,
+      4.3406235
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "keep-018": {
+    "mode": "split",
+    "source": "/phrase-audio/keep-018/conversation.mp3",
+    "duration": 6.96,
+    "boundaries": [
+      2.920544,
+      4.673163000000001
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "keep-019": {
+    "mode": "split",
+    "source": "/phrase-audio/keep-019/conversation.mp3",
+    "duration": 7.36,
+    "boundaries": [
+      2.518594,
+      5.240238
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "keep-020": {
+    "mode": "split",
+    "source": "/phrase-audio/keep-020/conversation.mp3",
+    "duration": 6.56,
+    "boundaries": [
+      2.9228005,
+      4.502098
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "keep-021": {
+    "mode": "split",
+    "source": "/phrase-audio/keep-021/conversation.mp3",
+    "duration": 6.4,
+    "boundaries": [
+      2.8691155000000004,
+      4.61619
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "keep-022": {
+    "mode": "isolated",
+    "source": "/phrase-audio/keep-022/conversation.mp3",
+    "voice": "Microsoft Zira Desktop",
+    "reason": "No two clear speaker pauses in the existing recording."
+  },
+  "keep-023": {
+    "mode": "split",
+    "source": "/phrase-audio/keep-023/conversation.mp3",
+    "duration": 5.04,
+    "boundaries": [
+      1.433458,
+      2.424671
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "keep-024": {
+    "mode": "split",
+    "source": "/phrase-audio/keep-024/conversation.mp3",
+    "duration": 6.64,
+    "boundaries": [
+      2.7054650000000002,
+      4.642630499999999
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "keep-025": {
+    "mode": "split",
+    "source": "/phrase-audio/keep-025/conversation.mp3",
+    "duration": 6,
+    "boundaries": [
+      2.366474,
+      4.0856915
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "keep-026": {
+    "mode": "split",
+    "source": "/phrase-audio/keep-026/conversation.mp3",
+    "duration": 5.6,
+    "boundaries": [
+      2.6060654999999997,
+      4.3153515
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "keep-027": {
+    "mode": "split",
+    "source": "/phrase-audio/keep-027/conversation.mp3",
+    "duration": 6.64,
+    "boundaries": [
+      3.2551245,
+      5.097721
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "keep-028": {
+    "mode": "split",
+    "source": "/phrase-audio/keep-028/conversation.mp3",
+    "duration": 6.08,
+    "boundaries": [
+      2.72356,
+      4.104898
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "keep-029": {
+    "mode": "split",
+    "source": "/phrase-audio/keep-029/conversation.mp3",
+    "duration": 6.48,
+    "boundaries": [
+      3.4931065,
+      4.634637
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "keep-030": {
+    "mode": "split",
+    "source": "/phrase-audio/keep-030/conversation.mp3",
+    "duration": 6.16,
+    "boundaries": [
+      2.451769,
+      4.861167999999999
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-001": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-001/conversation.mp3",
+    "duration": 5.12,
+    "boundaries": [
+      1.319717,
+      2.705805
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-002": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-002/conversation.mp3",
+    "duration": 5.36,
+    "boundaries": [
+      1.6877095,
+      3.502211
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-003": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-003/conversation.mp3",
+    "duration": 5.04,
+    "boundaries": [
+      1.9656235,
+      3.0381635
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-004": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-004/conversation.mp3",
+    "duration": 5.52,
+    "boundaries": [
+      1.554252,
+      3.595873
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-005": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-005/conversation.mp3",
+    "duration": 6.48,
+    "boundaries": [
+      1.7142060000000001,
+      4.5576645
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-006": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-006/conversation.mp3",
+    "duration": 6.4,
+    "boundaries": [
+      1.612177,
+      4.272109
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-007": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-007/conversation.mp3",
+    "duration": 5.84,
+    "boundaries": [
+      1.659796,
+      3.9658275
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-008": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-008/conversation.mp3",
+    "duration": 5.04,
+    "boundaries": [
+      1.5760885,
+      3.269694
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-009": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-009/conversation.mp3",
+    "duration": 5.2,
+    "boundaries": [
+      1.6501584999999999,
+      2.91695
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-010": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-010/conversation.mp3",
+    "duration": 4.96,
+    "boundaries": [
+      1.5349205000000001,
+      2.956247
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-011": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-011/conversation.mp3",
+    "duration": 5.2,
+    "boundaries": [
+      2.0061675,
+      3.470091
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-012": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-012/conversation.mp3",
+    "duration": 5.6,
+    "boundaries": [
+      1.6510885,
+      3.074671
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-013": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-013/conversation.mp3",
+    "duration": 6.48,
+    "boundaries": [
+      1.350125,
+      3.1662925
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-014": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-014/conversation.mp3",
+    "duration": 4.88,
+    "boundaries": [
+      1.746179,
+      2.9728115
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-015": {
+    "mode": "isolated",
+    "source": "/phrase-audio/emotion-015/conversation.mp3",
+    "voice": "Microsoft Zira Desktop",
+    "reason": "No two clear speaker pauses in the existing recording."
+  },
+  "emotion-016": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-016/conversation.mp3",
+    "duration": 5.52,
+    "boundaries": [
+      1.6146935,
+      3.6257935000000003
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-017": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-017/conversation.mp3",
+    "duration": 6.32,
+    "boundaries": [
+      2.2003855000000003,
+      3.9571655
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-018": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-018/conversation.mp3",
+    "duration": 5.44,
+    "boundaries": [
+      1.641746,
+      3.7902265
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-019": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-019/conversation.mp3",
+    "duration": 4.88,
+    "boundaries": [
+      1.4770745,
+      2.6025280000000004
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-020": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-020/conversation.mp3",
+    "duration": 6.16,
+    "boundaries": [
+      1.7158275,
+      3.8107595
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-021": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-021/conversation.mp3",
+    "duration": 5.84,
+    "boundaries": [
+      2.055442,
+      3.588197
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-022": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-022/conversation.mp3",
+    "duration": 5.12,
+    "boundaries": [
+      1.726621,
+      3.32059
+    ],
+    "review": "Speaker turn pauses checked against the three conversation lines."
+  },
+  "emotion-023": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-023/conversation.mp3",
+    "duration": 5.36,
+    "boundaries": [
+      1.7429475,
+      3.3909865000000003
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-024": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-024/conversation.mp3",
+    "duration": 5.68,
+    "boundaries": [
+      1.572517,
+      3.163413
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-025": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-025/conversation.mp3",
+    "duration": 5.6,
+    "boundaries": [
+      1.9187075,
+      3.3628795
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-026": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-026/conversation.mp3",
+    "duration": 4.48,
+    "boundaries": [
+      1.295703,
+      3.275397
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-027": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-027/conversation.mp3",
+    "duration": 5.28,
+    "boundaries": [
+      1.7705555,
+      3.0788095
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-028": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-028/conversation.mp3",
+    "duration": 5.44,
+    "boundaries": [
+      1.719637,
+      3.395102
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-029": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-029/conversation.mp3",
+    "duration": 5.68,
+    "boundaries": [
+      1.9101245,
+      3.353719
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-030": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-030/conversation.mp3",
+    "duration": 4.48,
+    "boundaries": [
+      1.861848,
+      3.1311
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-001": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-001/conversation.mp3",
+    "duration": 5.68,
+    "boundaries": [
+      1.803118,
+      3.4559635
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-002": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-002/conversation.mp3",
+    "duration": 5.6,
+    "boundaries": [
+      1.5782315,
+      3.319093
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-003": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-003/conversation.mp3",
+    "duration": 4.4,
+    "boundaries": [
+      1.615714,
+      3.3087530000000003
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-004": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-004/conversation.mp3",
+    "duration": 6.24,
+    "boundaries": [
+      1.9951135,
+      3.508617
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-005": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-005/conversation.mp3",
+    "duration": 4.72,
+    "boundaries": [
+      1.4384350000000001,
+      2.6172560000000002
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-006": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-006/conversation.mp3",
+    "duration": 5.76,
+    "boundaries": [
+      1.5696145000000001,
+      3.5166215000000003
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-007": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-007/conversation.mp3",
+    "duration": 4.8,
+    "boundaries": [
+      1.6740475,
+      3.4097505
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-008": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-008/conversation.mp3",
+    "duration": 5.52,
+    "boundaries": [
+      1.7081404999999998,
+      3.451281
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-009": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-009/conversation.mp3",
+    "duration": 6,
+    "boundaries": [
+      1.9323355,
+      4.4417685
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-010": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-010/conversation.mp3",
+    "duration": 5.84,
+    "boundaries": [
+      1.6556575,
+      3.812585
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-011": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-011/conversation.mp3",
+    "duration": 5.76,
+    "boundaries": [
+      1.633832,
+      3.533753
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-012": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-012/conversation.mp3",
+    "duration": 5.28,
+    "boundaries": [
+      1.757993,
+      3.244286
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-013": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-013/conversation.mp3",
+    "duration": 6.56,
+    "boundaries": [
+      1.825,
+      3.677562
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-014": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-014/conversation.mp3",
+    "duration": 6,
+    "boundaries": [
+      1.6563835,
+      3.4841379999999997
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-015": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-015/conversation.mp3",
+    "duration": 5.04,
+    "boundaries": [
+      1.7099205,
+      3.5781970000000003
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-016": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-016/conversation.mp3",
+    "duration": 4.4,
+    "boundaries": [
+      1.513855,
+      2.5839
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-017": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-017/conversation.mp3",
+    "duration": 6.24,
+    "boundaries": [
+      2.1761,
+      3.7003060000000003
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-018": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-018/conversation.mp3",
+    "duration": 6.08,
+    "boundaries": [
+      1.3505440000000002,
+      3.758821
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-019": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-019/conversation.mp3",
+    "duration": 7.28,
+    "boundaries": [
+      2.0291385,
+      4.813628
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-020": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-020/conversation.mp3",
+    "duration": 5.12,
+    "boundaries": [
+      1.864365,
+      3.1492515
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-021": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-021/conversation.mp3",
+    "duration": 6.72,
+    "boundaries": [
+      1.6897505000000002,
+      3.659932
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-022": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-022/conversation.mp3",
+    "duration": 5.84,
+    "boundaries": [
+      2.310669,
+      3.906485
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-023": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-023/conversation.mp3",
+    "duration": 6.4,
+    "boundaries": [
+      2.0135375,
+      3.654535
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-024": {
+    "mode": "isolated",
+    "source": "/phrase-audio/relation-024/conversation.mp3",
+    "voice": "Microsoft Zira Desktop",
+    "reason": "No two clear speaker pauses in the existing recording."
+  },
+  "relation-025": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-025/conversation.mp3",
+    "duration": 6.16,
+    "boundaries": [
+      2.019807,
+      4.002415
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-026": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-026/conversation.mp3",
+    "duration": 4.96,
+    "boundaries": [
+      1.3829704999999999,
+      2.7743765
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-027": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-027/conversation.mp3",
+    "duration": 4.8,
+    "boundaries": [
+      1.377018,
+      2.5608165
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-028": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-028/conversation.mp3",
+    "duration": 5.52,
+    "boundaries": [
+      1.6906805,
+      3.2745914999999997
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-029": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-029/conversation.mp3",
+    "duration": 5.92,
+    "boundaries": [
+      2.0811,
+      3.6186619999999996
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-030": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-030/conversation.mp3",
+    "duration": 5.2,
+    "boundaries": [
+      1.570204,
+      2.8289685
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-001": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-001/conversation.mp3",
+    "duration": 6.8,
+    "boundaries": [
+      2.4370865,
+      4.332018
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-002": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-002/conversation.mp3",
+    "duration": 6,
+    "boundaries": [
+      2.270034,
+      3.915397
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-003": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-003/conversation.mp3",
+    "duration": 5.2,
+    "boundaries": [
+      2.038889,
+      3.6705215
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-004": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-004/conversation.mp3",
+    "duration": 5.44,
+    "boundaries": [
+      2.3575395,
+      3.9470295
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-005": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-005/conversation.mp3",
+    "duration": 5.92,
+    "boundaries": [
+      2.686236,
+      4.4108730000000005
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-006": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-006/conversation.mp3",
+    "duration": 4.56,
+    "boundaries": [
+      1.3924715,
+      2.595567
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-007": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-007/conversation.mp3",
+    "duration": 5.04,
+    "boundaries": [
+      1.2468595,
+      3.1250225
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-008": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-008/conversation.mp3",
+    "duration": 4.16,
+    "boundaries": [
+      1.239864,
+      2.991542
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-009": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-009/conversation.mp3",
+    "duration": 4.32,
+    "boundaries": [
+      1.6453175,
+      2.8905445
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-010": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-010/conversation.mp3",
+    "duration": 5.28,
+    "boundaries": [
+      2.071871,
+      3.4289005
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-011": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-011/conversation.mp3",
+    "duration": 5.04,
+    "boundaries": [
+      2.176712,
+      3.6446709999999998
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-012": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-012/conversation.mp3",
+    "duration": 5.76,
+    "boundaries": [
+      1.873299,
+      3.6808955
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-013": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-013/conversation.mp3",
+    "duration": 5.36,
+    "boundaries": [
+      1.777188,
+      3.1475625000000003
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-014": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-014/conversation.mp3",
+    "duration": 7.2,
+    "boundaries": [
+      3.384422,
+      5.032653
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-015": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-015/conversation.mp3",
+    "duration": 5.52,
+    "boundaries": [
+      1.9931515,
+      3.5075965
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-016": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-016/conversation.mp3",
+    "duration": 5.52,
+    "boundaries": [
+      2.6393874999999998,
+      3.8616215
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-017": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-017/conversation.mp3",
+    "duration": 4.08,
+    "boundaries": [
+      1.2939114999999999,
+      2.778152
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-018": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-018/conversation.mp3",
+    "duration": 5.2,
+    "boundaries": [
+      1.883254,
+      3.4670975
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-019": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-019/conversation.mp3",
+    "duration": 4.8,
+    "boundaries": [
+      1.953583,
+      3.4572564999999997
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-020": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-020/conversation.mp3",
+    "duration": 4.88,
+    "boundaries": [
+      1.5950795,
+      3.1439225
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-021": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-021/conversation.mp3",
+    "duration": 5.2,
+    "boundaries": [
+      1.7609979999999998,
+      3.257211
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-022": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-022/conversation.mp3",
+    "duration": 4.96,
+    "boundaries": [
+      1.944694,
+      3.266236
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-023": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-023/conversation.mp3",
+    "duration": 4.88,
+    "boundaries": [
+      1.826054,
+      2.8576870000000003
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-024": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-024/conversation.mp3",
+    "duration": 4.8,
+    "boundaries": [
+      1.8842174999999999,
+      2.9812925000000003
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-025": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-025/conversation.mp3",
+    "duration": 5.6,
+    "boundaries": [
+      1.8539005,
+      3.4963945
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-026": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-026/conversation.mp3",
+    "duration": 7.04,
+    "boundaries": [
+      1.6537190000000002,
+      4.4215195000000005
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-027": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-027/conversation.mp3",
+    "duration": 4.72,
+    "boundaries": [
+      1.248855,
+      3.0021769999999997
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-028": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-028/conversation.mp3",
+    "duration": 4.64,
+    "boundaries": [
+      1.3559525,
+      2.9338435
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-029": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-029/conversation.mp3",
+    "duration": 4.16,
+    "boundaries": [
+      1.083515,
+      2.647596
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-030": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-030/conversation.mp3",
+    "duration": 5.12,
+    "boundaries": [
+      1.5896145,
+      3.3326645
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "confirm-001": {
+    "mode": "split",
+    "source": "/phrase-audio/confirm-001/dialogue-v2.mp3",
+    "duration": 6.64,
+    "boundaries": [
+      1.8746375,
+      3.986542
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-more-001": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-more-001/conversation.mp3",
+    "duration": 5.52,
+    "boundaries": [
+      1.76949,
+      3.4326985
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-more-002": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-more-002/conversation.mp3",
+    "duration": 5.28,
+    "boundaries": [
+      2.139762,
+      3.8150565
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-more-003": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-more-003/conversation.mp3",
+    "duration": 5.12,
+    "boundaries": [
+      1.5158505,
+      2.8079595
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-more-004": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-more-004/conversation.mp3",
+    "duration": 6.56,
+    "boundaries": [
+      2.0434695,
+      4.3091725
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-more-005": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-more-005/conversation.mp3",
+    "duration": 6.4,
+    "boundaries": [
+      2.219456,
+      3.966837
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-more-006": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-more-006/conversation.mp3",
+    "duration": 5.28,
+    "boundaries": [
+      1.4569955,
+      2.8206575000000003
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-more-007": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-more-007/conversation.mp3",
+    "duration": 6.08,
+    "boundaries": [
+      1.7024605,
+      3.7762469999999997
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-more-008": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-more-008/conversation.mp3",
+    "duration": 5.12,
+    "boundaries": [
+      1.2560544999999999,
+      2.5123695
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-more-009": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-more-009/conversation.mp3",
+    "duration": 6.88,
+    "boundaries": [
+      1.6339345,
+      3.8751359999999995
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-more-010": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-more-010/conversation.mp3",
+    "duration": 5.6,
+    "boundaries": [
+      1.773367,
+      3.436304
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-more-011": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-more-011/conversation.mp3",
+    "duration": 5.68,
+    "boundaries": [
+      1.5627325,
+      3.23644
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-more-012": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-more-012/conversation.mp3",
+    "duration": 5.92,
+    "boundaries": [
+      2.6609635,
+      4.3103515
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-more-013": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-more-013/conversation.mp3",
+    "duration": 5.76,
+    "boundaries": [
+      1.692846,
+      3.5073015
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-more-014": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-more-014/conversation.mp3",
+    "duration": 5.6,
+    "boundaries": [
+      2.101043,
+      3.9300115
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-more-015": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-more-015/conversation.mp3",
+    "duration": 6.32,
+    "boundaries": [
+      2.179524,
+      4.0819165
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-more-016": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-more-016/conversation.mp3",
+    "duration": 5.68,
+    "boundaries": [
+      1.5528114999999998,
+      3.805975
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-more-017": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-more-017/conversation.mp3",
+    "duration": 5.76,
+    "boundaries": [
+      2.1200225,
+      3.2886165
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-more-018": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-more-018/conversation.mp3",
+    "duration": 5.12,
+    "boundaries": [
+      1.7162700000000002,
+      3.5888204999999997
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-more-019": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-more-019/conversation.mp3",
+    "duration": 5.36,
+    "boundaries": [
+      1.2246484999999998,
+      3.0531635
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-more-020": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-more-020/conversation.mp3",
+    "duration": 5.6,
+    "boundaries": [
+      1.9465080000000001,
+      3.8374265000000003
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-more-021": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-more-021/conversation.mp3",
+    "duration": 4.96,
+    "boundaries": [
+      1.649025,
+      3.3555895
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-more-022": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-more-022/conversation.mp3",
+    "duration": 4.96,
+    "boundaries": [
+      1.6793654999999998,
+      3.0383104999999997
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-more-023": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-more-023/conversation.mp3",
+    "duration": 5.04,
+    "boundaries": [
+      1.4778685,
+      2.969558
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-more-024": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-more-024/conversation.mp3",
+    "duration": 6.32,
+    "boundaries": [
+      1.9547275,
+      4.473027500000001
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-more-025": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-more-025/conversation.mp3",
+    "duration": 5.52,
+    "boundaries": [
+      1.5681065,
+      3.368889
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-more-026": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-more-026/conversation.mp3",
+    "duration": 5.36,
+    "boundaries": [
+      1.6864735,
+      2.9305785
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-more-027": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-more-027/conversation.mp3",
+    "duration": 6.56,
+    "boundaries": [
+      1.854739,
+      4.5646825
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-more-028": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-more-028/conversation.mp3",
+    "duration": 6,
+    "boundaries": [
+      1.6937645,
+      3.6149205
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-more-029": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-more-029/conversation.mp3",
+    "duration": 5.68,
+    "boundaries": [
+      1.7622225,
+      3.3339455
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "emotion-more-030": {
+    "mode": "split",
+    "source": "/phrase-audio/emotion-more-030/conversation.mp3",
+    "duration": 5.84,
+    "boundaries": [
+      2.2291725000000002,
+      3.9070635000000005
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-more-001": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-more-001/conversation.mp3",
+    "duration": 5.28,
+    "boundaries": [
+      1.272483,
+      2.7129364999999996
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-more-002": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-more-002/conversation.mp3",
+    "duration": 5.04,
+    "boundaries": [
+      1.772381,
+      3.0167235
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-more-003": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-more-003/conversation.mp3",
+    "duration": 5.84,
+    "boundaries": [
+      1.49627,
+      3.329456
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-more-004": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-more-004/conversation.mp3",
+    "duration": 5.44,
+    "boundaries": [
+      1.709433,
+      3.4158049999999998
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-more-005": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-more-005/conversation.mp3",
+    "duration": 6.24,
+    "boundaries": [
+      2.0109865,
+      3.4310315
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-more-006": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-more-006/conversation.mp3",
+    "duration": 5.76,
+    "boundaries": [
+      1.693594,
+      3.2526985
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-more-007": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-more-007/conversation.mp3",
+    "duration": 6.16,
+    "boundaries": [
+      1.5577325,
+      3.231032
+    ],
+    "review": "Speaker turn pauses checked against the three conversation lines."
+  },
+  "relation-more-008": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-more-008/conversation.mp3",
+    "duration": 5.2,
+    "boundaries": [
+      1.27,
+      3.277313
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-more-009": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-more-009/conversation.mp3",
+    "duration": 4.8,
+    "boundaries": [
+      1.6485940000000001,
+      3.3821655
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-more-010": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-more-010/conversation.mp3",
+    "duration": 5.44,
+    "boundaries": [
+      1.701689,
+      3.885023
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-more-011": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-more-011/conversation.mp3",
+    "duration": 5.12,
+    "boundaries": [
+      1.596984,
+      3.4064734999999997
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-more-012": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-more-012/conversation.mp3",
+    "duration": 6.16,
+    "boundaries": [
+      1.6420635,
+      3.796508
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-more-013": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-more-013/conversation.mp3",
+    "duration": 5.28,
+    "boundaries": [
+      1.775839,
+      3.093685
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-more-014": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-more-014/conversation.mp3",
+    "duration": 5.04,
+    "boundaries": [
+      1.928855,
+      3.0723469999999997
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-more-015": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-more-015/conversation.mp3",
+    "duration": 6.08,
+    "boundaries": [
+      1.562483,
+      3.601553
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-more-016": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-more-016/conversation.mp3",
+    "duration": 5.68,
+    "boundaries": [
+      2.503617,
+      3.9981635
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-more-017": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-more-017/conversation.mp3",
+    "duration": 6.72,
+    "boundaries": [
+      1.9081519999999998,
+      4.728027
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-more-018": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-more-018/conversation.mp3",
+    "duration": 4.72,
+    "boundaries": [
+      1.2601815,
+      3.059127
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-more-019": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-more-019/conversation.mp3",
+    "duration": 5.2,
+    "boundaries": [
+      1.8913944999999999,
+      3.262313
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-more-020": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-more-020/conversation.mp3",
+    "duration": 6.32,
+    "boundaries": [
+      1.868401,
+      3.4619615
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-more-021": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-more-021/conversation.mp3",
+    "duration": 7.04,
+    "boundaries": [
+      2.2164285,
+      4.6460095
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-more-022": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-more-022/conversation.mp3",
+    "duration": 4.72,
+    "boundaries": [
+      1.3925055,
+      3.065261
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-more-023": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-more-023/conversation.mp3",
+    "duration": 6,
+    "boundaries": [
+      1.443356,
+      3.145975
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-more-024": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-more-024/conversation.mp3",
+    "duration": 4,
+    "boundaries": [
+      1.174308,
+      2.6463834999999998
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-more-025": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-more-025/conversation.mp3",
+    "duration": 5.84,
+    "boundaries": [
+      1.8753855000000001,
+      3.7307825
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-more-026": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-more-026/conversation.mp3",
+    "duration": 5.44,
+    "boundaries": [
+      1.4916209999999999,
+      2.8278685
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-more-027": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-more-027/conversation.mp3",
+    "duration": 5.68,
+    "boundaries": [
+      1.6632770000000001,
+      3.9084695
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-more-028": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-more-028/conversation.mp3",
+    "duration": 5.36,
+    "boundaries": [
+      1.873356,
+      3.2897844999999997
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-more-029": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-more-029/conversation.mp3",
+    "duration": 5.6,
+    "boundaries": [
+      1.833685,
+      3.8989795
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "relation-more-030": {
+    "mode": "split",
+    "source": "/phrase-audio/relation-more-030/conversation.mp3",
+    "duration": 6,
+    "boundaries": [
+      2.30085,
+      4.038787
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-more-001": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-more-001/conversation.mp3",
+    "duration": 5.76,
+    "boundaries": [
+      1.9162925,
+      3.7978685
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-more-002": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-more-002/conversation.mp3",
+    "duration": 4.64,
+    "boundaries": [
+      1.140669,
+      3.142449
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-more-003": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-more-003/conversation.mp3",
+    "duration": 5.04,
+    "boundaries": [
+      1.3466215,
+      2.6286055
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-more-004": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-more-004/conversation.mp3",
+    "duration": 5.52,
+    "boundaries": [
+      1.4575395,
+      3.4064059999999996
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-more-005": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-more-005/conversation.mp3",
+    "duration": 5.6,
+    "boundaries": [
+      1.2455325,
+      3.1060205
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-more-006": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-more-006/conversation.mp3",
+    "duration": 5.04,
+    "boundaries": [
+      0.9336504999999999,
+      2.7012695
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-more-007": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-more-007/conversation.mp3",
+    "duration": 4.88,
+    "boundaries": [
+      1.0592065,
+      3.3876644999999996
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-more-008": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-more-008/conversation.mp3",
+    "duration": 5.44,
+    "boundaries": [
+      1.585658,
+      3.397086
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-more-009": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-more-009/conversation.mp3",
+    "duration": 4.96,
+    "boundaries": [
+      1.1679705,
+      2.644354
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-more-010": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-more-010/conversation.mp3",
+    "duration": 5.52,
+    "boundaries": [
+      1.752517,
+      3.6958729999999997
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-more-011": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-more-011/conversation.mp3",
+    "duration": 4.32,
+    "boundaries": [
+      0.8536395,
+      2.8337529999999997
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-more-012": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-more-012/conversation.mp3",
+    "duration": 4,
+    "boundaries": [
+      1.187676,
+      2.5091725
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-more-013": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-more-013/conversation.mp3",
+    "duration": 5.6,
+    "boundaries": [
+      1.36212,
+      3.711916
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-more-014": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-more-014/conversation.mp3",
+    "duration": 3.84,
+    "boundaries": [
+      1.2816100000000001,
+      2.696916
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-more-015": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-more-015/conversation.mp3",
+    "duration": 5.28,
+    "boundaries": [
+      1.985068,
+      3.5408505
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-more-016": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-more-016/conversation.mp3",
+    "duration": 6.24,
+    "boundaries": [
+      1.5959185,
+      4.0333785
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-more-017": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-more-017/conversation.mp3",
+    "duration": 4.72,
+    "boundaries": [
+      1.4684694999999999,
+      3.2717915
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-more-018": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-more-018/conversation.mp3",
+    "duration": 5.2,
+    "boundaries": [
+      1.8260205,
+      3.3815985
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-more-019": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-more-019/conversation.mp3",
+    "duration": 4.88,
+    "boundaries": [
+      1.8269389999999999,
+      3.186565
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-more-020": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-more-020/conversation.mp3",
+    "duration": 5.28,
+    "boundaries": [
+      1.214955,
+      2.9587755
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-more-021": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-more-021/conversation.mp3",
+    "duration": 4.96,
+    "boundaries": [
+      1.3261795,
+      3.4949775
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-more-022": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-more-022/conversation.mp3",
+    "duration": 5.2,
+    "boundaries": [
+      1.1413155000000001,
+      2.5747505
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-more-023": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-more-023/conversation.mp3",
+    "duration": 5.6,
+    "boundaries": [
+      1.0771655,
+      2.959093
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-more-024": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-more-024/conversation.mp3",
+    "duration": 4.64,
+    "boundaries": [
+      1.0475510000000001,
+      2.364195
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-more-025": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-more-025/conversation.mp3",
+    "duration": 5.28,
+    "boundaries": [
+      1.171837,
+      3.5489115
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-more-026": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-more-026/conversation.mp3",
+    "duration": 3.84,
+    "boundaries": [
+      1.1628005,
+      2.3745575
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-more-027": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-more-027/conversation.mp3",
+    "duration": 6.48,
+    "boundaries": [
+      1.7640815,
+      3.844422
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-more-028": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-more-028/conversation.mp3",
+    "duration": 4.88,
+    "boundaries": [
+      1.954966,
+      3.0685715
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-more-029": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-more-029/conversation.mp3",
+    "duration": 5.68,
+    "boundaries": [
+      1.7565644999999999,
+      3.1776755
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "slang-more-030": {
+    "mode": "split",
+    "source": "/phrase-audio/slang-more-030/conversation.mp3",
+    "duration": 5.12,
+    "boundaries": [
+      1.9258505000000001,
+      3.175499
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-001": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-001/conversation.mp3",
+    "duration": 6.4,
+    "boundaries": [
+      2.34093,
+      4.44559
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-002": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-002/conversation.mp3",
+    "duration": 6.16,
+    "boundaries": [
+      1.5408955,
+      3.8993765
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-003": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-003/conversation.mp3",
+    "duration": 5.92,
+    "boundaries": [
+      1.7852945,
+      3.9999205
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-004": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-004/conversation.mp3",
+    "duration": 6.08,
+    "boundaries": [
+      1.687642,
+      3.805669
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-005": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-005/conversation.mp3",
+    "duration": 8.4,
+    "boundaries": [
+      2.8038665,
+      6.102086
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-006": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-006/conversation.mp3",
+    "duration": 6.16,
+    "boundaries": [
+      1.6625965,
+      3.4797504999999997
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-007": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-007/conversation.mp3",
+    "duration": 6.4,
+    "boundaries": [
+      1.7879705000000001,
+      3.501723
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-008": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-008/conversation.mp3",
+    "duration": 5.04,
+    "boundaries": [
+      1.7965535,
+      3.0611905000000004
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-009": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-009/conversation.mp3",
+    "duration": 5.76,
+    "boundaries": [
+      1.63212,
+      3.4787415
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-010": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-010/conversation.mp3",
+    "duration": 7.12,
+    "boundaries": [
+      2.3971090000000004,
+      4.682154000000001
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-011": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-011/conversation.mp3",
+    "duration": 5.84,
+    "boundaries": [
+      1.6200795000000001,
+      3.0278345
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-012": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-012/conversation.mp3",
+    "duration": 6.24,
+    "boundaries": [
+      1.800374,
+      3.7143315
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-013": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-013/conversation.mp3",
+    "duration": 5.84,
+    "boundaries": [
+      2.0774714999999997,
+      3.454138
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-014": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-014/conversation.mp3",
+    "duration": 6.08,
+    "boundaries": [
+      1.8720975000000002,
+      3.4738325
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-015": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-015/conversation.mp3",
+    "duration": 7.28,
+    "boundaries": [
+      2.284943,
+      4.034784500000001
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-016": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-016/conversation.mp3",
+    "duration": 6.64,
+    "boundaries": [
+      2.53466,
+      4.941587
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-017": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-017/conversation.mp3",
+    "duration": 8.08,
+    "boundaries": [
+      3.0989455,
+      5.449399
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-018": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-018/conversation.mp3",
+    "duration": 6.4,
+    "boundaries": [
+      2.4964625,
+      4.0073585000000005
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-019": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-019/conversation.mp3",
+    "duration": 6,
+    "boundaries": [
+      1.9421545,
+      3.4731180000000004
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-020": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-020/conversation.mp3",
+    "duration": 5.92,
+    "boundaries": [
+      1.8890585,
+      3.6394555000000004
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-021": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-021/conversation.mp3",
+    "duration": 6.56,
+    "boundaries": [
+      1.7130725,
+      3.6687865000000004
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-022": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-022/conversation.mp3",
+    "duration": 5.84,
+    "boundaries": [
+      1.4907255,
+      3.5800229999999997
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-023": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-023/conversation.mp3",
+    "duration": 6.24,
+    "boundaries": [
+      2.0935259999999998,
+      4.2961225
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-024": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-024/conversation.mp3",
+    "duration": 7.6,
+    "boundaries": [
+      2.291156,
+      5.334977
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-025": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-025/conversation.mp3",
+    "duration": 6.24,
+    "boundaries": [
+      1.6360885,
+      4.1666895
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-026": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-026/conversation.mp3",
+    "duration": 7.36,
+    "boundaries": [
+      1.9355215000000001,
+      5.3657485000000005
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-027": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-027/conversation.mp3",
+    "duration": 5.84,
+    "boundaries": [
+      1.5288325,
+      3.300975
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-028": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-028/conversation.mp3",
+    "duration": 7.28,
+    "boundaries": [
+      1.8129594999999998,
+      4.337222499999999
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-029": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-029/conversation.mp3",
+    "duration": 5.36,
+    "boundaries": [
+      1.948345,
+      3.3651470000000003
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-030": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-030/conversation.mp3",
+    "duration": 6.16,
+    "boundaries": [
+      2.790635,
+      4.650328999999999
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-031": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-031/conversation.mp3",
+    "duration": 6.32,
+    "boundaries": [
+      2.13,
+      4.074354
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-032": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-032/conversation.mp3",
+    "duration": 6.16,
+    "boundaries": [
+      1.813288,
+      3.4910655
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-033": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-033/conversation.mp3",
+    "duration": 6.8,
+    "boundaries": [
+      1.6743649999999999,
+      4.567686999999999
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-034": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-034/conversation.mp3",
+    "duration": 8.16,
+    "boundaries": [
+      3.0903400000000003,
+      5.521848
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-035": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-035/conversation.mp3",
+    "duration": 6.16,
+    "boundaries": [
+      2.5692744999999997,
+      4.957959499999999
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-036": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-036/conversation.mp3",
+    "duration": 6.56,
+    "boundaries": [
+      1.4181745000000001,
+      3.9730385000000004
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-037": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-037/conversation.mp3",
+    "duration": 5.76,
+    "boundaries": [
+      1.3568935,
+      3.506678
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-038": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-038/conversation.mp3",
+    "duration": 7.04,
+    "boundaries": [
+      1.8383219999999998,
+      4.565261
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-039": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-039/conversation.mp3",
+    "duration": 5.12,
+    "boundaries": [
+      1.5639905,
+      3.755
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-040": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-040/conversation.mp3",
+    "duration": 5.76,
+    "boundaries": [
+      1.333016,
+      3.287506
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-041": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-041/conversation.mp3",
+    "duration": 6.72,
+    "boundaries": [
+      1.8150225,
+      4.635068
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-042": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-042/conversation.mp3",
+    "duration": 5.2,
+    "boundaries": [
+      1.1759865,
+      2.9628345
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-043": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-043/conversation.mp3",
+    "duration": 5.36,
+    "boundaries": [
+      1.363152,
+      3.160227
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-044": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-044/conversation.mp3",
+    "duration": 5.6,
+    "boundaries": [
+      1.5167235,
+      3.6061674999999997
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-045": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-045/conversation.mp3",
+    "duration": 7.52,
+    "boundaries": [
+      1.835193,
+      5.4250565
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-046": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-046/conversation.mp3",
+    "duration": 5.84,
+    "boundaries": [
+      2.0458160000000003,
+      4.215419499999999
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-047": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-047/conversation.mp3",
+    "duration": 5.12,
+    "boundaries": [
+      1.7506805,
+      3.682676
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-048": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-048/conversation.mp3",
+    "duration": 6,
+    "boundaries": [
+      1.2894895000000002,
+      3.695726
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-049": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-049/conversation.mp3",
+    "duration": 6.88,
+    "boundaries": [
+      1.4871085,
+      4.0384355
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-050": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-050/conversation.mp3",
+    "duration": 5.28,
+    "boundaries": [
+      1.4249204999999998,
+      3.1679364999999997
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-051": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-051/conversation.mp3",
+    "duration": 5.76,
+    "boundaries": [
+      1.3149775,
+      3.922211
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-052": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-052/conversation.mp3",
+    "duration": 5.84,
+    "boundaries": [
+      1.6041835,
+      3.382211
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-053": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-053/conversation.mp3",
+    "duration": 6,
+    "boundaries": [
+      1.631542,
+      4.187165500000001
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-054": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-054/conversation.mp3",
+    "duration": 5.36,
+    "boundaries": [
+      1.7018365000000002,
+      3.2817235
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-055": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-055/conversation.mp3",
+    "duration": 5.28,
+    "boundaries": [
+      1.448832,
+      3.3379139999999996
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-056": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-056/conversation.mp3",
+    "duration": 4.56,
+    "boundaries": [
+      1.563345,
+      2.9022335
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-057": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-057/conversation.mp3",
+    "duration": 6.24,
+    "boundaries": [
+      1.554467,
+      2.8067915
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-058": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-058/conversation.mp3",
+    "duration": 5.92,
+    "boundaries": [
+      1.922891,
+      3.943707
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-059": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-059/conversation.mp3",
+    "duration": 5.28,
+    "boundaries": [
+      1.5084125,
+      4.055543999999999
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-060": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-060/conversation.mp3",
+    "duration": 5.76,
+    "boundaries": [
+      1.5046825,
+      3.7613265
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-061": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-061/conversation.mp3",
+    "duration": 5.92,
+    "boundaries": [
+      2.04856,
+      3.6785259999999997
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-062": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-062/conversation.mp3",
+    "duration": 6,
+    "boundaries": [
+      1.733968,
+      3.4067464999999997
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-063": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-063/conversation.mp3",
+    "duration": 7.44,
+    "boundaries": [
+      2.452154,
+      4.9173355
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-064": {
+    "mode": "isolated",
+    "source": "/phrase-audio/first-meet-064/conversation.mp3",
+    "voice": "Microsoft Zira Desktop",
+    "reason": "No two clear speaker pauses in the existing recording."
+  },
+  "first-meet-065": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-065/conversation.mp3",
+    "duration": 6.32,
+    "boundaries": [
+      2.948288,
+      4.487755
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-066": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-066/conversation.mp3",
+    "duration": 6.56,
+    "boundaries": [
+      2.534354,
+      4.280896
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-067": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-067/conversation.mp3",
+    "duration": 5.68,
+    "boundaries": [
+      1.593526,
+      4.06585
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-068": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-068/conversation.mp3",
+    "duration": 8,
+    "boundaries": [
+      2.502574,
+      5.3471995
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-069": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-069/conversation.mp3",
+    "duration": 6.32,
+    "boundaries": [
+      1.9444895,
+      4.1990475
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-070": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-070/conversation.mp3",
+    "duration": 7.04,
+    "boundaries": [
+      2.411576,
+      4.3804875
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-071": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-071/conversation.mp3",
+    "duration": 6.16,
+    "boundaries": [
+      2.289399,
+      4.629092999999999
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-072": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-072/conversation.mp3",
+    "duration": 6.88,
+    "boundaries": [
+      1.9569615,
+      5.0055895
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-073": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-073/conversation.mp3",
+    "duration": 5.84,
+    "boundaries": [
+      1.6713155,
+      3.6539005
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-074": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-074/conversation.mp3",
+    "duration": 6.32,
+    "boundaries": [
+      1.861247,
+      3.4506575
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-075": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-075/conversation.mp3",
+    "duration": 6.56,
+    "boundaries": [
+      2.2152950000000002,
+      3.9756915
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-076": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-076/conversation.mp3",
+    "duration": 5.2,
+    "boundaries": [
+      1.93737,
+      3.6849429999999996
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-077": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-077/conversation.mp3",
+    "duration": 5.04,
+    "boundaries": [
+      1.786168,
+      3.362041
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-078": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-078/conversation.mp3",
+    "duration": 6,
+    "boundaries": [
+      1.5616094999999999,
+      3.6553059999999995
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-079": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-079/conversation.mp3",
+    "duration": 6.8,
+    "boundaries": [
+      1.8873695000000001,
+      3.4087755
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "first-meet-080": {
+    "mode": "split",
+    "source": "/phrase-audio/first-meet-080/conversation.mp3",
+    "duration": 5.92,
+    "boundaries": [
+      1.8400225000000001,
+      4.0180045
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-001": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-001/conversation.mp3",
+    "duration": 6.88,
+    "boundaries": [
+      2.0272785,
+      3.984626
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-002": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-002/conversation.mp3",
+    "duration": 7.6,
+    "boundaries": [
+      2.794059,
+      4.658605
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-003": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-003/conversation.mp3",
+    "duration": 6.08,
+    "boundaries": [
+      1.5807145,
+      4.109093
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-004": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-004/conversation.mp3",
+    "duration": 7.52,
+    "boundaries": [
+      2.4330045,
+      4.8082425
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-005": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-005/conversation.mp3",
+    "duration": 9.2,
+    "boundaries": [
+      2.8851475,
+      5.7112925
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-006": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-006/conversation.mp3",
+    "duration": 6.8,
+    "boundaries": [
+      1.8970069999999999,
+      4.7058955000000005
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-007": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-007/conversation.mp3",
+    "duration": 7.12,
+    "boundaries": [
+      2.393299,
+      4.3604535
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-008": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-008/conversation.mp3",
+    "duration": 6.4,
+    "boundaries": [
+      2.180397,
+      4.489478500000001
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-009": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-009/conversation.mp3",
+    "duration": 6.64,
+    "boundaries": [
+      1.745136,
+      4.5738435
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-010": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-010/conversation.mp3",
+    "duration": 6.88,
+    "boundaries": [
+      2.152222,
+      4.156281
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-011": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-011/conversation.mp3",
+    "duration": 6.64,
+    "boundaries": [
+      1.656723,
+      4.392324
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-012": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-012/conversation.mp3",
+    "duration": 6.72,
+    "boundaries": [
+      2.1468595,
+      4.544138500000001
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-013": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-013/conversation.mp3",
+    "duration": 7.28,
+    "boundaries": [
+      2.286066,
+      4.833662
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-014": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-014/conversation.mp3",
+    "duration": 7.36,
+    "boundaries": [
+      2.040204,
+      4.8107255
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-015": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-015/conversation.mp3",
+    "duration": 7.12,
+    "boundaries": [
+      2.7348075,
+      4.9294104999999995
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-016": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-016/conversation.mp3",
+    "duration": 6.08,
+    "boundaries": [
+      1.8421425,
+      4.1379025
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-017": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-017/conversation.mp3",
+    "duration": 5.92,
+    "boundaries": [
+      2.0789345,
+      3.8387415000000003
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-018": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-018/conversation.mp3",
+    "duration": 6.96,
+    "boundaries": [
+      2.690884,
+      4.732063500000001
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-019": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-019/conversation.mp3",
+    "duration": 6.48,
+    "boundaries": [
+      1.951213,
+      4.427652999999999
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-020": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-020/conversation.mp3",
+    "duration": 6.24,
+    "boundaries": [
+      2.0102725,
+      4.241825
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-021": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-021/conversation.mp3",
+    "duration": 6.4,
+    "boundaries": [
+      1.4418025,
+      3.4744105000000003
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-022": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-022/conversation.mp3",
+    "duration": 6.32,
+    "boundaries": [
+      1.940703,
+      3.941281
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-023": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-023/conversation.mp3",
+    "duration": 6.64,
+    "boundaries": [
+      2.0007595,
+      4.780748
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-024": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-024/conversation.mp3",
+    "duration": 8.48,
+    "boundaries": [
+      2.627211,
+      5.8329595
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-025": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-025/conversation.mp3",
+    "duration": 5.84,
+    "boundaries": [
+      1.4903515,
+      3.846735
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-026": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-026/conversation.mp3",
+    "duration": 5.36,
+    "boundaries": [
+      1.5870069999999998,
+      3.266349
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-027": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-027/conversation.mp3",
+    "duration": 7.68,
+    "boundaries": [
+      1.7729705,
+      4.783583
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-028": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-028/conversation.mp3",
+    "duration": 5.76,
+    "boundaries": [
+      2.1882315,
+      3.7765535000000003
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-029": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-029/conversation.mp3",
+    "duration": 6.24,
+    "boundaries": [
+      1.689603,
+      4.4115305
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-030": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-030/conversation.mp3",
+    "duration": 6.24,
+    "boundaries": [
+      1.983685,
+      3.7295465
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-031": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-031/conversation.mp3",
+    "duration": 6.72,
+    "boundaries": [
+      2.424524,
+      4.3294215000000005
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-032": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-032/conversation.mp3",
+    "duration": 6.32,
+    "boundaries": [
+      2.429853,
+      4.4961905
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-033": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-033/conversation.mp3",
+    "duration": 6.4,
+    "boundaries": [
+      2.8591495,
+      4.6852045
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-034": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-034/conversation.mp3",
+    "duration": 6.48,
+    "boundaries": [
+      2.0208505,
+      4.7880614999999995
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-035": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-035/conversation.mp3",
+    "duration": 8.4,
+    "boundaries": [
+      2.7268365,
+      5.3837075
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-036": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-036/conversation.mp3",
+    "duration": 5.76,
+    "boundaries": [
+      2.369841,
+      4.135873
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-037": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-037/conversation.mp3",
+    "duration": 6.8,
+    "boundaries": [
+      2.349138,
+      4.896281
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-038": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-038/conversation.mp3",
+    "duration": 5.84,
+    "boundaries": [
+      1.7912135,
+      3.628288
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-039": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-039/conversation.mp3",
+    "duration": 6.64,
+    "boundaries": [
+      2.563855,
+      4.833957
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-040": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-040/conversation.mp3",
+    "duration": 7.2,
+    "boundaries": [
+      2.340249,
+      5.088152
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-041": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-041/conversation.mp3",
+    "duration": 6.32,
+    "boundaries": [
+      1.7244674999999998,
+      4.533469500000001
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-042": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-042/conversation.mp3",
+    "duration": 5.92,
+    "boundaries": [
+      1.5007595,
+      4.02415
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-043": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-043/conversation.mp3",
+    "duration": 7.12,
+    "boundaries": [
+      1.9686395,
+      4.975669
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-044": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-044/conversation.mp3",
+    "duration": 5.76,
+    "boundaries": [
+      1.7288549999999998,
+      3.560839
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-045": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-045/conversation.mp3",
+    "duration": 5.68,
+    "boundaries": [
+      1.832052,
+      4.1169955
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-046": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-046/conversation.mp3",
+    "duration": 6.32,
+    "boundaries": [
+      1.239161,
+      4.1294445
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-047": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-047/conversation.mp3",
+    "duration": 6.32,
+    "boundaries": [
+      1.7184125000000001,
+      4.1511565
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-048": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-048/conversation.mp3",
+    "duration": 5.28,
+    "boundaries": [
+      1.5894439999999999,
+      4.0542065
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-049": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-049/conversation.mp3",
+    "duration": 6,
+    "boundaries": [
+      2.0305555,
+      3.9847390000000003
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-050": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-050/conversation.mp3",
+    "duration": 6.96,
+    "boundaries": [
+      2.463685,
+      5.276236
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-051": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-051/conversation.mp3",
+    "duration": 6.72,
+    "boundaries": [
+      2.4642405,
+      4.7899095
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-052": {
+    "mode": "isolated",
+    "source": "/phrase-audio/get-know-052/conversation.mp3",
+    "voice": "Microsoft Zira Desktop",
+    "reason": "No two clear speaker pauses in the existing recording."
+  },
+  "get-know-053": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-053/conversation.mp3",
+    "duration": 8.16,
+    "boundaries": [
+      2.4792175,
+      5.9281295
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-054": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-054/conversation.mp3",
+    "duration": 4.72,
+    "boundaries": [
+      1.5633335,
+      3.0911109999999997
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-055": {
+    "mode": "isolated",
+    "source": "/phrase-audio/get-know-055/conversation.mp3",
+    "voice": "Microsoft Zira Desktop",
+    "reason": "No two clear speaker pauses in the existing recording."
+  },
+  "get-know-056": {
+    "mode": "isolated",
+    "source": "/phrase-audio/get-know-056/conversation.mp3",
+    "voice": "Microsoft Zira Desktop",
+    "reason": "No two clear speaker pauses in the existing recording."
+  },
+  "get-know-057": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-057/conversation.mp3",
+    "duration": 5.52,
+    "boundaries": [
+      1.6855894999999999,
+      3.4871090000000002
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-058": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-058/conversation.mp3",
+    "duration": 7.12,
+    "boundaries": [
+      2.5959295,
+      4.6697165
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-059": {
+    "mode": "split",
+    "source": "/phrase-audio/get-know-059/conversation.mp3",
+    "duration": 7.68,
+    "boundaries": [
+      2.886111,
+      6.0025395
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "get-know-060": {
+    "mode": "isolated",
+    "source": "/phrase-audio/get-know-060/conversation.mp3",
+    "voice": "Microsoft Zira Desktop",
+    "reason": "No two clear speaker pauses in the existing recording."
+  },
+  "pattern-002": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-002/dialogue-v2.mp3",
+    "duration": 6.16,
+    "boundaries": [
+      1.6808275,
+      3.4955105
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-003": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-003/dialogue-v2.mp3",
+    "duration": 6.48,
+    "boundaries": [
+      2.322857,
+      4.1823239999999995
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-004": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-004/dialogue-v2.mp3",
+    "duration": 6.4,
+    "boundaries": [
+      1.7969615,
+      4.1285485
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-005": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-005/dialogue-v2.mp3",
+    "duration": 7.44,
+    "boundaries": [
+      2.1157820000000003,
+      5.026599
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-006": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-006/dialogue-v2.mp3",
+    "duration": 5.52,
+    "boundaries": [
+      1.8579819999999998,
+      3.6858275000000003
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-007": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-007/dialogue-v2.mp3",
+    "duration": 5.44,
+    "boundaries": [
+      1.6512245,
+      3.2551360000000003
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-008": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-008/dialogue-v2.mp3",
+    "duration": 6.32,
+    "boundaries": [
+      1.538662,
+      3.328424
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-009": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-009/dialogue-v2.mp3",
+    "duration": 6.16,
+    "boundaries": [
+      1.6078685,
+      3.998209
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-010": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-010/dialogue-v2.mp3",
+    "duration": 6.64,
+    "boundaries": [
+      2.7264625000000002,
+      4.6589455
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-011": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-011/dialogue-v2.mp3",
+    "duration": 4.96,
+    "boundaries": [
+      1.3818934999999999,
+      3.719059
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-014": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-014/dialogue-v2.mp3",
+    "duration": 7.28,
+    "boundaries": [
+      2.1225055,
+      4.624954499999999
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-016": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-016/dialogue-v2.mp3",
+    "duration": 6.16,
+    "boundaries": [
+      2.288526,
+      4.065329
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-018": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-018/dialogue-v2.mp3",
+    "duration": 6.8,
+    "boundaries": [
+      2.7308505,
+      4.7329025
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-019": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-019/dialogue-v2.mp3",
+    "duration": 7.04,
+    "boundaries": [
+      2.7305215,
+      4.578107
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-020": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-020/dialogue-v2.mp3",
+    "duration": 6.96,
+    "boundaries": [
+      1.5351705,
+      4.49466
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-022": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-022/dialogue-v2.mp3",
+    "duration": 6.64,
+    "boundaries": [
+      2.2364285,
+      3.709501
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-023": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-023/dialogue-v2.mp3",
+    "duration": 5.52,
+    "boundaries": [
+      1.8544445,
+      3.9155214999999997
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-024": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-024/dialogue-v2.mp3",
+    "duration": 6,
+    "boundaries": [
+      1.8201925,
+      3.755884
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-025": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-025/dialogue-v2.mp3",
+    "duration": 6.96,
+    "boundaries": [
+      2.6260545,
+      4.4946825
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-026": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-026/dialogue-v2.mp3",
+    "duration": 6.8,
+    "boundaries": [
+      2.0596595,
+      3.920238
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-027": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-027/dialogue-v2.mp3",
+    "duration": 6.88,
+    "boundaries": [
+      1.768254,
+      4.164127000000001
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-028": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-028/dialogue-v2.mp3",
+    "duration": 6.32,
+    "boundaries": [
+      2.2950115,
+      4.127245
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-029": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-029/dialogue-v2.mp3",
+    "duration": 6.24,
+    "boundaries": [
+      2.1378345,
+      4.3115645
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-030": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-030/dialogue-v2.mp3",
+    "duration": 6.48,
+    "boundaries": [
+      2.3390250000000004,
+      3.8339
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-031": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-031/dialogue-v2.mp3",
+    "duration": 6.24,
+    "boundaries": [
+      1.556644,
+      4.513809500000001
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-032": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-032/dialogue-v2.mp3",
+    "duration": 6.96,
+    "boundaries": [
+      1.720975,
+      4.5603514999999994
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-033": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-033/dialogue-v2.mp3",
+    "duration": 5.76,
+    "boundaries": [
+      1.264592,
+      4.044104
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-034": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-034/dialogue-v2.mp3",
+    "duration": 6.96,
+    "boundaries": [
+      2.6609185,
+      4.888832
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-035": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-035/dialogue-v2.mp3",
+    "duration": 6.32,
+    "boundaries": [
+      2.2745235,
+      3.877381
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-036": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-036/dialogue-v2.mp3",
+    "duration": 8.16,
+    "boundaries": [
+      2.9836845,
+      5.333367
+    ],
+    "review": "Speaker turn pauses checked against the three conversation lines."
+  },
+  "pattern-037": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-037/dialogue-v2.mp3",
+    "duration": 5.2,
+    "boundaries": [
+      2.155306,
+      3.680193
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-038": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-038/dialogue-v2.mp3",
+    "duration": 5.6,
+    "boundaries": [
+      1.439444,
+      3.0563945
+    ],
+    "review": "Speaker turn pauses checked against the three conversation lines."
+  },
+  "pattern-039": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-039/dialogue-v2.mp3",
+    "duration": 6.8,
+    "boundaries": [
+      2.4404874999999997,
+      4.644297
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-041": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-041/dialogue-v2.mp3",
+    "duration": 7.28,
+    "boundaries": [
+      2.2209295,
+      4.2530269999999994
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-042": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-042/dialogue-v2.mp3",
+    "duration": 4.56,
+    "boundaries": [
+      1.355669,
+      2.9961225000000002
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-044": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-044/dialogue-v2.mp3",
+    "duration": 3.92,
+    "boundaries": [
+      1.1123695,
+      2.8330159999999998
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-046": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-046/dialogue-v2.mp3",
+    "duration": 7.12,
+    "boundaries": [
+      2.0774605,
+      4.1066325
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-047": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-047/dialogue-v2.mp3",
+    "duration": 6.48,
+    "boundaries": [
+      1.6784695,
+      4.3834015
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-050": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-050/dialogue-v2.mp3",
+    "duration": 6,
+    "boundaries": [
+      1.6813379999999998,
+      4.61288
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-051": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-051/dialogue-v2.mp3",
+    "duration": 6.32,
+    "boundaries": [
+      2.4357594999999996,
+      4.493786999999999
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-052": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-052/dialogue-v2.mp3",
+    "duration": 6.8,
+    "boundaries": [
+      1.821417,
+      4.4469840000000005
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-053": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-053/dialogue-v2.mp3",
+    "duration": 5.2,
+    "boundaries": [
+      1.5700115000000001,
+      3.607585
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-057": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-057/dialogue-v2.mp3",
+    "duration": 5.2,
+    "boundaries": [
+      1.5264965,
+      3.5641495
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-060": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-060/dialogue-v2.mp3",
+    "duration": 4.72,
+    "boundaries": [
+      1.643685,
+      3.5520519999999998
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-061": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-061/dialogue-v2.mp3",
+    "duration": 5.6,
+    "boundaries": [
+      1.2109865,
+      3.612143
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-062": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-062/dialogue-v2.mp3",
+    "duration": 6.4,
+    "boundaries": [
+      1.7651135,
+      4.577313
+    ],
+    "review": "Speaker turn pauses checked against the three conversation lines."
+  },
+  "pattern-063": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-063/dialogue-v2.mp3",
+    "duration": 5.44,
+    "boundaries": [
+      1.5899429999999999,
+      3.5473585
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-065": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-065/dialogue-v2.mp3",
+    "duration": 6.4,
+    "boundaries": [
+      2.1066325,
+      4.667868500000001
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-066": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-066/dialogue-v2.mp3",
+    "duration": 4.64,
+    "boundaries": [
+      1.369297,
+      3.3565645
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-067": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-067/dialogue-v2.mp3",
+    "duration": 5.6,
+    "boundaries": [
+      2.4094670000000002,
+      3.7857935
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-068": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-068/dialogue-v2.mp3",
+    "duration": 5.6,
+    "boundaries": [
+      1.616474,
+      3.8736735
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-069": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-069/dialogue-v2.mp3",
+    "duration": 6.48,
+    "boundaries": [
+      1.95729,
+      3.3637525
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-070": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-070/dialogue-v2.mp3",
+    "duration": 4.96,
+    "boundaries": [
+      1.4231635,
+      3.0015989999999997
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-071": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-071/dialogue-v2.mp3",
+    "duration": 5.84,
+    "boundaries": [
+      1.5225395,
+      3.7491155000000003
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-072": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-072/dialogue-v2.mp3",
+    "duration": 4.96,
+    "boundaries": [
+      1.2946710000000001,
+      3.064082
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-074": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-074/dialogue-v2.mp3",
+    "duration": 7.68,
+    "boundaries": [
+      2.5718484999999998,
+      4.912982
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-075": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-075/dialogue-v2.mp3",
+    "duration": 5.68,
+    "boundaries": [
+      1.958424,
+      3.8210205
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-077": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-077/dialogue-v2.mp3",
+    "duration": 5.04,
+    "boundaries": [
+      1.489172,
+      3.1289
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-078": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-078/dialogue-v2.mp3",
+    "duration": 6,
+    "boundaries": [
+      1.7286510000000002,
+      3.937823
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-079": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-079/dialogue-v2.mp3",
+    "duration": 4.88,
+    "boundaries": [
+      1.606338,
+      3.2706915
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-084": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-084/dialogue-v2.mp3",
+    "duration": 5.6,
+    "boundaries": [
+      2.2758279999999997,
+      3.619422
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-086": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-086/dialogue-v2.mp3",
+    "duration": 3.84,
+    "boundaries": [
+      1.6100794999999999,
+      2.7342515
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-087": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-087/dialogue-v2.mp3",
+    "duration": 6.32,
+    "boundaries": [
+      2.2965530000000003,
+      3.613934
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-088": {
+    "mode": "isolated",
+    "source": "/phrase-audio/pattern-088/dialogue-v2.mp3",
+    "voice": "Microsoft Zira Desktop",
+    "reason": "No two clear speaker pauses in the existing recording."
+  },
+  "pattern-089": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-089/dialogue-v2.mp3",
+    "duration": 6.8,
+    "boundaries": [
+      2.37161,
+      4.1860885
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-093": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-093/dialogue-v2.mp3",
+    "duration": 7.2,
+    "boundaries": [
+      2.254989,
+      5.044626
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  },
+  "pattern-095": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-095/dialogue-v2.mp3",
+    "duration": 7.12,
+    "boundaries": [
+      1.0961224999999999,
+      3.7017689999999996
+    ],
+    "review": "Speaker turn pauses checked against the three conversation lines."
+  },
+  "pattern-096": {
+    "mode": "split",
+    "source": "/phrase-audio/pattern-096/dialogue-v2.mp3",
+    "duration": 7.12,
+    "boundaries": [
+      2.0843765,
+      4.8016895
+    ],
+    "review": "Detected pauses aligned with the three conversation lines."
+  }
+}
