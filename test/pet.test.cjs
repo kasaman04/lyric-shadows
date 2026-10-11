@@ -34,8 +34,8 @@ test('listening alone saves balance, daily totals and pet history without leveli
   assert.equal(s.daily['2026-10-09'],10);assert.equal(s.daily['2026-10-10'],1790);
   for(let i=0;i<5;i++)action(s,{type:'power',petId:pet.id,requestId:'care-listen-action-'+i},start);
   assert.equal(rules.progress(pet.growthSeconds).level,1);
-  action(s,{type:'food',petId:pet.id,requestId:'care-listen-food-001'},start+DAY);
-  assert.equal(rules.progress(pet.growthSeconds).level,2);assert.equal(pet.stats.power,5);assert.equal(pet.stats.body,1);assert.equal(s.bankSeconds,0);assert.equal(pet.lastFedAt,start+DAY);assert.equal(s.totalSeconds,1800);
+  action(s,{type:'food',petId:pet.id,requestId:'care-listen-food-001'},start+DAY/2);
+  assert.equal(rules.progress(pet.growthSeconds).level,2);assert.equal(pet.stats.power,5);assert.equal(pet.stats.body,1);assert.equal(s.bankSeconds,0);assert.equal(pet.lastFedAt,start+DAY/2);assert.equal(s.totalSeconds,1800);
 });
 test('overlapping players do not double credit and Japan midnight splits actual time',()=>{
   const s=createState(start),id=s.pets[0].id,a=event(start,20,id),b=event(start+10000,20,id);
@@ -45,10 +45,10 @@ test('care uses only approved amounts; duplicates and rejected amounts never ove
   const s=createState(start),pet=s.pets[0];s.bankSeconds=5400;
   const a={type:'brain',seconds:1800,petId:pet.id,requestId:'bulk-brain-action-001'};action(s,a,start);action(s,a,start);
   assert.equal(pet.stats.brain,6);assert.equal(pet.growthSeconds,1800);assert.equal(s.bankSeconds,3600);
-  action(s,{type:'food',seconds:3600,petId:pet.id,requestId:'bulk-food-action-001'},start+DAY);
+  action(s,{type:'food',seconds:3600,petId:pet.id,requestId:'bulk-food-action-001'},start+DAY/2);
   assert.equal(pet.stats.body,12);assert.equal(pet.forms.at(-1).level,3);assert.deepEqual(pet.forms.at(-1).stats,{body:12,power:0,brain:6});
-  for(const seconds of [0,-300,600,1801,7200,'300',null]){const before=JSON.stringify(s);assert.throws(()=>action(s,{type:'power',seconds,petId:pet.id,requestId:'invalid-care-001'},start+DAY));assert.equal(JSON.stringify(s),before);}
-  assert.throws(()=>action(s,{type:'brain',petId:pet.id,requestId:'insufficient-care-001'},start+DAY),/足りません/);
+  for(const seconds of [0,-300,600,1801,7200,'300',null]){const before=JSON.stringify(s);assert.throws(()=>action(s,{type:'power',seconds,petId:pet.id,requestId:'invalid-care-001'},start+DAY/2));assert.equal(JSON.stringify(s),before);}
+  assert.throws(()=>action(s,{type:'brain',petId:pet.id,requestId:'insufficient-care-001'},start+DAY/2),/足りません/);
 });
 test('bulk care snapshots capture the stats at each crossed boundary; past motion is retired',()=>{
   const s=createState(start),pet=s.pets[0];s.bankSeconds=3600;
@@ -57,18 +57,42 @@ test('bulk care snapshots capture the stats at each crossed boundary; past motio
   assert.deepEqual(pet.forms.map(f=>f.level),[1,2]);assert.equal(pet.forms[1].stats.power,6);assert.equal(pet.stats.power,12);assert.equal(pet.forms[1].direction,'power');assert.equal(pet.forms[0].motion,undefined);assert.equal(pet.retiredMotions.length,1);
   const old=JSON.stringify(pet.forms);pet.stats.body=90;assert.equal(JSON.stringify(pet.forms),old);
 });
-test('72-hour deadline is permanent; history accepts pre-death listening; next pet keeps bank',()=>{
-  const s=createState(start),pet=s.pets[0];s.bankSeconds=600;age(s,start+3*DAY-1);assert.equal(pet.diedAt,null);age(s,start+3*DAY);assert.equal(pet.diedAt,start+3*DAY);
-  assert.throws(()=>action(s,{type:'food',petId:pet.id,requestId:'after-death-care-001'},start+3*DAY),/終わりました/);
-  listen(s,[event(start+3*DAY-10000,20,pet.id)],start+3*DAY+10000);assert.equal(pet.seconds,10);assert.equal(s.bankSeconds,620);
-  action(s,{type:'select',element:'dark',requestId:'next-pet-choice-001'},start+3*DAY+10000);assert.equal(s.pets.length,2);assert.equal(s.pets[1].element,'dark');assert.equal(s.pets[1].growthSeconds,0);assert.equal(s.bankSeconds,620);
+test('24-hour deadline is permanent; history accepts pre-death listening; next pet keeps bank',()=>{
+  const s=createState(start),pet=s.pets[0];s.bankSeconds=600;age(s,start+DAY-1);assert.equal(pet.diedAt,null);age(s,start+DAY);assert.equal(pet.diedAt,start+DAY);
+  assert.throws(()=>action(s,{type:'food',petId:pet.id,requestId:'after-death-care-001'},start+DAY),/終わりました/);
+  listen(s,[event(start+DAY-10000,20,pet.id)],start+DAY+10000);assert.equal(pet.seconds,10);assert.equal(s.bankSeconds,620);
+  action(s,{type:'select',element:'dark',requestId:'next-pet-choice-001'},start+DAY+10000);assert.equal(s.pets.length,2);assert.equal(s.pets[1].element,'dark');assert.equal(s.pets[1].growthSeconds,0);assert.equal(s.bankSeconds,620);
+});
+
+test('food just before the deadline grants another 24 hours; other care does not reset it',()=>{
+  const s=createState(start),pet=s.pets[0];s.bankSeconds=900;
+  assert.equal(rules.foodDeadlineMs,DAY);
+  assert.equal(rules.hunger(pet,start),100);
+  assert.ok(Math.abs(rules.hunger(pet,start+8*3600000)-200/3)<0.0001);
+  assert.ok(Math.abs(rules.hunger(pet,start+16*3600000)-100/3)<0.0001);
+  assert.equal(rules.hunger(pet,start+DAY),0);
+  action(s,{type:'power',petId:pet.id,requestId:'deadline-power-001'},start+DAY/2);
+  action(s,{type:'brain',petId:pet.id,requestId:'deadline-brain-001'},start+DAY/2);
+  assert.equal(pet.lastFedAt,start);
+  const fedAt=start+DAY-1;
+  action(s,{type:'food',petId:pet.id,requestId:'deadline-food-001'},fedAt);
+  assert.equal(pet.lastFedAt,fedAt);assert.equal(rules.hunger(pet,fedAt),100);
+  age(s,fedAt+DAY-1);assert.equal(pet.diedAt,null);
+  age(s,fedAt+DAY);assert.equal(pet.diedAt,fedAt+DAY);
+});
+
+test('late listening sync credits the pet only until its 24-hour deadline',()=>{
+  const s=createState(start),pet=s.pets[0];
+  listen(s,[event(start+DAY-10000,20,pet.id)],start+DAY+10000);
+  assert.equal(pet.seconds,10);assert.equal(s.bankSeconds,20);
+  age(s,start+DAY+10000);assert.equal(pet.diedAt,start+DAY);
 });
 test('Lv10 departure archives every stage, resets next pet stats and retains all learning',()=>{
   const s=createState(start),pet=s.pets[0];s.bankSeconds=780;s.totalSeconds=900;s.daily={day:900};
   assert.throws(()=>action(s,{type:'depart',petId:pet.id,requestId:'early-departure-001'},start),/Lv.10/);
   pet.growthSeconds=4410*60;pet.stats.power=882;evolve(pet,start);
   assert.deepEqual(pet.forms.map(f=>f.level),[1,2,3,4,5,6,7,8,9,10]);
-  action(s,{type:'depart',petId:pet.id,requestId:'departure-action-001'},start+DAY);age(s,start+10*DAY);assert.equal(pet.diedAt,null);assert.equal(pet.departedAt,start+DAY);
+  action(s,{type:'depart',petId:pet.id,requestId:'departure-action-001'},start+DAY/2);age(s,start+10*DAY);assert.equal(pet.diedAt,null);assert.equal(pet.departedAt,start+DAY/2);
   action(s,{type:'select',element:'ice',requestId:'new-after-depart-001'},start+10*DAY);
   assert.equal(s.pets.length,2);assert.equal(s.pets[1].element,'ice');assert.deepEqual(s.pets[1].stats,{body:0,power:0,brain:0});assert.equal(s.bankSeconds,780);assert.equal(s.totalSeconds,900);assert.deepEqual(s.daily,{day:900});
 });
@@ -88,7 +112,7 @@ test('playback measures actual wall time, playback speed, buffering and seeking'
 test('invalid playback batches cannot partially mutate state',()=>{
   const s=createState(start),before=JSON.stringify(s);
   assert.throws(()=>listen(s,[event(start,10),event(start,60)],start+60000));assert.equal(JSON.stringify(s),before);
-  assert.throws(()=>listen(s,[event(start+DAY,10)],start));
+  assert.throws(()=>listen(s,[event(start+DAY/2,10)],start));
 });
 test('atomic disk saves survive reopening; concurrent spending cannot overdraw',async()=>{
   await fs.mkdir(path.join(__dirname,'../tmp'),{recursive:true});
@@ -98,14 +122,14 @@ test('atomic disk saves survive reopening; concurrent spending cannot overdraw',
     const initial=await store.transact(id,s=>{s.pets.push(newPet(start));s.bankSeconds=300});
     const results=await Promise.allSettled([1,2].map(n=>store.transact(id,(s,now)=>action(s,{type:'power',petId:initial.pets[0].id,requestId:'concurrent-request-000'+n},now))));
     assert.equal(results.filter(r=>r.status==='fulfilled').length,1);
-    const restored=await new PetStore({dir,clock:()=>start+DAY}).transact(id);assert.equal(restored.bankSeconds,0);assert.equal(restored.pets[0].stats.power,1);assert.equal(restored.pets[0].growthSeconds,300);
+    const restored=await new PetStore({dir,clock:()=>start+DAY/2}).transact(id);assert.equal(restored.bankSeconds,0);assert.equal(restored.pets[0].stats.power,1);assert.equal(restored.pets[0].growthSeconds,300);
   }finally{await fs.rm(dir,{recursive:true,force:true});}
 });
 test('legacy migration preserves bank, actual listening and every old portrait; starter can be reselected',()=>{
   const s=createState(start),pet=s.pets[0];s.version=2;pet.growthSeconds=300;pet.seconds=1234;s.bankSeconds=789;s.totalSeconds=1234;s.daily={day:1234};
   const portrait='/api/pet-art/'+'b'.repeat(64)+'.png';pet.forms[0].imageUrl=portrait;
   migrateGrowth(s);assert.equal(s.version,3);assert.equal(pet.needsStarter,true);assert.equal(pet.legacyForms[0].imageUrl,portrait);assert.equal(pet.growthSeconds,300);
-  action(s,{type:'select',element:'poison',requestId:'migrate-choice-001'},start+DAY);assert.equal(s.pets.length,1);assert.equal(pet.element,'poison');assert.equal(pet.growthSeconds,300);assert.equal(pet.seconds,1234);assert.equal(s.bankSeconds,789);assert.equal(pet.legacyForms[0].imageUrl,portrait);
+  action(s,{type:'select',element:'poison',requestId:'migrate-choice-001'},start+DAY/2);assert.equal(s.pets.length,1);assert.equal(pet.element,'poison');assert.equal(pet.growthSeconds,300);assert.equal(pet.seconds,1234);assert.equal(s.bankSeconds,789);assert.equal(pet.legacyForms[0].imageUrl,portrait);
   migrateGrowth(s);assert.equal(pet.legacyForms.length,1);assert.deepEqual(s.daily,{day:1234});
 });
 test('character is a real transparent PNG, not code or an opaque checkerboard',async()=>{
