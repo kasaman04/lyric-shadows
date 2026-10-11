@@ -1,5 +1,5 @@
 .pet-home-entry{margin-left:auto;border:1px solid #c6dccb;border-radius:22px;background:#eaf6ec;color:#315c45;padding:10px 16px;display:flex;gap:6px;align-items:center;font:600 12px inherit;cursor:pointer;white-space:nowrap}
-.pet-listening-badge{position:fixed;bottom:calc(18px + env(safe-area-inset-bottom));right:18px;z-index:80;background:#edf5e9f2;color:#355743;border:1px solid #c2d3bf;border-radius:22px;padding:10px 14px;box-shadow:0 3px 16px #22372814;font:600 12px 'Noto Sans JP',sans-serif;cursor:pointer}
+.pet-listening-badge{position:fixed;bottom:max(calc(18px + env(safe-area-inset-bottom)),var(--pet-player-clearance,0px));right:18px;z-index:80;background:#edf5e9f2;color:#355743;border:1px solid #c2d3bf;border-radius:22px;padding:10px 14px;box-shadow:0 3px 16px #22372814;font:600 12px 'Noto Sans JP',sans-serif;cursor:pointer}
 body:has(.page-home) .pet-listening-badge,body.pet-open .pet-listening-badge{display:none}
 body.pet-open{overflow:hidden}
 .pet-overlay{position:fixed;inset:0;z-index:1500;background:#dfe5d9;overflow:auto;overscroll-behavior:contain;color:#2c4337;font-family:'Noto Sans JP',sans-serif;font-size:14px}

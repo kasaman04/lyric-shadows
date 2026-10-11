@@ -309,12 +309,38 @@
     else if (action === 'individual' || action === 'detail-current') { selected = button.dataset.id || current().id; mode = 'detail'; render(); }
     if(['back','book','restart','individual','detail-current'].includes(action))overlay.scrollTop=0;
   }
+  function positionListeningBadge(badge) {
+    const app = document.getElementById('app');
+    const players = new Set();
+    let frame = 0;
+    function update() {
+      frame = 0;
+      const currentPlayers = new Set(app.querySelectorAll('.play-controls, .song-audio-player'));
+      for (const player of players) if (!currentPlayers.has(player)) { sizes.unobserve(player); players.delete(player); }
+      let clearance = 0;
+      for (const player of currentPlayers) {
+        if (!players.has(player)) { players.add(player); sizes.observe(player); }
+        const rect = player.getBoundingClientRect();
+        if (rect.width && rect.height && getComputedStyle(player).position === 'fixed') {
+          clearance = Math.max(clearance, window.innerHeight - rect.top + 12);
+        }
+      }
+      badge.style.setProperty('--pet-player-clearance', clearance + 'px');
+    }
+    function schedule() { if (!frame) frame = requestAnimationFrame(update); }
+    const sizes = new ResizeObserver(schedule);
+    new MutationObserver(schedule).observe(app, { childList: true, subtree: true, attributes: true, attributeFilter: ['class', 'style'] });
+    window.addEventListener('resize', schedule);
+    window.visualViewport?.addEventListener('resize', schedule);
+    update();
+  }
   async function initialize(id) {
     device = id; cacheKey = 'petState:' + id; save = local(cacheKey);
     try { store = await openQueue(); } catch { store = await fallbackQueue(); }
     await load();
     window.PetPlayback.configure({ deviceId: device, petId: () => current()?.id, onCredit: record });
     const badge = document.createElement('button'); badge.id = 'petListeningBadge'; badge.className = 'pet-listening-badge'; badge.setAttribute('aria-label', '聴いた時間と育成を見る'); badge.addEventListener('click', open); document.body.appendChild(badge); updateBadge();
+    positionListeningBadge(badge);
     await flush();
     setInterval(flush, 15000);
     setInterval(() => { if (overlay) load(); }, 60000);
