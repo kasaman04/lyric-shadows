@@ -30,7 +30,7 @@ const catalog = context.window.CONVERSATION_PHRASES.map((p,index)=> {
   const candidates = distractors.filter(d=>!new RegExp(d[2],'i').test(conversation));
   const wrong = [candidates[index%candidates.length], candidates[(index+1)%candidates.length]];
   if (new Set(wrong).size !== 2) throw new Error('Not enough distractors: '+p.id);
-  return {id:p.id,authored:false,category:p.category,place:p.pack || p.category,title:p.category+'のひとコマ',alt:p.category+'の会話場面',question:p.lines[0][1],questionJa:p.lines[0][2],options:[{en:p.lines[1][1],ja:p.lines[1][2]},...wrong.map(d=>({en:d[0],ja:d[1],feedback:d[3]+' この場面の話題に合わせて返そう。'}))],correct:0,continuation:p.lines[2][1],continuationJa:p.lines[2][2],note:'「'+p.lines[1][2]+'」と返して、会話がつながった。',image:'/phrase-images/phrases/'+p.id+'.webp',clips:['prompt','reply','response'].map(part=>'/conversation-game-audio/'+p.id+'/'+part+'.mp3')};
+  return {id:p.id,authored:false,category:p.category,place:p.pack || p.category,title:'「'+p.category+'」のひとコマ',alt:'「'+p.category+'」の会話場面',question:p.lines[0][1],questionJa:p.lines[0][2],options:[{en:p.lines[1][1],ja:p.lines[1][2]},...wrong.map(d=>({en:d[0],ja:d[1],feedback:d[3]+' この場面の話題に合わせて返そう。'}))],correct:0,continuation:p.lines[2][1],continuationJa:p.lines[2][2],note:'「'+p.lines[1][2]+'」と返して、会話がつながった。',image:'/phrase-images/phrases/'+p.id+'.webp',clips:['prompt','reply','response'].map(part=>'/conversation-game-audio/'+p.id+'/'+part+'.mp3')};
 });
 fs.writeFileSync(path.join(root,'data/conversation-game-questions.json'),JSON.stringify(catalog,null,2)+'\n');
 if (process.argv.includes('--catalog-only')) process.exit(0);
