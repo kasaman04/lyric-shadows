@@ -1,0 +1,382 @@
+{
+  "id": "Yesterday 赤西仁",
+  "folderName": "Yesterday 赤西仁",
+  "songName": "Yesterday",
+  "artist": "赤西仁",
+  "relationship": "付き合う前の二人",
+  "setting": "The day after a party, Leo meets Nina to say what he could not say yesterday.",
+  "speakerA": {
+    "name": "Leo",
+    "gender": "male",
+    "age": "young",
+    "accent": "american",
+    "tone": "calm",
+    "type": "男性",
+    "voice": "bIHbv24MWmeRgasZH58o",
+    "voiceProfile": "will",
+    "voiceName": "Will"
+  },
+  "speakerB": {
+    "name": "Nina",
+    "gender": "female",
+    "age": "young",
+    "accent": "american",
+    "tone": "warm",
+    "type": "女性",
+    "voice": "cNYrMw9glwJZXR8RwbuR",
+    "voiceProfile": "belle",
+    "voiceName": "Belle"
+  },
+  "thumbnailUrl": "/songs/Yesterday%20%E8%B5%A4%E8%A5%BF%E4%BB%81/thumbnail.jpg",
+  "artworkSourceUrl": "https://www.universal-music.co.jp/jin-akanishi/products/upch-20476/",
+  "timingReviewMode": true,
+  "lyrics": "I hope my decisions from yesterday\nDon't come back to haunt me\nI wasn't expecting this today\nI keep on thinking\nKeep daydreaming 'bout you…\n\nI keep thinking 'bout\nThinking 'bout\nThinking 'bout\nAbout you...\nI keep thinking 'bout\nThinking 'bout\nThinking 'bout\n\nI can't get you, get you, off my\nMind mind mind\nTried to get you, get you, off my\nMind mind mind\nI want you... (I keep thinking 'bout)\nShoulda told you yesterday\n\nYesterday yesterday\nYes yes yes\nYes yes yes\nYesterday\nYes yes yes\nYes yes yes\nYesterday\n\nReminiscing on your silhouette, yeah\nBaby I don't wanna live with regrets\nThis feeling is something new to me\nI keep on thinking\nKeep daydreaming 'bout you…\n\nI keep thinking 'bout\nThinking 'bout\nThinking 'bout\nAbout you...\nI keep thinking 'bout\nThinking 'bout\nThinking 'bout\n\nI can't get you, get you, off my\nMind mind mind\nTried to get you, get you, off my\nMind mind mind\nI want you... (I keep thinking 'bout)\nShoulda told you yesterday\n\nYesterday yesterday\nYes yes yes\nYes yes yes\nYesterday\nYes yes yes\nYes yes yes\nYesterday\n\nYes yes yes yes yes\nYesterday\nYes yes yes\nYes yes yes\nYesterday",
+  "lyricsJa": [
+    {
+      "en": "I hope my decisions from yesterday",
+      "ja": "昨日の自分の選択が"
+    },
+    {
+      "en": "Don't come back to haunt me",
+      "ja": "あとになって僕を苦しめないといい"
+    },
+    {
+      "en": "I wasn't expecting this today",
+      "ja": "今日こんなことになるとは思っていなかった"
+    },
+    {
+      "en": "I keep on thinking",
+      "ja": "ずっと考えてしまう"
+    },
+    {
+      "en": "Keep daydreaming 'bout you…",
+      "ja": "君のことをぼんやり思い描いてばかりいる"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "I keep thinking 'bout",
+      "ja": "ずっと考えている"
+    },
+    {
+      "en": "Thinking 'bout",
+      "ja": "考えている"
+    },
+    {
+      "en": "Thinking 'bout",
+      "ja": "考えている"
+    },
+    {
+      "en": "About you...",
+      "ja": "君のことを…"
+    },
+    {
+      "en": "I keep thinking 'bout",
+      "ja": "ずっと考えている"
+    },
+    {
+      "en": "Thinking 'bout",
+      "ja": "考えている"
+    },
+    {
+      "en": "Thinking 'bout",
+      "ja": "考えている"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "I can't get you, get you, off my",
+      "ja": "どうしても君を頭から追い出せない"
+    },
+    {
+      "en": "Mind mind mind",
+      "ja": "頭から、頭から、離れない"
+    },
+    {
+      "en": "Tried to get you, get you, off my",
+      "ja": "君を忘れようとしてみたけれど"
+    },
+    {
+      "en": "Mind mind mind",
+      "ja": "やっぱり頭から離れない"
+    },
+    {
+      "en": "I want you... (I keep thinking 'bout)",
+      "ja": "君が欲しい…（ずっと考えている）"
+    },
+    {
+      "en": "Shoulda told you yesterday",
+      "ja": "昨日、君に伝えておけばよかった"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "Yesterday yesterday",
+      "ja": "昨日、昨日のうちに"
+    },
+    {
+      "en": "Yes yes yes",
+      "ja": "そう、そう、そう"
+    },
+    {
+      "en": "Yes yes yes",
+      "ja": "そう、そう、そう"
+    },
+    {
+      "en": "Yesterday",
+      "ja": "昨日"
+    },
+    {
+      "en": "Yes yes yes",
+      "ja": "そう、そう、そう"
+    },
+    {
+      "en": "Yes yes yes",
+      "ja": "そう、そう、そう"
+    },
+    {
+      "en": "Yesterday",
+      "ja": "昨日"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "Reminiscing on your silhouette, yeah",
+      "ja": "君の姿を思い返している"
+    },
+    {
+      "en": "Baby I don't wanna live with regrets",
+      "ja": "後悔を抱えたまま生きたくないんだ"
+    },
+    {
+      "en": "This feeling is something new to me",
+      "ja": "こんな気持ちは僕にとって初めてだ"
+    },
+    {
+      "en": "I keep on thinking",
+      "ja": "ずっと考えてしまう"
+    },
+    {
+      "en": "Keep daydreaming 'bout you…",
+      "ja": "君のことをぼんやり思い描いてばかりいる"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "I keep thinking 'bout",
+      "ja": "ずっと考えている"
+    },
+    {
+      "en": "Thinking 'bout",
+      "ja": "考えている"
+    },
+    {
+      "en": "Thinking 'bout",
+      "ja": "考えている"
+    },
+    {
+      "en": "About you...",
+      "ja": "君のことを…"
+    },
+    {
+      "en": "I keep thinking 'bout",
+      "ja": "ずっと考えている"
+    },
+    {
+      "en": "Thinking 'bout",
+      "ja": "考えている"
+    },
+    {
+      "en": "Thinking 'bout",
+      "ja": "考えている"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "I can't get you, get you, off my",
+      "ja": "どうしても君を頭から追い出せない"
+    },
+    {
+      "en": "Mind mind mind",
+      "ja": "頭から、頭から、離れない"
+    },
+    {
+      "en": "Tried to get you, get you, off my",
+      "ja": "君を忘れようとしてみたけれど"
+    },
+    {
+      "en": "Mind mind mind",
+      "ja": "やっぱり頭から離れない"
+    },
+    {
+      "en": "I want you... (I keep thinking 'bout)",
+      "ja": "君が欲しい…（ずっと考えている）"
+    },
+    {
+      "en": "Shoulda told you yesterday",
+      "ja": "昨日、君に伝えておけばよかった"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "Yesterday yesterday",
+      "ja": "昨日、昨日のうちに"
+    },
+    {
+      "en": "Yes yes yes",
+      "ja": "そう、そう、そう"
+    },
+    {
+      "en": "Yes yes yes",
+      "ja": "そう、そう、そう"
+    },
+    {
+      "en": "Yesterday",
+      "ja": "昨日"
+    },
+    {
+      "en": "Yes yes yes",
+      "ja": "そう、そう、そう"
+    },
+    {
+      "en": "Yes yes yes",
+      "ja": "そう、そう、そう"
+    },
+    {
+      "en": "Yesterday",
+      "ja": "昨日"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "Yes yes yes yes yes",
+      "ja": "そう、そう、そう、そう、そう"
+    },
+    {
+      "en": "Yesterday",
+      "ja": "昨日"
+    },
+    {
+      "en": "Yes yes yes",
+      "ja": "そう、そう、そう"
+    },
+    {
+      "en": "Yes yes yes",
+      "ja": "そう、そう、そう"
+    },
+    {
+      "en": "Yesterday",
+      "ja": "昨日"
+    }
+  ],
+  "lyricConnections": [
+    {
+      "lyricExpression": "off my mind",
+      "conversationExpression": "couldn't get you off my mind",
+      "explanationJa": "「頭から離れない」。相手や出来事をずっと考えてしまうときに使う。"
+    },
+    {
+      "lyricExpression": "Shoulda told you yesterday",
+      "conversationExpression": "I should have told you yesterday",
+      "explanationJa": "「昨日伝えるべきだった」。should have＋過去分詞で過去の後悔を表す。"
+    },
+    {
+      "lyricExpression": "live with regrets",
+      "conversationExpression": "I don't want to live with regrets",
+      "explanationJa": "「後悔を抱えて生きる」。後悔を避けて行動したい気持ちを伝える。"
+    }
+  ],
+  "conversation": [
+    {
+      "speaker": "A",
+      "speakerName": "Leo",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "I wanted to tell you something yesterday, but I lost my nerve.",
+          "audio": "/songs/Yesterday%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/ad109c96f3bd585b/0-0.mp3"
+        }
+      ],
+      "japanese": "昨日、君に伝えたいことがあったんだけど、勇気が出なかった。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Nina",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "You looked distracted. I thought something was wrong.",
+          "audio": "/songs/Yesterday%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/ad109c96f3bd585b/1-0.mp3"
+        }
+      ],
+      "japanese": "なんだか上の空だったね。何かあったのかと思った。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Leo",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "Nothing was wrong. I just couldn't get you off my mind after I got home.",
+          "audio": "/songs/Yesterday%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/ad109c96f3bd585b/2-0.mp3"
+        }
+      ],
+      "japanese": "何かあったわけじゃない。家に帰ってからも君のことが頭から離れなかったんだ。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Nina",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "Really? I had no idea.",
+          "audio": "/songs/Yesterday%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/ad109c96f3bd585b/3-0.mp3"
+        }
+      ],
+      "japanese": "本当に？　全然気づかなかった。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Leo",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "I like you. I should have told you yesterday. I don't want to live with regrets.",
+          "audio": "/songs/Yesterday%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/ad109c96f3bd585b/4-0.mp3"
+        }
+      ],
+      "japanese": "君が好きだ。昨日伝えるべきだった。後悔したくないんだ。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Nina",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "I'm glad you told me today. I like you too.",
+          "audio": "/songs/Yesterday%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/ad109c96f3bd585b/5-0.mp3"
+        }
+      ],
+      "japanese": "今日伝えてくれてうれしい。私もあなたが好き。"
+    }
+  ],
+  "createdAt": "2026-10-14T01:43:02.765Z",
+  "conversationAudioStatus": "ready",
+  "conversationAudioModel": "eleven_v4"
+}

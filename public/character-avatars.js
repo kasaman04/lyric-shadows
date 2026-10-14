@@ -154,5 +154,9 @@ window.SONG_CHARACTER_AVATARS = {
   "Notes'n'Words ONE OK ROCK": {
     "A": "/character-avatars/4e6f746573276e27576f726473204f4e-346fe57a-a.svg",
     "B": "/character-avatars/4e6f746573276e27576f726473204f4e-346fe57a-b.svg"
+  },
+  "Yesterday 赤西仁": {
+    "A": "/character-avatars/59657374657264617920e8b5a4e8a5bf-b482d7df-a.svg",
+    "B": "/character-avatars/59657374657264617920e8b5a4e8a5bf-b482d7df-b.svg"
   }
 };
