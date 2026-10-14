@@ -8,6 +8,13 @@ const root = path.resolve(__dirname, '..');
 const context = { window: {} };
 vm.runInNewContext(fs.readFileSync(path.join(root, 'public/dramas.js'), 'utf8'), context);
 const tracks = {};
+const selectedDrama = process.argv[2];
+if (selectedDrama) {
+  if (!context.window.DRAMAS.some(drama => drama.id === selectedDrama)) throw new Error(`Unknown drama: ${selectedDrama}`);
+  const previous = { window: {} };
+  vm.runInNewContext(fs.readFileSync(path.join(root, 'public/drama-playback.js'), 'utf8'), previous);
+  Object.assign(tracks, previous.window.DRAMA_PLAYBACK);
+}
 function ffmpeg(args, maxBuffer = 64 * 1024 * 1024) {
   const result = spawnSync('ffmpeg', ['-nostdin', '-v', 'error', ...args], { maxBuffer });
   if (result.error) throw result.error;
@@ -15,6 +22,7 @@ function ffmpeg(args, maxBuffer = 64 * 1024 * 1024) {
   return result.stdout;
 }
 for (const drama of context.window.DRAMAS) {
+  if (selectedDrama && drama.id !== selectedDrama) continue;
   for (const episode of drama.episodes) {
     const relative = `/drama-audio/${drama.id}/${episode.id}/continuous-20261009-v1.mp3`;
     const output = path.join(root, 'public', relative);
