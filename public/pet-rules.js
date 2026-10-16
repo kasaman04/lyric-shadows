@@ -34,15 +34,29 @@
   function dominant(stats) { return ['body','power','brain'].sort((a,b)=>stats[b]-stats[a])[0]; }
   function choose(level,stats,previous,seed,id) { return species(id || catalog[previous-1]?.element || 'grass',level); }
   const ended = pet => !!(pet?.diedAt || pet?.departedAt);
-  const listeningDeadline = pet => (pet.lastListenedAt ?? pet.bornAt) + listeningTimeoutMs;
+  const listeningDeadline = pet => pet.lifeExpiresAt ?? (pet.lastListenedAt ?? pet.bornAt) + listeningTimeoutMs;
   function recordListeningLife(pet,start,end) {
-    if (!pet || pet.departedAt || (pet.diedAt && pet.deathReason !== 'inactivity') ||
-        start < pet.bornAt || start >= listeningDeadline(pet) || end <= start) return false;
-    if (end > (pet.lastListenedAt ?? pet.bornAt)) {
-      pet.lastListenedAt = end;
-      if (pet.deathReason === 'inactivity') { pet.diedAt = null; delete pet.deathReason; }
+    if (!pet || pet.departedAt || (pet.diedAt && pet.deathReason !== 'inactivity') || start < pet.bornAt || end <= start) return false;
+    const baseAt = pet.lifeBaseAt ?? pet.bornAt;
+    if (end <= baseAt) return false;
+    const intervals = [...(pet.lifeIntervals || []), [Math.max(start,baseAt),end]].sort((a,b)=>a[0]-b[0]);
+    const merged = [];
+    for (const [s,e] of intervals) {
+      if (merged.length && s <= merged.at(-1)[1]) merged.at(-1)[1] = Math.max(e,merged.at(-1)[1]);
+      else merged.push([s,e]);
     }
-    return true;
+    let expires = pet.lifeBaseExpiresAt ?? listeningDeadline(pet), credited = 0;
+    const before = pet.lifeCreditedMs || 0;
+    // Replaying a unique chronological ledger also handles late and out-of-order offline records.
+    for (const [s,e] of merged) {
+      if (s >= expires) break;
+      credited += e-s;
+      expires = Math.min(e+listeningTimeoutMs, expires+e-s);
+      pet.lastListenedAt = Math.max(pet.lastListenedAt ?? pet.bornAt,e);
+    }
+    pet.lifeIntervals = merged; pet.lifeCreditedMs = credited; pet.lifeExpiresAt = expires;
+    if (pet.deathReason === 'inactivity' && expires > pet.diedAt) { pet.diedAt = null; delete pet.deathReason; }
+    return credited > before;
   }
   function hunger(pet,now) { return Math.max(0,Math.min(100,100*(1-((pet.diedAt||pet.departedAt||now)-pet.lastFedAt)/foodDeadlineMs))); }
   function dayKey(now) { return new Date(now+9*3600000).toISOString().slice(0,10); }
