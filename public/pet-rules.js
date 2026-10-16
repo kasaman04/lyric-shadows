@@ -36,6 +36,7 @@
   function choose(level,stats,previous,seed,id) { return species(id || catalog[previous-1]?.element || 'grass',level); }
   const ended = pet => !!(pet?.diedAt || pet?.departedAt);
   const listeningDeadline = pet => pet.lifeExpiresAt ?? (pet.lastListenedAt ?? pet.bornAt) + listeningTimeoutMs;
+  const lifePercent = (pet,now) => Math.max(0,Math.min(100,100*(listeningDeadline(pet)-now)/listeningTimeoutMs));
   function recordListeningLife(pet,start,end) {
     if (!pet || pet.departedAt || (pet.diedAt && pet.deathReason !== 'inactivity') || start < pet.bornAt || end <= start) return false;
     const baseAt = pet.lifeBaseAt ?? pet.bornAt;
@@ -62,5 +63,5 @@
   function hunger(pet,now) { return Math.max(0,Math.min(100,100*(1-((pet.diedAt||pet.departedAt||now)-pet.lastFedAt)/foodDeadlineMs))); }
   function dayKey(now) { return new Date(now+9*3600000).toISOString().slice(0,10); }
   const frameStates={idle:[0,1,2,3],food:[4,5,6,7,8,9],power:[10,11,12,13,14,15],brain:[16,17,18,19,20,21],hungry:[22,23,24,25],weak:[26,27]};
-  return {bands,maxLevel,careAmounts,foodDeadlineMs,listeningTimeoutMs,listeningRecoveryMultiplier,listeningDeadline,recordListeningLife,elements,element,species,growth,required,progress,stage,catalog,choose,dominant,ended,hunger,dayKey,frameStates};
+  return {bands,maxLevel,careAmounts,foodDeadlineMs,listeningTimeoutMs,listeningRecoveryMultiplier,listeningDeadline,lifePercent,recordListeningLife,elements,element,species,growth,required,progress,stage,catalog,choose,dominant,ended,hunger,dayKey,frameStates};
 });

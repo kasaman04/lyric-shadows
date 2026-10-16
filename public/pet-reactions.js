@@ -6,7 +6,7 @@
     return Array.from({ length: count }, (_, i) => `<i class="pet-care-particle ${kind}" style="--dx:${(i - (count - 1) / 2) * 32}px;--delay:${.9 + i * .13}s;--twist:${i % 2 ? 18 : -18}deg">${symbol}</i>`).join('');
   }
   const scenes = {
-    food: { duration: 3600, reward: 'おなか 100% · 体格 +1', words: [[0,'いただきます！'],[850,'もぐもぐ、もぐもぐ…'],[2250,'ぷはぁ。おなかいっぱい！']],
+    food: { duration: 3600, reward: '体格 +1', words: [[0,'いただきます！'],[850,'もぐもぐ、もぐもぐ…'],[2250,'大きく育つよ！']],
       art: `<div class="pet-care-actor" aria-hidden="true"><div class="pet-care-rice">${rice}</div><span class="pet-care-munch">もぐもぐ</span>${particles('♥',5,'pet-care-heart')}</div>` },
     power: { duration: 3800, reward: 'パワー +1', words: [[0,'ぐぐぐ…！'],[1150,'ふんっ！'],[2650,'まだまだ強くなる！']],
       art: `<div class="pet-care-floor" aria-hidden="true"><i class="pet-care-ring"></i><i class="pet-care-ring second"></i><span class="pet-care-impact">ドンッ</span></div><div class="pet-care-actor" aria-hidden="true">${particles('✦',7,'pet-care-spark')}</div>` },
@@ -32,7 +32,7 @@
       [.52,'translateY(-23px) rotate(0) scale(.96,1.05)'],[.63,'translateY(-12px) scale(1.04)'],
       [.8,'translateY(-5px) rotate(4deg)'],[1,'translateY(0) scale(1)'] ];
   }
-  function play({ type, habitat, framePlayer, beforeHunger = 100, reward, onEnd = () => {} }) {
+  function play({ type, habitat, framePlayer, reward, onEnd = () => {} }) {
     const scene = scenes[type], sprite = habitat?.querySelector('.pet-character-visual');
     if (!scene || !sprite) return null;
     const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -51,10 +51,6 @@
     const schedule = (fn, ms) => timers.push(setTimeout(() => { if (active) fn(); }, ms));
     framePlayer?.play(type,duration);
     if (!reduced && sprite.animate) animations.push(sprite.animate(frames(type).map(([offset, transform]) => ({ offset, transform })), { duration, easing: 'ease-in-out', fill: 'none' }));
-    if (type === 'food') {
-      const meter = habitat.querySelector('.pet-meter i');
-      if (!reduced && meter?.animate) animations.push(meter.animate([{ width: `${beforeHunger}%` }, { width: '100%' }], { delay: 900, duration: 1500, easing: 'ease-out', fill: 'backwards' }));
-    }
     if (type === 'power' && !reduced) {
       const background = habitat.querySelector('.pet-room');
       if (background?.animate) animations.push(background.animate([{transform:'translate(0)'},{transform:'translate(-4px,2px)'},{transform:'translate(4px,-2px)'},{transform:'translate(-2px,1px)'},{transform:'translate(0)'}],{delay:duration*.5,duration:350,easing:'ease-out'}));
