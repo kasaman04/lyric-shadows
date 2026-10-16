@@ -1,0 +1,6 @@
+.pet-memorial .pet-memorial-visual{position:relative;aspect-ratio:1;container-type:inline-size;width:auto;height:100%;max-width:100%;max-height:100%;flex:none}
+.pet-character-button .pet-memorial-visual{height:min(240px,100%);max-width:84%;margin-bottom:0}
+.pet-memorial .pet-memorial-stone{display:block;width:100%;height:100%;object-fit:contain;animation:none}
+.pet-memorial .pet-memorial-mark{position:absolute;left:34%;top:31%;width:30%;height:25%;pointer-events:none}
+.pet-memorial .pet-memorial-name{position:absolute;left:22%;right:25%;top:57%;display:block;font-size:clamp(8px,6cqi,17px);font-weight:700;line-height:1.25;text-align:center;color:#574d37;overflow-wrap:anywhere;pointer-events:none}
+.pet-memorial-room .pet-speech{white-space:normal;width:max-content;max-width:calc(100% - 28px);text-align:center}
