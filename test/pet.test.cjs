@@ -57,14 +57,14 @@ test('bulk care snapshots capture the stats at each crossed boundary; past motio
   assert.deepEqual(pet.forms.map(f=>f.level),[1,2]);assert.equal(pet.forms[1].stats.power,6);assert.equal(pet.stats.power,12);assert.equal(pet.forms[1].direction,'power');assert.equal(pet.forms[0].motion,undefined);assert.equal(pet.retiredMotions.length,1);
   const old=JSON.stringify(pet.forms);pet.stats.body=90;assert.equal(JSON.stringify(pet.forms),old);
 });
-test('24-hour deadline is permanent; history accepts pre-death listening; next pet keeps bank',()=>{
+test('24 hours with no listening ends care; playback started afterwards cannot revive; next pet keeps bank',()=>{
   const s=createState(start),pet=s.pets[0];s.bankSeconds=600;age(s,start+DAY-1);assert.equal(pet.diedAt,null);age(s,start+DAY);assert.equal(pet.diedAt,start+DAY);
   assert.throws(()=>action(s,{type:'food',petId:pet.id,requestId:'after-death-care-001'},start+DAY),/終わりました/);
-  listen(s,[event(start+DAY-10000,20,pet.id)],start+DAY+10000);assert.equal(pet.seconds,10);assert.equal(s.bankSeconds,620);
-  action(s,{type:'select',element:'dark',requestId:'next-pet-choice-001'},start+DAY+10000);assert.equal(s.pets.length,2);assert.equal(s.pets[1].element,'dark');assert.equal(s.pets[1].growthSeconds,0);assert.equal(s.bankSeconds,620);
+  listen(s,[event(start+DAY+1000,9,pet.id)],start+DAY+10000);assert.equal(pet.seconds,0);assert.equal(s.bankSeconds,609);
+  action(s,{type:'select',element:'dark',requestId:'next-pet-choice-001'},start+DAY+10000);assert.equal(s.pets.length,2);assert.equal(s.pets[1].element,'dark');assert.equal(s.pets[1].growthSeconds,0);assert.equal(s.bankSeconds,609);
 });
 
-test('food just before the deadline grants another 24 hours; other care does not reset it',()=>{
+test('food restores hunger but all care leaves the listening deadline unchanged',()=>{
   const s=createState(start),pet=s.pets[0];s.bankSeconds=900;
   assert.equal(rules.foodDeadlineMs,DAY);
   assert.equal(rules.hunger(pet,start),100);
@@ -77,15 +77,16 @@ test('food just before the deadline grants another 24 hours; other care does not
   const fedAt=start+DAY-1;
   action(s,{type:'food',petId:pet.id,requestId:'deadline-food-001'},fedAt);
   assert.equal(pet.lastFedAt,fedAt);assert.equal(rules.hunger(pet,fedAt),100);
-  age(s,fedAt+DAY-1);assert.equal(pet.diedAt,null);
-  age(s,fedAt+DAY);assert.equal(pet.diedAt,fedAt+DAY);
+  assert.equal(pet.lastListenedAt,start);assert.equal(rules.listeningDeadline(pet),start+DAY);
+  age(s,start+DAY-1);assert.equal(pet.diedAt,null);
+  age(s,start+DAY);assert.equal(pet.diedAt,start+DAY);
 });
 
-test('late listening sync credits the pet only until its 24-hour deadline',()=>{
+test('playback starting before the deadline extends life through the entire playback interval',()=>{
   const s=createState(start),pet=s.pets[0];
   listen(s,[event(start+DAY-10000,20,pet.id)],start+DAY+10000);
-  assert.equal(pet.seconds,10);assert.equal(s.bankSeconds,20);
-  age(s,start+DAY+10000);assert.equal(pet.diedAt,start+DAY);
+  assert.equal(pet.seconds,20);assert.equal(s.bankSeconds,20);
+  age(s,start+DAY+10000);assert.equal(pet.diedAt,null);assert.equal(pet.lastListenedAt,start+DAY+10000);
 });
 test('Lv10 departure archives every stage, resets next pet stats and retains all learning',()=>{
   const s=createState(start),pet=s.pets[0];s.bankSeconds=780;s.totalSeconds=900;s.daily={day:900};

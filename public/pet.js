@@ -7,6 +7,7 @@
   let careReaction = null;
   let careSeconds = 300, careSource = 'coins', chosenElement = 'fire', framePlayer = null, farewellTimer = null;
   let store, cacheKey, offset = 0, collector = null, writing = Promise.resolve();
+  const pendingPlayback = new Map();
   const uid = () => crypto.randomUUID();
   const esc = text => String(text ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const now = () => Date.now() + offset;
@@ -14,7 +15,15 @@
   function remaining(seconds) { return seconds < 60 ? `${Math.ceil(seconds)}秒` : minutes(Math.ceil(seconds / 60) * 60); }
   function current() {
     const pet = save?.pets.at(-1);
-    return pet && !rules.ended(pet) && now() >= pet.lastFedAt + rules.foodDeadlineMs ? { ...pet, diedAt: pet.lastFedAt + rules.foodDeadlineMs } : pet;
+    if (!pet) return pet;
+    const live = { ...pet };
+    for (const event of [...pendingPlayback.values()].filter(e=>e.petId===pet.id).sort((a,b)=>a.start-b.start)) {
+      rules.recordListeningLife(live,event.start,event.end);
+    }
+    if (!rules.ended(live) && now() >= rules.listeningDeadline(live)) {
+      live.diedAt = rules.listeningDeadline(live); live.deathReason = 'inactivity';
+    }
+    return live;
   }
   function portrait(pet, form, { still = false, dead = false } = {}) {
     const safe=url=>url==='/pet-images/baby-v2.png'||/^\/pet-images\/starter-(fire|water|grass|thunder|ice|wind|earth|poison|light|dark)-v1\.png$/.test(url||'')||/^\/api\/pet-art\/[a-f0-9]{64}\.png$/.test(url||'');
@@ -78,6 +87,7 @@
     if (collector && event.petId === collector.petId && event.start <= collector.end + 20 && event.end - collector.start <= 30000) collector.end = Math.max(collector.end, event.end);
     else collector = { ...event, device, id: uid() };
     const copy = { ...collector };
+    pendingPlayback.set(copy.id,copy);
     writing = writing.catch(() => {}).then(() => store.put(copy)).catch(() => { networkError = 'この端末に再生時間を保存できません。空き容量を確認してください。'; });
     queued += (event.end - event.start) / 1000;
     updateBadge();
@@ -112,9 +122,10 @@
       window.PetPlayback.flush(); collector = null; await writing;
       try {
         let events = await store.all();
+        for (const event of events) pendingPlayback.set(event.id,event);
         queued = events.reduce((sum, e) => sum + (e.end - e.start) / 1000, 0);
         const expired = events.filter(e => e.start < Date.now() - 7 * 86400000);
-        if (expired.length) { await store.remove(expired.map(e => e.id)); networkError = '7日以上前の未同期記録は送信できませんでした。'; }
+        if (expired.length) { await store.remove(expired.map(e => e.id)); expired.forEach(e=>pendingPlayback.delete(e.id)); networkError = '7日以上前の未同期記録は送信できませんでした。'; }
         events = events.filter(e => !expired.includes(e)).sort((a, b) => a.start - b.start);
         while (events.length) {
           const batch = events.slice(0, 200);
@@ -122,7 +133,9 @@
           // Playback may extend a record while its earlier portion is in flight.
           // Acknowledge only the portion sent, preserving new seconds in every tab.
           for (const event of batch) if (collector?.id === event.id) collector.start = Math.max(collector.start, event.end);
-          await store.ack(batch); accept(value); events = events.slice(200);
+          await store.ack(batch);
+          for (const event of batch) if (pendingPlayback.get(event.id)?.end <= event.end) pendingPlayback.delete(event.id);
+          accept(value); events = events.slice(200);
         }
         queued = (await store.all()).reduce((sum, e) => sum + (e.end - e.start) / 1000, 0);
         networkError = ''; updateBadge(); if (overlay) render();
@@ -194,10 +207,10 @@
   }
   function room() {
     const pet=current(),p=rules.progress(rules.growth(pet)),form=pet.forms.at(-1);
-    const hungry=rules.hunger(pet,now()),dead=!!pet.diedAt,departed=!!pet.departedAt,ended=dead||departed,left=Math.max(0,pet.lastFedAt+rules.foodDeadlineMs-now());
+    const hungry=rules.hunger(pet,now()),dead=!!pet.diedAt,departed=!!pet.departedAt,ended=dead||departed,left=Math.max(0,rules.listeningDeadline(pet)-now());
     const danger=hungry<34,days=Math.floor(((pet.diedAt||pet.departedAt||now())-pet.bornAt)/86400000)+1;
     const message=departed?'またね。いっしょに聴いてくれて、ありがとう。':dead?'この子は、図鑑でずっと一緒。':p.level===10?'大きくなったよ。旅に出る準備ができた！':hungry<34?'力が出ないよ。ごはんがほしい…':hungry<67?'お腹が空いてます。':'きょうも、いっしょに聴こう。';
-    return '<main class="pet-room-page"><div class="pet-name-row"><h1>'+esc(form.name||pet.name)+'</h1><span>'+rules.element(pet.element).label+' · '+days+'日目</span></div><div class="pet-level-row"><b>Lv.'+p.level+' <small>/ 10</small></b><span>'+(p.level===10?(departed?'旅立った相棒':dead?'成長の記録':'最終進化 · 旅立ちの準備ができました'):'次の進化まで お世話 '+remaining(p.required-p.earned))+'</span><button data-action="rules" class="pet-info-button" aria-label="育成のルール">?</button></div><div class="pet-progress" role="progressbar" aria-label="次の進化まで" aria-valuenow="'+Math.round(p.level===10?100:p.earned/p.required*100)+'" aria-valuemin="0" aria-valuemax="100"><i style="width:'+(p.level===10?100:p.earned/p.required*100)+'%"></i></div><div class="pet-stats"><span>体格 <b>'+pet.stats.body+'</b></span><span>パワー <b>'+pet.stats.power+'</b></span><span>かしこさ <b>'+pet.stats.brain+'</b></span></div><div class="pet-habitat '+(danger&&!ended?'pet-danger':'')+' '+(ended?'pet-ended':'')+'">'+art.room(p.level)+'<p class="pet-speech">'+message+'</p><button data-action="'+(ended?'detail-current':'care')+'" class="pet-character-button" aria-label="'+(ended?'成長の記録を見る':'キャラをタップしてお世話')+'">'+portrait(pet,form,{dead})+'</button>'+(!ended?'<span class="pet-tap-hint">タップでお世話</span><div class="pet-hunger"><span>おなか</span><div class="pet-meter"><i style="width:'+hungry+'%;background:'+(danger?'#ba7764':'#7eaf90')+'"></i></div><b>'+Math.round(hungry)+'%</b></div>':'<div class="pet-hunger pet-ended-caption">'+(departed?'旅立った相棒':'大切な思い出')+'</div>')+'</div>'+designNote(pet)+'<p class="pet-deadline '+(danger&&!ended?'is-danger':'')+'">'+(ended?'聴いた時間も、この子の成長も残っています。':'ごはんの期限まで '+remaining(left/1000))+'</p><button data-action="'+(ended?'restart':p.level===10?'departure':'listen')+'" class="pet-primary" '+(busy?'disabled':'')+'>'+(ended?'次の相棒を選ぶ':p.level===10?'旅立ちを見送る':'♫ 英語を聴く')+'</button><div class="pet-bank-row"><span>使える時間 <b>'+minutes(save.bankSeconds)+'</b>'+(queued>1?' <small>＋'+minutes(queued)+' 同期待ち</small>':'')+'</span><button data-action="records">きょう '+minutes(save.daily[rules.dayKey(now())]||0)+' ↗</button></div></main>';
+    return '<main class="pet-room-page"><div class="pet-name-row"><h1>'+esc(form.name||pet.name)+'</h1><span>'+rules.element(pet.element).label+' · '+days+'日目</span></div><div class="pet-level-row"><b>Lv.'+p.level+' <small>/ 10</small></b><span>'+(p.level===10?(departed?'旅立った相棒':dead?'成長の記録':'最終進化 · 旅立ちの準備ができました'):'次の進化まで お世話 '+remaining(p.required-p.earned))+'</span><button data-action="rules" class="pet-info-button" aria-label="育成のルール">?</button></div><div class="pet-progress" role="progressbar" aria-label="次の進化まで" aria-valuenow="'+Math.round(p.level===10?100:p.earned/p.required*100)+'" aria-valuemin="0" aria-valuemax="100"><i style="width:'+(p.level===10?100:p.earned/p.required*100)+'%"></i></div><div class="pet-stats"><span>体格 <b>'+pet.stats.body+'</b></span><span>パワー <b>'+pet.stats.power+'</b></span><span>かしこさ <b>'+pet.stats.brain+'</b></span></div><div class="pet-habitat '+(danger&&!ended?'pet-danger':'')+' '+(ended?'pet-ended':'')+'">'+art.room(p.level)+'<p class="pet-speech">'+message+'</p><button data-action="'+(ended?'detail-current':'care')+'" class="pet-character-button" aria-label="'+(ended?'成長の記録を見る':'キャラをタップしてお世話')+'">'+portrait(pet,form,{dead})+'</button>'+(!ended?'<span class="pet-tap-hint">タップでお世話</span><div class="pet-hunger"><span>おなか</span><div class="pet-meter"><i style="width:'+hungry+'%;background:'+(danger?'#ba7764':'#7eaf90')+'"></i></div><b>'+Math.round(hungry)+'%</b></div>':'<div class="pet-hunger pet-ended-caption">'+(departed?'旅立った相棒':'大切な思い出')+'</div>')+'</div>'+designNote(pet)+'<p class="pet-deadline '+(left<8*3600000&&!ended?'is-danger':'')+'">'+(ended?'聴いた時間も、この子の成長も残っています。':'英語を聴く期限まで '+remaining(left/1000))+'</p><button data-action="'+(ended?'restart':p.level===10?'departure':'listen')+'" class="pet-primary" '+(busy?'disabled':'')+'>'+(ended?'次の相棒を選ぶ':p.level===10?'旅立ちを見送る':'♫ 英語を聴く')+'</button><div class="pet-bank-row"><span>使える時間 <b>'+minutes(save.bankSeconds)+'</b>'+(queued>1?' <small>＋'+minutes(queued)+' 同期待ち</small>':'')+'</span><button data-action="records">きょう '+minutes(save.daily[rules.dayKey(now())]||0)+' ↗</button></div></main>';
   }
   function book() {
     return '<main class="pet-book"><p class="pet-book-intro">一緒に聴いた時間は、ここに残る。<span>'+save.pets.length+'匹の記録 · '+minutes(save.totalSeconds)+'</span></p><div class="pet-history-grid">'+[...save.pets].reverse().map(pet=>{const form=pet.forms.at(-1);return '<button class="pet-history-card" data-action="individual" data-id="'+pet.id+'">'+portrait(pet,form,{dead:!!pet.diedAt,still:true})+'<strong>'+esc(form.name||pet.name)+'</strong><span>Lv.'+rules.progress(rules.growth(pet)).level+' · '+(pet.departedAt?'旅立ち':pet.diedAt?'思い出':'育成中')+'</span><small>'+new Date(pet.bornAt).toLocaleDateString('ja-JP',{timeZone:'Asia/Tokyo'})+' 〜</small></button>';}).join('')+'</div>'+(!save.pets.length?'<p>最初の相棒との記録が、ここに増えていきます。</p>':'')+'<button data-action="species" class="pet-text-button">属性と進化の図鑑 · '+new Set(save.pets.flatMap(p=>p.forms.map(f=>f.species))).size+' / 100</button></main>';
@@ -217,7 +230,7 @@
       const preview = !enough ? (useCoins ? `あと${100 - coins}コインで、お世話1回。初回正解${Math.ceil((100 - coins) / 10)}問ぶん！` : `あと ${remaining(seconds - save.bankSeconds)}聴くと、お世話できます`) : before.level === 10 ? '最終レベル · お世話で数値を育てよう' : `お世話で成長${after.level > before.level ? ` · Lv.${before.level} → ${after.level}` : ''}`;
       content = `<p class="pet-eyebrow">TIME TO CARE</p><h2 id="petSheetTitle">何をしてあげる？</h2><div class="pet-care-amounts" role="group" aria-label="お世話の支払い方法"><button data-action="care-source" data-source="coins" aria-pressed="${useCoins}" ${busy ? 'disabled' : ''}>コインでお世話</button><button data-action="care-source" data-source="time" aria-pressed="${!useCoins}" ${busy ? 'disabled' : ''}>聴いた時間でお世話</button></div><p class="pet-sheet-sub">${useCoins ? `所持 <b>🪙 ${coins} コイン</b> · 1回100コイン` : `使える時間 <b>${minutes(save.bankSeconds)}</b>`}</p>${useCoins ? '' : `<div class="pet-care-amounts" role="group" aria-label="お世話に使う時間">${rules.careAmounts.map(amount => `<button data-action="care-amount" data-seconds="${amount}" aria-pressed="${amount === careSeconds}" ${busy || save.bankSeconds < amount ? 'disabled' : ''}>${minutes(amount)}</button>`).join('')}</div>`}<p class="pet-care-preview">${preview}</p><div class="pet-care-list">${[['food','◒','ごはん',`おなか全回復・体格 +${gain}`],['power','✦','パワー',`大きな手や腕に育つ · +${gain}`],['brain','✿','かしこさ',`芽や不思議な形に育つ · +${gain}`]].map(([type,icon,title,desc]) => `<button class="pet-care-row" data-action="spend" data-type="${type}" ${busy || rules.ended(pet) || !enough ? 'disabled' : ''}><span class="pet-care-icon ${type}">${icon}</span><span><b>${title}</b><small>${desc}</small></span><strong>${busy ? '…' : useCoins ? '100コイン' : minutes(seconds) + '使う'}</strong></button>`).join('')}</div><p class="pet-sheet-note">${useCoins ? '会話チャレンジの初回正解10問で、お世話1回ぶん。<br>不正解は−3コイン。一度間違えた問題は正解しても加算なし。残高は0未満になりません。' : 'お世話に使った時間でレベルが上がる。<br>残った時間は、明日にも持ち越せる。'}</p>`;
     }
-    if (sheet === 'rules') content = `<h2 id="petSheetTitle">この子との暮らし</h2><p>会話チャレンジは初回正解＋10・不正解−3コイン。一度間違えた問題は、その後に正解してもコインは増えません。100コインでお世話1回、選んだ数値＋1になります。ごはんはおなか全回復・期限24時間へ戻します。</p><p>英語を聴くと、使える時間が貯まります。その時間をお世話に使うと成長します。5分・30分・1時間から選べて、5分ごとに選んだ数値が1増えます。例えば30分を貯めて5分のお世話を6回すると、Lv.1からLv.2になります。ごはんをあげるとおなかが100%になり、期限が24時間に戻ります。8時間でお腹が空き、16時間で弱り、24時間ごはんがないと育成が終わります。アプリを閉じている間も時間は進みます。</p><p>レベルが上がるほどお部屋は荒廃します。体格・パワー・かしこさの育て方で進化が分岐。1レベルごとに姿が進化し、10段階すべてを図鑑に残します。Lv.10で旅立ちを見送ったら、次の相棒を10属性から選べます。コイン・使える時間・学習記録は引き継ぎます。</p><table class="pet-rules-table"><caption>次の1レベルに必要なお世話の時間</caption>${rules.bands.map((min, i) => `<tr><th>Lv.${i + 1} → ${i + 2}</th><td>${minutes(min * 60)}</td></tr>`).join('')}</table><p class="pet-sheet-note">端末ごとに保存。ブラウザのデータを消すと、この端末の図鑑に戻れなくなります。外部YouTubeの埋め込み再生は集計に含みません。</p>`;
+    if (sheet === 'rules') content = `<h2 id="petSheetTitle">この子との暮らし</h2><p>会話チャレンジは初回正解＋10・不正解−3コイン。一度間違えた問題は、その後に正解してもコインは増えません。100コインでお世話1回、選んだ数値＋1になります。ごはんはおなか全回復・体格を育てます。生存期限は実際に英語を聴くと24時間に戻ります。</p><p>英語を聴くと、使える時間が貯まります。その時間をお世話に使うと成長します。5分・30分・1時間から選べて、5分ごとに選んだ数値が1増えます。例えば30分を貯めて5分のお世話を6回すると、Lv.1からLv.2になります。ごはんをあげるとおなかが100%になります。最後に英語を聴いてから24時間、何も聴かないと死亡します。ごはん・パワー・かしこさのお世話では生存期限は延びません。最初の相棒を選んでから最初に聴くまでの期限も24時間です。アプリを閉じている間も時間は進みます。</p><p>レベルが上がるほどお部屋は荒廃します。体格・パワー・かしこさの育て方で進化が分岐。1レベルごとに姿が進化し、10段階すべてを図鑑に残します。Lv.10で旅立ちを見送ったら、次の相棒を10属性から選べます。コイン・使える時間・学習記録は引き継ぎます。</p><table class="pet-rules-table"><caption>次の1レベルに必要なお世話の時間</caption>${rules.bands.map((min, i) => `<tr><th>Lv.${i + 1} → ${i + 2}</th><td>${minutes(min * 60)}</td></tr>`).join('')}</table><p class="pet-sheet-note">端末ごとに保存。ブラウザのデータを消すと、この端末の図鑑に戻れなくなります。外部YouTubeの埋め込み再生は集計に含みません。</p>`;
     if (sheet === 'records') {
       const days = Array.from({ length: 7 }, (_, i) => rules.dayKey(now() - (6 - i) * 86400000));
       const max = Math.max(600, ...days.map(day => save.daily[day] || 0));
