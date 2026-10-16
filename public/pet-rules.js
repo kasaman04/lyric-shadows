@@ -7,6 +7,7 @@
   const careAmounts = [300, 1800, 3600], maxLevel = 10;
   const foodDeadlineMs = 24 * 3600000;
   const listeningTimeoutMs = 24 * 3600000;
+  const listeningRecoveryMultiplier = 12;
   const elements = [
     ['fire','火','ひだねぷに','#e8a08b','小さな炎から、へんてこな火のかたまりへ','coral red, a living orange-yellow flame'],
     ['water','水','しずくぷに','#93bfda','しずくから、ぷるぷるの水のバケモノへ','sky blue, water drop and watery tail'],
@@ -51,7 +52,7 @@
     for (const [s,e] of merged) {
       if (s >= expires) break;
       credited += e-s;
-      expires = Math.min(e+listeningTimeoutMs, expires+e-s);
+      expires = Math.min(e+listeningTimeoutMs, expires+(e-s)*listeningRecoveryMultiplier);
       pet.lastListenedAt = Math.max(pet.lastListenedAt ?? pet.bornAt,e);
     }
     pet.lifeIntervals = merged; pet.lifeCreditedMs = credited; pet.lifeExpiresAt = expires;
@@ -61,5 +62,5 @@
   function hunger(pet,now) { return Math.max(0,Math.min(100,100*(1-((pet.diedAt||pet.departedAt||now)-pet.lastFedAt)/foodDeadlineMs))); }
   function dayKey(now) { return new Date(now+9*3600000).toISOString().slice(0,10); }
   const frameStates={idle:[0,1,2,3],food:[4,5,6,7,8,9],power:[10,11,12,13,14,15],brain:[16,17,18,19,20,21],hungry:[22,23,24,25],weak:[26,27]};
-  return {bands,maxLevel,careAmounts,foodDeadlineMs,listeningTimeoutMs,listeningDeadline,recordListeningLife,elements,element,species,growth,required,progress,stage,catalog,choose,dominant,ended,hunger,dayKey,frameStates};
+  return {bands,maxLevel,careAmounts,foodDeadlineMs,listeningTimeoutMs,listeningRecoveryMultiplier,listeningDeadline,recordListeningLife,elements,element,species,growth,required,progress,stage,catalog,choose,dominant,ended,hunger,dayKey,frameStates};
 });
