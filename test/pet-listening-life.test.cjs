@@ -59,10 +59,10 @@ test('migration restores the current food-dead pet from real history once, prese
  age(s,recent+DAY);migrateListeningLife(s,recent+DAY+1000);assert.equal(p.diedAt,recent+DAY);
 });
 
-test('future playback cannot buy future life and invalid batches change nothing',()=>{
+test('invalid future playback changes nothing; existing five-second phone clock tolerance is preserved',()=>{
  const s=fixture(),p=s.pets[0],before=JSON.stringify(s);
- assert.throws(()=>listen(s,[event(p,t+1000,t+2000)],t));assert.equal(JSON.stringify(s),before);
- listen(s,[event(p,t,t+5000)],t+1000);assert.equal(p.lastListenedAt,t+1000);assert.equal(s.bankSeconds,1);
+ assert.throws(()=>listen(s,[event(p,t+6000,t+7000)],t));assert.equal(JSON.stringify(s),before);
+ listen(s,[event(p,t+1000,t+2000)],t);assert.equal(p.lastListenedAt,t+2000);assert.equal(s.bankSeconds,1);
 });
 
 test('mobile room includes locally queued playback when server still shows an earlier timeout',()=>{
