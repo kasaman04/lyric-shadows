@@ -9,8 +9,10 @@ const context = { window: {} };
 vm.runInNewContext(fs.readFileSync(path.join(root, 'public/dramas.js'), 'utf8'), context);
 const tracks = {};
 const selectedDrama = process.argv[2];
+const selectedEpisode = process.argv[3];
 if (selectedDrama) {
   if (!context.window.DRAMAS.some(drama => drama.id === selectedDrama)) throw new Error(`Unknown drama: ${selectedDrama}`);
+  if (selectedEpisode && !context.window.DRAMAS.find(drama => drama.id === selectedDrama).episodes.some(episode => episode.id === selectedEpisode)) throw new Error(`Unknown episode: ${selectedEpisode}`);
   const previous = { window: {} };
   vm.runInNewContext(fs.readFileSync(path.join(root, 'public/drama-playback.js'), 'utf8'), previous);
   Object.assign(tracks, previous.window.DRAMA_PLAYBACK);
@@ -24,6 +26,7 @@ function ffmpeg(args, maxBuffer = 64 * 1024 * 1024) {
 for (const drama of context.window.DRAMAS) {
   if (selectedDrama && drama.id !== selectedDrama) continue;
   for (const episode of drama.episodes) {
+    if (selectedEpisode && episode.id !== selectedEpisode) continue;
     const relative = `/drama-audio/${drama.id}/${episode.id}/continuous-20261009-v1.mp3`;
     const output = path.join(root, 'public', relative);
     const pcmPath = `${output}.pcm`;
