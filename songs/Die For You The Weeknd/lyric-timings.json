@@ -1,0 +1,307 @@
+{
+  "status": "estimated",
+  "source": {
+    "name": "LRCLIB line sync for The Weeknd - Die For You, cross-checked against Shazam lyrics",
+    "url": "https://lrclib.net/api/get/36392661",
+    "lyricsUrl": "https://www.shazam.com/song/1659510321/die-for-you",
+    "duration": 258.75,
+    "review": "The 260-second synced source matches the 258.75-second attached MP3 and the original solo recording. Line timing and final ad-libs need playback review against this specific file."
+  },
+  "rows": [
+    {
+      "index": 0,
+      "start": 28.91,
+      "end": 33.68
+    },
+    {
+      "index": 1,
+      "start": 33.76,
+      "end": 38.8
+    },
+    {
+      "index": 2,
+      "start": 38.88,
+      "end": 43.18
+    },
+    {
+      "index": 3,
+      "start": 43.26,
+      "end": 47.31
+    },
+    {
+      "index": 4,
+      "start": 47.39,
+      "end": 49.79
+    },
+    {
+      "index": 5,
+      "start": 49.87,
+      "end": 52.67
+    },
+    {
+      "index": 6,
+      "start": 52.75,
+      "end": 57
+    },
+    {
+      "index": 8,
+      "start": 57.08,
+      "end": 60.56
+    },
+    {
+      "index": 9,
+      "start": 60.64,
+      "end": 64.14
+    },
+    {
+      "index": 10,
+      "start": 64.22,
+      "end": 67.75
+    },
+    {
+      "index": 11,
+      "start": 67.83,
+      "end": 71.3
+    },
+    {
+      "index": 12,
+      "start": 71.38,
+      "end": 74.99
+    },
+    {
+      "index": 13,
+      "start": 75.07,
+      "end": 78.46
+    },
+    {
+      "index": 14,
+      "start": 78.54,
+      "end": 80.49
+    },
+    {
+      "index": 15,
+      "start": 80.57,
+      "end": 82.37
+    },
+    {
+      "index": 16,
+      "start": 82.45,
+      "end": 85.86
+    },
+    {
+      "index": 18,
+      "start": 85.94,
+      "end": 89.22
+    },
+    {
+      "index": 19,
+      "start": 89.3,
+      "end": 91.78
+    },
+    {
+      "index": 20,
+      "start": 91.86,
+      "end": 95.63
+    },
+    {
+      "index": 21,
+      "start": 95.71,
+      "end": 99.99
+    },
+    {
+      "index": 22,
+      "start": 100.07,
+      "end": 103.65
+    },
+    {
+      "index": 23,
+      "start": 103.73,
+      "end": 106.2
+    },
+    {
+      "index": 24,
+      "start": 106.28,
+      "end": 109.93
+    },
+    {
+      "index": 25,
+      "start": 110.01,
+      "end": 114.56
+    },
+    {
+      "index": 27,
+      "start": 114.64,
+      "end": 119.44
+    },
+    {
+      "index": 28,
+      "start": 119.52,
+      "end": 124.63
+    },
+    {
+      "index": 29,
+      "start": 124.71,
+      "end": 129.18
+    },
+    {
+      "index": 30,
+      "start": 129.26,
+      "end": 132.68
+    },
+    {
+      "index": 31,
+      "start": 132.76,
+      "end": 135.78
+    },
+    {
+      "index": 32,
+      "start": 135.86,
+      "end": 138.84
+    },
+    {
+      "index": 33,
+      "start": 138.92,
+      "end": 142.89
+    },
+    {
+      "index": 35,
+      "start": 142.97,
+      "end": 146.54
+    },
+    {
+      "index": 36,
+      "start": 146.62,
+      "end": 150.22
+    },
+    {
+      "index": 37,
+      "start": 150.3,
+      "end": 152.15
+    },
+    {
+      "index": 38,
+      "start": 152.23,
+      "end": 153.94
+    },
+    {
+      "index": 39,
+      "start": 154.02,
+      "end": 157.39
+    },
+    {
+      "index": 41,
+      "start": 157.47,
+      "end": 160.91
+    },
+    {
+      "index": 42,
+      "start": 160.99,
+      "end": 163.22
+    },
+    {
+      "index": 43,
+      "start": 163.3,
+      "end": 167.23
+    },
+    {
+      "index": 44,
+      "start": 167.31,
+      "end": 171.44
+    },
+    {
+      "index": 45,
+      "start": 171.52,
+      "end": 175.04
+    },
+    {
+      "index": 46,
+      "start": 175.12,
+      "end": 177.62
+    },
+    {
+      "index": 47,
+      "start": 177.7,
+      "end": 181.71
+    },
+    {
+      "index": 48,
+      "start": 181.79,
+      "end": 186.18
+    },
+    {
+      "index": 50,
+      "start": 186.26,
+      "end": 189.48
+    },
+    {
+      "index": 51,
+      "start": 189.56,
+      "end": 196.46
+    },
+    {
+      "index": 52,
+      "start": 196.54,
+      "end": 200.23
+    },
+    {
+      "index": 53,
+      "start": 200.31,
+      "end": 203.79
+    },
+    {
+      "index": 54,
+      "start": 203.87,
+      "end": 210.53
+    },
+    {
+      "index": 55,
+      "start": 210.61,
+      "end": 214.94
+    },
+    {
+      "index": 57,
+      "start": 215.02,
+      "end": 218.26
+    },
+    {
+      "index": 58,
+      "start": 218.34,
+      "end": 220.76
+    },
+    {
+      "index": 59,
+      "start": 220.84,
+      "end": 224.63
+    },
+    {
+      "index": 60,
+      "start": 224.71,
+      "end": 228.97
+    },
+    {
+      "index": 61,
+      "start": 229.05,
+      "end": 232.4
+    },
+    {
+      "index": 62,
+      "start": 232.48,
+      "end": 235.05
+    },
+    {
+      "index": 63,
+      "start": 235.13,
+      "end": 238.98
+    },
+    {
+      "index": 64,
+      "start": 239.06,
+      "end": 243.67
+    },
+    {
+      "index": 65,
+      "start": 243.75,
+      "end": 245.49
+    }
+  ]
+}

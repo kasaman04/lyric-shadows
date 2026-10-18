@@ -1,0 +1,399 @@
+{
+  "id": "Die For You The Weeknd",
+  "folderName": "Die For You The Weeknd",
+  "songName": "Die For You",
+  "artist": "The Weeknd",
+  "relationship": "遠距離恋愛中の二人",
+  "setting": "Noah and Maya have a late-night video call about the distance between them.",
+  "speakerA": {
+    "name": "Noah",
+    "gender": "male",
+    "age": "young",
+    "accent": "american",
+    "tone": "calm",
+    "type": "男性",
+    "voice": "bIHbv24MWmeRgasZH58o",
+    "voiceProfile": "will",
+    "voiceName": "Will"
+  },
+  "speakerB": {
+    "name": "Maya",
+    "gender": "female",
+    "age": "young",
+    "accent": "american",
+    "tone": "warm",
+    "type": "女性",
+    "voice": "cNYrMw9glwJZXR8RwbuR",
+    "voiceProfile": "belle",
+    "voiceName": "Belle"
+  },
+  "thumbnailUrl": "/songs/Die%20For%20You%20The%20Weeknd/thumbnail.jpg",
+  "artworkSourceUrl": "https://music.apple.com/us/album/starboy/1440870373",
+  "timingReviewMode": false,
+  "lyrics": "I'm findin' ways to articulate the feeling I'm goin' through\nI just can't say I don't love you\n'Cause I love you, yeah\nIt's hard for me to communicate the thoughts that I hold\nBut tonight, I'm gon' let you know\nLet me tell the truth\nBaby, let me tell the truth, yeah\n\nYou know what I'm thinkin', see it in your eyes\nYou hate that you want me, hate it when you cry\nYou're scared to be lonely, especially in the night\nI'm scared that I'll miss you, happens every time\nI don't want this feelin', I can't afford love\nI try to find a reason to pull us apart\nIt ain't workin' 'cause you're perfect\nAnd I know that you're worth it\nI can't walk away, (oh)\n\nEven though we're going through it\nAnd it makes you feel alone\nJust know that I would die for you\nBaby, I would die for you, yeah\nThe distance and the time between us\nIt'll never change my mind\n'Cause baby, I would die for you\nBaby, I would die for you, yeah\n\nI'm finding ways to manipulate the feelin' you're going through\nBut baby-girl, I'm not blaming you\nJust don't blame me too, yeah\n'Cause I can't take this pain forever\nAnd you won't find no one that's better\n'Cause I'm right for you, babe\nI think I'm right for you, babe\n\nYou know what I'm thinking, see it in your eyes\nYou hate that you want me, hate it when you cry\nIt ain't workin' 'cause you're perfect\nAnd I know that you're worth it\nI can't walk away\n\nEven though we're going through it\nAnd it makes you feel alone\nJust know that I would die for you\nBaby, I would die for you, yeah\nThe distance and the time between us\nIt'll never change my mind\n'Cause baby, I would die for you\nBaby, I would die for you, yeah\n\nI would die for you, I would lie for you\nKeep it real with you, I would kill for you, my baby\nI'm just sayin', yeah\nI would die for you, I would lie for you\nKeep it real with you, I would kill for you, my baby\nNa, na, na, na, na, na, na, na\n\nEven though we're going through it\nAnd it makes you feel alone\nJust know that I would die for you\nBaby, I would die for you, yeah\nThe distance and the time between us\nIt'll never change my mind\n'Cause baby, I would die for you\nBaby, I would die for you, yeah\nDie for you",
+  "lyricsJa": [
+    {
+      "en": "I'm findin' ways to articulate the feeling I'm goin' through",
+      "ja": "今の気持ちを言葉にしようとしている"
+    },
+    {
+      "en": "I just can't say I don't love you",
+      "ja": "君を愛していないなんて言えない"
+    },
+    {
+      "en": "'Cause I love you, yeah",
+      "ja": "だって君を愛しているから"
+    },
+    {
+      "en": "It's hard for me to communicate the thoughts that I hold",
+      "ja": "心の中の思いを伝えるのは難しい"
+    },
+    {
+      "en": "But tonight, I'm gon' let you know",
+      "ja": "でも今夜は君に伝えるよ"
+    },
+    {
+      "en": "Let me tell the truth",
+      "ja": "本当のことを言わせて"
+    },
+    {
+      "en": "Baby, let me tell the truth, yeah",
+      "ja": "ねえ、本当のことを話させて"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "You know what I'm thinkin', see it in your eyes",
+      "ja": "君が何を考えているか、目を見れば分かる"
+    },
+    {
+      "en": "You hate that you want me, hate it when you cry",
+      "ja": "君は僕を求める自分が嫌で、泣くのも嫌なんだね"
+    },
+    {
+      "en": "You're scared to be lonely, especially in the night",
+      "ja": "特に夜、一人になるのが怖いんだね"
+    },
+    {
+      "en": "I'm scared that I'll miss you, happens every time",
+      "ja": "僕も君を恋しく思うのが怖い。毎回そうなるから"
+    },
+    {
+      "en": "I don't want this feelin', I can't afford love",
+      "ja": "この気持ちは抱えたくない。恋をする余裕がない"
+    },
+    {
+      "en": "I try to find a reason to pull us apart",
+      "ja": "二人が離れる理由を探してみる"
+    },
+    {
+      "en": "It ain't workin' 'cause you're perfect",
+      "ja": "でもうまくいかない。君が完璧だから"
+    },
+    {
+      "en": "And I know that you're worth it",
+      "ja": "そして君にはその価値があると分かっている"
+    },
+    {
+      "en": "I can't walk away, (oh)",
+      "ja": "君から離れられない"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "Even though we're going through it",
+      "ja": "二人がつらい時期を過ごしていても"
+    },
+    {
+      "en": "And it makes you feel alone",
+      "ja": "それで君が孤独を感じても"
+    },
+    {
+      "en": "Just know that I would die for you",
+      "ja": "君のためなら命を懸けると知ってほしい"
+    },
+    {
+      "en": "Baby, I would die for you, yeah",
+      "ja": "ねえ、君のためなら命を懸けるよ"
+    },
+    {
+      "en": "The distance and the time between us",
+      "ja": "二人の間の距離や時間も"
+    },
+    {
+      "en": "It'll never change my mind",
+      "ja": "僕の気持ちは変えられない"
+    },
+    {
+      "en": "'Cause baby, I would die for you",
+      "ja": "だって君のためなら命を懸ける"
+    },
+    {
+      "en": "Baby, I would die for you, yeah",
+      "ja": "ねえ、君のためなら命を懸けるよ"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "I'm finding ways to manipulate the feelin' you're going through",
+      "ja": "君の抱える気持ちを変えようとしている"
+    },
+    {
+      "en": "But baby-girl, I'm not blaming you",
+      "ja": "でも君を責めているわけじゃない"
+    },
+    {
+      "en": "Just don't blame me too, yeah",
+      "ja": "だから僕のことも責めないで"
+    },
+    {
+      "en": "'Cause I can't take this pain forever",
+      "ja": "この痛みに永遠には耐えられない"
+    },
+    {
+      "en": "And you won't find no one that's better",
+      "ja": "僕よりいい人は見つからないよ"
+    },
+    {
+      "en": "'Cause I'm right for you, babe",
+      "ja": "だって君に合うのは僕だから"
+    },
+    {
+      "en": "I think I'm right for you, babe",
+      "ja": "僕が君に合っていると思うんだ"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "You know what I'm thinking, see it in your eyes",
+      "ja": "君が何を考えているか、目を見れば分かる"
+    },
+    {
+      "en": "You hate that you want me, hate it when you cry",
+      "ja": "君は僕を求める自分が嫌で、泣くのも嫌なんだね"
+    },
+    {
+      "en": "It ain't workin' 'cause you're perfect",
+      "ja": "でもうまくいかない。君が完璧だから"
+    },
+    {
+      "en": "And I know that you're worth it",
+      "ja": "そして君にはその価値があると分かっている"
+    },
+    {
+      "en": "I can't walk away",
+      "ja": "君から離れられない"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "Even though we're going through it",
+      "ja": "二人がつらい時期を過ごしていても"
+    },
+    {
+      "en": "And it makes you feel alone",
+      "ja": "それで君が孤独を感じても"
+    },
+    {
+      "en": "Just know that I would die for you",
+      "ja": "君のためなら命を懸けると知ってほしい"
+    },
+    {
+      "en": "Baby, I would die for you, yeah",
+      "ja": "ねえ、君のためなら命を懸けるよ"
+    },
+    {
+      "en": "The distance and the time between us",
+      "ja": "二人の間の距離や時間も"
+    },
+    {
+      "en": "It'll never change my mind",
+      "ja": "僕の気持ちは変えられない"
+    },
+    {
+      "en": "'Cause baby, I would die for you",
+      "ja": "だって君のためなら命を懸ける"
+    },
+    {
+      "en": "Baby, I would die for you, yeah",
+      "ja": "ねえ、君のためなら命を懸けるよ"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "I would die for you, I would lie for you",
+      "ja": "君のためなら命を懸けるし、嘘もつく"
+    },
+    {
+      "en": "Keep it real with you, I would kill for you, my baby",
+      "ja": "君には本音で向き合う。君のためなら人さえ殺すよ"
+    },
+    {
+      "en": "I'm just sayin', yeah",
+      "ja": "ただ言っているだけさ"
+    },
+    {
+      "en": "I would die for you, I would lie for you",
+      "ja": "君のためなら命を懸けるし、嘘もつく"
+    },
+    {
+      "en": "Keep it real with you, I would kill for you, my baby",
+      "ja": "君には本音で向き合う。君のためなら人さえ殺すよ"
+    },
+    {
+      "en": "Na, na, na, na, na, na, na, na",
+      "ja": "ナ、ナ、ナ、ナ、ナ、ナ、ナ、ナ"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "Even though we're going through it",
+      "ja": "二人がつらい時期を過ごしていても"
+    },
+    {
+      "en": "And it makes you feel alone",
+      "ja": "それで君が孤独を感じても"
+    },
+    {
+      "en": "Just know that I would die for you",
+      "ja": "君のためなら命を懸けると知ってほしい"
+    },
+    {
+      "en": "Baby, I would die for you, yeah",
+      "ja": "ねえ、君のためなら命を懸けるよ"
+    },
+    {
+      "en": "The distance and the time between us",
+      "ja": "二人の間の距離や時間も"
+    },
+    {
+      "en": "It'll never change my mind",
+      "ja": "僕の気持ちは変えられない"
+    },
+    {
+      "en": "'Cause baby, I would die for you",
+      "ja": "だって君のためなら命を懸ける"
+    },
+    {
+      "en": "Baby, I would die for you, yeah",
+      "ja": "ねえ、君のためなら命を懸けるよ"
+    },
+    {
+      "en": "Die for you",
+      "ja": "君のために"
+    }
+  ],
+  "lyricConnections": [
+    {
+      "lyricExpression": "I can't walk away",
+      "conversationExpression": "I do not want to walk away",
+      "explanationJa": "「立ち去る・関係を終わらせる」。つらくても続けたい気持ちを表す。"
+    },
+    {
+      "lyricExpression": "see it in your eyes",
+      "conversationExpression": "I could see it in your eyes",
+      "explanationJa": "「目を見れば分かる」。言葉にしなくても感情が伝わるときに使う。"
+    },
+    {
+      "lyricExpression": "It'll never change my mind",
+      "conversationExpression": "The time between us will not change my mind",
+      "explanationJa": "「気持ちは変わらない」。意志が揺らがないことを伝える。"
+    },
+    {
+      "lyricExpression": "you're worth it",
+      "conversationExpression": "You are worth it",
+      "explanationJa": "「君にはその価値がある」。相手のために努力したい理由を伝える。"
+    }
+  ],
+  "conversation": [
+    {
+      "speaker": "A",
+      "speakerName": "Noah",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "I know the distance has been hard on us, but I do not want to walk away.",
+          "audio": "/songs/Die%20For%20You%20The%20Weeknd/conversation-audio/734eb70dd50b9a4a/0-0.mp3"
+        }
+      ],
+      "japanese": "離れているのがつらいのは分かってる。でも僕は別れたくない。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Maya",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "I was scared to tell you how lonely I felt.",
+          "audio": "/songs/Die%20For%20You%20The%20Weeknd/conversation-audio/734eb70dd50b9a4a/1-0.mp3"
+        }
+      ],
+      "japanese": "寂しかった気持ちを伝えるのが怖かった。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Noah",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "I could see it in your eyes. I should have asked you sooner.",
+          "audio": "/songs/Die%20For%20You%20The%20Weeknd/conversation-audio/734eb70dd50b9a4a/2-0.mp3"
+        }
+      ],
+      "japanese": "君の目を見れば分かった。もっと早く聞くべきだった。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Maya",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "I just need to know that we are both willing to try.",
+          "audio": "/songs/Die%20For%20You%20The%20Weeknd/conversation-audio/734eb70dd50b9a4a/3-0.mp3"
+        }
+      ],
+      "japanese": "二人とも続けるために努力したいのか、知りたいだけ。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "Noah",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "I am. The time between us will not change my mind. You are worth it.",
+          "audio": "/songs/Die%20For%20You%20The%20Weeknd/conversation-audio/734eb70dd50b9a4a/4-0.mp3"
+        }
+      ],
+      "japanese": "僕は努力したい。離れている時間があっても気持ちは変わらない。君は大切な人だから。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Maya",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "Then let us be honest with each other and keep trying.",
+          "audio": "/songs/Die%20For%20You%20The%20Weeknd/conversation-audio/734eb70dd50b9a4a/5-0.mp3"
+        }
+      ],
+      "japanese": "それなら、お互いに本音で話して、続けてみよう。"
+    }
+  ],
+  "createdAt": "2026-10-18T03:03:45.554Z",
+  "conversationAudioStatus": "ready",
+  "conversationAudioModel": "eleven_v4"
+}

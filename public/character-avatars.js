@@ -158,5 +158,9 @@ window.SONG_CHARACTER_AVATARS = {
   "Yesterday 赤西仁": {
     "A": "/character-avatars/59657374657264617920e8b5a4e8a5bf-b482d7df-a.svg",
     "B": "/character-avatars/59657374657264617920e8b5a4e8a5bf-b482d7df-b.svg"
+  },
+  "Die For You The Weeknd": {
+    "A": "/character-avatars/44696520466f7220596f752054686520-70902088-a.svg",
+    "B": "/character-avatars/44696520466f7220596f752054686520-70902088-b.svg"
   }
 };
