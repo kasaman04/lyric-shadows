@@ -16,6 +16,7 @@ EPISODES = {
     1: ("https://www.netflix.com/watch/70196252", "化学教師 ウォルター・ホワイト"),
     2: ("https://www.netflix.com/watch/70196253", "新しい相棒"),
     3: ("https://www.netflix.com/watch/70196254", "人間の成分"),
+    4: ("https://www.netflix.com/watch/70196255", "家族への告知"),
 }
 
 
