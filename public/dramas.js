@@ -9241,5 +9241,875 @@ window.DRAMAS = [
         ]
       }
     ]
+  },
+  {
+    "id": "too-hot-to-handle-2020",
+    "title": "ザ・ジレンマ: もうガマンできない?!",
+    "image": "https://dnm.nflximg.net/api/v6/s0XAg4q_jvYbSSbLvySyUsliNSg/AAAAQexMWUVqsSbuL16UyD2s5ZfHVs2xhsb6RrkIw5jG180F6ggc3Uy14Q35D-D_cCvCpNFn7hKskB9pymgthvCay707DgwCmW0HrD-zujSe3CE_scifw7UE7lnlqIGP7raNYy5h1CBgvzh92VFL6eS2V09oASc.jpg?r=1e2",
+    "imageSource": "https://www.netflix.com/tudum/articles/too-hot-to-handle-season-1-cast-instagrams",
+    "episodes": [
+      {
+        "id": "episode-1",
+        "number": 1,
+        "title": "愛かセックスか賞金か",
+        "clips": [
+          {
+            "english": "-[host] To make it worse, they can't kiss. -No!",
+            "japanese": "さらに悪いことに、キスもできない。 ― そんな！",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/01.mp3",
+            "otherExamples": [
+              {
+                "english": "To make it worse, we can't leave. — No!",
+                "japanese": "さらに悪いことに、出られないんだ。 ― そんな！"
+              },
+              {
+                "english": "To make it worse, they can't help. — Oh, no.",
+                "japanese": "さらに悪いことに、あの人たちも手伝えないんだ。 ― あら、大変。"
+              }
+            ]
+          },
+          {
+            "english": "Hi, I'm Chloe. I'm 20 years old.",
+            "japanese": "こんにちは、クロエです。20歳です。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/02.mp3",
+            "otherExamples": [
+              {
+                "english": "Hi, I'm Maya. I'm twenty-five years old.",
+                "japanese": "こんにちは、マヤです。25歳です。"
+              },
+              {
+                "english": "Hi, I'm Alex. I'm thirty years old.",
+                "japanese": "こんにちは、アレックスです。30歳です。"
+              }
+            ]
+          },
+          {
+            "english": "I'm quite ditzy, as well,",
+            "japanese": "それに、私って結構おっちょこちょいなの。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/03.mp3",
+            "otherExamples": [
+              {
+                "english": "I'm quite forgetful, as well.",
+                "japanese": "私、結構忘れっぽいところもあるんだ。"
+              },
+              {
+                "english": "I'm quite shy, as well.",
+                "japanese": "私、結構人見知りなところもあるんだ。"
+              }
+            ]
+          },
+          {
+            "english": "Dating apps are like a part-time job for me. [giggles]",
+            "japanese": "私にとってデートアプリは、アルバイトみたいなものなの。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/04.mp3",
+            "otherExamples": [
+              {
+                "english": "Looking for an apartment is like a part-time job for me.",
+                "japanese": "私にとって、部屋探しはアルバイトみたいなものだ。"
+              },
+              {
+                "english": "Planning this trip is like a full-time job for me.",
+                "japanese": "私にとって、この旅行の計画は本業みたいなものだ。"
+              }
+            ]
+          },
+          {
+            "english": "Because I just get so addicted to it, like--",
+            "japanese": "だって、すごく夢中になっちゃうから…。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/05.mp3",
+            "otherExamples": [
+              {
+                "english": "Because I just get so absorbed in it.",
+                "japanese": "だって、ついすごく夢中になっちゃうから。"
+              },
+              {
+                "english": "Because I just get so excited about it.",
+                "japanese": "だって、ついすごくわくわくしちゃうから。"
+              }
+            ]
+          },
+          {
+            "english": "-Your eyes are gorgeous, too. Oh, my God. -Thank you.",
+            "japanese": "目もすごくきれいだね。すごい。 ― ありがとう。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/06.mp3",
+            "otherExamples": [
+              {
+                "english": "Your jacket is gorgeous, too. — Thank you.",
+                "japanese": "君のジャケットもすてきだね。 ― ありがとう。"
+              },
+              {
+                "english": "Your garden is beautiful, too. — Thanks.",
+                "japanese": "お庭もきれいですね。 ― ありがとう。"
+              }
+            ]
+          },
+          {
+            "english": "What I'm most proud of is my penis.",
+            "japanese": "一番自慢なのは、自分のペニスだ。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/07.mp3",
+            "otherExamples": [
+              {
+                "english": "What I'm most proud of is my patience.",
+                "japanese": "一番誇りに思っているのは、自分の忍耐力だ。"
+              },
+              {
+                "english": "What I'm most proud of is my cooking.",
+                "japanese": "一番自慢なのは、自分の料理だ。"
+              }
+            ]
+          },
+          {
+            "english": "Have you guys got enough sun lotion on? [laughs]",
+            "japanese": "みんな、日焼け止めは十分塗ってる？",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/08.mp3",
+            "otherExamples": [
+              {
+                "english": "Have you guys got enough water with you?",
+                "japanese": "みんな、水は十分持ってる？"
+              },
+              {
+                "english": "Have you guys got enough warm clothes on?",
+                "japanese": "みんな、十分暖かい服を着てる？"
+              }
+            ]
+          },
+          {
+            "english": "I have 310,000 followers right now. It goes up usually every single day.",
+            "japanese": "今、フォロワーは31万人いるの。たいてい毎日増えてるわ。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/09.mp3",
+            "otherExamples": [
+              {
+                "english": "I have two hundred subscribers right now. The number goes up every week.",
+                "japanese": "今は登録者が200人いる。毎週増えているよ。"
+              },
+              {
+                "english": "I have five plants right now. The collection grows every month.",
+                "japanese": "今は植物を五つ持っている。毎月コレクションが増えているよ。"
+              }
+            ]
+          },
+          {
+            "english": "I think my personality is my best asset, but the eyes go to the boobs.",
+            "japanese": "一番の魅力は性格だと思うけど、みんなの目は胸に行くの。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/10.mp3",
+            "otherExamples": [
+              {
+                "english": "I think my experience is my best asset, but people notice my age.",
+                "japanese": "一番の強みは経験だと思うけど、人は年齢に目を向けるんだ。"
+              },
+              {
+                "english": "I think my writing is my best asset, but people focus on the design.",
+                "japanese": "一番の強みは文章だと思うけど、人はデザインに注目するんだ。"
+              }
+            ]
+          },
+          {
+            "english": "But, like, my face isn't too bad, I don't think, so...",
+            "japanese": "でも、私の顔もそんなに悪くないと思うし…。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/11.mp3",
+            "otherExamples": [
+              {
+                "english": "My cooking isn't too bad, I don't think.",
+                "japanese": "私の料理も、そんなに悪くないと思うよ。"
+              },
+              {
+                "english": "The price isn't too high, I don't think.",
+                "japanese": "値段も、そんなに高くないと思うよ。"
+              }
+            ]
+          },
+          {
+            "english": "I am a deep thinker.",
+            "japanese": "僕は物事を深く考えるタイプだ。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/12.mp3",
+            "otherExamples": [
+              {
+                "english": "I'm a good listener.",
+                "japanese": "私は人の話をよく聞く方だ。"
+              },
+              {
+                "english": "I'm a quick learner.",
+                "japanese": "私は飲み込みが早い方だ。"
+              }
+            ]
+          },
+          {
+            "english": "I would rate myself a ten out of ten.",
+            "japanese": "自分を採点するなら、10点満点で10点ね。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/13.mp3",
+            "otherExamples": [
+              {
+                "english": "I'd rate this café a nine out of ten.",
+                "japanese": "このカフェは10点満点で9点かな。"
+              },
+              {
+                "english": "I'd rate my cooking a seven out of ten.",
+                "japanese": "自分の料理は10点満点で7点かな。"
+              }
+            ]
+          },
+          {
+            "english": "So, what's your type?",
+            "japanese": "それで、どんな人がタイプ？",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/14.mp3",
+            "otherExamples": [
+              {
+                "english": "So, what's your plan?",
+                "japanese": "それで、どういう予定なの？"
+              },
+              {
+                "english": "So, what's your favorite?",
+                "japanese": "それで、どれがお気に入りなの？"
+              }
+            ]
+          },
+          {
+            "english": "Goofy.",
+            "japanese": "おちゃめな人。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/15.mp3",
+            "otherExamples": [
+              {
+                "english": "Easygoing.",
+                "japanese": "おおらかな人。"
+              },
+              {
+                "english": "Thoughtful.",
+                "japanese": "思いやりのある人。"
+              }
+            ]
+          },
+          {
+            "english": "Has some body to them, you know, not scrawny.",
+            "japanese": "ある程度がっしりしていて、ほら、やせこけていない人。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/16.mp3",
+            "otherExamples": [
+              {
+                "english": "Has a sense of humor, you know, not too serious.",
+                "japanese": "ユーモアのセンスがあって、ほら、まじめすぎない人。"
+              },
+              {
+                "english": "Has some confidence, you know, not arrogant.",
+                "japanese": "自信があって、ほら、偉そうではない人。"
+              }
+            ]
+          },
+          {
+            "english": "The lads that I've been dating, within three dates,",
+            "japanese": "私がデートしてきた男の人たちは、3回もデートすれば…。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/17.mp3",
+            "otherExamples": [
+              {
+                "english": "The people I've been working with, within a few weeks...",
+                "japanese": "最近一緒に仕事をしている人たちは、数週間もすると…。"
+              },
+              {
+                "english": "The clients I've been helping, within a few days...",
+                "japanese": "最近対応しているお客さんたちは、数日もすると…。"
+              }
+            ]
+          },
+          {
+            "english": "they tell me that they're, like, falling for me.",
+            "japanese": "…私のことを好きになってきたって言うの。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/18.mp3",
+            "otherExamples": [
+              {
+                "english": "They tell me they're getting used to it.",
+                "japanese": "それに慣れてきたと言ってくれる。"
+              },
+              {
+                "english": "They tell me they're looking forward to it.",
+                "japanese": "それを楽しみにしていると言ってくれる。"
+              }
+            ]
+          },
+          {
+            "english": "Who do you fancy?",
+            "japanese": "誰が気になってる？",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/19.mp3",
+            "otherExamples": [
+              {
+                "english": "What do you fancy for dinner?",
+                "japanese": "晩ごはんは何がいい？"
+              },
+              {
+                "english": "Which one do you fancy?",
+                "japanese": "どれがいい？"
+              }
+            ]
+          },
+          {
+            "english": "I would ruin Harry.",
+            "japanese": "ハリーをめちゃくちゃにしてやりたい。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/20.mp3",
+            "otherExamples": [
+              {
+                "english": "I would ruin the surprise.",
+                "japanese": "私だったらサプライズを台無しにしちゃうよ。"
+              },
+              {
+                "english": "I would ruin that recipe.",
+                "japanese": "私だったら、その料理を失敗しちゃうよ。"
+              }
+            ]
+          },
+          {
+            "english": "Kelz's body, I want to lick it. Harry's body, I want to lick it.",
+            "japanese": "ケルズの体、なめたいわ。ハリーの体もなめたい。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/21.mp3",
+            "otherExamples": [
+              {
+                "english": "That cake, I want to try it. That pie, I want to try it.",
+                "japanese": "あのケーキ、食べてみたい。あのパイも食べてみたい。"
+              },
+              {
+                "english": "This city, I want to explore it. That island, I want to explore it.",
+                "japanese": "この街、歩き回ってみたい。あの島も探検してみたい。"
+              }
+            ]
+          },
+          {
+            "english": "I need to have a little chat with Rhonda,",
+            "japanese": "ロンダと少し話をする必要がある。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/22.mp3",
+            "otherExamples": [
+              {
+                "english": "I need to have a little chat with the manager.",
+                "japanese": "責任者と少し話をする必要がある。"
+              },
+              {
+                "english": "I need to have a quick word with you.",
+                "japanese": "あなたと少し話したい。"
+              }
+            ]
+          },
+          {
+            "english": "Like, this is heaven on Earth.",
+            "japanese": "ここは、まさに地上の天国だ。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/23.mp3",
+            "otherExamples": [
+              {
+                "english": "This is a dream come true.",
+                "japanese": "夢がかなったみたいだ。"
+              },
+              {
+                "english": "This is paradise on Earth.",
+                "japanese": "ここは地上の楽園だ。"
+              }
+            ]
+          },
+          {
+            "english": "Am I... Would I be, like, your type?",
+            "japanese": "僕は…君のタイプになるかな？",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/24.mp3",
+            "otherExamples": [
+              {
+                "english": "Would I be a good fit for your team?",
+                "japanese": "私はあなたのチームに合っているでしょうか？"
+              },
+              {
+                "english": "Would that be your first choice?",
+                "japanese": "それがあなたの第一希望になるかな？"
+              }
+            ]
+          },
+          {
+            "english": "You would be.",
+            "japanese": "なると思うわ。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/25.mp3",
+            "otherExamples": [
+              {
+                "english": "That would be.",
+                "japanese": "そうなるね。"
+              },
+              {
+                "english": "You could be.",
+                "japanese": "君ならなれるかも。"
+              }
+            ]
+          },
+          {
+            "english": "'Cause, like, you know, tattoos is a turn-on.",
+            "japanese": "だって、ほら、タトゥーって魅力的だから。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/26.mp3",
+            "otherExamples": [
+              {
+                "english": "A good sense of humor is a turn-on.",
+                "japanese": "ユーモアのセンスがある人には魅力を感じる。"
+              },
+              {
+                "english": "Confidence can be a turn-on.",
+                "japanese": "自信のある態度に魅力を感じることもある。"
+              }
+            ]
+          },
+          {
+            "english": "[Kelz] Matt, look, you're deep like me. You're a thinker.",
+            "japanese": "マット、君も僕と同じで深いな。物事を考えるタイプだ。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/27.mp3",
+            "otherExamples": [
+              {
+                "english": "You're curious like me. You're a learner.",
+                "japanese": "君も私と同じで好奇心旺盛だね。学ぶのが好きなんだ。"
+              },
+              {
+                "english": "You're practical like me. You're a problem-solver.",
+                "japanese": "君も私と同じで現実的だね。問題を解決する人なんだ。"
+              }
+            ]
+          },
+          {
+            "english": "What do you think about Francesca?",
+            "japanese": "フランチェスカのことはどう思う？",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/28.mp3",
+            "otherExamples": [
+              {
+                "english": "What do you think about this restaurant?",
+                "japanese": "このレストランをどう思う？"
+              },
+              {
+                "english": "What do you think about the new schedule?",
+                "japanese": "新しいスケジュールをどう思う？"
+              }
+            ]
+          },
+          {
+            "english": "She can be a bit air-headed.",
+            "japanese": "彼女は、ちょっと頭が空っぽなところがあるわね。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/29.mp3",
+            "otherExamples": [
+              {
+                "english": "He can be a bit impatient.",
+                "japanese": "彼はちょっとせっかちなところがある。"
+              },
+              {
+                "english": "She can be a bit forgetful.",
+                "japanese": "彼女はちょっと忘れっぽいところがある。"
+              }
+            ]
+          },
+          {
+            "english": "Don't get too excited.",
+            "japanese": "あまり興奮しすぎないで。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/30.mp3",
+            "otherExamples": [
+              {
+                "english": "Don't get too worried.",
+                "japanese": "あまり心配しすぎないで。"
+              },
+              {
+                "english": "Don't get too comfortable.",
+                "japanese": "あまりくつろぎすぎないで。"
+              }
+            ]
+          },
+          {
+            "english": "I think you looked a little lonely over here.",
+            "japanese": "ここで少し寂しそうに見えたから。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/31.mp3",
+            "otherExamples": [
+              {
+                "english": "I think you looked a little tired earlier.",
+                "japanese": "さっき、少し疲れて見えたと思う。"
+              },
+              {
+                "english": "I think she looked a little nervous over there.",
+                "japanese": "あそこで、彼女は少し緊張して見えたと思う。"
+              }
+            ]
+          },
+          {
+            "english": "I think you was hoping I came to see you.",
+            "japanese": "私に会いに来てほしいと思っていたんじゃないかな。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/32.mp3",
+            "otherExamples": [
+              {
+                "english": "I think you were hoping I'd call you.",
+                "japanese": "私から電話してほしいと思っていたんじゃないかな。"
+              },
+              {
+                "english": "I think he was hoping we'd join him.",
+                "japanese": "彼は私たちに来てほしいと思っていたんじゃないかな。"
+              }
+            ]
+          },
+          {
+            "english": "I feel comfortable right here. I can get used to this.",
+            "japanese": "ここは居心地がいいな。これなら慣れそうだ。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/33.mp3",
+            "otherExamples": [
+              {
+                "english": "I feel relaxed right here. I could get used to this.",
+                "japanese": "ここは落ち着くな。この生活にも慣れそうだ。"
+              },
+              {
+                "english": "I feel at home here. I can get used to this.",
+                "japanese": "ここは自分の家みたいだ。この暮らしにも慣れそうだ。"
+              }
+            ]
+          },
+          {
+            "english": "What, with me right here, or are you just comfortable here?",
+            "japanese": "え、私がここにいるから？ それとも、この場所が心地いいだけ？",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/34.mp3",
+            "otherExamples": [
+              {
+                "english": "What, with the music on, or do you just like this room?",
+                "japanese": "え、音楽がかかっているから？ それとも、この部屋が好きなだけ？"
+              },
+              {
+                "english": "What, with us around, or are you just happy here?",
+                "japanese": "え、私たちがいるから？ それとも、ここが気に入っているだけ？"
+              }
+            ]
+          },
+          {
+            "english": "I feel like every girl you sleep with falls in love with you.",
+            "japanese": "君が一緒に寝た女の子は、みんな君に恋する気がする。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/35.mp3",
+            "otherExamples": [
+              {
+                "english": "I feel like every person you work with learns something from you.",
+                "japanese": "君と一緒に働く人は、みんな君から何かを学ぶ気がする。"
+              },
+              {
+                "english": "I feel like every place you visit becomes your favorite.",
+                "japanese": "君は行く場所すべてがお気に入りになる気がする。"
+              }
+            ]
+          },
+          {
+            "english": "I want to get down and dirty with a few of them.",
+            "japanese": "何人かとは、いやらしいことまでしたいわ。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/36.mp3",
+            "otherExamples": [
+              {
+                "english": "I want to get down and dirty with the gardening this weekend.",
+                "japanese": "今週末は泥だらけになるくらい、本格的に庭仕事をしたい。"
+              },
+              {
+                "english": "I want to get down and dirty with the details of this project.",
+                "japanese": "このプロジェクトの細部に、しっかり踏み込んで取り組みたい。"
+              }
+            ]
+          },
+          {
+            "english": "[clicks tongue] Know what I mean?",
+            "japanese": "言いたいこと、分かる？",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/37.mp3",
+            "otherExamples": [
+              {
+                "english": "Know what I'm saying?",
+                "japanese": "言いたいこと、分かる？"
+              },
+              {
+                "english": "See what I mean?",
+                "japanese": "どういう意味か分かる？"
+              }
+            ]
+          },
+          {
+            "english": "[Chloe] Harry's got his eye on Francesca.",
+            "japanese": "ハリーはフランチェスカに目を付けてる。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/38.mp3",
+            "otherExamples": [
+              {
+                "english": "Maya's got her eye on that apartment.",
+                "japanese": "マヤはあの部屋に目を付けている。"
+              },
+              {
+                "english": "Alex has got his eye on a new bike.",
+                "japanese": "アレックスは新しい自転車に目を付けている。"
+              }
+            ]
+          },
+          {
+            "english": "[sighs] The perfect one.",
+            "japanese": "あの完璧な子にね。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/39.mp3",
+            "otherExamples": [
+              {
+                "english": "The right one.",
+                "japanese": "ぴったりのもの。"
+              },
+              {
+                "english": "The best one.",
+                "japanese": "一番いいもの。"
+              }
+            ]
+          },
+          {
+            "english": "You are doing something to me.",
+            "japanese": "君のせいで、何だかおかしくなる。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/40.mp3",
+            "otherExamples": [
+              {
+                "english": "You're doing something to my computer.",
+                "japanese": "君、僕のパソコンに何かしてるね。"
+              },
+              {
+                "english": "You're doing something to the sound.",
+                "japanese": "音に何か手を加えてるね。"
+              }
+            ]
+          },
+          {
+            "english": "Stop, you're turning me on.",
+            "japanese": "やめて、興奮しちゃうよ。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/41.mp3",
+            "otherExamples": [
+              {
+                "english": "Stop, you're stressing me out.",
+                "japanese": "やめて、こっちまでストレスがたまるよ。"
+              },
+              {
+                "english": "Stop, you're cracking me up.",
+                "japanese": "やめて、笑いが止まらないよ。"
+              }
+            ]
+          },
+          {
+            "english": "I'm actually hard.",
+            "japanese": "実は、勃起してる。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/42.mp3",
+            "otherExamples": [
+              {
+                "english": "I'm actually ready.",
+                "japanese": "実はもう準備できている。"
+              },
+              {
+                "english": "I'm actually nervous.",
+                "japanese": "実は緊張している。"
+              }
+            ]
+          },
+          {
+            "english": "But, unfortunately for them, it's about to become information overload.",
+            "japanese": "だが彼らにとって残念なことに、これから情報過多になりそうだ。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/43.mp3",
+            "otherExamples": [
+              {
+                "english": "Unfortunately for us, it's about to get much busier.",
+                "japanese": "私たちには残念なことに、これからずっと忙しくなる。"
+              },
+              {
+                "english": "Unfortunately for them, it's about to become a long day.",
+                "japanese": "あの人たちには残念なことに、これから長い一日になりそうだ。"
+              }
+            ]
+          },
+          {
+            "english": "it's time to go.",
+            "japanese": "行く時間だ。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/44.mp3",
+            "otherExamples": [
+              {
+                "english": "It's time to eat.",
+                "japanese": "食事の時間だ。"
+              },
+              {
+                "english": "It's time to begin.",
+                "japanese": "始める時間だ。"
+              }
+            ]
+          },
+          {
+            "english": "[Lana] However, you are not here for the reasons you may think.",
+            "japanese": "ただし、皆さんがここにいる理由は、想像しているものとは違います。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/45.mp3",
+            "otherExamples": [
+              {
+                "english": "However, you're not here for the reason you may expect.",
+                "japanese": "ただし、皆さんは予想しているような理由でここにいるわけではありません。"
+              },
+              {
+                "english": "However, this is not happening for the reasons you may think.",
+                "japanese": "ただし、これは皆さんが考えているような理由で起きているわけではありません。"
+              }
+            ]
+          },
+          {
+            "english": "[Lana] As an incentive to your development,",
+            "japanese": "成長を促す報奨として…。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/46.mp3",
+            "otherExamples": [
+              {
+                "english": "As an incentive to keep learning...",
+                "japanese": "学び続ける励みとして…。"
+              },
+              {
+                "english": "As an incentive to improve attendance...",
+                "japanese": "出席率を上げる励みとして…。"
+              }
+            ]
+          },
+          {
+            "english": "I've allocated a prize of $100,000.",
+            "japanese": "10万ドルの賞金を用意しました。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/47.mp3",
+            "otherExamples": [
+              {
+                "english": "I've allocated a budget of five thousand dollars.",
+                "japanese": "予算として5000ドルを確保した。"
+              },
+              {
+                "english": "I've allocated a prize of two hundred dollars.",
+                "japanese": "賞金として200ドルを用意した。"
+              }
+            ]
+          },
+          {
+            "english": "Let's fucking go. I'm gonna make sure I get my money.",
+            "japanese": "よっしゃ、やってやる。絶対に自分の賞金を手に入れるぞ。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/48.mp3",
+            "otherExamples": [
+              {
+                "english": "Let's go. I'm gonna make sure I get a seat.",
+                "japanese": "行こう。必ず席を確保するぞ。"
+              },
+              {
+                "english": "Let's do this. I'm gonna make sure we finish on time.",
+                "japanese": "やろう。必ず時間どおりに終わらせるぞ。"
+              }
+            ]
+          },
+          {
+            "english": "[Lana] You will have to abstain from sexual practices",
+            "japanese": "性的な行為を控えてもらいます。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/49.mp3",
+            "otherExamples": [
+              {
+                "english": "You'll have to abstain from voting.",
+                "japanese": "投票を控えてもらうことになります。"
+              },
+              {
+                "english": "You'll have to refrain from using your phone.",
+                "japanese": "携帯電話の使用を控えてもらうことになります。"
+              }
+            ]
+          },
+          {
+            "english": "for the entirety of your stay.",
+            "japanese": "滞在している間は、ずっと。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/50.mp3",
+            "otherExamples": [
+              {
+                "english": "For the entirety of your visit.",
+                "japanese": "訪問している間ずっと。"
+              },
+              {
+                "english": "For the entirety of the meeting.",
+                "japanese": "会議の間ずっと。"
+              }
+            ]
+          },
+          {
+            "english": "[Matthew] I don't know a man",
+            "japanese": "そんな男は知らないよ…。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/51.mp3",
+            "otherExamples": [
+              {
+                "english": "I don't know a person who would refuse that.",
+                "japanese": "それを断る人なんて知らない。"
+              },
+              {
+                "english": "I don't know a café that opens that early.",
+                "japanese": "そんなに早く開くカフェなんて知らない。"
+              }
+            ]
+          },
+          {
+            "english": "-that's gone a month without getting off. -I've never been that long.",
+            "japanese": "…1か月もイかずに過ごしたような男はね。 ― そんなに長く我慢したことはない。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/52.mp3",
+            "otherExamples": [
+              {
+                "english": "I know someone who's gone a week without coffee. — I've never gone that long.",
+                "japanese": "一週間コーヒーなしで過ごした人を知ってるよ。 ― 私はそんなに長かったことはない。"
+              },
+              {
+                "english": "I know someone who's gone a month without TV. — I've never gone that long.",
+                "japanese": "一か月テレビなしで過ごした人を知ってるよ。 ― 私はそんなに長かったことはない。"
+              }
+            ]
+          },
+          {
+            "english": "[Lana] This will also apply to self-gratification.",
+            "japanese": "この規則は、自慰行為にも適用されます。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/53.mp3",
+            "otherExamples": [
+              {
+                "english": "This will also apply to online orders.",
+                "japanese": "これはオンライン注文にも適用されます。"
+              },
+              {
+                "english": "This will also apply to part-time staff.",
+                "japanese": "これはパートタイムのスタッフにも適用されます。"
+              }
+            ]
+          },
+          {
+            "english": "There's never been this amount of time where I've gone without anything.",
+            "japanese": "これほど長い間、何もせずに過ごしたことはない。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/54.mp3",
+            "otherExamples": [
+              {
+                "english": "There's never been this much time when I've gone without a holiday.",
+                "japanese": "これほど長い間、休暇なしで過ごしたことはない。"
+              },
+              {
+                "english": "There's never been this long a stretch when I've gone without seeing my family.",
+                "japanese": "これほど長い間、家族に会わずに過ごしたことはない。"
+              }
+            ]
+          },
+          {
+            "english": "Without beating my own meat, or even having sex.",
+            "japanese": "自慰もせず、セックスすらせずにね。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/55.mp3",
+            "otherExamples": [
+              {
+                "english": "Without checking my phone or even opening my laptop.",
+                "japanese": "携帯を確認せず、ノートパソコンさえ開かずに。"
+              },
+              {
+                "english": "Without taking a taxi or even catching a bus.",
+                "japanese": "タクシーに乗らず、バスにさえ乗らずに。"
+              }
+            ]
+          },
+          {
+            "english": "It's definitely a setup.",
+            "japanese": "完全にはめられたな。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/56.mp3",
+            "otherExamples": [
+              {
+                "english": "It's definitely a mistake.",
+                "japanese": "間違いなくミスだ。"
+              },
+              {
+                "english": "It's definitely a good sign.",
+                "japanese": "間違いなくいい兆候だ。"
+              }
+            ]
+          },
+          {
+            "english": "[host] These guys are screwed...",
+            "japanese": "この人たちは、えらいことになったわね…。",
+            "audio": "/drama-audio/too-hot-to-handle-2020/episode-1/57.mp3",
+            "otherExamples": [
+              {
+                "english": "These guys are in trouble.",
+                "japanese": "この人たちは困ったことになっている。"
+              },
+              {
+                "english": "We're completely stuck.",
+                "japanese": "私たちは完全に行き詰まっている。"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ];
