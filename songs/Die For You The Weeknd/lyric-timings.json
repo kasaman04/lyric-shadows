@@ -5,7 +5,7 @@
     "url": "https://lrclib.net/api/get/36392661",
     "lyricsUrl": "https://www.shazam.com/song/1659510321/die-for-you",
     "duration": 258.75,
-    "review": "The 260-second synced source matches the 258.75-second attached MP3 and the original solo recording. Line timing and final ad-libs need playback review against this specific file."
+    "review": "The 260-second synced source was compared with the 258.75-second attached MP3 and two local speech recognizers (tiny.en and base.en). After user feedback that lyrics appear early beginning at 'You hate that you want me', the first verse continuation and chorus transitions were aligned to observed vocal onsets. The repeated 'You hate' line and selected later chorus transitions were adjusted, and the final vocal highlight was extended to 254.04. Other line timing remains estimated pending playback review."
   },
   "rows": [
     {
@@ -46,56 +46,56 @@
     {
       "index": 8,
       "start": 57.08,
-      "end": 60.56
+      "end": 60.95
     },
     {
       "index": 9,
-      "start": 60.64,
-      "end": 64.14
+      "start": 61.03,
+      "end": 64.37
     },
     {
       "index": 10,
-      "start": 64.22,
-      "end": 67.75
+      "start": 64.45,
+      "end": 67.82
     },
     {
       "index": 11,
-      "start": 67.83,
-      "end": 71.3
+      "start": 67.9,
+      "end": 71.72
     },
     {
       "index": 12,
-      "start": 71.38,
+      "start": 71.8,
       "end": 74.99
     },
     {
       "index": 13,
       "start": 75.07,
-      "end": 78.46
+      "end": 78.77
     },
     {
       "index": 14,
-      "start": 78.54,
-      "end": 80.49
+      "start": 78.85,
+      "end": 80.62
     },
     {
       "index": 15,
-      "start": 80.57,
+      "start": 80.7,
       "end": 82.37
     },
     {
       "index": 16,
       "start": 82.45,
-      "end": 85.86
+      "end": 86.04
     },
     {
       "index": 18,
-      "start": 85.94,
-      "end": 89.22
+      "start": 86.12,
+      "end": 89.4
     },
     {
       "index": 19,
-      "start": 89.3,
+      "start": 89.48,
       "end": 91.78
     },
     {
@@ -106,21 +106,21 @@
     {
       "index": 21,
       "start": 95.71,
-      "end": 99.99
+      "end": 100.14
     },
     {
       "index": 22,
-      "start": 100.07,
-      "end": 103.65
+      "start": 100.22,
+      "end": 103.72
     },
     {
       "index": 23,
-      "start": 103.73,
-      "end": 106.2
+      "start": 103.8,
+      "end": 106.47
     },
     {
       "index": 24,
-      "start": 106.28,
+      "start": 106.55,
       "end": 109.93
     },
     {
@@ -166,11 +166,11 @@
     {
       "index": 35,
       "start": 142.97,
-      "end": 146.54
+      "end": 146.65
     },
     {
       "index": 36,
-      "start": 146.62,
+      "start": 146.73,
       "end": 150.22
     },
     {
@@ -186,11 +186,11 @@
     {
       "index": 39,
       "start": 154.02,
-      "end": 157.39
+      "end": 157.78
     },
     {
       "index": 41,
-      "start": 157.47,
+      "start": 157.86,
       "end": 160.91
     },
     {
@@ -211,16 +211,16 @@
     {
       "index": 45,
       "start": 171.52,
-      "end": 175.04
+      "end": 175.32
     },
     {
       "index": 46,
-      "start": 175.12,
-      "end": 177.62
+      "start": 175.4,
+      "end": 178.14
     },
     {
       "index": 47,
-      "start": 177.7,
+      "start": 178.22,
       "end": 181.71
     },
     {
@@ -281,11 +281,11 @@
     {
       "index": 61,
       "start": 229.05,
-      "end": 232.4
+      "end": 232.64
     },
     {
       "index": 62,
-      "start": 232.48,
+      "start": 232.72,
       "end": 235.05
     },
     {
@@ -301,7 +301,7 @@
     {
       "index": 65,
       "start": 243.75,
-      "end": 245.49
+      "end": 254.04
     }
   ]
 }
