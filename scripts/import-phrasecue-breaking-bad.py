@@ -17,6 +17,7 @@ EPISODES = {
     2: ("https://www.netflix.com/watch/70196253", "新しい相棒"),
     3: ("https://www.netflix.com/watch/70196254", "人間の成分"),
     4: ("https://www.netflix.com/watch/70196255", "家族への告知"),
+    5: ("https://www.netflix.com/watch/70196256", "ウォルターの選択"),
 }
 
 
