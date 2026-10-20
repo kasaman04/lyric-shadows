@@ -136,5 +136,5 @@ test('all published episodes have continuous audio and ordered boundaries for ev
     assert.ok(track.duration > track.starts.at(-1)); assert.ok(fs.statSync(path.join(root, 'public', track.audio)).size > 0);
     total += track.starts.length;
   }
-  assert.equal(total, 711);
+  assert.equal(total, 769);
 });
