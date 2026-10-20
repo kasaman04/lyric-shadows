@@ -10798,6 +10798,1033 @@ window.DRAMAS = [
             ]
           }
         ]
+      },
+      {
+        "id": "episode-7",
+        "number": 7,
+        "title": "犯罪の境界線",
+        "clips": [
+          {
+            "english": "What about the janitor dealing drugs at school?",
+            "japanese": "学校でドラッグを売っていた用務員の件は？",
+            "audio": "/drama-audio/breaking-bad/episode-7/01.mp3",
+            "otherExamples": [
+              {
+                "english": "What about the children playing in the park?",
+                "japanese": "公園で遊んでいる子どもたちは、どうするの？"
+              },
+              {
+                "english": "What about the people waiting outside?",
+                "japanese": "外で待っている人たちは、どうするの？"
+              }
+            ]
+          },
+          {
+            "english": "There is no indication that this individual was selling drugs.",
+            "japanese": "その人物がドラッグを販売していたという形跡はありません。",
+            "audio": "/drama-audio/breaking-bad/episode-7/02.mp3",
+            "otherExamples": [
+              {
+                "english": "There is no indication that the flight will be delayed.",
+                "japanese": "飛行機が遅れるという兆候はありません。"
+              },
+              {
+                "english": "There is no indication that the plan has changed.",
+                "japanese": "計画が変わったという形跡はありません。"
+              }
+            ]
+          },
+          {
+            "english": "Acting like you're all out for blood.",
+            "japanese": "まるで復讐する気満々みたいに振る舞ってさ。",
+            "audio": "/drama-audio/breaking-bad/episode-7/03.mp3",
+            "otherExamples": [
+              {
+                "english": "You're acting like you're the boss.",
+                "japanese": "まるで自分が上司みたいに振る舞っているね。"
+              },
+              {
+                "english": "He's acting like he's in a hurry.",
+                "japanese": "彼は、急いでいるかのように振る舞っています。"
+              }
+            ]
+          },
+          {
+            "english": "But you are alive. Obviously you wised up.",
+            "japanese": "でも、生きてるな。ちゃんと賢明な判断をしたんだな。",
+            "audio": "/drama-audio/breaking-bad/episode-7/04.mp3",
+            "otherExamples": [
+              {
+                "english": "You're here. Obviously, you found the place.",
+                "japanese": "着いたんだね。ちゃんと場所が分かったんだね。"
+              },
+              {
+                "english": "She's smiling. Obviously, the news was good.",
+                "japanese": "彼女は笑っているね。きっといい知らせだったんだね。"
+              }
+            ]
+          },
+          {
+            "english": "I can't even take a proper dump in there.",
+            "japanese": "あそこじゃ、まともにクソもできない。",
+            "audio": "/drama-audio/breaking-bad/episode-7/05.mp3",
+            "otherExamples": [
+              {
+                "english": "I can't even take a proper break here.",
+                "japanese": "ここでは、まともに休憩すらできません。"
+              },
+              {
+                "english": "She can't even get a proper night's sleep there.",
+                "japanese": "彼女はあそこでは、まともに一晩眠ることすらできません。"
+              }
+            ]
+          },
+          {
+            "english": "I mean, the whole damn house has gotta be haunted by now.",
+            "japanese": "つまり、あの家全体にもう幽霊が出ていてもおかしくないだろ。",
+            "audio": "/drama-audio/breaking-bad/episode-7/06.mp3",
+            "otherExamples": [
+              {
+                "english": "The whole town has got to be asleep by now.",
+                "japanese": "町中が、もう眠っているに違いありません。"
+              },
+              {
+                "english": "The whole team has got to be tired by now.",
+                "japanese": "チーム全員、もう疲れているに違いありません。"
+              }
+            ]
+          },
+          {
+            "english": "Well, we made a deal.",
+            "japanese": "いや、取引をしたんだ。",
+            "audio": "/drama-audio/breaking-bad/episode-7/07.mp3",
+            "otherExamples": [
+              {
+                "english": "Well, we made a choice.",
+                "japanese": "まあ、私たちは選択をしたんです。"
+              },
+              {
+                "english": "Well, they made a promise.",
+                "japanese": "まあ、あの人たちは約束したんです。"
+              }
+            ]
+          },
+          {
+            "english": "How--? Why would you make a deal with that scumbag?",
+            "japanese": "どうして…何であんなクズと取引するんだ？",
+            "audio": "/drama-audio/breaking-bad/episode-7/08.mp3",
+            "otherExamples": [
+              {
+                "english": "Why would you share a room with a stranger?",
+                "japanese": "どうして、知らない人と部屋を共有するの？"
+              },
+              {
+                "english": "Why would she make plans with someone so unreliable?",
+                "japanese": "どうして彼女は、あんなに当てにならない人と予定を立てるの？"
+              }
+            ]
+          },
+          {
+            "english": "Take a look at the money in your hand.",
+            "japanese": "自分の手にある金を見てみろ。",
+            "audio": "/drama-audio/breaking-bad/episode-7/09.mp3",
+            "otherExamples": [
+              {
+                "english": "Take a look at the photo on your phone.",
+                "japanese": "携帯に入っている写真を見てみて。"
+              },
+              {
+                "english": "Take a look at the note on your desk.",
+                "japanese": "机の上のメモを見てみて。"
+              }
+            ]
+          },
+          {
+            "english": "Now, just imagine making that every week.",
+            "japanese": "さあ、それを毎週稼ぐところを想像してみろ。",
+            "audio": "/drama-audio/breaking-bad/episode-7/10.mp3",
+            "otherExamples": [
+              {
+                "english": "Just imagine seeing that view every morning.",
+                "japanese": "毎朝あの景色を見るところを、想像してみて。"
+              },
+              {
+                "english": "Just imagine having that much free time every week.",
+                "japanese": "毎週それだけ自由な時間があるところを、想像してみて。"
+              }
+            ]
+          },
+          {
+            "english": "See, that's the bottleneck in your brilliant business plan.",
+            "japanese": "ほら、そこがお前のすばらしい事業計画のネックなんだよ。",
+            "audio": "/drama-audio/breaking-bad/episode-7/11.mp3",
+            "otherExamples": [
+              {
+                "english": "That's the weak point in your otherwise excellent plan.",
+                "japanese": "ほかはすばらしい計画だけど、そこが弱点だね。"
+              },
+              {
+                "english": "That's the bottleneck in our delivery system.",
+                "japanese": "そこが、私たちの配送システムのネックです。"
+              }
+            ]
+          },
+          {
+            "english": "Of course, you would've known that if you would've just asked me.",
+            "japanese": "もちろん、俺に聞いてくれていたら、分かったはずだけどな。",
+            "audio": "/drama-audio/breaking-bad/episode-7/12.mp3",
+            "otherExamples": [
+              {
+                "english": "You would've found it if you'd just checked your bag.",
+                "japanese": "かばんを確認してさえいれば、見つかったはずだよ。"
+              },
+              {
+                "english": "She would've understood if you'd just explained it.",
+                "japanese": "説明してさえいれば、彼女も理解したはずだよ。"
+              }
+            ]
+          },
+          {
+            "english": "His color is better. You know, his energy.",
+            "japanese": "顔色がよくなったの。ほら、元気も出てきて。",
+            "audio": "/drama-audio/breaking-bad/episode-7/13.mp3",
+            "otherExamples": [
+              {
+                "english": "Her mood is better. Her appetite, too.",
+                "japanese": "彼女は機嫌がよくなりました。食欲もね。"
+              },
+              {
+                "english": "His voice is stronger. His confidence, too.",
+                "japanese": "彼は声が力強くなりました。自信も付いてきました。"
+              }
+            ]
+          },
+          {
+            "english": "Well, isn't there anything else we could be doing?",
+            "japanese": "ほかに私たちができることは、何かないんですか？",
+            "audio": "/drama-audio/breaking-bad/episode-7/14.mp3",
+            "otherExamples": [
+              {
+                "english": "Isn't there anything else we could try?",
+                "japanese": "ほかに試せることは、何かないの？"
+              },
+              {
+                "english": "Isn't there anywhere else we could go?",
+                "japanese": "ほかに行ける場所は、どこかないの？"
+              }
+            ]
+          },
+          {
+            "english": "What's wrong with it? It's private.",
+            "japanese": "ここじゃ何が悪い？ 人目もないぞ。",
+            "audio": "/drama-audio/breaking-bad/episode-7/15.mp3",
+            "otherExamples": [
+              {
+                "english": "What's wrong with it? It's free.",
+                "japanese": "何が悪いの？ 無料だよ。"
+              },
+              {
+                "english": "What's wrong with this room? It's quiet.",
+                "japanese": "この部屋の何が悪いの？ 静かだよ。"
+              }
+            ]
+          },
+          {
+            "english": "You know, I'll put down the flat-front khakis...",
+            "japanese": "ほら、ノータックのチノパンでも用意して…。",
+            "audio": "/drama-audio/breaking-bad/episode-7/16.mp3",
+            "otherExamples": [
+              {
+                "english": "I'll put down my bag and get the door.",
+                "japanese": "かばんを置いて、玄関に出ます。"
+              },
+              {
+                "english": "She'll put down her phone and listen.",
+                "japanese": "彼女は携帯を置いて、話を聞くでしょう。"
+              }
+            ]
+          },
+          {
+            "english": "...head on over, grab an Orange Julius.",
+            "japanese": "…そっちへ行って、オレンジ・ジュリアスでも買うってわけか。",
+            "audio": "/drama-audio/breaking-bad/episode-7/17.mp3",
+            "otherExamples": [
+              {
+                "english": "I'll head on over and grab a sandwich.",
+                "japanese": "そっちへ行って、サンドイッチを買います。"
+              },
+              {
+                "english": "Let's head on over and get a table.",
+                "japanese": "そっちへ行って、席を取りましょう。"
+              }
+            ]
+          },
+          {
+            "english": "Hey, what are we doing way the hell out here?",
+            "japanese": "おい、何でこんな遠くまで来てるんだよ？",
+            "audio": "/drama-audio/breaking-bad/episode-7/18.mp3",
+            "otherExamples": [
+              {
+                "english": "What are we doing so far from home?",
+                "japanese": "私たち、家からこんなに遠くで何をしているの？"
+              },
+              {
+                "english": "What are you doing way out here?",
+                "japanese": "こんな遠くで、何をしているの？"
+              }
+            ]
+          },
+          {
+            "english": "I thought you was a player.",
+            "japanese": "お前はやり手だと思ってたのに。",
+            "audio": "/drama-audio/breaking-bad/episode-7/19.mp3",
+            "otherExamples": [
+              {
+                "english": "I thought you were a morning person.",
+                "japanese": "あなたは朝に強い人だと思っていました。"
+              },
+              {
+                "english": "I thought she was a good listener.",
+                "japanese": "彼女は聞き上手だと思っていました。"
+              }
+            ]
+          },
+          {
+            "english": "Seventeen and a half. Minus the half for wasting my time.",
+            "japanese": "1万7,500ドルだ。時間を無駄にした分、500ドルは引く。",
+            "audio": "/drama-audio/breaking-bad/episode-7/20.mp3",
+            "otherExamples": [
+              {
+                "english": "Twenty dollars, minus five for shipping.",
+                "japanese": "20ドルから、送料の5ドルを差し引きます。"
+              },
+              {
+                "english": "Thirty points, minus two for the late answer.",
+                "japanese": "30点から、回答が遅れた分の2点を差し引きます。"
+              }
+            ]
+          },
+          {
+            "english": "You got something to say?",
+            "japanese": "何か言いたいことでもあるのか？",
+            "audio": "/drama-audio/breaking-bad/episode-7/21.mp3",
+            "otherExamples": [
+              {
+                "english": "Have you got something to add?",
+                "japanese": "何か付け加えたいことはありますか？"
+              },
+              {
+                "english": "Have you got something to ask?",
+                "japanese": "何か聞きたいことはありますか？"
+              }
+            ]
+          },
+          {
+            "english": "Can you handle 4 pounds?",
+            "japanese": "4ポンド、さばけるか？",
+            "audio": "/drama-audio/breaking-bad/episode-7/22.mp3",
+            "otherExamples": [
+              {
+                "english": "Can you handle four boxes?",
+                "japanese": "箱を4つ運べますか？"
+              },
+              {
+                "english": "Can she handle eight guests?",
+                "japanese": "彼女は、お客さん8人に対応できますか？"
+              }
+            ]
+          },
+          {
+            "english": "Listen, old man, talk is talk.",
+            "japanese": "いいか、おっさん。口で言うだけなら何とでも言える。",
+            "audio": "/drama-audio/breaking-bad/episode-7/23.mp3",
+            "otherExamples": [
+              {
+                "english": "Talk is talk. Show me the results.",
+                "japanese": "口で言うのは簡単です。結果を見せてください。"
+              },
+              {
+                "english": "Plans are plans. We still need action.",
+                "japanese": "計画は計画です。それでも行動が必要です。"
+              }
+            ]
+          },
+          {
+            "english": "What did you just do?",
+            "japanese": "今、何をしたんだ？",
+            "audio": "/drama-audio/breaking-bad/episode-7/24.mp3",
+            "otherExamples": [
+              {
+                "english": "What did you just say?",
+                "japanese": "今、何て言ったの？"
+              },
+              {
+                "english": "What did she just order?",
+                "japanese": "彼女は今、何を注文したの？"
+              }
+            ]
+          },
+          {
+            "english": "-What's this? -That is a shopping list.",
+            "japanese": "これは何だ？ ― 買い物リストだ。",
+            "audio": "/drama-audio/breaking-bad/episode-7/25.mp3",
+            "otherExamples": [
+              {
+                "english": "What's this? — That is a packing list.",
+                "japanese": "これは何？ ― 荷造りのリストです。"
+              },
+              {
+                "english": "What's that? — That is a bus schedule.",
+                "japanese": "あれは何？ ― バスの時刻表です。"
+              }
+            ]
+          },
+          {
+            "english": "Getting some of those items may be challenging.",
+            "japanese": "そのうちのいくつかは、手に入れるのが難しいかもしれない。",
+            "audio": "/drama-audio/breaking-bad/episode-7/26.mp3",
+            "otherExamples": [
+              {
+                "english": "Finding a seat may be challenging.",
+                "japanese": "席を見つけるのは、難しいかもしれません。"
+              },
+              {
+                "english": "Finishing this today may be challenging.",
+                "japanese": "これを今日中に終えるのは、難しいかもしれません。"
+              }
+            ]
+          },
+          {
+            "english": "Today is the first day of the rest of your life.",
+            "japanese": "今日は、これからの人生の最初の日だ。",
+            "audio": "/drama-audio/breaking-bad/episode-7/27.mp3",
+            "otherExamples": [
+              {
+                "english": "Today is the start of a new chapter.",
+                "japanese": "今日は、新しい章の始まりです。"
+              },
+              {
+                "english": "Tomorrow is the first day of our trip.",
+                "japanese": "明日は、私たちの旅行の初日です。"
+              }
+            ]
+          },
+          {
+            "english": "-What are you doing? -The first day of the rest of your life.",
+            "japanese": "何をしているんだ？ ― これからの人生の、最初の日。",
+            "audio": "/drama-audio/breaking-bad/episode-7/28.mp3",
+            "otherExamples": [
+              {
+                "english": "What are you doing? — Making a fresh start.",
+                "japanese": "何をしているの？ ― 新しくやり直しているんだ。"
+              },
+              {
+                "english": "What are you planning? — A new beginning.",
+                "japanese": "何を計画しているの？ ― 新たなスタートだよ。"
+              }
+            ]
+          },
+          {
+            "english": "But what kind of life will it be?",
+            "japanese": "でも、それはどんな人生になるのかしら？",
+            "audio": "/drama-audio/breaking-bad/episode-7/29.mp3",
+            "otherExamples": [
+              {
+                "english": "But what kind of trip will it be?",
+                "japanese": "でも、それはどんな旅行になるの？"
+              },
+              {
+                "english": "But what kind of team will we have?",
+                "japanese": "でも、私たちはどんなチームになるの？"
+              }
+            ]
+          },
+          {
+            "english": "Now, that is your wonderful, handsome older brother.",
+            "japanese": "さて、あれがあなたのすてきでハンサムなお兄ちゃんよ。",
+            "audio": "/drama-audio/breaking-bad/episode-7/30.mp3",
+            "otherExamples": [
+              {
+                "english": "That is your friendly, helpful new neighbor.",
+                "japanese": "あの人が、あなたの親切で頼りになる新しいご近所さんです。"
+              },
+              {
+                "english": "That is our talented, hardworking younger sister.",
+                "japanese": "あの子が、私たちの才能豊かで頑張り屋の妹です。"
+              }
+            ]
+          },
+          {
+            "english": "And I.... I think about you all the time.",
+            "japanese": "それに、私は…いつもお前のことを考えている。",
+            "audio": "/drama-audio/breaking-bad/episode-7/31.mp3",
+            "otherExamples": [
+              {
+                "english": "I think about that trip all the time.",
+                "japanese": "私は、あの旅行のことをいつも考えています。"
+              },
+              {
+                "english": "She talks about her garden all the time.",
+                "japanese": "彼女は、自分の庭のことをいつも話しています。"
+              }
+            ]
+          },
+          {
+            "english": "Wherever you go, whatever you do in life...",
+            "japanese": "どこへ行こうと、人生で何をしようと…。",
+            "audio": "/drama-audio/breaking-bad/episode-7/32.mp3",
+            "otherExamples": [
+              {
+                "english": "Wherever you go, whatever you choose, stay curious.",
+                "japanese": "どこへ行っても、何を選んでも、好奇心を忘れないで。"
+              },
+              {
+                "english": "Wherever she lives, whatever she does, we'll support her.",
+                "japanese": "彼女がどこに住んでも、何をしても、私たちは応援します。"
+              }
+            ]
+          },
+          {
+            "english": "...always know that you have a family who loves you very, very much.",
+            "japanese": "…お前を心から、本当に愛している家族がいることを、いつも忘れないでほしい。",
+            "audio": "/drama-audio/breaking-bad/episode-7/33.mp3",
+            "otherExamples": [
+              {
+                "english": "Always know that you have friends who support you.",
+                "japanese": "あなたを支えてくれる友達がいることを、いつも忘れないで。"
+              },
+              {
+                "english": "Always remember that you have a team who trusts you.",
+                "japanese": "あなたを信頼している仲間がいることを、いつも覚えていて。"
+              }
+            ]
+          },
+          {
+            "english": "Oh, Marie. You spent too much on this.",
+            "japanese": "まあ、マリー。これにはお金をかけすぎよ。",
+            "audio": "/drama-audio/breaking-bad/episode-7/34.mp3",
+            "otherExamples": [
+              {
+                "english": "You spent too much on these flowers.",
+                "japanese": "この花には、お金をかけすぎだよ。"
+              },
+              {
+                "english": "We spent too much on the decorations.",
+                "japanese": "私たちは、飾り付けにお金をかけすぎました。"
+              }
+            ]
+          },
+          {
+            "english": "I got just the thing to go with that.",
+            "japanese": "それにぴったり合う物があるんだ。",
+            "audio": "/drama-audio/breaking-bad/episode-7/35.mp3",
+            "otherExamples": [
+              {
+                "english": "I've got just the shoes to go with that dress.",
+                "japanese": "そのドレスにぴったり合う靴を持っています。"
+              },
+              {
+                "english": "She's got just the sauce to go with this fish.",
+                "japanese": "彼女は、この魚にぴったり合うソースを持っています。"
+              }
+            ]
+          },
+          {
+            "english": "-I'm sorry, man, I wasn't thinking. -No, no, no. It's okay.",
+            "japanese": "悪かった、何も考えてなかった。 ― いやいや、大丈夫だよ。",
+            "audio": "/drama-audio/breaking-bad/episode-7/36.mp3",
+            "otherExamples": [
+              {
+                "english": "Sorry, I wasn't listening. — It's okay.",
+                "japanese": "ごめん、聞いていなかった。 ― 大丈夫だよ。"
+              },
+              {
+                "english": "Sorry, I wasn't paying attention. — No problem.",
+                "japanese": "ごめん、注意していなかった。 ― 気にしないで。"
+              }
+            ]
+          },
+          {
+            "english": "You mind if I have one?",
+            "japanese": "一つもらってもいいか？",
+            "audio": "/drama-audio/breaking-bad/episode-7/37.mp3",
+            "otherExamples": [
+              {
+                "english": "Do you mind if I take a seat?",
+                "japanese": "座ってもいいですか？"
+              },
+              {
+                "english": "Do you mind if we open a window?",
+                "japanese": "窓を開けてもいいですか？"
+              }
+            ]
+          },
+          {
+            "english": "I mean, frigging meth used to be legal.",
+            "japanese": "だって、メスでさえ昔は合法だったんだぞ。",
+            "audio": "/drama-audio/breaking-bad/episode-7/38.mp3",
+            "otherExamples": [
+              {
+                "english": "This street used to be quiet.",
+                "japanese": "この通りは、昔は静かでした。"
+              },
+              {
+                "english": "That game used to be free.",
+                "japanese": "あのゲームは、以前は無料でした。"
+              }
+            ]
+          },
+          {
+            "english": "A white-gold tiara for a newborn baby.",
+            "japanese": "生まれたばかりの赤ちゃんに、ホワイトゴールドのティアラよ。",
+            "audio": "/drama-audio/breaking-bad/episode-7/39.mp3",
+            "otherExamples": [
+              {
+                "english": "A leather case for a brand-new camera.",
+                "japanese": "買ったばかりのカメラ用の、革のケースです。"
+              },
+              {
+                "english": "A silver frame for a family photo.",
+                "japanese": "家族写真用の、銀色の写真立てです。"
+              }
+            ]
+          },
+          {
+            "english": "You know, I think I'm gonna return it.",
+            "japanese": "ねえ、これを返品しようと思うの。",
+            "audio": "/drama-audio/breaking-bad/episode-7/40.mp3",
+            "otherExamples": [
+              {
+                "english": "I think I'm going to keep it.",
+                "japanese": "これは取っておこうと思います。"
+              },
+              {
+                "english": "I think we're going to postpone it.",
+                "japanese": "私たちは、それを延期しようと思います。"
+              }
+            ]
+          },
+          {
+            "english": "Are you sure? She's bound to find out.",
+            "japanese": "本当にいいのか？ 彼女にはきっと分かるぞ。",
+            "audio": "/drama-audio/breaking-bad/episode-7/41.mp3",
+            "otherExamples": [
+              {
+                "english": "Are you sure? It's bound to rain.",
+                "japanese": "本当にいいの？ きっと雨が降るよ。"
+              },
+              {
+                "english": "Are you sure? They're bound to notice.",
+                "japanese": "本当にいいの？ あの人たちはきっと気付くよ。"
+              }
+            ]
+          },
+          {
+            "english": "I'm already sweating. Help me out.",
+            "japanese": "もう汗だくだよ。手伝ってくれ。",
+            "audio": "/drama-audio/breaking-bad/episode-7/42.mp3",
+            "otherExamples": [
+              {
+                "english": "I'm already carrying two bags. Help me out.",
+                "japanese": "もう袋を二つも持っているよ。手を貸して。"
+              },
+              {
+                "english": "We're already late. Give us a hand.",
+                "japanese": "もう遅れているんだ。手伝って。"
+              }
+            ]
+          },
+          {
+            "english": "Yeah, well, that's where I ran into some trouble.",
+            "japanese": "ああ、実はそこでちょっと問題にぶつかったんだ。",
+            "audio": "/drama-audio/breaking-bad/episode-7/43.mp3",
+            "otherExamples": [
+              {
+                "english": "That's where I ran into a problem.",
+                "japanese": "そこで、問題にぶつかったんです。"
+              },
+              {
+                "english": "That's when we ran into some delays.",
+                "japanese": "そのとき、少し遅れが出たんです。"
+              }
+            ]
+          },
+          {
+            "english": "What kind of trouble?",
+            "japanese": "どんな問題だ？",
+            "audio": "/drama-audio/breaking-bad/episode-7/44.mp3",
+            "otherExamples": [
+              {
+                "english": "What kind of help?",
+                "japanese": "どんな手助け？"
+              },
+              {
+                "english": "What kind of change?",
+                "japanese": "どんな変更？"
+              }
+            ]
+          },
+          {
+            "english": "So why don't we just steal it ourselves?",
+            "japanese": "じゃあ、俺たちで盗めばいいんじゃないか？",
+            "audio": "/drama-audio/breaking-bad/episode-7/45.mp3",
+            "otherExamples": [
+              {
+                "english": "Why don't we just make it ourselves?",
+                "japanese": "私たちで作ればいいんじゃない？"
+              },
+              {
+                "english": "Why don't they just fix it themselves?",
+                "japanese": "あの人たちが自分で直せばいいんじゃない？"
+              }
+            ]
+          },
+          {
+            "english": "How we gonna do that?",
+            "japanese": "どうやってやるんだ？",
+            "audio": "/drama-audio/breaking-bad/episode-7/46.mp3",
+            "otherExamples": [
+              {
+                "english": "How are we going to carry this?",
+                "japanese": "どうやってこれを運ぶの？"
+              },
+              {
+                "english": "How is she going to get there?",
+                "japanese": "彼女はどうやってそこへ行くの？"
+              }
+            ]
+          },
+          {
+            "english": "-You'd like to return this. -It's very nice, but yes.",
+            "japanese": "こちらを返品したいと。 ― とてもすてきなんですが、はい。",
+            "audio": "/drama-audio/breaking-bad/episode-7/47.mp3",
+            "otherExamples": [
+              {
+                "english": "You'd like to cancel this? — It's a good plan, but yes.",
+                "japanese": "これをキャンセルしたいのですか？ ― いい計画なんですが、はい。"
+              },
+              {
+                "english": "You'd like to change the date? — It's inconvenient, but yes.",
+                "japanese": "日付を変更したいのですか？ ― ご迷惑ですが、はい。"
+              }
+            ]
+          },
+          {
+            "english": "Ma'am, this item is stolen, as I'm sure you know.",
+            "japanese": "奥様、こちらは盗品です。ご存じだと思いますが。",
+            "audio": "/drama-audio/breaking-bad/episode-7/48.mp3",
+            "otherExamples": [
+              {
+                "english": "This event is canceled, as I'm sure you know.",
+                "japanese": "ご存じだと思いますが、この催しは中止です。"
+              },
+              {
+                "english": "The office is closed today, as I'm sure you know.",
+                "japanese": "ご存じだと思いますが、今日は事務所は休みです。"
+              }
+            ]
+          },
+          {
+            "english": "Look, I-- I've never stolen anything in my life.",
+            "japanese": "ねえ、私は…今までの人生で、何一つ盗んだことなんてないわ。",
+            "audio": "/drama-audio/breaking-bad/episode-7/49.mp3",
+            "otherExamples": [
+              {
+                "english": "I've never missed a flight in my life.",
+                "japanese": "今までの人生で、飛行機に乗り遅れたことは一度もありません。"
+              },
+              {
+                "english": "She's never driven a car in her life.",
+                "japanese": "彼女は今までの人生で、一度も車を運転したことがありません。"
+              }
+            ]
+          },
+          {
+            "english": "I need to talk to you immediately.",
+            "japanese": "すぐにあなたと話す必要があるの。",
+            "audio": "/drama-audio/breaking-bad/episode-7/50.mp3",
+            "otherExamples": [
+              {
+                "english": "I need to speak to the manager immediately.",
+                "japanese": "すぐに責任者と話す必要があります。"
+              },
+              {
+                "english": "We need to contact the team immediately.",
+                "japanese": "すぐにチームへ連絡する必要があります。"
+              }
+            ]
+          },
+          {
+            "english": "You'll find out in about 10 seconds.",
+            "japanese": "あと10秒ほどで分かる。",
+            "audio": "/drama-audio/breaking-bad/episode-7/51.mp3",
+            "otherExamples": [
+              {
+                "english": "You'll hear the result in about ten minutes.",
+                "japanese": "あと10分ほどで、結果が聞けます。"
+              },
+              {
+                "english": "They'll arrive in about half an hour.",
+                "japanese": "あの人たちは、あと30分ほどで着きます。"
+              }
+            ]
+          },
+          {
+            "english": "Stand back.",
+            "japanese": "下がって。",
+            "audio": "/drama-audio/breaking-bad/episode-7/52.mp3",
+            "otherExamples": [
+              {
+                "english": "Step back.",
+                "japanese": "一歩下がって。"
+              },
+              {
+                "english": "Stand aside.",
+                "japanese": "脇へよけて。"
+              }
+            ]
+          },
+          {
+            "english": "What part of \"slow it down\" did you not understand?",
+            "japanese": "「ゆっくり運べ」の、どこが分からなかったんだ？",
+            "audio": "/drama-audio/breaking-bad/episode-7/53.mp3",
+            "otherExamples": [
+              {
+                "english": "What part of \"wait here\" did you not understand?",
+                "japanese": "「ここで待って」の、どこが分からなかったの？"
+              },
+              {
+                "english": "What part of \"turn left\" did you not understand?",
+                "japanese": "「左へ曲がって」の、どこが分からなかったの？"
+              }
+            ]
+          },
+          {
+            "english": "How long is that gonna be?",
+            "japanese": "それは、どのくらい続くんだ？",
+            "audio": "/drama-audio/breaking-bad/episode-7/54.mp3",
+            "otherExamples": [
+              {
+                "english": "How long is the meeting going to be?",
+                "japanese": "会議は、どのくらいの長さになるの？"
+              },
+              {
+                "english": "How long is the wait going to be?",
+                "japanese": "待ち時間は、どのくらいになるの？"
+              }
+            ]
+          },
+          {
+            "english": "I mean, in your situation.",
+            "japanese": "つまり、お前の今の状況でさ。",
+            "audio": "/drama-audio/breaking-bad/episode-7/55.mp3",
+            "otherExamples": [
+              {
+                "english": "I mean, in your position, I'd ask for help.",
+                "japanese": "つまり、私があなたの立場なら、助けを求めます。"
+              },
+              {
+                "english": "I mean, with your schedule, a short trip makes sense.",
+                "japanese": "つまり、あなたの日程なら、短い旅行がいいと思います。"
+              }
+            ]
+          },
+          {
+            "english": "How much cash do you need?",
+            "japanese": "いくら現金が必要なんだ？",
+            "audio": "/drama-audio/breaking-bad/episode-7/56.mp3",
+            "otherExamples": [
+              {
+                "english": "How much time do you need?",
+                "japanese": "どのくらい時間が必要ですか？"
+              },
+              {
+                "english": "How much space do they need?",
+                "japanese": "あの人たちには、どのくらい場所が必要ですか？"
+              }
+            ]
+          },
+          {
+            "english": "You know, you can't duck me forever.",
+            "japanese": "いつまでも私を避けてはいられないわよ。",
+            "audio": "/drama-audio/breaking-bad/episode-7/57.mp3",
+            "otherExamples": [
+              {
+                "english": "You can't avoid this conversation forever.",
+                "japanese": "いつまでも、この話し合いを避けてはいられません。"
+              },
+              {
+                "english": "We can't ignore those emails forever.",
+                "japanese": "いつまでも、あのメールを無視してはいられません。"
+              }
+            ]
+          },
+          {
+            "english": "I didn't sneak. I was going to lunch.",
+            "japanese": "こそこそしてなんかいないわ。ランチに行くところだったの。",
+            "audio": "/drama-audio/breaking-bad/episode-7/58.mp3",
+            "otherExamples": [
+              {
+                "english": "I didn't leave. I was getting some water.",
+                "japanese": "帰ったんじゃないよ。水を取りに行っていたんだ。"
+              },
+              {
+                "english": "She wasn't hiding. She was taking a break.",
+                "japanese": "彼女は隠れていたんじゃありません。休憩していたんです。"
+              }
+            ]
+          },
+          {
+            "english": "Excuse me, I'd just like to see the basement.",
+            "japanese": "すみません、ちょっと地下室を見たいんですが。",
+            "audio": "/drama-audio/breaking-bad/episode-7/59.mp3",
+            "otherExamples": [
+              {
+                "english": "Excuse me, I'd just like to check the price.",
+                "japanese": "すみません、ちょっと値段を確認したいのですが。"
+              },
+              {
+                "english": "Excuse me, we'd just like to see the menu.",
+                "japanese": "すみません、ちょっとメニューを見たいのですが。"
+              }
+            ]
+          },
+          {
+            "english": "Was it an experience?",
+            "japanese": "なかなかの体験だった？",
+            "audio": "/drama-audio/breaking-bad/episode-7/60.mp3",
+            "otherExamples": [
+              {
+                "english": "Was it an adventure?",
+                "japanese": "なかなかの冒険だった？"
+              },
+              {
+                "english": "Was it a challenge?",
+                "japanese": "やりがいのある挑戦だった？"
+              }
+            ]
+          },
+          {
+            "english": "It was definitely an experience.",
+            "japanese": "間違いなく、なかなかの体験だったよ。",
+            "audio": "/drama-audio/breaking-bad/episode-7/61.mp3",
+            "otherExamples": [
+              {
+                "english": "It was definitely a challenge.",
+                "japanese": "間違いなく、やりがいのある挑戦でした。"
+              },
+              {
+                "english": "It was definitely a surprise.",
+                "japanese": "間違いなく、驚きでした。"
+              }
+            ]
+          },
+          {
+            "english": "-Yeah. -Well, she stole it. Yep.",
+            "japanese": "ええ。 ― 実は、彼女が盗んだのよ。そうなの。",
+            "audio": "/drama-audio/breaking-bad/episode-7/62.mp3",
+            "otherExamples": [
+              {
+                "english": "Well, he forgot it. Yep.",
+                "japanese": "実は、彼が忘れたんだよ。そうなんだ。"
+              },
+              {
+                "english": "Well, they found it. Yes.",
+                "japanese": "実は、あの人たちが見つけたんだ。そうだよ。"
+              }
+            ]
+          },
+          {
+            "english": "I practically got arrested trying to return it at the store.",
+            "japanese": "お店に返品しようとして、危うく逮捕されるところだったの。",
+            "audio": "/drama-audio/breaking-bad/episode-7/63.mp3",
+            "otherExamples": [
+              {
+                "english": "I practically got lost trying to find the hotel.",
+                "japanese": "ホテルを探していて、危うく道に迷うところでした。"
+              },
+              {
+                "english": "I practically fell asleep waiting for the bus.",
+                "japanese": "バスを待っていて、ほとんど眠りかけました。"
+              }
+            ]
+          },
+          {
+            "english": "People sometimes do things for their families.",
+            "japanese": "人は時に、家族のためにいろいろなことをするものだ。",
+            "audio": "/drama-audio/breaking-bad/episode-7/64.mp3",
+            "otherExamples": [
+              {
+                "english": "Parents sometimes make sacrifices for their children.",
+                "japanese": "親は時に、子どものために自分を犠牲にします。"
+              },
+              {
+                "english": "Friends sometimes do favors for each other.",
+                "japanese": "友達同士は時に、お互いのために力を貸します。"
+              }
+            ]
+          },
+          {
+            "english": "People sometimes do things for their families?",
+            "japanese": "人は時に、家族のためにいろいろなことをする、ですって？",
+            "audio": "/drama-audio/breaking-bad/episode-7/65.mp3",
+            "otherExamples": [
+              {
+                "english": "Parents sometimes make sacrifices for their children?",
+                "japanese": "親は時に、子どものために自分を犠牲にする、ですって？"
+              },
+              {
+                "english": "Friends sometimes do favors for each other?",
+                "japanese": "友達同士は時に、お互いのために力を貸す、ですって？"
+              }
+            ]
+          },
+          {
+            "english": "And what, that justifies stealing?",
+            "japanese": "それで何、盗みが正当化されるっていうの？",
+            "audio": "/drama-audio/breaking-bad/episode-7/66.mp3",
+            "otherExamples": [
+              {
+                "english": "And that justifies being rude?",
+                "japanese": "それで、失礼な態度が正当化されるの？"
+              },
+              {
+                "english": "And that justifies ignoring everyone?",
+                "japanese": "それで、みんなを無視することが正当化されるの？"
+              }
+            ]
+          },
+          {
+            "english": "Tight, tight, tight, yeah.",
+            "japanese": "すげえ、すげえ、すげえな、最高だ。",
+            "audio": "/drama-audio/breaking-bad/episode-7/67.mp3",
+            "otherExamples": [
+              {
+                "english": "Great, great, great. Yes!",
+                "japanese": "いいね、いいね、いいね。よし！"
+              },
+              {
+                "english": "Perfect, perfect, perfect. Nice!",
+                "japanese": "完璧、完璧、完璧。いいね！"
+              }
+            ]
+          },
+          {
+            "english": "We're gonna make a lot of money together.",
+            "japanese": "俺たちは一緒に、大金を稼ぐことになるぞ。",
+            "audio": "/drama-audio/breaking-bad/episode-7/68.mp3",
+            "otherExamples": [
+              {
+                "english": "We're going to make a lot of memories together.",
+                "japanese": "私たちは一緒に、たくさんの思い出を作るでしょう。"
+              },
+              {
+                "english": "We're going to learn a lot together.",
+                "japanese": "私たちは一緒に、たくさんのことを学ぶでしょう。"
+              }
+            ]
+          }
+        ]
       }
     ]
   },

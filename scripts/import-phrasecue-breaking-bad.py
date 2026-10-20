@@ -19,6 +19,7 @@ EPISODES = {
     4: ("https://www.netflix.com/watch/70196255", "家族への告知"),
     5: ("https://www.netflix.com/watch/70196256", "ウォルターの選択"),
     6: ("https://www.netflix.com/watch/70196257", "最凶のワル"),
+    7: ("https://www.netflix.com/watch/70196258", "犯罪の境界線"),
 }
 
 
