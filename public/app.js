@@ -384,6 +384,7 @@ function renderHome() {
         <div class="brand-copy"><span class="brand-name">Lyric Shadows</span><span class="brand-caption">ENGLISH THROUGH SOUND</span></div>
         <button class="pet-home-entry" onclick="PetGame.open()" aria-label="相棒の育成画面を開く">🌱 <span>育成</span></button>
       </header>
+      <div class="home-listening-row"><button class="home-listening-time" onclick="PetGame.openRecords()" aria-label="聴いた時間の記録を見る"><span>♫ きょう聴いた時間</span><b data-listening-time="today">0分00秒</b></button></div>
       <section class="home-hero" aria-labelledby="home-title">
         <div class="hero-vinyl" aria-hidden="true"><div></div></div>
         <div class="hero-copy">

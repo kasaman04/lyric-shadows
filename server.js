@@ -22,7 +22,7 @@ const SUPABASE_PREFS_TABLE = 'user_phrase_preferences';
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public'), {
   setHeaders(res, file) {
-    if (file.endsWith('.html') || path.basename(file) === 'app.js') res.set('Cache-Control', 'no-store');
+    if (/\.(html|js|css)$/.test(file)) res.set('Cache-Control', 'no-store');
   }
 }));
 app.use('/songs', express.static(SONGS_DIR));

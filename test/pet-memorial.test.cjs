@@ -15,7 +15,7 @@ function fixture(status='dead',element='grass') {
  return state;
 }
 function ui(state) {
- const context={window:{PetRules:rules,PetArt:art},Date,crypto:{randomUUID:()=> 'test-id'}};
+ const context={window:{PetRules:rules,PetArt:art,ListeningTime:require('../public/listening-time')},Date,crypto:{randomUUID:()=> 'test-id'}};
  let source=fs.readFileSync(require.resolve('../public/pet.js'),'utf8');
  source=source.replace('  window.PetGame = { initialize,','  window.PetTest = {setState(s){save=s;},header,room,book,detail};\n  window.PetGame = { initialize,');
  vm.runInNewContext(source,context);context.window.PetTest.setState(state);return context.window.PetTest;

@@ -8,11 +8,15 @@
   let careSeconds = 300, careSource = 'coins', chosenElement = 'fire', framePlayer = null, farewellTimer = null;
   let store, cacheKey, offset = 0, collector = null, writing = Promise.resolve();
   const pendingPlayback = new Map();
+  let persistenceError = null;
   const uid = () => crypto.randomUUID();
   const esc = text => String(text ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const now = () => Date.now() + offset;
   function minutes(seconds) { return seconds < 60 ? `${Math.max(0, Math.ceil(seconds))}秒` : seconds < 3600 ? `${Math.floor(seconds / 60)}分` : `${Math.floor(seconds / 3600)}時間${Math.floor(seconds % 3600 / 60) ? Math.floor(seconds % 3600 / 60) + '分' : ''}`; }
   function remaining(seconds) { return seconds < 60 ? `${Math.ceil(seconds)}秒` : minutes(Math.ceil(seconds / 60) * 60); }
+  const listened = seconds => window.ListeningTime.format(seconds);
+  const listening = () => window.ListeningTime.totals(save, pendingPlayback.values(), now());
+  function listeningValue(type, seconds) { return `<b data-listening-time="${type}">${listened(seconds)}</b>`; }
   function current() {
     const pet = save?.pets.at(-1);
     if (!pet) return pet;
@@ -89,7 +93,7 @@
     else collector = { ...event, device, id: uid() };
     const copy = { ...collector };
     pendingPlayback.set(copy.id,copy);
-    writing = writing.catch(() => {}).then(() => store.put(copy)).catch(() => { networkError = 'この端末に再生時間を保存できません。空き容量を確認してください。'; });
+    writing = writing.catch(() => {}).then(() => store.put(copy)).catch(e => { persistenceError = e; networkError = 'この端末に再生時間を保存できません。空き容量を確認してください。'; });
     queued += (event.end - event.start) / 1000;
     updateBadge();
   }
@@ -135,7 +139,12 @@
           // Acknowledge only the portion sent, preserving new seconds in every tab.
           for (const event of batch) if (collector?.id === event.id) collector.start = Math.max(collector.start, event.end);
           await store.ack(batch);
-          for (const event of batch) if (pendingPlayback.get(event.id)?.end <= event.end) pendingPlayback.delete(event.id);
+          for (const event of batch) {
+            const pending = pendingPlayback.get(event.id);
+            if (!pending) continue;
+            if (pending.end <= event.end) pendingPlayback.delete(event.id);
+            else pendingPlayback.set(event.id, { ...pending, start: Math.max(pending.start, event.end) });
+          }
           accept(value); events = events.slice(200);
         }
         queued = (await store.all()).reduce((sum, e) => sum + (e.end - e.start) / 1000, 0);
@@ -146,10 +155,28 @@
     return flushTask;
   }
   function updateBadge() {
+    const time = listening();
+    document.querySelectorAll('[data-listening-time]').forEach(el => {
+      const value = listened(time[el.dataset.listeningTime] || 0);
+      if (el.textContent !== value) el.textContent = value;
+    });
     const pet = current();
-    document.querySelectorAll('.pet-home-entry span').forEach(el => { el.textContent = pet?.diedAt ? '図鑑に残りました' : pet && !rules.ended(pet) && rules.lifePercent(pet, now()) < 34 ? '英語を聴いて回復しよう' : '育成'; });
+    const petLabel = pet?.diedAt ? '図鑑に残りました' : pet && !rules.ended(pet) && rules.lifePercent(pet, now()) < 34 ? '英語を聴いて回復しよう' : '育成';
+    document.querySelectorAll('.pet-home-entry span').forEach(el => { if (el.textContent !== petLabel) el.textContent = petLabel; });
     const badge = document.getElementById('petListeningBadge');
-    if (badge) badge.innerHTML = `<span aria-hidden="true">🌱</span> ${save ? `きょう ${minutes(save.daily[rules.dayKey(now())] || 0)}` : '育成'}${queued >= 60 ? ' · 未同期' : ''}`;
+    if (badge) {
+      const text = `♫ きょう ${listened(time.today)}${time.pending >= 60 ? ' · 未同期' : ''}`;
+      if (badge.textContent !== text) badge.textContent = text;
+    }
+  }
+  async function prepareRefresh() {
+    await flush();
+    window.PetPlayback.flush(); collector = null; await writing;
+    if (persistenceError) {
+      // Retry all still-pending records before allowing a navigation.
+      for (const event of pendingPlayback.values()) await store.put({ ...event });
+      persistenceError = null;
+    }
   }
   function close() {
     careReaction?.stop(); careReaction = null; framePlayer?.stop(); framePlayer = null; clearTimeout(farewellTimer);
@@ -211,10 +238,10 @@
     const vitality=rules.lifePercent(pet,now()),dead=!!pet.diedAt,departed=!!pet.departedAt,ended=dead||departed,left=Math.max(0,rules.listeningDeadline(pet)-now());
     const danger=vitality<34,days=Math.floor(((pet.diedAt||pet.departedAt||now())-pet.bornAt)/86400000)+1;
     const message=departed?'またね。いっしょに聴いてくれて、ありがとう。':dead?'いっしょに聴いた時間は、ずっと残る。':vitality<34?'力が出ないよ。いっしょに英語を聴こう…':vitality<67?'英語を聴いて、元気をためよう。':p.level===10?'大きくなったよ。旅に出る準備ができた！':'きょうも、いっしょに聴こう。';
-    return '<main class="pet-room-page"><div class="pet-name-row"><h1>'+esc(form.name||pet.name)+'</h1><span>'+rules.element(pet.element).label+' · '+days+'日目</span></div><div class="pet-level-row"><b>Lv.'+p.level+' <small>/ 10</small></b><span>'+(dead?'成長の記録':departed?'旅立った相棒':p.level===10?'最終進化 · 旅立ちの準備ができました':'次の進化まで お世話 '+remaining(p.required-p.earned))+'</span><button data-action="rules" class="pet-info-button" aria-label="育成のルール">?</button></div>'+(!ended?'<div class="pet-progress" role="progressbar" aria-label="次の進化まで" aria-valuenow="'+Math.round(p.level===10?100:p.earned/p.required*100)+'" aria-valuemin="0" aria-valuemax="100"><i style="width:'+(p.level===10?100:p.earned/p.required*100)+'%"></i></div>':'')+'<div class="pet-stats"><span>体格 <b>'+pet.stats.body+'</b></span><span>パワー <b>'+pet.stats.power+'</b></span><span>かしこさ <b>'+pet.stats.brain+'</b></span></div><div class="pet-habitat '+(danger&&!ended?'pet-danger':'')+' '+(ended?'pet-ended':'')+' '+(dead?'pet-memorial-room':'')+'">'+art.room(p.level)+'<p class="pet-speech">'+message+'</p><button data-action="'+(ended?'detail-current':'care')+'" class="pet-character-button" aria-label="'+(ended?'成長の記録を見る':'キャラをタップしてお世話')+'">'+portrait(pet,form,{dead})+'</button>'+(!ended?'<span class="pet-tap-hint">タップでお世話</span><div class="pet-hunger pet-life-gauge"><span>生存時間</span><div class="pet-meter" role="progressbar" aria-label="生存時間" aria-valuemin="0" aria-valuemax="100" aria-valuenow="'+Math.ceil(vitality)+'"><i style="width:'+vitality+'%;background:'+(danger?'#ba7764':'#7eaf90')+'"></i></div><b>'+Math.ceil(vitality)+'%</b></div>':'<div class="pet-hunger pet-ended-caption">'+(departed?'旅立った相棒':'大切な思い出')+'</div>')+'</div>'+designNote(pet)+'<p class="pet-deadline '+(left<8*3600000&&!ended?'is-danger':'')+'">'+(ended?'聴いた時間も、この子の成長も残っています。':'生存時間 残り '+remaining(left/1000)+'<br><small>30分聴くと6時間回復 · 上限24時間</small>')+'</p><button data-action="'+(ended?'restart':p.level===10?'departure':'listen')+'" class="pet-primary" '+(busy?'disabled':'')+'>'+(ended?'次の相棒を選ぶ':p.level===10?'旅立ちを見送る':'♫ 英語を聴く')+'</button><div class="pet-bank-row"><span>使える時間 <b>'+minutes(save.bankSeconds)+'</b>'+(queued>1?' <small>＋'+minutes(queued)+' 同期待ち</small>':'')+'</span><button data-action="records">きょう '+minutes(save.daily[rules.dayKey(now())]||0)+' ↗</button></div></main>';
+    return '<main class="pet-room-page"><div class="pet-name-row"><h1>'+esc(form.name||pet.name)+'</h1><span>'+rules.element(pet.element).label+' · '+days+'日目</span></div><div class="pet-level-row"><b>Lv.'+p.level+' <small>/ 10</small></b><span>'+(dead?'成長の記録':departed?'旅立った相棒':p.level===10?'最終進化 · 旅立ちの準備ができました':'次の進化まで お世話 '+remaining(p.required-p.earned))+'</span><button data-action="rules" class="pet-info-button" aria-label="育成のルール">?</button></div>'+(!ended?'<div class="pet-progress" role="progressbar" aria-label="次の進化まで" aria-valuenow="'+Math.round(p.level===10?100:p.earned/p.required*100)+'" aria-valuemin="0" aria-valuemax="100"><i style="width:'+(p.level===10?100:p.earned/p.required*100)+'%"></i></div>':'')+'<div class="pet-stats"><span>体格 <b>'+pet.stats.body+'</b></span><span>パワー <b>'+pet.stats.power+'</b></span><span>かしこさ <b>'+pet.stats.brain+'</b></span></div><div class="pet-habitat '+(danger&&!ended?'pet-danger':'')+' '+(ended?'pet-ended':'')+' '+(dead?'pet-memorial-room':'')+'">'+art.room(p.level)+'<p class="pet-speech">'+message+'</p><button data-action="'+(ended?'detail-current':'care')+'" class="pet-character-button" aria-label="'+(ended?'成長の記録を見る':'キャラをタップしてお世話')+'">'+portrait(pet,form,{dead})+'</button>'+(!ended?'<span class="pet-tap-hint">タップでお世話</span><div class="pet-hunger pet-life-gauge"><span>生存時間</span><div class="pet-meter" role="progressbar" aria-label="生存時間" aria-valuemin="0" aria-valuemax="100" aria-valuenow="'+Math.ceil(vitality)+'"><i style="width:'+vitality+'%;background:'+(danger?'#ba7764':'#7eaf90')+'"></i></div><b>'+Math.ceil(vitality)+'%</b></div>':'<div class="pet-hunger pet-ended-caption">'+(departed?'旅立った相棒':'大切な思い出')+'</div>')+'</div>'+designNote(pet)+'<p class="pet-deadline '+(left<8*3600000&&!ended?'is-danger':'')+'">'+(ended?'聴いた時間も、この子の成長も残っています。':'生存時間 残り '+remaining(left/1000)+'<br><small>30分聴くと6時間回復 · 上限24時間</small>')+'</p><button data-action="'+(ended?'restart':p.level===10?'departure':'listen')+'" class="pet-primary" '+(busy?'disabled':'')+'>'+(ended?'次の相棒を選ぶ':p.level===10?'旅立ちを見送る':'♫ 英語を聴く')+'</button><div class="pet-bank-row"><span>使える時間 <b>'+listened(save.bankSeconds)+'</b>'+(queued>1?' <small>＋'+listened(listening().pending)+' 同期待ち</small>':'')+'</span><button data-action="records">きょう '+listeningValue('today',listening().today)+' ↗</button></div></main>';
   }
   function book() {
-    return '<main class="pet-book"><p class="pet-book-intro">一緒に聴いた時間は、ここに残る。<span>'+save.pets.length+'匹の記録 · '+minutes(save.totalSeconds)+'</span></p><div class="pet-history-grid">'+[...save.pets].reverse().map(pet=>{const form=pet.forms.at(-1);return '<button class="pet-history-card" data-action="individual" data-id="'+pet.id+'">'+portrait(pet,form,{dead:!!pet.diedAt,still:true})+'<strong>'+esc(form.name||pet.name)+'</strong><span>Lv.'+rules.progress(rules.growth(pet)).level+' · '+(pet.departedAt?'旅立ち':pet.diedAt?'思い出':'育成中')+'</span><small>'+new Date(pet.bornAt).toLocaleDateString('ja-JP',{timeZone:'Asia/Tokyo'})+' 〜</small></button>';}).join('')+'</div>'+(!save.pets.length?'<p>最初の相棒との記録が、ここに増えていきます。</p>':'')+'<button data-action="species" class="pet-text-button">属性と進化の図鑑 · '+new Set(save.pets.flatMap(p=>p.forms.map(f=>f.species))).size+' / 100</button></main>';
+    return '<main class="pet-book"><p class="pet-book-intro">一緒に聴いた時間は、ここに残る。<span>'+save.pets.length+'匹の記録 · '+listeningValue('total',listening().total)+'</span></p><div class="pet-history-grid">'+[...save.pets].reverse().map(pet=>{const form=pet.forms.at(-1);return '<button class="pet-history-card" data-action="individual" data-id="'+pet.id+'">'+portrait(pet,form,{dead:!!pet.diedAt,still:true})+'<strong>'+esc(form.name||pet.name)+'</strong><span>Lv.'+rules.progress(rules.growth(pet)).level+' · '+(pet.departedAt?'旅立ち':pet.diedAt?'思い出':'育成中')+'</span><small>'+new Date(pet.bornAt).toLocaleDateString('ja-JP',{timeZone:'Asia/Tokyo'})+' 〜</small></button>';}).join('')+'</div>'+(!save.pets.length?'<p>最初の相棒との記録が、ここに増えていきます。</p>':'')+'<button data-action="species" class="pet-text-button">属性と進化の図鑑 · '+new Set(save.pets.flatMap(p=>p.forms.map(f=>f.species))).size+' / 100</button></main>';
   }
   function detail() {
     const pet=save.pets.find(p=>p.id===selected)||current();if(!pet)return book();const last=pet.forms.at(-1);
@@ -229,13 +256,14 @@
       const enough = useCoins ? coins >= 100 : save.bankSeconds >= seconds;
       const before = rules.progress(rules.growth(pet)), after = rules.progress(rules.growth(pet) + seconds);
       const preview = !enough ? (useCoins ? `あと${100 - coins}コインで、お世話1回。初回正解${Math.ceil((100 - coins) / 10)}問ぶん！` : `あと ${remaining(seconds - save.bankSeconds)}聴くと、お世話できます`) : before.level === 10 ? '最終レベル · お世話で数値を育てよう' : `お世話で成長${after.level > before.level ? ` · Lv.${before.level} → ${after.level}` : ''}`;
-      content = `<p class="pet-eyebrow">TIME TO CARE</p><h2 id="petSheetTitle">どんな子に育てる？</h2><div class="pet-care-amounts" role="group" aria-label="お世話の支払い方法"><button data-action="care-source" data-source="coins" aria-pressed="${useCoins}" ${busy ? 'disabled' : ''}>コインでお世話</button><button data-action="care-source" data-source="time" aria-pressed="${!useCoins}" ${busy ? 'disabled' : ''}>聴いた時間でお世話</button></div><p class="pet-sheet-sub">${useCoins ? `所持 <b>🪙 ${coins} コイン</b> · 1回100コイン` : `使える時間 <b>${minutes(save.bankSeconds)}</b>`}</p>${useCoins ? '' : `<div class="pet-care-amounts" role="group" aria-label="お世話に使う時間">${rules.careAmounts.map(amount => `<button data-action="care-amount" data-seconds="${amount}" aria-pressed="${amount === careSeconds}" ${busy || save.bankSeconds < amount ? 'disabled' : ''}>${minutes(amount)}</button>`).join('')}</div>`}<p class="pet-care-preview">${preview}</p><div class="pet-care-list">${[['food','◒','ごはん',`体格 +${gain} · 大きな体に育つ`],['power','✦','パワー',`パワー +${gain} · 力強い姿に育つ`],['brain','✿','かしこさ',`かしこさ +${gain} · 不思議な姿に育つ`]].map(([type,icon,title,desc]) => `<button class="pet-care-row" data-action="spend" data-type="${type}" ${busy || rules.ended(pet) || !enough ? 'disabled' : ''}><span class="pet-care-icon ${type}">${icon}</span><span><b>${title}</b><small>${desc}</small></span><strong>${busy ? '…' : useCoins ? '100コイン' : minutes(seconds) + '使う'}</strong></button>`).join('')}</div><p class="pet-sheet-note">アイテムで能力と進化の方向が育ちます。<br>生存時間は、英語を聴くと回復します。</p><p class="pet-sheet-note">${useCoins ? '会話チャレンジの初回正解10問で、お世話1回ぶん。<br>不正解は−3コイン。一度間違えた問題は正解しても加算なし。残高は0未満になりません。' : 'お世話に使った時間でレベルが上がる。<br>残った時間は、明日にも持ち越せる。'}</p>`;
+      content = `<p class="pet-eyebrow">TIME TO CARE</p><h2 id="petSheetTitle">どんな子に育てる？</h2><div class="pet-care-amounts" role="group" aria-label="お世話の支払い方法"><button data-action="care-source" data-source="coins" aria-pressed="${useCoins}" ${busy ? 'disabled' : ''}>コインでお世話</button><button data-action="care-source" data-source="time" aria-pressed="${!useCoins}" ${busy ? 'disabled' : ''}>聴いた時間でお世話</button></div><p class="pet-sheet-sub">${useCoins ? `所持 <b>🪙 ${coins} コイン</b> · 1回100コイン` : `使える時間 <b>${listened(save.bankSeconds)}</b>`}</p>${useCoins ? '' : `<div class="pet-care-amounts" role="group" aria-label="お世話に使う時間">${rules.careAmounts.map(amount => `<button data-action="care-amount" data-seconds="${amount}" aria-pressed="${amount === careSeconds}" ${busy || save.bankSeconds < amount ? 'disabled' : ''}>${minutes(amount)}</button>`).join('')}</div>`}<p class="pet-care-preview">${preview}</p><div class="pet-care-list">${[['food','◒','ごはん',`体格 +${gain} · 大きな体に育つ`],['power','✦','パワー',`パワー +${gain} · 力強い姿に育つ`],['brain','✿','かしこさ',`かしこさ +${gain} · 不思議な姿に育つ`]].map(([type,icon,title,desc]) => `<button class="pet-care-row" data-action="spend" data-type="${type}" ${busy || rules.ended(pet) || !enough ? 'disabled' : ''}><span class="pet-care-icon ${type}">${icon}</span><span><b>${title}</b><small>${desc}</small></span><strong>${busy ? '…' : useCoins ? '100コイン' : minutes(seconds) + '使う'}</strong></button>`).join('')}</div><p class="pet-sheet-note">アイテムで能力と進化の方向が育ちます。<br>生存時間は、英語を聴くと回復します。</p><p class="pet-sheet-note">${useCoins ? '会話チャレンジの初回正解10問で、お世話1回ぶん。<br>不正解は−3コイン。一度間違えた問題は正解しても加算なし。残高は0未満になりません。' : 'お世話に使った時間でレベルが上がる。<br>残った時間は、明日にも持ち越せる。'}</p>`;
     }
     if (sheet === 'rules') content = `<h2 id="petSheetTitle">この子との暮らし</h2><p>会話チャレンジは初回正解＋10・不正解−3コイン。一度間違えた問題は、その後に正解してもコインは増えません。100コインでお世話1回、選んだ数値＋1になります。ごはんは体格、パワーは力強さ、かしこさは不思議な姿への成長を助けます。30分聴くと生存時間が6時間ぶん回復します（上限24時間）。</p><p>英語を聴くと、使える時間が貯まります。その時間をお世話に使うと成長します。5分・30分・1時間から選べて、5分ごとに選んだ数値が1増えます。例えば30分を貯めて5分のお世話を6回すると、Lv.1からLv.2になります。アイテムで選んだ能力が育ち、進化した姿に反映されます。生存時間は経過時間に合わせて減り、0になると死亡します。30分未満も秒単位で回復します。5分なら1時間、10分なら2時間、1時間なら12時間ぶん回復します。聴いている間も時間は進みます。ごはん・パワー・かしこさのお世話では生存時間は回復しません。最初は24時間から始まります。アプリを閉じている間も時間は進みます。</p><p>レベルが上がるほどお部屋は荒廃します。体格・パワー・かしこさの育て方で進化が分岐。1レベルごとに姿が進化し、10段階すべてを図鑑に残します。Lv.10で旅立ちを見送ったら、次の相棒を10属性から選べます。コイン・使える時間・学習記録は引き継ぎます。</p><table class="pet-rules-table"><caption>次の1レベルに必要なお世話の時間</caption>${rules.bands.map((min, i) => `<tr><th>Lv.${i + 1} → ${i + 2}</th><td>${minutes(min * 60)}</td></tr>`).join('')}</table><p class="pet-sheet-note">端末ごとに保存。ブラウザのデータを消すと、この端末の図鑑に戻れなくなります。外部YouTubeの埋め込み再生は集計に含みません。</p>`;
     if (sheet === 'records') {
       const days = Array.from({ length: 7 }, (_, i) => rules.dayKey(now() - (6 - i) * 86400000));
-      const max = Math.max(600, ...days.map(day => save.daily[day] || 0));
-      content = `<h2 id="petSheetTitle">聴いた時間</h2><p class="pet-sheet-sub">これまで ${minutes(save.totalSeconds)} · 日本時間の日付で集計</p><div class="pet-day-chart">${days.map(day => `<div><span>${minutes(save.daily[day] || 0)}</span><div><i style="height:${Math.max(2, (save.daily[day] || 0) / max * 100)}%"></i></div><small>${day.slice(5).replace('-', '/')}</small></div>`).join('')}</div><p class="pet-sheet-note">過去の記録は毎日残ります。使える時間は日付が変わっても減りません。</p>`;
+      const today = rules.dayKey(now()), daily = { ...save.daily, [today]: listening().today };
+      const max = Math.max(600, ...days.map(day => daily[day] || 0));
+      content = `<h2 id="petSheetTitle">聴いた時間</h2><p class="pet-sheet-sub">きょう ${listeningValue('today',listening().today)}<br>これまで ${listeningValue('total',listening().total)} · 日本時間の日付で集計</p><div class="pet-day-chart">${days.map(day => `<div><span>${minutes(daily[day] || 0)}</span><div><i style="height:${Math.max(2, (daily[day] || 0) / max * 100)}%"></i></div><small>${day.slice(5).replace('-', '/')}</small></div>`).join('')}</div><p class="pet-sheet-note">再生した時間を秒単位で表示。未同期の時間も含みます。<br>過去の記録は毎日残ります。使える時間は日付が変わっても減りません。</p>`;
     }
     if (sheet === 'species') {
       const unlocked = new Set(save.pets.flatMap(p => p.forms.map(f => f.species)));
@@ -243,7 +271,7 @@
       for (const p of save.pets) for (const f of p.forms) if (!found.has(f.species) || f.imageUrl) found.set(f.species, { pet: p, form: f });
       content = `<h2 id="petSheetTitle">10属性 × 10段階の図鑑</h2><p class="pet-sheet-sub">属性ごとに育てる。お世話の数値で、その子だけの姿に育つ。</p><div class="pet-species-grid">${rules.catalog.map(c => { const saved = found.get(c.id); return `<div><div>${saved ? portrait(saved.pet, saved.form, { still: true }) : '<span>?</span>'}</div><b>No.${String(c.id).padStart(3, '0')}</b><small>${unlocked.has(c.id) ? esc(c.name) : '未発見'}</small></div>`; }).join('')}</div>`;
     }
-    if(sheet === 'departure') content='<h2 id="petSheetTitle">そろそろ、旅に出よう。</h2><div class="pet-departure-portrait">'+portrait(pet,pet.forms.at(-1),{still:true})+'</div><p class="pet-sheet-sub">Lv.10まで育ててくれて、ありがとう。<br>この子と過ごした時間と、進化した姿は図鑑に残ります。</p><button data-action="depart" class="pet-primary" '+(busy?'disabled':'')+'>いってらっしゃい</button><p class="pet-sheet-note">使える時間 '+minutes(save.bankSeconds)+' は次の相棒へ。</p>';
+    if(sheet === 'departure') content='<h2 id="petSheetTitle">そろそろ、旅に出よう。</h2><div class="pet-departure-portrait">'+portrait(pet,pet.forms.at(-1),{still:true})+'</div><p class="pet-sheet-sub">Lv.10まで育ててくれて、ありがとう。<br>この子と過ごした時間と、進化した姿は図鑑に残ります。</p><button data-action="depart" class="pet-primary" '+(busy?'disabled':'')+'>いってらっしゃい</button><p class="pet-sheet-note">使える時間 '+listened(save.bankSeconds)+' は次の相棒へ。</p>';
     return `<div class="pet-sheet-backdrop" data-action="dismiss"><section class="pet-sheet" role="dialog" aria-modal="true" aria-labelledby="petSheetTitle"><div class="pet-sheet-handle"></div><button class="pet-sheet-close" data-action="dismiss" aria-label="閉じる">×</button>${content}</section></div>`;
   }
   function showSheet(type) { if (type === 'care') { careSeconds = 300; careSource = 'coins'; } sheet = type; render(); overlay.querySelector('.pet-sheet button:not(:disabled)')?.focus(); }
@@ -365,6 +393,8 @@
     window.PetPlayback.configure({ deviceId: device, petId: () => current()?.id, onCredit: record });
     const badge = document.createElement('button'); badge.id = 'petListeningBadge'; badge.className = 'pet-listening-badge'; badge.setAttribute('aria-label', '聴いた時間と育成を見る'); badge.addEventListener('click', open); document.body.appendChild(badge); updateBadge();
     positionListeningBadge(badge);
+    new MutationObserver(updateBadge).observe(document.getElementById('app'), { childList: true, subtree: true });
+    setInterval(updateBadge, 1000);
     await flush();
     setInterval(flush, 15000);
     setInterval(() => { if (overlay) load(); }, 60000);
@@ -373,5 +403,6 @@
     if (location.hash === '#pet') open();
   }
   function openCare() { open(); if (save && current() && !rules.ended(current()) && !current().needsStarter) showSheet('care'); }
-  window.PetGame = { initialize, open, close, openCare, getState: () => save, acceptState: accept, refresh: load };
+  function openRecords() { open(); if (save) showSheet('records'); else load().then(() => { if (overlay && save) showSheet('records'); }); }
+  window.PetGame = { initialize, open, close, openCare, openRecords, prepareRefresh, getState: () => save, acceptState: accept, refresh: load };
 })();

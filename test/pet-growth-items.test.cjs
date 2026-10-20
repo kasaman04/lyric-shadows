@@ -6,7 +6,7 @@ const stamp=Date.parse('2026-10-16T00:00:00Z'),HOUR=3600000;
 class Clock extends Date {static now(){return stamp;}}
 function fixture(hours=24){const s=createState(stamp),p=newPet(stamp-24*HOUR,'grass');p.lifeExpiresAt=stamp+hours*HOUR;s.pets.push(p);s.bankSeconds=3600;return s;}
 function ui(state){
- const badge={textContent:''},context={window:{PetRules:rules,PetArt:art},Date:Clock,crypto:{randomUUID:()=> 'test-id'},document:{querySelectorAll:()=>[badge],getElementById:()=>null}};
+ const badge={textContent:''},context={window:{PetRules:rules,PetArt:art,ListeningTime:require('../public/listening-time')},Date:Clock,crypto:{randomUUID:()=> 'test-id'},document:{querySelectorAll:selector=>selector==='[data-listening-time]'?[]:[badge],getElementById:()=>null}};
  const source=fs.readFileSync(require.resolve('../public/pet.js'),'utf8').replace('  window.PetGame = { initialize,','  window.PetTest={setState(s){save=s;},room,sheetContent,updateBadge,setSheet(s){sheet=s;},setSource(s){careSource=s;},pendingPlayback};\n  window.PetGame = { initialize,');
  vm.runInNewContext(source,context);const view=context.window.PetTest;view.setState(state);view.badge=badge;return view;
 }
