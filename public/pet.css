@@ -108,6 +108,12 @@ body.pet-open{overflow:hidden}
 @keyframes petCareReward{0%{opacity:0;transform:translate(-50%,8px) scale(.85)}20%,75%{opacity:1;transform:translate(-50%,0) scale(1)}100%{opacity:0;transform:translate(-50%,-5px) scale(1)}}
 .pet-deadline{text-align:center;font-size:10px;color:#869078;margin:15px 0 16px;line-height:1.8}
 .pet-deadline.is-danger{color:#a06a53}
+.pet-listening-goal{text-align:center;margin:0 0 18px;padding:13px 16px;background:#eef2e7;border:1px solid #dce4d2;border-radius:14px;color:#49664c}
+.pet-listening-goal[hidden]{display:none}
+.pet-listening-goal strong{display:block;font-size:13px;line-height:1.7;font-variant-numeric:tabular-nums}
+.pet-listening-goal .pet-progress{margin:9px 0 6px;height:6px}
+.pet-listening-goal>span{display:block;font-size:11px;font-variant-numeric:tabular-nums}
+.pet-listening-goal small{display:block;margin-top:6px;font-size:9px;line-height:1.7;color:#75836c}
 .pet-primary{width:100%;border:1px solid #476a50;border-radius:18px;background:#456e52;color:#fff!important;padding:15px 12px;font-size:15px;font-weight:700;letter-spacing:1px;box-shadow:0 4px 0 #2e533b}
 .pet-bank-row{display:flex;align-items:center;justify-content:space-between;gap:6px;font-size:10px;margin-top:18px;color:#77826d;flex-wrap:wrap}
 .pet-bank-row b{font-family:'DM Sans',sans-serif;color:#49664c;margin-left:3px;font-size:13px}

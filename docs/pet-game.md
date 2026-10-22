@@ -67,3 +67,5 @@ RenderでHTTPSのお世話リクエストを扱うためproductionでは1段の�
 node --test test/pet-growth-items.test.cjs test/conversation-game.test.cjs test/pet-api.test.cjs test/pet.test.cjs test/pet-frames.test.cjs test/pet-cloud.test.cjs test/pet-production.test.cjs test/conversation-count.test.js test/drama-continuous.test.cjs test/quote-reward.test.js
 
 初期選択、正確な成長境界、旅立ち、引き継ぎ、死亡、旧データ移行、実時間と日跨ぎ、同時消費、PNG検証、画像生成順序、独立した動きの失敗と再試行、古い動きだけの削除、既存音声を検証する。ユーザーの育成データをテストのために書き換えない。
+
+生存時間の下に「30分達成まで あと○分○秒」と進捗バーを表示する。今の相棒と聴いた累計時間を30分ごとの目安にし、30分ちょうどは達成、次の再生から次の30分へ進む。日付やお世話でリセットせず、次の相棒は0から開始する。未同期分は個体別の再生区間を重複除去して加え、同期で二重加算しない。回復自体は従来どおり秒単位で行う。
