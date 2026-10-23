@@ -26,9 +26,9 @@ test('old feeding time does not make a healthy pet hungry; recent food cannot hi
 });
 test('unsynced actual playback recovers the displayed life without spending or feeding',()=>{
  const s=fixture(6),p=s.pets[0],view=ui(s);p.lifeBaseAt=stamp-HOUR;p.lifeBaseExpiresAt=stamp+6*HOUR;
- // Five minutes played before now: one hour of recovery.
+ // Five minutes played before now: two hours of recovery.
  view.pendingPlayback.set('pending',{petId:p.id,start:stamp-300000,end:stamp});
- assert.match(view.room(),/生存時間 残り 7時間/);assert.equal(p.lifeExpiresAt,stamp+6*HOUR);assert.equal(s.bankSeconds,3600);
+ assert.match(view.room(),/生存時間 残り 8時間/);assert.equal(p.lifeExpiresAt,stamp+6*HOUR);assert.equal(s.bankSeconds,3600);
 });
 test('all three growth items spend the chosen currency and preserve survival time, including retries',()=>{
  for(const payment of ['time','coins'])for(const [type,stat] of [['food','body'],['power','power'],['brain','brain']]){

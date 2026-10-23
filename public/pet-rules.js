@@ -7,7 +7,7 @@
   const careAmounts = [300, 1800, 3600], maxLevel = 10;
   const foodDeadlineMs = 24 * 3600000;
   const listeningTimeoutMs = 24 * 3600000;
-  const listeningRecoveryMultiplier = 12;
+  const listeningRecoveryMultiplier = 24;
   const elements = [
     ['fire','火','ひだねぷに','#e8a08b','小さな炎から、へんてこな火のかたまりへ','coral red, a living orange-yellow flame'],
     ['water','水','しずくぷに','#93bfda','しずくから、ぷるぷるの水のバケモノへ','sky blue, water drop and watery tail'],
