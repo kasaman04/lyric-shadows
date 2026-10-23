@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="ja">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>AI英会話 · Lyric Shadows</title><link rel="icon" href="/rogo2.png"><link rel="stylesheet" href="/voice-practice.css?v=short-turns-20261024-1"><link rel="stylesheet" href="/voice-practice-theme.css?v=short-turns-20261024-1"><link rel="stylesheet" href="/pet.css?v=listening-goal-20261023-1"><link rel="stylesheet" href="/pet-memorial.css?v=memorial-20261016-1"></head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>AI英会話 · Lyric Shadows</title><link rel="icon" href="/rogo2.png"><link rel="stylesheet" href="/voice-practice.css?v=scene-change-20261024-1"><link rel="stylesheet" href="/voice-practice-theme.css?v=scene-change-20261024-1"><link rel="stylesheet" href="/pet.css?v=listening-goal-20261023-1"><link rel="stylesheet" href="/pet-memorial.css?v=memorial-20261016-1"></head>
 <body>
 <div id="app" class="page-voice-practice">
 <main id="practice">
@@ -18,6 +18,7 @@
         <div id="scene-text" hidden><label for="scene-request">練習したい場面</label><textarea id="scene-request" rows="3" maxlength="1500" placeholder="誰と、どんな場面で話したい？"></textarea><button id="scene-generate" class="primary wide" disabled>この内容で設定を確認 →</button><button id="scene-manual" class="text-action" disabled>自分で設定を入力する</button></div>
       </section>
       <section id="scene-confirm" hidden>
+      <button id="scene-change" type="button" class="quiet scene-change">← 場面を選び直す</button>
       <p class="eyebrow">YOUR SCENE</p><h1>この場面で、話そう。</h1><p id="scene-original" class="scene-original"></p>
       <div class="scenario-editor"><div class="assist-heading"><strong>会話の設定</strong><small class="muted">タップして修正できます</small></div>
         <label>場面のタイトル<input id="scenario-title" maxlength="80" required></label>
@@ -56,5 +57,5 @@
   <audio id="review-audio" preload="metadata"></audio>
 </main></div>
 <script src="/listening-time.js?v=refresh-live-time-20261020-1"></script><script src="/pet-rules.js?v=listening-refill-24x-20261023-1"></script><script src="/pet-art.js?v=memorial-20261016-1"></script><script src="/pet-frames.js?v=pet-frame-crop-20261017-1"></script><script src="/pet-playback.js?v=pet-mobile-20261011-v1"></script><script src="/pet-reactions.js?v=growth-items-20261016-1"></script><script src="/pet.js?v=listening-refill-24x-20261023-1"></script>
-<script src="/voice-practice-shell.js?v=short-turns-20261024-1"></script><script src="/voice-practice-core.js?v=short-turns-20261024-1"></script><script src="/voice-scene-setup.js?v=short-turns-20261024-1"></script><script src="/voice-practice.js?v=short-turns-20261024-1"></script>
+<script src="/voice-practice-shell.js?v=scene-change-20261024-1"></script><script src="/voice-practice-core.js?v=scene-change-20261024-1"></script><script src="/voice-scene-setup.js?v=scene-change-20261024-1"></script><script src="/voice-practice.js?v=scene-change-20261024-1"></script>
 </body></html>

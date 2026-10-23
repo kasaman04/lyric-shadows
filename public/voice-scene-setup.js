@@ -114,7 +114,15 @@
     const request = $('scene-request').value.trim(); if (!request) return;
     edit({ request, title: request.slice(0, 80), relationship: request.slice(0, 250), place: 'カフェ', time: '休日の午後', partnerName: 'Mia', context: '指定した場面で、相手から会話を始める。', assumed: ['place', 'time', 'partnerName'] }, true);
   };
-  $('scene-back').onclick = () => { stop(); $('scene-text').hidden = !$('scene-request').value; show('input'); };
+  function changeScene() {
+    stop(); draft = null; manual = false; error('');
+    $('scene-text').hidden = !$('scene-request').value;
+    show('input');
+    $('scene-input').scrollIntoView({ block: 'start' });
+    if (!$('scene-record').disabled) $('scene-record').focus({ preventScroll: true });
+  }
+  $('scene-change').onclick = changeScene;
+  $('scene-back').onclick = changeScene;
   $('scene-request').oninput = () => { if (busy) stop(); draft = null; controls(); remember(); };
   fields.forEach(key => { $('scenario-' + key).oninput = () => { if (draft?.assumed.includes(key)) { draft.assumed = draft.assumed.filter(k => k !== key); $('assumed-' + key).hidden = true; } controls(); remember(); }; });
   $('mode').addEventListener('change', () => { controls(); remember(); }); $('grammar').addEventListener('change', remember);
