@@ -2,7 +2,7 @@
 (() => {
   'use strict';
   const C = VoicePracticeCore, $ = id => document.getElementById(id), API = '/api/voice-practice';
-  let config, current = null, peer, channel, stream, context, localMeter, remoteMeter, remoteSource;
+  let config, current = null, peer, channel, stream, context, localMeter, remoteMeter, remoteSource, releaseCapture;
   let phase = 'idle', connected = false, sessionReady = false, greeted = false, muted = false;
   let responding = false, aiSpeaking = false, bufferStopped = false, userSpeaking = false;
   let lastRemoteSound = 0, stoppedAt = 0, lastLocalSound = 0, loopFrame, closingRequested = false, closingSent = false, closingGenerated = false;
@@ -180,6 +180,7 @@
     if (peer) { peer.ontrack = peer.onconnectionstatechange = null; peer.close(); }
     remoteSource?.disconnect(); await context?.close().catch(() => {});
     stream = null; peer = null; channel = null; context = null; localMeter = remoteMeter = remoteSource = null;
+    releaseCapture?.(); releaseCapture = null;
   }
   async function finish(interrupted) {
     if (savePromise) return savePromise;
@@ -211,6 +212,7 @@
     $('live-photo').hidden = person(chosen) !== 'Mia' || !/カフェ|café|cafe/i.test(chosen.scenario?.place || chosen.scene);
     try {
       if (!navigator.mediaDevices?.getUserMedia || !window.RTCPeerConnection) throw new Error('HTTPSまたはlocalhostで、マイク対応ブラウザを使用してください。');
+      releaseCapture = window.VoicePracticeAudio.acquire();
       context = new AudioContext(); await context.resume();
       stream = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: true, noiseSuppression: true, autoGainControl: true } });
       localMeter = context.createAnalyser(); context.createMediaStreamSource(stream).connect(localMeter); stream.getAudioTracks().forEach(t => { t.enabled = false; });
@@ -225,7 +227,7 @@
       connected = true; await peer.setRemoteDescription({ type: 'answer', sdp: current.sdp });
       phase = 'ai'; setMic(); monitor(); greet();
       $('turn-guide').textContent = chosen.mode === 'grammar' ? '途中で考えても大丈夫。「' + person(chosen) + 'に返す」までは、続きを話せます。' : '話し終えると' + person(chosen) + 'が返答します。途中で考える時間も取れます。';
-    } catch (e) { await cleanup(); phase = 'idle'; $('live').hidden = true; $('setup').hidden = false; window.VoiceSceneSetup.restore(chosen); $('tab-history').disabled = false; $('tab-talk').disabled = false; error(e.name === 'NotAllowedError' ? 'マイクの使用を許可してから、もう一度お試しください。' : e.message); }
+    } catch (e) { await cleanup(); phase = 'idle'; $('live').hidden = true; $('setup').hidden = false; window.VoiceSceneSetup.restore(chosen); $('tab-history').disabled = false; $('tab-talk').disabled = false; error(e.name === 'NotAllowedError' ? 'マイクの使用を許可してから、もう一度お試しください。' : window.VoicePracticeAudio.message(e)); }
   }
   function page(name) {
     $('talk').hidden = name !== 'talk'; $('history').hidden = name !== 'history'; $('review').hidden = name !== 'review';

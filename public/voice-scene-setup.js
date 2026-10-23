@@ -47,7 +47,7 @@
   function stop() {
     version++; generation?.abort(); generation = null; busy = false; starting = false;
     const session = recording; recording = null;
-    if (session) { clearTimeout(session.timer); if (session.recorder.state !== 'inactive') session.recorder.stop(); session.stream.getTracks().forEach(track => track.stop()); }
+    if (session) { clearTimeout(session.timer); if (session.recorder.state !== 'inactive') session.recorder.stop(); session.stream.getTracks().forEach(track => track.stop()); session.releaseCapture(); }
     controls();
   }
   async function json(url, init) {
@@ -70,7 +70,7 @@
     clearTimeout(session.timer);
     if (session.recorder.state !== 'inactive') session.recorder.stop();
     try {
-      await session.done; session.stream.getTracks().forEach(track => track.stop());
+      await session.done; session.stream.getTracks().forEach(track => track.stop()); session.releaseCapture();
       if (version !== epoch) return;
       if (session.error) throw new Error(session.error);
       const audio = new Blob(session.chunks, { type: session.recorder.mimeType || 'audio/webm' });
@@ -81,20 +81,22 @@
       $('scene-request').value = result.text; $('scene-text').hidden = false;
       busy = false; generation = null; controls(); await generate();
     } catch (e) { if (version === epoch) error(e.message); }
-    finally { session.stream.getTracks().forEach(track => track.stop()); if (version === epoch) { busy = false; generation = null; controls(); remember(); } }
+    finally { session.stream.getTracks().forEach(track => track.stop()); session.releaseCapture(); if (version === epoch) { busy = false; generation = null; controls(); remember(); } }
   }
   async function record() {
     if (recording) return completeRecording();
     if (busy || starting || !config.openai) return;
-    error(''); const epoch = ++version; starting = true; controls(); let stream;
+    error(''); const epoch = ++version; starting = true; controls(); let stream, releaseCapture;
     try {
       if (!navigator.mediaDevices?.getUserMedia || !window.MediaRecorder) throw new Error('このブラウザでは録音を利用できません。文字で入力するか、マイク対応ブラウザを使ってください。');
+      releaseCapture = window.VoicePracticeAudio.acquire();
       stream = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: true, noiseSuppression: true } });
       if (epoch !== version) { stream.getTracks().forEach(track => track.stop()); return; }
       const mimeType = ['audio/webm;codecs=opus', 'audio/webm', 'audio/mp4'].find(type => MediaRecorder.isTypeSupported(type));
       if (!mimeType) throw new Error('このブラウザの録音形式に対応していません。文字で入力できます。');
       const recorder = new MediaRecorder(stream, { mimeType, audioBitsPerSecond: 64000 });
-      const session = { recorder, stream, chunks: [], size: 0, error: '', timer: null };
+      const session = { recorder, stream, chunks: [], size: 0, error: '', timer: null, releaseCapture };
+      releaseCapture = null;
       session.done = new Promise(resolve => { recorder.onstop = resolve; });
       recorder.ondataavailable = e => {
         if (!e.data.size) return;
@@ -104,8 +106,8 @@
       };
       recorder.onerror = () => { session.error = '録音できませんでした。マイクを確認して、もう一度お試しください。'; void completeRecording(); };
       recording = session; recorder.start(250); session.timer = setTimeout(completeRecording, 60000);
-    } catch (e) { stream?.getTracks().forEach(track => track.stop()); if (epoch === version) { recording = null; error(e.name === 'NotAllowedError' ? 'マイクの使用を許可してください。文字での入力もできます。' : e.message); } }
-    finally { if (epoch === version) { starting = false; controls(); } }
+    } catch (e) { stream?.getTracks().forEach(track => track.stop()); if (epoch === version) { recording?.releaseCapture(); recording = null; error(e.name === 'NotAllowedError' ? 'マイクの使用を許可してください。文字での入力もできます。' : window.VoicePracticeAudio.message(e)); } }
+    finally { releaseCapture?.(); if (epoch === version) { starting = false; controls(); } }
   }
   $('scene-record').onclick = record; $('scene-stop').onclick = completeRecording;
   $('scene-type').onclick = () => { $('scene-text').hidden = false; $('scene-request').focus(); };

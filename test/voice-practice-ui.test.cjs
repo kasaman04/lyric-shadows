@@ -5,8 +5,9 @@ const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
 const C = require('../public/voice-practice-core');
+const createAudioSession = require('../public/voice-practice-audio');
 const settle = async () => { for (let i = 0; i < 5; i++) await new Promise(setImmediate); };
-function fixture() {
+function fixture(options = {}) {
   class Element {
     constructor() { Object.assign(this, { children: [], dataset: {}, attrs: {}, _text: '', hidden: false, value: '', disabled: false, scrollTop: 0, scrollHeight: 600, clientHeight: 290, offsetTop: 0, offsetHeight: 90, currentTime: 0, duration: 10, paused: true }); }
     set textContent(v) { this._text = v; this.children = []; } get textContent() { return this._text + this.children.map(c => c.textContent).join(''); }
@@ -21,6 +22,12 @@ function fixture() {
   let chosen = C.settings({ scene: 'cafe', grammar: 'when' });
   const setup = { initialize() {}, stop() {}, step() {}, getSettings: () => chosen, restore: value => { chosen = C.settings(value); } };
   const requests = [], events = [], warnings = [], timers = new Map(), track = { enabled: true, stopped: false, stop() { this.stopped = true; } }; let now = 0, nextTimer = 0, frame, dc, saved = null;
+  const audioSession = { type: 'playback' };
+  const nav = { audioSession, mediaDevices: { getUserMedia: async () => {
+    assert.equal(audioSession.type, 'play-and-record', 'capture must not use the music playback category');
+    if (options.micError) throw options.micError;
+    return { getTracks: () => [track], getAudioTracks: () => [track] };
+  } } };
   class Peer {
     constructor() { this.iceGatheringState = 'complete'; this.localDescription = { sdp: 'v=0\r\n' }; }
     addTrack() {} createDataChannel() { dc = { readyState: 'open', send: text => events.push(JSON.parse(text)), close() { this.readyState = 'closed'; this.onclose?.(); } }; return dc; }
@@ -29,6 +36,7 @@ function fixture() {
     close() {} addEventListener() {} removeEventListener() {}
   }
   class Context {
+    constructor() { assert.equal(audioSession.type, 'play-and-record', 'switch category before starting Web Audio'); }
     resume() { return Promise.resolve(); } close() { return Promise.resolve(); }
     createAnalyser() { return { fftSize: 16, getFloatTimeDomainData(a) { a.fill(0); }, connect() {} }; }
     createMediaStreamSource() { return { connect() {}, disconnect() {} }; }
@@ -47,8 +55,8 @@ function fixture() {
   const local = new Map();
   vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../public/voice-practice.js'), 'utf8'), {
     VoicePracticeCore: C, document: { getElementById: id => { assert(nodes[id], id); return nodes[id]; }, createElement: () => new Element() },
-    window: { RTCPeerConnection: Peer, VoiceSceneSetup: setup, addEventListener() {} }, RTCPeerConnection: Peer, AudioContext: Context,
-    navigator: { mediaDevices: { getUserMedia: async () => ({ getTracks: () => [track], getAudioTracks: () => [track] }) } },
+    window: { RTCPeerConnection: Peer, VoiceSceneSetup: setup, VoicePracticeAudio: createAudioSession(nav), addEventListener() {} }, RTCPeerConnection: Peer, AudioContext: Context,
+    navigator: nav,
     fetch: fetcher, AbortController, performance: { now: () => now }, console: { warn: (...args) => warnings.push(args) },
     localStorage: { setItem: (k, v) => local.set(k, v), getItem: k => local.get(k), removeItem: k => local.delete(k) },
     setTimeout: (fn, delay) => { timers.set(++nextTimer, { fn, at: now + delay }); return nextTimer; }, clearTimeout: id => timers.delete(id), requestAnimationFrame: fn => { frame = fn; return 1; }, cancelAnimationFrame: () => { frame = null; }, matchMedia: () => ({ matches: true }), Blob
@@ -61,7 +69,7 @@ function fixture() {
     emit('response.done', { response: { id, status: 'completed', output: [], metadata: closing ? { purpose: 'closing' } : {} } }); emit('output_audio_buffer.stopped'); await advance(300);
   }
   function user(id, text, previous) { emit('input_audio_buffer.speech_started'); emit('input_audio_buffer.committed', { item_id: id, previous_item_id: previous }); emit('input_audio_buffer.speech_stopped'); emit('conversation.item.input_audio_transcription.completed', { item_id: id, transcript: text }); }
-  return { nodes, requests, events, warnings, track, advance, emit, assistant, user, saved: () => saved, setRecord: record => { saved = record; }, settings: () => chosen, setSettings: value => { chosen = value; } };
+  return { nodes, requests, events, warnings, track, audioSession, advance, emit, assistant, user, saved: () => saved, setRecord: record => { saved = record; }, settings: () => chosen, setSettings: value => { chosen = value; } };
 }
 test('actual UI wiring waits through learner pauses, offers a completion, sends only actual speech, then naturally closes before saving', async () => {
   const f = fixture(); await settle(); assert.equal(f.nodes.start.disabled, false); await f.nodes.start.onclick(); await settle();
@@ -77,6 +85,7 @@ test('actual UI wiring waits through learner pauses, offers a completion, sends 
   await f.advance(1000); assert.equal(f.requests.filter(r => r.url.endsWith('/finish')).length, 0, 'generation done is not playback done');
   f.emit('output_audio_buffer.stopped'); await f.advance(300); await settle();
   const finishes = f.requests.filter(r => r.url.endsWith('/finish')); assert.equal(finishes.length, 1); assert.equal(finishes[0].body.interrupted, false); assert(f.track.stopped); assert.equal(f.nodes.review.hidden, false);
+  assert.equal(f.audioSession.type, 'playback', 'closed microphone returns to the previous playback category');
   assert(f.saved().turns.some(t => t.text === 'Actually I often play the guitar when I have time.')); assert(!f.saved().turns.some(t => t.text.includes('soccer')), 'unspoken candidate must not enter review'); assert.match(f.saved().turns.at(-1).text, /See you next time/); assert.deepEqual(f.warnings, []);
 });
 test('explicit spoken farewell queues a closing; pauses and an unfinished when clause never do', async () => {
@@ -115,4 +124,25 @@ test('conversation cannot start without confirming scenario settings', async () 
   const f = fixture(); await settle(); f.setSettings(null); await f.nodes.start.onclick();
   assert.match(f.nodes.error.textContent, /設定を確認/);
   assert.equal(f.requests.filter(r => r.url.endsWith('/sessions') && r.body).length, 0);
+});
+
+test('failed microphone acquisition restores audio mode and lets the learner retry from confirmation', async () => {
+  const options = { micError: Object.assign(new Error('Denied'), { name: 'NotAllowedError' }) };
+  const f = fixture(options); await settle(); await f.nodes.start.onclick();
+  assert.equal(f.audioSession.type, 'playback');
+  assert.equal(f.nodes.setup.hidden, false); assert.equal(f.nodes.live.hidden, true);
+  assert.match(f.nodes.error.textContent, /マイクの使用を許可/);
+  assert(!f.requests.some(r => r.url.endsWith('/sessions') && r.body));
+  options.micError = null; await f.nodes.start.onclick();
+  assert.equal(f.audioSession.type, 'play-and-record');
+  assert(f.requests.some(r => r.url.endsWith('/sessions') && r.body));
+});
+
+test('overlapping microphone requests keep capture enabled until the final owner releases it', () => {
+  const nav = { audioSession: { type: 'playback' } }, audio = createAudioSession(nav);
+  const canceledScene = audio.acquire(), liveCall = audio.acquire();
+  canceledScene(); canceledScene(); assert.equal(nav.audioSession.type, 'play-and-record');
+  liveCall(); assert.equal(nav.audioSession.type, 'playback');
+  const unsupported = createAudioSession({}); assert.doesNotThrow(() => unsupported.acquire()());
+  const changing = audio.acquire(); nav.audioSession.type = 'auto'; changing(); assert.equal(nav.audioSession.type, 'auto', 'respect a later owner changing the mode');
 });
