@@ -22,7 +22,7 @@
 OPENAI_API_KEY=your_key_here
 ELEVENLABS_API_KEY=your_key_here
 # 以下は任意。未設定時の既定値です。
-OPENAI_REALTIME_MODEL=gpt-realtime-2.1-mini
+OPENAI_REALTIME_MODEL=gpt-realtime-2.1
 OPENAI_TRANSCRIPTION_MODEL=gpt-transcribe
 OPENAI_SCENE_TRANSCRIPTION_MODEL=gpt-transcribe
 OPENAI_REALTIME_VOICE=marin
