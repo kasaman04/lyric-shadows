@@ -19,13 +19,14 @@ const SUPABASE_PREFS_TABLE = 'user_phrase_preferences';
 
 (async () => { await fs.ensureDir(SONGS_DIR); })();
 
-app.use(express.json());
+app.use(express.json({ limit: '256kb' }));
 app.use(express.static(path.join(__dirname, 'public'), {
   setHeaders(res, file) {
     if (/\.(html|js|css)$/.test(file)) res.set('Cache-Control', 'no-store');
   }
 }));
 app.use('/songs', express.static(SONGS_DIR));
+require('./lib/voice-practice').mountVoicePractice(app);
 require('./lib/pet-api').mountPetApi(app);
 require('./lib/pet-worker-launcher').startLocalWorker();
 
@@ -348,3 +349,4 @@ app.delete('/api/songs/:id', async (req, res) => {
 app.listen(PORT, () => {
   console.log(`🎵 Lyric Shadows running at http://localhost:${PORT}`);
 });
+

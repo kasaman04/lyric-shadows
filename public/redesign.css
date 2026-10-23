@@ -1,3 +1,4 @@
+.home-ai-entry{display:flex;align-items:center;gap:13px;margin:22px 16px 0;padding:19px 18px;border:1.5px solid #d96554;border-radius:18px;background:#fffdfa;text-decoration:none;color:#182333}.home-ai-icon{display:grid;place-items:center;width:44px;min-width:44px;height:44px;border-radius:50%;background:#f9e8e1;color:#ba4b3d;font-size:23px}.home-ai-copy{flex:1;min-width:0}.home-ai-copy>strong{display:block;font-size:17px}.home-ai-copy>strong small{display:inline-block;vertical-align:middle;margin-left:5px;font:700 9px/1.4 'DM Sans',sans-serif;color:#ba4b3d;background:#f9e8e1;padding:2px 5px;border-radius:4px}.home-ai-copy>span{display:block;font-size:12px;line-height:1.7;color:#65717a;margin-top:5px}.home-ai-arrow{font-size:23px;color:#ba4b3d}
 /* Lyric Shadows: warm editorial direction for discovery and phrase study. */
 :root {
   --paper: #f7f4ee;
@@ -900,3 +901,4 @@ button:focus-visible { outline: 3px solid var(--coral); outline-offset: 3px; }
   .home-hero h1 { font-size: 31px; }
   .voice-preview-picker { grid-template-columns: 1fr; }
 }
+

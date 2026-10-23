@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "voice:dev": "node scripts/serve-voice-practice.js",
+    "test:voice": "node --test --test-concurrency=1 test/voice-practice*.test.cjs"
   },
   "dependencies": {
     "axios": "^1.6.0",

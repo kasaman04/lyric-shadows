@@ -394,6 +394,7 @@ function renderHome() {
           <button class="hero-cta" onclick="startTodayPhrasePractice()">今日の練習を始める <span aria-hidden="true">→</span></button>
         </div>
       </section>
+      <a class="home-ai-entry" href="/voice-practice.html"><span class="home-ai-icon" aria-hidden="true">🎙</span><span class="home-ai-copy"><strong>AIと話す <small>NEW</small></strong><span>日本語で場面を伝えて、英会話。<br>文法を使って、もっと長く話そう。</span></span><span class="home-ai-arrow" aria-hidden="true">→</span></a>
       <nav class="home-tabs" aria-label="学習方法">
         <button class="home-tab ${state.homeFilter === 'A' ? 'active' : ''}" onclick="setHomeFilter('A')" aria-current="${state.homeFilter === 'A' ? 'page' : 'false'}">♫ <span>洋楽で学ぶ</span></button>
         <button class="home-tab ${state.homeFilter === 'C' ? 'active' : ''}" onclick="setHomeFilter('C')" aria-current="${state.homeFilter === 'C' ? 'page' : 'false'}">💬 <span>会話フレーズ</span></button>
@@ -2404,3 +2405,4 @@ function showPreviewView(preview) {
 // START
 // ============================================================
 init();
+

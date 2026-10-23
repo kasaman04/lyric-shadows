@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ja">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>AI英会話 · Lyric Shadows</title><link rel="icon" href="/rogo2.png"><link rel="stylesheet" href="/voice-practice.css?v=scene-2"><link rel="stylesheet" href="/voice-practice-theme.css?v=scene-2"><link rel="stylesheet" href="/pet.css?v=listening-goal-20261023-1"><link rel="stylesheet" href="/pet-memorial.css?v=memorial-20261016-1"></head>
+<body>
+<div id="app" class="page-voice-practice">
+<main id="practice">
+  <header class="top"><a class="brand-mark" href="/" aria-label="Lyric Shadowsのホームへ">♫</a><div><strong>Lyric Shadows</strong><small>ENGLISH THROUGH SOUND</small></div><button id="pet-open" class="pet-home-entry">🌱 育成</button></header>
+  <div class="practice-breadcrumb"><a href="/" id="home-link">‹ ホーム</a><span> / AI英会話</span><button id="listening-records">♫ <span data-listening-time="today">0分00秒</span></button></div>
+  <nav class="tabs" aria-label="画面"><button id="tab-talk" aria-pressed="true">話す</button><button id="tab-history" aria-pressed="false">聞き返す</button></nav>
+  <p id="error" class="error" role="alert" hidden></p>
+  <section id="talk">
+    <ol id="flow-steps" class="flow-steps" aria-label="英会話を始めるまで"><li id="flow-input" aria-current="step">1 場面を伝える</li><li id="flow-confirm">2 設定を確認</li><li id="flow-conversation">3 英会話</li></ol>
+    <div id="setup" class="panel">
+      <section id="scene-input">
+        <p class="eyebrow">AI CONVERSATION</p><h1>どんな場面で、<br>話してみたい？</h1><p class="muted">相手や状況を、日本語で自由に話そう。</p>
+        <div class="scene-voice-box"><button id="scene-record" class="scene-record" aria-label="日本語で場面を録音する" aria-pressed="false" disabled>🎙</button><strong id="scene-record-label">日本語で場面を話す</strong><p id="scene-status" class="muted small" role="status">マイクを押して、練習したい場面を伝えてください。</p><p class="scene-example">例えば「友人の男の恋人と初めて会うときの会話」</p><button id="scene-stop" class="primary wide" hidden>話し終えて、設定を確認 →</button></div>
+        <button id="scene-type" class="text-action">文字で入力・修正する</button>
+        <div id="scene-text" hidden><label for="scene-request">練習したい場面</label><textarea id="scene-request" rows="3" maxlength="1500" placeholder="誰と、どんな場面で話したい？"></textarea><button id="scene-generate" class="primary wide" disabled>この内容で設定を確認 →</button><button id="scene-manual" class="text-action" disabled>自分で設定を入力する</button></div>
+      </section>
+      <section id="scene-confirm" hidden>
+      <p class="eyebrow">YOUR SCENE</p><h1>この場面で、話そう。</h1><p id="scene-original" class="scene-original"></p>
+      <div class="scenario-editor"><div class="assist-heading"><strong>会話の設定</strong><small class="muted">タップして修正できます</small></div>
+        <label>場面のタイトル<input id="scenario-title" maxlength="80" required></label>
+        <label>相手との関係 <span id="assumed-relationship" class="assumed" hidden>AIが補完</span><input id="scenario-relationship" maxlength="250" required></label>
+        <div class="form-row"><label>場所 <span id="assumed-place" class="assumed" hidden>AIが補完</span><input id="scenario-place" maxlength="150" required></label><label>タイミング <span id="assumed-time" class="assumed" hidden>AIが補完</span><input id="scenario-time" maxlength="150" required></label></div>
+        <label>相手の名前 <span id="assumed-partnerName" class="assumed" hidden>AIが補完</span><input id="scenario-partnerName" maxlength="60" required></label>
+        <details><summary>場面の補足を確認・修正</summary><label>会話のきっかけ<textarea id="scenario-context" rows="3" maxlength="1200" required></textarea></label></details>
+        <p id="scenario-assumptions" class="small muted">伝えていない設定は仮のもの。好きに変えられます。</p>
+      </div>
+      <div class="form-row"><label>モード<select id="mode"><option value="grammar">文法練習</option><option value="free">自由会話</option></select></label><label id="grammar-label">練習する表現<select id="grammar"></select></label></div>
+      <p id="grammar-explanation" class="tip">文法を使って、理由や経験をつないで詳しく話してみよう。</p>
+      <button id="start" class="primary wide" disabled>この設定で英会話を始める →</button><button id="scene-back" class="text-action">場面を伝え直す</button>
+      </section>
+      <p id="configuration" class="muted small" aria-live="polite">接続設定を確認しています…</p>
+      <p class="small muted">会話内容は復習のため、このブラウザ用の履歴としてサーバーに保存されます。</p>
+    </div>
+    <div id="live" hidden>
+      <div class="live-top"><div id="live-avatar" class="avatar" aria-hidden="true">M</div><div><strong id="live-partner">Mia</strong><small id="live-setting"></small></div><button id="end" class="quiet">会話を終える</button></div>
+      <img id="live-photo" class="scene live-photo" src="/voice-practice-cafe.jpg" alt="カフェで話す相手のイメージ" width="1536" height="1024" hidden>
+      <div id="status" class="status" role="status">接続中…</div>
+      <div id="chat" class="chat" aria-label="会話履歴"></div>
+      <section class="assist" aria-label="英語の補助"><div class="assist-heading"><strong id="hint-title">必要なときに、ひとこと補助</strong><button id="hint" class="quiet">ヒント</button></div><div id="hint-status" class="muted small" aria-live="polite">話し始めると候補は隠れます。</div><div id="hints" class="hints" hidden></div><p id="target" class="tip" hidden></p><p id="feedback" class="muted small" hidden></p></section>
+      <div class="speaking-controls"><button id="mic" class="mic" aria-pressed="false">マイク ON</button><button id="send" class="primary">Miaに返す →</button></div>
+      <p id="turn-guide" class="muted small center">詰まったら少し待って、続きを考えてみよう。</p>
+      <button id="save-interrupted" class="quiet wide" hidden>ここまでを保存して終了する</button>
+    </div>
+  </section>
+  <section id="history" class="panel" hidden><h1>あの会話を、もう一度。</h1><p class="muted">相手とあなたの会話を、二人の声で聞き返そう。同じ設定で話す練習もできます。</p><div id="history-list" class="history-list"></div><button id="refresh-history" class="quiet">履歴を更新</button></section>
+  <section id="review" class="panel" hidden>
+    <button id="back" class="quiet">‹ 会話一覧へ</button><h1 id="review-title"></h1><p id="review-meta" class="muted small"></p><img id="review-scene" class="scene" src="/voice-practice-cafe.jpg" alt="カフェでMiaと話した場面" width="1536" height="1024" hidden>
+    <p id="review-summary" class="tip" hidden></p><div id="review-status" class="muted" role="status"></div><button id="retry-review" class="quiet" hidden>復習音声を作る・再試行</button><button id="finish-recovered" class="quiet" hidden>ここまでの会話を保存して閉じる</button>
+    <button id="retry-practice" class="primary wide" hidden>↻ 同じ設定で、もう一度話す</button><p id="retry-practice-note" class="small muted" hidden>同じ相手・場面・文法で、最初から新しい会話を練習します。</p>
+    <div id="player" class="player" hidden><div id="review-speaker" class="small"></div><p id="review-line"></p><label class="small" for="seek">聞き返す位置</label><input id="seek" type="range" min="0" max="1" step="0.05" value="0"><div class="time"><span id="position"></span><span id="time"></span></div><div class="player-controls"><button id="previous" class="quiet" aria-label="前の発言">|‹</button><button id="play" class="primary">▶ 再生</button><button id="next" class="quiet" aria-label="次の発言">›|</button></div><button id="repeat" class="quiet repeat" aria-pressed="false">↻ リピート OFF</button><p class="small muted center">ElevenLabsの合成音声 · 相手とあなたに別の声を使用</p></div>
+    <div class="subtitle-heading"><strong>字幕 · 再生に自動追従</strong><button id="translations" class="quiet" aria-pressed="true">日本語訳 ON</button></div><div id="subtitles" class="subtitles" aria-label="二人の会話字幕"></div>
+  </section>
+  <audio id="review-audio" preload="metadata"></audio>
+</main></div>
+<script src="/listening-time.js?v=refresh-live-time-20261020-1"></script><script src="/pet-rules.js?v=listening-refill-24x-20261023-1"></script><script src="/pet-art.js?v=memorial-20261016-1"></script><script src="/pet-frames.js?v=pet-frame-crop-20261017-1"></script><script src="/pet-playback.js?v=pet-mobile-20261011-v1"></script><script src="/pet-reactions.js?v=growth-items-20261016-1"></script><script src="/pet.js?v=listening-refill-24x-20261023-1"></script>
+<script src="/voice-practice-shell.js?v=scene-2"></script><script src="/voice-practice-core.js?v=scene-2"></script><script src="/voice-scene-setup.js?v=scene-2"></script><script src="/voice-practice.js?v=scene-2"></script>
+</body></html>
