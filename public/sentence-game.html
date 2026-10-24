@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>2文をつなぐ · Lyric Shadows</title><link rel="icon" href="/rogo2.png"><link rel="stylesheet" href="/sentence-game.css?v=combine-20261024-1"><link rel="stylesheet" href="/pet.css?v=listening-goal-20261023-1"><link rel="stylesheet" href="/pet-memorial.css?v=memorial-20261016-1"></head>
+<body><main id="practice" class="sentence-game">
+<header class="top"><a href="/" class="brand" aria-label="Lyric Shadowsのホームへ"><span aria-hidden="true">♫</span><span>Lyric Shadows<small>ENGLISH THROUGH SOUND</small></span></a><button id="pet-open" class="quiet">🌱 育成</button></header>
+<nav class="breadcrumb"><a href="/">‹ ホーム</a><span>/ 2文をつなぐ</span><button id="listening-records">♫ <span data-listening-time="today">0分00秒</span></button></nav>
+<p id="error" class="error" role="alert" hidden></p>
+<section id="setup" class="panel">
+ <p class="eyebrow">SENTENCE CHALLENGE</p><h1>2つの文を、<br>話してひとつに。</h1><p class="muted">ランダムな2文を聞いて、1つの英文にまとめよう。</p>
+ <ol class="intro-flow"><li><span>1</span><div><strong>2文を聞く</strong><small>英文が順番に流れます。</small></div></li><li><span>2</span><div><strong>終わると、自動で録音</strong><small>5秒以内に話し始めよう。<br>話し始めたら、5秒で打ち切りません。</small></div></li><li><span>3</span><div><strong>話し終わったら、自動で採点</strong><small>元の意味と文法をチェック。正しい言い換えもOK。</small></div></li></ol>
+ <label for="filter">練習する表現</label><select id="filter"><option value="all">全17種類からランダム</option><option value="basic">基本10種類からランダム</option><option value="advanced">応用7種類からランダム</option></select>
+ <details class="type-guide"><summary>17種類の表現を確認する</summary><div id="type-list"></div></details>
+ <button id="begin" class="primary wide" disabled>2文を聞いて、はじめる →</button><p id="configuration" class="small muted" role="status">接続設定を確認しています…</p>
+ <p class="small muted">はじめるとマイクを準備します。録音は2文の音声が終わってから開始します。</p>
+</section>
+<section id="round" class="panel" hidden>
+ <div class="round-top"><span id="scoreboard" class="small muted">正解 0 / 0問</span><button id="exit" class="quiet">練習を終える</button></div>
+ <ol class="steps" aria-label="ゲームの流れ"><li id="step-listen">1 聞く</li><li id="step-speak">2 話す</li><li id="step-grade">3 判定</li></ol>
+ <div id="question-screen"><p class="eyebrow">RANDOM CHALLENGE</p><h1 id="round-title">2文を聞こう。</h1>
+ <div id="sentences" class="sentences"><article id="sentence-0"><small>文 1</small><p id="text-0"></p></article><article id="sentence-1"><small>文 2</small><p id="text-1"></p></article></div>
+ <div id="voice-state" class="voice-state"><div id="mic-symbol" class="mic-symbol" aria-hidden="true">♪</div><strong id="status" role="status">音声を準備しています…</strong><div id="countdown" class="countdown" aria-live="off" hidden>5</div><p id="record-guide" class="small muted">再生終了と同時に録音が始まります。</p></div>
+ <button id="resume-audio" class="primary wide" hidden>▶ 音声を再生して開始</button><button id="retry-grade" class="primary wide" hidden>採点を再試行する</button>
+ </div>
+ <section id="result" hidden aria-labelledby="result-title"><div id="result-icon" class="result-icon" aria-hidden="true">✓</div><h1 id="result-title">正解！</h1><p id="result-feedback"></p>
+ <article class="answer-card"><small>あなたが話した文</small><p id="transcript"></p></article>
+ <article class="answer-card"><small>お手本</small><p id="reference"></p><button id="solution-audio" class="text-action">▶ 完成した文を聞く</button><p id="solution-status" class="small muted" role="status"></p><div class="explanation"><strong id="result-type"></strong><p id="explanation"></p></div></article>
+ <button id="repeat" class="quiet wide">↻ 同じ問題でもう一度</button><button id="next" class="primary wide">次のランダム問題 →</button>
+ </section>
+</section>
+<audio id="game-audio" preload="auto" playsinline></audio>
+</main>
+<script src="/listening-time.js?v=refresh-live-time-20261020-1"></script><script src="/pet-rules.js?v=listening-refill-24x-20261023-1"></script><script src="/pet-art.js?v=memorial-20261016-1"></script><script src="/pet-frames.js?v=pet-frame-crop-20261017-1"></script><script src="/pet-playback.js?v=pet-mobile-20261011-v1"></script><script src="/pet-reactions.js?v=growth-items-20261016-1"></script><script src="/pet.js?v=listening-refill-24x-20261023-1"></script>
+<script src="/voice-practice-shell.js?v=ios-mic-20261024-1"></script><script src="/voice-practice-audio.js?v=ios-mic-20261024-1"></script><script src="/sentence-game-core.js?v=combine-20261024-1"></script><script src="/sentence-game.js?v=combine-20261024-1"></script>
+</body></html>
