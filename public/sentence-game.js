@@ -18,8 +18,9 @@
   document.addEventListener('visibilitychange',()=>{if(!document.hidden)refreshPractice();});
   const active = value => { phase=value; for(const key of ['listen','speak','grade'])$('step-'+key).removeAttribute('aria-current'); const key={preparing:'listen',listening:'listen',recording:'speak',grading:'grade',result:'grade'}[value];if(key)$('step-'+key).setAttribute('aria-current','step');$('voice-state').dataset.phase=value; };
   function stopTimers(){cancelAnimationFrame(frame);clearTimeout(deadline);gate?.cancel();}
+  function muteMic(){stream?.getAudioTracks().forEach(t=>{t.enabled=false;});}
   function closeMic(){stream?.getTracks().forEach(t=>t.stop());stream=null;source?.disconnect();source=null;analyser=null;const old=context;context=null;old?.close().catch(()=>{});releaseAudio?.();releaseAudio=null;}
-  function cancel(){epoch++;aborter?.abort();stopTimers();purpose='';player.pause();player.removeAttribute('src');player.load();if(recorder?.state==='recording'){recorder.onstop=null;recorder.stop();}recorder=null;closeMic();}
+  function cancel(keepMic=false){epoch++;aborter?.abort();stopTimers();purpose='';player.pause();player.removeAttribute('src');player.load();if(recorder?.state==='recording'){recorder.onstop=null;recorder.stop();}recorder=null;if(keepMic===true)muteMic();else closeMic();}
   async function api(path,body,raw=false){const response=await fetch('/api/sentence-game/'+path,{method:body===undefined?'GET':'POST',headers:body===undefined?{}:{'Content-Type':raw?(body.type||'audio/webm'):'application/json'},body:body===undefined?undefined:raw?body:JSON.stringify(body),signal:aborter?.signal});const data=await response.json();if(!response.ok)throw new Error(data.error||'接続できませんでした。再試行してください。');return data;}
   function controls(disabled){for(const id of ['repeat','next','solution-audio'])$(id).disabled=disabled;}
   function setup(){cancel();active('setup');$('setup').hidden=false;$('round').hidden=true;$('begin').disabled=!config?.openai||!config?.elevenlabs;}
@@ -29,6 +30,10 @@
   }
   async function prepareMic(token){
     if(!navigator.mediaDevices?.getUserMedia||!window.MediaRecorder)throw new Error('このブラウザでは録音できません。SafariまたはChromeの最新版で開いてください。');
+    // Retain the original permission/stream across questions. Muting a live
+    // track pauses input without requesting microphone access again.
+    if(stream?.getAudioTracks().some(t=>t.readyState==='live')&&context?.state!=='closed'&&analyser){muteMic();unlock();await context.resume();return;}
+    closeMic();
     releaseAudio=window.VoicePracticeAudio.acquire();
     const AudioContextClass=window.AudioContext||window.webkitAudioContext;
     context=new AudioContextClass();unlock();await context.resume();
@@ -38,7 +43,7 @@
     analyser=context.createAnalyser();analyser.fftSize=2048;source=context.createMediaStreamSource(stream);source.connect(analyser);
   }
   async function start(repeat){
-    cancel();const token=epoch;aborter=new AbortController();clearError();pending=null;attempt=null;
+    cancel(true);const token=epoch;aborter=new AbortController();clearError();pending=null;attempt=null;
     $('setup').hidden=true;$('round').hidden=false;$('result').hidden=true;$('question-screen').hidden=false;$('resume-audio').hidden=true;$('retry-grade').hidden=true;$('countdown').hidden=true;controls(true);
     for(const i of [0,1]){$('text-'+i).textContent='…';$('sentence-'+i).removeAttribute('aria-current');}
     active('preparing');$('round-title').textContent='2文を準備しています。';$('status').textContent='マイクと問題音声を準備しています…';$('record-guide').textContent='音声が終わると、自動で録音が始まります。';$('mic-symbol').textContent='♪';
@@ -82,8 +87,8 @@
   function finishRecording(outcome,token){
     if(token!==epoch||phase!=='recording')return;active('grading');stopTimers();$('countdown').hidden=true;$('status').textContent=outcome==='no_answer'?'回答なしとして判定しています…':'英文を聞き取って、採点しています…';$('record-guide').textContent='少しお待ちください。';$('mic-symbol').textContent='…';
     const current=recorder;
-    current.onstop=()=>{if(token!==epoch)return;const blob=new Blob(chunks,{type:current.mimeType||chunks[0]?.type||'audio/webm'});recorder=null;closeMic();pending={outcome,blob};submit(token);};
-    current.stop();
+    current.onstop=()=>{if(token!==epoch)return;const blob=new Blob(chunks,{type:current.mimeType||chunks[0]?.type||'audio/webm'});recorder=null;pending={outcome,blob};submit(token);};
+    current.stop();muteMic();
   }
   async function submit(token){
     $('retry-grade').hidden=true;clearError();
@@ -99,7 +104,7 @@
   $('solution-audio').onclick=async()=>{const token=epoch;clearError();$('solution-audio').disabled=true;$('solution-status').textContent='お手本音声を準備しています…';try{const sound=await api('attempts/'+attempt.id+'/solution-audio',{});if(token!==epoch)return;purpose='solution';player.src=sound.url;await player.play();$('solution-status').textContent='お手本を再生しています…';}catch(error){if(token!==epoch)return;purpose='';$('solution-audio').disabled=false;$('solution-status').textContent='';showError(error);}};
   $('begin').onclick=()=>start();$('repeat').onclick=()=>start(attempt.question.id);$('next').onclick=()=>start();$('exit').onclick=()=>{clearError();setup();};$('retry-grade').onclick=()=>submit(epoch);
   window.addEventListener('pagehide',cancel);
-  document.addEventListener('visibilitychange',()=>{if(document.hidden&&phase!=='setup'&&phase!=='result'){setup();showError(new Error('画面を離れたため、録音を停止しました。もう一度はじめてください。'));}});
+  document.addEventListener('visibilitychange',()=>{if(!document.hidden)return;if(phase==='result'){closeMic();}else if(phase!=='setup'){setup();showError(new Error('画面を離れたため、録音を停止しました。もう一度はじめてください。'));}});
   api('config').then(value=>{
     config=value;
     displayPractice(value.dailyPractice);

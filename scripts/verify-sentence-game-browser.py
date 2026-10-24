@@ -24,7 +24,9 @@ with sync_playwright() as p:
     browser = p.chromium.launch(headless=True, args=['--use-fake-device-for-media-stream', '--use-fake-ui-for-media-stream'])
     ctx = browser.new_context(viewport={'width':390,'height':844}, permissions=['microphone'], reduced_motion='reduce')
     ctx.add_init_script('''
-      window.__loud=false;window.__recordStarts=0;
+      window.__loud=false;window.__recordStarts=0;window.__gumCalls=0;window.__streams=[];
+      const acquire=navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
+      navigator.mediaDevices.getUserMedia=async constraints=>{window.__gumCalls++;const stream=await acquire(constraints);window.__streams.push(stream);return stream;};
       const make=AudioContext.prototype.createAnalyser;
       AudioContext.prototype.createAnalyser=function(){const a=make.call(this);a.getFloatTimeDomainData=data=>data.fill(window.__loud?.07:0);return a;};
       const start=MediaRecorder.prototype.start;
@@ -83,18 +85,22 @@ with sync_playwright() as p:
     assert len([x for x in requests if x.endswith('/no-answer')])==1
     assert not any(x.endswith('/answer') for x in requests)
     assert page.locator('#practice-count').inner_text()=='9 / 10回', 'No answer must not increase daily practice'
+    assert page.evaluate('__gumCalls')==1
+    assert page.evaluate('__streams[0].getAudioTracks().every(t=>t.readyState==="live"&&!t.enabled)'), 'Grade/results mute the existing microphone instead of closing it'
     page.locator('#repeat').click()
     page.wait_for_function('__recordStarts===2')
     page.evaluate('__loud=true')
     page.wait_for_timeout(5500)
     assert page.locator('#voice-state').get_attribute('data-phase')=='recording', 'Speech begun in time must continue beyond five seconds'
     assert page.locator('#countdown').is_hidden()
+    assert page.evaluate('__gumCalls')==1, 'Repeating a question must reuse the microphone permission and stream'
     page.evaluate('__loud=false')
     page.locator('#result').wait_for(state='visible',timeout=6000)
     assert page.locator('#result-title').inner_text()=='正解！'
     assert len([x for x in requests if x.endswith('/answer')])==1
     assert page.locator('#practice-count').inner_text()=='10 / 10回'
     assert page.locator('#practice-label').inner_text()=='今日の10回、達成！'
+    assert page.evaluate('__streams[0].getAudioTracks().every(t=>t.readyState==="live"&&!t.enabled)')
     for width in [320,390,768]:
         page.set_viewport_size({'width':width,'height':844})
         assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
@@ -113,11 +119,15 @@ with sync_playwright() as p:
     page.locator('#solution-audio').click()
     page.wait_for_function('document.querySelector("#game-audio").ended')
     assert page.evaluate('__recordStarts')==2, 'Solution playback must never restart recording'
+    assert page.evaluate('__gumCalls')==1
     page.locator('#next').click()
+    page.wait_for_function('document.querySelector("#game-audio").currentTime>.1')
+    assert page.evaluate('__gumCalls')==1, 'The next question must also reuse the original microphone'
     page.locator('#exit').click()
     assert page.locator('#setup').is_visible()
     page.wait_for_timeout(300)
     assert page.evaluate('__recordStarts')==2, 'Exiting cancels late async work'
+    assert page.evaluate('__streams.every(s=>s.getTracks().every(t=>t.readyState==="ended"))'), 'Leaving the practice must release all microphone tracks'
     assert errors==[], errors
     # A denied microphone is recoverable, does not create an attempt or a wrong answer.
     before=len([x for x in requests if x=='attempts'])
