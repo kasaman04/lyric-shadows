@@ -8,7 +8,7 @@ const {mountSentenceGame,grade,storage}=require('../lib/sentence-game');
 
 test('all 17 categories have two complete tasks, and random selection avoids repeats until exhausted',()=>{
   assert.equal(TYPES.length,17);assert.equal(TYPES.filter(t=>t.level==='basic').length,10);assert.equal(QUESTIONS.length,34);
-  for(const type of TYPES){const qs=QUESTIONS.filter(q=>q.type===type.key);assert.equal(qs.length,2);assert(qs.every(q=>q.sentences.length===2&&q.answer&&q.explanation));assert.equal(selectQuestion(type.key,[],()=>0).type,type.key);}
+  for(const type of TYPES){const qs=QUESTIONS.filter(q=>q.type===type.key);assert.equal(qs.length,2);assert(qs.every(q=>q.sentences.length===2&&q.answer&&q.explanation&&q.japanese));assert.equal(selectQuestion(type.key,[],()=>0).type,type.key);}
   const seen=[];for(let i=0;i<34;i++){const q=selectQuestion('all',seen,()=>0);assert(!seen.includes(q.id));seen.push(q.id);}assert(QUESTIONS.includes(selectQuestion('all',seen,()=>0)));assert.throws(()=>selectQuestion('invalid'));
   assert.equal(storage({SENTENCE_GAME_STORAGE:'supabase',SUPABASE_URL:'https://example.invalid'}).bucket,'sentence-game');
 });
@@ -20,16 +20,16 @@ test('five seconds is an onset deadline; speaking in time removes it and silence
 async function fixture(t,{missing=false,petStore,clock,deviceId,gradeVerdict='correct',onTranscribe}={}){
   const dir=await fs.mkdtemp(path.join(os.tmpdir(),'sg-test-'));
   t.after(async()=>{assert.equal(path.dirname(dir),os.tmpdir());assert(path.basename(dir).startsWith('sg-test-'));await fs.rm(dir,{recursive:true,force:true});});
-  const calls=[];let transcript='I met a man that lives in Tokyo.';
+  const calls=[];let transcript='I met a man that lives in Tokyo.',verdict=gradeVerdict;
   const fetcher=async(url,init)=>{calls.push(url);if(url.includes('text-to-dialogue')){const b=JSON.parse(init.body);return Response.json({audio_base64:Buffer.alloc(48000*b.inputs.length).toString('base64'),voice_segments:b.inputs.map((v,i)=>({voice_id:v.voice_id,dialogue_input_index:i,start_time_seconds:i,end_time_seconds:i+.9}))});}
     if(url.endsWith('/transcriptions')){assert.equal(init.body.get('prompt'),null);assert.equal(init.body.get('languages[]'),'en');onTranscribe?.();return Response.json({text:transcript});}
-    const b=JSON.parse(init.body);assert.match(b.instructions,/never silently fix/i);assert.match(b.instructions,/not require an exact/i);await new Promise(r=>setTimeout(r,20));return Response.json({output_text:JSON.stringify({verdict:gradeVerdict,feedback:'採点結果です。',corrected:transcript})});};
+    const b=JSON.parse(init.body);assert.match(b.instructions,/never silently fix/i);assert.match(b.instructions,/not require an exact/i);await new Promise(r=>setTimeout(r,20));return Response.json({output_text:JSON.stringify({verdict,feedback:'採点結果です。',corrected:transcript})});};
   const env={SENTENCE_GAME_STORAGE:'local',SENTENCE_GAME_DATA_DIR:dir,...missing?{}:{OPENAI_API_KEY:'test-secret',ELEVENLABS_API_KEY:'test-secret'}};
-  const app=express();app.use(express.json());mountSentenceGame(app,{env,fetcher,petStore,clock});
+  const app=express();app.use(express.json());const service=mountSentenceGame(app,{env,fetcher,petStore,clock});
   const http=app.listen(0,'127.0.0.1');await new Promise(r=>http.once('listening',r));t.after(()=>new Promise(r=>{http.closeAllConnections();http.close(r);}));
   const base='http://127.0.0.1:'+http.address().port;let cookie;
   async function call(endpoint,body,extra={}){const raw=Buffer.isBuffer(body),identity=[cookie,deviceId?'phraseDeviceId='+deviceId:''].filter(Boolean).join('; ');const res=await fetch(base+'/api/sentence-game'+endpoint,{method:body===undefined?'GET':'POST',headers:{...(identity?{Cookie:identity}:{}),...(body===undefined?{}:{'Content-Type':raw?'audio/webm;codecs=opus':'application/json',Origin:base}),...extra},body:body===undefined?undefined:raw?body:JSON.stringify(body)});cookie ||=res.headers.get('set-cookie')?.split(';')[0];return res;}
-  return {call,base,calls,setTranscript:value=>{transcript=value;},cookie:()=>cookie};
+  return {call,base,calls,service,setTranscript:value=>{transcript=value;},setVerdict:value=>{verdict=value;},cookie:()=>cookie};
 }
 test('private attempts, no-answer without ASR, audio caching/ranges, model alternatives and idempotent grading',async t=>{
   const f=await fixture(t);const cfg=await(await f.call('/config')).json();assert(cfg.openai&&cfg.elevenlabs);assert.equal(cfg.onsetTimeoutMs,5000);assert(!JSON.stringify(cfg).includes('secret'));
@@ -48,6 +48,41 @@ test('private attempts, no-answer without ASR, audio caching/ranges, model alter
   const next=await(await f.call('/attempts',{filter:'who',exclude:[first.question.id]})).json();assert.notEqual(next.question.id,first.question.id);
   f.setTranscript('');const empty=await(await f.call('/attempts/'+next.id+'/answer',Buffer.alloc(400))).json();assert.equal(empty.verdict,'no_answer');assert.equal(f.calls.filter(s=>s.endsWith('/responses')).length,1);
   assert.equal((await f.call('/attempts',{filter:'invalid'})).status,400);
+});
+test('review saves every non-correct verdict once per question, retains sources, reveals on demand, caches answer audio and survives a new server',async t=>{
+  const {PetStore}=require('../lib/pet-store');
+  const dir=await fs.mkdtemp(path.join(os.tmpdir(),'sg-test-'));t.after(async()=>{assert.equal(path.dirname(dir),os.tmpdir());assert(path.basename(dir).startsWith('sg-test-'));await fs.rm(dir,{recursive:true,force:true});});
+  const petStore=new PetStore({dir,practicePolicy:'daily'}),deviceId='review-notebook-device';
+  const f=await fixture(t,{petStore,deviceId,gradeVerdict:'incorrect'});
+  const start=async id=>await(await f.call('/attempts',{repeat:id})).json();
+  const first=await start('who-1');let result=await(await f.call('/attempts/'+first.id+'/answer',Buffer.alloc(400))).json();assert.equal(result.reviewSaved,true);assert.equal(result.reviewCount,1);
+  await f.call('/attempts/'+first.id+'/answer',Buffer.alloc(400));
+  f.setVerdict('almost');const second=await start('who-2');await f.call('/attempts/'+second.id+'/answer',Buffer.alloc(400));
+  const third=await start('which-7');result=await(await f.call('/attempts/'+third.id+'/no-answer',{})).json();assert.equal(result.reviewCount,3);assert.equal(result.dailyPractice.count,2);
+  f.setVerdict('correct');const correct=await start('who-1');result=await(await f.call('/attempts/'+correct.id+'/answer',Buffer.alloc(400))).json();assert.equal(result.reviewCount,3,'correct retry must not remove the saved problem');
+  let list=await(await f.call('/review')).json();assert.equal(list.count,3);assert.equal(list.importPending,false);
+  const saved=list.items.find(x=>x.id==='who-1');assert.deepEqual(saved.sentences,QUESTIONS[0].sentences);assert(!('answer' in saved));assert(!('type' in saved));assert(!('reference' in saved));assert(!('japanese' in saved));
+  const answer=await(await f.call('/review/who-1/reveal',{})).json();assert.equal(answer.reference,QUESTIONS[0].answer);assert(answer.japanese);assert(answer.explanation);
+  const before=f.calls.filter(s=>s.includes('text-to-dialogue')).length;
+  const sound=await(await f.call('/review/who-1/audio',{part:'answer'})).json();await f.call('/review/who-1/audio',{part:'answer'});assert.equal(f.calls.filter(s=>s.includes('text-to-dialogue')).length,before+1);
+  assert.equal(Buffer.from(await(await fetch(f.base+sound.url)).arrayBuffer()).subarray(0,4).toString(),'RIFF');
+  await f.call('/review/who-1/audio',{part:'question'});assert.equal(f.calls.filter(s=>s.includes('text-to-dialogue')).length,before+1,'original question audio is already cached');
+  assert.equal((await f.call('/review/who-1/audio',{part:'arbitrary text'})).status,400);
+  assert.equal((await f.call('/review/__proto__/reveal',{})).status,404);
+  assert.equal((await f.call('/review/who-1/reveal',{}, {Origin:'https://other.invalid'})).status,403);
+  const foreign={Cookie:f.cookie()+'; phraseDeviceId=other-review-device'};
+  assert.equal((await(await f.call('/review',undefined,foreign)).json()).count,0);assert.equal((await f.call('/review/who-1/reveal',{},foreign)).status,404);assert.equal((await f.call('/review/who-1/audio',{part:'answer'},foreign)).status,404);
+  const restarted=await fixture(t,{petStore:new PetStore({dir,practicePolicy:'daily'}),deviceId});list=await(await restarted.call('/review')).json();assert.equal(list.count,3);assert.equal((await(await restarted.call('/config')).json()).dailyPractice.count,3,'revealing and playing answers must not count as spoken practice');
+});
+test('review imports earlier receipt-indexed answers in bounded batches and ignores other devices',async t=>{
+  const {PetStore}=require('../lib/pet-store'),{recordPractice}=require('../lib/pet-practice');
+  const dir=await fs.mkdtemp(path.join(os.tmpdir(),'sg-test-'));t.after(async()=>{assert.equal(path.dirname(dir),os.tmpdir());assert(path.basename(dir).startsWith('sg-test-'));await fs.rm(dir,{recursive:true,force:true});});
+  const petStore=new PetStore({dir,practicePolicy:'daily'}),deviceId='legacy-review-device',f=await fixture(t,{petStore,deviceId});
+  for(let i=0;i<50;i++){const id=crypto.randomUUID(),at=Date.now();await f.service.store.write({id,kind:'attempt',deviceId:i===49?'different-review-device':deviceId,questionId:QUESTIONS[i%QUESTIONS.length].id,submittedAt:at,result:{verdict:'incorrect'}});await petStore.transact(deviceId,(s,now)=>recordPractice(s,{id,at},now));}
+  const first=await(await f.call('/review')).json();assert(first.importPending);assert.equal(first.count,24);
+  const second=await(await f.call('/review')).json();assert(second.importPending);assert.equal(second.count,34);
+  const third=await(await f.call('/review')).json();assert.equal(third.importPending,false);assert.equal(third.count,34);
+  const again=await(await f.call('/review')).json();assert.equal(again.count,34);assert.equal(again.importPending,false);
 });
 test('missing provider keys fails visibly before any paid request; exact reference and silence need no grading model',async t=>{
   const f=await fixture(t,{missing:true});assert.equal((await f.call('/attempts',{})).status,503);assert.equal(f.calls.length,0);
