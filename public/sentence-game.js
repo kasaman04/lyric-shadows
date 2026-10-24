@@ -12,6 +12,8 @@
     const count=Math.max(0,Number(value.count)||0);$('practice-count').textContent=count+' / 10回';$('practice-progress').value=Math.min(10,count);
     $('practice-label').textContent=value.met?'今日の10回、達成！':'今日、あと'+Math.max(0,10-count)+'回';
     $('practice-note').textContent=!value.petId?'相棒を選ぶと生存条件になります。声で回答して採点されると1回。無回答は数えません。':!value.alive?'この相棒の育成は終了しました。育成画面から次の相棒を選べます。':value.optional?'今日は準備日です。明日から日本時間の1日で10回。無回答は数えません。':value.met?'今日の生存条件を達成しました。明日はまた10回。正解・不正解は問いません。':'日本時間24時の締切までに10回。未達だとモンスターが死亡します。無回答は数えません。';
+    $('practice-time').hidden=value.policy!=='both'||!value.petId;
+    if(value.policy==='both'&&value.petId){const mins=Math.max(0,Math.ceil((value.timeRemainingMs||0)/60000));$('practice-time').textContent='生存時間：残り '+(mins>=60?Math.floor(mins/60)+'時間':'')+(mins%60||mins<60?mins%60+'分':'')+'（聴くと回復）';if(value.alive)$('practice-note').textContent=value.optional?'今日は10回の準備日です。時間の生存条件は今日も有効です。':value.met?'10回の条件は達成しました。生存時間も0にならないよう、英語を聴いて保とう。':'日本時間24時までに10回。残り時間と10回の両方を満たす必要があります。';}
     $('practice-goal').dataset.met=String(value.met);
   }
   $('goal-pet').onclick=()=>window.PetGame?.open();

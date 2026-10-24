@@ -10,10 +10,10 @@ BASE = 'http://127.0.0.1:10001'
 OUT = ROOT / 'tmp' / 'sentence-game-browser'
 OUT.mkdir(parents=True, exist_ok=True)
 TYPES=json.loads(subprocess.check_output(['node','-e','process.stdout.write(JSON.stringify(require("./lib/sentence-game-bank").TYPES))'],cwd=ROOT).decode('utf-8'))
-STATE=json.loads(subprocess.check_output(['node','-e','const {createState,newPet}=require("./lib/pet-store");const s=createState(Date.now()),p=newPet(Date.now());const day=require("./public/pet-rules").dayKey(Date.now());p.practice={from:day,policy:"daily",counts:{[day]:9}};s.pets.push(p);s.revision=1;s.serverNow=Date.now();process.stdout.write(JSON.stringify(s));'],cwd=ROOT).decode('utf-8'))
+STATE=json.loads(subprocess.check_output(['node','-e','const {createState,newPet}=require("./lib/pet-store");const s=createState(Date.now()),p=newPet(Date.now());const day=require("./public/pet-rules").dayKey(Date.now());p.practice={from:day,policy:"both",counts:{[day]:9}};s.pets.push(p);s.revision=1;s.serverNow=Date.now();process.stdout.write(JSON.stringify(s));'],cwd=ROOT).decode('utf-8'))
 def daily():
     count=list(STATE['pets'][0]['practice']['counts'].values())[0]
-    return dict(count=count,required=10,remaining=max(0,10-count),met=count>=10,optional=False,petId=STATE['pets'][0]['id'],alive=True)
+    return dict(count=count,required=10,remaining=max(0,10-count),met=count>=10,optional=False,petId=STATE['pets'][0]['id'],alive=True,policy='both',timeRemainingMs=86400000)
 def audio(seconds):
     out = io.BytesIO()
     with wave.open(out, 'wb') as w:
@@ -68,6 +68,8 @@ with sync_playwright() as p:
     page.locator('#begin:not([disabled])').wait_for()
     assert page.locator('#filter option').count()==20
     assert page.locator('#practice-count').inner_text()=='9 / 10回'
+    assert page.locator('#practice-time').is_visible()
+    assert '生存時間' in page.locator('#practice-time').inner_text()
     for width in [320,390,768]:
         page.set_viewport_size({'width':width,'height':844})
         assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
@@ -114,6 +116,9 @@ with sync_playwright() as p:
         page.screenshot(path=str(OUT/'pet-error.png'),full_page=True)
         raise
     assert '達成' in page.locator('.pet-practice-goal').inner_text()
+    assert page.locator('.pet-life-gauge').is_visible()
+    assert '生存時間' in page.locator('.pet-deadline').inner_text()
+    assert '両方が必要' in page.locator('.pet-practice-goal').inner_text()
     page.screenshot(path=str(OUT/'pet-daily-goal.png'),full_page=True)
     page.locator('.pet-overlay [data-action="close"]').first.click()
     page.locator('#solution-audio').click()

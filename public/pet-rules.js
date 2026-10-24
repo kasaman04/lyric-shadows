@@ -48,11 +48,25 @@
   }
   function practiceStatus(pet,now) {
     const day=dayKey(now),count=pet?.practice?.counts?.[day]||0,from=pet?.practice?.from;
-    return {day,count,required:practiceRequired,remaining:Math.max(0,practiceRequired-count),met:count>=practiceRequired,from,optional:!!from&&day<from,deadline:dayEnd(day),policy:pet?.practice?.policy||null,petId:pet?.id||null,alive:!!pet&&!ended(pet)};
+    return {day,count,required:practiceRequired,remaining:Math.max(0,practiceRequired-count),met:count>=practiceRequired,from,optional:!!from&&day<from,deadline:dayEnd(day),policy:pet?.practice?.policy||null,petId:pet?.id||null,alive:!!pet&&!ended(pet)&&!lifeFailure(pet,now),timeRemainingMs:pet?Math.max(0,listeningDeadline(pet)-now):0};
   }
   function practiceDeadline(pet,now){const missed=missedPracticeDay(pet,now);if(missed)return dayEnd(missed);const goal=practiceStatus(pet,now);return dayEnd(goal.optional?goal.from:goal.met?nextDay(goal.day):goal.day);}
+  function lifeFailure(pet,now){
+    const missed=missedPracticeDay(pet,now),practiceAt=missed?dayEnd(missed):Infinity;
+    const timeAt=pet.practice?.policy==='daily'?Infinity:listeningDeadline(pet);
+    if(practiceAt<=now&&practiceAt<=timeAt)return {at:practiceAt,reason:'daily_practice'};
+    if(timeAt<=now)return {at:timeAt,reason:'inactivity'};
+    return null;
+  }
+  function applyLifeState(pet,now){
+    if(!pet||pet.departedAt||pet.diedAt&&!['inactivity','daily_practice'].includes(pet.deathReason))return;
+    const failed=lifeFailure(pet,now);
+    if(failed){pet.diedAt=failed.at;pet.deathReason=failed.reason;}
+    else if(pet.diedAt&&(pet.deathReason==='daily_practice'||listeningDeadline(pet)>pet.diedAt)){pet.diedAt=null;delete pet.deathReason;}
+  }
   function recordListeningLife(pet,start,end) {
-    if (!pet || pet.departedAt || (pet.diedAt && pet.deathReason !== 'inactivity') || start < pet.bornAt || end <= start) return false;
+    if (!pet || pet.departedAt || (pet.diedAt && pet.deathReason !== 'inactivity'&&!(pet.practice?.policy==='both'&&pet.deathReason==='daily_practice')) || start < pet.bornAt || end <= start) return false;
+    if(pet.practice?.policy==='both'){const missed=missedPracticeDay(pet,end);if(missed)end=Math.min(end,dayEnd(missed));if(end<=start)return false;}
     const baseAt = pet.lifeBaseAt ?? pet.bornAt;
     if (end <= baseAt) return false;
     const intervals = [...(pet.lifeIntervals || []), [Math.max(start,baseAt),end]].sort((a,b)=>a[0]-b[0]);
@@ -77,5 +91,5 @@
   function hunger(pet,now) { return Math.max(0,Math.min(100,100*(1-((pet.diedAt||pet.departedAt||now)-pet.lastFedAt)/foodDeadlineMs))); }
   function dayKey(now) { return new Date(now+9*3600000).toISOString().slice(0,10); }
   const frameStates={idle:[0,1,2,3],food:[4,5,6,7,8,9],power:[10,11,12,13,14,15],brain:[16,17,18,19,20,21],hungry:[22,23,24,25],weak:[26,27]};
-  return {bands,maxLevel,careAmounts,foodDeadlineMs,listeningTimeoutMs,listeningRecoveryMultiplier,listeningDeadline,lifePercent,recordListeningLife,elements,element,species,growth,required,progress,stage,catalog,choose,dominant,ended,hunger,dayKey,frameStates,practiceRequired,nextDay,dayEnd,missedPracticeDay,practiceStatus,practiceDeadline};
+  return {bands,maxLevel,careAmounts,foodDeadlineMs,listeningTimeoutMs,listeningRecoveryMultiplier,listeningDeadline,lifePercent,recordListeningLife,elements,element,species,growth,required,progress,stage,catalog,choose,dominant,ended,hunger,dayKey,frameStates,practiceRequired,nextDay,dayEnd,missedPracticeDay,practiceStatus,practiceDeadline,lifeFailure,applyLifeState};
 });
