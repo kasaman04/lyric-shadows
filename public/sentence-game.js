@@ -4,6 +4,18 @@
   let config, epoch=0, aborter, phase='setup', attempt, purpose='', stream, context, analyser, source, recorder, releaseAudio, gate, frame, deadline, chunks=[], pending, seen=[], correct=0, total=0;
   const showError = error => { $('error').textContent=error?.message||String(error); $('error').hidden=false; };
   const clearError = () => { $('error').hidden=true; };
+  function displayPractice(value){
+    if(!value)return;
+    const count=Math.max(0,Number(value.count)||0);$('practice-count').textContent=count+' / 10回';$('practice-progress').value=Math.min(10,count);
+    $('practice-label').textContent=value.met?'今日の10回、達成！':'今日、あと'+Math.max(0,10-count)+'回';
+    $('practice-note').textContent=!value.petId?'相棒を選ぶと生存条件になります。声で回答して採点されると1回。無回答は数えません。':!value.alive?'この相棒の育成は終了しました。育成画面から次の相棒を選べます。':value.optional?'今日は準備日です。明日から日本時間の1日で10回。無回答は数えません。':value.met?'今日の生存条件を達成しました。明日はまた10回。正解・不正解は問いません。':'日本時間24時の締切までに10回。未達だとモンスターが死亡します。無回答は数えません。';
+    $('practice-goal').dataset.met=String(value.met);
+  }
+  $('goal-pet').onclick=()=>window.PetGame?.open();
+  window.addEventListener('pet-state-change',event=>{const pet=event.detail?.pets?.at(-1);if(pet?.practice)displayPractice(window.PetRules.practiceStatus(pet,event.detail.serverNow||Date.now()));});
+  async function refreshPractice(){try{const response=await fetch('/api/sentence-game/practice',{cache:'no-store'});if(response.ok)displayPractice((await response.json()).dailyPractice);}catch{}}
+  setInterval(()=>{if(phase==='setup'||phase==='result')refreshPractice();},60000);
+  document.addEventListener('visibilitychange',()=>{if(!document.hidden)refreshPractice();});
   const active = value => { phase=value; for(const key of ['listen','speak','grade'])$('step-'+key).removeAttribute('aria-current'); const key={preparing:'listen',listening:'listen',recording:'speak',grading:'grade',result:'grade'}[value];if(key)$('step-'+key).setAttribute('aria-current','step');$('voice-state').dataset.phase=value; };
   function stopTimers(){cancelAnimationFrame(frame);clearTimeout(deadline);gate?.cancel();}
   function closeMic(){stream?.getTracks().forEach(t=>t.stop());stream=null;source?.disconnect();source=null;analyser=null;const old=context;context=null;old?.close().catch(()=>{});releaseAudio?.();releaseAudio=null;}
@@ -79,6 +91,7 @@
     catch(error){if(token!==epoch)return;showError(error);$('status').textContent='採点を完了できませんでした。';$('record-guide').textContent='録音は保持しています。下のボタンから再試行できます。';$('retry-grade').hidden=false;}
   }
   function renderResult(result){
+    displayPractice(result.dailyPractice);window.PetGame?.refresh();
     active('result');total++;if(result.verdict==='correct')correct++;$('scoreboard').textContent=`正解 ${correct} / ${total}問`;$('question-screen').hidden=true;$('result').hidden=false;controls(false);pending=null;
     const labels={correct:['✓','正解！'],almost:['△','あと少し！'],incorrect:['↻','お手本で確認しよう'],no_answer:['…','回答なし']};const [icon,title]=labels[result.verdict]||labels.incorrect;
     $('result-icon').textContent=icon;$('result').dataset.verdict=result.verdict;$('result-title').textContent=title;$('result-feedback').textContent=result.feedback;$('transcript').textContent=result.transcript||'発話なし';$('reference').textContent=result.reference;$('result-type').textContent=result.type;$('explanation').textContent=result.explanation;$('solution-status').textContent='';
@@ -89,6 +102,7 @@
   document.addEventListener('visibilitychange',()=>{if(document.hidden&&phase!=='setup'&&phase!=='result'){setup();showError(new Error('画面を離れたため、録音を停止しました。もう一度はじめてください。'));}});
   api('config').then(value=>{
     config=value;
+    displayPractice(value.dailyPractice);
     for(const level of ['basic','advanced']){
       const group=document.createElement('optgroup');group.label=level==='basic'?'基本10種類':'応用7種類';
       for(const type of value.types.filter(t=>t.level===level)){

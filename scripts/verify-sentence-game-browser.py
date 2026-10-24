@@ -10,6 +10,10 @@ BASE = 'http://127.0.0.1:10001'
 OUT = ROOT / 'tmp' / 'sentence-game-browser'
 OUT.mkdir(parents=True, exist_ok=True)
 TYPES=json.loads(subprocess.check_output(['node','-e','process.stdout.write(JSON.stringify(require("./lib/sentence-game-bank").TYPES))'],cwd=ROOT).decode('utf-8'))
+STATE=json.loads(subprocess.check_output(['node','-e','const {createState,newPet}=require("./lib/pet-store");const s=createState(Date.now()),p=newPet(Date.now());const day=require("./public/pet-rules").dayKey(Date.now());p.practice={from:day,policy:"daily",counts:{[day]:9}};s.pets.push(p);s.revision=1;s.serverNow=Date.now();process.stdout.write(JSON.stringify(s));'],cwd=ROOT).decode('utf-8'))
+def daily():
+    count=list(STATE['pets'][0]['practice']['counts'].values())[0]
+    return dict(count=count,required=10,remaining=max(0,10-count),met=count>=10,optional=False,petId=STATE['pets'][0]['id'],alive=True)
 def audio(seconds):
     out = io.BytesIO()
     with wave.open(out, 'wb') as w:
@@ -26,14 +30,16 @@ with sync_playwright() as p:
       const start=MediaRecorder.prototype.start;
       MediaRecorder.prototype.start=function(...args){window.__recordStarts++;return start.apply(this,args);};
     ''')
-    ctx.route('**/api/pet/**',lambda r:r.fulfill(status=503,json={'error':'Mocked pet API'}))
+    ctx.route('**/api/pet/**',lambda r:r.fulfill(json=STATE))
     requests=[];counter=0
     def api(route):
         global counter
         path=route.request.url.split('/api/sentence-game/')[-1]
         requests.append(path)
         if path=='config':
-            return route.fulfill(json=dict(openai=True,elevenlabs=True,types=TYPES,questions=34,onsetTimeoutMs=5000,silenceMs=1600,maxRecordingMs=45000))
+            return route.fulfill(json=dict(openai=True,elevenlabs=True,types=TYPES,questions=34,onsetTimeoutMs=5000,silenceMs=1600,maxRecordingMs=45000,dailyPractice=daily()))
+        if path=='practice':
+            return route.fulfill(json=dict(dailyPractice=daily()))
         if path=='attempts':
             counter+=1
             body=route.request.post_data_json
@@ -46,7 +52,11 @@ with sync_playwright() as p:
         if path.endswith('/no-answer') or path.endswith('/answer'):
             no=path.endswith('/no-answer')
             if not no: assert len(route.request.post_data_buffer)>100
-            return route.fulfill(json=dict(verdict='no_answer' if no else 'correct',feedback='もう一度挑戦しよう。' if no else '自然につなげられました。',transcript='' if no else 'I met a man that lives in Tokyo.',reference='I met a man who lives in Tokyo.',corrected='I met a man who lives in Tokyo.',type='who',score=0 if no else 100,explanation='who 以下でどんな人かを説明します。that でも正解です。'))
+            if not no:
+                key=next(iter(STATE['pets'][0]['practice']['counts']))
+                STATE['pets'][0]['practice']['counts'][key]+=1
+                STATE['revision']+=1
+            return route.fulfill(json=dict(verdict='no_answer' if no else 'correct',feedback='もう一度挑戦しよう。' if no else '自然につなげられました。',transcript='' if no else 'I met a man that lives in Tokyo.',reference='I met a man who lives in Tokyo.',corrected='I met a man who lives in Tokyo.',type='who',score=0 if no else 100,explanation='who 以下でどんな人かを説明します。that でも正解です。',dailyPractice=daily()))
         raise AssertionError(path)
     ctx.route('**/api/sentence-game/**',api)
     page=ctx.new_page();errors=[]
@@ -55,6 +65,7 @@ with sync_playwright() as p:
     assert page.url.endswith('/sentence-game.html')
     page.locator('#begin:not([disabled])').wait_for()
     assert page.locator('#filter option').count()==20
+    assert page.locator('#practice-count').inner_text()=='9 / 10回'
     for width in [320,390,768]:
         page.set_viewport_size({'width':width,'height':844})
         assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
@@ -71,6 +82,7 @@ with sync_playwright() as p:
     assert page.locator('#result-title').inner_text()=='回答なし'
     assert len([x for x in requests if x.endswith('/no-answer')])==1
     assert not any(x.endswith('/answer') for x in requests)
+    assert page.locator('#practice-count').inner_text()=='9 / 10回', 'No answer must not increase daily practice'
     page.locator('#repeat').click()
     page.wait_for_function('__recordStarts===2')
     page.evaluate('__loud=true')
@@ -81,11 +93,23 @@ with sync_playwright() as p:
     page.locator('#result').wait_for(state='visible',timeout=6000)
     assert page.locator('#result-title').inner_text()=='正解！'
     assert len([x for x in requests if x.endswith('/answer')])==1
+    assert page.locator('#practice-count').inner_text()=='10 / 10回'
+    assert page.locator('#practice-label').inner_text()=='今日の10回、達成！'
     for width in [320,390,768]:
         page.set_viewport_size({'width':width,'height':844})
         assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
     page.set_viewport_size({'width':390,'height':844})
     page.screenshot(path=str(OUT/'result.png'),full_page=True)
+    page.locator('#goal-pet').click()
+    try:
+        page.locator('.pet-practice-goal').wait_for(state='visible',timeout=5000)
+    except Exception:
+        print(json.dumps(dict(errors=errors,pet=page.evaluate('PetGame.getState()'),body=page.locator('body').inner_text()[-1800:]),ensure_ascii=False))
+        page.screenshot(path=str(OUT/'pet-error.png'),full_page=True)
+        raise
+    assert '達成' in page.locator('.pet-practice-goal').inner_text()
+    page.screenshot(path=str(OUT/'pet-daily-goal.png'),full_page=True)
+    page.locator('.pet-overlay [data-action="close"]').first.click()
     page.locator('#solution-audio').click()
     page.wait_for_function('document.querySelector("#game-audio").ended')
     assert page.evaluate('__recordStarts')==2, 'Solution playback must never restart recording'

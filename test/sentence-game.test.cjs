@@ -17,18 +17,18 @@ test('five seconds is an onset deadline; speaking in time removes it and silence
   g=new TurnGate(0);assert.equal(g.sample(4900,true),null);assert.equal(g.remaining(5000),null);assert.equal(g.sample(6000,true),null);assert.equal(g.sample(7599,false),null);assert.equal(g.sample(7600,false),'answer');assert.equal(g.sample(9000,false),null);
   g=new TurnGate(0);g.sample(1,true);assert.equal(g.sample(45000,true),'answer');g=new TurnGate(0);g.cancel();assert.equal(g.sample(5000,false),null);
 });
-async function fixture(t,{missing=false}={}){
+async function fixture(t,{missing=false,petStore,clock,deviceId,gradeVerdict='correct',onTranscribe}={}){
   const dir=await fs.mkdtemp(path.join(os.tmpdir(),'sg-test-'));
   t.after(async()=>{assert.equal(path.dirname(dir),os.tmpdir());assert(path.basename(dir).startsWith('sg-test-'));await fs.rm(dir,{recursive:true,force:true});});
   const calls=[];let transcript='I met a man that lives in Tokyo.';
   const fetcher=async(url,init)=>{calls.push(url);if(url.includes('text-to-dialogue')){const b=JSON.parse(init.body);return Response.json({audio_base64:Buffer.alloc(48000*b.inputs.length).toString('base64'),voice_segments:b.inputs.map((v,i)=>({voice_id:v.voice_id,dialogue_input_index:i,start_time_seconds:i,end_time_seconds:i+.9}))});}
-    if(url.endsWith('/transcriptions')){assert.equal(init.body.get('prompt'),null);assert.equal(init.body.get('languages[]'),'en');return Response.json({text:transcript});}
-    const b=JSON.parse(init.body);assert.match(b.instructions,/never silently fix/i);assert.match(b.instructions,/not require an exact/i);await new Promise(r=>setTimeout(r,20));return Response.json({output_text:JSON.stringify({verdict:'correct',feedback:'自然につなげられました。',corrected:transcript})});};
+    if(url.endsWith('/transcriptions')){assert.equal(init.body.get('prompt'),null);assert.equal(init.body.get('languages[]'),'en');onTranscribe?.();return Response.json({text:transcript});}
+    const b=JSON.parse(init.body);assert.match(b.instructions,/never silently fix/i);assert.match(b.instructions,/not require an exact/i);await new Promise(r=>setTimeout(r,20));return Response.json({output_text:JSON.stringify({verdict:gradeVerdict,feedback:'採点結果です。',corrected:transcript})});};
   const env={SENTENCE_GAME_STORAGE:'local',SENTENCE_GAME_DATA_DIR:dir,...missing?{}:{OPENAI_API_KEY:'test-secret',ELEVENLABS_API_KEY:'test-secret'}};
-  const app=express();app.use(express.json());mountSentenceGame(app,{env,fetcher});
+  const app=express();app.use(express.json());mountSentenceGame(app,{env,fetcher,petStore,clock});
   const http=app.listen(0,'127.0.0.1');await new Promise(r=>http.once('listening',r));t.after(()=>new Promise(r=>{http.closeAllConnections();http.close(r);}));
   const base='http://127.0.0.1:'+http.address().port;let cookie;
-  async function call(endpoint,body,extra={}){const raw=Buffer.isBuffer(body);const res=await fetch(base+'/api/sentence-game'+endpoint,{method:body===undefined?'GET':'POST',headers:{...(cookie?{Cookie:cookie}:{}),...(body===undefined?{}:{'Content-Type':raw?'audio/webm;codecs=opus':'application/json',Origin:base}),...extra},body:body===undefined?undefined:raw?body:JSON.stringify(body)});cookie ||=res.headers.get('set-cookie')?.split(';')[0];return res;}
+  async function call(endpoint,body,extra={}){const raw=Buffer.isBuffer(body),identity=[cookie,deviceId?'phraseDeviceId='+deviceId:''].filter(Boolean).join('; ');const res=await fetch(base+'/api/sentence-game'+endpoint,{method:body===undefined?'GET':'POST',headers:{...(identity?{Cookie:identity}:{}),...(body===undefined?{}:{'Content-Type':raw?'audio/webm;codecs=opus':'application/json',Origin:base}),...extra},body:body===undefined?undefined:raw?body:JSON.stringify(body)});cookie ||=res.headers.get('set-cookie')?.split(';')[0];return res;}
   return {call,base,calls,setTranscript:value=>{transcript=value;},cookie:()=>cookie};
 }
 test('private attempts, no-answer without ASR, audio caching/ranges, model alternatives and idempotent grading',async t=>{
@@ -52,4 +52,34 @@ test('private attempts, no-answer without ASR, audio caching/ranges, model alter
 test('missing provider keys fails visibly before any paid request; exact reference and silence need no grading model',async t=>{
   const f=await fixture(t,{missing:true});assert.equal((await f.call('/attempts',{})).status,503);assert.equal(f.calls.length,0);
   assert.equal((await grade(QUESTIONS[0],QUESTIONS[0].answer,{env:{}})).verdict,'correct');assert.equal((await grade(QUESTIONS[0],'',{env:{}})).verdict,'no_answer');
+});
+test('only real graded answers credit the bound pet identity, duplicates count once, failed synchronization retries without rebilling',async t=>{
+  const {PetStore,action}=require('../lib/pet-store');
+  const dir=await fs.mkdtemp(path.join(os.tmpdir(),'sg-test-'));t.after(async()=>{assert.equal(path.dirname(dir),os.tmpdir());assert(path.basename(dir).startsWith('sg-test-'));await fs.rm(dir,{recursive:true,force:true});});
+  let clock=Date.parse('2026-10-24T12:00:00+09:00');const deviceId='sentence-practice-device',actual=new PetStore({dir,clock:()=>clock,practicePolicy:'daily'});
+  await actual.transact(deviceId,(s,now)=>action(s,{type:'select',element:'grass',requestId:'sentence-select-001'},now));clock+=86400000;
+  let failCredit=false;const petStore={transact:(id,change)=>{if(failCredit){failCredit=false;throw Object.assign(new Error('temporary pet storage failure'),{status:503});}return actual.transact(id,change);}};
+  let afterASR;const f=await fixture(t,{petStore,clock:()=>clock,deviceId,gradeVerdict:'incorrect',onTranscribe:()=>afterASR?.()});
+  let config=await(await f.call('/config')).json();assert.equal(config.dailyPractice.count,0);assert.equal(config.dailyPractice.optional,false);
+  const start=async()=>await(await f.call('/attempts',{repeat:'who-1'})).json();
+  let attempt=await start();await f.call('/attempts/'+attempt.id+'/no-answer',{});assert.equal((await actual.transact(deviceId)).sentencePractice.daily['2026-10-25'],undefined);
+  attempt=await start();failCredit=true;
+  assert.equal((await f.call('/attempts/'+attempt.id+'/answer',Buffer.alloc(400))).status,503);
+  let result=await(await f.call('/attempts/'+attempt.id+'/answer',Buffer.alloc(400))).json();assert.equal(result.dailyPractice.count,1);assert.equal(result.verdict,'incorrect');assert.equal(f.calls.filter(s=>s.endsWith('/transcriptions')).length,1);
+  result=await(await f.call('/attempts/'+attempt.id+'/answer',Buffer.alloc(400))).json();assert.equal(result.dailyPractice.count,1);
+  // An empty ASR transcript is not a completed practice, even after audio upload.
+  f.setTranscript('');attempt=await start();result=await(await f.call('/attempts/'+attempt.id+'/answer',Buffer.alloc(400))).json();assert.equal(result.dailyPractice.count,1);
+  f.setTranscript('My answer is not grammatical.');
+  for(let i=0;i<9;i++){attempt=await start();result=await(await f.call('/attempts/'+attempt.id+'/answer',Buffer.alloc(400))).json();}
+  assert.equal(result.dailyPractice.count,10);assert.equal(result.dailyPractice.met,true);
+  // A caller cannot redirect a previously-created attempt's credit to a different device.
+  attempt=await start();await f.call('/attempts/'+attempt.id+'/answer',Buffer.alloc(400),{Cookie:f.cookie()+'; phraseDeviceId=another-practice-device'});
+  assert.equal((await actual.transact(deviceId)).sentencePractice.daily['2026-10-25'],11);
+  assert.equal((await actual.transact('another-practice-device')).sentencePractice.daily['2026-10-25'],undefined);
+  clock=Date.parse('2026-10-26T00:00:00+09:00');config=await(await f.call('/config')).json();assert(config.dailyPractice.alive);assert.equal(config.dailyPractice.count,0);
+  const {recordPractice}=require('../lib/pet-practice');
+  for(let i=0;i<9;i++)await actual.transact(deviceId,(s,now)=>recordPractice(s,{id:crypto.randomUUID(),at:now},now));
+  clock=Date.parse('2026-10-26T23:59:59+09:00');attempt=await start();afterASR=()=>{clock=Date.parse('2026-10-27T00:00:10+09:00');};
+  result=await(await f.call('/attempts/'+attempt.id+'/answer',Buffer.alloc(400))).json();
+  assert.equal(result.dailyPractice.count,0);assert(result.dailyPractice.alive);assert.equal((await actual.transact(deviceId)).sentencePractice.daily['2026-10-26'],10);
 });

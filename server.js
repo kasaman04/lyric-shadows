@@ -27,8 +27,8 @@ app.use(express.static(path.join(__dirname, 'public'), {
   }
 }));
 app.use('/songs', express.static(SONGS_DIR));
-require('./lib/sentence-game').mountSentenceGame(app);
-require('./lib/pet-api').mountPetApi(app);
+const petApi = require('./lib/pet-api').mountPetApi(app);
+require('./lib/sentence-game').mountSentenceGame(app, { petStore: petApi.store });
 require('./lib/pet-worker-launcher').startLocalWorker();
 
 app.get('/api/voices', (req, res) => {

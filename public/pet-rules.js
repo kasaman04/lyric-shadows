@@ -8,6 +8,7 @@
   const foodDeadlineMs = 24 * 3600000;
   const listeningTimeoutMs = 24 * 3600000;
   const listeningRecoveryMultiplier = 24;
+  const practiceRequired = 10;
   const elements = [
     ['fire','火','ひだねぷに','#e8a08b','小さな炎から、へんてこな火のかたまりへ','coral red, a living orange-yellow flame'],
     ['water','水','しずくぷに','#93bfda','しずくから、ぷるぷるの水のバケモノへ','sky blue, water drop and watery tail'],
@@ -36,7 +37,20 @@
   function choose(level,stats,previous,seed,id) { return species(id || catalog[previous-1]?.element || 'grass',level); }
   const ended = pet => !!(pet?.diedAt || pet?.departedAt);
   const listeningDeadline = pet => pet.lifeExpiresAt ?? (pet.lastListenedAt ?? pet.bornAt) + listeningTimeoutMs;
-  const lifePercent = (pet,now) => Math.max(0,Math.min(100,100*(listeningDeadline(pet)-now)/listeningTimeoutMs));
+  const lifePercent = (pet,now) => pet.practice?.policy==='daily' ? Math.min(100,practiceStatus(pet,now).count/practiceRequired*100) : Math.max(0,Math.min(100,100*(listeningDeadline(pet)-now)/listeningTimeoutMs));
+  const nextDay = day => new Date(Date.parse(day+'T00:00:00Z')+86400000).toISOString().slice(0,10);
+  const dayEnd = day => Date.parse(day+'T15:00:00Z');
+  function missedPracticeDay(pet,now) {
+    if(!pet.practice)return null;
+    const today=dayKey(now);
+    for(let day=pet.practice.from;day<today;day=nextDay(day))if((pet.practice.counts?.[day]||0)<practiceRequired)return day;
+    return null;
+  }
+  function practiceStatus(pet,now) {
+    const day=dayKey(now),count=pet?.practice?.counts?.[day]||0,from=pet?.practice?.from;
+    return {day,count,required:practiceRequired,remaining:Math.max(0,practiceRequired-count),met:count>=practiceRequired,from,optional:!!from&&day<from,deadline:dayEnd(day),policy:pet?.practice?.policy||null,petId:pet?.id||null,alive:!!pet&&!ended(pet)};
+  }
+  function practiceDeadline(pet,now){const missed=missedPracticeDay(pet,now);if(missed)return dayEnd(missed);const goal=practiceStatus(pet,now);return dayEnd(goal.optional?goal.from:goal.met?nextDay(goal.day):goal.day);}
   function recordListeningLife(pet,start,end) {
     if (!pet || pet.departedAt || (pet.diedAt && pet.deathReason !== 'inactivity') || start < pet.bornAt || end <= start) return false;
     const baseAt = pet.lifeBaseAt ?? pet.bornAt;
@@ -63,5 +77,5 @@
   function hunger(pet,now) { return Math.max(0,Math.min(100,100*(1-((pet.diedAt||pet.departedAt||now)-pet.lastFedAt)/foodDeadlineMs))); }
   function dayKey(now) { return new Date(now+9*3600000).toISOString().slice(0,10); }
   const frameStates={idle:[0,1,2,3],food:[4,5,6,7,8,9],power:[10,11,12,13,14,15],brain:[16,17,18,19,20,21],hungry:[22,23,24,25],weak:[26,27]};
-  return {bands,maxLevel,careAmounts,foodDeadlineMs,listeningTimeoutMs,listeningRecoveryMultiplier,listeningDeadline,lifePercent,recordListeningLife,elements,element,species,growth,required,progress,stage,catalog,choose,dominant,ended,hunger,dayKey,frameStates};
+  return {bands,maxLevel,careAmounts,foodDeadlineMs,listeningTimeoutMs,listeningRecoveryMultiplier,listeningDeadline,lifePercent,recordListeningLife,elements,element,species,growth,required,progress,stage,catalog,choose,dominant,ended,hunger,dayKey,frameStates,practiceRequired,nextDay,dayEnd,missedPracticeDay,practiceStatus,practiceDeadline};
 });
