@@ -8,10 +8,33 @@ const {mountSentenceGame,grade,storage}=require('../lib/sentence-game');
 
 test('all 17 categories have two complete tasks, and random selection avoids repeats until exhausted',()=>{
   assert.equal(TYPES.length,17);assert.equal(TYPES.filter(t=>t.level==='basic').length,10);assert.equal(QUESTIONS.length,34);
-  for(const type of TYPES){const qs=QUESTIONS.filter(q=>q.type===type.key);assert.equal(qs.length,2);assert(qs.every(q=>q.sentences.length===2&&q.answer&&q.explanation&&q.japanese));assert.equal(selectQuestion(type.key,[],()=>0).type,type.key);}
+  for(const type of TYPES){const qs=QUESTIONS.filter(q=>q.type===type.key);assert.equal(qs.length,2);assert(qs.every(q=>q.sentences.length===2&&q.sentenceJapanese.length===2&&q.sentenceJapanese.every(text=>/[ぁ-んァ-ン一-龯]/.test(text))&&q.answer&&q.explanation&&q.japanese));assert.equal(selectQuestion(type.key,[],()=>0).type,type.key);}
   const seen=[];for(let i=0;i<34;i++){const q=selectQuestion('all',seen,()=>0);assert(!seen.includes(q.id));seen.push(q.id);}assert(QUESTIONS.includes(selectQuestion('all',seen,()=>0)));assert.throws(()=>selectQuestion('invalid'));
   assert.equal(storage({SENTENCE_GAME_STORAGE:'supabase',SUPABASE_URL:'https://example.invalid'}).bucket,'sentence-game');
 });
+test('existing review notes gain translations without exposing answers or changing saved English',()=>{
+  const {rememberMistake,reviewItems,questionForReview}=require('../lib/sentence-review');
+  for(const question of QUESTIONS){
+    const item={...question,sentences:[...question.sentences],lastWrongAt:1};delete item.sentenceJapanese;delete item.japanese;
+    const state={sentenceReview:{items:{[question.id]:item}}},before=JSON.stringify(state);
+    const [listed]=reviewItems(state);
+    assert.deepEqual(listed.sentenceJapanese,question.sentenceJapanese);
+    assert(!('answer' in listed));assert(!('japanese' in listed));assert(!('explanation' in listed));
+    assert.equal(questionForReview(state,question.id).japanese,question.japanese);
+    assert.equal(JSON.stringify(state),before,'backfill must not rewrite saved progress');
+  }
+  const q=QUESTIONS[2],state={};
+  rememberMistake(state,{id:'translation-attempt',questionId:q.id,submittedAt:1,result:{verdict:'incorrect'}},q);
+  assert.deepEqual(state.sentenceReview.items[q.id].sentenceJapanese,q.sentenceJapanese);
+  const saved=state.sentenceReview.items[q.id];
+  saved.sentenceJapanese=['保存済みの訳1','保存済みの訳2'];saved.japanese='保存済みの答えの訳';
+  assert.deepEqual(reviewItems(state)[0].sentenceJapanese,saved.sentenceJapanese);
+  assert.equal(questionForReview(state,q.id).japanese,saved.japanese);
+  delete saved.sentenceJapanese;delete saved.japanese;saved.sentences[0]='This is different.';saved.answer='A different answer.';
+  assert.deepEqual(reviewItems(state)[0].sentenceJapanese,['','']);
+  assert.equal(questionForReview(state,q.id).japanese,'');
+});
+
 test('five seconds is an onset deadline; speaking in time removes it and silence finalizes only once',()=>{
   let g=new TurnGate(1000);assert.equal(g.sample(5999,false),null);assert.equal(g.sample(6000,true),'no_answer');assert.equal(g.sample(8000,true),null);
   g=new TurnGate(0);assert.equal(g.sample(4900,true),null);assert.equal(g.remaining(5000),null);assert.equal(g.sample(6000,true),null);assert.equal(g.sample(7599,false),null);assert.equal(g.sample(7600,false),'answer');assert.equal(g.sample(9000,false),null);
