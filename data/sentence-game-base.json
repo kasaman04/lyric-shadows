@@ -1,0 +1,512 @@
+[
+  {
+    "id": "who-1",
+    "type": "who",
+    "sentences": [
+      "I met a man.",
+      "He lives in Tokyo."
+    ],
+    "sentenceJapanese": [
+      "私は男性に会いました。",
+      "彼は東京に住んでいます。"
+    ],
+    "answer": "I met a man who lives in Tokyo.",
+    "explanation": "who lives in Tokyo が a man を説明しています。that でも正解です。",
+    "japanese": "東京に住んでいる男性に会いました。"
+  },
+  {
+    "id": "who-2",
+    "type": "who",
+    "sentences": [
+      "I have a friend.",
+      "She plays the violin."
+    ],
+    "sentenceJapanese": [
+      "私には友達がいます。",
+      "彼女はバイオリンを弾きます。"
+    ],
+    "answer": "I have a friend who plays the violin.",
+    "explanation": "友達がどんな人かを who 以下で説明します。that も使えます。",
+    "japanese": "バイオリンを弾く友達がいます。"
+  },
+  {
+    "id": "whom-3",
+    "type": "whom",
+    "sentences": [
+      "I called the doctor.",
+      "You recommended him."
+    ],
+    "sentenceJapanese": [
+      "私はその医師に電話しました。",
+      "あなたはその医師を勧めました。"
+    ],
+    "answer": "I called the doctor whom you recommended.",
+    "explanation": "you recommended の相手が the doctor です。会話では who・that や省略も正解です。",
+    "japanese": "あなたが勧めてくれた医師に電話しました。"
+  },
+  {
+    "id": "whom-4",
+    "type": "whom",
+    "sentences": [
+      "She thanked the woman.",
+      "We met that woman yesterday."
+    ],
+    "sentenceJapanese": [
+      "彼女はその女性にお礼を言いました。",
+      "私たちは昨日、その女性に会いました。"
+    ],
+    "answer": "She thanked the woman whom we met yesterday.",
+    "explanation": "会った相手を whom でつなぎます。who・that や関係詞の省略も自然です。",
+    "japanese": "彼女は、私たちが昨日会った女性にお礼を言いました。"
+  },
+  {
+    "id": "whose-5",
+    "type": "whose",
+    "sentences": [
+      "I know a girl.",
+      "Her brother is a chef."
+    ],
+    "sentenceJapanese": [
+      "私はある女の子を知っています。",
+      "その子の兄弟はシェフです。"
+    ],
+    "answer": "I know a girl whose brother is a chef.",
+    "explanation": "her brother を whose brother に変え、その女の子の兄弟だと示します。",
+    "japanese": "兄弟がシェフをしている女の子を知っています。"
+  },
+  {
+    "id": "whose-6",
+    "type": "whose",
+    "sentences": [
+      "We visited a house.",
+      "Its roof was red."
+    ],
+    "sentenceJapanese": [
+      "私たちはある家を訪ねました。",
+      "その家の屋根は赤かったです。"
+    ],
+    "answer": "We visited a house whose roof was red.",
+    "explanation": "whose roof は「その家の屋根」。whose は物の所有・部分の説明にも使えます。",
+    "japanese": "屋根が赤い家を訪ねました。"
+  },
+  {
+    "id": "which-7",
+    "type": "which",
+    "sentences": [
+      "I bought a bag.",
+      "It has three pockets."
+    ],
+    "sentenceJapanese": [
+      "私はバッグを買いました。",
+      "そのバッグにはポケットが3つあります。"
+    ],
+    "answer": "I bought a bag which has three pockets.",
+    "explanation": "which 以下でバッグを説明します。that でも正解です。",
+    "japanese": "ポケットが3つあるバッグを買いました。"
+  },
+  {
+    "id": "which-8",
+    "type": "which",
+    "sentences": [
+      "We saw a dog.",
+      "It was sleeping outside."
+    ],
+    "sentenceJapanese": [
+      "私たちは犬を見かけました。",
+      "その犬は外で寝ていました。"
+    ],
+    "answer": "We saw a dog which was sleeping outside.",
+    "explanation": "犬の様子を which 以下で足します。that でも自然です。",
+    "japanese": "外で寝ている犬を見かけました。"
+  },
+  {
+    "id": "that-9",
+    "type": "that",
+    "sentences": [
+      "This is the book.",
+      "I bought it yesterday."
+    ],
+    "sentenceJapanese": [
+      "これはその本です。",
+      "私は昨日、その本を買いました。"
+    ],
+    "answer": "This is the book that I bought yesterday.",
+    "explanation": "どの本かを that 以下で特定します。which や関係詞の省略も正解です。",
+    "japanese": "これは私が昨日買った本です。"
+  },
+  {
+    "id": "that-10",
+    "type": "that",
+    "sentences": [
+      "She has a neighbor.",
+      "He grows vegetables."
+    ],
+    "sentenceJapanese": [
+      "彼女には隣人がいます。",
+      "その人は野菜を育てています。"
+    ],
+    "answer": "She has a neighbor that grows vegetables.",
+    "explanation": "隣人がどんな人かを説明します。人なので who も使えます。",
+    "japanese": "彼女には野菜を育てている隣人がいます。"
+  },
+  {
+    "id": "what-11",
+    "type": "what",
+    "sentences": [
+      "You made something.",
+      "I like it."
+    ],
+    "sentenceJapanese": [
+      "あなたは何かを作りました。",
+      "私はそれが好きです。"
+    ],
+    "answer": "I like what you made.",
+    "explanation": "what you made で「あなたが作ったもの」。what の前に the thing を重ねません。",
+    "japanese": "あなたが作ったものが好きです。"
+  },
+  {
+    "id": "what-12",
+    "type": "what",
+    "sentences": [
+      "You wrote something.",
+      "I read it."
+    ],
+    "sentenceJapanese": [
+      "あなたは何かを書きました。",
+      "私はそれを読みました。"
+    ],
+    "answer": "I read what you wrote.",
+    "explanation": "what you wrote は「あなたが書いたもの」。the thing that you wrote という形も可能です。",
+    "japanese": "あなたが書いたものを読みました。"
+  },
+  {
+    "id": "when-13",
+    "type": "when",
+    "sentences": [
+      "I remember the day.",
+      "We first met on that day."
+    ],
+    "sentenceJapanese": [
+      "私はその日を覚えています。",
+      "私たちはその日に初めて会いました。"
+    ],
+    "answer": "I remember the day when we first met.",
+    "explanation": "when 以下でどの日かを説明します。the day we first met という省略形も正解です。",
+    "japanese": "初めて会った日を覚えています。"
+  },
+  {
+    "id": "when-14",
+    "type": "when",
+    "sentences": [
+      "Friday was the day.",
+      "I started my new job on Friday."
+    ],
+    "sentenceJapanese": [
+      "金曜日がその日でした。",
+      "私は金曜日に新しい仕事を始めました。"
+    ],
+    "answer": "Friday was the day when I started my new job.",
+    "explanation": "日を説明する when を使います。on which や when の省略も可能です。",
+    "japanese": "金曜日が、新しい仕事を始めた日でした。"
+  },
+  {
+    "id": "where-15",
+    "type": "where",
+    "sentences": [
+      "This is the cafe.",
+      "We met there."
+    ],
+    "sentenceJapanese": [
+      "ここがそのカフェです。",
+      "私たちはそこで会いました。"
+    ],
+    "answer": "This is the cafe where we met.",
+    "explanation": "there を where にして、カフェで会ったという場所の関係を示します。",
+    "japanese": "ここが、私たちが会ったカフェです。"
+  },
+  {
+    "id": "where-16",
+    "type": "where",
+    "sentences": [
+      "I visited the town.",
+      "My mother grew up there."
+    ],
+    "sentenceJapanese": [
+      "私はその町を訪ねました。",
+      "私の母はそこで育ちました。"
+    ],
+    "answer": "I visited the town where my mother grew up.",
+    "explanation": "where 以下で、母が育った町だと説明します。the town my mother grew up in も正解です。",
+    "japanese": "母が育った町を訪ねました。"
+  },
+  {
+    "id": "why-17",
+    "type": "why",
+    "sentences": [
+      "She told me the reason.",
+      "She left for that reason."
+    ],
+    "sentenceJapanese": [
+      "彼女は私にその理由を教えました。",
+      "彼女はその理由で立ち去りました。"
+    ],
+    "answer": "She told me the reason why she left.",
+    "explanation": "the reason why で立ち去った理由を説明します。why の省略も自然です。",
+    "japanese": "彼女は立ち去った理由を教えてくれました。"
+  },
+  {
+    "id": "why-18",
+    "type": "why",
+    "sentences": [
+      "I understand the reason.",
+      "He canceled the trip for that reason."
+    ],
+    "sentenceJapanese": [
+      "私はその理由が分かります。",
+      "彼はその理由で旅行を取りやめました。"
+    ],
+    "answer": "I understand the reason why he canceled the trip.",
+    "explanation": "why は理由の説明です。the reason he canceled the trip という形も使えます。",
+    "japanese": "彼が旅行を取りやめた理由は分かります。"
+  },
+  {
+    "id": "how-19",
+    "type": "how",
+    "sentences": [
+      "He solved the problem.",
+      "This is the way he did it."
+    ],
+    "sentenceJapanese": [
+      "彼はその問題を解きました。",
+      "これが、彼がそれをした方法です。"
+    ],
+    "answer": "This is how he solved the problem.",
+    "explanation": "how で方法を表します。the way how と重ねず、how か the way を使います。",
+    "japanese": "これが、彼がその問題を解いた方法です。"
+  },
+  {
+    "id": "how-20",
+    "type": "how",
+    "sentences": [
+      "She made the cake.",
+      "This is the way she did it."
+    ],
+    "sentenceJapanese": [
+      "彼女はそのケーキを作りました。",
+      "これが、彼女がそれをした方法です。"
+    ],
+    "answer": "This is how she made the cake.",
+    "explanation": "how she made the cake で「彼女がケーキを作った方法」です。",
+    "japanese": "これが、彼女がケーキを作った方法です。"
+  },
+  {
+    "id": "whoever-21",
+    "type": "whoever",
+    "sentences": [
+      "Any person can join our team.",
+      "That person must enjoy running."
+    ],
+    "sentenceJapanese": [
+      "誰でも私たちのチームに参加できます。",
+      "その人は走ることが好きでなければなりません。"
+    ],
+    "answer": "Whoever enjoys running can join our team.",
+    "explanation": "whoever enjoys running は「走ることが好きな人なら誰でも」です。",
+    "japanese": "走ることが好きな人なら誰でもチームに入れます。"
+  },
+  {
+    "id": "whoever-22",
+    "type": "whoever",
+    "sentences": [
+      "Any person may take a seat.",
+      "That person must have a ticket."
+    ],
+    "sentenceJapanese": [
+      "誰でも座ってかまいません。",
+      "その人はチケットを持っていなければなりません。"
+    ],
+    "answer": "Whoever has a ticket may take a seat.",
+    "explanation": "チケットを持つという条件と、誰でもよいという意味を保ってつなぎます。",
+    "japanese": "チケットを持っている人なら誰でも座れます。"
+  },
+  {
+    "id": "whomever-23",
+    "type": "whomever",
+    "sentences": [
+      "You may invite any person.",
+      "You like that person."
+    ],
+    "sentenceJapanese": [
+      "あなたは誰を招待してもかまいません。",
+      "あなたはその人が好きです。"
+    ],
+    "answer": "You may invite whomever you like.",
+    "explanation": "you like の目的語なので whomever。会話で使う whoever も認めます。",
+    "japanese": "好きな人なら誰でも招待してかまいません。"
+  },
+  {
+    "id": "whomever-24",
+    "type": "whomever",
+    "sentences": [
+      "You can hire any person.",
+      "You trust that person."
+    ],
+    "sentenceJapanese": [
+      "あなたは誰を雇ってもかまいません。",
+      "あなたはその人を信頼しています。"
+    ],
+    "answer": "You can hire whomever you trust.",
+    "explanation": "trust の相手を whomever で表します。anyone you trust という言い換えも正解です。",
+    "japanese": "信頼する人なら誰でも雇えます。"
+  },
+  {
+    "id": "whatever-25",
+    "type": "whatever",
+    "sentences": [
+      "You can take anything.",
+      "You need it."
+    ],
+    "sentenceJapanese": [
+      "あなたは何を持っていってもかまいません。",
+      "あなたはそれを必要としています。"
+    ],
+    "answer": "You can take whatever you need.",
+    "explanation": "whatever you need は「必要なものなら何でも」です。",
+    "japanese": "必要なものは何でも持っていっていいですよ。"
+  },
+  {
+    "id": "whatever-26",
+    "type": "whatever",
+    "sentences": [
+      "I will cook anything.",
+      "You want it."
+    ],
+    "sentenceJapanese": [
+      "私は何でも料理します。",
+      "あなたはそれを食べたいと思っています。"
+    ],
+    "answer": "I will cook whatever you want.",
+    "explanation": "欲しいものは何でも作る、という意味を一文にします。",
+    "japanese": "あなたの食べたいものなら何でも作ります。"
+  },
+  {
+    "id": "whichever-27",
+    "type": "whichever",
+    "sentences": [
+      "You can choose either of these two seats.",
+      "You prefer one of them."
+    ],
+    "sentenceJapanese": [
+      "この2つの席のどちらを選んでもかまいません。",
+      "あなたはそのうちの一方の席のほうが好きです。"
+    ],
+    "answer": "You can choose whichever of these two seats you prefer.",
+    "explanation": "whichever は決まった候補の中で「どちらでも・どれでも」を表します。",
+    "japanese": "この2つの席のうち、好きな方を選んでいいですよ。"
+  },
+  {
+    "id": "whichever-28",
+    "type": "whichever",
+    "sentences": [
+      "You can borrow any of these books.",
+      "One suits you best."
+    ],
+    "sentenceJapanese": [
+      "この本の中から、どれを借りてもかまいません。",
+      "そのうちの1冊があなたに一番合っています。"
+    ],
+    "answer": "You can borrow whichever of these books suits you best.",
+    "explanation": "この本の中で、いちばん合うものならどれでも借りられる、という意味です。",
+    "japanese": "この本の中から、あなたに一番合うものを借りていいですよ。"
+  },
+  {
+    "id": "whenever-29",
+    "type": "whenever",
+    "sentences": [
+      "You can call me at any time.",
+      "You need help at that time."
+    ],
+    "sentenceJapanese": [
+      "あなたはいつでも私に電話してかまいません。",
+      "あなたはそのとき助けが必要です。"
+    ],
+    "answer": "You can call me whenever you need help.",
+    "explanation": "助けが必要になったときは、いつでも電話できるとつなぎます。",
+    "japanese": "助けが必要なときは、いつでも電話していいですよ。"
+  },
+  {
+    "id": "whenever-30",
+    "type": "whenever",
+    "sentences": [
+      "I go for a walk every time.",
+      "I feel stressed at that time."
+    ],
+    "sentenceJapanese": [
+      "私は毎回、散歩に行きます。",
+      "私はそのときストレスを感じています。"
+    ],
+    "answer": "I go for a walk whenever I feel stressed.",
+    "explanation": "whenever は「〜するときはいつも」という意味にもなります。",
+    "japanese": "ストレスを感じるときはいつも散歩に行きます。"
+  },
+  {
+    "id": "wherever-31",
+    "type": "wherever",
+    "sentences": [
+      "You can sit in any place.",
+      "You like that place."
+    ],
+    "sentenceJapanese": [
+      "あなたはどこに座ってもかまいません。",
+      "あなたはその場所が好きです。"
+    ],
+    "answer": "You can sit wherever you like.",
+    "explanation": "wherever you like は「好きな場所ならどこでも」です。",
+    "japanese": "好きな場所に座っていいですよ。"
+  },
+  {
+    "id": "wherever-32",
+    "type": "wherever",
+    "sentences": [
+      "I will follow you to any place.",
+      "You go there."
+    ],
+    "sentenceJapanese": [
+      "私はどんな場所へでもあなたについていきます。",
+      "あなたはそこへ行きます。"
+    ],
+    "answer": "I will follow you wherever you go.",
+    "explanation": "あなたが行く場所ならどこへでもついていく、という意味をまとめます。",
+    "japanese": "あなたの行く場所ならどこへでもついていきます。"
+  },
+  {
+    "id": "however-33",
+    "type": "however",
+    "sentences": [
+      "You can arrange the chairs in any way.",
+      "You like that way."
+    ],
+    "sentenceJapanese": [
+      "あなたはどんな方法で椅子を並べてもかまいません。",
+      "あなたはその方法が好きです。"
+    ],
+    "answer": "You can arrange the chairs however you like.",
+    "explanation": "この however は「好きな方法で」。逆接の「しかし」とは別の使い方です。",
+    "japanese": "好きな方法で椅子を並べていいですよ。"
+  },
+  {
+    "id": "however-34",
+    "type": "however",
+    "sentences": [
+      "The task may be difficult.",
+      "I will finish it even if it is difficult."
+    ],
+    "sentenceJapanese": [
+      "その仕事は難しいかもしれません。",
+      "難しくても、私はその仕事を終わらせます。"
+    ],
+    "answer": "However difficult the task may be, I will finish it.",
+    "explanation": "however difficult で「どんなに難しくても」。難しさにかかわらず終える意味です。",
+    "japanese": "その仕事がどんなに難しくても、やり遂げます。"
+  }
+]

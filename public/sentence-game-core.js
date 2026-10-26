@@ -12,5 +12,8 @@
     remaining(now){return this.spoken?null:Math.max(0,Math.ceil((this.onset-(now-this.start))/1000));}
     cancel(){this.finished=true;}
   }
-  return {TurnGate};
+  const historyKey='lyric-shadows-sentence-history-v1';
+  function readHistory(storage){try{const list=JSON.parse(storage.getItem(historyKey));return Array.isArray(list)?[...new Set(list.filter(x=>typeof x==='string'&&x.length<80))].slice(-2000):[];}catch{return [];}}
+  function writeHistory(storage,list){try{storage.setItem(historyKey,JSON.stringify(list));}catch{}}
+  return {TurnGate,readHistory,writeHistory};
 });

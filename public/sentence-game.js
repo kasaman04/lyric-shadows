@@ -2,6 +2,7 @@
   'use strict';
   const $ = id => document.getElementById(id), player = $('game-audio');
   let config, epoch=0, aborter, phase='setup', attempt, purpose='', stream, context, analyser, source, recorder, releaseAudio, gate, frame, deadline, chunks=[], pending, seen=[], correct=0, total=0;
+  try{seen=window.SentenceGameCore.readHistory(window.localStorage);}catch{}
   const showError = error => { $('error').textContent=error?.message||String(error); $('error').hidden=false; };
   const clearError = () => { $('error').hidden=true; };
   window.addEventListener('sentence-review-open',()=>{clearError();setup();$('setup').hidden=true;active('review');});
@@ -55,7 +56,9 @@
     try{
       await prepareMic(token);if(token!==epoch)return;
       const result=await api('attempts',{filter:$('filter').value,exclude:seen,repeat:repeat||undefined});if(token!==epoch)return;
-      attempt=result;if(!seen.includes(result.question.id))seen.push(result.question.id);
+      attempt=result;
+      if(Array.isArray(result.history))seen=result.history;else if(!seen.includes(result.question.id))seen.push(result.question.id);
+      try{window.SentenceGameCore.writeHistory(window.localStorage,seen);}catch{}
       result.question.sentences.forEach((text,i)=>{$('text-'+i).textContent=text;});
       $('round-title').textContent='2文を聞こう。';active('listening');$('status').textContent='2つの英文を再生しています…';
       purpose='question';player.src=result.audio.url;player.load();await playQuestion(token);
@@ -113,6 +116,7 @@
   document.addEventListener('visibilitychange',()=>{if(!document.hidden||phase==='review')return;if(phase==='result'){closeMic();}else if(phase!=='setup'){setup();showError(new Error('画面を離れたため、録音を停止しました。もう一度はじめてください。'));}});
   api('config').then(value=>{
     config=value;
+    $('question-count').textContent=`全${value.questions}問・17種類。ひと通り出るまで同じ問題は出ません。`;
     displayPractice(value.dailyPractice);
     window.SentenceReview?.setCount(value.reviewCount);
     for(const level of ['basic','advanced']){

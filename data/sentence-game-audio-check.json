@@ -1,0 +1,21 @@
+{
+  "questions": 510,
+  "files": 1020,
+  "bytes": 30540492,
+  "megabytes": 30.54,
+  "minutes": 62.12,
+  "allDecode": true,
+  "allAudible": true,
+  "speechSamples": 52,
+  "exactSpeechMatches": 52,
+  "date": "2026-10-27",
+  "unitTestsPassed": 12,
+  "mobileBrowser": {
+    "questionPlayback": true,
+    "answerPlayback": true,
+    "historySurvivesReload": true,
+    "paidAudioCalls": 0
+  },
+  "questionDataSha256": "4302414cce1018a0387fd18da4ac2e1ef8b8d3833fd07e1e9ffb6782e4b2f322",
+  "audioManifestSha256": "cf6a67b852309b7efc91f45af9dc4f63de6fd2b7985938a75fbd630fed49e9b6"
+}

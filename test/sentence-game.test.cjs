@@ -2,15 +2,32 @@
 const {test}=require('node:test');
 const assert=require('node:assert/strict');
 const fs=require('node:fs/promises'),path=require('node:path'),os=require('node:os'),express=require('express');
-const {TurnGate}=require('../public/sentence-game-core');
-const {TYPES,QUESTIONS,selectQuestion}=require('../lib/sentence-game-bank');
+const {TurnGate,readHistory,writeHistory}=require('../public/sentence-game-core');
+const {TYPES,QUESTIONS,selectQuestion,advanceHistory}=require('../lib/sentence-game-bank');
 const {mountSentenceGame,grade,storage}=require('../lib/sentence-game');
 
-test('all 17 categories have two complete tasks, and random selection avoids repeats until exhausted',()=>{
-  assert.equal(TYPES.length,17);assert.equal(TYPES.filter(t=>t.level==='basic').length,10);assert.equal(QUESTIONS.length,34);
-  for(const type of TYPES){const qs=QUESTIONS.filter(q=>q.type===type.key);assert.equal(qs.length,2);assert(qs.every(q=>q.sentences.length===2&&q.sentenceJapanese.length===2&&q.sentenceJapanese.every(text=>/[ぁ-んァ-ン一-龯]/.test(text))&&q.answer&&q.explanation&&q.japanese));assert.equal(selectQuestion(type.key,[],()=>0).type,type.key);}
-  const seen=[];for(let i=0;i<34;i++){const q=selectQuestion('all',seen,()=>0);assert(!seen.includes(q.id));seen.push(q.id);}assert(QUESTIONS.includes(selectQuestion('all',seen,()=>0)));assert.throws(()=>selectQuestion('invalid'));
+test('all 17 categories have thirty complete tasks; all 510 appear once before a new cycle',()=>{
+  assert.equal(TYPES.length,17);assert.equal(TYPES.filter(t=>t.level==='basic').length,10);assert.equal(QUESTIONS.length,510);
+  for(const type of TYPES){const qs=QUESTIONS.filter(q=>q.type===type.key);assert.equal(qs.length,30);assert(qs.every(q=>q.sentences.length===2&&q.sentenceJapanese.length===2&&q.sentenceJapanese.every(text=>/[ぁ-んァ-ン一-龯]/.test(text))&&q.answer&&q.explanation&&q.japanese));assert.equal(selectQuestion(type.key,[],()=>0).type,type.key);}
+  assert.equal(new Set(QUESTIONS.map(q=>q.answer.toLowerCase())).size,510);
+  assert.deepEqual(QUESTIONS.slice(0,34),require('../data/sentence-game-base.json'),'Keep legacy IDs and saved review notes stable');
+  let seen=[];for(let i=0;i<510;i++){const q=selectQuestion('all',seen,()=>0);assert(!seen.includes(q.id));seen=advanceHistory(seen,q,'all');}
+  const next=selectQuestion('all',seen,()=>0);seen=advanceHistory(seen,next,'all');assert.deepEqual(seen,[next.id]);assert.throws(()=>selectQuestion('invalid'));
   assert.equal(storage({SENTENCE_GAME_STORAGE:'supabase',SUPABASE_URL:'https://example.invalid'}).bucket,'sentence-game');
+});
+
+test('filtered cycles retain other categories and explicit repeats do not reset history',()=>{
+ const who=QUESTIONS.filter(q=>q.type==='who').map(q=>q.id),outside=QUESTIONS.find(q=>q.type==='which').id;
+ const old=[outside,...who],q=selectQuestion('who',old,()=>0);
+ assert.deepEqual(advanceHistory(old,q,'who'),[outside,q.id]);
+ assert.deepEqual(advanceHistory(old,q,'who',true),old);
+});
+
+test('browser history keeps all 510 IDs across reloads and tolerates unavailable storage',()=>{
+ let saved=null;const storage={getItem:()=>saved,setItem:(_,value)=>{saved=value;}};
+ assert.deepEqual(readHistory(storage),[]);const ids=QUESTIONS.map(q=>q.id);writeHistory(storage,ids);assert.deepEqual(readHistory(storage),ids);
+ saved='bad json';assert.deepEqual(readHistory(storage),[]);
+ const denied={getItem(){throw Error();},setItem(){throw Error();}};assert.deepEqual(readHistory(denied),[]);assert.doesNotThrow(()=>writeHistory(denied,ids));
 });
 test('existing review notes gain translations without exposing answers or changing saved English',()=>{
   const {rememberMistake,reviewItems,questionForReview}=require('../lib/sentence-review');
@@ -40,7 +57,7 @@ test('five seconds is an onset deadline; speaking in time removes it and silence
   g=new TurnGate(0);assert.equal(g.sample(4900,true),null);assert.equal(g.remaining(5000),null);assert.equal(g.sample(6000,true),null);assert.equal(g.sample(7599,false),null);assert.equal(g.sample(7600,false),'answer');assert.equal(g.sample(9000,false),null);
   g=new TurnGate(0);g.sample(1,true);assert.equal(g.sample(45000,true),'answer');g=new TurnGate(0);g.cancel();assert.equal(g.sample(5000,false),null);
 });
-async function fixture(t,{missing=false,petStore,clock,deviceId,gradeVerdict='correct',onTranscribe}={}){
+async function fixture(t,{missing=false,missingTts=false,staticAudio=false,petStore,clock,deviceId,gradeVerdict='correct',onTranscribe}={}){
   const dir=await fs.mkdtemp(path.join(os.tmpdir(),'sg-test-'));
   t.after(async()=>{assert.equal(path.dirname(dir),os.tmpdir());assert(path.basename(dir).startsWith('sg-test-'));await fs.rm(dir,{recursive:true,force:true});});
   const calls=[];let transcript='I met a man that lives in Tokyo.',verdict=gradeVerdict;
@@ -48,7 +65,8 @@ async function fixture(t,{missing=false,petStore,clock,deviceId,gradeVerdict='co
     if(url.endsWith('/transcriptions')){assert.equal(init.body.get('prompt'),null);assert.equal(init.body.get('languages[]'),'en');onTranscribe?.();return Response.json({text:transcript});}
     const b=JSON.parse(init.body);assert.match(b.instructions,/never silently fix/i);assert.match(b.instructions,/not require an exact/i);await new Promise(r=>setTimeout(r,20));return Response.json({output_text:JSON.stringify({verdict,feedback:'採点結果です。',corrected:transcript})});};
   const env={SENTENCE_GAME_STORAGE:'local',SENTENCE_GAME_DATA_DIR:dir,...missing?{}:{OPENAI_API_KEY:'test-secret',ELEVENLABS_API_KEY:'test-secret'}};
-  const app=express();app.use(express.json());const service=mountSentenceGame(app,{env,fetcher,petStore,clock});
+  if(missingTts)delete env.ELEVENLABS_API_KEY;
+  const app=express();app.use(express.json());if(staticAudio)app.use(express.static(path.join(__dirname,'../public')));const service=mountSentenceGame(app,{env,fetcher,petStore,clock,staticAudio});
   const http=app.listen(0,'127.0.0.1');await new Promise(r=>http.once('listening',r));t.after(()=>new Promise(r=>{http.closeAllConnections();http.close(r);}));
   const base='http://127.0.0.1:'+http.address().port;let cookie;
   async function call(endpoint,body,extra={}){const raw=Buffer.isBuffer(body),identity=[cookie,deviceId?'phraseDeviceId='+deviceId:''].filter(Boolean).join('; ');const res=await fetch(base+'/api/sentence-game'+endpoint,{method:body===undefined?'GET':'POST',headers:{...(identity?{Cookie:identity}:{}),...(body===undefined?{}:{'Content-Type':raw?'audio/webm;codecs=opus':'application/json',Origin:base}),...extra},body:body===undefined?undefined:raw?body:JSON.stringify(body)});cookie ||=res.headers.get('set-cookie')?.split(';')[0];return res;}
@@ -71,6 +89,24 @@ test('private attempts, no-answer without ASR, audio caching/ranges, model alter
   const next=await(await f.call('/attempts',{filter:'who',exclude:[first.question.id]})).json();assert.notEqual(next.question.id,first.question.id);
   f.setTranscript('');const empty=await(await f.call('/attempts/'+next.id+'/answer',Buffer.alloc(400))).json();assert.equal(empty.verdict,'no_answer');assert.equal(f.calls.filter(s=>s.endsWith('/responses')).length,1);
   assert.equal((await f.call('/attempts',{filter:'invalid'})).status,400);
+});
+
+test('API honors exclusions beyond 100; returning history starts a fresh cycle after exhaustion',async t=>{
+ const f=await fixture(t),excluded=QUESTIONS.slice(0,-1).map(q=>q.id),last=QUESTIONS.at(-1);
+ const attempt=await(await f.call('/attempts',{exclude:excluded})).json();assert.equal(attempt.question.id,last.id);assert.equal(attempt.history.length,510);
+ const next=await(await f.call('/attempts',{exclude:attempt.history})).json();assert.equal(next.history.length,1);assert.equal(next.history[0],next.question.id);
+ const repeated=await(await f.call('/attempts',{exclude:attempt.history,repeat:last.id})).json();assert.equal(repeated.history.length,510);
+});
+
+test('all fixed questions and model answers play without ElevenLabs or paid generation',async t=>{
+ const {loadStaticAudio}=require('../lib/sentence-game-static-audio'),prepared=loadStaticAudio();assert.equal(prepared.count,510);assert(prepared.complete);
+ for(const q of QUESTIONS){assert(prepared.find(q.sentences));assert(prepared.find([q.answer]));}
+ assert.equal(prepared.find(['Different saved text.']),null);
+ const f=await fixture(t,{staticAudio:true,missingTts:true});const cfg=await(await f.call('/config')).json();assert(cfg.elevenlabs);assert.equal(cfg.preparedAudio,510);
+ const attempt=await(await f.call('/attempts',{repeat:'who-extra-028'})).json();assert.match(attempt.audio.url,/^\/sentence-game-audio\/.+\.mp3$/);assert(!('reference'in attempt));
+ const response=await fetch(f.base+attempt.audio.url,{headers:{Range:'bytes=0-99'}});assert.equal(response.status,206);assert.equal((await response.arrayBuffer()).byteLength,100);
+ await f.call('/attempts/'+attempt.id+'/no-answer',{});const sound=await(await f.call('/attempts/'+attempt.id+'/solution-audio',{})).json();assert.match(sound.url,/answer\.mp3$/);
+ assert.equal(f.calls.length,0,'Prepared audio and silence must never call speech or grading providers');
 });
 test('review saves every non-correct verdict once per question, retains sources, reveals on demand, caches answer audio and survives a new server',async t=>{
   const {PetStore}=require('../lib/pet-store');
@@ -101,7 +137,8 @@ test('review imports earlier receipt-indexed answers in bounded batches and igno
   const {PetStore}=require('../lib/pet-store'),{recordPractice}=require('../lib/pet-practice');
   const dir=await fs.mkdtemp(path.join(os.tmpdir(),'sg-test-'));t.after(async()=>{assert.equal(path.dirname(dir),os.tmpdir());assert(path.basename(dir).startsWith('sg-test-'));await fs.rm(dir,{recursive:true,force:true});});
   const petStore=new PetStore({dir,practicePolicy:'daily'}),deviceId='legacy-review-device',f=await fixture(t,{petStore,deviceId});
-  for(let i=0;i<50;i++){const id=crypto.randomUUID(),at=Date.now();await f.service.store.write({id,kind:'attempt',deviceId:i===49?'different-review-device':deviceId,questionId:QUESTIONS[i%QUESTIONS.length].id,submittedAt:at,result:{verdict:'incorrect'}});await petStore.transact(deviceId,(s,now)=>recordPractice(s,{id,at},now));}
+  const legacy=require('../data/sentence-game-base.json');
+  for(let i=0;i<50;i++){const id=crypto.randomUUID(),at=Date.now();await f.service.store.write({id,kind:'attempt',deviceId:i===49?'different-review-device':deviceId,questionId:legacy[i%legacy.length].id,submittedAt:at,result:{verdict:'incorrect'}});await petStore.transact(deviceId,(s,now)=>recordPractice(s,{id,at},now));}
   const first=await(await f.call('/review')).json();assert(first.importPending);assert.equal(first.count,24);
   const second=await(await f.call('/review')).json();assert(second.importPending);assert.equal(second.count,34);
   const third=await(await f.call('/review')).json();assert.equal(third.importPending,false);assert.equal(third.count,34);
