@@ -133,6 +133,53 @@ test('review saves every non-correct verdict once per question, retains sources,
   assert.equal((await(await f.call('/review',undefined,foreign)).json()).count,0);assert.equal((await f.call('/review/who-1/reveal',{},foreign)).status,404);assert.equal((await f.call('/review/who-1/audio',{part:'answer'},foreign)).status,404);
   const restarted=await fixture(t,{petStore:new PetStore({dir,practicePolicy:'daily'}),deviceId});list=await(await restarted.call('/review')).json();assert.equal(list.count,3);assert.equal((await(await restarted.call('/config')).json()).dailyPractice.count,3,'revealing and playing answers must not count as spoken practice');
 });
+test('ten reviews alone meet the daily goal, including repeated questions; retries, devices and Japan midnight stay correct',async t=>{
+  const {PetStore,action}=require('../lib/pet-store'),{rememberMistake}=require('../lib/sentence-review');
+  const dir=await fs.mkdtemp(path.join(os.tmpdir(),'sg-test-'));
+  t.after(async()=>{assert.equal(path.dirname(dir),os.tmpdir());assert(path.basename(dir).startsWith('sg-test-'));await fs.rm(dir,{recursive:true,force:true});});
+  let clock=Date.parse('2026-10-24T12:00:00+09:00'),loseResponse=false;
+  const deviceId='review-counting-device',actual=new PetStore({dir,clock:()=>clock,practicePolicy:'both'});
+  const expires=Date.parse('2026-10-26T01:00:00+09:00');
+  await actual.transact(deviceId,(s,now)=>{
+    action(s,{type:'select',element:'grass',requestId:'review-select-initial'},now);
+    const pet=s.pets.at(-1);pet.lifeBaseExpiresAt=expires;pet.lifeExpiresAt=expires;
+    rememberMistake(s,{id:crypto.randomUUID(),questionId:'who-1',submittedAt:now,result:{verdict:'no_answer'}},QUESTIONS[0]);
+  });
+  clock=Date.parse('2026-10-25T12:00:00+09:00');
+  const petStore={transact:async(...args)=>{const state=await actual.transact(...args);if(loseResponse){loseResponse=false;throw Object.assign(new Error('response lost after save'),{status:503});}return state;}};
+  const f=await fixture(t,{petStore,clock:()=>clock,deviceId});
+  assert.equal((await(await f.call('/practice')).json()).dailyPractice.count,0);
+  await f.call('/review');await f.call('/review/who-1/reveal',{});
+  assert.equal((await(await f.call('/practice')).json()).dailyPractice.count,0,'listing and legacy non-counting reveals do not complete a review');
+  assert.equal((await f.call('/review/who-1/reveal',{requestId:'-'.repeat(36)})).status,400);
+  assert.equal((await f.call('/review/not-saved/reveal',{requestId:crypto.randomUUID()})).status,404);
+  const foreign={Cookie:f.cookie()+'; phraseDeviceId=other-counting-device'};
+  assert.equal((await f.call('/review/who-1/reveal',{requestId:crypto.randomUUID()},foreign)).status,404);
+  const requestId=crypto.randomUUID();loseResponse=true;
+  assert.equal((await f.call('/review/who-1/reveal',{requestId})).status,503);
+  let result=await(await f.call('/review/who-1/reveal',{requestId})).json();
+  assert.equal(result.reviewCounted,true);assert.equal(result.dailyPractice.count,1);
+  const parallelId=crypto.randomUUID();
+  await Promise.all([f.call('/review/who-1/reveal',{requestId:parallelId}),f.call('/review/who-1/reveal',{requestId:parallelId})]);
+  assert.equal((await(await f.call('/practice')).json()).dailyPractice.count,2,'parallel retries count once');
+  for(let i=3;i<=10;i++){
+    result=await(await f.call('/review/who-1/reveal',{requestId:crypto.randomUUID()})).json();
+    assert.equal(result.dailyPractice.count,i);assert.equal(result.dailyPractice.met,i===10);
+  }
+  let state=await actual.transact(deviceId);
+  assert.equal(state.pets[0].lifeExpiresAt,expires,'review changes the daily goal, not listening time');
+  assert.equal(state.sentencePractice.daily['2026-10-25'],10);
+  const list=await(await f.call('/review')).json();assert.equal(list.count,1);assert.equal(list.importPending,false,'review receipts must not be imported as voice attempts');
+  assert.equal(f.calls.length,0,'review needs neither a microphone, transcription nor grading');
+  clock=Date.parse('2026-10-26T00:00:00+09:00');
+  const restarted=await fixture(t,{petStore:new PetStore({dir,clock:()=>clock,practicePolicy:'both'}),clock:()=>clock,deviceId});
+  result=await(await restarted.call('/review/who-1/reveal',{requestId})).json();
+  assert.equal(result.dailyPractice.count,0);assert(result.dailyPractice.alive,'ten reviews satisfy the previous day at midnight');
+  result=await(await restarted.call('/review/who-1/reveal',{requestId:crypto.randomUUID()})).json();
+  assert.equal(result.dailyPractice.count,1);assert.equal(result.dailyPractice.met,false);
+  state=await actual.transact(deviceId);assert.equal(state.sentencePractice.daily['2026-10-25'],10);assert.equal(state.sentencePractice.daily['2026-10-26'],1);
+});
+
 test('review imports earlier receipt-indexed answers in bounded batches and ignores other devices',async t=>{
   const {PetStore}=require('../lib/pet-store'),{recordPractice}=require('../lib/pet-practice');
   const dir=await fs.mkdtemp(path.join(os.tmpdir(),'sg-test-'));t.after(async()=>{assert.equal(path.dirname(dir),os.tmpdir());assert(path.basename(dir).startsWith('sg-test-'));await fs.rm(dir,{recursive:true,force:true});});
