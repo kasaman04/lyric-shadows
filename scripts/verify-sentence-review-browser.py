@@ -16,17 +16,21 @@ with sync_playwright() as p:
  ctx=browser.new_context(viewport={'width':390,'height':844},reduced_motion='reduce')
  ctx.add_init_script('window.micCalls=0;navigator.mediaDevices.getUserMedia=async()=>{micCalls++;throw Error("Review must never acquire a microphone")};')
  ctx.route('**/api/pet/**',lambda r:r.fulfill(status=503,json={'error':'Mock pet API'}))
- paths=[];pending=[];delay=False;receipts=set();review_ids=[];fail_reveal=False
+ paths=[];pending=[];delay=False;receipts=set();review_ids=[];fail_reveal=False;fail_delete=False
  def goal():return dict(count=len(receipts),met=len(receipts)>=10,policy="both",petId=None)
  def api(r):
-  global delay,fail_reveal
+  global delay,fail_reveal,fail_delete,items
   path=r.request.url.split('/api/sentence-game/')[-1];paths.append(path)
-  if path=='config':return r.fulfill(json=dict(openai=True,elevenlabs=True,types=[],reviewCount=2,onsetTimeoutMs=5000,silenceMs=1600,maxRecordingMs=45000,dailyPractice=goal()))
-  if path=='practice':return r.fulfill(json=dict(reviewCount=2,dailyPractice=goal()))
-  if path=='review':return r.fulfill(json=dict(items=items,count=2,importPending=False))
+  if path=='config':return r.fulfill(json=dict(openai=True,elevenlabs=True,types=[],reviewCount=len(items),onsetTimeoutMs=5000,silenceMs=1600,maxRecordingMs=45000,dailyPractice=goal()))
+  if path=='practice':return r.fulfill(json=dict(reviewCount=len(items),dailyPractice=goal()))
+  if path=='review':return r.fulfill(json=dict(items=items,count=len(items),importPending=False))
   if path=='audio/review':return r.fulfill(body=buf.getvalue(),content_type='audio/wav')
   parts=path.split('/')
   if len(parts)==3 and parts[0]=='review':
+   if parts[2]=='delete':
+    if fail_delete:fail_delete=False;return r.fulfill(status=503,json={'error':'削除を保存できませんでした。もう一度お試しください。'})
+    items=[item for item in items if item['id']!=parts[1]]
+    return r.fulfill(json=dict(items=items,count=len(items),importPending=False))
    if parts[2]=='reveal':
     if delay:pending.append(r);delay=False;return
     request_id=r.request.post_data_json['requestId'];review_ids.append(request_id);receipts.add(request_id)
@@ -40,7 +44,7 @@ with sync_playwright() as p:
  page.locator('#review-tab').click();page.locator('.review-list-card').first.wait_for()
  assert page.locator('.review-list-card').count()==2
  page.screenshot(path=str(OUT/'list.png'),full_page=True)
- page.locator('.review-list-card').first.click()
+ page.locator('.review-list-open').first.click()
  assert page.locator('#review-text-0').inner_text()=='I met a man.'
  assert page.locator('#review-text-1').inner_text()=='He lives in Tokyo.'
  for i in [0,1]:
@@ -101,7 +105,7 @@ with sync_playwright() as p:
  assert page.locator('#review-panel').is_hidden()
  assert not any(x.startswith('attempts') for x in paths), 'Review must not submit a voice answer'
  # Repeat one saved problem ten times, including a retry after a lost response.
- receipts.clear();page.locator('#review-tab').click();page.locator('.review-list-card').first.click()
+ receipts.clear();page.locator('#review-tab').click();page.locator('.review-list-open').first.click()
  fail_reveal=True;page.locator('#review-reveal').click();page.locator('#review-error').wait_for(state='visible')
  failed_id=review_ids[-1]
  page.locator('#review-reveal').click();page.locator('#review-answer').wait_for(state='visible')
@@ -115,7 +119,46 @@ with sync_playwright() as p:
  assert page.locator('#practice-label').inner_text()=='今日の10回、達成！'
  assert len(receipts)==10
  page.screenshot(path=str(OUT/'ten-reviews-complete.png'),full_page=True)
+ page.locator('#review-back').click()
+ for width in [320,390,768]:
+  page.set_viewport_size({'width':width,'height':844})
+  assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
+  for button in page.locator('.review-delete').all():
+   assert button.bounding_box()['height']>=44
+ page.set_viewport_size({'width':390,'height':844})
+ page.screenshot(path=str(OUT/'delete-list.png'),full_page=True)
+ # Cancel leaves the notebook intact and sends no mutation.
+ before_delete=len(paths)
+ page.once('dialog',lambda dialog:dialog.dismiss())
+ page.locator('.review-delete').first.click()
+ assert page.locator('.review-list-card').count()==2
+ assert len(paths)==before_delete
+ # A failed save leaves the card visible and exposes an error in list view.
+ fail_delete=True;page.once('dialog',lambda dialog:dialog.accept())
+ page.locator('.review-delete').first.click()
+ page.locator('#review-error').wait_for(state='visible')
+ assert page.locator('.review-list-card').count()==2
+ assert page.locator('#review-reader').is_hidden()
+ page.once('dialog',lambda dialog:dialog.accept());page.locator('.review-delete').first.click()
+ page.wait_for_function('document.querySelectorAll(".review-list-card").length===1')
+ assert page.locator('#review-count').inner_text()=='(1)'
+ assert page.locator('#practice-count').inner_text()=='10 / 10回'
+ page.reload();page.locator('#review-tab').click();page.locator('.review-list-card').wait_for()
+ assert page.locator('.review-list-card').count()==1
+ page.locator('.review-list-open').click()
+ assert page.locator('#review-position').inner_text()=='問題 1 / 1'
+ assert page.locator('#review-prev').is_disabled() and page.locator('#review-next').is_disabled()
+ page.locator('#review-back').click()
+ page.once('dialog',lambda dialog:dialog.accept());page.locator('.review-delete').click()
+ page.wait_for_function('document.querySelectorAll(".review-list-card").length===0')
+ assert page.locator('#review-count').is_hidden()
+ assert page.locator('#review-first').is_hidden()
+ assert 'まだ保存された問題はありません' in page.locator('#review-loading').inner_text()
+ page.screenshot(path=str(OUT/'deleted-empty.png'),full_page=True)
+ page.reload();page.locator('#review-tab').click()
+ page.wait_for_function('document.querySelector("#review-loading").textContent.includes("まだ保存された問題はありません")')
+ assert page.locator('.review-list-card').count()==0
  assert page.evaluate('micCalls')==0
  assert not errors,errors
- print(json.dumps(dict(result='PASS',savedQuestions=2,sourceTranslations=True,answerTranslationHiddenUntilTap=True,answerAudio=True,retainsBothSentences=True,microphoneRequests=0,tenReviewsMeetGoal=True,retriesCountOnce=True,viewports=[320,390,768],images=str(OUT))))
+ print(json.dumps(dict(result='PASS',savedQuestions=2,sourceTranslations=True,answerTranslationHiddenUntilTap=True,answerAudio=True,retainsBothSentences=True,microphoneRequests=0,tenReviewsMeetGoal=True,retriesCountOnce=True,deleteCancelAndFailure=True,deletePersists=True,deleteCountAndEmptyState=True,viewports=[320,390,768],images=str(OUT))))
  browser.close()

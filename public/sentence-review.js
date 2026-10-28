@@ -3,8 +3,8 @@
   const $=id=>document.getElementById(id),player=$('review-audio');
   const sounds=new Map();
   let items=[],selected=null,session=0,card=0,controller,audioController,audioEpoch=0,part='',revealed=false;
-  let knownCount=0,reviewRequestId;
-  const setCount=value=>{if(!Number.isFinite(value))return;knownCount=Math.max(knownCount,value);$('review-count').textContent='('+knownCount+')';$('review-count').hidden=knownCount===0;};
+  let knownCount=0,reviewRequestId,deleting=false;
+  const setCount=value=>{if(!Number.isFinite(value))return;knownCount=Math.max(0,value);$('review-count').textContent='('+knownCount+')';$('review-count').hidden=knownCount===0;};
   function error(value){$('review-error').textContent=value?.message||String(value);$('review-error').hidden=false;}
   function clearError(){$('review-error').hidden=true;}
   async function api(path,body,signal=controller?.signal){const response=await fetch('/api/sentence-game/review'+path,{method:body===undefined?'GET':'POST',headers:body===undefined?{}:{'Content-Type':'application/json'},body:body===undefined?undefined:JSON.stringify(body),signal,cache:'no-store'});const data=await response.json();if(!response.ok)throw new Error(data.error||'復習ノートを読み込めませんでした。');return data;}
@@ -13,14 +13,31 @@
   function position(){const i=items.findIndex(x=>x.id===selected);$('review-position').textContent='問題 '+(i+1)+' / '+items.length;$('review-prev').disabled=i<=0;$('review-next').disabled=i<0||i>=items.length-1;}
   function select(id){const item=items.find(x=>x.id===id);if(!item)return;card++;stopAudio();clearError();selected=id;reviewRequestId=crypto.randomUUID();revealed=false;$('review-practice-status').textContent='';$('review-repeat').hidden=true;$('review-list-view').hidden=true;$('review-reader').hidden=false;$('review-answer').hidden=true;$('review-reference').replaceChildren();$('review-japanese').textContent='';$('review-explanation').textContent='';$('review-hint').hidden=false;$('review-reveal').disabled=false;$('review-reveal').textContent='答えを見る';$('review-reveal').setAttribute('aria-expanded','false');for(const i of [0,1]){$('review-text-'+i).textContent=item.sentences[i];const translation=$('review-translation-'+i);translation.textContent=item.sentenceJapanese?.[i]||'';translation.hidden=!translation.textContent;}position();$('review-panel').scrollIntoView({block:'start'});}
   function list(){card++;stopAudio();clearError();selected=null;$('review-reader').hidden=true;$('review-list-view').hidden=false;}
+  function listStatus(){return items.length?items.length+'件の問題を保存しています。正解し直しても残ります。不要な問題は削除できます。':'まだ保存された問題はありません。間違い・あと少し・無回答の問題がここにたまります。';}
+  async function remove(id){
+    if(deleting||!confirm('この問題を復習ノートから削除しますか？'))return;
+    // Invalidate any list/import response that started before this deletion.
+    const token=++session;let more=false;controller?.abort();controller=new AbortController();deleting=true;clearError();renderList();
+    $('review-loading').textContent='問題を削除しています…';
+    try{
+      const value=await api('/'+encodeURIComponent(id)+'/delete',{});
+      if(token!==session)return;
+      items=value.items;more=value.importPending;setCount(value.count);sounds.delete(id+':question');sounds.delete(id+':answer');
+      if(selected===id)list();
+      renderList();$('review-loading').textContent='削除しました。'+listStatus();
+    }catch(e){if(token===session){error(e);$('review-loading').textContent=listStatus();}}
+    finally{deleting=false;renderList();if(token===session)$('review-list').querySelector('.review-delete')?.focus();}
+    // Finish importing older receipts; deleted problems remain excluded.
+    if(more&&token===session)load(token);
+  }
   function renderList(){
     $('review-list').replaceChildren();$('review-first').hidden=items.length===0;
-    items.forEach((item,i)=>{const button=document.createElement('button');button.type='button';button.className='review-list-card';const small=document.createElement('small');small.textContent='問題 '+(i+1);button.append(small);for(const text of item.sentences){const line=document.createElement('p');line.textContent=text;button.append(line);}const caption=document.createElement('span');caption.textContent='この問題を復習する ›';button.append(caption);button.onclick=()=>select(item.id);$('review-list').append(button);});
+    items.forEach((item,i)=>{const row=document.createElement('article');row.className='review-list-card';const button=document.createElement('button');button.type='button';button.className='review-list-open';const small=document.createElement('small');small.textContent='問題 '+(i+1);button.append(small);for(const text of item.sentences){const line=document.createElement('p');line.textContent=text;button.append(line);}const caption=document.createElement('span');caption.textContent='この問題を復習する ›';button.append(caption);button.onclick=()=>select(item.id);const removeButton=document.createElement('button');removeButton.type='button';removeButton.className='review-delete';removeButton.textContent='削除';removeButton.setAttribute('aria-label','問題 '+(i+1)+' を削除');removeButton.disabled=deleting;removeButton.onclick=()=>remove(item.id);row.append(button,removeButton);$('review-list').append(row);});
     if(selected)position();
   }
   async function load(token,target){
     $('review-retry').hidden=true;$('review-loading').textContent='復習ノートを読み込んでいます…';
-    try{let more=true;while(more&&token===session){const value=await api('');if(token!==session)return;items=value.items;setCount(value.count);renderList();if(target&&items.some(x=>x.id===target)){select(target);target=null;}more=value.importPending;$('review-loading').textContent=more?'保存済みの回答も取り込んでいます…':items.length?items.length+'件の問題を保存しています。正解し直しても残ります。':'まだ保存された問題はありません。間違い・あと少し・無回答の問題がここにたまります。';}}
+    try{let more=true;while(more&&token===session){const value=await api('');if(token!==session)return;items=value.items;setCount(value.count);renderList();if(target&&items.some(x=>x.id===target)){select(target);target=null;}more=value.importPending;$('review-loading').textContent=more?'保存済みの回答も取り込んでいます…':listStatus();}}
     catch(e){if(token!==session)return;$('review-loading').textContent=e.message||'復習ノートを読み込めませんでした。';$('review-retry').hidden=false;}
   }
   function open(target){session++;controller?.abort();controller=new AbortController();stopAudio();items=[];list();$('review-panel').hidden=false;$('practice-goal').hidden=false;$('practice-tab').setAttribute('aria-pressed','false');$('review-tab').setAttribute('aria-pressed','true');window.dispatchEvent(new Event('sentence-review-open'));load(session,target);}

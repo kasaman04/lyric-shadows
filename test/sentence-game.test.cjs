@@ -133,6 +133,44 @@ test('review saves every non-correct verdict once per question, retains sources,
   assert.equal((await(await f.call('/review',undefined,foreign)).json()).count,0);assert.equal((await f.call('/review/who-1/reveal',{},foreign)).status,404);assert.equal((await f.call('/review/who-1/audio',{part:'answer'},foreign)).status,404);
   const restarted=await fixture(t,{petStore:new PetStore({dir,practicePolicy:'daily'}),deviceId});list=await(await restarted.call('/review')).json();assert.equal(list.count,3);assert.equal((await(await restarted.call('/config')).json()).dailyPractice.count,3,'revealing and playing answers must not count as spoken practice');
 });
+test('deleting reviews persists, excludes old imports and retries, and allows only new mistakes to save again',async t=>{
+  const {PetStore}=require('../lib/pet-store'),{rememberMistake}=require('../lib/sentence-review'),{recordPractice}=require('../lib/pet-practice');
+  const dir=await fs.mkdtemp(path.join(os.tmpdir(),'sg-test-'));
+  t.after(async()=>{assert.equal(path.dirname(dir),os.tmpdir());assert(path.basename(dir).startsWith('sg-test-'));await fs.rm(dir,{recursive:true,force:true});});
+  let now=Date.now();const deviceId='delete-review-device',petStore=new PetStore({dir,clock:()=>now,practicePolicy:'daily'});
+  const f=await fixture(t,{petStore,deviceId,clock:()=>now,gradeVerdict:'incorrect'});
+  const first=await(await f.call('/attempts',{repeat:'who-1'})).json();
+  await f.call('/attempts/'+first.id+'/answer',Buffer.alloc(400));
+  const second=await(await f.call('/attempts',{repeat:'which-7'})).json();await f.call('/attempts/'+second.id+'/no-answer',{});
+  const before=await petStore.transact(deviceId);
+  assert.equal((await f.call('/review/who-1/delete',{}, {Origin:'https://other.invalid'})).status,403);
+  const foreign={Cookie:f.cookie()+'; phraseDeviceId=foreign-delete-device'};
+  assert.equal((await f.call('/review/who-1/delete',{},foreign)).status,404);
+  assert.equal((await f.call('/review/__proto__/delete',{})).status,404);
+  const deleted=await(await f.call('/review/who-1/delete',{})).json();
+  assert.equal(deleted.count,1);assert.deepEqual(deleted.items.map(x=>x.id),['which-7']);
+  assert.equal((await(await f.call('/review/who-1/delete',{})).json()).count,1,'retry after a lost response is safe');
+  for(const resource of ['reveal','audio'])assert.equal((await f.call('/review/who-1/'+resource,{})).status,404);
+  const after=await petStore.transact(deviceId);
+  assert.deepEqual(after.sentencePractice,before.sentencePractice,'deleting must preserve earned daily practice');
+  assert.deepEqual(after.pets,before.pets);
+  // A previously unimported receipt for the same question must stay excluded.
+  const legacy={id:crypto.randomUUID(),kind:'attempt',deviceId,questionId:'who-1',submittedAt:now-1,result:{verdict:'incorrect'}};
+  await f.service.store.write(legacy);await petStore.transact(deviceId,s=>recordPractice(s,{id:legacy.id,at:now-1},now));
+  assert.equal((await(await f.call('/review')).json()).count,1);
+  let result=await(await f.call('/attempts/'+first.id+'/answer',Buffer.alloc(400))).json();
+  assert.equal(result.reviewCount,1);assert.equal(result.reviewSaved,false,'retrying an old answer must not restore the card');
+  const restarted=await fixture(t,{petStore:new PetStore({dir,clock:()=>now,practicePolicy:'daily'}),deviceId,clock:()=>now});
+  assert.equal((await(await restarted.call('/review')).json()).count,1);
+  now+=1000;
+  const fresh=await(await f.call('/attempts',{repeat:'who-1'})).json();
+  result=await(await f.call('/attempts/'+fresh.id+'/answer',Buffer.alloc(400))).json();assert.equal(result.reviewCount,2);assert.equal(result.reviewSaved,true);
+  const state=await petStore.transact(deviceId);rememberMistake(state,legacy,QUESTIONS[0]);
+  assert.equal(state.sentenceReview.items['who-1'].firstWrongAt,now,'old receipts cannot replace a newly saved card');
+  await f.call('/review/who-1/delete',{});await f.call('/review/which-7/delete',{});
+  assert.deepEqual((await(await restarted.call('/review')).json()).items,[]);
+});
+
 test('ten reviews alone meet the daily goal, including repeated questions; retries, devices and Japan midnight stay correct',async t=>{
   const {PetStore,action}=require('../lib/pet-store'),{rememberMistake}=require('../lib/sentence-review');
   const dir=await fs.mkdtemp(path.join(os.tmpdir(),'sg-test-'));
