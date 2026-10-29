@@ -642,9 +642,22 @@ function renderDramaReward() {
   </main>`;
 }
 
+function dramaCompilationEpisode(drama) {
+  const compilation = window.DRAMA_COMPILATIONS?.[drama?.id];
+  if (!compilation) return null;
+  const episodes = compilation.episodeIds.map(id => drama.episodes.find(item => item.id === id));
+  if (episodes.some(episode => !episode)) return null;
+  return {
+    ...compilation,
+    subtitle: `第${episodes[0].number}話〜第${episodes.at(-1).number}話`,
+    clips: episodes.flatMap(episode => episode.clips),
+  };
+}
+
 function renderDramaGrid() {
   const drama = state.dramas.find(item => item.id === state.currentDramaId);
-  const episode = drama?.episodes.find(item => item.id === state.currentEpisodeId);
+  const compilation = dramaCompilationEpisode(drama);
+  const episode = compilation?.id === state.currentEpisodeId ? compilation : drama?.episodes.find(item => item.id === state.currentEpisodeId);
 
   if (episode) {
     const clips = episode.clips.map((clip, index) => {
@@ -674,20 +687,21 @@ function renderDramaGrid() {
       <button class="drama-back" onclick="showDrama('${drama.id}')">← 話数一覧へ</button>
       <p class="section-eyebrow">DRAMA PHRASES</p>
       <h2 class="drama-page-title">${esc(drama.title)}</h2>
-      <p class="drama-page-subtitle">第${episode.number}話 ${esc(episode.title)}</p>
+      <p class="drama-page-subtitle">${esc(episode.subtitle || `第${episode.number}話`)} ${esc(episode.title)}</p>
       <p id="dramaRoundProgress" class="drama-round-progress">次のカードまで ${dramaRoundCount(drama.id, episode.id) % DRAMA_ROUNDS_PER_CARD}/${DRAMA_ROUNDS_PER_CARD}周</p>
-      <div class="section-heading drama-section-heading"><h3>この回の音声</h3><span>${episode.clips.length}件</span></div>
+      <div class="section-heading drama-section-heading"><h3>${episode === compilation ? '全話の音声' : 'この回の音声'}</h3><span>${episode.clips.length}件</span></div>
       <div class="drama-continuous-player">
       <p id="dramaCurrentClip" class="drama-current-clip">音声 01 / ${episode.clips.length}</p>
       <div class="drama-playback-controls">
         <button id="dramaPlayAll" class="drama-play-all" onclick="toggleDramaPlayAll()" aria-label="まとめて再生">▶ <span>まとめて再生</span></button>
         <button id="dramaRepeat" class="drama-repeat ${state.dramaRepeat ? 'active' : ''}" onclick="toggleDramaRepeat()" aria-pressed="${state.dramaRepeat}" aria-label="リピート ${state.dramaRepeat ? 'オン' : 'オフ'}">↻ <span>リピート</span></button>
       </div>
-      <audio id="dramaEpisodeAudio" controls preload="metadata" src="${esc(currentDramaTrack()?.audio || '')}" aria-label="この回の連続再生"
+      <audio id="dramaEpisodeAudio" controls preload="metadata" src="${esc(currentDramaTrack()?.audio || '')}" aria-label="${episode === compilation ? '全話まとめの連続再生' : 'この回の連続再生'}"
         onplay="onDramaPlaylistPlay(this)" onplaying="onDramaPlaylistPlaying(this)" onpause="onDramaPlaylistPause(this)"
         ontimeupdate="onDramaPlaylistTime(this)" onloadedmetadata="onDramaPlaylistLoaded(this)"
         onended="onDramaPlaylistEnded(this)" onerror="onDramaAudioError(this)" onwaiting="onDramaPlaylistWaiting(this)"></audio>
       <p id="dramaPlaybackStatus" role="status" aria-live="polite">${esc(state.dramaPlaybackStatus)}</p>
+      ${episode === compilation ? `<a class="drama-more" href="${esc(compilation.audio)}" download>全話まとめの音声をダウンロード</a>` : ''}
       </div>
       <div class="drama-clip-list">${clips}</div>
     </section>`;
@@ -705,7 +719,13 @@ function renderDramaGrid() {
       <button class="drama-back" onclick="showDrama(null)">← ドラマ一覧へ</button>
       <p class="section-eyebrow">DRAMA LIBRARY</p>
       <h2 class="drama-page-title">${esc(drama.title)}</h2>
-      <div class="drama-episode-list">${episodes}</div>
+      <div class="drama-episode-list">${compilation ? `
+        <button class="drama-episode" onclick="showDramaEpisode('${compilation.id}')">
+          <span class="drama-episode-number">全話まとめ</span>
+          <span class="drama-episode-title">${esc(compilation.subtitle)}をつなげて再生</span>
+          <span class="drama-episode-count">音声${compilation.clips.length}件 · ${Math.floor(compilation.duration / 60)}分${String(Math.round(compilation.duration % 60)).padStart(2, '0')}秒</span>
+          <span class="drama-episode-arrow" aria-hidden="true">›</span>
+        </button>` : ''}${episodes}</div>
     </section>`;
   }
 
