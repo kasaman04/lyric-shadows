@@ -47,7 +47,7 @@ test('the library adds a compilation while preserving nine episode entries and o
   run('state.currentDramaId = "breaking-bad"');
   assert.doesNotMatch(run('renderDramaGrid()'), /全話まとめ/);
 });
-test('compilation playback uses one file and shows all original cards and examples', () => {
+test('compilation playback stays light with one audio element and no individual cards', () => {
   const { run } = fixture();
   run('state.currentEpisodeId = "all-episodes"');
   const html = run('renderDramaGrid()');
@@ -55,8 +55,11 @@ test('compilation playback uses one file and shows all original cards and exampl
   assert.match(html, /全話の音声/);
   assert.match(html, /all-episodes-20261029-v1\.mp3/);
   assert.match(html, /download/);
-  assert.equal((html.match(/class="drama-clip"/g) || []).length, 413);
-  assert.equal((html.match(/class="drama-example"/g) || []).length, 826);
+  assert.equal((html.match(/<audio\b/g) || []).length, 1);
+  assert.match(html, /preload="none"/);
+  assert.match(html, /href="\/first-love-audio.html"/);
+  assert.equal((html.match(/class="drama-clip"/g) || []).length, 0);
+  assert.equal((html.match(/class="drama-example"/g) || []).length, 0);
   run('state.currentEpisodeId = "episode-1"');
   const original = run('renderDramaGrid()');
   assert.match(original, /第1話 リラの花咲く頃/);

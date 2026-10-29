@@ -660,7 +660,7 @@ function renderDramaGrid() {
   const episode = compilation?.id === state.currentEpisodeId ? compilation : drama?.episodes.find(item => item.id === state.currentEpisodeId);
 
   if (episode) {
-    const clips = episode.clips.map((clip, index) => {
+    const clips = (episode === compilation ? [] : episode.clips).map((clip, index) => {
       const examples = Array.isArray(clip.otherExamples) ? clip.otherExamples : [];
       const examplesHtml = examples.map(example => `
         <li class="drama-example">
@@ -696,14 +696,14 @@ function renderDramaGrid() {
         <button id="dramaPlayAll" class="drama-play-all" onclick="toggleDramaPlayAll()" aria-label="まとめて再生">▶ <span>まとめて再生</span></button>
         <button id="dramaRepeat" class="drama-repeat ${state.dramaRepeat ? 'active' : ''}" onclick="toggleDramaRepeat()" aria-pressed="${state.dramaRepeat}" aria-label="リピート ${state.dramaRepeat ? 'オン' : 'オフ'}">↻ <span>リピート</span></button>
       </div>
-      <audio id="dramaEpisodeAudio" controls preload="metadata" src="${esc(currentDramaTrack()?.audio || '')}" aria-label="${episode === compilation ? '全話まとめの連続再生' : 'この回の連続再生'}"
+      <audio id="dramaEpisodeAudio" controls preload="${episode === compilation ? 'none' : 'metadata'}" src="${esc(currentDramaTrack()?.audio || '')}" aria-label="${episode === compilation ? '全話まとめの連続再生' : 'この回の連続再生'}"
         onplay="onDramaPlaylistPlay(this)" onplaying="onDramaPlaylistPlaying(this)" onpause="onDramaPlaylistPause(this)"
         ontimeupdate="onDramaPlaylistTime(this)" onloadedmetadata="onDramaPlaylistLoaded(this)"
         onended="onDramaPlaylistEnded(this)" onerror="onDramaAudioError(this)" onwaiting="onDramaPlaylistWaiting(this)"></audio>
       <p id="dramaPlaybackStatus" role="status" aria-live="polite">${esc(state.dramaPlaybackStatus)}</p>
-      ${episode === compilation ? `<a class="drama-more" href="${esc(compilation.audio)}" download>全話まとめの音声をダウンロード</a>` : ''}
+      ${episode === compilation ? `<p><a class="drama-more" href="/first-love-audio.html">音声だけのページを開く</a></p><a class="drama-more" href="${esc(compilation.audio)}" download>全話まとめの音声をダウンロード</a>` : ''}
       </div>
-      <div class="drama-clip-list">${clips}</div>
+      ${episode === compilation ? '' : `<div class="drama-clip-list">${clips}</div>`}
     </section>`;
   }
 
