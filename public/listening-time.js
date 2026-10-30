@@ -25,5 +25,21 @@
     const today = merged.reduce((sum, [s, e]) => sum + Math.max(0, Math.min(e, midnight + DAY) - Math.max(s, midnight)) / 1000, 0);
     return { today: (save?.daily?.[day] || 0) + today, total: (save?.totalSeconds || 0) + pending, pending };
   }
-  return { format, totals };
+  // Preview only unsynced, unique phrase intervals. Stored intervals are
+  // subtracted too, so another tab's acknowledgment cannot double the meter.
+  function phraseTotals(save,events,at=Date.now()) {
+    const ledger=save?.phraseListening||{},daily={...ledger.daily};
+    let covered=[...(ledger.intervals||[])],pending=0;
+    const eligible=[...events].filter(e=>/^\/relative-phrase-audio\/[a-z]+-dialogue-\d{2}-[a-f0-9]{12}\.mp3$/.test(e.source||'')).sort((a,b)=>a.start-b.start);
+    for(const event of eligible){
+      const start=event.start,end=Math.min(event.end,at);if(!Number.isFinite(start)||!Number.isFinite(end)||end<=start)continue;
+      let pieces=[[start,end]];
+      for(const [a,b]of covered)pieces=pieces.flatMap(([s,e])=>b<=s||a>=e?[[s,e]]:[[s,Math.min(e,a)],[Math.max(s,b),e]].filter(([x,y])=>y>x));
+      for(const [s,e]of pieces){pending+=(e-s)/1000;for(let cursor=s;cursor<e;){const day=new Date(cursor+JST).toISOString().slice(0,10),finish=Math.min(e,Date.parse(day+'T15:00:00Z'));daily[day]=(daily[day]||0)+(finish-cursor)/1000;cursor=finish;}}
+      covered.push([start,end]);
+    }
+    const today=new Date(at+JST).toISOString().slice(0,10);
+    return {today:daily[today]||0,total:(ledger.totalSeconds||0)+pending,pending,daily};
+  }
+  return { format, totals, phraseTotals };
 });

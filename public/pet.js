@@ -16,6 +16,7 @@
   function remaining(seconds) { return seconds < 60 ? `${Math.ceil(seconds)}秒` : minutes(Math.ceil(seconds / 60) * 60); }
   const listened = seconds => window.ListeningTime.format(seconds);
   const listening = () => window.ListeningTime.totals(save, pendingPlayback.values(), now());
+  const phraseListening = () => window.ListeningTime.phraseTotals(save, pendingPlayback.values(), now());
   function listeningValue(type, seconds) { return `<b data-listening-time="${type}">${listened(seconds)}</b>`; }
   function listeningGoal(pet) {
     // Use this companion's listening history, plus unique playback awaiting sync.
@@ -46,6 +47,7 @@
     if (!pet) return pet;
     const live = { ...pet };
     if(live.practice){
+      live.practice={...live.practice,phraseSeconds:window.ListeningTime?.phraseTotals?phraseListening().daily:live.practice.phraseSeconds};
       if(live.practice.policy==='daily'){rules.applyLifeState(live,now());return live;}
     }
     for (const event of [...pendingPlayback.values()].filter(e=>e.petId===pet.id).sort((a,b)=>a.start-b.start)) {
@@ -114,7 +116,7 @@
   }
   function record(event) {
     if (!store) return;
-    if (collector && event.petId === collector.petId && event.start <= collector.end + 20 && event.end - collector.start <= 30000) collector.end = Math.max(collector.end, event.end);
+    if (collector && event.petId === collector.petId && event.source === collector.source && event.start <= collector.end + 20 && event.end - collector.start <= 30000) collector.end = Math.max(collector.end, event.end);
     else collector = { ...event, device, id: uid() };
     const copy = { ...collector };
     pendingPlayback.set(copy.id,copy);
@@ -159,7 +161,7 @@
         events = events.filter(e => !expired.includes(e)).sort((a, b) => a.start - b.start);
         while (events.length) {
           const batch = events.slice(0, 200);
-          const value = await request('/listen', { events: batch.map(({ start, end, petId }) => ({ start, end, petId })) });
+          const value = await request('/listen', { events: batch.map(({ start, end, petId, source }) => ({ start, end, petId, source })) });
           // Playback may extend a record while its earlier portion is in flight.
           // Acknowledge only the portion sent, preserving new seconds in every tab.
           for (const event of batch) if (collector?.id === event.id) collector.start = Math.max(collector.start, event.end);
@@ -188,7 +190,10 @@
     const pet = current();
     updateListeningGoal(pet);
     const daily=pet?.practice&&rules.practiceStatus(pet,now());
-    const petLabel = pet?.diedAt ? '図鑑に残りました' : pet?.practice?.policy==='both'&&rules.lifePercent(pet,now())<34?'聴いて回復しよう':daily ? daily.met?'今日10回 達成！':'今日 '+daily.count+'/10回' : pet && !rules.ended(pet) && rules.lifePercent(pet, now()) < 34 ? '英語を聴いて回復しよう' : '育成';
+    const phrase=phraseListening(),day=rules.dayKey(now()),goal=rules.practiceProgress(save?.sentencePractice?.daily?.[day],phrase.today);
+    document.querySelectorAll('[data-phrase-practice-time]').forEach(el=>{const text=listened(phrase.today);if(el.textContent!==text)el.textContent=text;});
+    document.querySelectorAll('[data-phrase-practice-goal]').forEach(el=>{const text=goal.met?'ノルマ達成！':'';if(el.textContent!==text)el.textContent=text;});
+    const petLabel = pet?.diedAt ? '図鑑に残りました' : pet?.practice?.policy==='both'&&rules.lifePercent(pet,now())<34?'聴いて回復しよう':daily ? daily.met?'今日のノルマ達成！':'今日 '+daily.count+'/10回' : pet && !rules.ended(pet) && rules.lifePercent(pet, now()) < 34 ? '英語を聴いて回復しよう' : '育成';
     document.querySelectorAll('.pet-home-entry span').forEach(el => { if (el.textContent !== petLabel) el.textContent = petLabel; });
     const badge = document.getElementById('petListeningBadge');
     if (badge) {
@@ -272,14 +277,14 @@
     const goal=rules.practiceStatus(pet,now()),dead=!!pet.diedAt,departed=!!pet.departedAt,ended=dead||departed;
     const both=pet.practice.policy==='both',vitality=rules.lifePercent(pet,now()),left=Math.max(0,rules.listeningDeadline(pet)-now());
     const days=Math.floor(((pet.diedAt||pet.departedAt||now())-pet.bornAt)/86400000)+1;
-    const message=departed?'またね。いっしょに練習してくれて、ありがとう。':dead?pet.deathReason==='inactivity'?'生存時間が0になり、この子は死亡しました。':'毎日10回の練習が足りず、この子は死亡しました。':both&&vitality<34?'生存時間が少ないよ。いっしょに英語を聴こう。':goal.met?'今日の10回、ありがとう！ 英語も聴いて元気でいよう。':goal.optional?'英語を聴いて元気をためよう。明日から毎日10回も必要だよ。':'今日、あと'+goal.remaining+'回。聴く練習も続けよう。';
+    const message=departed?'またね。いっしょに練習してくれて、ありがとう。':dead?pet.deathReason==='inactivity'?'生存時間が0になり、この子は死亡しました。':'毎日のノルマが足りず、この子は死亡しました。':both&&vitality<34?'生存時間が少ないよ。いっしょに英語を聴こう。':goal.met?'今日のノルマ、ありがとう！':goal.optional?'明日から10回の練習か、会話フレーズを30分聴こう。':'10回の練習か、会話フレーズ30分で今日のノルマ達成だよ。';
     return `<main class="pet-room-page"><div class="pet-name-row"><h1>${esc(form.name||pet.name)}</h1><span>${rules.element(pet.element).label} · ${days}日目</span></div>
       <div class="pet-level-row"><b>Lv.${p.level} <small>/ 10</small></b><span>${ended?'成長の記録':p.level===10?'最終進化 · 旅立ちの準備ができました':'次の進化まで お世話 '+remaining(p.required-p.earned)}</span><button data-action="rules" class="pet-info-button" aria-label="育成のルール">?</button></div>
       ${ended?'':`<div class="pet-progress" role="progressbar" aria-label="次の進化まで" aria-valuenow="${Math.round(p.level===10?100:p.earned/p.required*100)}" aria-valuemin="0" aria-valuemax="100"><i style="width:${p.level===10?100:p.earned/p.required*100}%"></i></div>`}
       <div class="pet-stats"><span>体格 <b>${pet.stats.body}</b></span><span>パワー <b>${pet.stats.power}</b></span><span>かしこさ <b>${pet.stats.brain}</b></span></div>
       <div class="pet-habitat ${ended?'pet-ended':''} ${dead?'pet-memorial-room':''} ${both&&!ended&&vitality<34?'pet-danger':''}">${art.room(p.level)}<p class="pet-speech">${message}</p><button data-action="${ended?'detail-current':'care'}" class="pet-character-button" aria-label="${ended?'成長の記録を見る':'キャラをタップしてお世話'}">${portrait(pet,form,{dead})}</button>${ended?'<div class="pet-hunger pet-ended-caption">大切な思い出</div>':'<span class="pet-tap-hint">タップでお世話</span>'}${both&&!ended?`<div class="pet-hunger pet-life-gauge"><span>生存時間</span><div class="pet-meter" role="progressbar" aria-label="生存時間" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${Math.ceil(vitality)}"><i style="width:${vitality}%;background:${vitality<34?'#ba7764':'#7eaf90'}"></i></div><b>${Math.ceil(vitality)}%</b></div>`:''}</div>${designNote(pet)}
       ${both&&!ended?`<p class="pet-deadline ${left<8*3600000?'is-danger':''}">生存時間 残り ${remaining(left/1000)}</p>${listeningGoalMarkup(pet)}<button data-action="listen" class="pet-text-button">♫ 英語を聴いて時間を回復する →</button>`:''}
-      ${ended?'':`<section class="pet-practice-goal"><strong>${goal.met?'今日の10回、達成！':'今日の練習 '+goal.count+' / 10回'}</strong><div class="pet-progress" role="progressbar" aria-label="毎日10回の練習" aria-valuemin="0" aria-valuemax="10" aria-valuenow="${Math.min(10,goal.count)}"><i style="width:${Math.min(100,goal.count*10)}%"></i></div><p>${goal.optional?'今日は10回の準備日。時間の条件は今日も有効です。':goal.met?'10回の条件は達成。生存時間は引き続き減ります。':'日本時間24時の締切まで、あと'+goal.remaining+'回。未達だと死亡します。'}</p><small>生存には、残り時間と毎日10回の両方が必要です。音声回答の採点、または復習で答えを確認すると1回。復習だけでも10回で達成。</small><button data-action="practice" class="pet-primary">2文をつなぐ →</button></section>`}
+      ${ended?'':`<section class="pet-practice-goal"><strong>${goal.met?'今日のノルマ、達成！':'今日のノルマ'}</strong><p>音声回答・復習 ${goal.count} / 10回</p><div class="pet-progress" role="progressbar" aria-label="音声回答・復習10回" aria-valuemin="0" aria-valuemax="10" aria-valuenow="${Math.min(10,goal.count)}"><i style="width:${Math.min(100,goal.count*10)}%"></i></div><p>または 会話フレーズ ${listened(goal.phraseSeconds)} / 30分</p><div class="pet-progress" role="progressbar" aria-label="会話フレーズ30分" aria-valuemin="0" aria-valuemax="1800" aria-valuenow="${Math.min(1800,goal.phraseSeconds)}"><i style="width:${Math.min(100,goal.phraseSeconds/18)}%"></i></div><p>${goal.optional?'今日はノルマの準備日。時間の条件は今日も有効です。':goal.met?(goal.metBy==='phrase'?'会話フレーズ30分で達成しました。':'10回の練習で達成しました。')+'生存時間は引き続き減ります。':'日本時間24時までに、どちらかを達成しよう。'}</p><small>生存時間を保ち、音声回答・復習10回、または会話フレーズ30分で達成。再生していない時間や洋楽・ドラマの時間はノルマに含みません。</small><button data-action="practice" class="pet-primary">2文をつなぐ →</button></section>`}
       ${ended?'<button data-action="restart" class="pet-primary">次の相棒を選ぶ</button>':p.level===10?'<button data-action="departure" class="pet-text-button">旅立ちを見送る</button>':''}
       <div class="pet-bank-row"><span>使える時間 <b>${listened(save.bankSeconds)}</b>${queued>1?' <small>＋'+listened(listening().pending)+' 同期待ち</small>':''}</span><button data-action="records">きょう ${listeningValue('today',listening().today)} ↗</button></div></main>`;
   }
@@ -315,8 +320,8 @@
       content = `<h2 id="petSheetTitle">10属性 × 10段階の図鑑</h2><p class="pet-sheet-sub">属性ごとに育てる。お世話の数値で、その子だけの姿に育つ。</p><div class="pet-species-grid">${rules.catalog.map(c => { const saved = found.get(c.id); return `<div><div>${saved ? portrait(saved.pet, saved.form, { still: true }) : '<span>?</span>'}</div><b>No.${String(c.id).padStart(3, '0')}</b><small>${unlocked.has(c.id) ? esc(c.name) : '未発見'}</small></div>`; }).join('')}</div>`;
     }
     if(sheet === 'departure') content='<h2 id="petSheetTitle">そろそろ、旅に出よう。</h2><div class="pet-departure-portrait">'+portrait(pet,pet.forms.at(-1),{still:true})+'</div><p class="pet-sheet-sub">Lv.10まで育ててくれて、ありがとう。<br>この子と過ごした時間と、進化した姿は図鑑に残ります。</p><button data-action="depart" class="pet-primary" '+(busy?'disabled':'')+'>いってらっしゃい</button><p class="pet-sheet-note">使える時間 '+listened(save.bankSeconds)+' は次の相棒へ。</p>';
-    if(pet?.practice?.policy==='both'&&sheet==='care')content=content.replace('生存時間は、英語を聴くと回復します。','生存時間は英語を聴くと回復します。さらに「2文をつなぐ」で音声回答や復習を毎日10回行う必要があります。');
-    if(pet?.practice?.policy==='both'&&sheet==='rules')content=`<h2 id="petSheetTitle">時間と毎日10回、両方で相棒を守ろう</h2><p>生存時間は経過時間で減り、0になると死亡します。英語を聴くと秒単位で回復し、30分聴くと12時間、1時間なら24時間ぶん回復します（上限24時間）。お世話では生存時間は回復しません。</p><p>これに加えて「2文をつなぐ」で音声回答や復習を毎日10回行う必要があります。正解でも不正解でも、音声回答の採点が終わると1回。復習ノートで問題を考えて答えを確認しても1回。同じ問題の再挑戦や「もう一度この問題を復習する」も1回ずつ数え、復習だけでも10回で達成できます。音声の無回答、一覧の閲覧、答えの表示・非表示の切り替え、音声再生だけでは回数は増えません。</p><p>日本時間0時から24時までに10回以上。10回未満の日があると、その日の終了時に死亡します。10回達成しても時間切れなら死亡し、時間が残っていても10回未達なら死亡します。アプリを閉じている間も両方を判定します。新しい相棒を選んだ日は10回の準備日で、翌日の丸一日から回数条件を適用します。時間の条件は初日から有効です。</p><p>聴いた時間は引き続き貯まり、お世話に使うと成長します。5分ごとに選んだ能力が1増え、体格・パワー・かしこさで姿が変わります。会話チャレンジのコインでもお世話できます。Lv.10で旅立ちを見送れます。図鑑・聴いた時間・学習記録・復習ノートは残ります。</p><table class="pet-rules-table"><caption>次の1レベルに必要なお世話の時間</caption>${rules.bands.map((min,i)=>`<tr><th>Lv.${i+1} → ${i+2}</th><td>${minutes(min*60)}</td></tr>`).join('')}</table>`;
+    if(pet?.practice?.policy==='both'&&sheet==='care')content=content.replace('生存時間は、英語を聴くと回復します。','生存時間は英語を聴くと回復します。その日のノルマは「2文をつなぐ」の音声回答・復習10回、または会話フレーズ30分で達成できます。');
+    if(pet?.practice?.policy==='both'&&sheet==='rules')content=`<h2 id="petSheetTitle">時間を保ち、毎日のノルマを達成しよう</h2><p>生存時間は経過で減り、0になると死亡します。英語を聴くと秒単位で回復し、30分で12時間、1時間で24時間ぶん回復します（上限24時間）。お世話では生存時間は回復しません。</p><p>毎日のノルマは、①「2文をつなぐ」の音声回答・復習を合計10回、または②会話フレーズを合計30分聴く、のどちらかで達成できます。音声回答は正誤を問いません。復習で答えを確認しても1回。同じ問題の再挑戦も数えます。</p><p>会話フレーズは実際に音が流れた時間を集計します。停止・ミュート・読み込み中・シークした区間、洋楽やドラマの時間は30分のノルマには加算しません。再送や同時再生で同じ時間を二重には数えません。回答回数と聴いた時間を半分ずつ足す形ではなく、どちらか一方を達成します。</p><p>日本時間0時から24時までに、どちらかを達成しよう。時間切れ、またはどちらも未達の日があると死亡します。ノルマを達成しても生存時間を保つ必要があります。新しい相棒を選んだ日はノルマの準備日で、翌日の丸一日から適用します。回数と会話フレーズの分数は翌日へ繰り越しません。アプリを閉じている間も同じ条件で判定します。</p><p>聴いた時間・成長・図鑑・復習ノートは残ります。貯めた時間やチャレンジのコインでお世話ができ、Lv.10で旅立ちを見送れます。</p><table class="pet-rules-table"><caption>次の1レベルに必要なお世話の時間</caption>${rules.bands.map((min,i)=>`<tr><th>Lv.${i+1} → ${i+2}</th><td>${minutes(min*60)}</td></tr>`).join('')}</table>`;
     return `<div class="pet-sheet-backdrop" data-action="dismiss"><section class="pet-sheet" role="dialog" aria-modal="true" aria-labelledby="petSheetTitle"><div class="pet-sheet-handle"></div><button class="pet-sheet-close" data-action="dismiss" aria-label="閉じる">×</button>${content}</section></div>`;
   }
   function showSheet(type) { if (type === 'care') { careSeconds = 300; careSource = 'coins'; } sheet = type; render(); overlay.querySelector('.pet-sheet button:not(:disabled)')?.focus(); }

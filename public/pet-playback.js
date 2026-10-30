@@ -39,7 +39,7 @@
       let start = now - seconds * 1000;
       while (start < now) {
         const end = Math.min(now, start + 30000);
-        sink({ start, end, petId: petId() }); start = end;
+        sink({ start, end, petId: petId(), source: window.PetRules?.phraseAudioPath(current.source) || undefined }); start = end;
       }
     }
     record.last = current; record.wall = now;
