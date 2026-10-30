@@ -752,6 +752,19 @@ function phraseEnglish(phrase, english, index) {
   return safe.replace(new RegExp('\\b' + phrase.relativeType + '\\b', 'i'), '<mark class="phrase-relative-word">$&</mark>');
 }
 
+function renderPhraseExpressionGuide(category) {
+  const guide = window.PHRASE_EXPRESSION_GUIDES?.[category];
+  if (!guide) return '<div id="phraseExpressionGuide" class="phrase-guide-hint">表現を選ぶと、文の中の役割と使い方を確認できます。</div>';
+  return `<section id="phraseExpressionGuide" class="phrase-expression-guide" aria-labelledby="phraseGuideTitle">
+    <p class="phrase-guide-label">文の中の役割</p>
+    <h3 id="phraseGuideTitle"><span lang="en">${esc(category)}</span><span>${esc(guide.title)}</span></h3>
+    <p class="phrase-guide-role">${esc(guide.role)}</p>
+    <p class="phrase-guide-pattern"><span>つなぎ方</span>${esc(guide.pattern)}</p>
+    <div class="phrase-guide-examples">${guide.examples.map(example => `<div class="phrase-guide-example"><p lang="en">${phraseEnglish({ relativeType: category }, example.en)}</p><p lang="ja">${esc(example.ja)}</p></div>`).join('')}</div>
+    <p class="phrase-guide-note">${esc(guide.note)}</p>
+  </section>`;
+}
+
 function renderPhraseGrid() {
   const packPhrases = getPhrasesForCurrentPack();
   const categories = ['すべて', ...Array.from(new Set(packPhrases.map(p => p.category)))];
@@ -764,7 +777,7 @@ function renderPhraseGrid() {
 
   const chips = categories.map(category => `
     <button class="phrase-filter-chip ${state.phraseCategory === category ? 'active' : ''}"
-            onclick="setPhraseCategory('${esc(category)}')">${esc(category)}</button>
+            aria-pressed="${state.phraseCategory === category}" aria-controls="phraseExpressionGuide" onclick="setPhraseCategory('${esc(category)}')">${esc(category)}</button>
   `).join('');
 
   const packTabs = ['すべて', '基本', '応用'].map(pack => `
@@ -794,6 +807,7 @@ function renderPhraseGrid() {
       <div class="phrase-filter-wrap">
         <div class="phrase-filter-row" id="phraseFilterRow">${chips}</div>
       </div>
+      ${renderPhraseExpressionGuide(state.phraseCategory)}
       <div class="phrase-random-panel phrase-sequential-panel">
         <div><strong>会話をつづけて聞く</strong><small>選択中の${filtered.length}会話を順番に再生</small><small class="phrase-daily-progress">きょうの会話 <b data-phrase-practice-time>0分00秒</b> / 30分 <span data-phrase-practice-goal></span></small></div>
         <button type="button" class="phrase-play-selected" onclick="startSelectedPhrasePlayback()">▶ すべて再生</button>
