@@ -263,7 +263,7 @@
   }
   function selection() {
     const chosen=rules.element(chosenElement)||rules.elements[0];
-    return '<main class="pet-selection"><h1>最初の相棒を選ぼう</h1><p>10の属性。どの子と、英語を聴こう？</p><div class="pet-starter-grid">'+rules.elements.map(e=>'<button class="pet-starter-card" data-action="choose-element" data-element="'+e.id+'" aria-pressed="'+(e.id===chosen.id)+'" style="--element-color:'+e.color+'"><span class="pet-element-tag">'+e.label+'</span><img src="'+e.imageUrl+'" alt="'+e.name+'" loading="lazy"><strong>'+e.name+'</strong></button>').join('')+'</div><div class="pet-selection-footer"><p><b>'+chosen.name+'</b><span>'+chosen.description+'</span></p><button class="pet-primary" data-action="select" '+(busy?'disabled':'')+'>この子と始める</button></div></main>';
+    return '<main class="pet-selection"><h1>最初の相棒を選ぼう</h1><p>10の属性。どの子と、英語を聴こう？</p><div class="pet-starter-grid">'+rules.elements.map((e,i)=>'<button class="pet-starter-card" data-action="choose-element" data-element="'+e.id+'" aria-pressed="'+(e.id===chosen.id)+'" style="--element-color:'+e.color+'"><span class="pet-element-tag">'+e.label+'</span><img src="'+e.imageUrl+'" alt="'+e.name+'" loading="'+(i<4?'eager':'lazy')+'" decoding="async"><strong>'+e.name+'</strong></button>').join('')+'</div><div class="pet-selection-footer"><p><b>'+chosen.name+'</b><span>'+chosen.description+'</span></p><button class="pet-primary" data-action="select" '+(busy?'disabled':'')+'>この子と始める</button></div></main>';
   }
   function room() {
     const pet=current(),p=rules.progress(rules.growth(pet)),form=pet.forms.at(-1);

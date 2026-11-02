@@ -16,6 +16,11 @@
     try {
       // Persist playback against the previous identity before reloading it.
       await window.PetGame?.prepareRefresh();
+      if (location.hash?.includes('saved-device=')) {
+        const url = new URL(location.href), params = new URLSearchParams(url.hash.slice(1));
+        params.set('saved-device', event.newValue); url.hash = params.toString();
+        history.replaceState(null, '', url.href);
+      }
       location.reload();
     } catch {
       if (root) root.inert = wasInert;

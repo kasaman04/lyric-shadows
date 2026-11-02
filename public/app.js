@@ -197,13 +197,14 @@ async function init() {
   loadHiddenPhrases();
   loadSavedPhrases();
   state.deviceId = loadDeviceId();
-  window.PetGame?.initialize(state.deviceId);
+  const petReady = window.PetGame?.initialize(state.deviceId);
   renderHome();
   syncPhrasePreferencesFromServer();
   const requestedSong = new URLSearchParams(window.location.search).get('song');
   const song = state.songs.find(item => item.id === requestedSong);
   if (song) await showShadowing(song);
   else if (window.location.hash === '#challenge') await startConversationGame();
+  if (linkedDeviceId() && window.PetGame) { await petReady; window.PetGame.open(); }
 }
 
 async function loadVoices() {
@@ -1013,8 +1014,24 @@ function createDeviceId() {
   return `${Date.now()}-${Math.random().toString(16).slice(2)}`;
 }
 
+function linkedDeviceId() {
+  const value = new URLSearchParams(window.location.hash.slice(1)).get('saved-device') || '';
+  return /^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$/i.test(value) ? value : '';
+}
+
 function loadDeviceId() {
-  let id = readStoredValue(DEVICE_ID_KEY);
+  const linked = linkedDeviceId(), previous = readStoredValue(DEVICE_ID_KEY);
+  if (linked && linked !== previous) {
+    // A direct recovery link works in the browser displaying the actual home.
+    // Keep previous identity and preferences before changing the connection.
+    const backups = JSON.parse(localStorage.getItem('lyricIdentityBackupsV1') || '[]');
+    if (!Array.isArray(backups)) throw new Error('端末情報の退避先を確認できません。');
+    backups.push({at:Date.now(),values:Object.fromEntries([DEVICE_ID_KEY,'savedPhraseIds','hiddenPhraseIds'].map(key=>[key,readStoredValue(key)]))});
+    localStorage.setItem('lyricIdentityBackupsV1', JSON.stringify(backups));
+    state.savedPhraseIds.clear(); state.hiddenPhraseIds.clear();
+    writeStoredIds('savedPhraseIds', []); writeStoredIds('hiddenPhraseIds', []);
+  }
+  let id = linked || previous;
   if (!/^[a-z0-9-]{12,80}$/i.test(id)) id = createDeviceId();
   writeStoredValue(DEVICE_ID_KEY, id);
   return id;
@@ -2466,5 +2483,6 @@ function showPreviewView(preview) {
 // ============================================================
 // START
 // ============================================================
-init();
-
+init().catch(() => {
+  document.getElementById('app').innerHTML = '<main style="padding:32px"><h1>保存データに接続できませんでした</h1><p role="alert">接続とブラウザの保存設定を確認して、このページを更新してください。</p></main>';
+});

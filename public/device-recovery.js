@@ -60,7 +60,7 @@
       status.textContent = '元のデータに接続しました。';
       detail.textContent = restoredDetail;
       home.hidden = false;
-      location.replace('/');
+      location.replace('/#saved-device=' + encodeURIComponent(target));
     } catch (error) {
       if (changed) {
         for (const [key, value] of Object.entries(before)) {

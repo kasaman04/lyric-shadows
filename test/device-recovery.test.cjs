@@ -16,7 +16,7 @@ async function run(options = {}) {
   return {memory,cookies,elements,requests,navigations,historyCalls};
 }
 test('recovery reconnects identity and preferences, retains previous data, and removes link secret', async()=>{
-  const s=await run();assert.deepEqual(s.navigations,['/']);assert.equal(s.memory.get('phraseDeviceId'),target);assert.equal(s.cookies.get('phraseDeviceId'),target);
+  const s=await run();assert.deepEqual(s.navigations,['/#saved-device='+target]);assert.equal(s.memory.get('phraseDeviceId'),target);assert.equal(s.cookies.get('phraseDeviceId'),target);
   assert.equal(s.memory.get('savedPhraseIds'),'["saved"]');assert.equal(s.memory.get('hiddenPhraseIds'),'[]');assert.equal(s.cookies.get('savedPhraseIds'),'%5B%22saved%22%5D');
   assert.equal(s.memory.get('petState:'+previous),'{"preserved":true}');const backup=JSON.parse(s.memory.get('lyricIdentityBackupsV1'))[0];assert.equal(backup.values.phraseDeviceId,previous);assert.equal(backup.values.savedPhraseIds,'["old"]');
   assert.equal(s.historyCalls[0][2],'/restore.html');assert.equal(s.requests.length,2);assert(s.requests.every(r=>r.init.referrerPolicy==='no-referrer'));
