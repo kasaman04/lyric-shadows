@@ -197,14 +197,13 @@ async function init() {
   loadHiddenPhrases();
   loadSavedPhrases();
   state.deviceId = loadDeviceId();
-  const petReady = window.PetGame?.initialize(state.deviceId);
+  window.PetGame?.initialize(state.deviceId);
   renderHome();
   syncPhrasePreferencesFromServer();
   const requestedSong = new URLSearchParams(window.location.search).get('song');
   const song = state.songs.find(item => item.id === requestedSong);
   if (song) await showShadowing(song);
   else if (window.location.hash === '#challenge') await startConversationGame();
-  if (linkedDeviceId() && window.PetGame) { await petReady; window.PetGame.open(); }
 }
 
 async function loadVoices() {
