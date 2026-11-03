@@ -33,11 +33,23 @@
       <div class="flashcard-progress-label"><span>覚えた <strong>${progress.learned.length}</strong> / ${total}枚</span><span>あと${progress.queue.length}枚</span></div>
       <div class="flashcard-progress" role="progressbar" aria-label="覚えたカード" aria-valuemin="0" aria-valuemax="${total}" aria-valuenow="${progress.learned.length}"><span style="width:${progress.learned.length / total * 100}%"></span></div>`;
   }
+  function restartRandomly() {
+    progress = model.fresh();
+    const queue = progress.queue;
+    for (let i = queue.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [queue[i], queue[j]] = [queue[j], queue[i]];
+    }
+    progress.started = true;
+    revealed = false;
+    persist();
+    render(true);
+  }
   function render(focus) {
     const card = model.current(progress);
     if (!card) {
-      root.innerHTML = `${header()}<section class="flashcard-complete"><span class="flashcard-complete-mark" aria-hidden="true">✓</span><p class="flashcard-eyebrow">WELL DONE</p><h2 tabindex="-1">${total}枚、覚えた！</h2><p>おつかれさま。もう一周して、<br>思い出せるか確かめてみよう。</p><button class="flashcard-primary" id="restartCards">もう一周する</button><a href="/">TOPへ戻る</a></section><p class="flashcard-save-note">進捗はこの端末に保存されます。</p>`;
-      document.getElementById('restartCards').addEventListener('click', () => { progress = model.fresh(); progress.started = true; revealed = false; persist(); render(true); });
+      root.innerHTML = `${header()}<section class="flashcard-complete"><span class="flashcard-complete-mark" aria-hidden="true">✓</span><p class="flashcard-eyebrow">WELL DONE</p><h2 tabindex="-1">${total}枚、覚えた！</h2><p>順番を変えて、<br>もう一度思い出せるか試そう。</p><button class="flashcard-primary" id="restartCards">ランダムで再試験</button><a href="/">TOPへ戻る</a></section><p class="flashcard-save-note">進捗はこの端末に保存されます。</p>`;
+      document.getElementById('restartCards').addEventListener('click', restartRandomly);
       if (focus) root.querySelector('h2').focus();
       return;
     }
