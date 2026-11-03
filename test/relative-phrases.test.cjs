@@ -7,7 +7,10 @@ function browser(){
  class Audio{constructor(src=''){this.src=src;this.paused=true;this.currentTime=0;this.preload='none'}play(){this.paused=false;return Promise.resolve()}pause(){this.paused=true}}
  const ctx={window:{addEventListener(){},scrollTo(){}},document:{addEventListener(){},hidden:false},navigator:{},Audio,URL,URLSearchParams,console,seed:phrases,
    setTimeout(fn){const id=++timerId;timers.set(id,fn);return id},clearTimeout(id){timers.delete(id)}};
- vm.createContext(ctx);vm.runInContext(fs.readFileSync(path.join(root,'public/app.js'),'utf8').replace(/init\(\);\s*$/,''),ctx);
+ const appSource=fs.readFileSync(path.join(root,'public/app.js'),'utf8');
+ const startup=appSource.lastIndexOf('\ninit()');
+ assert.ok(startup>=0,'Locate browser startup without running it in the unit test');
+ vm.createContext(ctx);vm.runInContext(appSource.slice(0,startup),ctx);
  vm.runInContext("state.phrases=seed;stopAudio=()=>{};stopSongAudio=()=>{};renderPhrasePractice=()=>{};setMediaSession=()=>{};clearMediaSession=()=>{};updatePhraseRepeatButtons=()=>{};shuffleArray=()=>{throw Error('Sequential playback must not shuffle')};",ctx);
  return {ctx,timers,run:code=>vm.runInContext(code,ctx)};
 }

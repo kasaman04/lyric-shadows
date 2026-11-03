@@ -253,7 +253,10 @@ document.addEventListener('visibilitychange', () => {
   if (!document.hidden) refreshVisibleSongs();
 });
 window.addEventListener('pageshow', event => {
-  if (event.persisted) refreshVisibleSongs();
+  if (!event.persisted) return;
+  const flashcardEntry = document.querySelector('.home-flashcard-entry');
+  if (flashcardEntry && window.IllustratedFlashcards) flashcardEntry.outerHTML = window.IllustratedFlashcards.entry();
+  refreshVisibleSongs();
 });
 
 async function loadPhraseImages() {
@@ -398,6 +401,7 @@ function renderHome() {
         </div>
       </section>
       <a class="home-sentence-entry" href="/sentence-game.html" aria-label="2文をつなぐ練習を始める"><span class="sentence-entry-copy"><span class="sentence-entry-eyebrow">声でつなぐ、英語の練習</span><strong>2文をつなぐ</strong><span class="sentence-entry-description">聞いた2文を、ひとつにして話そう。</span><span class="sentence-entry-footer"><span class="sentence-entry-start">はじめる <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M4 2.5 9 6l-5 3.5Z" fill="currentColor"/></svg></span><small>会話30分でも達成</small></span></span><span class="sentence-entry-visual" aria-hidden="true"><span class="sentence-mini sentence-mini-first">I met a man.</span><span class="sentence-mini sentence-mini-second">He lives in Tokyo.</span><span class="sentence-mini-joined">a man <em>who…</em></span></span></a>
+      ${window.IllustratedFlashcards?.entry() || ''}
       <nav class="home-tabs" aria-label="学習方法">
         <button class="home-tab ${state.homeFilter === 'A' ? 'active' : ''}" onclick="setHomeFilter('A')" aria-current="${state.homeFilter === 'A' ? 'page' : 'false'}">♫ <span>洋楽で学ぶ</span></button>
         <button class="home-tab ${state.homeFilter === 'C' ? 'active' : ''}" onclick="setHomeFilter('C')" aria-current="${state.homeFilter === 'C' ? 'page' : 'false'}">💬 <span>会話フレーズ</span></button>
