@@ -1,8 +1,11 @@
 (() => {
   'use strict';
-  const model = window.IllustratedFlashcards;
+  const baseModel = window.IllustratedFlashcards;
   const root = document.getElementById('flashcardApp');
-  if (!root || !model) return;
+  if (!root || !baseModel) return;
+  const directDeck = window.DIRECT_FLASHCARD_DECK;
+  const isDirect = directDeck && new URLSearchParams(window.location.search).get('set') === 'direct';
+  const model = isDirect ? baseModel.forDeck(directDeck) : baseModel;
   const esc = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   let storage;
   try { storage = window.localStorage; } catch { storage = null; }
@@ -30,6 +33,10 @@
   }
   function header() {
     return `<header class="flashcard-header"><a href="/" class="flashcard-back" aria-label="TOPへ戻る">←</a><div><h1>イラスト暗記カード</h1><p>${model.deck.title}</p></div><span class="flashcard-deck-size">${total}枚</span></header>
+      <nav class="flashcard-decks" aria-label="カードセット">
+        <a href="/flashcards.html"${isDirect ? '' : ' aria-current="page"'}>基本 ${baseModel.deck.cards.length}枚</a>
+        <a href="/flashcards.html?set=direct"${isDirect ? ' aria-current="page"' : ''}>原形が続く表現 ${directDeck.cards.length}枚</a>
+      </nav>
       <div class="flashcard-progress-label"><span>覚えた <strong>${progress.learned.length}</strong> / ${total}枚</span><span>あと${progress.queue.length}枚</span></div>
       <div class="flashcard-progress" role="progressbar" aria-label="覚えたカード" aria-valuemin="0" aria-valuemax="${total}" aria-valuenow="${progress.learned.length}"><span style="width:${progress.learned.length / total * 100}%"></span></div>`;
   }
@@ -45,6 +52,14 @@
     persist();
     render(true);
   }
+  function illustration(card) {
+    if (card.tile === undefined) {
+      return `<img class="flashcard-illustration" src="${esc(card.image)}" alt="${esc(card.alt)}" width="1024" height="768" fetchpriority="high">`;
+    }
+    const x = (card.tile % 3) * 50;
+    const y = Math.floor(card.tile / 3) * 50;
+    return `<span class="flashcard-illustration flashcard-atlas" role="img" aria-label="${esc(card.alt)}" style="background-image:url('${esc(card.image)}');background-position:${x}% ${y}%"></span>`;
+  }
   function render(focus) {
     const card = model.current(progress);
     if (!card) {
@@ -53,14 +68,14 @@
       if (focus) root.querySelector('h2').focus();
       return;
     }
-    const image = `<img class="flashcard-illustration" src="${esc(card.image)}" alt="${esc(card.alt)}" width="1024" height="768" fetchpriority="high">`;
+    const image = illustration(card);
     const translation = esc(card.japanese);
     root.innerHTML = `${header()}<section class="flashcard-study" aria-label="暗記カード">
       <div class="flashcard-card ${revealed ? 'is-revealed' : ''}">
         ${revealed ? image : `<button class="flashcard-reveal" id="revealCard" aria-label="タップして答えを見る" aria-describedby="cardPrompt">${image}<span class="flashcard-front-prompt"><span id="cardPrompt" class="flashcard-japanese" lang="ja">${translation}</span>${tapIcon}<strong>タップして答えを見る</strong></span></button>`}
         ${revealed ? `<div class="flashcard-answer"><div class="flashcard-english-row"><h2 id="cardAnswer" lang="en" tabindex="-1">${esc(card.english)}</h2><button id="speakCard" class="flashcard-speaker" aria-label="英文を聞く">${speakerIcon}</button></div><p class="flashcard-japanese" lang="ja">${translation}</p><span class="flashcard-pattern">${esc(card.pattern)}</span><div class="flashcard-review-actions"><button id="againCard" class="flashcard-secondary">もう一度</button><button id="rememberCard" class="flashcard-primary">覚えた</button></div></div>` : ''}
       </div>
-      <details class="flashcard-hint"><summary>場面ヒント</summary><p>${esc(card.hint)}</p></details>
+      ${card.hint ? `<details class="flashcard-hint"><summary>場面ヒント</summary><p>${esc(card.hint)}</p></details>` : ''}
       <nav class="flashcard-navigation" aria-label="カードの移動"><button id="previousCard" aria-label="前のカード" ${progress.cursor === 0 ? 'disabled' : ''}>←</button><span>未習得カード ${progress.cursor + 1} / ${progress.queue.length}</span><button id="nextCard" aria-label="次のカード" ${progress.cursor === progress.queue.length - 1 ? 'disabled' : ''}>→</button></nav>
       <p class="flashcard-save-note">「もう一度」は、この一周のあとに再出題。<br>進捗はこの端末に保存されます。</p>
     </section>`;

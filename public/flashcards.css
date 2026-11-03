@@ -1,4 +1,26 @@
 /* Shared TOP entry and the illustrated study deck. */
+.flashcard-decks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: -8px 0 20px;
+}
+.flashcard-decks a {
+  padding: 9px 12px;
+  border-radius: 18px;
+  background: #e8eeea;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.flashcard-decks a[aria-current="page"] {
+  background: var(--fc-teal);
+  color: #fff;
+}
+.flashcard-card .flashcard-atlas {
+  background-size: 300% 300%;
+  background-repeat: no-repeat;
+}
 .flashcard-front-prompt .flashcard-japanese#cardPrompt {
   margin: 0 0 3px;
   color: var(--fc-ink);

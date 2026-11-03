@@ -2,7 +2,7 @@
   'use strict';
   if (typeof module === 'object' && module.exports) module.exports = factory(require('./flashcards-data.js'));
   else root.IllustratedFlashcards = factory(root.ILLUSTRATED_FLASHCARD_DECK);
-})(typeof window === 'object' ? window : globalThis, function (deck) {
+})(typeof window === 'object' ? window : globalThis, function createModel(deck) {
   'use strict';
   const ids = deck.cards.map(card => card.id);
   const validIds = new Set(ids);
@@ -49,8 +49,8 @@
     const action = done ? 'もう一度復習' : p.started ? '続きから' : 'はじめる';
     return `<a class="home-flashcard-entry" href="/flashcards.html" aria-label="イラスト暗記カードを${action}">
       <img class="flashcard-entry-image" src="/flashcard-images/help-carry.webp" alt="二人で大きな箱を運ぶイラスト" width="160" height="120" loading="lazy">
-      <span class="flashcard-entry-copy"><strong>イラスト暗記カード</strong><span>イラストを見て、英語を思い出そう</span><small>${deck.title} · 覚えた ${p.learned.length} / ${ids.length}枚</small><b>${action} <span aria-hidden="true">→</span></b></span>
+      <span class="flashcard-entry-copy"><strong>イラスト暗記カード</strong><span>基本セットと「原形が続く表現」</span><small>基本 · 覚えた ${p.learned.length} / ${ids.length}枚</small><b>${action} <span aria-hidden="true">→</span></b></span>
     </a>`;
   }
-  return Object.freeze({ deck, fresh, normalize, key, read, save, current, move, rate, entry });
+  return Object.freeze({ deck, fresh, normalize, key, read, save, current, move, rate, entry, forDeck: createModel });
 });
