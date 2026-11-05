@@ -46,6 +46,7 @@ const state = {
   phraseAdvanceTimer: null,
   phraseAudioRequest: 0,
   phraseAudioRepeat: false,
+  phraseRepeatWaiting: false,
   phraseAudioSrc: '',
   shouldAutoplayPractice: false,
   deviceId: '',
@@ -142,7 +143,7 @@ function setMediaSession(type, title, artist) {
       if (type !== activeMediaType) return;
       if (type === 'song') document.getElementById('songAudioPlayer')?.pause();
       else if (type === 'conversation' && state.isPlaying) togglePlay();
-      else if (type === 'phrase') state.phrasePracticeAudio?.pause();
+      else if (type === 'phrase') pausePhraseSharedAudio();
       else if (type === 'quote') state.quoteAudio?.pause();
     },
     previoustrack: type === 'song' ? null : () => {
@@ -414,6 +415,7 @@ function renderHome() {
   `;
   if (state.homeFilter === 'C') {
     updatePhraseCardButtons();
+    updatePhraseRepeatButtons();
     setTimeout(() => {
       scrollActivePhrasePack();
       scrollActivePhraseChip();
@@ -799,7 +801,7 @@ function renderPhraseGrid() {
       </button>
       <div class="phrase-card-actions">
         <span class="phrase-card-count">${phrase.lines.length}ラリー</span>
-        ${getPhraseCardAudioSrc(phrase) ? `<button type="button" class="phrase-card-play" data-phrase-card-src="${esc(getPhraseCardAudioSrc(phrase))}" onclick="togglePhraseCardAudio('${phrase.id}')" aria-label="${esc(phrase.phrase)} を再生" aria-pressed="false">▶ 再生</button>` : ''}
+        ${getPhraseCardAudioSrc(phrase) ? `<button type="button" class="phrase-card-play" data-phrase-card-src="${esc(getPhraseCardAudioSrc(phrase))}" onclick="togglePhraseCardAudio('${phrase.id}')" aria-label="${esc(phrase.phrase)} を再生" aria-pressed="false">▶ 再生</button><button type="button" class="phrase-card-repeat" data-phrase-repeat-src="${esc(getPhraseCardAudioSrc(phrase))}" onclick="togglePhraseRepeat('${esc(getPhraseCardAudioSrc(phrase))}')" aria-label="${esc(phrase.phrase)} を1秒間隔でリピート" aria-pressed="false">↻ リピート</button>` : ''}
       </div>
     </article>
   `).join('');
@@ -1529,8 +1531,8 @@ function togglePhraseCardAudio(id) {
   const src = getPhraseCardAudioSrc(phrase);
   if (!src) return;
   const audio = state.phrasePracticeAudio;
-  if (audio && state.phraseAudioSrc === normalizePhraseAudioSrc(src) && !audio.ended) {
-    if (!audio.paused) audio.pause();
+  if (audio && state.phraseAudioSrc === normalizePhraseAudioSrc(src)) {
+    if (!audio.paused || state.phraseRepeatWaiting) pausePhraseSharedAudio();
     else audio.play().catch(() => showToast('音声を再生できませんでした。再生ボタンを押してください'));
     return;
   }
@@ -1541,7 +1543,7 @@ function togglePhraseCardAudio(id) {
 function updatePhraseCardButtons() {
   document.querySelectorAll('[data-phrase-card-src]').forEach(button => {
     const audio = state.phrasePracticeAudio;
-    const playing = !!audio && !audio.paused && !audio.ended && state.phraseAudioSrc === normalizePhraseAudioSrc(button.dataset.phraseCardSrc);
+    const playing = !!audio && ((!audio.paused && !audio.ended) || state.phraseRepeatWaiting) && state.phraseAudioSrc === normalizePhraseAudioSrc(button.dataset.phraseCardSrc);
     button.textContent = playing ? 'Ⅱ 一時停止' : '▶ 再生';
     button.setAttribute('aria-pressed', String(playing));
     const phrase = state.phrases.find(item => normalizePhraseAudioSrc(getPhraseCardAudioSrc(item)) === normalizePhraseAudioSrc(button.dataset.phraseCardSrc));
@@ -1549,9 +1551,18 @@ function updatePhraseCardButtons() {
   });
 }
 
+function pausePhraseSharedAudio() {
+  clearTimeout(state.phraseAdvanceTimer); state.phraseAdvanceTimer = null;
+  state.phraseRepeatWaiting = false;
+  state.phrasePracticeAudio?.pause();
+  setMediaPlaybackState(false);
+  updatePhraseCardButtons();
+}
+
 function playPhraseSharedAudio(src, { repeat = false, autoAdvance = false } = {}) {
   stopAudio();
   clearTimeout(state.phraseAdvanceTimer); state.phraseAdvanceTimer = null;
+  state.phraseRepeatWaiting = false;
   const request = ++state.phraseAudioRequest;
   if (!state.phrasePracticeAudio) {
     state.phrasePracticeAudio = createLearningAudio();
@@ -1568,9 +1579,24 @@ function playPhraseSharedAudio(src, { repeat = false, autoAdvance = false } = {}
 
   state.phraseAudioRepeat = repeat;
   state.phraseAudioSrc = absoluteSrc;
-  state.phrasePracticeAudio.loop = repeat;
+  state.phrasePracticeAudio.loop = false;
   state.phrasePracticeAudio.onended = () => {
     if (request !== state.phraseAudioRequest) return;
+    if (repeat) {
+      state.phraseRepeatWaiting = true;
+      state.phraseAdvanceTimer = setTimeout(() => {
+        state.phraseAdvanceTimer = null;
+        if (request !== state.phraseAudioRequest || !state.phraseAudioRepeat || !state.phraseRepeatWaiting) return;
+        state.phraseRepeatWaiting = false;
+        state.phrasePracticeAudio.currentTime = 0;
+        state.phrasePracticeAudio.play().catch(() => {
+          if (request === state.phraseAudioRequest) {
+            updatePhraseCardButtons();
+            showToast('音声を再生できませんでした。再生ボタンを押してください');
+          }
+        });
+      }, 1000);
+    }
     updatePhraseCardButtons();
     if (!repeat && autoAdvance && state.view === 'phrasePractice') {
       const advance = () => {
@@ -1582,10 +1608,14 @@ function playPhraseSharedAudio(src, { repeat = false, autoAdvance = false } = {}
     }
   };
   state.phrasePracticeAudio.onplay = () => {
+    clearTimeout(state.phraseAdvanceTimer); state.phraseAdvanceTimer = null;
+    state.phraseRepeatWaiting = false;
     if (activeMediaType === 'phrase') setMediaPlaybackState(true);
     updatePhraseCardButtons();
   };
   state.phrasePracticeAudio.onpause = () => {
+    clearTimeout(state.phraseAdvanceTimer); state.phraseAdvanceTimer = null;
+    state.phraseRepeatWaiting = false;
     if (activeMediaType === 'phrase') setMediaPlaybackState(false);
     updatePhraseCardButtons();
   };
@@ -1610,6 +1640,7 @@ function updatePhraseRepeatButtons() {
   document.querySelectorAll('[data-phrase-repeat-src]').forEach(btn => {
     const isActive = state.phraseAudioRepeat && state.phraseAudioSrc === normalizePhraseAudioSrc(btn.dataset.phraseRepeatSrc);
     btn.classList.toggle('active', isActive);
+    btn.setAttribute('aria-pressed', String(isActive));
     btn.textContent = isActive ? '↻ リピート中' : '↻ リピート';
   });
 }
@@ -1617,6 +1648,7 @@ function updatePhraseRepeatButtons() {
 function stopPhrasePracticeAudio() {
   state.phraseAudioRequest++;
   clearTimeout(state.phraseAdvanceTimer); state.phraseAdvanceTimer = null;
+  state.phraseRepeatWaiting = false;
   if (state.phrasePracticeAudio) {
     state.phrasePracticeAudio.pause();
     try { state.phrasePracticeAudio.currentTime = 0; } catch {}

@@ -26,3 +26,6 @@
 .page-home .phrase-card-play[aria-pressed="true"] { background: var(--coral); color: white; }
 .page-home .phrase-card-open:focus-visible, .page-home .phrase-card-play:focus-visible { outline: 2px solid var(--coral); outline-offset: 4px; }
 @media (max-width: 360px) { .page-home .phrase-card { padding: 14px 12px; column-gap: 8px; } .page-home .phrase-card-play { min-width: 82px; padding-inline: 7px; } }
+.page-home .phrase-card-repeat { min-height: 44px; padding: 8px 10px; border: 1px solid #a4b2a0; border-radius: 999px; background: transparent; color: #4e684b; font-family: inherit; font-size: 11px; font-weight: 700; white-space: nowrap; cursor: pointer; }
+.page-home .phrase-card-repeat.active { background: #e5ecdf; border-color: #668460; }
+.page-home .phrase-card-repeat:focus-visible { outline: 2px solid #668460; outline-offset: 4px; }

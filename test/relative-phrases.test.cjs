@@ -9,16 +9,16 @@ const expectedTotal=150+additions.length;
 const expectedBasic=90+additions.filter(c=>['once','as soon as','even though','unless','while','as'].includes(c.type)).length;
 const expectedAdvanced=expectedTotal-expectedBasic;
 function browser(){
- const timers=new Map();let timerId=0;
+ const timers=new Map(),delays=new Map();let timerId=0;
  class Audio{constructor(src=''){this.src=src;this.paused=true;this.currentTime=0;this.preload='none'}play(){this.paused=false;return Promise.resolve()}pause(){this.paused=true}}
  const ctx={window:{addEventListener(){},scrollTo(){}},document:{addEventListener(){},querySelectorAll(){return []},hidden:false},navigator:{},Audio,URL,URLSearchParams,console,seed:phrases,
-   setTimeout(fn){const id=++timerId;timers.set(id,fn);return id},clearTimeout(id){timers.delete(id)}};
+   setTimeout(fn,delay){const id=++timerId;timers.set(id,fn);delays.set(id,delay);return id},clearTimeout(id){timers.delete(id)}};
  const appSource=fs.readFileSync(path.join(root,'public/app.js'),'utf8');
  const startup=appSource.lastIndexOf('\ninit()');
  assert.ok(startup>=0,'Locate browser startup without running it in the unit test');
  vm.createContext(ctx);vm.runInContext(appSource.slice(0,startup),ctx);
  vm.runInContext("state.phrases=seed;stopAudio=()=>{};stopSongAudio=()=>{};renderPhrasePractice=()=>{};setMediaSession=()=>{};clearMediaSession=()=>{};updatePhraseRepeatButtons=()=>{};shuffleArray=()=>{throw Error('Sequential playback must not shuffle')};",ctx);
- return {ctx,timers,run:code=>vm.runInContext(code,ctx)};
+ return {ctx,timers,delays,run:code=>vm.runInContext(code,ctx)};
 }
 test('existing and added bilingual conversations have the expected categories, two voices and all audio files',()=>{
  assert.equal(phrases.length,expectedTotal);assert.equal(new Set(phrases.map(p=>p.id)).size,expectedTotal);
@@ -95,4 +95,23 @@ test('card playback selects only the displayed sentence, including middle and fi
  assert.equal(b.run("getPhraseCardAudioSrc({...phrase,phrase:'a different sentence'})"),'');
  const rules=require('../public/pet-rules');
  for(const phrase of phrases){b.ctx.phrase=phrase;const src=b.run('getPhraseCardAudioSrc(phrase)');assert(fs.statSync(path.join(root,'public',src)).size>1000);assert.equal(rules.phraseAudioPath(src),phrase.audio);}
+});
+
+test('sentence repeat waits 1000ms after ending and never uses native gapless looping',()=>{
+ const b=browser();b.ctx.phrase=phrases[0];b.run("showToast=()=>{};state.view='home';togglePhraseRepeat(getPhraseCardAudioSrc(phrase));state.phrasePracticeAudio.paused=true;state.phrasePracticeAudio.onended()");
+ assert.equal(b.run('state.phrasePracticeAudio.loop'),false);
+ assert.equal(b.run('state.phraseRepeatWaiting'),true);
+ assert.equal(b.run('state.phrasePracticeAudio.paused'),true);
+ assert.equal(b.timers.size,1);
+ const [id,replay]=b.timers.entries().next().value;assert.equal(b.delays.get(id),1000);
+ b.timers.delete(id);replay();
+ assert.equal(b.run('state.phraseRepeatWaiting'),false);assert.equal(b.run('state.phrasePracticeAudio.paused'),false);assert.equal(b.run('state.phrasePracticeAudio.currentTime'),0);
+});
+
+test('repeat can be canceled during its gap by pausing, toggling off, stopping or playing another sentence',()=>{
+ for(const action of ['pausePhraseSharedAudio()','togglePhraseRepeat(getPhraseCardAudioSrc(phrase))','stopPhrasePracticeAudio()',"playPhraseSharedAudio('/another.mp3')"]){
+  const b=browser();b.ctx.phrase=phrases[0];b.run("showToast=()=>{};state.view='home';togglePhraseRepeat(getPhraseCardAudioSrc(phrase));state.phrasePracticeAudio.paused=true;state.phrasePracticeAudio.onended()");
+  const replay=b.timers.values().next().value;b.run(action);assert.equal(b.timers.size,0,action);assert.equal(b.run('state.phraseRepeatWaiting'),false,action);
+  const src=b.run('state.phrasePracticeAudio.src'),paused=b.run('state.phrasePracticeAudio.paused');replay();assert.equal(b.run('state.phrasePracticeAudio.src'),src);assert.equal(b.run('state.phrasePracticeAudio.paused'),paused);
+ }
 });
