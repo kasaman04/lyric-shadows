@@ -1,0 +1,2647 @@
+{
+  "title": "日常会話をつなぐ11表現・3ターン会話110",
+  "createdDate": "2026-11-05",
+  "description": "各表現10会話。A/Bの3ターンと日本語訳。",
+  "conversations": [
+    {
+      "id": "by-the-time-dialogue-01",
+      "type": "by the time",
+      "title": "売り切れのパン",
+      "targetTurnIndex": 1,
+      "targetSentence": "No. By the time I got there, they'd sold out.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Did you get those cinnamon rolls?",
+          "ja": "あのシナモンロール買えた？"
+        },
+        {
+          "speaker": "B",
+          "en": "No. By the time I got there, they'd sold out.",
+          "ja": "ううん。着いたころには売り切れてた。"
+        },
+        {
+          "speaker": "A",
+          "en": "Let's go earlier next time.",
+          "ja": "次はもっと早く行こう。"
+        }
+      ]
+    },
+    {
+      "id": "by-the-time-dialogue-02",
+      "type": "by the time",
+      "title": "夕飯の準備",
+      "targetTurnIndex": 1,
+      "targetSentence": "No need. It'll be ready by the time you get home.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Should I pick up dinner on my way home?",
+          "ja": "帰りに夕飯を買ってこようか？"
+        },
+        {
+          "speaker": "B",
+          "en": "No need. It'll be ready by the time you get home.",
+          "ja": "大丈夫。家に着くころにはできてるよ。"
+        },
+        {
+          "speaker": "A",
+          "en": "Great. I'll be home around seven.",
+          "ja": "よかった。7時ごろ帰るね。"
+        }
+      ]
+    },
+    {
+      "id": "by-the-time-dialogue-03",
+      "type": "by the time",
+      "title": "映画の冒頭",
+      "targetTurnIndex": 1,
+      "targetSentence": "The movie had already started by the time we sat down.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Did we miss much?",
+          "ja": "結構見逃しちゃった？"
+        },
+        {
+          "speaker": "B",
+          "en": "The movie had already started by the time we sat down.",
+          "ja": "席に着いたときには、もう映画が始まってたね。"
+        },
+        {
+          "speaker": "A",
+          "en": "I'll ask you about the beginning later.",
+          "ja": "最初のところは後で教えて。"
+        }
+      ]
+    },
+    {
+      "id": "by-the-time-dialogue-04",
+      "type": "by the time",
+      "title": "洗濯物",
+      "targetTurnIndex": 0,
+      "targetSentence": "Will these clothes be dry by the time we leave?",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Will these clothes be dry by the time we leave?",
+          "ja": "出かけるころには、この服乾くかな？"
+        },
+        {
+          "speaker": "B",
+          "en": "Not those jeans. They're still pretty wet.",
+          "ja": "そのジーンズは無理だね。まだ結構ぬれてる。"
+        },
+        {
+          "speaker": "A",
+          "en": "I'll wear something else, then.",
+          "ja": "じゃあ別のを着ていく。"
+        }
+      ]
+    },
+    {
+      "id": "by-the-time-dialogue-05",
+      "type": "by the time",
+      "title": "眠ってしまった子",
+      "targetTurnIndex": 1,
+      "targetSentence": "No. She was asleep by the time I got upstairs.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Did you get to say goodnight to her?",
+          "ja": "あの子におやすみって言えた？"
+        },
+        {
+          "speaker": "B",
+          "en": "No. She was asleep by the time I got upstairs.",
+          "ja": "ううん。上に行ったころには寝ちゃってた。"
+        },
+        {
+          "speaker": "A",
+          "en": "She had a busy day.",
+          "ja": "今日はいっぱい動いたもんね。"
+        }
+      ]
+    },
+    {
+      "id": "by-the-time-dialogue-06",
+      "type": "by the time",
+      "title": "店を出た後の雨",
+      "targetTurnIndex": 1,
+      "targetSentence": "Luckily, it had stopped by the time I left the store.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Did you get caught in the rain?",
+          "ja": "雨に降られた？"
+        },
+        {
+          "speaker": "B",
+          "en": "Luckily, it had stopped by the time I left the store.",
+          "ja": "運よく、お店を出るころにはやんでた。"
+        },
+        {
+          "speaker": "A",
+          "en": "You picked the right time to go shopping.",
+          "ja": "いいタイミングで買い物に行ったね。"
+        }
+      ]
+    },
+    {
+      "id": "by-the-time-dialogue-07",
+      "type": "by the time",
+      "title": "到着前の空腹",
+      "targetTurnIndex": 0,
+      "targetSentence": "I'll be starving by the time we get there.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "I'll be starving by the time we get there.",
+          "ja": "着くころにはおなかぺこぺこだよ。"
+        },
+        {
+          "speaker": "B",
+          "en": "I've got some crackers in my bag.",
+          "ja": "かばんにクラッカーがあるよ。"
+        },
+        {
+          "speaker": "A",
+          "en": "You're a lifesaver. Can I have a few?",
+          "ja": "助かる。ちょっともらっていい？"
+        }
+      ]
+    },
+    {
+      "id": "by-the-time-dialogue-08",
+      "type": "by the time",
+      "title": "片付けの手伝い",
+      "targetTurnIndex": 1,
+      "targetSentence": "Thanks, but we'll probably be done by the time you arrive.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "I'll come over after work and help clean up.",
+          "ja": "仕事が終わったら片付けを手伝いに行くよ。"
+        },
+        {
+          "speaker": "B",
+          "en": "Thanks, but we'll probably be done by the time you arrive.",
+          "ja": "ありがとう。でも来るころには多分終わってるよ。"
+        },
+        {
+          "speaker": "A",
+          "en": "Then I'll bring dessert instead.",
+          "ja": "じゃあ代わりにデザートを持っていくね。"
+        }
+      ]
+    },
+    {
+      "id": "by-the-time-dialogue-09",
+      "type": "by the time",
+      "title": "電話の充電",
+      "targetTurnIndex": 1,
+      "targetSentence": "Sure. Your phone should be charged by the time we leave.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Can I use your charger for a bit?",
+          "ja": "充電器をちょっと借りていい？"
+        },
+        {
+          "speaker": "B",
+          "en": "Sure. Your phone should be charged by the time we leave.",
+          "ja": "いいよ。出かけるころには充電できてるはず。"
+        },
+        {
+          "speaker": "A",
+          "en": "Perfect. Mine's almost dead.",
+          "ja": "よかった。もうほとんど電池がないんだ。"
+        }
+      ]
+    },
+    {
+      "id": "by-the-time-dialogue-10",
+      "type": "by the time",
+      "title": "駅での待ち合わせ",
+      "targetTurnIndex": 1,
+      "targetSentence": "I was already outside by the time you called.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "I can't find you. Where are you?",
+          "ja": "見つからないよ。どこにいる？"
+        },
+        {
+          "speaker": "B",
+          "en": "I was already outside by the time you called.",
+          "ja": "電話をくれたときには、もう外に出てたよ。"
+        },
+        {
+          "speaker": "A",
+          "en": "Stay there. I'll come out now.",
+          "ja": "そこにいて。今出るね。"
+        }
+      ]
+    },
+    {
+      "id": "whether-dialogue-01",
+      "type": "whether",
+      "title": "天気と予定",
+      "targetTurnIndex": 1,
+      "targetSentence": "It depends on whether it rains.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Are we still having the picnic tomorrow?",
+          "ja": "明日のピクニックは予定どおり？"
+        },
+        {
+          "speaker": "B",
+          "en": "It depends on whether it rains.",
+          "ja": "雨が降るかどうかによるね。"
+        },
+        {
+          "speaker": "A",
+          "en": "Let's check again tonight.",
+          "ja": "今夜もう一度確認しよう。"
+        }
+      ]
+    },
+    {
+      "id": "whether-dialogue-02",
+      "type": "whether",
+      "title": "飲み物の二択",
+      "targetTurnIndex": 1,
+      "targetSentence": "I'm trying to decide whether to get tea or coffee.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Have you decided what to order?",
+          "ja": "何を頼むか決まった？"
+        },
+        {
+          "speaker": "B",
+          "en": "I'm trying to decide whether to get tea or coffee.",
+          "ja": "紅茶にするかコーヒーにするか迷ってる。"
+        },
+        {
+          "speaker": "A",
+          "en": "The coffee here is really good.",
+          "ja": "ここのコーヒー、おいしいよ。"
+        }
+      ]
+    },
+    {
+      "id": "whether-dialogue-03",
+      "type": "whether",
+      "title": "同行する友達",
+      "targetTurnIndex": 0,
+      "targetSentence": "Do you know whether Sam is coming?",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Do you know whether Sam is coming?",
+          "ja": "サムが来るかどうか知ってる？"
+        },
+        {
+          "speaker": "B",
+          "en": "Not yet. He said he'd text me after work.",
+          "ja": "まだ。仕事の後で連絡するって言ってた。"
+        },
+        {
+          "speaker": "A",
+          "en": "Okay. I'll save him a seat for now.",
+          "ja": "わかった。とりあえず席を取っておくね。"
+        }
+      ]
+    },
+    {
+      "id": "whether-dialogue-04",
+      "type": "whether",
+      "title": "店の営業時間",
+      "targetTurnIndex": 1,
+      "targetSentence": "Let's check whether it's open first.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Should we walk over to that bakery?",
+          "ja": "あのパン屋まで歩いていこうか？"
+        },
+        {
+          "speaker": "B",
+          "en": "Let's check whether it's open first.",
+          "ja": "まず開いてるか確認しよう。"
+        },
+        {
+          "speaker": "A",
+          "en": "Good idea. It's closed on some weekdays.",
+          "ja": "そうだね。平日にも休みがあるもんね。"
+        }
+      ]
+    },
+    {
+      "id": "whether-dialogue-05",
+      "type": "whether",
+      "title": "上着の必要性",
+      "targetTurnIndex": 1,
+      "targetSentence": "I can't decide whether to take a jacket.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Why are you staring at your suitcase?",
+          "ja": "なんでスーツケースをじっと見てるの？"
+        },
+        {
+          "speaker": "B",
+          "en": "I can't decide whether to take a jacket.",
+          "ja": "上着を持っていくか決められなくて。"
+        },
+        {
+          "speaker": "A",
+          "en": "Take the light one. It gets cold at night.",
+          "ja": "薄いほうを持っていきなよ。夜は冷えるよ。"
+        }
+      ]
+    },
+    {
+      "id": "whether-dialogue-06",
+      "type": "whether",
+      "title": "辛さがわからない",
+      "targetTurnIndex": 1,
+      "targetSentence": "No. I can't tell whether it's spicy or just sweet.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Have you tried this sauce before?",
+          "ja": "このソース、食べたことある？"
+        },
+        {
+          "speaker": "B",
+          "en": "No. I can't tell whether it's spicy or just sweet.",
+          "ja": "ないよ。辛いのか、ただ甘いのかわからない。"
+        },
+        {
+          "speaker": "A",
+          "en": "Try a tiny bit first.",
+          "ja": "まずほんの少し試してみて。"
+        }
+      ]
+    },
+    {
+      "id": "whether-dialogue-07",
+      "type": "whether",
+      "title": "予定に関係なく行く",
+      "targetTurnIndex": 1,
+      "targetSentence": "That's okay. I'm going whether you come or not.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "I might not be able to come on Saturday.",
+          "ja": "土曜日は行けないかもしれない。"
+        },
+        {
+          "speaker": "B",
+          "en": "That's okay. I'm going whether you come or not.",
+          "ja": "大丈夫。来ても来なくても私は行くから。"
+        },
+        {
+          "speaker": "A",
+          "en": "Have fun. I'll join you if I can.",
+          "ja": "楽しんでね。行けそうだったら合流する。"
+        }
+      ]
+    },
+    {
+      "id": "whether-dialogue-08",
+      "type": "whether",
+      "title": "駅までの交通手段",
+      "targetTurnIndex": 0,
+      "targetSentence": "Have you decided whether to walk or take the bus?",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Have you decided whether to walk or take the bus?",
+          "ja": "歩くかバスに乗るか決めた？"
+        },
+        {
+          "speaker": "B",
+          "en": "Let's walk. We've got plenty of time.",
+          "ja": "歩こうよ。時間はたっぷりあるし。"
+        },
+        {
+          "speaker": "A",
+          "en": "Okay. We can stop for coffee on the way.",
+          "ja": "いいね。途中でコーヒーも買えるね。"
+        }
+      ]
+    },
+    {
+      "id": "whether-dialogue-09",
+      "type": "whether",
+      "title": "予約の確認",
+      "targetTurnIndex": 1,
+      "targetSentence": "Call and ask whether your booking went through.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "I booked online, but I didn't get an email.",
+          "ja": "ネットで予約したけど、メールが来てないんだ。"
+        },
+        {
+          "speaker": "B",
+          "en": "Call and ask whether your booking went through.",
+          "ja": "電話して予約が通ってるか聞いてみなよ。"
+        },
+        {
+          "speaker": "A",
+          "en": "I'll do that before we leave.",
+          "ja": "出かける前にそうするよ。"
+        }
+      ]
+    },
+    {
+      "id": "whether-dialogue-10",
+      "type": "whether",
+      "title": "服装の迷い",
+      "targetTurnIndex": 1,
+      "targetSentence": "I'm not sure whether we're supposed to dress up.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Does this look too formal?",
+          "ja": "これだとかしこまりすぎかな？"
+        },
+        {
+          "speaker": "B",
+          "en": "I'm not sure whether we're supposed to dress up.",
+          "ja": "きちんとした服で行くべきなのか、よくわからないな。"
+        },
+        {
+          "speaker": "A",
+          "en": "I'll ask the others what they're wearing.",
+          "ja": "みんなに何を着ていくか聞いてみる。"
+        }
+      ]
+    },
+    {
+      "id": "now-that-dialogue-01",
+      "type": "now that",
+      "title": "全員そろった",
+      "targetTurnIndex": 0,
+      "targetSentence": "Now that everyone's here, shall we order?",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Now that everyone's here, shall we order?",
+          "ja": "みんなそろったし、注文しようか？"
+        },
+        {
+          "speaker": "B",
+          "en": "Yes, please. I'm starving.",
+          "ja": "そうしよう。おなかぺこぺこ。"
+        },
+        {
+          "speaker": "A",
+          "en": "Let's get a couple of pizzas to share.",
+          "ja": "ピザを何枚か頼んで分けよう。"
+        }
+      ]
+    },
+    {
+      "id": "now-that-dialogue-02",
+      "type": "now that",
+      "title": "引っ越し後の生活",
+      "targetTurnIndex": 1,
+      "targetSentence": "Now that I've unpacked, it finally feels like home.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "How are you liking the new place?",
+          "ja": "新しい家はどう？"
+        },
+        {
+          "speaker": "B",
+          "en": "Now that I've unpacked, it finally feels like home.",
+          "ja": "荷ほどきが終わって、やっと自分の家って感じがする。"
+        },
+        {
+          "speaker": "A",
+          "en": "I'll have to come over sometime.",
+          "ja": "今度遊びに行かなくちゃ。"
+        }
+      ]
+    },
+    {
+      "id": "now-that-dialogue-03",
+      "type": "now that",
+      "title": "雨がやんだ",
+      "targetTurnIndex": 0,
+      "targetSentence": "Now that the rain's stopped, let's go for a walk.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Now that the rain's stopped, let's go for a walk.",
+          "ja": "雨もやんだし、散歩に行こう。"
+        },
+        {
+          "speaker": "B",
+          "en": "Give me a minute to find my shoes.",
+          "ja": "靴を探すからちょっと待って。"
+        },
+        {
+          "speaker": "A",
+          "en": "I'll wait by the door.",
+          "ja": "玄関で待ってるね。"
+        }
+      ]
+    },
+    {
+      "id": "now-that-dialogue-04",
+      "type": "now that",
+      "title": "仕事が終わった",
+      "targetTurnIndex": 1,
+      "targetSentence": "I can finally relax now that the presentation's over.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "You look relieved.",
+          "ja": "ほっとした顔してるね。"
+        },
+        {
+          "speaker": "B",
+          "en": "I can finally relax now that the presentation's over.",
+          "ja": "プレゼンが終わったから、やっとのんびりできるよ。"
+        },
+        {
+          "speaker": "A",
+          "en": "Let's get something nice for dinner.",
+          "ja": "夕飯はおいしいものを食べよう。"
+        }
+      ]
+    },
+    {
+      "id": "now-that-dialogue-05",
+      "type": "now that",
+      "title": "近くに住む友達",
+      "targetTurnIndex": 1,
+      "targetSentence": "Now that you live nearby, we should hang out more.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "I still can't believe we're neighbors.",
+          "ja": "近所に住むことになったなんて、まだ信じられない。"
+        },
+        {
+          "speaker": "B",
+          "en": "Now that you live nearby, we should hang out more.",
+          "ja": "近くに住んでるんだし、もっと遊ぼうよ。"
+        },
+        {
+          "speaker": "A",
+          "en": "Definitely. Are you free this weekend?",
+          "ja": "もちろん。今週末は空いてる？"
+        }
+      ]
+    },
+    {
+      "id": "now-that-dialogue-06",
+      "type": "now that",
+      "title": "新しい眼鏡",
+      "targetTurnIndex": 1,
+      "targetSentence": "Yeah. Now that I can see properly, reading's much easier.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Are the new glasses helping?",
+          "ja": "新しい眼鏡はどう？"
+        },
+        {
+          "speaker": "B",
+          "en": "Yeah. Now that I can see properly, reading's much easier.",
+          "ja": "うん。ちゃんと見えるようになって、読むのがずっと楽。"
+        },
+        {
+          "speaker": "A",
+          "en": "They look great on you too.",
+          "ja": "見た目もよく似合ってるよ。"
+        }
+      ]
+    },
+    {
+      "id": "now-that-dialogue-07",
+      "type": "now that",
+      "title": "車が使える",
+      "targetTurnIndex": 0,
+      "targetSentence": "Now that we have a car, we can visit your parents more often.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Now that we have a car, we can visit your parents more often.",
+          "ja": "車があるから、ご両親にもっと会いに行けるね。"
+        },
+        {
+          "speaker": "B",
+          "en": "They'd love that. How about next Sunday?",
+          "ja": "喜ぶと思う。来週の日曜日はどう？"
+        },
+        {
+          "speaker": "A",
+          "en": "I'll call them tonight.",
+          "ja": "今夜電話してみる。"
+        }
+      ]
+    },
+    {
+      "id": "now-that-dialogue-08",
+      "type": "now that",
+      "title": "授業の終わり",
+      "targetTurnIndex": 1,
+      "targetSentence": "Sure. Now that class is over, I've got an hour free.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Do you want to grab a coffee?",
+          "ja": "コーヒーでも飲みに行く？"
+        },
+        {
+          "speaker": "B",
+          "en": "Sure. Now that class is over, I've got an hour free.",
+          "ja": "いいよ。授業も終わったし、1時間空いてる。"
+        },
+        {
+          "speaker": "A",
+          "en": "There's a quiet place across the street.",
+          "ja": "通りの向こうに静かなお店があるよ。"
+        }
+      ]
+    },
+    {
+      "id": "now-that-dialogue-09",
+      "type": "now that",
+      "title": "料理が冷めた",
+      "targetTurnIndex": 0,
+      "targetSentence": "Now that it's cooled down, do you want to try a piece?",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Now that it's cooled down, do you want to try a piece?",
+          "ja": "冷めたし、一切れ食べてみる？"
+        },
+        {
+          "speaker": "B",
+          "en": "Yes! It smells amazing.",
+          "ja": "食べたい！すごくいいにおい。"
+        },
+        {
+          "speaker": "A",
+          "en": "I'll cut you a big slice.",
+          "ja": "大きめに切るね。"
+        }
+      ]
+    },
+    {
+      "id": "now-that-dialogue-10",
+      "type": "now that",
+      "title": "子どもの成長",
+      "targetTurnIndex": 1,
+      "targetSentence": "Not anymore. Now that she's older, she wants to walk.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Are you still carrying her to school?",
+          "ja": "今もあの子を抱っこして学校に連れていってるの？"
+        },
+        {
+          "speaker": "B",
+          "en": "Not anymore. Now that she's older, she wants to walk.",
+          "ja": "もうしてないよ。大きくなって、自分で歩きたいんだって。"
+        },
+        {
+          "speaker": "A",
+          "en": "She'll be asking to go on her own next.",
+          "ja": "そのうち一人で行きたいって言い出すね。"
+        }
+      ]
+    },
+    {
+      "id": "once-dialogue-01",
+      "type": "once",
+      "title": "使い方に慣れる",
+      "targetTurnIndex": 1,
+      "targetSentence": "Once you get used to it, it's actually pretty easy.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "This app looks complicated.",
+          "ja": "このアプリ、難しそう。"
+        },
+        {
+          "speaker": "B",
+          "en": "Once you get used to it, it's actually pretty easy.",
+          "ja": "慣れると、実は結構簡単だよ。"
+        },
+        {
+          "speaker": "A",
+          "en": "Can you show me the basics?",
+          "ja": "基本的な使い方を教えてくれる？"
+        }
+      ]
+    },
+    {
+      "id": "once-dialogue-02",
+      "type": "once",
+      "title": "到着したら連絡",
+      "targetTurnIndex": 0,
+      "targetSentence": "Text me once you get there.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Text me once you get there.",
+          "ja": "着いたらメッセージしてね。"
+        },
+        {
+          "speaker": "B",
+          "en": "I will. The train should take about an hour.",
+          "ja": "わかった。電車で1時間くらいのはず。"
+        },
+        {
+          "speaker": "A",
+          "en": "Have a good trip.",
+          "ja": "気をつけてね。"
+        }
+      ]
+    },
+    {
+      "id": "once-dialogue-03",
+      "type": "once",
+      "title": "仕事の区切り",
+      "targetTurnIndex": 1,
+      "targetSentence": "Sure. I'll come over once I finish this email.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Can we talk for a minute?",
+          "ja": "ちょっと話せる？"
+        },
+        {
+          "speaker": "B",
+          "en": "Sure. I'll come over once I finish this email.",
+          "ja": "うん。このメールを書き終わったらそっちに行くね。"
+        },
+        {
+          "speaker": "A",
+          "en": "Thanks. There's no rush.",
+          "ja": "ありがとう。急がなくて大丈夫。"
+        }
+      ]
+    },
+    {
+      "id": "once-dialogue-04",
+      "type": "once",
+      "title": "料理の火加減",
+      "targetTurnIndex": 0,
+      "targetSentence": "Once the water boils, turn the heat down.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Once the water boils, turn the heat down.",
+          "ja": "お湯が沸いたら、火を弱くして。"
+        },
+        {
+          "speaker": "B",
+          "en": "Okay. Do I put the lid on too?",
+          "ja": "わかった。ふたもするの？"
+        },
+        {
+          "speaker": "A",
+          "en": "Yes, but leave a small gap.",
+          "ja": "うん。でも少し隙間を開けておいて。"
+        }
+      ]
+    },
+    {
+      "id": "once-dialogue-05",
+      "type": "once",
+      "title": "自転車の楽しさ",
+      "targetTurnIndex": 1,
+      "targetSentence": "Once you know the quiet routes, it's much less stressful.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "I'm nervous about riding in the city.",
+          "ja": "街中で自転車に乗るの、緊張するな。"
+        },
+        {
+          "speaker": "B",
+          "en": "Once you know the quiet routes, it's much less stressful.",
+          "ja": "静かな道を覚えれば、ずっと気楽になるよ。"
+        },
+        {
+          "speaker": "A",
+          "en": "Let's try one together this weekend.",
+          "ja": "週末、一緒に走ってみようよ。"
+        }
+      ]
+    },
+    {
+      "id": "once-dialogue-06",
+      "type": "once",
+      "title": "席に着いてから",
+      "targetTurnIndex": 0,
+      "targetSentence": "Let's order once everyone's settled.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Let's order once everyone's settled.",
+          "ja": "みんなが落ち着いたら注文しよう。"
+        },
+        {
+          "speaker": "B",
+          "en": "Good idea. Ben's still parking the car.",
+          "ja": "そうだね。ベンはまだ車を止めてるし。"
+        },
+        {
+          "speaker": "A",
+          "en": "I'll get him some water.",
+          "ja": "ベンの分の水をもらっておく。"
+        }
+      ]
+    },
+    {
+      "id": "once-dialogue-07",
+      "type": "once",
+      "title": "給料が入ったら",
+      "targetTurnIndex": 1,
+      "targetSentence": "Yeah, once I get paid.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Are you getting those headphones?",
+          "ja": "あのヘッドホン買うの？"
+        },
+        {
+          "speaker": "B",
+          "en": "Yeah, once I get paid.",
+          "ja": "うん、給料が入ったらね。"
+        },
+        {
+          "speaker": "A",
+          "en": "Let me know how they sound.",
+          "ja": "音がどんな感じか教えてね。"
+        }
+      ]
+    },
+    {
+      "id": "once-dialogue-08",
+      "type": "once",
+      "title": "赤ちゃんが寝たら",
+      "targetTurnIndex": 1,
+      "targetSentence": "Sure, once the baby's asleep.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Do you want to watch something tonight?",
+          "ja": "今夜何か見る？"
+        },
+        {
+          "speaker": "B",
+          "en": "Sure, once the baby's asleep.",
+          "ja": "うん、赤ちゃんが寝たらね。"
+        },
+        {
+          "speaker": "A",
+          "en": "I'll find something short.",
+          "ja": "短めのを探しておく。"
+        }
+      ]
+    },
+    {
+      "id": "once-dialogue-09",
+      "type": "once",
+      "title": "予約が決まったら",
+      "targetTurnIndex": 0,
+      "targetSentence": "Once we've booked the flights, we can look for a hotel.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Once we've booked the flights, we can look for a hotel.",
+          "ja": "飛行機を予約したら、ホテルを探せるね。"
+        },
+        {
+          "speaker": "B",
+          "en": "Let's book tonight before the price goes up.",
+          "ja": "値上がりする前に今夜予約しよう。"
+        },
+        {
+          "speaker": "A",
+          "en": "I'll get my laptop.",
+          "ja": "パソコンを持ってくるね。"
+        }
+      ]
+    },
+    {
+      "id": "once-dialogue-10",
+      "type": "once",
+      "title": "道具を片付ける",
+      "targetTurnIndex": 1,
+      "targetSentence": "Yes, once you've wiped them down.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Can I put these tools away?",
+          "ja": "この道具、片付けていい？"
+        },
+        {
+          "speaker": "B",
+          "en": "Yes, once you've wiped them down.",
+          "ja": "うん、拭いてからならね。"
+        },
+        {
+          "speaker": "A",
+          "en": "Okay. Where's the cloth?",
+          "ja": "わかった。布はどこ？"
+        }
+      ]
+    },
+    {
+      "id": "so-that-dialogue-01",
+      "type": "so that",
+      "title": "迷わないために",
+      "targetTurnIndex": 0,
+      "targetSentence": "I'll send you a pin so that you can find the entrance.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "I'll send you a pin so that you can find the entrance.",
+          "ja": "入口がわかるように、地図のピンを送るね。"
+        },
+        {
+          "speaker": "B",
+          "en": "Thanks. There seem to be three different doors.",
+          "ja": "ありがとう。ドアが3つあるみたい。"
+        },
+        {
+          "speaker": "A",
+          "en": "Use the one next to the coffee shop.",
+          "ja": "コーヒー屋の隣の入口から入って。"
+        }
+      ]
+    },
+    {
+      "id": "so-that-dialogue-02",
+      "type": "so that",
+      "title": "写真を送る",
+      "targetTurnIndex": 1,
+      "targetSentence": "So that we can show Maya the vegetarian options.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Why did you take a photo of the menu?",
+          "ja": "なんでメニューの写真を撮ったの？"
+        },
+        {
+          "speaker": "B",
+          "en": "So that we can show Maya the vegetarian options.",
+          "ja": "マヤにベジタリアン向けの料理を見せられるように。"
+        },
+        {
+          "speaker": "A",
+          "en": "Good thinking. I'll send it to her.",
+          "ja": "いいね。送っておくよ。"
+        }
+      ]
+    },
+    {
+      "id": "so-that-dialogue-03",
+      "type": "so that",
+      "title": "早めの出発",
+      "targetTurnIndex": 1,
+      "targetSentence": "I'd like to leave early so that we don't have to rush.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Do we really need to leave at seven?",
+          "ja": "本当に7時に出なきゃいけない？"
+        },
+        {
+          "speaker": "B",
+          "en": "I'd like to leave early so that we don't have to rush.",
+          "ja": "慌てなくて済むように早めに出たいんだ。"
+        },
+        {
+          "speaker": "A",
+          "en": "Fair enough. I'll set an alarm.",
+          "ja": "それもそうだね。アラームをかけるよ。"
+        }
+      ]
+    },
+    {
+      "id": "so-that-dialogue-04",
+      "type": "so that",
+      "title": "声を落とす",
+      "targetTurnIndex": 0,
+      "targetSentence": "Keep your voice down so that we don't wake the baby.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Keep your voice down so that we don't wake the baby.",
+          "ja": "赤ちゃんを起こさないように、小さな声で話して。"
+        },
+        {
+          "speaker": "B",
+          "en": "Sorry. I didn't realize she was asleep.",
+          "ja": "ごめん。寝てるって知らなかった。"
+        },
+        {
+          "speaker": "A",
+          "en": "She only just nodded off.",
+          "ja": "やっと寝たところなんだ。"
+        }
+      ]
+    },
+    {
+      "id": "so-that-dialogue-05",
+      "type": "so that",
+      "title": "明日の準備",
+      "targetTurnIndex": 1,
+      "targetSentence": "So that I can sleep a little longer tomorrow.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Why are you packing lunch tonight?",
+          "ja": "なんで今夜のうちにお弁当を用意してるの？"
+        },
+        {
+          "speaker": "B",
+          "en": "So that I can sleep a little longer tomorrow.",
+          "ja": "明日もう少し長く寝られるように。"
+        },
+        {
+          "speaker": "A",
+          "en": "I should do that too.",
+          "ja": "私もそうしようかな。"
+        }
+      ]
+    },
+    {
+      "id": "so-that-dialogue-06",
+      "type": "so that",
+      "title": "画面を明るく",
+      "targetTurnIndex": 0,
+      "targetSentence": "I'll turn up the brightness so that you can see the photo.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "I'll turn up the brightness so that you can see the photo.",
+          "ja": "写真が見えるように、画面を明るくするね。"
+        },
+        {
+          "speaker": "B",
+          "en": "That's better. Is that your new puppy?",
+          "ja": "よく見えるようになった。それ、新しく飼った子犬？"
+        },
+        {
+          "speaker": "A",
+          "en": "Yeah. We brought him home yesterday.",
+          "ja": "うん。昨日うちに来たんだ。"
+        }
+      ]
+    },
+    {
+      "id": "so-that-dialogue-07",
+      "type": "so that",
+      "title": "忘れない工夫",
+      "targetTurnIndex": 1,
+      "targetSentence": "I put it there so that I wouldn't forget my keys.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "What's that note on the door?",
+          "ja": "ドアに貼ってあるメモは何？"
+        },
+        {
+          "speaker": "B",
+          "en": "I put it there so that I wouldn't forget my keys.",
+          "ja": "鍵を忘れないように、そこに貼っておいたんだ。"
+        },
+        {
+          "speaker": "A",
+          "en": "Maybe I should do the same with my lunch.",
+          "ja": "私もお弁当用に同じことをしようかな。"
+        }
+      ]
+    },
+    {
+      "id": "so-that-dialogue-08",
+      "type": "so that",
+      "title": "一緒に座る",
+      "targetTurnIndex": 0,
+      "targetSentence": "Let's book now so that we can sit together.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Let's book now so that we can sit together.",
+          "ja": "一緒に座れるように今予約しよう。"
+        },
+        {
+          "speaker": "B",
+          "en": "Okay. There are two seats left in row six.",
+          "ja": "いいよ。6列目に2席残ってる。"
+        },
+        {
+          "speaker": "A",
+          "en": "Get those before someone else does.",
+          "ja": "ほかの人に取られる前にそこを取って。"
+        }
+      ]
+    },
+    {
+      "id": "so-that-dialogue-09",
+      "type": "so that",
+      "title": "材料を小さく切る",
+      "targetTurnIndex": 1,
+      "targetSentence": "Yeah, so that they cook faster.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Should I cut the carrots this small?",
+          "ja": "ニンジンはこんなに小さく切るの？"
+        },
+        {
+          "speaker": "B",
+          "en": "Yeah, so that they cook faster.",
+          "ja": "うん、早く火が通るようにね。"
+        },
+        {
+          "speaker": "A",
+          "en": "Got it. Dinner won't take long, then.",
+          "ja": "なるほど。じゃあ夕飯はすぐできるね。"
+        }
+      ]
+    },
+    {
+      "id": "so-that-dialogue-10",
+      "type": "so that",
+      "title": "静かな場所に移動",
+      "targetTurnIndex": 0,
+      "targetSentence": "Let's move inside so that we can hear each other.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Let's move inside so that we can hear each other.",
+          "ja": "お互いの声が聞こえるように、中に移動しよう。"
+        },
+        {
+          "speaker": "B",
+          "en": "Good idea. It's getting really windy.",
+          "ja": "そうだね。風がすごく強くなってきた。"
+        },
+        {
+          "speaker": "A",
+          "en": "There's a table by the window.",
+          "ja": "窓のそばにテーブルがあるよ。"
+        }
+      ]
+    },
+    {
+      "id": "in-case-dialogue-01",
+      "type": "in case",
+      "title": "折り畳み傘",
+      "targetTurnIndex": 0,
+      "targetSentence": "Take an umbrella in case it rains.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Take an umbrella in case it rains.",
+          "ja": "雨が降るといけないから傘を持っていって。"
+        },
+        {
+          "speaker": "B",
+          "en": "But the sky's completely clear.",
+          "ja": "でも、すごく晴れてるよ。"
+        },
+        {
+          "speaker": "A",
+          "en": "It changes quickly around here.",
+          "ja": "この辺は天気がすぐ変わるんだよ。"
+        }
+      ]
+    },
+    {
+      "id": "in-case-dialogue-02",
+      "type": "in case",
+      "title": "予備の充電器",
+      "targetTurnIndex": 1,
+      "targetSentence": "I brought an extra one in case someone needs it.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Why did you bring two chargers?",
+          "ja": "なんで充電器を2つ持ってきたの？"
+        },
+        {
+          "speaker": "B",
+          "en": "I brought an extra one in case someone needs it.",
+          "ja": "誰かが必要になるかもしれないから、予備を持ってきた。"
+        },
+        {
+          "speaker": "A",
+          "en": "Actually, could I borrow it?",
+          "ja": "実は、それを借りてもいい？"
+        }
+      ]
+    },
+    {
+      "id": "in-case-dialogue-03",
+      "type": "in case",
+      "title": "予約画面の保存",
+      "targetTurnIndex": 0,
+      "targetSentence": "Take a screenshot in case you lose your signal.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Take a screenshot in case you lose your signal.",
+          "ja": "電波が入らなくなるといけないから、スクリーンショットを撮っておいて。"
+        },
+        {
+          "speaker": "B",
+          "en": "Good point. The signal's terrible at that station.",
+          "ja": "そうだね。あの駅、電波がすごく悪いんだ。"
+        },
+        {
+          "speaker": "A",
+          "en": "Then you can still show your ticket.",
+          "ja": "そうすればチケットを見せられるね。"
+        }
+      ]
+    },
+    {
+      "id": "in-case-dialogue-04",
+      "type": "in case",
+      "title": "子どものおやつ",
+      "targetTurnIndex": 1,
+      "targetSentence": "I'm packing extra in case the kids get hungry.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Do we need all those snacks?",
+          "ja": "そんなにおやつが必要？"
+        },
+        {
+          "speaker": "B",
+          "en": "I'm packing extra in case the kids get hungry.",
+          "ja": "子どもたちがおなかをすかせるかもしれないから、多めに入れてるの。"
+        },
+        {
+          "speaker": "A",
+          "en": "They probably will before we even get there.",
+          "ja": "着く前におなかをすかせそうだね。"
+        }
+      ]
+    },
+    {
+      "id": "in-case-dialogue-05",
+      "type": "in case",
+      "title": "現金を持つ",
+      "targetTurnIndex": 0,
+      "targetSentence": "Bring some cash in case they don't take cards.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Bring some cash in case they don't take cards.",
+          "ja": "カードが使えないといけないから、現金も持ってきて。"
+        },
+        {
+          "speaker": "B",
+          "en": "Is there an ATM nearby?",
+          "ja": "近くにATMはある？"
+        },
+        {
+          "speaker": "A",
+          "en": "There's one at the station.",
+          "ja": "駅にあるよ。"
+        }
+      ]
+    },
+    {
+      "id": "in-case-dialogue-06",
+      "type": "in case",
+      "title": "帰り道の連絡",
+      "targetTurnIndex": 1,
+      "targetSentence": "In case you can't find the old message.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Why are you sending me your address again?",
+          "ja": "なんでまた住所を送ってくれたの？"
+        },
+        {
+          "speaker": "B",
+          "en": "In case you can't find the old message.",
+          "ja": "前のメッセージが見つからないといけないから。"
+        },
+        {
+          "speaker": "A",
+          "en": "Thanks. That saves me scrolling back.",
+          "ja": "ありがとう。さかのぼって探さなくて済むよ。"
+        }
+      ]
+    },
+    {
+      "id": "in-case-dialogue-07",
+      "type": "in case",
+      "title": "上着をかばんに",
+      "targetTurnIndex": 0,
+      "targetSentence": "I'll bring a jacket in case it gets cold later.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "I'll bring a jacket in case it gets cold later.",
+          "ja": "後で寒くなるといけないから、上着を持っていくね。"
+        },
+        {
+          "speaker": "B",
+          "en": "Good idea. We'll be sitting outside.",
+          "ja": "そうだね。外に座る予定だし。"
+        },
+        {
+          "speaker": "A",
+          "en": "There's room in my bag for yours too.",
+          "ja": "あなたの分もかばんに入るよ。"
+        }
+      ]
+    },
+    {
+      "id": "in-case-dialogue-08",
+      "type": "in case",
+      "title": "ファイルのバックアップ",
+      "targetTurnIndex": 1,
+      "targetSentence": "Yes, in case anything happens to your laptop.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Do I need to save another copy?",
+          "ja": "もう1つコピーを保存したほうがいい？"
+        },
+        {
+          "speaker": "B",
+          "en": "Yes, in case anything happens to your laptop.",
+          "ja": "うん。パソコンに何かあるといけないから。"
+        },
+        {
+          "speaker": "A",
+          "en": "I'll put one on my drive now.",
+          "ja": "今、ドライブにも保存しておく。"
+        }
+      ]
+    },
+    {
+      "id": "in-case-dialogue-09",
+      "type": "in case",
+      "title": "早めの出発",
+      "targetTurnIndex": 0,
+      "targetSentence": "Let's leave a bit early in case there's traffic.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Let's leave a bit early in case there's traffic.",
+          "ja": "渋滞するといけないから、少し早めに出よう。"
+        },
+        {
+          "speaker": "B",
+          "en": "How about half past eight?",
+          "ja": "8時半はどう？"
+        },
+        {
+          "speaker": "A",
+          "en": "That should give us plenty of time.",
+          "ja": "それなら時間に余裕があるね。"
+        }
+      ]
+    },
+    {
+      "id": "in-case-dialogue-10",
+      "type": "in case",
+      "title": "電話を手元に",
+      "targetTurnIndex": 1,
+      "targetSentence": "Yeah, in case the delivery driver calls.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Are you taking your phone into the garden?",
+          "ja": "庭にもスマホを持っていくの？"
+        },
+        {
+          "speaker": "B",
+          "en": "Yeah, in case the delivery driver calls.",
+          "ja": "うん。配達の人から電話が来るかもしれないから。"
+        },
+        {
+          "speaker": "A",
+          "en": "I'll listen for the doorbell too.",
+          "ja": "私も呼び鈴が鳴ったら気づくようにしておく。"
+        }
+      ]
+    },
+    {
+      "id": "as-soon-as-dialogue-01",
+      "type": "as soon as",
+      "title": "帰宅の連絡",
+      "targetTurnIndex": 0,
+      "targetSentence": "Text me as soon as you get home.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Text me as soon as you get home.",
+          "ja": "家に着いたらすぐメッセージしてね。"
+        },
+        {
+          "speaker": "B",
+          "en": "I will. Don't stay up waiting for me.",
+          "ja": "わかった。待ってないで寝てね。"
+        },
+        {
+          "speaker": "A",
+          "en": "I'll leave the hall light on.",
+          "ja": "廊下の電気はつけておくね。"
+        }
+      ]
+    },
+    {
+      "id": "as-soon-as-dialogue-02",
+      "type": "as soon as",
+      "title": "買った途端の値下げ",
+      "targetTurnIndex": 1,
+      "targetSentence": "No. It went on sale as soon as I bought it.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Did you get a good deal on that coat?",
+          "ja": "そのコート、安く買えた？"
+        },
+        {
+          "speaker": "B",
+          "en": "No. It went on sale as soon as I bought it.",
+          "ja": "ううん。買った途端にセールになった。"
+        },
+        {
+          "speaker": "A",
+          "en": "Maybe they'll refund the difference.",
+          "ja": "差額を返してくれるかもしれないよ。"
+        }
+      ]
+    },
+    {
+      "id": "as-soon-as-dialogue-03",
+      "type": "as soon as",
+      "title": "空いたら電話",
+      "targetTurnIndex": 0,
+      "targetSentence": "I'll call you as soon as I'm free.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "I'll call you as soon as I'm free.",
+          "ja": "手が空いたらすぐ電話するよ。"
+        },
+        {
+          "speaker": "B",
+          "en": "Okay. It's nothing urgent.",
+          "ja": "わかった。急ぎじゃないから。"
+        },
+        {
+          "speaker": "A",
+          "en": "Give me about twenty minutes.",
+          "ja": "20分くらい待ってて。"
+        }
+      ]
+    },
+    {
+      "id": "as-soon-as-dialogue-04",
+      "type": "as soon as",
+      "title": "席を確保",
+      "targetTurnIndex": 1,
+      "targetSentence": "Yes. I'll book as soon as they go on sale.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Should we buy tickets now?",
+          "ja": "今チケットを買ったほうがいい？"
+        },
+        {
+          "speaker": "B",
+          "en": "Yes. I'll book as soon as they go on sale.",
+          "ja": "うん。発売されたらすぐ予約するよ。"
+        },
+        {
+          "speaker": "A",
+          "en": "Send me the link too.",
+          "ja": "私にもリンクを送って。"
+        }
+      ]
+    },
+    {
+      "id": "as-soon-as-dialogue-05",
+      "type": "as soon as",
+      "title": "寝つきの早さ",
+      "targetTurnIndex": 1,
+      "targetSentence": "I fell asleep as soon as my head hit the pillow.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Did you sleep okay after that long flight?",
+          "ja": "長いフライトの後、ちゃんと眠れた？"
+        },
+        {
+          "speaker": "B",
+          "en": "I fell asleep as soon as my head hit the pillow.",
+          "ja": "枕に頭をつけた途端に寝ちゃった。"
+        },
+        {
+          "speaker": "A",
+          "en": "I wish I could do that.",
+          "ja": "私もそうできたらいいのに。"
+        }
+      ]
+    },
+    {
+      "id": "as-soon-as-dialogue-06",
+      "type": "as soon as",
+      "title": "雨がやんだら",
+      "targetTurnIndex": 0,
+      "targetSentence": "Let's head out as soon as the rain stops.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Let's head out as soon as the rain stops.",
+          "ja": "雨がやんだらすぐ出かけよう。"
+        },
+        {
+          "speaker": "B",
+          "en": "I'll get our bags ready.",
+          "ja": "荷物を用意しておくね。"
+        },
+        {
+          "speaker": "A",
+          "en": "Thanks. I'll check the bus times.",
+          "ja": "ありがとう。バスの時刻を調べるよ。"
+        }
+      ]
+    },
+    {
+      "id": "as-soon-as-dialogue-07",
+      "type": "as soon as",
+      "title": "届いたら知らせる",
+      "targetTurnIndex": 1,
+      "targetSentence": "Not yet. I'll let you know as soon as it gets here.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Has my package arrived yet?",
+          "ja": "私の荷物、もう届いた？"
+        },
+        {
+          "speaker": "B",
+          "en": "Not yet. I'll let you know as soon as it gets here.",
+          "ja": "まだ。届いたらすぐ知らせるね。"
+        },
+        {
+          "speaker": "A",
+          "en": "Thanks. It should arrive this afternoon.",
+          "ja": "ありがとう。今日の午後に届くはず。"
+        }
+      ]
+    },
+    {
+      "id": "as-soon-as-dialogue-08",
+      "type": "as soon as",
+      "title": "会ってすぐ仲良くなる",
+      "targetTurnIndex": 1,
+      "targetSentence": "Only a month. We hit it off as soon as we met.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Have you and Mia known each other long?",
+          "ja": "ミアとは知り合って長いの？"
+        },
+        {
+          "speaker": "B",
+          "en": "Only a month. We hit it off as soon as we met.",
+          "ja": "まだ1か月。会ってすぐに意気投合したんだ。"
+        },
+        {
+          "speaker": "A",
+          "en": "You seem like old friends.",
+          "ja": "昔からの友達みたいに見えるよ。"
+        }
+      ]
+    },
+    {
+      "id": "as-soon-as-dialogue-09",
+      "type": "as soon as",
+      "title": "オーブンから出す",
+      "targetTurnIndex": 0,
+      "targetSentence": "Call me as soon as the timer goes off.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Call me as soon as the timer goes off.",
+          "ja": "タイマーが鳴ったらすぐ呼んで。"
+        },
+        {
+          "speaker": "B",
+          "en": "Okay. Are you going upstairs?",
+          "ja": "わかった。上に行くの？"
+        },
+        {
+          "speaker": "A",
+          "en": "Just to get my glasses.",
+          "ja": "眼鏡を取ってくるだけ。"
+        }
+      ]
+    },
+    {
+      "id": "as-soon-as-dialogue-10",
+      "type": "as soon as",
+      "title": "見つけた写真",
+      "targetTurnIndex": 1,
+      "targetSentence": "It fell out of a book. I sent it to you as soon as I saw it.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "How did you find this old photo?",
+          "ja": "この古い写真、どうやって見つけたの？"
+        },
+        {
+          "speaker": "B",
+          "en": "It fell out of a book. I sent it to you as soon as I saw it.",
+          "ja": "本から落ちてきたんだ。見つけてすぐ送ったよ。"
+        },
+        {
+          "speaker": "A",
+          "en": "I'm so glad you did.",
+          "ja": "送ってくれて、うれしい。"
+        }
+      ]
+    },
+    {
+      "id": "even-though-dialogue-01",
+      "type": "even though",
+      "title": "寝ても疲れる",
+      "targetTurnIndex": 1,
+      "targetSentence": "I am, even though I slept for nine hours.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "You look exhausted.",
+          "ja": "すごく疲れてるね。"
+        },
+        {
+          "speaker": "B",
+          "en": "I am, even though I slept for nine hours.",
+          "ja": "そうなんだ。9時間も寝たのに。"
+        },
+        {
+          "speaker": "A",
+          "en": "Maybe you just need a quiet day.",
+          "ja": "今日はのんびり過ごしたほうがいいのかも。"
+        }
+      ]
+    },
+    {
+      "id": "even-though-dialogue-02",
+      "type": "even though",
+      "title": "雨の中の試合",
+      "targetTurnIndex": 1,
+      "targetSentence": "Yeah. We played even though it was raining.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Did you still play yesterday?",
+          "ja": "昨日は結局試合をしたの？"
+        },
+        {
+          "speaker": "B",
+          "en": "Yeah. We played even though it was raining.",
+          "ja": "うん。雨が降ってたけど試合をしたよ。"
+        },
+        {
+          "speaker": "A",
+          "en": "I hope you had some dry clothes with you.",
+          "ja": "着替えを持っていってたらいいけど。"
+        }
+      ]
+    },
+    {
+      "id": "even-though-dialogue-03",
+      "type": "even though",
+      "title": "高いけど買う",
+      "targetTurnIndex": 0,
+      "targetSentence": "I bought it even though it was a bit expensive.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "I bought it even though it was a bit expensive.",
+          "ja": "ちょっと高かったけど買っちゃった。"
+        },
+        {
+          "speaker": "B",
+          "en": "You'd been looking at it for months.",
+          "ja": "何か月も気になってたもんね。"
+        },
+        {
+          "speaker": "A",
+          "en": "I know. I've already worn it three times.",
+          "ja": "そうなんだ。もう3回も着たよ。"
+        }
+      ]
+    },
+    {
+      "id": "even-though-dialogue-04",
+      "type": "even though",
+      "title": "おなかいっぱいのデザート",
+      "targetTurnIndex": 1,
+      "targetSentence": "Yeah, even though I'm already full.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Are you really ordering dessert?",
+          "ja": "本当にデザートも頼むの？"
+        },
+        {
+          "speaker": "B",
+          "en": "Yeah, even though I'm already full.",
+          "ja": "うん、もうおなかいっぱいなんだけどね。"
+        },
+        {
+          "speaker": "A",
+          "en": "Let's share one, then.",
+          "ja": "じゃあ1つを分けよう。"
+        }
+      ]
+    },
+    {
+      "id": "even-though-dialogue-05",
+      "type": "even though",
+      "title": "近いのに会えない",
+      "targetTurnIndex": 0,
+      "targetSentence": "We hardly see each other even though we live so close.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "We hardly see each other even though we live so close.",
+          "ja": "こんなに近くに住んでるのに、なかなか会わないね。"
+        },
+        {
+          "speaker": "B",
+          "en": "I know. Let's actually make a plan.",
+          "ja": "そうだね。ちゃんと予定を決めよう。"
+        },
+        {
+          "speaker": "A",
+          "en": "How about breakfast on Sunday?",
+          "ja": "日曜日に朝ごはんを一緒に食べるのはどう？"
+        }
+      ]
+    },
+    {
+      "id": "even-though-dialogue-06",
+      "type": "even though",
+      "title": "何度も見た映画",
+      "targetTurnIndex": 1,
+      "targetSentence": "Yeah. I still laugh even though I've seen it so many times.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "You're watching this again?",
+          "ja": "またこれを見てるの？"
+        },
+        {
+          "speaker": "B",
+          "en": "Yeah. I still laugh even though I've seen it so many times.",
+          "ja": "うん。何度も見てるのに、まだ笑っちゃう。"
+        },
+        {
+          "speaker": "A",
+          "en": "Move over. I'll watch with you.",
+          "ja": "ちょっと詰めて。一緒に見るよ。"
+        }
+      ]
+    },
+    {
+      "id": "even-though-dialogue-07",
+      "type": "even though",
+      "title": "道を知っているのに",
+      "targetTurnIndex": 1,
+      "targetSentence": "I get lost here even though I know the area.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Why did you turn on the map?",
+          "ja": "なんで地図をつけたの？"
+        },
+        {
+          "speaker": "B",
+          "en": "I get lost here even though I know the area.",
+          "ja": "この辺は知ってるのに、道に迷っちゃうんだ。"
+        },
+        {
+          "speaker": "A",
+          "en": "All these streets look the same.",
+          "ja": "どの通りも同じに見えるもんね。"
+        }
+      ]
+    },
+    {
+      "id": "even-though-dialogue-08",
+      "type": "even though",
+      "title": "忙しくても手伝う",
+      "targetTurnIndex": 0,
+      "targetSentence": "She helped me move even though she was really busy.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "She helped me move even though she was really busy.",
+          "ja": "すごく忙しかったのに、引っ越しを手伝ってくれたんだ。"
+        },
+        {
+          "speaker": "B",
+          "en": "That was kind of her.",
+          "ja": "親切だね。"
+        },
+        {
+          "speaker": "A",
+          "en": "I'm taking her out for dinner to say thanks.",
+          "ja": "お礼に夕飯をごちそうするつもり。"
+        }
+      ]
+    },
+    {
+      "id": "even-though-dialogue-09",
+      "type": "even though",
+      "title": "寒いのにアイス",
+      "targetTurnIndex": 1,
+      "targetSentence": "I still want some even though it's freezing outside.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Ice cream in this weather?",
+          "ja": "この寒さでアイス？"
+        },
+        {
+          "speaker": "B",
+          "en": "I still want some even though it's freezing outside.",
+          "ja": "外は凍えるほど寒いけど、それでも食べたい。"
+        },
+        {
+          "speaker": "A",
+          "en": "Let's eat it inside, at least.",
+          "ja": "せめて中で食べようよ。"
+        }
+      ]
+    },
+    {
+      "id": "even-though-dialogue-10",
+      "type": "even though",
+      "title": "練習しても緊張",
+      "targetTurnIndex": 1,
+      "targetSentence": "Yeah, even though I've practiced the whole thing.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Are you nervous about tomorrow?",
+          "ja": "明日のこと、緊張してる？"
+        },
+        {
+          "speaker": "B",
+          "en": "Yeah, even though I've practiced the whole thing.",
+          "ja": "うん。一通り練習したのにね。"
+        },
+        {
+          "speaker": "A",
+          "en": "You'll feel better once you get started.",
+          "ja": "始めてしまえば落ち着くよ。"
+        }
+      ]
+    },
+    {
+      "id": "unless-dialogue-01",
+      "type": "unless",
+      "title": "雨なら中止",
+      "targetTurnIndex": 0,
+      "targetSentence": "I'll cycle to work unless it rains.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "I'll cycle to work unless it rains.",
+          "ja": "雨じゃなければ自転車で仕事に行くよ。"
+        },
+        {
+          "speaker": "B",
+          "en": "The forecast looks good for tomorrow.",
+          "ja": "明日は天気がよさそうだよ。"
+        },
+        {
+          "speaker": "A",
+          "en": "Great. It beats sitting on the bus.",
+          "ja": "よかった。バスに座ってるよりいいし。"
+        }
+      ]
+    },
+    {
+      "id": "unless-dialogue-02",
+      "type": "unless",
+      "title": "連絡がなければ予定どおり",
+      "targetTurnIndex": 0,
+      "targetSentence": "Let's meet at six unless I text you.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Let's meet at six unless I text you.",
+          "ja": "私からメッセージがなければ、6時に会おう。"
+        },
+        {
+          "speaker": "B",
+          "en": "Okay. Same place as last time?",
+          "ja": "わかった。この前と同じ場所？"
+        },
+        {
+          "speaker": "A",
+          "en": "Yeah, outside the station.",
+          "ja": "うん、駅の外で。"
+        }
+      ]
+    },
+    {
+      "id": "unless-dialogue-03",
+      "type": "unless",
+      "title": "必要なときだけ買う",
+      "targetTurnIndex": 1,
+      "targetSentence": "Not unless this one breaks.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Are you getting a new phone this year?",
+          "ja": "今年は新しいスマホを買うの？"
+        },
+        {
+          "speaker": "B",
+          "en": "Not unless this one breaks.",
+          "ja": "これが壊れない限りは買わないよ。"
+        },
+        {
+          "speaker": "A",
+          "en": "Fair enough. It still works fine.",
+          "ja": "そうだね。まだちゃんと使えるし。"
+        }
+      ]
+    },
+    {
+      "id": "unless-dialogue-04",
+      "type": "unless",
+      "title": "起こさないで",
+      "targetTurnIndex": 0,
+      "targetSentence": "Don't wake me up unless it's urgent.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Don't wake me up unless it's urgent.",
+          "ja": "急ぎじゃなければ起こさないでね。"
+        },
+        {
+          "speaker": "B",
+          "en": "Okay. I'll keep the kids downstairs.",
+          "ja": "わかった。子どもたちは下の階にいさせるね。"
+        },
+        {
+          "speaker": "A",
+          "en": "Thanks. I only need half an hour.",
+          "ja": "ありがとう。30分だけ寝たいんだ。"
+        }
+      ]
+    },
+    {
+      "id": "unless-dialogue-05",
+      "type": "unless",
+      "title": "予約なしでは入れない",
+      "targetTurnIndex": 1,
+      "targetSentence": "Probably not, unless we go really early.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Can we just walk into that restaurant?",
+          "ja": "あのレストラン、予約なしで入れるかな？"
+        },
+        {
+          "speaker": "B",
+          "en": "Probably not, unless we go really early.",
+          "ja": "かなり早く行かない限り、多分無理だね。"
+        },
+        {
+          "speaker": "A",
+          "en": "I'll call and ask about a table.",
+          "ja": "電話して席があるか聞いてみる。"
+        }
+      ]
+    },
+    {
+      "id": "unless-dialogue-06",
+      "type": "unless",
+      "title": "味付けの好み",
+      "targetTurnIndex": 0,
+      "targetSentence": "Don't add more salt unless you think it needs it.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Don't add more salt unless you think it needs it.",
+          "ja": "必要だと思わなければ、塩は足さないで。"
+        },
+        {
+          "speaker": "B",
+          "en": "I'll taste it first.",
+          "ja": "まず味見するね。"
+        },
+        {
+          "speaker": "A",
+          "en": "There's some lemon here too.",
+          "ja": "レモンもここにあるよ。"
+        }
+      ]
+    },
+    {
+      "id": "unless-dialogue-07",
+      "type": "unless",
+      "title": "相手の希望を聞く",
+      "targetTurnIndex": 1,
+      "targetSentence": "Outside, unless you'd rather be inside.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Where should we sit?",
+          "ja": "どこに座ろうか？"
+        },
+        {
+          "speaker": "B",
+          "en": "Outside, unless you'd rather be inside.",
+          "ja": "中のほうがよければ別だけど、外にしよう。"
+        },
+        {
+          "speaker": "A",
+          "en": "Outside sounds good. It's lovely today.",
+          "ja": "外がいいね。今日は気持ちいいし。"
+        }
+      ]
+    },
+    {
+      "id": "unless-dialogue-08",
+      "type": "unless",
+      "title": "帰りの送迎",
+      "targetTurnIndex": 0,
+      "targetSentence": "I can pick you up unless my meeting runs late.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "I can pick you up unless my meeting runs late.",
+          "ja": "会議が長引かなければ迎えに行けるよ。"
+        },
+        {
+          "speaker": "B",
+          "en": "Thanks. I can take the bus if it does.",
+          "ja": "ありがとう。長引いたらバスで帰れるから。"
+        },
+        {
+          "speaker": "A",
+          "en": "I'll let you know by five.",
+          "ja": "5時までに連絡するね。"
+        }
+      ]
+    },
+    {
+      "id": "unless-dialogue-09",
+      "type": "unless",
+      "title": "返品の条件",
+      "targetTurnIndex": 1,
+      "targetSentence": "Not unless you're sure you're keeping it.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Should I take the tags off now?",
+          "ja": "今タグを取っていいかな？"
+        },
+        {
+          "speaker": "B",
+          "en": "Not unless you're sure you're keeping it.",
+          "ja": "絶対に返品しないと決めたのでなければ、まだ取らないほうがいいよ。"
+        },
+        {
+          "speaker": "A",
+          "en": "I'll try it on with my shoes first.",
+          "ja": "まず靴と合わせて着てみる。"
+        }
+      ]
+    },
+    {
+      "id": "unless-dialogue-10",
+      "type": "unless",
+      "title": "レシートを取っておく",
+      "targetTurnIndex": 0,
+      "targetSentence": "Keep the receipt unless you're sure you won't need it.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Keep the receipt unless you're sure you won't need it.",
+          "ja": "絶対に必要ないとわかっているのでなければ、レシートを取っておいて。"
+        },
+        {
+          "speaker": "B",
+          "en": "I'll put it in the box.",
+          "ja": "箱に入れておくね。"
+        },
+        {
+          "speaker": "A",
+          "en": "Good idea. Then it won't get lost.",
+          "ja": "いいね。それならなくさないし。"
+        }
+      ]
+    },
+    {
+      "id": "while-dialogue-01",
+      "type": "while",
+      "title": "シャワー中に料理",
+      "targetTurnIndex": 0,
+      "targetSentence": "I'll cook while you take a shower.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "I'll cook while you take a shower.",
+          "ja": "シャワーを浴びてる間に料理するよ。"
+        },
+        {
+          "speaker": "B",
+          "en": "Thanks. I'll wash up afterward.",
+          "ja": "ありがとう。後で洗い物をするね。"
+        },
+        {
+          "speaker": "A",
+          "en": "Deal. Dinner should be ready in twenty minutes.",
+          "ja": "決まり。20分で夕飯ができると思う。"
+        }
+      ]
+    },
+    {
+      "id": "while-dialogue-02",
+      "type": "while",
+      "title": "待ち時間のコーヒー",
+      "targetTurnIndex": 0,
+      "targetSentence": "Let's get a coffee while we wait.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Let's get a coffee while we wait.",
+          "ja": "待ってる間にコーヒーを買おう。"
+        },
+        {
+          "speaker": "B",
+          "en": "Good idea. The train's twenty minutes late.",
+          "ja": "いいね。電車は20分遅れてるし。"
+        },
+        {
+          "speaker": "A",
+          "en": "There's a stand near the platform.",
+          "ja": "ホームの近くに売店があるよ。"
+        }
+      ]
+    },
+    {
+      "id": "while-dialogue-03",
+      "type": "while",
+      "title": "電話中のメモ",
+      "targetTurnIndex": 1,
+      "targetSentence": "Yeah. I wrote it down while she was talking.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Did you write down the address?",
+          "ja": "住所はメモした？"
+        },
+        {
+          "speaker": "B",
+          "en": "Yeah. I wrote it down while she was talking.",
+          "ja": "うん。彼女が話してる間に書いたよ。"
+        },
+        {
+          "speaker": "A",
+          "en": "Can you send it to me?",
+          "ja": "私にも送ってくれる？"
+        }
+      ]
+    },
+    {
+      "id": "while-dialogue-04",
+      "type": "while",
+      "title": "留守中の水やり",
+      "targetTurnIndex": 0,
+      "targetSentence": "Could you water my plants while I'm away?",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Could you water my plants while I'm away?",
+          "ja": "留守の間、植物に水をあげてくれる？"
+        },
+        {
+          "speaker": "B",
+          "en": "Sure. How often do they need it?",
+          "ja": "いいよ。どのくらいの頻度であげればいい？"
+        },
+        {
+          "speaker": "A",
+          "en": "Just twice a week. I'll leave you a note.",
+          "ja": "週2回でいいよ。メモを置いておくね。"
+        }
+      ]
+    },
+    {
+      "id": "while-dialogue-05",
+      "type": "while",
+      "title": "熱いうちに食べる",
+      "targetTurnIndex": 0,
+      "targetSentence": "Eat it while it's still hot.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Eat it while it's still hot.",
+          "ja": "まだ温かいうちに食べて。"
+        },
+        {
+          "speaker": "B",
+          "en": "It looks amazing. Did you make the sauce too?",
+          "ja": "すごくおいしそう。ソースも作ったの？"
+        },
+        {
+          "speaker": "A",
+          "en": "Yeah. Let me know what you think.",
+          "ja": "うん。感想を聞かせてね。"
+        }
+      ]
+    },
+    {
+      "id": "while-dialogue-06",
+      "type": "while",
+      "title": "音楽を聴きながら",
+      "targetTurnIndex": 1,
+      "targetSentence": "I listen to music while I clean.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "How do you make cleaning less boring?",
+          "ja": "掃除が退屈にならないように、どうしてる？"
+        },
+        {
+          "speaker": "B",
+          "en": "I listen to music while I clean.",
+          "ja": "掃除しながら音楽を聴いてるよ。"
+        },
+        {
+          "speaker": "A",
+          "en": "Send me your playlist.",
+          "ja": "プレイリストを送って。"
+        }
+      ]
+    },
+    {
+      "id": "while-dialogue-07",
+      "type": "while",
+      "title": "近くにいるついでに",
+      "targetTurnIndex": 0,
+      "targetSentence": "Let's stop at the bakery while we're in the area.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Let's stop at the bakery while we're in the area.",
+          "ja": "この辺にいるうちにパン屋に寄ろう。"
+        },
+        {
+          "speaker": "B",
+          "en": "Good idea. We can get something for breakfast.",
+          "ja": "いいね。朝ごはん用に何か買えるし。"
+        },
+        {
+          "speaker": "A",
+          "en": "I hope they still have those rolls.",
+          "ja": "あのロールパンがまだあるといいな。"
+        }
+      ]
+    },
+    {
+      "id": "while-dialogue-08",
+      "type": "while",
+      "title": "好みの違い",
+      "targetTurnIndex": 1,
+      "targetSentence": "I do, while Ben prefers tea.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Do you both drink coffee?",
+          "ja": "2人ともコーヒーを飲むの？"
+        },
+        {
+          "speaker": "B",
+          "en": "I do, while Ben prefers tea.",
+          "ja": "私は飲むけど、ベンは紅茶のほうが好きなんだ。"
+        },
+        {
+          "speaker": "A",
+          "en": "I'll put the kettle on, then.",
+          "ja": "じゃあ、お湯を沸かすね。"
+        }
+      ]
+    },
+    {
+      "id": "while-dialogue-09",
+      "type": "while",
+      "title": "一部は賛成",
+      "targetTurnIndex": 1,
+      "targetSentence": "While I like the idea, I'm worried about the cost.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "What do you think of the new plan?",
+          "ja": "新しい計画はどう思う？"
+        },
+        {
+          "speaker": "B",
+          "en": "While I like the idea, I'm worried about the cost.",
+          "ja": "アイデアはいいと思うけど、費用が気になるな。"
+        },
+        {
+          "speaker": "A",
+          "en": "Let's see if we can make it cheaper.",
+          "ja": "もっと安くできないか考えよう。"
+        }
+      ]
+    },
+    {
+      "id": "while-dialogue-10",
+      "type": "while",
+      "title": "一方は片付けもう一方は料理",
+      "targetTurnIndex": 1,
+      "targetSentence": "I set the table while Maya finished cooking.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "How did you get everything ready so fast?",
+          "ja": "どうしてこんなに早く準備できたの？"
+        },
+        {
+          "speaker": "B",
+          "en": "I set the table while Maya finished cooking.",
+          "ja": "マヤが料理を仕上げてる間に、私が食卓を整えたんだ。"
+        },
+        {
+          "speaker": "A",
+          "en": "You two make a good team.",
+          "ja": "2人はいいコンビだね。"
+        }
+      ]
+    },
+    {
+      "id": "as-dialogue-01",
+      "type": "as",
+      "title": "出かける直前の電話",
+      "targetTurnIndex": 1,
+      "targetSentence": "My phone rang just as I was leaving.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Why didn't you leave at eight?",
+          "ja": "なんで8時に出なかったの？"
+        },
+        {
+          "speaker": "B",
+          "en": "My phone rang just as I was leaving.",
+          "ja": "ちょうど出かけるところで電話が鳴ったんだ。"
+        },
+        {
+          "speaker": "A",
+          "en": "Was it anything important?",
+          "ja": "大事な用事だった？"
+        }
+      ]
+    },
+    {
+      "id": "as-dialogue-02",
+      "type": "as",
+      "title": "出るときに電気を消す",
+      "targetTurnIndex": 0,
+      "targetSentence": "Can you turn off the lights as you leave?",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Can you turn off the lights as you leave?",
+          "ja": "出るときに電気を消してくれる？"
+        },
+        {
+          "speaker": "B",
+          "en": "Sure. Are you going to bed?",
+          "ja": "いいよ。もう寝るの？"
+        },
+        {
+          "speaker": "A",
+          "en": "Yeah. I've got an early start tomorrow.",
+          "ja": "うん。明日は朝が早いんだ。"
+        }
+      ]
+    },
+    {
+      "id": "as-dialogue-03",
+      "type": "as",
+      "title": "帰り道の雪",
+      "targetTurnIndex": 1,
+      "targetSentence": "No. It started snowing as we were walking home.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Did you get home before it snowed?",
+          "ja": "雪が降る前に帰れた？"
+        },
+        {
+          "speaker": "B",
+          "en": "No. It started snowing as we were walking home.",
+          "ja": "ううん。歩いて帰ってる途中で降り始めた。"
+        },
+        {
+          "speaker": "A",
+          "en": "I bet the kids loved that.",
+          "ja": "子どもたちは喜んだだろうね。"
+        }
+      ]
+    },
+    {
+      "id": "as-dialogue-04",
+      "type": "as",
+      "title": "教わったとおりに",
+      "targetTurnIndex": 1,
+      "targetSentence": "Just do it as I showed you. You're doing fine.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "I'm not sure I'm doing this right.",
+          "ja": "これで合ってるのか自信がないな。"
+        },
+        {
+          "speaker": "B",
+          "en": "Just do it as I showed you. You're doing fine.",
+          "ja": "見せたとおりにやれば大丈夫。ちゃんとできてるよ。"
+        },
+        {
+          "speaker": "A",
+          "en": "Okay. Let me try one more time.",
+          "ja": "わかった。もう一度やってみる。"
+        }
+      ]
+    },
+    {
+      "id": "as-dialogue-05",
+      "type": "as",
+      "title": "そのままにする",
+      "targetTurnIndex": 1,
+      "targetSentence": "No, leave it as it is. It looks good.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Should I move the sofa a little?",
+          "ja": "ソファを少し動かしたほうがいい？"
+        },
+        {
+          "speaker": "B",
+          "en": "No, leave it as it is. It looks good.",
+          "ja": "ううん、そのままにしておいて。いい感じだよ。"
+        },
+        {
+          "speaker": "A",
+          "en": "Great. It's heavier than it looks.",
+          "ja": "よかった。見た目より重いんだよ。"
+        }
+      ]
+    },
+    {
+      "id": "as-dialogue-06",
+      "type": "as",
+      "title": "予想と違った",
+      "targetTurnIndex": 1,
+      "targetSentence": "It didn't go as I expected. We barely used the textbook.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "How did your first lesson go?",
+          "ja": "初めてのレッスンはどうだった？"
+        },
+        {
+          "speaker": "B",
+          "en": "It didn't go as I expected. We barely used the textbook.",
+          "ja": "予想とは違ったよ。教科書はほとんど使わなかった。"
+        },
+        {
+          "speaker": "A",
+          "en": "Was that a good thing?",
+          "ja": "それはよかったの？"
+        }
+      ]
+    },
+    {
+      "id": "as-dialogue-07",
+      "type": "as",
+      "title": "仕事の役割",
+      "targetTurnIndex": 1,
+      "targetSentence": "I work as a designer for a small company.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "What do you do for work?",
+          "ja": "どんな仕事をしてるの？"
+        },
+        {
+          "speaker": "B",
+          "en": "I work as a designer for a small company.",
+          "ja": "小さな会社でデザイナーとして働いてるよ。"
+        },
+        {
+          "speaker": "A",
+          "en": "What kind of things do you design?",
+          "ja": "どんなものをデザインするの？"
+        }
+      ]
+    },
+    {
+      "id": "as-dialogue-08",
+      "type": "as",
+      "title": "代わりに使う",
+      "targetTurnIndex": 0,
+      "targetSentence": "Can we use this box as a table?",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Can we use this box as a table?",
+          "ja": "この箱をテーブルとして使えるかな？"
+        },
+        {
+          "speaker": "B",
+          "en": "Sure. It's sturdy enough for a couple of cups.",
+          "ja": "うん。カップを2つ置くくらいなら丈夫だよ。"
+        },
+        {
+          "speaker": "A",
+          "en": "Great. I'll put a towel over it.",
+          "ja": "よかった。上にタオルをかけるね。"
+        }
+      ]
+    },
+    {
+      "id": "as-dialogue-09",
+      "type": "as",
+      "title": "そろったので話し合う",
+      "targetTurnIndex": 1,
+      "targetSentence": "As we're both here, let's sort it out now.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "Should we talk about the weekend later?",
+          "ja": "週末のことは後で話そうか？"
+        },
+        {
+          "speaker": "B",
+          "en": "As we're both here, let's sort it out now.",
+          "ja": "2人ともここにいるし、今決めちゃおう。"
+        },
+        {
+          "speaker": "A",
+          "en": "Okay. I'll pull up the train times.",
+          "ja": "いいよ。電車の時刻を出すね。"
+        }
+      ]
+    },
+    {
+      "id": "as-dialogue-10",
+      "type": "as",
+      "title": "年齢とともに変わる",
+      "targetTurnIndex": 1,
+      "targetSentence": "I'm enjoying it more as I get older.",
+      "turns": [
+        {
+          "speaker": "A",
+          "en": "You've been cooking a lot lately.",
+          "ja": "最近よく料理してるね。"
+        },
+        {
+          "speaker": "B",
+          "en": "I'm enjoying it more as I get older.",
+          "ja": "年を重ねるにつれて、もっと楽しくなってきたんだ。"
+        },
+        {
+          "speaker": "A",
+          "en": "You'll have to teach me a few things.",
+          "ja": "今度いくつか教えてよ。"
+        }
+      ]
+    }
+  ]
+}

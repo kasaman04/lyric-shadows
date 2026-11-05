@@ -1,0 +1,3715 @@
+{
+  "version": 1,
+  "provider": "elevenlabs",
+  "model": "eleven_v4",
+  "conversations": {
+    "by-the-time-dialogue-01": {
+      "sourceHash": "0a4a44c271c4dbabaf1ee7a539bd4e057fcc6e9f81fe31c7339684c30b7ab3ac",
+      "src": "audio/by-the-time-dialogue-01-0a4a44c271c4.mp3",
+      "duration": 6.72,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 1.76
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 1.76,
+          "end": 5.2
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 5.2,
+          "end": 6.72
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:28:07.342Z"
+    },
+    "by-the-time-dialogue-02": {
+      "sourceHash": "3b570fc7a66651b3532bb2586ceb54b76c1a27d4ae3c1db633b7b527fedef3d4",
+      "src": "audio/by-the-time-dialogue-02-3b570fc7a666.mp3",
+      "duration": 6.88,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2,
+          "end": 4.96
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.96,
+          "end": 6.88
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:28:07.545Z"
+    },
+    "by-the-time-dialogue-04": {
+      "sourceHash": "a0349a20a9db6ec4a2de52255fd57453a6c004f4eb239dce7bdffa779b7996c8",
+      "src": "audio/by-the-time-dialogue-04-a0349a20a9db.mp3",
+      "duration": 6.88,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2.56
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2.56,
+          "end": 5.5200000000000005
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 5.5200000000000005,
+          "end": 6.88
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:28:41.713Z"
+    },
+    "by-the-time-dialogue-03": {
+      "sourceHash": "756d1a4d03f651a2b664f1025710d9c2dbcfef82dccf98288547a649d6106023",
+      "src": "audio/by-the-time-dialogue-03-756d1a4d03f6.mp3",
+      "duration": 6.56,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 1.28
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 1.28,
+          "end": 4.640000000000001
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.640000000000001,
+          "end": 6.56
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:28:41.745Z"
+    },
+    "by-the-time-dialogue-05": {
+      "sourceHash": "10d803d05b76cad52c96e615326ced13a0b865a2c82385c428c82da873e4134c",
+      "src": "audio/by-the-time-dialogue-05-10d803d05b76.mp3",
+      "duration": 6.56,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 1.7600000000000002
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 1.7600000000000002,
+          "end": 5.2
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 5.2,
+          "end": 6.56
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:28:44.054Z"
+    },
+    "by-the-time-dialogue-06": {
+      "sourceHash": "6420ccf33cb2e62b702a2a9970074c4a1a824a817831a6b07bcd63523709d6bc",
+      "src": "audio/by-the-time-dialogue-06-6420ccf33cb2.mp3",
+      "duration": 7.04,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 1.68
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 1.68,
+          "end": 4.96
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.96,
+          "end": 7.04
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:28:44.238Z"
+    },
+    "by-the-time-dialogue-07": {
+      "sourceHash": "d502615d2a0b92eb54a3c06abb9754c6bc403e54f556755c7dbe3325458ac6ba",
+      "src": "audio/by-the-time-dialogue-07-d502615d2a0b.mp3",
+      "duration": 6.96,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2.56
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2.56,
+          "end": 4.48
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.48,
+          "end": 6.96
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:28:46.773Z"
+    },
+    "by-the-time-dialogue-08": {
+      "sourceHash": "d0bdfc9150db7617c571de2d77e75fc47aae420e49ad8ee65476c2fb38a8728b",
+      "src": "audio/by-the-time-dialogue-08-d0bdfc9150db.mp3",
+      "duration": 7.76,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2.32
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2.32,
+          "end": 5.96
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 5.96,
+          "end": 7.76
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:28:46.779Z"
+    },
+    "by-the-time-dialogue-09": {
+      "sourceHash": "318ce06a32889da7c2ca87560c0a2d63b33d8bab8ef5adc415ffe6631c523cbd",
+      "src": "audio/by-the-time-dialogue-09-318ce06a3288.mp3",
+      "duration": 7.04,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 1.84
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 1.84,
+          "end": 4.800000000000001
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.800000000000001,
+          "end": 7.04
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:28:49.084Z"
+    },
+    "by-the-time-dialogue-10": {
+      "sourceHash": "34632ba8d7b72cdc8253fe267dff779bcb5cc2192fc92913446ba9217ab68051",
+      "src": "audio/by-the-time-dialogue-10-34632ba8d7b7.mp3",
+      "duration": 7.04,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2.4
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2.4,
+          "end": 5.2
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 5.2,
+          "end": 7.04
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:28:49.248Z"
+    },
+    "whether-dialogue-01": {
+      "sourceHash": "62c317205ec7d142a8d9cb3e097de9462fdad3fb6821b8dd036e66e1a91a3c45",
+      "src": "audio/whether-dialogue-01-62c317205ec7.mp3",
+      "duration": 5.28,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 1.9200000000000002
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 1.9200000000000002,
+          "end": 4
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4,
+          "end": 5.28
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:28:51.175Z"
+    },
+    "whether-dialogue-02": {
+      "sourceHash": "02030a8d13fc4df072023f12ba24aef2c9dd5c6ed90d3440f3829c4248195e76",
+      "src": "audio/whether-dialogue-02-02030a8d13fc.mp3",
+      "duration": 7.28,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 1.6800000000000002
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 1.6800000000000002,
+          "end": 5.2
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 5.2,
+          "end": 7.28
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:28:51.488Z"
+    },
+    "whether-dialogue-04": {
+      "sourceHash": "d8ceccf6ea8fd3901132c3c806872243f8bfbf7ecf61b4d7829108bc46596993",
+      "src": "audio/whether-dialogue-04-d8ceccf6ea8f.mp3",
+      "duration": 7.12,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2,
+          "end": 4.24
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.24,
+          "end": 7.12
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:28:53.826Z"
+    },
+    "whether-dialogue-03": {
+      "sourceHash": "579e885ce8281db378edad237622cd2e3a33a6cff8d5b1b323bf84da3fd68fe1",
+      "src": "audio/whether-dialogue-03-579e885ce828.mp3",
+      "duration": 6.96,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 1.84
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 1.84,
+          "end": 4.880000000000001
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.880000000000001,
+          "end": 6.96
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:28:53.944Z"
+    },
+    "whether-dialogue-06": {
+      "sourceHash": "1075d1a3181a009b46c70df12d0d0ced9b406d8d87019af6afb03669facbe49f",
+      "src": "audio/whether-dialogue-06-1075d1a3181a.mp3",
+      "duration": 7.68,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 1.76
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 1.76,
+          "end": 6
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 6,
+          "end": 7.68
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:28:56.643Z"
+    },
+    "whether-dialogue-05": {
+      "sourceHash": "1cca7dfcf81e151c22f34aced0883037fe71a6b512a571739663f8de7e479d7d",
+      "src": "audio/whether-dialogue-05-1cca7dfcf81e.mp3",
+      "duration": 7.28,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2.16
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2.16,
+          "end": 4.880000000000001
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.880000000000001,
+          "end": 7.28
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:28:56.906Z"
+    },
+    "whether-dialogue-07": {
+      "sourceHash": "0943e058db9f6db8b798d19009dc451b3c40b86a479f519b575ac1cb3624bb71",
+      "src": "audio/whether-dialogue-07-0943e058db9f.mp3",
+      "duration": 7.68,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2.3200000000000003
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2.3200000000000003,
+          "end": 5.6000000000000005
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 5.6000000000000005,
+          "end": 7.68
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:28:59.222Z"
+    },
+    "whether-dialogue-08": {
+      "sourceHash": "e8c871462a9b5feebcb1ca70222afb4946070c2fb88dc687d6d7a81fcbd1eac5",
+      "src": "audio/whether-dialogue-08-e8c871462a9b.mp3",
+      "duration": 7.52,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2.88
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2.88,
+          "end": 5.28
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 5.28,
+          "end": 7.52
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:28:59.421Z"
+    },
+    "whether-dialogue-10": {
+      "sourceHash": "36fdf7fee50ac6989101d35e50c6658acb20d3d076452948c2190834f253a60e",
+      "src": "audio/whether-dialogue-10-36fdf7fee50a.mp3",
+      "duration": 6.32,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 1.84
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 1.84,
+          "end": 4.640000000000001
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.640000000000001,
+          "end": 6.32
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:01.671Z"
+    },
+    "whether-dialogue-09": {
+      "sourceHash": "1378062b5be9b0441179874c8243856e4b1a8a719930be231d0e9fd1d310a80f",
+      "src": "audio/whether-dialogue-09-1378062b5be9.mp3",
+      "duration": 7.12,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2.96
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2.96,
+          "end": 5.68
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 5.68,
+          "end": 7.12
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:01.780Z"
+    },
+    "now-that-dialogue-01": {
+      "sourceHash": "4a36f1a96def5662c557641af48555151aec7c6431865330f35e0b6ebf4aab0d",
+      "src": "audio/now-that-dialogue-01-4a36f1a96def.mp3",
+      "duration": 6.56,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2.24
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2.24,
+          "end": 4.720000000000001
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.720000000000001,
+          "end": 6.56
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:03.960Z"
+    },
+    "now-that-dialogue-02": {
+      "sourceHash": "a2e561237342bedf845a5239d62e91da39eff5ff15e4e9656e71aca9583cffb6",
+      "src": "audio/now-that-dialogue-02-a2e561237342.mp3",
+      "duration": 6.8,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 1.68
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 1.68,
+          "end": 5.28
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 5.28,
+          "end": 6.8
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:04.101Z"
+    },
+    "now-that-dialogue-03": {
+      "sourceHash": "218958ac70569be107a3db94eca2a73fccb7f8ded6b8d1e934d84061da0d1ec3",
+      "src": "audio/now-that-dialogue-03-218958ac7056.mp3",
+      "duration": 6,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2.88
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2.88,
+          "end": 4.880000000000001
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.880000000000001,
+          "end": 6
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:06.759Z"
+    },
+    "now-that-dialogue-04": {
+      "sourceHash": "22878ef16c2e638156fe124e3d26674d0233689927e8efd1f452af84eec46738",
+      "src": "audio/now-that-dialogue-04-22878ef16c2e.mp3",
+      "duration": 6.8,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 1.44
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 1.44,
+          "end": 5.2
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 5.2,
+          "end": 6.8
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:06.817Z"
+    },
+    "now-that-dialogue-06": {
+      "sourceHash": "284a29c412351badb14e269a0091b486069d39febf9ae80fa9deaabcebf472e8",
+      "src": "audio/now-that-dialogue-06-284a29c41235.mp3",
+      "duration": 7.36,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 1.52
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 1.52,
+          "end": 5.76
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 5.76,
+          "end": 7.36
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:09.497Z"
+    },
+    "now-that-dialogue-05": {
+      "sourceHash": "fcf69dde062aa6cf3f896b837daf5334ab4a5bc2af01baf42a67ed43b23e5c8a",
+      "src": "audio/now-that-dialogue-05-fcf69dde062a.mp3",
+      "duration": 7.2,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2.24
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2.24,
+          "end": 5.12
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 5.12,
+          "end": 7.2
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:09.512Z"
+    },
+    "now-that-dialogue-08": {
+      "sourceHash": "3b7b2acc74ba9ebb6782e3e4505d661165f99707ecaa9ccdd97dcc7b038a8c83",
+      "src": "audio/now-that-dialogue-08-3b7b2acc74ba.mp3",
+      "duration": 6.96,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 1.6
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 1.6,
+          "end": 5.04
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 5.04,
+          "end": 6.96
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:11.941Z"
+    },
+    "now-that-dialogue-07": {
+      "sourceHash": "9126bab3b74540a633059bfbe48c1c1836b0872a50805cd6ed2fdb18d662004f",
+      "src": "audio/now-that-dialogue-07-9126bab3b745.mp3",
+      "duration": 7.04,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 3.04
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 3.04,
+          "end": 5.92
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 5.92,
+          "end": 7.04
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:11.972Z"
+    },
+    "now-that-dialogue-09": {
+      "sourceHash": "0e47540783bf013f5097d909f58b10cc6a5595aae41e19b6bd12f1ab5ea56ae5",
+      "src": "audio/now-that-dialogue-09-0e47540783bf.mp3",
+      "duration": 7.12,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2.72
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2.72,
+          "end": 5.44
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 5.44,
+          "end": 7.12
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:14.536Z"
+    },
+    "now-that-dialogue-10": {
+      "sourceHash": "eb94f2f5cfb42cec81fb2370b450b4119f8be5cd479bd02ad6a639ca5c872c99",
+      "src": "audio/now-that-dialogue-10-eb94f2f5cfb4.mp3",
+      "duration": 7.84,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2,
+          "end": 5.6000000000000005
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 5.6000000000000005,
+          "end": 7.84
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:14.847Z"
+    },
+    "once-dialogue-01": {
+      "sourceHash": "2344cbb0c7a2b079c80ffdca7b04d920e24635cad3c47bac9d9d2551dc7dd226",
+      "src": "audio/once-dialogue-01-2344cbb0c7a2.mp3",
+      "duration": 6.48,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2,
+          "end": 5.04
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 5.04,
+          "end": 6.48
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:16.785Z"
+    },
+    "once-dialogue-02": {
+      "sourceHash": "fc4f357dd4c4066a179990bf364bc48df2f1ded8e718c564ff707af72abe741f",
+      "src": "audio/once-dialogue-02-fc4f357dd4c4.mp3",
+      "duration": 5.2,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 1.4400000000000002
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 1.4400000000000002,
+          "end": 4.24
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.24,
+          "end": 5.2
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:16.798Z"
+    },
+    "once-dialogue-03": {
+      "sourceHash": "0388c4093246339c6ad541e847e80ff47eb101751b922ef2e27c39a3796e6630",
+      "src": "audio/once-dialogue-03-0388c4093246.mp3",
+      "duration": 6,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 1.6
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 1.6,
+          "end": 4.32
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.32,
+          "end": 6
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:18.963Z"
+    },
+    "once-dialogue-04": {
+      "sourceHash": "cd9376f95191eaf991d5e8f2481b84605e747c6307829607784e24b4037ea3e4",
+      "src": "audio/once-dialogue-04-cd9376f95191.mp3",
+      "duration": 7.68,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2.8
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2.8,
+          "end": 5.36
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 5.36,
+          "end": 7.68
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:19.503Z"
+    },
+    "once-dialogue-06": {
+      "sourceHash": "2f957f57be3e2e250f392fe95912b1c49cf1ddbe127bbbf08d22f1feaf145b64",
+      "src": "audio/once-dialogue-06-2f957f57be3e.mp3",
+      "duration": 5.84,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 1.9200000000000002
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 1.9200000000000002,
+          "end": 4.720000000000001
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.720000000000001,
+          "end": 5.84
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:21.794Z"
+    },
+    "once-dialogue-05": {
+      "sourceHash": "a9784559eab3d0d56576afffb4281b57dde2a7aa23ebb7adbb4ecc61ec4faae8",
+      "src": "audio/once-dialogue-05-a9784559eab3.mp3",
+      "duration": 7.92,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2.48
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2.48,
+          "end": 6.16
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 6.16,
+          "end": 7.92
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:22.012Z"
+    },
+    "once-dialogue-07": {
+      "sourceHash": "63ef719a04df77c85250c188e5c035a86a6f605c1eec7bc2e3676a0a5623d003",
+      "src": "audio/once-dialogue-07-63ef719a04df.mp3",
+      "duration": 4.56,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 1.52
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 1.52,
+          "end": 3.36
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 3.36,
+          "end": 4.56
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:23.794Z"
+    },
+    "once-dialogue-08": {
+      "sourceHash": "bd295a0258f09b0c4d740670ed8e0703507aaaa915861ea66d331dca3d0bf489",
+      "src": "audio/once-dialogue-08-bd295a0258f0.mp3",
+      "duration": 5.28,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 1.76
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 1.76,
+          "end": 4
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4,
+          "end": 5.28
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:24.196Z"
+    },
+    "once-dialogue-09": {
+      "sourceHash": "7f0d031e8493b9768301f5f785338b0289a753443789f905de28a48d44749df9",
+      "src": "audio/once-dialogue-09-7f0d031e8493.mp3",
+      "duration": 6.8,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 3.04
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 3.04,
+          "end": 5.680000000000001
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 5.680000000000001,
+          "end": 6.8
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:26.358Z"
+    },
+    "once-dialogue-10": {
+      "sourceHash": "77730cf202f5accc589c232c298148e456239d8ea8d3d30de188d1f85479acf5",
+      "src": "audio/once-dialogue-10-77730cf202f5.mp3",
+      "duration": 5.52,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 1.6
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 1.6,
+          "end": 3.8400000000000003
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 3.8400000000000003,
+          "end": 5.52
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:26.402Z"
+    },
+    "so-that-dialogue-02": {
+      "sourceHash": "e946bfbc5ef513480535f67a5c000018e8bcd96a4f287a06ad27b009b5f0b3da",
+      "src": "audio/so-that-dialogue-02-e946bfbc5ef5.mp3",
+      "duration": 6.96,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 1.84
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 1.84,
+          "end": 4.84
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.84,
+          "end": 6.72
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:29.186Z"
+    },
+    "so-that-dialogue-01": {
+      "sourceHash": "5ac616f3a00874074c3627158033c8f264350fab2492d638ca545395fcf83d0b",
+      "src": "audio/so-that-dialogue-01-5ac616f3a008.mp3",
+      "duration": 7.68,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2.56
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2.56,
+          "end": 5.840000000000001
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 5.840000000000001,
+          "end": 7.68
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:29.481Z"
+    },
+    "so-that-dialogue-04": {
+      "sourceHash": "4be6790954aec9737ec8e343d30df718b0fbf5a64e747f780a69a7f10c3125f9",
+      "src": "audio/so-that-dialogue-04-4be6790954ae.mp3",
+      "duration": 7.68,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2.96
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2.96,
+          "end": 5.84
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 5.84,
+          "end": 7.68
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:31.890Z"
+    },
+    "so-that-dialogue-03": {
+      "sourceHash": "23d79212d92c45d80593ea6b89cfa9d9c25c6f4d0f38909f18d3c1ccaa378d7b",
+      "src": "audio/so-that-dialogue-03-23d79212d92c.mp3",
+      "duration": 7.28,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2.08
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2.08,
+          "end": 5.12
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 5.12,
+          "end": 7.2
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:31.976Z"
+    },
+    "so-that-dialogue-05": {
+      "sourceHash": "a9a6dd88bde948a6b3d585b44588d7f89d6b2b867e8badd5fb2583b93cc60a9d",
+      "src": "audio/so-that-dialogue-05-a9a6dd88bde9.mp3",
+      "duration": 5.92,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 1.84
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 1.84,
+          "end": 4.5600000000000005
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.5600000000000005,
+          "end": 5.92
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:34.348Z"
+    },
+    "so-that-dialogue-06": {
+      "sourceHash": "f392f4109dd8b0ad90b81d2498db45565a37ec8346324ce88829868ab511be7d",
+      "src": "audio/so-that-dialogue-06-f392f4109dd8.mp3",
+      "duration": 7.44,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2.72
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2.72,
+          "end": 5.36
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 5.36,
+          "end": 7.44
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:34.908Z"
+    },
+    "so-that-dialogue-07": {
+      "sourceHash": "73d7bd78a0281d2e49795d8717dfac7d81176c1944d76b24a9e9149b0e7cf5be",
+      "src": "audio/so-that-dialogue-07-73d7bd78a028.mp3",
+      "duration": 7.04,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 1.9200000000000002
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 1.9200000000000002,
+          "end": 4.800000000000001
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.800000000000001,
+          "end": 7.04
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:37.111Z"
+    },
+    "so-that-dialogue-08": {
+      "sourceHash": "9df6ef9e99f4d89456215db258dc756ee374f86b118066d98b9e62c8efc557dc",
+      "src": "audio/so-that-dialogue-08-9df6ef9e99f4.mp3",
+      "duration": 7.2,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2.16
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2.16,
+          "end": 5.36
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 5.36,
+          "end": 7.2
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:37.354Z"
+    },
+    "so-that-dialogue-09": {
+      "sourceHash": "dbd2a7914bdb1d9f848cae586704b5059bae646de907dedbfce9eea9791eecca",
+      "src": "audio/so-that-dialogue-09-dbd2a7914bdb.mp3",
+      "duration": 6.24,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2,
+          "end": 4.16
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.16,
+          "end": 6.24
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:39.342Z"
+    },
+    "so-that-dialogue-10": {
+      "sourceHash": "24131f373d864c384fa75d612c9a2d5ff82355d221d8db21029235da884acbc6",
+      "src": "audio/so-that-dialogue-10-24131f373d86.mp3",
+      "duration": 6.72,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2.4
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2.4,
+          "end": 5.2
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 5.2,
+          "end": 6.72
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:39.703Z"
+    },
+    "in-case-dialogue-01": {
+      "sourceHash": "a56197f9e1665611c84c04296224d78494c174a8c7114886cc59ddca4d4240dd",
+      "src": "audio/in-case-dialogue-01-a56197f9e166.mp3",
+      "duration": 6.16,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2.16
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2.16,
+          "end": 4.32
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.32,
+          "end": 6.16
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:41.811Z"
+    },
+    "in-case-dialogue-02": {
+      "sourceHash": "7619a60ea3e9380ed9562c6660c7a07947c225e9560969b7292a048f385e006b",
+      "src": "audio/in-case-dialogue-02-7619a60ea3e9.mp3",
+      "duration": 6.48,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2,
+          "end": 4.800000000000001
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.800000000000001,
+          "end": 6.48
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:42.070Z"
+    },
+    "in-case-dialogue-04": {
+      "sourceHash": "af2d5a92b6d2c3c63345dfebad63297a3ced8aa35fc92163a281fff9aaa7332f",
+      "src": "audio/in-case-dialogue-04-af2d5a92b6d2.mp3",
+      "duration": 7.36,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2,
+          "end": 4.800000000000001
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.800000000000001,
+          "end": 7.36
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:44.806Z"
+    },
+    "in-case-dialogue-03": {
+      "sourceHash": "5b9f4eda7c5e32c2df5d5aaed66810f63c9e30ce85705c7289e8c8431120bc6e",
+      "src": "audio/in-case-dialogue-03-5b9f4eda7c5e.mp3",
+      "duration": 7.84,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2.48
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2.48,
+          "end": 6
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 6,
+          "end": 7.84
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:44.848Z"
+    },
+    "in-case-dialogue-05": {
+      "sourceHash": "b6937796f93747e1c7c801de6d6e0bbcd8fff287fb6b721463750ed4029fffbe",
+      "src": "audio/in-case-dialogue-05-b6937796f937.mp3",
+      "duration": 6,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2.72
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2.72,
+          "end": 4.720000000000001
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.720000000000001,
+          "end": 6
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:46.994Z"
+    },
+    "in-case-dialogue-06": {
+      "sourceHash": "1d4db58e9769b52f054f9199b189770dd0acdec55d37d1c185076f77b2d1ee71",
+      "src": "audio/in-case-dialogue-06-1d4db58e9769.mp3",
+      "duration": 6.56,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2.08
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2.08,
+          "end": 4.32
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.32,
+          "end": 6.56
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:47.380Z"
+    },
+    "in-case-dialogue-08": {
+      "sourceHash": "86a9dc2b2319c40489ce9ece25d9821aae22624be86d4e7e719c240e7db2d5e3",
+      "src": "audio/in-case-dialogue-08-86a9dc2b2319.mp3",
+      "duration": 6.56,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 1.9200000000000002
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 1.9200000000000002,
+          "end": 4.960000000000001
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.960000000000001,
+          "end": 6.56
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:49.855Z"
+    },
+    "in-case-dialogue-07": {
+      "sourceHash": "ccbb1e714bd5a330e6f863fd53d23afcc93756714f9f6cd907eecb5efb4b9d3a",
+      "src": "audio/in-case-dialogue-07-ccbb1e714bd5.mp3",
+      "duration": 6.64,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2.4
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2.4,
+          "end": 4.88
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.88,
+          "end": 6.64
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:50.049Z"
+    },
+    "in-case-dialogue-09": {
+      "sourceHash": "291c7307382615469a70cac0fe428291da4ea3db09e8d24c6c7d6af544d1e403",
+      "src": "audio/in-case-dialogue-09-291c73073826.mp3",
+      "duration": 6.4,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2.8
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2.8,
+          "end": 4.8
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.8,
+          "end": 6.4
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:52.140Z"
+    },
+    "in-case-dialogue-10": {
+      "sourceHash": "f9328275e84a40fd63757de0882c13ab85ee3fa7517a1a91760057431388f020",
+      "src": "audio/in-case-dialogue-10-f9328275e84a.mp3",
+      "duration": 6.48,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2.16
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2.16,
+          "end": 4.880000000000001
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.880000000000001,
+          "end": 6.48
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:52.884Z"
+    },
+    "as-soon-as-dialogue-01": {
+      "sourceHash": "9030e045451c04d2ceeefa583da42905e8192fc40bf0cd467f788de208e727b6",
+      "src": "audio/as-soon-as-dialogue-01-9030e045451c.mp3",
+      "duration": 5.76,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 1.84
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 1.84,
+          "end": 4.32
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.32,
+          "end": 5.76
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:54.641Z"
+    },
+    "as-soon-as-dialogue-02": {
+      "sourceHash": "66d61b41988e6d3449df5157f5b7f4547488800a45f056b5a6fabd192a1fee53",
+      "src": "audio/as-soon-as-dialogue-02-66d61b41988e.mp3",
+      "duration": 6.88,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2,
+          "end": 5.12
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 5.12,
+          "end": 6.88
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:55.238Z"
+    },
+    "as-soon-as-dialogue-03": {
+      "sourceHash": "5adc4133a016273dddb0c38f1e9d728d6025e5d254e8c86a4e776587f6b61be6",
+      "src": "audio/as-soon-as-dialogue-03-5adc4133a016.mp3",
+      "duration": 5.52,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 1.84
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 1.84,
+          "end": 3.92
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 3.92,
+          "end": 5.52
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:56.976Z"
+    },
+    "as-soon-as-dialogue-04": {
+      "sourceHash": "568637f29c61c21cdda86fe0622deea842fc1ba45f45f3b7e97db2937111ef7a",
+      "src": "audio/as-soon-as-dialogue-04-568637f29c61.mp3",
+      "duration": 5.6,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 1.52
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 1.52,
+          "end": 4.32
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.32,
+          "end": 5.6
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:57.653Z"
+    },
+    "as-soon-as-dialogue-05": {
+      "sourceHash": "b91794e3ce0f56446614a84426ace70074ee4d770399601a0353e6845e723719",
+      "src": "audio/as-soon-as-dialogue-05-b91794e3ce0f.mp3",
+      "duration": 7.28,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2.64
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2.64,
+          "end": 5.84
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 5.84,
+          "end": 7.28
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:59.597Z"
+    },
+    "as-soon-as-dialogue-06": {
+      "sourceHash": "1ded36d0cd08dee9201aef012994609d130ea20bbed84e7548db7016ac40cf1d",
+      "src": "audio/as-soon-as-dialogue-06-1ded36d0cd08.mp3",
+      "duration": 5.6,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2.16
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2.16,
+          "end": 3.68
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 3.68,
+          "end": 5.6
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:29:59.962Z"
+    },
+    "as-soon-as-dialogue-08": {
+      "sourceHash": "3e7edcddf754dcd9a15b11179c4365be2c8679cac7bf27a60f885a7f6b4ef140",
+      "src": "audio/as-soon-as-dialogue-08-3e7edcddf754.mp3",
+      "duration": 7.2,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2.08
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2.08,
+          "end": 5.5200000000000005
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 5.5200000000000005,
+          "end": 7.12
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:30:02.684Z"
+    },
+    "as-soon-as-dialogue-07": {
+      "sourceHash": "8c46c2dac04ae0c133b3f2027b1596240498f966655acfb51423f382f3540f31",
+      "src": "audio/as-soon-as-dialogue-07-8c46c2dac04a.mp3",
+      "duration": 7.12,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 1.6800000000000002
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 1.6800000000000002,
+          "end": 4.880000000000001
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.880000000000001,
+          "end": 7.12
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:30:02.855Z"
+    },
+    "as-soon-as-dialogue-09": {
+      "sourceHash": "666720f1d698e5bf30b05ef2980a3a51d0f51990868b099cc0f345b8120bb414",
+      "src": "audio/as-soon-as-dialogue-09-666720f1d698.mp3",
+      "duration": 5.68,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2.08
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2.08,
+          "end": 4.32
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.32,
+          "end": 5.68
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:30:05.360Z"
+    },
+    "as-soon-as-dialogue-10": {
+      "sourceHash": "d5f0129010006863c113459069a033e8b13a6e0f637cec4da9088041f2fd196f",
+      "src": "audio/as-soon-as-dialogue-10-d5f012901000.mp3",
+      "duration": 7.6,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2,
+          "end": 6
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 6,
+          "end": 7.6
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:30:05.892Z"
+    },
+    "even-though-dialogue-01": {
+      "sourceHash": "8776da5ce9fcc644e449fe2b98fa4ad10c393c3e29b7f9a0246052b6101b5ea7",
+      "src": "audio/even-though-dialogue-01-8776da5ce9fc.mp3",
+      "duration": 6.96,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 1.52
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 1.52,
+          "end": 5.2
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 5.2,
+          "end": 6.96
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:30:07.941Z"
+    },
+    "even-though-dialogue-02": {
+      "sourceHash": "cef9d8bc329df3a6d4f99ca88ae9916ea980ca3ad6c7f668ed22923187a43df7",
+      "src": "audio/even-though-dialogue-02-cef9d8bc329d.mp3",
+      "duration": 6.56,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 1.6
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 1.6,
+          "end": 4.5600000000000005
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.5600000000000005,
+          "end": 6.56
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:30:08.562Z"
+    },
+    "even-though-dialogue-04": {
+      "sourceHash": "191e438643d47d3493e5038c19c411bf845c40fd2f4c274b16a5d76666627a6a",
+      "src": "audio/even-though-dialogue-04-191e438643d4.mp3",
+      "duration": 5.76,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2.08
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2.08,
+          "end": 4.640000000000001
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.640000000000001,
+          "end": 5.76
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:30:10.725Z"
+    },
+    "even-though-dialogue-03": {
+      "sourceHash": "fd709045b937584d1684de6e051c75b483345fb944eb55f96ea86c23de6b15c4",
+      "src": "audio/even-though-dialogue-03-fd709045b937.mp3",
+      "duration": 8.16,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2.88
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2.88,
+          "end": 5.12
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 5.12,
+          "end": 8.16
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:30:11.434Z"
+    },
+    "even-though-dialogue-05": {
+      "sourceHash": "845e61c5709008a4c3c31373171b92956d851d059429a8624b0ae79f73b36801",
+      "src": "audio/even-though-dialogue-05-845e61c57090.mp3",
+      "duration": 7.92,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 3.2
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 3.2,
+          "end": 6.16
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 6.16,
+          "end": 7.92
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:30:13.415Z"
+    },
+    "even-though-dialogue-06": {
+      "sourceHash": "368a58157fc042c07ac78477ebe18c7ed321ab1111ab75d445c26af079de91fd",
+      "src": "audio/even-though-dialogue-06-368a58157fc0.mp3",
+      "duration": 7.6,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 1.68
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 1.68,
+          "end": 5.84
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 5.84,
+          "end": 7.6
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:30:14.077Z"
+    },
+    "even-though-dialogue-07": {
+      "sourceHash": "20edeeb903286e41f4b9fc779ddfb3cb0e796e9d47e96fa0569d544698088964",
+      "src": "audio/even-though-dialogue-07-20edeeb90328.mp3",
+      "duration": 6.96,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 1.76
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 1.76,
+          "end": 5.04
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 5.04,
+          "end": 6.96
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:30:16.186Z"
+    },
+    "even-though-dialogue-08": {
+      "sourceHash": "47080f427740e18cfe1a191879081da38abba7b6451a6df1b552453b1a06a494",
+      "src": "audio/even-though-dialogue-08-47080f427740.mp3",
+      "duration": 6.88,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 3.2800000000000002
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 3.2800000000000002,
+          "end": 4.720000000000001
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.720000000000001,
+          "end": 6.88
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:30:16.503Z"
+    },
+    "even-though-dialogue-09": {
+      "sourceHash": "782984e2a6e92e38c2ee9ae340c6b390a9c1e5c8519729066d247630869c5e8a",
+      "src": "audio/even-though-dialogue-09-782984e2a6e9.mp3",
+      "duration": 7.6,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 1.92
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 1.92,
+          "end": 5.6000000000000005
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 5.6000000000000005,
+          "end": 7.6
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:30:18.841Z"
+    },
+    "even-though-dialogue-10": {
+      "sourceHash": "8fc0ab97dcb10480093e6781d50cf1902a97f265014715226fa957f6458d1d71",
+      "src": "audio/even-though-dialogue-10-8fc0ab97dcb1.mp3",
+      "duration": 6.8,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 1.6800000000000002
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 1.6800000000000002,
+          "end": 4.960000000000001
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.960000000000001,
+          "end": 6.8
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:30:18.891Z"
+    },
+    "unless-dialogue-02": {
+      "sourceHash": "9a72e8033ea8c2ba366ee3c1768a7459c501af07d6f7a8fbb15bfa8af8fbf880",
+      "src": "audio/unless-dialogue-02-9a72e8033ea8.mp3",
+      "duration": 5.84,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2.16
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2.16,
+          "end": 4.32
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.32,
+          "end": 5.84
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:30:21.047Z"
+    },
+    "unless-dialogue-01": {
+      "sourceHash": "6e9a78eee3ebadd06e8cca2bcc987b884bf2c4f89cf82820dd93b4c4f5b8132d",
+      "src": "audio/unless-dialogue-01-6e9a78eee3eb.mp3",
+      "duration": 6.8,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2.4
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2.4,
+          "end": 4.5600000000000005
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.5600000000000005,
+          "end": 6.8
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:30:21.138Z"
+    },
+    "unless-dialogue-03": {
+      "sourceHash": "56d5f86cbc353962638a1496ec76d590c8ef421f9015d78b848a6f285cfb83ec",
+      "src": "audio/unless-dialogue-03-56d5f86cbc35.mp3",
+      "duration": 5.92,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 1.84
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 1.84,
+          "end": 3.7600000000000002
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 3.7600000000000002,
+          "end": 5.92
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:30:23.329Z"
+    },
+    "unless-dialogue-04": {
+      "sourceHash": "685c723517b37d965b94f6b523289db0280dc653d37b9927adc1f3c1763f1cd2",
+      "src": "audio/unless-dialogue-04-685c723517b3.mp3",
+      "duration": 6.8,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2.08
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2.08,
+          "end": 4.640000000000001
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.640000000000001,
+          "end": 6.8
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:30:23.582Z"
+    },
+    "unless-dialogue-06": {
+      "sourceHash": "d65b309ae039998c6aaef6d44146aa8bd92dd0c48c6fadbacd7d9ef7464be700",
+      "src": "audio/unless-dialogue-06-d65b309ae039.mp3",
+      "duration": 6.08,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2.96
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2.96,
+          "end": 4.5600000000000005
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.5600000000000005,
+          "end": 6.08
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:30:26.067Z"
+    },
+    "unless-dialogue-05": {
+      "sourceHash": "3529555fc9375d8460771a8ea17aaf35b050bcc51d3dae7cb3ad0b3933b73e2c",
+      "src": "audio/unless-dialogue-05-3529555fc937.mp3",
+      "duration": 7.04,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2.08
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2.08,
+          "end": 5.44
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 5.44,
+          "end": 7.04
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:30:26.098Z"
+    },
+    "unless-dialogue-07": {
+      "sourceHash": "a86310feec9d5664feffd642bf9d818112b5af6d94a7e76bb1ec23b1f26fa0b9",
+      "src": "audio/unless-dialogue-07-a86310feec9d.mp3",
+      "duration": 6.96,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 1.04
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 1.04,
+          "end": 4
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4,
+          "end": 6.72
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:30:28.608Z"
+    },
+    "unless-dialogue-08": {
+      "sourceHash": "dbf6e7fe23131163b370c9df65550f3ba067539dea7286e162b25290edd3baed",
+      "src": "audio/unless-dialogue-08-dbf6e7fe2313.mp3",
+      "duration": 6.64,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2.56
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2.56,
+          "end": 5.28
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 5.28,
+          "end": 6.64
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:30:28.938Z"
+    },
+    "unless-dialogue-09": {
+      "sourceHash": "3b7f2b7dc10d54472721173f5a257dbd63b9ecbcf895156db73c1e15d9ed1bde",
+      "src": "audio/unless-dialogue-09-3b7f2b7dc10d.mp3",
+      "duration": 6.08,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 1.84
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 1.84,
+          "end": 4.24
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.24,
+          "end": 6.08
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:30:31.087Z"
+    },
+    "unless-dialogue-10": {
+      "sourceHash": "4a21a784e1c9715e3fd6577cd0d8e55f245ec61bc0ed2f47d9be1c3f41c97a71",
+      "src": "audio/unless-dialogue-10-4a21a784e1c9.mp3",
+      "duration": 6.64,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 3.12
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 3.12,
+          "end": 4.5600000000000005
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.5600000000000005,
+          "end": 6.64
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:30:31.556Z"
+    },
+    "while-dialogue-01": {
+      "sourceHash": "9982fbd2a50b06676a1427a29ce5556b8015144d60e20b24d253ae11c37cc5bc",
+      "src": "audio/while-dialogue-01-9982fbd2a50b.mp3",
+      "duration": 6.88,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 1.9200000000000002
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 1.9200000000000002,
+          "end": 4.16
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.16,
+          "end": 6.88
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:30:33.366Z"
+    },
+    "while-dialogue-02": {
+      "sourceHash": "01031ebeea92c45c598dbdd8448ea5a0429f4911426c9b530c3f5f98ecf5552a",
+      "src": "audio/while-dialogue-02-01031ebeea92.mp3",
+      "duration": 6.48,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 1.7600000000000002
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 1.7600000000000002,
+          "end": 4.720000000000001
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.720000000000001,
+          "end": 6.48
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:30:34.013Z"
+    },
+    "while-dialogue-03": {
+      "sourceHash": "dd7dab0e31c5cb9ca859a560d6be6c68033a13a8582fab4fe993b4080637bc0f",
+      "src": "audio/while-dialogue-03-dd7dab0e31c5.mp3",
+      "duration": 5.52,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 1.76
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 1.76,
+          "end": 4.4
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.4,
+          "end": 5.52
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:30:35.607Z"
+    },
+    "while-dialogue-04": {
+      "sourceHash": "a372da19a017c1803daf667b1a8ab860577db322592e1d42bb4dd3761b9e8416",
+      "src": "audio/while-dialogue-04-a372da19a017.mp3",
+      "duration": 6.56,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2.16
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2.16,
+          "end": 4.48
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.48,
+          "end": 6.56
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:30:36.464Z"
+    },
+    "while-dialogue-05": {
+      "sourceHash": "b7ba58af933dcdceeece3f4b352685b23f82fd4ba53bb503a49b7d442e7b0d4f",
+      "src": "audio/while-dialogue-05-b7ba58af933d.mp3",
+      "duration": 6.8,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 1.6800000000000002
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 1.6800000000000002,
+          "end": 5.12
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 5.12,
+          "end": 6.8
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:30:37.928Z"
+    },
+    "while-dialogue-06": {
+      "sourceHash": "7f1e6869cff18f5878ead12a4d209c3bc966a011be2aadf8f70585ec5a158590",
+      "src": "audio/while-dialogue-06-7f1e6869cff1.mp3",
+      "duration": 5.76,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2.4
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2.4,
+          "end": 4.5600000000000005
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.5600000000000005,
+          "end": 5.76
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:30:38.515Z"
+    },
+    "while-dialogue-07": {
+      "sourceHash": "58d3b2a7f35f01600640be2bbcb43f48907678c795afaeff2c1d558d447d4dbe",
+      "src": "audio/while-dialogue-07-58d3b2a7f35f.mp3",
+      "duration": 6.96,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2.4
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2.4,
+          "end": 5.12
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 5.12,
+          "end": 6.96
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:30:40.850Z"
+    },
+    "while-dialogue-08": {
+      "sourceHash": "c46fe6e1af7d396ac28c17625302be1c3efc16cebc13867e6eb57f09398710bf",
+      "src": "audio/while-dialogue-08-c46fe6e1af7d.mp3",
+      "duration": 5.52,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 1.52
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 1.52,
+          "end": 4.16
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.16,
+          "end": 5.52
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:30:40.897Z"
+    },
+    "while-dialogue-10": {
+      "sourceHash": "9284e53ac513aa281398e37f2c54a0b62608753d3577895086a41bd39a2d0a91",
+      "src": "audio/while-dialogue-10-9284e53ac513.mp3",
+      "duration": 6.88,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2.48
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2.48,
+          "end": 5.28
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 5.28,
+          "end": 6.88
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:30:43.257Z"
+    },
+    "while-dialogue-09": {
+      "sourceHash": "2b60526313ec81ae94bde68c669319bc01e9c93b17a5c443910f104bd7cec70c",
+      "src": "audio/while-dialogue-09-2b60526313ec.mp3",
+      "duration": 7.2,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 1.76
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 1.76,
+          "end": 5.5200000000000005
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 5.5200000000000005,
+          "end": 7.2
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:30:43.903Z"
+    },
+    "as-dialogue-01": {
+      "sourceHash": "5030de14a4f997be8323c55ba59f86f21c52181e4686f11f1f79065412d08d1c",
+      "src": "audio/as-dialogue-01-5030de14a4f9.mp3",
+      "duration": 5.84,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 1.76
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 1.76,
+          "end": 4.32
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.32,
+          "end": 5.84
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:30:45.461Z"
+    },
+    "as-dialogue-02": {
+      "sourceHash": "cf26cab74c0292c590640573af806569f6185bcbf358af7ac55e0494ad1d03d4",
+      "src": "audio/as-dialogue-02-cf26cab74c02.mp3",
+      "duration": 6.4,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2,
+          "end": 4.08
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 4.08,
+          "end": 6.4
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:30:46.582Z"
+    },
+    "as-dialogue-03": {
+      "sourceHash": "569132c72b67f78f1b37366f4b76890a0e5c4d835b7462fb311df4666131aa1e",
+      "src": "audio/as-dialogue-03-569132c72b67.mp3",
+      "duration": 7.2,
+      "cues": [
+        {
+          "index": 0,
+          "speaker": "A",
+          "start": 0,
+          "end": 2
+        },
+        {
+          "index": 1,
+          "speaker": "B",
+          "start": 2,
+          "end": 5.44
+        },
+        {
+          "index": 2,
+          "speaker": "A",
+          "start": 5.44,
+          "end": 7.2
+        }
+      ],
+      "voices": {
+        "A": {
+          "key": "mark",
+          "name": "Mark"
+        },
+        "B": {
+          "key": "belle",
+          "name": "Belle"
+        }
+      },
+      "generatedAt": "2026-11-05T08:30:48.046Z"
+    }
+  }
+}

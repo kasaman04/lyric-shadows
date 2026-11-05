@@ -1,0 +1,111 @@
+category	scene	targetLineIndex	a_en	a_ja	b_en	b_ja	a2_en	a2_ja
+by the time	売り切れのパン	1	Did you get those cinnamon rolls?	あのシナモンロール買えた？	No. By the time I got there, they'd sold out.	ううん。着いたころには売り切れてた。	Let's go earlier next time.	次はもっと早く行こう。
+by the time	夕飯の準備	1	Should I pick up dinner on my way home?	帰りに夕飯を買ってこようか？	No need. It'll be ready by the time you get home.	大丈夫。家に着くころにはできてるよ。	Great. I'll be home around seven.	よかった。7時ごろ帰るね。
+by the time	映画の冒頭	1	Did we miss much?	結構見逃しちゃった？	The movie had already started by the time we sat down.	席に着いたときには、もう映画が始まってたね。	I'll ask you about the beginning later.	最初のところは後で教えて。
+by the time	洗濯物	0	Will these clothes be dry by the time we leave?	出かけるころには、この服乾くかな？	Not those jeans. They're still pretty wet.	そのジーンズは無理だね。まだ結構ぬれてる。	I'll wear something else, then.	じゃあ別のを着ていく。
+by the time	眠ってしまった子	1	Did you get to say goodnight to her?	あの子におやすみって言えた？	No. She was asleep by the time I got upstairs.	ううん。上に行ったころには寝ちゃってた。	She had a busy day.	今日はいっぱい動いたもんね。
+by the time	店を出た後の雨	1	Did you get caught in the rain?	雨に降られた？	Luckily, it had stopped by the time I left the store.	運よく、お店を出るころにはやんでた。	You picked the right time to go shopping.	いいタイミングで買い物に行ったね。
+by the time	到着前の空腹	0	I'll be starving by the time we get there.	着くころにはおなかぺこぺこだよ。	I've got some crackers in my bag.	かばんにクラッカーがあるよ。	You're a lifesaver. Can I have a few?	助かる。ちょっともらっていい？
+by the time	片付けの手伝い	1	I'll come over after work and help clean up.	仕事が終わったら片付けを手伝いに行くよ。	Thanks, but we'll probably be done by the time you arrive.	ありがとう。でも来るころには多分終わってるよ。	Then I'll bring dessert instead.	じゃあ代わりにデザートを持っていくね。
+by the time	電話の充電	1	Can I use your charger for a bit?	充電器をちょっと借りていい？	Sure. Your phone should be charged by the time we leave.	いいよ。出かけるころには充電できてるはず。	Perfect. Mine's almost dead.	よかった。もうほとんど電池がないんだ。
+by the time	駅での待ち合わせ	1	I can't find you. Where are you?	見つからないよ。どこにいる？	I was already outside by the time you called.	電話をくれたときには、もう外に出てたよ。	Stay there. I'll come out now.	そこにいて。今出るね。
+whether	天気と予定	1	Are we still having the picnic tomorrow?	明日のピクニックは予定どおり？	It depends on whether it rains.	雨が降るかどうかによるね。	Let's check again tonight.	今夜もう一度確認しよう。
+whether	飲み物の二択	1	Have you decided what to order?	何を頼むか決まった？	I'm trying to decide whether to get tea or coffee.	紅茶にするかコーヒーにするか迷ってる。	The coffee here is really good.	ここのコーヒー、おいしいよ。
+whether	同行する友達	0	Do you know whether Sam is coming?	サムが来るかどうか知ってる？	Not yet. He said he'd text me after work.	まだ。仕事の後で連絡するって言ってた。	Okay. I'll save him a seat for now.	わかった。とりあえず席を取っておくね。
+whether	店の営業時間	1	Should we walk over to that bakery?	あのパン屋まで歩いていこうか？	Let's check whether it's open first.	まず開いてるか確認しよう。	Good idea. It's closed on some weekdays.	そうだね。平日にも休みがあるもんね。
+whether	上着の必要性	1	Why are you staring at your suitcase?	なんでスーツケースをじっと見てるの？	I can't decide whether to take a jacket.	上着を持っていくか決められなくて。	Take the light one. It gets cold at night.	薄いほうを持っていきなよ。夜は冷えるよ。
+whether	辛さがわからない	1	Have you tried this sauce before?	このソース、食べたことある？	No. I can't tell whether it's spicy or just sweet.	ないよ。辛いのか、ただ甘いのかわからない。	Try a tiny bit first.	まずほんの少し試してみて。
+whether	予定に関係なく行く	1	I might not be able to come on Saturday.	土曜日は行けないかもしれない。	That's okay. I'm going whether you come or not.	大丈夫。来ても来なくても私は行くから。	Have fun. I'll join you if I can.	楽しんでね。行けそうだったら合流する。
+whether	駅までの交通手段	0	Have you decided whether to walk or take the bus?	歩くかバスに乗るか決めた？	Let's walk. We've got plenty of time.	歩こうよ。時間はたっぷりあるし。	Okay. We can stop for coffee on the way.	いいね。途中でコーヒーも買えるね。
+whether	予約の確認	1	I booked online, but I didn't get an email.	ネットで予約したけど、メールが来てないんだ。	Call and ask whether your booking went through.	電話して予約が通ってるか聞いてみなよ。	I'll do that before we leave.	出かける前にそうするよ。
+whether	服装の迷い	1	Does this look too formal?	これだとかしこまりすぎかな？	I'm not sure whether we're supposed to dress up.	きちんとした服で行くべきなのか、よくわからないな。	I'll ask the others what they're wearing.	みんなに何を着ていくか聞いてみる。
+now that	全員そろった	0	Now that everyone's here, shall we order?	みんなそろったし、注文しようか？	Yes, please. I'm starving.	そうしよう。おなかぺこぺこ。	Let's get a couple of pizzas to share.	ピザを何枚か頼んで分けよう。
+now that	引っ越し後の生活	1	How are you liking the new place?	新しい家はどう？	Now that I've unpacked, it finally feels like home.	荷ほどきが終わって、やっと自分の家って感じがする。	I'll have to come over sometime.	今度遊びに行かなくちゃ。
+now that	雨がやんだ	0	Now that the rain's stopped, let's go for a walk.	雨もやんだし、散歩に行こう。	Give me a minute to find my shoes.	靴を探すからちょっと待って。	I'll wait by the door.	玄関で待ってるね。
+now that	仕事が終わった	1	You look relieved.	ほっとした顔してるね。	I can finally relax now that the presentation's over.	プレゼンが終わったから、やっとのんびりできるよ。	Let's get something nice for dinner.	夕飯はおいしいものを食べよう。
+now that	近くに住む友達	1	I still can't believe we're neighbors.	近所に住むことになったなんて、まだ信じられない。	Now that you live nearby, we should hang out more.	近くに住んでるんだし、もっと遊ぼうよ。	Definitely. Are you free this weekend?	もちろん。今週末は空いてる？
+now that	新しい眼鏡	1	Are the new glasses helping?	新しい眼鏡はどう？	Yeah. Now that I can see properly, reading's much easier.	うん。ちゃんと見えるようになって、読むのがずっと楽。	They look great on you too.	見た目もよく似合ってるよ。
+now that	車が使える	0	Now that we have a car, we can visit your parents more often.	車があるから、ご両親にもっと会いに行けるね。	They'd love that. How about next Sunday?	喜ぶと思う。来週の日曜日はどう？	I'll call them tonight.	今夜電話してみる。
+now that	授業の終わり	1	Do you want to grab a coffee?	コーヒーでも飲みに行く？	Sure. Now that class is over, I've got an hour free.	いいよ。授業も終わったし、1時間空いてる。	There's a quiet place across the street.	通りの向こうに静かなお店があるよ。
+now that	料理が冷めた	0	Now that it's cooled down, do you want to try a piece?	冷めたし、一切れ食べてみる？	Yes! It smells amazing.	食べたい！すごくいいにおい。	I'll cut you a big slice.	大きめに切るね。
+now that	子どもの成長	1	Are you still carrying her to school?	今もあの子を抱っこして学校に連れていってるの？	Not anymore. Now that she's older, she wants to walk.	もうしてないよ。大きくなって、自分で歩きたいんだって。	She'll be asking to go on her own next.	そのうち一人で行きたいって言い出すね。
+once	使い方に慣れる	1	This app looks complicated.	このアプリ、難しそう。	Once you get used to it, it's actually pretty easy.	慣れると、実は結構簡単だよ。	Can you show me the basics?	基本的な使い方を教えてくれる？
+once	到着したら連絡	0	Text me once you get there.	着いたらメッセージしてね。	I will. The train should take about an hour.	わかった。電車で1時間くらいのはず。	Have a good trip.	気をつけてね。
+once	仕事の区切り	1	Can we talk for a minute?	ちょっと話せる？	Sure. I'll come over once I finish this email.	うん。このメールを書き終わったらそっちに行くね。	Thanks. There's no rush.	ありがとう。急がなくて大丈夫。
+once	料理の火加減	0	Once the water boils, turn the heat down.	お湯が沸いたら、火を弱くして。	Okay. Do I put the lid on too?	わかった。ふたもするの？	Yes, but leave a small gap.	うん。でも少し隙間を開けておいて。
+once	自転車の楽しさ	1	I'm nervous about riding in the city.	街中で自転車に乗るの、緊張するな。	Once you know the quiet routes, it's much less stressful.	静かな道を覚えれば、ずっと気楽になるよ。	Let's try one together this weekend.	週末、一緒に走ってみようよ。
+once	席に着いてから	0	Let's order once everyone's settled.	みんなが落ち着いたら注文しよう。	Good idea. Ben's still parking the car.	そうだね。ベンはまだ車を止めてるし。	I'll get him some water.	ベンの分の水をもらっておく。
+once	給料が入ったら	1	Are you getting those headphones?	あのヘッドホン買うの？	Yeah, once I get paid.	うん、給料が入ったらね。	Let me know how they sound.	音がどんな感じか教えてね。
+once	赤ちゃんが寝たら	1	Do you want to watch something tonight?	今夜何か見る？	Sure, once the baby's asleep.	うん、赤ちゃんが寝たらね。	I'll find something short.	短めのを探しておく。
+once	予約が決まったら	0	Once we've booked the flights, we can look for a hotel.	飛行機を予約したら、ホテルを探せるね。	Let's book tonight before the price goes up.	値上がりする前に今夜予約しよう。	I'll get my laptop.	パソコンを持ってくるね。
+once	道具を片付ける	1	Can I put these tools away?	この道具、片付けていい？	Yes, once you've wiped them down.	うん、拭いてからならね。	Okay. Where's the cloth?	わかった。布はどこ？
+so that	迷わないために	0	I'll send you a pin so that you can find the entrance.	入口がわかるように、地図のピンを送るね。	Thanks. There seem to be three different doors.	ありがとう。ドアが3つあるみたい。	Use the one next to the coffee shop.	コーヒー屋の隣の入口から入って。
+so that	写真を送る	1	Why did you take a photo of the menu?	なんでメニューの写真を撮ったの？	So that we can show Maya the vegetarian options.	マヤにベジタリアン向けの料理を見せられるように。	Good thinking. I'll send it to her.	いいね。送っておくよ。
+so that	早めの出発	1	Do we really need to leave at seven?	本当に7時に出なきゃいけない？	I'd like to leave early so that we don't have to rush.	慌てなくて済むように早めに出たいんだ。	Fair enough. I'll set an alarm.	それもそうだね。アラームをかけるよ。
+so that	声を落とす	0	Keep your voice down so that we don't wake the baby.	赤ちゃんを起こさないように、小さな声で話して。	Sorry. I didn't realize she was asleep.	ごめん。寝てるって知らなかった。	She only just nodded off.	やっと寝たところなんだ。
+so that	明日の準備	1	Why are you packing lunch tonight?	なんで今夜のうちにお弁当を用意してるの？	So that I can sleep a little longer tomorrow.	明日もう少し長く寝られるように。	I should do that too.	私もそうしようかな。
+so that	画面を明るく	0	I'll turn up the brightness so that you can see the photo.	写真が見えるように、画面を明るくするね。	That's better. Is that your new puppy?	よく見えるようになった。それ、新しく飼った子犬？	Yeah. We brought him home yesterday.	うん。昨日うちに来たんだ。
+so that	忘れない工夫	1	What's that note on the door?	ドアに貼ってあるメモは何？	I put it there so that I wouldn't forget my keys.	鍵を忘れないように、そこに貼っておいたんだ。	Maybe I should do the same with my lunch.	私もお弁当用に同じことをしようかな。
+so that	一緒に座る	0	Let's book now so that we can sit together.	一緒に座れるように今予約しよう。	Okay. There are two seats left in row six.	いいよ。6列目に2席残ってる。	Get those before someone else does.	ほかの人に取られる前にそこを取って。
+so that	材料を小さく切る	1	Should I cut the carrots this small?	ニンジンはこんなに小さく切るの？	Yeah, so that they cook faster.	うん、早く火が通るようにね。	Got it. Dinner won't take long, then.	なるほど。じゃあ夕飯はすぐできるね。
+so that	静かな場所に移動	0	Let's move inside so that we can hear each other.	お互いの声が聞こえるように、中に移動しよう。	Good idea. It's getting really windy.	そうだね。風がすごく強くなってきた。	There's a table by the window.	窓のそばにテーブルがあるよ。
+in case	折り畳み傘	0	Take an umbrella in case it rains.	雨が降るといけないから傘を持っていって。	But the sky's completely clear.	でも、すごく晴れてるよ。	It changes quickly around here.	この辺は天気がすぐ変わるんだよ。
+in case	予備の充電器	1	Why did you bring two chargers?	なんで充電器を2つ持ってきたの？	I brought an extra one in case someone needs it.	誰かが必要になるかもしれないから、予備を持ってきた。	Actually, could I borrow it?	実は、それを借りてもいい？
+in case	予約画面の保存	0	Take a screenshot in case you lose your signal.	電波が入らなくなるといけないから、スクリーンショットを撮っておいて。	Good point. The signal's terrible at that station.	そうだね。あの駅、電波がすごく悪いんだ。	Then you can still show your ticket.	そうすればチケットを見せられるね。
+in case	子どものおやつ	1	Do we need all those snacks?	そんなにおやつが必要？	I'm packing extra in case the kids get hungry.	子どもたちがおなかをすかせるかもしれないから、多めに入れてるの。	They probably will before we even get there.	着く前におなかをすかせそうだね。
+in case	現金を持つ	0	Bring some cash in case they don't take cards.	カードが使えないといけないから、現金も持ってきて。	Is there an ATM nearby?	近くにATMはある？	There's one at the station.	駅にあるよ。
+in case	帰り道の連絡	1	Why are you sending me your address again?	なんでまた住所を送ってくれたの？	In case you can't find the old message.	前のメッセージが見つからないといけないから。	Thanks. That saves me scrolling back.	ありがとう。さかのぼって探さなくて済むよ。
+in case	上着をかばんに	0	I'll bring a jacket in case it gets cold later.	後で寒くなるといけないから、上着を持っていくね。	Good idea. We'll be sitting outside.	そうだね。外に座る予定だし。	There's room in my bag for yours too.	あなたの分もかばんに入るよ。
+in case	ファイルのバックアップ	1	Do I need to save another copy?	もう1つコピーを保存したほうがいい？	Yes, in case anything happens to your laptop.	うん。パソコンに何かあるといけないから。	I'll put one on my drive now.	今、ドライブにも保存しておく。
+in case	早めの出発	0	Let's leave a bit early in case there's traffic.	渋滞するといけないから、少し早めに出よう。	How about half past eight?	8時半はどう？	That should give us plenty of time.	それなら時間に余裕があるね。
+in case	電話を手元に	1	Are you taking your phone into the garden?	庭にもスマホを持っていくの？	Yeah, in case the delivery driver calls.	うん。配達の人から電話が来るかもしれないから。	I'll listen for the doorbell too.	私も呼び鈴が鳴ったら気づくようにしておく。
+as soon as	帰宅の連絡	0	Text me as soon as you get home.	家に着いたらすぐメッセージしてね。	I will. Don't stay up waiting for me.	わかった。待ってないで寝てね。	I'll leave the hall light on.	廊下の電気はつけておくね。
+as soon as	買った途端の値下げ	1	Did you get a good deal on that coat?	そのコート、安く買えた？	No. It went on sale as soon as I bought it.	ううん。買った途端にセールになった。	Maybe they'll refund the difference.	差額を返してくれるかもしれないよ。
+as soon as	空いたら電話	0	I'll call you as soon as I'm free.	手が空いたらすぐ電話するよ。	Okay. It's nothing urgent.	わかった。急ぎじゃないから。	Give me about twenty minutes.	20分くらい待ってて。
+as soon as	席を確保	1	Should we buy tickets now?	今チケットを買ったほうがいい？	Yes. I'll book as soon as they go on sale.	うん。発売されたらすぐ予約するよ。	Send me the link too.	私にもリンクを送って。
+as soon as	寝つきの早さ	1	Did you sleep okay after that long flight?	長いフライトの後、ちゃんと眠れた？	I fell asleep as soon as my head hit the pillow.	枕に頭をつけた途端に寝ちゃった。	I wish I could do that.	私もそうできたらいいのに。
+as soon as	雨がやんだら	0	Let's head out as soon as the rain stops.	雨がやんだらすぐ出かけよう。	I'll get our bags ready.	荷物を用意しておくね。	Thanks. I'll check the bus times.	ありがとう。バスの時刻を調べるよ。
+as soon as	届いたら知らせる	1	Has my package arrived yet?	私の荷物、もう届いた？	Not yet. I'll let you know as soon as it gets here.	まだ。届いたらすぐ知らせるね。	Thanks. It should arrive this afternoon.	ありがとう。今日の午後に届くはず。
+as soon as	会ってすぐ仲良くなる	1	Have you and Mia known each other long?	ミアとは知り合って長いの？	Only a month. We hit it off as soon as we met.	まだ1か月。会ってすぐに意気投合したんだ。	You seem like old friends.	昔からの友達みたいに見えるよ。
+as soon as	オーブンから出す	0	Call me as soon as the timer goes off.	タイマーが鳴ったらすぐ呼んで。	Okay. Are you going upstairs?	わかった。上に行くの？	Just to get my glasses.	眼鏡を取ってくるだけ。
+as soon as	見つけた写真	1	How did you find this old photo?	この古い写真、どうやって見つけたの？	It fell out of a book. I sent it to you as soon as I saw it.	本から落ちてきたんだ。見つけてすぐ送ったよ。	I'm so glad you did.	送ってくれて、うれしい。
+even though	寝ても疲れる	1	You look exhausted.	すごく疲れてるね。	I am, even though I slept for nine hours.	そうなんだ。9時間も寝たのに。	Maybe you just need a quiet day.	今日はのんびり過ごしたほうがいいのかも。
+even though	雨の中の試合	1	Did you still play yesterday?	昨日は結局試合をしたの？	Yeah. We played even though it was raining.	うん。雨が降ってたけど試合をしたよ。	I hope you had some dry clothes with you.	着替えを持っていってたらいいけど。
+even though	高いけど買う	0	I bought it even though it was a bit expensive.	ちょっと高かったけど買っちゃった。	You'd been looking at it for months.	何か月も気になってたもんね。	I know. I've already worn it three times.	そうなんだ。もう3回も着たよ。
+even though	おなかいっぱいのデザート	1	Are you really ordering dessert?	本当にデザートも頼むの？	Yeah, even though I'm already full.	うん、もうおなかいっぱいなんだけどね。	Let's share one, then.	じゃあ1つを分けよう。
+even though	近いのに会えない	0	We hardly see each other even though we live so close.	こんなに近くに住んでるのに、なかなか会わないね。	I know. Let's actually make a plan.	そうだね。ちゃんと予定を決めよう。	How about breakfast on Sunday?	日曜日に朝ごはんを一緒に食べるのはどう？
+even though	何度も見た映画	1	You're watching this again?	またこれを見てるの？	Yeah. I still laugh even though I've seen it so many times.	うん。何度も見てるのに、まだ笑っちゃう。	Move over. I'll watch with you.	ちょっと詰めて。一緒に見るよ。
+even though	道を知っているのに	1	Why did you turn on the map?	なんで地図をつけたの？	I get lost here even though I know the area.	この辺は知ってるのに、道に迷っちゃうんだ。	All these streets look the same.	どの通りも同じに見えるもんね。
+even though	忙しくても手伝う	0	She helped me move even though she was really busy.	すごく忙しかったのに、引っ越しを手伝ってくれたんだ。	That was kind of her.	親切だね。	I'm taking her out for dinner to say thanks.	お礼に夕飯をごちそうするつもり。
+even though	寒いのにアイス	1	Ice cream in this weather?	この寒さでアイス？	I still want some even though it's freezing outside.	外は凍えるほど寒いけど、それでも食べたい。	Let's eat it inside, at least.	せめて中で食べようよ。
+even though	練習しても緊張	1	Are you nervous about tomorrow?	明日のこと、緊張してる？	Yeah, even though I've practiced the whole thing.	うん。一通り練習したのにね。	You'll feel better once you get started.	始めてしまえば落ち着くよ。
+unless	雨なら中止	0	I'll cycle to work unless it rains.	雨じゃなければ自転車で仕事に行くよ。	The forecast looks good for tomorrow.	明日は天気がよさそうだよ。	Great. It beats sitting on the bus.	よかった。バスに座ってるよりいいし。
+unless	連絡がなければ予定どおり	0	Let's meet at six unless I text you.	私からメッセージがなければ、6時に会おう。	Okay. Same place as last time?	わかった。この前と同じ場所？	Yeah, outside the station.	うん、駅の外で。
+unless	必要なときだけ買う	1	Are you getting a new phone this year?	今年は新しいスマホを買うの？	Not unless this one breaks.	これが壊れない限りは買わないよ。	Fair enough. It still works fine.	そうだね。まだちゃんと使えるし。
+unless	起こさないで	0	Don't wake me up unless it's urgent.	急ぎじゃなければ起こさないでね。	Okay. I'll keep the kids downstairs.	わかった。子どもたちは下の階にいさせるね。	Thanks. I only need half an hour.	ありがとう。30分だけ寝たいんだ。
+unless	予約なしでは入れない	1	Can we just walk into that restaurant?	あのレストラン、予約なしで入れるかな？	Probably not, unless we go really early.	かなり早く行かない限り、多分無理だね。	I'll call and ask about a table.	電話して席があるか聞いてみる。
+unless	味付けの好み	0	Don't add more salt unless you think it needs it.	必要だと思わなければ、塩は足さないで。	I'll taste it first.	まず味見するね。	There's some lemon here too.	レモンもここにあるよ。
+unless	相手の希望を聞く	1	Where should we sit?	どこに座ろうか？	Outside, unless you'd rather be inside.	中のほうがよければ別だけど、外にしよう。	Outside sounds good. It's lovely today.	外がいいね。今日は気持ちいいし。
+unless	帰りの送迎	0	I can pick you up unless my meeting runs late.	会議が長引かなければ迎えに行けるよ。	Thanks. I can take the bus if it does.	ありがとう。長引いたらバスで帰れるから。	I'll let you know by five.	5時までに連絡するね。
+unless	返品の条件	1	Should I take the tags off now?	今タグを取っていいかな？	Not unless you're sure you're keeping it.	絶対に返品しないと決めたのでなければ、まだ取らないほうがいいよ。	I'll try it on with my shoes first.	まず靴と合わせて着てみる。
+unless	レシートを取っておく	0	Keep the receipt unless you're sure you won't need it.	絶対に必要ないとわかっているのでなければ、レシートを取っておいて。	I'll put it in the box.	箱に入れておくね。	Good idea. Then it won't get lost.	いいね。それならなくさないし。
+while	シャワー中に料理	0	I'll cook while you take a shower.	シャワーを浴びてる間に料理するよ。	Thanks. I'll wash up afterward.	ありがとう。後で洗い物をするね。	Deal. Dinner should be ready in twenty minutes.	決まり。20分で夕飯ができると思う。
+while	待ち時間のコーヒー	0	Let's get a coffee while we wait.	待ってる間にコーヒーを買おう。	Good idea. The train's twenty minutes late.	いいね。電車は20分遅れてるし。	There's a stand near the platform.	ホームの近くに売店があるよ。
+while	電話中のメモ	1	Did you write down the address?	住所はメモした？	Yeah. I wrote it down while she was talking.	うん。彼女が話してる間に書いたよ。	Can you send it to me?	私にも送ってくれる？
+while	留守中の水やり	0	Could you water my plants while I'm away?	留守の間、植物に水をあげてくれる？	Sure. How often do they need it?	いいよ。どのくらいの頻度であげればいい？	Just twice a week. I'll leave you a note.	週2回でいいよ。メモを置いておくね。
+while	熱いうちに食べる	0	Eat it while it's still hot.	まだ温かいうちに食べて。	It looks amazing. Did you make the sauce too?	すごくおいしそう。ソースも作ったの？	Yeah. Let me know what you think.	うん。感想を聞かせてね。
+while	音楽を聴きながら	1	How do you make cleaning less boring?	掃除が退屈にならないように、どうしてる？	I listen to music while I clean.	掃除しながら音楽を聴いてるよ。	Send me your playlist.	プレイリストを送って。
+while	近くにいるついでに	0	Let's stop at the bakery while we're in the area.	この辺にいるうちにパン屋に寄ろう。	Good idea. We can get something for breakfast.	いいね。朝ごはん用に何か買えるし。	I hope they still have those rolls.	あのロールパンがまだあるといいな。
+while	好みの違い	1	Do you both drink coffee?	2人ともコーヒーを飲むの？	I do, while Ben prefers tea.	私は飲むけど、ベンは紅茶のほうが好きなんだ。	I'll put the kettle on, then.	じゃあ、お湯を沸かすね。
+while	一部は賛成	1	What do you think of the new plan?	新しい計画はどう思う？	While I like the idea, I'm worried about the cost.	アイデアはいいと思うけど、費用が気になるな。	Let's see if we can make it cheaper.	もっと安くできないか考えよう。
+while	一方は片付けもう一方は料理	1	How did you get everything ready so fast?	どうしてこんなに早く準備できたの？	I set the table while Maya finished cooking.	マヤが料理を仕上げてる間に、私が食卓を整えたんだ。	You two make a good team.	2人はいいコンビだね。
+as	出かける直前の電話	1	Why didn't you leave at eight?	なんで8時に出なかったの？	My phone rang just as I was leaving.	ちょうど出かけるところで電話が鳴ったんだ。	Was it anything important?	大事な用事だった？
+as	出るときに電気を消す	0	Can you turn off the lights as you leave?	出るときに電気を消してくれる？	Sure. Are you going to bed?	いいよ。もう寝るの？	Yeah. I've got an early start tomorrow.	うん。明日は朝が早いんだ。
+as	帰り道の雪	1	Did you get home before it snowed?	雪が降る前に帰れた？	No. It started snowing as we were walking home.	ううん。歩いて帰ってる途中で降り始めた。	I bet the kids loved that.	子どもたちは喜んだだろうね。
+as	教わったとおりに	1	I'm not sure I'm doing this right.	これで合ってるのか自信がないな。	Just do it as I showed you. You're doing fine.	見せたとおりにやれば大丈夫。ちゃんとできてるよ。	Okay. Let me try one more time.	わかった。もう一度やってみる。
+as	そのままにする	1	Should I move the sofa a little?	ソファを少し動かしたほうがいい？	No, leave it as it is. It looks good.	ううん、そのままにしておいて。いい感じだよ。	Great. It's heavier than it looks.	よかった。見た目より重いんだよ。
+as	予想と違った	1	How did your first lesson go?	初めてのレッスンはどうだった？	It didn't go as I expected. We barely used the textbook.	予想とは違ったよ。教科書はほとんど使わなかった。	Was that a good thing?	それはよかったの？
+as	仕事の役割	1	What do you do for work?	どんな仕事をしてるの？	I work as a designer for a small company.	小さな会社でデザイナーとして働いてるよ。	What kind of things do you design?	どんなものをデザインするの？
+as	代わりに使う	0	Can we use this box as a table?	この箱をテーブルとして使えるかな？	Sure. It's sturdy enough for a couple of cups.	うん。カップを2つ置くくらいなら丈夫だよ。	Great. I'll put a towel over it.	よかった。上にタオルをかけるね。
+as	そろったので話し合う	1	Should we talk about the weekend later?	週末のことは後で話そうか？	As we're both here, let's sort it out now.	2人ともここにいるし、今決めちゃおう。	Okay. I'll pull up the train times.	いいよ。電車の時刻を出すね。
+as	年齢とともに変わる	1	You've been cooking a lot lately.	最近よく料理してるね。	I'm enjoying it more as I get older.	年を重ねるにつれて、もっと楽しくなってきたんだ。	You'll have to teach me a few things.	今度いくつか教えてよ。

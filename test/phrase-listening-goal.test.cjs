@@ -6,6 +6,14 @@ const rules=require('../public/pet-rules'),time=require('../public/listening-tim
 const DAY=86400000,now=Date.parse('2026-10-30T12:00:00+09:00'),midnight=rules.dayEnd(rules.dayKey(now)),source=phrases[0].audio;
 function fixture(){const s=createState(now-DAY),p=newPet(now-DAY);s.pets.push(p);p.lifeBaseAt=now-3600000;p.lifeBaseExpiresAt=now+DAY;p.lifeExpiresAt=now+DAY;enablePractice(s,now-DAY,'both');return s}
 function events(s,start,seconds,src=source){return Array.from({length:Math.ceil(seconds/30)},(_,i)=>({petId:s.pets.at(-1)?.id,start:start+i*30000,end:Math.min(start+seconds*1000,start+(i+1)*30000),source:src}))}
+
+test('new connector conversation audio contributes to the same daily phrase goal',()=>{
+ for(const category of ['by the time','whether','now that','once','so that','in case','as soon as','even though','unless','while','as']){
+  const phrase=phrases.find(p=>p.category===category);assert(phrase,category);
+  const s=fixture();listen(s,events(s,now,30,phrase.audio),now+30000);
+  assert.equal(viewPractice(s,now+30000).phraseSeconds,30,category);
+ }
+});
 test('29m59s is incomplete; 30m of phrases fulfills the same daily goal without fabricating answers',()=>{
  const s=fixture();listen(s,events(s,now,1799),now+1799000);assert.equal(viewPractice(s,now+1799000).met,false);
  listen(s,[{petId:s.pets[0].id,source,start:now+1799000,end:now+1800000}],now+1800000);

@@ -1,4 +1,4 @@
-// 15 expressions, 10 three-turn conversations each. Generated from data/relative-conversation-phrases.json.
+// 26 expressions, 253 three-turn conversations. Generated from data/relative-conversation-phrases.json.
 window.CONVERSATION_PHRASES = [
   {
     "id": "who-dialogue-01",
@@ -8697,6 +8697,5980 @@ window.CONVERSATION_PHRASES = [
         "A",
         "I will. I'll let you know when I'm safely back.",
         "うん。無事に着いたら知らせるね。"
+      ]
+    ]
+  },
+  {
+    "id": "by-the-time-dialogue-01",
+    "pack": "応用",
+    "category": "by the time",
+    "relativeType": "by the time",
+    "targetLineIndex": 1,
+    "phrase": "No. By the time I got there, they'd sold out.",
+    "usageNote": "売り切れのパン",
+    "audio": "/relative-phrase-audio/by-the-time-dialogue-01-0a4a44c271c4.mp3",
+    "audioDuration": 6.72,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 1.76
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 1.76,
+        "end": 5.2
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 5.2,
+        "end": 6.72
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Did you get those cinnamon rolls?",
+        "あのシナモンロール買えた？"
+      ],
+      [
+        "B",
+        "No. By the time I got there, they'd sold out.",
+        "ううん。着いたころには売り切れてた。"
+      ],
+      [
+        "A",
+        "Let's go earlier next time.",
+        "次はもっと早く行こう。"
+      ]
+    ]
+  },
+  {
+    "id": "by-the-time-dialogue-02",
+    "pack": "応用",
+    "category": "by the time",
+    "relativeType": "by the time",
+    "targetLineIndex": 1,
+    "phrase": "No need. It'll be ready by the time you get home.",
+    "usageNote": "夕飯の準備",
+    "audio": "/relative-phrase-audio/by-the-time-dialogue-02-3b570fc7a666.mp3",
+    "audioDuration": 6.88,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2,
+        "end": 4.96
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.96,
+        "end": 6.88
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Should I pick up dinner on my way home?",
+        "帰りに夕飯を買ってこようか？"
+      ],
+      [
+        "B",
+        "No need. It'll be ready by the time you get home.",
+        "大丈夫。家に着くころにはできてるよ。"
+      ],
+      [
+        "A",
+        "Great. I'll be home around seven.",
+        "よかった。7時ごろ帰るね。"
+      ]
+    ]
+  },
+  {
+    "id": "by-the-time-dialogue-03",
+    "pack": "応用",
+    "category": "by the time",
+    "relativeType": "by the time",
+    "targetLineIndex": 1,
+    "phrase": "The movie had already started by the time we sat down.",
+    "usageNote": "映画の冒頭",
+    "audio": "/relative-phrase-audio/by-the-time-dialogue-03-756d1a4d03f6.mp3",
+    "audioDuration": 6.56,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 1.28
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 1.28,
+        "end": 4.640000000000001
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.640000000000001,
+        "end": 6.56
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Did we miss much?",
+        "結構見逃しちゃった？"
+      ],
+      [
+        "B",
+        "The movie had already started by the time we sat down.",
+        "席に着いたときには、もう映画が始まってたね。"
+      ],
+      [
+        "A",
+        "I'll ask you about the beginning later.",
+        "最初のところは後で教えて。"
+      ]
+    ]
+  },
+  {
+    "id": "by-the-time-dialogue-04",
+    "pack": "応用",
+    "category": "by the time",
+    "relativeType": "by the time",
+    "targetLineIndex": 0,
+    "phrase": "Will these clothes be dry by the time we leave?",
+    "usageNote": "洗濯物",
+    "audio": "/relative-phrase-audio/by-the-time-dialogue-04-a0349a20a9db.mp3",
+    "audioDuration": 6.88,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2.56
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2.56,
+        "end": 5.5200000000000005
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 5.5200000000000005,
+        "end": 6.88
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Will these clothes be dry by the time we leave?",
+        "出かけるころには、この服乾くかな？"
+      ],
+      [
+        "B",
+        "Not those jeans. They're still pretty wet.",
+        "そのジーンズは無理だね。まだ結構ぬれてる。"
+      ],
+      [
+        "A",
+        "I'll wear something else, then.",
+        "じゃあ別のを着ていく。"
+      ]
+    ]
+  },
+  {
+    "id": "by-the-time-dialogue-05",
+    "pack": "応用",
+    "category": "by the time",
+    "relativeType": "by the time",
+    "targetLineIndex": 1,
+    "phrase": "No. She was asleep by the time I got upstairs.",
+    "usageNote": "眠ってしまった子",
+    "audio": "/relative-phrase-audio/by-the-time-dialogue-05-10d803d05b76.mp3",
+    "audioDuration": 6.56,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 1.7600000000000002
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 1.7600000000000002,
+        "end": 5.2
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 5.2,
+        "end": 6.56
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Did you get to say goodnight to her?",
+        "あの子におやすみって言えた？"
+      ],
+      [
+        "B",
+        "No. She was asleep by the time I got upstairs.",
+        "ううん。上に行ったころには寝ちゃってた。"
+      ],
+      [
+        "A",
+        "She had a busy day.",
+        "今日はいっぱい動いたもんね。"
+      ]
+    ]
+  },
+  {
+    "id": "by-the-time-dialogue-06",
+    "pack": "応用",
+    "category": "by the time",
+    "relativeType": "by the time",
+    "targetLineIndex": 1,
+    "phrase": "Luckily, it had stopped by the time I left the store.",
+    "usageNote": "店を出た後の雨",
+    "audio": "/relative-phrase-audio/by-the-time-dialogue-06-6420ccf33cb2.mp3",
+    "audioDuration": 7.04,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 1.68
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 1.68,
+        "end": 4.96
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.96,
+        "end": 7.04
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Did you get caught in the rain?",
+        "雨に降られた？"
+      ],
+      [
+        "B",
+        "Luckily, it had stopped by the time I left the store.",
+        "運よく、お店を出るころにはやんでた。"
+      ],
+      [
+        "A",
+        "You picked the right time to go shopping.",
+        "いいタイミングで買い物に行ったね。"
+      ]
+    ]
+  },
+  {
+    "id": "by-the-time-dialogue-07",
+    "pack": "応用",
+    "category": "by the time",
+    "relativeType": "by the time",
+    "targetLineIndex": 0,
+    "phrase": "I'll be starving by the time we get there.",
+    "usageNote": "到着前の空腹",
+    "audio": "/relative-phrase-audio/by-the-time-dialogue-07-d502615d2a0b.mp3",
+    "audioDuration": 6.96,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2.56
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2.56,
+        "end": 4.48
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.48,
+        "end": 6.96
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "I'll be starving by the time we get there.",
+        "着くころにはおなかぺこぺこだよ。"
+      ],
+      [
+        "B",
+        "I've got some crackers in my bag.",
+        "かばんにクラッカーがあるよ。"
+      ],
+      [
+        "A",
+        "You're a lifesaver. Can I have a few?",
+        "助かる。ちょっともらっていい？"
+      ]
+    ]
+  },
+  {
+    "id": "by-the-time-dialogue-08",
+    "pack": "応用",
+    "category": "by the time",
+    "relativeType": "by the time",
+    "targetLineIndex": 1,
+    "phrase": "Thanks, but we'll probably be done by the time you arrive.",
+    "usageNote": "片付けの手伝い",
+    "audio": "/relative-phrase-audio/by-the-time-dialogue-08-d0bdfc9150db.mp3",
+    "audioDuration": 7.76,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2.32
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2.32,
+        "end": 5.96
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 5.96,
+        "end": 7.76
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "I'll come over after work and help clean up.",
+        "仕事が終わったら片付けを手伝いに行くよ。"
+      ],
+      [
+        "B",
+        "Thanks, but we'll probably be done by the time you arrive.",
+        "ありがとう。でも来るころには多分終わってるよ。"
+      ],
+      [
+        "A",
+        "Then I'll bring dessert instead.",
+        "じゃあ代わりにデザートを持っていくね。"
+      ]
+    ]
+  },
+  {
+    "id": "by-the-time-dialogue-09",
+    "pack": "応用",
+    "category": "by the time",
+    "relativeType": "by the time",
+    "targetLineIndex": 1,
+    "phrase": "Sure. Your phone should be charged by the time we leave.",
+    "usageNote": "電話の充電",
+    "audio": "/relative-phrase-audio/by-the-time-dialogue-09-318ce06a3288.mp3",
+    "audioDuration": 7.04,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 1.84
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 1.84,
+        "end": 4.800000000000001
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.800000000000001,
+        "end": 7.04
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Can I use your charger for a bit?",
+        "充電器をちょっと借りていい？"
+      ],
+      [
+        "B",
+        "Sure. Your phone should be charged by the time we leave.",
+        "いいよ。出かけるころには充電できてるはず。"
+      ],
+      [
+        "A",
+        "Perfect. Mine's almost dead.",
+        "よかった。もうほとんど電池がないんだ。"
+      ]
+    ]
+  },
+  {
+    "id": "by-the-time-dialogue-10",
+    "pack": "応用",
+    "category": "by the time",
+    "relativeType": "by the time",
+    "targetLineIndex": 1,
+    "phrase": "I was already outside by the time you called.",
+    "usageNote": "駅での待ち合わせ",
+    "audio": "/relative-phrase-audio/by-the-time-dialogue-10-34632ba8d7b7.mp3",
+    "audioDuration": 7.04,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2.4
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2.4,
+        "end": 5.2
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 5.2,
+        "end": 7.04
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "I can't find you. Where are you?",
+        "見つからないよ。どこにいる？"
+      ],
+      [
+        "B",
+        "I was already outside by the time you called.",
+        "電話をくれたときには、もう外に出てたよ。"
+      ],
+      [
+        "A",
+        "Stay there. I'll come out now.",
+        "そこにいて。今出るね。"
+      ]
+    ]
+  },
+  {
+    "id": "whether-dialogue-01",
+    "pack": "応用",
+    "category": "whether",
+    "relativeType": "whether",
+    "targetLineIndex": 1,
+    "phrase": "It depends on whether it rains.",
+    "usageNote": "天気と予定",
+    "audio": "/relative-phrase-audio/whether-dialogue-01-62c317205ec7.mp3",
+    "audioDuration": 5.28,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 1.9200000000000002
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 1.9200000000000002,
+        "end": 4
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4,
+        "end": 5.28
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Are we still having the picnic tomorrow?",
+        "明日のピクニックは予定どおり？"
+      ],
+      [
+        "B",
+        "It depends on whether it rains.",
+        "雨が降るかどうかによるね。"
+      ],
+      [
+        "A",
+        "Let's check again tonight.",
+        "今夜もう一度確認しよう。"
+      ]
+    ]
+  },
+  {
+    "id": "whether-dialogue-02",
+    "pack": "応用",
+    "category": "whether",
+    "relativeType": "whether",
+    "targetLineIndex": 1,
+    "phrase": "I'm trying to decide whether to get tea or coffee.",
+    "usageNote": "飲み物の二択",
+    "audio": "/relative-phrase-audio/whether-dialogue-02-02030a8d13fc.mp3",
+    "audioDuration": 7.28,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 1.6800000000000002
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 1.6800000000000002,
+        "end": 5.2
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 5.2,
+        "end": 7.28
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Have you decided what to order?",
+        "何を頼むか決まった？"
+      ],
+      [
+        "B",
+        "I'm trying to decide whether to get tea or coffee.",
+        "紅茶にするかコーヒーにするか迷ってる。"
+      ],
+      [
+        "A",
+        "The coffee here is really good.",
+        "ここのコーヒー、おいしいよ。"
+      ]
+    ]
+  },
+  {
+    "id": "whether-dialogue-03",
+    "pack": "応用",
+    "category": "whether",
+    "relativeType": "whether",
+    "targetLineIndex": 0,
+    "phrase": "Do you know whether Sam is coming?",
+    "usageNote": "同行する友達",
+    "audio": "/relative-phrase-audio/whether-dialogue-03-579e885ce828.mp3",
+    "audioDuration": 6.96,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 1.84
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 1.84,
+        "end": 4.880000000000001
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.880000000000001,
+        "end": 6.96
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Do you know whether Sam is coming?",
+        "サムが来るかどうか知ってる？"
+      ],
+      [
+        "B",
+        "Not yet. He said he'd text me after work.",
+        "まだ。仕事の後で連絡するって言ってた。"
+      ],
+      [
+        "A",
+        "Okay. I'll save him a seat for now.",
+        "わかった。とりあえず席を取っておくね。"
+      ]
+    ]
+  },
+  {
+    "id": "whether-dialogue-04",
+    "pack": "応用",
+    "category": "whether",
+    "relativeType": "whether",
+    "targetLineIndex": 1,
+    "phrase": "Let's check whether it's open first.",
+    "usageNote": "店の営業時間",
+    "audio": "/relative-phrase-audio/whether-dialogue-04-d8ceccf6ea8f.mp3",
+    "audioDuration": 7.12,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2,
+        "end": 4.24
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.24,
+        "end": 7.12
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Should we walk over to that bakery?",
+        "あのパン屋まで歩いていこうか？"
+      ],
+      [
+        "B",
+        "Let's check whether it's open first.",
+        "まず開いてるか確認しよう。"
+      ],
+      [
+        "A",
+        "Good idea. It's closed on some weekdays.",
+        "そうだね。平日にも休みがあるもんね。"
+      ]
+    ]
+  },
+  {
+    "id": "whether-dialogue-05",
+    "pack": "応用",
+    "category": "whether",
+    "relativeType": "whether",
+    "targetLineIndex": 1,
+    "phrase": "I can't decide whether to take a jacket.",
+    "usageNote": "上着の必要性",
+    "audio": "/relative-phrase-audio/whether-dialogue-05-1cca7dfcf81e.mp3",
+    "audioDuration": 7.28,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2.16
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2.16,
+        "end": 4.880000000000001
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.880000000000001,
+        "end": 7.28
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Why are you staring at your suitcase?",
+        "なんでスーツケースをじっと見てるの？"
+      ],
+      [
+        "B",
+        "I can't decide whether to take a jacket.",
+        "上着を持っていくか決められなくて。"
+      ],
+      [
+        "A",
+        "Take the light one. It gets cold at night.",
+        "薄いほうを持っていきなよ。夜は冷えるよ。"
+      ]
+    ]
+  },
+  {
+    "id": "whether-dialogue-06",
+    "pack": "応用",
+    "category": "whether",
+    "relativeType": "whether",
+    "targetLineIndex": 1,
+    "phrase": "No. I can't tell whether it's spicy or just sweet.",
+    "usageNote": "辛さがわからない",
+    "audio": "/relative-phrase-audio/whether-dialogue-06-1075d1a3181a.mp3",
+    "audioDuration": 7.68,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 1.76
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 1.76,
+        "end": 6
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 6,
+        "end": 7.68
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Have you tried this sauce before?",
+        "このソース、食べたことある？"
+      ],
+      [
+        "B",
+        "No. I can't tell whether it's spicy or just sweet.",
+        "ないよ。辛いのか、ただ甘いのかわからない。"
+      ],
+      [
+        "A",
+        "Try a tiny bit first.",
+        "まずほんの少し試してみて。"
+      ]
+    ]
+  },
+  {
+    "id": "whether-dialogue-07",
+    "pack": "応用",
+    "category": "whether",
+    "relativeType": "whether",
+    "targetLineIndex": 1,
+    "phrase": "That's okay. I'm going whether you come or not.",
+    "usageNote": "予定に関係なく行く",
+    "audio": "/relative-phrase-audio/whether-dialogue-07-0943e058db9f.mp3",
+    "audioDuration": 7.68,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2.3200000000000003
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2.3200000000000003,
+        "end": 5.6000000000000005
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 5.6000000000000005,
+        "end": 7.68
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "I might not be able to come on Saturday.",
+        "土曜日は行けないかもしれない。"
+      ],
+      [
+        "B",
+        "That's okay. I'm going whether you come or not.",
+        "大丈夫。来ても来なくても私は行くから。"
+      ],
+      [
+        "A",
+        "Have fun. I'll join you if I can.",
+        "楽しんでね。行けそうだったら合流する。"
+      ]
+    ]
+  },
+  {
+    "id": "whether-dialogue-08",
+    "pack": "応用",
+    "category": "whether",
+    "relativeType": "whether",
+    "targetLineIndex": 0,
+    "phrase": "Have you decided whether to walk or take the bus?",
+    "usageNote": "駅までの交通手段",
+    "audio": "/relative-phrase-audio/whether-dialogue-08-e8c871462a9b.mp3",
+    "audioDuration": 7.52,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2.88
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2.88,
+        "end": 5.28
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 5.28,
+        "end": 7.52
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Have you decided whether to walk or take the bus?",
+        "歩くかバスに乗るか決めた？"
+      ],
+      [
+        "B",
+        "Let's walk. We've got plenty of time.",
+        "歩こうよ。時間はたっぷりあるし。"
+      ],
+      [
+        "A",
+        "Okay. We can stop for coffee on the way.",
+        "いいね。途中でコーヒーも買えるね。"
+      ]
+    ]
+  },
+  {
+    "id": "whether-dialogue-09",
+    "pack": "応用",
+    "category": "whether",
+    "relativeType": "whether",
+    "targetLineIndex": 1,
+    "phrase": "Call and ask whether your booking went through.",
+    "usageNote": "予約の確認",
+    "audio": "/relative-phrase-audio/whether-dialogue-09-1378062b5be9.mp3",
+    "audioDuration": 7.12,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2.96
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2.96,
+        "end": 5.68
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 5.68,
+        "end": 7.12
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "I booked online, but I didn't get an email.",
+        "ネットで予約したけど、メールが来てないんだ。"
+      ],
+      [
+        "B",
+        "Call and ask whether your booking went through.",
+        "電話して予約が通ってるか聞いてみなよ。"
+      ],
+      [
+        "A",
+        "I'll do that before we leave.",
+        "出かける前にそうするよ。"
+      ]
+    ]
+  },
+  {
+    "id": "whether-dialogue-10",
+    "pack": "応用",
+    "category": "whether",
+    "relativeType": "whether",
+    "targetLineIndex": 1,
+    "phrase": "I'm not sure whether we're supposed to dress up.",
+    "usageNote": "服装の迷い",
+    "audio": "/relative-phrase-audio/whether-dialogue-10-36fdf7fee50a.mp3",
+    "audioDuration": 6.32,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 1.84
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 1.84,
+        "end": 4.640000000000001
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.640000000000001,
+        "end": 6.32
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Does this look too formal?",
+        "これだとかしこまりすぎかな？"
+      ],
+      [
+        "B",
+        "I'm not sure whether we're supposed to dress up.",
+        "きちんとした服で行くべきなのか、よくわからないな。"
+      ],
+      [
+        "A",
+        "I'll ask the others what they're wearing.",
+        "みんなに何を着ていくか聞いてみる。"
+      ]
+    ]
+  },
+  {
+    "id": "now-that-dialogue-01",
+    "pack": "応用",
+    "category": "now that",
+    "relativeType": "now that",
+    "targetLineIndex": 0,
+    "phrase": "Now that everyone's here, shall we order?",
+    "usageNote": "全員そろった",
+    "audio": "/relative-phrase-audio/now-that-dialogue-01-4a36f1a96def.mp3",
+    "audioDuration": 6.56,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2.24
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2.24,
+        "end": 4.720000000000001
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.720000000000001,
+        "end": 6.56
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Now that everyone's here, shall we order?",
+        "みんなそろったし、注文しようか？"
+      ],
+      [
+        "B",
+        "Yes, please. I'm starving.",
+        "そうしよう。おなかぺこぺこ。"
+      ],
+      [
+        "A",
+        "Let's get a couple of pizzas to share.",
+        "ピザを何枚か頼んで分けよう。"
+      ]
+    ]
+  },
+  {
+    "id": "now-that-dialogue-02",
+    "pack": "応用",
+    "category": "now that",
+    "relativeType": "now that",
+    "targetLineIndex": 1,
+    "phrase": "Now that I've unpacked, it finally feels like home.",
+    "usageNote": "引っ越し後の生活",
+    "audio": "/relative-phrase-audio/now-that-dialogue-02-a2e561237342.mp3",
+    "audioDuration": 6.8,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 1.68
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 1.68,
+        "end": 5.28
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 5.28,
+        "end": 6.8
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "How are you liking the new place?",
+        "新しい家はどう？"
+      ],
+      [
+        "B",
+        "Now that I've unpacked, it finally feels like home.",
+        "荷ほどきが終わって、やっと自分の家って感じがする。"
+      ],
+      [
+        "A",
+        "I'll have to come over sometime.",
+        "今度遊びに行かなくちゃ。"
+      ]
+    ]
+  },
+  {
+    "id": "now-that-dialogue-03",
+    "pack": "応用",
+    "category": "now that",
+    "relativeType": "now that",
+    "targetLineIndex": 0,
+    "phrase": "Now that the rain's stopped, let's go for a walk.",
+    "usageNote": "雨がやんだ",
+    "audio": "/relative-phrase-audio/now-that-dialogue-03-218958ac7056.mp3",
+    "audioDuration": 6,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2.88
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2.88,
+        "end": 4.880000000000001
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.880000000000001,
+        "end": 6
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Now that the rain's stopped, let's go for a walk.",
+        "雨もやんだし、散歩に行こう。"
+      ],
+      [
+        "B",
+        "Give me a minute to find my shoes.",
+        "靴を探すからちょっと待って。"
+      ],
+      [
+        "A",
+        "I'll wait by the door.",
+        "玄関で待ってるね。"
+      ]
+    ]
+  },
+  {
+    "id": "now-that-dialogue-04",
+    "pack": "応用",
+    "category": "now that",
+    "relativeType": "now that",
+    "targetLineIndex": 1,
+    "phrase": "I can finally relax now that the presentation's over.",
+    "usageNote": "仕事が終わった",
+    "audio": "/relative-phrase-audio/now-that-dialogue-04-22878ef16c2e.mp3",
+    "audioDuration": 6.8,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 1.44
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 1.44,
+        "end": 5.2
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 5.2,
+        "end": 6.8
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "You look relieved.",
+        "ほっとした顔してるね。"
+      ],
+      [
+        "B",
+        "I can finally relax now that the presentation's over.",
+        "プレゼンが終わったから、やっとのんびりできるよ。"
+      ],
+      [
+        "A",
+        "Let's get something nice for dinner.",
+        "夕飯はおいしいものを食べよう。"
+      ]
+    ]
+  },
+  {
+    "id": "now-that-dialogue-05",
+    "pack": "応用",
+    "category": "now that",
+    "relativeType": "now that",
+    "targetLineIndex": 1,
+    "phrase": "Now that you live nearby, we should hang out more.",
+    "usageNote": "近くに住む友達",
+    "audio": "/relative-phrase-audio/now-that-dialogue-05-fcf69dde062a.mp3",
+    "audioDuration": 7.2,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2.24
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2.24,
+        "end": 5.12
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 5.12,
+        "end": 7.2
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "I still can't believe we're neighbors.",
+        "近所に住むことになったなんて、まだ信じられない。"
+      ],
+      [
+        "B",
+        "Now that you live nearby, we should hang out more.",
+        "近くに住んでるんだし、もっと遊ぼうよ。"
+      ],
+      [
+        "A",
+        "Definitely. Are you free this weekend?",
+        "もちろん。今週末は空いてる？"
+      ]
+    ]
+  },
+  {
+    "id": "now-that-dialogue-06",
+    "pack": "応用",
+    "category": "now that",
+    "relativeType": "now that",
+    "targetLineIndex": 1,
+    "phrase": "Yeah. Now that I can see properly, reading's much easier.",
+    "usageNote": "新しい眼鏡",
+    "audio": "/relative-phrase-audio/now-that-dialogue-06-284a29c41235.mp3",
+    "audioDuration": 7.36,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 1.52
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 1.52,
+        "end": 5.76
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 5.76,
+        "end": 7.36
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Are the new glasses helping?",
+        "新しい眼鏡はどう？"
+      ],
+      [
+        "B",
+        "Yeah. Now that I can see properly, reading's much easier.",
+        "うん。ちゃんと見えるようになって、読むのがずっと楽。"
+      ],
+      [
+        "A",
+        "They look great on you too.",
+        "見た目もよく似合ってるよ。"
+      ]
+    ]
+  },
+  {
+    "id": "now-that-dialogue-07",
+    "pack": "応用",
+    "category": "now that",
+    "relativeType": "now that",
+    "targetLineIndex": 0,
+    "phrase": "Now that we have a car, we can visit your parents more often.",
+    "usageNote": "車が使える",
+    "audio": "/relative-phrase-audio/now-that-dialogue-07-9126bab3b745.mp3",
+    "audioDuration": 7.04,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 3.04
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 3.04,
+        "end": 5.92
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 5.92,
+        "end": 7.04
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Now that we have a car, we can visit your parents more often.",
+        "車があるから、ご両親にもっと会いに行けるね。"
+      ],
+      [
+        "B",
+        "They'd love that. How about next Sunday?",
+        "喜ぶと思う。来週の日曜日はどう？"
+      ],
+      [
+        "A",
+        "I'll call them tonight.",
+        "今夜電話してみる。"
+      ]
+    ]
+  },
+  {
+    "id": "now-that-dialogue-08",
+    "pack": "応用",
+    "category": "now that",
+    "relativeType": "now that",
+    "targetLineIndex": 1,
+    "phrase": "Sure. Now that class is over, I've got an hour free.",
+    "usageNote": "授業の終わり",
+    "audio": "/relative-phrase-audio/now-that-dialogue-08-3b7b2acc74ba.mp3",
+    "audioDuration": 6.96,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 1.6
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 1.6,
+        "end": 5.04
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 5.04,
+        "end": 6.96
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Do you want to grab a coffee?",
+        "コーヒーでも飲みに行く？"
+      ],
+      [
+        "B",
+        "Sure. Now that class is over, I've got an hour free.",
+        "いいよ。授業も終わったし、1時間空いてる。"
+      ],
+      [
+        "A",
+        "There's a quiet place across the street.",
+        "通りの向こうに静かなお店があるよ。"
+      ]
+    ]
+  },
+  {
+    "id": "now-that-dialogue-09",
+    "pack": "応用",
+    "category": "now that",
+    "relativeType": "now that",
+    "targetLineIndex": 0,
+    "phrase": "Now that it's cooled down, do you want to try a piece?",
+    "usageNote": "料理が冷めた",
+    "audio": "/relative-phrase-audio/now-that-dialogue-09-0e47540783bf.mp3",
+    "audioDuration": 7.12,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2.72
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2.72,
+        "end": 5.44
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 5.44,
+        "end": 7.12
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Now that it's cooled down, do you want to try a piece?",
+        "冷めたし、一切れ食べてみる？"
+      ],
+      [
+        "B",
+        "Yes! It smells amazing.",
+        "食べたい！すごくいいにおい。"
+      ],
+      [
+        "A",
+        "I'll cut you a big slice.",
+        "大きめに切るね。"
+      ]
+    ]
+  },
+  {
+    "id": "now-that-dialogue-10",
+    "pack": "応用",
+    "category": "now that",
+    "relativeType": "now that",
+    "targetLineIndex": 1,
+    "phrase": "Not anymore. Now that she's older, she wants to walk.",
+    "usageNote": "子どもの成長",
+    "audio": "/relative-phrase-audio/now-that-dialogue-10-eb94f2f5cfb4.mp3",
+    "audioDuration": 7.84,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2,
+        "end": 5.6000000000000005
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 5.6000000000000005,
+        "end": 7.84
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Are you still carrying her to school?",
+        "今もあの子を抱っこして学校に連れていってるの？"
+      ],
+      [
+        "B",
+        "Not anymore. Now that she's older, she wants to walk.",
+        "もうしてないよ。大きくなって、自分で歩きたいんだって。"
+      ],
+      [
+        "A",
+        "She'll be asking to go on her own next.",
+        "そのうち一人で行きたいって言い出すね。"
+      ]
+    ]
+  },
+  {
+    "id": "once-dialogue-01",
+    "pack": "基本",
+    "category": "once",
+    "relativeType": "once",
+    "targetLineIndex": 1,
+    "phrase": "Once you get used to it, it's actually pretty easy.",
+    "usageNote": "使い方に慣れる",
+    "audio": "/relative-phrase-audio/once-dialogue-01-2344cbb0c7a2.mp3",
+    "audioDuration": 6.48,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2,
+        "end": 5.04
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 5.04,
+        "end": 6.48
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "This app looks complicated.",
+        "このアプリ、難しそう。"
+      ],
+      [
+        "B",
+        "Once you get used to it, it's actually pretty easy.",
+        "慣れると、実は結構簡単だよ。"
+      ],
+      [
+        "A",
+        "Can you show me the basics?",
+        "基本的な使い方を教えてくれる？"
+      ]
+    ]
+  },
+  {
+    "id": "once-dialogue-02",
+    "pack": "基本",
+    "category": "once",
+    "relativeType": "once",
+    "targetLineIndex": 0,
+    "phrase": "Text me once you get there.",
+    "usageNote": "到着したら連絡",
+    "audio": "/relative-phrase-audio/once-dialogue-02-fc4f357dd4c4.mp3",
+    "audioDuration": 5.2,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 1.4400000000000002
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 1.4400000000000002,
+        "end": 4.24
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.24,
+        "end": 5.2
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Text me once you get there.",
+        "着いたらメッセージしてね。"
+      ],
+      [
+        "B",
+        "I will. The train should take about an hour.",
+        "わかった。電車で1時間くらいのはず。"
+      ],
+      [
+        "A",
+        "Have a good trip.",
+        "気をつけてね。"
+      ]
+    ]
+  },
+  {
+    "id": "once-dialogue-03",
+    "pack": "基本",
+    "category": "once",
+    "relativeType": "once",
+    "targetLineIndex": 1,
+    "phrase": "Sure. I'll come over once I finish this email.",
+    "usageNote": "仕事の区切り",
+    "audio": "/relative-phrase-audio/once-dialogue-03-0388c4093246.mp3",
+    "audioDuration": 6,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 1.6
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 1.6,
+        "end": 4.32
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.32,
+        "end": 6
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Can we talk for a minute?",
+        "ちょっと話せる？"
+      ],
+      [
+        "B",
+        "Sure. I'll come over once I finish this email.",
+        "うん。このメールを書き終わったらそっちに行くね。"
+      ],
+      [
+        "A",
+        "Thanks. There's no rush.",
+        "ありがとう。急がなくて大丈夫。"
+      ]
+    ]
+  },
+  {
+    "id": "once-dialogue-04",
+    "pack": "基本",
+    "category": "once",
+    "relativeType": "once",
+    "targetLineIndex": 0,
+    "phrase": "Once the water boils, turn the heat down.",
+    "usageNote": "料理の火加減",
+    "audio": "/relative-phrase-audio/once-dialogue-04-cd9376f95191.mp3",
+    "audioDuration": 7.68,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2.8
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2.8,
+        "end": 5.36
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 5.36,
+        "end": 7.68
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Once the water boils, turn the heat down.",
+        "お湯が沸いたら、火を弱くして。"
+      ],
+      [
+        "B",
+        "Okay. Do I put the lid on too?",
+        "わかった。ふたもするの？"
+      ],
+      [
+        "A",
+        "Yes, but leave a small gap.",
+        "うん。でも少し隙間を開けておいて。"
+      ]
+    ]
+  },
+  {
+    "id": "once-dialogue-05",
+    "pack": "基本",
+    "category": "once",
+    "relativeType": "once",
+    "targetLineIndex": 1,
+    "phrase": "Once you know the quiet routes, it's much less stressful.",
+    "usageNote": "自転車の楽しさ",
+    "audio": "/relative-phrase-audio/once-dialogue-05-a9784559eab3.mp3",
+    "audioDuration": 7.92,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2.48
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2.48,
+        "end": 6.16
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 6.16,
+        "end": 7.92
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "I'm nervous about riding in the city.",
+        "街中で自転車に乗るの、緊張するな。"
+      ],
+      [
+        "B",
+        "Once you know the quiet routes, it's much less stressful.",
+        "静かな道を覚えれば、ずっと気楽になるよ。"
+      ],
+      [
+        "A",
+        "Let's try one together this weekend.",
+        "週末、一緒に走ってみようよ。"
+      ]
+    ]
+  },
+  {
+    "id": "once-dialogue-06",
+    "pack": "基本",
+    "category": "once",
+    "relativeType": "once",
+    "targetLineIndex": 0,
+    "phrase": "Let's order once everyone's settled.",
+    "usageNote": "席に着いてから",
+    "audio": "/relative-phrase-audio/once-dialogue-06-2f957f57be3e.mp3",
+    "audioDuration": 5.84,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 1.9200000000000002
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 1.9200000000000002,
+        "end": 4.720000000000001
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.720000000000001,
+        "end": 5.84
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Let's order once everyone's settled.",
+        "みんなが落ち着いたら注文しよう。"
+      ],
+      [
+        "B",
+        "Good idea. Ben's still parking the car.",
+        "そうだね。ベンはまだ車を止めてるし。"
+      ],
+      [
+        "A",
+        "I'll get him some water.",
+        "ベンの分の水をもらっておく。"
+      ]
+    ]
+  },
+  {
+    "id": "once-dialogue-07",
+    "pack": "基本",
+    "category": "once",
+    "relativeType": "once",
+    "targetLineIndex": 1,
+    "phrase": "Yeah, once I get paid.",
+    "usageNote": "給料が入ったら",
+    "audio": "/relative-phrase-audio/once-dialogue-07-63ef719a04df.mp3",
+    "audioDuration": 4.56,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 1.52
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 1.52,
+        "end": 3.36
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 3.36,
+        "end": 4.56
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Are you getting those headphones?",
+        "あのヘッドホン買うの？"
+      ],
+      [
+        "B",
+        "Yeah, once I get paid.",
+        "うん、給料が入ったらね。"
+      ],
+      [
+        "A",
+        "Let me know how they sound.",
+        "音がどんな感じか教えてね。"
+      ]
+    ]
+  },
+  {
+    "id": "once-dialogue-08",
+    "pack": "基本",
+    "category": "once",
+    "relativeType": "once",
+    "targetLineIndex": 1,
+    "phrase": "Sure, once the baby's asleep.",
+    "usageNote": "赤ちゃんが寝たら",
+    "audio": "/relative-phrase-audio/once-dialogue-08-bd295a0258f0.mp3",
+    "audioDuration": 5.28,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 1.76
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 1.76,
+        "end": 4
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4,
+        "end": 5.28
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Do you want to watch something tonight?",
+        "今夜何か見る？"
+      ],
+      [
+        "B",
+        "Sure, once the baby's asleep.",
+        "うん、赤ちゃんが寝たらね。"
+      ],
+      [
+        "A",
+        "I'll find something short.",
+        "短めのを探しておく。"
+      ]
+    ]
+  },
+  {
+    "id": "once-dialogue-09",
+    "pack": "基本",
+    "category": "once",
+    "relativeType": "once",
+    "targetLineIndex": 0,
+    "phrase": "Once we've booked the flights, we can look for a hotel.",
+    "usageNote": "予約が決まったら",
+    "audio": "/relative-phrase-audio/once-dialogue-09-7f0d031e8493.mp3",
+    "audioDuration": 6.8,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 3.04
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 3.04,
+        "end": 5.680000000000001
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 5.680000000000001,
+        "end": 6.8
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Once we've booked the flights, we can look for a hotel.",
+        "飛行機を予約したら、ホテルを探せるね。"
+      ],
+      [
+        "B",
+        "Let's book tonight before the price goes up.",
+        "値上がりする前に今夜予約しよう。"
+      ],
+      [
+        "A",
+        "I'll get my laptop.",
+        "パソコンを持ってくるね。"
+      ]
+    ]
+  },
+  {
+    "id": "once-dialogue-10",
+    "pack": "基本",
+    "category": "once",
+    "relativeType": "once",
+    "targetLineIndex": 1,
+    "phrase": "Yes, once you've wiped them down.",
+    "usageNote": "道具を片付ける",
+    "audio": "/relative-phrase-audio/once-dialogue-10-77730cf202f5.mp3",
+    "audioDuration": 5.52,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 1.6
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 1.6,
+        "end": 3.8400000000000003
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 3.8400000000000003,
+        "end": 5.52
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Can I put these tools away?",
+        "この道具、片付けていい？"
+      ],
+      [
+        "B",
+        "Yes, once you've wiped them down.",
+        "うん、拭いてからならね。"
+      ],
+      [
+        "A",
+        "Okay. Where's the cloth?",
+        "わかった。布はどこ？"
+      ]
+    ]
+  },
+  {
+    "id": "so-that-dialogue-01",
+    "pack": "応用",
+    "category": "so that",
+    "relativeType": "so that",
+    "targetLineIndex": 0,
+    "phrase": "I'll send you a pin so that you can find the entrance.",
+    "usageNote": "迷わないために",
+    "audio": "/relative-phrase-audio/so-that-dialogue-01-5ac616f3a008.mp3",
+    "audioDuration": 7.68,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2.56
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2.56,
+        "end": 5.840000000000001
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 5.840000000000001,
+        "end": 7.68
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "I'll send you a pin so that you can find the entrance.",
+        "入口がわかるように、地図のピンを送るね。"
+      ],
+      [
+        "B",
+        "Thanks. There seem to be three different doors.",
+        "ありがとう。ドアが3つあるみたい。"
+      ],
+      [
+        "A",
+        "Use the one next to the coffee shop.",
+        "コーヒー屋の隣の入口から入って。"
+      ]
+    ]
+  },
+  {
+    "id": "so-that-dialogue-02",
+    "pack": "応用",
+    "category": "so that",
+    "relativeType": "so that",
+    "targetLineIndex": 1,
+    "phrase": "So that we can show Maya the vegetarian options.",
+    "usageNote": "写真を送る",
+    "audio": "/relative-phrase-audio/so-that-dialogue-02-e946bfbc5ef5.mp3",
+    "audioDuration": 6.96,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 1.84
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 1.84,
+        "end": 4.84
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.84,
+        "end": 6.72
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Why did you take a photo of the menu?",
+        "なんでメニューの写真を撮ったの？"
+      ],
+      [
+        "B",
+        "So that we can show Maya the vegetarian options.",
+        "マヤにベジタリアン向けの料理を見せられるように。"
+      ],
+      [
+        "A",
+        "Good thinking. I'll send it to her.",
+        "いいね。送っておくよ。"
+      ]
+    ]
+  },
+  {
+    "id": "so-that-dialogue-03",
+    "pack": "応用",
+    "category": "so that",
+    "relativeType": "so that",
+    "targetLineIndex": 1,
+    "phrase": "I'd like to leave early so that we don't have to rush.",
+    "usageNote": "早めの出発",
+    "audio": "/relative-phrase-audio/so-that-dialogue-03-23d79212d92c.mp3",
+    "audioDuration": 7.28,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2.08
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2.08,
+        "end": 5.12
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 5.12,
+        "end": 7.2
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Do we really need to leave at seven?",
+        "本当に7時に出なきゃいけない？"
+      ],
+      [
+        "B",
+        "I'd like to leave early so that we don't have to rush.",
+        "慌てなくて済むように早めに出たいんだ。"
+      ],
+      [
+        "A",
+        "Fair enough. I'll set an alarm.",
+        "それもそうだね。アラームをかけるよ。"
+      ]
+    ]
+  },
+  {
+    "id": "so-that-dialogue-04",
+    "pack": "応用",
+    "category": "so that",
+    "relativeType": "so that",
+    "targetLineIndex": 0,
+    "phrase": "Keep your voice down so that we don't wake the baby.",
+    "usageNote": "声を落とす",
+    "audio": "/relative-phrase-audio/so-that-dialogue-04-4be6790954ae.mp3",
+    "audioDuration": 7.68,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2.96
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2.96,
+        "end": 5.84
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 5.84,
+        "end": 7.68
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Keep your voice down so that we don't wake the baby.",
+        "赤ちゃんを起こさないように、小さな声で話して。"
+      ],
+      [
+        "B",
+        "Sorry. I didn't realize she was asleep.",
+        "ごめん。寝てるって知らなかった。"
+      ],
+      [
+        "A",
+        "She only just nodded off.",
+        "やっと寝たところなんだ。"
+      ]
+    ]
+  },
+  {
+    "id": "so-that-dialogue-05",
+    "pack": "応用",
+    "category": "so that",
+    "relativeType": "so that",
+    "targetLineIndex": 1,
+    "phrase": "So that I can sleep a little longer tomorrow.",
+    "usageNote": "明日の準備",
+    "audio": "/relative-phrase-audio/so-that-dialogue-05-a9a6dd88bde9.mp3",
+    "audioDuration": 5.92,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 1.84
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 1.84,
+        "end": 4.5600000000000005
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.5600000000000005,
+        "end": 5.92
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Why are you packing lunch tonight?",
+        "なんで今夜のうちにお弁当を用意してるの？"
+      ],
+      [
+        "B",
+        "So that I can sleep a little longer tomorrow.",
+        "明日もう少し長く寝られるように。"
+      ],
+      [
+        "A",
+        "I should do that too.",
+        "私もそうしようかな。"
+      ]
+    ]
+  },
+  {
+    "id": "so-that-dialogue-06",
+    "pack": "応用",
+    "category": "so that",
+    "relativeType": "so that",
+    "targetLineIndex": 0,
+    "phrase": "I'll turn up the brightness so that you can see the photo.",
+    "usageNote": "画面を明るく",
+    "audio": "/relative-phrase-audio/so-that-dialogue-06-f392f4109dd8.mp3",
+    "audioDuration": 7.44,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2.72
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2.72,
+        "end": 5.36
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 5.36,
+        "end": 7.44
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "I'll turn up the brightness so that you can see the photo.",
+        "写真が見えるように、画面を明るくするね。"
+      ],
+      [
+        "B",
+        "That's better. Is that your new puppy?",
+        "よく見えるようになった。それ、新しく飼った子犬？"
+      ],
+      [
+        "A",
+        "Yeah. We brought him home yesterday.",
+        "うん。昨日うちに来たんだ。"
+      ]
+    ]
+  },
+  {
+    "id": "so-that-dialogue-07",
+    "pack": "応用",
+    "category": "so that",
+    "relativeType": "so that",
+    "targetLineIndex": 1,
+    "phrase": "I put it there so that I wouldn't forget my keys.",
+    "usageNote": "忘れない工夫",
+    "audio": "/relative-phrase-audio/so-that-dialogue-07-73d7bd78a028.mp3",
+    "audioDuration": 7.04,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 1.9200000000000002
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 1.9200000000000002,
+        "end": 4.800000000000001
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.800000000000001,
+        "end": 7.04
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "What's that note on the door?",
+        "ドアに貼ってあるメモは何？"
+      ],
+      [
+        "B",
+        "I put it there so that I wouldn't forget my keys.",
+        "鍵を忘れないように、そこに貼っておいたんだ。"
+      ],
+      [
+        "A",
+        "Maybe I should do the same with my lunch.",
+        "私もお弁当用に同じことをしようかな。"
+      ]
+    ]
+  },
+  {
+    "id": "so-that-dialogue-08",
+    "pack": "応用",
+    "category": "so that",
+    "relativeType": "so that",
+    "targetLineIndex": 0,
+    "phrase": "Let's book now so that we can sit together.",
+    "usageNote": "一緒に座る",
+    "audio": "/relative-phrase-audio/so-that-dialogue-08-9df6ef9e99f4.mp3",
+    "audioDuration": 7.2,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2.16
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2.16,
+        "end": 5.36
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 5.36,
+        "end": 7.2
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Let's book now so that we can sit together.",
+        "一緒に座れるように今予約しよう。"
+      ],
+      [
+        "B",
+        "Okay. There are two seats left in row six.",
+        "いいよ。6列目に2席残ってる。"
+      ],
+      [
+        "A",
+        "Get those before someone else does.",
+        "ほかの人に取られる前にそこを取って。"
+      ]
+    ]
+  },
+  {
+    "id": "so-that-dialogue-09",
+    "pack": "応用",
+    "category": "so that",
+    "relativeType": "so that",
+    "targetLineIndex": 1,
+    "phrase": "Yeah, so that they cook faster.",
+    "usageNote": "材料を小さく切る",
+    "audio": "/relative-phrase-audio/so-that-dialogue-09-dbd2a7914bdb.mp3",
+    "audioDuration": 6.24,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2,
+        "end": 4.16
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.16,
+        "end": 6.24
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Should I cut the carrots this small?",
+        "ニンジンはこんなに小さく切るの？"
+      ],
+      [
+        "B",
+        "Yeah, so that they cook faster.",
+        "うん、早く火が通るようにね。"
+      ],
+      [
+        "A",
+        "Got it. Dinner won't take long, then.",
+        "なるほど。じゃあ夕飯はすぐできるね。"
+      ]
+    ]
+  },
+  {
+    "id": "so-that-dialogue-10",
+    "pack": "応用",
+    "category": "so that",
+    "relativeType": "so that",
+    "targetLineIndex": 0,
+    "phrase": "Let's move inside so that we can hear each other.",
+    "usageNote": "静かな場所に移動",
+    "audio": "/relative-phrase-audio/so-that-dialogue-10-24131f373d86.mp3",
+    "audioDuration": 6.72,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2.4
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2.4,
+        "end": 5.2
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 5.2,
+        "end": 6.72
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Let's move inside so that we can hear each other.",
+        "お互いの声が聞こえるように、中に移動しよう。"
+      ],
+      [
+        "B",
+        "Good idea. It's getting really windy.",
+        "そうだね。風がすごく強くなってきた。"
+      ],
+      [
+        "A",
+        "There's a table by the window.",
+        "窓のそばにテーブルがあるよ。"
+      ]
+    ]
+  },
+  {
+    "id": "in-case-dialogue-01",
+    "pack": "応用",
+    "category": "in case",
+    "relativeType": "in case",
+    "targetLineIndex": 0,
+    "phrase": "Take an umbrella in case it rains.",
+    "usageNote": "折り畳み傘",
+    "audio": "/relative-phrase-audio/in-case-dialogue-01-a56197f9e166.mp3",
+    "audioDuration": 6.16,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2.16
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2.16,
+        "end": 4.32
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.32,
+        "end": 6.16
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Take an umbrella in case it rains.",
+        "雨が降るといけないから傘を持っていって。"
+      ],
+      [
+        "B",
+        "But the sky's completely clear.",
+        "でも、すごく晴れてるよ。"
+      ],
+      [
+        "A",
+        "It changes quickly around here.",
+        "この辺は天気がすぐ変わるんだよ。"
+      ]
+    ]
+  },
+  {
+    "id": "in-case-dialogue-02",
+    "pack": "応用",
+    "category": "in case",
+    "relativeType": "in case",
+    "targetLineIndex": 1,
+    "phrase": "I brought an extra one in case someone needs it.",
+    "usageNote": "予備の充電器",
+    "audio": "/relative-phrase-audio/in-case-dialogue-02-7619a60ea3e9.mp3",
+    "audioDuration": 6.48,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2,
+        "end": 4.800000000000001
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.800000000000001,
+        "end": 6.48
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Why did you bring two chargers?",
+        "なんで充電器を2つ持ってきたの？"
+      ],
+      [
+        "B",
+        "I brought an extra one in case someone needs it.",
+        "誰かが必要になるかもしれないから、予備を持ってきた。"
+      ],
+      [
+        "A",
+        "Actually, could I borrow it?",
+        "実は、それを借りてもいい？"
+      ]
+    ]
+  },
+  {
+    "id": "in-case-dialogue-03",
+    "pack": "応用",
+    "category": "in case",
+    "relativeType": "in case",
+    "targetLineIndex": 0,
+    "phrase": "Take a screenshot in case you lose your signal.",
+    "usageNote": "予約画面の保存",
+    "audio": "/relative-phrase-audio/in-case-dialogue-03-5b9f4eda7c5e.mp3",
+    "audioDuration": 7.84,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2.48
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2.48,
+        "end": 6
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 6,
+        "end": 7.84
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Take a screenshot in case you lose your signal.",
+        "電波が入らなくなるといけないから、スクリーンショットを撮っておいて。"
+      ],
+      [
+        "B",
+        "Good point. The signal's terrible at that station.",
+        "そうだね。あの駅、電波がすごく悪いんだ。"
+      ],
+      [
+        "A",
+        "Then you can still show your ticket.",
+        "そうすればチケットを見せられるね。"
+      ]
+    ]
+  },
+  {
+    "id": "in-case-dialogue-04",
+    "pack": "応用",
+    "category": "in case",
+    "relativeType": "in case",
+    "targetLineIndex": 1,
+    "phrase": "I'm packing extra in case the kids get hungry.",
+    "usageNote": "子どものおやつ",
+    "audio": "/relative-phrase-audio/in-case-dialogue-04-af2d5a92b6d2.mp3",
+    "audioDuration": 7.36,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2,
+        "end": 4.800000000000001
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.800000000000001,
+        "end": 7.36
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Do we need all those snacks?",
+        "そんなにおやつが必要？"
+      ],
+      [
+        "B",
+        "I'm packing extra in case the kids get hungry.",
+        "子どもたちがおなかをすかせるかもしれないから、多めに入れてるの。"
+      ],
+      [
+        "A",
+        "They probably will before we even get there.",
+        "着く前におなかをすかせそうだね。"
+      ]
+    ]
+  },
+  {
+    "id": "in-case-dialogue-05",
+    "pack": "応用",
+    "category": "in case",
+    "relativeType": "in case",
+    "targetLineIndex": 0,
+    "phrase": "Bring some cash in case they don't take cards.",
+    "usageNote": "現金を持つ",
+    "audio": "/relative-phrase-audio/in-case-dialogue-05-b6937796f937.mp3",
+    "audioDuration": 6,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2.72
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2.72,
+        "end": 4.720000000000001
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.720000000000001,
+        "end": 6
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Bring some cash in case they don't take cards.",
+        "カードが使えないといけないから、現金も持ってきて。"
+      ],
+      [
+        "B",
+        "Is there an ATM nearby?",
+        "近くにATMはある？"
+      ],
+      [
+        "A",
+        "There's one at the station.",
+        "駅にあるよ。"
+      ]
+    ]
+  },
+  {
+    "id": "in-case-dialogue-06",
+    "pack": "応用",
+    "category": "in case",
+    "relativeType": "in case",
+    "targetLineIndex": 1,
+    "phrase": "In case you can't find the old message.",
+    "usageNote": "帰り道の連絡",
+    "audio": "/relative-phrase-audio/in-case-dialogue-06-1d4db58e9769.mp3",
+    "audioDuration": 6.56,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2.08
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2.08,
+        "end": 4.32
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.32,
+        "end": 6.56
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Why are you sending me your address again?",
+        "なんでまた住所を送ってくれたの？"
+      ],
+      [
+        "B",
+        "In case you can't find the old message.",
+        "前のメッセージが見つからないといけないから。"
+      ],
+      [
+        "A",
+        "Thanks. That saves me scrolling back.",
+        "ありがとう。さかのぼって探さなくて済むよ。"
+      ]
+    ]
+  },
+  {
+    "id": "in-case-dialogue-07",
+    "pack": "応用",
+    "category": "in case",
+    "relativeType": "in case",
+    "targetLineIndex": 0,
+    "phrase": "I'll bring a jacket in case it gets cold later.",
+    "usageNote": "上着をかばんに",
+    "audio": "/relative-phrase-audio/in-case-dialogue-07-ccbb1e714bd5.mp3",
+    "audioDuration": 6.64,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2.4
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2.4,
+        "end": 4.88
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.88,
+        "end": 6.64
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "I'll bring a jacket in case it gets cold later.",
+        "後で寒くなるといけないから、上着を持っていくね。"
+      ],
+      [
+        "B",
+        "Good idea. We'll be sitting outside.",
+        "そうだね。外に座る予定だし。"
+      ],
+      [
+        "A",
+        "There's room in my bag for yours too.",
+        "あなたの分もかばんに入るよ。"
+      ]
+    ]
+  },
+  {
+    "id": "in-case-dialogue-08",
+    "pack": "応用",
+    "category": "in case",
+    "relativeType": "in case",
+    "targetLineIndex": 1,
+    "phrase": "Yes, in case anything happens to your laptop.",
+    "usageNote": "ファイルのバックアップ",
+    "audio": "/relative-phrase-audio/in-case-dialogue-08-86a9dc2b2319.mp3",
+    "audioDuration": 6.56,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 1.9200000000000002
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 1.9200000000000002,
+        "end": 4.960000000000001
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.960000000000001,
+        "end": 6.56
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Do I need to save another copy?",
+        "もう1つコピーを保存したほうがいい？"
+      ],
+      [
+        "B",
+        "Yes, in case anything happens to your laptop.",
+        "うん。パソコンに何かあるといけないから。"
+      ],
+      [
+        "A",
+        "I'll put one on my drive now.",
+        "今、ドライブにも保存しておく。"
+      ]
+    ]
+  },
+  {
+    "id": "in-case-dialogue-09",
+    "pack": "応用",
+    "category": "in case",
+    "relativeType": "in case",
+    "targetLineIndex": 0,
+    "phrase": "Let's leave a bit early in case there's traffic.",
+    "usageNote": "早めの出発",
+    "audio": "/relative-phrase-audio/in-case-dialogue-09-291c73073826.mp3",
+    "audioDuration": 6.4,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2.8
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2.8,
+        "end": 4.8
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.8,
+        "end": 6.4
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Let's leave a bit early in case there's traffic.",
+        "渋滞するといけないから、少し早めに出よう。"
+      ],
+      [
+        "B",
+        "How about half past eight?",
+        "8時半はどう？"
+      ],
+      [
+        "A",
+        "That should give us plenty of time.",
+        "それなら時間に余裕があるね。"
+      ]
+    ]
+  },
+  {
+    "id": "in-case-dialogue-10",
+    "pack": "応用",
+    "category": "in case",
+    "relativeType": "in case",
+    "targetLineIndex": 1,
+    "phrase": "Yeah, in case the delivery driver calls.",
+    "usageNote": "電話を手元に",
+    "audio": "/relative-phrase-audio/in-case-dialogue-10-f9328275e84a.mp3",
+    "audioDuration": 6.48,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2.16
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2.16,
+        "end": 4.880000000000001
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.880000000000001,
+        "end": 6.48
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Are you taking your phone into the garden?",
+        "庭にもスマホを持っていくの？"
+      ],
+      [
+        "B",
+        "Yeah, in case the delivery driver calls.",
+        "うん。配達の人から電話が来るかもしれないから。"
+      ],
+      [
+        "A",
+        "I'll listen for the doorbell too.",
+        "私も呼び鈴が鳴ったら気づくようにしておく。"
+      ]
+    ]
+  },
+  {
+    "id": "as-soon-as-dialogue-01",
+    "pack": "基本",
+    "category": "as soon as",
+    "relativeType": "as soon as",
+    "targetLineIndex": 0,
+    "phrase": "Text me as soon as you get home.",
+    "usageNote": "帰宅の連絡",
+    "audio": "/relative-phrase-audio/as-soon-as-dialogue-01-9030e045451c.mp3",
+    "audioDuration": 5.76,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 1.84
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 1.84,
+        "end": 4.32
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.32,
+        "end": 5.76
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Text me as soon as you get home.",
+        "家に着いたらすぐメッセージしてね。"
+      ],
+      [
+        "B",
+        "I will. Don't stay up waiting for me.",
+        "わかった。待ってないで寝てね。"
+      ],
+      [
+        "A",
+        "I'll leave the hall light on.",
+        "廊下の電気はつけておくね。"
+      ]
+    ]
+  },
+  {
+    "id": "as-soon-as-dialogue-02",
+    "pack": "基本",
+    "category": "as soon as",
+    "relativeType": "as soon as",
+    "targetLineIndex": 1,
+    "phrase": "No. It went on sale as soon as I bought it.",
+    "usageNote": "買った途端の値下げ",
+    "audio": "/relative-phrase-audio/as-soon-as-dialogue-02-66d61b41988e.mp3",
+    "audioDuration": 6.88,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2,
+        "end": 5.12
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 5.12,
+        "end": 6.88
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Did you get a good deal on that coat?",
+        "そのコート、安く買えた？"
+      ],
+      [
+        "B",
+        "No. It went on sale as soon as I bought it.",
+        "ううん。買った途端にセールになった。"
+      ],
+      [
+        "A",
+        "Maybe they'll refund the difference.",
+        "差額を返してくれるかもしれないよ。"
+      ]
+    ]
+  },
+  {
+    "id": "as-soon-as-dialogue-03",
+    "pack": "基本",
+    "category": "as soon as",
+    "relativeType": "as soon as",
+    "targetLineIndex": 0,
+    "phrase": "I'll call you as soon as I'm free.",
+    "usageNote": "空いたら電話",
+    "audio": "/relative-phrase-audio/as-soon-as-dialogue-03-5adc4133a016.mp3",
+    "audioDuration": 5.52,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 1.84
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 1.84,
+        "end": 3.92
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 3.92,
+        "end": 5.52
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "I'll call you as soon as I'm free.",
+        "手が空いたらすぐ電話するよ。"
+      ],
+      [
+        "B",
+        "Okay. It's nothing urgent.",
+        "わかった。急ぎじゃないから。"
+      ],
+      [
+        "A",
+        "Give me about twenty minutes.",
+        "20分くらい待ってて。"
+      ]
+    ]
+  },
+  {
+    "id": "as-soon-as-dialogue-04",
+    "pack": "基本",
+    "category": "as soon as",
+    "relativeType": "as soon as",
+    "targetLineIndex": 1,
+    "phrase": "Yes. I'll book as soon as they go on sale.",
+    "usageNote": "席を確保",
+    "audio": "/relative-phrase-audio/as-soon-as-dialogue-04-568637f29c61.mp3",
+    "audioDuration": 5.6,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 1.52
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 1.52,
+        "end": 4.32
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.32,
+        "end": 5.6
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Should we buy tickets now?",
+        "今チケットを買ったほうがいい？"
+      ],
+      [
+        "B",
+        "Yes. I'll book as soon as they go on sale.",
+        "うん。発売されたらすぐ予約するよ。"
+      ],
+      [
+        "A",
+        "Send me the link too.",
+        "私にもリンクを送って。"
+      ]
+    ]
+  },
+  {
+    "id": "as-soon-as-dialogue-05",
+    "pack": "基本",
+    "category": "as soon as",
+    "relativeType": "as soon as",
+    "targetLineIndex": 1,
+    "phrase": "I fell asleep as soon as my head hit the pillow.",
+    "usageNote": "寝つきの早さ",
+    "audio": "/relative-phrase-audio/as-soon-as-dialogue-05-b91794e3ce0f.mp3",
+    "audioDuration": 7.28,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2.64
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2.64,
+        "end": 5.84
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 5.84,
+        "end": 7.28
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Did you sleep okay after that long flight?",
+        "長いフライトの後、ちゃんと眠れた？"
+      ],
+      [
+        "B",
+        "I fell asleep as soon as my head hit the pillow.",
+        "枕に頭をつけた途端に寝ちゃった。"
+      ],
+      [
+        "A",
+        "I wish I could do that.",
+        "私もそうできたらいいのに。"
+      ]
+    ]
+  },
+  {
+    "id": "as-soon-as-dialogue-06",
+    "pack": "基本",
+    "category": "as soon as",
+    "relativeType": "as soon as",
+    "targetLineIndex": 0,
+    "phrase": "Let's head out as soon as the rain stops.",
+    "usageNote": "雨がやんだら",
+    "audio": "/relative-phrase-audio/as-soon-as-dialogue-06-1ded36d0cd08.mp3",
+    "audioDuration": 5.6,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2.16
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2.16,
+        "end": 3.68
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 3.68,
+        "end": 5.6
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Let's head out as soon as the rain stops.",
+        "雨がやんだらすぐ出かけよう。"
+      ],
+      [
+        "B",
+        "I'll get our bags ready.",
+        "荷物を用意しておくね。"
+      ],
+      [
+        "A",
+        "Thanks. I'll check the bus times.",
+        "ありがとう。バスの時刻を調べるよ。"
+      ]
+    ]
+  },
+  {
+    "id": "as-soon-as-dialogue-07",
+    "pack": "基本",
+    "category": "as soon as",
+    "relativeType": "as soon as",
+    "targetLineIndex": 1,
+    "phrase": "Not yet. I'll let you know as soon as it gets here.",
+    "usageNote": "届いたら知らせる",
+    "audio": "/relative-phrase-audio/as-soon-as-dialogue-07-8c46c2dac04a.mp3",
+    "audioDuration": 7.12,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 1.6800000000000002
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 1.6800000000000002,
+        "end": 4.880000000000001
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.880000000000001,
+        "end": 7.12
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Has my package arrived yet?",
+        "私の荷物、もう届いた？"
+      ],
+      [
+        "B",
+        "Not yet. I'll let you know as soon as it gets here.",
+        "まだ。届いたらすぐ知らせるね。"
+      ],
+      [
+        "A",
+        "Thanks. It should arrive this afternoon.",
+        "ありがとう。今日の午後に届くはず。"
+      ]
+    ]
+  },
+  {
+    "id": "as-soon-as-dialogue-08",
+    "pack": "基本",
+    "category": "as soon as",
+    "relativeType": "as soon as",
+    "targetLineIndex": 1,
+    "phrase": "Only a month. We hit it off as soon as we met.",
+    "usageNote": "会ってすぐ仲良くなる",
+    "audio": "/relative-phrase-audio/as-soon-as-dialogue-08-3e7edcddf754.mp3",
+    "audioDuration": 7.2,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2.08
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2.08,
+        "end": 5.5200000000000005
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 5.5200000000000005,
+        "end": 7.12
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Have you and Mia known each other long?",
+        "ミアとは知り合って長いの？"
+      ],
+      [
+        "B",
+        "Only a month. We hit it off as soon as we met.",
+        "まだ1か月。会ってすぐに意気投合したんだ。"
+      ],
+      [
+        "A",
+        "You seem like old friends.",
+        "昔からの友達みたいに見えるよ。"
+      ]
+    ]
+  },
+  {
+    "id": "as-soon-as-dialogue-09",
+    "pack": "基本",
+    "category": "as soon as",
+    "relativeType": "as soon as",
+    "targetLineIndex": 0,
+    "phrase": "Call me as soon as the timer goes off.",
+    "usageNote": "オーブンから出す",
+    "audio": "/relative-phrase-audio/as-soon-as-dialogue-09-666720f1d698.mp3",
+    "audioDuration": 5.68,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2.08
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2.08,
+        "end": 4.32
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.32,
+        "end": 5.68
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Call me as soon as the timer goes off.",
+        "タイマーが鳴ったらすぐ呼んで。"
+      ],
+      [
+        "B",
+        "Okay. Are you going upstairs?",
+        "わかった。上に行くの？"
+      ],
+      [
+        "A",
+        "Just to get my glasses.",
+        "眼鏡を取ってくるだけ。"
+      ]
+    ]
+  },
+  {
+    "id": "as-soon-as-dialogue-10",
+    "pack": "基本",
+    "category": "as soon as",
+    "relativeType": "as soon as",
+    "targetLineIndex": 1,
+    "phrase": "It fell out of a book. I sent it to you as soon as I saw it.",
+    "usageNote": "見つけた写真",
+    "audio": "/relative-phrase-audio/as-soon-as-dialogue-10-d5f012901000.mp3",
+    "audioDuration": 7.6,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2,
+        "end": 6
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 6,
+        "end": 7.6
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "How did you find this old photo?",
+        "この古い写真、どうやって見つけたの？"
+      ],
+      [
+        "B",
+        "It fell out of a book. I sent it to you as soon as I saw it.",
+        "本から落ちてきたんだ。見つけてすぐ送ったよ。"
+      ],
+      [
+        "A",
+        "I'm so glad you did.",
+        "送ってくれて、うれしい。"
+      ]
+    ]
+  },
+  {
+    "id": "even-though-dialogue-01",
+    "pack": "基本",
+    "category": "even though",
+    "relativeType": "even though",
+    "targetLineIndex": 1,
+    "phrase": "I am, even though I slept for nine hours.",
+    "usageNote": "寝ても疲れる",
+    "audio": "/relative-phrase-audio/even-though-dialogue-01-8776da5ce9fc.mp3",
+    "audioDuration": 6.96,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 1.52
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 1.52,
+        "end": 5.2
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 5.2,
+        "end": 6.96
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "You look exhausted.",
+        "すごく疲れてるね。"
+      ],
+      [
+        "B",
+        "I am, even though I slept for nine hours.",
+        "そうなんだ。9時間も寝たのに。"
+      ],
+      [
+        "A",
+        "Maybe you just need a quiet day.",
+        "今日はのんびり過ごしたほうがいいのかも。"
+      ]
+    ]
+  },
+  {
+    "id": "even-though-dialogue-02",
+    "pack": "基本",
+    "category": "even though",
+    "relativeType": "even though",
+    "targetLineIndex": 1,
+    "phrase": "Yeah. We played even though it was raining.",
+    "usageNote": "雨の中の試合",
+    "audio": "/relative-phrase-audio/even-though-dialogue-02-cef9d8bc329d.mp3",
+    "audioDuration": 6.56,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 1.6
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 1.6,
+        "end": 4.5600000000000005
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.5600000000000005,
+        "end": 6.56
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Did you still play yesterday?",
+        "昨日は結局試合をしたの？"
+      ],
+      [
+        "B",
+        "Yeah. We played even though it was raining.",
+        "うん。雨が降ってたけど試合をしたよ。"
+      ],
+      [
+        "A",
+        "I hope you had some dry clothes with you.",
+        "着替えを持っていってたらいいけど。"
+      ]
+    ]
+  },
+  {
+    "id": "even-though-dialogue-03",
+    "pack": "基本",
+    "category": "even though",
+    "relativeType": "even though",
+    "targetLineIndex": 0,
+    "phrase": "I bought it even though it was a bit expensive.",
+    "usageNote": "高いけど買う",
+    "audio": "/relative-phrase-audio/even-though-dialogue-03-fd709045b937.mp3",
+    "audioDuration": 8.16,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2.88
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2.88,
+        "end": 5.12
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 5.12,
+        "end": 8.16
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "I bought it even though it was a bit expensive.",
+        "ちょっと高かったけど買っちゃった。"
+      ],
+      [
+        "B",
+        "You'd been looking at it for months.",
+        "何か月も気になってたもんね。"
+      ],
+      [
+        "A",
+        "I know. I've already worn it three times.",
+        "そうなんだ。もう3回も着たよ。"
+      ]
+    ]
+  },
+  {
+    "id": "even-though-dialogue-04",
+    "pack": "基本",
+    "category": "even though",
+    "relativeType": "even though",
+    "targetLineIndex": 1,
+    "phrase": "Yeah, even though I'm already full.",
+    "usageNote": "おなかいっぱいのデザート",
+    "audio": "/relative-phrase-audio/even-though-dialogue-04-191e438643d4.mp3",
+    "audioDuration": 5.76,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2.08
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2.08,
+        "end": 4.640000000000001
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.640000000000001,
+        "end": 5.76
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Are you really ordering dessert?",
+        "本当にデザートも頼むの？"
+      ],
+      [
+        "B",
+        "Yeah, even though I'm already full.",
+        "うん、もうおなかいっぱいなんだけどね。"
+      ],
+      [
+        "A",
+        "Let's share one, then.",
+        "じゃあ1つを分けよう。"
+      ]
+    ]
+  },
+  {
+    "id": "even-though-dialogue-05",
+    "pack": "基本",
+    "category": "even though",
+    "relativeType": "even though",
+    "targetLineIndex": 0,
+    "phrase": "We hardly see each other even though we live so close.",
+    "usageNote": "近いのに会えない",
+    "audio": "/relative-phrase-audio/even-though-dialogue-05-845e61c57090.mp3",
+    "audioDuration": 7.92,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 3.2
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 3.2,
+        "end": 6.16
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 6.16,
+        "end": 7.92
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "We hardly see each other even though we live so close.",
+        "こんなに近くに住んでるのに、なかなか会わないね。"
+      ],
+      [
+        "B",
+        "I know. Let's actually make a plan.",
+        "そうだね。ちゃんと予定を決めよう。"
+      ],
+      [
+        "A",
+        "How about breakfast on Sunday?",
+        "日曜日に朝ごはんを一緒に食べるのはどう？"
+      ]
+    ]
+  },
+  {
+    "id": "even-though-dialogue-06",
+    "pack": "基本",
+    "category": "even though",
+    "relativeType": "even though",
+    "targetLineIndex": 1,
+    "phrase": "Yeah. I still laugh even though I've seen it so many times.",
+    "usageNote": "何度も見た映画",
+    "audio": "/relative-phrase-audio/even-though-dialogue-06-368a58157fc0.mp3",
+    "audioDuration": 7.6,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 1.68
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 1.68,
+        "end": 5.84
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 5.84,
+        "end": 7.6
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "You're watching this again?",
+        "またこれを見てるの？"
+      ],
+      [
+        "B",
+        "Yeah. I still laugh even though I've seen it so many times.",
+        "うん。何度も見てるのに、まだ笑っちゃう。"
+      ],
+      [
+        "A",
+        "Move over. I'll watch with you.",
+        "ちょっと詰めて。一緒に見るよ。"
+      ]
+    ]
+  },
+  {
+    "id": "even-though-dialogue-07",
+    "pack": "基本",
+    "category": "even though",
+    "relativeType": "even though",
+    "targetLineIndex": 1,
+    "phrase": "I get lost here even though I know the area.",
+    "usageNote": "道を知っているのに",
+    "audio": "/relative-phrase-audio/even-though-dialogue-07-20edeeb90328.mp3",
+    "audioDuration": 6.96,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 1.76
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 1.76,
+        "end": 5.04
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 5.04,
+        "end": 6.96
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Why did you turn on the map?",
+        "なんで地図をつけたの？"
+      ],
+      [
+        "B",
+        "I get lost here even though I know the area.",
+        "この辺は知ってるのに、道に迷っちゃうんだ。"
+      ],
+      [
+        "A",
+        "All these streets look the same.",
+        "どの通りも同じに見えるもんね。"
+      ]
+    ]
+  },
+  {
+    "id": "even-though-dialogue-08",
+    "pack": "基本",
+    "category": "even though",
+    "relativeType": "even though",
+    "targetLineIndex": 0,
+    "phrase": "She helped me move even though she was really busy.",
+    "usageNote": "忙しくても手伝う",
+    "audio": "/relative-phrase-audio/even-though-dialogue-08-47080f427740.mp3",
+    "audioDuration": 6.88,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 3.2800000000000002
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 3.2800000000000002,
+        "end": 4.720000000000001
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.720000000000001,
+        "end": 6.88
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "She helped me move even though she was really busy.",
+        "すごく忙しかったのに、引っ越しを手伝ってくれたんだ。"
+      ],
+      [
+        "B",
+        "That was kind of her.",
+        "親切だね。"
+      ],
+      [
+        "A",
+        "I'm taking her out for dinner to say thanks.",
+        "お礼に夕飯をごちそうするつもり。"
+      ]
+    ]
+  },
+  {
+    "id": "even-though-dialogue-09",
+    "pack": "基本",
+    "category": "even though",
+    "relativeType": "even though",
+    "targetLineIndex": 1,
+    "phrase": "I still want some even though it's freezing outside.",
+    "usageNote": "寒いのにアイス",
+    "audio": "/relative-phrase-audio/even-though-dialogue-09-782984e2a6e9.mp3",
+    "audioDuration": 7.6,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 1.92
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 1.92,
+        "end": 5.6000000000000005
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 5.6000000000000005,
+        "end": 7.6
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Ice cream in this weather?",
+        "この寒さでアイス？"
+      ],
+      [
+        "B",
+        "I still want some even though it's freezing outside.",
+        "外は凍えるほど寒いけど、それでも食べたい。"
+      ],
+      [
+        "A",
+        "Let's eat it inside, at least.",
+        "せめて中で食べようよ。"
+      ]
+    ]
+  },
+  {
+    "id": "even-though-dialogue-10",
+    "pack": "基本",
+    "category": "even though",
+    "relativeType": "even though",
+    "targetLineIndex": 1,
+    "phrase": "Yeah, even though I've practiced the whole thing.",
+    "usageNote": "練習しても緊張",
+    "audio": "/relative-phrase-audio/even-though-dialogue-10-8fc0ab97dcb1.mp3",
+    "audioDuration": 6.8,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 1.6800000000000002
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 1.6800000000000002,
+        "end": 4.960000000000001
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.960000000000001,
+        "end": 6.8
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Are you nervous about tomorrow?",
+        "明日のこと、緊張してる？"
+      ],
+      [
+        "B",
+        "Yeah, even though I've practiced the whole thing.",
+        "うん。一通り練習したのにね。"
+      ],
+      [
+        "A",
+        "You'll feel better once you get started.",
+        "始めてしまえば落ち着くよ。"
+      ]
+    ]
+  },
+  {
+    "id": "unless-dialogue-01",
+    "pack": "基本",
+    "category": "unless",
+    "relativeType": "unless",
+    "targetLineIndex": 0,
+    "phrase": "I'll cycle to work unless it rains.",
+    "usageNote": "雨なら中止",
+    "audio": "/relative-phrase-audio/unless-dialogue-01-6e9a78eee3eb.mp3",
+    "audioDuration": 6.8,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2.4
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2.4,
+        "end": 4.5600000000000005
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.5600000000000005,
+        "end": 6.8
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "I'll cycle to work unless it rains.",
+        "雨じゃなければ自転車で仕事に行くよ。"
+      ],
+      [
+        "B",
+        "The forecast looks good for tomorrow.",
+        "明日は天気がよさそうだよ。"
+      ],
+      [
+        "A",
+        "Great. It beats sitting on the bus.",
+        "よかった。バスに座ってるよりいいし。"
+      ]
+    ]
+  },
+  {
+    "id": "unless-dialogue-02",
+    "pack": "基本",
+    "category": "unless",
+    "relativeType": "unless",
+    "targetLineIndex": 0,
+    "phrase": "Let's meet at six unless I text you.",
+    "usageNote": "連絡がなければ予定どおり",
+    "audio": "/relative-phrase-audio/unless-dialogue-02-9a72e8033ea8.mp3",
+    "audioDuration": 5.84,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2.16
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2.16,
+        "end": 4.32
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.32,
+        "end": 5.84
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Let's meet at six unless I text you.",
+        "私からメッセージがなければ、6時に会おう。"
+      ],
+      [
+        "B",
+        "Okay. Same place as last time?",
+        "わかった。この前と同じ場所？"
+      ],
+      [
+        "A",
+        "Yeah, outside the station.",
+        "うん、駅の外で。"
+      ]
+    ]
+  },
+  {
+    "id": "unless-dialogue-03",
+    "pack": "基本",
+    "category": "unless",
+    "relativeType": "unless",
+    "targetLineIndex": 1,
+    "phrase": "Not unless this one breaks.",
+    "usageNote": "必要なときだけ買う",
+    "audio": "/relative-phrase-audio/unless-dialogue-03-56d5f86cbc35.mp3",
+    "audioDuration": 5.92,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 1.84
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 1.84,
+        "end": 3.7600000000000002
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 3.7600000000000002,
+        "end": 5.92
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Are you getting a new phone this year?",
+        "今年は新しいスマホを買うの？"
+      ],
+      [
+        "B",
+        "Not unless this one breaks.",
+        "これが壊れない限りは買わないよ。"
+      ],
+      [
+        "A",
+        "Fair enough. It still works fine.",
+        "そうだね。まだちゃんと使えるし。"
+      ]
+    ]
+  },
+  {
+    "id": "unless-dialogue-04",
+    "pack": "基本",
+    "category": "unless",
+    "relativeType": "unless",
+    "targetLineIndex": 0,
+    "phrase": "Don't wake me up unless it's urgent.",
+    "usageNote": "起こさないで",
+    "audio": "/relative-phrase-audio/unless-dialogue-04-685c723517b3.mp3",
+    "audioDuration": 6.8,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2.08
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2.08,
+        "end": 4.640000000000001
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.640000000000001,
+        "end": 6.8
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Don't wake me up unless it's urgent.",
+        "急ぎじゃなければ起こさないでね。"
+      ],
+      [
+        "B",
+        "Okay. I'll keep the kids downstairs.",
+        "わかった。子どもたちは下の階にいさせるね。"
+      ],
+      [
+        "A",
+        "Thanks. I only need half an hour.",
+        "ありがとう。30分だけ寝たいんだ。"
+      ]
+    ]
+  },
+  {
+    "id": "unless-dialogue-05",
+    "pack": "基本",
+    "category": "unless",
+    "relativeType": "unless",
+    "targetLineIndex": 1,
+    "phrase": "Probably not, unless we go really early.",
+    "usageNote": "予約なしでは入れない",
+    "audio": "/relative-phrase-audio/unless-dialogue-05-3529555fc937.mp3",
+    "audioDuration": 7.04,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2.08
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2.08,
+        "end": 5.44
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 5.44,
+        "end": 7.04
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Can we just walk into that restaurant?",
+        "あのレストラン、予約なしで入れるかな？"
+      ],
+      [
+        "B",
+        "Probably not, unless we go really early.",
+        "かなり早く行かない限り、多分無理だね。"
+      ],
+      [
+        "A",
+        "I'll call and ask about a table.",
+        "電話して席があるか聞いてみる。"
+      ]
+    ]
+  },
+  {
+    "id": "unless-dialogue-06",
+    "pack": "基本",
+    "category": "unless",
+    "relativeType": "unless",
+    "targetLineIndex": 0,
+    "phrase": "Don't add more salt unless you think it needs it.",
+    "usageNote": "味付けの好み",
+    "audio": "/relative-phrase-audio/unless-dialogue-06-d65b309ae039.mp3",
+    "audioDuration": 6.08,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2.96
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2.96,
+        "end": 4.5600000000000005
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.5600000000000005,
+        "end": 6.08
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Don't add more salt unless you think it needs it.",
+        "必要だと思わなければ、塩は足さないで。"
+      ],
+      [
+        "B",
+        "I'll taste it first.",
+        "まず味見するね。"
+      ],
+      [
+        "A",
+        "There's some lemon here too.",
+        "レモンもここにあるよ。"
+      ]
+    ]
+  },
+  {
+    "id": "unless-dialogue-07",
+    "pack": "基本",
+    "category": "unless",
+    "relativeType": "unless",
+    "targetLineIndex": 1,
+    "phrase": "Outside, unless you'd rather be inside.",
+    "usageNote": "相手の希望を聞く",
+    "audio": "/relative-phrase-audio/unless-dialogue-07-a86310feec9d.mp3",
+    "audioDuration": 6.96,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 1.04
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 1.04,
+        "end": 4
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4,
+        "end": 6.72
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Where should we sit?",
+        "どこに座ろうか？"
+      ],
+      [
+        "B",
+        "Outside, unless you'd rather be inside.",
+        "中のほうがよければ別だけど、外にしよう。"
+      ],
+      [
+        "A",
+        "Outside sounds good. It's lovely today.",
+        "外がいいね。今日は気持ちいいし。"
+      ]
+    ]
+  },
+  {
+    "id": "unless-dialogue-08",
+    "pack": "基本",
+    "category": "unless",
+    "relativeType": "unless",
+    "targetLineIndex": 0,
+    "phrase": "I can pick you up unless my meeting runs late.",
+    "usageNote": "帰りの送迎",
+    "audio": "/relative-phrase-audio/unless-dialogue-08-dbf6e7fe2313.mp3",
+    "audioDuration": 6.64,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2.56
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2.56,
+        "end": 5.28
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 5.28,
+        "end": 6.64
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "I can pick you up unless my meeting runs late.",
+        "会議が長引かなければ迎えに行けるよ。"
+      ],
+      [
+        "B",
+        "Thanks. I can take the bus if it does.",
+        "ありがとう。長引いたらバスで帰れるから。"
+      ],
+      [
+        "A",
+        "I'll let you know by five.",
+        "5時までに連絡するね。"
+      ]
+    ]
+  },
+  {
+    "id": "unless-dialogue-09",
+    "pack": "基本",
+    "category": "unless",
+    "relativeType": "unless",
+    "targetLineIndex": 1,
+    "phrase": "Not unless you're sure you're keeping it.",
+    "usageNote": "返品の条件",
+    "audio": "/relative-phrase-audio/unless-dialogue-09-3b7f2b7dc10d.mp3",
+    "audioDuration": 6.08,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 1.84
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 1.84,
+        "end": 4.24
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.24,
+        "end": 6.08
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Should I take the tags off now?",
+        "今タグを取っていいかな？"
+      ],
+      [
+        "B",
+        "Not unless you're sure you're keeping it.",
+        "絶対に返品しないと決めたのでなければ、まだ取らないほうがいいよ。"
+      ],
+      [
+        "A",
+        "I'll try it on with my shoes first.",
+        "まず靴と合わせて着てみる。"
+      ]
+    ]
+  },
+  {
+    "id": "unless-dialogue-10",
+    "pack": "基本",
+    "category": "unless",
+    "relativeType": "unless",
+    "targetLineIndex": 0,
+    "phrase": "Keep the receipt unless you're sure you won't need it.",
+    "usageNote": "レシートを取っておく",
+    "audio": "/relative-phrase-audio/unless-dialogue-10-4a21a784e1c9.mp3",
+    "audioDuration": 6.64,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 3.12
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 3.12,
+        "end": 4.5600000000000005
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.5600000000000005,
+        "end": 6.64
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Keep the receipt unless you're sure you won't need it.",
+        "絶対に必要ないとわかっているのでなければ、レシートを取っておいて。"
+      ],
+      [
+        "B",
+        "I'll put it in the box.",
+        "箱に入れておくね。"
+      ],
+      [
+        "A",
+        "Good idea. Then it won't get lost.",
+        "いいね。それならなくさないし。"
+      ]
+    ]
+  },
+  {
+    "id": "while-dialogue-01",
+    "pack": "基本",
+    "category": "while",
+    "relativeType": "while",
+    "targetLineIndex": 0,
+    "phrase": "I'll cook while you take a shower.",
+    "usageNote": "シャワー中に料理",
+    "audio": "/relative-phrase-audio/while-dialogue-01-9982fbd2a50b.mp3",
+    "audioDuration": 6.88,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 1.9200000000000002
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 1.9200000000000002,
+        "end": 4.16
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.16,
+        "end": 6.88
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "I'll cook while you take a shower.",
+        "シャワーを浴びてる間に料理するよ。"
+      ],
+      [
+        "B",
+        "Thanks. I'll wash up afterward.",
+        "ありがとう。後で洗い物をするね。"
+      ],
+      [
+        "A",
+        "Deal. Dinner should be ready in twenty minutes.",
+        "決まり。20分で夕飯ができると思う。"
+      ]
+    ]
+  },
+  {
+    "id": "while-dialogue-02",
+    "pack": "基本",
+    "category": "while",
+    "relativeType": "while",
+    "targetLineIndex": 0,
+    "phrase": "Let's get a coffee while we wait.",
+    "usageNote": "待ち時間のコーヒー",
+    "audio": "/relative-phrase-audio/while-dialogue-02-01031ebeea92.mp3",
+    "audioDuration": 6.48,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 1.7600000000000002
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 1.7600000000000002,
+        "end": 4.720000000000001
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.720000000000001,
+        "end": 6.48
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Let's get a coffee while we wait.",
+        "待ってる間にコーヒーを買おう。"
+      ],
+      [
+        "B",
+        "Good idea. The train's twenty minutes late.",
+        "いいね。電車は20分遅れてるし。"
+      ],
+      [
+        "A",
+        "There's a stand near the platform.",
+        "ホームの近くに売店があるよ。"
+      ]
+    ]
+  },
+  {
+    "id": "while-dialogue-03",
+    "pack": "基本",
+    "category": "while",
+    "relativeType": "while",
+    "targetLineIndex": 1,
+    "phrase": "Yeah. I wrote it down while she was talking.",
+    "usageNote": "電話中のメモ",
+    "audio": "/relative-phrase-audio/while-dialogue-03-dd7dab0e31c5.mp3",
+    "audioDuration": 5.52,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 1.76
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 1.76,
+        "end": 4.4
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.4,
+        "end": 5.52
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Did you write down the address?",
+        "住所はメモした？"
+      ],
+      [
+        "B",
+        "Yeah. I wrote it down while she was talking.",
+        "うん。彼女が話してる間に書いたよ。"
+      ],
+      [
+        "A",
+        "Can you send it to me?",
+        "私にも送ってくれる？"
+      ]
+    ]
+  },
+  {
+    "id": "while-dialogue-04",
+    "pack": "基本",
+    "category": "while",
+    "relativeType": "while",
+    "targetLineIndex": 0,
+    "phrase": "Could you water my plants while I'm away?",
+    "usageNote": "留守中の水やり",
+    "audio": "/relative-phrase-audio/while-dialogue-04-a372da19a017.mp3",
+    "audioDuration": 6.56,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2.16
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2.16,
+        "end": 4.48
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.48,
+        "end": 6.56
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Could you water my plants while I'm away?",
+        "留守の間、植物に水をあげてくれる？"
+      ],
+      [
+        "B",
+        "Sure. How often do they need it?",
+        "いいよ。どのくらいの頻度であげればいい？"
+      ],
+      [
+        "A",
+        "Just twice a week. I'll leave you a note.",
+        "週2回でいいよ。メモを置いておくね。"
+      ]
+    ]
+  },
+  {
+    "id": "while-dialogue-05",
+    "pack": "基本",
+    "category": "while",
+    "relativeType": "while",
+    "targetLineIndex": 0,
+    "phrase": "Eat it while it's still hot.",
+    "usageNote": "熱いうちに食べる",
+    "audio": "/relative-phrase-audio/while-dialogue-05-b7ba58af933d.mp3",
+    "audioDuration": 6.8,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 1.6800000000000002
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 1.6800000000000002,
+        "end": 5.12
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 5.12,
+        "end": 6.8
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Eat it while it's still hot.",
+        "まだ温かいうちに食べて。"
+      ],
+      [
+        "B",
+        "It looks amazing. Did you make the sauce too?",
+        "すごくおいしそう。ソースも作ったの？"
+      ],
+      [
+        "A",
+        "Yeah. Let me know what you think.",
+        "うん。感想を聞かせてね。"
+      ]
+    ]
+  },
+  {
+    "id": "while-dialogue-06",
+    "pack": "基本",
+    "category": "while",
+    "relativeType": "while",
+    "targetLineIndex": 1,
+    "phrase": "I listen to music while I clean.",
+    "usageNote": "音楽を聴きながら",
+    "audio": "/relative-phrase-audio/while-dialogue-06-7f1e6869cff1.mp3",
+    "audioDuration": 5.76,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2.4
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2.4,
+        "end": 4.5600000000000005
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.5600000000000005,
+        "end": 5.76
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "How do you make cleaning less boring?",
+        "掃除が退屈にならないように、どうしてる？"
+      ],
+      [
+        "B",
+        "I listen to music while I clean.",
+        "掃除しながら音楽を聴いてるよ。"
+      ],
+      [
+        "A",
+        "Send me your playlist.",
+        "プレイリストを送って。"
+      ]
+    ]
+  },
+  {
+    "id": "while-dialogue-07",
+    "pack": "基本",
+    "category": "while",
+    "relativeType": "while",
+    "targetLineIndex": 0,
+    "phrase": "Let's stop at the bakery while we're in the area.",
+    "usageNote": "近くにいるついでに",
+    "audio": "/relative-phrase-audio/while-dialogue-07-58d3b2a7f35f.mp3",
+    "audioDuration": 6.96,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2.4
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2.4,
+        "end": 5.12
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 5.12,
+        "end": 6.96
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Let's stop at the bakery while we're in the area.",
+        "この辺にいるうちにパン屋に寄ろう。"
+      ],
+      [
+        "B",
+        "Good idea. We can get something for breakfast.",
+        "いいね。朝ごはん用に何か買えるし。"
+      ],
+      [
+        "A",
+        "I hope they still have those rolls.",
+        "あのロールパンがまだあるといいな。"
+      ]
+    ]
+  },
+  {
+    "id": "while-dialogue-08",
+    "pack": "基本",
+    "category": "while",
+    "relativeType": "while",
+    "targetLineIndex": 1,
+    "phrase": "I do, while Ben prefers tea.",
+    "usageNote": "好みの違い",
+    "audio": "/relative-phrase-audio/while-dialogue-08-c46fe6e1af7d.mp3",
+    "audioDuration": 5.52,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 1.52
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 1.52,
+        "end": 4.16
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.16,
+        "end": 5.52
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Do you both drink coffee?",
+        "2人ともコーヒーを飲むの？"
+      ],
+      [
+        "B",
+        "I do, while Ben prefers tea.",
+        "私は飲むけど、ベンは紅茶のほうが好きなんだ。"
+      ],
+      [
+        "A",
+        "I'll put the kettle on, then.",
+        "じゃあ、お湯を沸かすね。"
+      ]
+    ]
+  },
+  {
+    "id": "while-dialogue-09",
+    "pack": "基本",
+    "category": "while",
+    "relativeType": "while",
+    "targetLineIndex": 1,
+    "phrase": "While I like the idea, I'm worried about the cost.",
+    "usageNote": "一部は賛成",
+    "audio": "/relative-phrase-audio/while-dialogue-09-2b60526313ec.mp3",
+    "audioDuration": 7.2,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 1.76
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 1.76,
+        "end": 5.5200000000000005
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 5.5200000000000005,
+        "end": 7.2
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "What do you think of the new plan?",
+        "新しい計画はどう思う？"
+      ],
+      [
+        "B",
+        "While I like the idea, I'm worried about the cost.",
+        "アイデアはいいと思うけど、費用が気になるな。"
+      ],
+      [
+        "A",
+        "Let's see if we can make it cheaper.",
+        "もっと安くできないか考えよう。"
+      ]
+    ]
+  },
+  {
+    "id": "while-dialogue-10",
+    "pack": "基本",
+    "category": "while",
+    "relativeType": "while",
+    "targetLineIndex": 1,
+    "phrase": "I set the table while Maya finished cooking.",
+    "usageNote": "一方は片付けもう一方は料理",
+    "audio": "/relative-phrase-audio/while-dialogue-10-9284e53ac513.mp3",
+    "audioDuration": 6.88,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2.48
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2.48,
+        "end": 5.28
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 5.28,
+        "end": 6.88
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "How did you get everything ready so fast?",
+        "どうしてこんなに早く準備できたの？"
+      ],
+      [
+        "B",
+        "I set the table while Maya finished cooking.",
+        "マヤが料理を仕上げてる間に、私が食卓を整えたんだ。"
+      ],
+      [
+        "A",
+        "You two make a good team.",
+        "2人はいいコンビだね。"
+      ]
+    ]
+  },
+  {
+    "id": "as-dialogue-01",
+    "pack": "基本",
+    "category": "as",
+    "relativeType": "as",
+    "targetLineIndex": 1,
+    "phrase": "My phone rang just as I was leaving.",
+    "usageNote": "出かける直前の電話",
+    "audio": "/relative-phrase-audio/as-dialogue-01-5030de14a4f9.mp3",
+    "audioDuration": 5.84,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 1.76
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 1.76,
+        "end": 4.32
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.32,
+        "end": 5.84
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Why didn't you leave at eight?",
+        "なんで8時に出なかったの？"
+      ],
+      [
+        "B",
+        "My phone rang just as I was leaving.",
+        "ちょうど出かけるところで電話が鳴ったんだ。"
+      ],
+      [
+        "A",
+        "Was it anything important?",
+        "大事な用事だった？"
+      ]
+    ]
+  },
+  {
+    "id": "as-dialogue-02",
+    "pack": "基本",
+    "category": "as",
+    "relativeType": "as",
+    "targetLineIndex": 0,
+    "phrase": "Can you turn off the lights as you leave?",
+    "usageNote": "出るときに電気を消す",
+    "audio": "/relative-phrase-audio/as-dialogue-02-cf26cab74c02.mp3",
+    "audioDuration": 6.4,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2,
+        "end": 4.08
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 4.08,
+        "end": 6.4
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Can you turn off the lights as you leave?",
+        "出るときに電気を消してくれる？"
+      ],
+      [
+        "B",
+        "Sure. Are you going to bed?",
+        "いいよ。もう寝るの？"
+      ],
+      [
+        "A",
+        "Yeah. I've got an early start tomorrow.",
+        "うん。明日は朝が早いんだ。"
+      ]
+    ]
+  },
+  {
+    "id": "as-dialogue-03",
+    "pack": "基本",
+    "category": "as",
+    "relativeType": "as",
+    "targetLineIndex": 1,
+    "phrase": "No. It started snowing as we were walking home.",
+    "usageNote": "帰り道の雪",
+    "audio": "/relative-phrase-audio/as-dialogue-03-569132c72b67.mp3",
+    "audioDuration": 7.2,
+    "audioCues": [
+      {
+        "index": 0,
+        "speaker": "A",
+        "start": 0,
+        "end": 2
+      },
+      {
+        "index": 1,
+        "speaker": "B",
+        "start": 2,
+        "end": 5.44
+      },
+      {
+        "index": 2,
+        "speaker": "A",
+        "start": 5.44,
+        "end": 7.2
+      }
+    ],
+    "voiceCast": {
+      "A": {
+        "key": "mark",
+        "name": "Mark"
+      },
+      "B": {
+        "key": "belle",
+        "name": "Belle"
+      }
+    },
+    "lines": [
+      [
+        "A",
+        "Did you get home before it snowed?",
+        "雪が降る前に帰れた？"
+      ],
+      [
+        "B",
+        "No. It started snowing as we were walking home.",
+        "ううん。歩いて帰ってる途中で降り始めた。"
+      ],
+      [
+        "A",
+        "I bet the kids loved that.",
+        "子どもたちは喜んだだろうね。"
       ]
     ]
   }

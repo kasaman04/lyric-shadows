@@ -752,7 +752,7 @@ function renderDramaGrid() {
 
 function phraseEnglish(phrase, english, index) {
   const safe = esc(english);
-  if (!/^[a-z]+$/.test(phrase.relativeType || '') || (index !== undefined && index !== phrase.targetLineIndex)) return safe;
+  if (!/^[a-z]+(?: [a-z]+)*$/.test(phrase.relativeType || '') || (index !== undefined && index !== phrase.targetLineIndex)) return safe;
   return safe.replace(new RegExp('\\b' + phrase.relativeType + '\\b', 'i'), '<mark class="phrase-relative-word">$&</mark>');
 }
 

@@ -12,7 +12,7 @@
   const phraseRequiredSeconds = 1800;
   function phraseAudioPath(source) {
     const file = String(source || '').replace(/^https?:\/\/[^/]+/i,'').split(/[?#]/)[0];
-    return /^\/relative-phrase-audio\/(?:who|whom|whose|which|that|what|when|where|why|how|whoever|whomever|whatever|whichever|whenever|wherever|however)-dialogue-\d{2}-[a-f0-9]{12}\.mp3$/.test(file) ? file : '';
+    return /^\/relative-phrase-audio\/(?:who|whom|whose|which|that|what|when|where|why|how|whoever|whomever|whatever|whichever|whenever|wherever|however|by-the-time|whether|now-that|once|so-that|in-case|as-soon-as|even-though|unless|while|as)-dialogue-\d{2}-[a-f0-9]{12}\.mp3$/.test(file) ? file : '';
   }
   function practiceProgress(count=0,phraseSeconds=0) {
     count=Math.max(0,Number(count)||0);phraseSeconds=Math.max(0,Number(phraseSeconds)||0);

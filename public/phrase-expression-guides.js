@@ -112,6 +112,83 @@
         { en: "However hard it is, I'll try.", ja: 'どんなに難しくても、やってみます。' }
       ],
       note: 'ここで練習する however は、文をつなぐ「しかし」という意味の however とは使い方が異なります。'
+    },
+    'by the time': {
+      title: '「〜するころには・〜したときには」を表す',
+      role: 'ある時点を基準に、そのときには何かがすでに起きていたり、ある状態になっていたりすることを伝えます。',
+      pattern: 'by the time + 主語 + 動詞 …, 主語 + 動詞 …',
+      examples: [{ en: "By the time I got there, they'd sold out.", ja: '着いたころには、売り切れていました。' }, { en: "It'll be ready by the time you get home.", ja: '家に着くころには、できています。' }],
+      note: '過去の時点より前に完了したことには had + 過去分詞がよく使われます。未来のことでも by the time の後ろは通常、現在形にします。'
+    },
+    whether: {
+      title: '「〜かどうか・どちらにするか」を表す',
+      role: 'まだわからないことや、二つの選択肢のどちらかを、文の中のひとまとまりにします。',
+      pattern: 'whether + 主語 + 動詞 … ／ whether to + 動詞 … ／ whether … or …',
+      examples: [{ en: "It depends on whether it rains.", ja: '雨が降るかどうかによります。' }, { en: "I can't decide whether to take a jacket.", ja: '上着を持っていくか決められません。' }],
+      note: '単純な「〜かどうか」では if も使えますが、on whether のような前置詞の直後や whether to の形では whether を使います。whether … or not で「〜してもしなくても」と表すこともできます。'
+    },
+    'now that': {
+      title: '「今はもう〜だから・〜したことだし」を表す',
+      role: '状況が変わったことや、今そろっている条件を理由にして、次にすることや今の気持ちを伝えます。',
+      pattern: 'now that + 主語 + 動詞 …, 主語 + 動詞 …',
+      examples: [{ en: "Now that everyone's here, shall we order?", ja: 'みんなそろったし、注文しましょうか？' }],
+      note: 'because と同じく理由を表しますが、「今はそうなったので」という状況の変化や成立に焦点があります。'
+    },
+    once: {
+      title: '「いったん〜すれば・〜したら」を表す',
+      role: '何かが起きたり終わったりしたことを区切りとして、その後にすることや成り立つことを伝えます。',
+      pattern: 'once + 主語 + 動詞 …, 主語 + 動詞 …',
+      examples: [{ en: "Once you get used to it, it's actually pretty easy.", ja: '慣れると、実は結構簡単です。' }],
+      note: 'ここでは「一度」という回数ではなく、文をつなぐ once を練習します。未来の予定でも once の後ろは通常、現在形や現在完了形にします。'
+    },
+    'so that': {
+      title: '「〜できるように・〜しないように」を表す',
+      role: '何のために行動するのか、その行動で実現したいことや避けたいことを説明します。',
+      pattern: '行動 + so that + 主語 + can / will / 動詞 …',
+      examples: [{ en: "Let's book now so that we can sit together.", ja: '一緒に座れるように、今予約しましょう。' }],
+      note: '目的を表す so that です。can・could・will・would などがよく続きます。会話では that を省くこともあります。'
+    },
+    'in case': {
+      title: '「〜するといけないから・〜に備えて」を表す',
+      role: '起きるかもしれないことを考えて、先に準備したり予防したりする理由を伝えます。',
+      pattern: '準備・予防の行動 + in case + 主語 + 動詞 …',
+      examples: [{ en: 'Take an umbrella in case it rains.', ja: '雨が降るといけないから、傘を持っていってください。' }],
+      note: '雨が降る前から傘を持つ、という備えです。「雨が降ったら持つ」という条件の if とは意味が違います。'
+    },
+    'as soon as': {
+      title: '「〜したらすぐ・〜した途端に」を表す',
+      role: 'あることが起きてから、ほとんど間を置かずに次のことが起きると伝えます。',
+      pattern: 'as soon as + 主語 + 動詞 …, 主語 + 動詞 …',
+      examples: [{ en: 'Text me as soon as you get home.', ja: '家に着いたらすぐにメッセージしてください。' }],
+      note: '未来のことでも as soon as の後ろは通常、現在形です。過去の出来事では「〜した途端に」という意味でも使えます。'
+    },
+    'even though': {
+      title: '「実際に〜なのに・〜だけれど」を表す',
+      role: '実際の事実から予想されることと、結果が違うときに使います。',
+      pattern: '結果 + even though + 事実 ／ even though + 事実, 結果',
+      examples: [{ en: 'We played even though it was raining.', ja: '雨が降っていましたが、試合をしました。' }],
+      note: '実際に雨が降っていた、という事実を表します。「たとえ雨が降っても」という仮定の even if と区別します。'
+    },
+    unless: {
+      title: '「〜でない限り・〜の場合を除いて」を表す',
+      role: '基本の予定や判断を伝えたうえで、それが変わる例外の条件を付け足します。',
+      pattern: '基本の予定・判断 + unless + 例外となる条件',
+      examples: [{ en: "I'll cycle to work unless it rains.", ja: '雨でない限り、自転車で仕事に行きます。' }],
+      note: 'unless it rains は if it does not rain に近い意味です。未来の条件でも unless の後ろは通常、現在形にします。'
+    },
+    while: {
+      title: '「〜している間に・一方で」を表す',
+      role: '二つのことが同時に起きることを伝えます。また、二人の好みの違いや、評価の両面を示すこともできます。',
+      pattern: '主語 + 動詞 … + while + 主語 + 動詞 …',
+      examples: [{ en: "I'll cook while you take a shower.", ja: 'シャワーを浴びている間に料理します。' }, { en: "While I like the idea, I'm worried about the cost.", ja: 'アイデアはいいと思いますが、費用が心配です。' }],
+      note: '時間の「間に・しながら」だけでなく、対比や「〜だけれど」という意味でも使います。前後の文から意味を判断します。'
+    },
+    as: {
+      title: '「〜するとき・〜のように・〜として」を表す',
+      role: '同時に起きること、やり方、役割、理由などを表します。何をつなげているのかで意味が変わります。',
+      pattern: 'as + 主語 + 動詞 … ／ 動詞 + as + 役割を表す名詞',
+      examples: [{ en: 'My phone rang just as I was leaving.', ja: 'ちょうど出かけるところで電話が鳴りました。' }, { en: 'Just do it as I showed you.', ja: '見せたとおりにやってください。' }, { en: 'I work as a designer.', ja: 'デザイナーとして働いています。' }, { en: "As we're both here, let's sort it out now.", ja: '二人ともここにいるので、今決めてしまいましょう。' }],
+      note: 'as + 文は「〜するとき」「〜のように」「〜なので」など。as a designer の as は前置詞で、役割を表します。意味と場面をセットで覚えましょう。'
     }
   };
 });
