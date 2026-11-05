@@ -14,6 +14,14 @@ test('new connector conversation audio contributes to the same daily phrase goal
   assert.equal(viewPractice(s,now+30000).phraseSeconds,30,category);
  }
 });
+test('isolated card sentences retain real listening credit using their original conversation source',()=>{
+ for(const index of [0,1,2]){
+  const phrase=phrases.find(p=>p.targetLineIndex===index),s=fixture();
+  const clip=phrase.audio.replace(/\.mp3$/,`-line-${index+1}.mp3`);
+  listen(s,events(s,now,2,clip),now+2000);
+  assert.equal(viewPractice(s,now+2000).phraseSeconds,2);
+ }
+});
 test('29m59s is incomplete; 30m of phrases fulfills the same daily goal without fabricating answers',()=>{
  const s=fixture();listen(s,events(s,now,1799),now+1799000);assert.equal(viewPractice(s,now+1799000).met,false);
  listen(s,[{petId:s.pets[0].id,source,start:now+1799000,end:now+1800000}],now+1800000);

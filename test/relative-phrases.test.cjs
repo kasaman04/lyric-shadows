@@ -11,7 +11,7 @@ const expectedAdvanced=expectedTotal-expectedBasic;
 function browser(){
  const timers=new Map();let timerId=0;
  class Audio{constructor(src=''){this.src=src;this.paused=true;this.currentTime=0;this.preload='none'}play(){this.paused=false;return Promise.resolve()}pause(){this.paused=true}}
- const ctx={window:{addEventListener(){},scrollTo(){}},document:{addEventListener(){},hidden:false},navigator:{},Audio,URL,URLSearchParams,console,seed:phrases,
+ const ctx={window:{addEventListener(){},scrollTo(){}},document:{addEventListener(){},querySelectorAll(){return []},hidden:false},navigator:{},Audio,URL,URLSearchParams,console,seed:phrases,
    setTimeout(fn){const id=++timerId;timers.set(id,fn);return id},clearTimeout(id){timers.delete(id)}};
  const appSource=fs.readFileSync(path.join(root,'public/app.js'),'utf8');
  const startup=appSource.lastIndexOf('\ninit()');
@@ -73,4 +73,26 @@ test('pending automatic advance is canceled when playback stops or changes',()=>
  const b=browser();b.run("state.view='phrasePractice';playPhraseSharedAudio('/first.mp3',{autoAdvance:true});savedEnded=state.phrasePracticeAudio.onended;state.phrasePracticeAudio.onended()");assert.equal(b.timers.size,1);
  b.run('stopPhrasePracticeAudio()');assert.equal(b.timers.size,0);
  b.run("playPhraseSharedAudio('/next.mp3',{autoAdvance:true});savedEnded()");assert.equal(b.timers.size,0);assert.equal(b.run('state.phrasePracticeAudio.src'),'/next.mp3');
+});
+
+test('card playback selects only the displayed sentence, including middle and final turns',()=>{
+ const b=browser();
+ b.run('stopDramaAudio=()=>{};stopQuoteCardAudio=()=>{}');
+ for(const index of [0,1,2]){
+  b.ctx.phrase=phrases.find(p=>p.targetLineIndex===index);
+  const src=b.run('getPhraseCardAudioSrc(phrase)');
+  assert.equal(src,b.ctx.phrase.audio.replace(/\.mp3$/,`-line-${index+1}.mp3`));
+  assert(fs.statSync(path.join(root,'public',src)).size>1000);
+  b.run("state.view='home';togglePhraseCardAudio(phrase.id)");
+  assert.equal(b.run('state.phrasePracticeAudio.src'),src);
+  assert.equal(b.run('state.view'),'home');
+  assert.equal(b.run('state.phrasePracticeAudio.loop'),false);
+  b.run('state.phrasePracticeAudio.onended()');assert.equal(b.timers.size,0);
+  b.run('togglePhraseCardAudio(phrase.id)');assert.equal(b.run('state.phrasePracticeAudio.paused'),true);
+  b.run('togglePhraseCardAudio(phrase.id)');assert.equal(b.run('state.phrasePracticeAudio.paused'),false);
+ }
+ assert.equal(b.run("getPhraseCardAudioSrc({...phrase,audioCues:[]})"),'');
+ assert.equal(b.run("getPhraseCardAudioSrc({...phrase,phrase:'a different sentence'})"),'');
+ const rules=require('../public/pet-rules');
+ for(const phrase of phrases){b.ctx.phrase=phrase;const src=b.run('getPhraseCardAudioSrc(phrase)');assert(fs.statSync(path.join(root,'public',src)).size>1000);assert.equal(rules.phraseAudioPath(src),phrase.audio);}
 });

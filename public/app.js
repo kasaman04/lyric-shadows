@@ -799,7 +799,7 @@ function renderPhraseGrid() {
       </button>
       <div class="phrase-card-actions">
         <span class="phrase-card-count">${phrase.lines.length}ラリー</span>
-        ${phrase.audio ? `<button type="button" class="phrase-card-play" data-phrase-card-src="${esc(phrase.audio)}" onclick="togglePhraseCardAudio('${phrase.id}')" aria-label="${esc(phrase.phrase)} の会話を再生" aria-pressed="false">▶ 再生</button>` : ''}
+        ${getPhraseCardAudioSrc(phrase) ? `<button type="button" class="phrase-card-play" data-phrase-card-src="${esc(getPhraseCardAudioSrc(phrase))}" onclick="togglePhraseCardAudio('${phrase.id}')" aria-label="${esc(phrase.phrase)} を再生" aria-pressed="false">▶ 再生</button>` : ''}
       </div>
     </article>
   `).join('');
@@ -1517,17 +1517,25 @@ function normalizePhraseAudioSrc(src) {
   }
 }
 
+function getPhraseCardAudioSrc(phrase) {
+  const index = phrase?.targetLineIndex;
+  const cue = phrase?.audioCues?.find(item => item.index === index);
+  if (!phrase?.audio?.endsWith('.mp3') || !Number.isInteger(index) || phrase.lines?.[index]?.[1] !== phrase.phrase || !cue || cue.end <= cue.start) return '';
+  return phrase.audio.replace(/\.mp3$/, `-line-${index + 1}.mp3`);
+}
+
 function togglePhraseCardAudio(id) {
   const phrase = state.phrases.find(item => item.id === id);
-  if (!phrase?.audio) return;
+  const src = getPhraseCardAudioSrc(phrase);
+  if (!src) return;
   const audio = state.phrasePracticeAudio;
-  if (audio && state.phraseAudioSrc === normalizePhraseAudioSrc(phrase.audio) && !audio.ended) {
+  if (audio && state.phraseAudioSrc === normalizePhraseAudioSrc(src) && !audio.ended) {
     if (!audio.paused) audio.pause();
     else audio.play().catch(() => showToast('音声を再生できませんでした。再生ボタンを押してください'));
     return;
   }
   stopSongAudio(); stopDramaAudio(); stopQuoteCardAudio();
-  playPhraseSharedAudio(phrase.audio);
+  playPhraseSharedAudio(src);
 }
 
 function updatePhraseCardButtons() {
@@ -1536,8 +1544,8 @@ function updatePhraseCardButtons() {
     const playing = !!audio && !audio.paused && !audio.ended && state.phraseAudioSrc === normalizePhraseAudioSrc(button.dataset.phraseCardSrc);
     button.textContent = playing ? 'Ⅱ 一時停止' : '▶ 再生';
     button.setAttribute('aria-pressed', String(playing));
-    const phrase = state.phrases.find(item => normalizePhraseAudioSrc(item.audio) === normalizePhraseAudioSrc(button.dataset.phraseCardSrc));
-    button.setAttribute('aria-label', `${phrase?.phrase || 'このフレーズ'} の会話を${playing ? '一時停止' : '再生'}`);
+    const phrase = state.phrases.find(item => normalizePhraseAudioSrc(getPhraseCardAudioSrc(item)) === normalizePhraseAudioSrc(button.dataset.phraseCardSrc));
+    button.setAttribute('aria-label', `${phrase?.phrase || 'このフレーズ'} を${playing ? '一時停止' : '再生'}`);
   });
 }
 
@@ -1582,7 +1590,7 @@ function playPhraseSharedAudio(src, { repeat = false, autoAdvance = false } = {}
     updatePhraseCardButtons();
   };
   updatePhraseRepeatButtons();
-  const phrase = state.view === 'phrasePractice' ? state.practiceSet[state.practiceIndex] : state.currentPhrase || state.phrases.find(item => normalizePhraseAudioSrc(item.audio) === absoluteSrc);
+  const phrase = state.view === 'phrasePractice' ? state.practiceSet[state.practiceIndex] : state.currentPhrase || state.phrases.find(item => normalizePhraseAudioSrc(item.audio) === absoluteSrc || normalizePhraseAudioSrc(getPhraseCardAudioSrc(item)) === absoluteSrc);
   setMediaSession('phrase', phrase?.phrase || '会話フレーズ', 'Lyric Shadows');
   state.phrasePracticeAudio.play().catch(() => { if (request === state.phraseAudioRequest) showToast('音声を再生できませんでした。再生ボタンを押してください'); });
 }
