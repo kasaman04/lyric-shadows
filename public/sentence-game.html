@@ -1,38 +1,46 @@
 <!doctype html>
-<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>2文をつなぐ · Lyric Shadows</title><link rel="icon" href="/rogo2.png"><link rel="stylesheet" href="/sentence-game.css?v=phrase-goal-30m-20261030-1"><link rel="stylesheet" href="/pet.css?v=daily-ten-20261024-1"><link rel="stylesheet" href="/pet-memorial.css?v=memorial-20261016-1"></head>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>2文をつなぐ · Lyric Shadows</title><link rel="icon" href="/rogo2.png"><link rel="stylesheet" href="/sentence-game.css?v=translation-20261106-1"><link rel="stylesheet" href="/pet.css?v=daily-ten-20261024-1"><link rel="stylesheet" href="/pet-memorial.css?v=memorial-20261016-1"></head>
 <body><main id="practice" class="sentence-game">
 <header class="top"><a href="/" class="brand" aria-label="Lyric Shadowsのホームへ"><span aria-hidden="true">♫</span><span>Lyric Shadows<small>ENGLISH THROUGH SOUND</small></span></a><button id="pet-open" class="quiet">🌱 育成</button></header>
 <nav class="breadcrumb"><a href="/">‹ ホーム</a><span>/ 2文をつなぐ</span><button id="listening-records">♫ <span data-listening-time="today">0分00秒</span></button></nav>
 <nav class="practice-tabs" aria-label="練習と復習"><button id="practice-tab" aria-pressed="true">練習する</button><button id="review-tab" aria-pressed="false">復習ノート <span id="review-count" hidden></span></button></nav>
-<section id="practice-goal" class="practice-goal" aria-label="音声回答・復習10回、または会話フレーズ30分のノルマ"><div><strong id="practice-label">音声回答・復習</strong><b id="practice-count">0 / 10回</b></div><progress id="practice-progress" max="10" value="0" aria-label="音声回答・復習の回数"></progress><div class="practice-phrase-row"><span>または 会話フレーズ</span><b id="practice-phrase-count">0分00秒 / 30分</b></div><progress id="practice-phrase-progress" max="1800" value="0" aria-label="会話フレーズを聴いた時間"></progress><p id="practice-time" hidden></p><p id="practice-note">音声回答・復習10回、または会話フレーズを合計30分聴くと、その日のノルマ達成です。</p><button id="goal-pet" class="text-action">育成を見る →</button></section>
+<section id="practice-goal" class="practice-goal" aria-label="英文回答・復習10回、または会話フレーズ30分のノルマ"><div><strong id="practice-label">英文回答・復習</strong><b id="practice-count">0 / 10回</b></div><progress id="practice-progress" max="10" value="0" aria-label="英文回答・復習の回数"></progress><div class="practice-phrase-row"><span>または 会話フレーズ</span><b id="practice-phrase-count">0分00秒 / 30分</b></div><progress id="practice-phrase-progress" max="1800" value="0" aria-label="会話フレーズを聴いた時間"></progress><p id="practice-time" hidden></p><p id="practice-note">英文回答・復習10回、または会話フレーズを合計30分聴くと、その日のノルマ達成です。</p><button id="goal-pet" class="text-action">育成を見る →</button></section>
 <p id="error" class="error" role="alert" hidden></p>
 <section id="setup" class="panel">
- <p class="eyebrow">SENTENCE CHALLENGE</p><h1>2つの文を、<br>話してひとつに。</h1><p class="muted">ランダムな2文を聞いて、1つの英文にまとめよう。</p><p id="question-count" class="small muted"></p>
- <ol class="intro-flow"><li><span>1</span><div><strong>2文を聞く</strong><small>英文が順番に流れます。</small></div></li><li><span>2</span><div><strong>終わると、自動で録音</strong><small>5秒以内に話し始めよう。<br>話し始めたら、5秒で打ち切りません。</small></div></li><li><span>3</span><div><strong>話し終わったら、自動で採点</strong><small>元の意味と文法をチェック。正しい言い換えもOK。</small></div></li></ol>
- <label for="filter">練習する表現</label><select id="filter"><option value="all">全17種類からランダム</option><option value="basic">基本10種類からランダム</option><option value="advanced">応用7種類からランダム</option></select>
- <details class="type-guide"><summary>17種類の表現を確認する</summary><div id="type-list"></div></details>
- <button id="begin" class="primary wide" disabled>2文を聞いて、はじめる →</button><p id="configuration" class="small muted" role="status">接続設定を確認しています…</p>
- <p class="small muted">マイクの許可は練習の最初だけ。2文の音声が終わると録音を開始し、回答後はマイクをミュートします。練習の終了や画面の移動でマイクを停止します。</p>
+ <p class="eyebrow">SENTENCE PRACTICE</p><h1>パターンを選ぼう</h1><p class="muted">日本語を見て、2つの文をつなぐ表現を練習しよう。</p>
+ <p id="question-count" class="small muted" role="status">問題を読み込んでいます…</p>
+ <div id="pattern-choices" class="pattern-choices" role="group" aria-label="練習するパターン"></div>
+ <p id="selected-pattern" class="small muted" role="status"></p>
+ <button id="begin" class="primary wide" disabled>このパターンで練習する →</button>
+ <p id="configuration" class="small muted" role="status"></p>
+ <ol class="intro-flow"><li><span>1</span><div><strong>パターンを選ぶ</strong><small>who・that など、練習したい表現を選択。</small></div></li><li><span>2</span><div><strong>日本語を英語にする</strong><small>音声入力でも、手入力でも答えられます。</small></div></li><li><span>3</span><div><strong>判定で確認する</strong><small>お手本とポイントを見て、次の問題へ。</small></div></li></ol>
 </section>
 <section id="round" class="panel" hidden>
- <div class="round-top"><span id="scoreboard" class="small muted">正解 0 / 0問</span><button id="exit" class="quiet">練習を終える</button></div>
- <ol class="steps" aria-label="ゲームの流れ"><li id="step-listen">1 聞く</li><li id="step-speak">2 話す</li><li id="step-grade">3 判定</li></ol>
- <div id="question-screen"><p class="eyebrow">RANDOM CHALLENGE</p><h1 id="round-title">2文を聞こう。</h1>
- <div id="sentences" class="sentences"><article id="sentence-0"><small>文 1</small><p id="text-0"></p></article><article id="sentence-1"><small>文 2</small><p id="text-1"></p></article></div>
- <div id="voice-state" class="voice-state"><div id="mic-symbol" class="mic-symbol" aria-hidden="true">♪</div><strong id="status" role="status">音声を準備しています…</strong><div id="countdown" class="countdown" aria-live="off" hidden>5</div><p id="record-guide" class="small muted">再生終了と同時に録音が始まります。</p></div>
- <button id="resume-audio" class="primary wide" hidden>▶ 音声を再生して開始</button><button id="retry-grade" class="primary wide" hidden>採点を再試行する</button>
+ <div class="round-top"><button id="exit" class="text-action">‹ パターン選択</button><span id="scoreboard" class="small muted">正解 0 / 0問</span></div>
+ <ol class="steps" aria-label="練習の流れ"><li id="step-choose">1 パターン</li><li id="step-answer">2 英文で答える</li><li id="step-grade">3 判定</li></ol>
+ <div class="question-meta"><span id="round-pattern" class="pattern-badge"></span><span id="round-position" class="small muted"></span></div>
+ <div id="question-screen"><h1 id="round-title" tabindex="-1">日本語を英語にしよう</h1>
+ <article class="japanese-question"><small>日本語</small><p id="japanese-prompt" lang="ja"></p></article>
+ <p id="pattern-hint" class="pattern-hint"></p>
+ <label for="answer-input" class="answer-label">あなたの英文</label>
+ <textarea id="answer-input" rows="4" maxlength="1500" lang="en" autocomplete="off" autocapitalize="sentences" spellcheck="true" placeholder="ここに英文を入力してください" aria-describedby="input-guide"></textarea>
+ <div class="voice-input-controls"><button id="voice-input" class="voice-input" type="button" aria-pressed="false"><svg width="22" height="25" viewBox="0 0 24 28" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="8" y="2" width="8" height="15" rx="4"/><path d="M4 12v2a8 8 0 0 0 16 0v-2M12 22v4M7 26h10"/></svg><span id="voice-label">音声で入力</span></button><button id="retry-transcribe" class="text-action" hidden>音声の読み取りを再試行</button></div>
+ <p id="input-guide" class="small muted">手入力でも答えられます。音声入力した英文は、判定前に修正できます。</p>
+ <p id="input-status" class="small muted" role="status" aria-live="polite"></p>
+ <button id="judge" class="primary wide" disabled>判定する</button>
  </div>
- <section id="result" hidden aria-labelledby="result-title"><div id="result-icon" class="result-icon" aria-hidden="true">✓</div><h1 id="result-title">正解！</h1><p id="result-feedback"></p><button id="saved-review" class="text-action" hidden>復習ノートに保存しました · この問題を復習 →</button>
- <article class="answer-card"><small>あなたが話した文</small><p id="transcript"></p></article>
- <article class="answer-card"><small>お手本</small><p id="reference"></p><button id="solution-audio" class="text-action">▶ 完成した文を聞く</button><p id="solution-status" class="small muted" role="status"></p><div class="explanation"><strong id="result-type"></strong><p id="explanation"></p></div></article>
- <button id="repeat" class="quiet wide">↻ 同じ問題でもう一度</button><button id="next" class="primary wide">次のランダム問題 →</button>
+ <section id="result" hidden aria-labelledby="result-title"><div id="result-icon" class="result-icon" aria-hidden="true">✓</div><h1 id="result-title" tabindex="-1">正解！</h1><p id="result-feedback"></p><button id="saved-review" class="text-action" hidden>復習ノートに保存しました · この問題を復習 →</button>
+ <article class="answer-card"><small>あなたの回答</small><p id="transcript" lang="en"></p></article>
+ <article id="corrected-card" class="answer-card" hidden><small>こう直すと自然です</small><p id="corrected" lang="en"></p></article>
+ <article class="answer-card model-answer"><small>お手本</small><p id="reference" lang="en"></p><button id="solution-audio" class="text-action">▷ お手本を聞く</button><p id="solution-status" class="small muted" role="status"></p><div class="explanation"><strong id="result-type"></strong><p id="explanation"></p></div></article>
+ <button id="next" class="primary wide">次の問題へ →</button><button id="repeat" class="quiet wide">↻ もう一度答える</button>
  </section>
 </section>
 <section id="review-panel" class="panel" hidden aria-label="復習ノート"><p id="review-error" class="error" role="alert" hidden></p>
- <div id="review-list-view"><p class="eyebrow">REVIEW NOTE</p><h1>間違えた問題</h1><p class="small muted">ためた問題を、いつでも繰り返そう。<br>元の2文から考えて、ボタンで答えを確認できます。</p><p id="review-loading" class="small muted" role="status"></p><button id="review-retry" class="quiet" hidden>もう一度読み込む</button><button id="review-first" class="review-reveal wide" hidden>最初の問題から復習する</button><div id="review-list" class="review-list"></div><p class="small muted">音声回答も復習も1回。音声回答・復習10回、または会話フレーズ30分で、その日のノルマ達成です。</p></div>
- <div id="review-reader" hidden><div class="round-top"><button id="review-back" class="text-action">‹ 問題一覧</button><span id="review-position" class="small muted"></span></div><p class="eyebrow">REVIEW</p><h1>間違えた問題</h1><p class="small muted">同じ2文で、もう一度考えよう。</p>
+ <div id="review-list-view"><p class="eyebrow">REVIEW NOTE</p><h1>間違えた問題</h1><p class="small muted">ためた問題を、いつでも繰り返そう。<br>日本語から英文を考えて、ボタンで答えを確認できます。以前の2文問題も復習できます。</p><p id="review-loading" class="small muted" role="status"></p><button id="review-retry" class="quiet" hidden>もう一度読み込む</button><button id="review-first" class="review-reveal wide" hidden>最初の問題から復習する</button><div id="review-list" class="review-list"></div><p class="small muted">音声回答も復習も1回。英文回答・復習10回、または会話フレーズ30分で、その日のノルマ達成です。</p></div>
+ <div id="review-reader" hidden><div class="round-top"><button id="review-back" class="text-action">‹ 問題一覧</button><span id="review-position" class="small muted"></span></div><p class="eyebrow">REVIEW</p><h1>間違えた問題</h1><p id="review-instruction" class="small muted">同じ問題で、もう一度考えよう。</p><article id="review-translation-prompt" class="japanese-question" hidden><small>日本語</small><p id="review-prompt" lang="ja"></p></article>
   <div class="sentences"><article><small>文 1</small><p id="review-text-0" lang="en"></p><p id="review-translation-0" class="review-translation" lang="ja"></p></article><article><small>文 2</small><p id="review-text-1" lang="en"></p><p id="review-translation-1" class="review-translation" lang="ja"></p></article></div>
-  <button id="review-question-audio" class="text-action">▷ 2文を聞く</button><p class="small muted">この2文を、ひとつの英文にすると？</p>
+  <button id="review-question-audio" class="text-action">▷ 2文を聞く</button><p id="review-prompt-hint" class="small muted">この2文を、ひとつの英文にすると？</p>
   <button id="review-reveal" class="review-reveal wide" aria-expanded="false" aria-controls="review-answer">答えを見る</button><p id="review-hint" class="small muted review-hint">まずは答えを見ずに考えよう。答えを確認すると復習1回に数えます。</p>
   <article id="review-answer" class="review-answer" hidden><small>つなげた文</small><p id="review-reference" class="review-reference" lang="en"></p><p id="review-japanese" class="small" lang="ja"></p><button id="review-answer-audio" class="text-action">▷ 答えの音声を聞く</button><p id="review-explanation" class="review-explanation small"></p></article>
   <p id="review-practice-status" class="small muted" role="status"></p><button id="review-repeat" class="quiet wide" hidden>もう一度この問題を復習する</button>
@@ -44,6 +52,6 @@
 <audio id="review-audio" preload="none" playsinline hidden></audio>
 </main>
 <script src="/listening-time.js?v=phrase-goal-30m-20261030-1"></script><script src="/pet-rules.js?v=phrase-goal-30m-20261030-1"></script><script src="/pet-art.js?v=memorial-20261016-1"></script><script src="/pet-frames.js?v=pet-frame-crop-20261017-1"></script><script src="/pet-playback.js?v=phrase-goal-30m-20261030-1"></script><script src="/pet-reactions.js?v=growth-items-20261016-1"></script><script src="/pet.js?v=phrase-goal-30m-20261030-1"></script>
-<script src="/voice-practice-shell.js?v=ios-mic-20261024-1"></script><script src="/voice-practice-audio.js?v=ios-mic-20261024-1"></script><script src="/sentence-game-core.js?v=prepared-510-20261027-1"></script><script src="/sentence-review.js?v=review-delete-20261028-1"></script><script src="/sentence-game.js?v=phrase-goal-30m-20261030-1"></script>
+<script src="/voice-practice-shell.js?v=ios-mic-20261024-1"></script><script src="/voice-practice-audio.js?v=ios-mic-20261024-1"></script><script src="/sentence-game-core.js?v=prepared-510-20261027-1"></script><script src="/sentence-review.js?v=translation-20261106-1"></script><script src="/sentence-translation.js?v=translation-20261106-1"></script>
 <script src="/identity-sync.js?v=identity-sync-20261102-1"></script>
 </body></html>

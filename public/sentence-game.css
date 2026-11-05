@@ -5,3 +5,33 @@
 .review-list-card{position:relative;padding:0;overflow:hidden}.review-list-open{display:block;text-align:left;width:100%;border:0;background:transparent;padding:17px 18px}.review-list-open>span{display:block;margin-top:13px;margin-right:65px;min-height:28px;line-height:28px;color:#617d58;font-size:11px}.review-list-open:focus-visible{outline-offset:-4px;border-radius:17px}.review-delete{position:absolute;right:10px;bottom:8px;min-width:56px;min-height:44px;padding:9px 12px;border:0;border-radius:10px;background:transparent;color:#a84d40;font-size:12px}.review-delete:hover{background:#fae9e3}
 
 .practice-goal .practice-phrase-row{margin-top:14px;font-size:12px}#practice-phrase-progress{accent-color:#647c68}
+
+/* Japanese-to-English practice, matching the pattern picker. */
+:root{--coral:#688564;--muted:#7a807a;color:#4b5965;background:#f8f5ef}
+button:focus-visible,a:focus-visible,textarea:focus-visible{outline:3px solid #8ca18a;outline-offset:3px}
+h1{font:700 27px/1.5 'Noto Sans JP','Yu Gothic',system-ui,sans-serif;letter-spacing:-.5px;color:#46535e}
+.eyebrow,.text-action,.steps li[aria-current=step],.explanation strong,.practice-goal b{color:#607d5c}
+.primary{border-radius:17px;background:#688564;min-height:56px;font-size:16px}
+.intro-flow li>span{background:#e6ebdf;color:#587253}.practice-goal progress{accent-color:#688564}
+.pattern-choices{display:flex;flex-wrap:wrap;gap:10px 8px;margin:22px 0 16px}
+.pattern-choice{min-height:46px;border:1.5px solid #e7e1d8;border-radius:999px;background:transparent;padding:9px 17px;font-size:16px;font-weight:700;line-height:1.5}
+.pattern-choice[aria-pressed=true]{background:#e7ece4;border-color:#8ca08b;color:#3f5b43}
+.pattern-choice:hover{background:#eef0e8}.pattern-choice[aria-pressed=true]:hover{background:#e1e8dc}
+.question-meta{display:flex;align-items:center;justify-content:space-between;margin:16px 0 24px;gap:14px}
+.pattern-badge{border-radius:999px;background:#e4eadc;color:#4c674a;padding:3px 17px;font-weight:700;font-size:16px}
+.japanese-question{background:#fbf8f1;border:1px solid #e1d9cc;border-radius:18px;padding:20px;margin:20px 0 14px}
+.japanese-question small{background:#e7e6d6;color:#627058;border-radius:7px;padding:3px 9px;font-size:12px;font-weight:700}
+.japanese-question p{font-size:22px;font-weight:600;line-height:1.8;color:#454d4e;margin:14px 0 0;overflow-wrap:anywhere}
+.pattern-hint{color:#647f60;font-size:14px;margin:17px 0}.answer-label{display:block;margin-bottom:8px;font-size:12px;color:#727f72}
+textarea{font:400 21px/1.6 Arial,'Noto Sans JP',sans-serif;color:#48545f;background:#fff;border:1.5px solid #dbd6cc;border-radius:16px;padding:17px;width:100%;min-height:150px;resize:vertical;display:block}
+textarea::placeholder{font-size:15px;color:#93998e}textarea:disabled{background:#f3f2ec}
+.voice-input-controls{display:flex;flex-direction:column;align-items:center;gap:4px;margin-top:22px}
+.voice-input{display:flex;align-items:center;justify-content:center;gap:12px;border:1.5px solid #718d69;color:#506d4c;border-radius:999px;background:transparent;min-height:52px;padding:11px 25px;font-size:16px;font-weight:700}
+.voice-input[aria-pressed=true]{color:#995447;background:#f8eae5;border-color:#bc7665}.voice-input[aria-pressed=true] svg{display:none}
+#input-guide{text-align:center;font-size:11px;line-height:1.9;margin:12px 0}#input-status{min-height:22px;text-align:center}
+.model-answer{background:#eef2e7;border-color:#dce4d2}.model-answer small{background:#e0e7d4;color:#59714e}
+#result-title:focus,#round-title:focus{outline:none}.round-top .text-action{font-size:12px}
+#review-reader.translation-review>.sentences{display:none}
+.review-list-card .translation-type{color:#5e7b56;font-weight:700;font-size:12px}
+@media(min-width:600px){.panel{padding-inline:32px}.pattern-choice{font-size:17px;padding-inline:21px}.japanese-question p{font-size:24px}}
+@media(max-width:360px){.pattern-choices{gap:8px 6px}.pattern-choice{font-size:14px;padding:9px 13px}.japanese-question{padding:17px}.japanese-question p{font-size:20px}textarea{font-size:19px}}

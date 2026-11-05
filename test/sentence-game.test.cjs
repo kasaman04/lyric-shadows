@@ -72,6 +72,69 @@ async function fixture(t,{missing=false,missingTts=false,staticAudio=false,petSt
   async function call(endpoint,body,extra={}){const raw=Buffer.isBuffer(body),identity=[cookie,deviceId?'phraseDeviceId='+deviceId:''].filter(Boolean).join('; ');const res=await fetch(base+'/api/sentence-game'+endpoint,{method:body===undefined?'GET':'POST',headers:{...(identity?{Cookie:identity}:{}),...(body===undefined?{}:{'Content-Type':raw?'audio/webm;codecs=opus':'application/json',Origin:base}),...extra},body:body===undefined?undefined:raw?body:JSON.stringify(body)});cookie ||=res.headers.get('set-cookie')?.split(';')[0];return res;}
   return {call,base,calls,service,setTranscript:value=>{transcript=value;},setVerdict:value=>{verdict=value;},cookie:()=>cookie};
 }
+test('translation bank covers exactly the screenshot patterns and 253 prompts without repeat until a cycle ends',()=>{
+  const bank=require('../lib/sentence-translation-bank');
+  assert.equal(bank.TYPES.length,26);assert.equal(bank.QUESTIONS.length,253);
+  assert(!bank.TYPES.some(t=>['whom','whomever'].includes(t.key)));
+  for(const type of bank.TYPES){
+    assert(type.count>0);let seen=[];
+    for(let i=0;i<type.count;i++){const q=bank.selectQuestion(type.key,seen,()=>0);assert.equal(q.type,type.key);assert(!seen.includes(q.id));assert(q.japanese&&q.answer&&q.explanation);assert(q.solutionAudio.start>=0&&q.solutionAudio.end>q.solutionAudio.start);assert(require('node:fs').existsSync(path.join(__dirname,'../public',q.solutionAudio.url)));seen=bank.advanceHistory(seen,q,type.key);}
+    const first=bank.selectQuestion(type.key,seen,()=>0);assert.equal(bank.advanceHistory(seen,first,type.key).length,1);assert.deepEqual(bank.advanceHistory(seen,first,type.key,true),seen);
+  }
+  assert.throws(()=>bank.selectQuestion('whom'));
+});
+
+test('Japanese prompts keep answers private; typed grading needs no microphone or TTS and is private and idempotent',async t=>{
+  const bank=require('../lib/sentence-translation-bank'),q=bank.QUESTIONS[0];
+  const f=await fixture(t,{missing:true});
+  const cfg=await(await f.call('/config')).json();assert.equal(cfg.translationQuestions,253);assert.equal(cfg.translationTypes.length,26);
+  const first=await(await f.call('/attempts',{mode:'translation',repeat:q.id})).json();
+  assert.deepEqual(first.question,{id:q.id,mode:'translation',type:'who',japanese:q.japanese});
+  assert(!JSON.stringify(first).includes(q.answer));assert(!('audio' in first));assert.equal(f.calls.length,0);
+  assert.equal((await f.call('/attempts/'+first.id+'/text-answer',{text:'   '})).status,400);
+  assert.equal((await f.call('/attempts/'+first.id+'/text-answer',{text:'x'.repeat(1501)})).status,400);
+  assert.equal((await f.call('/attempts/'+first.id+'/text-answer',{text:q.answer},{Origin:'https://other.invalid'})).status,403);
+  const other=await fetch(f.base+'/api/sentence-game/attempts/'+first.id+'/text-answer',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({text:q.answer})});assert.equal(other.status,404);
+  const results=await Promise.all([f.call('/attempts/'+first.id+'/text-answer',{text:q.answer}),f.call('/attempts/'+first.id+'/text-answer',{text:q.answer})]);
+  for(const response of results){const value=await response.json();assert.equal(value.verdict,'correct');assert.equal(value.transcript,q.answer);assert.equal(value.reference,q.answer);}
+  const replay=await(await f.call('/attempts/'+first.id+'/text-answer',{text:'different answer'})).json();assert.equal(replay.transcript,q.answer);
+  const sound=await(await f.call('/attempts/'+first.id+'/solution-audio',{})).json();assert.deepEqual(sound,q.solutionAudio);assert.equal(f.calls.length,0);
+  const next=await(await f.call('/attempts',{mode:'translation',filter:'who',exclude:[q.id]})).json();assert.notEqual(next.question.id,q.id);
+  assert.equal((await f.call('/attempts',{mode:'translation',filter:'bad'})).status,400);
+});
+
+test('voice input only transcribes; edited text is graded, saved for Japanese review and counted once',async t=>{
+  const {PetStore}=require('../lib/pet-store'),bank=require('../lib/sentence-translation-bank');
+  const dir=await fs.mkdtemp(path.join(os.tmpdir(),'sg-translation-'));
+  t.after(async()=>{assert.equal(path.dirname(dir),os.tmpdir());assert(path.basename(dir).startsWith('sg-translation-'));await fs.rm(dir,{recursive:true,force:true});});
+  const f=await fixture(t,{petStore:new PetStore({dir,practicePolicy:'daily'}),deviceId:'translation-review-device',gradeVerdict:'incorrect'});
+  const q=bank.QUESTIONS.find(q=>q.type==='by the time');
+  const attempt=await(await f.call('/attempts',{mode:'translation',repeat:q.id})).json();
+  f.setTranscript('A draft from voice input.');
+  const text=await(await f.call('/attempts/'+attempt.id+'/transcribe',Buffer.alloc(400))).json();assert.equal(text.transcript,'A draft from voice input.');
+  assert.equal(f.calls.filter(x=>x.endsWith('/responses')).length,0);assert.equal((await(await f.call('/practice')).json()).dailyPractice.count,0);
+  assert.equal((await f.call('/attempts/'+attempt.id+'/solution-audio',{})).status,409);
+  const grade=await(await f.call('/attempts/'+attempt.id+'/text-answer',{text:'My edited answer by the time I leave.'})).json();
+  assert.equal(grade.transcript,'My edited answer by the time I leave.');assert(grade.reviewSaved);assert.equal(grade.dailyPractice.count,1);
+  await f.call('/attempts/'+attempt.id+'/text-answer',{text:'Retry.'});assert.equal((await(await f.call('/practice')).json()).dailyPractice.count,1);
+  assert.equal((await f.call('/attempts/'+attempt.id+'/transcribe',Buffer.alloc(400))).status,409);
+  const list=await(await f.call('/review')).json();assert.equal(list.items[0].mode,'translation');assert.equal(list.items[0].japanese,q.japanese);assert(!JSON.stringify(list).includes(q.answer));
+  const revealed=await(await f.call('/review/'+q.id+'/reveal',{})).json();assert.equal(revealed.reference,q.answer);
+  const audio=await(await f.call('/review/'+q.id+'/audio',{part:'answer'})).json();assert.deepEqual(audio,q.solutionAudio);
+  assert.equal((await f.call('/review/'+q.id+'/audio',{part:'question'})).status,400);
+  assert.equal(f.calls.filter(x=>x.includes('text-to-dialogue')).length,0);
+});
+
+test('translation grading requires the selected expression as whole words, while accepting non-exact wording',async t=>{
+  const bank=require('../lib/sentence-translation-bank'),q=bank.QUESTIONS[0];
+  const f=await fixture(t);
+  for(const [text,verdict] of [['I know someone WHO can help.','correct'],['I know a whole lot of people.','almost'],['I know someone that can help.','almost']]){
+    const attempt=await(await f.call('/attempts',{mode:'translation',repeat:q.id})).json();
+    const result=await(await f.call('/attempts/'+attempt.id+'/text-answer',{text})).json();
+    assert.equal(result.verdict,verdict);if(verdict==='almost')assert.equal(result.corrected,q.answer);
+  }
+});
+
 test('private attempts, no-answer without ASR, audio caching/ranges, model alternatives and idempotent grading',async t=>{
   const f=await fixture(t);const cfg=await(await f.call('/config')).json();assert(cfg.openai&&cfg.elevenlabs);assert.equal(cfg.onsetTimeoutMs,5000);assert(!JSON.stringify(cfg).includes('secret'));
   assert.equal((await f.call('/attempts',{filter:'who'},{Origin:'https://other.invalid'})).status,403);

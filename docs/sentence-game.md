@@ -1,3 +1,23 @@
+# パターンを選んで日本語を英語にする練習
+
+公開画面 `/sentence-game.html` は次の流れです。
+
+1. 画像と同じ26パターン（who、whose、which、that、what、when、where、why、how、whoever、whatever、whichever、whenever、wherever、however、by the time、whether、now that、once、so that、in case、as soon as、even though、unless、while、as）または「すべて」を選択。
+2. 選んだパターンの日本語を表示。既存の253会話フレーズの対象行を使用し、英文のお手本は判定まで返しません。
+3. 英文を手入力、または「音声で入力」→「入力を終える」で書き起こし。音声入力後に手直しできます。マイク拒否時も手入力を継続できます。
+4. 「判定する」で意味・文法・選択表現を確認。完全一致以外の自然な英文も採点し、選択表現を使わない回答は「あと少し」にします。
+5. お手本・ポイント・該当フレーズの既存音声を確認し、次の問題か同じ問題の再回答へ。
+
+出題履歴は旧問題と別のローカルストレージに保存し、パターンを一巡するまで重複を避けます。録音は最大45秒。停止・離脱時にマイクを解放します。採点の通信失敗時も入力を保持し再試行できます。
+
+手入力も日次の英文回答回数に含み、不正解・あと少しは既存のSupabase復習ノートへ保存します。新しい問題の復習では日本語だけを表示し、「答えを見る」で英文を表示。過去の2文問題と既存の学習記録も引き続き扱えます。既存音声の区間を再生するため、問題開始やお手本のための音声生成は不要です。
+
+実装: `public/sentence-translation.js`、`lib/sentence-translation-bank.js`。APIは既存の `/api/sentence-game` 内に追加。`attempts` の `mode: "translation"`、`attempts/:id/transcribe`、`attempts/:id/text-answer` を使用します。
+
+検証: `node --test test/sentence-game.test.cjs`、`python scripts/verify-sentence-translation-browser.py`。ブラウザ検証は模擬音声と模擬APIを使用します。
+
+## 以前の音声問題と保存機能（互換用）
+
 # 2文をつなぐ
 
 ホームの旧「AIと話す」は、この音声ゲームに置き換えました。旧会話APIはマウントしません。旧ページURLは `/sentence-game.html` に移動します。既存の会話データは削除せず、新ゲームの保存先と分離します。
