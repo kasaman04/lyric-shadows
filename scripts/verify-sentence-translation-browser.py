@@ -36,8 +36,16 @@ with tempfile.TemporaryDirectory(prefix='translation-browser-', dir=OUT) as data
             ctx.add_cookies([{'name':'phraseDeviceId','value':'translation-browser-device','url':BASE}])
             ctx.add_init_script('''
               window.__gumCalls=0;window.__streams=[];
+              // Model iOS retaining the music page's playback-only session.
+              const audioSession={type:'playback'};
+              Object.defineProperty(navigator,'audioSession',{configurable:true,get:()=>audioSession});
               const gum=navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
-              navigator.mediaDevices.getUserMedia=async c=>{window.__gumCalls++;const s=await gum(c);window.__streams.push(s);return s;};
+              navigator.mediaDevices.getUserMedia=async c=>{
+                window.__gumCalls++;
+                if(audioSession.type!=='play-and-record')throw new DOMException('AudioSession category is not compatible with audio capture','NotReadableError');
+                const s=await gum(c);window.__streams.push(s);return s;
+              };
+              window.__requestMic=navigator.mediaDevices.getUserMedia;
             ''')
             page = ctx.new_page()
             errors=[]
@@ -73,11 +81,13 @@ with tempfile.TemporaryDirectory(prefix='translation-browser-', dir=OUT) as data
             page.locator('#repeat').click()
             page.locator('#answer-input:not([disabled])').wait_for()
             page.locator('#voice-input').click()
-            page.wait_for_function('document.querySelector("#voice-input").getAttribute("aria-pressed")==="true"')
+            page.wait_for_function('document.querySelector("#voice-input").getAttribute("aria-pressed")==="true"',timeout=5000)
+            assert page.evaluate('navigator.audioSession.type')=='play-and-record'
             page.wait_for_timeout(350)
             page.locator('#voice-input').click()
             page.wait_for_function('document.querySelector("#answer-input").value.includes("I have a friend")')
             assert page.evaluate('__streams.every(s=>s.getTracks().every(t=>t.readyState==="ended"))')
+            assert page.evaluate('navigator.audioSession.type')=='playback'
             page.locator('#answer-input').fill('This is wrong.')
             page.locator('#judge').click()
             page.locator('#result').wait_for(state='visible')
@@ -99,6 +109,7 @@ with tempfile.TemporaryDirectory(prefix='translation-browser-', dir=OUT) as data
             page.evaluate('()=>{navigator.mediaDevices.getUserMedia=async()=>{throw new DOMException("denied","NotAllowedError")}}')
             page.locator('#voice-input').click()
             page.locator('#error').wait_for(state='visible')
+            assert page.evaluate('navigator.audioSession.type')=='playback','Denied microphone must release the capture session'
             assert page.locator('#answer-input').is_enabled()
             page.locator('#answer-input').fill('I know someone who can help.')
             assert page.locator('#judge').is_enabled()
@@ -111,6 +122,25 @@ with tempfile.TemporaryDirectory(prefix='translation-browser-', dir=OUT) as data
             for width in [320,390,768]:
                 page.set_viewport_size({'width':width,'height':844})
                 assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
+            # A late permission result must not release a newer recording's session.
+            page.evaluate('()=>{navigator.mediaDevices.getUserMedia=c=>new Promise(resolve=>{window.__grantMic=async()=>resolve(await window.__requestMic(c));});}')
+            page.locator('#voice-input').click()
+            page.wait_for_function('typeof window.__grantMic==="function"')
+            assert page.evaluate('navigator.audioSession.type')=='play-and-record'
+            page.locator('#exit').click()
+            assert page.evaluate('navigator.audioSession.type')=='playback'
+            page.evaluate('()=>{navigator.mediaDevices.getUserMedia=window.__requestMic;}')
+            page.locator('#begin').click()
+            page.locator('#answer-input:not([disabled])').wait_for()
+            page.locator('#voice-input').click()
+            page.wait_for_function('document.querySelector("#voice-input").getAttribute("aria-pressed")==="true"')
+            page.evaluate('()=>window.__grantMic()')
+            page.wait_for_function('__streams.at(-1).getTracks().every(t=>t.readyState==="ended")')
+            assert page.evaluate('navigator.audioSession.type')=='play-and-record'
+            assert page.evaluate('__streams.at(-2).getTracks().some(t=>t.readyState==="live")')
+            page.locator('#exit').click()
+            assert page.evaluate('navigator.audioSession.type')=='playback'
+            assert page.evaluate('__streams.every(s=>s.getTracks().every(t=>t.readyState==="ended"))')
             assert errors==[],errors
             browser.close()
         print(json.dumps({'result':'PASS','screenshots':str(OUT),'viewports':[320,390,768],'errors':errors},ensure_ascii=False))

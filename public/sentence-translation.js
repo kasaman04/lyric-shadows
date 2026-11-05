@@ -68,9 +68,12 @@
     if(phase!=='answering')return;
     const token=epoch;clearError();active('mic-permission');stopAudio();
     try {
+      // iOS can retain the music page's playback-only category. Change it
+      // before requesting capture, not after getUserMedia has already failed.
+      releaseAudio=window.VoicePracticeAudio?.acquire();
       const acquired=await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:true,noiseSuppression:true,autoGainControl:true},video:false});
       if(token!==epoch){acquired.getTracks().forEach(t=>t.stop());return;}
-      stream=acquired;releaseAudio=window.VoicePracticeAudio?.acquire();
+      stream=acquired;
       const mime=['audio/webm;codecs=opus','audio/webm','audio/mp4'].find(type=>MediaRecorder.isTypeSupported(type));
       const current=new MediaRecorder(stream,mime?{mimeType:mime}:undefined);recorder=current;chunks=[];pendingAudio=null;$('retry-transcribe').hidden=true;
       current.ondataavailable=event=>{if(token===epoch&&event.data.size)chunks.push(event.data);};
