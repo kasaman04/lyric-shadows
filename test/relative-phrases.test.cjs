@@ -1,7 +1,7 @@
 'use strict';
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
 const root=path.resolve(__dirname,'..'),phrases=require('../data/relative-conversation-phrases.json');
-const keys=['who','whom','whose','which','that','what','when','where','why','how','whoever','whomever','whatever','whichever','whenever','wherever','however'];
+const keys=['who','whose','which','that','what','when','where','why','how','whoever','whatever','whichever','whenever','wherever','however'];
 function browser(){
  const timers=new Map();let timerId=0;
  class Audio{constructor(src=''){this.src=src;this.paused=true;this.currentTime=0;this.preload='none'}play(){this.paused=false;return Promise.resolve()}pause(){this.paused=true}}
@@ -14,17 +14,19 @@ function browser(){
  vm.runInContext("state.phrases=seed;stopAudio=()=>{};stopSongAudio=()=>{};renderPhrasePractice=()=>{};setMediaSession=()=>{};clearMediaSession=()=>{};updatePhraseRepeatButtons=()=>{};shuffleArray=()=>{throw Error('Sequential playback must not shuffle')};",ctx);
  return {ctx,timers,run:code=>vm.runInContext(code,ctx)};
 }
-test('170 complete bilingual conversations, ten per expression, with two voices and all audio files',()=>{
- assert.equal(phrases.length,170);assert.equal(new Set(phrases.map(p=>p.id)).size,170);
- assert.equal(phrases.filter(p=>p.pack==='基本').length,100);assert.equal(phrases.filter(p=>p.pack==='応用').length,70);
+test('150 complete bilingual conversations, ten per expression, with two voices and all audio files',()=>{
+ assert.equal(phrases.length,150);assert.equal(new Set(phrases.map(p=>p.id)).size,150);
+ assert.equal(phrases.filter(p=>p.pack==='基本').length,90);assert.equal(phrases.filter(p=>p.pack==='応用').length,60);
+ assert.deepEqual(Object.keys(require('../public/phrase-expression-guides.js')),keys);
+ assert(phrases.every(p=>!['whom','whomever'].includes(p.relativeType)));
  for(const key of keys)assert.equal(phrases.filter(p=>p.category===key).length,10,key);
  for(const p of phrases){assert.deepEqual(p.lines.map(l=>l[0]),['A','B','A']);assert(p.lines.every(l=>l[1]&&l[2]));assert.equal(p.lines[p.targetLineIndex][1],p.phrase);assert(new RegExp('\\b'+p.relativeType+'\\b','i').test(p.phrase));assert.notEqual(p.voiceCast.A.key,p.voiceCast.B.key);assert.equal(p.audioCues.length,3);assert(p.audioDuration>1);assert(fs.statSync(path.join(root,'public',p.audio)).size>1000,p.id)}
- const context={window:{}};vm.runInNewContext(fs.readFileSync(path.join(root,'public/relative-phrases.js'),'utf8'),context);assert.equal(context.window.CONVERSATION_PHRASES.length,170);
- const html=fs.readFileSync(path.join(root,'public/index.html'),'utf8');assert.match(html,/relative-phrases\.js\?v=relative-conversations-20261030-1/);assert.doesNotMatch(html,/<script src="(?:phrases|real-phrases|generated-phrase-dialogue)\.js/);
+ const context={window:{}};vm.runInNewContext(fs.readFileSync(path.join(root,'public/relative-phrases.js'),'utf8'),context);assert.equal(context.window.CONVERSATION_PHRASES.length,150);
+ const html=fs.readFileSync(path.join(root,'public/index.html'),'utf8');assert.match(html,/relative-phrases\.js\?v=daily-conversations-20261105-1/);assert.doesNotMatch(html,/<script src="(?:phrases|real-phrases|generated-phrase-dialogue)\.js/);
 });
 test('play all uses current expression or pack in source order, including restart',()=>{
  const b=browser();
- for(const [pack,category,count] of [['すべて','すべて',170],['基本','すべて',100],['応用','すべて',70],['すべて','who',10],['応用','however',10]]){
+ for(const [pack,category,count] of [['すべて','すべて',150],['基本','すべて',90],['応用','すべて',60],['すべて','who',10],['応用','however',10]]){
   b.ctx.selection={pack,category};b.run("state.phrasePack=selection.pack;state.phraseCategory=selection.category;startSelectedPhrasePlayback()");
   assert.equal(b.run('state.practiceSet.length'),count);assert.equal(b.run('state.practiceMode'),'sequential');assert.equal(b.run('state.practiceIndex'),0);
   const expected=phrases.filter(p=>(pack==='すべて'||p.pack===pack)&&(category==='すべて'||p.category===category)).map(p=>p.id);

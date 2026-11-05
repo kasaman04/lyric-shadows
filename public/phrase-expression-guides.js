@@ -12,13 +12,6 @@
       examples: [{ en: 'The woman who works at this cafe remembered my order.', ja: 'このカフェで働いている女性が、私の注文を覚えていました。' }],
       note: 'who works … で「働いている人」のように、人の行動や特徴を説明できます。'
     },
-    whom: {
-      title: '動作の相手になる「人」を説明する',
-      role: '人について「誰に会ったか」「誰を招待したか」などの説明を付け足します。whom は後ろの文の中で、動作を受ける相手を表します。',
-      pattern: '人 + whom + 主語 + 動詞 …',
-      examples: [{ en: "She's a researcher whom I met at a conference.", ja: '彼女は、私が学会で会った研究者です。' }],
-      note: '改まった表現です。会話では the person I met のように省略する言い方もよく使います。with whom のように、前置詞の後ろに置く形もあります。'
-    },
     whose: {
       title: '「その人の・その物の〜」を説明する',
       role: '人や物と、その持ち物・家族・一部分をつなぎます。whose の直後に名詞を置いて、「その人の兄弟」「その家の屋根」のような関係を表します。',
@@ -81,13 +74,6 @@
       pattern: 'whoever + 動詞 … ＝ 〜する人は誰でも',
       examples: [{ en: 'Whoever wants to come is welcome.', ja: '来たい人は誰でも歓迎です。' }],
       note: 'whoever wants to come 全体が、歓迎される「人」を表しています。'
-    },
-    whomever: {
-      title: '動作の相手を「誰でもよい」と表す',
-      role: '招待する・頼むなどの相手を限定せず、「〜する相手なら誰でも」と伝えます。whomever に続く節の中で、その人が動作の相手になるときに使います。',
-      pattern: 'whomever + 主語 + 動詞 … ＝ 〜する相手なら誰でも',
-      examples: [{ en: 'Invite whomever you like.', ja: '好きな人なら誰でも招待してください。' }],
-      note: 'この例では、you like の相手を whomever が表します。改まった表現で、会話では anyone you like などもよく使います。'
     },
     whatever: {
       title: 'もの・ことを「何でもよい」と表す',
