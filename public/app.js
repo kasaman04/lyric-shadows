@@ -413,6 +413,7 @@ function renderHome() {
     <div id="progressContainer"></div>
   `;
   if (state.homeFilter === 'C') {
+    updatePhraseCardButtons();
     setTimeout(() => {
       scrollActivePhrasePack();
       scrollActivePhraseChip();
@@ -423,6 +424,7 @@ function renderHome() {
 
 function setHomeFilter(filter) {
   if (!['A', 'C', 'D'].includes(filter)) filter = 'A';
+  stopPhrasePracticeAudio();
   stopDramaAudio();
   stopQuoteCardAudio();
   state.dramaReward = null;
@@ -789,12 +791,17 @@ function renderPhraseGrid() {
   `).join('');
 
   const cards = filtered.map((phrase, index) => `
-    <div class="phrase-card phrase-card-${index % 12}" onclick="showPhrase(state.phrases.find(p => p.id === '${phrase.id}'))">
-      <div class="phrase-card-category">${esc(phrase.category)}</div>
-      <div class="phrase-card-title">${phraseEnglish(phrase, phrase.phrase)}</div>
-      <div class="phrase-card-note">${esc(phrase.usageNote)}</div>
-      <div class="phrase-card-count">${phrase.lines.length}ラリー</div>
-    </div>
+    <article class="phrase-card phrase-card-${index % 12}">
+      <button type="button" class="phrase-card-open" onclick="showPhrase(state.phrases.find(p => p.id === '${phrase.id}'))">
+        <span class="phrase-card-category">${esc(phrase.category)}</span>
+        <span class="phrase-card-title">${phraseEnglish(phrase, phrase.phrase)}</span>
+        <span class="phrase-card-note">${esc(phrase.usageNote)}</span>
+      </button>
+      <div class="phrase-card-actions">
+        <span class="phrase-card-count">${phrase.lines.length}ラリー</span>
+        ${phrase.audio ? `<button type="button" class="phrase-card-play" data-phrase-card-src="${esc(phrase.audio)}" onclick="togglePhraseCardAudio('${phrase.id}')" aria-label="${esc(phrase.phrase)} の会話を再生" aria-pressed="false">▶ 再生</button>` : ''}
+      </div>
+    </article>
   `).join('');
 
   const featured = filtered.find(phrase => phrase.audio) || filtered[0];
@@ -1510,6 +1517,30 @@ function normalizePhraseAudioSrc(src) {
   }
 }
 
+function togglePhraseCardAudio(id) {
+  const phrase = state.phrases.find(item => item.id === id);
+  if (!phrase?.audio) return;
+  const audio = state.phrasePracticeAudio;
+  if (audio && state.phraseAudioSrc === normalizePhraseAudioSrc(phrase.audio) && !audio.ended) {
+    if (!audio.paused) audio.pause();
+    else audio.play().catch(() => showToast('音声を再生できませんでした。再生ボタンを押してください'));
+    return;
+  }
+  stopSongAudio(); stopDramaAudio(); stopQuoteCardAudio();
+  playPhraseSharedAudio(phrase.audio);
+}
+
+function updatePhraseCardButtons() {
+  document.querySelectorAll('[data-phrase-card-src]').forEach(button => {
+    const audio = state.phrasePracticeAudio;
+    const playing = !!audio && !audio.paused && !audio.ended && state.phraseAudioSrc === normalizePhraseAudioSrc(button.dataset.phraseCardSrc);
+    button.textContent = playing ? 'Ⅱ 一時停止' : '▶ 再生';
+    button.setAttribute('aria-pressed', String(playing));
+    const phrase = state.phrases.find(item => normalizePhraseAudioSrc(item.audio) === normalizePhraseAudioSrc(button.dataset.phraseCardSrc));
+    button.setAttribute('aria-label', `${phrase?.phrase || 'このフレーズ'} の会話を${playing ? '一時停止' : '再生'}`);
+  });
+}
+
 function playPhraseSharedAudio(src, { repeat = false, autoAdvance = false } = {}) {
   stopAudio();
   clearTimeout(state.phraseAdvanceTimer); state.phraseAdvanceTimer = null;
@@ -1532,6 +1563,7 @@ function playPhraseSharedAudio(src, { repeat = false, autoAdvance = false } = {}
   state.phrasePracticeAudio.loop = repeat;
   state.phrasePracticeAudio.onended = () => {
     if (request !== state.phraseAudioRequest) return;
+    updatePhraseCardButtons();
     if (!repeat && autoAdvance && state.view === 'phrasePractice') {
       const advance = () => {
         state.phraseAdvanceTimer = null;
@@ -1543,12 +1575,14 @@ function playPhraseSharedAudio(src, { repeat = false, autoAdvance = false } = {}
   };
   state.phrasePracticeAudio.onplay = () => {
     if (activeMediaType === 'phrase') setMediaPlaybackState(true);
+    updatePhraseCardButtons();
   };
   state.phrasePracticeAudio.onpause = () => {
     if (activeMediaType === 'phrase') setMediaPlaybackState(false);
+    updatePhraseCardButtons();
   };
   updatePhraseRepeatButtons();
-  const phrase = state.view === 'phrasePractice' ? state.practiceSet[state.practiceIndex] : state.currentPhrase;
+  const phrase = state.view === 'phrasePractice' ? state.practiceSet[state.practiceIndex] : state.currentPhrase || state.phrases.find(item => normalizePhraseAudioSrc(item.audio) === absoluteSrc);
   setMediaSession('phrase', phrase?.phrase || '会話フレーズ', 'Lyric Shadows');
   state.phrasePracticeAudio.play().catch(() => { if (request === state.phraseAudioRequest) showToast('音声を再生できませんでした。再生ボタンを押してください'); });
 }
@@ -1583,6 +1617,7 @@ function stopPhrasePracticeAudio() {
   }
   state.phraseAudioRepeat = false;
   state.phraseAudioSrc = '';
+  updatePhraseCardButtons();
   clearMediaSession('phrase');
   updatePhraseRepeatButtons();
 }
