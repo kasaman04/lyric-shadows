@@ -57,16 +57,17 @@ test('five seconds is an onset deadline; speaking in time removes it and silence
   g=new TurnGate(0);assert.equal(g.sample(4900,true),null);assert.equal(g.remaining(5000),null);assert.equal(g.sample(6000,true),null);assert.equal(g.sample(7599,false),null);assert.equal(g.sample(7600,false),'answer');assert.equal(g.sample(9000,false),null);
   g=new TurnGate(0);g.sample(1,true);assert.equal(g.sample(45000,true),'answer');g=new TurnGate(0);g.cancel();assert.equal(g.sample(5000,false),null);
 });
-async function fixture(t,{missing=false,missingTts=false,staticAudio=false,petStore,clock,deviceId,gradeVerdict='correct',onTranscribe}={}){
+async function fixture(t,{missing=false,missingTts=false,keylessGrader=false,staticAudio=false,petStore,clock,deviceId,gradeVerdict='correct',onTranscribe}={}){
   const dir=await fs.mkdtemp(path.join(os.tmpdir(),'sg-test-'));
   t.after(async()=>{assert.equal(path.dirname(dir),os.tmpdir());assert(path.basename(dir).startsWith('sg-test-'));await fs.rm(dir,{recursive:true,force:true});});
   const calls=[];let transcript='I met a man that lives in Tokyo.',verdict=gradeVerdict;
   const fetcher=async(url,init)=>{calls.push(url);if(url.includes('text-to-dialogue')){const b=JSON.parse(init.body);return Response.json({audio_base64:Buffer.alloc(48000*b.inputs.length).toString('base64'),voice_segments:b.inputs.map((v,i)=>({voice_id:v.voice_id,dialogue_input_index:i,start_time_seconds:i,end_time_seconds:i+.9}))});}
     if(url.endsWith('/transcriptions')){assert.equal(init.body.get('prompt'),null);assert.equal(init.body.get('languages[]'),'en');onTranscribe?.();return Response.json({text:transcript});}
-    const b=JSON.parse(init.body);assert.match(b.instructions,/never silently fix/i);assert.match(b.instructions,/not require an exact/i);await new Promise(r=>setTimeout(r,20));return Response.json({output_text:JSON.stringify({verdict,feedback:'採点結果です。',corrected:transcript})});};
+    assert.fail('Unexpected provider request: '+url);};
+  const grader={provider:'codex-app-server',async available(){return !missing||keylessGrader;},async grade(task){if(missing&&!keylessGrader)throw Object.assign(new Error('Codex is unavailable'),{status:503});calls.push('codex-app-server');assert.match(task.instructions,/never silently fix/i);assert.match(task.instructions,/not require an exact/i);await new Promise(r=>setTimeout(r,20));return {verdict,feedback:'採点結果です。',corrected:transcript};}};
   const env={SENTENCE_GAME_STORAGE:'local',SENTENCE_GAME_DATA_DIR:dir,...missing?{}:{OPENAI_API_KEY:'test-secret',ELEVENLABS_API_KEY:'test-secret'}};
   if(missingTts)delete env.ELEVENLABS_API_KEY;
-  const app=express();app.use(express.json());if(staticAudio)app.use(express.static(path.join(__dirname,'../public')));const service=mountSentenceGame(app,{env,fetcher,petStore,clock,staticAudio});
+  const app=express();app.use(express.json());if(staticAudio)app.use(express.static(path.join(__dirname,'../public')));const service=mountSentenceGame(app,{env,fetcher,grader,petStore,clock,staticAudio});
   const http=app.listen(0,'127.0.0.1');await new Promise(r=>http.once('listening',r));t.after(()=>new Promise(r=>{http.closeAllConnections();http.close(r);}));
   const base='http://127.0.0.1:'+http.address().port;let cookie;
   async function call(endpoint,body,extra={}){const raw=Buffer.isBuffer(body),identity=[cookie,deviceId?'phraseDeviceId='+deviceId:''].filter(Boolean).join('; ');const res=await fetch(base+'/api/sentence-game'+endpoint,{method:body===undefined?'GET':'POST',headers:{...(identity?{Cookie:identity}:{}),...(body===undefined?{}:{'Content-Type':raw?'audio/webm;codecs=opus':'application/json',Origin:base}),...extra},body:body===undefined?undefined:raw?body:JSON.stringify(body)});cookie ||=res.headers.get('set-cookie')?.split(';')[0];return res;}
@@ -112,7 +113,7 @@ test('voice input only transcribes; edited text is graded, saved for Japanese re
   const attempt=await(await f.call('/attempts',{mode:'translation',repeat:q.id})).json();
   f.setTranscript('A draft from voice input.');
   const text=await(await f.call('/attempts/'+attempt.id+'/transcribe',Buffer.alloc(400))).json();assert.equal(text.transcript,'A draft from voice input.');
-  assert.equal(f.calls.filter(x=>x.endsWith('/responses')).length,0);assert.equal((await(await f.call('/practice')).json()).dailyPractice.count,0);
+  assert.equal(f.calls.filter(x=>x==='codex-app-server').length,0);assert.equal((await(await f.call('/practice')).json()).dailyPractice.count,0);
   assert.equal((await f.call('/attempts/'+attempt.id+'/solution-audio',{})).status,409);
   const grade=await(await f.call('/attempts/'+attempt.id+'/text-answer',{text:'My edited answer by the time I leave.'})).json();
   assert.equal(grade.transcript,'My edited answer by the time I leave.');assert(grade.reviewSaved);assert.equal(grade.dailyPractice.count,1);
@@ -141,6 +142,14 @@ test('prepared conversational lessons include question-specific explanations and
   for(const q of bank.QUESTIONS){assert(q.acceptedAnswers.includes(q.answer));assert.equal(q.examples.length,2);assert(q.examples.every(e=>e.en&&e.ja&&!('audio' in e)));assert.deepEqual(q.examples,data.lessons[q.id].examples);}
   const why=bank.byId.get('translation-why-dialogue-04');
   assert.equal(why.answer,'Yeah, I explained why I was late.');assert.match(why.explanation,/explained と was/);assert(!why.explanation.includes('why を省'));assert.equal(why.solutionAudio,null);
+});
+
+test('typed answers are graded through Codex without an OpenAI API key or a Responses request',async t=>{
+  const q=require('../lib/sentence-translation-bank').QUESTIONS[0],f=await fixture(t,{missing:true,keylessGrader:true});
+  const config=await(await f.call('/config')).json();assert.equal(config.openai,false);assert.equal(config.grading,true);assert.equal(config.gradingProvider,'codex-app-server');
+  const attempt=await(await f.call('/attempts',{mode:'translation',repeat:q.id})).json();
+  const result=await(await f.call('/attempts/'+attempt.id+'/text-answer',{text:'The lady working in this cafe remembered my order.'})).json();
+  assert.equal(result.verdict,'correct');assert.equal(result.gradingProvider,'codex-app-server');assert.deepEqual(f.calls,['codex-app-server']);
 });
 
 test('prepared why answers omit optional acknowledgements and the reason without grading or audio generation',async t=>{
@@ -180,10 +189,10 @@ test('private attempts, no-answer without ASR, audio caching/ranges, model alter
   await f.call('/attempts/'+first.id+'/solution-audio',{});const count=f.calls.length;await f.call('/attempts/'+first.id+'/solution-audio',{});assert.equal(f.calls.length,count,'solution cache');
   const second=await(await f.call('/attempts',{repeat:first.question.id})).json();assert.equal(second.audio.url,first.audio.url);assert.notEqual(second.id,first.id);
   const responses=await Promise.all([f.call('/attempts/'+second.id+'/answer',Buffer.alloc(400)),f.call('/attempts/'+second.id+'/answer',Buffer.alloc(400))]);for(const response of responses){const result=await response.json();assert.equal(result.verdict,'correct');assert.equal(result.transcript,'I met a man that lives in Tokyo.');assert.equal(result.score,100);}
-  assert.equal(f.calls.filter(s=>s.endsWith('/transcriptions')).length,1);assert.equal(f.calls.filter(s=>s.endsWith('/responses')).length,1);
+  assert.equal(f.calls.filter(s=>s.endsWith('/transcriptions')).length,1);assert.equal(f.calls.filter(s=>s==='codex-app-server').length,1);
   await f.call('/attempts/'+second.id+'/answer',Buffer.alloc(400));assert.equal(f.calls.filter(s=>s.endsWith('/transcriptions')).length,1);
   const next=await(await f.call('/attempts',{filter:'who',exclude:[first.question.id]})).json();assert.notEqual(next.question.id,first.question.id);
-  f.setTranscript('');const empty=await(await f.call('/attempts/'+next.id+'/answer',Buffer.alloc(400))).json();assert.equal(empty.verdict,'no_answer');assert.equal(f.calls.filter(s=>s.endsWith('/responses')).length,1);
+  f.setTranscript('');const empty=await(await f.call('/attempts/'+next.id+'/answer',Buffer.alloc(400))).json();assert.equal(empty.verdict,'no_answer');assert.equal(f.calls.filter(s=>s==='codex-app-server').length,1);
   assert.equal((await f.call('/attempts',{filter:'invalid'})).status,400);
 });
 

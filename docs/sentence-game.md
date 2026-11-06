@@ -5,7 +5,7 @@
 1. 画像と同じ26パターン（who、whose、which、that、what、when、where、why、how、whoever、whatever、whichever、whenever、wherever、however、by the time、whether、now that、once、so that、in case、as soon as、even though、unless、while、as）または「すべて」を選択。
 2. 選んだパターンの日本語を表示。既存の253会話フレーズの対象行を使用し、英文のお手本は判定まで返しません。
 3. 英文を手入力、または「音声で入力」→「入力を終える」で書き起こし。音声入力後に手直しできます。マイク拒否時も手入力を継続できます。
-4. 「判定する」で意味・文法・選択表現を確認。完全一致以外の自然な英文も採点し、選択表現を使わない回答は「あと少し」にします。
+4. 「判定する」で意味・文法を確認。会話で自然な言い換えも正解にし、選択表現の有無だけでは減点しません。
 5. お手本・ポイント・該当フレーズの既存音声を確認し、次の問題か同じ問題の再回答へ。
 
 出題履歴は旧問題と別のローカルストレージに保存し、パターンを一巡するまで重複を避けます。録音は最大45秒。停止・離脱時にマイクを解放します。採点の通信失敗時も入力を保持し再試行できます。
@@ -32,7 +32,7 @@
 応用: whoever, whomever, whatever, whichever, whenever, wherever, however。
 what は先行詞を含む関係代名詞、how は方法の表現として扱います。however は方法・程度の用法です。「しかし」の接続副詞用法は対象外です。
 
-`OPENAI_API_KEY` と `ELEVENLABS_API_KEY` はサーバーにのみ設定。既存のキーを使用します。任意設定: `OPENAI_TRANSCRIPTION_MODEL`、`SENTENCE_GAME_GRADING_MODEL`、`SENTENCE_GAME_VOICE`（ElevenLabs voice ID）、`SENTENCE_GAME_TTS_MODEL`。
+採点は Codex app-server と既存のChatGPTログインを使います。採点のために OpenAI Responses API を直接呼び出しません。`OPENAI_API_KEY` は音声入力の文字起こし用です。任意設定: `OPENAI_TRANSCRIPTION_MODEL`、`SENTENCE_GAME_VOICE`（ElevenLabs voice ID）、`SENTENCE_GAME_TTS_MODEL`。
 
 保存先は標準で `data/sentence-game`。`SENTENCE_GAME_STORAGE=supabase` または既存の `PET_STORAGE=supabase` の場合は同じSupabase接続の非公開 `sentence-game` バケットを使います。`SENTENCE_GAME_STORAGE=local` でローカル保存に固定できます。音声は問題文・モデル・声から生成したIDでキャッシュし、録り直しでは再生成しません。回答の採点も同じ試行IDでは重複実行しません。公開APIから模範解答が返るのは採点後です。
 
@@ -77,3 +77,18 @@ UI検証: `python scripts/verify-sentence-review-browser.py`。保存・端末�
 端末の未同期記録も別メーターで先行表示し、保存済み区間との差分だけを加えます。オフライン記録は既存の7日間の受付範囲で保存・再送し、時刻と生存時間を含めて再判定します。
 
 検証: `node --test test/phrase-listening-goal.test.cjs test/pet-practice.test.cjs test/pet-combined-life.test.cjs test/pet-listening-life.test.cjs test/listening-time.test.cjs`。
+
+
+## Codex app-server による採点
+
+公開環境は `SENTENCE_GAME_GRADER=codex-worker`。既存のSupabase接続を使い、非公開の `sentence-grades` バケットでテキストの採点ジョブと結果を受け渡します。`PET_STORAGE=supabase`、`SENTENCE_GAME_STORAGE=supabase` またはproductionでは、この経路を既定にしています。トークンを取り出したり公開サーバーにコピーしたりしません。モデルへの入力は問題と提出された英文だけです。
+
+PCの `.env.pet-worker` にある既存のSupabase接続を使います。`node lib/sentence-grade-worker-supervisor.js` でPC側の採点ワーカーを起動できます。Windowsでは `powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/install-sentence-grade-worker-task.ps1` で現在のユーザーのログイン時起動と1分ごとの復旧を登録します（タスク名: `LyricShadowsSentenceGrader`）。ワーカーと監視処理のPIDロックで重複起動を防ぎます。診断ログは `tmp/sentence-grade-worker.log` に残します。
+
+app-server は既存のChatGPTログインを確認し、読み取り専用の一時スレッドと `turn/start.outputSchema` でJSONの採点結果だけを受け取ります。ツール承認要求を拒否し、追加例文・音声・画像を生成しません。モデルを指定しなければCodexの設定を使います。必要なら `SENTENCE_CODEX_MODEL` と `SENTENCE_CODEX_EFFORT`（既定low）で採点専用に指定できます。ローカルで直接接続するときは `SENTENCE_GAME_GRADER=codex` を指定します。[公式のapp-serverプロトコル](https://developers.openai.com/codex/app-server/)を参照。
+
+採点用PCが起動している間、スマホからもこの経路で採点できます。接続できない・採点が失敗した・45秒待っても結果が来ない場合は、回答を不正解にせず再試行可能なエラーを返します。他の採点APIへは切り替えません。同じ内容の成功した結果は非公開で再利用し、結果保存だけの再試行では採点をやり直しません。学習回数の記録は従来どおり採点済み試行IDで重複排除します。
+
+事前に登録した正解・言い換えとの一致はこれまでどおりローカルで判定できます。意味を確認する自由回答のAI採点が app-server を使います。253問の正解例・解説・別の例文は事前保存した `data/sentence-translation-lessons.json` を表示し、採点時に作りません。変更した正解例に音声がなければ文字だけで表示します。
+
+検証: `node --test test/sentence-codex-grader.test.cjs test/sentence-game.test.cjs`。app-server RPC、ログイン種別、JSON検証、ツール拒否、PCとの受け渡し、結果アップロード再試行、PC未接続時の動作、APIキーなしの手入力採点を確認します。

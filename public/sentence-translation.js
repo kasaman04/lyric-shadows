@@ -60,7 +60,8 @@
       const q=attempt.question,pool=selected==='all'?config.translationQuestions:config.translationTypes.find(t=>t.key===selected).count;
       $('japanese-prompt').textContent=q.japanese;$('round-pattern').textContent=q.type;$('round-position').textContent=selected==='all'?`${seen.length} / ${pool}問`:`${seen.filter(id=>id.startsWith('translation-'+selected.replaceAll(' ','-')+'-dialogue-')).length} / ${pool}問`;
       $('pattern-hint').textContent=q.type+' の練習です。意味が合う、会話で自然な言い方も正解です。';active('answering');$('round-title').focus();
-      if(!config.openai)$('input-status').textContent='現在、音声入力と自由な英文の判定に接続できません。';
+      if(config.grading===false)$('input-status').textContent='採点用PCの接続待ちです。入力した英文は残るので、PCのCodexが接続したら判定してください。';
+      else if(!config.openai)$('input-status').textContent='音声入力には接続していません。手入力で答えて採点できます。';
       else if($('voice-input').disabled)$('input-status').textContent='このブラウザでは手入力で答えてください。';
     } catch(error) { if(token!==epoch)return;setup();showError(error); }
   }
@@ -135,6 +136,6 @@
     config=value;displayPractice(value.dailyPractice);window.SentenceReview?.setCount(value.reviewCount);
     $('question-count').textContent=`${value.translationTypes.length}パターン · ${value.translationQuestions}問`;
     for(const type of [{key:'all'},...value.translationTypes]){const button=document.createElement('button');button.type='button';button.className='pattern-choice';button.dataset.pattern=type.key;button.textContent=type.key==='all'?'すべて':type.key;button.setAttribute('aria-pressed','false');button.onclick=()=>choose(type.key);$('pattern-choices').append(button);}
-    choose(selected);$('begin').disabled=false;$('configuration').textContent=value.openai?'同じパターンの問題を、一巡するまで重複せずに練習できます。':'現在、音声入力と自由な英文の判定に接続できません。';
+    choose(selected);$('begin').disabled=false;$('configuration').textContent=value.grading===false?'採点用PCの接続待ちです。PCのCodexを起動してから、もう一度お試しください。':'同じパターンの問題を、一巡するまで重複せずに練習できます。';
   }).catch(error=>{$('question-count').textContent='問題を読み込めませんでした。';$('configuration').textContent='ページを再読み込みしてください。';showError(error);});
 })();

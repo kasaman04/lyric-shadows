@@ -19,10 +19,11 @@ const app=express();app.use(express.json());app.use(express.static('public'));
 app.get('/api/pet/state',(req,res)=>res.json({...createState(Date.now()),serverNow:Date.now()}));
 const fetcher=async(url,init)=>{
   if(url.endsWith('/transcriptions'))return Response.json({text:'I have a friend who can speak English.'});
-  if(url.endsWith('/responses')){const data=JSON.parse(JSON.parse(init.body).input);return Response.json({output_text:JSON.stringify({verdict:data.transcript.includes('wrong')?'incorrect':data.transcript==="I explain why I'm late."?'almost':'correct',feedback:data.transcript==="I explain why I'm late."?'説明したのは過去なので explained、遅れたのも過去なので was を使います。':'日本語の意味と、選んだパターンを確認しました。',corrected:data.reference})});}
+
   throw Error('Unexpected upstream request');
 };
-mountSentenceGame(app,{env:{OPENAI_API_KEY:'browser-test',SENTENCE_GAME_STORAGE:'local',SENTENCE_GAME_DATA_DIR:path.join(process.argv[1],'answers')},fetcher,petStore:new PetStore({dir:path.join(process.argv[1],'pets'),practicePolicy:'daily'})});
+const grader={async available(){return true},async grade(task){const data=task.input;return {verdict:data.transcript.includes('wrong')?'incorrect':data.transcript==="I explain why I'm late."?'almost':'correct',feedback:data.transcript==="I explain why I'm late."?'説明したのは過去なので explained、遅れたのも過去なので was を使います。':'日本語の意味と、選んだパターンを確認しました。',corrected:data.reference};}};
+mountSentenceGame(app,{grader,env:{OPENAI_API_KEY:'browser-test',SENTENCE_GAME_STORAGE:'local',SENTENCE_GAME_DATA_DIR:path.join(process.argv[1],'answers')},fetcher,petStore:new PetStore({dir:path.join(process.argv[1],'pets'),practicePolicy:'daily'})});
 app.listen(10002,'127.0.0.1',()=>console.log('ready'));
 '''
 

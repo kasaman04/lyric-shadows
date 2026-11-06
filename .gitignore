@@ -28,3 +28,6 @@ tmp-preview.json
 # Pet saves and generated design workspace
 data/pets/
 tmp/
+
+# Private Codex grading workspace and worker locks
+data/sentence-grader/
