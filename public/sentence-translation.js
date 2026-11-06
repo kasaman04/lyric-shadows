@@ -59,7 +59,7 @@
       seen=attempt.history;try{localStorage.setItem(historyKey,JSON.stringify(seen));}catch{}
       const q=attempt.question,pool=selected==='all'?config.translationQuestions:config.translationTypes.find(t=>t.key===selected).count;
       $('japanese-prompt').textContent=q.japanese;$('round-pattern').textContent=q.type;$('round-position').textContent=selected==='all'?`${seen.length} / ${pool}問`:`${seen.filter(id=>id.startsWith('translation-'+selected.replaceAll(' ','-')+'-dialogue-')).length} / ${pool}問`;
-      $('pattern-hint').textContent=q.type+' を使って答えてください。';active('answering');$('round-title').focus();
+      $('pattern-hint').textContent=q.type+' の練習です。意味が合う、会話で自然な言い方も正解です。';active('answering');$('round-title').focus();
       if(!config.openai)$('input-status').textContent='現在、音声入力と自由な英文の判定に接続できません。';
       else if($('voice-input').disabled)$('input-status').textContent='このブラウザでは手入力で答えてください。';
     } catch(error) { if(token!==epoch)return;setup();showError(error); }
@@ -107,7 +107,10 @@
     const [icon,title]=labels[result.verdict]||labels.incorrect;$('result-icon').textContent=icon;$('result-title').textContent=title;$('result').dataset.verdict=result.verdict;
     $('result-feedback').textContent=result.feedback;$('transcript').textContent=result.transcript||'回答なし';$('reference').textContent=result.reference;
     $('corrected').textContent=result.corrected;$('corrected-card').hidden=result.verdict==='correct'||!result.corrected||result.corrected===result.reference;
-    $('result-type').textContent=result.type+' のポイント';$('explanation').textContent=result.explanation;$('result-title').focus();
+    $('result-type').textContent='この正解例の解説';$('explanation').textContent=result.explanation;
+    $('solution-audio').hidden=!result.audioAvailable;
+    window.SentenceLesson.renderExamples($('result-examples'),result.examples);
+    $('result-title').focus();
   }
   $('solution-audio').onclick=async()=>{
     const token=epoch;clearError();stopAudio();$('solution-audio').disabled=true;$('solution-status').textContent='お手本を準備しています…';

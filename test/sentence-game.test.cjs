@@ -78,7 +78,7 @@ test('translation bank covers exactly the screenshot patterns and 253 prompts wi
   assert(!bank.TYPES.some(t=>['whom','whomever'].includes(t.key)));
   for(const type of bank.TYPES){
     assert(type.count>0);let seen=[];
-    for(let i=0;i<type.count;i++){const q=bank.selectQuestion(type.key,seen,()=>0);assert.equal(q.type,type.key);assert(!seen.includes(q.id));assert(q.japanese&&q.answer&&q.explanation);assert(q.solutionAudio.start>=0&&q.solutionAudio.end>q.solutionAudio.start);assert(require('node:fs').existsSync(path.join(__dirname,'../public',q.solutionAudio.url)));seen=bank.advanceHistory(seen,q,type.key);}
+    for(let i=0;i<type.count;i++){const q=bank.selectQuestion(type.key,seen,()=>0);assert.equal(q.type,type.key);assert(!seen.includes(q.id));assert(q.japanese&&q.answer&&q.explanation);assert.equal(q.examples.length,2);if(q.solutionAudio){assert(q.solutionAudio.start>=0&&q.solutionAudio.end>q.solutionAudio.start);assert(require('node:fs').existsSync(path.join(__dirname,'../public',q.solutionAudio.url)));}seen=bank.advanceHistory(seen,q,type.key);}
     const first=bank.selectQuestion(type.key,seen,()=>0);assert.equal(bank.advanceHistory(seen,first,type.key).length,1);assert.deepEqual(bank.advanceHistory(seen,first,type.key,true),seen);
   }
   assert.throws(()=>bank.selectQuestion('whom'));
@@ -125,14 +125,47 @@ test('voice input only transcribes; edited text is graded, saved for Japanese re
   assert.equal(f.calls.filter(x=>x.includes('text-to-dialogue')).length,0);
 });
 
-test('translation grading requires the selected expression as whole words, while accepting non-exact wording',async t=>{
+test('translation grading accepts conversational alternatives without requiring the selected word',async t=>{
   const bank=require('../lib/sentence-translation-bank'),q=bank.QUESTIONS[0];
   const f=await fixture(t);
-  for(const [text,verdict] of [['I know someone WHO can help.','correct'],['I know a whole lot of people.','almost'],['I know someone that can help.','almost']]){
+  for(const [text,verdict] of [["The woman WHO works at this cafe remembered my order.",'correct'],['The lady working at this cafe remembered my order.','correct'],['The woman that works at this cafe remembered my order.','correct']]){
     const attempt=await(await f.call('/attempts',{mode:'translation',repeat:q.id})).json();
     const result=await(await f.call('/attempts/'+attempt.id+'/text-answer',{text})).json();
     assert.equal(result.verdict,verdict);if(verdict==='almost')assert.equal(result.corrected,q.answer);
   }
+});
+
+test('prepared conversational lessons include question-specific explanations and text-only examples',()=>{
+  const bank=require('../lib/sentence-translation-bank'),data=require('../data/sentence-translation-lessons.json');
+  assert.equal(Object.keys(data.lessons).length,bank.QUESTIONS.length);
+  for(const q of bank.QUESTIONS){assert(q.acceptedAnswers.includes(q.answer));assert.equal(q.examples.length,2);assert(q.examples.every(e=>e.en&&e.ja&&!('audio' in e)));assert.deepEqual(q.examples,data.lessons[q.id].examples);}
+  const why=bank.byId.get('translation-why-dialogue-04');
+  assert.equal(why.answer,'Yeah, I explained why I was late.');assert.match(why.explanation,/explained と was/);assert(!why.explanation.includes('why を省'));assert.equal(why.solutionAudio,null);
+});
+
+test('prepared why answers omit optional acknowledgements and the reason without grading or audio generation',async t=>{
+  const bank=require('../lib/sentence-translation-bank'),q=bank.byId.get('translation-why-dialogue-04');
+  const f=await fixture(t,{missing:true});
+  for(const text of ['Yes. I explained why I was late.','I explained why I was late.','Yeah, I explained why I was late.']){
+    const attempt=await(await f.call('/attempts',{mode:'translation',repeat:q.id})).json();
+    const result=await(await f.call('/attempts/'+attempt.id+'/text-answer',{text})).json();
+    assert.equal(result.verdict,'correct');assert.equal(result.corrected,text);assert.equal(result.reference,q.answer);assert.deepEqual(result.examples,q.examples);assert.equal(result.audioAvailable,false);
+    assert.equal((await f.call('/attempts/'+attempt.id+'/solution-audio',{})).status,404);
+  }
+  assert.equal(f.calls.length,0);
+});
+
+test('past-tense mistakes still need correction and updated review notes never synthesize a new answer',async t=>{
+  const bank=require('../lib/sentence-translation-bank'),q=bank.byId.get('translation-why-dialogue-04'),{PetStore}=require('../lib/pet-store');
+  const dir=await fs.mkdtemp(path.join(os.tmpdir(),'sg-lessons-'));
+  t.after(async()=>fs.rm(dir,{recursive:true,force:true}));
+  const f=await fixture(t,{petStore:new PetStore({dir,practicePolicy:'daily'}),deviceId:'translation-lessons-device',gradeVerdict:'almost'});
+  const attempt=await(await f.call('/attempts',{mode:'translation',repeat:q.id})).json();
+  const result=await(await f.call('/attempts/'+attempt.id+'/text-answer',{text:"I explain why I'm late."})).json();assert.equal(result.verdict,'almost');
+  const revealed=await(await f.call('/review/'+q.id+'/reveal',{})).json();assert.equal(revealed.reference,q.answer);assert.deepEqual(revealed.examples,q.examples);assert.equal(revealed.audioAvailable,false);
+  assert.equal((await f.call('/review/'+q.id+'/audio',{part:'answer'})).status,404);assert.equal(f.calls.filter(x=>x.includes('text-to-dialogue')).length,0);
+  const {questionForReview}=require('../lib/sentence-review'),old={sentenceReview:{items:{[q.id]:{id:q.id,mode:'translation',type:'why',sentences:[],answer:'Yes. I explained the reason why I was late.',explanation:'old note',japanese:q.japanese}}}};
+  assert.equal(questionForReview(old,q.id).answer,q.answer);assert.deepEqual(questionForReview(old,q.id).examples,q.examples);assert.equal(old.sentenceReview.items[q.id].explanation,'old note');
 });
 
 test('private attempts, no-answer without ASR, audio caching/ranges, model alternatives and idempotent grading',async t=>{

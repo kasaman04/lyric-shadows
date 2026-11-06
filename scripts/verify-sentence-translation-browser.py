@@ -19,7 +19,7 @@ const app=express();app.use(express.json());app.use(express.static('public'));
 app.get('/api/pet/state',(req,res)=>res.json({...createState(Date.now()),serverNow:Date.now()}));
 const fetcher=async(url,init)=>{
   if(url.endsWith('/transcriptions'))return Response.json({text:'I have a friend who can speak English.'});
-  if(url.endsWith('/responses')){const data=JSON.parse(JSON.parse(init.body).input);return Response.json({output_text:JSON.stringify({verdict:data.transcript.includes('wrong')?'incorrect':'correct',feedback:'日本語の意味と、選んだパターンを確認しました。',corrected:data.reference})});}
+  if(url.endsWith('/responses')){const data=JSON.parse(JSON.parse(init.body).input);return Response.json({output_text:JSON.stringify({verdict:data.transcript.includes('wrong')?'incorrect':data.transcript==="I explain why I'm late."?'almost':'correct',feedback:data.transcript==="I explain why I'm late."?'説明したのは過去なので explained、遅れたのも過去なので was を使います。':'日本語の意味と、選んだパターンを確認しました。',corrected:data.reference})});}
   throw Error('Unexpected upstream request');
 };
 mountSentenceGame(app,{env:{OPENAI_API_KEY:'browser-test',SENTENCE_GAME_STORAGE:'local',SENTENCE_GAME_DATA_DIR:path.join(process.argv[1],'answers')},fetcher,petStore:new PetStore({dir:path.join(process.argv[1],'pets'),practicePolicy:'daily'})});
@@ -141,6 +141,49 @@ with tempfile.TemporaryDirectory(prefix='translation-browser-', dir=OUT) as data
             page.locator('#exit').click()
             assert page.evaluate('navigator.audioSession.type')=='playback'
             assert page.evaluate('__streams.every(s=>s.getTracks().every(t=>t.readyState==="ended"))')
+            page.set_viewport_size({'width':390,'height':844})
+            # The reported screenshot question: conversational answers, specific notes and prepared text examples.
+            def force_why(route):
+                body=route.request.post_data_json
+                body['repeat']='translation-why-dialogue-04'
+                route.continue_(post_data=json.dumps(body))
+            page.route('**/api/sentence-game/attempts',force_why)
+            page.get_by_role('button',name='why',exact=True).click()
+            page.locator('#begin').click()
+            page.locator('#answer-input:not([disabled])').wait_for()
+            page.locator('#answer-input').fill('I explained why I was late.')
+            page.locator('#judge').click()
+            page.locator('#result').wait_for(state='visible')
+            assert page.locator('#result-title').inner_text()=='正解！'
+            assert page.locator('#reference').inner_text()=='Yeah, I explained why I was late.'
+            assert 'explained と was' in page.locator('#explanation').inner_text()
+            assert page.locator('#result-examples li').count()==2
+            assert page.locator('#result-examples p[lang=ja]').count()==2
+            assert page.locator('#result-examples button, #result-examples audio').count()==0
+            assert page.locator('#solution-audio').is_hidden()
+            page.locator('#reference').scroll_into_view_if_needed()
+            page.screenshot(path=str(OUT/'05-conversational-answer.png'),full_page=True)
+            page.locator('#repeat').click()
+            page.locator('#answer-input:not([disabled])').wait_for()
+            page.locator('#answer-input').fill("I explain why I'm late.")
+            with page.expect_response(lambda r:r.url.endswith('/text-answer')) as graded:
+                page.locator('#judge').click()
+            value=graded.value.json()
+            assert value['verdict']=='almost'
+            page.locator('#result').wait_for(state='visible')
+            assert '過去' in page.locator('#result-feedback').inner_text()
+            assert page.locator('#result-examples li').count()==2
+            page.locator('#saved-review').click()
+            page.locator('#review-reveal').click()
+            page.locator('#review-answer').wait_for(state='visible')
+            assert page.locator('#review-reference').inner_text()=='Yeah, I explained why I was late.'
+            assert page.locator('#review-examples li').count()==2
+            assert page.locator('#review-answer-audio').is_hidden()
+            for width in [320,390,768]:
+                page.set_viewport_size({'width':width,'height':844})
+                assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
+            page.set_viewport_size({'width':390,'height':844})
+            page.screenshot(path=str(OUT/'06-conversational-review.png'),full_page=True)
             assert errors==[],errors
             browser.close()
         print(json.dumps({'result':'PASS','screenshots':str(OUT),'viewports':[320,390,768],'errors':errors},ensure_ascii=False))

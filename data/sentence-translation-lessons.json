@@ -1,0 +1,4369 @@
+{
+  "version": 1,
+  "lessons": {
+    "translation-who-dialogue-01": {
+      "answer": "The woman who works at this cafe remembered my order.",
+      "acceptedAnswers": [
+        "The woman who works at this cafe remembered my order."
+      ],
+      "explanation": "「who works at this cafe」は、直前の人がどんな人かを説明しています。who の後に、その人の行動や状態を続けます。",
+      "examples": [
+        {
+          "en": "Do you know anyone who can fix this?",
+          "ja": "これを直せる知り合い、いる？"
+        },
+        {
+          "en": "She's the friend who taught me to drive.",
+          "ja": "運転を教えてくれた友達だよ。"
+        }
+      ]
+    },
+    "translation-who-dialogue-02": {
+      "answer": "Do you know anyone who has a van?",
+      "acceptedAnswers": [
+        "Do you know anyone who has a van?"
+      ],
+      "explanation": "「who has a van」は、直前の人がどんな人かを説明しています。who の後に、その人の行動や状態を続けます。",
+      "examples": [
+        {
+          "en": "Do you know anyone who can fix this?",
+          "ja": "これを直せる知り合い、いる？"
+        },
+        {
+          "en": "She's the friend who taught me to drive.",
+          "ja": "運転を教えてくれた友達だよ。"
+        }
+      ]
+    },
+    "translation-who-dialogue-03": {
+      "answer": "The guy who sits next to me. He's great with Excel.",
+      "acceptedAnswers": [
+        "The guy who sits next to me. He's great with Excel."
+      ],
+      "explanation": "「who sits next to me」は、直前の人がどんな人かを説明しています。who の後に、その人の行動や状態を続けます。",
+      "examples": [
+        {
+          "en": "Do you know anyone who can fix this?",
+          "ja": "これを直せる知り合い、いる？"
+        },
+        {
+          "en": "She's the friend who taught me to drive.",
+          "ja": "運転を教えてくれた友達だよ。"
+        }
+      ]
+    },
+    "translation-who-dialogue-04": {
+      "answer": "I'd love to find someone who enjoys hiking.",
+      "acceptedAnswers": [
+        "I'd love to find someone who enjoys hiking."
+      ],
+      "explanation": "「who enjoys hiking」は、直前の人がどんな人かを説明しています。who の後に、その人の行動や状態を続けます。",
+      "examples": [
+        {
+          "en": "Do you know anyone who can fix this?",
+          "ja": "これを直せる知り合い、いる？"
+        },
+        {
+          "en": "She's the friend who taught me to drive.",
+          "ja": "運転を教えてくれた友達だよ。"
+        }
+      ]
+    },
+    "translation-who-dialogue-05": {
+      "answer": "Was it the man who just bought a sandwich?",
+      "acceptedAnswers": [
+        "Was it the man who just bought a sandwich?"
+      ],
+      "explanation": "「who just bought a sandwich」は、直前の人がどんな人かを説明しています。who の後に、その人の行動や状態を続けます。",
+      "examples": [
+        {
+          "en": "Do you know anyone who can fix this?",
+          "ja": "これを直せる知り合い、いる？"
+        },
+        {
+          "en": "She's the friend who taught me to drive.",
+          "ja": "運転を教えてくれた友達だよ。"
+        }
+      ]
+    },
+    "translation-who-dialogue-06": {
+      "answer": "Just the woman who walks her dog in the morning.",
+      "acceptedAnswers": [
+        "Just the woman who walks her dog in the morning."
+      ],
+      "explanation": "「who walks her dog in the morning」は、直前の人がどんな人かを説明しています。who の後に、その人の行動や状態を続けます。",
+      "examples": [
+        {
+          "en": "Do you know anyone who can fix this?",
+          "ja": "これを直せる知り合い、いる？"
+        },
+        {
+          "en": "She's the friend who taught me to drive.",
+          "ja": "運転を教えてくれた友達だよ。"
+        }
+      ]
+    },
+    "translation-who-dialogue-07": {
+      "answer": "I need someone who knows this area well.",
+      "acceptedAnswers": [
+        "I need someone who knows this area well."
+      ],
+      "explanation": "「who knows this area well」は、直前の人がどんな人かを説明しています。who の後に、その人の行動や状態を続けます。",
+      "examples": [
+        {
+          "en": "Do you know anyone who can fix this?",
+          "ja": "これを直せる知り合い、いる？"
+        },
+        {
+          "en": "She's the friend who taught me to drive.",
+          "ja": "運転を教えてくれた友達だよ。"
+        }
+      ]
+    },
+    "translation-who-dialogue-08": {
+      "answer": "I ran into a friend who used to live upstairs.",
+      "acceptedAnswers": [
+        "I ran into a friend who used to live upstairs."
+      ],
+      "explanation": "「who used to live upstairs」は、直前の人がどんな人かを説明しています。who の後に、その人の行動や状態を続けます。",
+      "examples": [
+        {
+          "en": "Do you know anyone who can fix this?",
+          "ja": "これを直せる知り合い、いる？"
+        },
+        {
+          "en": "She's the friend who taught me to drive.",
+          "ja": "運転を教えてくれた友達だよ。"
+        }
+      ]
+    },
+    "translation-who-dialogue-09": {
+      "answer": "He's the person who fixed my car last winter.",
+      "acceptedAnswers": [
+        "He's the person who fixed my car last winter."
+      ],
+      "explanation": "「who fixed my car last winter」は、直前の人がどんな人かを説明しています。who の後に、その人の行動や状態を続けます。",
+      "examples": [
+        {
+          "en": "Do you know anyone who can fix this?",
+          "ja": "これを直せる知り合い、いる？"
+        },
+        {
+          "en": "She's the friend who taught me to drive.",
+          "ja": "運転を教えてくれた友達だよ。"
+        }
+      ]
+    },
+    "translation-who-dialogue-10": {
+      "answer": "Of course. Anyone who wants to run can join.",
+      "acceptedAnswers": [
+        "Of course. Anyone who wants to run can join.",
+        "Anyone who wants to run can join."
+      ],
+      "explanation": "「who wants to run」は、直前の人がどんな人かを説明しています。who の後に、その人の行動や状態を続けます。",
+      "examples": [
+        {
+          "en": "Do you know anyone who can fix this?",
+          "ja": "これを直せる知り合い、いる？"
+        },
+        {
+          "en": "She's the friend who taught me to drive.",
+          "ja": "運転を教えてくれた友達だよ。"
+        }
+      ]
+    },
+    "translation-whose-dialogue-01": {
+      "answer": "Ask the woman whose coat is on that chair.",
+      "acceptedAnswers": [
+        "Ask the woman whose coat is on that chair."
+      ],
+      "explanation": "「whose coat is on that chair」は、誰の持ち物・家族なのかをつないで説明しています。whose のすぐ後に、coat や daughter などの名詞を置きます。",
+      "examples": [
+        {
+          "en": "Is that the guy whose bike was stolen?",
+          "ja": "あれ、自転車を盗まれた人？"
+        },
+        {
+          "en": "I have a friend whose mum runs a bakery.",
+          "ja": "お母さんがパン屋をやってる友達がいるんだ。"
+        }
+      ]
+    },
+    "translation-whose-dialogue-02": {
+      "answer": "He's the colleague whose daughter is in the hospital.",
+      "acceptedAnswers": [
+        "He's the colleague whose daughter is in the hospital."
+      ],
+      "explanation": "「whose daughter is in the hospital」は、誰の持ち物・家族なのかをつないで説明しています。whose のすぐ後に、coat や daughter などの名詞を置きます。",
+      "examples": [
+        {
+          "en": "Is that the guy whose bike was stolen?",
+          "ja": "あれ、自転車を盗まれた人？"
+        },
+        {
+          "en": "I have a friend whose mum runs a bakery.",
+          "ja": "お母さんがパン屋をやってる友達がいるんだ。"
+        }
+      ]
+    },
+    "translation-whose-dialogue-03": {
+      "answer": "Try this writer. She's the one whose book I lent you last month.",
+      "acceptedAnswers": [
+        "Try this writer. She's the one whose book I lent you last month."
+      ],
+      "explanation": "「whose book I lent you last month」は、誰の持ち物・家族なのかをつないで説明しています。whose のすぐ後に、coat や daughter などの名詞を置きます。",
+      "examples": [
+        {
+          "en": "Is that the guy whose bike was stolen?",
+          "ja": "あれ、自転車を盗まれた人？"
+        },
+        {
+          "en": "I have a friend whose mum runs a bakery.",
+          "ja": "お母さんがパン屋をやってる友達がいるんだ。"
+        }
+      ]
+    },
+    "translation-whose-dialogue-04": {
+      "answer": "I'll find out whose car it is.",
+      "acceptedAnswers": [
+        "I'll find out whose car it is.",
+        "I'll find the person whose car it is."
+      ],
+      "explanation": "持ち主を確かめるときは find out whose car it is が自然です。whose car は「誰の車」。文の途中なので whose car is it ではなく、whose car it is の語順にします。",
+      "examples": [
+        {
+          "en": "Is that the guy whose bike was stolen?",
+          "ja": "あれ、自転車を盗まれた人？"
+        },
+        {
+          "en": "I have a friend whose mum runs a bakery.",
+          "ja": "お母さんがパン屋をやってる友達がいるんだ。"
+        }
+      ]
+    },
+    "translation-whose-dialogue-05": {
+      "answer": "The one whose dog keeps stealing our tennis balls?",
+      "acceptedAnswers": [
+        "The one whose dog keeps stealing our tennis balls?"
+      ],
+      "explanation": "「whose dog keeps stealing our tennis balls」は、誰の持ち物・家族なのかをつないで説明しています。whose のすぐ後に、coat や daughter などの名詞を置きます。",
+      "examples": [
+        {
+          "en": "Is that the guy whose bike was stolen?",
+          "ja": "あれ、自転車を盗まれた人？"
+        },
+        {
+          "en": "I have a friend whose mum runs a bakery.",
+          "ja": "お母さんがパン屋をやってる友達がいるんだ。"
+        }
+      ]
+    },
+    "translation-whose-dialogue-06": {
+      "answer": "The one whose portfolio includes that cafe redesign.",
+      "acceptedAnswers": [
+        "The one whose portfolio includes that cafe redesign."
+      ],
+      "explanation": "「whose portfolio includes that cafe redesign」は、誰の持ち物・家族なのかをつないで説明しています。whose のすぐ後に、coat や daughter などの名詞を置きます。",
+      "examples": [
+        {
+          "en": "Is that the guy whose bike was stolen?",
+          "ja": "あれ、自転車を盗まれた人？"
+        },
+        {
+          "en": "I have a friend whose mum runs a bakery.",
+          "ja": "お母さんがパン屋をやってる友達がいるんだ。"
+        }
+      ]
+    },
+    "translation-whose-dialogue-07": {
+      "answer": "Yes, a guesthouse whose owner speaks Japanese.",
+      "acceptedAnswers": [
+        "Yes, a guesthouse whose owner speaks Japanese.",
+        "A guesthouse whose owner speaks Japanese."
+      ],
+      "explanation": "「whose owner speaks Japanese」は、誰の持ち物・家族なのかをつないで説明しています。whose のすぐ後に、coat や daughter などの名詞を置きます。",
+      "examples": [
+        {
+          "en": "Is that the guy whose bike was stolen?",
+          "ja": "あれ、自転車を盗まれた人？"
+        },
+        {
+          "en": "I have a friend whose mum runs a bakery.",
+          "ja": "お母さんがパン屋をやってる友達がいるんだ。"
+        }
+      ]
+    },
+    "translation-whose-dialogue-08": {
+      "answer": "Sure. You're the third person whose phone has died today.",
+      "acceptedAnswers": [
+        "Sure. You're the third person whose phone has died today.",
+        "You're the third person whose phone has died today."
+      ],
+      "explanation": "「whose phone has died today」は、誰の持ち物・家族なのかをつないで説明しています。whose のすぐ後に、coat や daughter などの名詞を置きます。",
+      "examples": [
+        {
+          "en": "Is that the guy whose bike was stolen?",
+          "ja": "あれ、自転車を盗まれた人？"
+        },
+        {
+          "en": "I have a friend whose mum runs a bakery.",
+          "ja": "お母さんがパン屋をやってる友達がいるんだ。"
+        }
+      ]
+    },
+    "translation-whose-dialogue-09": {
+      "answer": "No, it's the one whose entrance faces the river.",
+      "acceptedAnswers": [
+        "No, it's the one whose entrance faces the river."
+      ],
+      "explanation": "「whose entrance faces the river」は、誰の持ち物・家族なのかをつないで説明しています。whose のすぐ後に、coat や daughter などの名詞を置きます。",
+      "examples": [
+        {
+          "en": "Is that the guy whose bike was stolen?",
+          "ja": "あれ、自転車を盗まれた人？"
+        },
+        {
+          "en": "I have a friend whose mum runs a bakery.",
+          "ja": "お母さんがパン屋をやってる友達がいるんだ。"
+        }
+      ]
+    },
+    "translation-whose-dialogue-10": {
+      "answer": "It's the band whose songs got me through college.",
+      "acceptedAnswers": [
+        "It's the band whose songs got me through college."
+      ],
+      "explanation": "「whose songs got me through college」は、誰の持ち物・家族なのかをつないで説明しています。whose のすぐ後に、coat や daughter などの名詞を置きます。",
+      "examples": [
+        {
+          "en": "Is that the guy whose bike was stolen?",
+          "ja": "あれ、自転車を盗まれた人？"
+        },
+        {
+          "en": "I have a friend whose mum runs a bakery.",
+          "ja": "お母さんがパン屋をやってる友達がいるんだ。"
+        }
+      ]
+    },
+    "translation-which-dialogue-01": {
+      "answer": "The one which folds up. I can take it on the train.",
+      "acceptedAnswers": [
+        "The one which folds up. I can take it on the train."
+      ],
+      "explanation": "「which folds up」は、物について情報を付け足しています。which が主語になる場合は、その後に動詞が続きます。",
+      "examples": [
+        {
+          "en": "The train was empty, which was nice.",
+          "ja": "電車が空いてて、よかったよ。"
+        },
+        {
+          "en": "The cafe has a terrace, which gets a lot of sun.",
+          "ja": "そのカフェには、日当たりのいいテラスがあるよ。"
+        }
+      ]
+    },
+    "translation-which-dialogue-02": {
+      "answer": "Yes. Their sourdough, which they bake every morning, is amazing.",
+      "acceptedAnswers": [
+        "Yes. Their sourdough, which they bake every morning, is amazing.",
+        "Their sourdough, which they bake every morning, is amazing."
+      ],
+      "explanation": "which they bake every morning は sourdough の補足説明です。they が主語なので、which は bake の目的語に当たります。「毎朝焼いている」という情報を付け足しています。",
+      "examples": [
+        {
+          "en": "The train was empty, which was nice.",
+          "ja": "電車が空いてて、よかったよ。"
+        },
+        {
+          "en": "The cafe has a terrace, which gets a lot of sun.",
+          "ja": "そのカフェには、日当たりのいいテラスがあるよ。"
+        }
+      ]
+    },
+    "translation-which-dialogue-03": {
+      "answer": "Yes. It just needed a new cable, which was a relief.",
+      "acceptedAnswers": [
+        "Yes. It just needed a new cable, which was a relief.",
+        "It just needed a new cable, which was a relief."
+      ],
+      "explanation": "which was a relief は「ケーブルの交換だけで済んだ」という出来事全体を受けて「それにはほっとした」と伝えています。ケーブルそのものが relief なのではありません。",
+      "examples": [
+        {
+          "en": "The train was empty, which was nice.",
+          "ja": "電車が空いてて、よかったよ。"
+        },
+        {
+          "en": "The cafe has a terrace, which gets a lot of sun.",
+          "ja": "そのカフェには、日当たりのいいテラスがあるよ。"
+        }
+      ]
+    },
+    "translation-which-dialogue-04": {
+      "answer": "The ending was a surprise, which made it even better.",
+      "acceptedAnswers": [
+        "The ending was a surprise, which made it even better."
+      ],
+      "explanation": "which made it even better は「結末が意外だったこと」を受けています。「それが作品をさらによくした」という感想を自然につなぐ言い方です。",
+      "examples": [
+        {
+          "en": "The train was empty, which was nice.",
+          "ja": "電車が空いてて、よかったよ。"
+        },
+        {
+          "en": "The cafe has a terrace, which gets a lot of sun.",
+          "ja": "そのカフェには、日当たりのいいテラスがあるよ。"
+        }
+      ]
+    },
+    "translation-which-dialogue-05": {
+      "answer": "It has a shuttle which goes straight to the airport.",
+      "acceptedAnswers": [
+        "It has a shuttle which goes straight to the airport."
+      ],
+      "explanation": "「which goes straight to the airport」は、物について情報を付け足しています。which が主語になる場合は、その後に動詞が続きます。",
+      "examples": [
+        {
+          "en": "The train was empty, which was nice.",
+          "ja": "電車が空いてて、よかったよ。"
+        },
+        {
+          "en": "The cafe has a terrace, which gets a lot of sun.",
+          "ja": "そのカフェには、日当たりのいいテラスがあるよ。"
+        }
+      ]
+    },
+    "translation-which-dialogue-06": {
+      "answer": "He did. It's solar-powered, which he thinks is really clever.",
+      "acceptedAnswers": [
+        "He did. It's solar-powered, which he thinks is really clever."
+      ],
+      "explanation": "which he thinks is really clever は、ソーラー式であることへの彼の感想です。「彼はそれをよくできていると思っている」と補足しています。",
+      "examples": [
+        {
+          "en": "The train was empty, which was nice.",
+          "ja": "電車が空いてて、よかったよ。"
+        },
+        {
+          "en": "The cafe has a terrace, which gets a lot of sun.",
+          "ja": "そのカフェには、日当たりのいいテラスがあるよ。"
+        }
+      ]
+    },
+    "translation-which-dialogue-07": {
+      "answer": "Yes. They left it with reception, which closes at six.",
+      "acceptedAnswers": [
+        "Yes. They left it with reception, which closes at six.",
+        "They left it with reception, which closes at six."
+      ],
+      "explanation": "「which closes at six」は、物について情報を付け足しています。which が主語になる場合は、その後に動詞が続きます。",
+      "examples": [
+        {
+          "en": "The train was empty, which was nice.",
+          "ja": "電車が空いてて、よかったよ。"
+        },
+        {
+          "en": "The cafe has a terrace, which gets a lot of sun.",
+          "ja": "そのカフェには、日当たりのいいテラスがあるよ。"
+        }
+      ]
+    },
+    "translation-which-dialogue-08": {
+      "answer": "It has a handle which stays cool while you cook.",
+      "acceptedAnswers": [
+        "It has a handle which stays cool while you cook."
+      ],
+      "explanation": "「which stays cool while you cook」は、物について情報を付け足しています。which が主語になる場合は、その後に動詞が続きます。",
+      "examples": [
+        {
+          "en": "The train was empty, which was nice.",
+          "ja": "電車が空いてて、よかったよ。"
+        },
+        {
+          "en": "The cafe has a terrace, which gets a lot of sun.",
+          "ja": "そのカフェには、日当たりのいいテラスがあるよ。"
+        }
+      ]
+    },
+    "translation-which-dialogue-09": {
+      "answer": "Yes, to Friday, which gives us another day to prepare.",
+      "acceptedAnswers": [
+        "Yes, to Friday, which gives us another day to prepare.",
+        "To Friday, which gives us another day to prepare."
+      ],
+      "explanation": "which gives us another day to prepare は、金曜日に変更された結果を説明しています。「そのおかげで、準備する日がもう1日ある」という意味です。",
+      "examples": [
+        {
+          "en": "The train was empty, which was nice.",
+          "ja": "電車が空いてて、よかったよ。"
+        },
+        {
+          "en": "The cafe has a terrace, which gets a lot of sun.",
+          "ja": "そのカフェには、日当たりのいいテラスがあるよ。"
+        }
+      ]
+    },
+    "translation-which-dialogue-10": {
+      "answer": "Yes, from a bridge which overlooks the whole bay.",
+      "acceptedAnswers": [
+        "Yes, from a bridge which overlooks the whole bay.",
+        "From a bridge which overlooks the whole bay."
+      ],
+      "explanation": "「which overlooks the whole bay」は、物について情報を付け足しています。which が主語になる場合は、その後に動詞が続きます。",
+      "examples": [
+        {
+          "en": "The train was empty, which was nice.",
+          "ja": "電車が空いてて、よかったよ。"
+        },
+        {
+          "en": "The cafe has a terrace, which gets a lot of sun.",
+          "ja": "そのカフェには、日当たりのいいテラスがあるよ。"
+        }
+      ]
+    },
+    "translation-that-dialogue-01": {
+      "answer": "Have you finished the book that I lent you?",
+      "acceptedAnswers": [
+        "Have you finished the book that I lent you?",
+        "Have you finished the book I lent you?"
+      ],
+      "explanation": "「that I lent you」は、直前の人や物を絞り込んでいます。何のことか伝わるように、that の後で特徴や出来事を説明します。 この that は目的語に当たるため、会話では省いても自然です。",
+      "examples": [
+        {
+          "en": "Is this the bag that you lost?",
+          "ja": "なくしたバッグって、これ？"
+        },
+        {
+          "en": "I need a charger that works with my phone.",
+          "ja": "自分のスマホで使える充電器が必要なんだ。"
+        }
+      ]
+    },
+    "translation-that-dialogue-02": {
+      "answer": "There's some curry that I made yesterday.",
+      "acceptedAnswers": [
+        "There's some curry that I made yesterday.",
+        "There's some curry I made yesterday."
+      ],
+      "explanation": "「that I made yesterday」は、直前の人や物を絞り込んでいます。何のことか伝わるように、that の後で特徴や出来事を説明します。 この that は目的語に当たるため、会話では省いても自然です。",
+      "examples": [
+        {
+          "en": "Is this the bag that you lost?",
+          "ja": "なくしたバッグって、これ？"
+        },
+        {
+          "en": "I need a charger that works with my phone.",
+          "ja": "自分のスマホで使える充電器が必要なんだ。"
+        }
+      ]
+    },
+    "translation-that-dialogue-03": {
+      "answer": "They look great, but get a pair that you can walk in all day.",
+      "acceptedAnswers": [
+        "They look great, but get a pair that you can walk in all day."
+      ],
+      "explanation": "「that you can walk in all day」は、直前の人や物を絞り込んでいます。何のことか伝わるように、that の後で特徴や出来事を説明します。",
+      "examples": [
+        {
+          "en": "Is this the bag that you lost?",
+          "ja": "なくしたバッグって、これ？"
+        },
+        {
+          "en": "I need a charger that works with my phone.",
+          "ja": "自分のスマホで使える充電器が必要なんだ。"
+        }
+      ]
+    },
+    "translation-that-dialogue-04": {
+      "answer": "I finally found the keys that I lost last week.",
+      "acceptedAnswers": [
+        "I finally found the keys that I lost last week.",
+        "I finally found the keys I lost last week."
+      ],
+      "explanation": "「that I lost last week」は、直前の人や物を絞り込んでいます。何のことか伝わるように、that の後で特徴や出来事を説明します。 この that は目的語に当たるため、会話では省いても自然です。",
+      "examples": [
+        {
+          "en": "Is this the bag that you lost?",
+          "ja": "なくしたバッグって、これ？"
+        },
+        {
+          "en": "I need a charger that works with my phone.",
+          "ja": "自分のスマホで使える充電器が必要なんだ。"
+        }
+      ]
+    },
+    "translation-that-dialogue-05": {
+      "answer": "I want a place that gets plenty of sunlight.",
+      "acceptedAnswers": [
+        "I want a place that gets plenty of sunlight."
+      ],
+      "explanation": "「that gets plenty of sunlight」は、直前の人や物を絞り込んでいます。何のことか伝わるように、that の後で特徴や出来事を説明します。",
+      "examples": [
+        {
+          "en": "Is this the bag that you lost?",
+          "ja": "なくしたバッグって、これ？"
+        },
+        {
+          "en": "I need a charger that works with my phone.",
+          "ja": "自分のスマホで使える充電器が必要なんだ。"
+        }
+      ]
+    },
+    "translation-that-dialogue-06": {
+      "answer": "Yes, please. There's one sentence that doesn't sound right.",
+      "acceptedAnswers": [
+        "Yes, please. There's one sentence that doesn't sound right.",
+        "Please. There's one sentence that doesn't sound right."
+      ],
+      "explanation": "「that doesn't sound right」は、直前の人や物を絞り込んでいます。何のことか伝わるように、that の後で特徴や出来事を説明します。",
+      "examples": [
+        {
+          "en": "Is this the bag that you lost?",
+          "ja": "なくしたバッグって、これ？"
+        },
+        {
+          "en": "I need a charger that works with my phone.",
+          "ja": "自分のスマホで使える充電器が必要なんだ。"
+        }
+      ]
+    },
+    "translation-that-dialogue-07": {
+      "answer": "There's a cafe that stays open until midnight.",
+      "acceptedAnswers": [
+        "There's a cafe that stays open until midnight."
+      ],
+      "explanation": "「that stays open until midnight」は、直前の人や物を絞り込んでいます。何のことか伝わるように、that の後で特徴や出来事を説明します。",
+      "examples": [
+        {
+          "en": "Is this the bag that you lost?",
+          "ja": "なくしたバッグって、これ？"
+        },
+        {
+          "en": "I need a charger that works with my phone.",
+          "ja": "自分のスマホで使える充電器が必要なんだ。"
+        }
+      ]
+    },
+    "translation-that-dialogue-08": {
+      "answer": "Of course. It's the little things that make a birthday special.",
+      "acceptedAnswers": [
+        "Of course. It's the little things that make a birthday special.",
+        "It's the little things that make a birthday special."
+      ],
+      "explanation": "「that make a birthday special」は、直前の人や物を絞り込んでいます。何のことか伝わるように、that の後で特徴や出来事を説明します。",
+      "examples": [
+        {
+          "en": "Is this the bag that you lost?",
+          "ja": "なくしたバッグって、これ？"
+        },
+        {
+          "en": "I need a charger that works with my phone.",
+          "ja": "自分のスマホで使える充電器が必要なんだ。"
+        }
+      ]
+    },
+    "translation-that-dialogue-09": {
+      "answer": "Did we get everything that we need for the trip?",
+      "acceptedAnswers": [
+        "Did we get everything that we need for the trip?",
+        "Did we get everything we need for the trip?"
+      ],
+      "explanation": "「that we need for the trip」は、直前の人や物を絞り込んでいます。何のことか伝わるように、that の後で特徴や出来事を説明します。 この that は目的語に当たるため、会話では省いても自然です。",
+      "examples": [
+        {
+          "en": "Is this the bag that you lost?",
+          "ja": "なくしたバッグって、これ？"
+        },
+        {
+          "en": "I need a charger that works with my phone.",
+          "ja": "自分のスマホで使える充電器が必要なんだ。"
+        }
+      ]
+    },
+    "translation-that-dialogue-10": {
+      "answer": "This is the song that we used to play on road trips.",
+      "acceptedAnswers": [
+        "This is the song that we used to play on road trips.",
+        "This is the song we used to play on road trips."
+      ],
+      "explanation": "「that we used to play on road trips」は、直前の人や物を絞り込んでいます。何のことか伝わるように、that の後で特徴や出来事を説明します。 この that は目的語に当たるため、会話では省いても自然です。",
+      "examples": [
+        {
+          "en": "Is this the bag that you lost?",
+          "ja": "なくしたバッグって、これ？"
+        },
+        {
+          "en": "I need a charger that works with my phone.",
+          "ja": "自分のスマホで使える充電器が必要なんだ。"
+        }
+      ]
+    },
+    "translation-what-dialogue-01": {
+      "answer": "Sure. Is this what you're serving with the fish?",
+      "acceptedAnswers": [
+        "Sure. Is this what you're serving with the fish?",
+        "Is this what you're serving with the fish?"
+      ],
+      "explanation": "「what you're serving with the fish」は、「何を〜するか」「〜するもの・こと」をひとまとまりにしています。what の前に the thing を重ねる必要はありません。",
+      "examples": [
+        {
+          "en": "Just tell me what you need.",
+          "ja": "必要なものを教えてね。"
+        },
+        {
+          "en": "That's exactly what I was thinking.",
+          "ja": "まさに私もそう思ってた。"
+        }
+      ]
+    },
+    "translation-what-dialogue-02": {
+      "answer": "I didn't catch what she said about the deadline.",
+      "acceptedAnswers": [
+        "I didn't catch what she said about the deadline."
+      ],
+      "explanation": "「what she said about the deadline」は、「何を〜するか」「〜するもの・こと」をひとまとまりにしています。what の前に the thing を重ねる必要はありません。",
+      "examples": [
+        {
+          "en": "Just tell me what you need.",
+          "ja": "必要なものを教えてね。"
+        },
+        {
+          "en": "That's exactly what I was thinking.",
+          "ja": "まさに私もそう思ってた。"
+        }
+      ]
+    },
+    "translation-what-dialogue-03": {
+      "answer": "What he really needs is a decent backpack.",
+      "acceptedAnswers": [
+        "What he really needs is a decent backpack."
+      ],
+      "explanation": "「What he really needs」は、「何を〜するか」「〜するもの・こと」をひとまとまりにしています。what の前に the thing を重ねる必要はありません。",
+      "examples": [
+        {
+          "en": "Just tell me what you need.",
+          "ja": "必要なものを教えてね。"
+        },
+        {
+          "en": "That's exactly what I was thinking.",
+          "ja": "まさに私もそう思ってた。"
+        }
+      ]
+    },
+    "translation-what-dialogue-04": {
+      "answer": "Actually, I want what you're having. It looks good.",
+      "acceptedAnswers": [
+        "Actually, I want what you're having. It looks good."
+      ],
+      "explanation": "「what you're having」は、「何を〜するか」「〜するもの・こと」をひとまとまりにしています。what の前に the thing を重ねる必要はありません。",
+      "examples": [
+        {
+          "en": "Just tell me what you need.",
+          "ja": "必要なものを教えてね。"
+        },
+        {
+          "en": "That's exactly what I was thinking.",
+          "ja": "まさに私もそう思ってた。"
+        }
+      ]
+    },
+    "translation-what-dialogue-05": {
+      "answer": "I understand what you mean, but I'm not sure how to do it.",
+      "acceptedAnswers": [
+        "I understand what you mean, but I'm not sure how to do it."
+      ],
+      "explanation": "「what you mean」は、「何を〜するか」「〜するもの・こと」をひとまとまりにしています。what の前に the thing を重ねる必要はありません。",
+      "examples": [
+        {
+          "en": "Just tell me what you need.",
+          "ja": "必要なものを教えてね。"
+        },
+        {
+          "en": "That's exactly what I was thinking.",
+          "ja": "まさに私もそう思ってた。"
+        }
+      ]
+    },
+    "translation-what-dialogue-06": {
+      "answer": "I can't find what I'm looking for.",
+      "acceptedAnswers": [
+        "I can't find what I'm looking for."
+      ],
+      "explanation": "「what I'm looking for」は、「何を〜するか」「〜するもの・こと」をひとまとまりにしています。what の前に the thing を重ねる必要はありません。",
+      "examples": [
+        {
+          "en": "Just tell me what you need.",
+          "ja": "必要なものを教えてね。"
+        },
+        {
+          "en": "That's exactly what I was thinking.",
+          "ja": "まさに私もそう思ってた。"
+        }
+      ]
+    },
+    "translation-what-dialogue-07": {
+      "answer": "A quiet weekend was exactly what I needed.",
+      "acceptedAnswers": [
+        "A quiet weekend was exactly what I needed."
+      ],
+      "explanation": "「what I needed」は、「何を〜するか」「〜するもの・こと」をひとまとまりにしています。what の前に the thing を重ねる必要はありません。",
+      "examples": [
+        {
+          "en": "Just tell me what you need.",
+          "ja": "必要なものを教えてね。"
+        },
+        {
+          "en": "That's exactly what I was thinking.",
+          "ja": "まさに私もそう思ってた。"
+        }
+      ]
+    },
+    "translation-what-dialogue-08": {
+      "answer": "Yes. Tell me what you think.",
+      "acceptedAnswers": [
+        "Yes. Tell me what you think.",
+        "Tell me what you think."
+      ],
+      "explanation": "「what you think」は、「何を〜するか」「〜するもの・こと」をひとまとまりにしています。what の前に the thing を重ねる必要はありません。",
+      "examples": [
+        {
+          "en": "Just tell me what you need.",
+          "ja": "必要なものを教えてね。"
+        },
+        {
+          "en": "That's exactly what I was thinking.",
+          "ja": "まさに私もそう思ってた。"
+        }
+      ]
+    },
+    "translation-what-dialogue-09": {
+      "answer": "No, this is what I made in my woodworking class.",
+      "acceptedAnswers": [
+        "No, this is what I made in my woodworking class."
+      ],
+      "explanation": "「what I made in my woodworking class」は、「何を〜するか」「〜するもの・こと」をひとまとまりにしています。what の前に the thing を重ねる必要はありません。",
+      "examples": [
+        {
+          "en": "Just tell me what you need.",
+          "ja": "必要なものを教えてね。"
+        },
+        {
+          "en": "That's exactly what I was thinking.",
+          "ja": "まさに私もそう思ってた。"
+        }
+      ]
+    },
+    "translation-what-dialogue-10": {
+      "answer": "Don't. Do what you need to do.",
+      "acceptedAnswers": [
+        "Don't. Do what you need to do."
+      ],
+      "explanation": "「what you need to do」は、「何を〜するか」「〜するもの・こと」をひとまとまりにしています。what の前に the thing を重ねる必要はありません。",
+      "examples": [
+        {
+          "en": "Just tell me what you need.",
+          "ja": "必要なものを教えてね。"
+        },
+        {
+          "en": "That's exactly what I was thinking.",
+          "ja": "まさに私もそう思ってた。"
+        }
+      ]
+    },
+    "translation-when-dialogue-01": {
+      "answer": "Of course. It was the day when the power went out.",
+      "acceptedAnswers": [
+        "Of course. It was the day when the power went out.",
+        "It was the day when the power went out."
+      ],
+      "explanation": "「when the power went out」は、いつのことかを説明しています。when の後は普通の文の語順です。会話では、時を説明する when を省ける場合もあります。",
+      "examples": [
+        {
+          "en": "Do you remember when we first met?",
+          "ja": "初めて会ったとき、覚えてる？"
+        },
+        {
+          "en": "Sunday's the only day when I can sleep in.",
+          "ja": "日曜日だけは、朝ゆっくり寝ていられるんだ。"
+        }
+      ]
+    },
+    "translation-when-dialogue-02": {
+      "answer": "I remember a time when there were no cafes here.",
+      "acceptedAnswers": [
+        "I remember a time when there were no cafes here."
+      ],
+      "explanation": "「when there were no cafes here」は、いつのことかを説明しています。when の後は普通の文の語順です。会話では、時を説明する when を省ける場合もあります。",
+      "examples": [
+        {
+          "en": "Do you remember when we first met?",
+          "ja": "初めて会ったとき、覚えてる？"
+        },
+        {
+          "en": "Sunday's the only day when I can sleep in.",
+          "ja": "日曜日だけは、朝ゆっくり寝ていられるんだ。"
+        }
+      ]
+    },
+    "translation-when-dialogue-03": {
+      "answer": "That was the moment when I found out I'd got the job.",
+      "acceptedAnswers": [
+        "That was the moment when I found out I'd got the job."
+      ],
+      "explanation": "「when I found out I'd got the job」は、いつのことかを説明しています。when の後は普通の文の語順です。会話では、時を説明する when を省ける場合もあります。",
+      "examples": [
+        {
+          "en": "Do you remember when we first met?",
+          "ja": "初めて会ったとき、覚えてる？"
+        },
+        {
+          "en": "Sunday's the only day when I can sleep in.",
+          "ja": "日曜日だけは、朝ゆっくり寝ていられるんだ。"
+        }
+      ]
+    },
+    "translation-when-dialogue-04": {
+      "answer": "Evenings are when everyone comes in after work.",
+      "acceptedAnswers": [
+        "Evenings are when everyone comes in after work.",
+        "Evenings are the time when everyone comes after work."
+      ],
+      "explanation": "Evenings are when ... で「夕方から夜は、みんなが〜する時間だ」と言えます。the time when と言っても正解ですが、会話では the time を入れなくても自然です。",
+      "examples": [
+        {
+          "en": "Do you remember when we first met?",
+          "ja": "初めて会ったとき、覚えてる？"
+        },
+        {
+          "en": "Sunday's the only day when I can sleep in.",
+          "ja": "日曜日だけは、朝ゆっくり寝ていられるんだ。"
+        }
+      ]
+    },
+    "translation-when-dialogue-05": {
+      "answer": "It reminds me of the summer when we lived by the sea.",
+      "acceptedAnswers": [
+        "It reminds me of the summer when we lived by the sea."
+      ],
+      "explanation": "「when we lived by the sea」は、いつのことかを説明しています。when の後は普通の文の語順です。会話では、時を説明する when を省ける場合もあります。",
+      "examples": [
+        {
+          "en": "Do you remember when we first met?",
+          "ja": "初めて会ったとき、覚えてる？"
+        },
+        {
+          "en": "Sunday's the only day when I can sleep in.",
+          "ja": "日曜日だけは、朝ゆっくり寝ていられるんだ。"
+        }
+      ]
+    },
+    "translation-when-dialogue-06": {
+      "answer": "Tuesday is the only day when I'm free after five.",
+      "acceptedAnswers": [
+        "Tuesday is the only day when I'm free after five."
+      ],
+      "explanation": "「when I'm free after five」は、いつのことかを説明しています。when の後は普通の文の語順です。会話では、時を説明する when を省ける場合もあります。",
+      "examples": [
+        {
+          "en": "Do you remember when we first met?",
+          "ja": "初めて会ったとき、覚えてる？"
+        },
+        {
+          "en": "Sunday's the only day when I can sleep in.",
+          "ja": "日曜日だけは、朝ゆっくり寝ていられるんだ。"
+        }
+      ]
+    },
+    "translation-when-dialogue-07": {
+      "answer": "Try coming in the first hour they're open. It's usually quiet then.",
+      "acceptedAnswers": [
+        "Try coming in the first hour they're open. It's usually quiet then.",
+        "Try the hour when they first open. It's usually peaceful."
+      ],
+      "explanation": "Try coming ... は「〜の時間に来てみて」という提案です。in the first hour they're open で「開店してから最初の1時間」。会話では時を説明する when を省いたこの形も自然です。",
+      "examples": [
+        {
+          "en": "Do you remember when we first met?",
+          "ja": "初めて会ったとき、覚えてる？"
+        },
+        {
+          "en": "Sunday's the only day when I can sleep in.",
+          "ja": "日曜日だけは、朝ゆっくり寝ていられるんだ。"
+        }
+      ]
+    },
+    "translation-when-dialogue-08": {
+      "answer": "Yes. It helps me remember the years when everything felt new.",
+      "acceptedAnswers": [
+        "Yes. It helps me remember the years when everything felt new.",
+        "It helps me remember the years when everything felt new."
+      ],
+      "explanation": "「when everything felt new」は、いつのことかを説明しています。when の後は普通の文の語順です。会話では、時を説明する when を省ける場合もあります。",
+      "examples": [
+        {
+          "en": "Do you remember when we first met?",
+          "ja": "初めて会ったとき、覚えてる？"
+        },
+        {
+          "en": "Sunday's the only day when I can sleep in.",
+          "ja": "日曜日だけは、朝ゆっくり寝ていられるんだ。"
+        }
+      ]
+    },
+    "translation-when-dialogue-09": {
+      "answer": "There was a night when I cooked for all my friends.",
+      "acceptedAnswers": [
+        "There was a night when I cooked for all my friends."
+      ],
+      "explanation": "「when I cooked for all my friends」は、いつのことかを説明しています。when の後は普通の文の語順です。会話では、時を説明する when を省ける場合もあります。",
+      "examples": [
+        {
+          "en": "Do you remember when we first met?",
+          "ja": "初めて会ったとき、覚えてる？"
+        },
+        {
+          "en": "Sunday's the only day when I can sleep in.",
+          "ja": "日曜日だけは、朝ゆっくり寝ていられるんだ。"
+        }
+      ]
+    },
+    "translation-when-dialogue-10": {
+      "answer": "Yes. Remember the evening when we missed the last train?",
+      "acceptedAnswers": [
+        "Yes. Remember the evening when we missed the last train?",
+        "Remember the evening when we missed the last train?"
+      ],
+      "explanation": "「when we missed the last train」は、いつのことかを説明しています。when の後は普通の文の語順です。会話では、時を説明する when を省ける場合もあります。",
+      "examples": [
+        {
+          "en": "Do you remember when we first met?",
+          "ja": "初めて会ったとき、覚えてる？"
+        },
+        {
+          "en": "Sunday's the only day when I can sleep in.",
+          "ja": "日曜日だけは、朝ゆっくり寝ていられるんだ。"
+        }
+      ]
+    },
+    "translation-where-dialogue-01": {
+      "answer": "The one where we had breakfast last Sunday?",
+      "acceptedAnswers": [
+        "The one where we had breakfast last Sunday?"
+      ],
+      "explanation": "「where we had breakfast last Sunday」は、どんな場所か・どこでのことかを説明しています。where の後は「主語＋動詞」。場所を表す there を重ねる必要はありません。",
+      "examples": [
+        {
+          "en": "Is there somewhere where we can sit down?",
+          "ja": "どこか座れるところ、ある？"
+        },
+        {
+          "en": "That's where I left my umbrella.",
+          "ja": "傘を置いてきたの、そこだよ。"
+        }
+      ]
+    },
+    "translation-where-dialogue-02": {
+      "answer": "Is this the town where you grew up?",
+      "acceptedAnswers": [
+        "Is this the town where you grew up?"
+      ],
+      "explanation": "「where you grew up」は、どんな場所か・どこでのことかを説明しています。where の後は「主語＋動詞」。場所を表す there を重ねる必要はありません。",
+      "examples": [
+        {
+          "en": "Is there somewhere where we can sit down?",
+          "ja": "どこか座れるところ、ある？"
+        },
+        {
+          "en": "That's where I left my umbrella.",
+          "ja": "傘を置いてきたの、そこだよ。"
+        }
+      ]
+    },
+    "translation-where-dialogue-03": {
+      "answer": "I need a place where I can take a video call.",
+      "acceptedAnswers": [
+        "I need a place where I can take a video call."
+      ],
+      "explanation": "「where I can take a video call」は、どんな場所か・どこでのことかを説明しています。where の後は「主語＋動詞」。場所を表す there を重ねる必要はありません。",
+      "examples": [
+        {
+          "en": "Is there somewhere where we can sit down?",
+          "ja": "どこか座れるところ、ある？"
+        },
+        {
+          "en": "That's where I left my umbrella.",
+          "ja": "傘を置いてきたの、そこだよ。"
+        }
+      ]
+    },
+    "translation-where-dialogue-04": {
+      "answer": "It's where we bought all those spices.",
+      "acceptedAnswers": [
+        "It's where we bought all those spices."
+      ],
+      "explanation": "「where we bought all those spices」は、どんな場所か・どこでのことかを説明しています。where の後は「主語＋動詞」。場所を表す there を重ねる必要はありません。",
+      "examples": [
+        {
+          "en": "Is there somewhere where we can sit down?",
+          "ja": "どこか座れるところ、ある？"
+        },
+        {
+          "en": "That's where I left my umbrella.",
+          "ja": "傘を置いてきたの、そこだよ。"
+        }
+      ]
+    },
+    "translation-where-dialogue-05": {
+      "answer": "I'll move somewhere where I can get a better signal.",
+      "acceptedAnswers": [
+        "I'll move somewhere where I can get a better signal."
+      ],
+      "explanation": "「where I can get a better signal」は、どんな場所か・どこでのことかを説明しています。where の後は「主語＋動詞」。場所を表す there を重ねる必要はありません。",
+      "examples": [
+        {
+          "en": "Is there somewhere where we can sit down?",
+          "ja": "どこか座れるところ、ある？"
+        },
+        {
+          "en": "That's where I left my umbrella.",
+          "ja": "傘を置いてきたの、そこだよ。"
+        }
+      ]
+    },
+    "translation-where-dialogue-06": {
+      "answer": "There's a little balcony where I can grow herbs.",
+      "acceptedAnswers": [
+        "There's a little balcony where I can grow herbs."
+      ],
+      "explanation": "「where I can grow herbs」は、どんな場所か・どこでのことかを説明しています。where の後は「主語＋動詞」。場所を表す there を重ねる必要はありません。",
+      "examples": [
+        {
+          "en": "Is there somewhere where we can sit down?",
+          "ja": "どこか座れるところ、ある？"
+        },
+        {
+          "en": "That's where I left my umbrella.",
+          "ja": "傘を置いてきたの、そこだよ。"
+        }
+      ]
+    },
+    "translation-where-dialogue-07": {
+      "answer": "Yeah. It's a place where I can clear my head.",
+      "acceptedAnswers": [
+        "Yeah. It's a place where I can clear my head.",
+        "It's a place where I can clear my head."
+      ],
+      "explanation": "「where I can clear my head」は、どんな場所か・どこでのことかを説明しています。where の後は「主語＋動詞」。場所を表す there を重ねる必要はありません。",
+      "examples": [
+        {
+          "en": "Is there somewhere where we can sit down?",
+          "ja": "どこか座れるところ、ある？"
+        },
+        {
+          "en": "That's where I left my umbrella.",
+          "ja": "傘を置いてきたの、そこだよ。"
+        }
+      ]
+    },
+    "translation-where-dialogue-08": {
+      "answer": "Find a spot where we won't block the delivery trucks.",
+      "acceptedAnswers": [
+        "Find a spot where we won't block the delivery trucks."
+      ],
+      "explanation": "「where we won't block the delivery trucks」は、どんな場所か・どこでのことかを説明しています。where の後は「主語＋動詞」。場所を表す there を重ねる必要はありません。",
+      "examples": [
+        {
+          "en": "Is there somewhere where we can sit down?",
+          "ja": "どこか座れるところ、ある？"
+        },
+        {
+          "en": "That's where I left my umbrella.",
+          "ja": "傘を置いてきたの、そこだよ。"
+        }
+      ]
+    },
+    "translation-where-dialogue-09": {
+      "answer": "It's the place where we celebrated our first anniversary.",
+      "acceptedAnswers": [
+        "It's the place where we celebrated our first anniversary."
+      ],
+      "explanation": "「where we celebrated our first anniversary」は、どんな場所か・どこでのことかを説明しています。where の後は「主語＋動詞」。場所を表す there を重ねる必要はありません。",
+      "examples": [
+        {
+          "en": "Is there somewhere where we can sit down?",
+          "ja": "どこか座れるところ、ある？"
+        },
+        {
+          "en": "That's where I left my umbrella.",
+          "ja": "傘を置いてきたの、そこだよ。"
+        }
+      ]
+    },
+    "translation-where-dialogue-10": {
+      "answer": "Good. It had a lounge where I could work between meetings.",
+      "acceptedAnswers": [
+        "Good. It had a lounge where I could work between meetings."
+      ],
+      "explanation": "「where I could work between meetings」は、どんな場所か・どこでのことかを説明しています。where の後は「主語＋動詞」。場所を表す there を重ねる必要はありません。",
+      "examples": [
+        {
+          "en": "Is there somewhere where we can sit down?",
+          "ja": "どこか座れるところ、ある？"
+        },
+        {
+          "en": "That's where I left my umbrella.",
+          "ja": "傘を置いてきたの、そこだよ。"
+        }
+      ]
+    },
+    "translation-why-dialogue-01": {
+      "answer": "No, I understand why you couldn't come.",
+      "acceptedAnswers": [
+        "No, I understand why you couldn't come.",
+        "No. I understand the reason why you couldn't come."
+      ],
+      "explanation": "understand why you couldn't come で「来られなかった理由はわかる」と言えます。the reason を足しても正解ですが、会話では understand why ... だけで十分です。couldn't は過去の「来られなかった」です。",
+      "examples": [
+        {
+          "en": "I don't know why she's upset.",
+          "ja": "なんで彼女が怒ってるのか、わからないんだ。"
+        },
+        {
+          "en": "That's why I called you.",
+          "ja": "だから電話したんだよ。"
+        }
+      ]
+    },
+    "translation-why-dialogue-02": {
+      "answer": "The coffee is the main reason why people keep coming back.",
+      "acceptedAnswers": [
+        "The coffee is the main reason why people keep coming back."
+      ],
+      "explanation": "the main reason why people keep coming back で「みんなが繰り返し来る一番の理由」。keep coming back は「何度も戻ってくる」です。The coffee is why people keep coming back. と短く言っても自然です。",
+      "examples": [
+        {
+          "en": "I don't know why she's upset.",
+          "ja": "なんで彼女が怒ってるのか、わからないんだ。"
+        },
+        {
+          "en": "That's why I called you.",
+          "ja": "だから電話したんだよ。"
+        }
+      ]
+    },
+    "translation-why-dialogue-03": {
+      "answer": "The team is one reason why I want to stay here.",
+      "acceptedAnswers": [
+        "The team is one reason why I want to stay here.",
+        "The team is one reason I want to stay here."
+      ],
+      "explanation": "one reason why I want to stay here は「ここに残りたい理由の一つ」。理由がほかにもあることを含みます。one reason I want to stay here のように why を省いても自然です。",
+      "examples": [
+        {
+          "en": "I don't know why she's upset.",
+          "ja": "なんで彼女が怒ってるのか、わからないんだ。"
+        },
+        {
+          "en": "That's why I called you.",
+          "ja": "だから電話したんだよ。"
+        }
+      ]
+    },
+    "translation-why-dialogue-04": {
+      "answer": "Yeah, I explained why I was late.",
+      "acceptedAnswers": [
+        "Yeah, I explained why I was late.",
+        "Yes. I explained the reason why I was late.",
+        "Yes. I explained why I was late.",
+        "I explained why I was late.",
+        "I explained the reason why I was late."
+      ],
+      "explanation": "explained why I was late で「なぜ遅れたのか説明した」。説明したことも遅れたことも過去なので、explained と was を使います。the reason は不要です。Yes / Yeah を省いて I explained why I was late. と答えても自然です。",
+      "examples": [
+        {
+          "en": "I don't know why she's upset.",
+          "ja": "なんで彼女が怒ってるのか、わからないんだ。"
+        },
+        {
+          "en": "That's why I called you.",
+          "ja": "だから電話したんだよ。"
+        }
+      ]
+    },
+    "translation-why-dialogue-05": {
+      "answer": "There's a reason why it's so cheap. The battery only lasts an hour.",
+      "acceptedAnswers": [
+        "There's a reason why it's so cheap. The battery only lasts an hour.",
+        "There's a reason why it costs so little. The battery only lasts an hour."
+      ],
+      "explanation": "There's a reason why ... で「〜なのには理由がある」。so cheap は「そんなに安い」、only lasts an hour は「1時間しかもたない」です。後ろの文で安さの理由を具体的に伝えています。",
+      "examples": [
+        {
+          "en": "I don't know why she's upset.",
+          "ja": "なんで彼女が怒ってるのか、わからないんだ。"
+        },
+        {
+          "en": "That's why I called you.",
+          "ja": "だから電話したんだよ。"
+        }
+      ]
+    },
+    "translation-why-dialogue-06": {
+      "answer": "I remind myself why I started.",
+      "acceptedAnswers": [
+        "I remind myself why I started.",
+        "I remind myself of the reason why I started."
+      ],
+      "explanation": "remind myself why I started で「なぜ始めたのかを自分に思い出させる」。remind myself of the reason why ... と長く言わなくても自然です。started は、始めたときの過去を表しています。",
+      "examples": [
+        {
+          "en": "I don't know why she's upset.",
+          "ja": "なんで彼女が怒ってるのか、わからないんだ。"
+        },
+        {
+          "en": "That's why I called you.",
+          "ja": "だから電話したんだよ。"
+        }
+      ]
+    },
+    "translation-why-dialogue-07": {
+      "answer": "Yeah, I can't think of a reason why it wouldn't arrive.",
+      "acceptedAnswers": [
+        "Yeah, I can't think of a reason why it wouldn't arrive.",
+        "No. I can't think of a reason why it wouldn't arrive.",
+        "I can't think of a reason why it wouldn't arrive."
+      ],
+      "explanation": "can't think of a reason why ... は「〜する理由が思い当たらない」。wouldn't arrive と否定にすることで、「届かない理由はない＝届くと思う」と伝えています。",
+      "examples": [
+        {
+          "en": "I don't know why she's upset.",
+          "ja": "なんで彼女が怒ってるのか、わからないんだ。"
+        },
+        {
+          "en": "That's why I called you.",
+          "ja": "だから電話したんだよ。"
+        }
+      ]
+    },
+    "translation-why-dialogue-08": {
+      "answer": "The owner is the reason why I go there.",
+      "acceptedAnswers": [
+        "The owner is the reason why I go there.",
+        "The owner is why I go there."
+      ],
+      "explanation": "The owner is the reason why I go there. で「その店主さんがいるから、あそこに行く」。the reason I go there と why を省いた形でも同じ内容を自然に伝えられます。",
+      "examples": [
+        {
+          "en": "I don't know why she's upset.",
+          "ja": "なんで彼女が怒ってるのか、わからないんだ。"
+        },
+        {
+          "en": "That's why I called you.",
+          "ja": "だから電話したんだよ。"
+        }
+      ]
+    },
+    "translation-why-dialogue-09": {
+      "answer": "The fireworks are probably the reason why he's scared.",
+      "acceptedAnswers": [
+        "The fireworks are probably the reason why he's scared.",
+        "The fireworks are probably why he's scared."
+      ],
+      "explanation": "the reason why he's scared は「彼が怖がっている理由」。probably を入れることで、花火が原因だと断定せず「たぶん」と推測しています。",
+      "examples": [
+        {
+          "en": "I don't know why she's upset.",
+          "ja": "なんで彼女が怒ってるのか、わからないんだ。"
+        },
+        {
+          "en": "That's why I called you.",
+          "ja": "だから電話したんだよ。"
+        }
+      ]
+    },
+    "translation-why-dialogue-10": {
+      "answer": "The weather is one reason why we chose that month.",
+      "acceptedAnswers": [
+        "The weather is one reason why we chose that month.",
+        "The weather is one reason we chose that month."
+      ],
+      "explanation": "one reason why we chose that month は「その月を選んだ理由の一つ」。chose は choose の過去形で、すでに選んだときの話です。one reason we chose that month とも言えます。",
+      "examples": [
+        {
+          "en": "I don't know why she's upset.",
+          "ja": "なんで彼女が怒ってるのか、わからないんだ。"
+        },
+        {
+          "en": "That's why I called you.",
+          "ja": "だから電話したんだよ。"
+        }
+      ]
+    },
+    "translation-how-dialogue-01": {
+      "answer": "I'll show you how I measure the water.",
+      "acceptedAnswers": [
+        "I'll show you how I measure the water."
+      ],
+      "explanation": "「how I measure the water」は、やり方や様子をひとまとまりにしています。how の後は「主語＋動詞」。how do I のような質問の語順にはしません。",
+      "examples": [
+        {
+          "en": "Can you show me how this works?",
+          "ja": "これの使い方、教えてくれる？"
+        },
+        {
+          "en": "I like how you've arranged the room.",
+          "ja": "この部屋の配置、いいね。"
+        }
+      ]
+    },
+    "translation-how-dialogue-02": {
+      "answer": "I'll show you how I avoided the main road.",
+      "acceptedAnswers": [
+        "I'll show you how I avoided the main road."
+      ],
+      "explanation": "「how I avoided the main road」は、やり方や様子をひとまとまりにしています。how の後は「主語＋動詞」。how do I のような質問の語順にはしません。",
+      "examples": [
+        {
+          "en": "Can you show me how this works?",
+          "ja": "これの使い方、教えてくれる？"
+        },
+        {
+          "en": "I like how you've arranged the room.",
+          "ja": "この部屋の配置、いいね。"
+        }
+      ]
+    },
+    "translation-how-dialogue-03": {
+      "answer": "Yeah. This is how I print them all at once.",
+      "acceptedAnswers": [
+        "Yeah. This is how I print them all at once.",
+        "This is how I print them all at once."
+      ],
+      "explanation": "「how I print them all at once」は、やり方や様子をひとまとまりにしています。how の後は「主語＋動詞」。how do I のような質問の語順にはしません。",
+      "examples": [
+        {
+          "en": "Can you show me how this works?",
+          "ja": "これの使い方、教えてくれる？"
+        },
+        {
+          "en": "I like how you've arranged the room.",
+          "ja": "この部屋の配置、いいね。"
+        }
+      ]
+    },
+    "translation-how-dialogue-04": {
+      "answer": "Watch how I hold the phone against the railing.",
+      "acceptedAnswers": [
+        "Watch how I hold the phone against the railing."
+      ],
+      "explanation": "「how I hold the phone against the railing」は、やり方や様子をひとまとまりにしています。how の後は「主語＋動詞」。how do I のような質問の語順にはしません。",
+      "examples": [
+        {
+          "en": "Can you show me how this works?",
+          "ja": "これの使い方、教えてくれる？"
+        },
+        {
+          "en": "I like how you've arranged the room.",
+          "ja": "この部屋の配置、いいね。"
+        }
+      ]
+    },
+    "translation-how-dialogue-05": {
+      "answer": "Yes, but I was careful about how I said it.",
+      "acceptedAnswers": [
+        "Yes, but I was careful about how I said it.",
+        "But I was careful about how I said it."
+      ],
+      "explanation": "「how I said it」は、やり方や様子をひとまとまりにしています。how の後は「主語＋動詞」。how do I のような質問の語順にはしません。",
+      "examples": [
+        {
+          "en": "Can you show me how this works?",
+          "ja": "これの使い方、教えてくれる？"
+        },
+        {
+          "en": "I like how you've arranged the room.",
+          "ja": "この部屋の配置、いいね。"
+        }
+      ]
+    },
+    "translation-how-dialogue-06": {
+      "answer": "Yeah. I'll explain how I keep track of my spending.",
+      "acceptedAnswers": [
+        "Yeah. I'll explain how I keep track of my spending.",
+        "I'll explain how I keep track of my spending."
+      ],
+      "explanation": "「how I keep track of my spending」は、やり方や様子をひとまとまりにしています。how の後は「主語＋動詞」。how do I のような質問の語順にはしません。",
+      "examples": [
+        {
+          "en": "Can you show me how this works?",
+          "ja": "これの使い方、教えてくれる？"
+        },
+        {
+          "en": "I like how you've arranged the room.",
+          "ja": "この部屋の配置、いいね。"
+        }
+      ]
+    },
+    "translation-how-dialogue-07": {
+      "answer": "Let me show you how I water mine.",
+      "acceptedAnswers": [
+        "Let me show you how I water mine."
+      ],
+      "explanation": "「how I water mine」は、やり方や様子をひとまとまりにしています。how の後は「主語＋動詞」。how do I のような質問の語順にはしません。",
+      "examples": [
+        {
+          "en": "Can you show me how this works?",
+          "ja": "これの使い方、教えてくれる？"
+        },
+        {
+          "en": "I like how you've arranged the room.",
+          "ja": "この部屋の配置、いいね。"
+        }
+      ]
+    },
+    "translation-how-dialogue-08": {
+      "answer": "Here's how I do it. Tap the small check mark first.",
+      "acceptedAnswers": [
+        "Here's how I do it. Tap the small check mark first."
+      ],
+      "explanation": "「how I do it」は、やり方や様子をひとまとまりにしています。how の後は「主語＋動詞」。how do I のような質問の語順にはしません。",
+      "examples": [
+        {
+          "en": "Can you show me how this works?",
+          "ja": "これの使い方、教えてくれる？"
+        },
+        {
+          "en": "I like how you've arranged the room.",
+          "ja": "この部屋の配置、いいね。"
+        }
+      ]
+    },
+    "translation-how-dialogue-09": {
+      "answer": "That's how I handle nerves: I focus on one person at a time.",
+      "acceptedAnswers": [
+        "That's how I handle nerves: I focus on one person at a time."
+      ],
+      "explanation": "「how I handle nerves」は、やり方や様子をひとまとまりにしています。how の後は「主語＋動詞」。how do I のような質問の語順にはしません。",
+      "examples": [
+        {
+          "en": "Can you show me how this works?",
+          "ja": "これの使い方、教えてくれる？"
+        },
+        {
+          "en": "I like how you've arranged the room.",
+          "ja": "この部屋の配置、いいね。"
+        }
+      ]
+    },
+    "translation-how-dialogue-10": {
+      "answer": "Watch. This is how it folds down.",
+      "acceptedAnswers": [
+        "Watch. This is how it folds down."
+      ],
+      "explanation": "「how it folds down」は、やり方や様子をひとまとまりにしています。how の後は「主語＋動詞」。how do I のような質問の語順にはしません。",
+      "examples": [
+        {
+          "en": "Can you show me how this works?",
+          "ja": "これの使い方、教えてくれる？"
+        },
+        {
+          "en": "I like how you've arranged the room.",
+          "ja": "この部屋の配置、いいね。"
+        }
+      ]
+    },
+    "translation-whoever-dialogue-01": {
+      "answer": "Whoever wants it can have it.",
+      "acceptedAnswers": [
+        "Whoever wants it can have it."
+      ],
+      "explanation": "「Whoever wants it」は、「〜する人なら誰でも」という意味です。特定の名前ではなく、条件に当てはまる人を指します。",
+      "examples": [
+        {
+          "en": "Give it to whoever needs it.",
+          "ja": "必要な人にあげて。"
+        },
+        {
+          "en": "Whoever gets up first can make coffee.",
+          "ja": "先に起きたほうがコーヒーを入れよう。"
+        }
+      ]
+    },
+    "translation-whoever-dialogue-02": {
+      "answer": "Whoever is at the front desk can sign for it.",
+      "acceptedAnswers": [
+        "Whoever is at the front desk can sign for it."
+      ],
+      "explanation": "「Whoever is at the front desk」は、「〜する人なら誰でも」という意味です。特定の名前ではなく、条件に当てはまる人を指します。",
+      "examples": [
+        {
+          "en": "Give it to whoever needs it.",
+          "ja": "必要な人にあげて。"
+        },
+        {
+          "en": "Whoever gets up first can make coffee.",
+          "ja": "先に起きたほうがコーヒーを入れよう。"
+        }
+      ]
+    },
+    "translation-whoever-dialogue-03": {
+      "answer": "No. Whoever wants to come is welcome.",
+      "acceptedAnswers": [
+        "No. Whoever wants to come is welcome."
+      ],
+      "explanation": "「Whoever wants to come」は、「〜する人なら誰でも」という意味です。特定の名前ではなく、条件に当てはまる人を指します。",
+      "examples": [
+        {
+          "en": "Give it to whoever needs it.",
+          "ja": "必要な人にあげて。"
+        },
+        {
+          "en": "Whoever gets up first can make coffee.",
+          "ja": "先に起きたほうがコーヒーを入れよう。"
+        }
+      ]
+    },
+    "translation-whoever-dialogue-04": {
+      "answer": "Yeah, but whoever cooks doesn't have to wash up.",
+      "acceptedAnswers": [
+        "Yeah, but whoever cooks doesn't have to wash up.",
+        "But whoever cooks doesn't have to wash up."
+      ],
+      "explanation": "「whoever cooks」は、「〜する人なら誰でも」という意味です。特定の名前ではなく、条件に当てはまる人を指します。",
+      "examples": [
+        {
+          "en": "Give it to whoever needs it.",
+          "ja": "必要な人にあげて。"
+        },
+        {
+          "en": "Whoever gets up first can make coffee.",
+          "ja": "先に起きたほうがコーヒーを入れよう。"
+        }
+      ]
+    },
+    "translation-whoever-dialogue-05": {
+      "answer": "Whoever finishes work first can pick some up.",
+      "acceptedAnswers": [
+        "Whoever finishes work first can pick some up."
+      ],
+      "explanation": "「Whoever finishes work first」は、「〜する人なら誰でも」という意味です。特定の名前ではなく、条件に当てはまる人を指します。",
+      "examples": [
+        {
+          "en": "Give it to whoever needs it.",
+          "ja": "必要な人にあげて。"
+        },
+        {
+          "en": "Whoever gets up first can make coffee.",
+          "ja": "先に起きたほうがコーヒーを入れよう。"
+        }
+      ]
+    },
+    "translation-whoever-dialogue-06": {
+      "answer": "Neither, really. I'll be happy for whoever wins.",
+      "acceptedAnswers": [
+        "Neither, really. I'll be happy for whoever wins."
+      ],
+      "explanation": "「whoever wins」は、「〜する人なら誰でも」という意味です。特定の名前ではなく、条件に当てはまる人を指します。",
+      "examples": [
+        {
+          "en": "Give it to whoever needs it.",
+          "ja": "必要な人にあげて。"
+        },
+        {
+          "en": "Whoever gets up first can make coffee.",
+          "ja": "先に起きたほうがコーヒーを入れよう。"
+        }
+      ]
+    },
+    "translation-whoever-dialogue-07": {
+      "answer": "Maybe. Whoever gets the job will need our support.",
+      "acceptedAnswers": [
+        "Maybe. Whoever gets the job will need our support."
+      ],
+      "explanation": "「Whoever gets the job」は、「〜する人なら誰でも」という意味です。特定の名前ではなく、条件に当てはまる人を指します。",
+      "examples": [
+        {
+          "en": "Give it to whoever needs it.",
+          "ja": "必要な人にあげて。"
+        },
+        {
+          "en": "Whoever gets up first can make coffee.",
+          "ja": "先に起きたほうがコーヒーを入れよう。"
+        }
+      ]
+    },
+    "translation-whoever-dialogue-08": {
+      "answer": "Whoever it is must be getting soaked. Let them in.",
+      "acceptedAnswers": [
+        "Whoever it is must be getting soaked. Let them in."
+      ],
+      "explanation": "Whoever it is は「それが誰であっても」。訪ねてきた人が誰かはわからないけれど、雨でずぶぬれになっていそうだから入れてあげよう、と伝えています。",
+      "examples": [
+        {
+          "en": "Give it to whoever needs it.",
+          "ja": "必要な人にあげて。"
+        },
+        {
+          "en": "Whoever gets up first can make coffee.",
+          "ja": "先に起きたほうがコーヒーを入れよう。"
+        }
+      ]
+    },
+    "translation-whoever-dialogue-09": {
+      "answer": "I don't know, but whoever made this playlist has great taste.",
+      "acceptedAnswers": [
+        "I don't know, but whoever made this playlist has great taste."
+      ],
+      "explanation": "「whoever made this playlist」は、「〜する人なら誰でも」という意味です。特定の名前ではなく、条件に当てはまる人を指します。",
+      "examples": [
+        {
+          "en": "Give it to whoever needs it.",
+          "ja": "必要な人にあげて。"
+        },
+        {
+          "en": "Whoever gets up first can make coffee.",
+          "ja": "先に起きたほうがコーヒーを入れよう。"
+        }
+      ]
+    },
+    "translation-whoever-dialogue-10": {
+      "answer": "Whoever has the car this evening will come.",
+      "acceptedAnswers": [
+        "Whoever has the car this evening will come."
+      ],
+      "explanation": "「Whoever has the car this evening」は、「〜する人なら誰でも」という意味です。特定の名前ではなく、条件に当てはまる人を指します。",
+      "examples": [
+        {
+          "en": "Give it to whoever needs it.",
+          "ja": "必要な人にあげて。"
+        },
+        {
+          "en": "Whoever gets up first can make coffee.",
+          "ja": "先に起きたほうがコーヒーを入れよう。"
+        }
+      ]
+    },
+    "translation-whatever-dialogue-01": {
+      "answer": "I'll eat whatever you make.",
+      "acceptedAnswers": [
+        "I'll eat whatever you make."
+      ],
+      "explanation": "「whatever you make」は、「〜するものなら何でも」という意味です。ものを特定せず、相手の選択などに任せるときに使えます。 ここでは「何が起きても」という条件ではなく、ものや内容を表しています。",
+      "examples": [
+        {
+          "en": "Order whatever you feel like.",
+          "ja": "食べたいものを頼んでね。"
+        },
+        {
+          "en": "Whatever happens, I'll be there.",
+          "ja": "何があっても、そばにいるよ。"
+        }
+      ]
+    },
+    "translation-whatever-dialogue-02": {
+      "answer": "Bring whatever you'd like to drink.",
+      "acceptedAnswers": [
+        "Bring whatever you'd like to drink."
+      ],
+      "explanation": "「whatever you'd like to drink」は、「〜するものなら何でも」という意味です。ものを特定せず、相手の選択などに任せるときに使えます。",
+      "examples": [
+        {
+          "en": "Order whatever you feel like.",
+          "ja": "食べたいものを頼んでね。"
+        },
+        {
+          "en": "Whatever happens, I'll be there.",
+          "ja": "何があっても、そばにいるよ。"
+        }
+      ]
+    },
+    "translation-whatever-dialogue-03": {
+      "answer": "She'll love whatever you make for her.",
+      "acceptedAnswers": [
+        "She'll love whatever you make for her."
+      ],
+      "explanation": "「whatever you make for her」は、「〜するものなら何でも」という意味です。ものを特定せず、相手の選択などに任せるときに使えます。 ここでは「何が起きても」という条件ではなく、ものや内容を表しています。",
+      "examples": [
+        {
+          "en": "Order whatever you feel like.",
+          "ja": "食べたいものを頼んでね。"
+        },
+        {
+          "en": "Whatever happens, I'll be there.",
+          "ja": "何があっても、そばにいるよ。"
+        }
+      ]
+    },
+    "translation-whatever-dialogue-04": {
+      "answer": "Of course. Take whatever you need.",
+      "acceptedAnswers": [
+        "Of course. Take whatever you need.",
+        "Take whatever you need."
+      ],
+      "explanation": "「whatever you need」は、「〜するものなら何でも」という意味です。ものを特定せず、相手の選択などに任せるときに使えます。 ここでは「何が起きても」という条件ではなく、ものや内容を表しています。",
+      "examples": [
+        {
+          "en": "Order whatever you feel like.",
+          "ja": "食べたいものを頼んでね。"
+        },
+        {
+          "en": "Whatever happens, I'll be there.",
+          "ja": "何があっても、そばにいるよ。"
+        }
+      ]
+    },
+    "translation-whatever-dialogue-05": {
+      "answer": "Whatever we do, let's leave our laptops at home.",
+      "acceptedAnswers": [
+        "Whatever we do, let's leave our laptops at home."
+      ],
+      "explanation": "Whatever we do は「何をするにしても」。何をするかとは別に、「パソコンは家に置いていこう」と提案しています。「何でもする」という意味ではありません。",
+      "examples": [
+        {
+          "en": "Order whatever you feel like.",
+          "ja": "食べたいものを頼んでね。"
+        },
+        {
+          "en": "Whatever happens, I'll be there.",
+          "ja": "何があっても、そばにいるよ。"
+        }
+      ]
+    },
+    "translation-whatever-dialogue-06": {
+      "answer": "I'll do whatever I can.",
+      "acceptedAnswers": [
+        "I'll do whatever I can."
+      ],
+      "explanation": "「whatever I can」は、「〜するものなら何でも」という意味です。ものを特定せず、相手の選択などに任せるときに使えます。 ここでは「何が起きても」という条件ではなく、ものや内容を表しています。",
+      "examples": [
+        {
+          "en": "Order whatever you feel like.",
+          "ja": "食べたいものを頼んでね。"
+        },
+        {
+          "en": "Whatever happens, I'll be there.",
+          "ja": "何があっても、そばにいるよ。"
+        }
+      ]
+    },
+    "translation-whatever-dialogue-07": {
+      "answer": "Just some fruit. Get whatever looks fresh.",
+      "acceptedAnswers": [
+        "Just some fruit. Get whatever looks fresh."
+      ],
+      "explanation": "「whatever looks fresh」は、「〜するものなら何でも」という意味です。ものを特定せず、相手の選択などに任せるときに使えます。 ここでは「何が起きても」という条件ではなく、ものや内容を表しています。",
+      "examples": [
+        {
+          "en": "Order whatever you feel like.",
+          "ja": "食べたいものを頼んでね。"
+        },
+        {
+          "en": "Whatever happens, I'll be there.",
+          "ja": "何があっても、そばにいるよ。"
+        }
+      ]
+    },
+    "translation-whatever-dialogue-08": {
+      "answer": "Whatever happens, we can still have ice cream.",
+      "acceptedAnswers": [
+        "Whatever happens, we can still have ice cream."
+      ],
+      "explanation": "Whatever happens は「何が起きても」。起こる出来事にかかわらず、アイスを楽しめるという気楽な言い方です。",
+      "examples": [
+        {
+          "en": "Order whatever you feel like.",
+          "ja": "食べたいものを頼んでね。"
+        },
+        {
+          "en": "Whatever happens, I'll be there.",
+          "ja": "何があっても、そばにいるよ。"
+        }
+      ]
+    },
+    "translation-whatever-dialogue-09": {
+      "answer": "Choose whatever sounds good to you. We can share.",
+      "acceptedAnswers": [
+        "Choose whatever sounds good to you. We can share."
+      ],
+      "explanation": "「whatever sounds good to you」は、「〜するものなら何でも」という意味です。ものを特定せず、相手の選択などに任せるときに使えます。 ここでは「何が起きても」という条件ではなく、ものや内容を表しています。",
+      "examples": [
+        {
+          "en": "Order whatever you feel like.",
+          "ja": "食べたいものを頼んでね。"
+        },
+        {
+          "en": "Whatever happens, I'll be there.",
+          "ja": "何があっても、そばにいるよ。"
+        }
+      ]
+    },
+    "translation-whatever-dialogue-10": {
+      "answer": "Tell me whatever is on your mind. We can sort it out together.",
+      "acceptedAnswers": [
+        "Tell me whatever is on your mind. We can sort it out together."
+      ],
+      "explanation": "「whatever is on your mind」は、「〜するものなら何でも」という意味です。ものを特定せず、相手の選択などに任せるときに使えます。 ここでは「何が起きても」という条件ではなく、ものや内容を表しています。",
+      "examples": [
+        {
+          "en": "Order whatever you feel like.",
+          "ja": "食べたいものを頼んでね。"
+        },
+        {
+          "en": "Whatever happens, I'll be there.",
+          "ja": "何があっても、そばにいるよ。"
+        }
+      ]
+    },
+    "translation-whichever-dialogue-01": {
+      "answer": "Whichever you prefer is fine with me.",
+      "acceptedAnswers": [
+        "Whichever you prefer is fine with me."
+      ],
+      "explanation": "「Whichever you prefer」は、選択肢の中で「〜するほうならどれでも」という意味です。one・route・time など、選ぶ対象の名詞を続けることもできます。",
+      "examples": [
+        {
+          "en": "Take whichever bus comes first.",
+          "ja": "先に来たほうのバスに乗って。"
+        },
+        {
+          "en": "Whichever day works for you is fine.",
+          "ja": "都合のいい日で大丈夫だよ。"
+        }
+      ]
+    },
+    "translation-whichever-dialogue-02": {
+      "answer": "Let's watch whichever one is shorter.",
+      "acceptedAnswers": [
+        "Let's watch whichever one is shorter."
+      ],
+      "explanation": "「whichever one is shorter」は、選択肢の中で「〜するほうならどれでも」という意味です。one・route・time など、選ぶ対象の名詞を続けることもできます。",
+      "examples": [
+        {
+          "en": "Take whichever bus comes first.",
+          "ja": "先に来たほうのバスに乗って。"
+        },
+        {
+          "en": "Whichever day works for you is fine.",
+          "ja": "都合のいい日で大丈夫だよ。"
+        }
+      ]
+    },
+    "translation-whichever-dialogue-03": {
+      "answer": "Take whichever route has less traffic.",
+      "acceptedAnswers": [
+        "Take whichever route has less traffic."
+      ],
+      "explanation": "「whichever route has less traffic」は、選択肢の中で「〜するほうならどれでも」という意味です。one・route・time など、選ぶ対象の名詞を続けることもできます。",
+      "examples": [
+        {
+          "en": "Take whichever bus comes first.",
+          "ja": "先に来たほうのバスに乗って。"
+        },
+        {
+          "en": "Whichever day works for you is fine.",
+          "ja": "都合のいい日で大丈夫だよ。"
+        }
+      ]
+    },
+    "translation-whichever-dialogue-04": {
+      "answer": "Of course. Buy whichever one fits better.",
+      "acceptedAnswers": [
+        "Of course. Buy whichever one fits better.",
+        "Buy whichever one fits better."
+      ],
+      "explanation": "「whichever one fits better」は、選択肢の中で「〜するほうならどれでも」という意味です。one・route・time など、選ぶ対象の名詞を続けることもできます。",
+      "examples": [
+        {
+          "en": "Take whichever bus comes first.",
+          "ja": "先に来たほうのバスに乗って。"
+        },
+        {
+          "en": "Whichever day works for you is fine.",
+          "ja": "都合のいい日で大丈夫だよ。"
+        }
+      ]
+    },
+    "translation-whichever-dialogue-05": {
+      "answer": "Book whichever one has a bigger screen.",
+      "acceptedAnswers": [
+        "Book whichever one has a bigger screen."
+      ],
+      "explanation": "「whichever one has a bigger screen」は、選択肢の中で「〜するほうならどれでも」という意味です。one・route・time など、選ぶ対象の名詞を続けることもできます。",
+      "examples": [
+        {
+          "en": "Take whichever bus comes first.",
+          "ja": "先に来たほうのバスに乗って。"
+        },
+        {
+          "en": "Whichever day works for you is fine.",
+          "ja": "都合のいい日で大丈夫だよ。"
+        }
+      ]
+    },
+    "translation-whichever-dialogue-06": {
+      "answer": "Sure. Take whichever slice you want.",
+      "acceptedAnswers": [
+        "Sure. Take whichever slice you want.",
+        "Take whichever slice you want."
+      ],
+      "explanation": "「whichever slice you want」は、選択肢の中で「〜するほうならどれでも」という意味です。one・route・time など、選ぶ対象の名詞を続けることもできます。",
+      "examples": [
+        {
+          "en": "Take whichever bus comes first.",
+          "ja": "先に来たほうのバスに乗って。"
+        },
+        {
+          "en": "Whichever day works for you is fine.",
+          "ja": "都合のいい日で大丈夫だよ。"
+        }
+      ]
+    },
+    "translation-whichever-dialogue-07": {
+      "answer": "Choose whichever time works better for you.",
+      "acceptedAnswers": [
+        "Choose whichever time works better for you."
+      ],
+      "explanation": "「whichever time works better for you」は、選択肢の中で「〜するほうならどれでも」という意味です。one・route・time など、選ぶ対象の名詞を続けることもできます。",
+      "examples": [
+        {
+          "en": "Take whichever bus comes first.",
+          "ja": "先に来たほうのバスに乗って。"
+        },
+        {
+          "en": "Whichever day works for you is fine.",
+          "ja": "都合のいい日で大丈夫だよ。"
+        }
+      ]
+    },
+    "translation-whichever-dialogue-08": {
+      "answer": "No, use whichever station is closest when you're done.",
+      "acceptedAnswers": [
+        "No, use whichever station is closest when you're done."
+      ],
+      "explanation": "「whichever station is closest」は、選択肢の中で「〜するほうならどれでも」という意味です。one・route・time など、選ぶ対象の名詞を続けることもできます。",
+      "examples": [
+        {
+          "en": "Take whichever bus comes first.",
+          "ja": "先に来たほうのバスに乗って。"
+        },
+        {
+          "en": "Whichever day works for you is fine.",
+          "ja": "都合のいい日で大丈夫だよ。"
+        }
+      ]
+    },
+    "translation-whichever-dialogue-09": {
+      "answer": "Whichever one you don't want.",
+      "acceptedAnswers": [
+        "Whichever one you don't want."
+      ],
+      "explanation": "「Whichever one you don't want」は、選択肢の中で「〜するほうならどれでも」という意味です。one・route・time など、選ぶ対象の名詞を続けることもできます。",
+      "examples": [
+        {
+          "en": "Take whichever bus comes first.",
+          "ja": "先に来たほうのバスに乗って。"
+        },
+        {
+          "en": "Whichever day works for you is fine.",
+          "ja": "都合のいい日で大丈夫だよ。"
+        }
+      ]
+    },
+    "translation-whichever-dialogue-10": {
+      "answer": "Let's book whichever one includes breakfast.",
+      "acceptedAnswers": [
+        "Let's book whichever one includes breakfast."
+      ],
+      "explanation": "「whichever one includes breakfast」は、選択肢の中で「〜するほうならどれでも」という意味です。one・route・time など、選ぶ対象の名詞を続けることもできます。",
+      "examples": [
+        {
+          "en": "Take whichever bus comes first.",
+          "ja": "先に来たほうのバスに乗って。"
+        },
+        {
+          "en": "Whichever day works for you is fine.",
+          "ja": "都合のいい日で大丈夫だよ。"
+        }
+      ]
+    },
+    "translation-whenever-dialogue-01": {
+      "answer": "Text me whenever you need help. I'll reply when I can.",
+      "acceptedAnswers": [
+        "Text me whenever you need help. I'll reply when I can."
+      ],
+      "explanation": "「whenever you need help」は、「〜するときはいつでも」という意味です。時間を限定せず、都合のよいときや繰り返し起こるときを表せます。",
+      "examples": [
+        {
+          "en": "Drop by whenever you like.",
+          "ja": "好きなときに寄ってね。"
+        },
+        {
+          "en": "Whenever I hear that song, I think of you.",
+          "ja": "あの曲を聞くたびに、あなたを思い出すよ。"
+        }
+      ]
+    },
+    "translation-whenever-dialogue-02": {
+      "answer": "Come whenever you're ready. I'll be home all afternoon.",
+      "acceptedAnswers": [
+        "Come whenever you're ready. I'll be home all afternoon."
+      ],
+      "explanation": "「whenever you're ready」は、「〜するときはいつでも」という意味です。時間を限定せず、都合のよいときや繰り返し起こるときを表せます。",
+      "examples": [
+        {
+          "en": "Drop by whenever you like.",
+          "ja": "好きなときに寄ってね。"
+        },
+        {
+          "en": "Whenever I hear that song, I think of you.",
+          "ja": "あの曲を聞くたびに、あなたを思い出すよ。"
+        }
+      ]
+    },
+    "translation-whenever-dialogue-03": {
+      "answer": "I carry one whenever the forecast looks uncertain.",
+      "acceptedAnswers": [
+        "I carry one whenever the forecast looks uncertain."
+      ],
+      "explanation": "「whenever the forecast looks uncertain」は、「〜するときはいつでも」という意味です。時間を限定せず、都合のよいときや繰り返し起こるときを表せます。",
+      "examples": [
+        {
+          "en": "Drop by whenever you like.",
+          "ja": "好きなときに寄ってね。"
+        },
+        {
+          "en": "Whenever I hear that song, I think of you.",
+          "ja": "あの曲を聞くたびに、あなたを思い出すよ。"
+        }
+      ]
+    },
+    "translation-whenever-dialogue-04": {
+      "answer": "Whenever I smell fresh bread, I think of my grandma.",
+      "acceptedAnswers": [
+        "Whenever I smell fresh bread, I think of my grandma."
+      ],
+      "explanation": "「Whenever I smell fresh bread」は、「〜するときはいつでも」という意味です。時間を限定せず、都合のよいときや繰り返し起こるときを表せます。",
+      "examples": [
+        {
+          "en": "Drop by whenever you like.",
+          "ja": "好きなときに寄ってね。"
+        },
+        {
+          "en": "Whenever I hear that song, I think of you.",
+          "ja": "あの曲を聞くたびに、あなたを思い出すよ。"
+        }
+      ]
+    },
+    "translation-whenever-dialogue-05": {
+      "answer": "I listen to a short conversation whenever I have a few minutes.",
+      "acceptedAnswers": [
+        "I listen to a short conversation whenever I have a few minutes."
+      ],
+      "explanation": "「whenever I have a few minutes」は、「〜するときはいつでも」という意味です。時間を限定せず、都合のよいときや繰り返し起こるときを表せます。",
+      "examples": [
+        {
+          "en": "Drop by whenever you like.",
+          "ja": "好きなときに寄ってね。"
+        },
+        {
+          "en": "Whenever I hear that song, I think of you.",
+          "ja": "あの曲を聞くたびに、あなたを思い出すよ。"
+        }
+      ]
+    },
+    "translation-whenever-dialogue-06": {
+      "answer": "Whenever I can get a few days off. I miss everyone.",
+      "acceptedAnswers": [
+        "Whenever I can get a few days off. I miss everyone."
+      ],
+      "explanation": "「Whenever I can get a few days off」は、「〜するときはいつでも」という意味です。時間を限定せず、都合のよいときや繰り返し起こるときを表せます。",
+      "examples": [
+        {
+          "en": "Drop by whenever you like.",
+          "ja": "好きなときに寄ってね。"
+        },
+        {
+          "en": "Whenever I hear that song, I think of you.",
+          "ja": "あの曲を聞くたびに、あなたを思い出すよ。"
+        }
+      ]
+    },
+    "translation-whenever-dialogue-07": {
+      "answer": "Yes. Whenever I walk onstage, my heart starts racing.",
+      "acceptedAnswers": [
+        "Yes. Whenever I walk onstage, my heart starts racing.",
+        "Whenever I walk onstage, my heart starts racing."
+      ],
+      "explanation": "「Whenever I walk onstage」は、「〜するときはいつでも」という意味です。時間を限定せず、都合のよいときや繰り返し起こるときを表せます。",
+      "examples": [
+        {
+          "en": "Drop by whenever you like.",
+          "ja": "好きなときに寄ってね。"
+        },
+        {
+          "en": "Whenever I hear that song, I think of you.",
+          "ja": "あの曲を聞くたびに、あなたを思い出すよ。"
+        }
+      ]
+    },
+    "translation-whenever-dialogue-08": {
+      "answer": "She does that whenever she wants a treat.",
+      "acceptedAnswers": [
+        "She does that whenever she wants a treat."
+      ],
+      "explanation": "「whenever she wants a treat」は、「〜するときはいつでも」という意味です。時間を限定せず、都合のよいときや繰り返し起こるときを表せます。",
+      "examples": [
+        {
+          "en": "Drop by whenever you like.",
+          "ja": "好きなときに寄ってね。"
+        },
+        {
+          "en": "Whenever I hear that song, I think of you.",
+          "ja": "あの曲を聞くたびに、あなたを思い出すよ。"
+        }
+      ]
+    },
+    "translation-whenever-dialogue-09": {
+      "answer": "Whenever I'm in the neighborhood, I stop in for a cup.",
+      "acceptedAnswers": [
+        "Whenever I'm in the neighborhood, I stop in for a cup."
+      ],
+      "explanation": "「Whenever I'm in the neighborhood」は、「〜するときはいつでも」という意味です。時間を限定せず、都合のよいときや繰り返し起こるときを表せます。",
+      "examples": [
+        {
+          "en": "Drop by whenever you like.",
+          "ja": "好きなときに寄ってね。"
+        },
+        {
+          "en": "Whenever I hear that song, I think of you.",
+          "ja": "あの曲を聞くたびに、あなたを思い出すよ。"
+        }
+      ]
+    },
+    "translation-whenever-dialogue-10": {
+      "answer": "No rush. Send them whenever you've finished checking them.",
+      "acceptedAnswers": [
+        "No rush. Send them whenever you've finished checking them."
+      ],
+      "explanation": "「whenever you've finished checking them」は、「〜するときはいつでも」という意味です。時間を限定せず、都合のよいときや繰り返し起こるときを表せます。",
+      "examples": [
+        {
+          "en": "Drop by whenever you like.",
+          "ja": "好きなときに寄ってね。"
+        },
+        {
+          "en": "Whenever I hear that song, I think of you.",
+          "ja": "あの曲を聞くたびに、あなたを思い出すよ。"
+        }
+      ]
+    },
+    "translation-wherever-dialogue-01": {
+      "answer": "No. We can eat wherever we find a nice place.",
+      "acceptedAnswers": [
+        "No. We can eat wherever we find a nice place."
+      ],
+      "explanation": "「wherever we find a nice place」は、「〜する場所ならどこでも」という意味です。場所を一つに決めず、条件に合う場所を示しています。",
+      "examples": [
+        {
+          "en": "We can stop wherever you want.",
+          "ja": "好きなところで休憩できるよ。"
+        },
+        {
+          "en": "Wherever you move, let's stay in touch.",
+          "ja": "どこに引っ越しても、連絡を取り合おうね。"
+        }
+      ]
+    },
+    "translation-wherever-dialogue-02": {
+      "answer": "I can work wherever I have a reliable internet connection.",
+      "acceptedAnswers": [
+        "I can work wherever I have a reliable internet connection."
+      ],
+      "explanation": "「wherever I have a reliable internet connection」は、「〜する場所ならどこでも」という意味です。場所を一つに決めず、条件に合う場所を示しています。",
+      "examples": [
+        {
+          "en": "We can stop wherever you want.",
+          "ja": "好きなところで休憩できるよ。"
+        },
+        {
+          "en": "Wherever you move, let's stay in touch.",
+          "ja": "どこに引っ越しても、連絡を取り合おうね。"
+        }
+      ]
+    },
+    "translation-wherever-dialogue-03": {
+      "answer": "He follows me wherever I go.",
+      "acceptedAnswers": [
+        "He follows me wherever I go."
+      ],
+      "explanation": "「wherever I go」は、「〜する場所ならどこでも」という意味です。場所を一つに決めず、条件に合う場所を示しています。",
+      "examples": [
+        {
+          "en": "We can stop wherever you want.",
+          "ja": "好きなところで休憩できるよ。"
+        },
+        {
+          "en": "Wherever you move, let's stay in touch.",
+          "ja": "どこに引っ越しても、連絡を取り合おうね。"
+        }
+      ]
+    },
+    "translation-wherever-dialogue-04": {
+      "answer": "No, sit wherever you like.",
+      "acceptedAnswers": [
+        "No, sit wherever you like."
+      ],
+      "explanation": "「wherever you like」は、「〜する場所ならどこでも」という意味です。場所を一つに決めず、条件に合う場所を示しています。",
+      "examples": [
+        {
+          "en": "We can stop wherever you want.",
+          "ja": "好きなところで休憩できるよ。"
+        },
+        {
+          "en": "Wherever you move, let's stay in touch.",
+          "ja": "どこに引っ越しても、連絡を取り合おうね。"
+        }
+      ]
+    },
+    "translation-wherever-dialogue-05": {
+      "answer": "I take it wherever I go, just in case.",
+      "acceptedAnswers": [
+        "I take it wherever I go, just in case."
+      ],
+      "explanation": "「wherever I go」は、「〜する場所ならどこでも」という意味です。場所を一つに決めず、条件に合う場所を示しています。",
+      "examples": [
+        {
+          "en": "We can stop wherever you want.",
+          "ja": "好きなところで休憩できるよ。"
+        },
+        {
+          "en": "Wherever you move, let's stay in touch.",
+          "ja": "どこに引っ越しても、連絡を取り合おうね。"
+        }
+      ]
+    },
+    "translation-wherever-dialogue-06": {
+      "answer": "Wherever you end up, let's keep in touch.",
+      "acceptedAnswers": [
+        "Wherever you end up, let's keep in touch."
+      ],
+      "explanation": "「Wherever you end up」は、「〜する場所ならどこでも」という意味です。場所を一つに決めず、条件に合う場所を示しています。",
+      "examples": [
+        {
+          "en": "We can stop wherever you want.",
+          "ja": "好きなところで休憩できるよ。"
+        },
+        {
+          "en": "Wherever you move, let's stay in touch.",
+          "ja": "どこに引っ越しても、連絡を取り合おうね。"
+        }
+      ]
+    },
+    "translation-wherever-dialogue-07": {
+      "answer": "Leave them wherever they're out of the way.",
+      "acceptedAnswers": [
+        "Leave them wherever they're out of the way."
+      ],
+      "explanation": "「wherever they're out of the way」は、「〜する場所ならどこでも」という意味です。場所を一つに決めず、条件に合う場所を示しています。",
+      "examples": [
+        {
+          "en": "We can stop wherever you want.",
+          "ja": "好きなところで休憩できるよ。"
+        },
+        {
+          "en": "Wherever you move, let's stay in touch.",
+          "ja": "どこに引っ越しても、連絡を取り合おうね。"
+        }
+      ]
+    },
+    "translation-wherever-dialogue-08": {
+      "answer": "I know. Wherever we go, another one appears.",
+      "acceptedAnswers": [
+        "I know. Wherever we go, another one appears."
+      ],
+      "explanation": "「Wherever we go」は、「〜する場所ならどこでも」という意味です。場所を一つに決めず、条件に合う場所を示しています。",
+      "examples": [
+        {
+          "en": "We can stop wherever you want.",
+          "ja": "好きなところで休憩できるよ。"
+        },
+        {
+          "en": "Wherever you move, let's stay in touch.",
+          "ja": "どこに引っ越しても、連絡を取り合おうね。"
+        }
+      ]
+    },
+    "translation-wherever-dialogue-09": {
+      "answer": "I buy one wherever I travel.",
+      "acceptedAnswers": [
+        "I buy one wherever I travel."
+      ],
+      "explanation": "「wherever I travel」は、「〜する場所ならどこでも」という意味です。場所を一つに決めず、条件に合う場所を示しています。",
+      "examples": [
+        {
+          "en": "We can stop wherever you want.",
+          "ja": "好きなところで休憩できるよ。"
+        },
+        {
+          "en": "Wherever you move, let's stay in touch.",
+          "ja": "どこに引っ越しても、連絡を取り合おうね。"
+        }
+      ]
+    },
+    "translation-wherever-dialogue-10": {
+      "answer": "Let's sit wherever there's some shade.",
+      "acceptedAnswers": [
+        "Let's sit wherever there's some shade."
+      ],
+      "explanation": "「wherever there's some shade」は、「〜する場所ならどこでも」という意味です。場所を一つに決めず、条件に合う場所を示しています。",
+      "examples": [
+        {
+          "en": "We can stop wherever you want.",
+          "ja": "好きなところで休憩できるよ。"
+        },
+        {
+          "en": "Wherever you move, let's stay in touch.",
+          "ja": "どこに引っ越しても、連絡を取り合おうね。"
+        }
+      ]
+    },
+    "translation-however-dialogue-01": {
+      "answer": "No, arrange them however you like.",
+      "acceptedAnswers": [
+        "No, arrange them however you like."
+      ],
+      "explanation": "「however you like」は、「〜する方法ならどんな方法でも」という意味です。好きなやり方に任せる表現です。「しかし」の however とは使い方が違います。",
+      "examples": [
+        {
+          "en": "Cook it however you like.",
+          "ja": "好きなように調理してね。"
+        },
+        {
+          "en": "However tired I am, I always brush my teeth.",
+          "ja": "どんなに疲れていても、必ず歯を磨くよ。"
+        }
+      ]
+    },
+    "translation-however-dialogue-02": {
+      "answer": "Present them however you think is clearest.",
+      "acceptedAnswers": [
+        "Present them however you think is clearest."
+      ],
+      "explanation": "「however you think is clearest」は、「〜する方法ならどんな方法でも」という意味です。好きなやり方に任せる表現です。「しかし」の however とは使い方が違います。",
+      "examples": [
+        {
+          "en": "Cook it however you like.",
+          "ja": "好きなように調理してね。"
+        },
+        {
+          "en": "However tired I am, I always brush my teeth.",
+          "ja": "どんなに疲れていても、必ず歯を磨くよ。"
+        }
+      ]
+    },
+    "translation-however-dialogue-03": {
+      "answer": "Wrap it however you like. I'm sure it'll look nice.",
+      "acceptedAnswers": [
+        "Wrap it however you like. I'm sure it'll look nice."
+      ],
+      "explanation": "「however you like」は、「〜する方法ならどんな方法でも」という意味です。好きなやり方に任せる表現です。「しかし」の however とは使い方が違います。",
+      "examples": [
+        {
+          "en": "Cook it however you like.",
+          "ja": "好きなように調理してね。"
+        },
+        {
+          "en": "However tired I am, I always brush my teeth.",
+          "ja": "どんなに疲れていても、必ず歯を磨くよ。"
+        }
+      ]
+    },
+    "translation-however-dialogue-04": {
+      "answer": "No. Season it however you prefer.",
+      "acceptedAnswers": [
+        "No. Season it however you prefer."
+      ],
+      "explanation": "「however you prefer」は、「〜する方法ならどんな方法でも」という意味です。好きなやり方に任せる表現です。「しかし」の however とは使い方が違います。",
+      "examples": [
+        {
+          "en": "Cook it however you like.",
+          "ja": "好きなように調理してね。"
+        },
+        {
+          "en": "However tired I am, I always brush my teeth.",
+          "ja": "どんなに疲れていても、必ず歯を磨くよ。"
+        }
+      ]
+    },
+    "translation-however-dialogue-05": {
+      "answer": "Learn them however you find easiest.",
+      "acceptedAnswers": [
+        "Learn them however you find easiest.",
+        "Learn them however works best for you.",
+        "Learn them in whatever way works best for you."
+      ],
+      "explanation": "however you find easiest で「自分が一番覚えやすいと思う方法で」。やり方を相手に任せる意味です。in whatever way works best for you と言い換えても自然です。",
+      "examples": [
+        {
+          "en": "Cook it however you like.",
+          "ja": "好きなように調理してね。"
+        },
+        {
+          "en": "However tired I am, I always brush my teeth.",
+          "ja": "どんなに疲れていても、必ず歯を磨くよ。"
+        }
+      ]
+    },
+    "translation-however-dialogue-06": {
+      "answer": "However long it takes, I want to try this ramen.",
+      "acceptedAnswers": [
+        "However long it takes, I want to try this ramen."
+      ],
+      "explanation": "「However long it takes」は「どんなに〜でも」という意味です。however の後に long・busy・hard などの形容詞や副詞を置いて、程度にかかわらないことを伝えています。",
+      "examples": [
+        {
+          "en": "Cook it however you like.",
+          "ja": "好きなように調理してね。"
+        },
+        {
+          "en": "However tired I am, I always brush my teeth.",
+          "ja": "どんなに疲れていても、必ず歯を磨くよ。"
+        }
+      ]
+    },
+    "translation-however-dialogue-07": {
+      "answer": "I am, but however busy I get, I call my mum on Sundays.",
+      "acceptedAnswers": [
+        "I am, but however busy I get, I call my mum on Sundays."
+      ],
+      "explanation": "「however busy I get」は「どんなに〜でも」という意味です。however の後に long・busy・hard などの形容詞や副詞を置いて、程度にかかわらないことを伝えています。",
+      "examples": [
+        {
+          "en": "Cook it however you like.",
+          "ja": "好きなように調理してね。"
+        },
+        {
+          "en": "However tired I am, I always brush my teeth.",
+          "ja": "どんなに疲れていても、必ず歯を磨くよ。"
+        }
+      ]
+    },
+    "translation-however-dialogue-08": {
+      "answer": "Not yet. However hard it is, I want to solve it myself.",
+      "acceptedAnswers": [
+        "Not yet. However hard it is, I want to solve it myself."
+      ],
+      "explanation": "「However hard it is」は「どんなに〜でも」という意味です。however の後に long・busy・hard などの形容詞や副詞を置いて、程度にかかわらないことを伝えています。",
+      "examples": [
+        {
+          "en": "Cook it however you like.",
+          "ja": "好きなように調理してね。"
+        },
+        {
+          "en": "However tired I am, I always brush my teeth.",
+          "ja": "どんなに疲れていても、必ず歯を磨くよ。"
+        }
+      ]
+    },
+    "translation-however-dialogue-09": {
+      "answer": "However little time you have, a bit of practice still helps.",
+      "acceptedAnswers": [
+        "However little time you have, a bit of practice still helps."
+      ],
+      "explanation": "「However little time you have」は「どんなに〜でも」という意味です。however の後に long・busy・hard などの形容詞や副詞を置いて、程度にかかわらないことを伝えています。",
+      "examples": [
+        {
+          "en": "Cook it however you like.",
+          "ja": "好きなように調理してね。"
+        },
+        {
+          "en": "However tired I am, I always brush my teeth.",
+          "ja": "どんなに疲れていても、必ず歯を磨くよ。"
+        }
+      ]
+    },
+    "translation-however-dialogue-10": {
+      "answer": "However late you get home, send me a message.",
+      "acceptedAnswers": [
+        "However late you get home, send me a message."
+      ],
+      "explanation": "「However late you get home」は「どんなに〜でも」という意味です。however の後に long・busy・hard などの形容詞や副詞を置いて、程度にかかわらないことを伝えています。",
+      "examples": [
+        {
+          "en": "Cook it however you like.",
+          "ja": "好きなように調理してね。"
+        },
+        {
+          "en": "However tired I am, I always brush my teeth.",
+          "ja": "どんなに疲れていても、必ず歯を磨くよ。"
+        }
+      ]
+    },
+    "translation-by-the-time-dialogue-01": {
+      "answer": "No. By the time I got there, they'd sold out.",
+      "acceptedAnswers": [
+        "No. By the time I got there, they'd sold out."
+      ],
+      "explanation": "「By the time I got there」は、ある時点までに、別の出来事が進んでいることを示しています。「そのころには、もう」という二つの出来事の前後関係がポイントです。",
+      "examples": [
+        {
+          "en": "By the time I woke up, everyone had left.",
+          "ja": "起きたときには、みんな出かけてた。"
+        },
+        {
+          "en": "I'll be home by the time dinner's ready.",
+          "ja": "夕食ができるころには帰るよ。"
+        }
+      ]
+    },
+    "translation-by-the-time-dialogue-02": {
+      "answer": "No need. It'll be ready by the time you get home.",
+      "acceptedAnswers": [
+        "No need. It'll be ready by the time you get home."
+      ],
+      "explanation": "「by the time you get home」は、ある時点までに、別の出来事が進んでいることを示しています。「そのころには、もう」という二つの出来事の前後関係がポイントです。",
+      "examples": [
+        {
+          "en": "By the time I woke up, everyone had left.",
+          "ja": "起きたときには、みんな出かけてた。"
+        },
+        {
+          "en": "I'll be home by the time dinner's ready.",
+          "ja": "夕食ができるころには帰るよ。"
+        }
+      ]
+    },
+    "translation-by-the-time-dialogue-03": {
+      "answer": "The movie had already started by the time we sat down.",
+      "acceptedAnswers": [
+        "The movie had already started by the time we sat down."
+      ],
+      "explanation": "「by the time we sat down」は、ある時点までに、別の出来事が進んでいることを示しています。「そのころには、もう」という二つの出来事の前後関係がポイントです。",
+      "examples": [
+        {
+          "en": "By the time I woke up, everyone had left.",
+          "ja": "起きたときには、みんな出かけてた。"
+        },
+        {
+          "en": "I'll be home by the time dinner's ready.",
+          "ja": "夕食ができるころには帰るよ。"
+        }
+      ]
+    },
+    "translation-by-the-time-dialogue-04": {
+      "answer": "Will these clothes be dry by the time we leave?",
+      "acceptedAnswers": [
+        "Will these clothes be dry by the time we leave?"
+      ],
+      "explanation": "「by the time we leave」は、ある時点までに、別の出来事が進んでいることを示しています。「そのころには、もう」という二つの出来事の前後関係がポイントです。",
+      "examples": [
+        {
+          "en": "By the time I woke up, everyone had left.",
+          "ja": "起きたときには、みんな出かけてた。"
+        },
+        {
+          "en": "I'll be home by the time dinner's ready.",
+          "ja": "夕食ができるころには帰るよ。"
+        }
+      ]
+    },
+    "translation-by-the-time-dialogue-05": {
+      "answer": "No. She was asleep by the time I got upstairs.",
+      "acceptedAnswers": [
+        "No. She was asleep by the time I got upstairs."
+      ],
+      "explanation": "「by the time I got upstairs」は、ある時点までに、別の出来事が進んでいることを示しています。「そのころには、もう」という二つの出来事の前後関係がポイントです。",
+      "examples": [
+        {
+          "en": "By the time I woke up, everyone had left.",
+          "ja": "起きたときには、みんな出かけてた。"
+        },
+        {
+          "en": "I'll be home by the time dinner's ready.",
+          "ja": "夕食ができるころには帰るよ。"
+        }
+      ]
+    },
+    "translation-by-the-time-dialogue-06": {
+      "answer": "Luckily, it had stopped by the time I left the store.",
+      "acceptedAnswers": [
+        "Luckily, it had stopped by the time I left the store."
+      ],
+      "explanation": "「by the time I left the store」は、ある時点までに、別の出来事が進んでいることを示しています。「そのころには、もう」という二つの出来事の前後関係がポイントです。",
+      "examples": [
+        {
+          "en": "By the time I woke up, everyone had left.",
+          "ja": "起きたときには、みんな出かけてた。"
+        },
+        {
+          "en": "I'll be home by the time dinner's ready.",
+          "ja": "夕食ができるころには帰るよ。"
+        }
+      ]
+    },
+    "translation-by-the-time-dialogue-07": {
+      "answer": "I'll be starving by the time we get there.",
+      "acceptedAnswers": [
+        "I'll be starving by the time we get there."
+      ],
+      "explanation": "「by the time we get there」は、ある時点までに、別の出来事が進んでいることを示しています。「そのころには、もう」という二つの出来事の前後関係がポイントです。",
+      "examples": [
+        {
+          "en": "By the time I woke up, everyone had left.",
+          "ja": "起きたときには、みんな出かけてた。"
+        },
+        {
+          "en": "I'll be home by the time dinner's ready.",
+          "ja": "夕食ができるころには帰るよ。"
+        }
+      ]
+    },
+    "translation-by-the-time-dialogue-08": {
+      "answer": "Thanks, but we'll probably be done by the time you arrive.",
+      "acceptedAnswers": [
+        "Thanks, but we'll probably be done by the time you arrive."
+      ],
+      "explanation": "「by the time you arrive」は、ある時点までに、別の出来事が進んでいることを示しています。「そのころには、もう」という二つの出来事の前後関係がポイントです。",
+      "examples": [
+        {
+          "en": "By the time I woke up, everyone had left.",
+          "ja": "起きたときには、みんな出かけてた。"
+        },
+        {
+          "en": "I'll be home by the time dinner's ready.",
+          "ja": "夕食ができるころには帰るよ。"
+        }
+      ]
+    },
+    "translation-by-the-time-dialogue-09": {
+      "answer": "Sure. Your phone should be charged by the time we leave.",
+      "acceptedAnswers": [
+        "Sure. Your phone should be charged by the time we leave.",
+        "Your phone should be charged by the time we leave."
+      ],
+      "explanation": "「by the time we leave」は、ある時点までに、別の出来事が進んでいることを示しています。「そのころには、もう」という二つの出来事の前後関係がポイントです。",
+      "examples": [
+        {
+          "en": "By the time I woke up, everyone had left.",
+          "ja": "起きたときには、みんな出かけてた。"
+        },
+        {
+          "en": "I'll be home by the time dinner's ready.",
+          "ja": "夕食ができるころには帰るよ。"
+        }
+      ]
+    },
+    "translation-by-the-time-dialogue-10": {
+      "answer": "I was already outside by the time you called.",
+      "acceptedAnswers": [
+        "I was already outside by the time you called."
+      ],
+      "explanation": "「by the time you called」は、ある時点までに、別の出来事が進んでいることを示しています。「そのころには、もう」という二つの出来事の前後関係がポイントです。",
+      "examples": [
+        {
+          "en": "By the time I woke up, everyone had left.",
+          "ja": "起きたときには、みんな出かけてた。"
+        },
+        {
+          "en": "I'll be home by the time dinner's ready.",
+          "ja": "夕食ができるころには帰るよ。"
+        }
+      ]
+    },
+    "translation-whether-dialogue-01": {
+      "answer": "It depends on whether it rains.",
+      "acceptedAnswers": [
+        "It depends on whether it rains."
+      ],
+      "explanation": "「whether it rains」は、「〜かどうか」という迷いや確認を表しています。yes / no の可能性や、二つの選択肢をひとまとまりにします。",
+      "examples": [
+        {
+          "en": "I'm not sure whether he's free tonight.",
+          "ja": "今夜、彼が空いてるかどうかわからないな。"
+        },
+        {
+          "en": "Have you decided whether to stay or go?",
+          "ja": "残るか行くか、決めた？"
+        }
+      ]
+    },
+    "translation-whether-dialogue-02": {
+      "answer": "I'm trying to decide whether to get tea or coffee.",
+      "acceptedAnswers": [
+        "I'm trying to decide whether to get tea or coffee."
+      ],
+      "explanation": "whether to get tea or coffee は「紅茶にするか、コーヒーにするか」。自分がこれから選ぶ行動は whether to ＋動詞の原形で表せます。",
+      "examples": [
+        {
+          "en": "I'm not sure whether he's free tonight.",
+          "ja": "今夜、彼が空いてるかどうかわからないな。"
+        },
+        {
+          "en": "Have you decided whether to stay or go?",
+          "ja": "残るか行くか、決めた？"
+        }
+      ]
+    },
+    "translation-whether-dialogue-03": {
+      "answer": "Do you know whether Sam is coming?",
+      "acceptedAnswers": [
+        "Do you know whether Sam is coming?"
+      ],
+      "explanation": "「whether Sam is coming」は、「〜かどうか」という迷いや確認を表しています。yes / no の可能性や、二つの選択肢をひとまとまりにします。",
+      "examples": [
+        {
+          "en": "I'm not sure whether he's free tonight.",
+          "ja": "今夜、彼が空いてるかどうかわからないな。"
+        },
+        {
+          "en": "Have you decided whether to stay or go?",
+          "ja": "残るか行くか、決めた？"
+        }
+      ]
+    },
+    "translation-whether-dialogue-04": {
+      "answer": "Let's check whether it's open first.",
+      "acceptedAnswers": [
+        "Let's check whether it's open first."
+      ],
+      "explanation": "「whether it's open」は、「〜かどうか」という迷いや確認を表しています。yes / no の可能性や、二つの選択肢をひとまとまりにします。",
+      "examples": [
+        {
+          "en": "I'm not sure whether he's free tonight.",
+          "ja": "今夜、彼が空いてるかどうかわからないな。"
+        },
+        {
+          "en": "Have you decided whether to stay or go?",
+          "ja": "残るか行くか、決めた？"
+        }
+      ]
+    },
+    "translation-whether-dialogue-05": {
+      "answer": "I can't decide whether to take a jacket.",
+      "acceptedAnswers": [
+        "I can't decide whether to take a jacket."
+      ],
+      "explanation": "whether to take a jacket は「上着を持っていくかどうか」。whether to ＋動詞の原形を decide の後に置いて、行動を決められないことを伝えています。",
+      "examples": [
+        {
+          "en": "I'm not sure whether he's free tonight.",
+          "ja": "今夜、彼が空いてるかどうかわからないな。"
+        },
+        {
+          "en": "Have you decided whether to stay or go?",
+          "ja": "残るか行くか、決めた？"
+        }
+      ]
+    },
+    "translation-whether-dialogue-06": {
+      "answer": "No. I can't tell whether it's spicy or just sweet.",
+      "acceptedAnswers": [
+        "No. I can't tell whether it's spicy or just sweet."
+      ],
+      "explanation": "「whether it's spicy or just sweet」は、「〜かどうか」という迷いや確認を表しています。yes / no の可能性や、二つの選択肢をひとまとまりにします。",
+      "examples": [
+        {
+          "en": "I'm not sure whether he's free tonight.",
+          "ja": "今夜、彼が空いてるかどうかわからないな。"
+        },
+        {
+          "en": "Have you decided whether to stay or go?",
+          "ja": "残るか行くか、決めた？"
+        }
+      ]
+    },
+    "translation-whether-dialogue-07": {
+      "answer": "That's okay. I'm going whether you come or not.",
+      "acceptedAnswers": [
+        "That's okay. I'm going whether you come or not."
+      ],
+      "explanation": "whether you come or not は「あなたが来ても来なくても」。どちらの場合でも自分は行く、という意思を伝えています。",
+      "examples": [
+        {
+          "en": "I'm not sure whether he's free tonight.",
+          "ja": "今夜、彼が空いてるかどうかわからないな。"
+        },
+        {
+          "en": "Have you decided whether to stay or go?",
+          "ja": "残るか行くか、決めた？"
+        }
+      ]
+    },
+    "translation-whether-dialogue-08": {
+      "answer": "Have you decided whether to walk or take the bus?",
+      "acceptedAnswers": [
+        "Have you decided whether to walk or take the bus?"
+      ],
+      "explanation": "whether to walk or take the bus は「歩くか、バスに乗るか」。Have you decided ...? で、もう決めたかを尋ねています。",
+      "examples": [
+        {
+          "en": "I'm not sure whether he's free tonight.",
+          "ja": "今夜、彼が空いてるかどうかわからないな。"
+        },
+        {
+          "en": "Have you decided whether to stay or go?",
+          "ja": "残るか行くか、決めた？"
+        }
+      ]
+    },
+    "translation-whether-dialogue-09": {
+      "answer": "Call and ask whether your booking went through.",
+      "acceptedAnswers": [
+        "Call and ask whether your booking went through."
+      ],
+      "explanation": "「whether your booking went through」は、「〜かどうか」という迷いや確認を表しています。yes / no の可能性や、二つの選択肢をひとまとまりにします。",
+      "examples": [
+        {
+          "en": "I'm not sure whether he's free tonight.",
+          "ja": "今夜、彼が空いてるかどうかわからないな。"
+        },
+        {
+          "en": "Have you decided whether to stay or go?",
+          "ja": "残るか行くか、決めた？"
+        }
+      ]
+    },
+    "translation-whether-dialogue-10": {
+      "answer": "I'm not sure whether we're supposed to dress up.",
+      "acceptedAnswers": [
+        "I'm not sure whether we're supposed to dress up."
+      ],
+      "explanation": "「whether we're supposed to dress up」は、「〜かどうか」という迷いや確認を表しています。yes / no の可能性や、二つの選択肢をひとまとまりにします。",
+      "examples": [
+        {
+          "en": "I'm not sure whether he's free tonight.",
+          "ja": "今夜、彼が空いてるかどうかわからないな。"
+        },
+        {
+          "en": "Have you decided whether to stay or go?",
+          "ja": "残るか行くか、決めた？"
+        }
+      ]
+    },
+    "translation-now-that-dialogue-01": {
+      "answer": "Now that everyone's here, shall we order?",
+      "acceptedAnswers": [
+        "Now that everyone's here, shall we order?"
+      ],
+      "explanation": "「Now that everyone's here」は、「今はもう〜なので」と、変わった状況を理由にしています。仮の条件ではなく、すでにそうなったことを前提に続けます。",
+      "examples": [
+        {
+          "en": "Now that we're here, let's get something to eat.",
+          "ja": "せっかく来たし、何か食べよう。"
+        },
+        {
+          "en": "Now that I've finished work, I can relax.",
+          "ja": "仕事が終わったから、のんびりできるよ。"
+        }
+      ]
+    },
+    "translation-now-that-dialogue-02": {
+      "answer": "Now that I've unpacked, it finally feels like home.",
+      "acceptedAnswers": [
+        "Now that I've unpacked, it finally feels like home."
+      ],
+      "explanation": "「Now that I've unpacked」は、「今はもう〜なので」と、変わった状況を理由にしています。仮の条件ではなく、すでにそうなったことを前提に続けます。",
+      "examples": [
+        {
+          "en": "Now that we're here, let's get something to eat.",
+          "ja": "せっかく来たし、何か食べよう。"
+        },
+        {
+          "en": "Now that I've finished work, I can relax.",
+          "ja": "仕事が終わったから、のんびりできるよ。"
+        }
+      ]
+    },
+    "translation-now-that-dialogue-03": {
+      "answer": "Now that the rain's stopped, let's go for a walk.",
+      "acceptedAnswers": [
+        "Now that the rain's stopped, let's go for a walk."
+      ],
+      "explanation": "「Now that the rain's stopped」は、「今はもう〜なので」と、変わった状況を理由にしています。仮の条件ではなく、すでにそうなったことを前提に続けます。",
+      "examples": [
+        {
+          "en": "Now that we're here, let's get something to eat.",
+          "ja": "せっかく来たし、何か食べよう。"
+        },
+        {
+          "en": "Now that I've finished work, I can relax.",
+          "ja": "仕事が終わったから、のんびりできるよ。"
+        }
+      ]
+    },
+    "translation-now-that-dialogue-04": {
+      "answer": "I can finally relax now that the presentation's over.",
+      "acceptedAnswers": [
+        "I can finally relax now that the presentation's over."
+      ],
+      "explanation": "「now that the presentation's over」は、「今はもう〜なので」と、変わった状況を理由にしています。仮の条件ではなく、すでにそうなったことを前提に続けます。",
+      "examples": [
+        {
+          "en": "Now that we're here, let's get something to eat.",
+          "ja": "せっかく来たし、何か食べよう。"
+        },
+        {
+          "en": "Now that I've finished work, I can relax.",
+          "ja": "仕事が終わったから、のんびりできるよ。"
+        }
+      ]
+    },
+    "translation-now-that-dialogue-05": {
+      "answer": "Now that you live nearby, we should hang out more.",
+      "acceptedAnswers": [
+        "Now that you live nearby, we should hang out more."
+      ],
+      "explanation": "「Now that you live nearby」は、「今はもう〜なので」と、変わった状況を理由にしています。仮の条件ではなく、すでにそうなったことを前提に続けます。",
+      "examples": [
+        {
+          "en": "Now that we're here, let's get something to eat.",
+          "ja": "せっかく来たし、何か食べよう。"
+        },
+        {
+          "en": "Now that I've finished work, I can relax.",
+          "ja": "仕事が終わったから、のんびりできるよ。"
+        }
+      ]
+    },
+    "translation-now-that-dialogue-06": {
+      "answer": "Yeah. Now that I can see properly, reading's much easier.",
+      "acceptedAnswers": [
+        "Yeah. Now that I can see properly, reading's much easier.",
+        "Now that I can see properly, reading's much easier."
+      ],
+      "explanation": "「Now that I can see properly」は、「今はもう〜なので」と、変わった状況を理由にしています。仮の条件ではなく、すでにそうなったことを前提に続けます。",
+      "examples": [
+        {
+          "en": "Now that we're here, let's get something to eat.",
+          "ja": "せっかく来たし、何か食べよう。"
+        },
+        {
+          "en": "Now that I've finished work, I can relax.",
+          "ja": "仕事が終わったから、のんびりできるよ。"
+        }
+      ]
+    },
+    "translation-now-that-dialogue-07": {
+      "answer": "Now that we have a car, we can visit your parents more often.",
+      "acceptedAnswers": [
+        "Now that we have a car, we can visit your parents more often."
+      ],
+      "explanation": "「Now that we have a car」は、「今はもう〜なので」と、変わった状況を理由にしています。仮の条件ではなく、すでにそうなったことを前提に続けます。",
+      "examples": [
+        {
+          "en": "Now that we're here, let's get something to eat.",
+          "ja": "せっかく来たし、何か食べよう。"
+        },
+        {
+          "en": "Now that I've finished work, I can relax.",
+          "ja": "仕事が終わったから、のんびりできるよ。"
+        }
+      ]
+    },
+    "translation-now-that-dialogue-08": {
+      "answer": "Sure. Now that class is over, I've got an hour free.",
+      "acceptedAnswers": [
+        "Sure. Now that class is over, I've got an hour free.",
+        "Now that class is over, I've got an hour free."
+      ],
+      "explanation": "「Now that class is over」は、「今はもう〜なので」と、変わった状況を理由にしています。仮の条件ではなく、すでにそうなったことを前提に続けます。",
+      "examples": [
+        {
+          "en": "Now that we're here, let's get something to eat.",
+          "ja": "せっかく来たし、何か食べよう。"
+        },
+        {
+          "en": "Now that I've finished work, I can relax.",
+          "ja": "仕事が終わったから、のんびりできるよ。"
+        }
+      ]
+    },
+    "translation-now-that-dialogue-09": {
+      "answer": "Now that it's cooled down, do you want to try a piece?",
+      "acceptedAnswers": [
+        "Now that it's cooled down, do you want to try a piece?"
+      ],
+      "explanation": "「Now that it's cooled down」は、「今はもう〜なので」と、変わった状況を理由にしています。仮の条件ではなく、すでにそうなったことを前提に続けます。",
+      "examples": [
+        {
+          "en": "Now that we're here, let's get something to eat.",
+          "ja": "せっかく来たし、何か食べよう。"
+        },
+        {
+          "en": "Now that I've finished work, I can relax.",
+          "ja": "仕事が終わったから、のんびりできるよ。"
+        }
+      ]
+    },
+    "translation-now-that-dialogue-10": {
+      "answer": "Not anymore. Now that she's older, she wants to walk.",
+      "acceptedAnswers": [
+        "Not anymore. Now that she's older, she wants to walk."
+      ],
+      "explanation": "「Now that she's older」は、「今はもう〜なので」と、変わった状況を理由にしています。仮の条件ではなく、すでにそうなったことを前提に続けます。",
+      "examples": [
+        {
+          "en": "Now that we're here, let's get something to eat.",
+          "ja": "せっかく来たし、何か食べよう。"
+        },
+        {
+          "en": "Now that I've finished work, I can relax.",
+          "ja": "仕事が終わったから、のんびりできるよ。"
+        }
+      ]
+    },
+    "translation-once-dialogue-01": {
+      "answer": "Once you get used to it, it's actually pretty easy.",
+      "acceptedAnswers": [
+        "Once you get used to it, it's actually pretty easy."
+      ],
+      "explanation": "「Once you get used to it」は、「〜したら、そのあとで」という順序を表しています。その状態や出来事が実現してから、次の行動に移るという意味です。",
+      "examples": [
+        {
+          "en": "I'll call you once I know more.",
+          "ja": "詳しいことがわかったら電話するね。"
+        },
+        {
+          "en": "Once you try it, you'll understand.",
+          "ja": "一度やってみれば、わかるよ。"
+        }
+      ]
+    },
+    "translation-once-dialogue-02": {
+      "answer": "Text me once you get there.",
+      "acceptedAnswers": [
+        "Text me once you get there."
+      ],
+      "explanation": "「once you get there」は、「〜したら、そのあとで」という順序を表しています。その状態や出来事が実現してから、次の行動に移るという意味です。",
+      "examples": [
+        {
+          "en": "I'll call you once I know more.",
+          "ja": "詳しいことがわかったら電話するね。"
+        },
+        {
+          "en": "Once you try it, you'll understand.",
+          "ja": "一度やってみれば、わかるよ。"
+        }
+      ]
+    },
+    "translation-once-dialogue-03": {
+      "answer": "Sure. I'll come over once I finish this email.",
+      "acceptedAnswers": [
+        "Sure. I'll come over once I finish this email.",
+        "I'll come over once I finish this email."
+      ],
+      "explanation": "「once I finish this email」は、「〜したら、そのあとで」という順序を表しています。その状態や出来事が実現してから、次の行動に移るという意味です。",
+      "examples": [
+        {
+          "en": "I'll call you once I know more.",
+          "ja": "詳しいことがわかったら電話するね。"
+        },
+        {
+          "en": "Once you try it, you'll understand.",
+          "ja": "一度やってみれば、わかるよ。"
+        }
+      ]
+    },
+    "translation-once-dialogue-04": {
+      "answer": "Once the water boils, turn the heat down.",
+      "acceptedAnswers": [
+        "Once the water boils, turn the heat down."
+      ],
+      "explanation": "「Once the water boils」は、「〜したら、そのあとで」という順序を表しています。その状態や出来事が実現してから、次の行動に移るという意味です。",
+      "examples": [
+        {
+          "en": "I'll call you once I know more.",
+          "ja": "詳しいことがわかったら電話するね。"
+        },
+        {
+          "en": "Once you try it, you'll understand.",
+          "ja": "一度やってみれば、わかるよ。"
+        }
+      ]
+    },
+    "translation-once-dialogue-05": {
+      "answer": "Once you know the quiet routes, it's much less stressful.",
+      "acceptedAnswers": [
+        "Once you know the quiet routes, it's much less stressful."
+      ],
+      "explanation": "「Once you know the quiet routes」は、「〜したら、そのあとで」という順序を表しています。その状態や出来事が実現してから、次の行動に移るという意味です。",
+      "examples": [
+        {
+          "en": "I'll call you once I know more.",
+          "ja": "詳しいことがわかったら電話するね。"
+        },
+        {
+          "en": "Once you try it, you'll understand.",
+          "ja": "一度やってみれば、わかるよ。"
+        }
+      ]
+    },
+    "translation-once-dialogue-06": {
+      "answer": "Let's order once everyone's settled.",
+      "acceptedAnswers": [
+        "Let's order once everyone's settled."
+      ],
+      "explanation": "「once everyone's settled」は、「〜したら、そのあとで」という順序を表しています。その状態や出来事が実現してから、次の行動に移るという意味です。",
+      "examples": [
+        {
+          "en": "I'll call you once I know more.",
+          "ja": "詳しいことがわかったら電話するね。"
+        },
+        {
+          "en": "Once you try it, you'll understand.",
+          "ja": "一度やってみれば、わかるよ。"
+        }
+      ]
+    },
+    "translation-once-dialogue-07": {
+      "answer": "Yeah, once I get paid.",
+      "acceptedAnswers": [
+        "Yeah, once I get paid.",
+        "Once I get paid."
+      ],
+      "explanation": "「once I get paid」は、「〜したら、そのあとで」という順序を表しています。その状態や出来事が実現してから、次の行動に移るという意味です。",
+      "examples": [
+        {
+          "en": "I'll call you once I know more.",
+          "ja": "詳しいことがわかったら電話するね。"
+        },
+        {
+          "en": "Once you try it, you'll understand.",
+          "ja": "一度やってみれば、わかるよ。"
+        }
+      ]
+    },
+    "translation-once-dialogue-08": {
+      "answer": "Sure, once the baby's asleep.",
+      "acceptedAnswers": [
+        "Sure, once the baby's asleep.",
+        "Once the baby's asleep."
+      ],
+      "explanation": "「once the baby's asleep」は、「〜したら、そのあとで」という順序を表しています。その状態や出来事が実現してから、次の行動に移るという意味です。",
+      "examples": [
+        {
+          "en": "I'll call you once I know more.",
+          "ja": "詳しいことがわかったら電話するね。"
+        },
+        {
+          "en": "Once you try it, you'll understand.",
+          "ja": "一度やってみれば、わかるよ。"
+        }
+      ]
+    },
+    "translation-once-dialogue-09": {
+      "answer": "Once we've booked the flights, we can look for a hotel.",
+      "acceptedAnswers": [
+        "Once we've booked the flights, we can look for a hotel."
+      ],
+      "explanation": "「Once we've booked the flights」は、「〜したら、そのあとで」という順序を表しています。その状態や出来事が実現してから、次の行動に移るという意味です。",
+      "examples": [
+        {
+          "en": "I'll call you once I know more.",
+          "ja": "詳しいことがわかったら電話するね。"
+        },
+        {
+          "en": "Once you try it, you'll understand.",
+          "ja": "一度やってみれば、わかるよ。"
+        }
+      ]
+    },
+    "translation-once-dialogue-10": {
+      "answer": "Yes, once you've wiped them down.",
+      "acceptedAnswers": [
+        "Yes, once you've wiped them down.",
+        "Once you've wiped them down."
+      ],
+      "explanation": "「once you've wiped them down」は、「〜したら、そのあとで」という順序を表しています。その状態や出来事が実現してから、次の行動に移るという意味です。",
+      "examples": [
+        {
+          "en": "I'll call you once I know more.",
+          "ja": "詳しいことがわかったら電話するね。"
+        },
+        {
+          "en": "Once you try it, you'll understand.",
+          "ja": "一度やってみれば、わかるよ。"
+        }
+      ]
+    },
+    "translation-so-that-dialogue-01": {
+      "answer": "I'll send you a pin so that you can find the entrance.",
+      "acceptedAnswers": [
+        "I'll send you a pin so that you can find the entrance."
+      ],
+      "explanation": "「so that you can find the entrance」は、「〜できるように」という行動の目的です。会話では that を省いて so だけでつなぐ言い方も自然です。",
+      "examples": [
+        {
+          "en": "I'll move so that you can see.",
+          "ja": "見えるように、私が移動するね。"
+        },
+        {
+          "en": "Write it down so that you don't forget.",
+          "ja": "忘れないように、書いておいて。"
+        }
+      ]
+    },
+    "translation-so-that-dialogue-02": {
+      "answer": "So that we can show Maya the vegetarian options.",
+      "acceptedAnswers": [
+        "So that we can show Maya the vegetarian options."
+      ],
+      "explanation": "So that we can show Maya ... は、目的を尋ねられたときの短い返事として自然です。会話では、前の質問からわかる主節を繰り返さなくてもかまいません。",
+      "examples": [
+        {
+          "en": "I'll move so that you can see.",
+          "ja": "見えるように、私が移動するね。"
+        },
+        {
+          "en": "Write it down so that you don't forget.",
+          "ja": "忘れないように、書いておいて。"
+        }
+      ]
+    },
+    "translation-so-that-dialogue-03": {
+      "answer": "I'd like to leave early so that we don't have to rush.",
+      "acceptedAnswers": [
+        "I'd like to leave early so that we don't have to rush."
+      ],
+      "explanation": "「so that we don't have to rush」は、「〜できるように」という行動の目的です。会話では that を省いて so だけでつなぐ言い方も自然です。",
+      "examples": [
+        {
+          "en": "I'll move so that you can see.",
+          "ja": "見えるように、私が移動するね。"
+        },
+        {
+          "en": "Write it down so that you don't forget.",
+          "ja": "忘れないように、書いておいて。"
+        }
+      ]
+    },
+    "translation-so-that-dialogue-04": {
+      "answer": "Keep your voice down so that we don't wake the baby.",
+      "acceptedAnswers": [
+        "Keep your voice down so that we don't wake the baby."
+      ],
+      "explanation": "「so that we don't wake the baby」は、「〜できるように」という行動の目的です。会話では that を省いて so だけでつなぐ言い方も自然です。",
+      "examples": [
+        {
+          "en": "I'll move so that you can see.",
+          "ja": "見えるように、私が移動するね。"
+        },
+        {
+          "en": "Write it down so that you don't forget.",
+          "ja": "忘れないように、書いておいて。"
+        }
+      ]
+    },
+    "translation-so-that-dialogue-05": {
+      "answer": "So that I can sleep a little longer tomorrow.",
+      "acceptedAnswers": [
+        "So that I can sleep a little longer tomorrow."
+      ],
+      "explanation": "So that I can sleep ... は「〜できるように」という目的だけを答える短い返事です。会話の中なら、このような文の一部だけでも自然な回答になります。",
+      "examples": [
+        {
+          "en": "I'll move so that you can see.",
+          "ja": "見えるように、私が移動するね。"
+        },
+        {
+          "en": "Write it down so that you don't forget.",
+          "ja": "忘れないように、書いておいて。"
+        }
+      ]
+    },
+    "translation-so-that-dialogue-06": {
+      "answer": "I'll turn up the brightness so that you can see the photo.",
+      "acceptedAnswers": [
+        "I'll turn up the brightness so that you can see the photo."
+      ],
+      "explanation": "「so that you can see the photo」は、「〜できるように」という行動の目的です。会話では that を省いて so だけでつなぐ言い方も自然です。",
+      "examples": [
+        {
+          "en": "I'll move so that you can see.",
+          "ja": "見えるように、私が移動するね。"
+        },
+        {
+          "en": "Write it down so that you don't forget.",
+          "ja": "忘れないように、書いておいて。"
+        }
+      ]
+    },
+    "translation-so-that-dialogue-07": {
+      "answer": "I put it there so that I wouldn't forget my keys.",
+      "acceptedAnswers": [
+        "I put it there so that I wouldn't forget my keys."
+      ],
+      "explanation": "I put it there は過去に置いた話です。それを置いた目的が so that I wouldn't forget my keys（鍵を忘れないように）。過去の目的なので wouldn't を使っています。",
+      "examples": [
+        {
+          "en": "I'll move so that you can see.",
+          "ja": "見えるように、私が移動するね。"
+        },
+        {
+          "en": "Write it down so that you don't forget.",
+          "ja": "忘れないように、書いておいて。"
+        }
+      ]
+    },
+    "translation-so-that-dialogue-08": {
+      "answer": "Let's book now so that we can sit together.",
+      "acceptedAnswers": [
+        "Let's book now so that we can sit together."
+      ],
+      "explanation": "「so that we can sit together」は、「〜できるように」という行動の目的です。会話では that を省いて so だけでつなぐ言い方も自然です。",
+      "examples": [
+        {
+          "en": "I'll move so that you can see.",
+          "ja": "見えるように、私が移動するね。"
+        },
+        {
+          "en": "Write it down so that you don't forget.",
+          "ja": "忘れないように、書いておいて。"
+        }
+      ]
+    },
+    "translation-so-that-dialogue-09": {
+      "answer": "Yeah, so that they cook faster.",
+      "acceptedAnswers": [
+        "Yeah, so that they cook faster.",
+        "So that they cook faster."
+      ],
+      "explanation": "「so that they cook faster」は、「〜できるように」という行動の目的です。会話では that を省いて so だけでつなぐ言い方も自然です。",
+      "examples": [
+        {
+          "en": "I'll move so that you can see.",
+          "ja": "見えるように、私が移動するね。"
+        },
+        {
+          "en": "Write it down so that you don't forget.",
+          "ja": "忘れないように、書いておいて。"
+        }
+      ]
+    },
+    "translation-so-that-dialogue-10": {
+      "answer": "Let's move inside so that we can hear each other.",
+      "acceptedAnswers": [
+        "Let's move inside so that we can hear each other."
+      ],
+      "explanation": "「so that we can hear each other」は、「〜できるように」という行動の目的です。会話では that を省いて so だけでつなぐ言い方も自然です。",
+      "examples": [
+        {
+          "en": "I'll move so that you can see.",
+          "ja": "見えるように、私が移動するね。"
+        },
+        {
+          "en": "Write it down so that you don't forget.",
+          "ja": "忘れないように、書いておいて。"
+        }
+      ]
+    },
+    "translation-in-case-dialogue-01": {
+      "answer": "Take an umbrella in case it rains.",
+      "acceptedAnswers": [
+        "Take an umbrella in case it rains."
+      ],
+      "explanation": "「in case it rains」は、「〜するといけないから」という備えの理由です。起きてから対応するのではなく、起きるかもしれないことに今から備えています。",
+      "examples": [
+        {
+          "en": "Keep my number in case you need help.",
+          "ja": "困ったときのために、私の番号を保存しておいて。"
+        },
+        {
+          "en": "I'll take a sweater in case it gets chilly.",
+          "ja": "肌寒くなるといけないから、セーターを持っていくね。"
+        }
+      ]
+    },
+    "translation-in-case-dialogue-02": {
+      "answer": "I brought an extra one in case someone needs it.",
+      "acceptedAnswers": [
+        "I brought an extra one in case someone needs it."
+      ],
+      "explanation": "「in case someone needs it」は、「〜するといけないから」という備えの理由です。起きてから対応するのではなく、起きるかもしれないことに今から備えています。",
+      "examples": [
+        {
+          "en": "Keep my number in case you need help.",
+          "ja": "困ったときのために、私の番号を保存しておいて。"
+        },
+        {
+          "en": "I'll take a sweater in case it gets chilly.",
+          "ja": "肌寒くなるといけないから、セーターを持っていくね。"
+        }
+      ]
+    },
+    "translation-in-case-dialogue-03": {
+      "answer": "Take a screenshot in case you lose your signal.",
+      "acceptedAnswers": [
+        "Take a screenshot in case you lose your signal."
+      ],
+      "explanation": "「in case you lose your signal」は、「〜するといけないから」という備えの理由です。起きてから対応するのではなく、起きるかもしれないことに今から備えています。",
+      "examples": [
+        {
+          "en": "Keep my number in case you need help.",
+          "ja": "困ったときのために、私の番号を保存しておいて。"
+        },
+        {
+          "en": "I'll take a sweater in case it gets chilly.",
+          "ja": "肌寒くなるといけないから、セーターを持っていくね。"
+        }
+      ]
+    },
+    "translation-in-case-dialogue-04": {
+      "answer": "I'm packing extra in case the kids get hungry.",
+      "acceptedAnswers": [
+        "I'm packing extra in case the kids get hungry."
+      ],
+      "explanation": "「in case the kids get hungry」は、「〜するといけないから」という備えの理由です。起きてから対応するのではなく、起きるかもしれないことに今から備えています。",
+      "examples": [
+        {
+          "en": "Keep my number in case you need help.",
+          "ja": "困ったときのために、私の番号を保存しておいて。"
+        },
+        {
+          "en": "I'll take a sweater in case it gets chilly.",
+          "ja": "肌寒くなるといけないから、セーターを持っていくね。"
+        }
+      ]
+    },
+    "translation-in-case-dialogue-05": {
+      "answer": "Bring some cash in case they don't take cards.",
+      "acceptedAnswers": [
+        "Bring some cash in case they don't take cards."
+      ],
+      "explanation": "「in case they don't take cards」は、「〜するといけないから」という備えの理由です。起きてから対応するのではなく、起きるかもしれないことに今から備えています。",
+      "examples": [
+        {
+          "en": "Keep my number in case you need help.",
+          "ja": "困ったときのために、私の番号を保存しておいて。"
+        },
+        {
+          "en": "I'll take a sweater in case it gets chilly.",
+          "ja": "肌寒くなるといけないから、セーターを持っていくね。"
+        }
+      ]
+    },
+    "translation-in-case-dialogue-06": {
+      "answer": "In case you can't find the old message.",
+      "acceptedAnswers": [
+        "In case you can't find the old message."
+      ],
+      "explanation": "「In case you can't find the old message」は、「〜するといけないから」という備えの理由です。起きてから対応するのではなく、起きるかもしれないことに今から備えています。",
+      "examples": [
+        {
+          "en": "Keep my number in case you need help.",
+          "ja": "困ったときのために、私の番号を保存しておいて。"
+        },
+        {
+          "en": "I'll take a sweater in case it gets chilly.",
+          "ja": "肌寒くなるといけないから、セーターを持っていくね。"
+        }
+      ]
+    },
+    "translation-in-case-dialogue-07": {
+      "answer": "I'll bring a jacket in case it gets cold later.",
+      "acceptedAnswers": [
+        "I'll bring a jacket in case it gets cold later."
+      ],
+      "explanation": "「in case it gets cold later」は、「〜するといけないから」という備えの理由です。起きてから対応するのではなく、起きるかもしれないことに今から備えています。",
+      "examples": [
+        {
+          "en": "Keep my number in case you need help.",
+          "ja": "困ったときのために、私の番号を保存しておいて。"
+        },
+        {
+          "en": "I'll take a sweater in case it gets chilly.",
+          "ja": "肌寒くなるといけないから、セーターを持っていくね。"
+        }
+      ]
+    },
+    "translation-in-case-dialogue-08": {
+      "answer": "Yes, in case anything happens to your laptop.",
+      "acceptedAnswers": [
+        "Yes, in case anything happens to your laptop.",
+        "In case anything happens to your laptop."
+      ],
+      "explanation": "「in case anything happens to your laptop」は、「〜するといけないから」という備えの理由です。起きてから対応するのではなく、起きるかもしれないことに今から備えています。",
+      "examples": [
+        {
+          "en": "Keep my number in case you need help.",
+          "ja": "困ったときのために、私の番号を保存しておいて。"
+        },
+        {
+          "en": "I'll take a sweater in case it gets chilly.",
+          "ja": "肌寒くなるといけないから、セーターを持っていくね。"
+        }
+      ]
+    },
+    "translation-in-case-dialogue-09": {
+      "answer": "Let's leave a bit early in case there's traffic.",
+      "acceptedAnswers": [
+        "Let's leave a bit early in case there's traffic."
+      ],
+      "explanation": "「in case there's traffic」は、「〜するといけないから」という備えの理由です。起きてから対応するのではなく、起きるかもしれないことに今から備えています。",
+      "examples": [
+        {
+          "en": "Keep my number in case you need help.",
+          "ja": "困ったときのために、私の番号を保存しておいて。"
+        },
+        {
+          "en": "I'll take a sweater in case it gets chilly.",
+          "ja": "肌寒くなるといけないから、セーターを持っていくね。"
+        }
+      ]
+    },
+    "translation-in-case-dialogue-10": {
+      "answer": "Yeah, in case the delivery driver calls.",
+      "acceptedAnswers": [
+        "Yeah, in case the delivery driver calls.",
+        "In case the delivery driver calls."
+      ],
+      "explanation": "「in case the delivery driver calls」は、「〜するといけないから」という備えの理由です。起きてから対応するのではなく、起きるかもしれないことに今から備えています。",
+      "examples": [
+        {
+          "en": "Keep my number in case you need help.",
+          "ja": "困ったときのために、私の番号を保存しておいて。"
+        },
+        {
+          "en": "I'll take a sweater in case it gets chilly.",
+          "ja": "肌寒くなるといけないから、セーターを持っていくね。"
+        }
+      ]
+    },
+    "translation-as-soon-as-dialogue-01": {
+      "answer": "Text me as soon as you get home.",
+      "acceptedAnswers": [
+        "Text me as soon as you get home."
+      ],
+      "explanation": "「as soon as you get home」は、「〜したらすぐに」というタイミングです。二つの出来事の間を空けずに、すぐ次のことが起こると伝えています。",
+      "examples": [
+        {
+          "en": "I'll tell you as soon as I hear anything.",
+          "ja": "何かわかったらすぐ教えるね。"
+        },
+        {
+          "en": "She smiled as soon as she saw me.",
+          "ja": "私を見た途端に、彼女は笑顔になった。"
+        }
+      ]
+    },
+    "translation-as-soon-as-dialogue-02": {
+      "answer": "No. It went on sale as soon as I bought it.",
+      "acceptedAnswers": [
+        "No. It went on sale as soon as I bought it."
+      ],
+      "explanation": "「as soon as I bought it」は、「〜したらすぐに」というタイミングです。二つの出来事の間を空けずに、すぐ次のことが起こると伝えています。",
+      "examples": [
+        {
+          "en": "I'll tell you as soon as I hear anything.",
+          "ja": "何かわかったらすぐ教えるね。"
+        },
+        {
+          "en": "She smiled as soon as she saw me.",
+          "ja": "私を見た途端に、彼女は笑顔になった。"
+        }
+      ]
+    },
+    "translation-as-soon-as-dialogue-03": {
+      "answer": "I'll call you as soon as I'm free.",
+      "acceptedAnswers": [
+        "I'll call you as soon as I'm free."
+      ],
+      "explanation": "「as soon as I'm free」は、「〜したらすぐに」というタイミングです。二つの出来事の間を空けずに、すぐ次のことが起こると伝えています。",
+      "examples": [
+        {
+          "en": "I'll tell you as soon as I hear anything.",
+          "ja": "何かわかったらすぐ教えるね。"
+        },
+        {
+          "en": "She smiled as soon as she saw me.",
+          "ja": "私を見た途端に、彼女は笑顔になった。"
+        }
+      ]
+    },
+    "translation-as-soon-as-dialogue-04": {
+      "answer": "Yes. I'll book as soon as they go on sale.",
+      "acceptedAnswers": [
+        "Yes. I'll book as soon as they go on sale.",
+        "I'll book as soon as they go on sale."
+      ],
+      "explanation": "「as soon as they go on sale」は、「〜したらすぐに」というタイミングです。二つの出来事の間を空けずに、すぐ次のことが起こると伝えています。",
+      "examples": [
+        {
+          "en": "I'll tell you as soon as I hear anything.",
+          "ja": "何かわかったらすぐ教えるね。"
+        },
+        {
+          "en": "She smiled as soon as she saw me.",
+          "ja": "私を見た途端に、彼女は笑顔になった。"
+        }
+      ]
+    },
+    "translation-as-soon-as-dialogue-05": {
+      "answer": "I fell asleep as soon as my head hit the pillow.",
+      "acceptedAnswers": [
+        "I fell asleep as soon as my head hit the pillow."
+      ],
+      "explanation": "「as soon as my head hit the pillow」は、「〜したらすぐに」というタイミングです。二つの出来事の間を空けずに、すぐ次のことが起こると伝えています。",
+      "examples": [
+        {
+          "en": "I'll tell you as soon as I hear anything.",
+          "ja": "何かわかったらすぐ教えるね。"
+        },
+        {
+          "en": "She smiled as soon as she saw me.",
+          "ja": "私を見た途端に、彼女は笑顔になった。"
+        }
+      ]
+    },
+    "translation-as-soon-as-dialogue-06": {
+      "answer": "Let's head out as soon as the rain stops.",
+      "acceptedAnswers": [
+        "Let's head out as soon as the rain stops."
+      ],
+      "explanation": "「as soon as the rain stops」は、「〜したらすぐに」というタイミングです。二つの出来事の間を空けずに、すぐ次のことが起こると伝えています。",
+      "examples": [
+        {
+          "en": "I'll tell you as soon as I hear anything.",
+          "ja": "何かわかったらすぐ教えるね。"
+        },
+        {
+          "en": "She smiled as soon as she saw me.",
+          "ja": "私を見た途端に、彼女は笑顔になった。"
+        }
+      ]
+    },
+    "translation-as-soon-as-dialogue-07": {
+      "answer": "Not yet. I'll let you know as soon as it gets here.",
+      "acceptedAnswers": [
+        "Not yet. I'll let you know as soon as it gets here."
+      ],
+      "explanation": "「as soon as it gets here」は、「〜したらすぐに」というタイミングです。二つの出来事の間を空けずに、すぐ次のことが起こると伝えています。",
+      "examples": [
+        {
+          "en": "I'll tell you as soon as I hear anything.",
+          "ja": "何かわかったらすぐ教えるね。"
+        },
+        {
+          "en": "She smiled as soon as she saw me.",
+          "ja": "私を見た途端に、彼女は笑顔になった。"
+        }
+      ]
+    },
+    "translation-as-soon-as-dialogue-08": {
+      "answer": "Only a month. We hit it off as soon as we met.",
+      "acceptedAnswers": [
+        "Only a month. We hit it off as soon as we met."
+      ],
+      "explanation": "「as soon as we met」は、「〜したらすぐに」というタイミングです。二つの出来事の間を空けずに、すぐ次のことが起こると伝えています。",
+      "examples": [
+        {
+          "en": "I'll tell you as soon as I hear anything.",
+          "ja": "何かわかったらすぐ教えるね。"
+        },
+        {
+          "en": "She smiled as soon as she saw me.",
+          "ja": "私を見た途端に、彼女は笑顔になった。"
+        }
+      ]
+    },
+    "translation-as-soon-as-dialogue-09": {
+      "answer": "Call me as soon as the timer goes off.",
+      "acceptedAnswers": [
+        "Call me as soon as the timer goes off."
+      ],
+      "explanation": "「as soon as the timer goes off」は、「〜したらすぐに」というタイミングです。二つの出来事の間を空けずに、すぐ次のことが起こると伝えています。",
+      "examples": [
+        {
+          "en": "I'll tell you as soon as I hear anything.",
+          "ja": "何かわかったらすぐ教えるね。"
+        },
+        {
+          "en": "She smiled as soon as she saw me.",
+          "ja": "私を見た途端に、彼女は笑顔になった。"
+        }
+      ]
+    },
+    "translation-as-soon-as-dialogue-10": {
+      "answer": "It fell out of a book. I sent it to you as soon as I saw it.",
+      "acceptedAnswers": [
+        "It fell out of a book. I sent it to you as soon as I saw it."
+      ],
+      "explanation": "「as soon as I saw it」は、「〜したらすぐに」というタイミングです。二つの出来事の間を空けずに、すぐ次のことが起こると伝えています。",
+      "examples": [
+        {
+          "en": "I'll tell you as soon as I hear anything.",
+          "ja": "何かわかったらすぐ教えるね。"
+        },
+        {
+          "en": "She smiled as soon as she saw me.",
+          "ja": "私を見た途端に、彼女は笑顔になった。"
+        }
+      ]
+    },
+    "translation-even-though-dialogue-01": {
+      "answer": "I am, even though I slept for nine hours.",
+      "acceptedAnswers": [
+        "I am, even though I slept for nine hours."
+      ],
+      "explanation": "「even though I slept for nine hours」は、「〜なのに」と、予想とは違う結果をつないでいます。実際に起きたこと・今そうであることとの対比です。仮の話ではありません。",
+      "examples": [
+        {
+          "en": "I went for a walk even though I was tired.",
+          "ja": "疲れてたけど、散歩に行ったよ。"
+        },
+        {
+          "en": "He came even though he was busy.",
+          "ja": "忙しかったのに、来てくれたんだ。"
+        }
+      ]
+    },
+    "translation-even-though-dialogue-02": {
+      "answer": "Yeah. We played even though it was raining.",
+      "acceptedAnswers": [
+        "Yeah. We played even though it was raining.",
+        "We played even though it was raining."
+      ],
+      "explanation": "「even though it was raining」は、「〜なのに」と、予想とは違う結果をつないでいます。実際に起きたこと・今そうであることとの対比です。仮の話ではありません。",
+      "examples": [
+        {
+          "en": "I went for a walk even though I was tired.",
+          "ja": "疲れてたけど、散歩に行ったよ。"
+        },
+        {
+          "en": "He came even though he was busy.",
+          "ja": "忙しかったのに、来てくれたんだ。"
+        }
+      ]
+    },
+    "translation-even-though-dialogue-03": {
+      "answer": "I bought it even though it was a bit expensive.",
+      "acceptedAnswers": [
+        "I bought it even though it was a bit expensive."
+      ],
+      "explanation": "「even though it was a bit expensive」は、「〜なのに」と、予想とは違う結果をつないでいます。実際に起きたこと・今そうであることとの対比です。仮の話ではありません。",
+      "examples": [
+        {
+          "en": "I went for a walk even though I was tired.",
+          "ja": "疲れてたけど、散歩に行ったよ。"
+        },
+        {
+          "en": "He came even though he was busy.",
+          "ja": "忙しかったのに、来てくれたんだ。"
+        }
+      ]
+    },
+    "translation-even-though-dialogue-04": {
+      "answer": "Yeah, even though I'm already full.",
+      "acceptedAnswers": [
+        "Yeah, even though I'm already full.",
+        "Even though I'm already full."
+      ],
+      "explanation": "「even though I'm already full」は、「〜なのに」と、予想とは違う結果をつないでいます。実際に起きたこと・今そうであることとの対比です。仮の話ではありません。",
+      "examples": [
+        {
+          "en": "I went for a walk even though I was tired.",
+          "ja": "疲れてたけど、散歩に行ったよ。"
+        },
+        {
+          "en": "He came even though he was busy.",
+          "ja": "忙しかったのに、来てくれたんだ。"
+        }
+      ]
+    },
+    "translation-even-though-dialogue-05": {
+      "answer": "We hardly see each other even though we live so close.",
+      "acceptedAnswers": [
+        "We hardly see each other even though we live so close."
+      ],
+      "explanation": "「even though we live so close」は、「〜なのに」と、予想とは違う結果をつないでいます。実際に起きたこと・今そうであることとの対比です。仮の話ではありません。",
+      "examples": [
+        {
+          "en": "I went for a walk even though I was tired.",
+          "ja": "疲れてたけど、散歩に行ったよ。"
+        },
+        {
+          "en": "He came even though he was busy.",
+          "ja": "忙しかったのに、来てくれたんだ。"
+        }
+      ]
+    },
+    "translation-even-though-dialogue-06": {
+      "answer": "Yeah. I still laugh even though I've seen it so many times.",
+      "acceptedAnswers": [
+        "Yeah. I still laugh even though I've seen it so many times.",
+        "I still laugh even though I've seen it so many times."
+      ],
+      "explanation": "「even though I've seen it so many times」は、「〜なのに」と、予想とは違う結果をつないでいます。実際に起きたこと・今そうであることとの対比です。仮の話ではありません。",
+      "examples": [
+        {
+          "en": "I went for a walk even though I was tired.",
+          "ja": "疲れてたけど、散歩に行ったよ。"
+        },
+        {
+          "en": "He came even though he was busy.",
+          "ja": "忙しかったのに、来てくれたんだ。"
+        }
+      ]
+    },
+    "translation-even-though-dialogue-07": {
+      "answer": "I get lost here even though I know the area.",
+      "acceptedAnswers": [
+        "I get lost here even though I know the area."
+      ],
+      "explanation": "「even though I know the area」は、「〜なのに」と、予想とは違う結果をつないでいます。実際に起きたこと・今そうであることとの対比です。仮の話ではありません。",
+      "examples": [
+        {
+          "en": "I went for a walk even though I was tired.",
+          "ja": "疲れてたけど、散歩に行ったよ。"
+        },
+        {
+          "en": "He came even though he was busy.",
+          "ja": "忙しかったのに、来てくれたんだ。"
+        }
+      ]
+    },
+    "translation-even-though-dialogue-08": {
+      "answer": "She helped me move even though she was really busy.",
+      "acceptedAnswers": [
+        "She helped me move even though she was really busy."
+      ],
+      "explanation": "「even though she was really busy」は、「〜なのに」と、予想とは違う結果をつないでいます。実際に起きたこと・今そうであることとの対比です。仮の話ではありません。",
+      "examples": [
+        {
+          "en": "I went for a walk even though I was tired.",
+          "ja": "疲れてたけど、散歩に行ったよ。"
+        },
+        {
+          "en": "He came even though he was busy.",
+          "ja": "忙しかったのに、来てくれたんだ。"
+        }
+      ]
+    },
+    "translation-even-though-dialogue-09": {
+      "answer": "I still want some even though it's freezing outside.",
+      "acceptedAnswers": [
+        "I still want some even though it's freezing outside."
+      ],
+      "explanation": "「even though it's freezing outside」は、「〜なのに」と、予想とは違う結果をつないでいます。実際に起きたこと・今そうであることとの対比です。仮の話ではありません。",
+      "examples": [
+        {
+          "en": "I went for a walk even though I was tired.",
+          "ja": "疲れてたけど、散歩に行ったよ。"
+        },
+        {
+          "en": "He came even though he was busy.",
+          "ja": "忙しかったのに、来てくれたんだ。"
+        }
+      ]
+    },
+    "translation-even-though-dialogue-10": {
+      "answer": "Yeah, even though I've practiced the whole thing.",
+      "acceptedAnswers": [
+        "Yeah, even though I've practiced the whole thing.",
+        "Even though I've practiced the whole thing."
+      ],
+      "explanation": "「even though I've practiced the whole thing」は、「〜なのに」と、予想とは違う結果をつないでいます。実際に起きたこと・今そうであることとの対比です。仮の話ではありません。",
+      "examples": [
+        {
+          "en": "I went for a walk even though I was tired.",
+          "ja": "疲れてたけど、散歩に行ったよ。"
+        },
+        {
+          "en": "He came even though he was busy.",
+          "ja": "忙しかったのに、来てくれたんだ。"
+        }
+      ]
+    },
+    "translation-unless-dialogue-01": {
+      "answer": "I'll cycle to work unless it rains.",
+      "acceptedAnswers": [
+        "I'll cycle to work unless it rains."
+      ],
+      "explanation": "「unless it rains」は、「〜でない限り」という例外の条件です。unless 自体に「もし〜でなければ」という意味があるので、否定を重ねると意味が変わります。",
+      "examples": [
+        {
+          "en": "I won't go unless you come with me.",
+          "ja": "一緒に来てくれなければ、行かないよ。"
+        },
+        {
+          "en": "Call me unless you're too tired.",
+          "ja": "疲れすぎてなければ、電話してね。"
+        }
+      ]
+    },
+    "translation-unless-dialogue-02": {
+      "answer": "Let's meet at six unless I text you.",
+      "acceptedAnswers": [
+        "Let's meet at six unless I text you."
+      ],
+      "explanation": "「unless I text you」は、「〜でない限り」という例外の条件です。unless 自体に「もし〜でなければ」という意味があるので、否定を重ねると意味が変わります。",
+      "examples": [
+        {
+          "en": "I won't go unless you come with me.",
+          "ja": "一緒に来てくれなければ、行かないよ。"
+        },
+        {
+          "en": "Call me unless you're too tired.",
+          "ja": "疲れすぎてなければ、電話してね。"
+        }
+      ]
+    },
+    "translation-unless-dialogue-03": {
+      "answer": "Not unless this one breaks.",
+      "acceptedAnswers": [
+        "Not unless this one breaks."
+      ],
+      "explanation": "「unless this one breaks」は、「〜でない限り」という例外の条件です。unless 自体に「もし〜でなければ」という意味があるので、否定を重ねると意味が変わります。",
+      "examples": [
+        {
+          "en": "I won't go unless you come with me.",
+          "ja": "一緒に来てくれなければ、行かないよ。"
+        },
+        {
+          "en": "Call me unless you're too tired.",
+          "ja": "疲れすぎてなければ、電話してね。"
+        }
+      ]
+    },
+    "translation-unless-dialogue-04": {
+      "answer": "Don't wake me up unless it's urgent.",
+      "acceptedAnswers": [
+        "Don't wake me up unless it's urgent."
+      ],
+      "explanation": "「unless it's urgent」は、「〜でない限り」という例外の条件です。unless 自体に「もし〜でなければ」という意味があるので、否定を重ねると意味が変わります。",
+      "examples": [
+        {
+          "en": "I won't go unless you come with me.",
+          "ja": "一緒に来てくれなければ、行かないよ。"
+        },
+        {
+          "en": "Call me unless you're too tired.",
+          "ja": "疲れすぎてなければ、電話してね。"
+        }
+      ]
+    },
+    "translation-unless-dialogue-05": {
+      "answer": "Probably not, unless we go really early.",
+      "acceptedAnswers": [
+        "Probably not, unless we go really early."
+      ],
+      "explanation": "「unless we go really early」は、「〜でない限り」という例外の条件です。unless 自体に「もし〜でなければ」という意味があるので、否定を重ねると意味が変わります。",
+      "examples": [
+        {
+          "en": "I won't go unless you come with me.",
+          "ja": "一緒に来てくれなければ、行かないよ。"
+        },
+        {
+          "en": "Call me unless you're too tired.",
+          "ja": "疲れすぎてなければ、電話してね。"
+        }
+      ]
+    },
+    "translation-unless-dialogue-06": {
+      "answer": "Don't add more salt unless you think it needs it.",
+      "acceptedAnswers": [
+        "Don't add more salt unless you think it needs it."
+      ],
+      "explanation": "「unless you think it needs it」は、「〜でない限り」という例外の条件です。unless 自体に「もし〜でなければ」という意味があるので、否定を重ねると意味が変わります。",
+      "examples": [
+        {
+          "en": "I won't go unless you come with me.",
+          "ja": "一緒に来てくれなければ、行かないよ。"
+        },
+        {
+          "en": "Call me unless you're too tired.",
+          "ja": "疲れすぎてなければ、電話してね。"
+        }
+      ]
+    },
+    "translation-unless-dialogue-07": {
+      "answer": "Outside, unless you'd rather be inside.",
+      "acceptedAnswers": [
+        "Outside, unless you'd rather be inside."
+      ],
+      "explanation": "「unless you'd rather be inside」は、「〜でない限り」という例外の条件です。unless 自体に「もし〜でなければ」という意味があるので、否定を重ねると意味が変わります。",
+      "examples": [
+        {
+          "en": "I won't go unless you come with me.",
+          "ja": "一緒に来てくれなければ、行かないよ。"
+        },
+        {
+          "en": "Call me unless you're too tired.",
+          "ja": "疲れすぎてなければ、電話してね。"
+        }
+      ]
+    },
+    "translation-unless-dialogue-08": {
+      "answer": "I can pick you up unless my meeting runs late.",
+      "acceptedAnswers": [
+        "I can pick you up unless my meeting runs late."
+      ],
+      "explanation": "「unless my meeting runs late」は、「〜でない限り」という例外の条件です。unless 自体に「もし〜でなければ」という意味があるので、否定を重ねると意味が変わります。",
+      "examples": [
+        {
+          "en": "I won't go unless you come with me.",
+          "ja": "一緒に来てくれなければ、行かないよ。"
+        },
+        {
+          "en": "Call me unless you're too tired.",
+          "ja": "疲れすぎてなければ、電話してね。"
+        }
+      ]
+    },
+    "translation-unless-dialogue-09": {
+      "answer": "Not unless you're sure you're keeping it.",
+      "acceptedAnswers": [
+        "Not unless you're sure you're keeping it."
+      ],
+      "explanation": "「unless you're sure you're keeping it」は、「〜でない限り」という例外の条件です。unless 自体に「もし〜でなければ」という意味があるので、否定を重ねると意味が変わります。",
+      "examples": [
+        {
+          "en": "I won't go unless you come with me.",
+          "ja": "一緒に来てくれなければ、行かないよ。"
+        },
+        {
+          "en": "Call me unless you're too tired.",
+          "ja": "疲れすぎてなければ、電話してね。"
+        }
+      ]
+    },
+    "translation-unless-dialogue-10": {
+      "answer": "Keep the receipt unless you're sure you won't need it.",
+      "acceptedAnswers": [
+        "Keep the receipt unless you're sure you won't need it."
+      ],
+      "explanation": "「unless you're sure you won't need it」は、「〜でない限り」という例外の条件です。unless 自体に「もし〜でなければ」という意味があるので、否定を重ねると意味が変わります。",
+      "examples": [
+        {
+          "en": "I won't go unless you come with me.",
+          "ja": "一緒に来てくれなければ、行かないよ。"
+        },
+        {
+          "en": "Call me unless you're too tired.",
+          "ja": "疲れすぎてなければ、電話してね。"
+        }
+      ]
+    },
+    "translation-while-dialogue-01": {
+      "answer": "I'll cook while you take a shower.",
+      "acceptedAnswers": [
+        "I'll cook while you take a shower."
+      ],
+      "explanation": "「while you take a shower」は、「〜している間に」と、二つのことが同時に進むことを表しています。動作だけでなく、留守や温かさなどの状態が続く間にも使えます。",
+      "examples": [
+        {
+          "en": "Can you watch my bag while I order?",
+          "ja": "注文してる間、バッグを見ててくれる？"
+        },
+        {
+          "en": "I like coffee, while my sister prefers tea.",
+          "ja": "私はコーヒーが好きだけど、妹は紅茶派なんだ。"
+        }
+      ]
+    },
+    "translation-while-dialogue-02": {
+      "answer": "Let's get a coffee while we wait.",
+      "acceptedAnswers": [
+        "Let's get a coffee while we wait."
+      ],
+      "explanation": "「while we wait」は、「〜している間に」と、二つのことが同時に進むことを表しています。動作だけでなく、留守や温かさなどの状態が続く間にも使えます。",
+      "examples": [
+        {
+          "en": "Can you watch my bag while I order?",
+          "ja": "注文してる間、バッグを見ててくれる？"
+        },
+        {
+          "en": "I like coffee, while my sister prefers tea.",
+          "ja": "私はコーヒーが好きだけど、妹は紅茶派なんだ。"
+        }
+      ]
+    },
+    "translation-while-dialogue-03": {
+      "answer": "Yeah. I wrote it down while she was talking.",
+      "acceptedAnswers": [
+        "Yeah. I wrote it down while she was talking.",
+        "I wrote it down while she was talking."
+      ],
+      "explanation": "「while she was talking」は、「〜している間に」と、二つのことが同時に進むことを表しています。動作だけでなく、留守や温かさなどの状態が続く間にも使えます。",
+      "examples": [
+        {
+          "en": "Can you watch my bag while I order?",
+          "ja": "注文してる間、バッグを見ててくれる？"
+        },
+        {
+          "en": "I like coffee, while my sister prefers tea.",
+          "ja": "私はコーヒーが好きだけど、妹は紅茶派なんだ。"
+        }
+      ]
+    },
+    "translation-while-dialogue-04": {
+      "answer": "Could you water my plants while I'm away?",
+      "acceptedAnswers": [
+        "Could you water my plants while I'm away?"
+      ],
+      "explanation": "「while I'm away」は、「〜している間に」と、二つのことが同時に進むことを表しています。動作だけでなく、留守や温かさなどの状態が続く間にも使えます。",
+      "examples": [
+        {
+          "en": "Can you watch my bag while I order?",
+          "ja": "注文してる間、バッグを見ててくれる？"
+        },
+        {
+          "en": "I like coffee, while my sister prefers tea.",
+          "ja": "私はコーヒーが好きだけど、妹は紅茶派なんだ。"
+        }
+      ]
+    },
+    "translation-while-dialogue-05": {
+      "answer": "Eat it while it's still hot.",
+      "acceptedAnswers": [
+        "Eat it while it's still hot."
+      ],
+      "explanation": "「while it's still hot」は、「〜している間に」と、二つのことが同時に進むことを表しています。動作だけでなく、留守や温かさなどの状態が続く間にも使えます。",
+      "examples": [
+        {
+          "en": "Can you watch my bag while I order?",
+          "ja": "注文してる間、バッグを見ててくれる？"
+        },
+        {
+          "en": "I like coffee, while my sister prefers tea.",
+          "ja": "私はコーヒーが好きだけど、妹は紅茶派なんだ。"
+        }
+      ]
+    },
+    "translation-while-dialogue-06": {
+      "answer": "I listen to music while I clean.",
+      "acceptedAnswers": [
+        "I listen to music while I clean."
+      ],
+      "explanation": "「while I clean」は、「〜している間に」と、二つのことが同時に進むことを表しています。動作だけでなく、留守や温かさなどの状態が続く間にも使えます。",
+      "examples": [
+        {
+          "en": "Can you watch my bag while I order?",
+          "ja": "注文してる間、バッグを見ててくれる？"
+        },
+        {
+          "en": "I like coffee, while my sister prefers tea.",
+          "ja": "私はコーヒーが好きだけど、妹は紅茶派なんだ。"
+        }
+      ]
+    },
+    "translation-while-dialogue-07": {
+      "answer": "Let's stop at the bakery while we're in the area.",
+      "acceptedAnswers": [
+        "Let's stop at the bakery while we're in the area."
+      ],
+      "explanation": "「while we're in the area」は、「〜している間に」と、二つのことが同時に進むことを表しています。動作だけでなく、留守や温かさなどの状態が続く間にも使えます。",
+      "examples": [
+        {
+          "en": "Can you watch my bag while I order?",
+          "ja": "注文してる間、バッグを見ててくれる？"
+        },
+        {
+          "en": "I like coffee, while my sister prefers tea.",
+          "ja": "私はコーヒーが好きだけど、妹は紅茶派なんだ。"
+        }
+      ]
+    },
+    "translation-while-dialogue-08": {
+      "answer": "I do, while Ben prefers tea.",
+      "acceptedAnswers": [
+        "I do, while Ben prefers tea."
+      ],
+      "explanation": "ここでの while は「〜する間」ではなく「それに対して」という対比です。自分はコーヒーを飲む一方、ベンは紅茶派だと伝えています。",
+      "examples": [
+        {
+          "en": "Can you watch my bag while I order?",
+          "ja": "注文してる間、バッグを見ててくれる？"
+        },
+        {
+          "en": "I like coffee, while my sister prefers tea.",
+          "ja": "私はコーヒーが好きだけど、妹は紅茶派なんだ。"
+        }
+      ]
+    },
+    "translation-while-dialogue-09": {
+      "answer": "While I like the idea, I'm worried about the cost.",
+      "acceptedAnswers": [
+        "While I like the idea, I'm worried about the cost."
+      ],
+      "explanation": "While I like the idea は「アイデアはいいと思うけれど」。賛成できる点を先に認めてから、費用についての心配をやわらかく伝えています。",
+      "examples": [
+        {
+          "en": "Can you watch my bag while I order?",
+          "ja": "注文してる間、バッグを見ててくれる？"
+        },
+        {
+          "en": "I like coffee, while my sister prefers tea.",
+          "ja": "私はコーヒーが好きだけど、妹は紅茶派なんだ。"
+        }
+      ]
+    },
+    "translation-while-dialogue-10": {
+      "answer": "I set the table while Maya finished cooking.",
+      "acceptedAnswers": [
+        "I set the table while Maya finished cooking."
+      ],
+      "explanation": "「while Maya finished cooking」は、「〜している間に」と、二つのことが同時に進むことを表しています。動作だけでなく、留守や温かさなどの状態が続く間にも使えます。",
+      "examples": [
+        {
+          "en": "Can you watch my bag while I order?",
+          "ja": "注文してる間、バッグを見ててくれる？"
+        },
+        {
+          "en": "I like coffee, while my sister prefers tea.",
+          "ja": "私はコーヒーが好きだけど、妹は紅茶派なんだ。"
+        }
+      ]
+    },
+    "translation-as-dialogue-01": {
+      "answer": "My phone rang just as I was leaving.",
+      "acceptedAnswers": [
+        "My phone rang just as I was leaving."
+      ],
+      "explanation": "「just as I was leaving」は、「〜するとき・〜している途中で」というタイミングです。この問題の as は、二つの動作が重なる場面を表しています。",
+      "examples": [
+        {
+          "en": "I saw her just as I was getting on the bus.",
+          "ja": "バスに乗るところで、彼女を見かけたよ。"
+        },
+        {
+          "en": "Wave to me as you go past.",
+          "ja": "通り過ぎるときに手を振ってね。"
+        }
+      ]
+    },
+    "translation-as-dialogue-02": {
+      "answer": "Can you turn off the lights as you leave?",
+      "acceptedAnswers": [
+        "Can you turn off the lights as you leave?"
+      ],
+      "explanation": "「as you leave」は、「〜するとき・〜している途中で」というタイミングです。この問題の as は、二つの動作が重なる場面を表しています。",
+      "examples": [
+        {
+          "en": "I saw her just as I was getting on the bus.",
+          "ja": "バスに乗るところで、彼女を見かけたよ。"
+        },
+        {
+          "en": "Wave to me as you go past.",
+          "ja": "通り過ぎるときに手を振ってね。"
+        }
+      ]
+    },
+    "translation-as-dialogue-03": {
+      "answer": "No. It started snowing as we were walking home.",
+      "acceptedAnswers": [
+        "No. It started snowing as we were walking home."
+      ],
+      "explanation": "「as we were walking home」は、「〜するとき・〜している途中で」というタイミングです。この問題の as は、二つの動作が重なる場面を表しています。",
+      "examples": [
+        {
+          "en": "I saw her just as I was getting on the bus.",
+          "ja": "バスに乗るところで、彼女を見かけたよ。"
+        },
+        {
+          "en": "Wave to me as you go past.",
+          "ja": "通り過ぎるときに手を振ってね。"
+        }
+      ]
+    }
+  }
+}
