@@ -1,0 +1,512 @@
+{
+  "status": "estimated",
+  "source": {
+    "name": "LRCLIB",
+    "id": 997249,
+    "url": "https://lrclib.net/api/get/997249",
+    "duration": 172.0,
+    "method": "Offset-corrected published LRC line starts; split-line boundaries from offline base.en word alignment",
+    "audioOffsetSeconds": 1.24
+  },
+  "audioDurationSeconds": 173.604,
+  "notesJa": "公開LRCの行頭を音源に合わせて補正し、分割行を端末内の単語時刻で補完。終盤6行は重なる歌唱があり正確な境界を確定できないため、全体を仮同期と明示。",
+  "display": {
+    "lyrics": "I could say I never dare\nTo think about you in that way, but\nI would be lyin'\nAnd I pretend I'm happy for you\nWhen you find some dude to take home\nBut I won't deny that\nIn the midst of the crowds\nIn the shapes in the clouds\nI don't see nobody but you\nIn my rose-tinted dreams\nWrinkled silk on my sheets\nI don't see nobody but you\nBoy, you got me hooked onto something\nWho could say that they saw us coming?\nTell me\nDo you feel the love?\nSpend a summer or a lifetime with me\nLet me take you to the place of your dreams\nTell me\nDo you feel the love?\nAnd I could say I never unzipped\nThose blue Levi's inside my head\nBut that's far from the truth\nDon't know what's come over me\nIt seems like yesterday when I said\n\"We'll be friends forever\"\nConstellations of stars\nMurals on city walls\nI don't see nobody but you\nYou're my vice, you're my muse\nYou're a nineteenth floor view\nI don't see nobody but you\nBoy, you got me hooked onto something\nWho could say that they saw us coming?\nTell me\nDo you feel the love?\nSpend a summer or a lifetime with me\nLet me take you to the place of your dreams\nTell me\nDo you feel the love?\nBoy, you got me hooked onto something\nWho could say that they saw us coming?\nTell me\nDo you feel the love?\nSpend a summer or a lifetime with me\nLet me take you to the place of your dreams\nTell me\nDo you feel the love?\nDo you feel the love?\nDo you feel the love?\nDo you feel the love?\nDo you feel the love?\nFeel the love\nDo you feel the love?",
+    "lyricsJa": [
+      {
+        "en": "I could say I never dare",
+        "ja": "そんなふうに君を思う勇気なんてないと"
+      },
+      {
+        "en": "To think about you in that way, but",
+        "ja": "言うこともできるけど"
+      },
+      {
+        "en": "I would be lyin'",
+        "ja": "それは嘘になってしまう"
+      },
+      {
+        "en": "And I pretend I'm happy for you",
+        "ja": "君が誰かを家に連れて帰るとき"
+      },
+      {
+        "en": "When you find some dude to take home",
+        "ja": "僕は君のために喜んでいるふりをする"
+      },
+      {
+        "en": "But I won't deny that",
+        "ja": "でも、この気持ちは否定しないよ"
+      },
+      {
+        "en": "In the midst of the crowds",
+        "ja": "人混みの中でも"
+      },
+      {
+        "en": "In the shapes in the clouds",
+        "ja": "雲が描く形の中でも"
+      },
+      {
+        "en": "I don't see nobody but you",
+        "ja": "僕には君しか見えない"
+      },
+      {
+        "en": "In my rose-tinted dreams",
+        "ja": "甘い夢の中でも"
+      },
+      {
+        "en": "Wrinkled silk on my sheets",
+        "ja": "くしゃくしゃになったシルクのシーツの上でも"
+      },
+      {
+        "en": "I don't see nobody but you",
+        "ja": "僕には君しか見えない"
+      },
+      {
+        "en": "Boy, you got me hooked onto something",
+        "ja": "ねえ、君のせいでこんなにも夢中なんだ"
+      },
+      {
+        "en": "Who could say that they saw us coming?",
+        "ja": "僕らがこうなるなんて、誰が想像できただろう"
+      },
+      {
+        "en": "Tell me",
+        "ja": "教えてよ"
+      },
+      {
+        "en": "Do you feel the love?",
+        "ja": "君もこの愛を感じてる？"
+      },
+      {
+        "en": "Spend a summer or a lifetime with me",
+        "ja": "ひと夏でも、一生でも、僕と一緒に過ごして"
+      },
+      {
+        "en": "Let me take you to the place of your dreams",
+        "ja": "君が夢見る場所へ、僕に連れていかせて"
+      },
+      {
+        "en": "Tell me",
+        "ja": "教えてよ"
+      },
+      {
+        "en": "Do you feel the love?",
+        "ja": "君もこの愛を感じてる？"
+      },
+      {
+        "en": "And I could say I never unzipped",
+        "ja": "頭の中で、君の青いリーバイスを"
+      },
+      {
+        "en": "Those blue Levi's inside my head",
+        "ja": "脱がせたことなんてないと言うこともできるけど"
+      },
+      {
+        "en": "But that's far from the truth",
+        "ja": "本当は、まったくそうじゃない"
+      },
+      {
+        "en": "Don't know what's come over me",
+        "ja": "どうしてこんな気持ちになるのか、自分でもわからない"
+      },
+      {
+        "en": "It seems like yesterday when I said",
+        "ja": "「ずっと友達でいよう」って言ったのが"
+      },
+      {
+        "en": "\"We'll be friends forever\"",
+        "ja": "まるで昨日のことみたいなのに"
+      },
+      {
+        "en": "Constellations of stars",
+        "ja": "星々が描く星座にも"
+      },
+      {
+        "en": "Murals on city walls",
+        "ja": "街の壁に描かれた絵にも"
+      },
+      {
+        "en": "I don't see nobody but you",
+        "ja": "僕には君しか見えない"
+      },
+      {
+        "en": "You're my vice, you're my muse",
+        "ja": "君は抗えない誘惑で、僕の創作の源"
+      },
+      {
+        "en": "You're a nineteenth floor view",
+        "ja": "君は19階から見渡す景色みたいに、心を奪う"
+      },
+      {
+        "en": "I don't see nobody but you",
+        "ja": "僕には君しか見えない"
+      },
+      {
+        "en": "Boy, you got me hooked onto something",
+        "ja": "ねえ、君のせいでこんなにも夢中なんだ"
+      },
+      {
+        "en": "Who could say that they saw us coming?",
+        "ja": "僕らがこうなるなんて、誰が想像できただろう"
+      },
+      {
+        "en": "Tell me",
+        "ja": "教えてよ"
+      },
+      {
+        "en": "Do you feel the love?",
+        "ja": "君もこの愛を感じてる？"
+      },
+      {
+        "en": "Spend a summer or a lifetime with me",
+        "ja": "ひと夏でも、一生でも、僕と一緒に過ごして"
+      },
+      {
+        "en": "Let me take you to the place of your dreams",
+        "ja": "君が夢見る場所へ、僕に連れていかせて"
+      },
+      {
+        "en": "Tell me",
+        "ja": "教えてよ"
+      },
+      {
+        "en": "Do you feel the love?",
+        "ja": "君もこの愛を感じてる？"
+      },
+      {
+        "en": "Boy, you got me hooked onto something",
+        "ja": "ねえ、君のせいでこんなにも夢中なんだ"
+      },
+      {
+        "en": "Who could say that they saw us coming?",
+        "ja": "僕らがこうなるなんて、誰が想像できただろう"
+      },
+      {
+        "en": "Tell me",
+        "ja": "教えてよ"
+      },
+      {
+        "en": "Do you feel the love?",
+        "ja": "君もこの愛を感じてる？"
+      },
+      {
+        "en": "Spend a summer or a lifetime with me",
+        "ja": "ひと夏でも、一生でも、僕と一緒に過ごして"
+      },
+      {
+        "en": "Let me take you to the place of your dreams",
+        "ja": "君が夢見る場所へ、僕に連れていかせて"
+      },
+      {
+        "en": "Tell me",
+        "ja": "教えてよ"
+      },
+      {
+        "en": "Do you feel the love?",
+        "ja": "君もこの愛を感じてる？"
+      },
+      {
+        "en": "Do you feel the love?",
+        "ja": "君もこの愛を感じてる？"
+      },
+      {
+        "en": "Do you feel the love?",
+        "ja": "君もこの愛を感じてる？"
+      },
+      {
+        "en": "Do you feel the love?",
+        "ja": "君もこの愛を感じてる？"
+      },
+      {
+        "en": "Do you feel the love?",
+        "ja": "君もこの愛を感じてる？"
+      },
+      {
+        "en": "Feel the love",
+        "ja": "この愛を感じて"
+      },
+      {
+        "en": "Do you feel the love?",
+        "ja": "君もこの愛を感じてる？"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "index": 0,
+      "start": 18.6,
+      "end": 20.92
+    },
+    {
+      "index": 1,
+      "start": 20.92,
+      "end": 23.38
+    },
+    {
+      "index": 2,
+      "start": 23.38,
+      "end": 26.84
+    },
+    {
+      "index": 3,
+      "start": 27.42,
+      "end": 29.94
+    },
+    {
+      "index": 4,
+      "start": 29.94,
+      "end": 32.34
+    },
+    {
+      "index": 5,
+      "start": 32.79,
+      "end": 35.63
+    },
+    {
+      "index": 6,
+      "start": 36.03,
+      "end": 37.91
+    },
+    {
+      "index": 7,
+      "start": 38.16,
+      "end": 40.1
+    },
+    {
+      "index": 8,
+      "start": 40.32,
+      "end": 42.9
+    },
+    {
+      "index": 9,
+      "start": 44.67,
+      "end": 46.75
+    },
+    {
+      "index": 10,
+      "start": 46.92,
+      "end": 48.84
+    },
+    {
+      "index": 11,
+      "start": 49.29,
+      "end": 51.83
+    },
+    {
+      "index": 12,
+      "start": 53.77,
+      "end": 56.31
+    },
+    {
+      "index": 13,
+      "start": 56.31,
+      "end": 58.37
+    },
+    {
+      "index": 14,
+      "start": 58.51,
+      "end": 59.25
+    },
+    {
+      "index": 15,
+      "start": 59.25,
+      "end": 62.41
+    },
+    {
+      "index": 16,
+      "start": 62.69,
+      "end": 65.1
+    },
+    {
+      "index": 17,
+      "start": 65.1,
+      "end": 67.38
+    },
+    {
+      "index": 18,
+      "start": 67.4,
+      "end": 68.02
+    },
+    {
+      "index": 19,
+      "start": 68.02,
+      "end": 71.08
+    },
+    {
+      "index": 20,
+      "start": 80.39,
+      "end": 82.81
+    },
+    {
+      "index": 21,
+      "start": 82.81,
+      "end": 85.15
+    },
+    {
+      "index": 22,
+      "start": 85.6,
+      "end": 88.38
+    },
+    {
+      "index": 23,
+      "start": 89.06,
+      "end": 91.3
+    },
+    {
+      "index": 24,
+      "start": 91.33,
+      "end": 93.85
+    },
+    {
+      "index": 25,
+      "start": 93.97,
+      "end": 95.81
+    },
+    {
+      "index": 26,
+      "start": 97.59,
+      "end": 99.49
+    },
+    {
+      "index": 27,
+      "start": 99.78,
+      "end": 101.7
+    },
+    {
+      "index": 28,
+      "start": 102.02,
+      "end": 104.52
+    },
+    {
+      "index": 29,
+      "start": 106.27,
+      "end": 108.33
+    },
+    {
+      "index": 30,
+      "start": 108.46,
+      "end": 110.56
+    },
+    {
+      "index": 31,
+      "start": 110.78,
+      "end": 113.32
+    },
+    {
+      "index": 32,
+      "start": 115.54,
+      "end": 117.88
+    },
+    {
+      "index": 33,
+      "start": 117.92,
+      "end": 120.04
+    },
+    {
+      "index": 34,
+      "start": 120.21,
+      "end": 120.93
+    },
+    {
+      "index": 35,
+      "start": 120.93,
+      "end": 124.15
+    },
+    {
+      "index": 36,
+      "start": 124.46,
+      "end": 126.67
+    },
+    {
+      "index": 37,
+      "start": 126.67,
+      "end": 128.96
+    },
+    {
+      "index": 38,
+      "start": 128.96,
+      "end": 129.64
+    },
+    {
+      "index": 39,
+      "start": 129.64,
+      "end": 132.98
+    },
+    {
+      "index": 40,
+      "start": 133.25,
+      "end": 135.51
+    },
+    {
+      "index": 41,
+      "start": 135.63,
+      "end": 137.55
+    },
+    {
+      "index": 42,
+      "start": 137.55,
+      "end": 138.51
+    },
+    {
+      "index": 43,
+      "start": 138.51,
+      "end": 141.75
+    },
+    {
+      "index": 44,
+      "start": 142.07,
+      "end": 144.31
+    },
+    {
+      "index": 45,
+      "start": 144.31,
+      "end": 146.59
+    },
+    {
+      "index": 46,
+      "start": 146.59,
+      "end": 147.29
+    },
+    {
+      "index": 47,
+      "start": 147.29,
+      "end": 150.25
+    },
+    {
+      "index": 48,
+      "start": 151.96,
+      "end": 153.67,
+      "status": "estimated"
+    },
+    {
+      "index": 49,
+      "start": 153.67,
+      "end": 158.32,
+      "status": "estimated"
+    },
+    {
+      "index": 50,
+      "start": 158.32,
+      "end": 162.73,
+      "status": "estimated"
+    },
+    {
+      "index": 51,
+      "start": 162.73,
+      "end": 165.64,
+      "status": "estimated"
+    },
+    {
+      "index": 52,
+      "start": 165.64,
+      "end": 167.17,
+      "status": "estimated"
+    },
+    {
+      "index": 53,
+      "start": 167.17,
+      "end": 168.05,
+      "status": "estimated"
+    }
+  ]
+}

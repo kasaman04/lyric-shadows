@@ -162,5 +162,9 @@ window.SONG_CHARACTER_AVATARS = {
   "Die For You The Weeknd": {
     "A": "/character-avatars/44696520466f7220596f752054686520-70902088-a.svg",
     "B": "/character-avatars/44696520466f7220596f752054686520-70902088-b.svg"
+  },
+  "double take dhruv": {
+    "A": "/character-avatars/646f75626c652074616b652064687275-b8219d12-a.svg",
+    "B": "/character-avatars/646f75626c652074616b652064687275-b8219d12-b.svg"
   }
 };
