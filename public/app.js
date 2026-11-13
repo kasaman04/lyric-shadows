@@ -1471,7 +1471,7 @@ function renderPhrasePractice() {
         </div>
         <div class="practice-nav">
           <button onclick="movePractice(-1)" ${state.practiceIndex === 0 ? 'disabled' : ''}>前へ</button>
-          <button onclick="movePractice(1)">${state.practiceIndex + 1 >= total ? '完了' : '次へ'}</button>
+          <button onclick="movePractice(1)">${state.practiceIndex + 1 >= total ? (state.practiceMode === 'sequential' ? '最初へ' : '完了') : '次へ'}</button>
         </div>
       </div>
     </div>
@@ -1488,7 +1488,9 @@ function movePractice(delta) {
   state.practiceIndex += delta;
   if (state.practiceIndex < 0) state.practiceIndex = 0;
   if (state.practiceIndex >= state.practiceSet.length) {
-    state.practiceIndex = state.practiceSet.length;
+    state.practiceIndex = state.practiceMode === 'sequential' && state.practiceSet.length > 0
+      ? 0
+      : state.practiceSet.length;
   }
   state.shouldAutoplayPractice = delta > 0 && state.practiceIndex < state.practiceSet.length;
   renderPhrasePractice();
