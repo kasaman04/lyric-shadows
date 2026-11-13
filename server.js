@@ -14,7 +14,12 @@ const SONGS_DIR = path.join(__dirname, 'songs');
 const PHRASE_IMAGES_DIR = path.join(__dirname, 'public', 'phrase-images', 'phrases');
 const {supabaseBase,headersFor}=require('./lib/pet-cloud');
 const SUPABASE_URL = supabaseBase(process.env.SUPABASE_URL);
-const SUPABASE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.SUPABASE_SECRET_KEY || process.env.SUPABASE_ANON_KEY;
+// Database access is server-only. Never fall back to the public anon role.
+const SUPABASE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.SUPABASE_SECRET_KEY;
+const SUPABASE_MISCONFIGURED = Boolean(
+  (SUPABASE_URL || SUPABASE_KEY || process.env.SUPABASE_ANON_KEY) &&
+  !(SUPABASE_URL && SUPABASE_KEY)
+);
 const SUPABASE_PREFS_TABLE = 'user_phrase_preferences';
 
 (async () => { await fs.ensureDir(SONGS_DIR); })();
@@ -117,6 +122,9 @@ app.get('/api/phrase-images', async (req, res) => {
 });
 
 app.get('/api/phrase-preferences/:deviceId', async (req, res) => {
+  if (SUPABASE_MISCONFIGURED) {
+    return res.status(503).json({ error: 'フレーズの保存先を確認してください。サーバー専用のSupabaseキーが必要です。' });
+  }
   if (!isSupabaseConfigured()) {
     return res.json({ enabled: false, found: false, savedPhraseIds: [], hiddenPhraseIds: [] });
   }
@@ -147,6 +155,9 @@ app.get('/api/phrase-preferences/:deviceId', async (req, res) => {
 });
 
 app.put('/api/phrase-preferences/:deviceId', async (req, res) => {
+  if (SUPABASE_MISCONFIGURED) {
+    return res.status(503).json({ error: 'フレーズの保存先を確認してください。サーバー専用のSupabaseキーが必要です。' });
+  }
   if (!isSupabaseConfigured()) {
     return res.json({ enabled: false, saved: false });
   }
@@ -350,4 +361,3 @@ app.delete('/api/songs/:id', async (req, res) => {
 app.listen(PORT, () => {
   console.log(`🎵 Lyric Shadows running at http://localhost:${PORT}`);
 });
-
