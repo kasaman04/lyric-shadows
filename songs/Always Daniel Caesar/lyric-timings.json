@@ -1,0 +1,346 @@
+{
+  "status": "sourced",
+  "source": {
+    "name": "LRCLIB",
+    "id": 2158235,
+    "url": "https://lrclib.net/api/get/2158235",
+    "duration": 225.0,
+    "offsetSeconds": -0.72
+  },
+  "audioDurationSeconds": 218.534604,
+  "verification": {
+    "method": "Published LRC compared with offline base.en word timestamps and provided-video captions",
+    "matchedAnchors": 26,
+    "medianAnchorErrorSeconds": 0.275,
+    "checkedSections": [
+      "opening",
+      "verse 2",
+      "second chorus",
+      "four-line outro"
+    ],
+    "lastVocalEndSeconds": 201.92
+  },
+  "notesJa": "提供された35行に合わせて公開LRCの行を結合。冒頭・中盤・終盤の歌唱を端末内の単語時刻と照合。最後の歌唱後は間奏のため行ハイライトを終了。",
+  "display": {
+    "lyrics": "Baby, baby\nThere will always be space for you and me\nRight where you left it\nAnd just maybe\nEnough time will pass\nWe'll look back and laugh\nJust don't forget it\nAnd maybe I'm wrong\nFor writing this song\nLosing my head over you\n(Oh) and I'll be here, 'cause we both know how it goes\nI don't want things to change, I pray they stay the same, always\n(Oh) and I don't care if you're with somebody else\nI'll give you time and space, just know I'm not a phase\nI'm always, —ways, —ways\nAlways, —ways, —ways\nI'm always, —ways, —ways\nPretty lady, used to walk with me\nDown Bloor Street, oh, what a time\nAnd I still remember the fussing, the fighting, the fuckin', the lying\nIt's all fine, you'll always be mine\nAnd maybe I'm wrong (hey, babe, you could)\nFor writing this song (write me a song?)\nLosing my head over you\n(Oh) and I'll be here, 'cause we both know how it goes\nI don't want things to change, I pray they stay the same, always\n(Oh) and I don't care if you're with somebody else\nI'll give you time and space, just know I'm not a phase\nI'm always, —ways, —ways\nAlways, —ways, —ways\nI'm always, —ways, —ways\n(Always) can count on it, sure as the stars in the sky\n(Always) you can count on it, sure as the Sun will rise\n(Always) my love for you ain't going nowhere\n(Always) I'll be here",
+    "lyricsJa": [
+      {
+        "en": "Baby, baby",
+        "ja": "ねえ、愛しい人"
+      },
+      {
+        "en": "There will always be space for you and me",
+        "ja": "君と僕のための場所は、いつまでもあるよ"
+      },
+      {
+        "en": "Right where you left it",
+        "ja": "君が残していった、その場所に"
+      },
+      {
+        "en": "And just maybe",
+        "ja": "そして、もしかしたら"
+      },
+      {
+        "en": "Enough time will pass",
+        "ja": "十分な時間が過ぎたころ"
+      },
+      {
+        "en": "We'll look back and laugh",
+        "ja": "僕らは振り返って笑えるかもしれない"
+      },
+      {
+        "en": "Just don't forget it",
+        "ja": "そのことだけは忘れないで"
+      },
+      {
+        "en": "And maybe I'm wrong",
+        "ja": "もしかしたら、僕が間違っているのかもしれない"
+      },
+      {
+        "en": "For writing this song",
+        "ja": "こんな歌を書いてしまうなんて"
+      },
+      {
+        "en": "Losing my head over you",
+        "ja": "君のことで、どうにかなってしまいそうなんだ"
+      },
+      {
+        "en": "(Oh) and I'll be here, 'cause we both know how it goes",
+        "ja": "ああ、僕はここにいるよ。この先どうなるか、僕らにはわかっているから"
+      },
+      {
+        "en": "I don't want things to change, I pray they stay the same, always",
+        "ja": "何も変わってほしくない。ずっとこのままでいてほしいと祈ってる"
+      },
+      {
+        "en": "(Oh) and I don't care if you're with somebody else",
+        "ja": "ああ、君がほかの誰かと一緒にいても、かまわない"
+      },
+      {
+        "en": "I'll give you time and space, just know I'm not a phase",
+        "ja": "君に時間も距離もあげる。ただ、僕の思いは一時的なものじゃないと知っていて"
+      },
+      {
+        "en": "I'm always, —ways, —ways",
+        "ja": "僕はいつまでも、いつまでも"
+      },
+      {
+        "en": "Always, —ways, —ways",
+        "ja": "ずっと、いつまでも"
+      },
+      {
+        "en": "I'm always, —ways, —ways",
+        "ja": "僕はいつまでも、いつまでも"
+      },
+      {
+        "en": "Pretty lady, used to walk with me",
+        "ja": "きれいな君、よく僕と一緒に歩いたね"
+      },
+      {
+        "en": "Down Bloor Street, oh, what a time",
+        "ja": "ブロア通りを。ああ、なんて日々だったんだろう"
+      },
+      {
+        "en": "And I still remember the fussing, the fighting, the fuckin', the lying",
+        "ja": "今も覚えてる。言い争いも、けんかも、セックスも、嘘も"
+      },
+      {
+        "en": "It's all fine, you'll always be mine",
+        "ja": "それでもいいんだ。君はいつまでも僕の人だから"
+      },
+      {
+        "en": "And maybe I'm wrong (hey, babe, you could)",
+        "ja": "もしかしたら、僕が間違っているのかもしれない（ねえ、あなたなら）"
+      },
+      {
+        "en": "For writing this song (write me a song?)",
+        "ja": "こんな歌を書いてしまうなんて（私に歌を書いてくれる？）"
+      },
+      {
+        "en": "Losing my head over you",
+        "ja": "君のことで、どうにかなってしまいそうなんだ"
+      },
+      {
+        "en": "(Oh) and I'll be here, 'cause we both know how it goes",
+        "ja": "ああ、僕はここにいるよ。この先どうなるか、僕らにはわかっているから"
+      },
+      {
+        "en": "I don't want things to change, I pray they stay the same, always",
+        "ja": "何も変わってほしくない。ずっとこのままでいてほしいと祈ってる"
+      },
+      {
+        "en": "(Oh) and I don't care if you're with somebody else",
+        "ja": "ああ、君がほかの誰かと一緒にいても、かまわない"
+      },
+      {
+        "en": "I'll give you time and space, just know I'm not a phase",
+        "ja": "君に時間も距離もあげる。ただ、僕の思いは一時的なものじゃないと知っていて"
+      },
+      {
+        "en": "I'm always, —ways, —ways",
+        "ja": "僕はいつまでも、いつまでも"
+      },
+      {
+        "en": "Always, —ways, —ways",
+        "ja": "ずっと、いつまでも"
+      },
+      {
+        "en": "I'm always, —ways, —ways",
+        "ja": "僕はいつまでも、いつまでも"
+      },
+      {
+        "en": "(Always) can count on it, sure as the stars in the sky",
+        "ja": "（いつまでも）信じていて。空に星があるのと同じくらい確かなこと"
+      },
+      {
+        "en": "(Always) you can count on it, sure as the Sun will rise",
+        "ja": "（いつまでも）信じていいよ。太陽がまた昇るのと同じくらい確かなこと"
+      },
+      {
+        "en": "(Always) my love for you ain't going nowhere",
+        "ja": "（いつまでも）君への愛は、どこへも消えたりしない"
+      },
+      {
+        "en": "(Always) I'll be here",
+        "ja": "（いつまでも）僕はここにいるよ"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "index": 0,
+      "start": 14.51,
+      "end": 18.62
+    },
+    {
+      "index": 1,
+      "start": 18.62,
+      "end": 24.16
+    },
+    {
+      "index": 2,
+      "start": 24.16,
+      "end": 28.58
+    },
+    {
+      "index": 3,
+      "start": 28.58,
+      "end": 32.77
+    },
+    {
+      "index": 4,
+      "start": 32.77,
+      "end": 36.26
+    },
+    {
+      "index": 5,
+      "start": 36.26,
+      "end": 38.34
+    },
+    {
+      "index": 6,
+      "start": 38.34,
+      "end": 41.62
+    },
+    {
+      "index": 7,
+      "start": 41.62,
+      "end": 45.01
+    },
+    {
+      "index": 8,
+      "start": 45.01,
+      "end": 48.88
+    },
+    {
+      "index": 9,
+      "start": 48.88,
+      "end": 56.72
+    },
+    {
+      "index": 10,
+      "start": 56.72,
+      "end": 61.15
+    },
+    {
+      "index": 11,
+      "start": 61.15,
+      "end": 70.73
+    },
+    {
+      "index": 12,
+      "start": 70.73,
+      "end": 75.17
+    },
+    {
+      "index": 13,
+      "start": 75.17,
+      "end": 81.52
+    },
+    {
+      "index": 14,
+      "start": 81.52,
+      "end": 85.04
+    },
+    {
+      "index": 15,
+      "start": 85.04,
+      "end": 88.25
+    },
+    {
+      "index": 16,
+      "start": 88.25,
+      "end": 95.61
+    },
+    {
+      "index": 17,
+      "start": 95.61,
+      "end": 103.3
+    },
+    {
+      "index": 18,
+      "start": 103.3,
+      "end": 110.41
+    },
+    {
+      "index": 19,
+      "start": 110.41,
+      "end": 115.96
+    },
+    {
+      "index": 20,
+      "start": 115.96,
+      "end": 122.8
+    },
+    {
+      "index": 21,
+      "start": 122.8,
+      "end": 126.26
+    },
+    {
+      "index": 22,
+      "start": 126.26,
+      "end": 130.06
+    },
+    {
+      "index": 23,
+      "start": 130.06,
+      "end": 137.84
+    },
+    {
+      "index": 24,
+      "start": 137.84,
+      "end": 142.38
+    },
+    {
+      "index": 25,
+      "start": 142.38,
+      "end": 151.87
+    },
+    {
+      "index": 26,
+      "start": 151.87,
+      "end": 156.2
+    },
+    {
+      "index": 27,
+      "start": 156.2,
+      "end": 162.58
+    },
+    {
+      "index": 28,
+      "start": 162.58,
+      "end": 166.18
+    },
+    {
+      "index": 29,
+      "start": 166.18,
+      "end": 169.38
+    },
+    {
+      "index": 30,
+      "start": 169.38,
+      "end": 176.84
+    },
+    {
+      "index": 31,
+      "start": 176.84,
+      "end": 183.84
+    },
+    {
+      "index": 32,
+      "start": 183.84,
+      "end": 190.91
+    },
+    {
+      "index": 33,
+      "start": 190.91,
+      "end": 197.99
+    },
+    {
+      "index": 34,
+      "start": 197.99,
+      "end": 202.2
+    }
+  ]
+}

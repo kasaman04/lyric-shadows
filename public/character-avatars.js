@@ -166,5 +166,9 @@ window.SONG_CHARACTER_AVATARS = {
   "double take dhruv": {
     "A": "/character-avatars/646f75626c652074616b652064687275-b8219d12-a.svg",
     "B": "/character-avatars/646f75626c652074616b652064687275-b8219d12-b.svg"
+  },
+  "Always Daniel Caesar": {
+    "A": "/character-avatars/416c776179732044616e69656c204361-6b37d9fe-a.svg",
+    "B": "/character-avatars/416c776179732044616e69656c204361-6b37d9fe-b.svg"
   }
 };

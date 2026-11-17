@@ -1,0 +1,328 @@
+{
+  "id": "Always Daniel Caesar",
+  "folderName": "Always Daniel Caesar",
+  "songName": "Always",
+  "artist": "Daniel Caesar",
+  "relationship": "別れた恋人同士",
+  "setting": "引っ越しの荷造りで見つけた本を返すため、別れた相手と久しぶりに会う",
+  "speakerA": {
+    "name": "David",
+    "gender": "male",
+    "age": "middle_aged",
+    "accent": "american",
+    "tone": "calm",
+    "voiceProfile": "roger",
+    "type": "男性",
+    "voice": "CwhRBWXzGAHq8TQ4Fs17",
+    "voiceName": "Roger",
+    "audioProvider": "elevenlabs",
+    "audioVoice": "CwhRBWXzGAHq8TQ4Fs17"
+  },
+  "speakerB": {
+    "name": "Emma",
+    "gender": "female",
+    "age": "middle_aged",
+    "accent": "american",
+    "tone": "calm",
+    "voiceProfile": "kimberly",
+    "type": "女性",
+    "voice": "w2CTE3MYza6FgBnETYNT",
+    "voiceName": "Kimberly",
+    "audioProvider": "elevenlabs",
+    "audioVoice": "w2CTE3MYza6FgBnETYNT"
+  },
+  "videoId": "1BTbVMYt8d0",
+  "thumbnailUrl": "https://img.youtube.com/vi/1BTbVMYt8d0/hqdefault.jpg",
+  "lyrics": "Baby, baby\nThere will always be space for you and me\nRight where you left it\nAnd just maybe\nEnough time will pass\nWe'll look back and laugh\nJust don't forget it\n\nAnd maybe I'm wrong\nFor writing this song\nLosing my head over you\n\n(Oh) and I'll be here, 'cause we both know how it goes\nI don't want things to change, I pray they stay the same, always\n(Oh) and I don't care if you're with somebody else\nI'll give you time and space, just know I'm not a phase\nI'm always, —ways, —ways\nAlways, —ways, —ways\nI'm always, —ways, —ways\n\nPretty lady, used to walk with me\nDown Bloor Street, oh, what a time\nAnd I still remember the fussing, the fighting, the fuckin', the lying\nIt's all fine, you'll always be mine\n\nAnd maybe I'm wrong (hey, babe, you could)\nFor writing this song (write me a song?)\nLosing my head over you\n\n(Oh) and I'll be here, 'cause we both know how it goes\nI don't want things to change, I pray they stay the same, always\n(Oh) and I don't care if you're with somebody else\nI'll give you time and space, just know I'm not a phase\nI'm always, —ways, —ways\nAlways, —ways, —ways\nI'm always, —ways, —ways\n\n(Always) can count on it, sure as the stars in the sky\n(Always) you can count on it, sure as the Sun will rise\n(Always) my love for you ain't going nowhere\n(Always) I'll be here",
+  "lyricsJa": [
+    {
+      "en": "Baby, baby",
+      "ja": "ねえ、愛しい人"
+    },
+    {
+      "en": "There will always be space for you and me",
+      "ja": "君と僕のための場所は、いつまでもあるよ"
+    },
+    {
+      "en": "Right where you left it",
+      "ja": "君が残していった、その場所に"
+    },
+    {
+      "en": "And just maybe",
+      "ja": "そして、もしかしたら"
+    },
+    {
+      "en": "Enough time will pass",
+      "ja": "十分な時間が過ぎたころ"
+    },
+    {
+      "en": "We'll look back and laugh",
+      "ja": "僕らは振り返って笑えるかもしれない"
+    },
+    {
+      "en": "Just don't forget it",
+      "ja": "そのことだけは忘れないで"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "And maybe I'm wrong",
+      "ja": "もしかしたら、僕が間違っているのかもしれない"
+    },
+    {
+      "en": "For writing this song",
+      "ja": "こんな歌を書いてしまうなんて"
+    },
+    {
+      "en": "Losing my head over you",
+      "ja": "君のことで、どうにかなってしまいそうなんだ"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "(Oh) and I'll be here, 'cause we both know how it goes",
+      "ja": "ああ、僕はここにいるよ。この先どうなるか、僕らにはわかっているから"
+    },
+    {
+      "en": "I don't want things to change, I pray they stay the same, always",
+      "ja": "何も変わってほしくない。ずっとこのままでいてほしいと祈ってる"
+    },
+    {
+      "en": "(Oh) and I don't care if you're with somebody else",
+      "ja": "ああ、君がほかの誰かと一緒にいても、かまわない"
+    },
+    {
+      "en": "I'll give you time and space, just know I'm not a phase",
+      "ja": "君に時間も距離もあげる。ただ、僕の思いは一時的なものじゃないと知っていて"
+    },
+    {
+      "en": "I'm always, —ways, —ways",
+      "ja": "僕はいつまでも、いつまでも"
+    },
+    {
+      "en": "Always, —ways, —ways",
+      "ja": "ずっと、いつまでも"
+    },
+    {
+      "en": "I'm always, —ways, —ways",
+      "ja": "僕はいつまでも、いつまでも"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "Pretty lady, used to walk with me",
+      "ja": "きれいな君、よく僕と一緒に歩いたね"
+    },
+    {
+      "en": "Down Bloor Street, oh, what a time",
+      "ja": "ブロア通りを。ああ、なんて日々だったんだろう"
+    },
+    {
+      "en": "And I still remember the fussing, the fighting, the fuckin', the lying",
+      "ja": "今も覚えてる。言い争いも、けんかも、セックスも、嘘も"
+    },
+    {
+      "en": "It's all fine, you'll always be mine",
+      "ja": "それでもいいんだ。君はいつまでも僕の人だから"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "And maybe I'm wrong (hey, babe, you could)",
+      "ja": "もしかしたら、僕が間違っているのかもしれない（ねえ、あなたなら）"
+    },
+    {
+      "en": "For writing this song (write me a song?)",
+      "ja": "こんな歌を書いてしまうなんて（私に歌を書いてくれる？）"
+    },
+    {
+      "en": "Losing my head over you",
+      "ja": "君のことで、どうにかなってしまいそうなんだ"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "(Oh) and I'll be here, 'cause we both know how it goes",
+      "ja": "ああ、僕はここにいるよ。この先どうなるか、僕らにはわかっているから"
+    },
+    {
+      "en": "I don't want things to change, I pray they stay the same, always",
+      "ja": "何も変わってほしくない。ずっとこのままでいてほしいと祈ってる"
+    },
+    {
+      "en": "(Oh) and I don't care if you're with somebody else",
+      "ja": "ああ、君がほかの誰かと一緒にいても、かまわない"
+    },
+    {
+      "en": "I'll give you time and space, just know I'm not a phase",
+      "ja": "君に時間も距離もあげる。ただ、僕の思いは一時的なものじゃないと知っていて"
+    },
+    {
+      "en": "I'm always, —ways, —ways",
+      "ja": "僕はいつまでも、いつまでも"
+    },
+    {
+      "en": "Always, —ways, —ways",
+      "ja": "ずっと、いつまでも"
+    },
+    {
+      "en": "I'm always, —ways, —ways",
+      "ja": "僕はいつまでも、いつまでも"
+    },
+    {
+      "en": "",
+      "ja": ""
+    },
+    {
+      "en": "(Always) can count on it, sure as the stars in the sky",
+      "ja": "（いつまでも）信じていて。空に星があるのと同じくらい確かなこと"
+    },
+    {
+      "en": "(Always) you can count on it, sure as the Sun will rise",
+      "ja": "（いつまでも）信じていいよ。太陽がまた昇るのと同じくらい確かなこと"
+    },
+    {
+      "en": "(Always) my love for you ain't going nowhere",
+      "ja": "（いつまでも）君への愛は、どこへも消えたりしない"
+    },
+    {
+      "en": "(Always) I'll be here",
+      "ja": "（いつまでも）僕はここにいるよ"
+    }
+  ],
+  "lyricConnections": [
+    {
+      "lyricExpression": "time and space",
+      "conversationExpression": "time and space",
+      "explanationJa": "time and space は、気持ちを整理するための「時間と距離」。相手を大切に思いながら、考える余裕を認める場面で使っています。"
+    },
+    {
+      "lyricExpression": "stay the same",
+      "conversationExpression": "stay the same",
+      "explanationJa": "stay the same は「同じ状態のままでいる」。歌では変わらないでほしいという願い、会話では変わらないとは約束できないという本音になっています。"
+    },
+    {
+      "lyricExpression": "look back and laugh",
+      "conversationExpression": "look back and laugh",
+      "explanationJa": "look back and laugh は「振り返って笑う」。今はつらい出来事も、いつか笑って話せるかもしれないという気持ちを表しています。"
+    }
+  ],
+  "conversation": [
+    {
+      "speaker": "A",
+      "speakerName": "David",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "I found your book while I was packing.",
+          "displayHtml": "I found your book while I was packing.",
+          "audio": "/songs/Always%20Daniel%20Caesar/conversation-audio/c7834113fb0b0684/0-0.mp3"
+        },
+        {
+          "text": "I wasn't sure whether to call.",
+          "displayHtml": "I wasn't sure whether to call.",
+          "audio": "/songs/Always%20Daniel%20Caesar/conversation-audio/c7834113fb0b0684/0-1.mp3"
+        }
+      ],
+      "japanese": "荷造りしていたら、君の本が出てきたんだ。電話していいか迷ったよ。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Emma",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "I'm glad you did.",
+          "displayHtml": "I'm glad you did.",
+          "audio": "/songs/Always%20Daniel%20Caesar/conversation-audio/c7834113fb0b0684/1-0.mp3"
+        },
+        {
+          "text": "I've missed talking to you.",
+          "displayHtml": "I've missed talking to you.",
+          "audio": "/songs/Always%20Daniel%20Caesar/conversation-audio/c7834113fb0b0684/1-1.mp3"
+        }
+      ],
+      "japanese": "連絡してくれてうれしい。あなたと話せなくて寂しかった。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "David",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "I still care about you, but I think we both need time and space.",
+          "displayHtml": "I still care about you, but I think we both need <span class=\"lyric-phrase\">time and space</span>.",
+          "audio": "/songs/Always%20Daniel%20Caesar/conversation-audio/c7834113fb0b0684/2-0.mp3"
+        }
+      ],
+      "japanese": "今も君を大切に思ってる。でも、お互いに時間と距離が必要だと思う。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Emma",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "I know.",
+          "displayHtml": "I know.",
+          "audio": "/songs/Always%20Daniel%20Caesar/conversation-audio/c7834113fb0b0684/3-0.mp3"
+        },
+        {
+          "text": "I can't promise things will stay the same.",
+          "displayHtml": "I can't promise things will <span class=\"lyric-phrase\">stay the same</span>.",
+          "audio": "/songs/Always%20Daniel%20Caesar/conversation-audio/c7834113fb0b0684/3-1.mp3"
+        }
+      ],
+      "japanese": "わかってる。ずっと同じでいられるとは約束できないけど。"
+    },
+    {
+      "speaker": "A",
+      "speakerName": "David",
+      "speakerType": "男性",
+      "sentences": [
+        {
+          "text": "Maybe one day we'll look back and laugh about how awkward this is.",
+          "displayHtml": "Maybe one day we'll <span class=\"lyric-phrase\">look back and laugh</span> about how awkward this is.",
+          "audio": "/songs/Always%20Daniel%20Caesar/conversation-audio/c7834113fb0b0684/4-0.mp3"
+        }
+      ],
+      "japanese": "いつか、こんなにぎこちなかったことを振り返って笑えるかもしれないね。"
+    },
+    {
+      "speaker": "B",
+      "speakerName": "Emma",
+      "speakerType": "女性",
+      "sentences": [
+        {
+          "text": "I hope so.",
+          "displayHtml": "I hope so.",
+          "audio": "/songs/Always%20Daniel%20Caesar/conversation-audio/c7834113fb0b0684/5-0.mp3"
+        },
+        {
+          "text": "For now, let's just take things slowly.",
+          "displayHtml": "For now, let's just take things slowly.",
+          "audio": "/songs/Always%20Daniel%20Caesar/conversation-audio/c7834113fb0b0684/5-1.mp3"
+        }
+      ],
+      "japanese": "そうだといいな。今は、焦らずゆっくりいこう。"
+    }
+  ],
+  "conversationAudioStatus": "ready",
+  "conversationAudioProvider": "elevenlabs",
+  "lyricsStatus": "user-provided",
+  "sourceUrl": "https://www.youtube.com/watch?v=1BTbVMYt8d0",
+  "learningSummaryJa": "別れた相手への思いが消えず、時間や距離を置いても、いつかまたつながれることを願う曲。",
+  "createdAt": "2026-11-17T11:52:07.921Z",
+  "conversationAudioModel": "eleven_v4",
+  "conversationAudioUpdatedAt": "2026-11-17T11:52:55.347Z"
+}

@@ -1,0 +1,14 @@
+{
+  "videoId": "1BTbVMYt8d0",
+  "url": "https://www.youtube.com/watch?v=1BTbVMYt8d0",
+  "title": "【和訳】Always -Daniel Ceasar-",
+  "uploader": "ladybird channel",
+  "downloadedAt": "2026-11-17T11:52:07.936Z",
+  "lyricsStatus": "user-provided",
+  "lyricTimingStatus": "sourced",
+  "conversationAudioProvider": "elevenlabs",
+  "notesJa": "提供された動画の音源。歌詞はチャットで提供された本文を整形し、日本語訳と学習用会話を新規作成。",
+  "lyricTimingSource": "https://lrclib.net/api/get/2158235",
+  "conversationAudioModel": "eleven_v4",
+  "conversationAudioUpdatedAt": "2026-11-17T11:52:55.347Z"
+}
