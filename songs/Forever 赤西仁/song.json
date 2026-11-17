@@ -4,7 +4,7 @@
   "songName": "Forever",
   "artist": "赤西仁",
   "relationship": "恋人",
-  "setting": "A romantic evening at a quiet spot overlooking the city lights.",
+  "setting": "While folding laundry at home, a couple discusses a three-month work assignment that would mean living apart.",
   "speakerA": {
     "name": "James",
     "type": "男性",
@@ -255,17 +255,17 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "The view is beautiful, but it's nothing compared to you.",
-          "displayHtml": "The view is beautiful, but it's nothing compared to you.",
-          "audio": "/songs/Forever%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/b105494254edceaf/0-0.mp3"
+          "text": "They offered me the three-month assignment.",
+          "displayHtml": "They offered me the three-month assignment.",
+          "audio": "/songs/Forever%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/c321aa24c800ed89/0-0.mp3"
         },
         {
-          "text": "You're actually taking my breath away right now.",
-          "displayHtml": "You're actually <span class=\"lyric-phrase\">taking my breath away</span> right now.",
-          "audio": "/songs/Forever%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/b105494254edceaf/0-1.mp3"
+          "text": "I haven't said yes because I don't want to leave you here.",
+          "displayHtml": "I haven't said yes because I don't want to leave you here.",
+          "audio": "/songs/Forever%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/c321aa24c800ed89/0-1.mp3"
         }
       ],
-      "japanese": "夜景も綺麗だけど、君の美しさにはかなわないよ。今の君は、本当に息を呑むほど綺麗だ。"
+      "japanese": "あの3か月の出張、正式に話が来たんだ。君をここに残したくなくて、まだ返事してない。"
     },
     {
       "speaker": "B",
@@ -273,17 +273,17 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "Stop it, you're making me blush!",
-          "displayHtml": "Stop it, you're making me blush!",
-          "audio": "/songs/Forever%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/b105494254edceaf/1-0.mp3"
+          "text": "You've wanted this for years.",
+          "displayHtml": "You've wanted this for years.",
+          "audio": "/songs/Forever%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/c321aa24c800ed89/1-0.mp3"
         },
         {
-          "text": "I'm just happy to be next to you.",
-          "displayHtml": "I'm just happy to be <span class=\"lyric-word\">next to you</span>.",
-          "audio": "/songs/Forever%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/b105494254edceaf/1-1.mp3"
+          "text": "No matter what you decide, I want it to be your choice.",
+          "displayHtml": "<span class=\"lyric-phrase\">No matter what</span> you decide, I want it to be your choice.",
+          "audio": "/songs/Forever%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/c321aa24c800ed89/1-1.mp3"
         }
       ],
-      "japanese": "もう、照れちゃうじゃない！私はただ、あなたの隣にいられるだけで幸せよ。"
+      "japanese": "何年もやりたがってた仕事でしょ。どう決めるにしても、自分の気持ちで選んでほしい。"
     },
     {
       "speaker": "A",
@@ -291,17 +291,12 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "I mean it.",
-          "displayHtml": "I mean it.",
-          "audio": "/songs/Forever%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/b105494254edceaf/2-0.mp3"
-        },
-        {
-          "text": "No matter what happens, I want you to know that I will always be there for you.",
-          "displayHtml": "<span class=\"lyric-phrase\">No matter what happens</span>, I want you to know that <span class=\"lyric-phrase\">I will always be there</span> for you.",
-          "audio": "/songs/Forever%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/b105494254edceaf/2-1.mp3"
+          "text": "What if the time difference makes it harder than we think?",
+          "displayHtml": "What if the time difference makes it harder than we think?",
+          "audio": "/songs/Forever%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/c321aa24c800ed89/2-0.mp3"
         }
       ],
-      "japanese": "本気だよ。これから何があっても、僕がずっと君のそばにいるってことを知っておいてほしいんだ。"
+      "japanese": "時差のせいで、思った以上に大変になったら？"
     },
     {
       "speaker": "B",
@@ -309,17 +304,17 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "I know you will.",
-          "displayHtml": "I know you will.",
-          "audio": "/songs/Forever%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/b105494254edceaf/3-0.mp3"
+          "text": "Then we'll figure it out.",
+          "displayHtml": "Then we'll figure it out.",
+          "audio": "/songs/Forever%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/c321aa24c800ed89/3-0.mp3"
         },
         {
-          "text": "You've always been the one to hold me whenever I'm feeling low.",
-          "displayHtml": "You've always been the one to <span class=\"lyric-phrase\">hold me</span> whenever I'm <span class=\"lyric-word\">feeling</span> low.",
-          "audio": "/songs/Forever%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/b105494254edceaf/3-1.mp3"
+          "text": "I don't care how long it takes to find a routine that works.",
+          "displayHtml": "I don't care <span class=\"lyric-phrase\">how long it takes</span> to find a routine that works.",
+          "audio": "/songs/Forever%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/c321aa24c800ed89/3-1.mp3"
         }
       ],
-      "japanese": "そうね。私が落ち込んでいる時は、いつもあなたが抱きしめて支えてくれたもの。"
+      "japanese": "そのときは一緒に考えよう。二人に合うペースが見つかるまで、時間がかかってもいいよ。"
     },
     {
       "speaker": "A",
@@ -327,17 +322,12 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "I don't care how long it takes or what we face.",
-          "displayHtml": "I don't care <span class=\"lyric-word\">how long it takes</span> or what we face.",
-          "audio": "/songs/Forever%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/b105494254edceaf/4-0.mp3"
-        },
-        {
-          "text": "I just want to keep this joy we have.",
-          "displayHtml": "I just want to keep this <span class=\"lyric-word\">joy</span> we have.",
-          "audio": "/songs/Forever%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/b105494254edceaf/4-1.mp3"
+          "text": "You'll really be okay with this?",
+          "displayHtml": "You'll really be okay with this?",
+          "audio": "/songs/Forever%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/c321aa24c800ed89/4-0.mp3"
         }
       ],
-      "japanese": "どんなに時間がかかっても、何に直面しても構わない。僕たちのこの幸せをずっと守っていきたいんだ。"
+      "japanese": "本当に、それで大丈夫？"
     },
     {
       "speaker": "B",
@@ -345,61 +335,38 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "James, you’re being so serious tonight.",
-          "displayHtml": "James, you’re being so serious tonight.",
-          "audio": "/songs/Forever%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/b105494254edceaf/5-0.mp3"
+          "text": "I'll miss you, obviously.",
+          "displayHtml": "I'll miss you, obviously.",
+          "audio": "/songs/Forever%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/c321aa24c800ed89/5-0.mp3"
         },
         {
-          "text": "What's on your mind?",
-          "displayHtml": "What's on your mind?",
-          "audio": "/songs/Forever%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/b105494254edceaf/5-1.mp3"
+          "text": "But I'll always be there when you need me, even from here.",
+          "displayHtml": "But I'll <span class=\"lyric-phrase\">always be there</span> when you need me, even from here.",
+          "audio": "/songs/Forever%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/c321aa24c800ed89/5-1.mp3"
         }
       ],
-      "japanese": "ジェームズ、今夜はやけに真面目ね。どうしたの？"
-    },
-    {
-      "speaker": "A",
-      "speakerName": "James",
-      "speakerType": "男性",
-      "sentences": [
-        {
-          "text": "Emma, you're the one for me.",
-          "displayHtml": "Emma, you're the one for me.",
-          "audio": "/songs/Forever%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/b105494254edceaf/6-0.mp3"
-        },
-        {
-          "text": "I want you in my life...",
-          "displayHtml": "I want you <span class=\"lyric-phrase\">in my life</span>...",
-          "audio": "/songs/Forever%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/b105494254edceaf/6-1.mp3"
-        },
-        {
-          "text": "will you be my wife?",
-          "displayHtml": "will you <span class=\"lyric-phrase\">be my wife</span>?",
-          "audio": "/songs/Forever%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/b105494254edceaf/6-2.mp3"
-        }
-      ],
-      "japanese": "エマ、僕には君しかいないんだ。これからの人生を一緒に歩んでほしい。結婚してくれるかな？"
-    },
-    {
-      "speaker": "B",
-      "speakerName": "Emma",
-      "speakerType": "女性",
-      "sentences": [
-        {
-          "text": "Oh my god, yes!",
-          "displayHtml": "Oh my god, yes!",
-          "audio": "/songs/Forever%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/b105494254edceaf/7-0.mp3"
-        },
-        {
-          "text": "I want our love to last forever.",
-          "displayHtml": "I want our <span class=\"lyric-word\">love</span> to last <span class=\"lyric-phrase\">forever</span>.",
-          "audio": "/songs/Forever%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/b105494254edceaf/7-1.mp3"
-        }
-      ],
-      "japanese": "なんてこと、もちろんよ！私たちの愛が、永遠に続きますように。"
+      "japanese": "そりゃ寂しいよ。でも、離れていても、必要なときにはいつでも力になるから。"
     }
   ],
   "createdAt": "2026-03-30T16:27:53.082Z",
   "conversationAudioStatus": "ready",
-  "conversationAudioModel": "eleven_v4"
+  "conversationAudioModel": "eleven_v4",
+  "lyricConnections": [
+    {
+      "lyricExpression": "No matter what",
+      "conversationExpression": "No matter what",
+      "explanationJa": "No matter what は『何があっても』。相手がどの選択をしても支える姿勢を伝える。"
+    },
+    {
+      "lyricExpression": "How long it takes",
+      "conversationExpression": "how long it takes",
+      "explanationJa": "how long it takes は『どれだけ時間がかかるか』。ここでは生活の調整に時間がかかっても構わないという意味。"
+    },
+    {
+      "lyricExpression": "always be there",
+      "conversationExpression": "always be there",
+      "explanationJa": "be there は物理的にそこにいるだけでなく『力になる、支える』という意味でも使える。"
+    }
+  ],
+  "dialogueUpdatedAt": "2026-11-17T22:23:03.160Z"
 }

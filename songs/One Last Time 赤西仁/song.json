@@ -3,8 +3,8 @@
   "folderName": "One Last Time 赤西仁",
   "songName": "One Last Time",
   "artist": "赤西仁",
-  "relationship": "恋人",
-  "setting": "A couple is breaking up and one person is moving out of their shared apartment.",
+  "relationship": "元恋人",
+  "setting": "Weeks after their breakup, two former partners meet outside a cafe to return the last box of belongings.",
   "speakerA": {
     "name": "Mark",
     "type": "男性",
@@ -223,17 +223,17 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "I've finally finished packing my bags.",
-          "displayHtml": "I've finally finished <span class=\"lyric-phrase\">packing my bags</span>.",
-          "audio": "/songs/One%20Last%20Time%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/5a16d17af41762b5/0-0.mp3"
+          "text": "Here's the last box.",
+          "displayHtml": "Here's the last box.",
+          "audio": "/songs/One%20Last%20Time%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/97144f1f65132af9/0-0.mp3"
         },
         {
-          "text": "I guess our journey is officially over.",
-          "displayHtml": "I guess our <span class=\"lyric-word\">journey</span> is officially over.",
-          "audio": "/songs/One%20Last%20Time%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/5a16d17af41762b5/0-1.mp3"
+          "text": "I nearly kept the mug you always used.",
+          "displayHtml": "I nearly kept the mug you always used.",
+          "audio": "/songs/One%20Last%20Time%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/97144f1f65132af9/0-1.mp3"
         }
       ],
-      "japanese": "ようやく荷造りが終わったよ。僕たちの旅も、これで本当におしまいだね。"
+      "japanese": "これで荷物は全部だよ。君がいつも使ってたマグカップ、危うく残しておくところだった。"
     },
     {
       "speaker": "B",
@@ -241,17 +241,17 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "I can't believe it's actually happening.",
-          "displayHtml": "I can't believe it's actually happening.",
-          "audio": "/songs/One%20Last%20Time%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/5a16d17af41762b5/1-0.mp3"
+          "text": "Thanks for bringing it.",
+          "displayHtml": "Thanks for bringing it.",
+          "audio": "/songs/One%20Last%20Time%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/97144f1f65132af9/1-0.mp3"
         },
         {
-          "text": "Did you really have to say we were never good enough for each other?",
-          "displayHtml": "Did you really have to say we <span class=\"lyric-phrase\">were never good enough</span> for each other?",
-          "audio": "/songs/One%20Last%20Time%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/5a16d17af41762b5/1-1.mp3"
+          "text": "I wanted to say something one last time, if that's okay.",
+          "displayHtml": "I wanted to say something <span class=\"lyric-phrase\">one last time</span>, if that's okay.",
+          "audio": "/songs/One%20Last%20Time%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/97144f1f65132af9/1-1.mp3"
         }
       ],
-      "japanese": "本当に終わっちゃうなんて信じられない。「お互いにふさわしくなかった」なんて、本気で思ってるの？"
+      "japanese": "持ってきてくれてありがとう。よければ、最後に一つだけ伝えてもいい？"
     },
     {
       "speaker": "A",
@@ -259,17 +259,12 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "Look, I'm just being honest.",
-          "displayHtml": "Look, I'm just being honest.",
-          "audio": "/songs/One%20Last%20Time%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/5a16d17af41762b5/2-0.mp3"
-        },
-        {
-          "text": "You took me for granted for way too long.",
-          "displayHtml": "You <span class=\"lyric-phrase\">took me for granted</span> for way too long.",
-          "audio": "/songs/One%20Last%20Time%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/5a16d17af41762b5/2-1.mp3"
+          "text": "If you're asking to try again, I can't do that.",
+          "displayHtml": "If you're asking to try again, I can't do that.",
+          "audio": "/songs/One%20Last%20Time%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/97144f1f65132af9/2-0.mp3"
         }
       ],
-      "japanese": "正直に言ってるだけだよ。君はあまりに長い間、僕のことをないがしろにしていたから。"
+      "japanese": "やり直そうって話なら、それはできない。"
     },
     {
       "speaker": "B",
@@ -277,17 +272,17 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "Maybe I did, but you put me through hell sometimes, too.",
-          "displayHtml": "Maybe I did, but you <span class=\"lyric-phrase\">put me through hell</span> sometimes, too.",
-          "audio": "/songs/One%20Last%20Time%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/5a16d17af41762b5/3-0.mp3"
+          "text": "I'm not.",
+          "displayHtml": "I'm not.",
+          "audio": "/songs/One%20Last%20Time%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/97144f1f65132af9/3-0.mp3"
         },
         {
-          "text": "It wasn't always easy for me.",
-          "displayHtml": "It wasn't always easy for me.",
-          "audio": "/songs/One%20Last%20Time%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/5a16d17af41762b5/3-1.mp3"
+          "text": "I just know I took you for granted, and I'm sorry.",
+          "displayHtml": "I just know I <span class=\"lyric-phrase\">took you for granted</span>, and I'm sorry.",
+          "audio": "/songs/One%20Last%20Time%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/97144f1f65132af9/3-1.mp3"
         }
       ],
-      "japanese": "そうだったかもしれないけど、あなただって私にひどい思いをさせたじゃない。私だって楽じゃなかったわ。"
+      "japanese": "そうじゃないよ。ただ、あなたがいてくれるのを当たり前に思ってたって、分かったの。ごめんね。"
     },
     {
       "speaker": "A",
@@ -295,17 +290,17 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "I know.",
-          "displayHtml": "I know.",
-          "audio": "/songs/One%20Last%20Time%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/5a16d17af41762b5/4-0.mp3"
+          "text": "I appreciate you saying that.",
+          "displayHtml": "I appreciate you saying that.",
+          "audio": "/songs/One%20Last%20Time%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/97144f1f65132af9/4-0.mp3"
         },
         {
-          "text": "Anyway, just take your time getting the rest of your things.",
-          "displayHtml": "Anyway, just <span class=\"lyric-phrase\">take your time</span> getting the rest of your things.",
-          "audio": "/songs/One%20Last%20Time%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/5a16d17af41762b5/4-1.mp3"
+          "text": "We had some good times back in the day, didn't we?",
+          "displayHtml": "We had some good times <span class=\"lyric-phrase\">back in the day</span>, didn't we?",
+          "audio": "/songs/One%20Last%20Time%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/97144f1f65132af9/4-1.mp3"
         }
       ],
-      "japanese": "分かってる。とにかく、残りの荷物はゆっくり片付けていいから。"
+      "japanese": "そう言ってくれてありがとう。あの頃は楽しいこともあったよね。"
     },
     {
       "speaker": "B",
@@ -313,56 +308,38 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "Thanks.",
-          "displayHtml": "Thanks.",
-          "audio": "/songs/One%20Last%20Time%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/5a16d17af41762b5/5-0.mp3"
+          "text": "We did.",
+          "displayHtml": "We did.",
+          "audio": "/songs/One%20Last%20Time%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/97144f1f65132af9/5-0.mp3"
         },
         {
-          "text": "I'm just waiting at the door for my ride to arrive.",
-          "displayHtml": "I'm just <span class=\"lyric-phrase\">waiting at the door</span> for my ride to arrive.",
-          "audio": "/songs/One%20Last%20Time%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/5a16d17af41762b5/5-1.mp3"
+          "text": "I'm glad we can leave it there without another argument.",
+          "displayHtml": "I'm glad we can leave it there without another argument.",
+          "audio": "/songs/One%20Last%20Time%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/97144f1f65132af9/5-1.mp3"
         }
       ],
-      "japanese": "ありがとう。迎えの車が来るのを、玄関で待ってるわ。"
-    },
-    {
-      "speaker": "A",
-      "speakerName": "Mark",
-      "speakerType": "男性",
-      "sentences": [
-        {
-          "text": "No rush.",
-          "displayHtml": "No rush.",
-          "audio": "/songs/One%20Last%20Time%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/5a16d17af41762b5/6-0.mp3"
-        },
-        {
-          "text": "I'll always remember how things were back in the day.",
-          "displayHtml": "I'll always remember how things were <span class=\"lyric-phrase\">back in the day</span>.",
-          "audio": "/songs/One%20Last%20Time%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/5a16d17af41762b5/6-1.mp3"
-        }
-      ],
-      "japanese": "急がなくていいよ。昔の楽しかった時のことは、ずっと覚えてるから。"
-    },
-    {
-      "speaker": "B",
-      "speakerName": "Chloe",
-      "speakerType": "女性",
-      "sentences": [
-        {
-          "text": "Me too.",
-          "displayHtml": "Me too.",
-          "audio": "/songs/One%20Last%20Time%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/5a16d17af41762b5/7-0.mp3"
-        },
-        {
-          "text": "I really thought we could change things, but I guess it's too late.",
-          "displayHtml": "I really thought we could <span class=\"lyric-word\">change</span> things, but I guess it's too late.",
-          "audio": "/songs/One%20Last%20Time%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/5a16d17af41762b5/7-1.mp3"
-        }
-      ],
-      "japanese": "私もよ。何かを変えられるって信じてたけど、もう手遅れみたいね。"
+      "japanese": "うん、あった。また言い争いにならずに、これで終われてよかった。"
     }
   ],
   "createdAt": "2026-03-30T15:41:28.011Z",
   "conversationAudioStatus": "ready",
-  "conversationAudioModel": "eleven_v4"
+  "conversationAudioModel": "eleven_v4",
+  "lyricConnections": [
+    {
+      "lyricExpression": "one last time",
+      "conversationExpression": "one last time",
+      "explanationJa": "one last time は『最後にもう一度だけ』。ここでは関係を終える前に、伝え残したことを話す。"
+    },
+    {
+      "lyricExpression": "took me for granted",
+      "conversationExpression": "took you for granted",
+      "explanationJa": "take someone for granted は『その人の存在や支えを当たり前だと思う』。話す相手に合わせて me を you に替えている。"
+    },
+    {
+      "lyricExpression": "back in the day",
+      "conversationExpression": "back in the day",
+      "explanationJa": "back in the day は『昔は、あの頃は』。過去の思い出を振り返る口語表現。"
+    }
+  ],
+  "dialogueUpdatedAt": "2026-11-17T22:23:03.177Z"
 }

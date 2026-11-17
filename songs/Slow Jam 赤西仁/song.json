@@ -4,7 +4,7 @@
   "songName": "Slow Jam",
   "artist": "赤西仁",
   "relationship": "恋人",
-  "setting": "After a long workweek, a couple spends a quiet Friday night together at home.",
+  "setting": "A couple's fancy dinner plans fall through, so they cook pasta and dance in their kitchen instead.",
   "speakerA": {
     "name": "Kai",
     "gender": "male",
@@ -205,19 +205,19 @@
   ],
   "lyricConnections": [
     {
-      "lyricExpression": "a night alone",
-      "conversationExpression": "a night alone",
-      "explanationJa": "「二人きりの夜」。have a night alone で、二人だけで過ごせる夜を表す。"
+      "lyricExpression": "all week",
+      "conversationExpression": "all week",
+      "explanationJa": "all week は『一週間ずっと』。ここでは二人の夜をずっと楽しみにしていたことを表す。"
     },
     {
       "lyricExpression": "take our time",
       "conversationExpression": "take our time",
-      "explanationJa": "「急がず時間をかける」。食事や準備など日常の場面にも使える。"
+      "explanationJa": "take our time は『焦らずゆっくりする』。食事や二人の時間を急がず楽しむときに使える。"
     },
     {
       "lyricExpression": "our favorite song",
       "conversationExpression": "our favorite song",
-      "explanationJa": "「私たちのお気に入りの曲」。共通の好みを話すときにも使える。"
+      "explanationJa": "our favorite song は『私たちのお気に入りの曲』。共有している思い出を自然に会話に入れられる。"
     }
   ],
   "conversation": [
@@ -227,15 +227,17 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "We finally have a night alone after working all week.",
-          "audio": "/songs/Slow%20Jam%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/c18b531a8d1be432/0-0.mp3"
+          "text": "The restaurant just canceled our booking.",
+          "displayHtml": "The restaurant just canceled our booking.",
+          "audio": "/songs/Slow%20Jam%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/5528a78c2d7a1cd9/0-0.mp3"
         },
         {
-          "text": "Want to go out?",
-          "audio": "/songs/Slow%20Jam%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/c18b531a8d1be432/0-1.mp3"
+          "text": "I've been looking forward to tonight all week.",
+          "displayHtml": "I've been looking forward to tonight <span class=\"lyric-phrase\">all week</span>.",
+          "audio": "/songs/Slow%20Jam%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/5528a78c2d7a1cd9/0-1.mp3"
         }
       ],
-      "japanese": "一週間ずっと働いて、やっと二人きりの夜だね。出かける？"
+      "japanese": "レストランから、予約を取り消したいって連絡が来た。一週間ずっと今夜を楽しみにしてたのに。"
     },
     {
       "speaker": "B",
@@ -243,15 +245,17 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "Honestly, I'd rather stay in.",
-          "audio": "/songs/Slow%20Jam%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/c18b531a8d1be432/1-0.mp3"
+          "text": "We've got pasta and a bottle of wine.",
+          "displayHtml": "We've got pasta and a bottle of wine.",
+          "audio": "/songs/Slow%20Jam%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/5528a78c2d7a1cd9/1-0.mp3"
         },
         {
-          "text": "I've been looking forward to a quiet evening with you.",
-          "audio": "/songs/Slow%20Jam%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/c18b531a8d1be432/1-1.mp3"
+          "text": "Who says we have to go out?",
+          "displayHtml": "Who says we have to go out?",
+          "audio": "/songs/Slow%20Jam%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/5528a78c2d7a1cd9/1-1.mp3"
         }
       ],
-      "japanese": "正直、家で過ごしたいな。あなたと静かな夜を過ごすのを楽しみにしてたの。"
+      "japanese": "パスタもワインもあるよ。別に出かけなきゃいけないわけじゃないでしょ？"
     },
     {
       "speaker": "A",
@@ -259,15 +263,17 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "That sounds good.",
-          "audio": "/songs/Slow%20Jam%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/c18b531a8d1be432/2-0.mp3"
+          "text": "I wanted to do something special for you.",
+          "displayHtml": "I wanted to do something special for you.",
+          "audio": "/songs/Slow%20Jam%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/5528a78c2d7a1cd9/2-0.mp3"
         },
         {
-          "text": "We can take our time and cook dinner together.",
-          "audio": "/songs/Slow%20Jam%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/c18b531a8d1be432/2-1.mp3"
+          "text": "This wasn't exactly the plan.",
+          "displayHtml": "This wasn't exactly the plan.",
+          "audio": "/songs/Slow%20Jam%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/5528a78c2d7a1cd9/2-1.mp3"
         }
       ],
-      "japanese": "いいね。ゆっくり一緒に夕食を作ろう。"
+      "japanese": "君のために、ちょっと特別なことをしたかったんだ。こういう予定じゃなかったのに。"
     },
     {
       "speaker": "B",
@@ -275,15 +281,17 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "Perfect.",
-          "audio": "/songs/Slow%20Jam%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/c18b531a8d1be432/3-0.mp3"
+          "text": "Then put on our favorite song.",
+          "displayHtml": "Then put on <span class=\"lyric-phrase\">our favorite song</span>.",
+          "audio": "/songs/Slow%20Jam%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/5528a78c2d7a1cd9/3-0.mp3"
         },
         {
-          "text": "Put on our favorite song while I get things ready.",
-          "audio": "/songs/Slow%20Jam%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/c18b531a8d1be432/3-1.mp3"
+          "text": "We can take our time cooking instead of watching the clock.",
+          "displayHtml": "We can <span class=\"lyric-phrase\">take our time</span> cooking instead of watching the clock.",
+          "audio": "/songs/Slow%20Jam%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/5528a78c2d7a1cd9/3-1.mp3"
         }
       ],
-      "japanese": "いいね。準備する間、私たちのお気に入りの曲をかけて。"
+      "japanese": "じゃあ、二人のお気に入りの曲をかけて。時計を気にしないで、ゆっくり料理しようよ。"
     },
     {
       "speaker": "A",
@@ -291,15 +299,12 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "I'll dim the lights.",
-          "audio": "/songs/Slow%20Jam%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/c18b531a8d1be432/4-0.mp3"
-        },
-        {
-          "text": "No need to hurry; we have all night.",
-          "audio": "/songs/Slow%20Jam%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/c18b531a8d1be432/4-1.mp3"
+          "text": "You mean dancing in the kitchen counts as a date?",
+          "displayHtml": "You mean dancing in the kitchen counts as a date?",
+          "audio": "/songs/Slow%20Jam%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/5528a78c2d7a1cd9/4-0.mp3"
         }
       ],
-      "japanese": "明かりを少し落とすよ。急がなくていい、夜はまだ長いから。"
+      "japanese": "つまり、キッチンで踊るのもデートってことでいい？"
     },
     {
       "speaker": "B",
@@ -307,14 +312,16 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "Then come sit next to me for a minute.",
-          "audio": "/songs/Slow%20Jam%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/c18b531a8d1be432/5-0.mp3"
+          "text": "Absolutely, as long as you don't burn the garlic.",
+          "displayHtml": "Absolutely, as long as you don't burn the garlic.",
+          "audio": "/songs/Slow%20Jam%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/5528a78c2d7a1cd9/5-0.mp3"
         }
       ],
-      "japanese": "じゃあ、少し私の隣に座って。"
+      "japanese": "もちろん。ニンニクを焦がさなければね。"
     }
   ],
   "createdAt": "2026-09-29T15:05:56.056Z",
   "conversationAudioStatus": "ready",
-  "conversationAudioModel": "eleven_v4"
+  "conversationAudioModel": "eleven_v4",
+  "dialogueUpdatedAt": "2026-11-17T22:23:03.181Z"
 }

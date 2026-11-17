@@ -4,7 +4,7 @@
   "songName": "Body Talk",
   "artist": "赤西仁",
   "relationship": "恋人",
-  "setting": "After an awkward text exchange, a couple finally talks face to face at home.",
+  "setting": "After months of long-distance calls, a couple reunites at a station and struggles to put the moment into words.",
   "speakerA": {
     "name": "Noah",
     "gender": "male",
@@ -303,18 +303,18 @@
   "lyricConnections": [
     {
       "lyricExpression": "Face to face",
-      "conversationExpression": "talk face to face",
-      "explanationJa": "「直接会って」。メッセージでは伝わりにくい話をするときに使える。"
+      "conversationExpression": "face to face",
+      "explanationJa": "face to face は『直接会って』。画面越しだった二人がようやく会えた場面に使う。"
     },
     {
-      "lyricExpression": "can't find any other words",
-      "conversationExpression": "couldn't find the words",
-      "explanationJa": "「言葉が見つからない」。気持ちをうまく表現できないときに使える。"
+      "lyricExpression": "time after time",
+      "conversationExpression": "time after time",
+      "explanationJa": "time after time は『何度も繰り返し』。ここでは再会の瞬間を何度も想像したことを表す。"
     },
     {
-      "lyricExpression": "Over and over",
-      "conversationExpression": "over and over",
-      "explanationJa": "「何度も繰り返して」。同じことを何度もしたときに使える。"
+      "lyricExpression": "hold you tight",
+      "conversationExpression": "hold you tight",
+      "explanationJa": "hold you tight は『ぎゅっと抱きしめる』。言葉にならない親しさを動作で伝える表現。"
     }
   ],
   "conversation": [
@@ -324,15 +324,17 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "Can we talk face to face for a minute?",
-          "audio": "/songs/Body%20Talk%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/0d94cbee4371795f/0-0.mp3"
+          "text": "There you are.",
+          "displayHtml": "There you are.",
+          "audio": "/songs/Body%20Talk%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/860e3e19c0988e0f/0-0.mp3"
         },
         {
-          "text": "I don't want another message to come across the wrong way.",
-          "audio": "/songs/Body%20Talk%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/0d94cbee4371795f/0-1.mp3"
+          "text": "It's strange seeing you face to face after all those video calls.",
+          "displayHtml": "It's strange seeing you <span class=\"lyric-phrase\">face to face</span> after all those video calls.",
+          "audio": "/songs/Body%20Talk%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/860e3e19c0988e0f/0-1.mp3"
         }
       ],
-      "japanese": "少し直接話せる？　またメッセージで誤解されたくないんだ。"
+      "japanese": "いた。あれだけビデオ通話してたのに、こうして直接会うと不思議な感じだね。"
     },
     {
       "speaker": "B",
@@ -340,11 +342,17 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "Yeah. When you went quiet earlier, I thought you were upset with me.",
-          "audio": "/songs/Body%20Talk%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/0d94cbee4371795f/1-0.mp3"
+          "text": "Strange in a bad way?",
+          "displayHtml": "Strange in a bad way?",
+          "audio": "/songs/Body%20Talk%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/860e3e19c0988e0f/1-0.mp3"
+        },
+        {
+          "text": "You've barely said anything since I got off the train.",
+          "displayHtml": "You've barely said anything since I got off the train.",
+          "audio": "/songs/Body%20Talk%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/860e3e19c0988e0f/1-1.mp3"
         }
       ],
-      "japanese": "うん。さっき急に黙ったから、私に怒っているのかと思った。"
+      "japanese": "それ、悪い意味で？ 私が電車を降りてから、ほとんど何も話してないよ。"
     },
     {
       "speaker": "A",
@@ -352,15 +360,17 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "I wasn't upset.",
-          "audio": "/songs/Body%20Talk%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/0d94cbee4371795f/2-0.mp3"
+          "text": "No, I've imagined this time after time.",
+          "displayHtml": "No, I've imagined this <span class=\"lyric-phrase\">time after time</span>.",
+          "audio": "/songs/Body%20Talk%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/860e3e19c0988e0f/2-0.mp3"
         },
         {
-          "text": "I kept typing and deleting because I couldn't find the words.",
-          "audio": "/songs/Body%20Talk%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/0d94cbee4371795f/2-1.mp3"
+          "text": "Now you're actually here, and my mind's gone blank.",
+          "displayHtml": "Now you're actually here, and my mind's gone blank.",
+          "audio": "/songs/Body%20Talk%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/860e3e19c0988e0f/2-1.mp3"
         }
       ],
-      "japanese": "怒っていたわけじゃない。何て言えばいいかわからなくて、打っては消していたんだ。"
+      "japanese": "違うよ。この瞬間を何度も想像したんだ。なのに本当に君が来たら、頭が真っ白になっちゃって。"
     },
     {
       "speaker": "B",
@@ -368,15 +378,17 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "Then don't worry about saying it perfectly.",
-          "audio": "/songs/Body%20Talk%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/0d94cbee4371795f/3-0.mp3"
+          "text": "Mine too.",
+          "displayHtml": "Mine too.",
+          "audio": "/songs/Body%20Talk%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/860e3e19c0988e0f/3-0.mp3"
         },
         {
-          "text": "Just tell me what was on your mind.",
-          "audio": "/songs/Body%20Talk%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/0d94cbee4371795f/3-1.mp3"
+          "text": "I had a whole speech ready, but now I just want to get closer.",
+          "displayHtml": "I had a whole speech ready, but now I just want to get closer.",
+          "audio": "/songs/Body%20Talk%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/860e3e19c0988e0f/3-1.mp3"
         }
       ],
-      "japanese": "それなら、完璧に言おうとしなくていいよ。思っていたことをそのまま聞かせて。"
+      "japanese": "私も。話すことをいっぱい考えてたのに、今はただそばに行きたい。"
     },
     {
       "speaker": "A",
@@ -384,15 +396,17 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "I missed you.",
-          "audio": "/songs/Body%20Talk%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/0d94cbee4371795f/4-0.mp3"
+          "text": "Come here, then.",
+          "displayHtml": "Come here, then.",
+          "audio": "/songs/Body%20Talk%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/860e3e19c0988e0f/4-0.mp3"
         },
         {
-          "text": "I know I've said it over and over, but I really mean it.",
-          "audio": "/songs/Body%20Talk%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/0d94cbee4371795f/4-1.mp3"
+          "text": "Let me hold you tight before we go anywhere.",
+          "displayHtml": "Let me <span class=\"lyric-phrase\">hold you tight</span> before we go anywhere.",
+          "audio": "/songs/Body%20Talk%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/860e3e19c0988e0f/4-1.mp3"
         }
       ],
-      "japanese": "会いたかった。何度も言っているけど、本当にそう思ってる。"
+      "japanese": "じゃあ、おいで。どこかへ行く前に、ぎゅっと抱きしめさせて。"
     },
     {
       "speaker": "B",
@@ -400,14 +414,21 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "I missed you too. Come sit with me.",
-          "audio": "/songs/Body%20Talk%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/0d94cbee4371795f/5-0.mp3"
+          "text": "There we go.",
+          "displayHtml": "There we go.",
+          "audio": "/songs/Body%20Talk%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/860e3e19c0988e0f/5-0.mp3"
+        },
+        {
+          "text": "That's what I've been missing.",
+          "displayHtml": "That's what I've been missing.",
+          "audio": "/songs/Body%20Talk%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/860e3e19c0988e0f/5-1.mp3"
         }
       ],
-      "japanese": "私も会いたかった。こっちに来て、隣に座って。"
+      "japanese": "うん、これ。ずっとこうしたかった。"
     }
   ],
   "createdAt": "2026-10-02T14:07:46.213Z",
   "conversationAudioStatus": "ready",
-  "conversationAudioModel": "eleven_v4"
+  "conversationAudioModel": "eleven_v4",
+  "dialogueUpdatedAt": "2026-11-17T22:23:03.150Z"
 }

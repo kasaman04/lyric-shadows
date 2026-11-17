@@ -3,8 +3,8 @@
   "folderName": "Baby Girl Jin Akanishi",
   "songName": "Baby Girl",
   "artist": "Jin Akanishi",
-  "relationship": "友達",
-  "setting": "Two friends step outside a party after spending the evening together.",
+  "relationship": "付き合う前の二人",
+  "setting": "At their first dance class together, two friends admit they have been looking forward to more than just the lesson.",
   "speakerA": {
     "name": "Leo",
     "gender": "male",
@@ -206,19 +206,19 @@
   ],
   "lyricConnections": [
     {
-      "lyricExpression": "No need to rush",
-      "conversationExpression": "No need to rush",
-      "explanationJa": "「急ぐ必要はない」。相手を安心させるときにも使える。"
-    },
-    {
       "lyricExpression": "take a chance",
       "conversationExpression": "take a chance",
-      "explanationJa": "「思い切ってやってみる」。結果が分からなくても一歩踏み出す表現。"
+      "explanationJa": "take a chance は、うまくいくか分からなくても思い切って挑戦すること。ここでは二人でダンスを試す。"
     },
     {
-      "lyricExpression": "take your time",
-      "conversationExpression": "take our time",
-      "explanationJa": "「時間をかけてゆっくりする」。相手に合わせて your を our に替えられる。"
+      "lyricExpression": "No need to rush",
+      "conversationExpression": "No need to rush",
+      "explanationJa": "No need to rush は『急がなくていい』。緊張している相手を安心させる言い方。"
+    },
+    {
+      "lyricExpression": "next to you",
+      "conversationExpression": "next to you",
+      "explanationJa": "next to you は『あなたの隣に』。歌と同じく、相手のそばにいる心地よさを伝える。"
     }
   ],
   "conversation": [
@@ -228,17 +228,17 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "I had a really good time with you tonight.",
-          "displayHtml": "I had a really good time with you tonight.",
-          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/d5c29704656c282e/0-0.mp3"
+          "text": "I should warn you, I've got two left feet.",
+          "displayHtml": "I should warn you, I've got two left feet.",
+          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/2cfb4b87f4827d28/0-0.mp3"
         },
         {
-          "text": "No need to rush back inside.",
-          "displayHtml": "<span class=\"lyric-phrase\">No need to rush</span> back inside.",
-          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/d5c29704656c282e/0-1.mp3"
+          "text": "You might regret asking me to come.",
+          "displayHtml": "You might regret asking me to come.",
+          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/2cfb4b87f4827d28/0-1.mp3"
         }
       ],
-      "japanese": "今夜は君といてすごく楽しかった。急いで中に戻らなくていいよ。"
+      "japanese": "先に言っておくけど、僕、ダンスはからっきしだよ。誘ったのを後悔するかも。"
     },
     {
       "speaker": "B",
@@ -246,17 +246,17 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "Thanks.",
-          "displayHtml": "Thanks.",
-          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/d5c29704656c282e/1-0.mp3"
+          "text": "Then we'll be terrible together.",
+          "displayHtml": "Then we'll be terrible together.",
+          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/2cfb4b87f4827d28/1-0.mp3"
         },
         {
-          "text": "I was actually hoping we could stay out here for a minute.",
-          "displayHtml": "I was actually hoping we could stay out here for a minute.",
-          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/d5c29704656c282e/1-1.mp3"
+          "text": "I figured we could take a chance on something new.",
+          "displayHtml": "I figured we could <span class=\"lyric-phrase\">take a chance</span> on something new.",
+          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/2cfb4b87f4827d28/1-1.mp3"
         }
       ],
-      "japanese": "ありがとう。実は、もう少しここにいたいと思ってたの。"
+      "japanese": "じゃあ、二人で下手なまま楽しもう。何か新しいことを思い切ってやってみたくて。"
     },
     {
       "speaker": "A",
@@ -264,17 +264,17 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "Good, because I wanted to ask you something.",
-          "displayHtml": "Good, because I wanted to ask you something.",
-          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/d5c29704656c282e/2-0.mp3"
+          "text": "Okay, but everyone else already knows the steps.",
+          "displayHtml": "Okay, but everyone else already knows the steps.",
+          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/2cfb4b87f4827d28/2-0.mp3"
         },
         {
-          "text": "Could we take a chance and go out together this weekend?",
-          "displayHtml": "Could we <span class=\"lyric-phrase\">take a chance</span> and go out together this weekend?",
-          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/d5c29704656c282e/2-1.mp3"
+          "text": "Which way are we going?",
+          "displayHtml": "Which way are we going?",
+          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/2cfb4b87f4827d28/2-1.mp3"
         }
       ],
-      "japanese": "よかった、聞きたいことがあったんだ。思い切って、今週末に二人で出かけてみない？"
+      "japanese": "分かった。でも、ほかの人はもうステップを知ってるよ。どっちに動くの？"
     },
     {
       "speaker": "B",
@@ -282,17 +282,17 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "I was wondering if you would ask.",
-          "displayHtml": "I was wondering if you would ask.",
-          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/d5c29704656c282e/3-0.mp3"
+          "text": "No need to rush.",
+          "displayHtml": "<span class=\"lyric-phrase\">No need to rush</span>.",
+          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/2cfb4b87f4827d28/3-0.mp3"
         },
         {
-          "text": "Yes, I would like that.",
-          "displayHtml": "Yes, I would like that.",
-          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/d5c29704656c282e/3-1.mp3"
+          "text": "Here, take my hand and just follow me.",
+          "displayHtml": "Here, take my hand and just follow me.",
+          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/2cfb4b87f4827d28/3-1.mp3"
         }
       ],
-      "japanese": "聞いてくれないかなって思ってた。うん、ぜひ。"
+      "japanese": "急がなくていいよ。ほら、手を取って、私についてきて。"
     },
     {
       "speaker": "A",
@@ -300,17 +300,12 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "Great.",
-          "displayHtml": "Great.",
-          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/d5c29704656c282e/4-0.mp3"
-        },
-        {
-          "text": "We can take our time choosing a place tomorrow.",
-          "displayHtml": "We can <span class=\"lyric-phrase\">take our time</span> choosing a place tomorrow.",
-          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/d5c29704656c282e/4-1.mp3"
+          "text": "Actually, being next to you makes this a lot less embarrassing.",
+          "displayHtml": "Actually, being <span class=\"lyric-phrase\">next to you</span> makes this a lot less embarrassing.",
+          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/2cfb4b87f4827d28/4-0.mp3"
         }
       ],
-      "japanese": "よかった。行く場所は明日ゆっくり決めよう。"
+      "japanese": "君の隣にいると、思ったほど恥ずかしくないな。"
     },
     {
       "speaker": "B",
@@ -318,20 +313,16 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "Sounds good.",
-          "displayHtml": "Sounds good.",
-          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/d5c29704656c282e/5-0.mp3"
-        },
-        {
-          "text": "For now, let us just enjoy the quiet.",
-          "displayHtml": "For now, let us just enjoy the quiet.",
-          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/d5c29704656c282e/5-1.mp3"
+          "text": "Good, because I was hoping this could become our Friday thing.",
+          "displayHtml": "Good, because I was hoping this could become our Friday thing.",
+          "audio": "/songs/Baby%20Girl%20Jin%20Akanishi/conversation-audio/2cfb4b87f4827d28/5-0.mp3"
         }
       ],
-      "japanese": "いいね。今はこの静かな時間を楽しもう。"
+      "japanese": "よかった。これから金曜は二人で通えたらいいなって思ってたんだ。"
     }
   ],
   "createdAt": "2026-09-26T02:47:12.459Z",
   "conversationAudioStatus": "ready",
-  "conversationAudioModel": "eleven_v4"
+  "conversationAudioModel": "eleven_v4",
+  "dialogueUpdatedAt": "2026-11-17T22:23:03.143Z"
 }

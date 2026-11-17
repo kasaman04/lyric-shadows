@@ -4,7 +4,7 @@
   "songName": "Yesterday",
   "artist": "赤西仁",
   "relationship": "付き合う前の二人",
-  "setting": "The day after a party, Leo meets Nina to say what he could not say yesterday.",
+  "setting": "The morning after turning down a weekend trip with someone he likes, Leo calls Nina to admit he got nervous.",
   "speakerA": {
     "name": "Leo",
     "gender": "male",
@@ -287,19 +287,19 @@
   ],
   "lyricConnections": [
     {
-      "lyricExpression": "off my mind",
-      "conversationExpression": "couldn't get you off my mind",
-      "explanationJa": "「頭から離れない」。相手や出来事をずっと考えてしまうときに使う。"
+      "lyricExpression": "come back to haunt me",
+      "conversationExpression": "come back to haunt me",
+      "explanationJa": "come back to haunt someone は『過去の判断が後で悩みの種になる』。ここでは断ったことを後悔しそうだと話す。"
     },
     {
-      "lyricExpression": "Shoulda told you yesterday",
-      "conversationExpression": "I should have told you yesterday",
-      "explanationJa": "「昨日伝えるべきだった」。should have＋過去分詞で過去の後悔を表す。"
+      "lyricExpression": "get you, get you, off my",
+      "conversationExpression": "get you off my mind",
+      "explanationJa": "歌では get you と mind の間に反復が入る。get someone off one's mind で『その人のことを考えるのをやめる』というまとまりになる。"
     },
     {
       "lyricExpression": "live with regrets",
-      "conversationExpression": "I don't want to live with regrets",
-      "explanationJa": "「後悔を抱えて生きる」。後悔を避けて行動したい気持ちを伝える。"
+      "conversationExpression": "live with regrets",
+      "explanationJa": "live with regrets は『後悔を抱えて生きる』。ここでは勇気を出して誘い直す理由を伝える。"
     }
   ],
   "conversation": [
@@ -309,11 +309,17 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "I wanted to tell you something yesterday, but I lost my nerve.",
-          "audio": "/songs/Yesterday%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/ad109c96f3bd585b/0-0.mp3"
+          "text": "Is that spare seat still available for Saturday?",
+          "displayHtml": "Is that spare seat still available for Saturday?",
+          "audio": "/songs/Yesterday%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/fe30f44f9462c458/0-0.mp3"
+        },
+        {
+          "text": "I think saying no is going to come back to haunt me.",
+          "displayHtml": "I think saying no is going to <span class=\"lyric-phrase\">come back to haunt me</span>.",
+          "audio": "/songs/Yesterday%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/fe30f44f9462c458/0-1.mp3"
         }
       ],
-      "japanese": "昨日、君に伝えたいことがあったんだけど、勇気が出なかった。"
+      "japanese": "土曜日の車、まだ一人乗れる？ 断ったこと、あとで後悔しそうで。"
     },
     {
       "speaker": "B",
@@ -321,11 +327,17 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "You looked distracted. I thought something was wrong.",
-          "audio": "/songs/Yesterday%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/ad109c96f3bd585b/1-0.mp3"
+          "text": "It is, but I thought you had plans.",
+          "displayHtml": "It is, but I thought you had plans.",
+          "audio": "/songs/Yesterday%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/fe30f44f9462c458/1-0.mp3"
+        },
+        {
+          "text": "What changed?",
+          "displayHtml": "What changed?",
+          "audio": "/songs/Yesterday%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/fe30f44f9462c458/1-1.mp3"
         }
       ],
-      "japanese": "なんだか上の空だったね。何かあったのかと思った。"
+      "japanese": "乗れるよ。でも予定があるって言ってなかった？ どうしたの？"
     },
     {
       "speaker": "A",
@@ -333,11 +345,17 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "Nothing was wrong. I just couldn't get you off my mind after I got home.",
-          "audio": "/songs/Yesterday%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/ad109c96f3bd585b/2-0.mp3"
+          "text": "Honestly, I got nervous about spending the whole weekend with you.",
+          "displayHtml": "Honestly, I got nervous about spending the whole weekend with you.",
+          "audio": "/songs/Yesterday%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/fe30f44f9462c458/2-0.mp3"
+        },
+        {
+          "text": "Then I couldn't get you off my mind.",
+          "displayHtml": "Then I couldn't <span class=\"lyric-phrase\">get you off my mind</span>.",
+          "audio": "/songs/Yesterday%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/fe30f44f9462c458/2-1.mp3"
         }
       ],
-      "japanese": "何かあったわけじゃない。家に帰ってからも君のことが頭から離れなかったんだ。"
+      "japanese": "正直、週末ずっと君と一緒だと思ったら緊張しちゃって。それから君のことが頭から離れなくなった。"
     },
     {
       "speaker": "B",
@@ -345,11 +363,17 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "Really? I had no idea.",
-          "audio": "/songs/Yesterday%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/ad109c96f3bd585b/3-0.mp3"
+          "text": "You could've just said that.",
+          "displayHtml": "You could've just said that.",
+          "audio": "/songs/Yesterday%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/fe30f44f9462c458/3-0.mp3"
+        },
+        {
+          "text": "I was nervous about asking you, too.",
+          "displayHtml": "I was nervous about asking you, too.",
+          "audio": "/songs/Yesterday%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/fe30f44f9462c458/3-1.mp3"
         }
       ],
-      "japanese": "本当に？　全然気づかなかった。"
+      "japanese": "そう言ってくれればよかったのに。私も誘うの、緊張したんだよ。"
     },
     {
       "speaker": "A",
@@ -357,11 +381,17 @@
       "speakerType": "男性",
       "sentences": [
         {
-          "text": "I like you. I should have told you yesterday. I don't want to live with regrets.",
-          "audio": "/songs/Yesterday%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/ad109c96f3bd585b/4-0.mp3"
+          "text": "Well, I don't want to live with regrets.",
+          "displayHtml": "Well, I don't want to <span class=\"lyric-phrase\">live with regrets</span>.",
+          "audio": "/songs/Yesterday%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/fe30f44f9462c458/4-0.mp3"
+        },
+        {
+          "text": "Can I take you for coffee before we go?",
+          "displayHtml": "Can I take you for coffee before we go?",
+          "audio": "/songs/Yesterday%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/fe30f44f9462c458/4-1.mp3"
         }
       ],
-      "japanese": "君が好きだ。昨日伝えるべきだった。後悔したくないんだ。"
+      "japanese": "もう後悔したくないんだ。出発前に、二人でコーヒーを飲みに行かない？"
     },
     {
       "speaker": "B",
@@ -369,14 +399,21 @@
       "speakerType": "女性",
       "sentences": [
         {
-          "text": "I'm glad you told me today. I like you too.",
-          "audio": "/songs/Yesterday%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/ad109c96f3bd585b/5-0.mp3"
+          "text": "Yeah, I'd like that.",
+          "displayHtml": "Yeah, I'd like that.",
+          "audio": "/songs/Yesterday%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/fe30f44f9462c458/5-0.mp3"
+        },
+        {
+          "text": "This time, don't talk yourself out of it.",
+          "displayHtml": "This time, don't talk yourself out of it.",
+          "audio": "/songs/Yesterday%20%E8%B5%A4%E8%A5%BF%E4%BB%81/conversation-audio/fe30f44f9462c458/5-1.mp3"
         }
       ],
-      "japanese": "今日伝えてくれてうれしい。私もあなたが好き。"
+      "japanese": "うん、行きたい。今度はあれこれ考えてやめちゃわないでね。"
     }
   ],
   "createdAt": "2026-10-14T01:43:02.765Z",
   "conversationAudioStatus": "ready",
-  "conversationAudioModel": "eleven_v4"
+  "conversationAudioModel": "eleven_v4",
+  "dialogueUpdatedAt": "2026-11-17T22:23:03.192Z"
 }
