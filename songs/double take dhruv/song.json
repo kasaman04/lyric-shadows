@@ -264,8 +264,8 @@
     "type": "男性",
     "voice": "bIHbv24MWmeRgasZH58o",
     "voiceName": "Will",
-    "audioProvider": "microsoft-edge-tts",
-    "audioVoice": "en-US-GuyNeural"
+    "audioProvider": "elevenlabs",
+    "audioVoice": "bIHbv24MWmeRgasZH58o"
   },
   "speakerB": {
     "name": "Noah",
@@ -277,8 +277,8 @@
     "type": "男性",
     "voice": "UgBBYS2sOqTuMpoF3BR0",
     "voiceName": "Mark",
-    "audioProvider": "microsoft-edge-tts",
-    "audioVoice": "en-US-ChristopherNeural"
+    "audioProvider": "elevenlabs",
+    "audioVoice": "UgBBYS2sOqTuMpoF3BR0"
   },
   "conversation": [
     {
@@ -289,7 +289,7 @@
         {
           "text": "I could say tonight felt like any other night, but that would be far from the truth.",
           "displayHtml": "<span class=\"lyric-phrase\">I could say</span> tonight felt like any other night, but that would be <span class=\"lyric-phrase\">far from the truth</span>.",
-          "audio": "/songs/double%20take%20dhruv/conversation-audio/edge-v1/0-0.mp3"
+          "audio": "/songs/double%20take%20dhruv/conversation-audio/6cdc106f644d02c4/0-0.mp3"
         }
       ],
       "japanese": "今夜もいつもどおりだったと言うこともできるけど、本当は全然違うんだ。"
@@ -302,12 +302,12 @@
         {
           "text": "Different how?",
           "displayHtml": "Different how?",
-          "audio": "/songs/double%20take%20dhruv/conversation-audio/edge-v1/1-0.mp3"
+          "audio": "/songs/double%20take%20dhruv/conversation-audio/6cdc106f644d02c4/1-0.mp3"
         },
         {
           "text": "We hang out all the time.",
           "displayHtml": "We hang out all the time.",
-          "audio": "/songs/double%20take%20dhruv/conversation-audio/edge-v1/1-1.mp3"
+          "audio": "/songs/double%20take%20dhruv/conversation-audio/6cdc106f644d02c4/1-1.mp3"
         }
       ],
       "japanese": "どう変わったの？ いつも一緒にいるじゃん。"
@@ -320,7 +320,7 @@
         {
           "text": "I keep imagining us together, even on ordinary Sunday mornings.",
           "displayHtml": "I keep imagining us together, even on ordinary Sunday mornings.",
-          "audio": "/songs/double%20take%20dhruv/conversation-audio/edge-v1/2-0.mp3"
+          "audio": "/songs/double%20take%20dhruv/conversation-audio/6cdc106f644d02c4/2-0.mp3"
         }
       ],
       "japanese": "何でもない日曜の朝でさえ、君と一緒にいるところを想像してしまうんだ。"
@@ -333,7 +333,7 @@
         {
           "text": "I've been hoping you would say that.",
           "displayHtml": "I've been hoping you would say that.",
-          "audio": "/songs/double%20take%20dhruv/conversation-audio/edge-v1/3-0.mp3"
+          "audio": "/songs/double%20take%20dhruv/conversation-audio/6cdc106f644d02c4/3-0.mp3"
         }
       ],
       "japanese": "そう言ってくれたらいいなって、ずっと思ってた。"
@@ -346,7 +346,7 @@
         {
           "text": "Tell me honestly, do you feel the same way?",
           "displayHtml": "Tell me honestly, <span class=\"lyric-phrase\">do you feel</span> the same way?",
-          "audio": "/songs/double%20take%20dhruv/conversation-audio/edge-v1/4-0.mp3"
+          "audio": "/songs/double%20take%20dhruv/conversation-audio/6cdc106f644d02c4/4-0.mp3"
         }
       ],
       "japanese": "正直に教えて。同じ気持ちでいてくれる？"
@@ -359,12 +359,12 @@
         {
           "text": "I do.",
           "displayHtml": "I do.",
-          "audio": "/songs/double%20take%20dhruv/conversation-audio/edge-v1/5-0.mp3"
+          "audio": "/songs/double%20take%20dhruv/conversation-audio/6cdc106f644d02c4/5-0.mp3"
         },
         {
           "text": "I just didn't want to risk losing my best friend.",
           "displayHtml": "I just didn't want to risk losing my best friend.",
-          "audio": "/songs/double%20take%20dhruv/conversation-audio/edge-v1/5-1.mp3"
+          "audio": "/songs/double%20take%20dhruv/conversation-audio/6cdc106f644d02c4/5-1.mp3"
         }
       ],
       "japanese": "うん。ただ、いちばん大切な友達を失うのが怖かったんだ。"
@@ -392,6 +392,7 @@
   "sourceUrl": "https://www.youtube.com/watch?v=s8FgQTvd2qw",
   "lyricsStatus": "user-provided",
   "learningSummaryJa": "友達として過ごしてきた相手への恋心に気づき、相手も同じ気持ちなのか確かめたいという曲。",
-  "conversationAudioProvider": "microsoft-edge-tts",
-  "conversationAudioNoteJa": "ElevenLabsの残高不足のため、Microsoftの二人の英語音声で作成。"
+  "conversationAudioProvider": "elevenlabs",
+  "conversationAudioModel": "eleven_v4",
+  "conversationAudioUpdatedAt": "2026-11-17T10:32:48.769Z"
 }

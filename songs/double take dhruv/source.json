@@ -6,5 +6,7 @@
   "downloadedAt": "2026-11-07T07:25:47.718Z",
   "lyricsStatus": "user-provided",
   "lyricTimingStatus": "estimated-outro",
-  "notesJa": "提供動画の音源。歌詞はチャットで提供された本文、日本語訳と会話は新規作成。ElevenLabs残高0のため会話音声は代替生成。"
+  "notesJa": "提供動画の音源。歌詞はチャットで提供された本文、日本語訳と会話は新規作成。会話音声はElevenLabs eleven_v4で再生成。",
+  "conversationAudioProvider": "elevenlabs",
+  "conversationAudioUpdatedAt": "2026-11-17T10:32:48.769Z"
 }
