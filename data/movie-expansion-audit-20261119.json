@@ -1,0 +1,205 @@
+{
+  "scenes": 22,
+  "minutes": 49.5,
+  "checks": [
+    {
+      "id": "eternal-lake",
+      "seconds": 120.405,
+      "captions": 43,
+      "lufs": -16.32,
+      "truePeak": -1.93,
+      "shortCues": [],
+      "humanListening": false
+    },
+    {
+      "id": "eternal-falling-apart",
+      "seconds": 118.105,
+      "captions": 33,
+      "lufs": -16.1,
+      "truePeak": -1.65,
+      "shortCues": [],
+      "humanListening": false
+    },
+    {
+      "id": "eternal-hide",
+      "seconds": 58.405,
+      "captions": 23,
+      "lufs": -16.3,
+      "truePeak": -1.97,
+      "shortCues": [],
+      "humanListening": false
+    },
+    {
+      "id": "eternal-childhood",
+      "seconds": 59.805,
+      "captions": 41,
+      "lufs": -16.12,
+      "truePeak": -1.84,
+      "shortCues": [],
+      "humanListening": false
+    },
+    {
+      "id": "eternal-naomi",
+      "seconds": 76.205,
+      "captions": 34,
+      "lufs": -16.39,
+      "truePeak": -1.81,
+      "shortCues": [],
+      "humanListening": false
+    },
+    {
+      "id": "will-bar",
+      "seconds": 201.905,
+      "captions": 91,
+      "lufs": -16.17,
+      "truePeak": -1.92,
+      "shortCues": [],
+      "humanListening": false
+    },
+    {
+      "id": "will-bench",
+      "seconds": 278.105,
+      "captions": 73,
+      "lufs": -16.1,
+      "truePeak": -1.65,
+      "shortCues": [],
+      "humanListening": false
+    },
+    {
+      "id": "will-imperfections",
+      "seconds": 191.205,
+      "captions": 72,
+      "lufs": -16.1,
+      "truePeak": -1.91,
+      "shortCues": [],
+      "humanListening": false
+    },
+    {
+      "id": "will-no-regrets",
+      "seconds": 128.505,
+      "captions": 60,
+      "lufs": -16.04,
+      "truePeak": -1.98,
+      "shortCues": [],
+      "humanListening": false
+    },
+    {
+      "id": "will-best-part",
+      "seconds": 153.605,
+      "captions": 63,
+      "lufs": -16.31,
+      "truePeak": -1.76,
+      "shortCues": [],
+      "humanListening": false
+    },
+    {
+      "id": "will-skylar",
+      "seconds": 137.405,
+      "captions": 52,
+      "lufs": -16.01,
+      "truePeak": -1.85,
+      "shortCues": [],
+      "humanListening": false
+    },
+    {
+      "id": "will-not-your-fault",
+      "seconds": 213.405,
+      "captions": 71,
+      "lufs": -16.19,
+      "truePeak": -1.78,
+      "shortCues": [],
+      "humanListening": false
+    },
+    {
+      "id": "will-phone",
+      "seconds": 58.905,
+      "captions": 32,
+      "lufs": -16.17,
+      "truePeak": -1.95,
+      "shortCues": [],
+      "humanListening": false
+    },
+    {
+      "id": "will-conditions",
+      "seconds": 77.805,
+      "captions": 21,
+      "lufs": -16.28,
+      "truePeak": -1.8,
+      "shortCues": [],
+      "humanListening": false
+    },
+    {
+      "id": "will-painting",
+      "seconds": 195.905,
+      "captions": 83,
+      "lufs": -16.24,
+      "truePeak": -1.82,
+      "shortCues": [],
+      "humanListening": false
+    },
+    {
+      "id": "truman-morning",
+      "seconds": 131.208333,
+      "captions": 51,
+      "lufs": -16.34,
+      "truePeak": -1.9,
+      "shortCues": [],
+      "humanListening": false
+    },
+    {
+      "id": "truman-spontaneous",
+      "seconds": 257.492,
+      "captions": 112,
+      "lufs": -16.21,
+      "truePeak": -3.27,
+      "shortCues": [],
+      "humanListening": false
+    },
+    {
+      "id": "truman-wife",
+      "seconds": 107.208333,
+      "captions": 44,
+      "lufs": -16.04,
+      "truePeak": -1.91,
+      "shortCues": [],
+      "humanListening": false
+    },
+    {
+      "id": "truman-reunion",
+      "seconds": 108.105,
+      "captions": 23,
+      "lufs": -15.74,
+      "truePeak": -1.8,
+      "shortCues": [],
+      "humanListening": false
+    },
+    {
+      "id": "truman-library",
+      "seconds": 61.105,
+      "captions": 19,
+      "lufs": -16.36,
+      "truePeak": -2.32,
+      "shortCues": [],
+      "humanListening": false
+    },
+    {
+      "id": "truman-sylvia",
+      "seconds": 111.405,
+      "captions": 64,
+      "lufs": -15.87,
+      "truePeak": -1.81,
+      "shortCues": [],
+      "humanListening": false
+    },
+    {
+      "id": "truman-creator",
+      "seconds": 122.305,
+      "captions": 24,
+      "lufs": -16.26,
+      "truePeak": -1.81,
+      "shortCues": [],
+      "humanListening": false
+    }
+  ],
+  "method": "Local recognition, publisher captions, acoustic word alignment, decode and timing checks. No human listening."
+}
