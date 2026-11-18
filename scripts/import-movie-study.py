@@ -52,7 +52,7 @@ if args.include_player:
         assert before in body,('player_port_anchor_missing',before)
         body=body.replace(before,after)
     progress_replacements={
-      'playsinline preload="metadata" loop poster=':'playsinline preload="metadata" poster=',
+      'playsinline preload="none" loop poster=':'playsinline preload="none" poster=',
       'const player={scene,index,section,q,video,lastCue:-2,userPaused:false};':'const player={scene,index,section,q,video,lastCue:-2,userPaused:false,pass:progressApi.createPass()};',
       "p.video.loop=repeat;":"p.video.loop=false;",
       "listen(video,'timeupdate',()=>renderTime(player));":"listen(video,'timeupdate',()=>{samplePass(player);renderTime(player);});listen(video,'ended',()=>finishPass(player));",
@@ -131,7 +131,12 @@ if args.include_player:
   function library(){
     progress.refresh();
     const scenes=window.MOVIE_SCENES||[];
-    const before=scenes.filter(s=>s.work.startsWith('Before ')),eternal=scenes.filter(s=>s.work.startsWith('Eternal Sunshine'));
+    const collections=[
+      {key:'before',title:'ビフォア三部作',sub:'BEFORE TRILOGY',matches:s=>s.work.startsWith('Before '),description:'出会いから再会、その先へ。二人の自然な会話をじっくりと。'},
+      {key:'eternal',title:'エターナル・サンシャイン',sub:'ETERNAL SUNSHINE',matches:s=>s.work==='Eternal Sunshine of the Spotless Mind',description:'出会い、すれ違い、もう一度。記憶をめぐる会話をたどる。'},
+      {key:'will',title:'グッド・ウィル・ハンティング',sub:'GOOD WILL HUNTING',matches:s=>s.work==='Good Will Hunting',description:'友情、恋愛、自分の未来。心を開いていく会話から学ぶ。'},
+      {key:'truman',title:'トゥルーマン・ショー',sub:'THE TRUMAN SHOW',matches:s=>s.work==='The Truman Show',description:'いつもの日常から、本当の世界へ。疑問と決断を言葉にする。'}
+    ];
     const card=(key,title,sub,all,description)=>{
       if(!all.length)return '';
       const list=all.filter(s=>!progress.hidden(s.id));
@@ -139,7 +144,7 @@ if args.include_player:
       const images=key==='before'?['train-invitation','sunset-vienna','midnight-train'].map(id=>all.find(s=>s.id===id)).filter(Boolean):[all[0]];
       return `<article class="movie-collection"><button type="button" class="movie-collection-open" onclick="showMovieStudy('${key}')" aria-label="${escapeHtml(title)}を学ぶ"><span class="movie-collection-art ${key==='before'?'movie-filmstrip':''}">${images.map(s=>`<img src="${escapeHtml(s.poster)}" alt="" loading="lazy">`).join('')}<span class="movie-card-play" aria-hidden="true">▶</span></span><span class="movie-collection-copy"><span class="movie-collection-meta">${escapeHtml(sub)} · ${list.length}会話 · 約${minutes}分</span><strong>${escapeHtml(title)}</strong><span class="movie-collection-description">${escapeHtml(description)}</span><span class="movie-collection-start">会話を見る <span aria-hidden="true">→</span></span></span></button>${key==='before'?'<div class="movie-work-shortcuts" aria-label="ビフォアの作品を選ぶ"><button type="button" onclick="showMovieStudy(\'sunrise\')">サンライズ</button><button type="button" onclick="showMovieStudy(\'sunset\')">サンセット</button><button type="button" onclick="showMovieStudy(\'midnight\')">ミッドナイト</button></div>':''}</article>`;
     };
-    return `<section class="home-library movie-library" aria-labelledby="movie-library-title"><div class="section-heading"><div><p class="section-eyebrow">LEARN WITH MOVIES</p><h2 id="movie-library-title">映画の会話で学ぶ</h2></div><span>${scenes.filter(s=>!progress.hidden(s.id)).length}会話</span></div><p class="movie-library-intro">作品を選んで、動画と英日字幕で。最後まで聞くと1回。100回聞いた会話は一覧から自動で削除されます。</p><div class="movie-collection-grid">${card('before','ビフォア三部作','BEFORE TRILOGY',before,'出会いから再会、その先へ。二人の自然な会話をじっくりと。')}${card('eternal','エターナル・サンシャイン','ETERNAL SUNSHINE',eternal,'列車での出会い、思い出、もう一度。記憶をめぐる二人の会話。')}</div></section>`;
+    return `<section class="home-library movie-library" aria-labelledby="movie-library-title"><div class="section-heading"><div><p class="section-eyebrow">LEARN WITH MOVIES</p><h2 id="movie-library-title">映画の会話で学ぶ</h2></div><span>${scenes.filter(s=>!progress.hidden(s.id)).length}会話</span></div><p class="movie-library-intro">作品を選んで、動画と英日字幕で。最後まで聞くと1回。100回聞いた会話は一覧から自動で削除されます。</p><div class="movie-collection-grid">${collections.map(c=>card(c.key,c.title,c.sub,scenes.filter(c.matches),c.description)).join('')}</div></section>`;
   }
   window.MovieStudy={open,close,library};
 })();

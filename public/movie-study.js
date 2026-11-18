@@ -38,6 +38,8 @@
     {key:'sunset',label:'ビフォア・サンセット',matches:s=>s.work==='Before Sunset'},
     {key:'midnight',label:'ビフォア・ミッドナイト',matches:s=>s.work==='Before Midnight'},
     {key:'eternal',label:'エターナル・サンシャイン',matches:s=>s.work==='Eternal Sunshine of the Spotless Mind'},
+    {key:'will',label:'グッド・ウィル・ハンティング',matches:s=>s.work==='Good Will Hunting'},
+    {key:'truman',label:'トゥルーマン・ショー',matches:s=>s.work==='The Truman Show'},
     {key:'all',label:'すべての作品',matches:()=>true}
   ].filter(filter=>scenes.some(filter.matches));
   const params=new URLSearchParams(location.search);
@@ -70,7 +72,7 @@
     const section=document.createElement('section');section.className='scene';section.dataset.scene=scene.id;section.setAttribute('aria-label',`会話${index+1} ${scene.title}`);section.style.setProperty('--poster',`url("${scene.poster}")`);
     section.innerHTML=`
       <header class="topbar"><span class="scene-index">${index+1} / ${scenes.length}</span><span class="app-title">映画で英会話</span><button class="sound" type="button" aria-label="音声をオフ"><span class="sound-icon">${icons.sound}</span><span class="sound-label">音声</span></button></header>
-      <div class="video-window" role="button" tabindex="0" aria-label="動画を一時停止"><video playsinline preload="metadata" poster="${scene.poster}" aria-label="${escapeHtml(scene.title)}" draggable="false"><source src="${scene.video}" type="video/mp4"></video></div>
+      <div class="video-window" role="button" tabindex="0" aria-label="動画を一時停止"><video playsinline preload="none" poster="${scene.poster}" aria-label="${escapeHtml(scene.title)}" draggable="false"><source src="${scene.video}" type="video/mp4"></video></div>
       <div class="captions" aria-hidden="true"><div class="caption-en" lang="en"></div><div class="caption-ja"></div></div>
       <nav class="actions" aria-label="会話の学習操作"><button type="button" class="action repeat on" aria-label="この会話をリピート" aria-pressed="true">${icons.repeat}<span class="action-label">リピート</span></button><button type="button" class="action translation" aria-label="字幕表示を切り替える"><span class="translation-symbol" aria-hidden="true">文A</span><span class="action-label mode-label">英日</span></button><button type="button" class="action save" aria-label="この会話を保存" aria-pressed="false"><span class="save-icon">${icons.save}</span><span class="action-label">保存</span></button></nav>
       <div class="scene-meta"><p class="watch-count" aria-live="polite"></p><p class="work-title"></p><h1 class="scene-title"></h1><p class="scene-description"></p></div>
@@ -185,7 +187,12 @@
   function library(){
     progress.refresh();
     const scenes=window.MOVIE_SCENES||[];
-    const before=scenes.filter(s=>s.work.startsWith('Before ')),eternal=scenes.filter(s=>s.work.startsWith('Eternal Sunshine'));
+    const collections=[
+      {key:'before',title:'ビフォア三部作',sub:'BEFORE TRILOGY',matches:s=>s.work.startsWith('Before '),description:'出会いから再会、その先へ。二人の自然な会話をじっくりと。'},
+      {key:'eternal',title:'エターナル・サンシャイン',sub:'ETERNAL SUNSHINE',matches:s=>s.work==='Eternal Sunshine of the Spotless Mind',description:'出会い、すれ違い、もう一度。記憶をめぐる会話をたどる。'},
+      {key:'will',title:'グッド・ウィル・ハンティング',sub:'GOOD WILL HUNTING',matches:s=>s.work==='Good Will Hunting',description:'友情、恋愛、自分の未来。心を開いていく会話から学ぶ。'},
+      {key:'truman',title:'トゥルーマン・ショー',sub:'THE TRUMAN SHOW',matches:s=>s.work==='The Truman Show',description:'いつもの日常から、本当の世界へ。疑問と決断を言葉にする。'}
+    ];
     const card=(key,title,sub,all,description)=>{
       if(!all.length)return '';
       const list=all.filter(s=>!progress.hidden(s.id));
@@ -193,7 +200,7 @@
       const images=key==='before'?['train-invitation','sunset-vienna','midnight-train'].map(id=>all.find(s=>s.id===id)).filter(Boolean):[all[0]];
       return `<article class="movie-collection"><button type="button" class="movie-collection-open" onclick="showMovieStudy('${key}')" aria-label="${escapeHtml(title)}を学ぶ"><span class="movie-collection-art ${key==='before'?'movie-filmstrip':''}">${images.map(s=>`<img src="${escapeHtml(s.poster)}" alt="" loading="lazy">`).join('')}<span class="movie-card-play" aria-hidden="true">▶</span></span><span class="movie-collection-copy"><span class="movie-collection-meta">${escapeHtml(sub)} · ${list.length}会話 · 約${minutes}分</span><strong>${escapeHtml(title)}</strong><span class="movie-collection-description">${escapeHtml(description)}</span><span class="movie-collection-start">会話を見る <span aria-hidden="true">→</span></span></span></button>${key==='before'?'<div class="movie-work-shortcuts" aria-label="ビフォアの作品を選ぶ"><button type="button" onclick="showMovieStudy(\'sunrise\')">サンライズ</button><button type="button" onclick="showMovieStudy(\'sunset\')">サンセット</button><button type="button" onclick="showMovieStudy(\'midnight\')">ミッドナイト</button></div>':''}</article>`;
     };
-    return `<section class="home-library movie-library" aria-labelledby="movie-library-title"><div class="section-heading"><div><p class="section-eyebrow">LEARN WITH MOVIES</p><h2 id="movie-library-title">映画の会話で学ぶ</h2></div><span>${scenes.filter(s=>!progress.hidden(s.id)).length}会話</span></div><p class="movie-library-intro">作品を選んで、動画と英日字幕で。最後まで聞くと1回。100回聞いた会話は一覧から自動で削除されます。</p><div class="movie-collection-grid">${card('before','ビフォア三部作','BEFORE TRILOGY',before,'出会いから再会、その先へ。二人の自然な会話をじっくりと。')}${card('eternal','エターナル・サンシャイン','ETERNAL SUNSHINE',eternal,'列車での出会い、思い出、もう一度。記憶をめぐる二人の会話。')}</div></section>`;
+    return `<section class="home-library movie-library" aria-labelledby="movie-library-title"><div class="section-heading"><div><p class="section-eyebrow">LEARN WITH MOVIES</p><h2 id="movie-library-title">映画の会話で学ぶ</h2></div><span>${scenes.filter(s=>!progress.hidden(s.id)).length}会話</span></div><p class="movie-library-intro">作品を選んで、動画と英日字幕で。最後まで聞くと1回。100回聞いた会話は一覧から自動で削除されます。</p><div class="movie-collection-grid">${collections.map(c=>card(c.key,c.title,c.sub,scenes.filter(c.matches),c.description)).join('')}</div></section>`;
   }
   window.MovieStudy={open,close,library};
 })();
