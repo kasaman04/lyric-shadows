@@ -4,7 +4,7 @@
 <header class="top"><a href="/" class="brand" aria-label="Lyric Shadowsのホームへ"><span aria-hidden="true">♫</span><span>Lyric Shadows<small>ENGLISH THROUGH SOUND</small></span></a><button id="pet-open" class="quiet">🌱 育成</button></header>
 <nav class="breadcrumb"><a href="/">‹ ホーム</a><span>/ 2文をつなぐ</span><button id="listening-records">♫ <span data-listening-time="today">0分00秒</span></button></nav>
 <nav class="practice-tabs" aria-label="練習と復習"><button id="practice-tab" aria-pressed="true">練習する</button><button id="review-tab" aria-pressed="false">復習ノート <span id="review-count" hidden></span></button></nav>
-<section id="practice-goal" class="practice-goal" aria-label="英文回答・復習10回、または会話フレーズ30分のノルマ"><div><strong id="practice-label">英文回答・復習</strong><b id="practice-count">0 / 10回</b></div><progress id="practice-progress" max="10" value="0" aria-label="英文回答・復習の回数"></progress><div class="practice-phrase-row"><span>または 会話フレーズ</span><b id="practice-phrase-count">0分00秒 / 30分</b></div><progress id="practice-phrase-progress" max="1800" value="0" aria-label="会話フレーズを聴いた時間"></progress><p id="practice-time" hidden></p><p id="practice-note">英文回答・復習10回、または会話フレーズを合計30分聴くと、その日のノルマ達成です。</p><button id="goal-pet" class="text-action">育成を見る →</button></section>
+
 <p id="error" class="error" role="alert" hidden></p>
 <section id="setup" class="panel">
  <p class="eyebrow">SENTENCE PRACTICE</p><h1>パターンを選ぼう</h1><p class="muted">日本語を見て、2つの文をつなぐ表現を練習しよう。</p>
@@ -37,7 +37,7 @@
  </section>
 </section>
 <section id="review-panel" class="panel" hidden aria-label="復習ノート"><p id="review-error" class="error" role="alert" hidden></p>
- <div id="review-list-view"><p class="eyebrow">REVIEW NOTE</p><h1>間違えた問題</h1><p class="small muted">ためた問題を、いつでも繰り返そう。<br>日本語から英文を考えて、ボタンで答えを確認できます。以前の2文問題も復習できます。</p><p id="review-loading" class="small muted" role="status"></p><button id="review-retry" class="quiet" hidden>もう一度読み込む</button><button id="review-first" class="review-reveal wide" hidden>最初の問題から復習する</button><div id="review-list" class="review-list"></div><p class="small muted">音声回答も復習も1回。英文回答・復習10回、または会話フレーズ30分で、その日のノルマ達成です。</p></div>
+ <div id="review-list-view"><p class="eyebrow">REVIEW NOTE</p><h1>間違えた問題</h1><p class="small muted">ためた問題を、いつでも繰り返そう。<br>日本語から英文を考えて、ボタンで答えを確認できます。以前の2文問題も復習できます。</p><p id="review-loading" class="small muted" role="status"></p><button id="review-retry" class="quiet" hidden>もう一度読み込む</button><button id="review-first" class="review-reveal wide" hidden>最初の問題から復習する</button><div id="review-list" class="review-list"></div><p class="small muted">自分のペースで、何度でも復習できます。</p></div>
  <div id="review-reader" hidden><div class="round-top"><button id="review-back" class="text-action">‹ 問題一覧</button><span id="review-position" class="small muted"></span></div><p class="eyebrow">REVIEW</p><h1>間違えた問題</h1><p id="review-instruction" class="small muted">同じ問題で、もう一度考えよう。</p><article id="review-translation-prompt" class="japanese-question" hidden><small>日本語</small><p id="review-prompt" lang="ja"></p></article>
   <div class="sentences"><article><small>文 1</small><p id="review-text-0" lang="en"></p><p id="review-translation-0" class="review-translation" lang="ja"></p></article><article><small>文 2</small><p id="review-text-1" lang="en"></p><p id="review-translation-1" class="review-translation" lang="ja"></p></article></div>
   <button id="review-question-audio" class="text-action">▷ 2文を聞く</button><p id="review-prompt-hint" class="small muted">この2文を、ひとつの英文にすると？</p>
@@ -51,7 +51,7 @@
 <audio id="game-audio" preload="auto" playsinline></audio>
 <audio id="review-audio" preload="none" playsinline hidden></audio>
 </main>
-<script src="/listening-time.js?v=phrase-goal-30m-20261030-1"></script><script src="/pet-rules.js?v=phrase-goal-30m-20261030-1"></script><script src="/pet-art.js?v=memorial-20261016-1"></script><script src="/pet-frames.js?v=pet-frame-crop-20261017-1"></script><script src="/pet-playback.js?v=phrase-goal-30m-20261030-1"></script><script src="/pet-reactions.js?v=growth-items-20261016-1"></script><script src="/pet.js?v=phrase-goal-30m-20261030-1"></script>
-<script src="/voice-practice-shell.js?v=ios-mic-20261024-1"></script><script src="/voice-practice-audio.js?v=ios-mic-20261024-1"></script><script src="/sentence-game-core.js?v=prepared-510-20261027-1"></script><script src="/sentence-lesson.js?v=conversation-lessons-20261106-1"></script><script src="/sentence-review.js?v=conversation-lessons-20261106-1"></script><script src="/sentence-translation.js?v=codex-grader-20261106-1"></script>
+<script src="/listening-time.js?v=phrase-goal-30m-20261030-1"></script><script src="/pet-rules.js?v=no-daily-quota-20261118-1"></script><script src="/pet-art.js?v=memorial-20261016-1"></script><script src="/pet-frames.js?v=pet-frame-crop-20261017-1"></script><script src="/pet-playback.js?v=phrase-goal-30m-20261030-1"></script><script src="/pet-reactions.js?v=growth-items-20261016-1"></script><script src="/pet.js?v=no-daily-quota-20261118-1"></script>
+<script src="/voice-practice-shell.js?v=ios-mic-20261024-1"></script><script src="/voice-practice-audio.js?v=ios-mic-20261024-1"></script><script src="/sentence-game-core.js?v=prepared-510-20261027-1"></script><script src="/sentence-lesson.js?v=conversation-lessons-20261106-1"></script><script src="/sentence-review.js?v=no-daily-quota-20261118-1"></script><script src="/sentence-translation.js?v=no-daily-quota-20261118-1"></script>
 <script src="/identity-sync.js?v=identity-sync-20261102-1"></script>
 </body></html>

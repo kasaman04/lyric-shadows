@@ -32,7 +32,7 @@ const state = {
   currentPhrase: null,
   showJapanese: false,
   activeTab: 'conv',   // 'conv' | 'song'
-  homeFilter: 'A',     // 'A' | 'C' | 'D'
+  homeFilter: 'A',     // 'A' | 'C' | 'D' | 'M'
   phrasePack: 'すべて',
   phraseCategory: 'すべて',
   hiddenPhraseIds: new Set(),
@@ -203,7 +203,9 @@ async function init() {
   syncPhrasePreferencesFromServer();
   const requestedSong = new URLSearchParams(window.location.search).get('song');
   const song = state.songs.find(item => item.id === requestedSong);
-  if (song) await showShadowing(song);
+  if (window.location.hash === '#movie-player') showMovieStudy(new URLSearchParams(window.location.search).get('work'));
+  else if (window.location.hash === '#movies') setHomeFilter('M');
+  else if (song) await showShadowing(song);
   else if (window.location.hash === '#challenge') await startConversationGame();
 }
 
@@ -303,6 +305,8 @@ function applyGeneratedPhraseAudio() {
 // ROUTING
 // ============================================================
 function showHome() {
+  const returningFromMovie = state.view === 'movies';
+  window.MovieStudy?.close();
   window.ConversationGame?.close();
   stopAudio();
   stopPhrasePracticeAudio();
@@ -316,7 +320,23 @@ function showHome() {
   state.currentEpisodeId = null;
   state.view = 'home';
   renderHome();
+  if (returningFromMovie) document.querySelector('.home-tabs')?.scrollIntoView({ block: 'start' });
 }
+
+function showMovieStudy(work) {
+  if (!window.MovieStudy) return;
+  window.ConversationGame?.close();
+  stopAudio(); stopPhrasePracticeAudio(); stopSongAudio(); stopDramaAudio(); stopQuoteCardAudio();
+  state.homeFilter = 'M';
+  state.view = 'movies';
+  window.MovieStudy.open({ container: document.getElementById('app'), work, home: showHome });
+}
+
+window.addEventListener('popstate', () => {
+  if (location.hash === '#movie-player' && state.view !== 'movies') showMovieStudy(new URLSearchParams(location.search).get('work'));
+  else if (state.view === 'movies' && location.hash !== '#movie-player') showHome();
+  else if (location.hash === '#movies' && state.view === 'home') setHomeFilter('M');
+});
 
 async function startConversationGame() {
   stopAudio(); stopPhrasePracticeAudio(); stopSongAudio(); stopDramaAudio(); stopQuoteCardAudio();
@@ -401,12 +421,13 @@ function renderHome() {
           <button class="hero-cta" onclick="startSelectedPhrasePlayback()">会話をすべて再生 <span aria-hidden="true">→</span></button>
         </div>
       </section>
-      <a class="home-sentence-entry" href="/sentence-game.html" aria-label="2文をつなぐ練習を始める"><span class="sentence-entry-copy"><span class="sentence-entry-eyebrow">パターンを選んで、英語の練習</span><strong>2文をつなぐ</strong><span class="sentence-entry-description">日本語から英文に。音声でも手入力でも。</span><span class="sentence-entry-footer"><span class="sentence-entry-start">はじめる <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M4 2.5 9 6l-5 3.5Z" fill="currentColor"/></svg></span><small>会話30分でも達成</small></span></span><span class="sentence-entry-visual" aria-hidden="true"><span class="sentence-mini sentence-mini-first">I met a man.</span><span class="sentence-mini sentence-mini-second">He lives in Tokyo.</span><span class="sentence-mini-joined">a man <em>who…</em></span></span></a>
+      <a class="home-sentence-entry" href="/sentence-game.html" aria-label="2文をつなぐ練習を始める"><span class="sentence-entry-copy"><span class="sentence-entry-eyebrow">パターンを選んで、英語の練習</span><strong>2文をつなぐ</strong><span class="sentence-entry-description">日本語から英文に。音声でも手入力でも。</span><span class="sentence-entry-footer"><span class="sentence-entry-start">はじめる <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M4 2.5 9 6l-5 3.5Z" fill="currentColor"/></svg></span></span></span><span class="sentence-entry-visual" aria-hidden="true"><span class="sentence-mini sentence-mini-first">I met a man.</span><span class="sentence-mini sentence-mini-second">He lives in Tokyo.</span><span class="sentence-mini-joined">a man <em>who…</em></span></span></a>
       ${window.IllustratedFlashcards?.entry() || ''}
       <nav class="home-tabs" aria-label="学習方法">
         <button class="home-tab ${state.homeFilter === 'A' ? 'active' : ''}" onclick="setHomeFilter('A')" aria-current="${state.homeFilter === 'A' ? 'page' : 'false'}">♫ <span>洋楽で学ぶ</span></button>
         <button class="home-tab ${state.homeFilter === 'C' ? 'active' : ''}" onclick="setHomeFilter('C')" aria-current="${state.homeFilter === 'C' ? 'page' : 'false'}">💬 <span>会話フレーズ</span></button>
         <button class="home-tab ${state.homeFilter === 'D' ? 'active' : ''}" onclick="setHomeFilter('D')" aria-current="${state.homeFilter === 'D' ? 'page' : 'false'}">🎬 <span>ドラマ</span></button>
+        <button class="home-tab ${state.homeFilter === 'M' ? 'active' : ''}" onclick="setHomeFilter('M')" aria-current="${state.homeFilter === 'M' ? 'page' : 'false'}">🎞️ <span>映画</span></button>
       </nav>
     ${renderSongGrid()}
     </main>
@@ -425,7 +446,8 @@ function renderHome() {
 }
 
 function setHomeFilter(filter) {
-  if (!['A', 'C', 'D'].includes(filter)) filter = 'A';
+  if (!['A', 'C', 'D', 'M'].includes(filter)) filter = 'A';
+  window.MovieStudy?.close();
   stopPhrasePracticeAudio();
   stopDramaAudio();
   stopQuoteCardAudio();
@@ -433,6 +455,10 @@ function setHomeFilter(filter) {
   state.homeFilter = filter;
   state.currentDramaId = null;
   state.currentEpisodeId = null;
+  if (filter === 'M' || location.hash === '#movies') {
+    const url = new URL(location.href); url.hash = filter === 'M' ? 'movies' : '';
+    history.replaceState(null, '', url);
+  }
   renderHome();
 }
 
@@ -586,6 +612,7 @@ async function checkExistingPreview() {
 }
 
 function renderSongGrid() {
+  if (state.homeFilter === 'M') return window.MovieStudy?.library() || '';
   if (state.homeFilter === 'C') return renderPhraseGrid();
   if (state.homeFilter === 'D') return renderDramaGrid();
 
@@ -822,7 +849,7 @@ function renderPhraseGrid() {
       </div>
       ${renderPhraseExpressionGuide(state.phraseCategory)}
       <div class="phrase-random-panel phrase-sequential-panel">
-        <div><strong>会話をつづけて聞く</strong><small>選択中の${filtered.length}会話を順番に再生</small><small class="phrase-daily-progress">きょうの会話 <b data-phrase-practice-time>0分00秒</b> / 30分 <span data-phrase-practice-goal></span></small></div>
+        <div><strong>会話をつづけて聞く</strong><small>選択中の${filtered.length}会話を順番に再生</small></div>
         <button type="button" class="phrase-play-selected" onclick="startSelectedPhrasePlayback()">▶ すべて再生</button>
       </div>
     </div>

@@ -15,7 +15,7 @@
   }
   function hide() { show('idle', '', 0); }
   function blocked(target) {
-    return document.body.classList.contains('pet-open') || app.inert ||
+    return document.body.classList.contains('pet-open') || document.body.classList.contains('movie-study-open') || app.inert ||
       !!document.querySelector('[aria-modal="true"]') ||
       !!target.closest('input,textarea,select,button,a,audio,video,[role="slider"],[contenteditable],.play-controls,.song-audio-player');
   }

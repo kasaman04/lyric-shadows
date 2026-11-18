@@ -7,21 +7,7 @@
   try { const saved=JSON.parse(localStorage.getItem(historyKey)); if(Array.isArray(saved))seen=saved.filter(x=>typeof x==='string'); } catch {}
   const showError = error => { $('error').textContent=error?.message||String(error); $('error').hidden=false; };
   const clearError = () => { $('error').hidden=true; };
-  function displayPractice(value){
-    if(!value)return;
-    const count=Math.max(0,Number(value.count)||0);$('practice-count').textContent=count+' / 10回';$('practice-progress').value=Math.min(10,count);
-    const phrase=Math.max(0,Number(value.phraseSeconds)||0);
-    $('practice-phrase-count').textContent=window.ListeningTime.format(phrase)+' / 30分';$('practice-phrase-progress').value=Math.min(1800,phrase);
-    $('practice-label').textContent=value.met?'今日のノルマ、達成！':'英文回答・復習';
-    const achieved=value.metBy==='phrase'?'会話フレーズを30分聴いて達成しました。':'英文回答・復習10回で達成しました。';
-    $('practice-note').textContent=!value.petId?'英文回答・復習10回、または会話フレーズを合計30分聴くと、その日のノルマ達成です。':!value.alive?'この相棒の育成は終了しました。育成画面から次の相棒を選べます。':value.optional?'今日は準備日です。明日から10回の練習か、会話フレーズ30分で達成できます。':value.met?achieved:'日本時間24時までに、英文回答・復習10回か、会話フレーズ30分のどちらかを達成しよう。';
-    $('practice-time').hidden=value.policy!=='both'||!value.petId;
-    if(value.policy==='both'&&value.petId){const mins=Math.max(0,Math.ceil((value.timeRemainingMs||0)/60000));$('practice-time').textContent='生存時間：残り '+(mins>=60?Math.floor(mins/60)+'時間':'')+(mins%60||mins<60?mins%60+'分':'')+'（聴くと回復）';if(value.alive)$('practice-note').textContent=value.optional?'今日はノルマの準備日です。時間の生存条件は今日も有効です。':value.met?achieved+'生存時間も保とう。':'生存時間を保ち、日本時間24時までに10回の練習、または会話フレーズ30分を達成しよう。';}
-    $('practice-goal').dataset.met=String(value.met);
-  }
-  window.addEventListener('sentence-practice-change',event=>displayPractice(event.detail));
-  $('goal-pet').onclick=()=>window.PetGame?.open();
-  window.addEventListener('pet-state-change',event=>{const pet=event.detail?.pets?.at(-1);if(pet?.practice)displayPractice(window.PetRules.practiceStatus(pet,event.detail.serverNow||Date.now()));});
+  function displayPractice() {} // Practice receipts remain; daily quotas are retired.
   async function refreshPractice(){try{const response=await fetch('/api/sentence-game/practice',{cache:'no-store'});if(response.ok){const value=await response.json();displayPractice(value.dailyPractice);window.SentenceReview?.setCount(value.reviewCount);}}catch{}}
   setInterval(()=>{if(phase==='setup'||phase==='result'||phase==='review')refreshPractice();},60000);
   document.addEventListener('visibilitychange',()=>{if(!document.hidden)refreshPractice();});

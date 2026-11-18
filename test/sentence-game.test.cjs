@@ -342,10 +342,10 @@ test('only real graded answers credit the bound pet identity, duplicates count o
   const {PetStore,action}=require('../lib/pet-store');
   const dir=await fs.mkdtemp(path.join(os.tmpdir(),'sg-test-'));t.after(async()=>{assert.equal(path.dirname(dir),os.tmpdir());assert(path.basename(dir).startsWith('sg-test-'));await fs.rm(dir,{recursive:true,force:true});});
   let clock=Date.parse('2026-10-24T12:00:00+09:00');const deviceId='sentence-practice-device',actual=new PetStore({dir,clock:()=>clock,practicePolicy:'daily'});
-  await actual.transact(deviceId,(s,now)=>action(s,{type:'select',element:'grass',requestId:'sentence-select-001'},now));clock+=86400000;
+  await actual.transact(deviceId,(s,now)=>{action(s,{type:'select',element:'grass',requestId:'sentence-select-001'},now);s.pets[0].lifeExpiresAt=now+7*86400000;s.pets[0].lifeBaseExpiresAt=s.pets[0].lifeExpiresAt;});clock+=86400000;
   let failCredit=false;const petStore={transact:(id,change)=>{if(failCredit){failCredit=false;throw Object.assign(new Error('temporary pet storage failure'),{status:503});}return actual.transact(id,change);}};
   let afterASR;const f=await fixture(t,{petStore,clock:()=>clock,deviceId,gradeVerdict:'incorrect',onTranscribe:()=>afterASR?.()});
-  let config=await(await f.call('/config')).json();assert.equal(config.dailyPractice.count,0);assert.equal(config.dailyPractice.optional,false);
+  let config=await(await f.call('/config')).json();assert.equal(config.dailyPractice.count,0);assert.equal(config.dailyPractice.enabled,false);
   const start=async()=>await(await f.call('/attempts',{repeat:'who-1'})).json();
   let attempt=await start();await f.call('/attempts/'+attempt.id+'/no-answer',{});assert.equal((await actual.transact(deviceId)).sentencePractice.daily['2026-10-25'],undefined);
   attempt=await start();failCredit=true;

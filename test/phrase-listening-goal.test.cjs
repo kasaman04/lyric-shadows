@@ -46,16 +46,16 @@ test('Japan midnight splits real listened seconds exactly and unused minutes do 
  const s=fixture();listen(s,events(s,midnight-900000,1800),midnight+900000);assert.equal(s.phraseListening.daily['2026-10-30'],900);assert.equal(s.phraseListening.daily['2026-10-31'],900);assert.equal(viewPractice(s,midnight-1).met,false);assert.equal(viewPractice(s,midnight+900000).met,false);
  const full=fixture();listen(full,events(full,midnight-1800000,1800),midnight);assert.equal(full.phraseListening.daily['2026-10-30'],1800);age(full,midnight);assert.equal(full.pets[0].diedAt,null);assert.equal(viewPractice(full,midnight).phraseSeconds,0);
 });
-test('late pre-midnight evidence can correct a daily miss, but phrase completion does not remove the life timer',()=>{
- const s=fixture();age(s,midnight+1000);assert.equal(s.pets[0].deathReason,'daily_practice');listen(s,events(s,midnight-1800000,1800),midnight+1000);age(s,midnight+1000);assert.equal(s.pets[0].diedAt,null);
+test('midnight needs no phrase quota, and phrase records do not remove the life timer',()=>{
+ const s=fixture();age(s,midnight+1000);assert.equal(s.pets[0].diedAt,null);listen(s,events(s,midnight-1800000,1800),midnight+1000);age(s,midnight+1000);assert.equal(s.pets[0].diedAt,null);
  const dead=fixture();dead.pets[0].lifeBaseExpiresAt=now-1000;dead.pets[0].lifeExpiresAt=now-1000;listen(dead,events(dead,now,1800),now+1800000);age(dead,now+1800000);assert.equal(viewPractice(dead,now+1800000).met,true);assert.equal(dead.pets[0].deathReason,'inactivity');
 });
 test('new ledger preserves previous counts and history without converting all listening into phrases',()=>{
  const s=fixture();delete s.phraseListening;delete s.pets[0].practice.phraseSeconds;s.daily['2026-10-30']=3600;s.totalSeconds=3600;s.sentenceReview={items:{keep:{answer:'keep'}}};recordPractice(s,{id:crypto.randomUUID(),at:now},now);
  enablePractice(s,now,'both');const goal=viewPractice(s,now);assert.equal(goal.count,1);assert.equal(goal.phraseSeconds,0);assert.equal(s.totalSeconds,3600);assert.equal(s.sentenceReview.items.keep.answer,'keep');
 });
-test('pending client meter splits days, excludes synced overlaps and previews daily survival without changing saved data',()=>{
- const s=fixture(),all=events(s,midnight-1800000,1800);listen(s,all.slice(0,59),midnight);age(s,midnight+1000);assert.equal(s.pets[0].deathReason,'daily_practice');
+test('pending client meter splits days, excludes synced overlaps and preserves survival with no daily quota without changing saved data',()=>{
+ const s=fixture(),all=events(s,midnight-1800000,1800);listen(s,all.slice(0,59),midnight);age(s,midnight+1000);assert.equal(s.pets[0].diedAt,null);
  const preview=time.phraseTotals(s,[...all,all.at(-1),{source:'/songs/x/original.mp3',start:midnight,end:midnight+1000}],midnight+1000);assert.equal(preview.daily['2026-10-30'],1800);assert.equal(preview.today,0);assert.equal(preview.pending,30);
  const code=syncFs.readFileSync(path.join(__dirname,'../public/pet.js'),'utf8').replace('  window.PetGame = { initialize,','  window.PetTest={setState(s){save=s},pendingPlayback,current};\n  window.PetGame = { initialize,');
  const scope={window:{PetRules:rules,ListeningTime:time},Date:{now:()=>midnight+1000}};vm.runInNewContext(code,scope);const api=scope.window.PetTest,before=JSON.stringify(s);api.setState(s);api.pendingPlayback.set('last',all.at(-1));assert.equal(api.current().diedAt,null);assert.equal(JSON.stringify(s),before);

@@ -47,24 +47,20 @@
   function choose(level,stats,previous,seed,id) { return species(id || catalog[previous-1]?.element || 'grass',level); }
   const ended = pet => !!(pet?.diedAt || pet?.departedAt);
   const listeningDeadline = pet => pet.lifeExpiresAt ?? (pet.lastListenedAt ?? pet.bornAt) + listeningTimeoutMs;
-  const lifePercent = (pet,now) => pet.practice?.policy==='daily' ? Math.min(100,Math.max(practiceStatus(pet,now).count/practiceRequired,practiceStatus(pet,now).phraseSeconds/phraseRequiredSeconds)*100) : Math.max(0,Math.min(100,100*(listeningDeadline(pet)-now)/listeningTimeoutMs));
+  const lifePercent = (pet,now) => Math.max(0,Math.min(100,100*(listeningDeadline(pet)-now)/listeningTimeoutMs));
   const nextDay = day => new Date(Date.parse(day+'T00:00:00Z')+86400000).toISOString().slice(0,10);
   const dayEnd = day => Date.parse(day+'T15:00:00Z');
   function missedPracticeDay(pet,now) {
-    if(!pet.practice)return null;
-    const today=dayKey(now);
-    for(let day=pet.practice.from;day<today;day=nextDay(day))if(!practiceProgress(pet.practice.counts?.[day],pet.practice.phraseSeconds?.[day]).met)return day;
+    // Daily answer/listening quotas have been retired; keep historical counts.
     return null;
   }
   function practiceStatus(pet,now) {
     const day=dayKey(now),count=pet?.practice?.counts?.[day]||0,from=pet?.practice?.from;
-    return {day,...practiceProgress(count,pet?.practice?.phraseSeconds?.[day]),from,optional:!!from&&day<from,deadline:dayEnd(day),policy:pet?.practice?.policy||null,petId:pet?.id||null,alive:!!pet&&!ended(pet)&&!lifeFailure(pet,now),timeRemainingMs:pet?Math.max(0,listeningDeadline(pet)-now):0};
+    return {day,...practiceProgress(count,pet?.practice?.phraseSeconds?.[day]),from,enabled:false,optional:true,deadline:null,policy:'time',petId:pet?.id||null,alive:!!pet&&!ended(pet)&&!lifeFailure(pet,now),timeRemainingMs:pet?Math.max(0,listeningDeadline(pet)-now):0};
   }
-  function practiceDeadline(pet,now){const missed=missedPracticeDay(pet,now);if(missed)return dayEnd(missed);const goal=practiceStatus(pet,now);return dayEnd(goal.optional?goal.from:goal.met?nextDay(goal.day):goal.day);}
+  function practiceDeadline(pet,now){return listeningDeadline(pet);}
   function lifeFailure(pet,now){
-    const missed=missedPracticeDay(pet,now),practiceAt=missed?dayEnd(missed):Infinity;
-    const timeAt=pet.practice?.policy==='daily'?Infinity:listeningDeadline(pet);
-    if(practiceAt<=now&&practiceAt<=timeAt)return {at:practiceAt,reason:'daily_practice'};
+    const timeAt=listeningDeadline(pet);
     if(timeAt<=now)return {at:timeAt,reason:'inactivity'};
     return null;
   }
@@ -75,8 +71,7 @@
     else if(pet.diedAt&&(pet.deathReason==='daily_practice'||listeningDeadline(pet)>pet.diedAt)){pet.diedAt=null;delete pet.deathReason;}
   }
   function recordListeningLife(pet,start,end) {
-    if (!pet || pet.departedAt || (pet.diedAt && pet.deathReason !== 'inactivity'&&!(pet.practice?.policy==='both'&&pet.deathReason==='daily_practice')) || start < pet.bornAt || end <= start) return false;
-    if(pet.practice?.policy==='both'){const missed=missedPracticeDay(pet,end);if(missed)end=Math.min(end,dayEnd(missed));if(end<=start)return false;}
+    if (!pet || pet.departedAt || (pet.diedAt && !['inactivity','daily_practice'].includes(pet.deathReason)) || start < pet.bornAt || end <= start) return false;
     const baseAt = pet.lifeBaseAt ?? pet.bornAt;
     if (end <= baseAt) return false;
     const intervals = [...(pet.lifeIntervals || []), [Math.max(start,baseAt),end]].sort((a,b)=>a[0]-b[0]);
