@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="referrer" content="no-referrer">
+  <title>映画の回数を戻す | Lyric Shadows</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;background:#121212;color:#f7f4ed;font:16px/1.8 system-ui,-apple-system,sans-serif;padding:48px 22px max(32px,env(safe-area-inset-bottom))}main{max-width:440px;margin:auto}small{color:#d8c780}h1{font-size:26px;line-height:1.5;margin:12px 0}p{color:#ccc}button,.primary{display:block;width:100%;border:0;border-radius:12px;padding:15px 18px;background:#e9d88d;color:#17160f;font:inherit;font-weight:700;text-align:center;text-decoration:none;cursor:pointer}button:disabled{opacity:.6;cursor:wait}a{color:#e9d88d;overflow-wrap:anywhere}#status{min-height:30px;color:#f7f4ed}#count{font-size:26px;color:#e9d88d}aside{border-top:1px solid #444;margin-top:32px;padding-top:16px}aside p{font-size:14px}.secondary{display:block;margin-top:16px} [hidden]{display:none!important}
+  </style>
+</head>
+<body>
+  <main>
+    <small>BEFORE SUNRISE</small>
+    <h1>一緒に、列車を降りない？</h1>
+    <p>昨日聞いた5回分を、今の学習記録に戻します。今日聞いた分も残ります。</p>
+    <button id="restore" type="button">昨日の5回分を戻す</button>
+    <p id="status" role="status" aria-live="polite"></p>
+    <p id="count" hidden></p>
+    <a id="movie" class="primary" href="/?work=sunrise&amp;scene=train-invitation#movie-player" hidden>この会話を開く</a>
+    <aside id="keep" hidden>
+      <p>次回も同じ記録を開けるよう、下のリンクをブックマークしてください。プライベートブラウズから通常タブへ移るときも、このリンクを使えます。</p>
+      <a id="saved" class="secondary">同じ学習記録を開く</a>
+    </aside>
+  </main>
+  <script src="movie-study-progress.js?v=cloud-counts-20261120-1"></script>
+  <script src="movie-count-recovery.js?v=train-20261119-5-1"></script>
+</body>
+</html>
