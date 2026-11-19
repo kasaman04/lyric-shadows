@@ -1,6 +1,7 @@
 'use strict';
 const {test}=require('node:test'),assert=require('node:assert/strict');
 const {createStore,createPass,key}=require('../public/movie-study-progress');
+const {createCloudStore,mergeLedger,ledgerCounts}=require('../public/movie-study-progress');
 function storage(){const values=new Map();return {getItem:k=>values.get(k)||null,setItem:(k,v)=>values.set(k,v)};}
 function sample(pass,time,options={}){pass.sample({time,wall:time*1000,playing:true,audible:true,active:true,seeking:false,rate:1,...options});}
 
@@ -36,4 +37,43 @@ test('malformed saved values and unavailable storage do not break movie playback
   assert.equal(saved.count('a'),0);assert.equal(saved.count('d'),0);assert.equal(saved.count('c'),100);
   const blocked=createStore({getItem(){throw Error('blocked')},setItem(){throw Error('blocked')}});
   assert.equal(blocked.complete('eternal-wait').persisted,false);assert.equal(blocked.count('eternal-wait'),1);
+});
+
+test('missing, stale and damaged storage cannot lower an already loaded count',()=>{
+  const data=storage();data.setItem(key,'{"eternal-train":12}');const saved=createStore(data);
+  for(const value of ['{}','{"eternal-train":2}','broken']){data.setItem(key,value);saved.refresh();assert.equal(saved.count('eternal-train'),12);}
+  assert.equal(saved.complete('eternal-train').count,13);
+});
+
+function cloud(){let remote={baseline:{},replicas:{}},online=true;return {
+  async request(value){if(!online)throw Error('offline');remote=mergeLedger(remote,value);return structuredClone(remote);},
+  set online(value){online=value;},counts:()=>ledgerCounts(remote)
+};}
+function client(data,server,writerId='movie-test-writer-0001',deviceId='movie-test-device-001'){
+  return createCloudStore(data,deviceId,{writerId,request:server.request});
+}
+test('legacy counts migrate once, survive a new day and restore in a fresh browser',async()=>{
+  const data=storage(),server=cloud();data.setItem(key,'{"eternal-train":12}');
+  const first=client(data,server);await first.sync();first.complete('eternal-train');await first.sync();
+  const nextDay=client(data,server,'movie-test-writer-0002');await nextDay.sync();assert.equal(nextDay.count('eternal-train'),13);
+  const fresh=client(storage(),server,'movie-test-writer-0003');await fresh.sync();assert.equal(fresh.count('eternal-train'),13);
+  await nextDay.sync();await fresh.sync();assert.equal(server.counts()['eternal-train'],13);
+});
+test('offline completions survive closing the page and replay without duplicate credit',async()=>{
+  const data=storage(),server=cloud();server.online=false;
+  const first=client(data,server);first.complete('eternal-train');first.complete('eternal-train');assert.equal(await first.sync(),false);
+  const reload=client(data,server,'movie-test-writer-0002');assert.equal(reload.count('eternal-train'),2);
+  server.online=true;await reload.sync();await reload.sync();await first.sync();assert.equal(server.counts()['eternal-train'],2);
+});
+test('concurrent browsers add independent plays and late responses never roll progress back',async()=>{
+  const server=cloud(),a=client(storage(),server,'movie-test-writer-0001'),b=client(storage(),server,'movie-test-writer-0002');
+  a.complete('eternal-train');b.complete('eternal-train');b.complete('eternal-train');await Promise.all([a.sync(),b.sync()]);
+  await a.sync();await b.sync();assert.equal(a.count('eternal-train'),3);assert.equal(b.count('eternal-train'),3);
+  assert.equal(ledgerCounts(mergeLedger({baseline:{'eternal-train':8}},{baseline:{'eternal-train':2}}))['eternal-train'],8);
+});
+test('each recovered identity keeps its own movie history and 100 plays remain hidden',async()=>{
+  const data=storage(),server=cloud();data.setItem(key,'{"eternal-train":99}');const first=client(data,server);
+  first.complete('eternal-train');await first.sync();assert.equal(first.hidden('eternal-train'),true);
+  const other=client(data,cloud(),'movie-test-writer-0002','other-movie-device-001');assert.equal(other.count('eternal-train'),0);
+  const restored=client(data,server,'movie-test-writer-0003');await restored.sync();assert.equal(restored.hidden('eternal-train'),true);
 });

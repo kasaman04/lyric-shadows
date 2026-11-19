@@ -1,0 +1,28 @@
+'use strict';
+const {test}=require('node:test'),assert=require('node:assert/strict');
+const express=require('express');
+const {PetStore}=require('../lib/pet-store'),{mountPetApi}=require('../lib/pet-api');
+test('movie counts persist across midnight and server restarts, with idempotent concurrent merges',async t=>{
+  const saves=new Map();let now=Date.parse('2026-11-19T14:59:00Z');
+  const remote={async load(id){return structuredClone(saves.get(id));},async save(id,state){saves.set(id,structuredClone(state));}};
+  const app=express();app.use(express.json());
+  mountPetApi(app,{store:new PetStore({remote,clock:()=>now}),images:{},designer:{external:true}});
+  const server=await new Promise(resolve=>{const s=app.listen(0,'127.0.0.1',()=>resolve(s));});
+  t.after(()=>new Promise(resolve=>server.close(resolve)));
+  const origin='http://127.0.0.1:'+server.address().port,url=origin+'/api/pet/movie-api-device-0001/movies';
+  const post=(ledger,headers={})=>fetch(url,{method:'POST',headers:{'Content-Type':'application/json',...headers},body:JSON.stringify(ledger)});
+  const a={baseline:{'eternal-train':12},replicas:{'movie-api-writer-0001':{'eternal-train':2}}};
+  assert.equal((await post(a)).status,200);await post(a);
+  const b={baseline:{'eternal-train':12},replicas:{'movie-api-writer-0002':{'eternal-train':3}}};
+  await Promise.all([post(a),post(b)]);
+  now+=86400000;
+  const result=await (await fetch(url)).json();
+  const {ledgerCounts}=require('../public/movie-study-progress');
+  assert.equal(ledgerCounts(result)['eternal-train'],17);
+  const reloaded=await new PetStore({remote,clock:()=>now}).transact('movie-api-device-0001');
+  assert.equal(ledgerCounts(reloaded.movieStudy)['eternal-train'],17);
+  assert.equal(reloaded.totalSeconds,0);assert.equal(reloaded.pets.length,0);
+  assert.equal((await post(a,{Origin:'https://unrelated.test'})).status,403);
+  assert.equal((await post({baseline:{'unknown-scene':2}})).status,400);
+  assert.equal((await fetch(url.replace('movie-api-device-0001','bad.id'))).status,400);
+});

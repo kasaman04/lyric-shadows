@@ -199,6 +199,7 @@ async function init() {
   loadSavedPhrases();
   state.deviceId = loadDeviceId();
   window.PetGame?.initialize(state.deviceId);
+  window.MovieStudy?.initialize(state.deviceId);
   renderHome();
   syncPhrasePreferencesFromServer();
   const requestedSong = new URLSearchParams(window.location.search).get('song');

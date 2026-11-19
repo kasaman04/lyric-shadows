@@ -3,7 +3,25 @@
   'use strict';
   let mounted=null;
   const progressApi=window.MovieStudyProgress;
-  const progress=progressApi.createStore({getItem:key=>localStorage.getItem(key),setItem:(key,value)=>localStorage.setItem(key,value)});
+  const storage={getItem:key=>localStorage.getItem(key),setItem:(key,value)=>localStorage.setItem(key,value)};
+  let progress=progressApi.createStore(storage),deviceId='';
+  function initialize(id){
+    if(id===deviceId)return;
+    deviceId=id;
+    progress=progressApi.createCloudStore(storage,id,{
+      writerId:window.crypto?.randomUUID?.()||`movie-${Date.now()}-${Math.random().toString(16).slice(2)}`,
+      async request(ledger){
+        const response=await fetch(`/api/pet/${encodeURIComponent(id)}/movies`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(ledger),cache:'no-store',signal:AbortSignal.timeout(15000)});
+        if(!response.ok)throw Error('Movie progress sync failed');
+        return response.json();
+      },
+      onChange:()=>window.dispatchEvent(new Event('movie-progress-change'))
+    });
+    void progress.sync();
+  }
+  window.addEventListener('online',()=>void progress.sync?.());
+  window.addEventListener('focus',()=>void progress.sync?.());
+  document.addEventListener('visibilitychange',()=>{if(!document.hidden)void progress.sync?.();});
   const escapeHtml=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   function mount(root,options){
     let destroyed=false;
@@ -150,7 +168,13 @@
     active=-1;root.querySelector('.movie-empty')?.remove();if(target){feed.scrollTo({top:visiblePlayers.indexOf(target)*feed.clientHeight,behavior:'instant'});activate(target.index);}else{showCompleted();updateLocation();}
     try{localStorage.setItem('movie-study-work',key);}catch{}
   }
-  listen(window,'storage',event=>{if(event.key===progressApi.key){progress.refresh();applyFilter(selectedWork,players[active]?.scene.id);players.forEach(renderControls);}});
+  function refreshProgress(){
+    progress.refresh();
+    if(visiblePlayers.some(p=>progress.hidden(p.scene.id)))applyFilter(selectedWork,players[active]?.scene.id);
+    players.forEach(renderControls);
+  }
+  listen(window,'storage',event=>{if(event.key===progressApi.key||event.key===`${progressApi.key}:cloud:${deviceId}`)refreshProgress();});
+  listen(window,'movie-progress-change',refreshProgress);
   workSelect.addEventListener('change',()=>{applyFilter(workSelect.value);announce(`${filters.find(f=>f.key===selectedWork).label} · ${visiblePlayers.length}本`);});
   function go(index){index=Math.max(0,Math.min(visiblePlayers.length-1,index));feed.scrollTo({top:index*feed.clientHeight,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});}
   listen(feed,'scroll',()=>{clearTimeout(snapTimer);snapTimer=setTimeout(()=>{const top=Math.round(feed.scrollTop/feed.clientHeight)*feed.clientHeight;if(Math.abs(feed.scrollTop-top)>1)feed.scrollTo({top,behavior:'smooth'});},160);if(scrollFrame)return;scrollFrame=requestAnimationFrame(()=>{scrollFrame=null;const p=visiblePlayers[Math.round(feed.scrollTop/feed.clientHeight)];if(p)activate(p.index);});},{passive:true});
@@ -202,5 +226,5 @@
     };
     return `<section class="home-library movie-library" aria-labelledby="movie-library-title"><div class="section-heading"><div><p class="section-eyebrow">LEARN WITH MOVIES</p><h2 id="movie-library-title">映画の会話で学ぶ</h2></div><span>${scenes.filter(s=>!progress.hidden(s.id)).length}会話</span></div><p class="movie-library-intro">作品を選んで、動画と英日字幕で。最後まで聞くと1回。100回聞いた会話は一覧から自動で削除されます。</p><div class="movie-collection-grid">${collections.map(c=>card(c.key,c.title,c.sub,scenes.filter(c.matches),c.description)).join('')}</div></section>`;
   }
-  window.MovieStudy={open,close,library};
+  window.MovieStudy={open,close,library,initialize};
 })();
