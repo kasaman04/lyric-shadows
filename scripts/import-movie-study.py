@@ -52,6 +52,9 @@ if args.include_player:
         assert before in body,('player_port_anchor_missing',before)
         body=body.replace(before,after)
     progress_replacements={
+      "    pause:icon(":"    rewind:icon('<path d=\"M4 9a8 8 0 1 1 0 6M4 4v5h5M14 8h-4v4h3a2 2 0 1 1-3 2\"/>'),\n    pause:icon(",
+      '<button type="button" class="speed" aria-label="再生速度を変更">':'<button type="button" class="rewind" aria-label="5秒戻る" title="5秒戻る">${icons.rewind}<span>5秒戻る</span></button><button type="button" class="speed" aria-label="再生速度を変更">',
+      "    const toggle=()=>{":"    q('.rewind').onclick=()=>{samplePass(player);video.currentTime=Math.max(0,video.currentTime-5);renderTime(player);};\n    const toggle=()=>{",
       'playsinline preload="none" loop poster=':'playsinline preload="none" poster=',
       'const player={scene,index,section,q,video,lastCue:-2,userPaused:false};':'const player={scene,index,section,q,video,lastCue:-2,userPaused:false,pass:progressApi.createPass()};',
       "p.video.loop=repeat;":"p.video.loop=false;",
@@ -71,7 +74,7 @@ if args.include_player:
     }
     for before,after in progress_replacements.items():
         assert before in body,('progress_port_anchor_missing',before)
-        body=body.replace(before,after)
+        body=body.replace(before,after.replace('\r\n','\n'))
     anchor="q('.work-title').textContent=scene.displayWork||scene.work;"
     assert anchor in body
     body=body.replace(anchor,"q('.topbar').insertAdjacentHTML('afterbegin','<button class=\"movie-back\" type=\"button\" aria-label=\"映画一覧に戻る\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"m14 5-7 7 7 7\"/></svg></button>');q('.movie-back').onclick=()=>options.home();\n    "+anchor)
@@ -187,6 +190,15 @@ if args.include_player:
             cursor=right
         return '\n'.join(out)
     css=scope_css((source/'feed.css').read_text(encoding='utf-8'))
+    transport='grid-template-columns:29px minmax(30px,1fr) 30px 47px 34px;gap:9px'
+    assert transport in css, 'rewind_transport_anchor_missing'
+    css=css.replace(transport,'grid-template-columns:29px minmax(30px,1fr) 30px 44px 47px 34px;gap:7px')
+    play_icon='.movie-study .play svg{width:17px;height:17px}'
+    assert play_icon in css, 'rewind_style_anchor_missing'
+    css=css.replace(play_icon,play_icon+'''
+.movie-study .rewind{width:44px;min-height:44px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;padding:2px;border:1px solid #a7a0a4;border-radius:10px;background:#100e1122}
+.movie-study .rewind svg{width:22px;height:22px}
+.movie-study .rewind span{font-size:9px;line-height:12px;white-space:nowrap}''')
     css+='''
 body.movie-study-open{overflow:hidden;background:#100f11}
 body.movie-study-open::before{display:none}
