@@ -98,6 +98,8 @@
       <div class="transport"><span class="time elapsed">0:00</span><input class="seek" type="range" min="0" max="${scene.duration}" step="0.05" value="0" aria-label="会話の再生位置"><span class="time duration">${format(Math.ceil(scene.duration))}</span><button type="button" class="rewind" aria-label="5秒戻る" title="5秒戻る">${icons.rewind}<span>5秒戻る</span></button><button type="button" class="speed" aria-label="再生速度を変更">1×</button><button type="button" class="play" aria-label="一時停止">${icons.pause}</button></div>
       <button type="button" class="swipe">${index<scenes.length-1?icons.up:icons.down}<span class="swipe-text">${index<scenes.length-1?'上にスワイプして次の会話へ':'下にスワイプして前の会話へ'}</span></button>`;
     const q=selector=>section.querySelector(selector),video=q('video');
+    // Register before movie handlers can rewind/repeat or detach the video.
+    window.PetPlayback?.watch(video);
     q('.topbar').insertAdjacentHTML('afterbegin','<button class="movie-back" type="button" aria-label="映画一覧に戻る"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 5-7 7 7 7"/></svg></button>');q('.movie-back').onclick=()=>options.home();
     q('.work-title').textContent=scene.displayWork||scene.work;q('.scene-title').textContent=scene.title;q('.scene-description').textContent=`${scene.description} · ${format(Math.ceil(scene.duration))}`;
     const player={scene,index,section,q,video,lastCue:-2,userPaused:false,pass:progressApi.createPass()};

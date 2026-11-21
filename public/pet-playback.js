@@ -30,6 +30,13 @@
       seeking: audio.seeking, muted: audio.muted || audio.volume === 0,
       active: active && !audio.paused && !audio.ended && audio.readyState >= 2 && !audio.seeking && !audio.muted && audio.volume > 0 };
   }
+  function releaseOwner() {
+    try { const key = lockKey + deviceId; if (JSON.parse(localStorage.getItem(key) || 'null')?.id === tabId) localStorage.removeItem(key); } catch {}
+    owns = false;
+  }
+  function releaseIfIdle() {
+    if (owns && ![...players].some(audio => snapshot(audio, watched.get(audio)?.playing).active)) releaseOwner();
+  }
   function sample(audio) {
     const record = watched.get(audio); if (!record) return;
     const current = snapshot(audio, record.playing), now = Date.now();
@@ -50,11 +57,11 @@
     watched.set(audio, record); players.add(audio);
     const reset = () => { record.last = snapshot(audio, record.playing); record.wall = Date.now(); };
     audio.addEventListener('playing', () => { record.playing = true; reset(); });
-    for (const event of ['pause', 'ended', 'waiting', 'stalled', 'error', 'emptied']) audio.addEventListener(event, () => { sample(audio); record.playing = false; reset(); });
-    audio.addEventListener('seeking', () => { record.playing = false; reset(); });
+    for (const event of ['pause', 'ended', 'waiting', 'stalled', 'error', 'emptied']) audio.addEventListener(event, () => { sample(audio); record.playing = false; reset(); releaseIfIdle(); });
+    audio.addEventListener('seeking', () => { record.playing = false; reset(); releaseIfIdle(); });
     audio.addEventListener('seeked', () => { record.playing = !audio.paused && audio.readyState >= 2; reset(); });
     audio.addEventListener('ratechange', () => { sample(audio); reset(); });
-    audio.addEventListener('volumechange', reset);
+    audio.addEventListener('volumechange', () => { reset(); releaseIfIdle(); });
     audio.addEventListener('timeupdate', () => sample(audio));
     audio.addEventListener('loadedmetadata', reset);
     return audio;
@@ -71,15 +78,14 @@
       sample(audio);
       if (audio.paused && !audio.isConnected && watched.get(audio)?.playing === false) players.delete(audio);
     }
-    // Retain ownership only while media is actually playing.
-    if ([...players].some(a => !a.paused) && owns) lease();
+    // Only credited media renews the lease. Muted/buffering tabs cannot keep it.
+    releaseIfIdle();
   }, 1000);
   // Detached reusable Audio objects rejoin the sample set on play.
   function managed(audio) { watch(audio); audio.addEventListener('play', () => players.add(audio)); return audio; }
   function release() {
     for (const audio of players) sample(audio);
-    try { const key = lockKey + deviceId; if (JSON.parse(localStorage.getItem(key) || 'null')?.id === tabId) localStorage.removeItem(key); } catch {}
-    owns = false;
+    releaseOwner();
   }
   window.addEventListener('pagehide', release);
   return { credit, watch: managed, configure(options) { sink = options.onCredit; petId = options.petId; deviceId = options.deviceId; }, flush() { for (const audio of players) sample(audio); }, release };

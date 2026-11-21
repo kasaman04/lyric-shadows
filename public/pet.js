@@ -418,8 +418,9 @@
   async function initialize(id) {
     device = id; cacheKey = 'petState:' + id; save = local(cacheKey);
     try { store = await openQueue(); } catch { store = await fallbackQueue(); }
-    await load();
     window.PetPlayback.configure({ deviceId: device, petId: () => current()?.id, onCredit: record });
+    // Playback must be queued locally even while the initial server read waits.
+    await load();
     const badge = document.createElement('button'); badge.id = 'petListeningBadge'; badge.className = 'pet-listening-badge'; badge.setAttribute('aria-label', '聴いた時間と育成を見る'); badge.addEventListener('click', open); document.body.appendChild(badge); updateBadge();
     positionListeningBadge(badge);
     new MutationObserver(updateBadge).observe(document.getElementById('app')||document.getElementById('practice')||document.body, { childList: true, subtree: true });
