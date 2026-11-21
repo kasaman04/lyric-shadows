@@ -16,9 +16,10 @@
     try {
       // Persist playback against the previous identity before reloading it.
       await window.PetGame?.prepareRefresh();
-      if (location.hash?.includes('saved-device=')) {
+      if (location.hash?.includes('saved-device=') || new URLSearchParams(location.search).has('saved-device')) {
         const url = new URL(location.href), params = new URLSearchParams(url.hash.slice(1));
-        params.set('saved-device', event.newValue); url.hash = params.toString();
+        url.searchParams.set('saved-device', event.newValue);
+        if (params.has('saved-device')) { params.set('saved-device', event.newValue); url.hash = params.toString(); }
         history.replaceState(null, '', url.href);
       }
       location.reload();

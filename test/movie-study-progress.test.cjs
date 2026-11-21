@@ -77,3 +77,37 @@ test('each recovered identity keeps its own movie history and 100 plays remain h
   const other=client(data,cloud(),'movie-test-writer-0002','other-movie-device-001');assert.equal(other.count('eternal-train'),0);
   const restored=client(data,server,'movie-test-writer-0003');await restored.sync();assert.equal(restored.hidden('eternal-train'),true);
 });
+
+test('a corrupted primary ledger restores the same plays from the backup without adding them twice',async()=>{
+  const data=storage(),server=cloud(),first=client(data,server);
+  first.complete('eternal-train');await first.sync();
+  data.setItem(`${key}:cloud:movie-test-device-001`,'broken');
+  const recovered=client(data,server,'movie-test-writer-0002');
+  assert.equal(recovered.count('eternal-train'),1);await recovered.sync();
+  assert.equal(server.counts()['eternal-train'],1);
+});
+
+test('an owned surviving mirror stays visible offline and is reconciled as a floor on recovery',async()=>{
+  const data=storage(),server=cloud();data.setItem(key,'{"eternal-train":7}');data.setItem(key+':owner','movie-test-device-001');
+  server.online=false;
+  const first=client(data,server);assert.equal(first.count('eternal-train'),7);
+  first.complete('eternal-train');assert.equal(first.count('eternal-train'),8);assert.equal(await first.sync(),false);
+  const recovered=client(data,server,'movie-test-writer-0002');assert.equal(recovered.count('eternal-train'),8);
+  server.online=true;await recovered.sync();await recovered.sync();assert.equal(server.counts()['eternal-train'],8);
+});
+
+test('the mirror of a confirmed cloud total is not imported as a second baseline',async()=>{
+  const data=storage(),server=cloud();
+  await server.request({replicas:{'old-movie-writer-0001':{'eternal-train':7}}});
+  data.setItem(key,'{"eternal-train":7}');data.setItem(key+':owner','movie-test-device-001');
+  const recovered=client(data,server);await recovered.sync();
+  assert.equal(recovered.count('eternal-train'),7);assert.equal(server.counts()['eternal-train'],7);
+});
+
+test('unconfirmed empty history has loading/error states and retries restore the confirmed count',async()=>{
+  const data=storage(),server=cloud();await server.request({baseline:{'eternal-train':7}});server.online=false;
+  const recovered=client(data,server);assert.deepEqual(recovered.status(),{phase:'pending',confirmed:false});
+  assert.equal(await recovered.sync(),false);assert.deepEqual(recovered.status(),{phase:'error',confirmed:false});
+  server.online=true;await recovered.sync();assert.deepEqual(recovered.status(),{phase:'ready',confirmed:true});
+  assert.equal(recovered.count('eternal-train'),7);
+});

@@ -59,38 +59,56 @@
     return counts;
   }
   function createCloudStore(storage,deviceId,{writerId,request,onChange=()=>{}}){
-    const ledgerKey=key+':cloud:'+deviceId,ownerKey=key+':owner';
-    let ledger={baseline:{},replicas:{}},running=null,dirty=false;
+    const ledgerKey=key+':cloud:'+deviceId,backupKey=ledgerKey+':backup',ownerKey=key+':owner';
+    let ledger={baseline:{},replicas:{}},running=null,dirty=false,phase='pending',confirmed=false;
     function read(k){try{return JSON.parse(storage.getItem(k)||'null');}catch{return null;}}
-    function refresh(){ledger=mergeLedger(ledger,read(ledgerKey)||{});}
+    function refresh(){ledger=mergeLedger(mergeLedger(ledger,read(ledgerKey)||{}),read(backupKey)||{});}
     refresh();
-    if(!storageOwner()&&!read(ledgerKey))ledger.baseline=cleanCounts(read(key));
+    const savedLedger=read(ledgerKey)||read(backupKey);
+    let recoveryFloor=mergeLedger({baseline:read(ledgerKey)?.recoveryFloor},{baseline:read(backupKey)?.recoveryFloor}).baseline;
+    if(storageOwner()===deviceId&&!savedLedger)recoveryFloor=cleanCounts(read(key));
+    const floorWriterStart={...ledger.replicas[writerId]};
+    if(!storageOwner()&&!savedLedger)ledger.baseline=cleanCounts(read(key));
     function storageOwner(){try{return storage.getItem(ownerKey);}catch{return null;}}
+    function counts(){
+      const value=ledgerCounts(ledger);
+      for(const [id,n]of Object.entries(recoveryFloor))value[id]=Math.min(limit,Math.max(value[id]||0,n+Math.max(0,(ledger.replicas[writerId]?.[id]||0)-(floorWriterStart[id]||0))));
+      return value;
+    }
     function persist(){
-      try{storage.setItem(ledgerKey,JSON.stringify(ledger));storage.setItem(ownerKey,deviceId);storage.setItem(key,JSON.stringify(ledgerCounts(ledger)));return true;}catch{return false;}
+      let saved=false;
+      const snapshot=Object.keys(recoveryFloor).length?{...ledger,recoveryFloor:counts()}:ledger;
+      for(const name of [ledgerKey,backupKey])try{storage.setItem(name,JSON.stringify(snapshot));saved=true;}catch{}
+      try{storage.setItem(ownerKey,deviceId);storage.setItem(key,JSON.stringify(counts()));}catch{}
+      return saved;
     }
     persist();
     async function sync(){
       dirty=true;
       if(running)return running;
+      phase='syncing';onChange();
       running=(async()=>{
         try{
           while(dirty){
             dirty=false;refresh();
             const remote=await request(JSON.parse(JSON.stringify(ledger)));
             if(!remote||!remote.baseline||!remote.replicas)throw Error('Invalid movie progress');
-            refresh();ledger=mergeLedger(ledger,remote);persist();onChange();
+            refresh();ledger=mergeLedger(ledger,remote);
+            // A surviving count mirror is a floor, not an extra set of plays.
+            const recovered=counts(),merged=ledgerCounts(ledger);
+            for(const [id,n]of Object.entries(recovered))if(n>(merged[id]||0)){ledger.baseline[id]=(ledger.baseline[id]||0)+n-(merged[id]||0);dirty=true;}
+            recoveryFloor={};confirmed=true;persist();onChange();
           }
           return true;
-        }catch{return false;}finally{running=null;}
+        }catch{phase='error';return false;}finally{if(phase!=='error')phase='ready';running=null;onChange();}
       })();
       return running;
     }
-    return {refresh,sync,count:id=>ledgerCounts(ledger)[id]||0,hidden:id=>(ledgerCounts(ledger)[id]||0)>=limit,complete(id){
+    return {refresh,sync,status:()=>({phase,confirmed}),count:id=>counts()[id]||0,hidden:id=>(counts()[id]||0)>=limit,complete(id){
       if(!/^[a-z0-9-]{1,80}$/.test(id))throw Error('Invalid scene');
       refresh();
-      if((ledgerCounts(ledger)[id]||0)<limit){const own=ledger.replicas[writerId]||={};own[id]=(own[id]||0)+1;}
-      const persisted=persist(),count=ledgerCounts(ledger)[id]||0;
+      if((counts()[id]||0)<limit){const own=ledger.replicas[writerId]||={};own[id]=(own[id]||0)+1;}
+      const persisted=persist(),count=counts()[id]||0;
       void sync();
       return {count,hidden:count>=limit,persisted};
     }};

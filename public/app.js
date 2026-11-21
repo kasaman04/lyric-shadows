@@ -1052,8 +1052,8 @@ function createDeviceId() {
 }
 
 function linkedDeviceId() {
-  const value = new URLSearchParams(window.location.hash.slice(1)).get('saved-device') || '';
-  return /^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$/i.test(value) ? value : '';
+  const value = new URLSearchParams(window.location.hash.slice(1)).get('saved-device') || new URLSearchParams(window.location.search).get('saved-device') || '';
+  return /^[a-z0-9-]{12,80}$/i.test(value) ? value : '';
 }
 
 function loadDeviceId() {
@@ -1071,6 +1071,9 @@ function loadDeviceId() {
   let id = linked || previous;
   if (!/^[a-z0-9-]{12,80}$/i.test(id)) id = createDeviceId();
   writeStoredValue(DEVICE_ID_KEY, id);
+  // Keep the same saved history when movie navigation replaces the hash.
+  const url = new URL(location.href); url.searchParams.set('saved-device', id);
+  history.replaceState(null, '', url);
   return id;
 }
 

@@ -22,6 +22,7 @@
   window.addEventListener('online',()=>void progress.sync?.());
   window.addEventListener('focus',()=>void progress.sync?.());
   document.addEventListener('visibilitychange',()=>{if(!document.hidden)void progress.sync?.();});
+  setInterval(()=>{if(deviceId&&!document.hidden)void progress.sync?.();},15000);
   const escapeHtml=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   function mount(root,options){
     let destroyed=false;
@@ -118,7 +119,8 @@
     feed.append(section);return player;
   });
   function renderControls(p){
-    p.q('.watch-count').textContent=`聞いた回数 ${progress.count(p.scene.id)} / ${progressApi.limit}回`;
+    const count=progress.count(p.scene.id),status=progress.status?.();
+    p.q('.watch-count').textContent=count||status?.confirmed?`聞いた回数 ${count} / ${progressApi.limit}回${status?.phase==='error'?' · 未同期':''}`:status?.phase==='error'?'回数を確認できません。接続後に自動で再確認します。':'保存済みの回数を確認中…';
     p.q('.sound-icon').innerHTML=muted?icons.muted:icons.sound;p.q('.sound').setAttribute('aria-label',muted?'音声をオン':'音声をオフ');p.q('.sound-label').textContent=muted?'音声オン':'音声';
     p.q('.repeat').classList.toggle('on',repeat);p.q('.repeat').setAttribute('aria-pressed',String(repeat));
     const isSaved=saved.has(p.scene.id);p.q('.save').classList.toggle('on',isSaved);p.q('.save').setAttribute('aria-pressed',String(isSaved));p.q('.save-icon').innerHTML=isSaved?icons.saved:icons.save;

@@ -69,7 +69,7 @@ if args.include_player:
       "active=-1;feed.scrollTo({top:visiblePlayers.indexOf(target)*feed.clientHeight,behavior:'instant'});activate(target.index);":"active=-1;root.querySelector('.movie-empty')?.remove();if(target){feed.scrollTo({top:visiblePlayers.indexOf(target)*feed.clientHeight,behavior:'instant'});activate(target.index);}else{showCompleted();updateLocation();}",
       "if(players[active])url.searchParams.set('scene',players[active].scene.id);":"if(players[active])url.searchParams.set('scene',players[active].scene.id);else url.searchParams.delete('scene');",
       "p.video.muted=muted;p.video.loop=false;p.video.playbackRate=rate;":"if(p.video.ended){p.pass.reset();p.video.currentTime=0;}p.video.muted=muted;p.video.loop=false;p.video.playbackRate=rate;",
-      "  function renderControls(p){":"  function renderControls(p){\n    p.q('.watch-count').textContent=`聞いた回数 ${progress.count(p.scene.id)} / ${progressApi.limit}回`;",
+      "  function renderControls(p){":"  function renderControls(p){\n    const count=progress.count(p.scene.id),status=progress.status?.();\n    p.q('.watch-count').textContent=count||status?.confirmed?`聞いた回数 ${count} / ${progressApi.limit}回${status?.phase==='error'?' · 未同期':''}`:status?.phase==='error'?'回数を確認できません。接続後に自動で再確認します。':'保存済みの回数を確認中…';",
       '<div class="scene-meta"><p class="work-title">':'<div class="scene-meta"><p class="watch-count" aria-live="polite"></p><p class="work-title">',
       "  workSelect.addEventListener('change',":"  function refreshProgress(){\r\n    progress.refresh();\r\n    if(visiblePlayers.some(p=>progress.hidden(p.scene.id)))applyFilter(selectedWork,players[active]?.scene.id);\r\n    players.forEach(renderControls);\r\n  }\r\n  listen(window,'storage',event=>{if(event.key===progressApi.key||event.key===`${progressApi.key}:cloud:${deviceId}`)refreshProgress();});\r\n  listen(window,'movie-progress-change',refreshProgress);\r\n  workSelect.addEventListener('change',"
     }
@@ -103,6 +103,7 @@ if args.include_player:
   window.addEventListener('online',()=>void progress.sync?.());
   window.addEventListener('focus',()=>void progress.sync?.());
   document.addEventListener('visibilitychange',()=>{if(!document.hidden)void progress.sync?.();});
+  setInterval(()=>{if(deviceId&&!document.hidden)void progress.sync?.();},15000);
   const escapeHtml=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   function mount(root,options){
     let destroyed=false;
