@@ -1,0 +1,106 @@
+{
+  "scenes": 11,
+  "minutes": 30.9,
+  "checks": [
+    {
+      "id": "sunrise-first-meeting",
+      "seconds": 78.605,
+      "captions": 21,
+      "lufs": -16.23,
+      "truePeak": -1.63,
+      "shortCues": [],
+      "humanListening": false
+    },
+    {
+      "id": "sunrise-reincarnation",
+      "seconds": 99.405,
+      "captions": 33,
+      "lufs": -16.15,
+      "truePeak": -1.73,
+      "shortCues": [],
+      "humanListening": false
+    },
+    {
+      "id": "sunrise-church",
+      "seconds": 135.505,
+      "captions": 29,
+      "lufs": -16.18,
+      "truePeak": -1.62,
+      "shortCues": [],
+      "humanListening": false
+    },
+    {
+      "id": "sunrise-palm-reader",
+      "seconds": 141.305,
+      "captions": 46,
+      "lufs": -15.99,
+      "truePeak": -1.12,
+      "shortCues": [],
+      "humanListening": false
+    },
+    {
+      "id": "sunrise-street-poet",
+      "seconds": 245.205,
+      "captions": 81,
+      "lufs": -16.31,
+      "truePeak": -2.64,
+      "shortCues": [],
+      "humanListening": false
+    },
+    {
+      "id": "sunset-next-book",
+      "seconds": 131.505,
+      "captions": 37,
+      "lufs": -16.02,
+      "truePeak": -1.87,
+      "shortCues": [],
+      "humanListening": false
+    },
+    {
+      "id": "sunset-stop-car",
+      "seconds": 158.605,
+      "captions": 78,
+      "lufs": -15.98,
+      "truePeak": -1.93,
+      "shortCues": [],
+      "humanListening": false
+    },
+    {
+      "id": "midnight-passing-through",
+      "seconds": 135.205,
+      "captions": 30,
+      "lufs": -16.31,
+      "truePeak": -1.81,
+      "shortCues": [],
+      "humanListening": false
+    },
+    {
+      "id": "midnight-bimbo",
+      "seconds": 119.105,
+      "captions": 43,
+      "lufs": -15.75,
+      "truePeak": -1.95,
+      "shortCues": [],
+      "humanListening": false
+    },
+    {
+      "id": "midnight-hotel-argument",
+      "seconds": 125.605,
+      "captions": 48,
+      "lufs": -15.88,
+      "truePeak": -1.93,
+      "shortCues": [],
+      "humanListening": false
+    },
+    {
+      "id": "midnight-time-traveler",
+      "seconds": 482.905,
+      "captions": 181,
+      "lufs": -16.13,
+      "truePeak": -1.44,
+      "shortCues": [],
+      "humanListening": false
+    }
+  ],
+  "method": "Approved gpt-4o and whisper-1 audio recognition, publisher captions when available, local acoustic word alignment, decode and timing checks. No human listening."
+}

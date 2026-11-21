@@ -1,5 +1,210 @@
 [
   {
+    "id": "sunrise-first-meeting",
+    "work": "Before Sunrise",
+    "title": "列車で、初めて話し始める",
+    "description": "列車で声をかけ、冗談と本の話から会話が始まる",
+    "duration": 78.605,
+    "source": "https://www.youtube.com/watch?v=r9JGhbfazyA",
+    "sourceStart": 185.8,
+    "sourceEnd": 264.38,
+    "displayWork": "Before Sunrise",
+    "captions": [
+      {
+        "id": "sunrise-first-meeting-cue-001",
+        "start": 0.98,
+        "end": 3.58,
+        "speechText": "Do you have any idea what they were arguing about?",
+        "language": "en",
+        "en": "Do you have any idea what they were arguing about?",
+        "ja": "彼らが何について言い争ってたか分かる？"
+      },
+      {
+        "id": "sunrise-first-meeting-cue-002",
+        "start": 5.82,
+        "end": 6.8,
+        "speechText": "Do you speak English?",
+        "language": "en",
+        "en": "Do you speak English?",
+        "ja": "英語を話せますか？"
+      },
+      {
+        "id": "sunrise-first-meeting-cue-003",
+        "start": 7.34,
+        "end": 7.8,
+        "speechText": "Yeah.",
+        "language": "en",
+        "en": "Yeah.",
+        "ja": "うん。"
+      },
+      {
+        "id": "sunrise-first-meeting-cue-004",
+        "start": 8.28,
+        "end": 11.04,
+        "speechText": "No, I'm sorry, my German is not very good.",
+        "language": "en",
+        "en": "No, I'm sorry, my German is not very good.",
+        "ja": "ごめん、ドイツ語はあまり得意じゃないんだ。"
+      },
+      {
+        "id": "sunrise-first-meeting-cue-005",
+        "start": 15.92,
+        "end": 19.96,
+        "speechText": "Have you ever heard that as couples get older, they lose their ability to hear each other?",
+        "language": "en",
+        "en": "Have you ever heard that as couples get older, they lose their ability to hear each other?",
+        "ja": "年を重ねるとカップルはお互いの声が聞こえなくなるって聞いたことある？"
+      },
+      {
+        "id": "sunrise-first-meeting-cue-006",
+        "start": 20.92,
+        "end": 21.38,
+        "speechText": "No.",
+        "language": "en",
+        "en": "No.",
+        "ja": "ない。"
+      },
+      {
+        "id": "sunrise-first-meeting-cue-007",
+        "start": 21.8,
+        "end": 26.3,
+        "speechText": "Well, supposedly, men lose their ability to hear higher-pitched sounds,",
+        "language": "en",
+        "en": "Well, supposedly, men lose their ability to hear higher-pitched sounds,",
+        "ja": "どうやら男性は高い音が聞こえにくくなるらしくて、"
+      },
+      {
+        "id": "sunrise-first-meeting-cue-008",
+        "start": 26.3,
+        "end": 29.04,
+        "speechText": "and women eventually lose hearing on the low end.",
+        "language": "en",
+        "en": "and women eventually lose hearing on the low end.",
+        "ja": "女性は低い音が聞こえにくくなるんだって。"
+      },
+      {
+        "id": "sunrise-first-meeting-cue-009",
+        "start": 29.78,
+        "end": 31.86,
+        "speechText": "I guess they sort of nullify each other or something.",
+        "language": "en",
+        "en": "I guess they sort of nullify each other or something.",
+        "ja": "お互いに打ち消し合う感じなんだろうね。"
+      },
+      {
+        "id": "sunrise-first-meeting-cue-010",
+        "start": 31.94,
+        "end": 32.48,
+        "speechText": "I guess.",
+        "language": "en",
+        "en": "I guess.",
+        "ja": "そうかもね。"
+      },
+      {
+        "id": "sunrise-first-meeting-cue-011",
+        "start": 32.84,
+        "end": 36.4,
+        "speechText": "Nature's way of allowing couples to grow old together without killing each other.",
+        "language": "en",
+        "en": "Nature's way of allowing couples to grow old together without killing each other.",
+        "ja": "年を取ってもお互い殺さずにいられる自然の仕組みだよ。"
+      },
+      {
+        "id": "sunrise-first-meeting-cue-012",
+        "start": 36.78,
+        "end": 39.88,
+        "speechText": "What are you reading?",
+        "language": "en",
+        "en": "What are you reading?",
+        "ja": "何を読んでいるの？"
+      },
+      {
+        "id": "sunrise-first-meeting-cue-013",
+        "start": 41.68,
+        "end": 42.52,
+        "speechText": "Oh, yeah.",
+        "language": "en",
+        "en": "Oh, yeah.",
+        "ja": "ああ、うん。"
+      },
+      {
+        "id": "sunrise-first-meeting-cue-014",
+        "start": 43.4,
+        "end": 44.78,
+        "speechText": "How about you?",
+        "language": "en",
+        "en": "How about you?",
+        "ja": "君は？"
+      },
+      {
+        "id": "sunrise-first-meeting-cue-015",
+        "start": 46.66,
+        "end": 47.36,
+        "speechText": "Um...",
+        "language": "en",
+        "en": "Um...",
+        "ja": "うーん…"
+      },
+      {
+        "id": "sunrise-first-meeting-cue-016",
+        "start": 47.36,
+        "end": 47.82,
+        "speechText": "Oh.",
+        "language": "en",
+        "en": "Oh.",
+        "ja": "ああ。"
+      },
+      {
+        "id": "sunrise-first-meeting-cue-017",
+        "start": 57.78,
+        "end": 65.8,
+        "speechText": "Look, I was thinking about going to the lounge car sometime soon.",
+        "language": "en",
+        "en": "Look, I was thinking about going to the lounge car sometime soon.",
+        "ja": "ちょっとしたらラウンジカーに行こうと思ってるんだけど。"
+      },
+      {
+        "id": "sunrise-first-meeting-cue-018",
+        "start": 66.2,
+        "end": 67.26,
+        "speechText": "Would you like to come with me?",
+        "language": "en",
+        "en": "Would you like to come with me?",
+        "ja": "一緒に来ない？"
+      },
+      {
+        "id": "sunrise-first-meeting-cue-019",
+        "start": 68.02,
+        "end": 68.44,
+        "speechText": "Yeah.",
+        "language": "en",
+        "en": "Yeah.",
+        "ja": "うん。"
+      },
+      {
+        "id": "sunrise-first-meeting-cue-020",
+        "start": 69.32,
+        "end": 70.58,
+        "speechText": "Okay.",
+        "language": "en",
+        "en": "Okay.",
+        "ja": "分かった。"
+      },
+      {
+        "id": "sunrise-first-meeting-cue-021",
+        "start": 77.42,
+        "end": 78.605,
+        "speechText": "Okay.",
+        "language": "en",
+        "en": "Okay.",
+        "ja": "うん。"
+      }
+    ],
+    "subtitleVerification": "automated; not human listening",
+    "video": "/movie-study/media/sunrise-first-meeting.mp4",
+    "poster": "/movie-study/posters/sunrise-first-meeting.jpg"
+  },
+  {
     "id": "train-invitation",
     "work": "Before Sunrise",
     "title": "一緒に、列車を降りない？",
@@ -712,6 +917,749 @@
     "subtitleVerification": "automated; not human listening"
   },
   {
+    "id": "sunrise-reincarnation",
+    "work": "Before Sunrise",
+    "title": "生まれ変わりと、魂の数",
+    "description": "生まれ変わりと、増え続ける人口について考える",
+    "duration": 99.405,
+    "source": "https://www.youtube.com/watch?v=HV1P0zC3uyc",
+    "sourceStart": 0,
+    "sourceEnd": 99.33,
+    "displayWork": "Before Sunrise",
+    "captions": [
+      {
+        "id": "sunrise-reincarnation-cue-001",
+        "start": 0,
+        "end": 1.4,
+        "speechText": "What's the problem for you?",
+        "language": "en",
+        "en": "What's the problem for you?",
+        "ja": "何が問題なの？"
+      },
+      {
+        "id": "sunrise-reincarnation-cue-002",
+        "start": 2.24,
+        "end": 3.34,
+        "speechText": "You, probably.",
+        "language": "en",
+        "en": "You, probably.",
+        "ja": "たぶん君だよ。"
+      },
+      {
+        "id": "sunrise-reincarnation-cue-003",
+        "start": 4.02,
+        "end": 4.62,
+        "speechText": "What?",
+        "language": "en",
+        "en": "What?",
+        "ja": "えっ？"
+      },
+      {
+        "id": "sunrise-reincarnation-cue-004",
+        "start": 5.1,
+        "end": 7.0,
+        "speechText": "No, all right.",
+        "language": "en",
+        "en": "No, all right.",
+        "ja": "いや、大丈夫。"
+      },
+      {
+        "id": "sunrise-reincarnation-cue-005",
+        "start": 7.0,
+        "end": 10.32,
+        "speechText": "I had a thought the other day that qualifies as a problem.",
+        "language": "en",
+        "en": "I had a thought the other day that qualifies as a problem.",
+        "ja": "この前思いついたことが、問題かもしれない。"
+      },
+      {
+        "id": "sunrise-reincarnation-cue-006",
+        "start": 10.78,
+        "end": 11.9,
+        "speechText": "What is it?",
+        "language": "en",
+        "en": "What is it?",
+        "ja": "何それ？"
+      },
+      {
+        "id": "sunrise-reincarnation-cue-007",
+        "start": 12.24,
+        "end": 15.664,
+        "speechText": "Well, it was a thought I had on the train.",
+        "language": "en",
+        "en": "Well, it was a thought I had on the train.",
+        "ja": "電車の中で考えたことなんだ。"
+      },
+      {
+        "id": "sunrise-reincarnation-cue-008",
+        "start": 15.664,
+        "end": 16.56,
+        "speechText": "So, okay, all right.",
+        "language": "en",
+        "en": "So, okay, all right.",
+        "ja": "まあ、とにかくね。"
+      },
+      {
+        "id": "sunrise-reincarnation-cue-009",
+        "start": 16.94,
+        "end": 18.7,
+        "speechText": "Do you believe in reincarnation?",
+        "language": "en",
+        "en": "Do you believe in reincarnation?",
+        "ja": "輪廻転生を信じる？"
+      },
+      {
+        "id": "sunrise-reincarnation-cue-010",
+        "start": 19.58,
+        "end": 20.42,
+        "speechText": "Yeah, yeah.",
+        "language": "en",
+        "en": "Yeah, yeah.",
+        "ja": "うん、信じるよ。"
+      },
+      {
+        "id": "sunrise-reincarnation-cue-011",
+        "start": 20.42,
+        "end": 21.6,
+        "speechText": "It's interesting.",
+        "language": "en",
+        "en": "It's interesting.",
+        "ja": "面白いよね。"
+      },
+      {
+        "id": "sunrise-reincarnation-cue-012",
+        "start": 21.9,
+        "end": 24.28,
+        "speechText": "Most people, you know, a lot of people talk about past lives",
+        "language": "en",
+        "en": "Most people, you know, a lot of people talk about past lives",
+        "ja": "多くの人が前世とか話すじゃない？"
+      },
+      {
+        "id": "sunrise-reincarnation-cue-013",
+        "start": 24.28,
+        "end": 26.1,
+        "speechText": "and things like that, you know,",
+        "language": "en",
+        "en": "and things like that, you know,",
+        "ja": "あとそういうことね。"
+      },
+      {
+        "id": "sunrise-reincarnation-cue-014",
+        "start": 26.2,
+        "end": 28.58,
+        "speechText": "and even if they don't believe it in some specific way,",
+        "language": "en",
+        "en": "and even if they don't believe it in some specific way,",
+        "ja": "具体的に信じてなくても、"
+      },
+      {
+        "id": "sunrise-reincarnation-cue-015",
+        "start": 28.86,
+        "end": 32.28,
+        "speechText": "you know, people have some kind of notion of an eternal soul, right?",
+        "language": "en",
+        "en": "you know, people have some kind of notion of an eternal soul, right?",
+        "ja": "みんな魂は永遠だと考えてるよね？"
+      },
+      {
+        "id": "sunrise-reincarnation-cue-016",
+        "start": 32.4,
+        "end": 34.44,
+        "speechText": "Yeah. Okay, well, this is my thought.",
+        "language": "en",
+        "en": "Yeah. Okay, well, this is my thought.",
+        "ja": "そう。で、これが俺の考え。"
+      },
+      {
+        "id": "sunrise-reincarnation-cue-017",
+        "start": 34.8,
+        "end": 38.14,
+        "speechText": "50,000 years ago, there were not even a million people on the planet.",
+        "language": "en",
+        "en": "50,000 years ago, there were not even a million people on the planet.",
+        "ja": "5万年前は、地球に100万人もいなかった。"
+      },
+      {
+        "id": "sunrise-reincarnation-cue-018",
+        "start": 38.44,
+        "end": 42.14,
+        "speechText": "10,000 years ago, there's like two million people on the planet.",
+        "language": "en",
+        "en": "10,000 years ago, there's like two million people on the planet.",
+        "ja": "1万年前は、だいたい200万人くらい。"
+      },
+      {
+        "id": "sunrise-reincarnation-cue-019",
+        "start": 42.48,
+        "end": 46.3,
+        "speechText": "Now there's between five and six billion people on the planet, right?",
+        "language": "en",
+        "en": "Now there's between five and six billion people on the planet, right?",
+        "ja": "今は50～60億人くらいでしょ？"
+      },
+      {
+        "id": "sunrise-reincarnation-cue-020",
+        "start": 46.64,
+        "end": 51.06,
+        "speechText": "Now, if we all have our own, like, individual, unique soul,",
+        "language": "en",
+        "en": "Now, if we all have our own, like, individual, unique soul,",
+        "ja": "みんなそれぞれ独自で特別な魂があるなら、"
+      },
+      {
+        "id": "sunrise-reincarnation-cue-021",
+        "start": 51.8,
+        "end": 53.14,
+        "speechText": "right, where do they all come from?",
+        "language": "en",
+        "en": "right, where do they all come from?",
+        "ja": "その魂はどこから来るんだろう？"
+      },
+      {
+        "id": "sunrise-reincarnation-cue-022",
+        "start": 53.82,
+        "end": 57.48,
+        "speechText": "You know, are modern souls only a fraction of the original souls?",
+        "language": "en",
+        "en": "You know, are modern souls only a fraction of the original souls?",
+        "ja": "現代人の魂って、最初の魂の一部なのかな？"
+      },
+      {
+        "id": "sunrise-reincarnation-cue-023",
+        "start": 57.6,
+        "end": 59.7,
+        "speechText": "Because if they are, that represents a 5,000",
+        "language": "en",
+        "en": "Because if they are, that represents a 5,000",
+        "ja": "もしそうなら、5000：1の割合で分かれることになる。"
+      },
+      {
+        "id": "sunrise-reincarnation-cue-024",
+        "start": 59.7,
+        "end": 63.16,
+        "speechText": "to 1 split of each soul in just the last 50,000 years,",
+        "language": "en",
+        "en": "to 1 split of each soul in just the last 50,000 years,",
+        "ja": "たった5万年でそれだけ分割されたってこと。"
+      },
+      {
+        "id": "sunrise-reincarnation-cue-025",
+        "start": 63.16,
+        "end": 64.96,
+        "speechText": "which is like a blip in the earth's time.",
+        "language": "en",
+        "en": "which is like a blip in the earth's time.",
+        "ja": "地球の歴史からすれば一瞬みたいなもんだ。"
+      },
+      {
+        "id": "sunrise-reincarnation-cue-026",
+        "start": 65.214,
+        "end": 70.78,
+        "speechText": "You know, so at best, we're like these tiny fractions of people, you know, walking.",
+        "language": "en",
+        "en": "You know, so at best, we're like these tiny fractions of people, you know, walking.",
+        "ja": "だとしたら、僕らは人のほんの断片なんだ。"
+      },
+      {
+        "id": "sunrise-reincarnation-cue-027",
+        "start": 71.0,
+        "end": 72.34,
+        "speechText": "I mean, is that why we're all so scattered?",
+        "language": "en",
+        "en": "I mean, is that why we're all so scattered?",
+        "ja": "だからみんなバラバラなのかな？"
+      },
+      {
+        "id": "sunrise-reincarnation-cue-028",
+        "start": 72.74,
+        "end": 74.12,
+        "speechText": "You know, is that why we're all so specialized?",
+        "language": "en",
+        "en": "You know, is that why we're all so specialized?",
+        "ja": "だからみんな専門的なのかな？"
+      },
+      {
+        "id": "sunrise-reincarnation-cue-029",
+        "start": 74.5,
+        "end": 76.54,
+        "speechText": "Wait a minute, I'm not sure.",
+        "language": "en",
+        "en": "Wait a minute, I'm not sure.",
+        "ja": "ちょっと待って、よく分からない。"
+      },
+      {
+        "id": "sunrise-reincarnation-cue-030",
+        "start": 76.98,
+        "end": 80.081,
+        "speechText": "I don't… I know, I know.",
+        "language": "en",
+        "en": "I don't… I know, I know.",
+        "ja": "分からない…分かってる、分かってるよ。"
+      },
+      {
+        "id": "sunrise-reincarnation-cue-031",
+        "start": 80.081,
+        "end": 83.16,
+        "speechText": "It's a totally scattered thought, which is kind of why it makes sense.",
+        "language": "en",
+        "en": "It's a totally scattered thought, which is kind of why it makes sense.",
+        "ja": "すごく散らかった考えだけど、だからこそ納得しちゃう。"
+      },
+      {
+        "id": "sunrise-reincarnation-cue-032",
+        "start": 83.24,
+        "end": 85.32,
+        "speechText": "I agree with you.",
+        "language": "en",
+        "en": "I agree with you.",
+        "ja": "同感だよ。"
+      },
+      {
+        "id": "sunrise-reincarnation-cue-033",
+        "start": 87.114,
+        "end": 88.58,
+        "speechText": "Let's get off this damn train.",
+        "language": "en",
+        "en": "Let's get off this damn train.",
+        "ja": "このクソ電車から降りよう。"
+      }
+    ],
+    "subtitleVerification": "automated; not human listening",
+    "video": "/movie-study/media/sunrise-reincarnation.mp4",
+    "poster": "/movie-study/posters/sunrise-reincarnation.jpg"
+  },
+  {
+    "id": "sunrise-palm-reader",
+    "work": "Before Sunrise",
+    "title": "手相占いと、星くずの話",
+    "description": "街の占い師と、人生や人とのつながりについて話す",
+    "duration": 141.305,
+    "source": "https://www.youtube.com/watch?v=g7r8RePc0v4",
+    "sourceStart": 3.2,
+    "sourceEnd": 144.4,
+    "displayWork": "Before Sunrise",
+    "captions": [
+      {
+        "id": "sunrise-palm-reader-cue-001",
+        "start": 0,
+        "end": 2.16,
+        "speechText": "Look at this palm reader.",
+        "language": "en",
+        "en": "Look at this palm reader.",
+        "ja": "この手相占い師を見て。"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-002",
+        "start": 2.34,
+        "end": 3.44,
+        "speechText": "She's interesting looking.",
+        "language": "en",
+        "en": "She's interesting looking.",
+        "ja": "彼女、面白い顔してるね。"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-003",
+        "start": 5.74,
+        "end": 6.46,
+        "speechText": "Uh oh.",
+        "language": "en",
+        "en": "Uh oh.",
+        "ja": "あ、やばい。"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-004",
+        "start": 6.48,
+        "end": 6.9,
+        "speechText": "What?",
+        "language": "en",
+        "en": "What?",
+        "ja": "何？"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-005",
+        "start": 7.44,
+        "end": 8.84,
+        "speechText": "I just made eye contact.",
+        "language": "en",
+        "en": "I just made eye contact.",
+        "ja": "目が合っちゃった。"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-006",
+        "start": 9.32,
+        "end": 10.16,
+        "speechText": "Isn't that coming over here?",
+        "language": "en",
+        "en": "Isn't that coming over here?",
+        "ja": "こっちに来てない？"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-007",
+        "start": 10.16,
+        "end": 10.66,
+        "speechText": "Yeah, she is.",
+        "language": "en",
+        "en": "Yeah, she is.",
+        "ja": "うん、来てるよ。"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-008",
+        "start": 10.66,
+        "end": 11.3,
+        "speechText": "Oh shit.",
+        "language": "en",
+        "en": "Oh shit.",
+        "ja": "やばい。"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-009",
+        "start": 14.92,
+        "end": 15.84,
+        "speechText": "Oh no.",
+        "language": "en",
+        "en": "Oh no.",
+        "ja": "ああ、どうしよう。"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-010",
+        "start": 16.0,
+        "end": 17.54,
+        "speechText": "Oh my god, you want your palm read?",
+        "language": "en",
+        "en": "Oh my god, you want your palm read?",
+        "ja": "やば、手相見てもらいたい？"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-011",
+        "start": 17.54,
+        "end": 18.0,
+        "speechText": "No.",
+        "language": "en",
+        "en": "No.",
+        "ja": "いや、いらない。"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-012",
+        "start": 18.06,
+        "end": 18.5,
+        "speechText": "No?",
+        "language": "en",
+        "en": "No?",
+        "ja": "いらないの？"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-013",
+        "start": 18.52,
+        "end": 19.02,
+        "speechText": "Are you sure?",
+        "language": "en",
+        "en": "Are you sure?",
+        "ja": "本当に？"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-014",
+        "start": 19.02,
+        "end": 19.82,
+        "speechText": "Yeah, I'm sure.",
+        "language": "en",
+        "en": "Yeah, I'm sure.",
+        "ja": "うん、本当。"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-015",
+        "start": 20.78,
+        "end": 21.22,
+        "speechText": "Okay.",
+        "language": "en",
+        "en": "Okay.",
+        "ja": "わかった。"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-016",
+        "start": 22.84,
+        "end": 23.98,
+        "speechText": "Here she is.",
+        "language": "en",
+        "en": "Here she is.",
+        "ja": "来たよ。"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-017",
+        "start": 24.76,
+        "end": 26.36,
+        "speechText": "Ich möchte deine Hand lesen.",
+        "language": "de",
+        "en": "",
+        "ja": "手相を見せていただけますか？"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-018",
+        "start": 27.38,
+        "end": 29.02,
+        "speechText": "Français, English?",
+        "language": "fr",
+        "en": "",
+        "ja": "フランス語？英語？"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-019",
+        "start": 34.14,
+        "end": 35.48,
+        "speechText": "Want your palm read?",
+        "language": "en",
+        "en": "Want your palm read?",
+        "ja": "手相を見てほしい？"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-020",
+        "start": 37.24,
+        "end": 39.44,
+        "speechText": "Yeah, how much is it?",
+        "language": "en",
+        "en": "Yeah, how much is it?",
+        "ja": "うん、いくら？"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-021",
+        "start": 39.96,
+        "end": 41.22,
+        "speechText": "For you, 50.",
+        "language": "en",
+        "en": "For you, 50.",
+        "ja": "あなたには50。"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-022",
+        "start": 41.72,
+        "end": 42.48,
+        "speechText": "Okay?",
+        "language": "en",
+        "en": "Okay?",
+        "ja": "いい？"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-023",
+        "start": 43.22,
+        "end": 43.84,
+        "speechText": "Okay.",
+        "language": "en",
+        "en": "Okay.",
+        "ja": "いいよ。"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-024",
+        "start": 49.54,
+        "end": 55.58,
+        "speechText": "Oh, so you have been on a journey and you are a stranger to this place.",
+        "language": "en",
+        "en": "Oh, so you have been on a journey and you are a stranger to this place.",
+        "ja": "あなたは旅をしていて、この場所には馴染みがない。"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-025",
+        "start": 56.38,
+        "end": 59.24,
+        "speechText": "You are an adventurer.",
+        "language": "en",
+        "en": "You are an adventurer.",
+        "ja": "あなたは冒険者です。"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-026",
+        "start": 60.04,
+        "end": 61.12,
+        "speechText": "A seeker.",
+        "language": "en",
+        "en": "A seeker.",
+        "ja": "真理を探している人です。"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-027",
+        "start": 62.5,
+        "end": 64.38,
+        "speechText": "An adventurer in your mind.",
+        "language": "en",
+        "en": "An adventurer in your mind.",
+        "ja": "心の中の冒険者です。"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-028",
+        "start": 68.82,
+        "end": 71.96,
+        "speechText": "You are interested in the power of the woman.",
+        "language": "en",
+        "en": "You are interested in the power of the woman.",
+        "ja": "女性の力に興味があります。"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-029",
+        "start": 72.78,
+        "end": 77.02,
+        "speechText": "The woman's deep strength and creativity.",
+        "language": "en",
+        "en": "The woman's deep strength and creativity.",
+        "ja": "女性の深い強さと創造力です。"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-030",
+        "start": 77.74,
+        "end": 79.38,
+        "speechText": "You're becoming this woman.",
+        "language": "en",
+        "en": "You're becoming this woman.",
+        "ja": "あなたはこの女性になろうとしています。"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-031",
+        "start": 84.62,
+        "end": 88.82,
+        "speechText": "You need to resign yourself to the awkwardness of life.",
+        "language": "en",
+        "en": "You need to resign yourself to the awkwardness of life.",
+        "ja": "人生の気まずさを受け入れてください。"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-032",
+        "start": 89.76,
+        "end": 94.94,
+        "speechText": "Only if you find peace within yourself will you find true",
+        "language": "en",
+        "en": "Only if you find peace within yourself will you find true",
+        "ja": "自分の中に安らぎを見つけた時だけ、"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-033",
+        "start": 94.94,
+        "end": 96.6,
+        "speechText": "connection with others.",
+        "language": "en",
+        "en": "connection with others.",
+        "ja": "他人と本当につながれます。"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-034",
+        "start": 100.94,
+        "end": 102.04,
+        "speechText": "Is it a stranger to you?",
+        "language": "en",
+        "en": "Is it a stranger to you?",
+        "ja": "彼とは初対面？"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-035",
+        "start": 102.66,
+        "end": 103.74,
+        "speechText": "I guess so.",
+        "language": "en",
+        "en": "I guess so.",
+        "ja": "そうかもね。"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-036",
+        "start": 109.14,
+        "end": 110.82,
+        "speechText": "You will be alright.",
+        "language": "en",
+        "en": "You will be alright.",
+        "ja": "きっとうまくいきます。"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-037",
+        "start": 111.06,
+        "end": 111.9,
+        "speechText": "He's learning.",
+        "language": "en",
+        "en": "He's learning.",
+        "ja": "彼は学びつつあります。"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-038",
+        "start": 112.9,
+        "end": 113.56,
+        "speechText": "Okay.",
+        "language": "en",
+        "en": "Okay.",
+        "ja": "わかった。"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-039",
+        "start": 114.54,
+        "end": 115.0,
+        "speechText": "Money.",
+        "language": "en",
+        "en": "Money.",
+        "ja": "お金。"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-040",
+        "start": 122.54,
+        "end": 124.42,
+        "speechText": "You're both stars.",
+        "language": "en",
+        "en": "You're both stars.",
+        "ja": "二人とも星なんですよ。"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-041",
+        "start": 125.1,
+        "end": 125.82,
+        "speechText": "Don't forget.",
+        "language": "en",
+        "en": "Don't forget.",
+        "ja": "忘れないで。"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-042",
+        "start": 126.48,
+        "end": 129.8,
+        "speechText": "And the stars exploded billions of years ago.",
+        "language": "en",
+        "en": "And the stars exploded billions of years ago.",
+        "ja": "その星たちは何十億年も前に爆発しました。"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-043",
+        "start": 130.06,
+        "end": 132.64,
+        "speechText": "They formed everything that is this world.",
+        "language": "en",
+        "en": "They formed everything that is this world.",
+        "ja": "それがこの世界のすべてを形作ったのです。"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-044",
+        "start": 133.04,
+        "end": 135.58,
+        "speechText": "Everything we know is stardust.",
+        "language": "en",
+        "en": "Everything we know is stardust.",
+        "ja": "私たちの知っているものは全て星の塵です。"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-045",
+        "start": 135.92,
+        "end": 137.16,
+        "speechText": "So don't forget.",
+        "language": "en",
+        "en": "So don't forget.",
+        "ja": "だから忘れないで。"
+      },
+      {
+        "id": "sunrise-palm-reader-cue-046",
+        "start": 137.42,
+        "end": 139.32,
+        "speechText": "You are stardust.",
+        "language": "en",
+        "en": "You are stardust.",
+        "ja": "あなたは星の塵です。"
+      }
+    ],
+    "subtitleVerification": "automated; not human listening",
+    "video": "/movie-study/media/sunrise-palm-reader.mp4",
+    "poster": "/movie-study/posters/sunrise-palm-reader.jpg"
+  },
+  {
     "id": "art-conversation",
     "work": "Before Sunrise",
     "title": "この絵の、どこが好き？",
@@ -876,6 +1824,283 @@
       }
     ],
     "subtitleVerification": "automated; not human listening"
+  },
+  {
+    "id": "sunrise-church",
+    "work": "Before Sunrise",
+    "title": "教会と、祖母の思い出",
+    "description": "教会や家族の思い出から、自分の年齢感覚と結婚の話へ",
+    "duration": 135.505,
+    "source": "https://www.youtube.com/watch?v=C-0Y9cay0b0",
+    "sourceStart": 9.8,
+    "sourceEnd": 145.32,
+    "displayWork": "Before Sunrise",
+    "captions": [
+      {
+        "id": "sunrise-church-cue-001",
+        "start": 1.48,
+        "end": 6.42,
+        "speechText": "I was in an old church like this with my grandmother a few days ago in Budapest.",
+        "language": "en",
+        "en": "I was in an old church like this with my grandmother a few days ago in Budapest.",
+        "ja": "数日前、ブダペストで祖母とこういう古い教会にいました。"
+      },
+      {
+        "id": "sunrise-church-cue-002",
+        "start": 9.22,
+        "end": 11.26,
+        "speechText": "Even though I reject most of the religious thing,",
+        "language": "en",
+        "en": "Even though I reject most of the religious thing,",
+        "ja": "宗教的なことの多くは受け入れがたいんだけど、"
+      },
+      {
+        "id": "sunrise-church-cue-003",
+        "start": 11.76,
+        "end": 18.38,
+        "speechText": "I can't help but feeling for all those people that come here lost or in pain,",
+        "language": "en",
+        "en": "I can't help but feeling for all those people that come here lost or in pain,",
+        "ja": "ここに来る迷ったり苦しんでる人々の思いに心を動かされます。"
+      },
+      {
+        "id": "sunrise-church-cue-004",
+        "start": 18.64,
+        "end": 22.02,
+        "speechText": "guilt, looking for some kind of answers.",
+        "language": "en",
+        "en": "guilt, looking for some kind of answers.",
+        "ja": "罪悪感にさいなまれて、答えを探してるんだよね。"
+      },
+      {
+        "id": "sunrise-church-cue-005",
+        "start": 24.4,
+        "end": 29.48,
+        "speechText": "It fascinates me how a single place can join so much pain and happiness in so many generations.",
+        "language": "en",
+        "en": "It fascinates me how a single place can join so much pain and happiness in so many generations.",
+        "ja": "一つの場所が何世代もの苦しみと幸福を集めるのが興味深いです。"
+      },
+      {
+        "id": "sunrise-church-cue-006",
+        "start": 30.26,
+        "end": 32.32,
+        "speechText": "You're close with your grandmother?",
+        "language": "en",
+        "en": "You're close with your grandmother?",
+        "ja": "お祖母さんと仲が良いの？"
+      },
+      {
+        "id": "sunrise-church-cue-007",
+        "start": 34.2,
+        "end": 35.5,
+        "speechText": "Yeah.",
+        "language": "en",
+        "en": "Yeah.",
+        "ja": "うん。"
+      },
+      {
+        "id": "sunrise-church-cue-008",
+        "start": 38.1,
+        "end": 41.2,
+        "speechText": "I think it's because I always have this strange feeling",
+        "language": "en",
+        "en": "I think it's because I always have this strange feeling",
+        "ja": "私はいつも不思議な感覚があって、"
+      },
+      {
+        "id": "sunrise-church-cue-009",
+        "start": 41.2,
+        "end": 45.66,
+        "speechText": "that I'm this very old woman laying down about to die.",
+        "language": "en",
+        "en": "that I'm this very old woman laying down about to die.",
+        "ja": "自分がとても年老いた女性で、横たわって死にかけている感じ。"
+      },
+      {
+        "id": "sunrise-church-cue-010",
+        "start": 47.68,
+        "end": 51.66,
+        "speechText": "You know, that my life is just memories or something.",
+        "language": "en",
+        "en": "You know, that my life is just memories or something.",
+        "ja": "人生がただの思い出みたいな感じで。"
+      },
+      {
+        "id": "sunrise-church-cue-011",
+        "start": 55.76,
+        "end": 56.82,
+        "speechText": "That's so wild.",
+        "language": "en",
+        "en": "That's so wild.",
+        "ja": "それはすごいね。"
+      },
+      {
+        "id": "sunrise-church-cue-012",
+        "start": 57.88,
+        "end": 62.68,
+        "speechText": "I always think that I'm still this 13-year-old boy, you know,",
+        "language": "en",
+        "en": "I always think that I'm still this 13-year-old boy, you know,",
+        "ja": "僕は今でも自分が13歳の少年だと思うんだ。"
+      },
+      {
+        "id": "sunrise-church-cue-013",
+        "start": 62.68,
+        "end": 65.02,
+        "speechText": "who doesn't really know how to be an adult,",
+        "language": "en",
+        "en": "who doesn't really know how to be an adult,",
+        "ja": "本当の大人になり方がわからなくて、"
+      },
+      {
+        "id": "sunrise-church-cue-014",
+        "start": 65.02,
+        "end": 70.54,
+        "speechText": "pretending to live my life, taking notes for when I'll really have to do it.",
+        "language": "en",
+        "en": "pretending to live my life, taking notes for when I'll really have to do it.",
+        "ja": "生きてるふりをして、いつか本当にやる時のためにメモを取ってる。"
+      },
+      {
+        "id": "sunrise-church-cue-015",
+        "start": 71.56,
+        "end": 74.28,
+        "speechText": "Kind of like I'm in a dress rehearsal for a junior high play.",
+        "language": "en",
+        "en": "Kind of like I'm in a dress rehearsal for a junior high play.",
+        "ja": "まるで中学の劇のリハーサルみたいな感じ。"
+      },
+      {
+        "id": "sunrise-church-cue-016",
+        "start": 75.86,
+        "end": 77.64,
+        "speechText": "That's funny.",
+        "language": "en",
+        "en": "That's funny.",
+        "ja": "面白いね。"
+      },
+      {
+        "id": "sunrise-church-cue-017",
+        "start": 79.14,
+        "end": 82.06,
+        "speechText": "Then up there in the Ferris wheel it was like this very",
+        "language": "en",
+        "en": "Then up there in the Ferris wheel it was like this very",
+        "ja": "じゃああの観覧車の上では、まさに"
+      },
+      {
+        "id": "sunrise-church-cue-018",
+        "start": 82.06,
+        "end": 85.12,
+        "speechText": "old woman kissing this very young boy, right?",
+        "language": "en",
+        "en": "old woman kissing this very young boy, right?",
+        "ja": "年老いた女性がとても若い少年にキスしてたわけだよね？"
+      },
+      {
+        "id": "sunrise-church-cue-019",
+        "start": 90.12,
+        "end": 93.86,
+        "speechText": "Do you know anything about the Quakers, Quaker religion?",
+        "language": "en",
+        "en": "Do you know anything about the Quakers, Quaker religion?",
+        "ja": "クエーカー教について何か知ってる？"
+      },
+      {
+        "id": "sunrise-church-cue-020",
+        "start": 95.0,
+        "end": 95.96,
+        "speechText": "No, not much.",
+        "language": "en",
+        "en": "No, not much.",
+        "ja": "いや、あんまり知らない。"
+      },
+      {
+        "id": "sunrise-church-cue-021",
+        "start": 96.12,
+        "end": 98.92,
+        "speechText": "I went to this Quaker wedding once.",
+        "language": "en",
+        "en": "I went to this Quaker wedding once.",
+        "ja": "一度クエーカー教の結婚式に行ったんだ。"
+      },
+      {
+        "id": "sunrise-church-cue-022",
+        "start": 99.42,
+        "end": 100.82,
+        "speechText": "It was fantastic.",
+        "language": "en",
+        "en": "It was fantastic.",
+        "ja": "最高だったよ。"
+      },
+      {
+        "id": "sunrise-church-cue-023",
+        "start": 101.84,
+        "end": 104.8,
+        "speechText": "What they do is the couple comes in",
+        "language": "en",
+        "en": "What they do is the couple comes in",
+        "ja": "二人が入場して、"
+      },
+      {
+        "id": "sunrise-church-cue-024",
+        "start": 104.8,
+        "end": 109.28,
+        "speechText": "and they kneel down in front of the whole congregation and they just stare at each other.",
+        "language": "en",
+        "en": "and they kneel down in front of the whole congregation and they just stare at each other.",
+        "ja": "会衆全員の前で跪いて、ただ見つめ合うんだ。"
+      },
+      {
+        "id": "sunrise-church-cue-025",
+        "start": 110.6,
+        "end": 115.64,
+        "speechText": "And nobody says a word unless they feel that God moves them to speak or say something.",
+        "language": "en",
+        "en": "And nobody says a word unless they feel that God moves them to speak or say something.",
+        "ja": "誰も話さないけど、神の導きがあれば話すこともある。"
+      },
+      {
+        "id": "sunrise-church-cue-026",
+        "start": 116.32,
+        "end": 122.68,
+        "speechText": "And then after an hour or so of just staring at each other,",
+        "language": "en",
+        "en": "And then after an hour or so of just staring at each other,",
+        "ja": "そして1時間ほど見つめ合ったら、"
+      },
+      {
+        "id": "sunrise-church-cue-027",
+        "start": 123.86,
+        "end": 124.5,
+        "speechText": "they're married.",
+        "language": "en",
+        "en": "they're married.",
+        "ja": "もう結婚成立なんだ。"
+      },
+      {
+        "id": "sunrise-church-cue-028",
+        "start": 126.38,
+        "end": 127.68,
+        "speechText": "That's beautiful.",
+        "language": "en",
+        "en": "That's beautiful.",
+        "ja": "素敵だね。"
+      },
+      {
+        "id": "sunrise-church-cue-029",
+        "start": 128.04,
+        "end": 128.66,
+        "speechText": "I like that.",
+        "language": "en",
+        "en": "I like that.",
+        "ja": "好きだな。"
+      }
+    ],
+    "subtitleVerification": "automated; not human listening",
+    "video": "/movie-study/media/sunrise-church.mp4",
+    "poster": "/movie-study/posters/sunrise-church.jpg"
   },
   {
     "id": "sunrise-projections",
@@ -1541,6 +2766,751 @@
     "subtitleVerification": "automated; not human listening"
   },
   {
+    "id": "sunrise-street-poet",
+    "work": "Before Sunrise",
+    "title": "街の詩人と、ミルクシェイクの詩",
+    "description": "詩人との約束から、衝突や競争心、二人に贈られた詩へ",
+    "duration": 245.205,
+    "source": "https://www.youtube.com/watch?v=9NAIDjSHS6A",
+    "sourceStart": 0,
+    "sourceEnd": 245.13,
+    "displayWork": "Before Sunrise",
+    "captions": [
+      {
+        "id": "sunrise-street-poet-cue-001",
+        "start": 0,
+        "end": 1.68,
+        "speechText": "Eine Frage, ich möchte Sie was fragen.",
+        "language": "de",
+        "en": "",
+        "ja": "ちょっと質問してもいいですか。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-002",
+        "start": 1.94,
+        "end": 2.3,
+        "speechText": "What?",
+        "language": "en",
+        "en": "What?",
+        "ja": "何ですか？"
+      },
+      {
+        "id": "sunrise-street-poet-cue-003",
+        "start": 3.6,
+        "end": 4.36,
+        "speechText": "Eine Frage.",
+        "language": "de",
+        "en": "",
+        "ja": "質問です。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-004",
+        "start": 5.1,
+        "end": 8.58,
+        "speechText": "Oh, I understand a little bit, but he doesn't at all, I'm sorry.",
+        "language": "en",
+        "en": "Oh, I understand a little bit, but he doesn't at all, I'm sorry.",
+        "ja": "少しなら分かりますが、彼は全く分かりません、ごめんなさい。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-005",
+        "start": 9.58,
+        "end": 13.46,
+        "speechText": "Okay, so, um, may I ask you a question?",
+        "language": "en",
+        "en": "Okay, so, um, may I ask you a question?",
+        "ja": "では、質問してもいいですか？"
+      },
+      {
+        "id": "sunrise-street-poet-cue-006",
+        "start": 14.38,
+        "end": 15.1,
+        "speechText": "Yeah.",
+        "language": "en",
+        "en": "Yeah.",
+        "ja": "いいですよ。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-007",
+        "start": 15.94,
+        "end": 19.34,
+        "speechText": "So, I would like to make a deal with you.",
+        "language": "en",
+        "en": "So, I would like to make a deal with you.",
+        "ja": "取引をしませんか。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-008",
+        "start": 20.6,
+        "end": 24.6,
+        "speechText": "I mean, instead of just asking you for money, I will ask you for a word.",
+        "language": "en",
+        "en": "I mean, instead of just asking you for money, I will ask you for a word.",
+        "ja": "お金を求める代わりに、あなたに単語をお願いしたいんです。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-009",
+        "start": 25.8,
+        "end": 31.3,
+        "speechText": "Yeah, you give me a word, I take the word, and then I will write a poem with the word inside.",
+        "language": "en",
+        "en": "Yeah, you give me a word, I take the word, and then I will write a poem with the word inside.",
+        "ja": "単語をもらって、それを使った詩を書きます。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-010",
+        "start": 32.4,
+        "end": 35.26,
+        "speechText": "And if you like it, I mean, if you like my poem,",
+        "language": "en",
+        "en": "And if you like it, I mean, if you like my poem,",
+        "ja": "それが気に入ったら、"
+      },
+      {
+        "id": "sunrise-street-poet-cue-011",
+        "start": 35.32,
+        "end": 38.2,
+        "speechText": "and if you feel it adds something to your life in any way,",
+        "language": "en",
+        "en": "and if you feel it adds something to your life in any way,",
+        "ja": "もし何か人生にプラスになったら、"
+      },
+      {
+        "id": "sunrise-street-poet-cue-012",
+        "start": 38.3,
+        "end": 40.62,
+        "speechText": "then you can pay me whatever you feel like.",
+        "language": "en",
+        "en": "then you can pay me whatever you feel like.",
+        "ja": "好きなだけ払ってください。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-013",
+        "start": 41.2,
+        "end": 43.14,
+        "speechText": "I write in English, of course.",
+        "language": "en",
+        "en": "I write in English, of course.",
+        "ja": "もちろん英語で書きます。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-014",
+        "start": 44.84,
+        "end": 45.64,
+        "speechText": "Okay.",
+        "language": "en",
+        "en": "Okay.",
+        "ja": "分かりました。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-015",
+        "start": 45.86,
+        "end": 46.72,
+        "speechText": "All right, great.",
+        "language": "en",
+        "en": "All right, great.",
+        "ja": "よし、いいですね。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-016",
+        "start": 48.7,
+        "end": 53.3,
+        "speechText": "Sir, pick a word.",
+        "language": "en",
+        "en": "Sir, pick a word.",
+        "ja": "では、単語を選んでください。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-017",
+        "start": 54.08,
+        "end": 55.76,
+        "speechText": "Oh, um...",
+        "language": "en",
+        "en": "Oh, um...",
+        "ja": "えっと…"
+      },
+      {
+        "id": "sunrise-street-poet-cue-018",
+        "start": 55.76,
+        "end": 57.62,
+        "speechText": "a word, uh, I don't...",
+        "language": "en",
+        "en": "a word, uh, I don't...",
+        "ja": "単語か、えーと…"
+      },
+      {
+        "id": "sunrise-street-poet-cue-019",
+        "start": 57.62,
+        "end": 59.12,
+        "speechText": "Milkshake.",
+        "language": "en",
+        "en": "Milkshake.",
+        "ja": "ミルクシェイク。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-020",
+        "start": 59.52,
+        "end": 62.64,
+        "speechText": "Milkshake, oh, good, yeah, I was gonna say rooster prick, but great.",
+        "language": "en",
+        "en": "Milkshake, oh, good, yeah, I was gonna say rooster prick, but great.",
+        "ja": "ミルクシェイク、いいね。俺はニワトリのちんこにしようかと思ったけど、良かった。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-021",
+        "start": 63.04,
+        "end": 63.5,
+        "speechText": "Milkshake.",
+        "language": "en",
+        "en": "Milkshake.",
+        "ja": "ミルクシェイク。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-022",
+        "start": 64.06,
+        "end": 64.74,
+        "speechText": "Milkshake?",
+        "language": "en",
+        "en": "Milkshake?",
+        "ja": "ミルクシェイク？"
+      },
+      {
+        "id": "sunrise-street-poet-cue-023",
+        "start": 65.46,
+        "end": 67.42,
+        "speechText": "Okay, milkshake.",
+        "language": "en",
+        "en": "Okay, milkshake.",
+        "ja": "はい、ミルクシェイク。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-024",
+        "start": 68.14,
+        "end": 74.4,
+        "speechText": "All right, so, we'll...",
+        "language": "en",
+        "en": "All right, so, we'll...",
+        "ja": "では、始めます…"
+      },
+      {
+        "id": "sunrise-street-poet-cue-025",
+        "start": 75.8,
+        "end": 85.48,
+        "speechText": "Gotta say, I like this Viennese variation of a bum.",
+        "language": "en",
+        "en": "Gotta say, I like this Viennese variation of a bum.",
+        "ja": "このウィーンの新種の乞食、なかなかいいね。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-026",
+        "start": 85.92,
+        "end": 88.3,
+        "speechText": "I like what he said about adding something to your life, no?",
+        "language": "en",
+        "en": "I like what he said about adding something to your life, no?",
+        "ja": "人生に何か加えたいって話、良かったよね？"
+      },
+      {
+        "id": "sunrise-street-poet-cue-027",
+        "start": 88.4,
+        "end": 88.9,
+        "speechText": "Yeah.",
+        "language": "en",
+        "en": "Yeah.",
+        "ja": "うん。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-028",
+        "start": 89.26,
+        "end": 92.36,
+        "speechText": "So, uh, were we having our first fight back there?",
+        "language": "en",
+        "en": "So, uh, were we having our first fight back there?",
+        "ja": "さっき、初めて喧嘩したと思う？"
+      },
+      {
+        "id": "sunrise-street-poet-cue-029",
+        "start": 93.12,
+        "end": 93.68,
+        "speechText": "Yeah.",
+        "language": "en",
+        "en": "Yeah.",
+        "ja": "うん。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-030",
+        "start": 93.76,
+        "end": 96.06,
+        "speechText": "Yeah, I think so, I think we were.",
+        "language": "en",
+        "en": "Yeah, I think so, I think we were.",
+        "ja": "たぶんそうだよ、本当に。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-031",
+        "start": 96.34,
+        "end": 100.68,
+        "speechText": "Well, even if we were a little bit, you know, why does everyone think conflict is so bad?",
+        "language": "en",
+        "en": "Well, even if we were a little bit, you know, why does everyone think conflict is so bad?",
+        "ja": "まあ、ちょっとくらいなら悪くないよね。なぜ争いが悪いって思うのかな。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-032",
+        "start": 100.68,
+        "end": 102.4,
+        "speechText": "There's a lot of good things coming out of conflict.",
+        "language": "en",
+        "en": "There's a lot of good things coming out of conflict.",
+        "ja": "対立から生まれる良いことも色々あるし。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-033",
+        "start": 102.74,
+        "end": 104.66,
+        "speechText": "Yeah, yeah, I guess so.",
+        "language": "en",
+        "en": "Yeah, yeah, I guess so.",
+        "ja": "本当だね、そう思う。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-034",
+        "start": 105.3,
+        "end": 109.0,
+        "speechText": "I don't know, you know, I always think if I could just accept the fact",
+        "language": "en",
+        "en": "I don't know, you know, I always think if I could just accept the fact",
+        "ja": "いつも思うんだ。もし人生が大変だって受け入れられたら…"
+      },
+      {
+        "id": "sunrise-street-poet-cue-035",
+        "start": 109.0,
+        "end": 111.42,
+        "speechText": "that my life was supposed to be difficult, you know,",
+        "language": "en",
+        "en": "that my life was supposed to be difficult, you know,",
+        "ja": "それが当たり前だと受け止められれば、"
+      },
+      {
+        "id": "sunrise-street-poet-cue-036",
+        "start": 111.42,
+        "end": 114.18,
+        "speechText": "that's what's to be expected, then I might not get",
+        "language": "en",
+        "en": "that's what's to be expected, then I might not get",
+        "ja": "そんなにイライラしないかもしれないし、"
+      },
+      {
+        "id": "sunrise-street-poet-cue-037",
+        "start": 114.18,
+        "end": 117.3,
+        "speechText": "so pissed off about it, and I'd just be glad when something nice happened.",
+        "language": "en",
+        "en": "so pissed off about it, and I'd just be glad when something nice happened.",
+        "ja": "いいことがあった時に素直にうれしいと思える。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-038",
+        "start": 118.1,
+        "end": 122.04,
+        "speechText": "Maybe that's why I'm still in school, you know, it's easier to have something to fight against.",
+        "language": "en",
+        "en": "Maybe that's why I'm still in school, you know, it's easier to have something to fight against.",
+        "ja": "だからまだ学校にいるのかもしれない。戦う相手がいるから楽だし。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-039",
+        "start": 122.24,
+        "end": 126.52,
+        "speechText": "Yeah, well, we've all had such competitiveness ingrained in us.",
+        "language": "en",
+        "en": "Yeah, well, we've all had such competitiveness ingrained in us.",
+        "ja": "みんな競争心を叩き込まれてきたからね。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-040",
+        "start": 127.02,
+        "end": 129.24,
+        "speechText": "You know, I can be doing the most nothing thing, you know,",
+        "language": "en",
+        "en": "You know, I can be doing the most nothing thing, you know,",
+        "ja": "ぼーっとしてる時でもさ、"
+      },
+      {
+        "id": "sunrise-street-poet-cue-041",
+        "start": 129.24,
+        "end": 132.52,
+        "speechText": "I can be throwing some darts or shooting some pool,",
+        "language": "en",
+        "en": "I can be throwing some darts or shooting some pool,",
+        "ja": "ダーツ投げたりビリヤードしてても、"
+      },
+      {
+        "id": "sunrise-street-poet-cue-042",
+        "start": 132.8,
+        "end": 135.26,
+        "speechText": "and all of a sudden, I feel it come over me.",
+        "language": "en",
+        "en": "and all of a sudden, I feel it come over me.",
+        "ja": "急にその気持ちが湧いてくるんだ。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-043",
+        "start": 135.8,
+        "end": 137.36,
+        "speechText": "I have got to win.",
+        "language": "en",
+        "en": "I have got to win.",
+        "ja": "絶対に勝ちたいって。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-044",
+        "start": 138.24,
+        "end": 140.14,
+        "speechText": "Is that why you tried to get me off the train?",
+        "language": "en",
+        "en": "Is that why you tried to get me off the train?",
+        "ja": "だから列車から私を降ろそうとした？"
+      },
+      {
+        "id": "sunrise-street-poet-cue-045",
+        "start": 140.4,
+        "end": 141.3,
+        "speechText": "Competitiveness?",
+        "language": "en",
+        "en": "Competitiveness?",
+        "ja": "競争心？"
+      },
+      {
+        "id": "sunrise-street-poet-cue-046",
+        "start": 141.7,
+        "end": 142.52,
+        "speechText": "What do you mean?",
+        "language": "en",
+        "en": "What do you mean?",
+        "ja": "どういう意味？"
+      },
+      {
+        "id": "sunrise-street-poet-cue-047",
+        "start": 142.84,
+        "end": 143.32,
+        "speechText": "Okay.",
+        "language": "en",
+        "en": "Okay.",
+        "ja": "分かった。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-048",
+        "start": 144.84,
+        "end": 145.9,
+        "speechText": "I've got a poem.",
+        "language": "en",
+        "en": "I've got a poem.",
+        "ja": "詩ができたよ。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-049",
+        "start": 146.84,
+        "end": 147.52,
+        "speechText": "All right.",
+        "language": "en",
+        "en": "All right.",
+        "ja": "よし。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-050",
+        "start": 149.72,
+        "end": 151.04,
+        "speechText": "Will you read it to us?",
+        "language": "en",
+        "en": "Will you read it to us?",
+        "ja": "読んでくれる？"
+      },
+      {
+        "id": "sunrise-street-poet-cue-051",
+        "start": 155.14,
+        "end": 156.04,
+        "speechText": "Sure, okay.",
+        "language": "en",
+        "en": "Sure, okay.",
+        "ja": "うん、いいよ。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-052",
+        "start": 160.16,
+        "end": 162.0,
+        "speechText": "Daydream delusion,",
+        "language": "en",
+        "en": "Daydream delusion,",
+        "ja": "白昼夢の妄想、"
+      },
+      {
+        "id": "sunrise-street-poet-cue-053",
+        "start": 163.06,
+        "end": 164.48,
+        "speechText": "limousine eyelash.",
+        "language": "en",
+        "en": "limousine eyelash.",
+        "ja": "リムジンのまつげ。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-054",
+        "start": 165.18,
+        "end": 167.66,
+        "speechText": "Oh, baby, with your pretty face.",
+        "language": "en",
+        "en": "Oh, baby, with your pretty face.",
+        "ja": "ああ、君のきれいな顔。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-055",
+        "start": 169.42,
+        "end": 171.1,
+        "speechText": "Drop a tear in my wine glass.",
+        "language": "en",
+        "en": "Drop a tear in my wine glass.",
+        "ja": "ワイングラスに涙を落として。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-056",
+        "start": 171.68,
+        "end": 172.92,
+        "speechText": "Look at those big eyes.",
+        "language": "en",
+        "en": "Look at those big eyes.",
+        "ja": "その大きな瞳を見てごらん。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-057",
+        "start": 173.86,
+        "end": 175.4,
+        "speechText": "See what you mean to me.",
+        "language": "en",
+        "en": "See what you mean to me.",
+        "ja": "君が僕に意味するものを見てごらん。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-058",
+        "start": 176.28,
+        "end": 178.58,
+        "speechText": "Sweet cakes and milkshakes.",
+        "language": "en",
+        "en": "Sweet cakes and milkshakes.",
+        "ja": "スイートケーキとミルクシェイク。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-059",
+        "start": 179.46,
+        "end": 180.86,
+        "speechText": "I'm a delusion angel.",
+        "language": "en",
+        "en": "I'm a delusion angel.",
+        "ja": "僕は妄想の天使。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-060",
+        "start": 182.08,
+        "end": 183.64,
+        "speechText": "I'm a fantasy parade.",
+        "language": "en",
+        "en": "I'm a fantasy parade.",
+        "ja": "僕は幻想のパレード。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-061",
+        "start": 184.42,
+        "end": 186.54,
+        "speechText": "I want you to know what I think.",
+        "language": "en",
+        "en": "I want you to know what I think.",
+        "ja": "自分がどう思ってるか知ってほしい。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-062",
+        "start": 186.64,
+        "end": 188.08,
+        "speechText": "Don't want you to guess anymore.",
+        "language": "en",
+        "en": "Don't want you to guess anymore.",
+        "ja": "もう君に推測してほしくない。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-063",
+        "start": 189.06,
+        "end": 190.74,
+        "speechText": "You have no idea where I came from.",
+        "language": "en",
+        "en": "You have no idea where I came from.",
+        "ja": "僕がどこから来たか分からないだろう。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-064",
+        "start": 191.6,
+        "end": 193.2,
+        "speechText": "You have no idea where we're going.",
+        "language": "en",
+        "en": "You have no idea where we're going.",
+        "ja": "僕たちがどこへ行くかも分からない。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-065",
+        "start": 194.04,
+        "end": 195.14,
+        "speechText": "Lodged in life,",
+        "language": "en",
+        "en": "Lodged in life,",
+        "ja": "人生にとどまっている、"
+      },
+      {
+        "id": "sunrise-street-poet-cue-066",
+        "start": 196.0,
+        "end": 200.04,
+        "speechText": "like branches in the river, flowing downstream, caught in the current.",
+        "language": "en",
+        "en": "like branches in the river, flowing downstream, caught in the current.",
+        "ja": "川の流れの枝のように、流されて、流れにとらわれて。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-067",
+        "start": 200.96,
+        "end": 201.9,
+        "speechText": "I'll carry you.",
+        "language": "en",
+        "en": "I'll carry you.",
+        "ja": "君を運ぶよ。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-068",
+        "start": 202.68,
+        "end": 203.62,
+        "speechText": "You'll carry me.",
+        "language": "en",
+        "en": "You'll carry me.",
+        "ja": "君が僕を運ぶ。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-069",
+        "start": 204.94,
+        "end": 206.52,
+        "speechText": "That's how it could be.",
+        "language": "en",
+        "en": "That's how it could be.",
+        "ja": "きっと、そうなれる。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-070",
+        "start": 207.86,
+        "end": 208.86,
+        "speechText": "Don't you know me?",
+        "language": "en",
+        "en": "Don't you know me?",
+        "ja": "僕のこと分からないの？"
+      },
+      {
+        "id": "sunrise-street-poet-cue-071",
+        "start": 209.46,
+        "end": 211.7,
+        "speechText": "Don't you know me by now?",
+        "language": "en",
+        "en": "Don't you know me by now?",
+        "ja": "今は分からないの？"
+      },
+      {
+        "id": "sunrise-street-poet-cue-072",
+        "start": 213.2,
+        "end": 214.08,
+        "speechText": "Great.",
+        "language": "en",
+        "en": "Great.",
+        "ja": "素晴らしい。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-073",
+        "start": 214.96,
+        "end": 215.92,
+        "speechText": "Thanks.",
+        "language": "en",
+        "en": "Thanks.",
+        "ja": "ありがとう。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-074",
+        "start": 216.18,
+        "end": 216.94,
+        "speechText": "Thanks, man.",
+        "language": "en",
+        "en": "Thanks, man.",
+        "ja": "ありがとう。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-075",
+        "start": 220.74,
+        "end": 221.92,
+        "speechText": "Here you go.",
+        "language": "en",
+        "en": "Here you go.",
+        "ja": "はい、どうぞ。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-076",
+        "start": 222.8,
+        "end": 226.0,
+        "speechText": "All right. Thank you.",
+        "language": "en",
+        "en": "All right. Thank you.",
+        "ja": "ありがとう。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-077",
+        "start": 226.0,
+        "end": 228.0,
+        "speechText": "Thank you.",
+        "language": "en",
+        "en": "Thank you.",
+        "ja": "ありがとう。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-078",
+        "start": 228.5,
+        "end": 229.46,
+        "speechText": "Good luck, man.",
+        "language": "en",
+        "en": "Good luck, man.",
+        "ja": "幸運を。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-079",
+        "start": 230.0,
+        "end": 230.92,
+        "speechText": "Bye. Bye.",
+        "language": "en",
+        "en": "Bye. Bye.",
+        "ja": "バイバイ。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-080",
+        "start": 230.92,
+        "end": 231.3,
+        "speechText": "Bye.",
+        "language": "en",
+        "en": "Bye.",
+        "ja": "じゃあね。"
+      },
+      {
+        "id": "sunrise-street-poet-cue-081",
+        "start": 232.16,
+        "end": 245.205,
+        "speechText": "Bye. Bye.",
+        "language": "en",
+        "en": "Bye. Bye.",
+        "ja": "バイバイ。"
+      }
+    ],
+    "subtitleVerification": "automated; not human listening",
+    "video": "/movie-study/media/sunrise-street-poet.mp4",
+    "poster": "/movie-study/posters/sunrise-street-poet.jpg"
+  },
+  {
     "id": "sunrise-love",
     "work": "Before Sunrise",
     "title": "愛されたいって、どういうこと？",
@@ -2124,6 +4094,355 @@
       }
     ],
     "subtitleVerification": "automated; not human listening"
+  },
+  {
+    "id": "sunset-next-book",
+    "work": "Before Sunset",
+    "title": "次の本は、どんな話？",
+    "description": "一曲の間に人生が重なる、次の小説のアイデアを語る",
+    "duration": 131.505,
+    "source": "https://www.youtube.com/watch?v=3WscLkiiCts",
+    "sourceStart": 0,
+    "sourceEnd": 131.4,
+    "displayWork": "Before Sunset",
+    "captions": [
+      {
+        "id": "sunset-next-book-cue-001",
+        "start": 0,
+        "end": 2.74,
+        "speechText": "We just have the time for one last question.",
+        "language": "en",
+        "en": "We just have the time for one last question.",
+        "ja": "最後の質問をする時間だけあります。"
+      },
+      {
+        "id": "sunset-next-book-cue-002",
+        "start": 3.04,
+        "end": 5.14,
+        "speechText": "What is your next book?",
+        "language": "en",
+        "en": "What is your next book?",
+        "ja": "次の本は何ですか？"
+      },
+      {
+        "id": "sunset-next-book-cue-003",
+        "start": 7.62,
+        "end": 9.18,
+        "speechText": "I don't know, man.",
+        "language": "en",
+        "en": "I don't know, man.",
+        "ja": "わからないな。"
+      },
+      {
+        "id": "sunset-next-book-cue-004",
+        "start": 9.32,
+        "end": 9.94,
+        "speechText": "I don't know.",
+        "language": "en",
+        "en": "I don't know.",
+        "ja": "本当にわからないんだ。"
+      },
+      {
+        "id": "sunset-next-book-cue-005",
+        "start": 10.38,
+        "end": 13.62,
+        "speechText": "I've been thinking about this.",
+        "language": "en",
+        "en": "I've been thinking about this.",
+        "ja": "これについてずっと考えてたんだ。"
+      },
+      {
+        "id": "sunset-next-book-cue-006",
+        "start": 14.4,
+        "end": 16.98,
+        "speechText": "Well, I always kind of wanted to write a book",
+        "language": "en",
+        "en": "Well, I always kind of wanted to write a book",
+        "ja": "前から書きたかった本があって、"
+      },
+      {
+        "id": "sunset-next-book-cue-007",
+        "start": 16.98,
+        "end": 20.96,
+        "speechText": "that all took place within the space of a pop song,",
+        "language": "en",
+        "en": "that all took place within the space of a pop song,",
+        "ja": "すべてがポップソングの時間の中で進む話。"
+      },
+      {
+        "id": "sunset-next-book-cue-008",
+        "start": 21.04,
+        "end": 23.4,
+        "speechText": "you know, like three or four minutes long, the whole thing.",
+        "language": "en",
+        "en": "you know, like three or four minutes long, the whole thing.",
+        "ja": "つまり、たった3、4分の長さ全体で。"
+      },
+      {
+        "id": "sunset-next-book-cue-009",
+        "start": 23.9,
+        "end": 30.56,
+        "speechText": "The story, the idea is that there's this guy, right, and he's totally depressed.",
+        "language": "en",
+        "en": "The story, the idea is that there's this guy, right, and he's totally depressed.",
+        "ja": "登場人物の男がいて、すごく落ち込んでる。"
+      },
+      {
+        "id": "sunset-next-book-cue-010",
+        "start": 31.12,
+        "end": 35.12,
+        "speechText": "I mean, his great dream was to be a lover, an adventurer,",
+        "language": "en",
+        "en": "I mean, his great dream was to be a lover, an adventurer,",
+        "ja": "彼の夢は恋人や冒険者になることだったんだ。"
+      },
+      {
+        "id": "sunset-next-book-cue-011",
+        "start": 35.12,
+        "end": 37.68,
+        "speechText": "you know, riding motorcycles through South America.",
+        "language": "en",
+        "en": "you know, riding motorcycles through South America.",
+        "ja": "バイクで南米を旅したりね。"
+      },
+      {
+        "id": "sunset-next-book-cue-012",
+        "start": 37.68,
+        "end": 41.04,
+        "speechText": "And instead, he's sitting at a marble table eating lobster",
+        "language": "en",
+        "en": "And instead, he's sitting at a marble table eating lobster",
+        "ja": "でも実際は大理石のテーブルでロブスターを食べてて、"
+      },
+      {
+        "id": "sunset-next-book-cue-013",
+        "start": 41.04,
+        "end": 43.56,
+        "speechText": "and he's got a good job and a beautiful wife, right?",
+        "language": "en",
+        "en": "and he's got a good job and a beautiful wife, right?",
+        "ja": "いい仕事と美しい妻もいる。"
+      },
+      {
+        "id": "sunset-next-book-cue-014",
+        "start": 43.56,
+        "end": 45.78,
+        "speechText": "But, you know, everything that he needs.",
+        "language": "en",
+        "en": "But, you know, everything that he needs.",
+        "ja": "必要なものはすべて持ってる。"
+      },
+      {
+        "id": "sunset-next-book-cue-015",
+        "start": 46.08,
+        "end": 50.82,
+        "speechText": "But that doesn't matter because what he wants is to fight for meaning.",
+        "language": "en",
+        "en": "But that doesn't matter because what he wants is to fight for meaning.",
+        "ja": "でも大事なのは、意味のために闘いたいってこと。"
+      },
+      {
+        "id": "sunset-next-book-cue-016",
+        "start": 51.62,
+        "end": 53.92,
+        "speechText": "You know, I mean, happiness is in the doing, right?",
+        "language": "en",
+        "en": "You know, I mean, happiness is in the doing, right?",
+        "ja": "幸せは行動の中にあるってことでしょう？"
+      },
+      {
+        "id": "sunset-next-book-cue-017",
+        "start": 53.92,
+        "end": 56.14,
+        "speechText": "Not in the getting what you want.",
+        "language": "en",
+        "en": "Not in the getting what you want.",
+        "ja": "欲しいものを手に入れることじゃない。"
+      },
+      {
+        "id": "sunset-next-book-cue-018",
+        "start": 56.38,
+        "end": 59.84,
+        "speechText": "So he's sitting there and just that second,",
+        "language": "en",
+        "en": "So he's sitting there and just that second,",
+        "ja": "それで彼が座っていたまさにその時、"
+      },
+      {
+        "id": "sunset-next-book-cue-019",
+        "start": 60.0,
+        "end": 64.22,
+        "speechText": "his little five-year-old daughter hops up on the table",
+        "language": "en",
+        "en": "his little five-year-old daughter hops up on the table",
+        "ja": "5歳の娘がテーブルに飛び乗ってきて、"
+      },
+      {
+        "id": "sunset-next-book-cue-020",
+        "start": 64.22,
+        "end": 67.52,
+        "speechText": "and he knows that she should get down because she could get hurt.",
+        "language": "en",
+        "en": "and he knows that she should get down because she could get hurt.",
+        "ja": "彼女は危ないから降ろさないといけないと思う。"
+      },
+      {
+        "id": "sunset-next-book-cue-021",
+        "start": 67.86,
+        "end": 72.56,
+        "speechText": "But she's dancing to this pop song in a summer dress",
+        "language": "en",
+        "en": "But she's dancing to this pop song in a summer dress",
+        "ja": "でも娘は夏のワンピースでポップソングに合わせて踊ってる。"
+      },
+      {
+        "id": "sunset-next-book-cue-022",
+        "start": 72.56,
+        "end": 77.64,
+        "speechText": "and he looks down and all of a sudden he's sixteen",
+        "language": "en",
+        "en": "and he looks down and all of a sudden he's sixteen",
+        "ja": "その時ふと気づくと、自分は16歳になっていて、"
+      },
+      {
+        "id": "sunset-next-book-cue-023",
+        "start": 77.64,
+        "end": 84.38,
+        "speechText": "and his high school sweetheart is dropping him off at home",
+        "language": "en",
+        "en": "and his high school sweetheart is dropping him off at home",
+        "ja": "高校時代の彼女が家まで送ってくれてる。"
+      },
+      {
+        "id": "sunset-next-book-cue-024",
+        "start": 84.38,
+        "end": 87.92,
+        "speechText": "and they just lost their virginity and she loves him.",
+        "language": "en",
+        "en": "and they just lost their virginity and she loves him.",
+        "ja": "ふたりは初体験を済ませ、彼女は彼を愛している。"
+      },
+      {
+        "id": "sunset-next-book-cue-025",
+        "start": 88.4,
+        "end": 93.68,
+        "speechText": "And the same song is playing on the car radio and she climbs up",
+        "language": "en",
+        "en": "And the same song is playing on the car radio and she climbs up",
+        "ja": "同じ曲がカーステレオから流れていて、彼女は車の屋根に登り、"
+      },
+      {
+        "id": "sunset-next-book-cue-026",
+        "start": 93.68,
+        "end": 96.9,
+        "speechText": "and starts dancing on the roof of the car and now he's worried about her.",
+        "language": "en",
+        "en": "and starts dancing on the roof of the car and now he's worried about her.",
+        "ja": "屋根の上で踊りだして、彼女が心配になる。"
+      },
+      {
+        "id": "sunset-next-book-cue-027",
+        "start": 97.28,
+        "end": 102.08,
+        "speechText": "And she's beautiful, with a facial expression, you know, just like his daughter's.",
+        "language": "en",
+        "en": "And she's beautiful, with a facial expression, you know, just like his daughter's.",
+        "ja": "彼女は本当に美しくて、娘と同じ表情をしている。"
+      },
+      {
+        "id": "sunset-next-book-cue-028",
+        "start": 102.16,
+        "end": 104.22,
+        "speechText": "In fact, you know, maybe that's why he even likes her.",
+        "language": "en",
+        "en": "In fact, you know, maybe that's why he even likes her.",
+        "ja": "それが彼女を好きな理由かもしれない。"
+      },
+      {
+        "id": "sunset-next-book-cue-029",
+        "start": 104.22,
+        "end": 107.46,
+        "speechText": "You know, see, he knows he's not remembering this dance.",
+        "language": "en",
+        "en": "You know, see, he knows he's not remembering this dance.",
+        "ja": "でも彼はこのダンスを思い出しているのじゃないとわかってる。"
+      },
+      {
+        "id": "sunset-next-book-cue-030",
+        "start": 107.46,
+        "end": 108.06,
+        "speechText": "He's there.",
+        "language": "en",
+        "en": "He's there.",
+        "ja": "彼は、今ここにいるんだ。"
+      },
+      {
+        "id": "sunset-next-book-cue-031",
+        "start": 108.06,
+        "end": 110.78,
+        "speechText": "He's there in both moments simultaneously.",
+        "language": "en",
+        "en": "He's there in both moments simultaneously.",
+        "ja": "その瞬間、二つの時間に同時にいる。"
+      },
+      {
+        "id": "sunset-next-book-cue-032",
+        "start": 110.78,
+        "end": 112.58,
+        "speechText": "And just like for an instant,",
+        "language": "en",
+        "en": "And just like for an instant,",
+        "ja": "ほんの一瞬だけ、"
+      },
+      {
+        "id": "sunset-next-book-cue-033",
+        "start": 112.62,
+        "end": 116.96,
+        "speechText": "all his life is just folding in on itself and it's obvious to him that time is a lie,",
+        "language": "en",
+        "en": "all his life is just folding in on itself and it's obvious to him that time is a lie,",
+        "ja": "彼の人生全部が折り重なって、時間が嘘だとはっきりわかる。"
+      },
+      {
+        "id": "sunset-next-book-cue-034",
+        "start": 119.56,
+        "end": 125.4,
+        "speechText": "that it's all happening all the time and inside every moment is another moment all",
+        "language": "en",
+        "en": "that it's all happening all the time and inside every moment is another moment all",
+        "ja": "すべてが常に起こっていて、どの瞬間にも別の瞬間があると。"
+      },
+      {
+        "id": "sunset-next-book-cue-035",
+        "start": 127.02,
+        "end": 128.06,
+        "speechText": "happening simultaneously.",
+        "language": "en",
+        "en": "happening simultaneously.",
+        "ja": "同時にすべてが起こっているんだ。"
+      },
+      {
+        "id": "sunset-next-book-cue-036",
+        "start": 128.6,
+        "end": 130.18,
+        "speechText": "Anyway, that's kind of the idea.",
+        "language": "en",
+        "en": "Anyway, that's kind of the idea.",
+        "ja": "そんな感じの話。"
+      },
+      {
+        "id": "sunset-next-book-cue-037",
+        "start": 130.6,
+        "end": 131.02,
+        "speechText": "Anyway.",
+        "language": "en",
+        "en": "Anyway.",
+        "ja": "そんな感じ。"
+      }
+    ],
+    "subtitleVerification": "automated; not human listening",
+    "video": "/movie-study/media/sunset-next-book.mp4",
+    "poster": "/movie-study/posters/sunset-next-book.jpg"
   },
   {
     "id": "sunset-vienna",
@@ -4532,6 +6851,724 @@
     "subtitleVerification": "automated; not human listening"
   },
   {
+    "id": "sunset-stop-car",
+    "work": "Before Sunset",
+    "title": "車を止めて――再会であふれる本音",
+    "description": "再会によって、恋愛への思いと忘れられない記憶があふれる",
+    "duration": 158.605,
+    "source": "https://www.youtube.com/watch?v=TUbgKkn9qFw",
+    "sourceStart": 0,
+    "sourceEnd": 158.5,
+    "displayWork": "Before Sunset",
+    "captions": [
+      {
+        "id": "sunset-stop-car-cue-001",
+        "start": 0,
+        "end": 2.1,
+        "speechText": "I don't believe in anything that relates to love.",
+        "language": "en",
+        "en": "I don't believe in anything that relates to love.",
+        "ja": "私は恋愛に関しては何も信じていないの。"
+      },
+      {
+        "id": "sunset-stop-car-cue-002",
+        "start": 2.1,
+        "end": 3.8,
+        "speechText": "I don't feel things for people anymore.",
+        "language": "en",
+        "en": "I don't feel things for people anymore.",
+        "ja": "もう人に対して何も感じられない。"
+      },
+      {
+        "id": "sunset-stop-car-cue-003",
+        "start": 4.64,
+        "end": 9.18,
+        "speechText": "In a way, I put all my romanticism into that one night,",
+        "language": "en",
+        "en": "In a way, I put all my romanticism into that one night,",
+        "ja": "ある意味、あの一夜に全てのロマンを込めたの。"
+      },
+      {
+        "id": "sunset-stop-car-cue-004",
+        "start": 9.18,
+        "end": 11.22,
+        "speechText": "and I was never able to feel all this again.",
+        "language": "en",
+        "en": "and I was never able to feel all this again.",
+        "ja": "その後はもう同じ気持ちになれなかった。"
+      },
+      {
+        "id": "sunset-stop-car-cue-005",
+        "start": 11.78,
+        "end": 14.52,
+        "speechText": "Like, somehow this night took things away from me,",
+        "language": "en",
+        "en": "Like, somehow this night took things away from me,",
+        "ja": "あの夜が私から何かを奪ったみたいで、"
+      },
+      {
+        "id": "sunset-stop-car-cue-006",
+        "start": 14.52,
+        "end": 16.94,
+        "speechText": "and I expressed them to you, and you took them with you.",
+        "language": "en",
+        "en": "and I expressed them to you, and you took them with you.",
+        "ja": "全部あなたに伝えて、あなたが持っていったの。"
+      },
+      {
+        "id": "sunset-stop-car-cue-007",
+        "start": 16.96,
+        "end": 19.1,
+        "speechText": "It made me feel cold, like if love wasn't for me.",
+        "language": "en",
+        "en": "It made me feel cold, like if love wasn't for me.",
+        "ja": "それで冷たく感じた。まるで愛は自分のものじゃないみたいに。"
+      },
+      {
+        "id": "sunset-stop-car-cue-008",
+        "start": 19.1,
+        "end": 20.36,
+        "speechText": "I don't believe that.",
+        "language": "en",
+        "en": "I don't believe that.",
+        "ja": "そんなことないよ。"
+      },
+      {
+        "id": "sunset-stop-car-cue-009",
+        "start": 20.46,
+        "end": 21.52,
+        "speechText": "I don't believe that.",
+        "language": "en",
+        "en": "I don't believe that.",
+        "ja": "僕はそうは思わない。"
+      },
+      {
+        "id": "sunset-stop-car-cue-010",
+        "start": 22.8,
+        "end": 23.6,
+        "speechText": "You know what?",
+        "language": "en",
+        "en": "You know what?",
+        "ja": "ねえ、ちょっといい？"
+      },
+      {
+        "id": "sunset-stop-car-cue-011",
+        "start": 24.04,
+        "end": 26.52,
+        "speechText": "Reality and love are almost contradictory for me.",
+        "language": "en",
+        "en": "Reality and love are almost contradictory for me.",
+        "ja": "現実と愛は、私にはほぼ矛盾してるの。"
+      },
+      {
+        "id": "sunset-stop-car-cue-012",
+        "start": 27.32,
+        "end": 28.14,
+        "speechText": "It's funny.",
+        "language": "en",
+        "en": "It's funny.",
+        "ja": "おかしいよね。"
+      },
+      {
+        "id": "sunset-stop-car-cue-013",
+        "start": 28.78,
+        "end": 31.38,
+        "speechText": "Every single one of my exes, they're now married.",
+        "language": "en",
+        "en": "Every single one of my exes, they're now married.",
+        "ja": "元カレはみんな今では結婚してるの。"
+      },
+      {
+        "id": "sunset-stop-car-cue-014",
+        "start": 31.94,
+        "end": 34.78,
+        "speechText": "Men go out with me, we break up, and then they get married.",
+        "language": "en",
+        "en": "Men go out with me, we break up, and then they get married.",
+        "ja": "私と付き合って別れて、みんな結婚するの。"
+      },
+      {
+        "id": "sunset-stop-car-cue-015",
+        "start": 35.12,
+        "end": 38.24,
+        "speechText": "And later they call me to thank me for teaching them what love is,",
+        "language": "en",
+        "en": "And later they call me to thank me for teaching them what love is,",
+        "ja": "後から電話がきて、愛を教えてくれてありがとうって言うの。"
+      },
+      {
+        "id": "sunset-stop-car-cue-016",
+        "start": 38.24,
+        "end": 41.12,
+        "speechText": "and that I taught them to care and respect women.",
+        "language": "en",
+        "en": "and that I taught them to care and respect women.",
+        "ja": "女性を大切にし尊重することを教えてくれたって。"
+      },
+      {
+        "id": "sunset-stop-car-cue-017",
+        "start": 41.4,
+        "end": 42.34,
+        "speechText": "Wait, I think I'm one of those guys.",
+        "language": "en",
+        "en": "Wait, I think I'm one of those guys.",
+        "ja": "待って、僕もその中の一人かも。"
+      },
+      {
+        "id": "sunset-stop-car-cue-018",
+        "start": 42.34,
+        "end": 43.58,
+        "speechText": "You know, I want to kill them!",
+        "language": "en",
+        "en": "You know, I want to kill them!",
+        "ja": "ほんと、殺してやりたいよ！"
+      },
+      {
+        "id": "sunset-stop-car-cue-019",
+        "start": 43.78,
+        "end": 45.34,
+        "speechText": "Why didn't they ask me to marry them?",
+        "language": "en",
+        "en": "Why didn't they ask me to marry them?",
+        "ja": "なんで私にプロポーズしなかったの？"
+      },
+      {
+        "id": "sunset-stop-car-cue-020",
+        "start": 45.34,
+        "end": 47.56,
+        "speechText": "I would have said no, but at least they could have asked!",
+        "language": "en",
+        "en": "I would have said no, but at least they could have asked!",
+        "ja": "断ったとは思うけど、せめて聞いてくれても良かったのに！"
+      },
+      {
+        "id": "sunset-stop-car-cue-021",
+        "start": 47.78,
+        "end": 48.58,
+        "speechText": "But it's my fault.",
+        "language": "en",
+        "en": "But it's my fault.",
+        "ja": "でも、それは私のせいだよ。"
+      },
+      {
+        "id": "sunset-stop-car-cue-022",
+        "start": 48.58,
+        "end": 51.7,
+        "speechText": "I know it's my fault, because I never felt it was the right man.",
+        "language": "en",
+        "en": "I know it's my fault, because I never felt it was the right man.",
+        "ja": "自分のせいよ。運命の相手だと思えなかったんだから。"
+      },
+      {
+        "id": "sunset-stop-car-cue-023",
+        "start": 51.7,
+        "end": 52.12,
+        "speechText": "Never!",
+        "language": "en",
+        "en": "Never!",
+        "ja": "一度もない！"
+      },
+      {
+        "id": "sunset-stop-car-cue-024",
+        "start": 52.94,
+        "end": 54.32,
+        "speechText": "But what does it mean, the right man?",
+        "language": "en",
+        "en": "But what does it mean, the right man?",
+        "ja": "でも「運命の相手」って何なの？"
+      },
+      {
+        "id": "sunset-stop-car-cue-025",
+        "start": 54.32,
+        "end": 55.12,
+        "speechText": "The love of your life?",
+        "language": "en",
+        "en": "The love of your life?",
+        "ja": "人生の愛の人？"
+      },
+      {
+        "id": "sunset-stop-car-cue-026",
+        "start": 55.12,
+        "end": 56.16,
+        "speechText": "The concept is absurd.",
+        "language": "en",
+        "en": "The concept is absurd.",
+        "ja": "その概念自体がばかげてる。"
+      },
+      {
+        "id": "sunset-stop-car-cue-027",
+        "start": 56.18,
+        "end": 59.62,
+        "speechText": "The idea that we can only be complete with another person is evil, right?",
+        "language": "en",
+        "en": "The idea that we can only be complete with another person is evil, right?",
+        "ja": "誰かと一緒にならないと自分が完成しないなんて、有害だよね？"
+      },
+      {
+        "id": "sunset-stop-car-cue-028",
+        "start": 60.34,
+        "end": 60.8,
+        "speechText": "Can I talk?",
+        "language": "en",
+        "en": "Can I talk?",
+        "ja": "話してもいい？"
+      },
+      {
+        "id": "sunset-stop-car-cue-029",
+        "start": 60.8,
+        "end": 63.98,
+        "speechText": "You know, I guess I've been heartbroken too many times, and then I recovered.",
+        "language": "en",
+        "en": "You know, I guess I've been heartbroken too many times, and then I recovered.",
+        "ja": "私も傷付いてばかりだったけど、そのたびに立ち直った。"
+      },
+      {
+        "id": "sunset-stop-car-cue-030",
+        "start": 64.8,
+        "end": 69.12,
+        "speechText": "So now, you know, from the start, I make no effort, because I know it's not going to work out.",
+        "language": "en",
+        "en": "So now, you know, from the start, I make no effort, because I know it's not going to work out.",
+        "ja": "だから今は最初から頑張らない。どうせダメだって分かってるから。"
+      },
+      {
+        "id": "sunset-stop-car-cue-031",
+        "start": 69.12,
+        "end": 70.38,
+        "speechText": "You can't do that.",
+        "language": "en",
+        "en": "You can't do that.",
+        "ja": "そんなのダメだよ。"
+      },
+      {
+        "id": "sunset-stop-car-cue-032",
+        "start": 70.38,
+        "end": 72.56,
+        "speechText": "You can't live your life trying to avoid pain.",
+        "language": "en",
+        "en": "You can't live your life trying to avoid pain.",
+        "ja": "痛みを避けて生きようとしちゃだめだ。"
+      },
+      {
+        "id": "sunset-stop-car-cue-033",
+        "start": 72.56,
+        "end": 73.54,
+        "speechText": "At the expense of engaging...",
+        "language": "en",
+        "en": "At the expense of engaging...",
+        "ja": "関わることを犠牲にして..."
+      },
+      {
+        "id": "sunset-stop-car-cue-034",
+        "start": 73.54,
+        "end": 74.48,
+        "speechText": "Okay, you know what? Those are words.",
+        "language": "en",
+        "en": "Okay, you know what? Those are words.",
+        "ja": "わかったよ、それはただの言葉よ。"
+      },
+      {
+        "id": "sunset-stop-car-cue-035",
+        "start": 74.6,
+        "end": 76.2,
+        "speechText": "I've got to get away from you.",
+        "language": "en",
+        "en": "I've got to get away from you.",
+        "ja": "あなたから離れなきゃ。"
+      },
+      {
+        "id": "sunset-stop-car-cue-036",
+        "start": 76.2,
+        "end": 76.68,
+        "speechText": "Stop the car.",
+        "language": "en",
+        "en": "Stop the car.",
+        "ja": "車を止めて。"
+      },
+      {
+        "id": "sunset-stop-car-cue-037",
+        "start": 76.68,
+        "end": 77.14,
+        "speechText": "I want to get out.",
+        "language": "en",
+        "en": "I want to get out.",
+        "ja": "降りたい。"
+      },
+      {
+        "id": "sunset-stop-car-cue-038",
+        "start": 77.14,
+        "end": 77.8,
+        "speechText": "No, no, no.",
+        "language": "en",
+        "en": "No, no, no.",
+        "ja": "だめ、だめ、だめ。"
+      },
+      {
+        "id": "sunset-stop-car-cue-039",
+        "start": 77.8,
+        "end": 79.38,
+        "speechText": "Don't get out.",
+        "language": "en",
+        "en": "Don't get out.",
+        "ja": "降りないで。"
+      },
+      {
+        "id": "sunset-stop-car-cue-040",
+        "start": 79.38,
+        "end": 80.82,
+        "speechText": "It's being around you, okay?",
+        "language": "en",
+        "en": "It's being around you, okay?",
+        "ja": "あなたのそばにいると、もう…。"
+      },
+      {
+        "id": "sunset-stop-car-cue-041",
+        "start": 80.86,
+        "end": 81.84,
+        "speechText": "Keep talking. No, don't touch me!",
+        "language": "en",
+        "en": "Keep talking. No, don't touch me!",
+        "ja": "話し続けて。でも、触らないで！"
+      },
+      {
+        "id": "sunset-stop-car-cue-042-english",
+        "start": 81.86,
+        "end": 82.9,
+        "speechText": "You know, I want to get on a cab.",
+        "language": "en",
+        "en": "You know, I want to get on a cab.",
+        "ja": "タクシーに乗りたいの。"
+      },
+      {
+        "id": "sunset-stop-car-cue-042-french",
+        "start": 82.9,
+        "end": 88.0,
+        "speechText": "Monsieur, arrêtez-vous. Non, non, c'est bon, au feu, là. Non, non, non, non, non. Il y a un métro même. Je veux prendre le métro.",
+        "language": "fr",
+        "en": "",
+        "ja": "運転手さん、止めて。次の信号でいいわ。地下鉄があるから、それに乗るの。"
+      },
+      {
+        "id": "sunset-stop-car-cue-046",
+        "start": 88.2,
+        "end": 88.64,
+        "speechText": "No, no, no, no.",
+        "language": "en",
+        "en": "No, no, no, no.",
+        "ja": "だめ、だめ、だめ、だめ。"
+      },
+      {
+        "id": "sunset-stop-car-cue-047",
+        "start": 88.64,
+        "end": 89.54,
+        "speechText": "Just keep going. I'm just so happy.",
+        "language": "en",
+        "en": "Just keep going. I'm just so happy.",
+        "ja": "そのまま進んで。本当にうれしいんだ。"
+      },
+      {
+        "id": "sunset-stop-car-cue-048",
+        "start": 89.54,
+        "end": 89.96,
+        "speechText": "Thank you.",
+        "language": "en",
+        "en": "Thank you.",
+        "ja": "ありがとう。"
+      },
+      {
+        "id": "sunset-stop-car-cue-049",
+        "start": 89.96,
+        "end": 90.66,
+        "speechText": "Just keep going.",
+        "language": "en",
+        "en": "Just keep going.",
+        "ja": "このまま進んで。"
+      },
+      {
+        "id": "sunset-stop-car-cue-050",
+        "start": 91.68,
+        "end": 92.66,
+        "speechText": "All right.",
+        "language": "en",
+        "en": "All right.",
+        "ja": "わかった。"
+      },
+      {
+        "id": "sunset-stop-car-cue-051",
+        "start": 94.96,
+        "end": 98.44,
+        "speechText": "Look, I'm just so happy, all right, to be with you.",
+        "language": "en",
+        "en": "Look, I'm just so happy, all right, to be with you.",
+        "ja": "君と一緒にいられて、本当にうれしいんだ。"
+      },
+      {
+        "id": "sunset-stop-car-cue-052",
+        "start": 99.1,
+        "end": 99.54,
+        "speechText": "I am.",
+        "language": "en",
+        "en": "I am.",
+        "ja": "本当に。"
+      },
+      {
+        "id": "sunset-stop-car-cue-053",
+        "start": 99.54,
+        "end": 101.26,
+        "speechText": "I'm so glad you didn't forget about me.",
+        "language": "en",
+        "en": "I'm so glad you didn't forget about me.",
+        "ja": "君が僕のことを忘れてなかったのが嬉しい。"
+      },
+      {
+        "id": "sunset-stop-car-cue-054",
+        "start": 101.98,
+        "end": 102.44,
+        "speechText": "Okay?",
+        "language": "en",
+        "en": "Okay?",
+        "ja": "いい？"
+      },
+      {
+        "id": "sunset-stop-car-cue-055",
+        "start": 102.64,
+        "end": 103.6,
+        "speechText": "No, I didn't.",
+        "language": "en",
+        "en": "No, I didn't.",
+        "ja": "忘れてなかった。"
+      },
+      {
+        "id": "sunset-stop-car-cue-056",
+        "start": 103.66,
+        "end": 105.1,
+        "speechText": "And it pisses me off, okay?",
+        "language": "en",
+        "en": "And it pisses me off, okay?",
+        "ja": "それが腹立つの。"
+      },
+      {
+        "id": "sunset-stop-car-cue-057",
+        "start": 105.56,
+        "end": 108.92,
+        "speechText": "You come here to Paris, all romantic, and married.",
+        "language": "en",
+        "en": "You come here to Paris, all romantic, and married.",
+        "ja": "パリに来て、ロマンチックに構えるし、しかも既婚者で。"
+      },
+      {
+        "id": "sunset-stop-car-cue-058",
+        "start": 109.36,
+        "end": 109.74,
+        "speechText": "Okay?",
+        "language": "en",
+        "en": "Okay?",
+        "ja": "でしょ？"
+      },
+      {
+        "id": "sunset-stop-car-cue-059",
+        "start": 109.88,
+        "end": 110.66,
+        "speechText": "Screw you!",
+        "language": "en",
+        "en": "Screw you!",
+        "ja": "ふざけんな！"
+      },
+      {
+        "id": "sunset-stop-car-cue-060",
+        "start": 111.58,
+        "end": 112.52,
+        "speechText": "Don't get me wrong.",
+        "language": "en",
+        "en": "Don't get me wrong.",
+        "ja": "誤解しないで。"
+      },
+      {
+        "id": "sunset-stop-car-cue-061",
+        "start": 112.52,
+        "end": 113.98,
+        "speechText": "I'm not trying to get you or anything.",
+        "language": "en",
+        "en": "I'm not trying to get you or anything.",
+        "ja": "あなたをどうにかしようとか、そんな気はないの。"
+      },
+      {
+        "id": "sunset-stop-car-cue-062",
+        "start": 114.04,
+        "end": 116.18,
+        "speechText": "I mean, all I need is a married man.",
+        "language": "en",
+        "en": "I mean, all I need is a married man.",
+        "ja": "既婚者なんて、今さらごめんだわ。"
+      },
+      {
+        "id": "sunset-stop-car-cue-063",
+        "start": 117.04,
+        "end": 118.9,
+        "speechText": "There's been so much water under the bridge.",
+        "language": "en",
+        "en": "There's been so much water under the bridge.",
+        "ja": "もう色んなことが過ぎ去った。"
+      },
+      {
+        "id": "sunset-stop-car-cue-064",
+        "start": 118.94,
+        "end": 120.2,
+        "speechText": "It's not even about you anymore.",
+        "language": "en",
+        "en": "It's not even about you anymore.",
+        "ja": "もうあなたのことじゃないんだ。"
+      },
+      {
+        "id": "sunset-stop-car-cue-065",
+        "start": 120.2,
+        "end": 122.6,
+        "speechText": "It's about that time, that moment in time that is forever gone.",
+        "language": "en",
+        "en": "It's about that time, that moment in time that is forever gone.",
+        "ja": "あのとき、あの一瞬はもう永遠に失われた。"
+      },
+      {
+        "id": "sunset-stop-car-cue-066",
+        "start": 122.6,
+        "end": 123.18,
+        "speechText": "I don't know.",
+        "language": "en",
+        "en": "I don't know.",
+        "ja": "さあ。"
+      },
+      {
+        "id": "sunset-stop-car-cue-067",
+        "start": 123.18,
+        "end": 128.0,
+        "speechText": "You say all that, but you didn't even remember having sex, so… Of course I remember it.",
+        "language": "en",
+        "en": "You say all that, but you didn't even remember having sex, so… Of course I remember it.",
+        "ja": "そう言うけど、君はセックスしたの覚えてなかったよね。――もちろん覚えてる。"
+      },
+      {
+        "id": "sunset-stop-car-cue-068",
+        "start": 130.38,
+        "end": 131.14,
+        "speechText": "You did?",
+        "language": "en",
+        "en": "You did?",
+        "ja": "覚えてたの？"
+      },
+      {
+        "id": "sunset-stop-car-cue-069",
+        "start": 131.36,
+        "end": 131.9,
+        "speechText": "Yes.",
+        "language": "en",
+        "en": "Yes.",
+        "ja": "ええ。"
+      },
+      {
+        "id": "sunset-stop-car-cue-070",
+        "start": 132.54,
+        "end": 134.68,
+        "speechText": "Women pretend things like that.",
+        "language": "en",
+        "en": "Women pretend things like that.",
+        "ja": "女はそういうの、嘘つくんだよ。"
+      },
+      {
+        "id": "sunset-stop-car-cue-071",
+        "start": 134.78,
+        "end": 135.34,
+        "speechText": "I don't know.",
+        "language": "en",
+        "en": "I don't know.",
+        "ja": "分からない。"
+      },
+      {
+        "id": "sunset-stop-car-cue-072",
+        "start": 135.5,
+        "end": 136.1,
+        "speechText": "They do?",
+        "language": "en",
+        "en": "They do?",
+        "ja": "そうなの？"
+      },
+      {
+        "id": "sunset-stop-car-cue-073",
+        "start": 136.48,
+        "end": 138.24,
+        "speechText": "Yeah, what was I supposed to say?",
+        "language": "en",
+        "en": "Yeah, what was I supposed to say?",
+        "ja": "だって、何て言えばよかったのよ？"
+      },
+      {
+        "id": "sunset-stop-car-cue-074",
+        "start": 138.24,
+        "end": 140.08,
+        "speechText": "That I remember the wine in the park",
+        "language": "en",
+        "en": "That I remember the wine in the park",
+        "ja": "公園でワインを飲んだのを覚えてるって。"
+      },
+      {
+        "id": "sunset-stop-car-cue-075",
+        "start": 140.08,
+        "end": 144.16,
+        "speechText": "and us looking up at the stars fading away as the sun came up.",
+        "language": "en",
+        "en": "and us looking up at the stars fading away as the sun came up.",
+        "ja": "太陽が昇るまで星を見てたよね。"
+      },
+      {
+        "id": "sunset-stop-car-cue-076",
+        "start": 144.58,
+        "end": 146.42,
+        "speechText": "We had sex twice, you idiot!",
+        "language": "en",
+        "en": "We had sex twice, you idiot!",
+        "ja": "二回もセックスしたでしょ、バカ！"
+      },
+      {
+        "id": "sunset-stop-car-cue-077",
+        "start": 148.42,
+        "end": 150.3,
+        "speechText": "All right, you know what?",
+        "language": "en",
+        "en": "All right, you know what?",
+        "ja": "もういいや。"
+      },
+      {
+        "id": "sunset-stop-car-cue-078",
+        "start": 150.6,
+        "end": 156.96,
+        "speechText": "I'm just happy to see you, even if you've become an angry, manic-depressive activist.",
+        "language": "en",
+        "en": "I'm just happy to see you, even if you've become an angry, manic-depressive activist.",
+        "ja": "君が怒りっぽくて躁うつの活動家になってても、会えて嬉しい。"
+      },
+      {
+        "id": "sunset-stop-car-cue-079",
+        "start": 157.02,
+        "end": 157.78,
+        "speechText": "I still like you.",
+        "language": "en",
+        "en": "I still like you.",
+        "ja": "それでもまだ君が好きだよ。"
+      },
+      {
+        "id": "sunset-stop-car-cue-080",
+        "start": 157.78,
+        "end": 158.605,
+        "speechText": "I still enjoy being around you.",
+        "language": "en",
+        "en": "I still enjoy being around you.",
+        "ja": "一緒にいて楽しいままだよ。"
+      }
+    ],
+    "subtitleVerification": "automated; not human listening",
+    "video": "/movie-study/media/sunset-stop-car.mp4",
+    "poster": "/movie-study/posters/sunset-stop-car.jpg"
+  },
+  {
     "id": "sunset-dreams",
     "work": "Before Sunset",
     "title": "何年も、君の夢を見ていた",
@@ -6086,6 +9123,695 @@
     "subtitleVerification": "automated; not human listening"
   },
   {
+    "id": "midnight-bimbo",
+    "work": "Before Midnight",
+    "title": "食卓での冗談――作家ってすごいの？",
+    "description": "食卓で、出会いの駆け引きを冗談交じりに演じてみせる",
+    "duration": 119.105,
+    "source": "https://www.youtube.com/watch?v=rAf9veM_n2w",
+    "sourceStart": 0,
+    "sourceEnd": 119.07,
+    "displayWork": "Before Midnight",
+    "captions": [
+      {
+        "id": "midnight-bimbo-cue-001",
+        "start": 0,
+        "end": 1.38,
+        "speechText": "It has some upsides.",
+        "language": "en",
+        "en": "It has some upsides.",
+        "ja": "いいところもあるのよ。"
+      },
+      {
+        "id": "midnight-bimbo-cue-002",
+        "start": 1.5,
+        "end": 4.4,
+        "speechText": "Let me tell you right now, Anna, how to keep a man.",
+        "language": "en",
+        "en": "Let me tell you right now, Anna, how to keep a man.",
+        "ja": "今すぐ教えるわ、アンナ。男をつなぎ止める方法を。"
+      },
+      {
+        "id": "midnight-bimbo-cue-003",
+        "start": 4.72,
+        "end": 8.28,
+        "speechText": "You gotta let them win at all the silly little games they like.",
+        "language": "en",
+        "en": "You gotta let them win at all the silly little games they like.",
+        "ja": "彼らが好きなくだらないゲームで勝たせてあげることよ。"
+      },
+      {
+        "id": "midnight-bimbo-cue-004",
+        "start": 8.76,
+        "end": 11.82,
+        "speechText": "When I met Jesse the first night, we were playing pinball, and of course I was winning.",
+        "language": "en",
+        "en": "When I met Jesse the first night, we were playing pinball, and of course I was winning.",
+        "ja": "ジェシーと初めて会った夜、ピンボールをしてて、もちろん私が勝ってたの。"
+      },
+      {
+        "id": "midnight-bimbo-cue-005",
+        "start": 11.82,
+        "end": 14.5,
+        "speechText": "Is the foundation of our entire relationship a lie?",
+        "language": "en",
+        "en": "Is the foundation of our entire relationship a lie?",
+        "ja": "私たちの関係の土台って嘘なの？"
+      },
+      {
+        "id": "midnight-bimbo-cue-006",
+        "start": 14.5,
+        "end": 17.36,
+        "speechText": "And at the last minute I let the ball go down the middle.",
+        "language": "en",
+        "en": "And at the last minute I let the ball go down the middle.",
+        "ja": "でも最後にボールを真ん中に落としちゃったわ。"
+      },
+      {
+        "id": "midnight-bimbo-cue-007",
+        "start": 17.36,
+        "end": 18.88,
+        "speechText": "It builds their confidence.",
+        "language": "en",
+        "en": "It builds their confidence.",
+        "ja": "そうすると自信がつくのよ。"
+      },
+      {
+        "id": "midnight-bimbo-cue-008",
+        "start": 19.08,
+        "end": 23.1,
+        "speechText": "No, she cannot beat me at one game, not any game. If I didn't let him win at every game, we would never have sex.",
+        "language": "en",
+        "en": "No, she cannot beat me at one game, not any game. If I didn't let him win at every game, we would never have sex.",
+        "ja": "いや、どんなゲームでも彼女に勝たせないと、私たちは絶対にセックスできないわ。"
+      },
+      {
+        "id": "midnight-bimbo-cue-009",
+        "start": 23.32,
+        "end": 26.9,
+        "speechText": "I mean, I'm sorry to say it, but he's actually a closet macho.",
+        "language": "en",
+        "en": "I mean, I'm sorry to say it, but he's actually a closet macho.",
+        "ja": "言いにくいけど、実は彼は隠れマッチョなの。"
+      },
+      {
+        "id": "midnight-bimbo-cue-010",
+        "start": 27.28,
+        "end": 30.12,
+        "speechText": "He dreams of having a bimbo for a wife.",
+        "language": "en",
+        "en": "He dreams of having a bimbo for a wife.",
+        "ja": "頭が空っぽな女を妻にしたいのよ。"
+      },
+      {
+        "id": "midnight-bimbo-cue-011",
+        "start": 30.12,
+        "end": 30.76,
+        "speechText": "That's my greatest aspiration.",
+        "language": "en",
+        "en": "That's my greatest aspiration.",
+        "ja": "それが僕の一番の夢だよ。"
+      },
+      {
+        "id": "midnight-bimbo-cue-012",
+        "start": 30.76,
+        "end": 32.24,
+        "speechText": "Dreams of bimbo.",
+        "language": "en",
+        "en": "Dreams of bimbo.",
+        "ja": "バカな女の夢ね。"
+      },
+      {
+        "id": "midnight-bimbo-cue-013",
+        "start": 35.28,
+        "end": 36.16,
+        "speechText": "So.",
+        "language": "en",
+        "en": "So.",
+        "ja": "それで。"
+      },
+      {
+        "id": "midnight-bimbo-cue-014",
+        "start": 39.7,
+        "end": 40.58,
+        "speechText": "Yes.",
+        "language": "en",
+        "en": "Yes.",
+        "ja": "そうよ。"
+      },
+      {
+        "id": "midnight-bimbo-cue-015",
+        "start": 41.86,
+        "end": 43.42,
+        "speechText": "So you're a writer?",
+        "language": "en",
+        "en": "So you're a writer?",
+        "ja": "じゃあ、作家なの？"
+      },
+      {
+        "id": "midnight-bimbo-cue-016",
+        "start": 45.88,
+        "end": 47.5,
+        "speechText": "Yeah, sure.",
+        "language": "en",
+        "en": "Yeah, sure.",
+        "ja": "うん、まあね。"
+      },
+      {
+        "id": "midnight-bimbo-cue-017",
+        "start": 48.06,
+        "end": 50.52,
+        "speechText": "So you write, like, books?",
+        "language": "en",
+        "en": "So you write, like, books?",
+        "ja": "本を書いてるの？"
+      },
+      {
+        "id": "midnight-bimbo-cue-018",
+        "start": 53.04,
+        "end": 54.14,
+        "speechText": "I've read a few.",
+        "language": "en",
+        "en": "I've read a few.",
+        "ja": "何冊か読んだわ。"
+      },
+      {
+        "id": "midnight-bimbo-cue-019",
+        "start": 54.2,
+        "end": 55.1,
+        "speechText": "Sure, sure.",
+        "language": "en",
+        "en": "Sure, sure.",
+        "ja": "うん、うん。"
+      },
+      {
+        "id": "midnight-bimbo-cue-020",
+        "start": 55.1,
+        "end": 56.26,
+        "speechText": "Wow.",
+        "language": "en",
+        "en": "Wow.",
+        "ja": "へえ。"
+      },
+      {
+        "id": "midnight-bimbo-cue-021",
+        "start": 56.78,
+        "end": 59.02,
+        "speechText": "I've never met a writer before.",
+        "language": "en",
+        "en": "I've never met a writer before.",
+        "ja": "作家に会ったの初めて。"
+      },
+      {
+        "id": "midnight-bimbo-cue-022",
+        "start": 59.16,
+        "end": 62.18,
+        "speechText": "You must be really smart.",
+        "language": "en",
+        "en": "You must be really smart.",
+        "ja": "すごく頭いいんだろうね。"
+      },
+      {
+        "id": "midnight-bimbo-cue-023",
+        "start": 63.08,
+        "end": 66.66,
+        "speechText": "You know, I can't even write my own name sometimes when I'm tired.",
+        "language": "en",
+        "en": "You know, I can't even write my own name sometimes when I'm tired.",
+        "ja": "私は疲れたら自分の名前すら書けないのに。"
+      },
+      {
+        "id": "midnight-bimbo-cue-024",
+        "start": 67.04,
+        "end": 69.74,
+        "speechText": "What kind of books do you like?",
+        "language": "en",
+        "en": "What kind of books do you like?",
+        "ja": "どんな本が好き？"
+      },
+      {
+        "id": "midnight-bimbo-cue-025",
+        "start": 70.32,
+        "end": 75.64,
+        "speechText": "Well, I like stories with a meaning behind it, like a really beautiful love story.",
+        "language": "en",
+        "en": "Well, I like stories with a meaning behind it, like a really beautiful love story.",
+        "ja": "意味のある物語が好き、美しい恋の話とか。"
+      },
+      {
+        "id": "midnight-bimbo-cue-026",
+        "start": 75.64,
+        "end": 76.58,
+        "speechText": "Oh, sure, yeah.",
+        "language": "en",
+        "en": "Oh, sure, yeah.",
+        "ja": "ああ、そうなんだ。"
+      },
+      {
+        "id": "midnight-bimbo-cue-027",
+        "start": 76.92,
+        "end": 81.56,
+        "speechText": "You know, I read this book once, Romeo and...",
+        "language": "en",
+        "en": "You know, I read this book once, Romeo and...",
+        "ja": "一度読んだことあるの、ロミオと…"
+      },
+      {
+        "id": "midnight-bimbo-cue-028",
+        "start": 81.56,
+        "end": 81.94,
+        "speechText": "Juliet.",
+        "language": "en",
+        "en": "Juliet.",
+        "ja": "ジュリエット。"
+      },
+      {
+        "id": "midnight-bimbo-cue-029",
+        "start": 83.14,
+        "end": 83.72,
+        "speechText": "Yeah.",
+        "language": "en",
+        "en": "Yeah.",
+        "ja": "そうそう。"
+      },
+      {
+        "id": "midnight-bimbo-cue-030",
+        "start": 85.1,
+        "end": 86.42,
+        "speechText": "Wow, you know it.",
+        "language": "en",
+        "en": "Wow, you know it.",
+        "ja": "知ってるんだ、すごい。"
+      },
+      {
+        "id": "midnight-bimbo-cue-031",
+        "start": 86.42,
+        "end": 87.28,
+        "speechText": "It's very good, yeah.",
+        "language": "en",
+        "en": "It's very good, yeah.",
+        "ja": "本当に良かったよ。"
+      },
+      {
+        "id": "midnight-bimbo-cue-032",
+        "start": 87.32,
+        "end": 88.34,
+        "speechText": "It's a play, actually.",
+        "language": "en",
+        "en": "It's a play, actually.",
+        "ja": "実はあれは舞台劇だよ。"
+      },
+      {
+        "id": "midnight-bimbo-cue-033",
+        "start": 88.68,
+        "end": 89.7,
+        "speechText": "It's not a book, a play.",
+        "language": "en",
+        "en": "It's not a book, a play.",
+        "ja": "本じゃなくて、劇なんだ。"
+      },
+      {
+        "id": "midnight-bimbo-cue-034",
+        "start": 90.38,
+        "end": 92.58,
+        "speechText": "Oh, I thought it was a book based on the movie.",
+        "language": "en",
+        "en": "Oh, I thought it was a book based on the movie.",
+        "ja": "映画の原作の本かと思ってた。"
+      },
+      {
+        "id": "midnight-bimbo-cue-035",
+        "start": 93.4,
+        "end": 94.9,
+        "speechText": "No, no, a play, yeah.",
+        "language": "en",
+        "en": "No, no, a play, yeah.",
+        "ja": "いやいや、劇だよ。"
+      },
+      {
+        "id": "midnight-bimbo-cue-036",
+        "start": 94.9,
+        "end": 96.54,
+        "speechText": "Okay, it was a play, wow.",
+        "language": "en",
+        "en": "Okay, it was a play, wow.",
+        "ja": "そっか、劇だったんだ、すごい。"
+      },
+      {
+        "id": "midnight-bimbo-cue-037",
+        "start": 96.64,
+        "end": 99.76,
+        "speechText": "Well, actually, I didn't read the whole thing, because,",
+        "language": "en",
+        "en": "Well, actually, I didn't read the whole thing, because,",
+        "ja": "でも実は全部読んだわけじゃなくて、"
+      },
+      {
+        "id": "midnight-bimbo-cue-038",
+        "start": 99.76,
+        "end": 103.1,
+        "speechText": "you know, sometimes I have to keep up and read those magazines",
+        "language": "en",
+        "en": "you know, sometimes I have to keep up and read those magazines",
+        "ja": "時々ね、雑誌もチェックしないと"
+      },
+      {
+        "id": "midnight-bimbo-cue-039",
+        "start": 103.1,
+        "end": 106.12,
+        "speechText": "to know exactly what's going on in all those people's lives.",
+        "language": "en",
+        "en": "to know exactly what's going on in all those people's lives.",
+        "ja": "みんなの人生の最新情報についていけないから。"
+      },
+      {
+        "id": "midnight-bimbo-cue-040",
+        "start": 106.12,
+        "end": 107.18,
+        "speechText": "Well, that is important.",
+        "language": "en",
+        "en": "Well, that is important.",
+        "ja": "それも大事だよ。"
+      },
+      {
+        "id": "midnight-bimbo-cue-041",
+        "start": 107.5,
+        "end": 109.74,
+        "speechText": "Okay, well, you're very, very smart.",
+        "language": "en",
+        "en": "Okay, well, you're very, very smart.",
+        "ja": "ほんとに、すごく頭良いね。"
+      },
+      {
+        "id": "midnight-bimbo-cue-042",
+        "start": 110.16,
+        "end": 114.62,
+        "speechText": "And I bet you have a gigantic penis.",
+        "language": "en",
+        "en": "And I bet you have a gigantic penis.",
+        "ja": "しかも、きっとものすごく大きいんでしょ。"
+      },
+      {
+        "id": "midnight-bimbo-cue-043",
+        "start": 114.68,
+        "end": 119.02,
+        "speechText": "Why am I finding myself so attracted to this woman?",
+        "language": "en",
+        "en": "Why am I finding myself so attracted to this woman?",
+        "ja": "なんでこんなに彼女に惹かれてるんだろう？"
+      }
+    ],
+    "subtitleVerification": "automated; not human listening",
+    "video": "/movie-study/media/midnight-bimbo.mp4",
+    "poster": "/movie-study/posters/midnight-bimbo.jpg"
+  },
+  {
+    "id": "midnight-passing-through",
+    "work": "Before Midnight",
+    "title": "夕食で語る、愛する人との思い出",
+    "description": "亡き夫の記憶と、現れては消える人生について語る",
+    "duration": 135.205,
+    "source": "https://www.youtube.com/watch?v=Fy5pvE1rMR0",
+    "sourceStart": 0,
+    "sourceEnd": 135.13,
+    "displayWork": "Before Midnight",
+    "captions": [
+      {
+        "id": "midnight-passing-through-cue-001",
+        "start": 0,
+        "end": 1.82,
+        "speechText": "Okay, thank you.",
+        "language": "en",
+        "en": "Okay, thank you.",
+        "ja": "はい、ありがとう。"
+      },
+      {
+        "id": "midnight-passing-through-cue-002",
+        "start": 3.08,
+        "end": 10.92,
+        "speechText": "Well, when I think of Elias, what I miss the most about him is the way he used",
+        "language": "en",
+        "en": "Well, when I think of Elias, what I miss the most about him is the way he used",
+        "ja": "エリアスのことで一番恋しいのは、夜に一緒に"
+      },
+      {
+        "id": "midnight-passing-through-cue-003",
+        "start": 10.92,
+        "end": 12.76,
+        "speechText": "to lie down next to me at night.",
+        "language": "en",
+        "en": "to lie down next to me at night.",
+        "ja": "横になってくれたことです。"
+      },
+      {
+        "id": "midnight-passing-through-cue-004",
+        "start": 13.6,
+        "end": 19.94,
+        "speechText": "Sometimes his arm would stretch along my chest and I couldn't move.",
+        "language": "en",
+        "en": "Sometimes his arm would stretch along my chest and I couldn't move.",
+        "ja": "たまに彼の腕が胸に伸びて、私は動けなかった。"
+      },
+      {
+        "id": "midnight-passing-through-cue-005",
+        "start": 20.3,
+        "end": 22.18,
+        "speechText": "I even held my breath.",
+        "language": "en",
+        "en": "I even held my breath.",
+        "ja": "息をひそめることもありました。"
+      },
+      {
+        "id": "midnight-passing-through-cue-006",
+        "start": 22.82,
+        "end": 27.04,
+        "speechText": "But I felt safe, complete.",
+        "language": "en",
+        "en": "But I felt safe, complete.",
+        "ja": "でも安心して、満たされた気持ちになりました。"
+      },
+      {
+        "id": "midnight-passing-through-cue-007",
+        "start": 28.84,
+        "end": 33.42,
+        "speechText": "And I miss the way he was whistling, walking down the street.",
+        "language": "en",
+        "en": "And I miss the way he was whistling, walking down the street.",
+        "ja": "それと彼が口笛を吹きながら道を歩く姿も恋しい。"
+      },
+      {
+        "id": "midnight-passing-through-cue-008",
+        "start": 33.96,
+        "end": 36.88,
+        "speechText": "And every time I do something, I think of what he would say.",
+        "language": "en",
+        "en": "And every time I do something, I think of what he would say.",
+        "ja": "何をするにも、彼なら何て言うか考えてしまう。"
+      },
+      {
+        "id": "midnight-passing-through-cue-009",
+        "start": 37.28,
+        "end": 39.4,
+        "speechText": "Oh, it's cold today, wear a scarf.",
+        "language": "en",
+        "en": "Oh, it's cold today, wear a scarf.",
+        "ja": "今日は寒いよ、マフラーを巻きなさいとか。"
+      },
+      {
+        "id": "midnight-passing-through-cue-010",
+        "start": 40.94,
+        "end": 46.94,
+        "speechText": "But lately I've been forgetting little things.",
+        "language": "en",
+        "en": "But lately I've been forgetting little things.",
+        "ja": "でも最近は、小さなことを忘れるようになった。"
+      },
+      {
+        "id": "midnight-passing-through-cue-011",
+        "start": 47.1,
+        "end": 51.48,
+        "speechText": "He's sort of fading, and I'm starting to forget him.",
+        "language": "en",
+        "en": "He's sort of fading, and I'm starting to forget him.",
+        "ja": "彼がだんだん消えてきて、忘れ始めている。"
+      },
+      {
+        "id": "midnight-passing-through-cue-012",
+        "start": 52.38,
+        "end": 56.48,
+        "speechText": "And it's like losing him again.",
+        "language": "en",
+        "en": "And it's like losing him again.",
+        "ja": "まるでまた彼を失うみたいです。"
+      },
+      {
+        "id": "midnight-passing-through-cue-013",
+        "start": 57.52,
+        "end": 62.88,
+        "speechText": "So sometimes I make myself remember every detail of his face:",
+        "language": "en",
+        "en": "So sometimes I make myself remember every detail of his face:",
+        "ja": "だから時々、自分で彼の顔の細部を思い出します。"
+      },
+      {
+        "id": "midnight-passing-through-cue-014",
+        "start": 62.88,
+        "end": 67.92,
+        "speechText": "the exact color of his eyes, his lips, his teeth,",
+        "language": "en",
+        "en": "the exact color of his eyes, his lips, his teeth,",
+        "ja": "目の色、唇、歯の正確な色を。"
+      },
+      {
+        "id": "midnight-passing-through-cue-015",
+        "start": 67.92,
+        "end": 70.92,
+        "speechText": "the texture of his skin, his hair.",
+        "language": "en",
+        "en": "the texture of his skin, his hair.",
+        "ja": "肌の感触や髪の毛まで。"
+      },
+      {
+        "id": "midnight-passing-through-cue-016",
+        "start": 71.66,
+        "end": 74.48,
+        "speechText": "That was all gone by the time he went.",
+        "language": "en",
+        "en": "That was all gone by the time he went.",
+        "ja": "それは彼が逝くころにはもうすべて消えていました。"
+      },
+      {
+        "id": "midnight-passing-through-cue-017",
+        "start": 75.98,
+        "end": 81.26,
+        "speechText": "And sometimes, not always, but sometimes I can actually see him.",
+        "language": "en",
+        "en": "And sometimes, not always, but sometimes I can actually see him.",
+        "ja": "たまにですが、本当に彼の姿を見ることができます。"
+      },
+      {
+        "id": "midnight-passing-through-cue-018",
+        "start": 82.14,
+        "end": 84.68,
+        "speechText": "It's as if a cloud moves away and there he is.",
+        "language": "en",
+        "en": "It's as if a cloud moves away and there he is.",
+        "ja": "まるで雲が動いて、彼がそこに現れるみたいに。"
+      },
+      {
+        "id": "midnight-passing-through-cue-019",
+        "start": 84.84,
+        "end": 86.26,
+        "speechText": "I could almost touch him.",
+        "language": "en",
+        "en": "I could almost touch him.",
+        "ja": "もう少しで触れられそうなほどです。"
+      },
+      {
+        "id": "midnight-passing-through-cue-020",
+        "start": 86.78,
+        "end": 92.4,
+        "speechText": "But then the real world rushes in and he vanishes again.",
+        "language": "en",
+        "en": "But then the real world rushes in and he vanishes again.",
+        "ja": "でもすぐ現実が押し寄せ、彼はまた消えてしまう。"
+      },
+      {
+        "id": "midnight-passing-through-cue-021",
+        "start": 93.68,
+        "end": 98.92,
+        "speechText": "For a while I did this every morning when the sun was not too bright outside.",
+        "language": "en",
+        "en": "For a while I did this every morning when the sun was not too bright outside.",
+        "ja": "しばらくは毎朝、陽が強すぎない時にやっていました。"
+      },
+      {
+        "id": "midnight-passing-through-cue-022",
+        "start": 99.04,
+        "end": 101.68,
+        "speechText": "The sun somehow makes him vanish.",
+        "language": "en",
+        "en": "The sun somehow makes him vanish.",
+        "ja": "太陽がなぜか彼を消してしまうのです。"
+      },
+      {
+        "id": "midnight-passing-through-cue-023",
+        "start": 103.04,
+        "end": 106.48,
+        "speechText": "Yes, he appears and he disappears,",
+        "language": "en",
+        "en": "Yes, he appears and he disappears,",
+        "ja": "現れては消えていきます。"
+      },
+      {
+        "id": "midnight-passing-through-cue-024",
+        "start": 106.72,
+        "end": 112.3,
+        "speechText": "like a sunrise or a sunset or anything so ephemeral.",
+        "language": "en",
+        "en": "like a sunrise or a sunset or anything so ephemeral.",
+        "ja": "日の出や日の入りや、はかないものみたいに。"
+      },
+      {
+        "id": "midnight-passing-through-cue-025",
+        "start": 114.38,
+        "end": 116.38,
+        "speechText": "Just like our life.",
+        "language": "en",
+        "en": "Just like our life.",
+        "ja": "ちょうど私たちの人生のようです。"
+      },
+      {
+        "id": "midnight-passing-through-cue-026",
+        "start": 117.18,
+        "end": 120.34,
+        "speechText": "We appear and we disappear.",
+        "language": "en",
+        "en": "We appear and we disappear.",
+        "ja": "現れて、消えていくのです。"
+      },
+      {
+        "id": "midnight-passing-through-cue-027",
+        "start": 121.28,
+        "end": 123.46,
+        "speechText": "And we are so important to some,",
+        "language": "en",
+        "en": "And we are so important to some,",
+        "ja": "誰かにとってはとても大切な存在でも、"
+      },
+      {
+        "id": "midnight-passing-through-cue-028",
+        "start": 124.84,
+        "end": 125.84,
+        "speechText": "but we are just",
+        "language": "en",
+        "en": "but we are just",
+        "ja": "でも私たちはただ"
+      },
+      {
+        "id": "midnight-passing-through-cue-029",
+        "start": 126.96,
+        "end": 128.14,
+        "speechText": "passing through.",
+        "language": "en",
+        "en": "passing through.",
+        "ja": "通り過ぎていくだけです。"
+      },
+      {
+        "id": "midnight-passing-through-cue-030",
+        "start": 131.34,
+        "end": 133.22,
+        "speechText": "Just passing through.",
+        "language": "en",
+        "en": "Just passing through.",
+        "ja": "ただ通り過ぎていくだけ。"
+      }
+    ],
+    "subtitleVerification": "automated; not human listening",
+    "video": "/movie-study/media/midnight-passing-through.mp4",
+    "poster": "/movie-study/posters/midnight-passing-through.jpg"
+  },
+  {
     "id": "midnight-first-love",
     "work": "Before Midnight",
     "title": "あなたの初恋は、誰？",
@@ -7155,6 +10881,2099 @@
       }
     ],
     "subtitleVerification": "automated; not human listening"
+  },
+  {
+    "id": "midnight-hotel-argument",
+    "work": "Before Midnight",
+    "title": "ホテルでぶつかる、夫婦の本音",
+    "description": "怒りや子育て、夫婦の親密さをめぐって本音がぶつかる",
+    "duration": 125.605,
+    "source": "https://www.youtube.com/watch?v=CgL8tvjoseM",
+    "sourceStart": 0,
+    "sourceEnd": 125.61,
+    "displayWork": "Before Midnight",
+    "captions": [
+      {
+        "id": "midnight-hotel-argument-cue-001",
+        "start": 0,
+        "end": 1.56,
+        "speechText": "Look at us.",
+        "language": "en",
+        "en": "Look at us.",
+        "ja": "私たちを見て。"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-002",
+        "start": 2.18,
+        "end": 3.04,
+        "speechText": "Here we are.",
+        "language": "en",
+        "en": "Here we are.",
+        "ja": "ここにいる。"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-003",
+        "start": 3.14,
+        "end": 7.74,
+        "speechText": "We are in, you know, the Garden of Eden and we can't stop fighting.",
+        "language": "en",
+        "en": "We are in, you know, the Garden of Eden and we can't stop fighting.",
+        "ja": "まるでエデンの園にいるのに、喧嘩が止まらない。"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-004",
+        "start": 9.04,
+        "end": 11.96,
+        "speechText": "I don't think there's one natural human state.",
+        "language": "en",
+        "en": "I don't think there's one natural human state.",
+        "ja": "一つの自然な人間の状態なんてないと思う。"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-005",
+        "start": 12.46,
+        "end": 13.68,
+        "speechText": "The human state is multiple.",
+        "language": "en",
+        "en": "The human state is multiple.",
+        "ja": "人間の状態はいくつもあるんだ。"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-006",
+        "start": 13.86,
+        "end": 17.42,
+        "speechText": "I mean, if that's what you see when you're watching the girls play,",
+        "language": "en",
+        "en": "I mean, if that's what you see when you're watching the girls play,",
+        "ja": "つまり、もし君が娘たちの遊びを見てそう思うなら、"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-007",
+        "start": 17.42,
+        "end": 18.46,
+        "speechText": "that means you're depressed.",
+        "language": "en",
+        "en": "that means you're depressed.",
+        "ja": "つまり君は落ち込んでるってことだ。"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-008",
+        "start": 20.68,
+        "end": 22.98,
+        "speechText": "Okay, maybe I am.",
+        "language": "en",
+        "en": "Okay, maybe I am.",
+        "ja": "うん、たぶんそうかも。"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-009",
+        "start": 23.04,
+        "end": 24.74,
+        "speechText": "No, but when I see them fight,",
+        "language": "en",
+        "en": "No, but when I see them fight,",
+        "ja": "いや、でも私が彼女たちの喧嘩を見るときは、"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-010",
+        "start": 24.76,
+        "end": 27.44,
+        "speechText": "I see beautiful energy of going forward in life",
+        "language": "en",
+        "en": "I see beautiful energy of going forward in life",
+        "ja": "人生を前に進める美しいエネルギーが見える。"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-011",
+        "start": 27.44,
+        "end": 30.4,
+        "speechText": "and not letting anyone step on them or take away what they want.",
+        "language": "en",
+        "en": "and not letting anyone step on them or take away what they want.",
+        "ja": "誰にも踏みにじられず、欲しいものを奪われない。"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-012",
+        "start": 31.02,
+        "end": 32.36,
+        "speechText": "You know, I like it when they fight.",
+        "language": "en",
+        "en": "You know, I like it when they fight.",
+        "ja": "私ね、彼女たちが喧嘩するのが好きなんだ。"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-013",
+        "start": 32.38,
+        "end": 33.5,
+        "speechText": "It gives me hope for them.",
+        "language": "en",
+        "en": "It gives me hope for them.",
+        "ja": "彼女たちに希望を感じる。"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-014",
+        "start": 33.92,
+        "end": 36.52,
+        "speechText": "Well, that's because you see anger as a positive emotion, you know.",
+        "language": "en",
+        "en": "Well, that's because you see anger as a positive emotion, you know.",
+        "ja": "それは君が怒りを前向きな感情だと思ってるから。"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-015",
+        "start": 36.52,
+        "end": 39.92,
+        "speechText": "You only end up hurting yourself, your work, the kids, me.",
+        "language": "en",
+        "en": "You only end up hurting yourself, your work, the kids, me.",
+        "ja": "結局自分も仕事も子供たちもあなたも傷つけるだけ。"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-016",
+        "start": 43.02,
+        "end": 44.22,
+        "speechText": "And you never get angry?",
+        "language": "en",
+        "en": "And you never get angry?",
+        "ja": "君は全然怒らないってこと？"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-017",
+        "start": 44.54,
+        "end": 46.52,
+        "speechText": "When I do, I don't see it as a positive.",
+        "language": "en",
+        "en": "When I do, I don't see it as a positive.",
+        "ja": "怒っても、それを前向きだとは思わない。"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-018",
+        "start": 48.8,
+        "end": 50.54,
+        "speechText": "You know something?",
+        "language": "en",
+        "en": "You know something?",
+        "ja": "ちょっと聞いて。"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-019",
+        "start": 53.6,
+        "end": 56.28,
+        "speechText": "The way you write in your books, people come up to me",
+        "language": "en",
+        "en": "The way you write in your books, people come up to me",
+        "ja": "君が本で書く通りの人間だと思われて、"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-020",
+        "start": 56.28,
+        "end": 59.62,
+        "speechText": "and think I make love to some wild cat Henry Miller type.",
+        "language": "en",
+        "en": "and think I make love to some wild cat Henry Miller type.",
+        "ja": "私と会った人はみんな、私がワイルドなヘンリー・ミラー的な人と寝てると思う。"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-021",
+        "start": 60.18,
+        "end": 60.7,
+        "speechText": "Ha!",
+        "language": "en",
+        "en": "Ha!",
+        "ja": "はは！"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-022",
+        "start": 61.82,
+        "end": 66.74,
+        "speechText": "You like to have sex the exact same way every time.",
+        "language": "en",
+        "en": "You like to have sex the exact same way every time.",
+        "ja": "君は毎回全く同じやり方じゃないか。"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-023",
+        "start": 66.92,
+        "end": 68.52,
+        "speechText": "When you got it, you got it.",
+        "language": "en",
+        "en": "When you got it, you got it.",
+        "ja": "やる時はやるって感じで。"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-024",
+        "start": 68.86,
+        "end": 71.56,
+        "speechText": "Kissy kissy, titty titty, pussy.",
+        "language": "en",
+        "en": "Kissy kissy, titty titty, pussy.",
+        "ja": "キスして、胸に触って、そして…。"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-025",
+        "start": 72.04,
+        "end": 74.46,
+        "speechText": "I'm a man of simple pleasures.",
+        "language": "en",
+        "en": "I'm a man of simple pleasures.",
+        "ja": "僕はシンプルな楽しみが好きなんだ。"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-026",
+        "start": 75.6,
+        "end": 77.6,
+        "speechText": "Yeah, very simple.",
+        "language": "en",
+        "en": "Yeah, very simple.",
+        "ja": "ええ、とてもシンプルね。"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-027",
+        "start": 78.44,
+        "end": 80.28,
+        "speechText": "And I've been meaning to tell you that lately.",
+        "language": "en",
+        "en": "And I've been meaning to tell you that lately.",
+        "ja": "最近、それを伝えようと思ってた。"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-028",
+        "start": 80.62,
+        "end": 84.3,
+        "speechText": "You're no Henry Miller on any level.",
+        "language": "en",
+        "en": "You're no Henry Miller on any level.",
+        "ja": "どこを取っても、あなたはヘンリー・ミラーじゃないわ。"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-029",
+        "start": 86.56,
+        "end": 87.9,
+        "speechText": "And you know what?",
+        "language": "en",
+        "en": "And you know what?",
+        "ja": "それでね、"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-030",
+        "start": 88.32,
+        "end": 90.18,
+        "speechText": "This room gives me the creeps.",
+        "language": "en",
+        "en": "This room gives me the creeps.",
+        "ja": "この部屋、ゾッとする。"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-031",
+        "start": 90.38,
+        "end": 93.36,
+        "speechText": "You know, I was expecting something quaint like the real Greece.",
+        "language": "en",
+        "en": "You know, I was expecting something quaint like the real Greece.",
+        "ja": "本当のギリシャみたいな趣のあるところを期待してたのに。"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-032",
+        "start": 93.46,
+        "end": 94.54,
+        "speechText": "This place is pretty real.",
+        "language": "en",
+        "en": "This place is pretty real.",
+        "ja": "ここだって十分本物だよ。"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-033",
+        "start": 94.54,
+        "end": 95.62,
+        "speechText": "What the hell are we doing here anyway?",
+        "language": "en",
+        "en": "What the hell are we doing here anyway?",
+        "ja": "そもそも何しにここに来てるの？"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-034",
+        "start": 95.84,
+        "end": 99.54,
+        "speechText": "This is all too planned like we're supposed to have this great evening, you know?",
+        "language": "en",
+        "en": "This is all too planned like we're supposed to have this great evening, you know?",
+        "ja": "全部予定通りで「素敵な夜を過ごせ」って感じだし。"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-035",
+        "start": 99.62,
+        "end": 101.08,
+        "speechText": "There's no room for spontaneity.",
+        "language": "en",
+        "en": "There's no room for spontaneity.",
+        "ja": "自発性の余地が全くない。"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-036",
+        "start": 101.08,
+        "end": 102.54,
+        "speechText": "It is all gone from our lives.",
+        "language": "en",
+        "en": "It is all gone from our lives.",
+        "ja": "私たちの人生から全部なくなった。"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-037",
+        "start": 102.9,
+        "end": 104.78,
+        "speechText": "All right? And this is stupid and it's not working.",
+        "language": "en",
+        "en": "All right? And this is stupid and it's not working.",
+        "ja": "いい？バカみたいだし、うまくいってない。"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-038",
+        "start": 104.78,
+        "end": 105.78,
+        "speechText": "Okay, well, obviously.",
+        "language": "en",
+        "en": "Okay, well, obviously.",
+        "ja": "うん、まあ、明らかにね。"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-039",
+        "start": 106.14,
+        "end": 109.12,
+        "speechText": "And I curse Ariadne and I curse Stephanos for doing this.",
+        "language": "en",
+        "en": "And I curse Ariadne and I curse Stephanos for doing this.",
+        "ja": "アリアドネもステファノスも呪ってやる。"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-040",
+        "start": 109.6,
+        "end": 111.02,
+        "speechText": "Okay, a couple's massage?",
+        "language": "en",
+        "en": "Okay, a couple's massage?",
+        "ja": "カップルマッサージって？"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-041",
+        "start": 111.32,
+        "end": 112.52,
+        "speechText": "What the fuck is that?",
+        "language": "en",
+        "en": "What the fuck is that?",
+        "ja": "何それ、ヤバくない？"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-042",
+        "start": 112.52,
+        "end": 114.02,
+        "speechText": "That sounds sleazy to me, right?",
+        "language": "en",
+        "en": "That sounds sleazy to me, right?",
+        "ja": "なんか怪しいよね？"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-043",
+        "start": 114.02,
+        "end": 115.66,
+        "speechText": "We don't have to do it!",
+        "language": "en",
+        "en": "We don't have to do it!",
+        "ja": "やらなくてもいいんだよ！"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-044",
+        "start": 115.94,
+        "end": 117.64,
+        "speechText": "Okay, come on.",
+        "language": "en",
+        "en": "Okay, come on.",
+        "ja": "ほら、もういいじゃん。"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-045",
+        "start": 117.7,
+        "end": 118.92,
+        "speechText": "This place isn't so bad.",
+        "language": "en",
+        "en": "This place isn't so bad.",
+        "ja": "この場所、そんなに悪くないよ。"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-046",
+        "start": 119.36,
+        "end": 120.48,
+        "speechText": "I like hotel rooms.",
+        "language": "en",
+        "en": "I like hotel rooms.",
+        "ja": "僕はホテルの部屋が好きだ。"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-047",
+        "start": 121.16,
+        "end": 122.12,
+        "speechText": "I think they're sexy.",
+        "language": "en",
+        "en": "I think they're sexy.",
+        "ja": "セクシーだと思う。"
+      },
+      {
+        "id": "midnight-hotel-argument-cue-048",
+        "start": 122.78,
+        "end": 124.1,
+        "speechText": "Yeah, I know you do.",
+        "language": "en",
+        "en": "Yeah, I know you do.",
+        "ja": "うん、知ってるよ。"
+      }
+    ],
+    "subtitleVerification": "automated; not human listening",
+    "video": "/movie-study/media/midnight-hotel-argument.mp4",
+    "poster": "/movie-study/posters/midnight-hotel-argument.jpg"
+  },
+  {
+    "id": "midnight-time-traveler",
+    "work": "Before Midnight",
+    "title": "未来から来た手紙と、仲直り",
+    "description": "未来からの手紙をきっかけに、現実の愛と二人の関係を語る",
+    "duration": 482.905,
+    "source": "https://www.youtube.com/watch?v=wixCNieZvmE",
+    "sourceStart": 8.7,
+    "sourceEnd": 491.5,
+    "displayWork": "Before Midnight",
+    "captions": [
+      {
+        "id": "midnight-time-traveler-cue-001",
+        "start": 0,
+        "end": 1.42,
+        "speechText": "Miss?",
+        "language": "en",
+        "en": "Miss?",
+        "ja": "すみません。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-002",
+        "start": 2.06,
+        "end": 3.5,
+        "speechText": "I don't want to talk right now.",
+        "language": "en",
+        "en": "I don't want to talk right now.",
+        "ja": "今は話したくない。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-003",
+        "start": 3.62,
+        "end": 4.64,
+        "speechText": "Are you by yourself?",
+        "language": "en",
+        "en": "Are you by yourself?",
+        "ja": "一人ですか？"
+      },
+      {
+        "id": "midnight-time-traveler-cue-004",
+        "start": 4.78,
+        "end": 5.78,
+        "speechText": "Are you waiting for somebody?",
+        "language": "en",
+        "en": "Are you waiting for somebody?",
+        "ja": "誰か待ってるんですか？"
+      },
+      {
+        "id": "midnight-time-traveler-cue-005",
+        "start": 5.78,
+        "end": 7.4,
+        "speechText": "Yeah, I'm by myself and happy to be.",
+        "language": "en",
+        "en": "Yeah, I'm by myself and happy to be.",
+        "ja": "ええ、一人よ。その方が幸せ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-006",
+        "start": 7.52,
+        "end": 10.54,
+        "speechText": "I'm an angry person and I hurt my kids, my work, and everyone I love.",
+        "language": "en",
+        "en": "I'm an angry person and I hurt my kids, my work, and everyone I love.",
+        "ja": "私は怒りっぽい人間で、子供や仕事、大切な人を傷つけてる。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-007",
+        "start": 10.64,
+        "end": 12.62,
+        "speechText": "Well, just my type.",
+        "language": "en",
+        "en": "Well, just my type.",
+        "ja": "まさに僕のタイプだ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-008",
+        "start": 13.88,
+        "end": 15.62,
+        "speechText": "Okay, I'm not in the mood.",
+        "language": "en",
+        "en": "Okay, I'm not in the mood.",
+        "ja": "ごめんね、今はそんな気分じゃない。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-009",
+        "start": 15.62,
+        "end": 16.62,
+        "speechText": "I came here to be alone.",
+        "language": "en",
+        "en": "I came here to be alone.",
+        "ja": "一人になりたくて来たの。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-010",
+        "start": 16.62,
+        "end": 19.14,
+        "speechText": "Listen, I've just been checking you out from across the cafe",
+        "language": "en",
+        "en": "Listen, I've just been checking you out from across the cafe",
+        "ja": "あのさ、さっきから君をカフェの向こうから見てて"
+      },
+      {
+        "id": "midnight-time-traveler-cue-011",
+        "start": 19.14,
+        "end": 20.86,
+        "speechText": "and I don't want to make you uncomfortable,",
+        "language": "en",
+        "en": "and I don't want to make you uncomfortable,",
+        "ja": "不快にさせるつもりはないけど、"
+      },
+      {
+        "id": "midnight-time-traveler-cue-012",
+        "start": 20.98,
+        "end": 24.32,
+        "speechText": "but you are by far the best looking woman in this place.",
+        "language": "en",
+        "en": "but you are by far the best looking woman in this place.",
+        "ja": "君がこの店で一番きれいな女性だよ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-013",
+        "start": 24.62,
+        "end": 25.38,
+        "speechText": "Thank you very much.",
+        "language": "en",
+        "en": "Thank you very much.",
+        "ja": "どうもありがとう。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-014",
+        "start": 25.38,
+        "end": 27.92,
+        "speechText": "Yeah, and I'd love to buy you a drink, maybe talk to you,",
+        "language": "en",
+        "en": "Yeah, and I'd love to buy you a drink, maybe talk to you,",
+        "ja": "あの、飲み物を奢りたい。少し話がしたいなと。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-015",
+        "start": 27.92,
+        "end": 29.64,
+        "speechText": "get to know you a little bit, you know?",
+        "language": "en",
+        "en": "get to know you a little bit, you know?",
+        "ja": "少し知り合いたいな、って。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-016",
+        "start": 29.96,
+        "end": 30.92,
+        "speechText": "I mean, you're here on business?",
+        "language": "en",
+        "en": "I mean, you're here on business?",
+        "ja": "あの、仕事で来てるの？"
+      },
+      {
+        "id": "midnight-time-traveler-cue-017",
+        "start": 32.42,
+        "end": 33.4,
+        "speechText": "Okay, I see.",
+        "language": "en",
+        "en": "Okay, I see.",
+        "ja": "そうですか。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-018",
+        "start": 33.42,
+        "end": 34.52,
+        "speechText": "You have a boyfriend?",
+        "language": "en",
+        "en": "You have a boyfriend?",
+        "ja": "彼氏は？"
+      },
+      {
+        "id": "midnight-time-traveler-cue-019",
+        "start": 35.54,
+        "end": 36.38,
+        "speechText": "Not anymore.",
+        "language": "en",
+        "en": "Not anymore.",
+        "ja": "もういないわ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-020",
+        "start": 36.76,
+        "end": 38.62,
+        "speechText": "Geez, sorry to hear that.",
+        "language": "en",
+        "en": "Geez, sorry to hear that.",
+        "ja": "うわ、それは残念。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-021",
+        "start": 38.96,
+        "end": 40.22,
+        "speechText": "God, you want to talk about it?",
+        "language": "en",
+        "en": "God, you want to talk about it?",
+        "ja": "よければ話してみる？"
+      },
+      {
+        "id": "midnight-time-traveler-cue-022",
+        "start": 40.44,
+        "end": 41.9,
+        "speechText": "I don't talk to strangers.",
+        "language": "en",
+        "en": "I don't talk to strangers.",
+        "ja": "私は知らない人とは話しません。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-023",
+        "start": 42.24,
+        "end": 42.78,
+        "speechText": "Well, that's the thing.",
+        "language": "en",
+        "en": "Well, that's the thing.",
+        "ja": "いや、それが違うんだ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-024",
+        "start": 42.78,
+        "end": 43.48,
+        "speechText": "I'm not a stranger.",
+        "language": "en",
+        "en": "I'm not a stranger.",
+        "ja": "僕は知らない人じゃない。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-025",
+        "start": 44.22,
+        "end": 44.68,
+        "speechText": "No, no, no.",
+        "language": "en",
+        "en": "No, no, no.",
+        "ja": "ちょ、ちょっと待って。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-026",
+        "start": 44.68,
+        "end": 45.62,
+        "speechText": "We've met before.",
+        "language": "en",
+        "en": "We've met before.",
+        "ja": "僕たちは前に会ったことがある。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-027",
+        "start": 45.82,
+        "end": 46.2,
+        "speechText": "Oh.",
+        "language": "en",
+        "en": "Oh.",
+        "ja": "あら。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-028",
+        "start": 47.12,
+        "end": 48.3,
+        "speechText": "Summer of '94?",
+        "language": "en",
+        "en": "Summer of '94?",
+        "ja": "94年の夏じゃなかった？"
+      },
+      {
+        "id": "midnight-time-traveler-cue-029",
+        "start": 49.94,
+        "end": 52.82,
+        "speechText": "You're mistaking me for someone else.",
+        "language": "en",
+        "en": "You're mistaking me for someone else.",
+        "ja": "誰かと勘違いしてるわ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-030",
+        "start": 53.02,
+        "end": 55.52,
+        "speechText": "No, we even fell in love.",
+        "language": "en",
+        "en": "No, we even fell in love.",
+        "ja": "いや、僕たちは恋に落ちたはず。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-031",
+        "start": 56.0,
+        "end": 56.4,
+        "speechText": "Really?",
+        "language": "en",
+        "en": "Really?",
+        "ja": "本当に？"
+      },
+      {
+        "id": "midnight-time-traveler-cue-032",
+        "start": 57.04,
+        "end": 57.8,
+        "speechText": "Mm-hmm.",
+        "language": "en",
+        "en": "Mm-hmm.",
+        "ja": "うん。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-033",
+        "start": 58.8,
+        "end": 64.74,
+        "speechText": "I vaguely remember someone sweet and romantic who made me feel like I wasn't alone anymore.",
+        "language": "en",
+        "en": "I vaguely remember someone sweet and romantic who made me feel like I wasn't alone anymore.",
+        "ja": "確かに、以前は優しくてロマンチックな人がいた気がする。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-034",
+        "start": 64.92,
+        "end": 66.56,
+        "speechText": "Someone who had respect for who I was.",
+        "language": "en",
+        "en": "Someone who had respect for who I was.",
+        "ja": "私のことを大事にしてくれる人だった。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-035",
+        "start": 66.88,
+        "end": 68.0,
+        "speechText": "That's me.",
+        "language": "en",
+        "en": "That's me.",
+        "ja": "それは僕だよ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-036",
+        "start": 68.78,
+        "end": 69.52,
+        "speechText": "I'm that guy.",
+        "language": "en",
+        "en": "I'm that guy.",
+        "ja": "僕がその男さ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-037",
+        "start": 70.26,
+        "end": 71.72,
+        "speechText": "I don't think so.",
+        "language": "en",
+        "en": "I don't think so.",
+        "ja": "そうは思えないわ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-038",
+        "start": 71.76,
+        "end": 74.76,
+        "speechText": "Oh, see, I know something about tonight that you don't know.",
+        "language": "en",
+        "en": "Oh, see, I know something about tonight that you don't know.",
+        "ja": "実は今夜について君が知らないことを知ってるんだ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-039",
+        "start": 75.74,
+        "end": 76.94,
+        "speechText": "Really?",
+        "language": "en",
+        "en": "Really?",
+        "ja": "本当に？"
+      },
+      {
+        "id": "midnight-time-traveler-cue-040",
+        "start": 76.98,
+        "end": 77.58,
+        "speechText": "What is that?",
+        "language": "en",
+        "en": "What is that?",
+        "ja": "それって何？"
+      },
+      {
+        "id": "midnight-time-traveler-cue-041",
+        "start": 78.3,
+        "end": 79.36,
+        "speechText": "Something important.",
+        "language": "en",
+        "en": "Something important.",
+        "ja": "大事なことだよ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-042",
+        "start": 80.5,
+        "end": 85.52,
+        "speechText": "You see, I know because I've actually already lived through this night.",
+        "language": "en",
+        "en": "You see, I know because I've actually already lived through this night.",
+        "ja": "実は僕、この夜をすでに体験してるから知ってるんだ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-043",
+        "start": 86.02,
+        "end": 86.68,
+        "speechText": "How?",
+        "language": "en",
+        "en": "How?",
+        "ja": "どうやって？"
+      },
+      {
+        "id": "midnight-time-traveler-cue-044",
+        "start": 87.18,
+        "end": 89.16,
+        "speechText": "I'm a time traveler.",
+        "language": "en",
+        "en": "I'm a time traveler.",
+        "ja": "僕はタイムトラベラーなんだ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-045",
+        "start": 90.7,
+        "end": 91.36,
+        "speechText": "Okay.",
+        "language": "en",
+        "en": "Okay.",
+        "ja": "ああそう。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-046",
+        "start": 91.48,
+        "end": 96.24,
+        "speechText": "No, I have a time machine up in my room, and I've come to save you, just like I said I would.",
+        "language": "en",
+        "en": "No, I have a time machine up in my room, and I've come to save you, just like I said I would.",
+        "ja": "僕の部屋にタイムマシンがあって、君を助けに来たんだ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-047",
+        "start": 96.62,
+        "end": 97.56,
+        "speechText": "Save me from what?",
+        "language": "en",
+        "en": "Save me from what?",
+        "ja": "何から助けるの？"
+      },
+      {
+        "id": "midnight-time-traveler-cue-048",
+        "start": 97.68,
+        "end": 100.56,
+        "speechText": "Save you from being blinded by all the little bullshit of life.",
+        "language": "en",
+        "en": "Save you from being blinded by all the little bullshit of life.",
+        "ja": "人生のくだらないことに惑わされないようにさ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-049",
+        "start": 100.56,
+        "end": 101.58,
+        "speechText": "It's not bullshit.",
+        "language": "en",
+        "en": "It's not bullshit.",
+        "ja": "くだらなくなんかない。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-050",
+        "start": 101.84,
+        "end": 105.0,
+        "speechText": "I assure you, that guy you vaguely remember,",
+        "language": "en",
+        "en": "I assure you, that guy you vaguely remember,",
+        "ja": "君の記憶の中のあの男、"
+      },
+      {
+        "id": "midnight-time-traveler-cue-051",
+        "start": 105.0,
+        "end": 110.04,
+        "speechText": "the sweet romantic one that you met on a train, that is me.",
+        "language": "en",
+        "en": "the sweet romantic one that you met on a train, that is me.",
+        "ja": "列車で出会った優しくてロマンチックな人、それが僕だよ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-052",
+        "start": 110.78,
+        "end": 111.54,
+        "speechText": "That's you?",
+        "language": "en",
+        "en": "That's you?",
+        "ja": "それがあなた？"
+      },
+      {
+        "id": "midnight-time-traveler-cue-053",
+        "start": 112.1,
+        "end": 112.52,
+        "speechText": "Yeah.",
+        "language": "en",
+        "en": "Yeah.",
+        "ja": "そうだよ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-054",
+        "start": 113.02,
+        "end": 114.5,
+        "speechText": "Guess I didn't recognize you.",
+        "language": "en",
+        "en": "Guess I didn't recognize you.",
+        "ja": "気づかなかったみたい。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-055",
+        "start": 114.76,
+        "end": 117.38,
+        "speechText": "You look like shit.",
+        "language": "en",
+        "en": "You look like shit.",
+        "ja": "ひどい顔ね。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-056",
+        "start": 118.46,
+        "end": 120.58,
+        "speechText": "What can I say?",
+        "language": "en",
+        "en": "What can I say?",
+        "ja": "しょうがないさ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-057",
+        "start": 120.58,
+        "end": 122.44,
+        "speechText": "I mean, it's tough out there in time and space.",
+        "language": "en",
+        "en": "I mean, it's tough out there in time and space.",
+        "ja": "時空を超えるのは大変なんだよ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-058",
+        "start": 122.92,
+        "end": 124.94,
+        "speechText": "You, on the other hand,",
+        "language": "en",
+        "en": "You, on the other hand,",
+        "ja": "だけど、君は"
+      },
+      {
+        "id": "midnight-time-traveler-cue-059",
+        "start": 125.98,
+        "end": 128.04,
+        "speechText": "are even more beautiful than I remember.",
+        "language": "en",
+        "en": "are even more beautiful than I remember.",
+        "ja": "僕の記憶よりずっときれいだ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-060",
+        "start": 129.98,
+        "end": 130.68,
+        "speechText": "Bullshit.",
+        "language": "en",
+        "en": "Bullshit.",
+        "ja": "ばかばかしい。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-061",
+        "start": 131.42,
+        "end": 132.76,
+        "speechText": "Jesse, this is not a game.",
+        "language": "en",
+        "en": "Jesse, this is not a game.",
+        "ja": "ジェシー、これは遊びじゃないの。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-062",
+        "start": 133.34,
+        "end": 135.34,
+        "speechText": "You get all cute, you get in my panties,",
+        "language": "en",
+        "en": "You get all cute, you get in my panties,",
+        "ja": "可愛いフリして私をその気にさせて"
+      },
+      {
+        "id": "midnight-time-traveler-cue-063",
+        "start": 135.4,
+        "end": 137.7,
+        "speechText": "and next thing I know I'm buying peanut butter in Chicago.",
+        "language": "en",
+        "en": "and next thing I know I'm buying peanut butter in Chicago.",
+        "ja": "気が付いたらシカゴでピーナッツバター買ってるのよ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-064",
+        "start": 138.28,
+        "end": 140.58,
+        "speechText": "You're not going to make it better by some little pickup line.",
+        "language": "en",
+        "en": "You're not going to make it better by some little pickup line.",
+        "ja": "口説き文句で良くなるわけじゃない。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-065",
+        "start": 140.74,
+        "end": 142.02,
+        "speechText": "I'm not trying to pick you up.",
+        "language": "en",
+        "en": "I'm not trying to pick you up.",
+        "ja": "口説こうとしてるわけじゃない。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-066",
+        "start": 142.24,
+        "end": 143.86,
+        "speechText": "No, no, you're misunderstanding me.",
+        "language": "en",
+        "en": "No, no, you're misunderstanding me.",
+        "ja": "違う、誤解だよ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-067",
+        "start": 143.86,
+        "end": 146.04,
+        "speechText": "I'm only here as a messenger.",
+        "language": "en",
+        "en": "I'm only here as a messenger.",
+        "ja": "僕はただの伝言役なんだ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-068",
+        "start": 146.78,
+        "end": 149.28,
+        "speechText": "I just traveled all the way from the future.",
+        "language": "en",
+        "en": "I just traveled all the way from the future.",
+        "ja": "未来からわざわざ来たんだ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-069",
+        "start": 149.94,
+        "end": 156.16,
+        "speechText": "I was just with your 82-year-old self who gave me a",
+        "language": "en",
+        "en": "I was just with your 82-year-old self who gave me a",
+        "ja": "さっき君の82歳の自分に会って、"
+      },
+      {
+        "id": "midnight-time-traveler-cue-070",
+        "start": 156.16,
+        "end": 158.42,
+        "speechText": "letter to read to you.",
+        "language": "en",
+        "en": "letter to read to you.",
+        "ja": "手紙を預かったんだ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-071",
+        "start": 158.58,
+        "end": 159.82,
+        "speechText": "So, here I am.",
+        "language": "en",
+        "en": "So, here I am.",
+        "ja": "だから、こうして来たよ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-072",
+        "start": 160.04,
+        "end": 161.94,
+        "speechText": "I'm still alive in my 80s?",
+        "language": "en",
+        "en": "I'm still alive in my 80s?",
+        "ja": "私、80代でも生きてるの？"
+      },
+      {
+        "id": "midnight-time-traveler-cue-073",
+        "start": 161.94,
+        "end": 163.34,
+        "speechText": "Oh, yeah.",
+        "language": "en",
+        "en": "Oh, yeah.",
+        "ja": "うん、そうだよ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-074",
+        "start": 164.72,
+        "end": 166.46,
+        "speechText": "How's my French ass?",
+        "language": "en",
+        "en": "How's my French ass?",
+        "ja": "フランス女の私のお尻は？"
+      },
+      {
+        "id": "midnight-time-traveler-cue-075",
+        "start": 166.72,
+        "end": 167.22,
+        "speechText": "Nice.",
+        "language": "en",
+        "en": "Nice.",
+        "ja": "素敵だったよ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-076",
+        "start": 167.78,
+        "end": 168.2,
+        "speechText": "Okay.",
+        "language": "en",
+        "en": "Okay.",
+        "ja": "なるほど。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-077",
+        "start": 168.2,
+        "end": 169.02,
+        "speechText": "Really nice.",
+        "language": "en",
+        "en": "Really nice.",
+        "ja": "本当に素敵だった。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-078",
+        "start": 169.12,
+        "end": 170.82,
+        "speechText": "I don't care about the way I look.",
+        "language": "en",
+        "en": "I don't care about the way I look.",
+        "ja": "見た目なんて気にしてない。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-079",
+        "start": 170.9,
+        "end": 172.82,
+        "speechText": "Let's just say there's more of you to love.",
+        "language": "en",
+        "en": "Let's just say there's more of you to love.",
+        "ja": "まあ、もっと愛すべき部分が増えてたよ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-080",
+        "start": 172.92,
+        "end": 174.26,
+        "speechText": "Okay, all right.",
+        "language": "en",
+        "en": "Okay, all right.",
+        "ja": "そう、わかったわ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-081",
+        "start": 174.46,
+        "end": 175.54,
+        "speechText": "Okay, do you want me to read to you?",
+        "language": "en",
+        "en": "Okay, do you want me to read to you?",
+        "ja": "じゃあ、読んでほしい？"
+      },
+      {
+        "id": "midnight-time-traveler-cue-082",
+        "start": 176.02,
+        "end": 176.86,
+        "speechText": "Do I have a choice?",
+        "language": "en",
+        "en": "Do I have a choice?",
+        "ja": "選択肢なんてある？"
+      },
+      {
+        "id": "midnight-time-traveler-cue-083",
+        "start": 177.14,
+        "end": 177.64,
+        "speechText": "Oh, sure.",
+        "language": "en",
+        "en": "Oh, sure.",
+        "ja": "もちろん。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-084",
+        "start": 177.64,
+        "end": 179.32,
+        "speechText": "I mean, if you're not interested in what you have to say...",
+        "language": "en",
+        "en": "I mean, if you're not interested in what you have to say...",
+        "ja": "自分の言いたいことに興味なければ…"
+      },
+      {
+        "id": "midnight-time-traveler-cue-085",
+        "start": 179.32,
+        "end": 179.8,
+        "speechText": "No, no, no.",
+        "language": "en",
+        "en": "No, no, no.",
+        "ja": "ちょ、違う。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-086",
+        "start": 180.34,
+        "end": 180.94,
+        "speechText": "Read it.",
+        "language": "en",
+        "en": "Read it.",
+        "ja": "読んで。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-087",
+        "start": 181.24,
+        "end": 181.76,
+        "speechText": "Okay.",
+        "language": "en",
+        "en": "Okay.",
+        "ja": "わかった。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-088",
+        "start": 182.0,
+        "end": 183.16,
+        "speechText": "All right, well, here it is.",
+        "language": "en",
+        "en": "All right, well, here it is.",
+        "ja": "じゃあ、これだ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-089",
+        "start": 183.86,
+        "end": 188.86,
+        "speechText": "Dear Celine, I am writing to you from the other side of the woods.",
+        "language": "en",
+        "en": "Dear Celine, I am writing to you from the other side of the woods.",
+        "ja": "セリーヌへ　森の向こうから書いています。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-090",
+        "start": 189.4,
+        "end": 191.62,
+        "speechText": "This letter is lighting a candle.",
+        "language": "en",
+        "en": "This letter is lighting a candle.",
+        "ja": "この手紙はろうそくを灯すものです。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-091",
+        "start": 191.62,
+        "end": 192.68,
+        "speechText": "Okay, stop it.",
+        "language": "en",
+        "en": "Okay, stop it.",
+        "ja": "やめてよ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-092",
+        "start": 192.68,
+        "end": 193.7,
+        "speechText": "I would never write this.",
+        "language": "en",
+        "en": "I would never write this.",
+        "ja": "私なら絶対こんなの書かない。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-093",
+        "start": 193.7,
+        "end": 194.38,
+        "speechText": "Too flowery.",
+        "language": "en",
+        "en": "Too flowery.",
+        "ja": "美辞麗句が過ぎるわ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-094",
+        "start": 194.38,
+        "end": 195.14,
+        "speechText": "Other side of the woods.",
+        "language": "en",
+        "en": "Other side of the woods.",
+        "ja": "森の向こう側って何それ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-095",
+        "start": 195.14,
+        "end": 195.94,
+        "speechText": "What fucking woods?",
+        "language": "en",
+        "en": "What fucking woods?",
+        "ja": "どこの森よ！？"
+      },
+      {
+        "id": "midnight-time-traveler-cue-096",
+        "start": 195.94,
+        "end": 196.74,
+        "speechText": "What are you talking about?",
+        "language": "en",
+        "en": "What are you talking about?",
+        "ja": "何言ってんの？"
+      },
+      {
+        "id": "midnight-time-traveler-cue-097",
+        "start": 196.74,
+        "end": 197.66,
+        "speechText": "May I please continue?",
+        "language": "en",
+        "en": "May I please continue?",
+        "ja": "続きを読んでもいい？"
+      },
+      {
+        "id": "midnight-time-traveler-cue-098",
+        "start": 198.2,
+        "end": 198.68,
+        "speechText": "Okay.",
+        "language": "en",
+        "en": "Okay.",
+        "ja": "どうぞ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-099",
+        "start": 198.9,
+        "end": 201.76,
+        "speechText": "I am sending you this young man.",
+        "language": "en",
+        "en": "I am sending you this young man.",
+        "ja": "この若い男性をあなたに送ります。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-100",
+        "start": 202.28,
+        "end": 203.58,
+        "speechText": "Yes, young.",
+        "language": "en",
+        "en": "Yes, young.",
+        "ja": "そう、若い。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-101",
+        "start": 204.12,
+        "end": 205.72,
+        "speechText": "And he will be your escort.",
+        "language": "en",
+        "en": "And he will be your escort.",
+        "ja": "彼があなたの護衛になります。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-102",
+        "start": 206.86,
+        "end": 212.22,
+        "speechText": "God knows he has many problems and has struggled his whole life connecting",
+        "language": "en",
+        "en": "God knows he has many problems and has struggled his whole life connecting",
+        "ja": "神様も知ってるけど、彼は一生人と繋がろうとして"
+      },
+      {
+        "id": "midnight-time-traveler-cue-103",
+        "start": 212.22,
+        "end": 216.38,
+        "speechText": "and being present, even with those he loves the most.",
+        "language": "en",
+        "en": "and being present, even with those he loves the most.",
+        "ja": "愛する人にさえ心を開くのに苦労した。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-104",
+        "start": 217.24,
+        "end": 219.14,
+        "speechText": "And for that, he is deeply sorry.",
+        "language": "en",
+        "en": "And for that, he is deeply sorry.",
+        "ja": "そのことをとても後悔しています。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-105",
+        "start": 221.18,
+        "end": 222.82,
+        "speechText": "But you are his only hope.",
+        "language": "en",
+        "en": "But you are his only hope.",
+        "ja": "でもあなたが彼の唯一の希望です。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-106",
+        "start": 224.52,
+        "end": 228.08,
+        "speechText": "Celine, my advice to you is this.",
+        "language": "en",
+        "en": "Celine, my advice to you is this.",
+        "ja": "セリーヌ、私からのアドバイスはこうです。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-107",
+        "start": 229.4,
+        "end": 231.6,
+        "speechText": "You're entering the best years of your life.",
+        "language": "en",
+        "en": "You're entering the best years of your life.",
+        "ja": "今あなたは人生で一番いい時期に入ろうとしてる。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-108",
+        "start": 232.2,
+        "end": 234.56,
+        "speechText": "Looking back from where I sit now,",
+        "language": "en",
+        "en": "Looking back from where I sit now,",
+        "ja": "今の私からすれば、"
+      },
+      {
+        "id": "midnight-time-traveler-cue-109",
+        "start": 235.92,
+        "end": 239.04,
+        "speechText": "these middle years are only a little bit more difficult",
+        "language": "en",
+        "en": "these middle years are only a little bit more difficult",
+        "ja": "この中年期は12歳の頃と少しだけ"
+      },
+      {
+        "id": "midnight-time-traveler-cue-110",
+        "start": 239.04,
+        "end": 245.16,
+        "speechText": "than when you were twelve and Matthew and Vanessa danced all night",
+        "language": "en",
+        "en": "than when you were twelve and Matthew and Vanessa danced all night",
+        "ja": "違う程度で、マシューとヴァネッサが一晩中踊ってた"
+      },
+      {
+        "id": "midnight-time-traveler-cue-111",
+        "start": 245.16,
+        "end": 247.82,
+        "speechText": "to the Bee Gees' How Deep Is Your Love?",
+        "language": "en",
+        "en": "to the Bee Gees' How Deep Is Your Love?",
+        "ja": "ビージーズの「愛はきらめきの中に」に。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-112",
+        "start": 250.38,
+        "end": 252.16,
+        "speechText": "Celine, you will be fine.",
+        "language": "en",
+        "en": "Celine, you will be fine.",
+        "ja": "セリーヌ、大丈夫よ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-113",
+        "start": 252.98,
+        "end": 257.04,
+        "speechText": "Your girls will grow up to become examples and icons of feminism.",
+        "language": "en",
+        "en": "Your girls will grow up to become examples and icons of feminism.",
+        "ja": "娘たちは成長してフェミニズムの象徴になる。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-114",
+        "start": 257.38,
+        "end": 257.92,
+        "speechText": "Nice one.",
+        "language": "en",
+        "en": "Nice one.",
+        "ja": "やるじゃない。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-115",
+        "start": 258.4,
+        "end": 260.18,
+        "speechText": "You know what I just noticed?",
+        "language": "en",
+        "en": "You know what I just noticed?",
+        "ja": "今気づいたけど、"
+      },
+      {
+        "id": "midnight-time-traveler-cue-116",
+        "start": 260.52,
+        "end": 262.34,
+        "speechText": "There's a postscript on the bottom.",
+        "language": "en",
+        "en": "There's a postscript on the bottom.",
+        "ja": "追伸があるよ、下の方に。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-117",
+        "start": 262.34,
+        "end": 263.14,
+        "speechText": "Looks kind of important.",
+        "language": "en",
+        "en": "Looks kind of important.",
+        "ja": "なんだか重要そうだ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-118",
+        "start": 263.14,
+        "end": 264.485,
+        "speechText": "Maybe I should skip over some of this.",
+        "language": "en",
+        "en": "Maybe I should skip over some of this.",
+        "ja": "このあたり飛ばそうかな。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-119",
+        "start": 264.485,
+        "end": 265.2,
+        "speechText": "It's kind of boring.",
+        "language": "en",
+        "en": "It's kind of boring.",
+        "ja": "ちょっと退屈だから。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-120",
+        "start": 265.24,
+        "end": 266.0,
+        "speechText": "Yeah, skip away.",
+        "language": "en",
+        "en": "Yeah, skip away.",
+        "ja": "うん、飛ばして。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-121",
+        "start": 266.0,
+        "end": 266.68,
+        "speechText": "Please skip away.",
+        "language": "en",
+        "en": "Please skip away.",
+        "ja": "どんどん飛ばしていいよ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-122",
+        "start": 266.68,
+        "end": 267.5,
+        "speechText": "Okay. You sure?",
+        "language": "en",
+        "en": "Okay. You sure?",
+        "ja": "本当に？いい？"
+      },
+      {
+        "id": "midnight-time-traveler-cue-123",
+        "start": 267.76,
+        "end": 268.14,
+        "speechText": "Yeah.",
+        "language": "en",
+        "en": "Yeah.",
+        "ja": "うん。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-124",
+        "start": 268.36,
+        "end": 269.52,
+        "speechText": "Okay. All right, well.",
+        "language": "en",
+        "en": "Okay. All right, well.",
+        "ja": "よし。じゃあ、はい。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-125",
+        "start": 269.68,
+        "end": 270.46,
+        "speechText": "Boring stuff.",
+        "language": "en",
+        "en": "Boring stuff.",
+        "ja": "ここはつまらない部分。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-126",
+        "start": 270.78,
+        "end": 272.16,
+        "speechText": "Yeah. Okay.",
+        "language": "en",
+        "en": "Yeah. Okay.",
+        "ja": "そう、OK。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-127",
+        "start": 272.38,
+        "end": 276.54,
+        "speechText": "Yeah, it's like financial tips and horoscopes.",
+        "language": "en",
+        "en": "Yeah, it's like financial tips and horoscopes.",
+        "ja": "なんか投資の話とか占いとかだし。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-128",
+        "start": 276.74,
+        "end": 278.2,
+        "speechText": "Okay, here it is.",
+        "language": "en",
+        "en": "Okay, here it is.",
+        "ja": "じゃあ、ここが大事。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-129",
+        "start": 278.54,
+        "end": 279.54,
+        "speechText": "P.S.",
+        "language": "en",
+        "en": "P.S.",
+        "ja": "追伸。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-130",
+        "start": 279.96,
+        "end": 282.22,
+        "speechText": "By the way, the best...",
+        "language": "en",
+        "en": "By the way, the best...",
+        "ja": "ちなみに、最高の…"
+      },
+      {
+        "id": "midnight-time-traveler-cue-131",
+        "start": 282.22,
+        "end": 289.58,
+        "speechText": "By the way, the best sex of my life happened one night in",
+        "language": "en",
+        "en": "By the way, the best sex of my life happened one night in",
+        "ja": "ちなみに、私の人生最高のセックスはある夜、"
+      },
+      {
+        "id": "midnight-time-traveler-cue-132",
+        "start": 289.58,
+        "end": 291.48,
+        "speechText": "the Southern Peloponnese.",
+        "language": "en",
+        "en": "the Southern Peloponnese.",
+        "ja": "南ペロポネソスで起こりました。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-133",
+        "start": 291.92,
+        "end": 293.26,
+        "speechText": "Don't miss it.",
+        "language": "en",
+        "en": "Don't miss it.",
+        "ja": "お見逃しなく。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-134",
+        "start": 294.1,
+        "end": 299.04,
+        "speechText": "My whole sexual being went to a new groundbreaking level.",
+        "language": "en",
+        "en": "My whole sexual being went to a new groundbreaking level.",
+        "ja": "私の全性愛が新たな次元に到達した。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-135",
+        "start": 300.14,
+        "end": 301.02,
+        "speechText": "Groundbreaking.",
+        "language": "en",
+        "en": "Groundbreaking.",
+        "ja": "新次元。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-136",
+        "start": 301.18,
+        "end": 303.22,
+        "speechText": "Great. I don't know what that means.",
+        "language": "en",
+        "en": "Great. I don't know what that means.",
+        "ja": "それ、どういう意味？"
+      },
+      {
+        "id": "midnight-time-traveler-cue-137",
+        "start": 303.22,
+        "end": 304.98,
+        "speechText": "Okay, Jesse, can you stop this stupid game?",
+        "language": "en",
+        "en": "Okay, Jesse, can you stop this stupid game?",
+        "ja": "ジェシー、くだらない茶番はやめてくれない？"
+      },
+      {
+        "id": "midnight-time-traveler-cue-138",
+        "start": 305.96,
+        "end": 308.94,
+        "speechText": "We're not in one of your stories, okay?",
+        "language": "en",
+        "en": "We're not in one of your stories, okay?",
+        "ja": "私たち、あなたの小説の中の登場人物じゃない。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-139",
+        "start": 310.3,
+        "end": 312.3,
+        "speechText": "Did you hear what I said to you back in the room?",
+        "language": "en",
+        "en": "Did you hear what I said to you back in the room?",
+        "ja": "さっき部屋で言ったこと、聞いてた？"
+      },
+      {
+        "id": "midnight-time-traveler-cue-140",
+        "start": 312.84,
+        "end": 313.6,
+        "speechText": "Did you hear me?",
+        "language": "en",
+        "en": "Did you hear me?",
+        "ja": "聞こえてた？"
+      },
+      {
+        "id": "midnight-time-traveler-cue-141",
+        "start": 315.04,
+        "end": 317.32,
+        "speechText": "Yes, I heard you.",
+        "language": "en",
+        "en": "Yes, I heard you.",
+        "ja": "ああ、聞こえてた。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-142",
+        "start": 318.76,
+        "end": 320.58,
+        "speechText": "That you don't love me anymore.",
+        "language": "en",
+        "en": "That you don't love me anymore.",
+        "ja": "僕をもう愛していない、ってことだろ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-143",
+        "start": 321.76,
+        "end": 325.64,
+        "speechText": "I figured you didn't mean it, but if you did, then...",
+        "language": "en",
+        "en": "I figured you didn't mean it, but if you did, then...",
+        "ja": "本気じゃないと思ったけど、もしそうなら…"
+      },
+      {
+        "id": "midnight-time-traveler-cue-144",
+        "start": 326.82,
+        "end": 327.8,
+        "speechText": "Oh, fuck it.",
+        "language": "en",
+        "en": "Oh, fuck it.",
+        "ja": "もうどうでもいい。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-145",
+        "start": 328.02,
+        "end": 330.98,
+        "speechText": "You know something, you're just like the little girls and everybody else.",
+        "language": "en",
+        "en": "You know something, you're just like the little girls and everybody else.",
+        "ja": "なんだか、あなたも娘たちとかみんなと同じ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-146",
+        "start": 330.98,
+        "end": 333.24,
+        "speechText": "You want to live inside some fairy tale, all right?",
+        "language": "en",
+        "en": "You want to live inside some fairy tale, all right?",
+        "ja": "おとぎ話の中だけで生きたいのね？"
+      },
+      {
+        "id": "midnight-time-traveler-cue-147",
+        "start": 333.4,
+        "end": 335.8,
+        "speechText": "I'm just trying to make things better here, all right?",
+        "language": "en",
+        "en": "I'm just trying to make things better here, all right?",
+        "ja": "ただ今を良くしたいだけだよ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-148",
+        "start": 335.8,
+        "end": 337.52,
+        "speechText": "I tell you that I love you unconditionally.",
+        "language": "en",
+        "en": "I tell you that I love you unconditionally.",
+        "ja": "無条件で君を愛してるって言ってる。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-149",
+        "start": 337.54,
+        "end": 338.6,
+        "speechText": "I tell you that you're beautiful.",
+        "language": "en",
+        "en": "I tell you that you're beautiful.",
+        "ja": "君は美しいとも言う。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-150",
+        "start": 338.72,
+        "end": 340.68,
+        "speechText": "I tell you that your ass looks great when you're 80.",
+        "language": "en",
+        "en": "I tell you that your ass looks great when you're 80.",
+        "ja": "80歳のお尻も素敵だって言う。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-151",
+        "start": 343.26,
+        "end": 345.42,
+        "speechText": "I'm trying to make you laugh.",
+        "language": "en",
+        "en": "I'm trying to make you laugh.",
+        "ja": "君を笑わせたくてやってる。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-152",
+        "start": 345.92,
+        "end": 346.48,
+        "speechText": "Okay.",
+        "language": "en",
+        "en": "Okay.",
+        "ja": "うん。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-153",
+        "start": 346.74,
+        "end": 348.92,
+        "speechText": "I put up with plenty of your shit.",
+        "language": "en",
+        "en": "I put up with plenty of your shit.",
+        "ja": "君のデタラメにも十分付き合ってるよ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-154",
+        "start": 349.6,
+        "end": 353.98,
+        "speechText": "And if you think I'm just some dog who's going to keep coming back, then you're wrong.",
+        "language": "en",
+        "en": "And if you think I'm just some dog who's going to keep coming back, then you're wrong.",
+        "ja": "僕を戻ってくる犬みたいに思うなら違う。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-155",
+        "start": 354.52,
+        "end": 357.86,
+        "speechText": "But if you want true love, then this is it.",
+        "language": "en",
+        "en": "But if you want true love, then this is it.",
+        "ja": "でも本当の愛が欲しいなら、これがそうだ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-156",
+        "start": 358.72,
+        "end": 360.06,
+        "speechText": "This is real life.",
+        "language": "en",
+        "en": "This is real life.",
+        "ja": "これが現実の人生さ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-157",
+        "start": 360.08,
+        "end": 361.76,
+        "speechText": "It's not perfect, but it's real.",
+        "language": "en",
+        "en": "It's not perfect, but it's real.",
+        "ja": "完璧じゃない、でも本物だ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-158",
+        "start": 361.76,
+        "end": 364.3,
+        "speechText": "And if you can't see it, then you're blind, all right?",
+        "language": "en",
+        "en": "And if you can't see it, then you're blind, all right?",
+        "ja": "それが見えないなら、君は盲目だよ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-159",
+        "start": 364.4,
+        "end": 364.98,
+        "speechText": "I give up.",
+        "language": "en",
+        "en": "I give up.",
+        "ja": "もうやめた。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-160",
+        "start": 403.58,
+        "end": 405.46,
+        "speechText": "So, what about this time machine?",
+        "language": "en",
+        "en": "So, what about this time machine?",
+        "ja": "それで、タイムマシンは？"
+      },
+      {
+        "id": "midnight-time-traveler-cue-161",
+        "start": 409.32,
+        "end": 410.58,
+        "speechText": "What do you mean?",
+        "language": "en",
+        "en": "What do you mean?",
+        "ja": "どういう意味？"
+      },
+      {
+        "id": "midnight-time-traveler-cue-162",
+        "start": 411.5,
+        "end": 412.76,
+        "speechText": "How does it work?",
+        "language": "en",
+        "en": "How does it work?",
+        "ja": "どうやって動かすの？"
+      },
+      {
+        "id": "midnight-time-traveler-cue-163",
+        "start": 415.06,
+        "end": 416.52,
+        "speechText": "It's complicated.",
+        "language": "en",
+        "en": "It's complicated.",
+        "ja": "複雑なんだ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-164",
+        "start": 421.32,
+        "end": 423.88,
+        "speechText": "Am I going to have to get naked to operate it?",
+        "language": "en",
+        "en": "Am I going to have to get naked to operate it?",
+        "ja": "裸にならないと動かせない？"
+      },
+      {
+        "id": "midnight-time-traveler-cue-165",
+        "start": 427.58,
+        "end": 428.5,
+        "speechText": "I mean...",
+        "language": "en",
+        "en": "I mean...",
+        "ja": "だから…"
+      },
+      {
+        "id": "midnight-time-traveler-cue-166",
+        "start": 428.5,
+        "end": 430.68,
+        "speechText": "Yeah, yeah, yeah, that's actually...",
+        "language": "en",
+        "en": "Yeah, yeah, yeah, that's actually...",
+        "ja": "ああ、まあ、それが実は…"
+      },
+      {
+        "id": "midnight-time-traveler-cue-167",
+        "start": 430.68,
+        "end": 432.46,
+        "speechText": "It's been a real issue, you know?",
+        "language": "en",
+        "en": "It's been a real issue, you know?",
+        "ja": "けっこう大きな問題でさ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-168",
+        "start": 432.46,
+        "end": 436.6,
+        "speechText": "I mean, clothes, they don't travel well through the whole space-time continuum.",
+        "language": "en",
+        "en": "I mean, clothes, they don't travel well through the whole space-time continuum.",
+        "ja": "服は時空の中じゃ移動できないんだ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-169",
+        "start": 440.1,
+        "end": 441.1,
+        "speechText": "Wow.",
+        "language": "en",
+        "en": "Wow.",
+        "ja": "すごい。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-170",
+        "start": 441.58,
+        "end": 442.76,
+        "speechText": "You're so smart.",
+        "language": "en",
+        "en": "You're so smart.",
+        "ja": "頭いいね。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-171",
+        "start": 445.22,
+        "end": 446.1,
+        "speechText": "Space-time?",
+        "language": "en",
+        "en": "Space-time?",
+        "ja": "時空？"
+      },
+      {
+        "id": "midnight-time-traveler-cue-172",
+        "start": 446.42,
+        "end": 447.16,
+        "speechText": "Continuum.",
+        "language": "en",
+        "en": "Continuum.",
+        "ja": "連続体。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-173",
+        "start": 449.34,
+        "end": 450.34,
+        "speechText": "Continuum.",
+        "language": "en",
+        "en": "Continuum.",
+        "ja": "連続体。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-174",
+        "start": 450.44,
+        "end": 450.9,
+        "speechText": "Yeah.",
+        "language": "en",
+        "en": "Yeah.",
+        "ja": "うん。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-175",
+        "start": 452.48,
+        "end": 456.58,
+        "speechText": "You know, that's something that I've been thinking about your letter.",
+        "language": "en",
+        "en": "You know, that's something that I've been thinking about your letter.",
+        "ja": "君の手紙について考えてたんだけど。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-176",
+        "start": 456.96,
+        "end": 457.42,
+        "speechText": "Yeah.",
+        "language": "en",
+        "en": "Yeah.",
+        "ja": "そう。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-177",
+        "start": 457.54,
+        "end": 460.88,
+        "speechText": "You mentioned the Southern Peloponnese.",
+        "language": "en",
+        "en": "You mentioned the Southern Peloponnese.",
+        "ja": "南ペロポネソスって言ってたね。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-178",
+        "start": 461.48,
+        "end": 465.88,
+        "speechText": "Yeah, yeah, and we're in the Southern Peloponnese.",
+        "language": "en",
+        "en": "Yeah, yeah, and we're in the Southern Peloponnese.",
+        "ja": "うん、しかも今まさに南ペロポネソスにいるよ。"
+      },
+      {
+        "id": "midnight-time-traveler-cue-179",
+        "start": 467.2,
+        "end": 471.74,
+        "speechText": "And do you think it could be tonight that you're still talking about in your 80s?",
+        "language": "en",
+        "en": "And do you think it could be tonight that you're still talking about in your 80s?",
+        "ja": "今夜のこと、80代になっても話してる夜かもね？"
+      },
+      {
+        "id": "midnight-time-traveler-cue-180",
+        "start": 474.56,
+        "end": 475.26,
+        "speechText": "Well...",
+        "language": "en",
+        "en": "Well...",
+        "ja": "そうかも…"
+      },
+      {
+        "id": "midnight-time-traveler-cue-181",
+        "start": 475.28,
+        "end": 478.36,
+        "speechText": "It must have been one hell of a night we're about to have.",
+        "language": "en",
+        "en": "It must have been one hell of a night we're about to have.",
+        "ja": "今夜はすごい夜になりそうだな。"
+      }
+    ],
+    "subtitleVerification": "automated; not human listening",
+    "video": "/movie-study/media/midnight-time-traveler.mp4",
+    "poster": "/movie-study/posters/midnight-time-traveler.jpg"
   },
   {
     "id": "eternal-train",
