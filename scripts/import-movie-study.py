@@ -52,6 +52,7 @@ if args.include_player:
         assert before in body,('player_port_anchor_missing',before)
         body=body.replace(before,after)
     progress_replacements={
+      "    const q=selector=>section.querySelector(selector),video=q('video');":"    const q=selector=>section.querySelector(selector),video=q('video');\n    // Register before movie handlers can rewind/repeat or detach the video.\n    window.PetPlayback?.watch(video);",
       "    pause:icon(":"    rewind:icon('<path d=\"M4 9a8 8 0 1 1 0 6M4 4v5h5M14 8h-4v4h3a2 2 0 1 1-3 2\"/>'),\n    pause:icon(",
       '<button type="button" class="speed" aria-label="再生速度を変更">':'<button type="button" class="rewind" aria-label="5秒戻る" title="5秒戻る">${icons.rewind}<span>5秒戻る</span></button><button type="button" class="speed" aria-label="再生速度を変更">',
       "    const toggle=()=>{":"    q('.rewind').onclick=()=>{samplePass(player);video.currentTime=Math.max(0,video.currentTime-5);renderTime(player);};\n    const toggle=()=>{",
