@@ -76,6 +76,16 @@ if args.include_player:
     for before,after in progress_replacements.items():
         assert before in body,('progress_port_anchor_missing',before)
         body=body.replace(before,after.replace('\r\n','\n'))
+    normal_speed_replacements={
+      'repeat=true,rate=1,captionMode=':'repeat=true,captionMode=',
+      '<button type="button" class="speed" aria-label="再生速度を変更">1×</button>':'',
+      "    q('.speed').onclick=()=>{const rates=[1,.75,.9];rate=rates[(rates.indexOf(rate)+1)%rates.length];players.forEach(p=>{p.video.playbackRate=rate;renderControls(p);});announce(`再生速度 ${rate}倍`);};\n":'',
+      "    p.q('.speed').textContent=`${rate}×`;p.q('.speed').setAttribute('aria-label',`再生速度 ${rate}倍、押して変更`);\n":'',
+      'p.video.playbackRate=rate;':'p.video.playbackRate=1;'
+    }
+    for before,after in normal_speed_replacements.items():
+        assert before in body,('normal_speed_anchor_missing',before)
+        body=body.replace(before,after)
     anchor="q('.work-title').textContent=scene.displayWork||scene.work;"
     assert anchor in body
     body=body.replace(anchor,"q('.topbar').insertAdjacentHTML('afterbegin','<button class=\"movie-back\" type=\"button\" aria-label=\"映画一覧に戻る\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"m14 5-7 7 7 7\"/></svg></button>');q('.movie-back').onclick=()=>options.home();\n    "+anchor)
@@ -194,13 +204,18 @@ if args.include_player:
     css=scope_css((source/'feed.css').read_text(encoding='utf-8'))
     transport='grid-template-columns:29px minmax(30px,1fr) 30px 47px 34px;gap:9px'
     assert transport in css, 'rewind_transport_anchor_missing'
-    css=css.replace(transport,'grid-template-columns:29px minmax(30px,1fr) 30px 44px 47px 34px;gap:7px')
+    css=css.replace(transport,'grid-template-columns:29px minmax(30px,1fr) 30px 44px 72px;gap:7px')
     play_icon='.movie-study .play svg{width:17px;height:17px}'
     assert play_icon in css, 'rewind_style_anchor_missing'
     css=css.replace(play_icon,play_icon+'''
 .movie-study .rewind{width:44px;min-height:44px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;padding:2px;border:1px solid #a7a0a4;border-radius:10px;background:#100e1122}
 .movie-study .rewind svg{width:22px;height:22px}
 .movie-study .rewind span{font-size:9px;line-height:12px;white-space:nowrap}''')
+    css='\n'.join(line for line in css.splitlines() if not line.startswith('.movie-study .speed{'))
+    css=css.replace('.movie-study .play{width:34px;height:34px;border-radius:50%;border:1px solid #aaa2a7;background:#100e1122;padding:7px;display:grid;place-items:center}',
+                    '.movie-study .play{width:72px;height:52px;border-radius:16px;border:1px solid #aaa2a7;background:#100e1122;padding:10px;display:grid;place-items:center}')
+    css=css.replace(play_icon,'.movie-study .play svg{width:28px;height:28px}')
+    css=css.replace('.movie-study .actions{top:65%;bottom:auto}', '.movie-study .actions{top:61%;bottom:auto}')
     css+='''
 body.movie-study-open{overflow:hidden;background:#100f11}
 body.movie-study-open::before{display:none}

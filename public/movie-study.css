@@ -38,12 +38,11 @@
 .movie-study .work-title{font-size:19px;line-height:1.35;font-weight:500;letter-spacing:.01em;margin:0 0 4px}
 .movie-study .scene-title{font-size:16px;line-height:1.45;margin:0 0 5px;font-weight:400;text-wrap:pretty}
 .movie-study .scene-description{font-size:12px;line-height:1.5;color:#d7cfd2;margin:0}
-.movie-study .transport{position:absolute;left:18px;right:15px;bottom:9.1%;display:grid;grid-template-columns:29px minmax(30px,1fr) 30px 44px 47px 34px;gap:7px;align-items:center}
+.movie-study .transport{position:absolute;left:18px;right:15px;bottom:9.1%;display:grid;grid-template-columns:29px minmax(30px,1fr) 30px 44px 72px;gap:7px;align-items:center}
 .movie-study .time{font-size:12px;font-variant-numeric:tabular-nums;white-space:nowrap}
 .movie-study .seek{accent-color:#fff;width:100%;height:24px;padding:0;margin:0;cursor:pointer;touch-action:pan-x}
-.movie-study .speed{border:1px solid #a7a0a4;background:#100e1122;padding:3px 5px;min-height:29px;border-radius:20px;font-size:12px}
-.movie-study .play{width:34px;height:34px;border-radius:50%;border:1px solid #aaa2a7;background:#100e1122;padding:7px;display:grid;place-items:center}
-.movie-study .play svg{width:17px;height:17px}
+.movie-study .play{width:72px;height:52px;border-radius:16px;border:1px solid #aaa2a7;background:#100e1122;padding:10px;display:grid;place-items:center}
+.movie-study .play svg{width:28px;height:28px}
 .movie-study .rewind{width:44px;min-height:44px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;padding:2px;border:1px solid #a7a0a4;border-radius:10px;background:#100e1122}
 .movie-study .rewind svg{width:22px;height:22px}
 .movie-study .rewind span{font-size:9px;line-height:12px;white-space:nowrap}
@@ -95,7 +94,7 @@
 @media(max-height:590px){.movie-study .work-switcher{height:30px;gap:0}
 .movie-study .work-switcher label{font-size:9px}
 .movie-study .work-switcher select{font-size:12px;min-height:21px}}
-.movie-study .actions{top:65%;bottom:auto}
+.movie-study .actions{top:61%;bottom:auto}
 @media(max-height:730px){.movie-study .captions{top:46%}
 .movie-study .actions{gap:6px}
 .movie-study .action{gap:2px;min-height:36px}

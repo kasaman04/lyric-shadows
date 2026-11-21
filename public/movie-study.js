@@ -84,7 +84,7 @@
     up:icon('<path d="m5 15 7-6 7 6"/>'),
     down:icon('<path d="m5 9 7 6 7-6"/>')
   };
-  let active=-1,muted=false,repeat=true,rate=1,captionMode='both',noticeTimer,scrollFrame,snapTimer,pointerStart,suppressClickUntil=0;
+  let active=-1,muted=false,repeat=true,captionMode='both',noticeTimer,scrollFrame,snapTimer,pointerStart,suppressClickUntil=0;
   const saved=(()=>{try{return new Set(JSON.parse(localStorage.getItem('movie-study-saved')||'[]'));}catch{return new Set();}})();
   const format=t=>`${Math.floor((Number(t)||0)/60)}:${String(Math.floor((Number(t)||0)%60)).padStart(2,'0')}`;
   function announce(text){notice.textContent=text;notice.classList.add('visible');clearTimeout(noticeTimer);noticeTimer=setTimeout(()=>notice.classList.remove('visible'),1800);}
@@ -96,7 +96,7 @@
       <div class="captions" aria-hidden="true"><div class="caption-en" lang="en"></div><div class="caption-ja"></div></div>
       <nav class="actions" aria-label="会話の学習操作"><button type="button" class="action repeat on" aria-label="この会話をリピート" aria-pressed="true">${icons.repeat}<span class="action-label">リピート</span></button><button type="button" class="action translation" aria-label="字幕表示を切り替える"><span class="translation-symbol" aria-hidden="true">文A</span><span class="action-label mode-label">英日</span></button><button type="button" class="action save" aria-label="この会話を保存" aria-pressed="false"><span class="save-icon">${icons.save}</span><span class="action-label">保存</span></button></nav>
       <div class="scene-meta"><p class="watch-count" aria-live="polite"></p><p class="work-title"></p><h1 class="scene-title"></h1><p class="scene-description"></p></div>
-      <div class="transport"><span class="time elapsed">0:00</span><input class="seek" type="range" min="0" max="${scene.duration}" step="0.05" value="0" aria-label="会話の再生位置"><span class="time duration">${format(Math.ceil(scene.duration))}</span><button type="button" class="rewind" aria-label="5秒戻る" title="5秒戻る">${icons.rewind}<span>5秒戻る</span></button><button type="button" class="speed" aria-label="再生速度を変更">1×</button><button type="button" class="play" aria-label="一時停止">${icons.pause}</button></div>
+      <div class="transport"><span class="time elapsed">0:00</span><input class="seek" type="range" min="0" max="${scene.duration}" step="0.05" value="0" aria-label="会話の再生位置"><span class="time duration">${format(Math.ceil(scene.duration))}</span><button type="button" class="rewind" aria-label="5秒戻る" title="5秒戻る">${icons.rewind}<span>5秒戻る</span></button><button type="button" class="play" aria-label="一時停止">${icons.pause}</button></div>
       <button type="button" class="swipe">${index<scenes.length-1?icons.up:icons.down}<span class="swipe-text">${index<scenes.length-1?'上にスワイプして次の会話へ':'下にスワイプして前の会話へ'}</span></button>`;
     const q=selector=>section.querySelector(selector),video=q('video');
     // Register before movie handlers can rewind/repeat or detach the video.
@@ -108,7 +108,6 @@
     q('.repeat').onclick=()=>{repeat=!repeat;players.forEach(p=>{p.video.loop=false;renderControls(p);});announce(repeat?'この会話全体をリピート':'リピートをオフにしました');};
     q('.translation').onclick=()=>{const modes=['both','en','ja','off'];captionMode=modes[(modes.indexOf(captionMode)+1)%modes.length];players.forEach(p=>{p.lastCue=-2;renderTime(p);renderControls(p);});announce({both:'英語と日本語を表示',en:'英語だけを表示',ja:'日本語だけを表示',off:'字幕を非表示'}[captionMode]);};
     q('.save').onclick=()=>{if(saved.has(scene.id))saved.delete(scene.id);else saved.add(scene.id);try{localStorage.setItem('movie-study-saved',JSON.stringify([...saved]));}catch{}renderControls(player);announce(saved.has(scene.id)?'この会話を保存しました':'保存を解除しました');};
-    q('.speed').onclick=()=>{const rates=[1,.75,.9];rate=rates[(rates.indexOf(rate)+1)%rates.length];players.forEach(p=>{p.video.playbackRate=rate;renderControls(p);});announce(`再生速度 ${rate}倍`);};
     q('.rewind').onclick=()=>{samplePass(player);video.currentTime=Math.max(0,video.currentTime-5);renderTime(player);};
     const toggle=()=>{if(Date.now()<suppressClickUntil)return;if(video.paused){player.userPaused=false;start(player);}else{player.userPaused=true;video.pause();}};
     q('.play').onclick=toggle;q('.video-window').onclick=toggle;q('.video-window').onkeydown=e=>{if(e.key===' '||e.key==='Enter'){e.preventDefault();toggle();}};
@@ -125,7 +124,6 @@
     p.q('.repeat').classList.toggle('on',repeat);p.q('.repeat').setAttribute('aria-pressed',String(repeat));
     const isSaved=saved.has(p.scene.id);p.q('.save').classList.toggle('on',isSaved);p.q('.save').setAttribute('aria-pressed',String(isSaved));p.q('.save-icon').innerHTML=isSaved?icons.saved:icons.save;
     p.q('.mode-label').textContent={both:'英日',en:'英語',ja:'日本語',off:'字幕オフ'}[captionMode];
-    p.q('.speed').textContent=`${rate}×`;p.q('.speed').setAttribute('aria-label',`再生速度 ${rate}倍、押して変更`);
     p.q('.play').innerHTML=p.video.paused?icons.play:icons.pause;p.q('.play').setAttribute('aria-label',p.video.paused?'再生':'一時停止');p.q('.video-window').setAttribute('aria-label',p.video.paused?'動画を再生':'動画を一時停止');
   }
   function renderTime(p){
@@ -146,7 +144,7 @@
   }
   async function start(p){
     if(destroyed||active!==p.index||document.hidden)return;
-    if(p.video.ended){p.pass.reset();p.video.currentTime=0;}p.video.muted=muted;p.video.loop=false;p.video.playbackRate=rate;
+    if(p.video.ended){p.pass.reset();p.video.currentTime=0;}p.video.muted=muted;p.video.loop=false;p.video.playbackRate=1;
     try{await p.video.play();}catch(error){if(error.name==='NotAllowedError'&&!muted&&active===p.index){muted=true;p.video.muted=true;try{await p.video.play();}catch{}}}
     if(destroyed||active!==p.index)p.video.pause();
     players.forEach(renderControls);
