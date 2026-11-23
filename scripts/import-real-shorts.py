@@ -2,6 +2,7 @@
 import argparse
 import concurrent.futures
 import json
+import re
 import subprocess
 from pathlib import Path
 
@@ -17,6 +18,12 @@ for item in items:
     item['nativeId']=f"real-{item['category']}-{counts[item['category']]:02}"
 assert counts==dict.fromkeys(LABELS,5),counts
 
+def caption_english(text,ja):
+    text=re.sub(r'\bi\b','I',text.strip())
+    text=text[:1].upper()+text[1:]
+    if text[-1:] not in '.?!…':text+='?' if ja.endswith('？') else '.'
+    return text
+
 def build(item):
     sid=item['nativeId'];media=ROOT/'public/real-shorts/media'/(sid+'.mp4');poster=ROOT/'public/real-shorts/posters'/(sid+'.jpg')
     media.parent.mkdir(parents=True,exist_ok=True);poster.parent.mkdir(parents=True,exist_ok=True)
@@ -24,7 +31,7 @@ def build(item):
         subprocess.run(['ffmpeg','-y','-nostdin','-v','error','-ss',str(item['start']),'-i',str(source/'source'/(item['id']+'.mp4')),'-t',str(item['duration']),'-map','0:v:0','-map','0:a:0','-vf','scale=-2:1280,setsar=1','-af','loudnorm=I=-16:TP=-1.5:LRA=11','-c:v','libx264','-preset','veryfast','-crf','21','-threads','3','-pix_fmt','yuv420p','-r','30','-c:a','aac','-ar','48000','-b:a','128k','-movflags','+faststart',str(media)],check=True)
     if not poster.exists():
         subprocess.run(['ffmpeg','-v','error','-ss',str(min(4,item['duration']/2)),'-i',str(media),'-vf','scale=360:-2','-frames:v','1','-q:v','3',str(poster)],check=True)
-    result={'id':sid,'category':item['category'],'work':'リアル英会話','displayWork':LABELS[item['category']]+' · '+item['creator'],'title':item['title'],'description':LABELS[item['category']],'duration':item['duration'],'source':item['sourceUrl'],'sourceStart':item['start'],'sourceEnd':item['end'],'creator':item['creator'],'sourceVideoId':item['id'],'bakedEnglish':True,'video':'/real-shorts/media/'+media.name,'poster':'/real-shorts/posters/'+poster.name,'captions':[{'id':f'{sid}-cue-{i+1:03}','start':c['start'],'end':c['end'],'speechText':c['en'],'language':'en','en':c['en'],'ja':c['ja']} for i,c in enumerate(item['captions'])],'subtitleVerification':'source captions reviewed against independent local acoustic recognition; editorial Japanese review; not full human listening'}
+    result={'id':sid,'category':item['category'],'work':'リアル英会話','displayWork':LABELS[item['category']]+' · '+item['creator'],'title':item['title'],'description':LABELS[item['category']],'duration':item['duration'],'source':item['sourceUrl'],'sourceStart':item['start'],'sourceEnd':item['end'],'creator':item['creator'],'sourceVideoId':item['id'],'bakedEnglish':True,'video':'/real-shorts/media/'+media.name,'poster':'/real-shorts/posters/'+poster.name,'captions':[{'id':f'{sid}-cue-{i+1:03}','start':c['start'],'end':c['end'],'speechText':caption_english(c['en'],c['ja']),'language':'en','en':caption_english(c['en'],c['ja']),'ja':c['ja']} for i,c in enumerate(item['captions'])],'subtitleVerification':'source captions reviewed against independent local acoustic recognition; editorial Japanese review; not full human listening'}
     print(json.dumps({'id':sid,'seconds':item['duration'],'captions':len(result['captions'])}),flush=True)
     return result
 

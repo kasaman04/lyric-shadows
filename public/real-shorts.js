@@ -11,7 +11,7 @@
     open(options){
       window.MovieStudy.open({...options,kind:'shorts',scenes:window.REAL_SHORT_SCENES||[],
         filters:[...groups.map(g=>({key:g.key,label:g.title,matches:g.matches})),{key:'all',label:'すべてのジャンル',matches:()=>true}],
-        captionModes:['ja','off'],storageKey:'real-shorts-work',playerHash:'shorts-player',homeHash:'shorts',backLabel:'リアル英会話の一覧に戻る'});
+        captionModes:['both','en','ja','off'],storageKey:'real-shorts-work',playerHash:'shorts-player',homeHash:'shorts',backLabel:'リアル英会話の一覧に戻る'});
     }
   };
 })();
