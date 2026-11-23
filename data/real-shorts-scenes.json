@@ -2098,5 +2098,2843 @@
       }
     ],
     "subtitleVerification": "source captions reviewed against independent local acoustic recognition; editorial Japanese review; not full human listening"
+  },
+  {
+    "id": "real-random-06",
+    "category": "random",
+    "work": "リアル英会話",
+    "displayWork": "ランダムチャット · Allen Magicツ",
+    "title": "水はワインに変えられないけど",
+    "description": "ランダムチャット",
+    "duration": 16.2,
+    "source": "https://www.youtube.com/shorts/1KYNY3YyGWo",
+    "sourceStart": 0,
+    "sourceEnd": 16.2,
+    "creator": "Allen Magicツ",
+    "sourceVideoId": "1KYNY3YyGWo",
+    "bakedEnglish": true,
+    "video": "/real-shorts/media/real-random-06.mp4",
+    "poster": "/real-shorts/posters/real-random-06.jpg",
+    "captions": [
+      {
+        "id": "real-random-06-cue-001",
+        "start": 0,
+        "end": 1.42,
+        "speechText": "That was a good one,",
+        "language": "en",
+        "en": "That was a good one,",
+        "ja": "今のはよかったね。"
+      },
+      {
+        "id": "real-random-06-cue-002",
+        "start": 1.42,
+        "end": 2.64,
+        "speechText": "That was a good one.",
+        "language": "en",
+        "en": "That was a good one.",
+        "ja": "今のはよかったね。"
+      },
+      {
+        "id": "real-random-06-cue-003",
+        "start": 2.72,
+        "end": 5.1,
+        "speechText": "Um, I'm not Jesus, alright?",
+        "language": "en",
+        "en": "Um, I'm not Jesus, alright?",
+        "ja": "えっと、僕はイエスじゃないよ。"
+      },
+      {
+        "id": "real-random-06-cue-004",
+        "start": 5.48,
+        "end": 6.13,
+        "speechText": "Okay.",
+        "language": "en",
+        "en": "Okay.",
+        "ja": "分かったよ。"
+      },
+      {
+        "id": "real-random-06-cue-005",
+        "start": 6.14,
+        "end": 7.02,
+        "speechText": "I'm not Jesus,",
+        "language": "en",
+        "en": "I'm not Jesus,",
+        "ja": "僕はイエスじゃない。"
+      },
+      {
+        "id": "real-random-06-cue-006",
+        "start": 7.2,
+        "end": 9.84,
+        "speechText": "I can't turn water into wine.",
+        "language": "en",
+        "en": "I can't turn water into wine.",
+        "ja": "水をワインに変えられない。"
+      },
+      {
+        "id": "real-random-06-cue-007",
+        "start": 11.78,
+        "end": 12.52,
+        "speechText": "But,",
+        "language": "en",
+        "en": "But,",
+        "ja": "でもね、"
+      },
+      {
+        "id": "real-random-06-cue-008",
+        "start": 12.66,
+        "end": 15.66,
+        "speechText": "I can tell you that I can turn you into mine.",
+        "language": "en",
+        "en": "I can tell you that I can turn you into mine.",
+        "ja": "君を僕の恋人にすることならできるよ。"
+      }
+    ],
+    "subtitleVerification": "two independent local speech recognizers + sampled burned-in caption review + editorial English/Japanese review; not full human listening"
+  },
+  {
+    "id": "real-random-07",
+    "category": "random",
+    "work": "リアル英会話",
+    "displayWork": "ランダムチャット · Allen Magicツ",
+    "title": "血液型よりも好きなタイプ",
+    "description": "ランダムチャット",
+    "duration": 17.1,
+    "source": "https://www.youtube.com/shorts/qYYn9wD9Ic0",
+    "sourceStart": 1.6,
+    "sourceEnd": 18.7,
+    "creator": "Allen Magicツ",
+    "sourceVideoId": "qYYn9wD9Ic0",
+    "bakedEnglish": true,
+    "video": "/real-shorts/media/real-random-07.mp4",
+    "poster": "/real-shorts/posters/real-random-07.jpg",
+    "captions": [
+      {
+        "id": "real-random-07-cue-001",
+        "start": 0,
+        "end": 2.3,
+        "speechText": "What's your blood type?",
+        "language": "en",
+        "en": "What's your blood type?",
+        "ja": "血液型は何？"
+      },
+      {
+        "id": "real-random-07-cue-002",
+        "start": 2.3,
+        "end": 5.0,
+        "speechText": "Um, what's my blood type...",
+        "language": "en",
+        "en": "Um, what's my blood type...",
+        "ja": "えーと、私の血液型…"
+      },
+      {
+        "id": "real-random-07-cue-003",
+        "start": 5.0,
+        "end": 6.74,
+        "speechText": "Yeah, yeah.",
+        "language": "en",
+        "en": "Yeah, yeah.",
+        "ja": "うん、うん。"
+      },
+      {
+        "id": "real-random-07-cue-004",
+        "start": 6.74,
+        "end": 10.0,
+        "speechText": "My blood type is A positive.",
+        "language": "en",
+        "en": "My blood type is A positive.",
+        "ja": "血液型はA型のRhプラス。"
+      },
+      {
+        "id": "real-random-07-cue-005",
+        "start": 10.92,
+        "end": 12.94,
+        "speechText": "No, no, no, no, no.",
+        "language": "en",
+        "en": "No, no, no, no, no.",
+        "ja": "いや、違う、違う、違う。"
+      },
+      {
+        "id": "real-random-07-cue-006",
+        "start": 12.94,
+        "end": 14.84,
+        "speechText": "I think you are not A.",
+        "language": "en",
+        "en": "I think you are not A.",
+        "ja": "たぶん君はA型じゃない。"
+      },
+      {
+        "id": "real-random-07-cue-007",
+        "start": 14.84,
+        "end": 16.48,
+        "speechText": "You are my type.",
+        "language": "en",
+        "en": "You are my type.",
+        "ja": "君は僕のタイプ。"
+      }
+    ],
+    "subtitleVerification": "two independent local speech recognizers + sampled burned-in caption review + editorial English/Japanese review; not full human listening"
+  },
+  {
+    "id": "real-random-08",
+    "category": "random",
+    "work": "リアル英会話",
+    "displayWork": "ランダムチャット · Allen Magicツ",
+    "title": "宝くじの大当たりは目の前に",
+    "description": "ランダムチャット",
+    "duration": 34.3,
+    "source": "https://www.youtube.com/shorts/QT5Y3wmpQKw",
+    "sourceStart": 4.8,
+    "sourceEnd": 39.1,
+    "creator": "Allen Magicツ",
+    "sourceVideoId": "QT5Y3wmpQKw",
+    "bakedEnglish": true,
+    "video": "/real-shorts/media/real-random-08.mp4",
+    "poster": "/real-shorts/posters/real-random-08.jpg",
+    "captions": [
+      {
+        "id": "real-random-08-cue-001",
+        "start": 0,
+        "end": 5.62,
+        "speechText": "My god, no! I won a lottery.",
+        "language": "en",
+        "en": "My god, no! I won a lottery.",
+        "ja": "うそ、やばい！宝くじに当たった！"
+      },
+      {
+        "id": "real-random-08-cue-002",
+        "start": 5.62,
+        "end": 8.38,
+        "speechText": "I can't believe this.",
+        "language": "en",
+        "en": "I can't believe this.",
+        "ja": "信じられない。"
+      },
+      {
+        "id": "real-random-08-cue-003",
+        "start": 8.72,
+        "end": 10.04,
+        "speechText": "Wow, damn.",
+        "language": "en",
+        "en": "Wow, damn.",
+        "ja": "わあ、やばい。"
+      },
+      {
+        "id": "real-random-08-cue-004",
+        "start": 10.04,
+        "end": 15.46,
+        "speechText": "And they say, and they say that the grand prize is in front of me.",
+        "language": "en",
+        "en": "And they say, and they say that the grand prize is in front of me.",
+        "ja": "しかも大当たりは僕の目の前にいるって。"
+      },
+      {
+        "id": "real-random-08-cue-005",
+        "start": 25.52,
+        "end": 26.88,
+        "speechText": "No, I'm not!",
+        "language": "en",
+        "en": "No, I'm not!",
+        "ja": "いや、違う！"
+      },
+      {
+        "id": "real-random-08-cue-006",
+        "start": 30.18,
+        "end": 31.34,
+        "speechText": "That was bad.",
+        "language": "en",
+        "en": "That was bad.",
+        "ja": "今のはダメだった。"
+      },
+      {
+        "id": "real-random-08-cue-007",
+        "start": 31.4,
+        "end": 31.88,
+        "speechText": "That was bad.",
+        "language": "en",
+        "en": "That was bad.",
+        "ja": "本当にダメだった。"
+      },
+      {
+        "id": "real-random-08-cue-008",
+        "start": 31.88,
+        "end": 32.24,
+        "speechText": "I'm sorry.",
+        "language": "en",
+        "en": "I'm sorry.",
+        "ja": "ごめん。"
+      },
+      {
+        "id": "real-random-08-cue-009",
+        "start": 32.24,
+        "end": 33.16,
+        "speechText": "No, that was so good.",
+        "language": "en",
+        "en": "No, that was so good.",
+        "ja": "いや、最高だったよ。"
+      },
+      {
+        "id": "real-random-08-cue-010",
+        "start": 33.16,
+        "end": 34.3,
+        "speechText": "Look, I'm turning red.",
+        "language": "en",
+        "en": "Look, I'm turning red.",
+        "ja": "ほら、顔が赤くなる。"
+      }
+    ],
+    "subtitleVerification": "two independent local speech recognizers + sampled burned-in caption review + editorial English/Japanese review; not full human listening"
+  },
+  {
+    "id": "real-random-09",
+    "category": "random",
+    "work": "リアル英会話",
+    "displayWork": "ランダムチャット · Allen Magicツ",
+    "title": "ちょっと近くに来てくれる？",
+    "description": "ランダムチャット",
+    "duration": 27.6,
+    "source": "https://www.youtube.com/shorts/1ZwJgaqDhvA",
+    "sourceStart": 23.4,
+    "sourceEnd": 51.0,
+    "creator": "Allen Magicツ",
+    "sourceVideoId": "1ZwJgaqDhvA",
+    "bakedEnglish": true,
+    "video": "/real-shorts/media/real-random-09.mp4",
+    "poster": "/real-shorts/posters/real-random-09.jpg",
+    "captions": [
+      {
+        "id": "real-random-09-cue-001",
+        "start": 0,
+        "end": 2.92,
+        "speechText": "My god, yo!",
+        "language": "en",
+        "en": "My god, yo!",
+        "ja": "うわ、やばい！"
+      },
+      {
+        "id": "real-random-09-cue-002",
+        "start": 3.14,
+        "end": 4.3,
+        "speechText": "I have a question.",
+        "language": "en",
+        "en": "I have a question.",
+        "ja": "質問があるんだけど。"
+      },
+      {
+        "id": "real-random-09-cue-003",
+        "start": 5.34,
+        "end": 6.98,
+        "speechText": "Okay, can you come a little bit close?",
+        "language": "en",
+        "en": "Okay, can you come a little bit close?",
+        "ja": "ちょっと近くに来てくれる？"
+      },
+      {
+        "id": "real-random-09-cue-004",
+        "start": 6.98,
+        "end": 11.84,
+        "speechText": "Okay, okay.",
+        "language": "en",
+        "en": "Okay, okay.",
+        "ja": "うん、わかった。"
+      },
+      {
+        "id": "real-random-09-cue-005",
+        "start": 11.84,
+        "end": 15.22,
+        "speechText": "There is something wrong with your lips.",
+        "language": "en",
+        "en": "There is something wrong with your lips.",
+        "ja": "君のくちびる、なんか変だよ。"
+      },
+      {
+        "id": "real-random-09-cue-006",
+        "start": 15.22,
+        "end": 19.74,
+        "speechText": "What, what, what?",
+        "language": "en",
+        "en": "What, what, what?",
+        "ja": "何？何？何？"
+      },
+      {
+        "id": "real-random-09-cue-007",
+        "start": 19.74,
+        "end": 21.6,
+        "speechText": "Your lips looks lonely.",
+        "language": "en",
+        "en": "Your lips looks lonely.",
+        "ja": "君の唇、寂しそうだよ。"
+      },
+      {
+        "id": "real-random-09-cue-008",
+        "start": 21.6,
+        "end": 23.56,
+        "speechText": "Yeah.",
+        "language": "en",
+        "en": "Yeah.",
+        "ja": "うん。"
+      },
+      {
+        "id": "real-random-09-cue-009",
+        "start": 23.56,
+        "end": 26.88,
+        "speechText": "Do they want to meet mine?",
+        "language": "en",
+        "en": "Do they want to meet mine?",
+        "ja": "僕のと会いたいのかな？"
+      }
+    ],
+    "subtitleVerification": "two independent local speech recognizers + sampled burned-in caption review + editorial English/Japanese review; not full human listening"
+  },
+  {
+    "id": "real-random-10",
+    "category": "random",
+    "work": "リアル英会話",
+    "displayWork": "ランダムチャット · BaldHeadCam",
+    "title": "実は動画をフォローしてるんだ",
+    "description": "ランダムチャット",
+    "duration": 44.0,
+    "source": "https://www.youtube.com/shorts/V6wFnPrKOa0",
+    "sourceStart": 0,
+    "sourceEnd": 44.0,
+    "creator": "BaldHeadCam",
+    "sourceVideoId": "V6wFnPrKOa0",
+    "bakedEnglish": false,
+    "video": "/real-shorts/media/real-random-10.mp4",
+    "poster": "/real-shorts/posters/real-random-10.jpg",
+    "captions": [
+      {
+        "id": "real-random-10-cue-001",
+        "start": 0.24,
+        "end": 1.18,
+        "speechText": "Oh, hi.",
+        "language": "en",
+        "en": "Oh, hi.",
+        "ja": "あ、こんにちは。"
+      },
+      {
+        "id": "real-random-10-cue-002",
+        "start": 1.18,
+        "end": 1.83,
+        "speechText": "Hello.",
+        "language": "en",
+        "en": "Hello.",
+        "ja": "こんにちは。"
+      },
+      {
+        "id": "real-random-10-cue-003",
+        "start": 2.0,
+        "end": 3.38,
+        "speechText": "How are you? What's up?",
+        "language": "en",
+        "en": "How are you? What's up?",
+        "ja": "元気？調子はどう？"
+      },
+      {
+        "id": "real-random-10-cue-004",
+        "start": 3.38,
+        "end": 4.1,
+        "speechText": "How are you?",
+        "language": "en",
+        "en": "How are you?",
+        "ja": "元気？"
+      },
+      {
+        "id": "real-random-10-cue-005",
+        "start": 5.04,
+        "end": 6.94,
+        "speechText": "I mean, I'm good, and you bro.",
+        "language": "en",
+        "en": "I mean, I'm good, and you bro.",
+        "ja": "うん、元気だよ。君はどう？"
+      },
+      {
+        "id": "real-random-10-cue-006",
+        "start": 7.82,
+        "end": 8.47,
+        "speechText": "Yeah.",
+        "language": "en",
+        "en": "Yeah.",
+        "ja": "うん。"
+      },
+      {
+        "id": "real-random-10-cue-007",
+        "start": 9.0,
+        "end": 11.52,
+        "speechText": "You know, actually, I do know you.",
+        "language": "en",
+        "en": "You know, actually, I do know you.",
+        "ja": "実は、君のこと知ってるよ。"
+      },
+      {
+        "id": "real-random-10-cue-008",
+        "start": 11.96,
+        "end": 12.61,
+        "speechText": "Oh.",
+        "language": "en",
+        "en": "Oh.",
+        "ja": "ああ。"
+      },
+      {
+        "id": "real-random-10-cue-009",
+        "start": 13.62,
+        "end": 14.14,
+        "speechText": "Really?",
+        "language": "en",
+        "en": "Really?",
+        "ja": "本当に？"
+      },
+      {
+        "id": "real-random-10-cue-010",
+        "start": 14.14,
+        "end": 16.06,
+        "speechText": "Oh, yeah. Yeah.",
+        "language": "en",
+        "en": "Oh, yeah. Yeah.",
+        "ja": "うん、そうだよ。"
+      },
+      {
+        "id": "real-random-10-cue-011",
+        "start": 19.8,
+        "end": 21.48,
+        "speechText": "So, you see my videos?",
+        "language": "en",
+        "en": "So, you see my videos?",
+        "ja": "僕の動画、見てるの？"
+      },
+      {
+        "id": "real-random-10-cue-012",
+        "start": 22.2,
+        "end": 22.85,
+        "speechText": "Yeah.",
+        "language": "en",
+        "en": "Yeah.",
+        "ja": "うん。"
+      },
+      {
+        "id": "real-random-10-cue-013",
+        "start": 23.42,
+        "end": 25.68,
+        "speechText": "And then, you know, I'm just following you.",
+        "language": "en",
+        "en": "And then, you know, I'm just following you.",
+        "ja": "それで、実はフォローしてるんだ。"
+      },
+      {
+        "id": "real-random-10-cue-014",
+        "start": 25.78,
+        "end": 27.08,
+        "speechText": "Oh, thank you, bro.",
+        "language": "en",
+        "en": "Oh, thank you, bro.",
+        "ja": "ああ、ありがとう。"
+      },
+      {
+        "id": "real-random-10-cue-015",
+        "start": 27.2,
+        "end": 27.98,
+        "speechText": "Thank you, bro. Yeah.",
+        "language": "en",
+        "en": "Thank you, bro. Yeah.",
+        "ja": "ありがとう。うん。"
+      },
+      {
+        "id": "real-random-10-cue-016",
+        "start": 27.98,
+        "end": 28.63,
+        "speechText": "Welcome.",
+        "language": "en",
+        "en": "Welcome.",
+        "ja": "どういたしまして。"
+      },
+      {
+        "id": "real-random-10-cue-017",
+        "start": 28.84,
+        "end": 30.52,
+        "speechText": "I like your videos for real.",
+        "language": "en",
+        "en": "I like your videos for real.",
+        "ja": "君の動画、本当に好きなんだ。"
+      },
+      {
+        "id": "real-random-10-cue-018",
+        "start": 30.62,
+        "end": 31.58,
+        "speechText": "Thank you so much, man.",
+        "language": "en",
+        "en": "Thank you so much, man.",
+        "ja": "本当にありがとう。"
+      },
+      {
+        "id": "real-random-10-cue-019",
+        "start": 31.58,
+        "end": 33.38,
+        "speechText": "Are you gonna put this in TikTok?",
+        "language": "en",
+        "en": "Are you gonna put this in TikTok?",
+        "ja": "これTikTokに載せるの？"
+      },
+      {
+        "id": "real-random-10-cue-020",
+        "start": 33.68,
+        "end": 37.42,
+        "speechText": "I love your laugh, so if you don't mind, I would.",
+        "language": "en",
+        "en": "I love your laugh, so if you don't mind, I would.",
+        "ja": "君の笑い声が好きだから、よければ載せたいな。"
+      },
+      {
+        "id": "real-random-10-cue-021",
+        "start": 41.7,
+        "end": 43.6,
+        "speechText": "If that's okay with you.",
+        "language": "en",
+        "en": "If that's okay with you.",
+        "ja": "もし大丈夫ならね。"
+      }
+    ],
+    "subtitleVerification": "two independent local speech recognizers + sampled burned-in caption review + editorial English/Japanese review; not full human listening"
+  },
+  {
+    "id": "real-street-06",
+    "category": "street",
+    "work": "リアル英会話",
+    "displayWork": "街頭インタビュー · Meet Cutes NYC",
+    "title": "電話を待った4日間",
+    "description": "街頭インタビュー",
+    "duration": 47.8,
+    "source": "https://www.youtube.com/shorts/H1uwX0Lb46A",
+    "sourceStart": 0,
+    "sourceEnd": 47.8,
+    "creator": "Meet Cutes NYC",
+    "sourceVideoId": "H1uwX0Lb46A",
+    "bakedEnglish": true,
+    "video": "/real-shorts/media/real-street-06.mp4",
+    "poster": "/real-shorts/posters/real-street-06.jpg",
+    "captions": [
+      {
+        "id": "real-street-06-cue-001",
+        "start": 0,
+        "end": 1.9,
+        "speechText": "Excuse me, sorry, are you two a couple?",
+        "language": "en",
+        "en": "Excuse me, sorry, are you two a couple?",
+        "ja": "すみません、お二人はカップルですか？"
+      },
+      {
+        "id": "real-street-06-cue-002",
+        "start": 2.34,
+        "end": 2.74,
+        "speechText": "We are.",
+        "language": "en",
+        "en": "We are.",
+        "ja": "はい、そうです。"
+      },
+      {
+        "id": "real-street-06-cue-003",
+        "start": 2.74,
+        "end": 4.82,
+        "speechText": "Would you mind telling us the quick story of how you first met?",
+        "language": "en",
+        "en": "Would you mind telling us the quick story of how you first met?",
+        "ja": "初めての出会いの話、聞かせてくれますか？"
+      },
+      {
+        "id": "real-street-06-cue-004",
+        "start": 5.38,
+        "end": 6.56,
+        "speechText": "You really want to know that?",
+        "language": "en",
+        "en": "You really want to know that?",
+        "ja": "本当に知りたいんですか？"
+      },
+      {
+        "id": "real-street-06-cue-005",
+        "start": 6.56,
+        "end": 7.21,
+        "speechText": "Of course!",
+        "language": "en",
+        "en": "Of course!",
+        "ja": "もちろん！"
+      },
+      {
+        "id": "real-street-06-cue-006",
+        "start": 7.3,
+        "end": 8.26,
+        "speechText": "Where do we begin?",
+        "language": "en",
+        "en": "Where do we begin?",
+        "ja": "どこから話そうか？"
+      },
+      {
+        "id": "real-street-06-cue-007",
+        "start": 8.48,
+        "end": 11.06,
+        "speechText": "I was stuck with two tickets to go to a show,",
+        "language": "en",
+        "en": "I was stuck with two tickets to go to a show,",
+        "ja": "私はショーのチケットが2枚余ってて、"
+      },
+      {
+        "id": "real-street-06-cue-008",
+        "start": 11.08,
+        "end": 12.52,
+        "speechText": "And I wasn't going to go,",
+        "language": "en",
+        "en": "And I wasn't going to go,",
+        "ja": "行かないつもりだったのに、"
+      },
+      {
+        "id": "real-street-06-cue-009",
+        "start": 12.52,
+        "end": 14.46,
+        "speechText": "But my dearest friend Vicky said,",
+        "language": "en",
+        "en": "But my dearest friend Vicky said,",
+        "ja": "でも親友のヴィッキーが言ってくれたんです。"
+      },
+      {
+        "id": "real-street-06-cue-010",
+        "start": 14.46,
+        "end": 15.66,
+        "speechText": "If you ask George,",
+        "language": "en",
+        "en": "If you ask George,",
+        "ja": "あなたがジョージを誘えば、"
+      },
+      {
+        "id": "real-street-06-cue-011",
+        "start": 16.02,
+        "end": 17.34,
+        "speechText": "I will ask David.",
+        "language": "en",
+        "en": "I will ask David.",
+        "ja": "私もデイビッド誘うわ、と。"
+      },
+      {
+        "id": "real-street-06-cue-012",
+        "start": 17.48,
+        "end": 20.48,
+        "speechText": "I asked George to take me to the show, just as friends,",
+        "language": "en",
+        "en": "I asked George to take me to the show, just as friends,",
+        "ja": "友達としてジョージをショーに誘ったの。"
+      },
+      {
+        "id": "real-street-06-cue-013",
+        "start": 20.72,
+        "end": 21.7,
+        "speechText": "And it was magic.",
+        "language": "en",
+        "en": "And it was magic.",
+        "ja": "それがとても素敵だったの。"
+      },
+      {
+        "id": "real-street-06-cue-014",
+        "start": 21.8,
+        "end": 24.1,
+        "speechText": "I have to tell you, I do believe in magic.",
+        "language": "en",
+        "en": "I have to tell you, I do believe in magic.",
+        "ja": "本当に魔法みたいって思うの。"
+      },
+      {
+        "id": "real-street-06-cue-015",
+        "start": 24.3,
+        "end": 26.66,
+        "speechText": "Walking home in December in the snow,",
+        "language": "en",
+        "en": "Walking home in December in the snow,",
+        "ja": "12月の雪の中、家まで歩きながら、"
+      },
+      {
+        "id": "real-street-06-cue-016",
+        "start": 26.76,
+        "end": 28.88,
+        "speechText": "I couldn't believe this was happening to me.",
+        "language": "en",
+        "en": "I couldn't believe this was happening to me.",
+        "ja": "こんなこと信じられなかった。"
+      },
+      {
+        "id": "real-street-06-cue-017",
+        "start": 28.88,
+        "end": 31.92,
+        "speechText": "And I waited because he did not call me.",
+        "language": "en",
+        "en": "And I waited because he did not call me.",
+        "ja": "でも彼は電話くれなくて待ってた。"
+      },
+      {
+        "id": "real-street-06-cue-018",
+        "start": 32.2,
+        "end": 33.66,
+        "speechText": "Saturday night, we went out.",
+        "language": "en",
+        "en": "Saturday night, we went out.",
+        "ja": "土曜の夜は会ったのに、"
+      },
+      {
+        "id": "real-street-06-cue-019",
+        "start": 33.72,
+        "end": 34.8,
+        "speechText": "Sunday he didn't call.",
+        "language": "en",
+        "en": "Sunday he didn't call.",
+        "ja": "日曜は連絡なし、"
+      },
+      {
+        "id": "real-street-06-cue-020",
+        "start": 34.94,
+        "end": 36.2,
+        "speechText": "Monday he didn't call.",
+        "language": "en",
+        "en": "Monday he didn't call.",
+        "ja": "月曜もなし、"
+      },
+      {
+        "id": "real-street-06-cue-021",
+        "start": 36.34,
+        "end": 37.68,
+        "speechText": "Tuesday he didn't call.",
+        "language": "en",
+        "en": "Tuesday he didn't call.",
+        "ja": "火曜もなし、"
+      },
+      {
+        "id": "real-street-06-cue-022",
+        "start": 38.14,
+        "end": 39.04,
+        "speechText": "Wednesday he called.",
+        "language": "en",
+        "en": "Wednesday he called.",
+        "ja": "水曜になってやっと電話が来た。"
+      },
+      {
+        "id": "real-street-06-cue-023",
+        "start": 39.16,
+        "end": 40.6,
+        "speechText": "And I sweated that out.",
+        "language": "en",
+        "en": "And I sweated that out.",
+        "ja": "それまで本当にやきもきした。"
+      },
+      {
+        "id": "real-street-06-cue-024",
+        "start": 40.94,
+        "end": 42.92,
+        "speechText": "And each day I say to him,",
+        "language": "en",
+        "en": "And each day I say to him,",
+        "ja": "今でも毎日言ってるんだ。"
+      },
+      {
+        "id": "real-street-06-cue-025",
+        "start": 42.92,
+        "end": 44.14,
+        "speechText": "Why didn't you call me?",
+        "language": "en",
+        "en": "Why didn't you call me?",
+        "ja": "なんで電話くれなかったの？"
+      },
+      {
+        "id": "real-street-06-cue-026",
+        "start": 44.16,
+        "end": 45.94,
+        "speechText": "Why did you wait so long to call her?",
+        "language": "en",
+        "en": "Why did you wait so long to call her?",
+        "ja": "なんでそんなに待たせたの？"
+      },
+      {
+        "id": "real-street-06-cue-027",
+        "start": 46.22,
+        "end": 47.64,
+        "speechText": "I didn't think it was so long.",
+        "language": "en",
+        "en": "I didn't think it was so long.",
+        "ja": "そんなに長いとは思わなかったよ。"
+      }
+    ],
+    "subtitleVerification": "two independent local speech recognizers + sampled burned-in caption review + editorial English/Japanese review; not full human listening"
+  },
+  {
+    "id": "real-street-07",
+    "category": "street",
+    "work": "リアル英会話",
+    "displayWork": "街頭インタビュー · Meet Cutes NYC",
+    "title": "最初は苦手だった同僚",
+    "description": "街頭インタビュー",
+    "duration": 36.35,
+    "source": "https://www.youtube.com/shorts/p0LXrNFJaXM",
+    "sourceStart": 0,
+    "sourceEnd": 36.35,
+    "creator": "Meet Cutes NYC",
+    "sourceVideoId": "p0LXrNFJaXM",
+    "bakedEnglish": true,
+    "video": "/real-shorts/media/real-street-07.mp4",
+    "poster": "/real-shorts/posters/real-street-07.jpg",
+    "captions": [
+      {
+        "id": "real-street-07-cue-001",
+        "start": 0,
+        "end": 0.88,
+        "speechText": "Excuse me, sorry,",
+        "language": "en",
+        "en": "Excuse me, sorry,",
+        "ja": "すみません、ごめんなさい、"
+      },
+      {
+        "id": "real-street-07-cue-002",
+        "start": 0.9,
+        "end": 2.06,
+        "speechText": "Excuse me, are you two a couple?",
+        "language": "en",
+        "en": "Excuse me, are you two a couple?",
+        "ja": "失礼ですが、お二人はカップルですか？"
+      },
+      {
+        "id": "real-street-07-cue-003",
+        "start": 2.42,
+        "end": 2.78,
+        "speechText": "Yes.",
+        "language": "en",
+        "en": "Yes.",
+        "ja": "はい。"
+      },
+      {
+        "id": "real-street-07-cue-004",
+        "start": 2.78,
+        "end": 4.72,
+        "speechText": "Would you mind telling us the quick story of how you first met?",
+        "language": "en",
+        "en": "Would you mind telling us the quick story of how you first met?",
+        "ja": "お二人の出会いを簡単に教えてくれますか？"
+      },
+      {
+        "id": "real-street-07-cue-005",
+        "start": 5.18,
+        "end": 5.6,
+        "speechText": "Oh, oh.",
+        "language": "en",
+        "en": "Oh, oh.",
+        "ja": "あ、ああ。"
+      },
+      {
+        "id": "real-street-07-cue-006",
+        "start": 5.6,
+        "end": 6.78,
+        "speechText": "Wow. Wow.",
+        "language": "en",
+        "en": "Wow. Wow.",
+        "ja": "わあ。ほんとに。"
+      },
+      {
+        "id": "real-street-07-cue-007",
+        "start": 6.78,
+        "end": 7.96,
+        "speechText": "Let me call you right back.",
+        "language": "en",
+        "en": "Let me call you right back.",
+        "ja": "折り返し連絡します。"
+      },
+      {
+        "id": "real-street-07-cue-008",
+        "start": 8.46,
+        "end": 9.32,
+        "speechText": "We work together.",
+        "language": "en",
+        "en": "We work together.",
+        "ja": "私たちは同じ職場です。"
+      },
+      {
+        "id": "real-street-07-cue-009",
+        "start": 9.44,
+        "end": 10.58,
+        "speechText": "We couldn't stand each other.",
+        "language": "en",
+        "en": "We couldn't stand each other.",
+        "ja": "最初はお互い苦手でした。"
+      },
+      {
+        "id": "real-street-07-cue-010",
+        "start": 10.58,
+        "end": 11.9,
+        "speechText": "We couldn't stand each other. It was because of work.",
+        "language": "en",
+        "en": "We couldn't stand each other. It was because of work.",
+        "ja": "仕事が原因で仲が悪かったんです。"
+      },
+      {
+        "id": "real-street-07-cue-011",
+        "start": 11.96,
+        "end": 14.08,
+        "speechText": "I had deadlines in my department.",
+        "language": "en",
+        "en": "I had deadlines in my department.",
+        "ja": "私の部署には締め切りがあって、"
+      },
+      {
+        "id": "real-street-07-cue-012",
+        "start": 14.14,
+        "end": 15.32,
+        "speechText": "He had deadlines in his.",
+        "language": "en",
+        "en": "He had deadlines in his.",
+        "ja": "彼の部署にも締め切りがありました。"
+      },
+      {
+        "id": "real-street-07-cue-013",
+        "start": 15.32,
+        "end": 15.94,
+        "speechText": "My boss was on my behind.",
+        "language": "en",
+        "en": "My boss was on my behind.",
+        "ja": "上司にせっつかれていて。"
+      },
+      {
+        "id": "real-street-07-cue-014",
+        "start": 15.94,
+        "end": 16.82,
+        "speechText": "And we clashed.",
+        "language": "en",
+        "en": "And we clashed.",
+        "ja": "それでぶつかりました。"
+      },
+      {
+        "id": "real-street-07-cue-015",
+        "start": 16.9,
+        "end": 17.62,
+        "speechText": "Her boss was on her behind.",
+        "language": "en",
+        "en": "Her boss was on her behind.",
+        "ja": "彼女も上司にせっつかれていてね。"
+      },
+      {
+        "id": "real-street-07-cue-016",
+        "start": 17.62,
+        "end": 18.27,
+        "speechText": "Exactly.",
+        "language": "en",
+        "en": "Exactly.",
+        "ja": "まさにその通りです。"
+      },
+      {
+        "id": "real-street-07-cue-017",
+        "start": 18.4,
+        "end": 19.22,
+        "speechText": "What changed your mind?",
+        "language": "en",
+        "en": "What changed your mind?",
+        "ja": "どうして気が変わったんですか？"
+      },
+      {
+        "id": "real-street-07-cue-018",
+        "start": 19.22,
+        "end": 19.9,
+        "speechText": "I just went,",
+        "language": "en",
+        "en": "I just went,",
+        "ja": "私はただ…"
+      },
+      {
+        "id": "real-street-07-cue-019",
+        "start": 19.92,
+        "end": 21.06,
+        "speechText": "Sat down by her desk.",
+        "language": "en",
+        "en": "Sat down by her desk.",
+        "ja": "彼女の机の横に座りました。"
+      },
+      {
+        "id": "real-street-07-cue-020",
+        "start": 21.06,
+        "end": 22.3,
+        "speechText": "And I'm looking at him like,",
+        "language": "en",
+        "en": "And I'm looking at him like,",
+        "ja": "私は彼を見て、"
+      },
+      {
+        "id": "real-street-07-cue-021",
+        "start": 22.32,
+        "end": 23.02,
+        "speechText": "Who are you?",
+        "language": "en",
+        "en": "Who are you?",
+        "ja": "誰？って思いました。"
+      },
+      {
+        "id": "real-street-07-cue-022",
+        "start": 23.18,
+        "end": 25.08,
+        "speechText": "I had my coat in the spare chair.",
+        "language": "en",
+        "en": "I had my coat in the spare chair.",
+        "ja": "予備の椅子にコートを置いていました。"
+      },
+      {
+        "id": "real-street-07-cue-023",
+        "start": 25.08,
+        "end": 26.06,
+        "speechText": "So I took it off,",
+        "language": "en",
+        "en": "So I took it off,",
+        "ja": "それをどかして、"
+      },
+      {
+        "id": "real-street-07-cue-024",
+        "start": 26.14,
+        "end": 27.56,
+        "speechText": "Sat down, folded my arms,",
+        "language": "en",
+        "en": "Sat down, folded my arms,",
+        "ja": "座って腕を組みました。"
+      },
+      {
+        "id": "real-street-07-cue-025",
+        "start": 27.56,
+        "end": 28.48,
+        "speechText": "And I just said my name.",
+        "language": "en",
+        "en": "And I just said my name.",
+        "ja": "そして名前を言いました。"
+      },
+      {
+        "id": "real-street-07-cue-026",
+        "start": 28.48,
+        "end": 29.94,
+        "speechText": "Whoever she was on the phone with she's like,",
+        "language": "en",
+        "en": "Whoever she was on the phone with she's like,",
+        "ja": "ちょうど誰かと電話中で、"
+      },
+      {
+        "id": "real-street-07-cue-027",
+        "start": 29.94,
+        "end": 30.54,
+        "speechText": "I'll call you back.",
+        "language": "en",
+        "en": "I'll call you back.",
+        "ja": "「あとでかけ直すね」と言って。"
+      },
+      {
+        "id": "real-street-07-cue-028",
+        "start": 30.54,
+        "end": 31.68,
+        "speechText": "From that moment on,",
+        "language": "en",
+        "en": "From that moment on,",
+        "ja": "その瞬間から、"
+      },
+      {
+        "id": "real-street-07-cue-029",
+        "start": 31.68,
+        "end": 34.28,
+        "speechText": "We have been talking and together ever since.",
+        "language": "en",
+        "en": "We have been talking and together ever since.",
+        "ja": "それ以来ずっと話して、付き合っているんだ。"
+      },
+      {
+        "id": "real-street-07-cue-030",
+        "start": 35.0,
+        "end": 36.32,
+        "speechText": "As crazy as that sounds.",
+        "language": "en",
+        "en": "As crazy as that sounds.",
+        "ja": "変な話に聞こえるだろうけどね。"
+      }
+    ],
+    "subtitleVerification": "two independent local speech recognizers + sampled burned-in caption review + editorial English/Japanese review; not full human listening"
+  },
+  {
+    "id": "real-street-08",
+    "category": "street",
+    "work": "リアル英会話",
+    "displayWork": "街頭インタビュー · Meet Cutes NYC",
+    "title": "初対面で結婚を確信",
+    "description": "街頭インタビュー",
+    "duration": 48.6,
+    "source": "https://www.youtube.com/shorts/F-cHh5recXQ",
+    "sourceStart": 0,
+    "sourceEnd": 48.6,
+    "creator": "Meet Cutes NYC",
+    "sourceVideoId": "F-cHh5recXQ",
+    "bakedEnglish": true,
+    "video": "/real-shorts/media/real-street-08.mp4",
+    "poster": "/real-shorts/posters/real-street-08.jpg",
+    "captions": [
+      {
+        "id": "real-street-08-cue-001",
+        "start": 0,
+        "end": 0.82,
+        "speechText": "Excuse me, sorry.",
+        "language": "en",
+        "en": "Excuse me, sorry.",
+        "ja": "すみません、失礼します。"
+      },
+      {
+        "id": "real-street-08-cue-002",
+        "start": 0.84,
+        "end": 1.8,
+        "speechText": "Are you two a couple?",
+        "language": "en",
+        "en": "Are you two a couple?",
+        "ja": "お二人はカップルですか？"
+      },
+      {
+        "id": "real-street-08-cue-003",
+        "start": 1.94,
+        "end": 2.58,
+        "speechText": "Yeah.",
+        "language": "en",
+        "en": "Yeah.",
+        "ja": "はい。"
+      },
+      {
+        "id": "real-street-08-cue-004",
+        "start": 2.58,
+        "end": 4.68,
+        "speechText": "Would you mind telling us the quick story of how you first met?",
+        "language": "en",
+        "en": "Would you mind telling us the quick story of how you first met?",
+        "ja": "お二人の出会いを簡単に教えてもらえますか？"
+      },
+      {
+        "id": "real-street-08-cue-005",
+        "start": 4.82,
+        "end": 6.04,
+        "speechText": "It's a long story.",
+        "language": "en",
+        "en": "It's a long story.",
+        "ja": "長い話なんです。"
+      },
+      {
+        "id": "real-street-08-cue-006",
+        "start": 6.14,
+        "end": 9.3,
+        "speechText": "What about like the one minute abbreviated version of it?",
+        "language": "en",
+        "en": "What about like the one minute abbreviated version of it?",
+        "ja": "1分くらいでまとめてもらえますか？"
+      },
+      {
+        "id": "real-street-08-cue-007",
+        "start": 9.3,
+        "end": 10.66,
+        "speechText": "I was divorced 20 years.",
+        "language": "en",
+        "en": "I was divorced 20 years.",
+        "ja": "私は20年前に離婚しました。"
+      },
+      {
+        "id": "real-street-08-cue-008",
+        "start": 10.94,
+        "end": 12.46,
+        "speechText": "My wife was divorced at the time.",
+        "language": "en",
+        "en": "My wife was divorced at the time.",
+        "ja": "妻もその時離婚していました。"
+      },
+      {
+        "id": "real-street-08-cue-009",
+        "start": 12.46,
+        "end": 15.0,
+        "speechText": "She knew in the first phone call that we were going to get married.",
+        "language": "en",
+        "en": "She knew in the first phone call that we were going to get married.",
+        "ja": "妻は最初の電話で結婚すると思ったそうです。"
+      },
+      {
+        "id": "real-street-08-cue-010",
+        "start": 15.16,
+        "end": 16.36,
+        "speechText": "I knew in the first meeting,",
+        "language": "en",
+        "en": "I knew in the first meeting,",
+        "ja": "私は初めて会った時に分かりました。"
+      },
+      {
+        "id": "real-street-08-cue-011",
+        "start": 16.44,
+        "end": 18.44,
+        "speechText": "Usually the first meeting is an hour and a half.",
+        "language": "en",
+        "en": "Usually the first meeting is an hour and a half.",
+        "ja": "普通、初対面では1時間半くらい話して、"
+      },
+      {
+        "id": "real-street-08-cue-012",
+        "start": 18.44,
+        "end": 19.7,
+        "speechText": "Just to get to know each other.",
+        "language": "en",
+        "en": "Just to get to know each other.",
+        "ja": "お互いのことを知り、"
+      },
+      {
+        "id": "real-street-08-cue-013",
+        "start": 19.7,
+        "end": 21.16,
+        "speechText": "And see if there's something to build on.",
+        "language": "en",
+        "en": "And see if there's something to build on.",
+        "ja": "関係を築けそうか確かめます。"
+      },
+      {
+        "id": "real-street-08-cue-014",
+        "start": 21.2,
+        "end": 23.1,
+        "speechText": "Our first meeting was four and a half hours.",
+        "language": "en",
+        "en": "Our first meeting was four and a half hours.",
+        "ja": "私たちは4時間半話しました。"
+      },
+      {
+        "id": "real-street-08-cue-015",
+        "start": 23.26,
+        "end": 24.08,
+        "speechText": "By the end of that meeting.",
+        "language": "en",
+        "en": "By the end of that meeting.",
+        "ja": "その出会いの終わりには、"
+      },
+      {
+        "id": "real-street-08-cue-016",
+        "start": 24.08,
+        "end": 26.22,
+        "speechText": "I was saying, I know it's a little early to say,",
+        "language": "en",
+        "en": "I was saying, I know it's a little early to say,",
+        "ja": "早いけど、こう思ったんです。"
+      },
+      {
+        "id": "real-street-08-cue-017",
+        "start": 26.5,
+        "end": 28.5,
+        "speechText": "But it seems like this is it.",
+        "language": "en",
+        "en": "But it seems like this is it.",
+        "ja": "もうこれだな、と感じました。"
+      },
+      {
+        "id": "real-street-08-cue-018",
+        "start": 28.5,
+        "end": 29.28,
+        "speechText": "That's amazing.",
+        "language": "en",
+        "en": "That's amazing.",
+        "ja": "素敵ですね。"
+      },
+      {
+        "id": "real-street-08-cue-019",
+        "start": 29.52,
+        "end": 31.72,
+        "speechText": "And you've been together for five years now.",
+        "language": "en",
+        "en": "And you've been together for five years now.",
+        "ja": "もう5年一緒なんですね。"
+      },
+      {
+        "id": "real-street-08-cue-020",
+        "start": 31.94,
+        "end": 33.22,
+        "speechText": "What's your favorite thing about him?",
+        "language": "en",
+        "en": "What's your favorite thing about him?",
+        "ja": "彼の好きなところは？"
+      },
+      {
+        "id": "real-street-08-cue-021",
+        "start": 33.38,
+        "end": 34.82,
+        "speechText": "He's very, very deep and.",
+        "language": "en",
+        "en": "He's very, very deep and.",
+        "ja": "彼は本当に深い人で、"
+      },
+      {
+        "id": "real-street-08-cue-022",
+        "start": 34.82,
+        "end": 38.44,
+        "speechText": "He's willing to change and he is working and working on himself.",
+        "language": "en",
+        "en": "He's willing to change and he is working and working on himself.",
+        "ja": "変わろうと努力していて自分を磨いています。"
+      },
+      {
+        "id": "real-street-08-cue-023",
+        "start": 38.44,
+        "end": 40.98,
+        "speechText": "And building himself as a person.",
+        "language": "en",
+        "en": "And building himself as a person.",
+        "ja": "人間的にも成長しています。"
+      },
+      {
+        "id": "real-street-08-cue-024",
+        "start": 40.98,
+        "end": 44.82,
+        "speechText": "My favorite thing about her is her willingness to open up,",
+        "language": "en",
+        "en": "My favorite thing about her is her willingness to open up,",
+        "ja": "彼女の好きなところは心を開いてくれるところです。"
+      },
+      {
+        "id": "real-street-08-cue-025",
+        "start": 45.54,
+        "end": 48.42,
+        "speechText": "Grow, and learn how to be better together.",
+        "language": "en",
+        "en": "Grow, and learn how to be better together.",
+        "ja": "一緒に成長し学ぼうとしてくれる所です。"
+      }
+    ],
+    "subtitleVerification": "two independent local speech recognizers + sampled burned-in caption review + editorial English/Japanese review; not full human listening"
+  },
+  {
+    "id": "real-street-09",
+    "category": "street",
+    "work": "リアル英会話",
+    "displayWork": "街頭インタビュー · Meet Cutes NYC",
+    "title": "55年たっても応援し合う二人",
+    "description": "街頭インタビュー",
+    "duration": 50.0,
+    "source": "https://www.youtube.com/shorts/FlhEDm_3j5A",
+    "sourceStart": 0,
+    "sourceEnd": 50.0,
+    "creator": "Meet Cutes NYC",
+    "sourceVideoId": "FlhEDm_3j5A",
+    "bakedEnglish": true,
+    "video": "/real-shorts/media/real-street-09.mp4",
+    "poster": "/real-shorts/posters/real-street-09.jpg",
+    "captions": [
+      {
+        "id": "real-street-09-cue-001",
+        "start": 0,
+        "end": 0.96,
+        "speechText": "Excuse me, sorry.",
+        "language": "en",
+        "en": "Excuse me, sorry.",
+        "ja": "すみません、失礼します。"
+      },
+      {
+        "id": "real-street-09-cue-002",
+        "start": 1.04,
+        "end": 1.6,
+        "speechText": "Excuse me.",
+        "language": "en",
+        "en": "Excuse me.",
+        "ja": "失礼します。"
+      },
+      {
+        "id": "real-street-09-cue-003",
+        "start": 1.6,
+        "end": 2.44,
+        "speechText": "Are you two a couple?",
+        "language": "en",
+        "en": "Are you two a couple?",
+        "ja": "お二人はカップルですか？"
+      },
+      {
+        "id": "real-street-09-cue-004",
+        "start": 2.76,
+        "end": 3.28,
+        "speechText": "Yes.",
+        "language": "en",
+        "en": "Yes.",
+        "ja": "はい。"
+      },
+      {
+        "id": "real-street-09-cue-005",
+        "start": 3.28,
+        "end": 5.38,
+        "speechText": "Would you mind telling us the quick story of how you first met?",
+        "language": "en",
+        "en": "Would you mind telling us the quick story of how you first met?",
+        "ja": "初めて会った時の話を簡単に教えてもらえますか？"
+      },
+      {
+        "id": "real-street-09-cue-006",
+        "start": 5.84,
+        "end": 6.49,
+        "speechText": "High school.",
+        "language": "en",
+        "en": "High school.",
+        "ja": "高校です。"
+      },
+      {
+        "id": "real-street-09-cue-007",
+        "start": 6.78,
+        "end": 7.43,
+        "speechText": "Math class.",
+        "language": "en",
+        "en": "Math class.",
+        "ja": "数学の授業でした。"
+      },
+      {
+        "id": "real-street-09-cue-008",
+        "start": 7.5,
+        "end": 8.15,
+        "speechText": "Algebra.",
+        "language": "en",
+        "en": "Algebra.",
+        "ja": "代数です。"
+      },
+      {
+        "id": "real-street-09-cue-009",
+        "start": 8.36,
+        "end": 9.96,
+        "speechText": "What happened in algebra class?",
+        "language": "en",
+        "en": "What happened in algebra class?",
+        "ja": "代数の授業で何があったんですか？"
+      },
+      {
+        "id": "real-street-09-cue-010",
+        "start": 10.1,
+        "end": 11.18,
+        "speechText": "I sucked at math.",
+        "language": "en",
+        "en": "I sucked at math.",
+        "ja": "私は数学が苦手でした。"
+      },
+      {
+        "id": "real-street-09-cue-011",
+        "start": 11.34,
+        "end": 12.52,
+        "speechText": "She sucked too,",
+        "language": "en",
+        "en": "She sucked too,",
+        "ja": "彼女も苦手で、"
+      },
+      {
+        "id": "real-street-09-cue-012",
+        "start": 12.52,
+        "end": 14.86,
+        "speechText": "But she was dogged, and I wasn't.",
+        "language": "en",
+        "en": "But she was dogged, and I wasn't.",
+        "ja": "でも彼女は粘り強くて、私は違いました。"
+      },
+      {
+        "id": "real-street-09-cue-013",
+        "start": 14.96,
+        "end": 16.52,
+        "speechText": "We've been together 55 years,",
+        "language": "en",
+        "en": "We've been together 55 years,",
+        "ja": "私たちは55年一緒にいます。"
+      },
+      {
+        "id": "real-street-09-cue-014",
+        "start": 16.62,
+        "end": 17.84,
+        "speechText": "Married for 47.",
+        "language": "en",
+        "en": "Married for 47.",
+        "ja": "結婚して47年です。"
+      },
+      {
+        "id": "real-street-09-cue-015",
+        "start": 17.94,
+        "end": 19.04,
+        "speechText": "55 years in,",
+        "language": "en",
+        "en": "55 years in,",
+        "ja": "55年経って、"
+      },
+      {
+        "id": "real-street-09-cue-016",
+        "start": 19.12,
+        "end": 20.48,
+        "speechText": "What's your favorite thing about her?",
+        "language": "en",
+        "en": "What's your favorite thing about her?",
+        "ja": "彼女の好きなところは何ですか？"
+      },
+      {
+        "id": "real-street-09-cue-017",
+        "start": 20.66,
+        "end": 22.04,
+        "speechText": "She never lets me down.",
+        "language": "en",
+        "en": "She never lets me down.",
+        "ja": "彼女は私を裏切りません。"
+      },
+      {
+        "id": "real-street-09-cue-018",
+        "start": 22.28,
+        "end": 23.78,
+        "speechText": "What's your favorite thing about him?",
+        "language": "en",
+        "en": "What's your favorite thing about him?",
+        "ja": "彼の好きなところは？"
+      },
+      {
+        "id": "real-street-09-cue-019",
+        "start": 23.9,
+        "end": 24.98,
+        "speechText": "He's my cheerleader.",
+        "language": "en",
+        "en": "He's my cheerleader.",
+        "ja": "彼は私の応援団長です。"
+      },
+      {
+        "id": "real-street-09-cue-020",
+        "start": 25.16,
+        "end": 27.6,
+        "speechText": "What's an item in your house or apartment.",
+        "language": "en",
+        "en": "What's an item in your house or apartment.",
+        "ja": "お二人の家にある物で、"
+      },
+      {
+        "id": "real-street-09-cue-021",
+        "start": 27.6,
+        "end": 29.24,
+        "speechText": "That says a lot about your relationship?",
+        "language": "en",
+        "en": "That says a lot about your relationship?",
+        "ja": "二人の関係をよく表している物は？"
+      },
+      {
+        "id": "real-street-09-cue-022",
+        "start": 29.24,
+        "end": 34.48,
+        "speechText": "I still have my coffee cup that he gave me in 1972.",
+        "language": "en",
+        "en": "I still have my coffee cup that he gave me in 1972.",
+        "ja": "1972年に彼がくれたカップを今も使っています。"
+      },
+      {
+        "id": "real-street-09-cue-023",
+        "start": 34.8,
+        "end": 36.02,
+        "speechText": "It's a happy face.",
+        "language": "en",
+        "en": "It's a happy face.",
+        "ja": "それはニコちゃんマークです。"
+      },
+      {
+        "id": "real-street-09-cue-024",
+        "start": 36.18,
+        "end": 39.16,
+        "speechText": "What's something that you two want to add to your place together?",
+        "language": "en",
+        "en": "What's something that you two want to add to your place together?",
+        "ja": "二人の家に加えたい物は？"
+      },
+      {
+        "id": "real-street-09-cue-025",
+        "start": 39.76,
+        "end": 40.7,
+        "speechText": "An espresso machine.",
+        "language": "en",
+        "en": "An espresso machine.",
+        "ja": "エスプレッソマシンです。"
+      },
+      {
+        "id": "real-street-09-cue-026",
+        "start": 40.74,
+        "end": 42.06,
+        "speechText": "An espresso machine?",
+        "language": "en",
+        "en": "An espresso machine?",
+        "ja": "エスプレッソマシン？"
+      },
+      {
+        "id": "real-street-09-cue-027",
+        "start": 42.26,
+        "end": 44.52,
+        "speechText": "He loves his espresso at 3 o'clock.",
+        "language": "en",
+        "en": "He loves his espresso at 3 o'clock.",
+        "ja": "彼は午後3時のエスプレッソが大好きです。"
+      },
+      {
+        "id": "real-street-09-cue-028",
+        "start": 44.52,
+        "end": 47.22,
+        "speechText": "I never pass up a chance to tuck into a cafe.",
+        "language": "en",
+        "en": "I never pass up a chance to tuck into a cafe.",
+        "ja": "機会があれば必ずカフェに寄って、"
+      },
+      {
+        "id": "real-street-09-cue-029",
+        "start": 47.22,
+        "end": 49.76,
+        "speechText": "And have a quick ristretto while standing.",
+        "language": "en",
+        "en": "And have a quick ristretto while standing.",
+        "ja": "立ったままリストレットをさっと飲むんだ。"
+      }
+    ],
+    "subtitleVerification": "two independent local speech recognizers + sampled burned-in caption review + editorial English/Japanese review; not full human listening"
+  },
+  {
+    "id": "real-street-10",
+    "category": "street",
+    "work": "リアル英会話",
+    "displayWork": "街頭インタビュー · Meet Cutes NYC",
+    "title": "結婚は一日では築けない",
+    "description": "街頭インタビュー",
+    "duration": 60.6,
+    "source": "https://www.youtube.com/shorts/UVgpLCgyfxA",
+    "sourceStart": 0,
+    "sourceEnd": 60.6,
+    "creator": "Meet Cutes NYC",
+    "sourceVideoId": "UVgpLCgyfxA",
+    "bakedEnglish": true,
+    "video": "/real-shorts/media/real-street-10.mp4",
+    "poster": "/real-shorts/posters/real-street-10.jpg",
+    "captions": [
+      {
+        "id": "real-street-10-cue-001",
+        "start": 0,
+        "end": 0.8,
+        "speechText": "Sorry.",
+        "language": "en",
+        "en": "Sorry.",
+        "ja": "すみません。"
+      },
+      {
+        "id": "real-street-10-cue-002",
+        "start": 1.06,
+        "end": 1.92,
+        "speechText": "Are you two a couple?",
+        "language": "en",
+        "en": "Are you two a couple?",
+        "ja": "お二人はカップルですか？"
+      },
+      {
+        "id": "real-street-10-cue-003",
+        "start": 2.26,
+        "end": 2.66,
+        "speechText": "Yes.",
+        "language": "en",
+        "en": "Yes.",
+        "ja": "はい。"
+      },
+      {
+        "id": "real-street-10-cue-004",
+        "start": 2.66,
+        "end": 4.78,
+        "speechText": "Would you mind telling me the quick story of how you first met?",
+        "language": "en",
+        "en": "Would you mind telling me the quick story of how you first met?",
+        "ja": "どうやって出会ったか、簡単に教えてくれますか？"
+      },
+      {
+        "id": "real-street-10-cue-005",
+        "start": 5.3,
+        "end": 6.76,
+        "speechText": "Oh, we met in church.",
+        "language": "en",
+        "en": "Oh, we met in church.",
+        "ja": "あ、教会で出会いました。"
+      },
+      {
+        "id": "real-street-10-cue-006",
+        "start": 8.62,
+        "end": 10.0,
+        "speechText": "What happened in church?",
+        "language": "en",
+        "en": "What happened in church?",
+        "ja": "教会で何があったんですか？"
+      },
+      {
+        "id": "real-street-10-cue-007",
+        "start": 10.48,
+        "end": 12.38,
+        "speechText": "He used to see me sitting at the front.",
+        "language": "en",
+        "en": "He used to see me sitting at the front.",
+        "ja": "前の席にいる私を見ていたんです。"
+      },
+      {
+        "id": "real-street-10-cue-008",
+        "start": 12.38,
+        "end": 14.48,
+        "speechText": "And he'd sit at the back just to see me.",
+        "language": "en",
+        "en": "And he'd sit at the back just to see me.",
+        "ja": "私を見るために後ろに座っていて、"
+      },
+      {
+        "id": "real-street-10-cue-009",
+        "start": 14.48,
+        "end": 17.52,
+        "speechText": "And then one day he got the courage to come and talk to me.",
+        "language": "en",
+        "en": "And then one day he got the courage to come and talk to me.",
+        "ja": "ある日、勇気を出して話しかけてくれました。"
+      },
+      {
+        "id": "real-street-10-cue-010",
+        "start": 17.6,
+        "end": 18.34,
+        "speechText": "What did you say?",
+        "language": "en",
+        "en": "What did you say?",
+        "ja": "何て言いましたか？"
+      },
+      {
+        "id": "real-street-10-cue-011",
+        "start": 20.02,
+        "end": 21.46,
+        "speechText": "Do you remember what you said?",
+        "language": "en",
+        "en": "Do you remember what you said?",
+        "ja": "何を言ったか覚えていますか？"
+      },
+      {
+        "id": "real-street-10-cue-012",
+        "start": 21.74,
+        "end": 23.42,
+        "speechText": "I said she was very cute.",
+        "language": "en",
+        "en": "I said she was very cute.",
+        "ja": "彼女がとても可愛いと言いました。"
+      },
+      {
+        "id": "real-street-10-cue-013",
+        "start": 23.94,
+        "end": 26.38,
+        "speechText": "Can we just have one dinner one night?",
+        "language": "en",
+        "en": "Can we just have one dinner one night?",
+        "ja": "一度夕食に行きませんか？"
+      },
+      {
+        "id": "real-street-10-cue-014",
+        "start": 26.76,
+        "end": 27.41,
+        "speechText": "Yeah. Yeah.",
+        "language": "en",
+        "en": "Yeah. Yeah.",
+        "ja": "ええ、はい。"
+      },
+      {
+        "id": "real-street-10-cue-015",
+        "start": 28.04,
+        "end": 30.76,
+        "speechText": "10 years in, what's your favorite thing about her?",
+        "language": "en",
+        "en": "10 years in, what's your favorite thing about her?",
+        "ja": "結婚10年、奥さんの一番好きなところは？"
+      },
+      {
+        "id": "real-street-10-cue-016",
+        "start": 31.78,
+        "end": 36.42,
+        "speechText": "She's loving, understanding, and God-fearing woman.",
+        "language": "en",
+        "en": "She's loving, understanding, and God-fearing woman.",
+        "ja": "彼女は愛情深くて理解があり、信仰心のある女性です。"
+      },
+      {
+        "id": "real-street-10-cue-017",
+        "start": 36.8,
+        "end": 40.52,
+        "speechText": "He's very patient, and he's a very great cook.",
+        "language": "en",
+        "en": "He's very patient, and he's a very great cook.",
+        "ja": "彼はとても我慢強く、料理も上手です。"
+      },
+      {
+        "id": "real-street-10-cue-018",
+        "start": 40.88,
+        "end": 42.8,
+        "speechText": "What advice would you give to a new couple that just met?",
+        "language": "en",
+        "en": "What advice would you give to a new couple that just met?",
+        "ja": "出会ったばかりのカップルへアドバイスは？"
+      },
+      {
+        "id": "real-street-10-cue-019",
+        "start": 42.8,
+        "end": 46.2,
+        "speechText": "First impression matters, but you have to work the marriage through.",
+        "language": "en",
+        "en": "First impression matters, but you have to work the marriage through.",
+        "ja": "第一印象は大切ですが、夫婦は努力が必要です。"
+      },
+      {
+        "id": "real-street-10-cue-020",
+        "start": 46.28,
+        "end": 47.96,
+        "speechText": "It doesn't take a day, it takes years.",
+        "language": "en",
+        "en": "It doesn't take a day, it takes years.",
+        "ja": "一日ではできず、長い年月が必要です。"
+      },
+      {
+        "id": "real-street-10-cue-021",
+        "start": 48.24,
+        "end": 50.6,
+        "speechText": "Without communication, everything is going to go down.",
+        "language": "en",
+        "en": "Without communication, everything is going to go down.",
+        "ja": "会話がないと全てうまくいきません。"
+      },
+      {
+        "id": "real-street-10-cue-022",
+        "start": 50.84,
+        "end": 53.52,
+        "speechText": "Last thing, what are you two most excited for in the future?",
+        "language": "en",
+        "en": "Last thing, what are you two most excited for in the future?",
+        "ja": "最後に、二人がこれから楽しみにしていることは？"
+      },
+      {
+        "id": "real-street-10-cue-023",
+        "start": 53.7,
+        "end": 54.7,
+        "speechText": "Traveling together.",
+        "language": "en",
+        "en": "Traveling together.",
+        "ja": "一緒に旅行することです。"
+      },
+      {
+        "id": "real-street-10-cue-024",
+        "start": 54.76,
+        "end": 56.68,
+        "speechText": "We always travel together everywhere we go.",
+        "language": "en",
+        "en": "We always travel together everywhere we go.",
+        "ja": "私たちはどこでも一緒に旅しています。"
+      },
+      {
+        "id": "real-street-10-cue-025",
+        "start": 56.68,
+        "end": 58.62,
+        "speechText": "He wants to go to Fiji and Bora Bora.",
+        "language": "en",
+        "en": "He wants to go to Fiji and Bora Bora.",
+        "ja": "彼はフィジーとボラボラに行きたがっています。"
+      },
+      {
+        "id": "real-street-10-cue-026",
+        "start": 58.62,
+        "end": 59.98,
+        "speechText": "We still have to accomplish that.",
+        "language": "en",
+        "en": "We still have to accomplish that.",
+        "ja": "それはまだ実現していません。"
+      },
+      {
+        "id": "real-street-10-cue-027",
+        "start": 60.0,
+        "end": 60.6,
+        "speechText": "Yes.",
+        "language": "en",
+        "en": "Yes.",
+        "ja": "はい。"
+      }
+    ],
+    "subtitleVerification": "two independent local speech recognizers + sampled burned-in caption review + editorial English/Japanese review; not full human listening"
+  },
+  {
+    "id": "real-daily-06",
+    "category": "daily",
+    "work": "リアル英会話",
+    "displayWork": "日常の掛け合い · Maya & Hunter",
+    "title": "夫にルームサービスを注文",
+    "description": "日常の掛け合い",
+    "duration": 54.75,
+    "source": "https://www.youtube.com/shorts/sbThdHl7RVw",
+    "sourceStart": 0,
+    "sourceEnd": 54.75,
+    "creator": "Maya & Hunter",
+    "sourceVideoId": "sbThdHl7RVw",
+    "bakedEnglish": true,
+    "video": "/real-shorts/media/real-daily-06.mp4",
+    "poster": "/real-shorts/posters/real-daily-06.jpg",
+    "captions": [
+      {
+        "id": "real-daily-06-cue-001",
+        "start": 2.99,
+        "end": 5.77,
+        "speechText": "Hi, I'd like to place an order for room service.",
+        "language": "en",
+        "en": "Hi, I'd like to place an order for room service.",
+        "ja": "こんにちは、ルームサービスを注文したいです。"
+      },
+      {
+        "id": "real-daily-06-cue-002",
+        "start": 5.81,
+        "end": 7.21,
+        "speechText": "Okay. What would you like?",
+        "language": "en",
+        "en": "Okay. What would you like?",
+        "ja": "かしこまりました。ご注文は何にしますか？"
+      },
+      {
+        "id": "real-daily-06-cue-003",
+        "start": 7.33,
+        "end": 9.93,
+        "speechText": "Um, I got a note in my room that said.",
+        "language": "en",
+        "en": "Um, I got a note in my room that said.",
+        "ja": "部屋にメモがあって、"
+      },
+      {
+        "id": "real-daily-06-cue-004",
+        "start": 9.93,
+        "end": 12.51,
+        "speechText": "To order the birthday special.",
+        "language": "en",
+        "en": "To order the birthday special.",
+        "ja": "バースデースペシャルを注文してって。"
+      },
+      {
+        "id": "real-daily-06-cue-005",
+        "start": 12.65,
+        "end": 13.85,
+        "speechText": "Yes, of course.",
+        "language": "en",
+        "en": "Yes, of course.",
+        "ja": "はい、かしこまりました。"
+      },
+      {
+        "id": "real-daily-06-cue-006",
+        "start": 14.03,
+        "end": 15.15,
+        "speechText": "I'll take one of those.",
+        "language": "en",
+        "en": "I'll take one of those.",
+        "ja": "それをお願いします。"
+      },
+      {
+        "id": "real-daily-06-cue-007",
+        "start": 15.27,
+        "end": 16.81,
+        "speechText": "Okay, that is perfect.",
+        "language": "en",
+        "en": "Okay, that is perfect.",
+        "ja": "はい、承りました。"
+      },
+      {
+        "id": "real-daily-06-cue-008",
+        "start": 16.81,
+        "end": 19.99,
+        "speechText": "We'll have it up for you in about 10 to 15 minutes.",
+        "language": "en",
+        "en": "We'll have it up for you in about 10 to 15 minutes.",
+        "ja": "10〜15分ほどでお届けします。"
+      },
+      {
+        "id": "real-daily-06-cue-009",
+        "start": 19.99,
+        "end": 21.75,
+        "speechText": "Okay, great. Thank you so much.",
+        "language": "en",
+        "en": "Okay, great. Thank you so much.",
+        "ja": "ありがとうございます。助かります。"
+      },
+      {
+        "id": "real-daily-06-cue-010",
+        "start": 22.45,
+        "end": 24.35,
+        "speechText": "It's my birthday and we're both sick.",
+        "language": "en",
+        "en": "It's my birthday and we're both sick.",
+        "ja": "今日が誕生日で、二人とも体調が悪くて"
+      },
+      {
+        "id": "real-daily-06-cue-011",
+        "start": 24.35,
+        "end": 25.45,
+        "speechText": "And we were up all night.",
+        "language": "en",
+        "en": "And we were up all night.",
+        "ja": "一晩中起きてましたし、"
+      },
+      {
+        "id": "real-daily-06-cue-012",
+        "start": 25.45,
+        "end": 28.23,
+        "speechText": "And I found this note on my dresser when I woke up.",
+        "language": "en",
+        "en": "And I found this note on my dresser when I woke up.",
+        "ja": "朝起きたらドレッサーにこのメモがありました。"
+      },
+      {
+        "id": "real-daily-06-cue-013",
+        "start": 28.23,
+        "end": 29.91,
+        "speechText": "I'm so excited to see what it is.",
+        "language": "en",
+        "en": "I'm so excited to see what it is.",
+        "ja": "何が来るのかすごく楽しみ。"
+      },
+      {
+        "id": "real-daily-06-cue-014",
+        "start": 29.91,
+        "end": 32.37,
+        "speechText": "And I don't know how he has the energy to be up right now.",
+        "language": "en",
+        "en": "And I don't know how he has the energy to be up right now.",
+        "ja": "彼が今起きていられるのが不思議です。"
+      },
+      {
+        "id": "real-daily-06-cue-015",
+        "start": 32.37,
+        "end": 34.95,
+        "speechText": "Did somebody order the birthday special?",
+        "language": "en",
+        "en": "Did somebody order the birthday special?",
+        "ja": "バースデースペシャルをご注文ですか？"
+      },
+      {
+        "id": "real-daily-06-cue-016",
+        "start": 34.95,
+        "end": 36.35,
+        "speechText": "Oh my gosh.",
+        "language": "en",
+        "en": "Oh my gosh.",
+        "ja": "うわあ！"
+      },
+      {
+        "id": "real-daily-06-cue-017",
+        "start": 36.35,
+        "end": 37.91,
+        "speechText": "Happy birthday.",
+        "language": "en",
+        "en": "Happy birthday.",
+        "ja": "誕生日おめでとう！"
+      },
+      {
+        "id": "real-daily-06-cue-018",
+        "start": 37.91,
+        "end": 39.75,
+        "speechText": "Oh my god.",
+        "language": "en",
+        "en": "Oh my god.",
+        "ja": "すごい！"
+      },
+      {
+        "id": "real-daily-06-cue-019",
+        "start": 39.75,
+        "end": 43.49,
+        "speechText": "Have a cinnamon roll with fresh house-made frosting.",
+        "language": "en",
+        "en": "Have a cinnamon roll with fresh house-made frosting.",
+        "ja": "自家製フロスティングのシナモンロールです。"
+      },
+      {
+        "id": "real-daily-06-cue-020",
+        "start": 43.49,
+        "end": 45.07,
+        "speechText": "And some birthday sprinkles.",
+        "language": "en",
+        "en": "And some birthday sprinkles.",
+        "ja": "バースデースプリンクル付きです。"
+      },
+      {
+        "id": "real-daily-06-cue-021",
+        "start": 45.07,
+        "end": 46.65,
+        "speechText": "And a vanilla latte.",
+        "language": "en",
+        "en": "And a vanilla latte.",
+        "ja": "バニララテもどうぞ。"
+      },
+      {
+        "id": "real-daily-06-cue-022",
+        "start": 46.65,
+        "end": 49.23,
+        "speechText": "Topped with whipped cream and sprinkles as well.",
+        "language": "en",
+        "en": "Topped with whipped cream and sprinkles as well.",
+        "ja": "こちらにもホイップとスプリンクルをのせて。"
+      },
+      {
+        "id": "real-daily-06-cue-023",
+        "start": 49.23,
+        "end": 50.61,
+        "speechText": "Please make a wish.",
+        "language": "en",
+        "en": "Please make a wish.",
+        "ja": "さあ、願い事をして。"
+      },
+      {
+        "id": "real-daily-06-cue-024",
+        "start": 50.61,
+        "end": 53.69,
+        "speechText": "Wow I love you I love you.",
+        "language": "en",
+        "en": "Wow I love you I love you.",
+        "ja": "すごい、大好き、大好き！"
+      },
+      {
+        "id": "real-daily-06-cue-025",
+        "start": 53.69,
+        "end": 54.71,
+        "speechText": "Thank Thank you.",
+        "language": "en",
+        "en": "Thank Thank you.",
+        "ja": "ありがとう、本当にありがとう。"
+      }
+    ],
+    "subtitleVerification": "two independent local speech recognizers + sampled burned-in caption review + editorial English/Japanese review; not full human listening"
+  },
+  {
+    "id": "real-daily-07",
+    "category": "daily",
+    "work": "リアル英会話",
+    "displayWork": "日常の掛け合い · Jessi & Alessio",
+    "title": "靴下には名前？それともパパとママ？",
+    "description": "日常の掛け合い",
+    "duration": 46.99,
+    "source": "https://www.youtube.com/shorts/LxX4BsgA1oU",
+    "sourceStart": 0,
+    "sourceEnd": 46.99,
+    "creator": "Jessi & Alessio",
+    "sourceVideoId": "LxX4BsgA1oU",
+    "bakedEnglish": true,
+    "video": "/real-shorts/media/real-daily-07.mp4",
+    "poster": "/real-shorts/posters/real-daily-07.jpg",
+    "captions": [
+      {
+        "id": "real-daily-07-cue-001",
+        "start": 0,
+        "end": 1.06,
+        "speechText": "Merry Christmas, everybody.",
+        "language": "en",
+        "en": "Merry Christmas, everybody.",
+        "ja": "メリークリスマス、みんな。"
+      },
+      {
+        "id": "real-daily-07-cue-002",
+        "start": 1.06,
+        "end": 2.96,
+        "speechText": "We have a problem here.",
+        "language": "en",
+        "en": "We have a problem here.",
+        "ja": "ここで問題があるんだ。"
+      },
+      {
+        "id": "real-daily-07-cue-003",
+        "start": 2.96,
+        "end": 7.72,
+        "speechText": "So, we are debating and we want to know your opinion.",
+        "language": "en",
+        "en": "So, we are debating and we want to know your opinion.",
+        "ja": "だから意見を聞きたいんだ。"
+      },
+      {
+        "id": "real-daily-07-cue-004",
+        "start": 7.72,
+        "end": 9.06,
+        "speechText": "In the stocking,",
+        "language": "en",
+        "en": "In the stocking,",
+        "ja": "靴下について、"
+      },
+      {
+        "id": "real-daily-07-cue-005",
+        "start": 9.06,
+        "end": 10.8,
+        "speechText": "If you buy a new stocking,",
+        "language": "en",
+        "en": "If you buy a new stocking,",
+        "ja": "新しい靴下を買ったとき、"
+      },
+      {
+        "id": "real-daily-07-cue-006",
+        "start": 10.8,
+        "end": 16.2,
+        "speechText": "You're gonna write Mom, Dad, or Alessio, or Jessi?",
+        "language": "en",
+        "en": "You're gonna write Mom, Dad, or Alessio, or Jessi?",
+        "ja": "ママ、パパ、アレッシオ、それともジェシーって書く？"
+      },
+      {
+        "id": "real-daily-07-cue-007",
+        "start": 17.6,
+        "end": 20.28,
+        "speechText": "Yeah, well, because we're gonna get new stockings,",
+        "language": "en",
+        "en": "Yeah, well, because we're gonna get new stockings,",
+        "ja": "そう、新しい靴下を買うから、"
+      },
+      {
+        "id": "real-daily-07-cue-008",
+        "start": 20.28,
+        "end": 21.88,
+        "speechText": "And I want to personalize them,",
+        "language": "en",
+        "en": "And I want to personalize them,",
+        "ja": "名前を入れてもらいたいんだけど、"
+      },
+      {
+        "id": "real-daily-07-cue-009",
+        "start": 21.88,
+        "end": 22.96,
+        "speechText": "But I was searching online,",
+        "language": "en",
+        "en": "But I was searching online,",
+        "ja": "でもネットで調べてて、"
+      },
+      {
+        "id": "real-daily-07-cue-010",
+        "start": 22.96,
+        "end": 24.82,
+        "speechText": "And this is like a 50-50 split.",
+        "language": "en",
+        "en": "And this is like a 50-50 split.",
+        "ja": "意見が半々みたい。"
+      },
+      {
+        "id": "real-daily-07-cue-011",
+        "start": 24.82,
+        "end": 26.06,
+        "speechText": "Half the people seem to.",
+        "language": "en",
+        "en": "Half the people seem to.",
+        "ja": "半分の人は、"
+      },
+      {
+        "id": "real-daily-07-cue-012",
+        "start": 26.06,
+        "end": 27.54,
+        "speechText": "Want to put Mom and Dad,",
+        "language": "en",
+        "en": "Want to put Mom and Dad,",
+        "ja": "「ママ」「パパ」と入れたいみたい。"
+      },
+      {
+        "id": "real-daily-07-cue-013",
+        "start": 27.54,
+        "end": 28.98,
+        "speechText": "Or some, you know,",
+        "language": "en",
+        "en": "Or some, you know,",
+        "ja": "ほら、そういう呼び方ね。"
+      },
+      {
+        "id": "real-daily-07-cue-014",
+        "start": 28.98,
+        "end": 30.92,
+        "speechText": "Because it makes sense, it's a family,",
+        "language": "en",
+        "en": "Because it makes sense, it's a family,",
+        "ja": "家族だから、それが自然だって。"
+      },
+      {
+        "id": "real-daily-07-cue-015",
+        "start": 30.92,
+        "end": 31.7,
+        "speechText": "But,",
+        "language": "en",
+        "en": "But,",
+        "ja": "でも、"
+      },
+      {
+        "id": "real-daily-07-cue-016",
+        "start": 31.7,
+        "end": 34.94,
+        "speechText": "Or other people say that you need to put your first name,",
+        "language": "en",
+        "en": "Or other people say that you need to put your first name,",
+        "ja": "自分の名前を入れるべきって人もいる。"
+      },
+      {
+        "id": "real-daily-07-cue-017",
+        "start": 34.94,
+        "end": 36.56,
+        "speechText": "Because it's your identity,",
+        "language": "en",
+        "en": "Because it's your identity,",
+        "ja": "それが自分らしさだから。"
+      },
+      {
+        "id": "real-daily-07-cue-018",
+        "start": 36.56,
+        "end": 38.26,
+        "speechText": "And in the future,",
+        "language": "en",
+        "en": "And in the future,",
+        "ja": "未来のためにも、"
+      },
+      {
+        "id": "real-daily-07-cue-019",
+        "start": 38.26,
+        "end": 39.8,
+        "speechText": "You're gonna want your first name.",
+        "language": "en",
+        "en": "You're gonna want your first name.",
+        "ja": "自分の名前が欲しくなるって。"
+      },
+      {
+        "id": "real-daily-07-cue-020",
+        "start": 39.8,
+        "end": 42.98,
+        "speechText": "So, but that feels weird, sort of.",
+        "language": "en",
+        "en": "So, but that feels weird, sort of.",
+        "ja": "でもちょっと変な感じもする。"
+      },
+      {
+        "id": "real-daily-07-cue-021",
+        "start": 42.98,
+        "end": 44.96,
+        "speechText": "Yeah, like Alessio and Jesse, right?",
+        "language": "en",
+        "en": "Yeah, like Alessio and Jesse, right?",
+        "ja": "うん、アレッシオやジェシーとか、ね。"
+      },
+      {
+        "id": "real-daily-07-cue-022",
+        "start": 44.96,
+        "end": 46.52,
+        "speechText": "Now, so what would you do?",
+        "language": "en",
+        "en": "Now, so what would you do?",
+        "ja": "じゃあどうする？"
+      }
+    ],
+    "subtitleVerification": "two independent local speech recognizers + sampled burned-in caption review + editorial English/Japanese review; not full human listening"
+  },
+  {
+    "id": "real-daily-08",
+    "category": "daily",
+    "work": "リアル英会話",
+    "displayWork": "日常の掛け合い · Jessi & Alessio",
+    "title": "赤ちゃん用だと思ったパジャマ",
+    "description": "日常の掛け合い",
+    "duration": 16.2,
+    "source": "https://www.youtube.com/shorts/m292v2XGBL4",
+    "sourceStart": 7.0,
+    "sourceEnd": 23.2,
+    "creator": "Jessi & Alessio",
+    "sourceVideoId": "m292v2XGBL4",
+    "bakedEnglish": true,
+    "video": "/real-shorts/media/real-daily-08.mp4",
+    "poster": "/real-shorts/posters/real-daily-08.jpg",
+    "captions": [
+      {
+        "id": "real-daily-08-cue-001",
+        "start": 0,
+        "end": 1.68,
+        "speechText": "You're gonna look so cute.",
+        "language": "en",
+        "en": "You're gonna look so cute.",
+        "ja": "あなた、絶対かわいくなるよ。"
+      },
+      {
+        "id": "real-daily-08-cue-002",
+        "start": 1.68,
+        "end": 3.04,
+        "speechText": "He's gonna look so cute.",
+        "language": "en",
+        "en": "He's gonna look so cute.",
+        "ja": "この子、絶対かわいくなるね。"
+      },
+      {
+        "id": "real-daily-08-cue-003",
+        "start": 3.04,
+        "end": 3.76,
+        "speechText": "No, you.",
+        "language": "en",
+        "en": "No, you.",
+        "ja": "違うよ、あなたがね。"
+      },
+      {
+        "id": "real-daily-08-cue-004",
+        "start": 3.94,
+        "end": 5.3,
+        "speechText": "I'm not gonna fit in this.",
+        "language": "en",
+        "en": "I'm not gonna fit in this.",
+        "ja": "これ、僕は入らないよ。"
+      },
+      {
+        "id": "real-daily-08-cue-005",
+        "start": 5.3,
+        "end": 6.32,
+        "speechText": "What are you talking about?",
+        "language": "en",
+        "en": "What are you talking about?",
+        "ja": "何言ってるの？"
+      },
+      {
+        "id": "real-daily-08-cue-006",
+        "start": 9.76,
+        "end": 10.98,
+        "speechText": "There we go.",
+        "language": "en",
+        "en": "There we go.",
+        "ja": "はい、できた。"
+      },
+      {
+        "id": "real-daily-08-cue-007",
+        "start": 11.14,
+        "end": 12.14,
+        "speechText": "Wow, thank you.",
+        "language": "en",
+        "en": "Wow, thank you.",
+        "ja": "わあ、ありがとう。"
+      },
+      {
+        "id": "real-daily-08-cue-008",
+        "start": 12.42,
+        "end": 13.94,
+        "speechText": "You look so cute!",
+        "language": "en",
+        "en": "You look so cute!",
+        "ja": "すっごくかわいいよ！"
+      },
+      {
+        "id": "real-daily-08-cue-009",
+        "start": 14.08,
+        "end": 14.92,
+        "speechText": "Merry Christmas.",
+        "language": "en",
+        "en": "Merry Christmas.",
+        "ja": "メリークリスマス。"
+      },
+      {
+        "id": "real-daily-08-cue-010",
+        "start": 15.22,
+        "end": 15.98,
+        "speechText": "Ho, ho, ho.",
+        "language": "en",
+        "en": "Ho, ho, ho.",
+        "ja": "ホッホッホー。"
+      }
+    ],
+    "subtitleVerification": "two independent local speech recognizers + sampled burned-in caption review + editorial English/Japanese review; not full human listening"
+  },
+  {
+    "id": "real-daily-09",
+    "category": "daily",
+    "work": "リアル英会話",
+    "displayWork": "日常の掛け合い · Jessi & Alessio",
+    "title": "どのホットチョコレートが一番？",
+    "description": "日常の掛け合い",
+    "duration": 42.95,
+    "source": "https://www.youtube.com/shorts/caU5OTOtXIE",
+    "sourceStart": 0,
+    "sourceEnd": 42.95,
+    "creator": "Jessi & Alessio",
+    "sourceVideoId": "caU5OTOtXIE",
+    "bakedEnglish": true,
+    "video": "/real-shorts/media/real-daily-09.mp4",
+    "poster": "/real-shorts/posters/real-daily-09.jpg",
+    "captions": [
+      {
+        "id": "real-daily-09-cue-001",
+        "start": 0,
+        "end": 1.4,
+        "speechText": "Who makes the best hot chocolate?",
+        "language": "en",
+        "en": "Who makes the best hot chocolate?",
+        "ja": "誰が最高のホットチョコを作る？"
+      },
+      {
+        "id": "real-daily-09-cue-002",
+        "start": 1.4,
+        "end": 2.6,
+        "speechText": "We're gonna find out.",
+        "language": "en",
+        "en": "We're gonna find out.",
+        "ja": "今から確かめよう。"
+      },
+      {
+        "id": "real-daily-09-cue-003",
+        "start": 2.6,
+        "end": 3.78,
+        "speechText": "Hotel Chocolat.",
+        "language": "en",
+        "en": "Hotel Chocolat.",
+        "ja": "ホテルショコラ。"
+      },
+      {
+        "id": "real-daily-09-cue-004",
+        "start": 3.78,
+        "end": 9.3,
+        "speechText": "Wow, that's really good, guys.",
+        "language": "en",
+        "en": "Wow, that's really good, guys.",
+        "ja": "わあ、本当においしいよ、みんな。"
+      },
+      {
+        "id": "real-daily-09-cue-005",
+        "start": 9.3,
+        "end": 12.72,
+        "speechText": "This is really good chocolate, ragazzi.",
+        "language": "en",
+        "en": "This is really good chocolate, ragazzi.",
+        "ja": "これは本当に美味しいチョコだ、みんな。"
+      },
+      {
+        "id": "real-daily-09-cue-006",
+        "start": 13.6,
+        "end": 15.22,
+        "speechText": "It's really creamy.",
+        "language": "en",
+        "en": "It's really creamy.",
+        "ja": "とてもクリーミーだ。"
+      },
+      {
+        "id": "real-daily-09-cue-007",
+        "start": 15.22,
+        "end": 17.58,
+        "speechText": "A nine, nine and a half.",
+        "language": "en",
+        "en": "A nine, nine and a half.",
+        "ja": "9点、いや9.5点かな。"
+      },
+      {
+        "id": "real-daily-09-cue-008",
+        "start": 17.58,
+        "end": 19.24,
+        "speechText": "So the Italian one, ragazzi—",
+        "language": "en",
+        "en": "So the Italian one, ragazzi—",
+        "ja": "イタリアのやつだ、みんな—"
+      },
+      {
+        "id": "real-daily-09-cue-009",
+        "start": 19.24,
+        "end": 21.48,
+        "speechText": "This is what looks like the Italian one.",
+        "language": "en",
+        "en": "This is what looks like the Italian one.",
+        "ja": "イタリアのはこんな感じだよ。"
+      },
+      {
+        "id": "real-daily-09-cue-010",
+        "start": 21.48,
+        "end": 24.1,
+        "speechText": "Look how nice, thick—",
+        "language": "en",
+        "en": "Look how nice, thick—",
+        "ja": "すごく濃厚で良いね—"
+      },
+      {
+        "id": "real-daily-09-cue-011",
+        "start": 24.1,
+        "end": 29.1,
+        "speechText": "The best is the top because it's that little cream.",
+        "language": "en",
+        "en": "The best is the top because it's that little cream.",
+        "ja": "表面の薄いクリームの層が最高なんだ。"
+      },
+      {
+        "id": "real-daily-09-cue-012",
+        "start": 31.68,
+        "end": 34.54,
+        "speechText": "1000! This is better than 10.",
+        "language": "en",
+        "en": "1000! This is better than 10.",
+        "ja": "1000点！10点以上だ。"
+      },
+      {
+        "id": "real-daily-09-cue-013",
+        "start": 34.92,
+        "end": 36.8,
+        "speechText": "American chocolate is water, is watery.",
+        "language": "en",
+        "en": "American chocolate is water, is watery.",
+        "ja": "アメリカのチョコは水っぽい。"
+      },
+      {
+        "id": "real-daily-09-cue-014",
+        "start": 36.8,
+        "end": 38.04,
+        "speechText": "That is not hot chocolate.",
+        "language": "en",
+        "en": "That is not hot chocolate.",
+        "ja": "それはホットチョコじゃない。"
+      },
+      {
+        "id": "real-daily-09-cue-015",
+        "start": 38.04,
+        "end": 38.9,
+        "speechText": "This is chocolate.",
+        "language": "en",
+        "en": "This is chocolate.",
+        "ja": "これがチョコだよ。"
+      },
+      {
+        "id": "real-daily-09-cue-016",
+        "start": 38.9,
+        "end": 41.72,
+        "speechText": "It's actually chocolate, hot chocolate.",
+        "language": "en",
+        "en": "It's actually chocolate, hot chocolate.",
+        "ja": "本物のホットチョコだ。"
+      },
+      {
+        "id": "real-daily-09-cue-017",
+        "start": 41.72,
+        "end": 42.94,
+        "speechText": "I'm giving it a 9.5.",
+        "language": "en",
+        "en": "I'm giving it a 9.5.",
+        "ja": "９.５点にする。"
+      }
+    ],
+    "subtitleVerification": "two independent local speech recognizers + sampled burned-in caption review + editorial English/Japanese review; not full human listening"
+  },
+  {
+    "id": "real-daily-10",
+    "category": "daily",
+    "work": "リアル英会話",
+    "displayWork": "日常の掛け合い · Jessi & Alessio",
+    "title": "映画を一場面で当てられる？",
+    "description": "日常の掛け合い",
+    "duration": 32.6,
+    "source": "https://www.youtube.com/shorts/TxbqiU2ElXw",
+    "sourceStart": 0,
+    "sourceEnd": 32.6,
+    "creator": "Jessi & Alessio",
+    "sourceVideoId": "TxbqiU2ElXw",
+    "bakedEnglish": true,
+    "video": "/real-shorts/media/real-daily-10.mp4",
+    "poster": "/real-shorts/posters/real-daily-10.jpg",
+    "captions": [
+      {
+        "id": "real-daily-10-cue-001",
+        "start": 0,
+        "end": 2.82,
+        "speechText": "Guessing Christmas movies from one frame.",
+        "language": "en",
+        "en": "Guessing Christmas movies from one frame.",
+        "ja": "一場面でクリスマス映画を当てる。"
+      },
+      {
+        "id": "real-daily-10-cue-002",
+        "start": 3.32,
+        "end": 5.62,
+        "speechText": "One hour, one minute, one second.",
+        "language": "en",
+        "en": "One hour, one minute, one second.",
+        "ja": "1時間1分1秒の場面だよ。"
+      },
+      {
+        "id": "real-daily-10-cue-003",
+        "start": 5.88,
+        "end": 6.56,
+        "speechText": "Okay, go.",
+        "language": "en",
+        "en": "Okay, go.",
+        "ja": "よし、始めて。"
+      },
+      {
+        "id": "real-daily-10-cue-004",
+        "start": 7.92,
+        "end": 9.8,
+        "speechText": "I have no idea.",
+        "language": "en",
+        "en": "I have no idea.",
+        "ja": "全然分からない。"
+      },
+      {
+        "id": "real-daily-10-cue-005",
+        "start": 10.44,
+        "end": 11.2,
+        "speechText": "What?",
+        "language": "en",
+        "en": "What?",
+        "ja": "何？"
+      },
+      {
+        "id": "real-daily-10-cue-006",
+        "start": 11.7,
+        "end": 13.0,
+        "speechText": "Looks like an old movie.",
+        "language": "en",
+        "en": "Looks like an old movie.",
+        "ja": "古い映画っぽいね。"
+      },
+      {
+        "id": "real-daily-10-cue-007",
+        "start": 13.04,
+        "end": 14.9,
+        "speechText": "This is a good movie, guys.",
+        "language": "en",
+        "en": "This is a good movie, guys.",
+        "ja": "これ、いい映画だよ。"
+      },
+      {
+        "id": "real-daily-10-cue-008",
+        "start": 15.18,
+        "end": 17.64,
+        "speechText": "Is this some obscure that's not actually...",
+        "language": "en",
+        "en": "Is this some obscure that's not actually...",
+        "ja": "これ、実はすごくマイナーな映画なんじゃ…？"
+      },
+      {
+        "id": "real-daily-10-cue-009",
+        "start": 17.64,
+        "end": 18.72,
+        "speechText": "It's a Christmas movie.",
+        "language": "en",
+        "en": "It's a Christmas movie.",
+        "ja": "クリスマス映画だよ。"
+      },
+      {
+        "id": "real-daily-10-cue-010",
+        "start": 18.72,
+        "end": 20.2,
+        "speechText": "You can see the decor.",
+        "language": "en",
+        "en": "You can see the decor.",
+        "ja": "飾りで分かるよ。"
+      },
+      {
+        "id": "real-daily-10-cue-011",
+        "start": 20.5,
+        "end": 22.08,
+        "speechText": "It's a really famous...",
+        "language": "en",
+        "en": "It's a really famous...",
+        "ja": "すごく有名な...。"
+      },
+      {
+        "id": "real-daily-10-cue-012",
+        "start": 22.08,
+        "end": 23.92,
+        "speechText": "I don't think I've ever seen this.",
+        "language": "en",
+        "en": "I don't think I've ever seen this.",
+        "ja": "見たことないと思う。"
+      },
+      {
+        "id": "real-daily-10-cue-013",
+        "start": 23.96,
+        "end": 24.61,
+        "speechText": "I don't know.",
+        "language": "en",
+        "en": "I don't know.",
+        "ja": "分からない。"
+      },
+      {
+        "id": "real-daily-10-cue-014",
+        "start": 24.72,
+        "end": 27.66,
+        "speechText": "Trading Places with Eddie Murphy.",
+        "language": "en",
+        "en": "Trading Places with Eddie Murphy.",
+        "ja": "エディ・マーフィの『大逆転』。"
+      },
+      {
+        "id": "real-daily-10-cue-015",
+        "start": 30.44,
+        "end": 32.6,
+        "speechText": "Classic Christmas movie in Italy.",
+        "language": "en",
+        "en": "Classic Christmas movie in Italy.",
+        "ja": "イタリアではクリスマス映画の定番だよ。"
+      }
+    ],
+    "subtitleVerification": "two independent local speech recognizers + sampled burned-in caption review + editorial English/Japanese review; not full human listening"
   }
 ]

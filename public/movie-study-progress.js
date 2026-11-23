@@ -3,18 +3,19 @@
   if(typeof module==='object'&&module.exports)module.exports=api;else root.MovieStudyProgress=api;
 })(typeof window==='object'?window:globalThis,function(){
   'use strict';
-  const limit=100,key='movie-study-completions-v1';
+  // Preserve legacy totals up to 100; the completion target is now 50.
+  const limit=50,maxCount=100,key='movie-study-completions-v1';
   function createStore(storage){
     let counts={};
     function refresh(){
       try{
         const value=JSON.parse(storage.getItem(key)||'{}');
-        if(value&&typeof value==='object'&&!Array.isArray(value))for(const [id,n]of Object.entries(value))if(/^[a-z0-9-]+$/.test(id)&&Number.isInteger(n)&&n>=0)counts[id]=Math.max(counts[id]||0,Math.min(limit,n));
+        if(value&&typeof value==='object'&&!Array.isArray(value))for(const [id,n]of Object.entries(value))if(/^[a-z0-9-]+$/.test(id)&&Number.isInteger(n)&&n>=0)counts[id]=Math.max(counts[id]||0,Math.min(maxCount,n));
       }catch{}
     }
     refresh();
     return {count:id=>counts[id]||0,hidden:id=>(counts[id]||0)>=limit,refresh,complete(id){
-      refresh();counts[id]=Math.min(limit,(counts[id]||0)+1);
+      refresh();if((counts[id]||0)<limit)counts[id]=(counts[id]||0)+1;
       let persisted=true;try{storage.setItem(key,JSON.stringify(counts));}catch{persisted=false;}
       return {count:counts[id],hidden:counts[id]>=limit,persisted};
     }};
@@ -40,7 +41,7 @@
   // form a shared floor; each page contributes only its own new completions.
   function cleanCounts(value){
     const out={};
-    if(value&&typeof value==='object'&&!Array.isArray(value))for(const [id,n]of Object.entries(value))if(/^[a-z0-9-]{1,80}$/.test(id)&&Number.isInteger(n)&&n>0)out[id]=Math.min(limit,n);
+    if(value&&typeof value==='object'&&!Array.isArray(value))for(const [id,n]of Object.entries(value))if(/^[a-z0-9-]{1,80}$/.test(id)&&Number.isInteger(n)&&n>0)out[id]=Math.min(maxCount,n);
     return out;
   }
   function mergeLedger(a={},b={}){
@@ -55,7 +56,7 @@
   }
   function ledgerCounts(ledger){
     const counts=cleanCounts(ledger.baseline);
-    for(const values of Object.values(ledger.replicas||{}))for(const [id,n]of Object.entries(cleanCounts(values)))counts[id]=Math.min(limit,(counts[id]||0)+n);
+    for(const values of Object.values(ledger.replicas||{}))for(const [id,n]of Object.entries(cleanCounts(values)))counts[id]=Math.min(maxCount,(counts[id]||0)+n);
     return counts;
   }
   function createCloudStore(storage,deviceId,{writerId,request,onChange=()=>{}}){
@@ -72,7 +73,7 @@
     function storageOwner(){try{return storage.getItem(ownerKey);}catch{return null;}}
     function counts(){
       const value=ledgerCounts(ledger);
-      for(const [id,n]of Object.entries(recoveryFloor))value[id]=Math.min(limit,Math.max(value[id]||0,n+Math.max(0,(ledger.replicas[writerId]?.[id]||0)-(floorWriterStart[id]||0))));
+      for(const [id,n]of Object.entries(recoveryFloor))value[id]=Math.min(maxCount,Math.max(value[id]||0,n+Math.max(0,(ledger.replicas[writerId]?.[id]||0)-(floorWriterStart[id]||0))));
       return value;
     }
     function persist(){

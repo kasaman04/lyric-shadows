@@ -31,7 +31,7 @@
       });
       if(!await progress.sync())throw Error('通信を確認して、もう一度お試しください。同じ5回分が重複することはありません。');
       status.textContent='昨日の5回分を反映しました。';
-      const count=document.getElementById('count');count.textContent=`聞いた回数 ${progress.count(scene)} / 100回`;count.hidden=false;
+      const count=document.getElementById('count');count.textContent=`聞いた回数 ${progress.count(scene)} / ${api.limit}回`;count.hidden=false;
       document.getElementById('movie').hidden=false;
       const saved=document.getElementById('saved');saved.href='/#saved-device='+encodeURIComponent(id);
       document.getElementById('keep').hidden=false;

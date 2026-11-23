@@ -18,7 +18,7 @@ function page(remote,{values=new Map(),cookie='',blocked=false}={}){
 test('reported five plays add to today once and keep the current learner identity',async()=>{
   const remote=server(),values=new Map([['phraseDeviceId',device],[api.key,JSON.stringify({[scene]:2})]]),first=page(remote,{values});
   await first.click();assert.equal(api.ledgerCounts(remote.records.get(device))[scene],7);
-  assert.equal(first.elements.count.textContent,'聞いた回数 7 / 100回');assert.equal(values.get('phraseDeviceId'),device);
+  assert.equal(first.elements.count.textContent,'聞いた回数 7 / 50回');assert.equal(values.get('phraseDeviceId'),device);
   assert.equal(first.elements.saved.href,'/#saved-device='+device);assert.equal(first.elements.movie.hidden,false);
   const reload=page(remote,{values});await reload.click();assert.equal(api.ledgerCounts(remote.records.get(device))[scene],7);
 });

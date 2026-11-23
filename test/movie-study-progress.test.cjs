@@ -5,13 +5,13 @@ const {createCloudStore,mergeLedger,ledgerCounts}=require('../public/movie-study
 function storage(){const values=new Map();return {getItem:k=>values.get(k)||null,setItem:(k,v)=>values.set(k,v)};}
 function sample(pass,time,options={}){pass.sample({time,wall:time*1000,playing:true,audible:true,active:true,seeking:false,rate:1,...options});}
 
-test('99 completed plays remain visible; the 100th is hidden and persists across reloads',()=>{
+test('49 completed plays remain visible; the 50th is hidden and persists across reloads',()=>{
   const data=storage(),first=createStore(data);
-  for(let n=0;n<99;n++)first.complete('eternal-train');
-  assert.equal(first.count('eternal-train'),99);assert.equal(first.hidden('eternal-train'),false);
-  const reload=createStore(data);assert.equal(reload.count('eternal-train'),99);
-  const last=reload.complete('eternal-train');assert.equal(last.count,100);assert.equal(last.hidden,true);
-  assert.equal(createStore(data).hidden('eternal-train'),true);assert.equal(reload.complete('eternal-train').count,100);
+  for(let n=0;n<49;n++)first.complete('eternal-train');
+  assert.equal(first.count('eternal-train'),49);assert.equal(first.hidden('eternal-train'),false);
+  const reload=createStore(data);assert.equal(reload.count('eternal-train'),49);
+  const last=reload.complete('eternal-train');assert.equal(last.count,50);assert.equal(last.hidden,true);
+  assert.equal(createStore(data).hidden('eternal-train'),true);assert.equal(reload.complete('eternal-train').count,50);
   assert.equal(reload.count('eternal-wait'),0);
 });
 test('a complete pass counts once and repeat starts a new independent pass',()=>{
@@ -110,4 +110,29 @@ test('unconfirmed empty history has loading/error states and retries restore the
   assert.equal(await recovered.sync(),false);assert.deepEqual(recovered.status(),{phase:'error',confirmed:false});
   server.online=true;await recovered.sync();assert.deepEqual(recovered.status(),{phase:'ready',confirmed:true});
   assert.equal(recovered.count('eternal-train'),7);
+});
+
+test('lowering the target keeps existing movie and shorts history above 50 intact',async()=>{
+  const data=storage();data.setItem(key,JSON.stringify({'eternal-train':75,'real-random-01':100,'real-street-01':49}));
+  const local=createStore(data);
+  assert.equal(local.count('eternal-train'),75);assert.equal(local.hidden('eternal-train'),true);
+  assert.equal(local.complete('eternal-train').count,75);
+  assert.equal(local.complete('real-random-01').count,100);
+  assert.equal(local.complete('real-street-01').count,50);
+  assert.equal(local.hidden('real-street-01'),true);
+  const server=cloud();const first=client(data,server);await first.sync();
+  assert.equal(first.count('eternal-train'),75);assert.equal(first.count('real-random-01'),100);
+  const restored=client(storage(),server,'movie-test-writer-0020');await restored.sync();
+  assert.equal(restored.count('eternal-train'),75);assert.equal(restored.hidden('real-random-01'),true);
+  assert.equal(restored.count('real-street-01'),50);
+});
+
+test('the 50th real conversation play persists after offline recovery without duplicate credit',async()=>{
+  const data=storage(),server=cloud();data.setItem(key,JSON.stringify({'real-daily-01':49}));
+  server.online=false;const first=client(data,server);
+  assert.equal(first.hidden('real-daily-01'),false);
+  assert.equal(first.complete('real-daily-01').count,50);assert.equal(first.hidden('real-daily-01'),true);
+  const recovered=client(data,server,'movie-test-writer-0021');server.online=true;
+  await recovered.sync();await first.sync();
+  assert.equal(recovered.count('real-daily-01'),50);assert.equal(server.counts()['real-daily-01'],50);
 });
