@@ -205,6 +205,8 @@ async function init() {
   const requestedSong = new URLSearchParams(window.location.search).get('song');
   const song = state.songs.find(item => item.id === requestedSong);
   if (window.location.hash === '#movie-player') showMovieStudy(new URLSearchParams(window.location.search).get('work'));
+  else if (window.location.hash === '#shorts-player') showRealShorts(new URLSearchParams(location.search).get('work'));
+  else if (window.location.hash === '#shorts') setHomeFilter('R');
   else if (window.location.hash === '#movies') setHomeFilter('M');
   else if (song) await showShadowing(song);
   else if (window.location.hash === '#challenge') await startConversationGame();
@@ -304,7 +306,7 @@ function applyGeneratedPhraseAudio() {
 // ROUTING
 // ============================================================
 function showHome() {
-  const returningFromMovie = state.view === 'movies';
+  const returningFromMovie = ['movies', 'shorts'].includes(state.view);
   window.MovieStudy?.close();
   window.ConversationGame?.close();
   stopAudio();
@@ -331,9 +333,19 @@ function showMovieStudy(work) {
   window.MovieStudy.open({ container: document.getElementById('app'), work, home: showHome });
 }
 
+function showRealShorts(work) {
+  if (!window.RealShorts) return;
+  window.ConversationGame?.close();
+  stopAudio(); stopPhrasePracticeAudio(); stopSongAudio(); stopDramaAudio(); stopQuoteCardAudio();
+  state.homeFilter = 'R'; state.view = 'shorts';
+  window.RealShorts.open({ container: document.getElementById('app'), work, home: showHome });
+}
+
 window.addEventListener('popstate', () => {
   if (location.hash === '#movie-player' && state.view !== 'movies') showMovieStudy(new URLSearchParams(location.search).get('work'));
-  else if (state.view === 'movies' && location.hash !== '#movie-player') showHome();
+  else if (location.hash === '#shorts-player' && state.view !== 'shorts') showRealShorts(new URLSearchParams(location.search).get('work'));
+  else if (['movies', 'shorts'].includes(state.view) && !['#movie-player', '#shorts-player'].includes(location.hash)) showHome();
+  else if (location.hash === '#shorts' && state.view === 'home') setHomeFilter('R');
   else if (location.hash === '#movies' && state.view === 'home') setHomeFilter('M');
 });
 
@@ -426,6 +438,7 @@ function renderHome() {
         <button class="home-tab ${state.homeFilter === 'C' ? 'active' : ''}" onclick="setHomeFilter('C')" aria-current="${state.homeFilter === 'C' ? 'page' : 'false'}">💬 <span>会話フレーズ</span></button>
         <button class="home-tab ${state.homeFilter === 'D' ? 'active' : ''}" onclick="setHomeFilter('D')" aria-current="${state.homeFilter === 'D' ? 'page' : 'false'}">🎬 <span>ドラマ</span></button>
         <button class="home-tab ${state.homeFilter === 'M' ? 'active' : ''}" onclick="setHomeFilter('M')" aria-current="${state.homeFilter === 'M' ? 'page' : 'false'}">🎞️ <span>映画</span></button>
+        <button class="home-tab ${state.homeFilter === 'R' ? 'active' : ''}" onclick="setHomeFilter('R')" aria-current="${state.homeFilter === 'R' ? 'page' : 'false'}">▶ <span>リアル</span></button>
       </nav>
     ${renderSongGrid()}
     </main>
@@ -444,7 +457,7 @@ function renderHome() {
 }
 
 function setHomeFilter(filter) {
-  if (!['A', 'C', 'D', 'M'].includes(filter)) filter = 'A';
+  if (!['A', 'C', 'D', 'M', 'R'].includes(filter)) filter = 'A';
   window.MovieStudy?.close();
   stopPhrasePracticeAudio();
   stopDramaAudio();
@@ -453,8 +466,8 @@ function setHomeFilter(filter) {
   state.homeFilter = filter;
   state.currentDramaId = null;
   state.currentEpisodeId = null;
-  if (filter === 'M' || location.hash === '#movies') {
-    const url = new URL(location.href); url.hash = filter === 'M' ? 'movies' : '';
+  if (['M', 'R'].includes(filter) || ['#movies', '#shorts'].includes(location.hash)) {
+    const url = new URL(location.href); url.hash = filter === 'M' ? 'movies' : filter === 'R' ? 'shorts' : '';
     history.replaceState(null, '', url);
   }
   renderHome();
@@ -610,6 +623,7 @@ async function checkExistingPreview() {
 }
 
 function renderSongGrid() {
+  if (state.homeFilter === 'R') return window.RealShorts?.library() || '';
   if (state.homeFilter === 'M') return window.MovieStudy?.library() || '';
   if (state.homeFilter === 'C') return renderPhraseGrid();
   if (state.homeFilter === 'D') return renderDramaGrid();

@@ -1,0 +1,2102 @@
+[
+  {
+    "id": "real-random-01",
+    "category": "random",
+    "work": "リアル英会話",
+    "displayWork": "ランダムチャット · anniemegles",
+    "title": "カメラを見ると笑顔になる？",
+    "description": "ランダムチャット",
+    "duration": 18.07,
+    "source": "https://www.youtube.com/shorts/H0C6D-w9G5E",
+    "sourceStart": 2.1,
+    "sourceEnd": 20.17,
+    "creator": "anniemegles",
+    "sourceVideoId": "H0C6D-w9G5E",
+    "bakedEnglish": true,
+    "video": "/real-shorts/media/real-random-01.mp4",
+    "poster": "/real-shorts/posters/real-random-01.jpg",
+    "captions": [
+      {
+        "id": "real-random-01-cue-001",
+        "start": 0.02,
+        "end": 1.82,
+        "speechText": "hello baby",
+        "language": "en",
+        "en": "hello baby",
+        "ja": "やあ、ベイビー！"
+      },
+      {
+        "id": "real-random-01-cue-002",
+        "start": 1.82,
+        "end": 3.12,
+        "speechText": "oh hi",
+        "language": "en",
+        "en": "oh hi",
+        "ja": "あ、こんにちは。"
+      },
+      {
+        "id": "real-random-01-cue-003",
+        "start": 3.12,
+        "end": 4.65,
+        "speechText": "hello there beautiful",
+        "language": "en",
+        "en": "hello there beautiful",
+        "ja": "やあ、美人さん。"
+      },
+      {
+        "id": "real-random-01-cue-004",
+        "start": 4.739,
+        "end": 5.819,
+        "speechText": "are you a camera",
+        "language": "en",
+        "en": "are you a camera",
+        "ja": "君ってカメラなの？"
+      },
+      {
+        "id": "real-random-01-cue-005",
+        "start": 5.819,
+        "end": 9.27,
+        "speechText": "because all I can do is smile when I see you",
+        "language": "en",
+        "en": "because all I can do is smile when I see you",
+        "ja": "だって君を見ると笑顔になるから。"
+      },
+      {
+        "id": "real-random-01-cue-006",
+        "start": 10.38,
+        "end": 11.43,
+        "speechText": "okay",
+        "language": "en",
+        "en": "okay",
+        "ja": "うん。"
+      }
+    ],
+    "subtitleVerification": "source captions reviewed against independent local acoustic recognition; editorial Japanese review; not full human listening"
+  },
+  {
+    "id": "real-random-02",
+    "category": "random",
+    "work": "リアル英会話",
+    "displayWork": "ランダムチャット · anniemegles",
+    "title": "口説き文句でまさかの逆転",
+    "description": "ランダムチャット",
+    "duration": 16.57,
+    "source": "https://www.youtube.com/shorts/gYIekhKVCu8",
+    "sourceStart": 1.28,
+    "sourceEnd": 17.85,
+    "creator": "anniemegles",
+    "sourceVideoId": "gYIekhKVCu8",
+    "bakedEnglish": true,
+    "video": "/real-shorts/media/real-random-02.mp4",
+    "poster": "/real-shorts/posters/real-random-02.jpg",
+    "captions": [
+      {
+        "id": "real-random-02-cue-001",
+        "start": 0.0,
+        "end": 2.76,
+        "speechText": "okay hey there beautiful how are you",
+        "language": "en",
+        "en": "okay hey there beautiful how are you",
+        "ja": "やあ、きれいだね。元気？"
+      },
+      {
+        "id": "real-random-02-cue-002",
+        "start": 2.76,
+        "end": 4.3,
+        "speechText": "you're so pretty",
+        "language": "en",
+        "en": "you're so pretty",
+        "ja": "すごくかわいいね。"
+      },
+      {
+        "id": "real-random-02-cue-003",
+        "start": 4.3,
+        "end": 6.519,
+        "speechText": "oh thank you",
+        "language": "en",
+        "en": "oh thank you",
+        "ja": "ありがとう！"
+      },
+      {
+        "id": "real-random-02-cue-004",
+        "start": 6.519,
+        "end": 7.42,
+        "speechText": "are you a charger",
+        "language": "en",
+        "en": "are you a charger",
+        "ja": "君って充電器？"
+      },
+      {
+        "id": "real-random-02-cue-005",
+        "start": 7.42,
+        "end": 9.61,
+        "speechText": "because I'm dying without you",
+        "language": "en",
+        "en": "because I'm dying without you",
+        "ja": "君がいないと生きていけない。"
+      },
+      {
+        "id": "real-random-02-cue-006",
+        "start": 9.76,
+        "end": 11.979,
+        "speechText": "oh um",
+        "language": "en",
+        "en": "oh um",
+        "ja": "あら…"
+      },
+      {
+        "id": "real-random-02-cue-007",
+        "start": 11.979,
+        "end": 13.12,
+        "speechText": "your eyes are so beautiful",
+        "language": "en",
+        "en": "your eyes are so beautiful",
+        "ja": "君の瞳、すごくきれい。"
+      },
+      {
+        "id": "real-random-02-cue-008",
+        "start": 13.12,
+        "end": 14.08,
+        "speechText": "I know I can't have them",
+        "language": "en",
+        "en": "I know I can't have them",
+        "ja": "私にはその瞳はもらえないけど、"
+      },
+      {
+        "id": "real-random-02-cue-009",
+        "start": 14.08,
+        "end": 15.79,
+        "speechText": "but our kids can",
+        "language": "en",
+        "en": "but our kids can",
+        "ja": "二人の子なら、もらえるよ。"
+      }
+    ],
+    "subtitleVerification": "source captions reviewed against independent local acoustic recognition; editorial Japanese review; not full human listening"
+  },
+  {
+    "id": "real-random-03",
+    "category": "random",
+    "work": "リアル英会話",
+    "displayWork": "ランダムチャット · anniemegles",
+    "title": "近くに空港はある？",
+    "description": "ランダムチャット",
+    "duration": 11.05,
+    "source": "https://www.youtube.com/shorts/b-ACBsEyh3E",
+    "sourceStart": 0,
+    "sourceEnd": 11.05,
+    "creator": "anniemegles",
+    "sourceVideoId": "b-ACBsEyh3E",
+    "bakedEnglish": true,
+    "video": "/real-shorts/media/real-random-03.mp4",
+    "poster": "/real-shorts/posters/real-random-03.jpg",
+    "captions": [
+      {
+        "id": "real-random-03-cue-001",
+        "start": 0.12,
+        "end": 1.979,
+        "speechText": "Hello there, beautiful.",
+        "language": "en",
+        "en": "Hello there, beautiful.",
+        "ja": "やあ、美人さん。"
+      },
+      {
+        "id": "real-random-03-cue-002",
+        "start": 1.979,
+        "end": 3.6,
+        "speechText": "is there an airport nearby",
+        "language": "en",
+        "en": "is there an airport nearby",
+        "ja": "近くに空港はある？"
+      },
+      {
+        "id": "real-random-03-cue-003",
+        "start": 3.6,
+        "end": 5.91,
+        "speechText": "or is my heart taking off",
+        "language": "en",
+        "en": "or is my heart taking off",
+        "ja": "それとも私の心が舞い上がってるのかな？"
+      }
+    ],
+    "subtitleVerification": "source captions reviewed against independent local acoustic recognition; editorial Japanese review; not full human listening"
+  },
+  {
+    "id": "real-random-04",
+    "category": "random",
+    "work": "リアル英会話",
+    "displayWork": "ランダムチャット · anniemegles",
+    "title": "名前を聞くはずが…",
+    "description": "ランダムチャット",
+    "duration": 9.12,
+    "source": "https://www.youtube.com/shorts/kl7J0Jk93N8",
+    "sourceStart": 1.65,
+    "sourceEnd": 10.77,
+    "creator": "anniemegles",
+    "sourceVideoId": "kl7J0Jk93N8",
+    "bakedEnglish": true,
+    "video": "/real-shorts/media/real-random-04.mp4",
+    "poster": "/real-shorts/posters/real-random-04.jpg",
+    "captions": [
+      {
+        "id": "real-random-04-cue-001",
+        "start": 0.09,
+        "end": 1.5,
+        "speechText": "hello there",
+        "language": "en",
+        "en": "hello there",
+        "ja": "やあ、こんにちは。"
+      },
+      {
+        "id": "real-random-04-cue-002",
+        "start": 1.85,
+        "end": 3.21,
+        "speechText": "you're so pretty",
+        "language": "en",
+        "en": "you're so pretty",
+        "ja": "すごくかわいいね。"
+      },
+      {
+        "id": "real-random-04-cue-003",
+        "start": 3.21,
+        "end": 3.689,
+        "speechText": "oh my god",
+        "language": "en",
+        "en": "oh my god",
+        "ja": "うわ、びっくり。"
+      },
+      {
+        "id": "real-random-04-cue-004",
+        "start": 3.689,
+        "end": 4.649,
+        "speechText": "oh thank you",
+        "language": "en",
+        "en": "oh thank you",
+        "ja": "ありがとう。"
+      },
+      {
+        "id": "real-random-04-cue-005",
+        "start": 4.649,
+        "end": 5.53,
+        "speechText": "do you have a name",
+        "language": "en",
+        "en": "do you have a name",
+        "ja": "名前、教えて？"
+      },
+      {
+        "id": "real-random-04-cue-006",
+        "start": 5.53,
+        "end": 6.65,
+        "speechText": "Okay I'll just call you mine",
+        "language": "en",
+        "en": "Okay I'll just call you mine",
+        "ja": "じゃあ、私の恋人って呼んじゃおう。"
+      },
+      {
+        "id": "real-random-04-cue-007",
+        "start": 7.93,
+        "end": 8.95,
+        "speechText": "Oh my god",
+        "language": "en",
+        "en": "Oh my god",
+        "ja": "うわ、やられた。"
+      }
+    ],
+    "subtitleVerification": "source captions reviewed against independent local acoustic recognition; editorial Japanese review; not full human listening"
+  },
+  {
+    "id": "real-random-05",
+    "category": "random",
+    "work": "リアル英会話",
+    "displayWork": "ランダムチャット · Ryan Hale",
+    "title": "名前よりも甘い呼び方",
+    "description": "ランダムチャット",
+    "duration": 23.39,
+    "source": "https://www.youtube.com/shorts/s4jW2_PVyoM",
+    "sourceStart": 0.5,
+    "sourceEnd": 23.89,
+    "creator": "Ryan Hale",
+    "sourceVideoId": "s4jW2_PVyoM",
+    "bakedEnglish": true,
+    "video": "/real-shorts/media/real-random-05.mp4",
+    "poster": "/real-shorts/posters/real-random-05.jpg",
+    "captions": [
+      {
+        "id": "real-random-05-cue-001",
+        "start": 0.94,
+        "end": 2.38,
+        "speechText": "I like you you're funny",
+        "language": "en",
+        "en": "I like you you're funny",
+        "ja": "あなた、面白くて好き。"
+      },
+      {
+        "id": "real-random-05-cue-002",
+        "start": 2.38,
+        "end": 3.58,
+        "speechText": "thank you I know",
+        "language": "en",
+        "en": "thank you I know",
+        "ja": "ありがとう。知ってる。"
+      },
+      {
+        "id": "real-random-05-cue-003",
+        "start": 3.58,
+        "end": 4.46,
+        "speechText": "you're so cute too",
+        "language": "en",
+        "en": "you're so cute too",
+        "ja": "あなたもすごくかわいいよ。"
+      },
+      {
+        "id": "real-random-05-cue-004",
+        "start": 4.46,
+        "end": 5.7,
+        "speechText": "what's your what's your name",
+        "language": "en",
+        "en": "what's your what's your name",
+        "ja": "名前は…名前は何ていうの？"
+      },
+      {
+        "id": "real-random-05-cue-005",
+        "start": 5.7,
+        "end": 7.74,
+        "speechText": "I'm sorry we haven't known each other",
+        "language": "en",
+        "en": "I'm sorry we haven't known each other",
+        "ja": "ごめん、まだお互いの名前も知らないね。"
+      },
+      {
+        "id": "real-random-05-cue-006",
+        "start": 7.74,
+        "end": 9.42,
+        "speechText": "that's like the next question unbelievable",
+        "language": "en",
+        "en": "that's like the next question unbelievable",
+        "ja": "名前は次の質問か。まったく。"
+      },
+      {
+        "id": "real-random-05-cue-007",
+        "start": 9.42,
+        "end": 10.86,
+        "speechText": "my name is Ryan",
+        "language": "en",
+        "en": "my name is Ryan",
+        "ja": "僕はライアン。"
+      },
+      {
+        "id": "real-random-05-cue-008",
+        "start": 10.86,
+        "end": 11.78,
+        "speechText": "what I'm sorry",
+        "language": "en",
+        "en": "what I'm sorry",
+        "ja": "え？ ごめん、何て？"
+      },
+      {
+        "id": "real-random-05-cue-009",
+        "start": 11.78,
+        "end": 13.94,
+        "speechText": "Ryan R Y A N",
+        "language": "en",
+        "en": "Ryan R Y A N",
+        "ja": "ライアン。Ｒ・Ｙ・Ａ・Ｎ。"
+      },
+      {
+        "id": "real-random-05-cue-010",
+        "start": 13.94,
+        "end": 16.15,
+        "speechText": "Ryan? Ryan.",
+        "language": "en",
+        "en": "Ryan? Ryan.",
+        "ja": "ライアン？"
+      },
+      {
+        "id": "real-random-05-cue-011",
+        "start": 16.3,
+        "end": 17.06,
+        "speechText": "oh that's so hard",
+        "language": "en",
+        "en": "oh that's so hard",
+        "ja": "ああ、難しいね。"
+      },
+      {
+        "id": "real-random-05-cue-012",
+        "start": 17.06,
+        "end": 18.54,
+        "speechText": "can I call you my baby instead",
+        "language": "en",
+        "en": "can I call you my baby instead",
+        "ja": "代わりにベイビーって呼んでいい？"
+      },
+      {
+        "id": "real-random-05-cue-013",
+        "start": 18.54,
+        "end": 20.19,
+        "speechText": "oh my gosh",
+        "language": "en",
+        "en": "oh my gosh",
+        "ja": "うわあ、やられた！"
+      },
+      {
+        "id": "real-random-05-cue-014",
+        "start": 20.22,
+        "end": 22.565,
+        "speechText": "what who taught you all these things",
+        "language": "en",
+        "en": "what who taught you all these things",
+        "ja": "そういうの、誰に教わったの？"
+      }
+    ],
+    "subtitleVerification": "source captions reviewed against independent local acoustic recognition; editorial Japanese review; not full human listening"
+  },
+  {
+    "id": "real-street-01",
+    "category": "street",
+    "work": "リアル英会話",
+    "displayWork": "街頭インタビュー · Easy English",
+    "title": "今日の調子はどう？",
+    "description": "街頭インタビュー",
+    "duration": 50.06,
+    "source": "https://www.youtube.com/shorts/w7jIxUkRiy0",
+    "sourceStart": 6.9,
+    "sourceEnd": 56.96,
+    "creator": "Easy English",
+    "sourceVideoId": "w7jIxUkRiy0",
+    "bakedEnglish": true,
+    "video": "/real-shorts/media/real-street-01.mp4",
+    "poster": "/real-shorts/posters/real-street-01.jpg",
+    "captions": [
+      {
+        "id": "real-street-01-cue-001",
+        "start": 0.459,
+        "end": 1.659,
+        "speechText": "hello oh hi hi",
+        "language": "en",
+        "en": "hello oh hi hi",
+        "ja": "こんにちは。あ、こんにちは。"
+      },
+      {
+        "id": "real-street-01-cue-002",
+        "start": 1.659,
+        "end": 3.58,
+        "speechText": "how's it going yeah not bad thanks",
+        "language": "en",
+        "en": "how's it going yeah not bad thanks",
+        "ja": "元気？ うん、元気。ありがとう。"
+      },
+      {
+        "id": "real-street-01-cue-003",
+        "start": 3.58,
+        "end": 5.18,
+        "speechText": "you okay yeah very good thank you",
+        "language": "en",
+        "en": "you okay yeah very good thank you",
+        "ja": "そっちは？ うん、すごく元気。"
+      },
+      {
+        "id": "real-street-01-cue-004",
+        "start": 5.18,
+        "end": 6.38,
+        "speechText": "how's your day going so far",
+        "language": "en",
+        "en": "how's your day going so far",
+        "ja": "今日は今のところどう？"
+      },
+      {
+        "id": "real-street-01-cue-005",
+        "start": 6.38,
+        "end": 7.26,
+        "speechText": "it's going really well actually",
+        "language": "en",
+        "en": "it's going really well actually",
+        "ja": "実は、すごくいい感じだよ。"
+      },
+      {
+        "id": "real-street-01-cue-006",
+        "start": 7.26,
+        "end": 9.66,
+        "speechText": "yeah just uh out doing a bit of shopping for Christmas",
+        "language": "en",
+        "en": "yeah just uh out doing a bit of shopping for Christmas",
+        "ja": "クリスマスの買い物をしてるんだ。"
+      },
+      {
+        "id": "real-street-01-cue-007",
+        "start": 9.66,
+        "end": 12.139,
+        "speechText": "but struggling with ideas at the moment",
+        "language": "en",
+        "en": "but struggling with ideas at the moment",
+        "ja": "でも何を買おうか悩んでてね。"
+      },
+      {
+        "id": "real-street-01-cue-008",
+        "start": 12.139,
+        "end": 13.18,
+        "speechText": "how about you how's your day",
+        "language": "en",
+        "en": "how about you how's your day",
+        "ja": "そっちは？ 今日はどう？"
+      },
+      {
+        "id": "real-street-01-cue-009",
+        "start": 13.18,
+        "end": 15.18,
+        "speechText": "Yeah, I'm good. It's getting a bit cold though, right?",
+        "language": "en",
+        "en": "Yeah, I'm good. It's getting a bit cold though, right?",
+        "ja": "元気だよ。でも寒くなってきたね。"
+      },
+      {
+        "id": "real-street-01-cue-010",
+        "start": 15.18,
+        "end": 16.78,
+        "speechText": "it's a bit chilly if you ask me",
+        "language": "en",
+        "en": "it's a bit chilly if you ask me",
+        "ja": "僕にはちょっと肌寒いな。"
+      },
+      {
+        "id": "real-street-01-cue-011",
+        "start": 16.78,
+        "end": 18.619,
+        "speechText": "yeah I might have to go home soon",
+        "language": "en",
+        "en": "yeah I might have to go home soon",
+        "ja": "そろそろ帰らないとね。"
+      },
+      {
+        "id": "real-street-01-cue-012",
+        "start": 18.619,
+        "end": 20.459,
+        "speechText": "uh so how's your day been today",
+        "language": "en",
+        "en": "uh so how's your day been today",
+        "ja": "今日はどんな一日だった？"
+      },
+      {
+        "id": "real-street-01-cue-013",
+        "start": 20.459,
+        "end": 23.1,
+        "speechText": "it's really good yeah my daughter's getting married on Sunday",
+        "language": "en",
+        "en": "it's really good yeah my daughter's getting married on Sunday",
+        "ja": "いい日よ。日曜に娘が結婚するの。"
+      },
+      {
+        "id": "real-street-01-cue-014",
+        "start": 23.1,
+        "end": 26.78,
+        "speechText": "so we're just getting the last few bits of stuff that we need",
+        "language": "en",
+        "en": "so we're just getting the last few bits of stuff that we need",
+        "ja": "必要なものを最後に少し買い足してるの。"
+      },
+      {
+        "id": "real-street-01-cue-015",
+        "start": 26.78,
+        "end": 31.26,
+        "speechText": "before we uh before we get ready for the final the final countdown",
+        "language": "en",
+        "en": "before we uh before we get ready for the final the final countdown",
+        "ja": "本番のカウントダウンに備えてね。"
+      },
+      {
+        "id": "real-street-01-cue-016",
+        "start": 31.26,
+        "end": 32.78,
+        "speechText": "how's your day going today",
+        "language": "en",
+        "en": "how's your day going today",
+        "ja": "今日はどんな感じ？"
+      },
+      {
+        "id": "real-street-01-cue-017",
+        "start": 32.78,
+        "end": 36.7,
+        "speechText": "Really well, actually. Got up very early. Way too early.",
+        "language": "en",
+        "en": "Really well, actually. Got up very early. Way too early.",
+        "ja": "すごくいいよ。朝は早すぎるくらい早起きで。"
+      },
+      {
+        "id": "real-street-01-cue-018",
+        "start": 36.7,
+        "end": 39.58,
+        "speechText": "um drove all the way down to Brighton in one go",
+        "language": "en",
+        "en": "um drove all the way down to Brighton in one go",
+        "ja": "ブライトンまで一気に運転してきたんだ。"
+      },
+      {
+        "id": "real-street-01-cue-019",
+        "start": 39.58,
+        "end": 40.7,
+        "speechText": "that was fun",
+        "language": "en",
+        "en": "that was fun",
+        "ja": "楽しかったよ。"
+      },
+      {
+        "id": "real-street-01-cue-020",
+        "start": 40.7,
+        "end": 43.339,
+        "speechText": "um and yeah we're just enjoying the sights enjoying the views",
+        "language": "en",
+        "en": "um and yeah we're just enjoying the sights enjoying the views",
+        "ja": "今は街並みや景色を楽しんでる。"
+      },
+      {
+        "id": "real-street-01-cue-021",
+        "start": 43.339,
+        "end": 45.1,
+        "speechText": "okay I guess where have you come from",
+        "language": "en",
+        "en": "okay I guess where have you come from",
+        "ja": "そう、どこから来たの？"
+      },
+      {
+        "id": "real-street-01-cue-022",
+        "start": 45.1,
+        "end": 47.02,
+        "speechText": "I'm from Sandwich in Kent",
+        "language": "en",
+        "en": "I'm from Sandwich in Kent",
+        "ja": "ケントのサンドウィッチから。"
+      },
+      {
+        "id": "real-street-01-cue-023",
+        "start": 47.02,
+        "end": 50.06,
+        "speechText": "I'm from Sandwich yeah so a long way a long way",
+        "language": "en",
+        "en": "I'm from Sandwich yeah so a long way a long way",
+        "ja": "サンドウィッチね。遠くからだね。"
+      }
+    ],
+    "subtitleVerification": "source captions reviewed against independent local acoustic recognition; editorial Japanese review; not full human listening"
+  },
+  {
+    "id": "real-street-02",
+    "category": "street",
+    "work": "リアル英会話",
+    "displayWork": "街頭インタビュー · Easy English",
+    "title": "今日は何をする予定？",
+    "description": "街頭インタビュー",
+    "duration": 48.16,
+    "source": "https://www.youtube.com/shorts/FboHs1Z8Pow",
+    "sourceStart": 0,
+    "sourceEnd": 48.16,
+    "creator": "Easy English",
+    "sourceVideoId": "FboHs1Z8Pow",
+    "bakedEnglish": true,
+    "video": "/real-shorts/media/real-street-02.mp4",
+    "poster": "/real-shorts/posters/real-street-02.jpg",
+    "captions": [
+      {
+        "id": "real-street-02-cue-001",
+        "start": 0.16,
+        "end": 3.29,
+        "speechText": "um what are you two up to today in Brighton",
+        "language": "en",
+        "en": "um what are you two up to today in Brighton",
+        "ja": "今日はブライトンで何をするの？"
+      },
+      {
+        "id": "real-street-02-cue-002",
+        "start": 4.0,
+        "end": 6.48,
+        "speechText": "uh we're just shopping mostly yeah",
+        "language": "en",
+        "en": "uh we're just shopping mostly yeah",
+        "ja": "主に買い物ですね。"
+      },
+      {
+        "id": "real-street-02-cue-003",
+        "start": 6.48,
+        "end": 11.2,
+        "speechText": "yeah just heading around um we're trying to find a thrift shop at the moment",
+        "language": "en",
+        "en": "yeah just heading around um we're trying to find a thrift shop at the moment",
+        "ja": "ぶらぶらしながら古着屋を探してます。"
+      },
+      {
+        "id": "real-street-02-cue-004",
+        "start": 11.2,
+        "end": 13.04,
+        "speechText": "we are just on our lunch break",
+        "language": "en",
+        "en": "we are just on our lunch break",
+        "ja": "今、昼休みなんです。"
+      },
+      {
+        "id": "real-street-02-cue-005",
+        "start": 13.04,
+        "end": 15.519,
+        "speechText": "we're going to get some sushi actually",
+        "language": "en",
+        "en": "we're going to get some sushi actually",
+        "ja": "これからお寿司を食べに行きます。"
+      },
+      {
+        "id": "real-street-02-cue-006",
+        "start": 15.519,
+        "end": 17.92,
+        "speechText": "can you tell me what you're up to today in Brighton",
+        "language": "en",
+        "en": "can you tell me what you're up to today in Brighton",
+        "ja": "今日ブライトンで何をするか教えて。"
+      },
+      {
+        "id": "real-street-02-cue-007",
+        "start": 17.92,
+        "end": 22.64,
+        "speechText": "um we are just wasting a day basically waiting for a ferry",
+        "language": "en",
+        "en": "um we are just wasting a day basically waiting for a ferry",
+        "ja": "フェリーを待って時間をつぶしてます。"
+      },
+      {
+        "id": "real-street-02-cue-008",
+        "start": 22.64,
+        "end": 26.16,
+        "speechText": "just wandering aimlessly around the lanes today",
+        "language": "en",
+        "en": "just wandering aimlessly around the lanes today",
+        "ja": "今日はレインズをあてもなく散策中。"
+      },
+      {
+        "id": "real-street-02-cue-009",
+        "start": 26.16,
+        "end": 28.64,
+        "speechText": "so we're here for the beach obviously",
+        "language": "en",
+        "en": "so we're here for the beach obviously",
+        "ja": "やっぱり海が目当てで来ました。"
+      },
+      {
+        "id": "real-street-02-cue-010",
+        "start": 28.64,
+        "end": 31.279,
+        "speechText": "I think everyone kind of comes to Brighton for the beach",
+        "language": "en",
+        "en": "I think everyone kind of comes to Brighton for the beach",
+        "ja": "みんな海目当てでブライトンに来ますよね。"
+      },
+      {
+        "id": "real-street-02-cue-011",
+        "start": 31.279,
+        "end": 34.32,
+        "speechText": "But we're en route now to an Italian restaurant.",
+        "language": "en",
+        "en": "But we're en route now to an Italian restaurant.",
+        "ja": "今はイタリアンのお店に向かってます。"
+      },
+      {
+        "id": "real-street-02-cue-012",
+        "start": 34.32,
+        "end": 38.079,
+        "speechText": "and we're here for a concert so we've stayed effectively for the weekend",
+        "language": "en",
+        "en": "and we're here for a concert so we've stayed effectively for the weekend",
+        "ja": "コンサートがあって、週末はこちらに滞在中。"
+      },
+      {
+        "id": "real-street-02-cue-013",
+        "start": 38.079,
+        "end": 42.0,
+        "speechText": "so we've come to Brighton today to visit with my niece and my sister",
+        "language": "en",
+        "en": "so we've come to Brighton today to visit with my niece and my sister",
+        "ja": "今日は姪やきょうだいとブライトンに来ました。"
+      },
+      {
+        "id": "real-street-02-cue-014",
+        "start": 42.0,
+        "end": 43.76,
+        "speechText": "who were over from France",
+        "language": "en",
+        "en": "who were over from France",
+        "ja": "フランスから遊びに来ているんです。"
+      },
+      {
+        "id": "real-street-02-cue-015",
+        "start": 43.76,
+        "end": 46.399,
+        "speechText": "we're going down the lanes doing some shopping",
+        "language": "en",
+        "en": "we're going down the lanes doing some shopping",
+        "ja": "レインズで買い物をして、"
+      },
+      {
+        "id": "real-street-02-cue-016",
+        "start": 46.399,
+        "end": 48.16,
+        "speechText": "now we're heading off to the beach",
+        "language": "en",
+        "en": "now we're heading off to the beach",
+        "ja": "これから海へ向かいます。"
+      }
+    ],
+    "subtitleVerification": "source captions reviewed against independent local acoustic recognition; editorial Japanese review; not full human listening"
+  },
+  {
+    "id": "real-street-03",
+    "category": "street",
+    "work": "リアル英会話",
+    "displayWork": "街頭インタビュー · Easy English",
+    "title": "日本と聞いて思い浮かぶもの",
+    "description": "街頭インタビュー",
+    "duration": 46.55,
+    "source": "https://www.youtube.com/shorts/4lvkzk4XxZw",
+    "sourceStart": 0,
+    "sourceEnd": 46.55,
+    "creator": "Easy English",
+    "sourceVideoId": "4lvkzk4XxZw",
+    "bakedEnglish": true,
+    "video": "/real-shorts/media/real-street-03.mp4",
+    "poster": "/real-shorts/posters/real-street-03.jpg",
+    "captions": [
+      {
+        "id": "real-street-03-cue-001",
+        "start": 0.24,
+        "end": 2.8,
+        "speechText": "what do you know about Japan",
+        "language": "en",
+        "en": "what do you know about Japan",
+        "ja": "日本について何を知ってる？"
+      },
+      {
+        "id": "real-street-03-cue-002",
+        "start": 2.8,
+        "end": 5.44,
+        "speechText": "Japanese culture Japanese people",
+        "language": "en",
+        "en": "Japanese culture Japanese people",
+        "ja": "日本の文化や日本人のこととか。"
+      },
+      {
+        "id": "real-street-03-cue-003",
+        "start": 5.44,
+        "end": 6.24,
+        "speechText": "not much",
+        "language": "en",
+        "en": "not much",
+        "ja": "あまり知らないな。"
+      },
+      {
+        "id": "real-street-03-cue-004",
+        "start": 6.24,
+        "end": 8.08,
+        "speechText": "Japanese culture is absolutely beautiful",
+        "language": "en",
+        "en": "Japanese culture is absolutely beautiful",
+        "ja": "日本文化は本当に美しいよね。"
+      },
+      {
+        "id": "real-street-03-cue-005",
+        "start": 8.08,
+        "end": 9.84,
+        "speechText": "I really want to take it on as a language",
+        "language": "en",
+        "en": "I really want to take it on as a language",
+        "ja": "日本語を学んでみたい。"
+      },
+      {
+        "id": "real-street-03-cue-006",
+        "start": 9.84,
+        "end": 11.679,
+        "speechText": "yeah I was actually considering learning it",
+        "language": "en",
+        "en": "yeah I was actually considering learning it",
+        "ja": "うん、実は勉強しようか考えてた。"
+      },
+      {
+        "id": "real-street-03-cue-007",
+        "start": 11.679,
+        "end": 15.759,
+        "speechText": "I know more about Japanese culture than the average person would know",
+        "language": "en",
+        "en": "I know more about Japanese culture than the average person would know",
+        "ja": "日本文化は普通の人より詳しいと思う。"
+      },
+      {
+        "id": "real-street-03-cue-008",
+        "start": 15.759,
+        "end": 18.16,
+        "speechText": "my ex is Japanese",
+        "language": "en",
+        "en": "my ex is Japanese",
+        "ja": "前の恋人が日本人でね。"
+      },
+      {
+        "id": "real-street-03-cue-009",
+        "start": 18.16,
+        "end": 20.97,
+        "speechText": "I think it seems quite eccentric.",
+        "language": "en",
+        "en": "I think it seems quite eccentric.",
+        "ja": "かなり独特な国だと思う。"
+      },
+      {
+        "id": "real-street-03-cue-010",
+        "start": 21.439,
+        "end": 24.16,
+        "speechText": "just the culture like how they bow and stuff",
+        "language": "en",
+        "en": "just the culture like how they bow and stuff",
+        "ja": "お辞儀とか、そういう文化がね。"
+      },
+      {
+        "id": "real-street-03-cue-011",
+        "start": 24.16,
+        "end": 27.76,
+        "speechText": "and uh one of the greatest creations in the world Pokémon",
+        "language": "en",
+        "en": "and uh one of the greatest creations in the world Pokémon",
+        "ja": "あと、世界最高の発明の一つ、ポケモン！"
+      },
+      {
+        "id": "real-street-03-cue-012",
+        "start": 27.76,
+        "end": 31.039,
+        "speechText": "so that's uh one of my biggest hobbies of all time",
+        "language": "en",
+        "en": "so that's uh one of my biggest hobbies of all time",
+        "ja": "僕がずっと夢中になってる趣味なんだ。"
+      },
+      {
+        "id": "real-street-03-cue-013",
+        "start": 31.039,
+        "end": 34.64,
+        "speechText": "without sounding too much like I have no one in my life",
+        "language": "en",
+        "en": "without sounding too much like I have no one in my life",
+        "ja": "寂しい人みたいに聞こえちゃうけど。"
+      },
+      {
+        "id": "real-street-03-cue-014",
+        "start": 34.64,
+        "end": 40.32,
+        "speechText": "uh the idea of the language at least from what I understand",
+        "language": "en",
+        "en": "uh the idea of the language at least from what I understand",
+        "ja": "日本語って、僕の理解では、"
+      },
+      {
+        "id": "real-street-03-cue-015",
+        "start": 40.32,
+        "end": 42.559,
+        "speechText": "is it's it's not based on what you're saying",
+        "language": "en",
+        "en": "is it's it's not based on what you're saying",
+        "ja": "何を言うかというより、"
+      },
+      {
+        "id": "real-street-03-cue-016",
+        "start": 42.559,
+        "end": 44.16,
+        "speechText": "it's the way you're saying it",
+        "language": "en",
+        "en": "it's the way you're saying it",
+        "ja": "どう言うかが大事なんだよね。"
+      },
+      {
+        "id": "real-street-03-cue-017",
+        "start": 44.16,
+        "end": 46.55,
+        "speechText": "tea ceremonies is the first thing that springs to mind",
+        "language": "en",
+        "en": "tea ceremonies is the first thing that springs to mind",
+        "ja": "最初に思い浮かぶのは茶道かな。"
+      }
+    ],
+    "subtitleVerification": "source captions reviewed against independent local acoustic recognition; editorial Japanese review; not full human listening"
+  },
+  {
+    "id": "real-street-04",
+    "category": "street",
+    "work": "リアル英会話",
+    "displayWork": "街頭インタビュー · Easy English",
+    "title": "今の仕事を始めたきっかけ",
+    "description": "街頭インタビュー",
+    "duration": 45.92,
+    "source": "https://www.youtube.com/shorts/Nm_THgiWr_Q",
+    "sourceStart": 0,
+    "sourceEnd": 45.92,
+    "creator": "Easy English",
+    "sourceVideoId": "Nm_THgiWr_Q",
+    "bakedEnglish": true,
+    "video": "/real-shorts/media/real-street-04.mp4",
+    "poster": "/real-shorts/posters/real-street-04.jpg",
+    "captions": [
+      {
+        "id": "real-street-04-cue-001",
+        "start": 0.08,
+        "end": 2.96,
+        "speechText": "how did both of you fall into that line of work",
+        "language": "en",
+        "en": "how did both of you fall into that line of work",
+        "ja": "二人はどうして今の仕事を始めたの？"
+      },
+      {
+        "id": "real-street-04-cue-002",
+        "start": 2.96,
+        "end": 4.96,
+        "speechText": "is it something you wanted to do did it just happen",
+        "language": "en",
+        "en": "is it something you wanted to do did it just happen",
+        "ja": "やりたかった仕事？ それとも偶然？"
+      },
+      {
+        "id": "real-street-04-cue-003",
+        "start": 4.96,
+        "end": 6.24,
+        "speechText": "Did you train for it?",
+        "language": "en",
+        "en": "Did you train for it?",
+        "ja": "そのために専門の訓練を受けたの？"
+      },
+      {
+        "id": "real-street-04-cue-004",
+        "start": 6.24,
+        "end": 10.0,
+        "speechText": "I've always wanted to be that tattoo artist really since I was a kid",
+        "language": "en",
+        "en": "I've always wanted to be that tattoo artist really since I was a kid",
+        "ja": "子どもの頃からタトゥーの仕事がしたくて。"
+      },
+      {
+        "id": "real-street-04-cue-005",
+        "start": 10.0,
+        "end": 13.2,
+        "speechText": "just drawing non stop just drawing cartoons just loving it",
+        "language": "en",
+        "en": "just drawing non stop just drawing cartoons just loving it",
+        "ja": "いつも絵や漫画を描いてて、大好きだった。"
+      },
+      {
+        "id": "real-street-04-cue-006",
+        "start": 13.2,
+        "end": 16.08,
+        "speechText": "and then I thought if I can make a career out of it why not",
+        "language": "en",
+        "en": "and then I thought if I can make a career out of it why not",
+        "ja": "これを仕事にできるなら、やろうと思って。"
+      },
+      {
+        "id": "real-street-04-cue-007",
+        "start": 16.08,
+        "end": 18.4,
+        "speechText": "that's great and how long have you been a posty for",
+        "language": "en",
+        "en": "that's great and how long have you been a posty for",
+        "ja": "いいね。郵便の仕事は何年くらい？"
+      },
+      {
+        "id": "real-street-04-cue-008",
+        "start": 18.4,
+        "end": 21.039,
+        "speechText": "I've been doing it for like 10 years now for my sins",
+        "language": "en",
+        "en": "I've been doing it for like 10 years now for my sins",
+        "ja": "もう10年くらい。物好きでしょ。"
+      },
+      {
+        "id": "real-street-04-cue-009",
+        "start": 21.039,
+        "end": 26.24,
+        "speechText": "um yeah and how did you um how did you get into that line of work",
+        "language": "en",
+        "en": "um yeah and how did you um how did you get into that line of work",
+        "ja": "どういうきっかけでその仕事に？"
+      },
+      {
+        "id": "real-street-04-cue-010",
+        "start": 26.24,
+        "end": 28.4,
+        "speechText": "um I just wanted something part time",
+        "language": "en",
+        "en": "um I just wanted something part time",
+        "ja": "最初はパートの仕事を探してて。"
+      },
+      {
+        "id": "real-street-04-cue-011",
+        "start": 28.4,
+        "end": 31.599,
+        "speechText": "so um cuz I was trying to do art and design and music",
+        "language": "en",
+        "en": "so um cuz I was trying to do art and design and music",
+        "ja": "アートやデザイン、音楽をやってたけど、"
+      },
+      {
+        "id": "real-street-04-cue-012",
+        "start": 31.599,
+        "end": 34.32,
+        "speechText": "and I I didn't really know where I was going with all that",
+        "language": "en",
+        "en": "and I I didn't really know where I was going with all that",
+        "ja": "どこへ向かいたいのか分からなかったの。"
+      },
+      {
+        "id": "real-street-04-cue-013",
+        "start": 34.32,
+        "end": 35.92,
+        "speechText": "so I wanted something a little bit stable",
+        "language": "en",
+        "en": "so I wanted something a little bit stable",
+        "ja": "だから少し安定した仕事が欲しくて。"
+      },
+      {
+        "id": "real-street-04-cue-014",
+        "start": 35.92,
+        "end": 39.76,
+        "speechText": "to just keep me going afloat while I was uh working towards all that",
+        "language": "en",
+        "en": "to just keep me going afloat while I was uh working towards all that",
+        "ja": "やりたいことを目指しつつ生活できるように。"
+      },
+      {
+        "id": "real-street-04-cue-015",
+        "start": 39.76,
+        "end": 42.96,
+        "speechText": "and um yeah it was meant to be a stop gap",
+        "language": "en",
+        "en": "and um yeah it was meant to be a stop gap",
+        "ja": "つなぎのつもりだったけど、"
+      },
+      {
+        "id": "real-street-04-cue-016",
+        "start": 42.96,
+        "end": 45.92,
+        "speechText": "but I I quite enjoy it and it's kept me going so yeah",
+        "language": "en",
+        "en": "but I I quite enjoy it and it's kept me going so yeah",
+        "ja": "結構楽しくて、今も続けてるの。"
+      }
+    ],
+    "subtitleVerification": "source captions reviewed against independent local acoustic recognition; editorial Japanese review; not full human listening"
+  },
+  {
+    "id": "real-street-05",
+    "category": "street",
+    "work": "リアル英会話",
+    "displayWork": "街頭インタビュー · Easy English",
+    "title": "好きなクリスマス映画は？",
+    "description": "街頭インタビュー",
+    "duration": 61.61,
+    "source": "https://www.youtube.com/shorts/R4aRiMwGJVg",
+    "sourceStart": 0,
+    "sourceEnd": 61.61,
+    "creator": "Easy English",
+    "sourceVideoId": "R4aRiMwGJVg",
+    "bakedEnglish": true,
+    "video": "/real-shorts/media/real-street-05.mp4",
+    "poster": "/real-shorts/posters/real-street-05.jpg",
+    "captions": [
+      {
+        "id": "real-street-05-cue-001",
+        "start": 0.16,
+        "end": 2.159,
+        "speechText": "what is your favorite Christmas movie",
+        "language": "en",
+        "en": "what is your favorite Christmas movie",
+        "ja": "好きなクリスマス映画は？"
+      },
+      {
+        "id": "real-street-05-cue-002",
+        "start": 2.159,
+        "end": 2.8,
+        "speechText": "I'll give you two",
+        "language": "en",
+        "en": "I'll give you two",
+        "ja": "二つ挙げるね。"
+      },
+      {
+        "id": "real-street-05-cue-003",
+        "start": 2.8,
+        "end": 4.319,
+        "speechText": "you got the actual Christmas one which is The Grinch",
+        "language": "en",
+        "en": "you got the actual Christmas one which is The Grinch",
+        "ja": "王道のクリスマス映画なら『グリンチ』。"
+      },
+      {
+        "id": "real-street-05-cue-004",
+        "start": 4.319,
+        "end": 6.65,
+        "speechText": "and the controversial one which is Die Hard",
+        "language": "en",
+        "en": "and the controversial one which is Die Hard",
+        "ja": "意見が分かれるところだと『ダイ・ハード』。"
+      },
+      {
+        "id": "real-street-05-cue-005",
+        "start": 7.359,
+        "end": 8.409,
+        "speechText": "Elf",
+        "language": "en",
+        "en": "Elf",
+        "ja": "『エルフ』。"
+      },
+      {
+        "id": "real-street-05-cue-006",
+        "start": 8.48,
+        "end": 9.599,
+        "speechText": "uh Die Hard",
+        "language": "en",
+        "en": "uh Die Hard",
+        "ja": "『ダイ・ハード』。"
+      },
+      {
+        "id": "real-street-05-cue-007",
+        "start": 9.599,
+        "end": 11.519,
+        "speechText": "I can't I can't remember what it's called",
+        "language": "en",
+        "en": "I can't I can't remember what it's called",
+        "ja": "タイトルが思い出せない…。"
+      },
+      {
+        "id": "real-street-05-cue-008",
+        "start": 11.519,
+        "end": 13.679,
+        "speechText": "my my brain is just blank",
+        "language": "en",
+        "en": "my my brain is just blank",
+        "ja": "頭が真っ白になっちゃった。"
+      },
+      {
+        "id": "real-street-05-cue-009",
+        "start": 13.679,
+        "end": 15.12,
+        "speechText": "who's in it maybe I can help you",
+        "language": "en",
+        "en": "who's in it maybe I can help you",
+        "ja": "誰が出てる？ 分かるかもしれない。"
+      },
+      {
+        "id": "real-street-05-cue-010",
+        "start": 15.12,
+        "end": 17.92,
+        "speechText": "um Nightmare Before Christmas easily",
+        "language": "en",
+        "en": "um Nightmare Before Christmas easily",
+        "ja": "断然『ナイトメアー・ビフォア・クリスマス』。"
+      },
+      {
+        "id": "real-street-05-cue-011",
+        "start": 17.92,
+        "end": 20.08,
+        "speechText": "I Halloween's very much like my forte",
+        "language": "en",
+        "en": "I Halloween's very much like my forte",
+        "ja": "ハロウィン系が大好きだから。"
+      },
+      {
+        "id": "real-street-05-cue-012",
+        "start": 20.08,
+        "end": 24.56,
+        "speechText": "so it it's it blends in like festiveness but it's still spooky",
+        "language": "en",
+        "en": "so it it's it blends in like festiveness but it's still spooky",
+        "ja": "お祝いっぽいのに、ちゃんと不気味でしょ。"
+      },
+      {
+        "id": "real-street-05-cue-013",
+        "start": 24.56,
+        "end": 26.64,
+        "speechText": "oh my gosh I don't really have one",
+        "language": "en",
+        "en": "oh my gosh I don't really have one",
+        "ja": "うーん、特に好きな作品はないかな。"
+      },
+      {
+        "id": "real-street-05-cue-014",
+        "start": 26.64,
+        "end": 27.119,
+        "speechText": "come on",
+        "language": "en",
+        "en": "come on",
+        "ja": "えー、何かあるでしょ。"
+      },
+      {
+        "id": "real-street-05-cue-015",
+        "start": 27.119,
+        "end": 28.8,
+        "speechText": "maybe Home Alone but I've never seen it",
+        "language": "en",
+        "en": "maybe Home Alone but I've never seen it",
+        "ja": "『ホーム・アローン』かな。観てないけど。"
+      },
+      {
+        "id": "real-street-05-cue-016",
+        "start": 28.8,
+        "end": 32.96,
+        "speechText": "we always watch Love actually like always every Christmas",
+        "language": "en",
+        "en": "we always watch Love actually like always every Christmas",
+        "ja": "毎年必ず『ラブ・アクチュアリー』を観るよ。"
+      },
+      {
+        "id": "real-street-05-cue-017",
+        "start": 32.96,
+        "end": 37.69,
+        "speechText": "it's like a animated movie and they're on a train",
+        "language": "en",
+        "en": "it's like a animated movie and they're on a train",
+        "ja": "アニメ映画で、列車に乗ってるの。"
+      },
+      {
+        "id": "real-street-05-cue-018",
+        "start": 37.76,
+        "end": 39.129,
+        "speechText": "on a train",
+        "language": "en",
+        "en": "on a train",
+        "ja": "列車に乗ってる？"
+      },
+      {
+        "id": "real-street-05-cue-019",
+        "start": 39.36,
+        "end": 41.28,
+        "speechText": "um it's a Wonderful Life",
+        "language": "en",
+        "en": "um it's a Wonderful Life",
+        "ja": "『素晴らしき哉、人生！』。"
+      },
+      {
+        "id": "real-street-05-cue-020",
+        "start": 41.28,
+        "end": 44.8,
+        "speechText": "a Wonderful Life I think that's got to be the best",
+        "language": "en",
+        "en": "a Wonderful Life I think that's got to be the best",
+        "ja": "あれが一番だと思う。"
+      },
+      {
+        "id": "real-street-05-cue-021",
+        "start": 44.8,
+        "end": 46.48,
+        "speechText": "it's got to be it's a classic yeah",
+        "language": "en",
+        "en": "it's got to be it's a classic yeah",
+        "ja": "そうだよね。名作だもの。"
+      },
+      {
+        "id": "real-street-05-cue-022",
+        "start": 46.48,
+        "end": 50.32,
+        "speechText": "I love Klaus. It's like an animation. It's like Disney.",
+        "language": "en",
+        "en": "I love Klaus. It's like an animation. It's like Disney.",
+        "ja": "『クロース』が好き。ディズニーみたいなアニメ。"
+      },
+      {
+        "id": "real-street-05-cue-023",
+        "start": 50.32,
+        "end": 51.6,
+        "speechText": "you you're going to hate this",
+        "language": "en",
+        "en": "you you're going to hate this",
+        "ja": "これ言うと嫌われるかも。"
+      },
+      {
+        "id": "real-street-05-cue-024",
+        "start": 51.6,
+        "end": 55.21,
+        "speechText": "Is it safe to say Elf, actually?",
+        "language": "en",
+        "en": "Is it safe to say Elf, actually?",
+        "ja": "『エルフ』って言ってもいいかな。"
+      },
+      {
+        "id": "real-street-05-cue-025",
+        "start": 56.32,
+        "end": 57.199,
+        "speechText": "Express or something",
+        "language": "en",
+        "en": "Express or something",
+        "ja": "何とかエクスプレス？"
+      },
+      {
+        "id": "real-street-05-cue-026",
+        "start": 57.199,
+        "end": 59.21,
+        "speechText": "Yes! The Polar Express!",
+        "language": "en",
+        "en": "Yes! The Polar Express!",
+        "ja": "そう！ ポーラー・エクスプレス！"
+      }
+    ],
+    "subtitleVerification": "source captions reviewed against independent local acoustic recognition; editorial Japanese review; not full human listening"
+  },
+  {
+    "id": "real-daily-01",
+    "category": "daily",
+    "work": "リアル英会話",
+    "displayWork": "日常の掛け合い · Sam and Monica",
+    "title": "探していた財布は目の前に",
+    "description": "日常の掛け合い",
+    "duration": 26.703,
+    "source": "https://www.youtube.com/shorts/BeZxhW6MsQY",
+    "sourceStart": 0,
+    "sourceEnd": 26.7029375,
+    "creator": "Sam and Monica",
+    "sourceVideoId": "BeZxhW6MsQY",
+    "bakedEnglish": true,
+    "video": "/real-shorts/media/real-daily-01.mp4",
+    "poster": "/real-shorts/posters/real-daily-01.jpg",
+    "captions": [
+      {
+        "id": "real-daily-01-cue-001",
+        "start": 0,
+        "end": 3.32,
+        "speechText": "for 20 minutes my husband has been looking for his wallet",
+        "language": "en",
+        "en": "for 20 minutes my husband has been looking for his wallet",
+        "ja": "夫が20分も財布を探してたの。"
+      },
+      {
+        "id": "real-daily-01-cue-002",
+        "start": 3.32,
+        "end": 5.97,
+        "speechText": "I asked him if he checked my bag and he said yes",
+        "language": "en",
+        "en": "I asked him if he checked my bag and he said yes",
+        "ja": "私のバッグは見た？って聞いたら「見た」って。"
+      },
+      {
+        "id": "real-daily-01-cue-003",
+        "start": 6.08,
+        "end": 6.76,
+        "speechText": "it was not in there",
+        "language": "en",
+        "en": "it was not in there",
+        "ja": "「そこにはなかった」って。"
+      },
+      {
+        "id": "real-daily-01-cue-004",
+        "start": 6.76,
+        "end": 8.36,
+        "speechText": "I did I looked",
+        "language": "en",
+        "en": "I did I looked",
+        "ja": "見たよ。ちゃんと探した。"
+      },
+      {
+        "id": "real-daily-01-cue-005",
+        "start": 8.36,
+        "end": 9.92,
+        "speechText": "I just opened my bag",
+        "language": "en",
+        "en": "I just opened my bag",
+        "ja": "で、私がバッグを開けたら、"
+      },
+      {
+        "id": "real-daily-01-cue-006",
+        "start": 9.92,
+        "end": 12.17,
+        "speechText": "first thing I see in the bag",
+        "language": "en",
+        "en": "first thing I see in the bag",
+        "ja": "真っ先に財布が見えたの。"
+      },
+      {
+        "id": "real-daily-01-cue-007",
+        "start": 12.52,
+        "end": 14.48,
+        "speechText": "I literally checked the entire house",
+        "language": "en",
+        "en": "I literally checked the entire house",
+        "ja": "本当に家中探したんだよ。"
+      },
+      {
+        "id": "real-daily-01-cue-008",
+        "start": 14.48,
+        "end": 16.73,
+        "speechText": "I even started going through my laundry",
+        "language": "en",
+        "en": "I even started going through my laundry",
+        "ja": "洗濯物まで調べたんだから。"
+      },
+      {
+        "id": "real-daily-01-cue-009",
+        "start": 17.84,
+        "end": 19.81,
+        "speechText": "I swear I looked",
+        "language": "en",
+        "en": "I swear I looked",
+        "ja": "本当に探したって。"
+      },
+      {
+        "id": "real-daily-01-cue-010",
+        "start": 19.92,
+        "end": 21.92,
+        "speechText": "like really I ruffled stuff around and everything",
+        "language": "en",
+        "en": "like really I ruffled stuff around and everything",
+        "ja": "中の物もガサガサ探したのに。"
+      },
+      {
+        "id": "real-daily-01-cue-011",
+        "start": 21.92,
+        "end": 25.24,
+        "speechText": "I was like I saw your wallet and I was like nah I don't see my wallet there",
+        "language": "en",
+        "en": "I was like I saw your wallet and I was like nah I don't see my wallet there",
+        "ja": "財布が見えても「いや、ないな」って。"
+      },
+      {
+        "id": "real-daily-01-cue-012",
+        "start": 25.24,
+        "end": 26.703,
+        "speechText": "this is a weekly occurrence",
+        "language": "en",
+        "en": "this is a weekly occurrence",
+        "ja": "これ、毎週あるの。"
+      }
+    ],
+    "subtitleVerification": "source captions reviewed against independent local acoustic recognition; editorial Japanese review; not full human listening"
+  },
+  {
+    "id": "real-daily-02",
+    "category": "daily",
+    "work": "リアル英会話",
+    "displayWork": "日常の掛け合い · Sam and Monica",
+    "title": "赤ちゃんに靴は必要？",
+    "description": "日常の掛け合い",
+    "duration": 23.266,
+    "source": "https://www.youtube.com/shorts/xu7s9nlnJic",
+    "sourceStart": 0,
+    "sourceEnd": 23.266,
+    "creator": "Sam and Monica",
+    "sourceVideoId": "xu7s9nlnJic",
+    "bakedEnglish": true,
+    "video": "/real-shorts/media/real-daily-02.mp4",
+    "poster": "/real-shorts/posters/real-daily-02.jpg",
+    "captions": [
+      {
+        "id": "real-daily-02-cue-001",
+        "start": 0,
+        "end": 3.16,
+        "speechText": "so now that Bella has officially begun walking",
+        "language": "en",
+        "en": "so now that Bella has officially begun walking",
+        "ja": "ベラがついに歩き始めたから、"
+      },
+      {
+        "id": "real-daily-02-cue-002",
+        "start": 3.16,
+        "end": 5.379,
+        "speechText": "it's time to buy her shoes and my husband",
+        "language": "en",
+        "en": "it's time to buy her shoes and my husband",
+        "ja": "靴を買う頃なのに、夫ときたら…。"
+      },
+      {
+        "id": "real-daily-02-cue-003",
+        "start": 5.6,
+        "end": 8.28,
+        "speechText": "I'm carrying her everywhere for the rest of her life",
+        "language": "en",
+        "en": "I'm carrying her everywhere for the rest of her life",
+        "ja": "一生、どこへでも僕が抱っこするよ。"
+      },
+      {
+        "id": "real-daily-02-cue-004",
+        "start": 8.28,
+        "end": 10.52,
+        "speechText": "she's not growing up she's my baby",
+        "language": "en",
+        "en": "she's not growing up she's my baby",
+        "ja": "大きくならなくていい。僕の赤ちゃんだ。"
+      },
+      {
+        "id": "real-daily-02-cue-005",
+        "start": 10.52,
+        "end": 11.68,
+        "speechText": "she needs shoes",
+        "language": "en",
+        "en": "she needs shoes",
+        "ja": "でも靴は必要よ。"
+      },
+      {
+        "id": "real-daily-02-cue-006",
+        "start": 11.68,
+        "end": 14.05,
+        "speechText": "she doesn't need shoes she has these",
+        "language": "en",
+        "en": "she doesn't need shoes she has these",
+        "ja": "靴はいらない。僕の腕があるから。"
+      },
+      {
+        "id": "real-daily-02-cue-007",
+        "start": 14.4,
+        "end": 15.96,
+        "speechText": "she is never going to walk",
+        "language": "en",
+        "en": "she is never going to walk",
+        "ja": "歩かせたりしないぞ。"
+      },
+      {
+        "id": "real-daily-02-cue-008",
+        "start": 15.96,
+        "end": 17.24,
+        "speechText": "I'm going to",
+        "language": "en",
+        "en": "I'm going to",
+        "ja": "僕がずっと…"
+      },
+      {
+        "id": "real-daily-02-cue-009",
+        "start": 17.24,
+        "end": 18.72,
+        "speechText": "keep her glued to your hip forever",
+        "language": "en",
+        "en": "keep her glued to your hip forever",
+        "ja": "ずっと抱っこしてるつもり？"
+      },
+      {
+        "id": "real-daily-02-cue-010",
+        "start": 18.72,
+        "end": 19.24,
+        "speechText": "yes",
+        "language": "en",
+        "en": "yes",
+        "ja": "そう。"
+      },
+      {
+        "id": "real-daily-02-cue-011",
+        "start": 19.24,
+        "end": 20.68,
+        "speechText": "even when she's 40 years old",
+        "language": "en",
+        "en": "even when she's 40 years old",
+        "ja": "この子が40歳になっても、"
+      },
+      {
+        "id": "real-daily-02-cue-012",
+        "start": 20.68,
+        "end": 23.266,
+        "speechText": "I will continue working out and I will carry her everywhere",
+        "language": "en",
+        "en": "I will continue working out and I will carry her everywhere",
+        "ja": "鍛え続けて、どこへでも抱っこするよ。"
+      }
+    ],
+    "subtitleVerification": "source captions reviewed against independent local acoustic recognition; editorial Japanese review; not full human listening"
+  },
+  {
+    "id": "real-daily-03",
+    "category": "daily",
+    "work": "リアル英会話",
+    "displayWork": "日常の掛け合い · Sam and Monica",
+    "title": "夫を思いきり褒めてみたら",
+    "description": "日常の掛け合い",
+    "duration": 28.165,
+    "source": "https://www.youtube.com/shorts/3g1JhIGO9bQ",
+    "sourceStart": 0,
+    "sourceEnd": 28.165,
+    "creator": "Sam and Monica",
+    "sourceVideoId": "3g1JhIGO9bQ",
+    "bakedEnglish": true,
+    "video": "/real-shorts/media/real-daily-03.mp4",
+    "poster": "/real-shorts/posters/real-daily-03.jpg",
+    "captions": [
+      {
+        "id": "real-daily-03-cue-001",
+        "start": 0,
+        "end": 5.57,
+        "speechText": "you look absolutely gorgeous",
+        "language": "en",
+        "en": "you look absolutely gorgeous",
+        "ja": "すごくかっこいいね。"
+      },
+      {
+        "id": "real-daily-03-cue-002",
+        "start": 7.84,
+        "end": 10.36,
+        "speechText": "absolutely gorgeous",
+        "language": "en",
+        "en": "absolutely gorgeous",
+        "ja": "本当にすてき。"
+      },
+      {
+        "id": "real-daily-03-cue-003",
+        "start": 10.36,
+        "end": 12.36,
+        "speechText": "I did have a haircut today and I worked out",
+        "language": "en",
+        "en": "I did have a haircut today and I worked out",
+        "ja": "今日は髪も切ったし、筋トレもしたからね。"
+      },
+      {
+        "id": "real-daily-03-cue-004",
+        "start": 12.36,
+        "end": 14.28,
+        "speechText": "I know I can tell you worked out",
+        "language": "en",
+        "en": "I know I can tell you worked out",
+        "ja": "分かる。筋トレしたの伝わるよ。"
+      },
+      {
+        "id": "real-daily-03-cue-005",
+        "start": 14.28,
+        "end": 16.45,
+        "speechText": "because those muscles are muscling",
+        "language": "en",
+        "en": "because those muscles are muscling",
+        "ja": "その筋肉、すごくたくましいもの。"
+      },
+      {
+        "id": "real-daily-03-cue-006",
+        "start": 16.76,
+        "end": 17.28,
+        "speechText": "really",
+        "language": "en",
+        "en": "really",
+        "ja": "本当？"
+      },
+      {
+        "id": "real-daily-03-cue-007",
+        "start": 17.28,
+        "end": 18.76,
+        "speechText": "you are beautiful",
+        "language": "en",
+        "en": "you are beautiful",
+        "ja": "本当にすてきよ。"
+      },
+      {
+        "id": "real-daily-03-cue-008",
+        "start": 18.76,
+        "end": 19.6,
+        "speechText": "thank you",
+        "language": "en",
+        "en": "thank you",
+        "ja": "ありがとう。"
+      },
+      {
+        "id": "real-daily-03-cue-009",
+        "start": 19.6,
+        "end": 22.41,
+        "speechText": "wow I really appreciate it",
+        "language": "en",
+        "en": "wow I really appreciate it",
+        "ja": "わあ、すごくうれしい。"
+      },
+      {
+        "id": "real-daily-03-cue-010",
+        "start": 24.8,
+        "end": 26.48,
+        "speechText": "I love how shy you get",
+        "language": "en",
+        "en": "I love how shy you get",
+        "ja": "照れるところも大好き。"
+      },
+      {
+        "id": "real-daily-03-cue-011",
+        "start": 26.48,
+        "end": 28.05,
+        "speechText": "it's so cute",
+        "language": "en",
+        "en": "it's so cute",
+        "ja": "すごくかわいい。"
+      }
+    ],
+    "subtitleVerification": "source captions reviewed against independent local acoustic recognition; editorial Japanese review; not full human listening"
+  },
+  {
+    "id": "real-daily-04",
+    "category": "daily",
+    "work": "リアル英会話",
+    "displayWork": "日常の掛け合い · Sam and Monica",
+    "title": "仮設トイレ、イギリスでは何て呼ぶ？",
+    "description": "日常の掛け合い",
+    "duration": 27.817,
+    "source": "https://www.youtube.com/shorts/9OgkO2Cu_6Y",
+    "sourceStart": 0,
+    "sourceEnd": 27.8175,
+    "creator": "Sam and Monica",
+    "sourceVideoId": "9OgkO2Cu_6Y",
+    "bakedEnglish": true,
+    "video": "/real-shorts/media/real-daily-04.mp4",
+    "poster": "/real-shorts/posters/real-daily-04.jpg",
+    "captions": [
+      {
+        "id": "real-daily-04-cue-001",
+        "start": 0,
+        "end": 2.96,
+        "speechText": "I saw something online I really need to know if it's true",
+        "language": "en",
+        "en": "I saw something online I really need to know if it's true",
+        "ja": "ネットで見たことが本当か知りたいんだけど。"
+      },
+      {
+        "id": "real-daily-04-cue-002",
+        "start": 2.96,
+        "end": 5.36,
+        "speechText": "you know like a porta potty yeah",
+        "language": "en",
+        "en": "you know like a porta potty yeah",
+        "ja": "仮設トイレってあるでしょ。うん。"
+      },
+      {
+        "id": "real-daily-04-cue-003",
+        "start": 5.36,
+        "end": 7.21,
+        "speechText": "what are they called in England",
+        "language": "en",
+        "en": "what are they called in England",
+        "ja": "イギリスでは何て呼ぶの？"
+      },
+      {
+        "id": "real-daily-04-cue-004",
+        "start": 8.76,
+        "end": 9.84,
+        "speechText": "Porta potty.",
+        "language": "en",
+        "en": "Porta potty.",
+        "ja": "ポータポッティ。"
+      },
+      {
+        "id": "real-daily-04-cue-005",
+        "start": 9.84,
+        "end": 12.585,
+        "speechText": "you call them that don't we",
+        "language": "en",
+        "en": "you call them that don't we",
+        "ja": "そう呼ぶの？ そうじゃない？"
+      },
+      {
+        "id": "real-daily-04-cue-006",
+        "start": 13.32,
+        "end": 15.32,
+        "speechText": "yeah I don't know I'm not British",
+        "language": "en",
+        "en": "yeah I don't know I'm not British",
+        "ja": "さあ、私イギリス人じゃないから。"
+      },
+      {
+        "id": "real-daily-04-cue-007",
+        "start": 15.32,
+        "end": 17.09,
+        "speechText": "I heard that you call it a portaloo",
+        "language": "en",
+        "en": "I heard that you call it a portaloo",
+        "ja": "ポータルーって呼ぶって聞いたよ。"
+      },
+      {
+        "id": "real-daily-04-cue-008",
+        "start": 17.6,
+        "end": 18.85,
+        "speechText": "do we",
+        "language": "en",
+        "en": "do we",
+        "ja": "そうだっけ？"
+      },
+      {
+        "id": "real-daily-04-cue-009",
+        "start": 19.8,
+        "end": 22.36,
+        "speechText": "I mean it would make sense a toilet's a loo",
+        "language": "en",
+        "en": "I mean it would make sense a toilet's a loo",
+        "ja": "まあ、トイレはルーだから、納得だけど。"
+      },
+      {
+        "id": "real-daily-04-cue-010",
+        "start": 22.36,
+        "end": 24.65,
+        "speechText": "do you think when people go in they go portaloo",
+        "language": "en",
+        "en": "do you think when people go in they go portaloo",
+        "ja": "入る時に「ポータルー！」って言うと思う？"
+      },
+      {
+        "id": "real-daily-04-cue-011",
+        "start": 26.16,
+        "end": 27.817,
+        "speechText": "I've never heard someone say portaloo",
+        "language": "en",
+        "en": "I've never heard someone say portaloo",
+        "ja": "そんなふうに言う人、聞いたことないよ。"
+      }
+    ],
+    "subtitleVerification": "source captions reviewed against independent local acoustic recognition; editorial Japanese review; not full human listening"
+  },
+  {
+    "id": "real-daily-05",
+    "category": "daily",
+    "work": "リアル英会話",
+    "displayWork": "日常の掛け合い · Sam and Monica",
+    "title": "本好きの妻はだませない",
+    "description": "日常の掛け合い",
+    "duration": 45.79,
+    "source": "https://www.youtube.com/shorts/BhyztG6wqb8",
+    "sourceStart": 0,
+    "sourceEnd": 45.78975,
+    "creator": "Sam and Monica",
+    "sourceVideoId": "BhyztG6wqb8",
+    "bakedEnglish": true,
+    "video": "/real-shorts/media/real-daily-05.mp4",
+    "poster": "/real-shorts/posters/real-daily-05.jpg",
+    "captions": [
+      {
+        "id": "real-daily-05-cue-001",
+        "start": 0,
+        "end": 2.97,
+        "speechText": "honey what are all those",
+        "language": "en",
+        "en": "honey what are all those",
+        "ja": "ねえ、その本は全部なに？"
+      },
+      {
+        "id": "real-daily-05-cue-002",
+        "start": 3.76,
+        "end": 5.97,
+        "speechText": "so I just got back from Target",
+        "language": "en",
+        "en": "so I just got back from Target",
+        "ja": "ターゲットから帰ってきてね、"
+      },
+      {
+        "id": "real-daily-05-cue-003",
+        "start": 6.2,
+        "end": 9.36,
+        "speechText": "and I know you're a huge book lover",
+        "language": "en",
+        "en": "and I know you're a huge book lover",
+        "ja": "君が大の本好きなのは知ってるから、"
+      },
+      {
+        "id": "real-daily-05-cue-004",
+        "start": 9.36,
+        "end": 12.84,
+        "speechText": "so I got you some books",
+        "language": "en",
+        "en": "so I got you some books",
+        "ja": "本を何冊か買ってきたよ。"
+      },
+      {
+        "id": "real-daily-05-cue-005",
+        "start": 12.84,
+        "end": 15.86,
+        "speechText": "the way this man thinks he can fool me",
+        "language": "en",
+        "en": "the way this man thinks he can fool me",
+        "ja": "この人、私をだませると思ってるのね。"
+      },
+      {
+        "id": "real-daily-05-cue-006",
+        "start": 18.16,
+        "end": 20.8,
+        "speechText": "you think I don't know what I got in my own library",
+        "language": "en",
+        "en": "you think I don't know what I got in my own library",
+        "ja": "私が自分の持ってる本を知らないとでも？"
+      },
+      {
+        "id": "real-daily-05-cue-007",
+        "start": 20.8,
+        "end": 23.04,
+        "speechText": "yes I think that you don't know what you got in your own library",
+        "language": "en",
+        "en": "yes I think that you don't know what you got in your own library",
+        "ja": "うん、全部は把握してないと思うよ。"
+      },
+      {
+        "id": "real-daily-05-cue-008",
+        "start": 23.04,
+        "end": 24.92,
+        "speechText": "you've got like 300 books in there",
+        "language": "en",
+        "en": "you've got like 300 books in there",
+        "ja": "300冊くらいあるでしょ。"
+      },
+      {
+        "id": "real-daily-05-cue-009",
+        "start": 24.92,
+        "end": 28.305,
+        "speechText": "you buy a new book every day like how do you know them all",
+        "language": "en",
+        "en": "you buy a new book every day like how do you know them all",
+        "ja": "毎日本を買ってて、全部覚えてるの？"
+      },
+      {
+        "id": "real-daily-05-cue-010",
+        "start": 28.76,
+        "end": 32.64,
+        "speechText": "my TBR just gets bigger and bigger every day but I know",
+        "language": "en",
+        "en": "my TBR just gets bigger and bigger every day but I know",
+        "ja": "積読は毎日増えるけど、把握してるよ。"
+      },
+      {
+        "id": "real-daily-05-cue-011",
+        "start": 32.64,
+        "end": 33.68,
+        "speechText": "wait what's TBR",
+        "language": "en",
+        "en": "wait what's TBR",
+        "ja": "待って、ＴＢＲって何？"
+      },
+      {
+        "id": "real-daily-05-cue-012",
+        "start": 33.68,
+        "end": 34.84,
+        "speechText": "to be read",
+        "language": "en",
+        "en": "to be read",
+        "ja": "これから読む本、って意味。"
+      },
+      {
+        "id": "real-daily-05-cue-013",
+        "start": 34.84,
+        "end": 36.48,
+        "speechText": "oh my god it's a book term",
+        "language": "en",
+        "en": "oh my god it's a book term",
+        "ja": "もう、読書界隈の用語だよ。"
+      },
+      {
+        "id": "real-daily-05-cue-014",
+        "start": 36.48,
+        "end": 37.4,
+        "speechText": "get with it",
+        "language": "en",
+        "en": "get with it",
+        "ja": "ちゃんとついてきて。"
+      },
+      {
+        "id": "real-daily-05-cue-015",
+        "start": 37.4,
+        "end": 40.69,
+        "speechText": "he thinks I don't know my own list",
+        "language": "en",
+        "en": "he thinks I don't know my own list",
+        "ja": "私が持ってる本を知らないと思ってる。"
+      },
+      {
+        "id": "real-daily-05-cue-016",
+        "start": 40.84,
+        "end": 43.16,
+        "speechText": "you thought you could fool me",
+        "language": "en",
+        "en": "you thought you could fool me",
+        "ja": "だませると思ったの？"
+      },
+      {
+        "id": "real-daily-05-cue-017",
+        "start": 43.16,
+        "end": 45.09,
+        "speechText": "Now you owe me real books.",
+        "language": "en",
+        "en": "Now you owe me real books.",
+        "ja": "今度は本当に新しい本を買ってよ。"
+      }
+    ],
+    "subtitleVerification": "source captions reviewed against independent local acoustic recognition; editorial Japanese review; not full human listening"
+  }
+]

@@ -1,5 +1,6 @@
 """Import the curated movie library into Lyric Shadows; runtime is self-contained."""
 import argparse
+from movie_player_options import configure_movie_player
 import json
 import shutil
 from pathlib import Path
@@ -182,7 +183,7 @@ if args.include_player:
   window.MovieStudy={open,close,library,initialize};
 })();
 '''
-    (ROOT/'public/movie-study.js').write_text(prefix+body+suffix,encoding='utf-8')
+    (ROOT/'public/movie-study.js').write_text(configure_movie_player(prefix+body+suffix),encoding='utf-8')
 
     def scope_css(css):
         out=[];cursor=0

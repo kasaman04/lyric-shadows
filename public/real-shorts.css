@@ -1,0 +1,39 @@
+/* Portrait footage retains the original English; Japanese is rendered below. */
+.page-home .home-tabs{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:3px}
+.page-home .home-tabs .home-tab{min-width:0;flex-direction:column;gap:3px;padding:7px 1px;font-size:16px;min-height:52px}
+.page-home .home-tabs .home-tab span{font-size:clamp(8.5px,2.67vw,11px);line-height:1.3}
+.movie-study.real-shorts-study .video-window{top:9.5%;bottom:27%;height:auto;aspect-ratio:auto;background:transparent}
+.movie-study.real-shorts-study .captions{top:auto;bottom:20.7%;left:14px;right:67px;padding:0 8px;gap:0;min-height:44px;justify-content:center}
+.movie-study.real-shorts-study .caption-ja{font-size:clamp(16px,4.3vw,20px);line-height:1.4}
+.movie-study.real-shorts-study .scene-meta{bottom:13.7%;left:18px;right:76px}
+.movie-study.real-shorts-study .work-title{font-size:11px;line-height:1.3;margin:0 0 3px;color:#d3cbd0}
+.movie-study.real-shorts-study .scene-title{font-size:13px;line-height:1.35;margin:0}
+.movie-study.real-shorts-study .scene-description{display:none}
+.movie-study.real-shorts-study .watch-count{font-size:10px;margin-bottom:3px}
+.movie-study.real-shorts-study .actions{right:9px;bottom:22%;gap:12px}
+.movie-study.real-shorts-study .action{min-width:42px;min-height:43px}
+.movie-study.real-shorts-study .action svg{width:25px;height:25px}
+.movie-study.real-shorts-study .action-label{font-size:10px}
+.movie-study.real-shorts-study .transport{bottom:7.9%}
+.movie-study.real-shorts-study .swipe{bottom:8px}
+@media(max-height:730px){
+  .movie-study.real-shorts-study .video-window{top:10%;bottom:29%}
+  .movie-study.real-shorts-study .captions{bottom:21.5%;min-height:40px}
+  .movie-study.real-shorts-study .caption-ja{font-size:16px}
+  .movie-study.real-shorts-study .scene-meta{bottom:14.4%}
+  .movie-study.real-shorts-study .actions{bottom:23%;gap:7px}
+  .movie-study.real-shorts-study .action{min-height:35px}
+}
+@media(max-height:590px){
+  .movie-study.real-shorts-study .video-window{top:10%;bottom:32%}
+  .movie-study.real-shorts-study .captions{bottom:24.3%;min-height:36px}
+  .movie-study.real-shorts-study .caption-ja{font-size:14px}
+  .movie-study.real-shorts-study .scene-meta{bottom:16.7%}
+  .movie-study.real-shorts-study .scene-title{font-size:12px}
+  .movie-study.real-shorts-study .work-title{font-size:10px}
+  .movie-study.real-shorts-study .actions{bottom:25.4%;gap:5px}
+  .movie-study.real-shorts-study .action{min-height:31px}
+  .movie-study.real-shorts-study .action svg{width:21px;height:21px}
+  .movie-study.real-shorts-study .action-label{font-size:9px}
+  .movie-study.real-shorts-study .transport{bottom:9.5%}
+}

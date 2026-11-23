@@ -22,6 +22,11 @@ test('movie counts persist across midnight and server restarts, with idempotent 
   const reloaded=await new PetStore({remote,clock:()=>now}).transact('movie-api-device-0001');
   assert.equal(ledgerCounts(reloaded.movieStudy)['eternal-train'],17);
   assert.equal(reloaded.totalSeconds,0);assert.equal(reloaded.pets.length,0);
+  const shorts={baseline:{'real-random-01':4},replicas:{'movie-api-writer-0003':{'real-street-01':2,'real-daily-01':1}}};
+  assert.equal((await post(shorts)).status,200);
+  const mixed=ledgerCounts(await (await fetch(url)).json());
+  assert.equal(mixed['real-random-01'],4);assert.equal(mixed['real-street-01'],2);assert.equal(mixed['real-daily-01'],1);
+  assert.equal(mixed['eternal-train'],17,'shorts preserve existing movie counts');
   assert.equal((await post(a,{Origin:'https://unrelated.test'})).status,403);
   assert.equal((await post({baseline:{'unknown-scene':2}})).status,400);
   assert.equal((await fetch(url.replace('movie-api-device-0001','bad.id'))).status,400);

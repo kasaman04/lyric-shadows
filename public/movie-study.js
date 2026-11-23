@@ -32,7 +32,7 @@
     function samplePass(p){p.pass.sample({time:p.video.currentTime,wall:performance.now(),rate:p.video.playbackRate,playing:!p.video.paused,audible:!p.video.muted&&p.video.volume>0,active:active===p.index&&!document.hidden,seeking:p.video.seeking});}
     function showCompleted(){
       feed.insertAdjacentHTML('beforeend','<section class="movie-empty"><p>この作品の会話はすべて100回聞き終わりました。</p><p>上のメニューから、別の作品を選べます。</p><button type="button" class="movie-empty-back">映画一覧に戻る</button></section>');
-      root.querySelector('.movie-empty-back').onclick=()=>options.home();
+      const back=root.querySelector('.movie-empty-back');back.textContent=options.backLabel||'映画一覧に戻る';back.onclick=()=>options.home();if(options.kind==='shorts')root.querySelector('.movie-empty p').textContent='このジャンルの会話はすべて100回聞き終わりました。';
     }
     function finishPass(p){
       if(destroyed||active!==p.index)return;
@@ -47,11 +47,11 @@
     }
 
   'use strict';
-  const scenes=window.MOVIE_SCENES||[];
+  const scenes=options.scenes||window.MOVIE_SCENES||[];
   const feed=root.querySelector('.feed');
   const notice=root.querySelector('.notice');
   const workSelect=root.querySelector('[data-movie-work]');
-  const filters=[
+  const filters=(options.filters||[
     {key:'before',label:'ビフォア（三部作）',matches:s=>s.work.startsWith('Before ')},
     {key:'sunrise',label:'ビフォア・サンライズ',matches:s=>s.work==='Before Sunrise'},
     {key:'sunset',label:'ビフォア・サンセット',matches:s=>s.work==='Before Sunset'},
@@ -60,14 +60,14 @@
     {key:'will',label:'グッド・ウィル・ハンティング',matches:s=>s.work==='Good Will Hunting'},
     {key:'truman',label:'トゥルーマン・ショー',matches:s=>s.work==='The Truman Show'},
     {key:'all',label:'すべての作品',matches:()=>true}
-  ].filter(filter=>scenes.some(filter.matches));
+  ]).filter(filter=>scenes.some(filter.matches));
   const params=new URLSearchParams(location.search);
   const requestedScene=scenes.find(scene=>scene.id===params.get('scene'));
-  let storedWork='';try{storedWork=localStorage.getItem('movie-study-work')||'';}catch{}
+  let storedWork='';try{storedWork=localStorage.getItem(options.storageKey||'movie-study-work')||'';}catch{}
   const validWork=key=>filters.some(filter=>filter.key===key);
   let selectedWork=validWork(options.work)?options.work:validWork(params.get('work'))?params.get('work'):
     requestedScene?filters.find(filter=>!['before','all'].includes(filter.key)&&filter.matches(requestedScene)).key:
-    validWork(storedWork)?storedWork:'before';
+    validWork(storedWork)?storedWork:filters[0]?.key;
   let visiblePlayers=[];
   const lastSceneByWork=new Map();
   for(const filter of filters){const option=document.createElement('option');option.value=filter.key;option.textContent=filter.label;workSelect.append(option);}
@@ -84,7 +84,7 @@
     up:icon('<path d="m5 15 7-6 7 6"/>'),
     down:icon('<path d="m5 9 7 6 7-6"/>')
   };
-  let active=-1,muted=false,repeat=true,captionMode='both',noticeTimer,scrollFrame,snapTimer,pointerStart,suppressClickUntil=0;
+  let active=-1,muted=false,repeat=true,captionMode=options.captionModes?.[0]||'both',noticeTimer,scrollFrame,snapTimer,pointerStart,suppressClickUntil=0;
   const saved=(()=>{try{return new Set(JSON.parse(localStorage.getItem('movie-study-saved')||'[]'));}catch{return new Set();}})();
   const format=t=>`${Math.floor((Number(t)||0)/60)}:${String(Math.floor((Number(t)||0)%60)).padStart(2,'0')}`;
   function announce(text){notice.textContent=text;notice.classList.add('visible');clearTimeout(noticeTimer);noticeTimer=setTimeout(()=>notice.classList.remove('visible'),1800);}
@@ -101,12 +101,12 @@
     const q=selector=>section.querySelector(selector),video=q('video');
     // Register before movie handlers can rewind/repeat or detach the video.
     window.PetPlayback?.watch(video);
-    q('.topbar').insertAdjacentHTML('afterbegin','<button class="movie-back" type="button" aria-label="映画一覧に戻る"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 5-7 7 7 7"/></svg></button>');q('.movie-back').onclick=()=>options.home();
+    q('.topbar').insertAdjacentHTML('afterbegin','<button class="movie-back" type="button" aria-label="映画一覧に戻る"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 5-7 7 7 7"/></svg></button>');q('.movie-back').setAttribute('aria-label',options.backLabel||'映画一覧に戻る');q('.movie-back').onclick=()=>options.home();
     q('.work-title').textContent=scene.displayWork||scene.work;q('.scene-title').textContent=scene.title;q('.scene-description').textContent=`${scene.description} · ${format(Math.ceil(scene.duration))}`;
     const player={scene,index,section,q,video,lastCue:-2,userPaused:false,pass:progressApi.createPass()};
     q('.sound').onclick=()=>{muted=!muted;players.forEach(p=>{p.video.muted=muted;renderControls(p);});if(!muted&&video.paused){player.userPaused=false;start(player);}announce(muted?'音声をオフにしました':'音声をオンにしました');};
     q('.repeat').onclick=()=>{repeat=!repeat;players.forEach(p=>{p.video.loop=false;renderControls(p);});announce(repeat?'この会話全体をリピート':'リピートをオフにしました');};
-    q('.translation').onclick=()=>{const modes=['both','en','ja','off'];captionMode=modes[(modes.indexOf(captionMode)+1)%modes.length];players.forEach(p=>{p.lastCue=-2;renderTime(p);renderControls(p);});announce({both:'英語と日本語を表示',en:'英語だけを表示',ja:'日本語だけを表示',off:'字幕を非表示'}[captionMode]);};
+    q('.translation').onclick=()=>{const modes=options.captionModes||['both','en','ja','off'];captionMode=modes[(modes.indexOf(captionMode)+1)%modes.length];players.forEach(p=>{p.lastCue=-2;renderTime(p);renderControls(p);});announce((options.kind==='shorts'?{ja:'日本語訳を表示',off:'日本語訳を非表示（英語は動画内）'}:{both:'英語と日本語を表示',en:'英語だけを表示',ja:'日本語だけを表示',off:'字幕を非表示'})[captionMode]);};
     q('.save').onclick=()=>{if(saved.has(scene.id))saved.delete(scene.id);else saved.add(scene.id);try{localStorage.setItem('movie-study-saved',JSON.stringify([...saved]));}catch{}renderControls(player);announce(saved.has(scene.id)?'この会話を保存しました':'保存を解除しました');};
     q('.rewind').onclick=()=>{samplePass(player);video.currentTime=Math.max(0,video.currentTime-5);renderTime(player);};
     const toggle=()=>{if(Date.now()<suppressClickUntil)return;if(video.paused){player.userPaused=false;start(player);}else{player.userPaused=true;video.pause();}};
@@ -123,7 +123,7 @@
     p.q('.sound-icon').innerHTML=muted?icons.muted:icons.sound;p.q('.sound').setAttribute('aria-label',muted?'音声をオン':'音声をオフ');p.q('.sound-label').textContent=muted?'音声オン':'音声';
     p.q('.repeat').classList.toggle('on',repeat);p.q('.repeat').setAttribute('aria-pressed',String(repeat));
     const isSaved=saved.has(p.scene.id);p.q('.save').classList.toggle('on',isSaved);p.q('.save').setAttribute('aria-pressed',String(isSaved));p.q('.save-icon').innerHTML=isSaved?icons.saved:icons.save;
-    p.q('.mode-label').textContent={both:'英日',en:'英語',ja:'日本語',off:'字幕オフ'}[captionMode];
+    p.q('.mode-label').textContent=(options.kind==='shorts'?{ja:'日本語',off:'訳オフ'}:{both:'英日',en:'英語',ja:'日本語',off:'字幕オフ'})[captionMode];
     p.q('.play').innerHTML=p.video.paused?icons.play:icons.pause;p.q('.play').setAttribute('aria-label',p.video.paused?'再生':'一時停止');p.q('.video-window').setAttribute('aria-label',p.video.paused?'動画を再生':'動画を一時停止');
   }
   function renderTime(p){
@@ -155,7 +155,7 @@
     active=index;const p=players[index];p.userPaused=false;p.pass.reset();p.video.currentTime=0;p.lastCue=-2;renderTime(p);start(p);
     lastSceneByWork.set(selectedWork,p.scene.id);updateLocation();
   }
-  function updateLocation(){const url=new URL(location.href);url.searchParams.set('work',selectedWork);if(players[active])url.searchParams.set('scene',players[active].scene.id);else url.searchParams.delete('scene');url.searchParams.delete('song');const entering=location.hash!=='#movie-player';url.hash='movie-player';history[entering?'pushState':'replaceState'](null,'',url);}
+  function updateLocation(){const url=new URL(location.href);url.searchParams.set('work',selectedWork);if(players[active])url.searchParams.set('scene',players[active].scene.id);else url.searchParams.delete('scene');url.searchParams.delete('song');const hash=options.playerHash||'movie-player';const entering=location.hash!=='#'+hash;url.hash=hash;history[entering?'pushState':'replaceState'](null,'',url);}
   function applyFilter(key,sceneId){
     if(!validWork(key))return;
     clearTimeout(snapTimer);if(scrollFrame)cancelAnimationFrame(scrollFrame);scrollFrame=null;pointerStart=null;
@@ -170,7 +170,7 @@
     });
     const target=visiblePlayers.find(p=>p.scene.id===(sceneId||lastSceneByWork.get(key)))||visiblePlayers[0];
     active=-1;root.querySelector('.movie-empty')?.remove();if(target){feed.scrollTo({top:visiblePlayers.indexOf(target)*feed.clientHeight,behavior:'instant'});activate(target.index);}else{showCompleted();updateLocation();}
-    try{localStorage.setItem('movie-study-work',key);}catch{}
+    try{localStorage.setItem(options.storageKey||'movie-study-work',key);}catch{}
   }
   function refreshProgress(){
     progress.refresh();
@@ -199,9 +199,9 @@
   }
   function close({keepLocation=false}={}){
     if(!mounted)return;
-    mounted.destroy();mounted=null;document.body.classList.remove('movie-study-open');
-    if(!keepLocation&&location.hash==='#movie-player'){
-      const url=new URL(location.href);url.searchParams.delete('work');url.searchParams.delete('scene');url.hash='movies';history.replaceState(null,'',url);
+    const {playerHash='movie-player',homeHash='movies'}=mounted;mounted.destroy();mounted=null;document.body.classList.remove('movie-study-open');
+    if(!keepLocation&&location.hash==='#'+playerHash){
+      const url=new URL(location.href);url.searchParams.delete('work');url.searchParams.delete('scene');url.hash=homeHash;history.replaceState(null,'',url);
     }
   }
   function open(options){
@@ -209,13 +209,14 @@
     const container=options.container;
     container.className='page-movies';
     container.innerHTML='<div class="movie-study"><div class="work-switcher"><label for="movie-work-select">作品を選ぶ</label><select id="movie-work-select" data-movie-work aria-label="作品を選ぶ"></select></div><main class="feed" aria-label="映画の会話フィード"></main><div class="notice" role="status" aria-live="polite"></div></div>';
+    if(options.kind==='shorts'){const view=container.querySelector('.movie-study');view.classList.add('real-shorts-study');view.querySelector('.work-switcher label').textContent='ジャンルを選ぶ';view.querySelector('select').setAttribute('aria-label','ジャンルを選ぶ');view.querySelector('.feed').setAttribute('aria-label','リアル英会話フィード');}
     document.body.classList.add('movie-study-open');
-    mounted=mount(container.querySelector('.movie-study'),options);
+    mounted=mount(container.querySelector('.movie-study'),options);mounted.playerHash=options.playerHash||'movie-player';mounted.homeHash=options.homeHash||'movies';
   }
-  function library(){
+  function library(config={}){
     progress.refresh();
-    const scenes=window.MOVIE_SCENES||[];
-    const collections=[
+    const scenes=config.scenes||window.MOVIE_SCENES||[];
+    const collections=config.collections||[
       {key:'before',title:'ビフォア三部作',sub:'BEFORE TRILOGY',matches:s=>s.work.startsWith('Before '),description:'出会いから再会、その先へ。二人の自然な会話をじっくりと。'},
       {key:'eternal',title:'エターナル・サンシャイン',sub:'ETERNAL SUNSHINE',matches:s=>s.work==='Eternal Sunshine of the Spotless Mind',description:'出会い、すれ違い、もう一度。記憶をめぐる会話をたどる。'},
       {key:'will',title:'グッド・ウィル・ハンティング',sub:'GOOD WILL HUNTING',matches:s=>s.work==='Good Will Hunting',description:'友情、恋愛、自分の未来。心を開いていく会話から学ぶ。'},
@@ -225,10 +226,10 @@
       if(!all.length)return '';
       const list=all.filter(s=>!progress.hidden(s.id));
       const minutes=Math.round(list.reduce((n,s)=>n+s.duration,0)/60);
-      const images=key==='before'?['train-invitation','sunset-vienna','midnight-train'].map(id=>all.find(s=>s.id===id)).filter(Boolean):[all[0]];
-      return `<article class="movie-collection"><button type="button" class="movie-collection-open" onclick="showMovieStudy('${key}')" aria-label="${escapeHtml(title)}を学ぶ"><span class="movie-collection-art ${key==='before'?'movie-filmstrip':''}">${images.map(s=>`<img src="${escapeHtml(s.poster)}" alt="" loading="lazy">`).join('')}<span class="movie-card-play" aria-hidden="true">▶</span></span><span class="movie-collection-copy"><span class="movie-collection-meta">${escapeHtml(sub)} · ${list.length}会話 · 約${minutes}分</span><strong>${escapeHtml(title)}</strong><span class="movie-collection-description">${escapeHtml(description)}</span><span class="movie-collection-start">会話を見る <span aria-hidden="true">→</span></span></span></button>${key==='before'?'<div class="movie-work-shortcuts" aria-label="ビフォアの作品を選ぶ"><button type="button" onclick="showMovieStudy(\'sunrise\')">サンライズ</button><button type="button" onclick="showMovieStudy(\'sunset\')">サンセット</button><button type="button" onclick="showMovieStudy(\'midnight\')">ミッドナイト</button></div>':''}</article>`;
+      const images=config.portrait?[all[0],all[Math.floor(all.length/2)],all[all.length-1]]:key==='before'?['train-invitation','sunset-vienna','midnight-train'].map(id=>all.find(s=>s.id===id)).filter(Boolean):[all[0]];
+      return `<article class="movie-collection"><button type="button" class="movie-collection-open" onclick="${config.portrait?'showRealShorts':'showMovieStudy'}('${key}')" aria-label="${escapeHtml(title)}を学ぶ"><span class="movie-collection-art ${key==='before'||config.portrait?'movie-filmstrip':''}">${images.map(s=>`<img src="${escapeHtml(s.poster)}" alt="" loading="lazy">`).join('')}<span class="movie-card-play" aria-hidden="true">▶</span></span><span class="movie-collection-copy"><span class="movie-collection-meta">${escapeHtml(sub)} · ${list.length}会話 · 約${minutes}分</span><strong>${escapeHtml(title)}</strong><span class="movie-collection-description">${escapeHtml(description)}</span><span class="movie-collection-start">会話を見る <span aria-hidden="true">→</span></span></span></button>${key==='before'?'<div class="movie-work-shortcuts" aria-label="ビフォアの作品を選ぶ"><button type="button" onclick="showMovieStudy(\'sunrise\')">サンライズ</button><button type="button" onclick="showMovieStudy(\'sunset\')">サンセット</button><button type="button" onclick="showMovieStudy(\'midnight\')">ミッドナイト</button></div>':''}</article>`;
     };
-    return `<section class="home-library movie-library" aria-labelledby="movie-library-title"><div class="section-heading"><div><p class="section-eyebrow">LEARN WITH MOVIES</p><h2 id="movie-library-title">映画の会話で学ぶ</h2></div><span>${scenes.filter(s=>!progress.hidden(s.id)).length}会話</span></div><p class="movie-library-intro">作品を選んで、動画と英日字幕で。最後まで聞くと1回。100回聞いた会話は一覧から自動で削除されます。</p><div class="movie-collection-grid">${collections.map(c=>card(c.key,c.title,c.sub,scenes.filter(c.matches),c.description)).join('')}</div></section>`;
+    return `<section class="home-library movie-library" aria-labelledby="${config.portrait?'real-shorts-library-title':'movie-library-title'}"><div class="section-heading"><div><p class="section-eyebrow">${config.portrait?'REAL CONVERSATIONS':'LEARN WITH MOVIES'}</p><h2 id="${config.portrait?'real-shorts-library-title':'movie-library-title'}">${config.portrait?'リアルな英会話で学ぶ':'映画の会話で学ぶ'}</h2></div><span>${scenes.filter(s=>!progress.hidden(s.id)).length}会話</span></div><p class="movie-library-intro">${config.portrait?'海外の人の自然な会話を、元の英語字幕と日本語訳で。':'作品を選んで、動画と英日字幕で。'}最後まで聞くと1回。100回聞いた会話は一覧から自動で削除されます。</p><div class="movie-collection-grid">${collections.map(c=>card(c.key,c.title,c.sub,scenes.filter(c.matches),c.description)).join('')}</div></section>`;
   }
   window.MovieStudy={open,close,library,initialize};
 })();
