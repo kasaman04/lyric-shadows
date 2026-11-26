@@ -127,22 +127,6 @@ window.SONG_CHARACTER_AVATARS = {
     "A": "/character-avatars/57696e646f772053686f7070696e6720-f7f4c19-a.svg",
     "B": "/character-avatars/57696e646f772053686f7070696e6720-f7f4c19-b.svg"
   },
-  "【カフェの注文】Coffee Shop Customize": {
-    "A": "/character-avatars/e38090e382abe38395e382a7e381aee6-19524a89-a.svg",
-    "B": "/character-avatars/e38090e382abe38395e382a7e381aee6-19524a89-b.svg"
-  },
-  "【パーティー】Have we met before": {
-    "A": "/character-avatars/e38090e38391e383bce38386e382a3e3-a984156d-a.svg",
-    "B": "/character-avatars/e38090e38391e383bce38386e382a3e3-a984156d-b.svg"
-  },
-  "【ホテルのトラブル】Hotel Trouble": {
-    "A": "/character-avatars/e38090e3839be38386e383abe381aee3-f68debd7-a.svg",
-    "B": "/character-avatars/e38090e3839be38386e383abe381aee3-f68debd7-b.svg"
-  },
-  "【空港の手続き】Check-in Counter": {
-    "A": "/character-avatars/e38090e7a9bae6b8afe381aee6898be7-d82b3ac9-a.svg",
-    "B": "/character-avatars/e38090e7a9bae6b8afe381aee6898be7-d82b3ac9-b.svg"
-  },
   "雨音子(Amaotoko) RADWIMPS": {
     "A": "/character-avatars/e99ba8e99fb3e5ad9028416d616f746f-31e8fc77-a.svg",
     "B": "/character-avatars/e99ba8e99fb3e5ad9028416d616f746f-31e8fc77-b.svg"
