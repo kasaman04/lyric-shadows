@@ -1,454 +1,968 @@
 [
   {
-    "id": "real-random-01",
+    "id": "real-random-11",
     "category": "random",
     "work": "リアル英会話",
-    "displayWork": "ランダムチャット · anniemegles",
-    "title": "カメラを見ると笑顔になる？",
-    "description": "ランダムチャット",
-    "duration": 18.07,
-    "source": "https://www.youtube.com/shorts/H0C6D-w9G5E",
-    "sourceStart": 2.1,
-    "sourceEnd": 20.17,
-    "creator": "anniemegles",
-    "sourceVideoId": "H0C6D-w9G5E",
-    "bakedEnglish": true,
-    "video": "/real-shorts/media/real-random-01.mp4",
-    "poster": "/real-shorts/posters/real-random-01.jpg",
+    "displayWork": "ランダムチャット · Hayato from Japan",
+    "title": "釣りが趣味。でもゲームの中で",
+    "description": "趣味を聞く・聞き返す",
+    "duration": 19.94,
+    "source": "https://www.youtube.com/shorts/a1YXr4eK61M",
+    "sourceStart": 34.26,
+    "sourceEnd": 54.2,
+    "creator": "Hayato from Japan",
+    "sourceVideoId": "a1YXr4eK61M",
+    "bakedEnglish": false,
+    "video": "/real-shorts/media/real-random-11.mp4",
+    "poster": "/real-shorts/posters/real-random-11.jpg",
     "captions": [
       {
-        "id": "real-random-01-cue-001",
-        "start": 0.02,
-        "end": 1.82,
-        "speechText": "Hello baby.",
+        "id": "real-random-11-cue-001",
+        "start": 0.22,
+        "end": 1.76,
+        "speechText": "How about you? Do you have hobby?",
         "language": "en",
-        "en": "Hello baby.",
-        "ja": "やあ、ベイビー！"
+        "en": "How about you? Do you have hobby?",
+        "ja": "あなたは？ 趣味ある？"
       },
       {
-        "id": "real-random-01-cue-002",
-        "start": 1.82,
-        "end": 3.12,
-        "speechText": "Oh hi.",
+        "id": "real-random-11-cue-002",
+        "start": 2.72,
+        "end": 3.76,
+        "speechText": "Yeah, I do have hobby.",
         "language": "en",
-        "en": "Oh hi.",
-        "ja": "あ、こんにちは。"
+        "en": "Yeah, I do have hobby.",
+        "ja": "うん、あるよ。"
       },
       {
-        "id": "real-random-01-cue-003",
-        "start": 3.12,
-        "end": 4.65,
-        "speechText": "Hello there beautiful.",
+        "id": "real-random-11-cue-003",
+        "start": 4.34,
+        "end": 5.32,
+        "speechText": "What? What's that?",
         "language": "en",
-        "en": "Hello there beautiful.",
-        "ja": "やあ、美人さん。"
+        "en": "What? What's that?",
+        "ja": "えっ、何？"
       },
       {
-        "id": "real-random-01-cue-004",
-        "start": 4.739,
-        "end": 5.819,
-        "speechText": "Are you a camera?",
+        "id": "real-random-11-cue-004",
+        "start": 6.06,
+        "end": 6.46,
+        "speechText": "Fishing.",
         "language": "en",
-        "en": "Are you a camera?",
-        "ja": "君ってカメラなの？"
+        "en": "Fishing.",
+        "ja": "釣り。"
       },
       {
-        "id": "real-random-01-cue-005",
-        "start": 5.819,
-        "end": 9.27,
-        "speechText": "Because all I can do is smile when I see you.",
+        "id": "real-random-11-cue-005",
+        "start": 7.26,
+        "end": 8.88,
+        "speechText": "Fishing? Oh my God!",
         "language": "en",
-        "en": "Because all I can do is smile when I see you.",
-        "ja": "だって君を見ると笑顔になるから。"
+        "en": "Fishing? Oh my God!",
+        "ja": "釣り？ えー、いいね！"
       },
       {
-        "id": "real-random-01-cue-006",
-        "start": 10.38,
-        "end": 11.43,
-        "speechText": "Okay.",
+        "id": "real-random-11-cue-006",
+        "start": 9.8,
+        "end": 10.92,
+        "speechText": "In real life?",
         "language": "en",
-        "en": "Okay.",
+        "en": "In real life?",
+        "ja": "現実の釣り？"
+      },
+      {
+        "id": "real-random-11-cue-007",
+        "start": 10.92,
+        "end": 11.54,
+        "speechText": "No, no.",
+        "language": "en",
+        "en": "No, no.",
+        "ja": "違う違う。"
+      },
+      {
+        "id": "real-random-11-cue-008",
+        "start": 12.16,
+        "end": 14.52,
+        "speechText": "No, in gaming.",
+        "language": "en",
+        "en": "No, in gaming.",
+        "ja": "いや、ゲームの中で。"
+      },
+      {
+        "id": "real-random-11-cue-009",
+        "start": 16.02,
+        "end": 16.66,
+        "speechText": "In gaming?",
+        "language": "en",
+        "en": "In gaming?",
+        "ja": "ゲームの中？"
+      },
+      {
+        "id": "real-random-11-cue-010",
+        "start": 18.06,
+        "end": 19.18,
+        "speechText": "Not in real life.",
+        "language": "en",
+        "en": "Not in real life.",
+        "ja": "現実の話じゃないよ。"
+      }
+    ],
+    "subtitleVerification": "local acoustic recognition and editorial English/Japanese review"
+  },
+  {
+    "id": "real-random-12",
+    "category": "random",
+    "work": "リアル英会話",
+    "displayWork": "ランダムチャット · Gazi Nahian",
+    "title": "アメリカに行ったことある？",
+    "description": "英語を覚えたきっかけと旅行の話",
+    "duration": 10.49,
+    "source": "https://www.youtube.com/watch?v=-QY0lSjMDn4",
+    "sourceStart": 61.15,
+    "sourceEnd": 71.64,
+    "creator": "Gazi Nahian",
+    "sourceVideoId": "-QY0lSjMDn4",
+    "bakedEnglish": false,
+    "video": "/real-shorts/media/real-random-12.mp4",
+    "poster": "/real-shorts/posters/real-random-12.jpg",
+    "captions": [
+      {
+        "id": "real-random-12-cue-001",
+        "start": 0.33,
+        "end": 3.79,
+        "speechText": "I learned English here in this platform by having a conversation.",
+        "language": "en",
+        "en": "I learned English here in this platform by having a conversation.",
+        "ja": "このサイトで会話しながら英語を覚えたんだ。"
+      },
+      {
+        "id": "real-random-12-cue-002",
+        "start": 5.31,
+        "end": 6.85,
+        "speechText": "Have you ever been to the United States?",
+        "language": "en",
+        "en": "Have you ever been to the United States?",
+        "ja": "アメリカに行ったことある？"
+      },
+      {
+        "id": "real-random-12-cue-003",
+        "start": 7.25,
+        "end": 8.07,
+        "speechText": "No, I never been.",
+        "language": "en",
+        "en": "No, I never been.",
+        "ja": "ううん、行ったことない。"
+      },
+      {
+        "id": "real-random-12-cue-004",
+        "start": 8.19,
+        "end": 9.73,
+        "speechText": "But one day, hopefully.",
+        "language": "en",
+        "en": "But one day, hopefully.",
+        "ja": "でも、いつか行けたらいいな。"
+      },
+      {
+        "id": "real-random-12-cue-005",
+        "start": 10.09,
+        "end": 10.38,
+        "speechText": "Yeah.",
+        "language": "en",
+        "en": "Yeah.",
         "ja": "うん。"
       }
     ],
-    "subtitleVerification": "source captions reviewed against independent local acoustic recognition; editorial Japanese review; not full human listening"
+    "subtitleVerification": "local acoustic recognition and editorial English/Japanese review"
   },
   {
-    "id": "real-random-02",
+    "id": "real-random-13",
     "category": "random",
     "work": "リアル英会話",
-    "displayWork": "ランダムチャット · anniemegles",
-    "title": "口説き文句でまさかの逆転",
-    "description": "ランダムチャット",
-    "duration": 16.57,
-    "source": "https://www.youtube.com/shorts/gYIekhKVCu8",
-    "sourceStart": 1.28,
-    "sourceEnd": 17.85,
-    "creator": "anniemegles",
-    "sourceVideoId": "gYIekhKVCu8",
-    "bakedEnglish": true,
-    "video": "/real-shorts/media/real-random-02.mp4",
-    "poster": "/real-shorts/posters/real-random-02.jpg",
-    "captions": [
-      {
-        "id": "real-random-02-cue-001",
-        "start": 0.0,
-        "end": 2.76,
-        "speechText": "Okay hey there beautiful how are you?",
-        "language": "en",
-        "en": "Okay hey there beautiful how are you?",
-        "ja": "やあ、きれいだね。元気？"
-      },
-      {
-        "id": "real-random-02-cue-002",
-        "start": 2.76,
-        "end": 4.3,
-        "speechText": "You're so pretty.",
-        "language": "en",
-        "en": "You're so pretty.",
-        "ja": "すごくかわいいね。"
-      },
-      {
-        "id": "real-random-02-cue-003",
-        "start": 4.3,
-        "end": 6.519,
-        "speechText": "Oh thank you.",
-        "language": "en",
-        "en": "Oh thank you.",
-        "ja": "ありがとう！"
-      },
-      {
-        "id": "real-random-02-cue-004",
-        "start": 6.519,
-        "end": 7.42,
-        "speechText": "Are you a charger?",
-        "language": "en",
-        "en": "Are you a charger?",
-        "ja": "君って充電器？"
-      },
-      {
-        "id": "real-random-02-cue-005",
-        "start": 7.42,
-        "end": 9.61,
-        "speechText": "Because I'm dying without you.",
-        "language": "en",
-        "en": "Because I'm dying without you.",
-        "ja": "君がいないと生きていけない。"
-      },
-      {
-        "id": "real-random-02-cue-006",
-        "start": 9.76,
-        "end": 11.979,
-        "speechText": "Oh um.",
-        "language": "en",
-        "en": "Oh um.",
-        "ja": "あら…"
-      },
-      {
-        "id": "real-random-02-cue-007",
-        "start": 11.979,
-        "end": 13.12,
-        "speechText": "Your eyes are so beautiful.",
-        "language": "en",
-        "en": "Your eyes are so beautiful.",
-        "ja": "君の瞳、すごくきれい。"
-      },
-      {
-        "id": "real-random-02-cue-008",
-        "start": 13.12,
-        "end": 14.08,
-        "speechText": "I know I can't have them.",
-        "language": "en",
-        "en": "I know I can't have them.",
-        "ja": "私にはその瞳はもらえないけど、"
-      },
-      {
-        "id": "real-random-02-cue-009",
-        "start": 14.08,
-        "end": 15.79,
-        "speechText": "But our kids can.",
-        "language": "en",
-        "en": "But our kids can.",
-        "ja": "二人の子なら、もらえるよ。"
-      }
-    ],
-    "subtitleVerification": "source captions reviewed against independent local acoustic recognition; editorial Japanese review; not full human listening"
-  },
-  {
-    "id": "real-random-03",
-    "category": "random",
-    "work": "リアル英会話",
-    "displayWork": "ランダムチャット · anniemegles",
-    "title": "近くに空港はある？",
-    "description": "ランダムチャット",
-    "duration": 11.05,
-    "source": "https://www.youtube.com/shorts/b-ACBsEyh3E",
+    "displayWork": "ランダムチャット · Hayato from Japan",
+    "title": "パエリアってどう発音する？",
+    "description": "スペインの食事・発音を聞く",
+    "duration": 16.08,
+    "source": "https://www.youtube.com/shorts/Ruh0YrOdDAo",
     "sourceStart": 0,
-    "sourceEnd": 11.05,
-    "creator": "anniemegles",
-    "sourceVideoId": "b-ACBsEyh3E",
-    "bakedEnglish": true,
-    "video": "/real-shorts/media/real-random-03.mp4",
-    "poster": "/real-shorts/posters/real-random-03.jpg",
+    "sourceEnd": 16.08,
+    "creator": "Hayato from Japan",
+    "sourceVideoId": "Ruh0YrOdDAo",
+    "bakedEnglish": false,
+    "video": "/real-shorts/media/real-random-13.mp4",
+    "poster": "/real-shorts/posters/real-random-13.jpg",
     "captions": [
       {
-        "id": "real-random-03-cue-001",
-        "start": 0.12,
-        "end": 1.979,
-        "speechText": "Hello there, beautiful.",
+        "id": "real-random-13-cue-001",
+        "start": 0,
+        "end": 2.6,
+        "speechText": "The best thing you can do in Spain is eat,",
         "language": "en",
-        "en": "Hello there, beautiful.",
-        "ja": "やあ、美人さん。"
+        "en": "The best thing you can do in Spain is eat,",
+        "ja": "スペインで一番楽しめるのは食事よ。"
       },
       {
-        "id": "real-random-03-cue-002",
-        "start": 1.979,
-        "end": 3.6,
-        "speechText": "Is there an airport nearby?",
+        "id": "real-random-13-cue-002",
+        "start": 2.6,
+        "end": 4.48,
+        "speechText": "because we have the best food.",
         "language": "en",
-        "en": "Is there an airport nearby?",
-        "ja": "近くに空港はある？"
+        "en": "because we have the best food.",
+        "ja": "だって料理が最高だから。"
       },
       {
-        "id": "real-random-03-cue-003",
-        "start": 3.6,
-        "end": 5.91,
-        "speechText": "Or is my heart taking off?",
+        "id": "real-random-13-cue-003",
+        "start": 4.9,
+        "end": 5.25,
+        "speechText": "Yeah, yeah.",
         "language": "en",
-        "en": "Or is my heart taking off?",
-        "ja": "それとも私の心が舞い上がってるのかな？"
-      }
-    ],
-    "subtitleVerification": "source captions reviewed against independent local acoustic recognition; editorial Japanese review; not full human listening"
-  },
-  {
-    "id": "real-random-04",
-    "category": "random",
-    "work": "リアル英会話",
-    "displayWork": "ランダムチャット · anniemegles",
-    "title": "名前を聞くはずが…",
-    "description": "ランダムチャット",
-    "duration": 9.12,
-    "source": "https://www.youtube.com/shorts/kl7J0Jk93N8",
-    "sourceStart": 1.65,
-    "sourceEnd": 10.77,
-    "creator": "anniemegles",
-    "sourceVideoId": "kl7J0Jk93N8",
-    "bakedEnglish": true,
-    "video": "/real-shorts/media/real-random-04.mp4",
-    "poster": "/real-shorts/posters/real-random-04.jpg",
-    "captions": [
-      {
-        "id": "real-random-04-cue-001",
-        "start": 0.09,
-        "end": 1.5,
-        "speechText": "Hello there.",
-        "language": "en",
-        "en": "Hello there.",
-        "ja": "やあ、こんにちは。"
+        "en": "Yeah, yeah.",
+        "ja": "うんうん。"
       },
       {
-        "id": "real-random-04-cue-002",
-        "start": 1.85,
-        "end": 3.21,
-        "speechText": "You're so pretty.",
+        "id": "real-random-13-cue-004",
+        "start": 5.58,
+        "end": 7.58,
+        "speechText": "Paella. How do I say it? I don't know.",
         "language": "en",
-        "en": "You're so pretty.",
-        "ja": "すごくかわいいね。"
+        "en": "Paella. How do I say it? I don't know.",
+        "ja": "パエリア。どう発音するんだろう。分かんないや。"
       },
       {
-        "id": "real-random-04-cue-003",
-        "start": 3.21,
-        "end": 3.689,
-        "speechText": "Oh my god.",
-        "language": "en",
-        "en": "Oh my god.",
-        "ja": "うわ、びっくり。"
-      },
-      {
-        "id": "real-random-04-cue-004",
-        "start": 3.689,
-        "end": 4.649,
-        "speechText": "Oh thank you.",
-        "language": "en",
-        "en": "Oh thank you.",
-        "ja": "ありがとう。"
-      },
-      {
-        "id": "real-random-04-cue-005",
-        "start": 4.649,
-        "end": 5.53,
-        "speechText": "Do you have a name?",
-        "language": "en",
-        "en": "Do you have a name?",
-        "ja": "名前、教えて？"
-      },
-      {
-        "id": "real-random-04-cue-006",
-        "start": 5.53,
-        "end": 6.65,
-        "speechText": "Okay I'll just call you mine.",
-        "language": "en",
-        "en": "Okay I'll just call you mine.",
-        "ja": "じゃあ、私の恋人って呼んじゃおう。"
-      },
-      {
-        "id": "real-random-04-cue-007",
-        "start": 7.93,
-        "end": 8.95,
-        "speechText": "Oh my god.",
-        "language": "en",
-        "en": "Oh my god.",
-        "ja": "うわ、やられた。"
-      }
-    ],
-    "subtitleVerification": "source captions reviewed against independent local acoustic recognition; editorial Japanese review; not full human listening"
-  },
-  {
-    "id": "real-random-05",
-    "category": "random",
-    "work": "リアル英会話",
-    "displayWork": "ランダムチャット · Ryan Hale",
-    "title": "名前よりも甘い呼び方",
-    "description": "ランダムチャット",
-    "duration": 23.39,
-    "source": "https://www.youtube.com/shorts/s4jW2_PVyoM",
-    "sourceStart": 0.5,
-    "sourceEnd": 23.89,
-    "creator": "Ryan Hale",
-    "sourceVideoId": "s4jW2_PVyoM",
-    "bakedEnglish": true,
-    "video": "/real-shorts/media/real-random-05.mp4",
-    "poster": "/real-shorts/posters/real-random-05.jpg",
-    "captions": [
-      {
-        "id": "real-random-05-cue-001",
-        "start": 0.94,
-        "end": 2.38,
-        "speechText": "I like you you're funny.",
-        "language": "en",
-        "en": "I like you you're funny.",
-        "ja": "あなた、面白くて好き。"
-      },
-      {
-        "id": "real-random-05-cue-002",
-        "start": 2.38,
-        "end": 3.58,
-        "speechText": "Thank you I know.",
-        "language": "en",
-        "en": "Thank you I know.",
-        "ja": "ありがとう。知ってる。"
-      },
-      {
-        "id": "real-random-05-cue-003",
-        "start": 3.58,
-        "end": 4.46,
-        "speechText": "You're so cute too.",
-        "language": "en",
-        "en": "You're so cute too.",
-        "ja": "あなたもすごくかわいいよ。"
-      },
-      {
-        "id": "real-random-05-cue-004",
-        "start": 4.46,
-        "end": 5.7,
-        "speechText": "What's your what's your name?",
-        "language": "en",
-        "en": "What's your what's your name?",
-        "ja": "名前は…名前は何ていうの？"
-      },
-      {
-        "id": "real-random-05-cue-005",
-        "start": 5.7,
-        "end": 7.74,
-        "speechText": "I'm sorry we haven't known each other.",
-        "language": "en",
-        "en": "I'm sorry we haven't known each other.",
-        "ja": "ごめん、まだお互いの名前も知らないね。"
-      },
-      {
-        "id": "real-random-05-cue-006",
+        "id": "real-random-13-cue-005",
         "start": 7.74,
-        "end": 9.42,
-        "speechText": "That's like the next question unbelievable.",
+        "end": 8.01,
+        "speechText": "Paella.",
         "language": "en",
-        "en": "That's like the next question unbelievable.",
-        "ja": "名前は次の質問か。まったく。"
+        "en": "Paella.",
+        "ja": "パエリャ。"
       },
       {
-        "id": "real-random-05-cue-007",
-        "start": 9.42,
-        "end": 10.86,
-        "speechText": "My name is Ryan.",
+        "id": "real-random-13-cue-006",
+        "start": 8.5,
+        "end": 8.99,
+        "speechText": "Paella.",
         "language": "en",
-        "en": "My name is Ryan.",
-        "ja": "僕はライアン。"
+        "en": "Paella.",
+        "ja": "パエリャ。"
       },
       {
-        "id": "real-random-05-cue-008",
-        "start": 10.86,
-        "end": 11.78,
-        "speechText": "What I'm sorry?",
+        "id": "real-random-13-cue-007",
+        "start": 9.56,
+        "end": 10.02,
+        "speechText": "Ya.",
         "language": "en",
-        "en": "What I'm sorry?",
-        "ja": "え？ ごめん、何て？"
+        "en": "Ya.",
+        "ja": "「リャ」。"
       },
       {
-        "id": "real-random-05-cue-009",
-        "start": 11.78,
-        "end": 13.94,
-        "speechText": "Ryan R Y A N.",
+        "id": "real-random-13-cue-008",
+        "start": 10.47,
+        "end": 10.76,
+        "speechText": "Ya.",
         "language": "en",
-        "en": "Ryan R Y A N.",
-        "ja": "ライアン。Ｒ・Ｙ・Ａ・Ｎ。"
+        "en": "Ya.",
+        "ja": "「リャ」。"
       },
       {
-        "id": "real-random-05-cue-010",
-        "start": 13.94,
-        "end": 16.15,
-        "speechText": "Ryan? Ryan.",
+        "id": "real-random-13-cue-009",
+        "start": 11.08,
+        "end": 12.26,
+        "speechText": "Paella. Paella.",
         "language": "en",
-        "en": "Ryan? Ryan.",
-        "ja": "ライアン？"
+        "en": "Paella. Paella.",
+        "ja": "パエリャ。パエリャ。"
       },
       {
-        "id": "real-random-05-cue-011",
-        "start": 16.3,
-        "end": 17.06,
-        "speechText": "Oh that's so hard.",
+        "id": "real-random-13-cue-010",
+        "start": 12.55,
+        "end": 12.96,
+        "speechText": "Yeah.",
         "language": "en",
-        "en": "Oh that's so hard.",
-        "ja": "ああ、難しいね。"
+        "en": "Yeah.",
+        "ja": "そう。"
       },
       {
-        "id": "real-random-05-cue-012",
-        "start": 17.06,
-        "end": 18.54,
-        "speechText": "Can I call you my baby instead?",
+        "id": "real-random-13-cue-011",
+        "start": 14.08,
+        "end": 15.27,
+        "speechText": "That's how you say it?",
         "language": "en",
-        "en": "Can I call you my baby instead?",
-        "ja": "代わりにベイビーって呼んでいい？"
+        "en": "That's how you say it?",
+        "ja": "そう発音するんだ？"
       },
       {
-        "id": "real-random-05-cue-013",
-        "start": 18.54,
-        "end": 20.19,
-        "speechText": "Oh my gosh.",
+        "id": "real-random-13-cue-012",
+        "start": 15.54,
+        "end": 15.9,
+        "speechText": "Yeah.",
         "language": "en",
-        "en": "Oh my gosh.",
-        "ja": "うわあ、やられた！"
-      },
-      {
-        "id": "real-random-05-cue-014",
-        "start": 20.22,
-        "end": 22.565,
-        "speechText": "What who taught you all these things?",
-        "language": "en",
-        "en": "What who taught you all these things?",
-        "ja": "そういうの、誰に教わったの？"
+        "en": "Yeah.",
+        "ja": "そう。"
       }
     ],
-    "subtitleVerification": "source captions reviewed against independent local acoustic recognition; editorial Japanese review; not full human listening"
+    "subtitleVerification": "local acoustic recognition and editorial English/Japanese review"
+  },
+  {
+    "id": "real-random-14",
+    "category": "random",
+    "work": "リアル英会話",
+    "displayWork": "ランダムチャット · Diiify",
+    "title": "国を当てて。テキサス？",
+    "description": "地図クイズ・答えを訂正する",
+    "duration": 8.85,
+    "source": "https://www.youtube.com/watch?v=JNdrSbnFpI0",
+    "sourceStart": 19.36,
+    "sourceEnd": 28.21,
+    "creator": "Diiify",
+    "sourceVideoId": "JNdrSbnFpI0",
+    "bakedEnglish": true,
+    "video": "/real-shorts/media/real-random-14.mp4",
+    "poster": "/real-shorts/posters/real-random-14.jpg",
+    "captions": [
+      {
+        "id": "real-random-14-cue-001",
+        "start": 0.08,
+        "end": 1.28,
+        "speechText": "What country is this?",
+        "language": "en",
+        "en": "What country is this?",
+        "ja": "これはどの国？"
+      },
+      {
+        "id": "real-random-14-cue-002",
+        "start": 1.51,
+        "end": 3.0,
+        "speechText": "Texas. It's gotta be Texas.",
+        "language": "en",
+        "en": "Texas. It's gotta be Texas.",
+        "ja": "テキサス。テキサスに違いない。"
+      },
+      {
+        "id": "real-random-14-cue-003",
+        "start": 3.36,
+        "end": 5.02,
+        "speechText": "Texas is a state of a country.",
+        "language": "en",
+        "en": "Texas is a state of a country.",
+        "ja": "テキサスは国の中の州だよ。"
+      },
+      {
+        "id": "real-random-14-cue-004",
+        "start": 5.38,
+        "end": 6.32,
+        "speechText": "No, I ain't get it.",
+        "language": "en",
+        "en": "No, I ain't get it.",
+        "ja": "うーん、分かんない。"
+      },
+      {
+        "id": "real-random-14-cue-005",
+        "start": 6.38,
+        "end": 8.62,
+        "speechText": "So this is America, but sideways.",
+        "language": "en",
+        "en": "So this is America, but sideways.",
+        "ja": "これはアメリカを横向きにしたものだよ。"
+      }
+    ],
+    "subtitleVerification": "local acoustic recognition and editorial English/Japanese review"
+  },
+  {
+    "id": "real-random-15",
+    "category": "random",
+    "work": "リアル英会話",
+    "displayWork": "ランダムチャット · Marcus Veltri",
+    "title": "やっぱり別の曲を弾いて",
+    "description": "好きな曲を頼む・頼み直す",
+    "duration": 10.45,
+    "source": "https://www.youtube.com/watch?v=uj-M1uD6SV0",
+    "sourceStart": 37.18,
+    "sourceEnd": 47.63,
+    "creator": "Marcus Veltri",
+    "sourceVideoId": "uj-M1uD6SV0",
+    "bakedEnglish": false,
+    "video": "/real-shorts/media/real-random-15.mp4",
+    "poster": "/real-shorts/posters/real-random-15.jpg",
+    "captions": [
+      {
+        "id": "real-random-15-cue-001",
+        "start": 0.16,
+        "end": 0.88,
+        "speechText": "What song do you want to hear?",
+        "language": "en",
+        "en": "What song do you want to hear?",
+        "ja": "何の曲が聴きたい？"
+      },
+      {
+        "id": "real-random-15-cue-002",
+        "start": 1.62,
+        "end": 3.66,
+        "speechText": "Oh, um, let's do “Mamma Mia.”",
+        "language": "en",
+        "en": "Oh, um, let's do “Mamma Mia.”",
+        "ja": "あ、えっと、『マンマ・ミーア』にしよう。"
+      },
+      {
+        "id": "real-random-15-cue-003",
+        "start": 4.66,
+        "end": 6.6,
+        "speechText": "“Mamma Mia,” um, ABBA?",
+        "language": "en",
+        "en": "“Mamma Mia,” um, ABBA?",
+        "ja": "『マンマ・ミーア』、えっと、ABBAの？"
+      },
+      {
+        "id": "real-random-15-cue-004",
+        "start": 6.94,
+        "end": 7.28,
+        "speechText": "Yes.",
+        "language": "en",
+        "en": "Yes.",
+        "ja": "そう。"
+      },
+      {
+        "id": "real-random-15-cue-005",
+        "start": 8.08,
+        "end": 10.02,
+        "speechText": "No, “Chiquitita.” Do “Chiquitita.”",
+        "language": "en",
+        "en": "No, “Chiquitita.” Do “Chiquitita.”",
+        "ja": "いや、『チキチータ』。『チキチータ』を弾いて。"
+      }
+    ],
+    "subtitleVerification": "local acoustic recognition and editorial English/Japanese review"
+  },
+  {
+    "id": "real-random-16",
+    "category": "random",
+    "work": "リアル英会話",
+    "displayWork": "ランダムチャット · Shrimpy",
+    "title": "似顔絵を描いてもいい？",
+    "description": "提案する・作品を見せる",
+    "duration": 15.1,
+    "source": "https://www.youtube.com/watch?v=j2lueSHUJz0",
+    "sourceStart": 99.12,
+    "sourceEnd": 114.22,
+    "creator": "Shrimpy",
+    "sourceVideoId": "j2lueSHUJz0",
+    "bakedEnglish": true,
+    "video": "/real-shorts/media/real-random-16.mp4",
+    "poster": "/real-shorts/posters/real-random-16.jpg",
+    "captions": [
+      {
+        "id": "real-random-16-cue-001",
+        "start": 0.12,
+        "end": 2.53,
+        "speechText": "Are you interested in being drawn?",
+        "language": "en",
+        "en": "Are you interested in being drawn?",
+        "ja": "似顔絵を描いてもらうのに興味ある？"
+      },
+      {
+        "id": "real-random-16-cue-002",
+        "start": 5.08,
+        "end": 5.96,
+        "speechText": "Let's say yes.",
+        "language": "en",
+        "en": "Let's say yes.",
+        "ja": "じゃあ、いいよ。"
+      },
+      {
+        "id": "real-random-16-cue-003",
+        "start": 5.96,
+        "end": 8.38,
+        "speechText": "All right, I'll show you, just to convince you a little more.",
+        "language": "en",
+        "en": "All right, I'll show you, just to convince you a little more.",
+        "ja": "よし、もう少し納得してもらえるように見せるね。"
+      },
+      {
+        "id": "real-random-16-cue-004",
+        "start": 8.38,
+        "end": 9.98,
+        "speechText": "I'll show you some work that I've done.",
+        "language": "en",
+        "en": "I'll show you some work that I've done.",
+        "ja": "僕が描いた絵をいくつか見せるよ。"
+      },
+      {
+        "id": "real-random-16-cue-005",
+        "start": 13.48,
+        "end": 14.8,
+        "speechText": "Interesting. That's good.",
+        "language": "en",
+        "en": "Interesting. That's good.",
+        "ja": "面白いね。いいじゃん。"
+      }
+    ],
+    "subtitleVerification": "local acoustic recognition and editorial English/Japanese review"
+  },
+  {
+    "id": "real-random-17",
+    "category": "random",
+    "work": "リアル英会話",
+    "displayWork": "ランダムチャット · Gazi Nahian",
+    "title": "バングラデシュってどこ？",
+    "description": "出身地を伝える・位置を説明する",
+    "duration": 18.08,
+    "source": "https://www.youtube.com/watch?v=-QY0lSjMDn4",
+    "sourceStart": 35.2,
+    "sourceEnd": 53.28,
+    "creator": "Gazi Nahian",
+    "sourceVideoId": "-QY0lSjMDn4",
+    "bakedEnglish": false,
+    "video": "/real-shorts/media/real-random-17.mp4",
+    "poster": "/real-shorts/posters/real-random-17.jpg",
+    "captions": [
+      {
+        "id": "real-random-17-cue-001",
+        "start": 0.2,
+        "end": 0.88,
+        "speechText": "I'm from Bangladesh.",
+        "language": "en",
+        "en": "I'm from Bangladesh.",
+        "ja": "バングラデシュ出身だよ。"
+      },
+      {
+        "id": "real-random-17-cue-002",
+        "start": 2.24,
+        "end": 2.9,
+        "speechText": "Where's that?",
+        "language": "en",
+        "en": "Where's that?",
+        "ja": "それってどこ？"
+      },
+      {
+        "id": "real-random-17-cue-003",
+        "start": 3.86,
+        "end": 4.4,
+        "speechText": "Bangladesh.",
+        "language": "en",
+        "en": "Bangladesh.",
+        "ja": "バングラデシュ。"
+      },
+      {
+        "id": "real-random-17-cue-004",
+        "start": 4.96,
+        "end": 6.5,
+        "speechText": "You know Pakistan, China.",
+        "language": "en",
+        "en": "You know Pakistan, China.",
+        "ja": "パキスタンとか中国は知ってるよね。"
+      },
+      {
+        "id": "real-random-17-cue-005",
+        "start": 8.16,
+        "end": 8.98,
+        "speechText": "Oh, like Pakistan.",
+        "language": "en",
+        "en": "Oh, like Pakistan.",
+        "ja": "ああ、パキスタンのあたりか。"
+      },
+      {
+        "id": "real-random-17-cue-006",
+        "start": 10.14,
+        "end": 11.9,
+        "speechText": "Not really Pakistani.",
+        "language": "en",
+        "en": "Not really Pakistani.",
+        "ja": "パキスタンってわけじゃなくて。"
+      },
+      {
+        "id": "real-random-17-cue-007",
+        "start": 11.9,
+        "end": 17.8,
+        "speechText": "And my country has been independent in 1971 from Pakistan.",
+        "language": "en",
+        "en": "And my country has been independent in 1971 from Pakistan.",
+        "ja": "僕の国は1971年にパキスタンから独立したんだ。"
+      }
+    ],
+    "subtitleVerification": "local acoustic recognition and editorial English/Japanese review"
+  },
+  {
+    "id": "real-random-18",
+    "category": "random",
+    "work": "リアル英会話",
+    "displayWork": "ランダムチャット · Hayato from Japan",
+    "title": "スペインの挨拶は頬に二回",
+    "description": "文化の違いを説明する",
+    "duration": 23.82,
+    "source": "https://www.youtube.com/shorts/Ruh0YrOdDAo",
+    "sourceStart": 18.6,
+    "sourceEnd": 42.42,
+    "creator": "Hayato from Japan",
+    "sourceVideoId": "Ruh0YrOdDAo",
+    "bakedEnglish": false,
+    "video": "/real-shorts/media/real-random-18.mp4",
+    "poster": "/real-shorts/posters/real-random-18.jpg",
+    "captions": [
+      {
+        "id": "real-random-18-cue-001",
+        "start": 0.24,
+        "end": 1.52,
+        "speechText": "I want to live in Japan.",
+        "language": "en",
+        "en": "I want to live in Japan.",
+        "ja": "日本に住んでみたい。"
+      },
+      {
+        "id": "real-random-18-cue-002",
+        "start": 1.84,
+        "end": 2.92,
+        "speechText": "Yeah, but I'm scared,",
+        "language": "en",
+        "en": "Yeah, but I'm scared,",
+        "ja": "でもちょっと不安で、"
+      },
+      {
+        "id": "real-random-18-cue-003",
+        "start": 3.34,
+        "end": 7.3,
+        "speechText": "because it's pretty different on the culture and stuff, so…",
+        "language": "en",
+        "en": "because it's pretty different on the culture and stuff, so…",
+        "ja": "文化とか、かなり違うから。"
+      },
+      {
+        "id": "real-random-18-cue-004",
+        "start": 7.3,
+        "end": 10.34,
+        "speechText": "For example, for me, it's normal when you meet someone,",
+        "language": "en",
+        "en": "For example, for me, it's normal when you meet someone,",
+        "ja": "たとえば私たちのところでは、人に会ったら普通、"
+      },
+      {
+        "id": "real-random-18-cue-005",
+        "start": 10.34,
+        "end": 11.84,
+        "speechText": "give them two kisses.",
+        "language": "en",
+        "en": "give them two kisses.",
+        "ja": "頬に二回キスするの。"
+      },
+      {
+        "id": "real-random-18-cue-006",
+        "start": 11.84,
+        "end": 12.86,
+        "speechText": "Two kisses?",
+        "language": "en",
+        "en": "Two kisses?",
+        "ja": "二回？"
+      },
+      {
+        "id": "real-random-18-cue-007",
+        "start": 12.86,
+        "end": 15.08,
+        "speechText": "Two kisses, like…",
+        "language": "en",
+        "en": "Two kisses, like…",
+        "ja": "二回、こんなふうに。"
+      },
+      {
+        "id": "real-random-18-cue-008",
+        "start": 15.08,
+        "end": 15.6,
+        "speechText": "Yeah, yeah.",
+        "language": "en",
+        "en": "Yeah, yeah.",
+        "ja": "ああ、うん。"
+      },
+      {
+        "id": "real-random-18-cue-009",
+        "start": 15.6,
+        "end": 17.75,
+        "speechText": "Yeah, it's really normal, and hugging.",
+        "language": "en",
+        "en": "Yeah, it's really normal, and hugging.",
+        "ja": "そう、普通にやるの。ハグもするし。"
+      },
+      {
+        "id": "real-random-18-cue-010",
+        "start": 18.32,
+        "end": 22.16,
+        "speechText": "Yeah, that's why I'm scared to go somewhere else.",
+        "language": "en",
+        "en": "Yeah, that's why I'm scared to go somewhere else.",
+        "ja": "だから、別の国に行くのは少し不安なの。"
+      },
+      {
+        "id": "real-random-18-cue-011",
+        "start": 22.16,
+        "end": 23.65,
+        "speechText": "You can't do that.",
+        "language": "en",
+        "en": "You can't do that.",
+        "ja": "それはできないね。"
+      }
+    ],
+    "subtitleVerification": "local acoustic recognition and editorial English/Japanese review"
+  },
+  {
+    "id": "real-random-19",
+    "category": "random",
+    "work": "リアル英会話",
+    "displayWork": "ランダムチャット · Hayato from Japan",
+    "title": "チーターは即答。次は馬かパンダか",
+    "description": "クイズ・答えを相談する",
+    "duration": 22.76,
+    "source": "https://www.youtube.com/shorts/AJ2Cr9MsvjY",
+    "sourceStart": 0,
+    "sourceEnd": 22.76,
+    "creator": "Hayato from Japan",
+    "sourceVideoId": "AJ2Cr9MsvjY",
+    "bakedEnglish": false,
+    "video": "/real-shorts/media/real-random-19.mp4",
+    "poster": "/real-shorts/posters/real-random-19.jpg",
+    "captions": [
+      {
+        "id": "real-random-19-cue-001",
+        "start": 0,
+        "end": 1.39,
+        "speechText": "Which animal is fastest on land?",
+        "language": "en",
+        "en": "Which animal is fastest on land?",
+        "ja": "陸で一番速い動物は？"
+      },
+      {
+        "id": "real-random-19-cue-002",
+        "start": 1.66,
+        "end": 2.6,
+        "speechText": "Cheetah! Cheetah!",
+        "language": "en",
+        "en": "Cheetah! Cheetah!",
+        "ja": "チーター！ チーター！"
+      },
+      {
+        "id": "real-random-19-cue-003",
+        "start": 2.6,
+        "end": 3.43,
+        "speechText": "Okay, that's easy.",
+        "language": "en",
+        "en": "Okay, that's easy.",
+        "ja": "よし、これは簡単。"
+      },
+      {
+        "id": "real-random-19-cue-004",
+        "start": 3.86,
+        "end": 4.05,
+        "speechText": "Yeah!",
+        "language": "en",
+        "en": "Yeah!",
+        "ja": "正解！"
+      },
+      {
+        "id": "real-random-19-cue-005",
+        "start": 4.84,
+        "end": 5.3,
+        "speechText": "Next one.",
+        "language": "en",
+        "en": "Next one.",
+        "ja": "次ね。"
+      },
+      {
+        "id": "real-random-19-cue-006",
+        "start": 5.66,
+        "end": 5.98,
+        "speechText": "Horse.",
+        "language": "en",
+        "en": "Horse.",
+        "ja": "馬。"
+      },
+      {
+        "id": "real-random-19-cue-007",
+        "start": 6.36,
+        "end": 6.6,
+        "speechText": "Really?",
+        "language": "en",
+        "en": "Really?",
+        "ja": "ほんと？"
+      },
+      {
+        "id": "real-random-19-cue-008",
+        "start": 7.78,
+        "end": 8.73,
+        "speechText": "Panda! Panda! Panda!",
+        "language": "en",
+        "en": "Panda! Panda! Panda!",
+        "ja": "パンダ！ パンダ！ パンダ！"
+      },
+      {
+        "id": "real-random-19-cue-009",
+        "start": 8.96,
+        "end": 9.38,
+        "speechText": "This is a panda.",
+        "language": "en",
+        "en": "This is a panda.",
+        "ja": "これがパンダ。"
+      },
+      {
+        "id": "real-random-19-cue-010",
+        "start": 9.7,
+        "end": 10.54,
+        "speechText": "Horse! Horse!",
+        "language": "en",
+        "en": "Horse! Horse!",
+        "ja": "馬だよ、馬！"
+      },
+      {
+        "id": "real-random-19-cue-011",
+        "start": 11.14,
+        "end": 11.43,
+        "speechText": "No, wait!",
+        "language": "en",
+        "en": "No, wait!",
+        "ja": "いや、待って！"
+      },
+      {
+        "id": "real-random-19-cue-012",
+        "start": 11.64,
+        "end": 12.39,
+        "speechText": "No, no, no, no, no!",
+        "language": "en",
+        "en": "No, no, no, no, no!",
+        "ja": "違う違う！"
+      },
+      {
+        "id": "real-random-19-cue-013",
+        "start": 12.72,
+        "end": 13.02,
+        "speechText": "Panda!",
+        "language": "en",
+        "en": "Panda!",
+        "ja": "パンダ！"
+      },
+      {
+        "id": "real-random-19-cue-014",
+        "start": 13.44,
+        "end": 14.36,
+        "speechText": "No, no, not panda!",
+        "language": "en",
+        "en": "No, no, not panda!",
+        "ja": "いやいや、パンダじゃない！"
+      },
+      {
+        "id": "real-random-19-cue-015",
+        "start": 14.82,
+        "end": 15.31,
+        "speechText": "It's a horse!",
+        "language": "en",
+        "en": "It's a horse!",
+        "ja": "馬だよ！"
+      },
+      {
+        "id": "real-random-19-cue-016",
+        "start": 16.24,
+        "end": 17.7,
+        "speechText": "Horse! Horse! Horse!",
+        "language": "en",
+        "en": "Horse! Horse! Horse!",
+        "ja": "馬、馬、馬！"
+      },
+      {
+        "id": "real-random-19-cue-017",
+        "start": 18.24,
+        "end": 18.76,
+        "speechText": "Yes!",
+        "language": "en",
+        "en": "Yes!",
+        "ja": "よし！"
+      },
+      {
+        "id": "real-random-19-cue-018",
+        "start": 19.38,
+        "end": 19.78,
+        "speechText": "That one!",
+        "language": "en",
+        "en": "That one!",
+        "ja": "それ！"
+      },
+      {
+        "id": "real-random-19-cue-019",
+        "start": 20.12,
+        "end": 20.38,
+        "speechText": "Yeah!",
+        "language": "en",
+        "en": "Yeah!",
+        "ja": "やった！"
+      },
+      {
+        "id": "real-random-19-cue-020",
+        "start": 21.84,
+        "end": 22.55,
+        "speechText": "Let's go!",
+        "language": "en",
+        "en": "Let's go!",
+        "ja": "よっしゃ！"
+      }
+    ],
+    "subtitleVerification": "local acoustic recognition and editorial English/Japanese review"
+  },
+  {
+    "id": "real-random-20",
+    "category": "random",
+    "work": "リアル英会話",
+    "displayWork": "ランダムチャット · Marcus Veltri",
+    "title": "リクエストがあるならどうぞ",
+    "description": "曲名とアーティストを伝える",
+    "duration": 9.26,
+    "source": "https://www.youtube.com/watch?v=uj-M1uD6SV0",
+    "sourceStart": 190.58,
+    "sourceEnd": 199.84,
+    "creator": "Marcus Veltri",
+    "sourceVideoId": "uj-M1uD6SV0",
+    "bakedEnglish": false,
+    "video": "/real-shorts/media/real-random-20.mp4",
+    "poster": "/real-shorts/posters/real-random-20.jpg",
+    "captions": [
+      {
+        "id": "real-random-20-cue-001",
+        "start": 0.16,
+        "end": 1.82,
+        "speechText": "I take song requests for people on Omegle.",
+        "language": "en",
+        "en": "I take song requests for people on Omegle.",
+        "ja": "Omegleで曲のリクエストを受けてるんだ。"
+      },
+      {
+        "id": "real-random-20-cue-002",
+        "start": 2.14,
+        "end": 4.22,
+        "speechText": "So if you have a request, throw it at me.",
+        "language": "en",
+        "en": "So if you have a request, throw it at me.",
+        "ja": "弾いてほしい曲があったら言って。"
+      },
+      {
+        "id": "real-random-20-cue-003",
+        "start": 4.42,
+        "end": 5.46,
+        "speechText": "I got it, I got it, I got it.",
+        "language": "en",
+        "en": "I got it, I got it, I got it.",
+        "ja": "ある、ある、ある！"
+      },
+      {
+        "id": "real-random-20-cue-004",
+        "start": 5.86,
+        "end": 7.41,
+        "speechText": "“Babel” by Mumford & Sons.",
+        "language": "en",
+        "en": "“Babel” by Mumford & Sons.",
+        "ja": "マムフォード＆サンズの『バベル』。"
+      },
+      {
+        "id": "real-random-20-cue-005",
+        "start": 8.0,
+        "end": 8.98,
+        "speechText": "Um, here we go.",
+        "language": "en",
+        "en": "Um, here we go.",
+        "ja": "えっと、じゃあいくよ。"
+      }
+    ],
+    "subtitleVerification": "local acoustic recognition and editorial English/Japanese review"
   },
   {
     "id": "real-street-01",
@@ -2098,601 +2612,6 @@
       }
     ],
     "subtitleVerification": "source captions reviewed against independent local acoustic recognition; editorial Japanese review; not full human listening"
-  },
-  {
-    "id": "real-random-06",
-    "category": "random",
-    "work": "リアル英会話",
-    "displayWork": "ランダムチャット · Allen Magicツ",
-    "title": "水はワインに変えられないけど",
-    "description": "ランダムチャット",
-    "duration": 16.2,
-    "source": "https://www.youtube.com/shorts/1KYNY3YyGWo",
-    "sourceStart": 0,
-    "sourceEnd": 16.2,
-    "creator": "Allen Magicツ",
-    "sourceVideoId": "1KYNY3YyGWo",
-    "bakedEnglish": true,
-    "video": "/real-shorts/media/real-random-06.mp4",
-    "poster": "/real-shorts/posters/real-random-06.jpg",
-    "captions": [
-      {
-        "id": "real-random-06-cue-001",
-        "start": 0,
-        "end": 1.42,
-        "speechText": "That was a good one,",
-        "language": "en",
-        "en": "That was a good one,",
-        "ja": "今のはよかったね。"
-      },
-      {
-        "id": "real-random-06-cue-002",
-        "start": 1.42,
-        "end": 2.64,
-        "speechText": "That was a good one.",
-        "language": "en",
-        "en": "That was a good one.",
-        "ja": "今のはよかったね。"
-      },
-      {
-        "id": "real-random-06-cue-003",
-        "start": 2.72,
-        "end": 5.1,
-        "speechText": "Um, I'm not Jesus, alright?",
-        "language": "en",
-        "en": "Um, I'm not Jesus, alright?",
-        "ja": "えっと、僕はイエスじゃないよ。"
-      },
-      {
-        "id": "real-random-06-cue-004",
-        "start": 5.48,
-        "end": 6.13,
-        "speechText": "Okay.",
-        "language": "en",
-        "en": "Okay.",
-        "ja": "分かったよ。"
-      },
-      {
-        "id": "real-random-06-cue-005",
-        "start": 6.14,
-        "end": 7.02,
-        "speechText": "I'm not Jesus,",
-        "language": "en",
-        "en": "I'm not Jesus,",
-        "ja": "僕はイエスじゃない。"
-      },
-      {
-        "id": "real-random-06-cue-006",
-        "start": 7.2,
-        "end": 9.84,
-        "speechText": "I can't turn water into wine.",
-        "language": "en",
-        "en": "I can't turn water into wine.",
-        "ja": "水をワインに変えられない。"
-      },
-      {
-        "id": "real-random-06-cue-007",
-        "start": 11.78,
-        "end": 12.52,
-        "speechText": "But,",
-        "language": "en",
-        "en": "But,",
-        "ja": "でもね、"
-      },
-      {
-        "id": "real-random-06-cue-008",
-        "start": 12.66,
-        "end": 15.66,
-        "speechText": "I can tell you that I can turn you into mine.",
-        "language": "en",
-        "en": "I can tell you that I can turn you into mine.",
-        "ja": "君を僕の恋人にすることならできるよ。"
-      }
-    ],
-    "subtitleVerification": "two independent local speech recognizers + sampled burned-in caption review + editorial English/Japanese review; not full human listening"
-  },
-  {
-    "id": "real-random-07",
-    "category": "random",
-    "work": "リアル英会話",
-    "displayWork": "ランダムチャット · Allen Magicツ",
-    "title": "血液型よりも好きなタイプ",
-    "description": "ランダムチャット",
-    "duration": 17.1,
-    "source": "https://www.youtube.com/shorts/qYYn9wD9Ic0",
-    "sourceStart": 1.6,
-    "sourceEnd": 18.7,
-    "creator": "Allen Magicツ",
-    "sourceVideoId": "qYYn9wD9Ic0",
-    "bakedEnglish": true,
-    "video": "/real-shorts/media/real-random-07.mp4",
-    "poster": "/real-shorts/posters/real-random-07.jpg",
-    "captions": [
-      {
-        "id": "real-random-07-cue-001",
-        "start": 0,
-        "end": 2.3,
-        "speechText": "What's your blood type?",
-        "language": "en",
-        "en": "What's your blood type?",
-        "ja": "血液型は何？"
-      },
-      {
-        "id": "real-random-07-cue-002",
-        "start": 2.3,
-        "end": 5.0,
-        "speechText": "Um, what's my blood type...",
-        "language": "en",
-        "en": "Um, what's my blood type...",
-        "ja": "えーと、私の血液型…"
-      },
-      {
-        "id": "real-random-07-cue-003",
-        "start": 5.0,
-        "end": 6.74,
-        "speechText": "Yeah, yeah.",
-        "language": "en",
-        "en": "Yeah, yeah.",
-        "ja": "うん、うん。"
-      },
-      {
-        "id": "real-random-07-cue-004",
-        "start": 6.74,
-        "end": 10.0,
-        "speechText": "My blood type is A positive.",
-        "language": "en",
-        "en": "My blood type is A positive.",
-        "ja": "血液型はA型のRhプラス。"
-      },
-      {
-        "id": "real-random-07-cue-005",
-        "start": 10.92,
-        "end": 12.94,
-        "speechText": "No, no, no, no, no.",
-        "language": "en",
-        "en": "No, no, no, no, no.",
-        "ja": "いや、違う、違う、違う。"
-      },
-      {
-        "id": "real-random-07-cue-006",
-        "start": 12.94,
-        "end": 14.84,
-        "speechText": "I think you are not A.",
-        "language": "en",
-        "en": "I think you are not A.",
-        "ja": "たぶん君はA型じゃない。"
-      },
-      {
-        "id": "real-random-07-cue-007",
-        "start": 14.84,
-        "end": 16.48,
-        "speechText": "You are my type.",
-        "language": "en",
-        "en": "You are my type.",
-        "ja": "君は僕のタイプ。"
-      }
-    ],
-    "subtitleVerification": "two independent local speech recognizers + sampled burned-in caption review + editorial English/Japanese review; not full human listening"
-  },
-  {
-    "id": "real-random-08",
-    "category": "random",
-    "work": "リアル英会話",
-    "displayWork": "ランダムチャット · Allen Magicツ",
-    "title": "宝くじの大当たりは目の前に",
-    "description": "ランダムチャット",
-    "duration": 34.3,
-    "source": "https://www.youtube.com/shorts/QT5Y3wmpQKw",
-    "sourceStart": 4.8,
-    "sourceEnd": 39.1,
-    "creator": "Allen Magicツ",
-    "sourceVideoId": "QT5Y3wmpQKw",
-    "bakedEnglish": true,
-    "video": "/real-shorts/media/real-random-08.mp4",
-    "poster": "/real-shorts/posters/real-random-08.jpg",
-    "captions": [
-      {
-        "id": "real-random-08-cue-001",
-        "start": 0,
-        "end": 5.62,
-        "speechText": "My god, no! I won a lottery.",
-        "language": "en",
-        "en": "My god, no! I won a lottery.",
-        "ja": "うそ、やばい！宝くじに当たった！"
-      },
-      {
-        "id": "real-random-08-cue-002",
-        "start": 5.62,
-        "end": 8.38,
-        "speechText": "I can't believe this.",
-        "language": "en",
-        "en": "I can't believe this.",
-        "ja": "信じられない。"
-      },
-      {
-        "id": "real-random-08-cue-003",
-        "start": 8.72,
-        "end": 10.04,
-        "speechText": "Wow, damn.",
-        "language": "en",
-        "en": "Wow, damn.",
-        "ja": "わあ、やばい。"
-      },
-      {
-        "id": "real-random-08-cue-004",
-        "start": 10.04,
-        "end": 15.46,
-        "speechText": "And they say, and they say that the grand prize is in front of me.",
-        "language": "en",
-        "en": "And they say, and they say that the grand prize is in front of me.",
-        "ja": "しかも大当たりは僕の目の前にいるって。"
-      },
-      {
-        "id": "real-random-08-cue-005",
-        "start": 25.52,
-        "end": 26.88,
-        "speechText": "No, I'm not!",
-        "language": "en",
-        "en": "No, I'm not!",
-        "ja": "いや、違う！"
-      },
-      {
-        "id": "real-random-08-cue-006",
-        "start": 30.18,
-        "end": 31.34,
-        "speechText": "That was bad.",
-        "language": "en",
-        "en": "That was bad.",
-        "ja": "今のはダメだった。"
-      },
-      {
-        "id": "real-random-08-cue-007",
-        "start": 31.4,
-        "end": 31.88,
-        "speechText": "That was bad.",
-        "language": "en",
-        "en": "That was bad.",
-        "ja": "本当にダメだった。"
-      },
-      {
-        "id": "real-random-08-cue-008",
-        "start": 31.88,
-        "end": 32.24,
-        "speechText": "I'm sorry.",
-        "language": "en",
-        "en": "I'm sorry.",
-        "ja": "ごめん。"
-      },
-      {
-        "id": "real-random-08-cue-009",
-        "start": 32.24,
-        "end": 33.16,
-        "speechText": "No, that was so good.",
-        "language": "en",
-        "en": "No, that was so good.",
-        "ja": "いや、最高だったよ。"
-      },
-      {
-        "id": "real-random-08-cue-010",
-        "start": 33.16,
-        "end": 34.3,
-        "speechText": "Look, I'm turning red.",
-        "language": "en",
-        "en": "Look, I'm turning red.",
-        "ja": "ほら、顔が赤くなる。"
-      }
-    ],
-    "subtitleVerification": "two independent local speech recognizers + sampled burned-in caption review + editorial English/Japanese review; not full human listening"
-  },
-  {
-    "id": "real-random-09",
-    "category": "random",
-    "work": "リアル英会話",
-    "displayWork": "ランダムチャット · Allen Magicツ",
-    "title": "ちょっと近くに来てくれる？",
-    "description": "ランダムチャット",
-    "duration": 27.6,
-    "source": "https://www.youtube.com/shorts/1ZwJgaqDhvA",
-    "sourceStart": 23.4,
-    "sourceEnd": 51.0,
-    "creator": "Allen Magicツ",
-    "sourceVideoId": "1ZwJgaqDhvA",
-    "bakedEnglish": true,
-    "video": "/real-shorts/media/real-random-09.mp4",
-    "poster": "/real-shorts/posters/real-random-09.jpg",
-    "captions": [
-      {
-        "id": "real-random-09-cue-001",
-        "start": 0,
-        "end": 2.92,
-        "speechText": "My god, yo!",
-        "language": "en",
-        "en": "My god, yo!",
-        "ja": "うわ、やばい！"
-      },
-      {
-        "id": "real-random-09-cue-002",
-        "start": 3.14,
-        "end": 4.3,
-        "speechText": "I have a question.",
-        "language": "en",
-        "en": "I have a question.",
-        "ja": "質問があるんだけど。"
-      },
-      {
-        "id": "real-random-09-cue-003",
-        "start": 5.34,
-        "end": 6.98,
-        "speechText": "Okay, can you come a little bit close?",
-        "language": "en",
-        "en": "Okay, can you come a little bit close?",
-        "ja": "ちょっと近くに来てくれる？"
-      },
-      {
-        "id": "real-random-09-cue-004",
-        "start": 6.98,
-        "end": 11.84,
-        "speechText": "Okay, okay.",
-        "language": "en",
-        "en": "Okay, okay.",
-        "ja": "うん、わかった。"
-      },
-      {
-        "id": "real-random-09-cue-005",
-        "start": 11.84,
-        "end": 15.22,
-        "speechText": "There is something wrong with your lips.",
-        "language": "en",
-        "en": "There is something wrong with your lips.",
-        "ja": "君のくちびる、なんか変だよ。"
-      },
-      {
-        "id": "real-random-09-cue-006",
-        "start": 15.22,
-        "end": 19.74,
-        "speechText": "What, what, what?",
-        "language": "en",
-        "en": "What, what, what?",
-        "ja": "何？何？何？"
-      },
-      {
-        "id": "real-random-09-cue-007",
-        "start": 19.74,
-        "end": 21.6,
-        "speechText": "Your lips looks lonely.",
-        "language": "en",
-        "en": "Your lips looks lonely.",
-        "ja": "君の唇、寂しそうだよ。"
-      },
-      {
-        "id": "real-random-09-cue-008",
-        "start": 21.6,
-        "end": 23.56,
-        "speechText": "Yeah.",
-        "language": "en",
-        "en": "Yeah.",
-        "ja": "うん。"
-      },
-      {
-        "id": "real-random-09-cue-009",
-        "start": 23.56,
-        "end": 26.88,
-        "speechText": "Do they want to meet mine?",
-        "language": "en",
-        "en": "Do they want to meet mine?",
-        "ja": "僕のと会いたいのかな？"
-      }
-    ],
-    "subtitleVerification": "two independent local speech recognizers + sampled burned-in caption review + editorial English/Japanese review; not full human listening"
-  },
-  {
-    "id": "real-random-10",
-    "category": "random",
-    "work": "リアル英会話",
-    "displayWork": "ランダムチャット · BaldHeadCam",
-    "title": "実は動画をフォローしてるんだ",
-    "description": "ランダムチャット",
-    "duration": 44.0,
-    "source": "https://www.youtube.com/shorts/V6wFnPrKOa0",
-    "sourceStart": 0,
-    "sourceEnd": 44.0,
-    "creator": "BaldHeadCam",
-    "sourceVideoId": "V6wFnPrKOa0",
-    "bakedEnglish": false,
-    "video": "/real-shorts/media/real-random-10.mp4",
-    "poster": "/real-shorts/posters/real-random-10.jpg",
-    "captions": [
-      {
-        "id": "real-random-10-cue-001",
-        "start": 0.24,
-        "end": 1.18,
-        "speechText": "Oh, hi.",
-        "language": "en",
-        "en": "Oh, hi.",
-        "ja": "あ、こんにちは。"
-      },
-      {
-        "id": "real-random-10-cue-002",
-        "start": 1.18,
-        "end": 1.83,
-        "speechText": "Hello.",
-        "language": "en",
-        "en": "Hello.",
-        "ja": "こんにちは。"
-      },
-      {
-        "id": "real-random-10-cue-003",
-        "start": 2.0,
-        "end": 3.38,
-        "speechText": "How are you? What's up?",
-        "language": "en",
-        "en": "How are you? What's up?",
-        "ja": "元気？調子はどう？"
-      },
-      {
-        "id": "real-random-10-cue-004",
-        "start": 3.38,
-        "end": 4.1,
-        "speechText": "How are you?",
-        "language": "en",
-        "en": "How are you?",
-        "ja": "元気？"
-      },
-      {
-        "id": "real-random-10-cue-005",
-        "start": 5.04,
-        "end": 6.94,
-        "speechText": "I mean, I'm good, and you bro.",
-        "language": "en",
-        "en": "I mean, I'm good, and you bro.",
-        "ja": "うん、元気だよ。君はどう？"
-      },
-      {
-        "id": "real-random-10-cue-006",
-        "start": 7.82,
-        "end": 8.47,
-        "speechText": "Yeah.",
-        "language": "en",
-        "en": "Yeah.",
-        "ja": "うん。"
-      },
-      {
-        "id": "real-random-10-cue-007",
-        "start": 9.0,
-        "end": 11.52,
-        "speechText": "You know, actually, I do know you.",
-        "language": "en",
-        "en": "You know, actually, I do know you.",
-        "ja": "実は、君のこと知ってるよ。"
-      },
-      {
-        "id": "real-random-10-cue-008",
-        "start": 11.96,
-        "end": 12.61,
-        "speechText": "Oh.",
-        "language": "en",
-        "en": "Oh.",
-        "ja": "ああ。"
-      },
-      {
-        "id": "real-random-10-cue-009",
-        "start": 13.62,
-        "end": 14.14,
-        "speechText": "Really?",
-        "language": "en",
-        "en": "Really?",
-        "ja": "本当に？"
-      },
-      {
-        "id": "real-random-10-cue-010",
-        "start": 14.14,
-        "end": 16.06,
-        "speechText": "Oh, yeah. Yeah.",
-        "language": "en",
-        "en": "Oh, yeah. Yeah.",
-        "ja": "うん、そうだよ。"
-      },
-      {
-        "id": "real-random-10-cue-011",
-        "start": 19.8,
-        "end": 21.48,
-        "speechText": "So, you see my videos?",
-        "language": "en",
-        "en": "So, you see my videos?",
-        "ja": "僕の動画、見てるの？"
-      },
-      {
-        "id": "real-random-10-cue-012",
-        "start": 22.2,
-        "end": 22.85,
-        "speechText": "Yeah.",
-        "language": "en",
-        "en": "Yeah.",
-        "ja": "うん。"
-      },
-      {
-        "id": "real-random-10-cue-013",
-        "start": 23.42,
-        "end": 25.68,
-        "speechText": "And then, you know, I'm just following you.",
-        "language": "en",
-        "en": "And then, you know, I'm just following you.",
-        "ja": "それで、実はフォローしてるんだ。"
-      },
-      {
-        "id": "real-random-10-cue-014",
-        "start": 25.78,
-        "end": 27.08,
-        "speechText": "Oh, thank you, bro.",
-        "language": "en",
-        "en": "Oh, thank you, bro.",
-        "ja": "ああ、ありがとう。"
-      },
-      {
-        "id": "real-random-10-cue-015",
-        "start": 27.2,
-        "end": 27.98,
-        "speechText": "Thank you, bro. Yeah.",
-        "language": "en",
-        "en": "Thank you, bro. Yeah.",
-        "ja": "ありがとう。うん。"
-      },
-      {
-        "id": "real-random-10-cue-016",
-        "start": 27.98,
-        "end": 28.63,
-        "speechText": "Welcome.",
-        "language": "en",
-        "en": "Welcome.",
-        "ja": "どういたしまして。"
-      },
-      {
-        "id": "real-random-10-cue-017",
-        "start": 28.84,
-        "end": 30.52,
-        "speechText": "I like your videos for real.",
-        "language": "en",
-        "en": "I like your videos for real.",
-        "ja": "君の動画、本当に好きなんだ。"
-      },
-      {
-        "id": "real-random-10-cue-018",
-        "start": 30.62,
-        "end": 31.58,
-        "speechText": "Thank you so much, man.",
-        "language": "en",
-        "en": "Thank you so much, man.",
-        "ja": "本当にありがとう。"
-      },
-      {
-        "id": "real-random-10-cue-019",
-        "start": 31.58,
-        "end": 33.38,
-        "speechText": "Are you gonna put this in TikTok?",
-        "language": "en",
-        "en": "Are you gonna put this in TikTok?",
-        "ja": "これTikTokに載せるの？"
-      },
-      {
-        "id": "real-random-10-cue-020",
-        "start": 33.68,
-        "end": 37.42,
-        "speechText": "I love your laugh, so if you don't mind, I would.",
-        "language": "en",
-        "en": "I love your laugh, so if you don't mind, I would.",
-        "ja": "君の笑い声が好きだから、よければ載せたいな。"
-      },
-      {
-        "id": "real-random-10-cue-021",
-        "start": 41.7,
-        "end": 43.6,
-        "speechText": "If that's okay with you.",
-        "language": "en",
-        "en": "If that's okay with you.",
-        "ja": "もし大丈夫ならね。"
-      }
-    ],
-    "subtitleVerification": "two independent local speech recognizers + sampled burned-in caption review + editorial English/Japanese review; not full human listening"
   },
   {
     "id": "real-street-06",
