@@ -3,8 +3,9 @@
   if(typeof module==='object'&&module.exports)module.exports=api;else root.MovieStudyProgress=api;
 })(typeof window==='object'?window:globalThis,function(){
   'use strict';
-  // Preserve legacy totals up to 100; the completion target is now 50.
-  const limit=50,maxCount=100,key='movie-study-completions-v1';
+  // Keep saved totals even when they exceed the current completion target.
+  const limit=50,realLimit=20,maxCount=100,key='movie-study-completions-v1';
+  const limitFor=id=>/^real-(?:random|street|daily)-\d+$/.test(id)?realLimit:limit;
   function createStore(storage){
     let counts={};
     function refresh(){
@@ -14,10 +15,11 @@
       }catch{}
     }
     refresh();
-    return {count:id=>counts[id]||0,hidden:id=>(counts[id]||0)>=limit,refresh,complete(id){
-      refresh();if((counts[id]||0)<limit)counts[id]=(counts[id]||0)+1;
+    return {count:id=>counts[id]||0,hidden:id=>(counts[id]||0)>=limitFor(id),refresh,complete(id){
+      const target=limitFor(id);
+      refresh();if((counts[id]||0)<target)counts[id]=(counts[id]||0)+1;
       let persisted=true;try{storage.setItem(key,JSON.stringify(counts));}catch{persisted=false;}
-      return {count:counts[id],hidden:counts[id]>=limit,persisted};
+      return {count:counts[id],hidden:counts[id]>=target,persisted};
     }};
   }
   // Each pass counts only playback actually traversed, not time skipped by seeking.
@@ -105,14 +107,15 @@
       })();
       return running;
     }
-    return {refresh,sync,status:()=>({phase,confirmed}),count:id=>counts()[id]||0,hidden:id=>(counts()[id]||0)>=limit,complete(id){
+    return {refresh,sync,status:()=>({phase,confirmed}),count:id=>counts()[id]||0,hidden:id=>(counts()[id]||0)>=limitFor(id),complete(id){
       if(!/^[a-z0-9-]{1,80}$/.test(id))throw Error('Invalid scene');
+      const target=limitFor(id);
       refresh();
-      if((counts()[id]||0)<limit){const own=ledger.replicas[writerId]||={};own[id]=(own[id]||0)+1;}
+      if((counts()[id]||0)<target){const own=ledger.replicas[writerId]||={};own[id]=(own[id]||0)+1;}
       const persisted=persist(),count=counts()[id]||0;
       void sync();
-      return {count,hidden:count>=limit,persisted};
+      return {count,hidden:count>=target,persisted};
     }};
   }
-  return {limit,key,createStore,createPass,cleanCounts,mergeLedger,ledgerCounts,createCloudStore};
+  return {limit,realLimit,limitFor,key,createStore,createPass,cleanCounts,mergeLedger,ledgerCounts,createCloudStore};
 });

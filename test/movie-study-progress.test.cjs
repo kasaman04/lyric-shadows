@@ -112,27 +112,31 @@ test('unconfirmed empty history has loading/error states and retries restore the
   assert.equal(recovered.count('eternal-train'),7);
 });
 
-test('lowering the target keeps existing movie and shorts history above 50 intact',async()=>{
-  const data=storage();data.setItem(key,JSON.stringify({'eternal-train':75,'real-random-01':100,'real-street-01':49}));
+test('the lower Real target preserves saved totals and leaves the movie target at 50',async()=>{
+  const data=storage();data.setItem(key,JSON.stringify({'eternal-train':75,'eternal-bike':20,'real-random-11':100,'real-random-12':24,'real-street-01':19}));
   const local=createStore(data);
   assert.equal(local.count('eternal-train'),75);assert.equal(local.hidden('eternal-train'),true);
   assert.equal(local.complete('eternal-train').count,75);
-  assert.equal(local.complete('real-random-01').count,100);
-  assert.equal(local.complete('real-street-01').count,50);
+  assert.equal(local.hidden('eternal-bike'),false);
+  assert.equal(local.hidden('real-random-12'),true);
+  assert.equal(local.complete('real-random-11').count,100);
+  assert.equal(local.hidden('real-street-01'),false);
+  assert.equal(local.complete('real-street-01').count,20);
   assert.equal(local.hidden('real-street-01'),true);
   const server=cloud();const first=client(data,server);await first.sync();
-  assert.equal(first.count('eternal-train'),75);assert.equal(first.count('real-random-01'),100);
+  assert.equal(first.count('eternal-train'),75);assert.equal(first.count('real-random-11'),100);
   const restored=client(storage(),server,'movie-test-writer-0020');await restored.sync();
-  assert.equal(restored.count('eternal-train'),75);assert.equal(restored.hidden('real-random-01'),true);
-  assert.equal(restored.count('real-street-01'),50);
+  assert.equal(restored.count('eternal-train'),75);assert.equal(restored.hidden('eternal-bike'),false);
+  assert.equal(restored.hidden('real-random-11'),true);assert.equal(restored.count('real-random-12'),24);
+  assert.equal(restored.count('real-street-01'),20);assert.equal(restored.hidden('real-street-01'),true);
 });
 
-test('the 50th real conversation play persists after offline recovery without duplicate credit',async()=>{
-  const data=storage(),server=cloud();data.setItem(key,JSON.stringify({'real-daily-01':49}));
+test('the 20th real conversation play persists after offline recovery without duplicate credit',async()=>{
+  const data=storage(),server=cloud();data.setItem(key,JSON.stringify({'real-daily-01':19}));
   server.online=false;const first=client(data,server);
   assert.equal(first.hidden('real-daily-01'),false);
-  assert.equal(first.complete('real-daily-01').count,50);assert.equal(first.hidden('real-daily-01'),true);
+  assert.equal(first.complete('real-daily-01').count,20);assert.equal(first.hidden('real-daily-01'),true);
   const recovered=client(data,server,'movie-test-writer-0021');server.online=true;
   await recovered.sync();await first.sync();
-  assert.equal(recovered.count('real-daily-01'),50);assert.equal(server.counts()['real-daily-01'],50);
+  assert.equal(recovered.count('real-daily-01'),20);assert.equal(server.counts()['real-daily-01'],20);
 });

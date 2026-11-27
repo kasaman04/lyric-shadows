@@ -31,8 +31,9 @@
     progress.refresh();
     function samplePass(p){p.pass.sample({time:p.video.currentTime,wall:performance.now(),rate:p.video.playbackRate,playing:!p.video.paused,audible:!p.video.muted&&p.video.volume>0,active:active===p.index&&!document.hidden,seeking:p.video.seeking});}
     function showCompleted(){
-      feed.insertAdjacentHTML('beforeend','<section class="movie-empty"><p>この作品の会話はすべて50回聞き終わりました。</p><p>上のメニューから、別の作品を選べます。</p><button type="button" class="movie-empty-back">映画一覧に戻る</button></section>');
-      const back=root.querySelector('.movie-empty-back');back.textContent=options.backLabel||'映画一覧に戻る';back.onclick=()=>options.home();if(options.kind==='shorts')root.querySelector('.movie-empty p').textContent='このジャンルの会話はすべて50回聞き終わりました。';
+      const isReal=options.kind==='shorts',label=isReal?'ジャンル':'作品',target=isReal?progressApi.realLimit:progressApi.limit;
+      feed.insertAdjacentHTML('beforeend',`<section class="movie-empty"><p>この${label}の会話はすべて${target}回聞き終わりました。</p><p>上のメニューから、別の${label}を選べます。</p><button type="button" class="movie-empty-back">映画一覧に戻る</button></section>`);
+      const back=root.querySelector('.movie-empty-back');back.textContent=options.backLabel||'映画一覧に戻る';back.onclick=()=>options.home();
     }
     function finishPass(p){
       if(destroyed||active!==p.index)return;
@@ -40,7 +41,7 @@
       if(p.pass.finish(p.video.duration||p.scene.duration)){
         const result=progress.complete(p.scene.id);renderControls(p);
         if(!result.persisted)announce('視聴回数を保存できません。このブラウザの保存設定を確認してください。');
-        if(result.hidden){const position=visiblePlayers.indexOf(p),next=visiblePlayers[position+1]||visiblePlayers[position-1];applyFilter(selectedWork,next?.scene.id);announce('50回聞いた会話を一覧から削除しました');return;}
+        if(result.hidden){const position=visiblePlayers.indexOf(p),next=visiblePlayers[position+1]||visiblePlayers[position-1];applyFilter(selectedWork,next?.scene.id);announce(`${progressApi.limitFor(p.scene.id)}回聞いた会話を一覧から削除しました`);return;}
       }
       p.pass.reset();
       if(repeat){p.video.currentTime=0;start(p);}
@@ -119,7 +120,7 @@
   });
   function renderControls(p){
     const count=progress.count(p.scene.id),status=progress.status?.();
-    p.q('.watch-count').textContent=count||status?.confirmed?`聞いた回数 ${count} / ${progressApi.limit}回${status?.phase==='error'?' · 未同期':''}`:status?.phase==='error'?'回数を確認できません。接続後に自動で再確認します。':'保存済みの回数を確認中…';
+    p.q('.watch-count').textContent=count||status?.confirmed?`聞いた回数 ${count} / ${progressApi.limitFor(p.scene.id)}回${status?.phase==='error'?' · 未同期':''}`:status?.phase==='error'?'回数を確認できません。接続後に自動で再確認します。':'保存済みの回数を確認中…';
     p.q('.sound-icon').innerHTML=muted?icons.muted:icons.sound;p.q('.sound').setAttribute('aria-label',muted?'音声をオン':'音声をオフ');p.q('.sound-label').textContent=muted?'音声オン':'音声';
     p.q('.repeat').classList.toggle('on',repeat);p.q('.repeat').setAttribute('aria-pressed',String(repeat));
     const isSaved=saved.has(p.scene.id);p.q('.save').classList.toggle('on',isSaved);p.q('.save').setAttribute('aria-pressed',String(isSaved));p.q('.save-icon').innerHTML=isSaved?icons.saved:icons.save;
@@ -216,6 +217,7 @@
   function library(config={}){
     progress.refresh();
     const scenes=config.scenes||window.MOVIE_SCENES||[];
+    const target=config.portrait?progressApi.realLimit:progressApi.limit;
     const collections=config.collections||[
       {key:'before',title:'ビフォア三部作',sub:'BEFORE TRILOGY',matches:s=>s.work.startsWith('Before '),description:'出会いから再会、その先へ。二人の自然な会話をじっくりと。'},
       {key:'eternal',title:'エターナル・サンシャイン',sub:'ETERNAL SUNSHINE',matches:s=>s.work==='Eternal Sunshine of the Spotless Mind',description:'出会い、すれ違い、もう一度。記憶をめぐる会話をたどる。'},
@@ -229,7 +231,7 @@
       const images=config.portrait?[all[0],all[Math.floor(all.length/2)],all[all.length-1]]:key==='before'?['train-invitation','sunset-vienna','midnight-train'].map(id=>all.find(s=>s.id===id)).filter(Boolean):[all[0]];
       return `<article class="movie-collection"><button type="button" class="movie-collection-open" onclick="${config.portrait?'showRealShorts':'showMovieStudy'}('${key}')" aria-label="${escapeHtml(title)}を学ぶ"><span class="movie-collection-art ${key==='before'||config.portrait?'movie-filmstrip':''}">${images.map(s=>`<img src="${escapeHtml(s.poster)}" alt="" loading="lazy">`).join('')}<span class="movie-card-play" aria-hidden="true">▶</span></span><span class="movie-collection-copy"><span class="movie-collection-meta">${escapeHtml(sub)} · ${list.length}会話 · 約${minutes}分</span><strong>${escapeHtml(title)}</strong><span class="movie-collection-description">${escapeHtml(description)}</span><span class="movie-collection-start">会話を見る <span aria-hidden="true">→</span></span></span></button>${key==='before'?'<div class="movie-work-shortcuts" aria-label="ビフォアの作品を選ぶ"><button type="button" onclick="showMovieStudy(\'sunrise\')">サンライズ</button><button type="button" onclick="showMovieStudy(\'sunset\')">サンセット</button><button type="button" onclick="showMovieStudy(\'midnight\')">ミッドナイト</button></div>':''}</article>`;
     };
-    return `<section class="home-library movie-library" aria-labelledby="${config.portrait?'real-shorts-library-title':'movie-library-title'}"><div class="section-heading"><div><p class="section-eyebrow">${config.portrait?'REAL CONVERSATIONS':'LEARN WITH MOVIES'}</p><h2 id="${config.portrait?'real-shorts-library-title':'movie-library-title'}">${config.portrait?'リアルな英会話で学ぶ':'映画の会話で学ぶ'}</h2></div><span>${scenes.filter(s=>!progress.hidden(s.id)).length}会話</span></div><p class="movie-library-intro">${config.portrait?'海外の人の自然な会話を、動画と英日字幕で。':'作品を選んで、動画と英日字幕で。'}最後まで聞くと1回。50回聞いた会話は一覧から自動で削除されます。</p><div class="movie-collection-grid">${collections.map(c=>card(c.key,c.title,c.sub,scenes.filter(c.matches),c.description)).join('')}</div></section>`;
+    return `<section class="home-library movie-library" aria-labelledby="${config.portrait?'real-shorts-library-title':'movie-library-title'}"><div class="section-heading"><div><p class="section-eyebrow">${config.portrait?'REAL CONVERSATIONS':'LEARN WITH MOVIES'}</p><h2 id="${config.portrait?'real-shorts-library-title':'movie-library-title'}">${config.portrait?'リアルな英会話で学ぶ':'映画の会話で学ぶ'}</h2></div><span>${scenes.filter(s=>!progress.hidden(s.id)).length}会話</span></div><p class="movie-library-intro">${config.portrait?'海外の人の自然な会話を、動画と英日字幕で。':'作品を選んで、動画と英日字幕で。'}最後まで聞くと1回。${target}回聞いた会話は一覧から自動で削除されます。</p><div class="movie-collection-grid">${collections.map(c=>card(c.key,c.title,c.sub,scenes.filter(c.matches),c.description)).join('')}</div></section>`;
   }
   window.MovieStudy={open,close,library,initialize};
 })();
