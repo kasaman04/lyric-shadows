@@ -2020,7 +2020,10 @@ function switchTab(tab) {
   const tabSong = document.getElementById('tabSong');
 
   const isConv = tab === 'conv';
-  if (!isConv) stopAudio();
+  if (!isConv) {
+    pauseConversation();
+    clearMediaSession('conversation');
+  }
   convArea?.classList.toggle('hidden', !isConv);
   songArea?.classList.toggle('hidden', isConv);
   settingBar?.classList.toggle('hidden', !isConv);
@@ -2060,7 +2063,7 @@ function onSongAudioPlay() {
     document.getElementById('songAudioPlayer')?.pause();
     return;
   }
-  stopAudio();
+  pauseConversation();
   stopPhrasePracticeAudio();
   setMediaSession('song', state.currentSong?.songName || 'Song', state.currentSong?.artist || 'Lyric Shadows');
   setMediaPlaybackState(true);
@@ -2245,10 +2248,14 @@ function playSentence(idx, mode = 'manual') {
   state.pendingNextIndex = -1;
 
   const audio = state.conversationAudio;
-  audio.pause();
+  const source = state.audioSources[idx];
+  const keepPosition = mode === 'resume' && idx === state.currentIndex && !audio.ended && audio.getAttribute('src') === source;
+  if (!keepPosition) {
+    audio.pause();
+    audio.src = source;
+  }
   state.currentIndex = idx;
   state.isPlaying = true;
-  audio.src = state.audioSources[idx];
   const request = ++state.conversationPlayRequest;
   setMediaSession('conversation', state.sentenceList[idx]?.text || '会話', state.currentSong?.songName || 'Lyric Shadows');
   audio.play().then(() => {
@@ -2268,20 +2275,22 @@ function playSentence(idx, mode = 'manual') {
   if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
 
+function pauseConversation() {
+  if (!state.isPlaying) return;
+  state.conversationPlayRequest++;
+  clearTimeout(state.advanceTimer);
+  state.advanceTimer = null;
+  state.isPlaying = false;
+  state.conversationAudio?.pause();
+  setMediaPlaybackState(false);
+  updatePlayBtn();
+}
+
 function togglePlay() {
-  if (state.isPlaying) {
-    state.conversationPlayRequest++;
-    clearTimeout(state.advanceTimer);
-    state.advanceTimer = null;
-    state.conversationAudio?.pause();
-    state.isPlaying = false;
-    setMediaPlaybackState(false);
-    updatePlayBtn();
-  } else {
-    const pending = state.pendingNextIndex >= 0;
-    const idx = pending ? state.pendingNextIndex : state.conversationFinished || state.currentIndex < 0 ? 0 : state.currentIndex;
-    playSentence(idx, pending ? 'automatic' : state.conversationFinished || state.currentIndex < 0 ? 'manual' : 'resume');
-  }
+  if (state.isPlaying) return pauseConversation();
+  const pending = state.pendingNextIndex >= 0;
+  const idx = pending ? state.pendingNextIndex : state.conversationFinished || state.currentIndex < 0 ? 0 : state.currentIndex;
+  playSentence(idx, pending ? 'automatic' : state.conversationFinished || state.currentIndex < 0 ? 'manual' : 'resume');
 }
 
 function restartAll() {
