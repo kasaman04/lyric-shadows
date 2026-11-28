@@ -140,3 +140,15 @@ test('the 20th real conversation play persists after offline recovery without du
   await recovered.sync();await first.sync();
   assert.equal(recovered.count('real-daily-01'),20);assert.equal(server.counts()['real-daily-01'],20);
 });
+
+test('a Real date is hidden at 20 completed plays in local and synced progress',async()=>{
+  const id='real-date-01',data=storage(),server=cloud();
+  data.setItem(key,JSON.stringify({[id]:19}));
+  const local=createStore(data);
+  assert.equal(local.hidden(id),false);
+  assert.deepEqual(local.complete(id),{count:20,hidden:true,persisted:true});
+  const first=client(data,server);await first.sync();
+  assert.equal(first.hidden(id),true);
+  const restored=client(storage(),server,'movie-test-writer-0022');await restored.sync();
+  assert.equal(restored.count(id),20);assert.equal(restored.hidden(id),true);
+});

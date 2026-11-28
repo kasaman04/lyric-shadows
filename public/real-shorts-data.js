@@ -5203,5 +5203,625 @@ window.REAL_SHORT_SCENES = [
       }
     ],
     "subtitleVerification": "two independent local speech recognizers + sampled burned-in caption review + editorial English/Japanese review; not full human listening"
+  },
+  {
+    "id": "real-date-01",
+    "category": "date",
+    "work": "リアル英会話",
+    "displayWork": "デート · First Dates",
+    "title": "食べ物の好みから地元の話へ",
+    "description": "食事の好みを聞き、お互いの育った街の話へ。",
+    "duration": 29.17,
+    "source": "https://www.youtube.com/watch?v=8iAKSiVMsHk",
+    "sourceStart": 62.49,
+    "sourceEnd": 91.66,
+    "creator": "First Dates",
+    "sourceVideoId": "8iAKSiVMsHk",
+    "bakedEnglish": false,
+    "video": "/real-shorts/media/real-date-01.mp4",
+    "poster": "/real-shorts/posters/real-date-01.jpg",
+    "captions": [
+      {
+        "id": "real-date-01-cue-001",
+        "start": 0.21,
+        "end": 1.65,
+        "speechText": "Are you a meat eater?",
+        "language": "en",
+        "en": "Are you a meat eater?",
+        "ja": "お肉は食べる？"
+      },
+      {
+        "id": "real-date-01-cue-002",
+        "start": 2.17,
+        "end": 3.25,
+        "speechText": "Are you a veggie?",
+        "language": "en",
+        "en": "Are you a veggie?",
+        "ja": "それともベジタリアン？"
+      },
+      {
+        "id": "real-date-01-cue-003",
+        "start": 3.75,
+        "end": 4.42,
+        "speechText": "I'm a veggie.",
+        "language": "en",
+        "en": "I'm a veggie.",
+        "ja": "ベジタリアンだよ。"
+      },
+      {
+        "id": "real-date-01-cue-004",
+        "start": 4.78,
+        "end": 6.16,
+        "speechText": "Are you a picky eater?",
+        "language": "en",
+        "en": "Are you a picky eater?",
+        "ja": "好き嫌いは多い方？"
+      },
+      {
+        "id": "real-date-01-cue-005",
+        "start": 6.49,
+        "end": 8.04,
+        "speechText": "I wouldn't say picky.",
+        "language": "en",
+        "en": "I wouldn't say picky.",
+        "ja": "好き嫌いが多いってほどじゃないかな。"
+      },
+      {
+        "id": "real-date-01-cue-006",
+        "start": 8.69,
+        "end": 13.28,
+        "speechText": "I'd say I'm more kind of, like, not eating meat.",
+        "language": "en",
+        "en": "I'd say I'm more kind of, like, not eating meat.",
+        "ja": "どっちかというと、お肉を食べないだけかな。"
+      },
+      {
+        "id": "real-date-01-cue-007",
+        "start": 13.75,
+        "end": 16.76,
+        "speechText": "Unless that's kind of picky in and of itself.",
+        "language": "en",
+        "en": "Unless that's kind of picky in and of itself.",
+        "ja": "それ自体が好き嫌いって言われたら、そうかもだけど。"
+      },
+      {
+        "id": "real-date-01-cue-008",
+        "start": 17.31,
+        "end": 19.28,
+        "speechText": "We never had that conversation. Where are you from?",
+        "language": "en",
+        "en": "We never had that conversation. Where are you from?",
+        "ja": "そういえば、まだ聞いてなかったね。どこ出身？"
+      },
+      {
+        "id": "real-date-01-cue-009",
+        "start": 19.73,
+        "end": 21.37,
+        "speechText": "Originally, Wolverhampton.",
+        "language": "en",
+        "en": "Originally, Wolverhampton.",
+        "ja": "もともとはウルヴァーハンプトン。"
+      },
+      {
+        "id": "real-date-01-cue-010",
+        "start": 21.39,
+        "end": 21.63,
+        "speechText": "Okay.",
+        "language": "en",
+        "en": "Okay.",
+        "ja": "そうなんだ。"
+      },
+      {
+        "id": "real-date-01-cue-011",
+        "start": 21.87,
+        "end": 23.7,
+        "speechText": "And I'm now living in Portsmouth.",
+        "language": "en",
+        "en": "And I'm now living in Portsmouth.",
+        "ja": "今はポーツマスに住んでるよ。"
+      },
+      {
+        "id": "real-date-01-cue-012",
+        "start": 24.48,
+        "end": 25.65,
+        "speechText": "I grew up in South East London.",
+        "language": "en",
+        "en": "I grew up in South East London.",
+        "ja": "私はロンドンの南東部で育ったの。"
+      },
+      {
+        "id": "real-date-01-cue-013",
+        "start": 25.69,
+        "end": 28.94,
+        "speechText": "In a mythical place called Catford, which no one's ever heard of, apparently.",
+        "language": "en",
+        "en": "In a mythical place called Catford, which no one's ever heard of, apparently.",
+        "ja": "キャットフォードっていう幻の街。誰も聞いたことがないみたい。"
+      }
+    ],
+    "subtitleVerification": "local acoustic recognition and editorial English/Japanese review"
+  },
+  {
+    "id": "real-date-02",
+    "category": "date",
+    "work": "リアル英会話",
+    "displayWork": "デート · First Dates Ireland",
+    "title": "はじめまして。何を飲む？",
+    "description": "出会いの挨拶と、レストランで飲み物を選ぶ会話。",
+    "duration": 15.8,
+    "source": "https://www.youtube.com/watch?v=h3qY0cbOGlE",
+    "sourceStart": 100.96,
+    "sourceEnd": 116.76,
+    "creator": "First Dates Ireland",
+    "sourceVideoId": "h3qY0cbOGlE",
+    "bakedEnglish": false,
+    "video": "/real-shorts/media/real-date-02.mp4",
+    "poster": "/real-shorts/posters/real-date-02.jpg",
+    "captions": [
+      {
+        "id": "real-date-02-cue-001",
+        "start": 0.49,
+        "end": 1.05,
+        "speechText": "Hello.",
+        "language": "en",
+        "en": "Hello.",
+        "ja": "こんにちは。"
+      },
+      {
+        "id": "real-date-02-cue-002",
+        "start": 1.43,
+        "end": 3.39,
+        "speechText": "How are you?",
+        "language": "en",
+        "en": "How are you?",
+        "ja": "お元気ですか？"
+      },
+      {
+        "id": "real-date-02-cue-003",
+        "start": 3.76,
+        "end": 4.86,
+        "speechText": "Pleased to meet you.",
+        "language": "en",
+        "en": "Pleased to meet you.",
+        "ja": "はじめまして。"
+      },
+      {
+        "id": "real-date-02-cue-004",
+        "start": 5.59,
+        "end": 5.89,
+        "speechText": "Hi.",
+        "language": "en",
+        "en": "Hi.",
+        "ja": "こんにちは。"
+      },
+      {
+        "id": "real-date-02-cue-005",
+        "start": 6.76,
+        "end": 7.14,
+        "speechText": "Maureen.",
+        "language": "en",
+        "en": "Maureen.",
+        "ja": "モーリーンです。"
+      },
+      {
+        "id": "real-date-02-cue-006",
+        "start": 7.39,
+        "end": 8.26,
+        "speechText": "Maureen, how are you?",
+        "language": "en",
+        "en": "Maureen, how are you?",
+        "ja": "モーリーンさん、お元気ですか？"
+      },
+      {
+        "id": "real-date-02-cue-007",
+        "start": 8.96,
+        "end": 10.0,
+        "speechText": "Do you not drink?",
+        "language": "en",
+        "en": "Do you not drink?",
+        "ja": "お酒は飲まないんですか？"
+      },
+      {
+        "id": "real-date-02-cue-008",
+        "start": 10.52,
+        "end": 11.05,
+        "speechText": "No, no.",
+        "language": "en",
+        "en": "No, no.",
+        "ja": "いいえ。"
+      },
+      {
+        "id": "real-date-02-cue-009",
+        "start": 11.59,
+        "end": 12.09,
+        "speechText": "Yes, and…?",
+        "language": "en",
+        "en": "Yes, and…?",
+        "ja": "はい、ご注文は？"
+      },
+      {
+        "id": "real-date-02-cue-010",
+        "start": 12.1,
+        "end": 14.16,
+        "speechText": "I'd like a gin and tonic, yes.",
+        "language": "en",
+        "en": "I'd like a gin and tonic, yes.",
+        "ja": "ジントニックをお願いします。"
+      },
+      {
+        "id": "real-date-02-cue-011",
+        "start": 14.2,
+        "end": 14.74,
+        "speechText": "Lovely. Why not?",
+        "language": "en",
+        "en": "Lovely. Why not?",
+        "ja": "いいですね。もちろん。"
+      },
+      {
+        "id": "real-date-02-cue-012",
+        "start": 14.88,
+        "end": 15.18,
+        "speechText": "Yes.",
+        "language": "en",
+        "en": "Yes.",
+        "ja": "はい。"
+      }
+    ],
+    "subtitleVerification": "local acoustic recognition and editorial English/Japanese review"
+  },
+  {
+    "id": "real-date-03",
+    "category": "date",
+    "work": "リアル英会話",
+    "displayWork": "デート · First Dates",
+    "title": "父の住む街まで同じだった",
+    "description": "思いがけない共通点から、今日出会った偶然の話へ。",
+    "duration": 20.98,
+    "source": "https://www.youtube.com/watch?v=NVO8ivsJaNA",
+    "sourceStart": 28.97,
+    "sourceEnd": 49.95,
+    "creator": "First Dates",
+    "sourceVideoId": "NVO8ivsJaNA",
+    "bakedEnglish": false,
+    "video": "/real-shorts/media/real-date-03.mp4",
+    "poster": "/real-shorts/posters/real-date-03.jpg",
+    "captions": [
+      {
+        "id": "real-date-03-cue-001",
+        "start": 0.11,
+        "end": 1.92,
+        "speechText": "We live just outside Geneva.",
+        "language": "en",
+        "en": "We live just outside Geneva.",
+        "ja": "ジュネーブのすぐ郊外に住んでるの。"
+      },
+      {
+        "id": "real-date-03-cue-002",
+        "start": 2.66,
+        "end": 3.8,
+        "speechText": "Oh my God, so is my dad.",
+        "language": "en",
+        "en": "Oh my God, so is my dad.",
+        "ja": "うそ、僕の父もそう。"
+      },
+      {
+        "id": "real-date-03-cue-003",
+        "start": 3.8,
+        "end": 4.53,
+        "speechText": "Really?",
+        "language": "en",
+        "en": "Really?",
+        "ja": "ほんとに？"
+      },
+      {
+        "id": "real-date-03-cue-004",
+        "start": 5.14,
+        "end": 6.52,
+        "speechText": "We are, like, the same person.",
+        "language": "en",
+        "en": "We are, like, the same person.",
+        "ja": "なんか、私たちってそっくりだね。"
+      },
+      {
+        "id": "real-date-03-cue-005",
+        "start": 6.87,
+        "end": 7.3,
+        "speechText": "Pretty much.",
+        "language": "en",
+        "en": "Pretty much.",
+        "ja": "ほぼね。"
+      },
+      {
+        "id": "real-date-03-cue-006",
+        "start": 7.46,
+        "end": 8.22,
+        "speechText": "Oh my God.",
+        "language": "en",
+        "en": "Oh my God.",
+        "ja": "びっくり。"
+      },
+      {
+        "id": "real-date-03-cue-007",
+        "start": 8.56,
+        "end": 12.37,
+        "speechText": "But do you believe that you're meant to cross paths with people and that everything happens for a reason?",
+        "language": "en",
+        "en": "But do you believe that you're meant to cross paths with people and that everything happens for a reason?",
+        "ja": "人と出会うのは運命で、何事にも理由があるって思う？"
+      },
+      {
+        "id": "real-date-03-cue-008",
+        "start": 12.49,
+        "end": 14.26,
+        "speechText": "Do you think this guy stood me up for a reason?",
+        "language": "en",
+        "en": "Do you think this guy stood me up for a reason?",
+        "ja": "今日の相手にすっぽかされたのにも、理由があったと思う？"
+      },
+      {
+        "id": "real-date-03-cue-009",
+        "start": 14.81,
+        "end": 17.14,
+        "speechText": "The situation has definitely turned around.",
+        "language": "en",
+        "en": "The situation has definitely turned around.",
+        "ja": "状況が好転したのは確かだね。"
+      },
+      {
+        "id": "real-date-03-cue-010",
+        "start": 17.25,
+        "end": 17.64,
+        "speechText": "Yeah.",
+        "language": "en",
+        "en": "Yeah.",
+        "ja": "うん。"
+      },
+      {
+        "id": "real-date-03-cue-011",
+        "start": 18.02,
+        "end": 18.49,
+        "speechText": "So you're happy?",
+        "language": "en",
+        "en": "So you're happy?",
+        "ja": "うれしい？"
+      },
+      {
+        "id": "real-date-03-cue-012",
+        "start": 18.68,
+        "end": 18.96,
+        "speechText": "Yeah.",
+        "language": "en",
+        "en": "Yeah.",
+        "ja": "うん。"
+      },
+      {
+        "id": "real-date-03-cue-013",
+        "start": 19.6,
+        "end": 20.51,
+        "speechText": "Yeah, I'm happy.",
+        "language": "en",
+        "en": "Yeah, I'm happy.",
+        "ja": "うん、うれしい。"
+      },
+      {
+        "id": "real-date-03-cue-014",
+        "start": 20.63,
+        "end": 20.92,
+        "speechText": "Good.",
+        "language": "en",
+        "en": "Good.",
+        "ja": "よかった。"
+      }
+    ],
+    "subtitleVerification": "local acoustic recognition and editorial English/Japanese review"
+  },
+  {
+    "id": "real-date-04",
+    "category": "date",
+    "work": "リアル英会話",
+    "displayWork": "デート · First Dates",
+    "title": "また会いたい？ 気持ちを伝える",
+    "description": "デートのあと、互いに率直な気持ちを伝える。",
+    "duration": 43.88,
+    "source": "https://www.youtube.com/watch?v=OoHIiLVcDfs",
+    "sourceStart": 75.29,
+    "sourceEnd": 119.17,
+    "creator": "First Dates",
+    "sourceVideoId": "OoHIiLVcDfs",
+    "bakedEnglish": false,
+    "video": "/real-shorts/media/real-date-04.mp4",
+    "poster": "/real-shorts/posters/real-date-04.jpg",
+    "captions": [
+      {
+        "id": "real-date-04-cue-001",
+        "start": 0.11,
+        "end": 2.63,
+        "speechText": "Would you guys like to see each other again?",
+        "language": "en",
+        "en": "Would you guys like to see each other again?",
+        "ja": "お二人はまた会いたいですか？"
+      },
+      {
+        "id": "real-date-04-cue-002",
+        "start": 3.81,
+        "end": 4.69,
+        "speechText": "Can I go first?",
+        "language": "en",
+        "en": "Can I go first?",
+        "ja": "私から言ってもいい？"
+      },
+      {
+        "id": "real-date-04-cue-003",
+        "start": 5.13,
+        "end": 5.72,
+        "speechText": "Go for it.",
+        "language": "en",
+        "en": "Go for it.",
+        "ja": "どうぞ。"
+      },
+      {
+        "id": "real-date-04-cue-004",
+        "start": 6.35,
+        "end": 6.83,
+        "speechText": "Okay.",
+        "language": "en",
+        "en": "Okay.",
+        "ja": "うん。"
+      },
+      {
+        "id": "real-date-04-cue-005",
+        "start": 9.49,
+        "end": 10.46,
+        "speechText": "I don't think this is for me.",
+        "language": "en",
+        "en": "I don't think this is for me.",
+        "ja": "私は、ちょっと違うかなって思った。"
+      },
+      {
+        "id": "real-date-04-cue-006",
+        "start": 11.81,
+        "end": 12.49,
+        "speechText": "That's it.",
+        "language": "en",
+        "en": "That's it.",
+        "ja": "そうなんだね。"
+      },
+      {
+        "id": "real-date-04-cue-007",
+        "start": 12.94,
+        "end": 13.81,
+        "speechText": "I could…",
+        "language": "en",
+        "en": "I could…",
+        "ja": "うまく言えないけど…。"
+      },
+      {
+        "id": "real-date-04-cue-008",
+        "start": 13.83,
+        "end": 14.3,
+        "speechText": "Yeah.",
+        "language": "en",
+        "en": "Yeah.",
+        "ja": "うん。"
+      },
+      {
+        "id": "real-date-04-cue-009",
+        "start": 15.28,
+        "end": 17.45,
+        "speechText": "I just don't feel the spark that I really wanted.",
+        "language": "en",
+        "en": "I just don't feel the spark that I really wanted.",
+        "ja": "私が期待してた、ときめきがなかったの。"
+      },
+      {
+        "id": "real-date-04-cue-010",
+        "start": 18.03,
+        "end": 18.96,
+        "speechText": "Just don't feel it.",
+        "language": "en",
+        "en": "Just don't feel it.",
+        "ja": "そういう気持ちになれなかった。"
+      },
+      {
+        "id": "real-date-04-cue-011",
+        "start": 19.67,
+        "end": 20.26,
+        "speechText": "You're a nice guy.",
+        "language": "en",
+        "en": "You're a nice guy.",
+        "ja": "あなたは素敵な人だよ。"
+      },
+      {
+        "id": "real-date-04-cue-012",
+        "start": 20.71,
+        "end": 22.49,
+        "speechText": "But I feel really bad for saying this.",
+        "language": "en",
+        "en": "But I feel really bad for saying this.",
+        "ja": "こんなこと言って本当に悪いんだけど。"
+      },
+      {
+        "id": "real-date-04-cue-013",
+        "start": 23.73,
+        "end": 24.79,
+        "speechText": "I think you're a really nice guy.",
+        "language": "en",
+        "en": "I think you're a really nice guy.",
+        "ja": "本当にいい人だと思う。"
+      },
+      {
+        "id": "real-date-04-cue-014",
+        "start": 25.57,
+        "end": 25.97,
+        "speechText": "Okay.",
+        "language": "en",
+        "en": "Okay.",
+        "ja": "うん。"
+      },
+      {
+        "id": "real-date-04-cue-015",
+        "start": 26.81,
+        "end": 28.25,
+        "speechText": "Okay. Okay.",
+        "language": "en",
+        "en": "Okay. Okay.",
+        "ja": "うん、分かった。"
+      },
+      {
+        "id": "real-date-04-cue-016",
+        "start": 28.97,
+        "end": 29.79,
+        "speechText": "There you go.",
+        "language": "en",
+        "en": "There you go.",
+        "ja": "大丈夫だよ。"
+      },
+      {
+        "id": "real-date-04-cue-017",
+        "start": 31.35,
+        "end": 33.07,
+        "speechText": "Obviously, I would have liked to see you again.",
+        "language": "en",
+        "en": "Obviously, I would have liked to see you again.",
+        "ja": "僕はもちろん、また会いたかったよ。"
+      },
+      {
+        "id": "real-date-04-cue-018",
+        "start": 33.08,
+        "end": 35.36,
+        "speechText": "But don't feel awkward,",
+        "language": "en",
+        "en": "But don't feel awkward,",
+        "ja": "でも、気まずく思わなくていいよ。"
+      },
+      {
+        "id": "real-date-04-cue-019",
+        "start": 35.65,
+        "end": 39.47,
+        "speechText": "Because I'm glad I've met you, because you're a lovely person.",
+        "language": "en",
+        "en": "Because I'm glad I've met you, because you're a lovely person.",
+        "ja": "君に会えてよかった。素敵な人だから。"
+      },
+      {
+        "id": "real-date-04-cue-020",
+        "start": 39.48,
+        "end": 42.12,
+        "speechText": "And I hope you do find someone you get that spark with.",
+        "language": "en",
+        "en": "And I hope you do find someone you get that spark with.",
+        "ja": "ときめきを感じられる相手に出会えるといいね。"
+      },
+      {
+        "id": "real-date-04-cue-021",
+        "start": 42.77,
+        "end": 43.79,
+        "speechText": "Thank you.",
+        "language": "en",
+        "en": "Thank you.",
+        "ja": "ありがとう。"
+      }
+    ],
+    "subtitleVerification": "local acoustic recognition and editorial English/Japanese review"
   }
 ];

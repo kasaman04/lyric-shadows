@@ -7,7 +7,7 @@ import subprocess
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
-LABELS={'random':'ランダムチャット','street':'街頭インタビュー','daily':'日常の掛け合い'}
+LABELS={'random':'ランダムチャット','date':'デート','street':'街頭インタビュー','daily':'日常の掛け合い'}
 parser=argparse.ArgumentParser()
 parser.add_argument('--source',type=Path,default=ROOT.parent/'output/real-conversation-shorts-20261123')
 args=parser.parse_args();source=args.source.resolve()

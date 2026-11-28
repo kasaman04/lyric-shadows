@@ -5,7 +5,7 @@
   'use strict';
   // Keep saved totals even when they exceed the current completion target.
   const limit=50,realLimit=20,maxCount=100,key='movie-study-completions-v1';
-  const limitFor=id=>/^real-(?:random|street|daily)-\d+$/.test(id)?realLimit:limit;
+  const limitFor=id=>/^real-(?:random|date|street|daily)-\d+$/.test(id)?realLimit:limit;
   function createStore(storage){
     let counts={};
     function refresh(){
