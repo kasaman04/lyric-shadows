@@ -27,13 +27,14 @@ test('movie counts persist across midnight and server restarts, with idempotent 
   const mixed=ledgerCounts(await (await fetch(url)).json());
   assert.equal(mixed['real-random-01'],4);assert.equal(mixed['real-street-01'],2);assert.equal(mixed['real-daily-01'],1);
   assert.equal(mixed['eternal-train'],17,'shorts preserve existing movie counts');
-  assert.equal((await post({baseline:{'eternal-train':70,'real-random-06':49,'real-random-11':3,'real-street-10':50,'real-daily-10':100}})).status,200);
+  assert.equal((await post({baseline:{'eternal-train':70,'real-random-06':49,'real-random-11':3,'real-random-14':7,'real-random-19':8,'real-random-21':2,'real-street-10':50,'real-daily-10':100}})).status,200);
   const expanded=ledgerCounts(await (await fetch(url)).json());
   assert.equal(expanded['eternal-train'],75);assert.equal(expanded['real-random-06'],49);assert.equal(expanded['real-random-11'],3);
+  assert.equal(expanded['real-random-14'],7);assert.equal(expanded['real-random-19'],8);assert.equal(expanded['real-random-21'],2);
   assert.equal(expanded['real-street-10'],50);assert.equal(expanded['real-daily-10'],100);
   const restored=await new PetStore({remote,clock:()=>now}).transact('movie-api-device-0001');
   assert.deepEqual(ledgerCounts(restored.movieStudy),expanded,'new source IDs and legacy counts survive a server restart');
-  assert.equal((await post({baseline:{'real-random-21':1}})).status,400);
+  assert.equal((await post({baseline:{'real-random-99':1}})).status,400);
   assert.equal((await post(a,{Origin:'https://unrelated.test'})).status,403);
   assert.equal((await post({baseline:{'unknown-scene':2}})).status,400);
   assert.equal((await fetch(url.replace('movie-api-device-0001','bad.id'))).status,400);

@@ -2,7 +2,7 @@
 (() => {
   'use strict';
   const groups=[
-    {key:'random',title:'ランダムチャット',sub:'RANDOM CHAT',description:'初対面の雑談、文化の違い、クイズや趣味の会話。',matches:s=>s.category==='random'},
+    {key:'random',title:'ランダムチャット',sub:'RANDOM CHAT',description:'初対面から会話が広がる。趣味や暮らし、学び方の話。',matches:s=>s.category==='random'},
     {key:'street',title:'街頭インタビュー',sub:'STREET INTERVIEWS',description:'今日の予定、仕事、日本の印象。街の人の自然な受け答え。',matches:s=>s.category==='street'},
     {key:'daily',title:'日常の掛け合い',sub:'EVERYDAY CONVERSATIONS',description:'家族の雑談や、ちょっとしたすれ違い。日常で使う英語。',matches:s=>s.category==='daily'}
   ];
